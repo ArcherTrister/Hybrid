@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\build\packages.props" />
+  
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ModuleageId>ESoftor</ModuleageId>
+    <Description>ESoftor核心组件，封装着框架核心及数据存储，缓存，辅助操作等功能</Description>
+    <Summary>ESoftor核心组件</Summary>
+    <RootNamespace>ESoftor</RootNamespace>
+    <AssemblyName>ESoftor</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\Release\ESoftor.xml</DocumentationFile>
+    <OutputPath>bin\Release</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.1|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.1|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\Release\ESoftor.xml</DocumentationFile>
+    <OutputPath>bin\Release</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" Version="2019.1.3" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.6.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="System.ComponentModel" Version=" 4.3.0" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.6.0" />
+    <PackageReference Include="System.DirectoryServices.Protocols" Version="4.6.0" />
+    <PackageReference Include="System.Drawing.Common" Version="4.6.0" />
+    <PackageReference Include="System.Reflection.Emit.Lightweight" Version="4.6.0" />
+    <PackageReference Include="System.Security.Cryptography.Algorithms" Version="4.3.1" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)'=='netstandard2.0'">
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="[2.2.0, 3.0)" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="[2.2.0, 3.0)" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="[2.2.4, 3.0)" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="[2.2.0, 3.0)" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="[2.2.0, 3.0)" />
+    <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="[2.1.0, 3.0)" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="[2.2.0, 3.0)" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="[2.2.0, 3.0)" />
+  </ItemGroup>
+
+</Project>

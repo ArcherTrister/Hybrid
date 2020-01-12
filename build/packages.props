@@ -1,0 +1,44 @@
+<Project>
+
+  <Import Project="common.props" />
+
+  <PropertyGroup>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)Hybrid.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>true</SignAssembly>
+    <PublicSign Condition=" '$(OS)' != 'Windows_NT' ">true</PublicSign>
+    <IncludeSource>true</IncludeSource>
+    <IncludeSymbols>true</IncludeSymbols>
+  </PropertyGroup>
+
+  <!--nuget包公共设置 https://docs.microsoft.com/zh-cn/dotnet/core/tools/csproj#nuget-metadata-properties-->
+  <PropertyGroup>
+    <!--版权-->
+    <Copyright>Copyright © LeXun 2018</Copyright>
+    <!--项目URL-->
+    <PackageProjectUrl>https://www.lxking.cn</PackageProjectUrl>
+
+    <!--存储库URL-->
+    <RepositoryUrl>https://github.com/ArcherTrister/Hybrid</RepositoryUrl>
+    <!--<TargetFramework>netstandard2.0</TargetFramework>-->
+    <!--在生成期间自动生成包-->
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <!--一个布尔值，指定客户端是否必须提示使用者接受包许可证后才可安装包。默认值为 false-->
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Authors>ArcherTrister</Authors>
+    <Company>乐讯</Company>
+    <!--许可证URL-->
+    <!--<PackageLicenseUrl>https://choosealicense.com/licenses/apache-2.0/</PackageLicenseUrl>-->
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <!--图标URL-->
+    <PackageIcon>icon.ico</PackageIcon>
+    <!--存储库类型-->
+    <RepositoryType>git</RepositoryType>
+    <NeutralLanguage>zh-CHS</NeutralLanguage>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\build\icon.ico" Pack="true" Visible="false" PackagePath="\" />
+  </ItemGroup>
+  
+</Project>

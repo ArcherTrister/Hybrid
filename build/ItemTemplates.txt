@@ -1,0 +1,21 @@
+﻿// 修改路径 \Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ItemTemplates
+
+// -----------------------------------------------------------------------
+//  <copyright file="$itemname$" company="cn.lxking">
+//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  </copyright>
+//  <site>https://www.lxking.cn</site>
+//  <last-editor>ArcherTrister</last-editor>
+//  <last-date>$time$</last-date>
+// -----------------------------------------------------------------------
+
+@*
+    -----------------------------------------------------------------------
+     <copyright file = "$itemname$" company="cn.lxking">
+         Copyright © 2019-2020 Hybrid.All rights reserved.
+     </copyright>
+	 <site>https://www.lxking.cn</site>
+     <last-editor>ArcherTrister</last-editor>
+     <last-date>$time$</last-date>
+    -----------------------------------------------------------------------
+*@
