@@ -9,8 +9,8 @@
 
 using ESoftor.Core.EntityInfos;
 using ESoftor.Core.Functions;
-using ESoftor.Permission.Security;
-using ESoftor.Permission.Security.Dtos;
+using ESoftor.Zero.Security;
+using ESoftor.Zero.Security.Dtos;
 using ESoftor.Security;
 using ESoftor.Web.Security;
 using ESoftor.Web.Security.Dtos;

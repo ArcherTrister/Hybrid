@@ -13,8 +13,6 @@ using Microsoft.Extensions.Logging;
 
 using System.Threading.Tasks;
 
-using IHostingEnvironment = Microsoft.AspNetCore.Hosting.IHostingEnvironment;
-
 namespace IdentityServer4.Quickstart.UI
 {
     [SecurityHeaders]
@@ -22,10 +20,10 @@ namespace IdentityServer4.Quickstart.UI
     public class HomeController : MvcController
     {
         private readonly IIdentityServerInteractionService _interaction;
-        private readonly IHostingEnvironment _environment;
+        private readonly IWebHostEnvironment _environment;
         private readonly ILogger _logger;
 
-        public HomeController(IIdentityServerInteractionService interaction, IHostingEnvironment environment, ILogger<HomeController> logger)
+        public HomeController(IIdentityServerInteractionService interaction, IWebHostEnvironment environment, ILogger<HomeController> logger)
         {
             _interaction = interaction;
             _environment = environment;

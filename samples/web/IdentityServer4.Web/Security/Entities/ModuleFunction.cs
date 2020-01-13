@@ -8,7 +8,7 @@
 // -----------------------------------------------------------------------
 
 using ESoftor.Core.Functions;
-using ESoftor.Permission.Security;
+using ESoftor.Zero.Security;
 
 using System;
 using System.ComponentModel;

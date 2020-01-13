@@ -8,7 +8,7 @@
 // -----------------------------------------------------------------------
 
 using ESoftor.Domain.Repositories;
-using ESoftor.Permission.Identity;
+using ESoftor.Zero.Identity;
 using ESoftor.Web.Identity.Entity;
 
 using Microsoft.AspNetCore.Identity;

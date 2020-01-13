@@ -1,6 +1,6 @@
 ﻿using ESoftor.Collections;
 using ESoftor.Data;
-using ESoftor.Permission.Identity.Extensions;
+using ESoftor.Zero.Identity.Extensions;
 using ESoftor.Web.Identity.Dto;
 using ESoftor.Web.Identity.Entity;
 

@@ -9,7 +9,6 @@
 
 using ESoftor.Core.Modules;
 using ESoftor.Exceptions;
-
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
@@ -32,10 +31,10 @@ namespace ESoftor.AspNetCore
         [EditorBrowsable(EditorBrowsableState.Never)]
         public override void UseModule(IServiceProvider provider)
         {
-            IHostingEnvironment environment = provider.GetService<IHostingEnvironment>();
+            IWebHostEnvironment environment = provider.GetService<IWebHostEnvironment>();
             if (environment != null)
             {
-                throw new ESoftorException("当前处于AspNetCore环境，请使用UseModule(IApplicationBuilder)进行初始化");
+                throw new ESoftorException("当前处于AspNetCore环境，请使用UsePack(IApplicationBuilder)进行初始化");
             }
             base.UseModule(provider);
         }

@@ -8,7 +8,7 @@
 // -----------------------------------------------------------------------
 
 using ESoftor.Mapping;
-using ESoftor.Permission.Identity.Dtos;
+using ESoftor.Zero.Identity.Dtos;
 using ESoftor.Web.Identity.Entity;
 
 using System;

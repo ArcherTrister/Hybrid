@@ -11,8 +11,8 @@ using ESoftor.Data;
 using ESoftor.Domain.Repositories;
 using ESoftor.EventBuses;
 using ESoftor.Extensions;
-using ESoftor.Permission.Identity;
-using ESoftor.Permission.Identity.Extensions;
+using ESoftor.Zero.Identity;
+using ESoftor.Zero.Identity.Extensions;
 using ESoftor.Web.Identity.Dto;
 using ESoftor.Web.Identity.Entity;
 

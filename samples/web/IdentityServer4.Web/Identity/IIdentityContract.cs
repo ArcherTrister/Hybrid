@@ -7,7 +7,7 @@
 // -----------------------------------------------------------------------
 
 using ESoftor.Data;
-using ESoftor.Permission.Identity;
+using ESoftor.Zero.Identity;
 using ESoftor.Web.Identity.Dto;
 using ESoftor.Web.Identity.Entity;
 

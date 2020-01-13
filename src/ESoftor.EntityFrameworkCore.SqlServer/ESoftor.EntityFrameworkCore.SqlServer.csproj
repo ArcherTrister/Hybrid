@@ -3,7 +3,7 @@
   <Import Project="..\..\build\packages.props" />
   
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>ESoftor.EntityFrameworkCore.SqlServer</RootNamespace>
   </PropertyGroup>
 
@@ -18,7 +18,8 @@
   </PropertyGroup>
   
   <ItemGroup>
-    <PackageReference Include="microsoft.entityframeworkCore.SqlServer" Version="2.2.6" />
+    <PackageReference Include="microsoft.entityframeworkCore.SqlServer" Version="3.1.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.0" />
   </ItemGroup>
 
   <ItemGroup>

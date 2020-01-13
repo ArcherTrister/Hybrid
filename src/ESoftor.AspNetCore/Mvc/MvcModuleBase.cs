@@ -11,7 +11,6 @@ using ESoftor.AspNetCore.Mvc.Filters;
 using ESoftor.Core.Modules;
 
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 
 using Newtonsoft.Json.Serialization;
@@ -37,18 +36,32 @@ namespace ESoftor.AspNetCore.Mvc
         public override IServiceCollection AddServices(IServiceCollection services)
         {
             services = AddCors(services);
-            services.AddMvc(options =>
+
+            //services.AddMvc(options =>
+            //{
+            //    //options.Conventions.Add(new DashedRoutingConvention());
+            //    //options.Filters.Add(new OnlineUserAuthorizationFilter()); // 构建在线用户信息
+            //    options.Filters.Add(new FunctionAuthorizationFilter()); // 全局功能权限过滤器
+            //    options.Filters.Add(new OperateAuditFilter());
+            //    options.Filters.Add(new MvcUnitOfWorkFilter());
+            //    options.Filters.Add(new PageUnitOfWorkFilter());
+            //}).AddJsonOptions(options =>
+            //{
+            //    options.SerializerSettings.ContractResolver = new DefaultContractResolver();
+            //}).SetCompatibilityVersion(CompatibilityVersion.Latest);
+
+            services.AddControllersWithViews(options =>
             {
-                //options.Conventions.Add(new DashedRoutingConvention());
-                //options.Filters.Add(new OnlineUserAuthorizationFilter()); // 构建在线用户信息
+                //    //options.Conventions.Add(new DashedRoutingConvention());
+                //    //options.Filters.Add(new OnlineUserAuthorizationFilter()); // 构建在线用户信息
                 options.Filters.Add(new FunctionAuthorizationFilter()); // 全局功能权限过滤器
                 options.Filters.Add(new OperateAuditFilter());
                 options.Filters.Add(new MvcUnitOfWorkFilter());
                 options.Filters.Add(new PageUnitOfWorkFilter());
-            }).AddJsonOptions(options =>
+            }).AddNewtonsoftJson(options =>
             {
                 options.SerializerSettings.ContractResolver = new DefaultContractResolver();
-            }).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            });
 
             //services.AddScoped<OperateAuditFilter>();
             services.AddScoped<MvcUnitOfWorkFilter>();
@@ -65,8 +78,9 @@ namespace ESoftor.AspNetCore.Mvc
         /// <param name="app">应用程序构建器</param>
         public override void UseModule(IApplicationBuilder app)
         {
+            app.UseRouting();
             UseCors(app);
-            app.UseMvcWithAreaRoute();
+            //app.UseMvcWithAreaRoute();
             IsEnabled = true;
         }
 

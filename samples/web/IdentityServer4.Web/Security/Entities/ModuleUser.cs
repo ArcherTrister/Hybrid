@@ -7,7 +7,7 @@
 //  <last-date>2019-01-06 15:25</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Permission.Security;
+using ESoftor.Zero.Security;
 using ESoftor.Web.Identity.Entity;
 
 using System;

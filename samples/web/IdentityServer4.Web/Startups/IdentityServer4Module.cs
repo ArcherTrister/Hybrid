@@ -10,14 +10,15 @@
 using ESoftor.Core.Options;
 using ESoftor.Data;
 using ESoftor.Exceptions;
-using ESoftor.Permission.IdentityServer4;
+using ESoftor.Zero.IdentityServer4;
 using ESoftor.Web.Identity;
 using ESoftor.Web.Identity.Entity;
+
 using IdentityServer4;
 using IdentityServer4.Configuration;
 
 using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -38,7 +39,7 @@ namespace ESoftor.Web.Startups
         /// 获取 模块启动顺序，模块启动的顺序先按级别启动，级别内部再按此顺序启动，
         /// 级别默认为0，表示无依赖，需要在同级别有依赖顺序的时候，再重写为>0的顺序值
         /// </summary>
-        public override int Order => 0;
+        public override int Order => 1;
 
         /// <summary>
         /// 将模块服务添加到依赖注入服务容器中
@@ -52,25 +53,25 @@ namespace ESoftor.Web.Startups
             return base.AddServices(services);
         }
 
-        ///// <summary>
-        ///// 重写以实现<see cref="IdentityOptions"/>的配置
-        ///// </summary>
-        ///// <returns></returns>
-        //protected override Action<IdentityOptions> IdentityOptionsAction()
-        //{
-        //    return options =>
-        //    {
-        //        //登录
-        //        options.SignIn.RequireConfirmedEmail = false;
-        //        //密码
-        //        options.Password.RequireNonAlphanumeric = false;
-        //        options.Password.RequireUppercase = false;
-        //        //用户
-        //        options.User.RequireUniqueEmail = false;
-        //        //锁定
-        //        options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(15);
-        //    };
-        //}
+        /// <summary>
+        /// 重写以实现<see cref="IdentityOptions"/>的配置
+        /// </summary>
+        /// <returns></returns>
+        protected override Action<IdentityOptions> IdentityOptionsAction()
+        {
+            return options =>
+            {
+                //登录
+                options.SignIn.RequireConfirmedEmail = false;
+                //密码
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = false;
+                //用户
+                options.User.RequireUniqueEmail = false;
+                //锁定
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(15);
+            };
+        }
 
         /// <summary>
         /// 重写以实现<see cref="IdentityServerOptions"/>的配置
@@ -125,9 +126,7 @@ namespace ESoftor.Web.Startups
 
             JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
 
-            AuthenticationBuilder authenticationBuilder = services.AddAuthentication(options=> {
-                options.DefaultAuthenticateScheme = IdentityServerConstants.DefaultCookieAuthenticationScheme;
-            });
+            AuthenticationBuilder authenticationBuilder = services.AddAuthentication();
             // 1.如果在本项目中使用webapi则添加，并且在UseModule中不能使用app.UseAuthentication
             // 2.在webapi上添加[Authorize(AuthenticationSchemes = IdentityServerConstants.LocalApi.AuthenticationScheme)]标记
             // 3.在本框架中使用ESoftorConstants.LocalApi.AuthenticationScheme
@@ -225,19 +224,6 @@ namespace ESoftor.Web.Startups
             //            options.EnableTokenCleanup = true;
             //            options.TokenCleanupInterval = 30; // interval in seconds
             //        });
-        }
-
-        /// <summary>
-        /// 应用模块服务
-        /// </summary>
-        /// <param name="app">应用程序构建器</param>
-        public override void UseModule(IApplicationBuilder app)
-        {
-            app.UseIdentityServer();
-
-            //app.UseAuthentication();
-
-            IsEnabled = true;
         }
     }
 }

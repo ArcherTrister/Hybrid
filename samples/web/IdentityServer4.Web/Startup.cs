@@ -16,7 +16,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-
+using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Swagger;
 
 using System;
@@ -48,52 +49,111 @@ namespace ESoftor.Web
             //Add-Migration Init -Verbose -o Data/Migrations
             services.AddESoftor<AspESoftorModuleManager>();
 
+            //services.AddSwaggerGen(options =>
+            //{
+            //    options.SwaggerDoc("v1", new Info { Title = "esoftor web api", Version = "v1" });
+            //    Directory.GetFiles(AppDomain.CurrentDomain.BaseDirectory, "*.xml").ToList().ForEach(file =>
+            //    {
+            //        options.IncludeXmlComments(file);
+            //    });
+            //    //向生成的Swagger添加一个或多个“securityDefinitions”，用于API的登录校验
+            //    //权限Token
+            //    options.AddSecurityDefinition("Bearer", new ApiKeyScheme
+            //    {
+            //        Description = "JWT Bearer 授权 \"Authorization:     Bearer+空格+token\"",
+            //        Name = "Authorization",
+            //        In = "header",
+            //        Type = "apiKey"
+            //    });
+            //    options.AddSecurityDefinition("IdentityServer",
+            //        new OAuth2Scheme
+            //        {
+            //            Type = "oauth2",
+            //            Flow = "implicit",
+            //            AuthorizationUrl = "http://localhost:5002/connect/authorize",
+            //            Scopes = new Dictionary<string, string>
+            //            {
+            //                { ESoftorConstants.LocalApi.ScopeName, "IdentityServerApi授权" }
+            //            }
+            //        });
+
+            //    var securityRequirement = new Dictionary<string, IEnumerable<string>>
+            //    {
+            //        {"Bearer", new List<string>()},
+            //        {"IdentityServer", new List<string> { "openid", "profile", "UserServicesApi" }}
+            //    };
+
+            //    options.AddSecurityRequirement(securityRequirement);
+            //    options.OperationFilter<AuthorizeCheckOperationFilter>();// 添加IdentityServer4认证过滤
+            //});
+
+            services.AddMvcCore().AddApiExplorer();
             services.AddSwaggerGen(options =>
             {
-                options.SwaggerDoc("v1", new Info { Title = "esoftor web api", Version = "v1" });
+                options.SwaggerDoc($"v1", new OpenApiInfo() { Title = "esoftor web api", Version = "v1" });
+
                 Directory.GetFiles(AppDomain.CurrentDomain.BaseDirectory, "*.xml").ToList().ForEach(file =>
                 {
                     options.IncludeXmlComments(file);
                 });
+
                 //向生成的Swagger添加一个或多个“securityDefinitions”，用于API的登录校验
                 //权限Token
-                options.AddSecurityDefinition("Bearer", new ApiKeyScheme
+                options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
                 {
-                    Description = "JWT Bearer 授权 \"Authorization:     Bearer+空格+token\"",
+                    Description = "请输入带有Bearer的Token，形如 “Bearer {Token}” ",
                     Name = "Authorization",
-                    In = "header",
-                    Type = "apiKey"
+                    In = ParameterLocation.Header,
+                    Type = SecuritySchemeType.ApiKey
                 });
-                options.AddSecurityDefinition("IdentityServer",
-                    new OAuth2Scheme
-                    {
-                        Type = "oauth2",
-                        Flow = "implicit",
-                        AuthorizationUrl = "http://localhost:5002/connect/authorize",
-                        Scopes = new Dictionary<string, string>
-                        {
-                            { ESoftorConstants.LocalApi.ScopeName, "IdentityServerApi授权" }
-                        }
-                    });
-
-                var securityRequirement = new Dictionary<string, IEnumerable<string>>
+                options.AddSecurityDefinition("IdentityServer", new OpenApiSecurityScheme
                 {
-                    {"Bearer", new List<string>()},
-                    {"IdentityServer", new List<string> { "openid", "profile", "UserServicesApi" }}
-                };
+                    Type = SecuritySchemeType.OAuth2,
+                    Flows = new OpenApiOAuthFlows
+                    {
+                        Implicit = new OpenApiOAuthFlow
+                        {
+                            //授权地址
+                            AuthorizationUrl = new Uri("http://localhost:5002/connect/authorize"),
+                            TokenUrl = new Uri("http://localhost:5002/connect/token"),
+                            Scopes = new Dictionary<string, string>
+                            {
+                                { "IdentityServerApi", "IdentityServerApi授权" },
+                            }
+                        }
+                    }
+                });
 
-                options.AddSecurityRequirement(securityRequirement);
-                options.OperationFilter<AuthorizeCheckOperationFilter>();// 添加IdentityServer4认证过滤
+                options.AddSecurityRequirement(new OpenApiSecurityRequirement
+                  {
+                      {
+                          new OpenApiSecurityScheme
+                          {
+                              Reference = new OpenApiReference { Type = ReferenceType.SecurityScheme, Id = "Bearer" }
+                          },
+                          new List<string>()
+                      },
+                      {
+                          new OpenApiSecurityScheme
+                          {
+                              Reference = new OpenApiReference { Type = ReferenceType.SecurityScheme, Id = "IdentityServer" }
+                          },
+                          new[] { "readAccess", "writeAccess" }
+                      }
+                  });
+
+                options.OperationFilter<AuthorizeCheckOperationFilter>(); // 添加IdentityServer4认证过滤
+
             });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseDatabaseErrorPage();
+                //app.UseDatabaseErrorPage();
             }
             else
             {

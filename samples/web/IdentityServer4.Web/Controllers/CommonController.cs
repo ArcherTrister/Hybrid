@@ -42,10 +42,10 @@ namespace IdentityServer4.Web.Controllers
     public class CommonController : LocalApiController
     {
         private readonly IVerifyCodeService _verifyCodeService;
-        private readonly IHostingEnvironment _environment;
+        private readonly IWebHostEnvironment _environment;
 
         public CommonController(
-            IHostingEnvironment environment,
+            IWebHostEnvironment environment,
             IVerifyCodeService verifyCodeService
             )
         {

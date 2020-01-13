@@ -3,7 +3,7 @@
   <Import Project="..\..\build\packages.props" />
   
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>ESoftor.AspNetCore</RootNamespace>
   </PropertyGroup>
 
@@ -16,14 +16,21 @@
     <DocumentationFile>bin\Release\ESoftor.AspNetCore.xml</DocumentationFile>
     <OutputPath>bin\Release</OutputPath>
   </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
   
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.HttpsPolicy" Version="2.2.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <ProjectReference Include="..\ESoftor\ESoftor.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ESoftor\ESoftor.csproj" />
+    <Folder Include="SignalR\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.0" />
   </ItemGroup>
 
 </Project>

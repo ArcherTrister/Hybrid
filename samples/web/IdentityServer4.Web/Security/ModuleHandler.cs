@@ -7,7 +7,7 @@
 //  <last-date>2018-06-27 4:44</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Permission.Security;
+using ESoftor.Zero.Security;
 using ESoftor.Web.Security.Dtos;
 using ESoftor.Web.Security.Entities;
 

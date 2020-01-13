@@ -8,7 +8,7 @@
 // -----------------------------------------------------------------------
 
 using ESoftor.Core.EntityInfos;
-using ESoftor.Permission.Security;
+using ESoftor.Zero.Security;
 using ESoftor.Web.Identity.Entity;
 
 using System;

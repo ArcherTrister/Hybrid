@@ -7,7 +7,7 @@
 //  <last-date>2018-06-27 4:44</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Permission.Identity;
+using ESoftor.Zero.Identity;
 
 using System;
 using System.Collections.Generic;

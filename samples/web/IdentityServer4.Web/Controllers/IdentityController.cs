@@ -1,10 +1,10 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="IdentityController.cs" company="com.esoftor">
-//      Copyright © 2019-2020 ESoftor. All rights reserved.
-//  </copyright>
-//  <site>https://www.lxking.cn</site>
-//  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2018-08-02 17:56</last-date>
+// <copyright file="IdentityController.cs" company="com.esoftor">
+//     Copyright © 2019-2020 ESoftor. All rights reserved.
+// </copyright>
+// <site>https://www.lxking.cn</site>
+// <last-editor>ArcherTrister</last-editor>
+// <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
 using ESoftor.AspNetCore.Extensions;
@@ -24,8 +24,8 @@ using ESoftor.Identity.JwtBearer.Dtos;
 using ESoftor.Json;
 using ESoftor.Mapping;
 using ESoftor.Net;
-using ESoftor.Permission.Identity;
-using ESoftor.Permission.Identity.Extensions;
+using ESoftor.Zero.Identity;
+using ESoftor.Zero.Identity.Extensions;
 using ESoftor.Security.Claims;
 using ESoftor.Web.Identity;
 using ESoftor.Web.Identity.Dto;
@@ -76,7 +76,7 @@ namespace IdentityServer4.Web.Controllers
         [Description("用户名是否存在")]
         public bool CheckUserNameExists(string userName)
         {
-            bool exists = _userManager.Users.Any(m => m.NormalizedUserName == _userManager.NormalizeKey(userName));
+            bool exists = _userManager.Users.Any(m => m.NormalizedUserName == _userManager.NormalizeName(userName));
             return exists;
         }
 
@@ -89,7 +89,7 @@ namespace IdentityServer4.Web.Controllers
         [Description("用户Email是否存在")]
         public bool CheckEmailExists(string email)
         {
-            bool exists = _userManager.Users.Any(m => m.NormalizedEmail == _userManager.NormalizeKey(email));
+            bool exists = _userManager.Users.Any(m => m.NormalizedEmail == _userManager.NormalizeEmail(email));
             return exists;
         }
 
