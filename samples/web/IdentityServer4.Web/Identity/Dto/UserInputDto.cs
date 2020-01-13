@@ -1,10 +1,10 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="UserInputDto.cs" company="cn.lxking">
-//      Copyright © 2019-2020 ESoftor. All rights reserved.
-//  </copyright>
-//  <site>https://www.lxking.cn</site>
-//  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2018-06-27 4:44</last-date>
+// <copyright file="UserInputDto.cs" company="cn.lxking">
+//     Copyright © 2019-2020 ESoftor. All rights reserved.
+// </copyright>
+// <site>https://www.lxking.cn</site>
+// <last-editor>ArcherTrister</last-editor>
+// <last-date>2018-06-27 4:44</last-date>
 // -----------------------------------------------------------------------
 
 using ESoftor.Mapping;

@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <Import Project="..\..\build\packages.props" />
-  
+
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>ESoftor.Permission</RootNamespace>
@@ -16,7 +16,13 @@
     <DocumentationFile>bin\Release\ESoftor.Zero.xml</DocumentationFile>
     <OutputPath>bin\Release</OutputPath>
   </PropertyGroup>
-  
+
+  <ItemGroup>
+    <Compile Remove="UI\**" />
+    <EmbeddedResource Remove="UI\**" />
+    <None Remove="UI\**" />
+  </ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="IdentityServer4" Version="3.1.0" />
     <PackageReference Include="IdentityServer4.AspNetIdentity" Version="3.1.0" />
@@ -31,9 +37,4 @@
     <ProjectReference Include="..\ESoftor.AspNetCore\ESoftor.AspNetCore.csproj" />
     <ProjectReference Include="..\ESoftor\ESoftor.csproj" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="IdentityServer4\UI\" />
-  </ItemGroup>
-
 </Project>

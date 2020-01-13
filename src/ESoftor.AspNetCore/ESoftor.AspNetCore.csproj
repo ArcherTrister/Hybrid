@@ -18,15 +18,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="SignalR\**" />
+    <EmbeddedResource Remove="SignalR\**" />
+    <None Remove="SignalR\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
   
   <ItemGroup>
     <ProjectReference Include="..\ESoftor\ESoftor.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="SignalR\" />
   </ItemGroup>
 
   <ItemGroup>
