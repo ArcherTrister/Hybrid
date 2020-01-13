@@ -13,15 +13,11 @@ using ESoftor.Exceptions;
 using ESoftor.Permission.IdentityServer4;
 using ESoftor.Web.Identity;
 using ESoftor.Web.Identity.Entity;
-
+using IdentityServer4;
 using IdentityServer4.Configuration;
 
 using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -56,25 +52,25 @@ namespace ESoftor.Web.Startups
             return base.AddServices(services);
         }
 
-        /// <summary>
-        /// 重写以实现<see cref="IdentityOptions"/>的配置
-        /// </summary>
-        /// <returns></returns>
-        protected override Action<IdentityOptions> IdentityOptionsAction()
-        {
-            return options =>
-            {
-                //登录
-                options.SignIn.RequireConfirmedEmail = false;
-                //密码
-                options.Password.RequireNonAlphanumeric = false;
-                options.Password.RequireUppercase = false;
-                //用户
-                options.User.RequireUniqueEmail = false;
-                //锁定
-                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(15);
-            };
-        }
+        ///// <summary>
+        ///// 重写以实现<see cref="IdentityOptions"/>的配置
+        ///// </summary>
+        ///// <returns></returns>
+        //protected override Action<IdentityOptions> IdentityOptionsAction()
+        //{
+        //    return options =>
+        //    {
+        //        //登录
+        //        options.SignIn.RequireConfirmedEmail = false;
+        //        //密码
+        //        options.Password.RequireNonAlphanumeric = false;
+        //        options.Password.RequireUppercase = false;
+        //        //用户
+        //        options.User.RequireUniqueEmail = false;
+        //        //锁定
+        //        options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(15);
+        //    };
+        //}
 
         /// <summary>
         /// 重写以实现<see cref="IdentityServerOptions"/>的配置
@@ -84,10 +80,25 @@ namespace ESoftor.Web.Startups
         {
             return options =>
             {
+                //Authentication
+                ////设置用于交互用户的主机所混杂的cookie创作方案。如果未设置，则该方案将从主机的默认身份验证方案中推断。当主机中使用AddPolicyScheme作为默认方案时，通常使用此设置。
+                //options.Authentication.CookieAuthenticationScheme = IdentityServerConstants.DefaultCheckSessionCookieName;
+                //用于检查会话终结点的cookie的名称。默认为idsrv.session
+                //options.Authentication.CheckSessionCookieName = "";
+                //身份验证cookie生存期(只有在使用IdghtyServer提供的cookie处理程序时才有效)。
+                options.Authentication.CookieLifetime = TimeSpan.FromMinutes(720);
+                //指定Cookie是否应该是滑动的(只有在使用IdghtyServer提供的Cookie处理程序时才有效)。
+                options.Authentication.CookieSlidingExpiration = true;
+                //指示用户是否必须通过身份验证才能接受结束会话终结点的参数。默认为false。
+                //options.Authentication.RequireAuthenticatedUserForSignOutMessage = false;
+                //如果设置，将需要在结束会话回调端点上发出帧-src csp报头，该端点将iframes呈现给客户端以进行前端通道签名通知。默认为true。
+                //options.Authentication.RequireCspFrameSrcForSignout = true;
+
                 options.Events.RaiseErrorEvents = true;
                 options.Events.RaiseFailureEvents = true;
                 options.Events.RaiseInformationEvents = true;
                 options.Events.RaiseSuccessEvents = true;
+
                 options.UserInteraction = new UserInteractionOptions
                 {
                     LoginUrl = "/Account/Login",//【必备】登录地址
@@ -105,24 +116,6 @@ namespace ESoftor.Web.Startups
         }
 
         /// <summary>
-        /// 重写以实现<see cref="CookieAuthenticationOptions"/>的配置
-        /// </summary>
-        /// <returns></returns>
-        protected override Action<CookieAuthenticationOptions> CookieOptionsAction()
-        {
-            return options =>
-            {
-                options.AccessDeniedPath = new PathString("/Account/AccessDenied");
-                options.Cookie.Name = "esoftor.identity";
-                options.Cookie.HttpOnly = true;
-                options.ExpireTimeSpan = TimeSpan.FromMinutes(720);
-                options.LoginPath = new PathString("/Account/Login");
-                options.ReturnUrlParameter = CookieAuthenticationDefaults.ReturnUrlParameter;
-                options.SlidingExpiration = true;
-            };
-        }
-
-        /// <summary>
         /// 添加Authentication服务
         /// </summary>
         /// <param name="services">服务集合</param>
@@ -131,15 +124,16 @@ namespace ESoftor.Web.Startups
             IConfiguration configuration = services.GetConfiguration();
 
             JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
-            // JwtBearer
-            AuthenticationBuilder authenticationBuilder = services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme);
-            authenticationBuilder.AddCookie(CookieAuthenticationDefaults.AuthenticationScheme);
+
+            AuthenticationBuilder authenticationBuilder = services.AddAuthentication(options=> {
+                options.DefaultAuthenticateScheme = IdentityServerConstants.DefaultCookieAuthenticationScheme;
+            });
             // 1.如果在本项目中使用webapi则添加，并且在UseModule中不能使用app.UseAuthentication
             // 2.在webapi上添加[Authorize(AuthenticationSchemes = IdentityServerConstants.LocalApi.AuthenticationScheme)]标记
             // 3.在本框架中使用ESoftorConstants.LocalApi.AuthenticationScheme
             authenticationBuilder.AddLocalApi(ESoftorConstants.LocalApi.AuthenticationScheme, 
                 options => 
-                { 
+                {
                     options.ExpectedScope = ESoftorConstants.LocalApi.ScopeName;
                     options.SaveToken = true;
                 });
@@ -192,20 +186,6 @@ namespace ESoftor.Web.Startups
                         //    break;
                 }
             }
-        }
-
-        /// <summary>
-        /// 重写以实现 AddIdentity 之后的构建逻辑
-        /// </summary>
-        /// <param name="builder"></param>
-        /// <returns></returns>
-        protected override IdentityBuilder AddIdentityBuild(IdentityBuilder builder)
-        {
-            //如需要昵称唯一，启用下面这个验证码
-            //builder.AddUserValidator<UserNickNameValidator<User, Guid>>();
-            //builder.AddClaimsPrincipalFactory<UserClaimsPrincipalFactory<User, Role>>();
-            //builder.AddDefaultUI();
-            return builder.AddDefaultTokenProviders();
         }
 
         /// <summary>

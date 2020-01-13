@@ -21,6 +21,7 @@ namespace ESoftor.AspNetCore.Mvc.Filters
     {
         public Task OnAuthorizationAsync(AuthorizationFilterContext context)
         {
+            var user = context.HttpContext.User;
             return Task.CompletedTask;
         }
     }

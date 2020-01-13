@@ -11,7 +11,7 @@ using ESoftor.AspNetCore;
 using ESoftor.Core.Modules;
 using ESoftor.EventBuses;
 using ESoftor.Permission.Identity;
-
+using IdentityServer4;
 using IdentityServer4.Configuration;
 
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -47,40 +47,60 @@ namespace ESoftor.Permission.IdentityServer4
         /// <returns></returns>
         public override IServiceCollection AddServices(IServiceCollection services)
         {
-            Action<IdentityOptions> identityOptionsAction = IdentityOptionsAction();
-            IdentityBuilder builder = services.AddIdentity<TUser, TRole>(identityOptionsAction)
-                .AddUserStore<TUserStore>()
-                .AddRoleStore<TRoleStore>();
-            //.AddClaimsPrincipalFactory<UserClaimsPrincipalFactory<TUser, TRole>>();
+            //IdentityBuilder builder = services.AddIdentity<TUser, TRole>()
+            //    .AddUserStore<TUserStore>()
+            //    .AddRoleStore<TRoleStore>()
+            //    .AddClaimsPrincipalFactory<UserClaimsPrincipalFactory<TUser, TRole>>()
+            //    .AddDefaultTokenProviders();
 
-            services.Replace(new ServiceDescriptor(typeof(IdentityErrorDescriber), typeof(IdentityErrorDescriberZhHans), ServiceLifetime.Scoped));
+            //services.Replace(new ServiceDescriptor(typeof(IdentityErrorDescriber), typeof(IdentityErrorDescriberZhHans), ServiceLifetime.Scoped));
 
-            AddIdentityBuild(builder);
+            ////IdentityServer4
+            //Action<IdentityServerOptions> identityServerOptionsAction = IdentityServerOptionsAction();
+            //var identityBuilder = services.AddIdentityServer(identityServerOptionsAction).AddHybridIdentity<TUser, TUserKey>();
 
-            //IdentityServer4
-            Action<IdentityServerOptions> identityServerOptionsAction = IdentityServerOptionsAction();
-            var identityBuilder = services.AddIdentityServer(identityServerOptionsAction).AddHybridIdentity<TUser, TUserKey>();
+            //AddIdentityServerBuild(identityBuilder, services);
 
-            AddIdentityServerBuild(identityBuilder, services);
+            ////Action<CookieAuthenticationOptions> cookieOptionsAction = CookieOptionsAction();
+            ////if (cookieOptionsAction != null)
+            ////{
+            ////    services.ConfigureApplicationCookie(cookieOptionsAction);
+            ////}
 
-            Action<CookieAuthenticationOptions> cookieOptionsAction = CookieOptionsAction();
-            if (cookieOptionsAction != null)
+            //AddAuthentication(services);
+
+
+            services.AddIdentity<TUser, TRole>()
+            .AddUserStore<TUserStore>()
+            .AddRoleStore<TRoleStore>()
+    .AddDefaultTokenProviders();
+
+            var builder = services.AddIdentityServer(options =>
             {
-                services.ConfigureApplicationCookie(cookieOptionsAction);
-            }
+                options.Events.RaiseErrorEvents = true;
+                options.Events.RaiseInformationEvents = true;
+                options.Events.RaiseFailureEvents = true;
+                options.Events.RaiseSuccessEvents = true;
+            })
+                .AddInMemoryIdentityResources(Config.Ids)
+                .AddInMemoryApiResources(Config.Apis)
+                .AddInMemoryClients(Config.Clients)
+                .AddAspNetIdentity<TUser>()
+                .AddDeveloperSigningCredential(persistKey: false);
 
-            AddAuthentication(services);
+            //// demo versions (never use in production)
+            //services.AddTransient<IRedirectUriValidator, DemoRedirectValidator>();
+            //services.AddTransient<ICorsPolicyService, DemoCorsPolicy>();
+
+
+            services.AddAuthentication()
+                    .AddLocalApi(options =>
+                    {
+                        options.ExpectedScope = IdentityServerConstants.LocalApi.ScopeName;
+                        options.SaveToken = true;
+                    });
 
             return services;
-        }
-
-        /// <summary>
-        /// 重写以实现<see cref="IdentityOptions"/>的配置
-        /// </summary>
-        /// <returns></returns>
-        protected virtual Action<IdentityOptions> IdentityOptionsAction()
-        {
-            return null;
         }
 
         /// <summary>
@@ -116,16 +136,6 @@ namespace ESoftor.Permission.IdentityServer4
         /// <param name="services">服务集合</param>
         protected virtual void AddAuthentication(IServiceCollection services)
         { }
-
-        /// <summary>
-        /// 重写以实现 AddIdentity 之后的构建逻辑
-        /// </summary>
-        /// <param name="builder"></param>
-        /// <returns></returns>
-        protected virtual IdentityBuilder AddIdentityBuild(IdentityBuilder builder)
-        {
-            return builder;
-        }
 
         /// <summary>
         /// 重写以实现 AddIdentityServer 之后的构建逻辑

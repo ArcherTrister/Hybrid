@@ -29,8 +29,8 @@ namespace ESoftor.Permission.Identity
     /// </summary>
     /// <typeparam name="TUser">The type representing a user.</typeparam>
     /// <typeparam name="TRole">The type representing a role.</typeparam>
-    /// <typeparam name="TContext">The type of the data context class used to access the store.</typeparam>
-    /// <typeparam name="TKey">The type of the primary key for a role.</typeparam>
+    /// <typeparam name="TUserKey">The type of the primary key for a user.</typeparam>
+    /// <typeparam name="TRoleKey">The type of the primary key for a role.</typeparam>
     /// <typeparam name="TUserClaim">The type representing a claim.</typeparam>
     /// <typeparam name="TUserRole">The type representing a user role.</typeparam>
     /// <typeparam name="TUserLogin">The type representing a user external login.</typeparam>
@@ -248,7 +248,7 @@ namespace ESoftor.Permission.Identity
         /// Converts the provided <paramref name="id"/> to a strongly typed key object.
         /// </summary>
         /// <param name="id">The id to convert.</param>
-        /// <returns>An instance of <typeparamref name="TKey"/> representing the provided <paramref name="id"/>.</returns>
+        /// <returns>An instance of <typeparamref name="TUserKey"/> representing the provided <paramref name="id"/>.</returns>
         public virtual TUserKey ConvertIdFromString(string id)
         {
             if (id == null)
