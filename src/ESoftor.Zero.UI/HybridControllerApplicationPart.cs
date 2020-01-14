@@ -7,7 +7,7 @@ using System.Reflection;
 
 namespace ESoftor.Zero.UI
 {
-    public class HybridControllerApplicationPart : ApplicationPart, IApplicationPartTypeProvider
+    internal class HybridControllerApplicationPart : ApplicationPart, IApplicationPartTypeProvider
     {
         public IEnumerable<TypeInfo> Types { get; }
 

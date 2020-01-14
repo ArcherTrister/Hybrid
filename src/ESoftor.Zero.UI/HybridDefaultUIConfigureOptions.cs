@@ -32,8 +32,8 @@ namespace ESoftor.Zero.UI
             options.FileProvider = options.FileProvider ?? Environment.WebRootFileProvider;
 
             // Add our provider
-            var filesProvider = new ManifestEmbeddedFileProvider(GetType().Assembly, "Quickstart\\Content");
-            //var filesProvider = new ManifestEmbeddedFileProvider(typeof(HybridDefaultUIConfigureOptions).GetAssembly(), "Quickstart/Content");
+            //var filesProvider = new ManifestEmbeddedFileProvider(GetType().Assembly, "Quickstart\\Content");
+            var filesProvider = new ManifestEmbeddedFileProvider(typeof(HybridDefaultUIConfigureOptions).GetAssembly(), "Quickstart/Content");
             options.FileProvider = new CompositeFileProvider(options.FileProvider, filesProvider);
         }
     }

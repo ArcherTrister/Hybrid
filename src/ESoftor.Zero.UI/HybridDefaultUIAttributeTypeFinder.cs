@@ -33,7 +33,7 @@ namespace ESoftor.Zero.UI
             Assembly[] assemblies = _allAssemblyFinder.FindAll(true);
 
             return assemblies.SelectMany(assembly => assembly.GetTypes())
-                .Where(type => type.IsClass && type.IsAbstract && type.HasAttribute<HybridDefaultUIAttribute>())
+                .Where(type => type.IsClass && type.IsPublic && type.IsAbstract && type.HasAttribute<HybridDefaultUIAttribute>())
                 .Distinct()
                 .Select(p => p.GetTypeInfo())
                 .ToArray();

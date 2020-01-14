@@ -11,9 +11,11 @@ using ESoftor.AspNetCore.Mvc.Filters;
 using ESoftor.Core.Modules;
 
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.Extensions.DependencyInjection;
-
+using Microsoft.Extensions.FileProviders;
 using Newtonsoft.Json.Serialization;
+using System.IO;
 
 namespace ESoftor.AspNetCore.Mvc
 {
@@ -37,20 +39,9 @@ namespace ESoftor.AspNetCore.Mvc
         {
             services = AddCors(services);
 
-            //services.AddMvc(options =>
-            //{
-            //    //options.Conventions.Add(new DashedRoutingConvention());
-            //    //options.Filters.Add(new OnlineUserAuthorizationFilter()); // 构建在线用户信息
-            //    options.Filters.Add(new FunctionAuthorizationFilter()); // 全局功能权限过滤器
-            //    options.Filters.Add(new OperateAuditFilter());
-            //    options.Filters.Add(new MvcUnitOfWorkFilter());
-            //    options.Filters.Add(new PageUnitOfWorkFilter());
-            //}).AddJsonOptions(options =>
-            //{
-            //    options.SerializerSettings.ContractResolver = new DefaultContractResolver();
-            //}).SetCompatibilityVersion(CompatibilityVersion.Latest);
 
-            services.AddControllersWithViews(options =>
+
+            var builder = services.AddControllersWithViews(options =>
             {
                 //    //options.Conventions.Add(new DashedRoutingConvention());
                 //    //options.Filters.Add(new OnlineUserAuthorizationFilter()); // 构建在线用户信息
@@ -62,6 +53,8 @@ namespace ESoftor.AspNetCore.Mvc
             {
                 options.SerializerSettings.ContractResolver = new DefaultContractResolver();
             });
+
+            //services.AddRazorPages();
 
             //services.AddScoped<OperateAuditFilter>();
             services.AddScoped<MvcUnitOfWorkFilter>();

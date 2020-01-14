@@ -76,6 +76,7 @@ namespace WebApplication123
 
         public GenericControllerApplicationPart(IEnumerable<TypeInfo> typeInfos, Type entityType)
         {
+            var aaa = typeInfos.Select(p => p.GetCustomAttribute<UIAttribute>());
             Types = typeInfos.Select(p => p.GetCustomAttribute<UIAttribute>())
                 .Select(m => m.Template.MakeGenericType(entityType))
                 .Select(t => t.GetTypeInfo())

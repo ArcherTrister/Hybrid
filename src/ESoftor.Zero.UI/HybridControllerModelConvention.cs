@@ -13,15 +13,15 @@ using System;
 
 namespace ESoftor.Zero.UI
 {
-    public class HybridControllerModelConvention : IControllerModelConvention
+    internal class HybridControllerModelConvention : IControllerModelConvention
     {
         public void Apply(ControllerModel model)
         {
-            //bool defaultUIAttribute = model.ControllerName.EndsWith("Controller`1", StringComparison.OrdinalIgnoreCase);
-            //if (defaultUIAttribute)
-            //{
-            //    model.ControllerName = model.ControllerType.BaseType.Name;
-            //}
+            bool defaultUIAttribute = model.ControllerName.EndsWith("Controller`1", StringComparison.OrdinalIgnoreCase);
+            if (defaultUIAttribute)
+            {
+                model.ControllerName = model.ControllerType.BaseType.Name;
+            }
         }
     }
 }

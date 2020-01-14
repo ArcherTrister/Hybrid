@@ -10,9 +10,7 @@ namespace ESoftor.Zero.UI.Quickstart
     }
 
     [Route("Hybrid")]
-    //[Route("[controller]")]
-    [ApiExplorerSettings(IgnoreApi = true)]
-    public class HybridController<T> : HybridController where T : class
+    internal class HybridController<T> : HybridController where T : class
     {
         //private readonly IDoService<T> _doService;
         //public TestController(IDoService<T> doService)
