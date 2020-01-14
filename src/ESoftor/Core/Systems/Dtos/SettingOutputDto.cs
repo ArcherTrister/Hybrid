@@ -7,6 +7,7 @@
 //  <last-date>2018-08-24 17:26</last-date>
 // -----------------------------------------------------------------------
 
+using ESoftor.Extensions;
 using ESoftor.Reflection;
 
 namespace ESoftor.Core.Systems.Dtos

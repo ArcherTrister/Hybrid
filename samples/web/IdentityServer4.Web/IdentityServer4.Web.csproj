@@ -8,30 +8,20 @@
 
   <ItemGroup>
     <Compile Remove="Areas\**" />
+    <Compile Remove="Quickstart\**" />
+    <Compile Remove="Views\**" />
     <Content Remove="Areas\**" />
+    <Content Remove="Quickstart\**" />
+    <Content Remove="Views\**" />
     <EmbeddedResource Remove="Areas\**" />
+    <EmbeddedResource Remove="Quickstart\**" />
+    <EmbeddedResource Remove="Views\**" />
     <None Remove="Areas\**" />
+    <None Remove="Quickstart\**" />
+    <None Remove="Views\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Views\Account\AccessDenied.cshtml" />
-    <None Include="Views\Account\LoggedOut.cshtml" />
-    <None Include="Views\Account\Login.cshtml" />
-    <None Include="Views\Account\Logout.cshtml" />
-    <None Include="Views\Consent\Index.cshtml" />
-    <None Include="Views\Device\Success.cshtml" />
-    <None Include="Views\Device\UserCodeCapture.cshtml" />
-    <None Include="Views\Device\UserCodeConfirmation.cshtml" />
-    <None Include="Views\Diagnostics\Index.cshtml" />
-    <None Include="Views\Grants\Index.cshtml" />
-    <None Include="Views\Home\Index.cshtml" />
-    <None Include="Views\Shared\Error.cshtml" />
-    <None Include="Views\Shared\Redirect.cshtml" />
-    <None Include="Views\Shared\_Layout.cshtml" />
-    <None Include="Views\Shared\_ScopeListItem.cshtml" />
-    <None Include="Views\Shared\_ValidationSummary.cshtml" />
-    <None Include="Views\_ViewImports.cshtml" />
-    <None Include="Views\_ViewStart.cshtml" />
     <None Include="wwwroot\css\site.less" />
     <None Include="wwwroot\js\signin-redirect.js" />
     <None Include="wwwroot\js\signout-redirect.js" />
@@ -59,6 +49,7 @@
     <ProjectReference Include="..\..\..\src\ESoftor.AutoMapper\ESoftor.AutoMapper.csproj" />
     <ProjectReference Include="..\..\..\src\ESoftor.EntityFrameworkCore.SqlServer\ESoftor.EntityFrameworkCore.SqlServer.csproj" />
     <ProjectReference Include="..\..\..\src\ESoftor.EntityFrameworkCore\ESoftor.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\..\..\src\ESoftor.Zero.UI\ESoftor.Zero.UI.csproj" />
     <ProjectReference Include="..\..\..\src\ESoftor.Zero\ESoftor.Zero.csproj" />
     <ProjectReference Include="..\..\..\src\ESoftor\ESoftor.csproj" />
   </ItemGroup>

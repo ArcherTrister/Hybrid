@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Attributes\HttpDeleteAttribute.cs" />
+    <Compile Remove="Attributes\HttpMethodAttribute.cs" />
+    <Compile Remove="Conventions\ActionModelConvention.cs" />
+    <Compile Remove="Conventions\ControllerModelConvention.cs" />
+    <Compile Remove="Conventions\ModelConventionHelper.cs" />
+    <Compile Remove="Conventions\ParameterModelConvention.cs" />
+    <Compile Remove="Conventions\Router.cs" />
+    <Compile Remove="GenericDependencyResolver.cs" />
+    <Compile Remove="Providers\ServiceControllerFeatureProvider.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Attributes\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0-preview1.19506.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.0-preview1.19506.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.1.0-preview1.19506.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.0-preview1-19509-03" />
+  </ItemGroup>
+</Project>

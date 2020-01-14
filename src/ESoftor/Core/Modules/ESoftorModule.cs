@@ -7,6 +7,7 @@
 //  <last-date>2018-07-25 12:03</last-date>
 // -----------------------------------------------------------------------
 
+using ESoftor.Extensions;
 using ESoftor.Reflection;
 
 using Microsoft.Extensions.DependencyInjection;

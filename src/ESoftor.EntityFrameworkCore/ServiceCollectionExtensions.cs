@@ -11,6 +11,7 @@ using ESoftor.Core.Options;
 using ESoftor.Dependency;
 using ESoftor.Entity;
 using ESoftor.Exceptions;
+using ESoftor.Extensions;
 using ESoftor.Reflection;
 
 using Microsoft.EntityFrameworkCore;

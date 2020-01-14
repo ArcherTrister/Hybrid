@@ -104,7 +104,7 @@ namespace ESoftor.Web.Startups
                 {
                     LoginUrl = "/Account/Login",//【必备】登录地址
                     LogoutUrl = "/Account/Logout",//【必备】退出地址
-                    ConsentUrl = "/Consent",//【必备】允许授权同意页面地址
+                    ConsentUrl = "/Consent/Index",//【必备】允许授权同意页面地址
                     ErrorUrl = "/Home/Error", //【必备】错误页面地址
                     LoginReturnUrlParameter = "ReturnUrl",//【必备】设置传递给登录页面的返回URL参数的名称。默认为returnUrl
                     LogoutIdParameter = "logoutId", //【必备】设置传递给注销页面的注销消息ID参数的名称。缺省为logoutId
@@ -195,6 +195,7 @@ namespace ESoftor.Web.Startups
         protected override IIdentityServerBuilder AddIdentityServerBuild(IIdentityServerBuilder builder, IServiceCollection services)
         {
             return builder.AddDeveloperSigningCredential()
+                .AddHybridDefaultUI<User>()
                 .AddInMemoryIdentityResources(IdentityServer4Config.GetIdentityResources())
                 .AddInMemoryApiResources(IdentityServer4Config.GetApis())
                 .AddInMemoryClients(IdentityServer4Config.GetClients());

@@ -8,6 +8,7 @@
 // -----------------------------------------------------------------------
 
 using ESoftor.Domain.Entities;
+using ESoftor.Extensions;
 using ESoftor.Reflection;
 
 using System;

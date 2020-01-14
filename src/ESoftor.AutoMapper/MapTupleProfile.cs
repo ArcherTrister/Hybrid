@@ -11,6 +11,7 @@ using AutoMapper;
 
 using ESoftor.Collections;
 using ESoftor.Dependency;
+using ESoftor.Extensions;
 using ESoftor.Mapping;
 using ESoftor.Reflection;
 

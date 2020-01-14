@@ -11,6 +11,7 @@ using ESoftor.Collections;
 using ESoftor.Core.Functions;
 using ESoftor.Data;
 using ESoftor.Domain.Entities;
+using ESoftor.Extensions;
 using ESoftor.Reflection;
 
 using Microsoft.Extensions.DependencyInjection;

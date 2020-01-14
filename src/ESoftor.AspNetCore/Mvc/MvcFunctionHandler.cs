@@ -11,6 +11,7 @@ using ESoftor.AspNetCore.Mvc.Filters;
 using ESoftor.Core;
 using ESoftor.Core.Functions;
 using ESoftor.Exceptions;
+using ESoftor.Extensions;
 using ESoftor.Reflection;
 
 using Microsoft.AspNetCore.Authorization;

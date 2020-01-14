@@ -1,4 +1,4 @@
-// -----------------------------------------------------------------------
+﻿// -----------------------------------------------------------------------
 //  <copyright file="TypeExtensions.cs" company="com.esoftor">
 //      Copyright © 2019-2020 ESoftor. All rights reserved.
 //  </copyright>
@@ -6,9 +6,6 @@
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2015-10-20 13:37</last-date>
 // -----------------------------------------------------------------------
-
-using ESoftor.Data;
-using ESoftor.Extensions;
 
 using JetBrains.Annotations;
 
@@ -22,13 +19,35 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ESoftor.Reflection
+namespace ESoftor.Extensions
 {
     /// <summary>
     /// 类型<see cref="Type"/>辅助扩展方法类
     /// </summary>
     public static class TypeExtensions
     {
+        public static Assembly GetAssembly(this Type type)
+        {
+            return type.GetTypeInfo().Assembly;
+        }
+
+        public static MethodInfo GetMethod(this Type type, string methodName, int pParametersCount = 0, int pGenericArgumentsCount = 0)
+        {
+            return type
+                .GetMethods()
+                .Where(m => m.Name == methodName).ToList()
+                .Select(m => new
+                {
+                    Method = m,
+                    Params = m.GetParameters(),
+                    Args = m.GetGenericArguments()
+                })
+                .Where(x => x.Params.Length == pParametersCount
+                            && x.Args.Length == pGenericArgumentsCount
+                ).Select(x => x.Method)
+                .First();
+        }
+
         /// <summary>
         /// 判断当前类型是否可由指定类型派生
         /// </summary>
@@ -40,12 +59,9 @@ namespace ESoftor.Reflection
         /// <summary>
         /// 判断当前类型是否可由指定类型派生
         /// </summary>
-        public static bool IsDeriveClassFrom(this Type type, Type baseType, bool canAbstract = false)
+        public static bool IsDeriveClassFrom([NotNull] this Type type, [NotNull]Type baseType, bool canAbstract = false)
         {
-            Check.NotNull(type, nameof(type));
-            Check.NotNull(baseType, nameof(baseType));
-
-            return type.IsClass && (canAbstract || !type.IsAbstract) && type.IsBaseOn(baseType);
+            return type.IsClass && (!canAbstract && !type.IsAbstract) && type.IsBaseOn(baseType);
         }
 
         /// <summary>
@@ -55,7 +71,7 @@ namespace ESoftor.Reflection
         /// <returns> 是返回True，不是返回False </returns>
         public static bool IsNullableType(this Type type)
         {
-            return type != null && type.IsGenericType && type.GetGenericTypeDefinition() == typeof(Nullable<>);
+            return ((type != null) && type.IsGenericType) && (type.GetGenericTypeDefinition() == typeof(Nullable<>));
         }
 
         /// <summary>
@@ -65,7 +81,11 @@ namespace ESoftor.Reflection
         /// <returns> </returns>
         public static Type GetNonNullableType(this Type type)
         {
-            return IsNullableType(type) ? type.GetGenericArguments()[0] : type;
+            if (IsNullableType(type))
+            {
+                return type.GetGenericArguments()[0];
+            }
+            return type;
         }
 
         /// <summary>
@@ -249,16 +269,6 @@ namespace ESoftor.Reflection
         }
 
         /// <summary>
-        /// 返回当前方法信息是否是重写方法
-        /// </summary>
-        /// <param name="method">要判断的方法信息</param>
-        /// <returns>是否是重写方法</returns>
-        public static bool IsOverridden(this MethodInfo method)
-        {
-            return method.GetBaseDefinition().DeclaringType != method.DeclaringType;
-        }
-
-        /// <summary>
         /// 获取类型的全名，附带所在类库
         /// </summary>
         public static string GetFullNameWithModule(this Type type)
@@ -284,9 +294,20 @@ namespace ESoftor.Reflection
             return sb.ToString();
         }
 
+        /// <summary>
+        /// 返回当前方法信息是否是重写方法
+        /// </summary>
+        /// <param name="method">要判断的方法信息</param>
+        /// <returns>是否是重写方法</returns>
+        public static bool IsOverridden(this MethodInfo method)
+        {
+            return method.GetBaseDefinition().DeclaringType != method.DeclaringType;
+        }
+
+
         #region 私有方法
 
-        private static readonly Dictionary<Type, string> _builtInTypeNames = new Dictionary<Type, string>
+        private static readonly Dictionary<Type, string> BuiltInTypeNames = new Dictionary<Type, string>
         {
             { typeof(bool), "bool" },
             { typeof(byte), "byte" },
@@ -317,7 +338,7 @@ namespace ESoftor.Reflection
             {
                 ProcessArrayType(builder, type, fullName);
             }
-            else if (_builtInTypeNames.TryGetValue(type, out var builtInName))
+            else if (BuiltInTypeNames.TryGetValue(type, out var builtInName))
             {
                 builder.Append(builtInName);
             }
@@ -330,14 +351,14 @@ namespace ESoftor.Reflection
         private static void ProcessArrayType(StringBuilder builder, Type type, bool fullName)
         {
             var innerType = type;
-            while (innerType.IsArray)
+            while (innerType != null && innerType.IsArray)
             {
                 innerType = innerType.GetElementType();
             }
 
             ProcessType(builder, innerType, fullName);
 
-            while (type.IsArray)
+            while (type != null && type.IsArray)
             {
                 builder.Append('[');
                 builder.Append(',', type.GetArrayRank() - 1);
@@ -348,44 +369,47 @@ namespace ESoftor.Reflection
 
         private static void ProcessGenericType(StringBuilder builder, Type type, Type[] genericArguments, int length, bool fullName)
         {
-            var offset = type.IsNested ? type.DeclaringType.GetGenericArguments().Length : 0;
-
-            if (fullName)
+            if (type.DeclaringType != null)
             {
-                if (type.IsNested)
-                {
-                    ProcessGenericType(builder, type.DeclaringType, genericArguments, offset, fullName);
-                    builder.Append('+');
-                }
-                else
-                {
-                    builder.Append(type.Namespace);
-                    builder.Append('.');
-                }
-            }
+                int offset = type.IsNested ? type.DeclaringType.GetGenericArguments().Length : 0;
 
-            var genericPartIndex = type.Name.IndexOf('`');
-            if (genericPartIndex <= 0)
-            {
-                builder.Append(type.Name);
-                return;
-            }
-
-            builder.Append(type.Name, 0, genericPartIndex);
-            builder.Append('<');
-
-            for (var i = offset; i < length; i++)
-            {
-                ProcessType(builder, genericArguments[i], fullName);
-                if (i + 1 == length)
+                if (fullName)
                 {
-                    continue;
+                    if (type.IsNested)
+                    {
+                        ProcessGenericType(builder, type.DeclaringType, genericArguments, offset, true);
+                        builder.Append('+');
+                    }
+                    else
+                    {
+                        builder.Append(type.Namespace);
+                        builder.Append('.');
+                    }
                 }
 
-                builder.Append(',');
-                if (!genericArguments[i + 1].IsGenericParameter)
+                var genericPartIndex = type.Name.IndexOf('`');
+                if (genericPartIndex <= 0)
                 {
-                    builder.Append(' ');
+                    builder.Append(type.Name);
+                    return;
+                }
+
+                builder.Append(type.Name, 0, genericPartIndex);
+                builder.Append('<');
+
+                for (var i = offset; i < length; i++)
+                {
+                    ProcessType(builder, genericArguments[i], fullName);
+                    if (i + 1 == length)
+                    {
+                        continue;
+                    }
+
+                    builder.Append(',');
+                    if (!genericArguments[i + 1].IsGenericParameter)
+                    {
+                        builder.Append(' ');
+                    }
                 }
             }
 
@@ -393,5 +417,6 @@ namespace ESoftor.Reflection
         }
 
         #endregion 私有方法
+
     }
 }

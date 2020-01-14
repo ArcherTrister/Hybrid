@@ -9,6 +9,7 @@
 
 using ESoftor.Data;
 using ESoftor.Domain.Entities.Auditing;
+using ESoftor.Extensions;
 using ESoftor.Reflection;
 using ESoftor.Security.Claims;
 

@@ -63,6 +63,7 @@ namespace ESoftor.Zero.IdentityServer4
 
             //IdentityServer4
             Action<IdentityServerOptions> identityServerOptionsAction = IdentityServerOptionsAction();
+
             var identityBuilder = services.AddIdentityServer(identityServerOptionsAction).AddHybridIdentity<TUser, TUserKey>();
 
             AddIdentityServerBuild(identityBuilder, services);

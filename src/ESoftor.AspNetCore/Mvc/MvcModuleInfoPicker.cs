@@ -10,6 +10,7 @@
 using ESoftor.Core.Functions;
 using ESoftor.Core.ModuleInfos;
 using ESoftor.Exceptions;
+using ESoftor.Extensions;
 using ESoftor.Reflection;
 
 using Microsoft.AspNetCore.Mvc;

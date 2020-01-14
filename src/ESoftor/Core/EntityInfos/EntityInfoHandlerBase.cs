@@ -12,6 +12,7 @@ using ESoftor.Data;
 using ESoftor.Dependency;
 using ESoftor.Domain.Entities;
 using ESoftor.Domain.Repositories;
+using ESoftor.Extensions;
 using ESoftor.Reflection;
 
 using Microsoft.Extensions.DependencyInjection;

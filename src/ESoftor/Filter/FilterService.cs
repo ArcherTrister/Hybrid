@@ -9,6 +9,7 @@
 
 using ESoftor.Data;
 using ESoftor.Dependency;
+using ESoftor.Extensions;
 using ESoftor.Linq;
 using ESoftor.Reflection;
 using ESoftor.Security;

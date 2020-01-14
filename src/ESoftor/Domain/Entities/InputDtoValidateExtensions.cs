@@ -8,6 +8,7 @@
 // -----------------------------------------------------------------------
 
 using ESoftor.Data;
+using ESoftor.Extensions;
 using ESoftor.Reflection;
 
 using System;
