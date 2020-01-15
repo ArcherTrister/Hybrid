@@ -20,7 +20,7 @@ namespace Test.Web.Multiple
             bool defaultUIAttribute = model.ControllerName.EndsWith("Controller`2", StringComparison.OrdinalIgnoreCase);
             if (defaultUIAttribute)
             {
-                model.ControllerName = model.ControllerType.BaseType.Name;
+                model.ControllerName = model.ControllerType.BaseType.Name.Replace("Controller", string.Empty);
             }
         }
     }

@@ -23,7 +23,7 @@ namespace ESoftor.Zero.UI
                     model.ControllerName.EndsWith(x, StringComparison.OrdinalIgnoreCase));
             if (defaultUIAttribute)
             {
-                model.ControllerName = model.ControllerType.BaseType.Name;
+                model.ControllerName = model.ControllerType.BaseType.Name.Replace("Controller", string.Empty);
             }
         }
     }

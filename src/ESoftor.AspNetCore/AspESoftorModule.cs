@@ -18,12 +18,6 @@ namespace ESoftor.AspNetCore
     /// </summary>
     public abstract class AspESoftorModule : ESoftorModule
     {
-        //public override IServiceCollection AddModule(IServiceCollection services)
-        //{
-        //    services.AddHttpContextAccessor();
-        //    return services;
-        //}
-
         /// <summary>
         /// 应用AspNetCore的服务业务
         /// </summary>

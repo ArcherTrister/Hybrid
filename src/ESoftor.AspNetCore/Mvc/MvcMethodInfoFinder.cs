@@ -43,7 +43,8 @@ namespace ESoftor.AspNetCore.Mvc
         public MethodInfo[] FindAll(Type type)
         {
             List<Type> types = new List<Type>();
-            while (IsController(type))
+            //while (IsController(type))
+            while (type.IsController())
             {
                 types.AddIfNotExist(type);
                 type = type?.BaseType;
@@ -56,11 +57,12 @@ namespace ESoftor.AspNetCore.Mvc
             return types.SelectMany(m => m.GetMethods(BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly)).ToArray();
         }
 
-        private static bool IsController(Type type)
-        {
-            return type != null && type.IsClass && type.IsPublic && !type.ContainsGenericParameters
-                && !type.IsDefined(typeof(NonControllerAttribute)) && (type.Name.EndsWith("Controller") || type.Name.EndsWith("ControllerBase")
-                    || type.IsDefined(typeof(ControllerAttribute)));
-        }
+        //TODO:
+        //private static bool IsController(Type type)
+        //{
+        //    return type != null && type.IsClass && type.IsPublic && !type.ContainsGenericParameters
+        //        && !type.IsDefined(typeof(NonControllerAttribute)) && (type.Name.EndsWith("Controller") || type.Name.EndsWith("ControllerBase")
+        //            || type.IsDefined(typeof(ControllerAttribute)));
+        //}
     }
 }

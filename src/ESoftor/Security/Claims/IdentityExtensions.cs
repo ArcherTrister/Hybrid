@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="ClaimsIdentityExtensions.cs" company="com.esoftor">
+//  <copyright file="IdentityExtensions.cs" company="com.esoftor">
 //      Copyright © 2019-2020 ESoftor. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -20,7 +20,7 @@ namespace ESoftor.Security.Claims
     /// <summary>
     /// <see cref="ClaimsIdentity"/>扩展操作类
     /// </summary>
-    public static class ClaimsIdentityExtensions
+    public static class IdentityExtensions
     {
         /// <summary>
         /// 获取指定类型的Claim值

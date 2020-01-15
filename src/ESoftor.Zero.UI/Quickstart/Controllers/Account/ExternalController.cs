@@ -30,6 +30,7 @@ namespace ESoftor.Zero.UI.Quickstart
 
     [SecurityHeaders]
     [AllowAnonymous]
+    [Route("External")]
     public class ExternalController<TUser, TUserKey> : ExternalController
         where TUser : UserBase<TUserKey>, new()
         where TUserKey : IEquatable<TUserKey>
@@ -61,6 +62,7 @@ namespace ESoftor.Zero.UI.Quickstart
         /// initiate roundtrip to external authentication provider
         /// </summary>
         [HttpGet]
+        [Route("Challenge")]
         public async Task<IActionResult> Challenge(string provider, string returnUrl)
         {
             if (string.IsNullOrEmpty(returnUrl)) returnUrl = "~/";
@@ -98,6 +100,7 @@ namespace ESoftor.Zero.UI.Quickstart
         /// Post processing of external authentication
         /// </summary>
         [HttpGet]
+        [Route("Callback")]
         public async Task<IActionResult> Callback()
         {
             // read external identity from the temporary cookie

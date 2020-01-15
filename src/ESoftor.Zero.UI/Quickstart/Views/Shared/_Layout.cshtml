@@ -1,9 +1,9 @@
-﻿@using IdentityServer4.Extensions
+﻿@using ESoftor.Security.Claims
 @{
     string name = null;
     if (!true.Equals(ViewData["signed-out"]))
     {
-        name = Context.User?.GetDisplayName();
+        name = Context.User?.Identity.GetUserName();
     }
 }
 <!DOCTYPE html>

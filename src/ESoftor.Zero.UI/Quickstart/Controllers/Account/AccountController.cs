@@ -28,10 +28,12 @@ namespace ESoftor.Zero.UI.Quickstart
     [HybridDefaultUI(typeof(AccountController<,>))]
     public abstract class AccountController : MvcController
     {
+
     }
 
     [SecurityHeaders]
     [AllowAnonymous]
+    [Route("Account")]
     public class AccountController<TUser, TUserKey> : AccountController
         where TUser : UserBase<TUserKey>
         where TUserKey : IEquatable<TUserKey>
@@ -63,6 +65,7 @@ namespace ESoftor.Zero.UI.Quickstart
         /// Entry point into the login workflow
         /// </summary>
         [HttpGet]
+        [Route("Login")]
         public async Task<IActionResult> Login(string returnUrl)
         {
             // build a model so we know what to show on the login page
@@ -82,6 +85,7 @@ namespace ESoftor.Zero.UI.Quickstart
         /// </summary>
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Route("Login")]
         public async Task<IActionResult> Login(LoginInputModel model, string button)
         {
             // check if we are in the context of an authorization request
@@ -165,6 +169,7 @@ namespace ESoftor.Zero.UI.Quickstart
         /// Show logout page
         /// </summary>
         [HttpGet]
+        [Route("Logout")]
         public async Task<IActionResult> Logout(string logoutId)
         {
             // build a model so the logout page knows what to display
@@ -185,6 +190,7 @@ namespace ESoftor.Zero.UI.Quickstart
         /// </summary>
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Route("Logout")]
         public async Task<IActionResult> Logout(LogoutInputModel model)
         {
             // build a model so the logged out page knows what to display
@@ -215,6 +221,7 @@ namespace ESoftor.Zero.UI.Quickstart
         }
 
         [HttpGet]
+        [Route("AccessDenied")]
         public IActionResult AccessDenied()
         {
             return View();

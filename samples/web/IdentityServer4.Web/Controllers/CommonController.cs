@@ -102,7 +102,7 @@ namespace IdentityServer4.Web.Controllers
         {
             string fileName = file.FileName;
             fileName = $"{Path.GetFileNameWithoutExtension(fileName)}-{DateTime.Now:MMddHHmmssff}{Path.GetExtension(fileName)}";
-            string dir = Path.Combine(_environment.WebRootPath, "upload-files");
+            string dir = Path.Combine(_environment.WebRootPath ?? _environment.ContentRootPath, "upload-files");
             DirectoryHelper.CreateIfNotExists(dir);
             string filePath = dir + $"\\{fileName}";
             using (FileStream fs = new FileStream(filePath, FileMode.Create))
