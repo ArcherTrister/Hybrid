@@ -4,9 +4,9 @@
   
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>ESoftor.Zero.UI</RootNamespace>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
     <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
-    <RootNamespace>ESoftor.Zero.UI</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -20,113 +20,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Quickstart\Content\css\bootstrap-table.min.css" />
-    <None Remove="Quickstart\Content\css\bootstrap.min.css" />
-    <None Remove="Quickstart\Content\css\components.css" />
-    <None Remove="Quickstart\Content\css\components.min.css" />
-    <None Remove="Quickstart\Content\css\core.css" />
-    <None Remove="Quickstart\Content\css\core.min.css" />
-    <None Remove="Quickstart\Content\css\dashboard.css" />
-    <None Remove="Quickstart\Content\css\dashboard.min.css" />
-    <None Remove="Quickstart\Content\css\flags.css" />
-    <None Remove="Quickstart\Content\css\font-awesome\css\font-awesome.css" />
-    <None Remove="Quickstart\Content\css\font-awesome\css\font-awesome.min.css" />
-    <None Remove="Quickstart\Content\css\font-awesome\fonts\fontawesome-webfont.eot" />
-    <None Remove="Quickstart\Content\css\font-awesome\fonts\fontawesome-webfont.svg" />
-    <None Remove="Quickstart\Content\css\font-awesome\fonts\fontawesome-webfont.ttf" />
-    <None Remove="Quickstart\Content\css\font-awesome\fonts\fontawesome-webfont.woff" />
-    <None Remove="Quickstart\Content\css\font-awesome\fonts\fontawesome-webfont.woff2" />
-    <None Remove="Quickstart\Content\css\font-awesome\fonts\FontAwesome.otf" />
-    <None Remove="Quickstart\Content\css\ie10-viewport-bug-workaround.css" />
-    <None Remove="Quickstart\Content\css\quartz.css" />
-    <None Remove="Quickstart\Content\css\quartz.min.css" />
-    <None Remove="Quickstart\Content\css\toastr.min.css" />
-    <None Remove="Quickstart\Content\favicon.ico" />
-    <None Remove="Quickstart\Content\fonts\glyphicons-halflings-regular.eot" />
-    <None Remove="Quickstart\Content\fonts\glyphicons-halflings-regular.svg" />
-    <None Remove="Quickstart\Content\fonts\glyphicons-halflings-regular.ttf" />
-    <None Remove="Quickstart\Content\fonts\glyphicons-halflings-regular.woff" />
-    <None Remove="Quickstart\Content\fonts\glyphicons-halflings-regular.woff2" />
-    <None Remove="Quickstart\Content\imgs\flags.png" />
-    <None Remove="Quickstart\Content\js\bootstrap-table-locale-all.min.js" />
-    <None Remove="Quickstart\Content\js\bootstrap-table.min.js" />
-    <None Remove="Quickstart\Content\js\bootstrap.min.js" />
-    <None Remove="Quickstart\Content\js\excanvas.js" />
-    <None Remove="Quickstart\Content\js\excanvas.min.js" />
-    <None Remove="Quickstart\Content\js\highcharts.js" />
-    <None Remove="Quickstart\Content\js\highcharts.min.js" />
-    <None Remove="Quickstart\Content\js\html5shiv.min.js" />
-    <None Remove="Quickstart\Content\js\ie-emulation-modes-warning.js" />
-    <None Remove="Quickstart\Content\js\ie10-viewport-bug-workaround.js" />
-    <None Remove="Quickstart\Content\js\ie8-responsive-file-warning.js" />
-    <None Remove="Quickstart\Content\js\jquery.core.js" />
-    <None Remove="Quickstart\Content\js\jquery.core.min.js" />
-    <None Remove="Quickstart\Content\js\jquery.knob.js" />
-    <None Remove="Quickstart\Content\js\jquery.knob.min.js" />
-    <None Remove="Quickstart\Content\js\jquery.min.js" />
-    <None Remove="Quickstart\Content\js\jquery.validate.min.js" />
-    <None Remove="Quickstart\Content\js\jquery.validate.unobtrusive.min.js" />
-    <None Remove="Quickstart\Content\js\liveloghub.js" />
-    <None Remove="Quickstart\Content\js\moment-with-locales.min.js" />
-    <None Remove="Quickstart\Content\js\moment.min.js" />
-    <None Remove="Quickstart\Content\js\respond.min.js" />
-    <None Remove="Quickstart\Content\js\signalr.min.js" />
-    <None Remove="Quickstart\Content\js\toastr.min.js" />
+    <EmbeddedResource Include="Quickstart\Content\**\*" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Quickstart\Content\css\bootstrap-table.min.css" />
-    <EmbeddedResource Include="Quickstart\Content\css\bootstrap.min.css" />
-    <EmbeddedResource Include="Quickstart\Content\css\components.css" />
-    <EmbeddedResource Include="Quickstart\Content\css\components.min.css" />
-    <EmbeddedResource Include="Quickstart\Content\css\core.css" />
-    <EmbeddedResource Include="Quickstart\Content\css\core.min.css" />
-    <EmbeddedResource Include="Quickstart\Content\css\dashboard.css" />
-    <EmbeddedResource Include="Quickstart\Content\css\dashboard.min.css" />
-    <EmbeddedResource Include="Quickstart\Content\css\flags.css" />
-    <EmbeddedResource Include="Quickstart\Content\css\font-awesome\css\font-awesome.css" />
-    <EmbeddedResource Include="Quickstart\Content\css\font-awesome\css\font-awesome.min.css" />
-    <EmbeddedResource Include="Quickstart\Content\css\font-awesome\fonts\fontawesome-webfont.eot" />
-    <EmbeddedResource Include="Quickstart\Content\css\font-awesome\fonts\fontawesome-webfont.svg" />
-    <EmbeddedResource Include="Quickstart\Content\css\font-awesome\fonts\fontawesome-webfont.ttf" />
-    <EmbeddedResource Include="Quickstart\Content\css\font-awesome\fonts\fontawesome-webfont.woff" />
-    <EmbeddedResource Include="Quickstart\Content\css\font-awesome\fonts\fontawesome-webfont.woff2" />
-    <EmbeddedResource Include="Quickstart\Content\css\font-awesome\fonts\FontAwesome.otf" />
-    <EmbeddedResource Include="Quickstart\Content\css\ie10-viewport-bug-workaround.css" />
-    <EmbeddedResource Include="Quickstart\Content\css\quartz.css" />
-    <EmbeddedResource Include="Quickstart\Content\css\quartz.min.css" />
-    <EmbeddedResource Include="Quickstart\Content\css\toastr.min.css" />
-    <EmbeddedResource Include="Quickstart\Content\favicon.ico" />
-    <EmbeddedResource Include="Quickstart\Content\fonts\glyphicons-halflings-regular.eot" />
-    <EmbeddedResource Include="Quickstart\Content\fonts\glyphicons-halflings-regular.svg" />
-    <EmbeddedResource Include="Quickstart\Content\fonts\glyphicons-halflings-regular.ttf" />
-    <EmbeddedResource Include="Quickstart\Content\fonts\glyphicons-halflings-regular.woff" />
-    <EmbeddedResource Include="Quickstart\Content\fonts\glyphicons-halflings-regular.woff2" />
-    <EmbeddedResource Include="Quickstart\Content\imgs\flags.png" />
-    <EmbeddedResource Include="Quickstart\Content\js\bootstrap-table-locale-all.min.js" />
-    <EmbeddedResource Include="Quickstart\Content\js\bootstrap-table.min.js" />
-    <EmbeddedResource Include="Quickstart\Content\js\bootstrap.min.js" />
-    <EmbeddedResource Include="Quickstart\Content\js\excanvas.js" />
-    <EmbeddedResource Include="Quickstart\Content\js\excanvas.min.js" />
-    <EmbeddedResource Include="Quickstart\Content\js\highcharts.js" />
-    <EmbeddedResource Include="Quickstart\Content\js\highcharts.min.js" />
-    <EmbeddedResource Include="Quickstart\Content\js\html5shiv.min.js" />
-    <EmbeddedResource Include="Quickstart\Content\js\ie-emulation-modes-warning.js" />
-    <EmbeddedResource Include="Quickstart\Content\js\ie10-viewport-bug-workaround.js" />
-    <EmbeddedResource Include="Quickstart\Content\js\ie8-responsive-file-warning.js" />
-    <EmbeddedResource Include="Quickstart\Content\js\jquery.core.js" />
-    <EmbeddedResource Include="Quickstart\Content\js\jquery.core.min.js" />
-    <EmbeddedResource Include="Quickstart\Content\js\jquery.knob.js" />
-    <EmbeddedResource Include="Quickstart\Content\js\jquery.knob.min.js" />
-    <EmbeddedResource Include="Quickstart\Content\js\jquery.min.js" />
-    <EmbeddedResource Include="Quickstart\Content\js\jquery.validate.min.js" />
-    <EmbeddedResource Include="Quickstart\Content\js\jquery.validate.unobtrusive.min.js" />
-    <EmbeddedResource Include="Quickstart\Content\js\liveloghub.js" />
-    <EmbeddedResource Include="Quickstart\Content\js\moment-with-locales.min.js" />
-    <EmbeddedResource Include="Quickstart\Content\js\moment.min.js" />
-    <EmbeddedResource Include="Quickstart\Content\js\respond.min.js" />
-    <EmbeddedResource Include="Quickstart\Content\js\signalr.min.js" />
-    <EmbeddedResource Include="Quickstart\Content\js\toastr.min.js" />
+    <None Remove="Quickstart\Content\icon.jpg" />
+    <None Remove="Quickstart\Content\icon.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -142,6 +41,10 @@
   <ItemGroup>
     <ProjectReference Include="..\ESoftor.Zero\ESoftor.Zero.csproj" />
     <ProjectReference Include="..\ESoftor\ESoftor.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Quickstart\Controllers\" />
   </ItemGroup>
 
 </Project>

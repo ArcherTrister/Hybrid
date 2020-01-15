@@ -13,7 +13,7 @@ using ESoftor.Identity.JwtBearer;
 using ESoftor.Json;
 
 using Microsoft.AspNetCore.Identity;
-
+using System;
 using System.Threading.Tasks;
 
 namespace ESoftor.Zero.Identity.Extensions
@@ -26,22 +26,24 @@ namespace ESoftor.Zero.Identity.Extensions
         /// <summary>
         /// 获取RefreshToken
         /// </summary>
-        public static async Task<RefreshToken> GetRefreshToken<TUser>(this UserManager<TUser> userManager, string userId, string clientId)
-            where TUser : class
+        public static async Task<RefreshToken> GetRefreshToken<TUser, TUserKey>(this UserManager<TUser> userManager, string userId, string clientId)
+            where TUser : UserBase<TUserKey>
+            where TUserKey : IEquatable<TUserKey>
         {
             TUser user = await userManager.FindByIdAsync(userId);
             if (user == null)
             {
                 throw new ESoftorException($"编号为“{userId}”的用户信息不存在");
             }
-            return await userManager.GetRefreshToken(user, clientId);
+            return await userManager.GetRefreshToken<TUser, TUserKey>(user, clientId);
         }
 
         /// <summary>
         /// 获取RefreshToken
         /// </summary>
-        public static async Task<RefreshToken> GetRefreshToken<TUser>(this UserManager<TUser> userManager, TUser user, string clientId)
-            where TUser : class
+        public static async Task<RefreshToken> GetRefreshToken<TUser, TUserKey>(this UserManager<TUser> userManager, TUser user, string clientId)
+            where TUser : UserBase<TUserKey>
+            where TUserKey : IEquatable<TUserKey>
         {
             const string loginProvider = "JwtBearer";
             string tokenName = $"RefreshToken_{clientId}";
@@ -56,22 +58,24 @@ namespace ESoftor.Zero.Identity.Extensions
         /// <summary>
         /// 设置RefreshToken
         /// </summary>
-        public static async Task<IdentityResult> SetRefreshToken<TUser>(this UserManager<TUser> userManager, string userId, RefreshToken token)
-            where TUser : class
+        public static async Task<IdentityResult> SetRefreshToken<TUser, TUserKey>(this UserManager<TUser> userManager, string userId, RefreshToken token)
+            where TUser : UserBase<TUserKey>
+            where TUserKey : IEquatable<TUserKey>
         {
             TUser user = await userManager.FindByIdAsync(userId);
             if (user == null)
             {
                 return new IdentityResult().Failed($"编号为“{userId}”的用户信息不存在");
             }
-            return await userManager.SetRefreshToken(user, token);
+            return await userManager.SetRefreshToken<TUser, TUserKey>(user, token);
         }
 
         /// <summary>
         /// 设置RefreshToken
         /// </summary>
-        public static Task<IdentityResult> SetRefreshToken<TUser>(this UserManager<TUser> userManager, TUser user, RefreshToken token)
-            where TUser : class
+        public static Task<IdentityResult> SetRefreshToken<TUser, TUserKey>(this UserManager<TUser> userManager, TUser user, RefreshToken token)
+            where TUser : UserBase<TUserKey>
+            where TUserKey : IEquatable<TUserKey>
         {
             const string loginProvider = "JwtBearer";
             string tokenName = $"RefreshToken_{token.ClientId}";
@@ -82,22 +86,24 @@ namespace ESoftor.Zero.Identity.Extensions
         /// <summary>
         /// 移除RefreshToken
         /// </summary>
-        public static async Task<IdentityResult> RemoveRefreshToken<TUser>(this UserManager<TUser> userManager, string userId, string clientId)
-            where TUser : class
+        public static async Task<IdentityResult> RemoveRefreshToken<TUser, TUserKey>(this UserManager<TUser> userManager, string userId, string clientId)
+            where TUser : UserBase<TUserKey>
+            where TUserKey : IEquatable<TUserKey>
         {
             TUser user = await userManager.FindByIdAsync(userId);
             if (user == null)
             {
                 return new IdentityResult().Failed($"编号为“{userId}”的用户信息不存在");
             }
-            return await RemoveRefreshToken(userManager, user, clientId);
+            return await RemoveRefreshToken<TUser, TUserKey>(userManager, user, clientId);
         }
 
         /// <summary>
         /// 移除RefreshToken
         /// </summary>
-        public static Task<IdentityResult> RemoveRefreshToken<TUser>(this UserManager<TUser> userManager, TUser user, string clientId)
-            where TUser : class
+        public static Task<IdentityResult> RemoveRefreshToken<TUser, TUserKey>(this UserManager<TUser> userManager, TUser user, string clientId)
+            where TUser : UserBase<TUserKey>
+            where TUserKey : IEquatable<TUserKey>
         {
             const string loginProvider = "JwtBearer";
             string tokenName = $"RefreshToken_{clientId}";

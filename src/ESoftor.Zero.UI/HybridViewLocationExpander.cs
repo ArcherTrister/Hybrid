@@ -27,7 +27,7 @@ namespace ESoftor.Zero.UI
 
         public void PopulateValues(ViewLocationExpanderContext context)
         {
-            context.Values["customviewlocation"] = nameof(HybridViewLocationExpander);
+            context.Values["CustomViewLocations"] = nameof(HybridViewLocationExpander);
         }
     }
 }

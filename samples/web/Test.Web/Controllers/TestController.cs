@@ -1,15 +1,15 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Test.Web.Services;
+
+using Test.Web.Single;
 
 namespace WebApplication123.Controllers
 {
-    [UIAttribute(typeof(TestController<>))]
+    [HybridDefaultUI(typeof(TestController<>))]
     public abstract class TestController : Controller
     {
     }
 
-    [Route("Test")]
-    //[Route("[controller]")]
+    [Route("SingleTest")]
     [ApiExplorerSettings(IgnoreApi = true)]
     internal class TestController<T> : TestController where T : class
     {
@@ -23,7 +23,9 @@ namespace WebApplication123.Controllers
         public IActionResult Index()
         {
             //_doService.SayHello();
-            return View();
+            //Console.WriteLine();
+            //return View();
+            return Content($"Type Name Is {typeof(T).Name}");
         }
     }
 }

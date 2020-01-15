@@ -7,9 +7,11 @@
 //  <last-date>2020-01-13 20:32:00</last-date>
 // -----------------------------------------------------------------------
 
+using ESoftor.Data;
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
 
 using System;
+using System.Linq;
 
 namespace ESoftor.Zero.UI
 {
@@ -17,7 +19,8 @@ namespace ESoftor.Zero.UI
     {
         public void Apply(ControllerModel model)
         {
-            bool defaultUIAttribute = model.ControllerName.EndsWith("Controller`1", StringComparison.OrdinalIgnoreCase);
+            bool defaultUIAttribute = ESoftorConstants.CustomController.ValidEndings.Any(x =>
+                    model.ControllerName.EndsWith(x, StringComparison.OrdinalIgnoreCase));
             if (defaultUIAttribute)
             {
                 model.ControllerName = model.ControllerType.BaseType.Name;

@@ -8,17 +8,9 @@
 
   <ItemGroup>
     <Compile Remove="Areas\**" />
-    <Compile Remove="Quickstart\**" />
-    <Compile Remove="Views\**" />
     <Content Remove="Areas\**" />
-    <Content Remove="Quickstart\**" />
-    <Content Remove="Views\**" />
     <EmbeddedResource Remove="Areas\**" />
-    <EmbeddedResource Remove="Quickstart\**" />
-    <EmbeddedResource Remove="Views\**" />
     <None Remove="Areas\**" />
-    <None Remove="Quickstart\**" />
-    <None Remove="Views\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -38,7 +30,6 @@
 
   <ItemGroup>
     <PackageReference Include="AspNet.Security.OAuth.QQ" Version="3.0.0" />
-    <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0-rc5" />
   </ItemGroup>

@@ -12,6 +12,7 @@ using ESoftor.Dependency;
 using ESoftor.Exceptions;
 using ESoftor.Extensions;
 using ESoftor.Security;
+using ESoftor.AspNetCore.UI;
 
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -42,9 +43,31 @@ namespace ESoftor.AspNetCore.Mvc
         /// </summary>
         public static bool IsController(this TypeInfo typeInfo)
         {
-            return typeInfo.IsClass && !typeInfo.IsAbstract && typeInfo.IsPublic && !typeInfo.ContainsGenericParameters
-                && !typeInfo.IsDefined(typeof(NonControllerAttribute)) && (typeInfo.Name.EndsWith("Controller", StringComparison.OrdinalIgnoreCase)
-                    || typeInfo.IsDefined(typeof(ControllerAttribute)));
+            //TODO:ContainsGenericParameters
+            //if (typeInfo.IsClass && typeInfo.IsPublic && !typeInfo.IsAbstract && !typeInfo.IsDefined(typeof(NonControllerAttribute)))
+            //{
+            //    if (typeInfo.Name.EndsWith("Controller", StringComparison.OrdinalIgnoreCase))
+            //    {
+            //        return !typeInfo.ContainsGenericParameters;
+            //    }
+            //    if (typeInfo.Name.EndsWith("Controller`1", StringComparison.OrdinalIgnoreCase))
+            //    {
+            //        return typeInfo.HasAttribute<RouteAttribute>();
+            //    }
+            //    if (typeInfo.IsDefined(typeof(ControllerAttribute)))
+            //    {
+            //        return !typeInfo.ContainsGenericParameters;
+            //    }
+            //}
+            //return false;
+
+            return (typeInfo.IsClass && !typeInfo.IsAbstract && typeInfo.IsPublic
+                && !typeInfo.ContainsGenericParameters
+                && !typeInfo.IsDefined(typeof(NonControllerAttribute))
+                && (typeInfo.Name.EndsWith("Controller", StringComparison.OrdinalIgnoreCase)
+                    || typeInfo.IsDefined(typeof(ControllerAttribute)))) 
+                || (typeInfo.HasAttribute<HybridDefaultUIAttribute>()
+                    && !typeInfo.ContainsGenericParameters);
         }
 
         /// <summary>

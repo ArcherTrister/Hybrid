@@ -44,5 +44,13 @@ namespace ESoftor.Data
             /// </summary>
             public const string PolicyName = "IdentityServerAccessToken";
         }
+
+        public static class CustomController
+        {
+            /// <summary>
+            /// 验证控制器列表
+            /// </summary>
+            public static string[] ValidEndings = new[] { "Controller`1", "Controller`2" };
+        }
     }
 }

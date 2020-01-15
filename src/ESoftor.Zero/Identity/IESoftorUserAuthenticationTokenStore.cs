@@ -8,7 +8,7 @@
 // -----------------------------------------------------------------------
 
 using Microsoft.AspNetCore.Identity;
-
+using System;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -18,8 +18,10 @@ namespace ESoftor.Zero.Identity
     /// 自定义UserAuthenticationTokenStore
     /// </summary>
     /// <typeparam name="TUser"></typeparam>
-    public interface IESoftorUserAuthenticationTokenStore<TUser> : IUserAuthenticationTokenStore<TUser>
-        where TUser : class
+    /// <typeparam name="TUserKey"></typeparam>
+    public interface IESoftorUserAuthenticationTokenStore<TUser, TUserKey> : IUserAuthenticationTokenStore<TUser>
+        where TUser : UserBase<TUserKey>
+        where TUserKey : IEquatable<TUserKey>
     {
         /// <summary>
         /// 获取某个用户的所有指定登录提供者的权限标识

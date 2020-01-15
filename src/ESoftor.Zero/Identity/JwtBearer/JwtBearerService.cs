@@ -81,7 +81,7 @@ namespace ESoftor.Zero.Identity
             {
                 UserManager<TUser> userManager = provider.GetService<UserManager<TUser>>();
                 refreshToken = new RefreshToken() { ClientId = clientId, Value = refreshTokenStr, EndUtcTime = expires };
-                var result = await userManager.SetRefreshToken(userId, refreshToken);
+                var result = await userManager.SetRefreshToken<TUser, TUserKey>(userId, refreshToken);
                 if (result.Succeeded)
                 {
                     IUnitOfWork unitOfWork = provider.GetUnitOfWork<TUser, TUserKey>();
@@ -137,7 +137,7 @@ namespace ESoftor.Zero.Identity
             }
 
             UserManager<TUser> userManager = _provider.GetService<UserManager<TUser>>();
-            RefreshToken tokenModel = await userManager.GetRefreshToken(userId, clientId);
+            RefreshToken tokenModel = await userManager.GetRefreshToken<TUser, TUserKey>(userId, clientId);
             if (tokenModel == null || tokenModel.Value != refreshToken || tokenModel.EndUtcTime <= DateTime.UtcNow)
             {
                 if (tokenModel != null && tokenModel.EndUtcTime <= DateTime.UtcNow)
@@ -146,7 +146,7 @@ namespace ESoftor.Zero.Identity
                     await _provider.ExecuteScopedWorkAsync(async provider =>
                     {
                         userManager = provider.GetService<UserManager<TUser>>();
-                        var result = await userManager.RemoveRefreshToken(userId, clientId);
+                        var result = await userManager.RemoveRefreshToken<TUser, TUserKey>(userId, clientId);
                         //todo
                         //if (result.Succeeded)
                         //{

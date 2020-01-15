@@ -8,7 +8,8 @@
 // -----------------------------------------------------------------------
 
 using ESoftor.AspNetCore.Mvc;
-
+using ESoftor.Web.Identity.Entity;
+using System;
 using System.ComponentModel;
 
 namespace ESoftor.Web.Startups

@@ -1,14 +1,17 @@
 ﻿using ESoftor.Dependency;
+using ESoftor.Zero.Identity;
 using ESoftor.Zero.UI;
 
 using Microsoft.AspNetCore.Mvc.Razor;
+using System;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
     public static class HybridDefaultUIIdentityServerBuilderExtensions
     {
-        public static IIdentityServerBuilder AddHybridDefaultUI<TUser>(this IIdentityServerBuilder builder)
-            where TUser : class
+        public static IIdentityServerBuilder AddHybridDefaultUI<TUser, TUserKey>(this IIdentityServerBuilder builder)
+            where TUser : UserBase<TUserKey>
+            where TUserKey : IEquatable<TUserKey>
         {
             //var hybridDefaultUIOptions = new HybridDefaultUIOptions();
 
@@ -17,8 +20,8 @@ namespace Microsoft.Extensions.DependencyInjection
             //services.AddSingleton(hybridDefaultUIOptions);
 
 
-            IHybridDefaultUIAttributeTypeFinder moduleTypeFinder =
-    builder.Services.GetOrAddTypeFinder<IHybridDefaultUIAttributeTypeFinder>(assemblyFinder => new HybridDefaultUIAttributeTypeFinder(assemblyFinder));
+            IHybridDefaultUIAttributeTypeFinder typeFinder =
+            builder.Services.GetOrAddTypeFinder<IHybridDefaultUIAttributeTypeFinder>(assemblyFinder => new HybridDefaultUIAttributeTypeFinder(assemblyFinder));
 
             builder.Services.ConfigureOptions(typeof(HybridDefaultUIConfigureOptions));
 
@@ -30,12 +33,12 @@ namespace Microsoft.Extensions.DependencyInjection
             IMvcBuilder mvcBuilder = builder.Services.AddMvc()
                 .AddMvcOptions(o =>
                 {
-                    o.Conventions.Add(new HybridApplicationModelConvention());
+                    //o.Conventions.Add(new HybridApplicationModelConvention());
                     o.Conventions.Add(new HybridControllerModelConvention());
                 })
                 .ConfigureApplicationPartManager(c =>
                 {
-                    c.ApplicationParts.Add(new HybridControllerApplicationPart(moduleTypeFinder.GetTypeInfos(), typeof(TUser)));
+                    c.ApplicationParts.Add(new HybridControllerApplicationPart(typeFinder.GetTypeInfos(), typeof(TUser), typeof(TUserKey)));
                     c.FeatureProviders.Add(new HybridControllerFeatureProvider());
                 });
 #if DEBUG

@@ -1,16 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Test.Web.Controllers;
+
+using System;
+
 using Test.Web.Models;
-using Test.Web.Providers;
-using Test.Web.Services;
 
 namespace Test.Web
 {
@@ -27,11 +23,10 @@ namespace Test.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            ////Ê¹ÓÃAddMvcÒà¿É
-            //services.AddMvcCore(opt =>
 
+            //services.AddUI<User>();
 
-            services.AddUI<Kitty>();
+            services.AddUI<User, Guid>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -113,8 +113,8 @@ namespace ESoftor.Zero.Identity
         /// <returns></returns>
         private async Task<RefreshToken[]> GetRefreshTokens(TUser user)
         {
-            IESoftorUserAuthenticationTokenStore<TUser> store =
-                _serviceProvider.GetService<IUserStore<TUser>>() as IESoftorUserAuthenticationTokenStore<TUser>;
+            IESoftorUserAuthenticationTokenStore<TUser, TUserKey> store =
+                _serviceProvider.GetService<IUserStore<TUser>>() as IESoftorUserAuthenticationTokenStore<TUser, TUserKey>;
             if (store == null)
             {
                 return new RefreshToken[0];
@@ -140,7 +140,7 @@ namespace ESoftor.Zero.Identity
                 UserManager<TUser> userManager = scopedProvider.GetService<UserManager<TUser>>();
                 foreach (RefreshToken expiredToken in expiredTokens)
                 {
-                    await userManager.RemoveRefreshToken(user, expiredToken.ClientId);
+                    await userManager.RemoveRefreshToken<TUser, TUserKey>(user, expiredToken.ClientId);
                 }
 
                 IUnitOfWork unitOfWork = scopedProvider.GetUnitOfWork<TUser, TUserKey>();

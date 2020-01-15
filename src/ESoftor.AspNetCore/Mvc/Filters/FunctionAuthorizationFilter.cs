@@ -32,13 +32,13 @@ namespace ESoftor.AspNetCore.Mvc.Filters
         /// <param name="context">The <see cref="T:Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext" />.</param>
         public void OnAuthorization(AuthorizationFilterContext context)
         {
-            Check.NotNull(context, nameof(context));
-            IFunction function = context.GetExecuteFunction();
-            AuthorizationResult result = AuthorizeCore(context, function);
-            if (!result.IsOk)
-            {
-                HandleUnauthorizedRequest(context, result);
-            }
+            ////Check.NotNull(context, nameof(context));
+            //IFunction function = context.GetExecuteFunction();
+            //AuthorizationResult result = AuthorizeCore(context, function);
+            //if (!result.IsOk)
+            //{
+            //    HandleUnauthorizedRequest(context, result);
+            //}
         }
 
         /// <summary>

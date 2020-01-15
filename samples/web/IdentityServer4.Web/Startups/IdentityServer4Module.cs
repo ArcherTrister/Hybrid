@@ -195,7 +195,7 @@ namespace ESoftor.Web.Startups
         protected override IIdentityServerBuilder AddIdentityServerBuild(IIdentityServerBuilder builder, IServiceCollection services)
         {
             return builder.AddDeveloperSigningCredential()
-                .AddHybridDefaultUI<User>()
+                .AddHybridDefaultUI<User, Guid>()
                 .AddInMemoryIdentityResources(IdentityServer4Config.GetIdentityResources())
                 .AddInMemoryApiResources(IdentityServer4Config.GetApis())
                 .AddInMemoryClients(IdentityServer4Config.GetClients());

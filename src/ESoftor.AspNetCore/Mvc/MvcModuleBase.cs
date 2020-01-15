@@ -11,11 +11,9 @@ using ESoftor.AspNetCore.Mvc.Filters;
 using ESoftor.Core.Modules;
 
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.FileProviders;
+
 using Newtonsoft.Json.Serialization;
-using System.IO;
 
 namespace ESoftor.AspNetCore.Mvc
 {
@@ -54,7 +52,7 @@ namespace ESoftor.AspNetCore.Mvc
                 options.SerializerSettings.ContractResolver = new DefaultContractResolver();
             });
 
-            //services.AddRazorPages();
+            services.AddRazorPages();
 
             //services.AddScoped<OperateAuditFilter>();
             services.AddScoped<MvcUnitOfWorkFilter>();

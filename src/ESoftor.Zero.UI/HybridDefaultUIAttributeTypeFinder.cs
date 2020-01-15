@@ -1,7 +1,8 @@
-﻿using ESoftor.Extensions;
+﻿using ESoftor.AspNetCore.UI;
+using ESoftor.Extensions;
 using ESoftor.Finders;
 using ESoftor.Reflection;
-
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,15 +32,16 @@ namespace ESoftor.Zero.UI
         public IEnumerable<TypeInfo> GetTypeInfos()
         {
             Assembly[] assemblies = _allAssemblyFinder.FindAll(true);
-
             return assemblies.SelectMany(assembly => assembly.GetTypes())
-                .Where(type => type.IsClass && type.IsPublic && type.IsAbstract && type.HasAttribute<HybridDefaultUIAttribute>())
+                .Where(type => type.IsClass
+                                && type.IsPublic
+                                && !type.IsAbstract
+                                && type.HasAttribute<HybridDefaultUIAttribute>()
+                                && type.ContainsGenericParameters
+                                && type.HasAttribute<RouteAttribute>())
                 .Distinct()
                 .Select(p => p.GetTypeInfo())
                 .ToArray();
-
-            //var classes = Assembly.GetEntryAssembly()?.DefinedTypes;
-            //return classes.Where(type => type.IsClass && type.IsAbstract && type.HasAttribute<HybridDefaultUIAttribute>());
         }
 
         /// <summary>

@@ -49,7 +49,7 @@ namespace ESoftor.Zero.Identity
         IUserAuthenticationTokenStore<TUser>,
         IUserAuthenticatorKeyStore<TUser>,
         IUserTwoFactorRecoveryCodeStore<TUser>,
-        IESoftorUserAuthenticationTokenStore<TUser>,
+        IESoftorUserAuthenticationTokenStore<TUser, TUserKey>,
         IUserRoleStore<TUser>,
         IProtectedUserStore<TUser>
         where TUser : UserBase<TUserKey>
