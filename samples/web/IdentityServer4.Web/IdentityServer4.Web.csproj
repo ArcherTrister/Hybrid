@@ -36,19 +36,19 @@
 
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\src\ESoftor.AspNetCore\ESoftor.AspNetCore.csproj" />
-    <ProjectReference Include="..\..\..\src\ESoftor.AutoMapper\ESoftor.AutoMapper.csproj" />
-    <ProjectReference Include="..\..\..\src\ESoftor.EntityFrameworkCore.SqlServer\ESoftor.EntityFrameworkCore.SqlServer.csproj" />
-    <ProjectReference Include="..\..\..\src\ESoftor.EntityFrameworkCore\ESoftor.EntityFrameworkCore.csproj" />
-    <ProjectReference Include="..\..\..\src\ESoftor.NLog\ESoftor.NLog.csproj" />
-    <ProjectReference Include="..\..\..\src\ESoftor.Zero.UI\ESoftor.Zero.IdentityServer4.csproj" />
-    <ProjectReference Include="..\..\..\src\ESoftor.Zero\ESoftor.Zero.csproj" />
-    <ProjectReference Include="..\..\..\src\ESoftor\ESoftor.csproj" />
+    <Folder Include="Data\Migrations\" />
   </ItemGroup>
 
 
   <ItemGroup>
-    <Folder Include="Data\Migrations\" />
+    <ProjectReference Include="..\..\..\src\Hybrid.AspNetCore\Hybrid.AspNetCore.csproj" />
+    <ProjectReference Include="..\..\..\src\Hybrid.AutoMapper\Hybrid.AutoMapper.csproj" />
+    <ProjectReference Include="..\..\..\src\Hybrid.EntityFrameworkCore.SqlServer\Hybrid.EntityFrameworkCore.SqlServer.csproj" />
+    <ProjectReference Include="..\..\..\src\Hybrid.EntityFrameworkCore\Hybrid.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\..\..\src\Hybrid.NLog\Hybrid.NLog.csproj" />
+    <ProjectReference Include="..\..\..\src\Hybrid.Zero.IdentityServer4\Hybrid.Zero.IdentityServer4.csproj" />
+    <ProjectReference Include="..\..\..\src\Hybrid.Zero\Hybrid.Zero.csproj" />
+    <ProjectReference Include="..\..\..\src\Hybrid\Hybrid.csproj" />
   </ItemGroup>
 
 </Project>
