@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="IESoftorUserAuthenticationTokenStore.cs" company="com.esoftor">
+//  <copyright file="IHybridUserAuthenticationTokenStore.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -19,7 +19,7 @@ namespace Hybrid.Zero.Identity
     /// </summary>
     /// <typeparam name="TUser"></typeparam>
     /// <typeparam name="TUserKey"></typeparam>
-    public interface IESoftorUserAuthenticationTokenStore<TUser, TUserKey> : IUserAuthenticationTokenStore<TUser>
+    public interface IHybridUserAuthenticationTokenStore<TUser, TUserKey> : IUserAuthenticationTokenStore<TUser>
         where TUser : UserBase<TUserKey>
         where TUserKey : IEquatable<TUserKey>
     {

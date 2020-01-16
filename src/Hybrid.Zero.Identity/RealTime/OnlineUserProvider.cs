@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="OnlineUserProvider.cs" company="com.esoftor">
+//  <copyright file="OnlineUserProvider.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -113,8 +113,8 @@ namespace Hybrid.Zero.Identity.RealTime
         /// <returns></returns>
         private async Task<RefreshToken[]> GetRefreshTokens(TUser user)
         {
-            IESoftorUserAuthenticationTokenStore<TUser, TUserKey> store =
-                _serviceProvider.GetService<IUserStore<TUser>>() as IESoftorUserAuthenticationTokenStore<TUser, TUserKey>;
+            IHybridUserAuthenticationTokenStore<TUser, TUserKey> store =
+                _serviceProvider.GetService<IUserStore<TUser>>() as IHybridUserAuthenticationTokenStore<TUser, TUserKey>;
             if (store == null)
             {
                 return new RefreshToken[0];

@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="ThreadExtensions.cs" company="com.esoftor">
+//  <copyright file="ThreadExtensions.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <last-editor>最后修改人</last-editor>

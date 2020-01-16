@@ -1,18 +1,20 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="DapperSqlExecutor.cs" company="OSharp开源团队">
-//      Copyright (c) 2014-2018 OSharp. All rights reserved.
+//  <copyright file="SqliteDapperSqlExecutor.cs" company="cn.lxking">
+//      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
-//  <site>http://www.osharp.org</site>
-//  <last-editor>郭明锋</last-editor>
+//  <site>https://www.lxking.cn</site>
+//  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-12-15 19:37</last-date>
 // -----------------------------------------------------------------------
 
 using System.Data;
-
+using Hybrid.Domain.Entities;
+using Hybrid.Domain.EntityFramework;
+using Hybrid.Domain.Uow;
 using Microsoft.Data.Sqlite;
 
 
-namespace OSharp.Entity.Sqlite
+namespace Hybrid.EntityFrameworkCore.Sqlite
 {
     /// <summary>
     /// Sqlite的Dapper-Sql功能执行

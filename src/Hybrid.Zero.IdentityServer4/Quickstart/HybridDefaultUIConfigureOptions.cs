@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="HybridDefaultUIConfigureOptions.cs" company="com.esoftor">
+//  <copyright file="HybridDefaultUIConfigureOptions.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>

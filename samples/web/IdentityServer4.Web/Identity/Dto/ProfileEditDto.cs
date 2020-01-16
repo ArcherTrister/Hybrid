@@ -1,20 +1,20 @@
 ﻿// -----------------------------------------------------------------------
 //  <copyright file="ProfileEditInputDto.cs" company="cn.lxking">
-//      Copyright © 2019-2020-2019 ESoftor. All rights reserved.
+//      Copyright © 2019-2020-2019 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2019-03-24 13:05</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Domain.Entities;
-using ESoftor.Mapping;
-using ESoftor.Web.Identity.Entity;
+using Hybrid.Domain.Entities;
+using Hybrid.Mapping;
+using Hybrid.Web.Identity.Entity;
 
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace ESoftor.Web.Identity.Dtos
+namespace Hybrid.Web.Identity.Dtos
 {
     /// <summary>
     /// 输入DTO：用户资料编辑

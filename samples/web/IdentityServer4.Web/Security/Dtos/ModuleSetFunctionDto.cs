@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="ModuleSetFunctionDto.cs" company="com.esoftor">
-//      Copyright © 2019-2020 ESoftor. All rights reserved.
+//  <copyright file="ModuleSetFunctionDto.cs" company="cn.lxking">
+//      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>http://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
@@ -9,7 +9,7 @@
 
 using System;
 
-namespace ESoftor.Web.Security.Dtos
+namespace Hybrid.Web.Security.Dtos
 {
     /// <summary>
     /// 模块设置功能DTO

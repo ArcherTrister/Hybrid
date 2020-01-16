@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="SystemModule.cs" company="com.esoftor">
+//  <copyright file="SystemModule.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -21,7 +21,7 @@ namespace Hybrid.Systems
     /// 系统信息模块
     /// </summary>
     [Description("系统信息模块")]
-    public class SystemModule : ESoftorModule
+    public class SystemModule : HybridModule
     {
         /// <summary>
         /// 获取 模块启动顺序，模块启动的顺序先按级别启动，级别内部再按此顺序启动，

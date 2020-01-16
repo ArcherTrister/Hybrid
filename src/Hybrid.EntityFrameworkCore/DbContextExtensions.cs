@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="DbContextExtensions.cs" company="com.esoftor">
+//  <copyright file="DbContextExtensions.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -70,7 +70,7 @@ namespace Hybrid.EntityFrameworkCore
         {
             if (!(dbContext is DbContext context))
             {
-                throw new ESoftorException($"参数dbContext类型为“{dbContext.GetType()}”，不能转换为 DbContext");
+                throw new HybridException($"参数dbContext类型为“{dbContext.GetType()}”，不能转换为 DbContext");
             }
             return context.Database.ExecuteSqlCommand(new RawSqlString(sql), parameters);
         }
@@ -82,7 +82,7 @@ namespace Hybrid.EntityFrameworkCore
         {
             if (!(dbContext is DbContext context))
             {
-                throw new ESoftorException($"参数dbContext类型为“{dbContext.GetType()}”，不能转换为 DbContext");
+                throw new HybridException($"参数dbContext类型为“{dbContext.GetType()}”，不能转换为 DbContext");
             }
             return context.Database.ExecuteSqlCommandAsync(new RawSqlString(sql), parameters);
         }

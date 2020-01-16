@@ -1,22 +1,22 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="IIdentityContract.cs" company="com.esoftor">
-//      Copyright © 2019-2020 ESoftor. All rights reserved.
+//  <copyright file="IIdentityContract.cs" company="cn.lxking">
+//      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2017-09-01 20:39:00</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Data;
-using ESoftor.Zero.Identity;
-using ESoftor.Web.Identity.Dto;
-using ESoftor.Web.Identity.Entity;
+using Hybrid.Data;
+using Hybrid.Zero.Identity;
+using Hybrid.Web.Identity.Dto;
+using Hybrid.Web.Identity.Entity;
 
 using System;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace ESoftor.Web.Identity
+namespace Hybrid.Web.Identity
 {
     /// <summary>
     /// 业务契约：身份认证模块

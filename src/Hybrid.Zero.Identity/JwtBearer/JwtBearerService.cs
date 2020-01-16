@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="JwtBearerService.cs" company="com.esoftor">
+//  <copyright file="JwtBearerService.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -52,7 +52,7 @@ namespace Hybrid.Zero.Identity
         {
             _provider = provider;
             _logger = provider.GetLogger(GetType());
-            _jwtOptions = _provider.GetESoftorOptions().Jwt;
+            _jwtOptions = _provider.GetHybridOptions().Jwt;
         }
 
         /// <summary>
@@ -120,20 +120,20 @@ namespace Hybrid.Zero.Identity
             Check.NotNull(refreshToken, nameof(refreshToken));
             TokenValidationParameters parameters = new TokenValidationParameters()
             {
-                ValidIssuer = _jwtOptions.Issuer ?? "esoftor identity",
-                ValidAudience = _jwtOptions.Audience ?? "esoftor client",
+                ValidIssuer = _jwtOptions.Issuer ?? "hybrid identity",
+                ValidAudience = _jwtOptions.Audience ?? "hybrid client",
                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtOptions.Secret))
             };
             JwtSecurityToken jwtSecurityToken = _tokenHandler.ReadJwtToken(refreshToken);
             string clientId = jwtSecurityToken.Claims.FirstOrDefault(m => m.Type == HybridClaimTypes.ClientId)?.Value;
             if (clientId == null)
             {
-                throw new ESoftorException("RefreshToken 中不包含 ClientId 声明");
+                throw new HybridException("RefreshToken 中不包含 ClientId 声明");
             }
             string userId = jwtSecurityToken.Claims.FirstOrDefault(m => m.Type == "nameid")?.Value;
             if (userId == null)
             {
-                throw new ESoftorException("RefreshToken 的数据中无法找到 UserId 声明");
+                throw new HybridException("RefreshToken 的数据中无法找到 UserId 声明");
             }
 
             UserManager<TUser> userManager = _provider.GetService<UserManager<TUser>>();
@@ -157,7 +157,7 @@ namespace Hybrid.Zero.Identity
                     },
                         false);
                 }
-                throw new ESoftorException("RefreshToken 不存在或已过期");
+                throw new HybridException("RefreshToken 不存在或已过期");
             }
 
             ClaimsPrincipal principal = _tokenHandler.ValidateToken(refreshToken, parameters, out SecurityToken securityToken);
@@ -165,7 +165,7 @@ namespace Hybrid.Zero.Identity
             string userName = principal.Claims.FirstOrDefault(m => m.Type == HybridClaimTypes.UserName)?.Value;
             if (userName == null)
             {
-                throw new ESoftorException("RefreshToken 的数据中无法找到 UserName 声明");
+                throw new HybridException("RefreshToken 的数据中无法找到 UserName 声明");
             }
 
             JsonWebToken token = await CreateToken(userId, userName, tokenModel);
@@ -177,7 +177,7 @@ namespace Hybrid.Zero.Identity
             string secret = options.Secret;
             if (secret == null)
             {
-                throw new ESoftorException("创建JwtToken时Secret为空，请在Hybrid:Jwt:Secret节点中进行配置");
+                throw new HybridException("创建JwtToken时Secret为空，请在Hybrid:Jwt:Secret节点中进行配置");
             }
 
             DateTime expires;
@@ -186,7 +186,7 @@ namespace Hybrid.Zero.Identity
             {
                 if (refreshToken != null)
                 {
-                    throw new ESoftorException("创建 AccessToken 时不需要 refreshToken");
+                    throw new HybridException("创建 AccessToken 时不需要 refreshToken");
                 }
 
                 double minutes = options.AccessExpireMins > 0 ? options.AccessExpireMins : 5; //默认5分钟

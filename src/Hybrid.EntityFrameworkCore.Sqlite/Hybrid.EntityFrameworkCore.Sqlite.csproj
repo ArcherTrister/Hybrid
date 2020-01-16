@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\build\packages.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <ModuleageId>Hybrid.EntityFrameworkCore.Sqlite</ModuleageId>
+    <Description>Hybrid 数据访问组件，封装EntityFrameworkCore的Sqlite数据访问功能的实现</Description>
+    <Summary>Hybrid 数据访问组件Sqlite</Summary>
+    <RootNamespace>Hybrid.EntityFrameworkCore.Sqlite</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\Release\Hybrid.EntityFrameworkCore.Sqlite.xml</DocumentationFile>
+    <OutputPath>bin\Release</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hybrid.EntityFrameworkCore\Hybrid.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+
+</Project>

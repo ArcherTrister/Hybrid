@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="DependencyModule.cs" company="com.esoftor">
+//  <copyright file="DependencyModule.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -26,7 +26,7 @@ namespace Hybrid.Dependency
     /// 依赖注入模块
     /// </summary>
     [Description("依赖注入模块")]
-    public class DependencyModule : ESoftorModule
+    public class DependencyModule : HybridModule
     {
         /// <summary>
         /// 获取 模块级别，级别越小越先启动

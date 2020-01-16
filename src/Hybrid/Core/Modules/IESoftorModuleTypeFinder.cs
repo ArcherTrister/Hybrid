@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="IESoftorModuleTypeFinder.cs" company="com.esoftor">
+//  <copyright file="IHybridModuleTypeFinder.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -14,6 +14,6 @@ namespace Hybrid.Core.Modules
     /// <summary>
     /// Hybrid模块类型查找器
     /// </summary>
-    public interface IESoftorModuleTypeFinder : ITypeFinder
+    public interface IHybridModuleTypeFinder : ITypeFinder
     { }
 }

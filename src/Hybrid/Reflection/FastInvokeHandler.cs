@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="FastInvokeHandler.cs" company="com.esoftor">
+//  <copyright file="FastInvokeHandler.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //      Copyfrom: http://www.codeproject.com/Articles/14593/A-General-Fast-Method-Invoker
 //  </copyright>

@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="MvcFunctionModule.cs" company="com.esoftor">
+//  <copyright file="MvcFunctionModule.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -26,7 +26,7 @@ namespace Hybrid.AspNetCore.Mvc
     /// </summary>
     [DependsOnModules(typeof(AspNetCoreModule))]
     [Description("MVC功能点模块")]
-    public class MvcFunctionModule : AspESoftorModule
+    public class MvcFunctionModule : AspHybridModule
     {
         /// <summary>
         /// 获取 模块级别

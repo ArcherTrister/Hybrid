@@ -1,20 +1,20 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="IdenityService.cs" company="com.esoftor">
-//      Copyright © 2019-2020 ESoftor. All rights reserved.
+//  <copyright file="IdenityService.cs" company="cn.lxking">
+//      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2017-09-01 20:39:00</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Caching;
-using ESoftor.Data;
-using ESoftor.Domain.Repositories;
-using ESoftor.EventBuses;
-using ESoftor.Extensions;
-using ESoftor.Zero.Identity;
-using ESoftor.Zero.Identity.Extensions;
-using ESoftor.Web.Identity.Dto;
-using ESoftor.Web.Identity.Entity;
+using Hybrid.Caching;
+using Hybrid.Data;
+using Hybrid.Domain.Repositories;
+using Hybrid.EventBuses;
+using Hybrid.Extensions;
+using Hybrid.Zero.Identity;
+using Hybrid.Zero.Identity.Extensions;
+using Hybrid.Web.Identity.Dto;
+using Hybrid.Web.Identity.Entity;
 
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Caching.Distributed;
@@ -26,7 +26,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using System.Security.Principal;
 
-namespace ESoftor.Web.Identity
+namespace Hybrid.Web.Identity
 {
     /// <summary>
     /// 业务实现：身份认证模块

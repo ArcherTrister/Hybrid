@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="MvcFunctionHandler.cs" company="com.esoftor">
+//  <copyright file="MvcFunctionHandler.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -58,7 +58,7 @@ namespace Hybrid.AspNetCore.Mvc
         {
             if (!controllerType.IsController())
             {
-                throw new ESoftorException($"类型“{controllerType.FullName}”不是MVC控制器类型");
+                throw new HybridException($"类型“{controllerType.FullName}”不是MVC控制器类型");
             }
             FunctionAccessType accessType = controllerType.HasAttribute<LoggedInAttribute>() || controllerType.HasAttribute<AuthorizeAttribute>()
                 ? FunctionAccessType.LoggedIn

@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="FilterHelper.cs" company="com.esoftor">
+//  <copyright file="FilterHelper.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -297,7 +297,7 @@ namespace Hybrid.Filter
             {
                 return bodies.Aggregate(Expression.OrElse);
             }
-            throw new ESoftorException(Resources.Filter_GroupOperateError);
+            throw new HybridException(Resources.Filter_GroupOperateError);
         }
 
         private static Expression GetExpressionBody(ParameterExpression param, FilterRule rule)
@@ -388,12 +388,12 @@ namespace Hybrid.Filter
             {
                 if (rule.Operate != FilterOperate.Equal)
                 {
-                    throw new ESoftorException($"当前用户“{rule.Value}”只能用在“{FilterOperate.Equal.ToDescription()}”操作中");
+                    throw new HybridException($"当前用户“{rule.Value}”只能用在“{FilterOperate.Equal.ToDescription()}”操作中");
                 }
                 ClaimsPrincipal user = ServiceLocator.Instance.GetCurrentUser();
                 if (user == null || !user.Identity.IsAuthenticated)
                 {
-                    throw new ESoftorException("需要获取当前用户编号，但当前用户为空，可能未登录或已过期");
+                    throw new HybridException("需要获取当前用户编号，但当前用户为空，可能未登录或已过期");
                 }
                 object value = user.Identity.GetClaimValueFirstOrDefault(HybridClaimTypes.UserId);
                 value = value.CastTo(conversionType);

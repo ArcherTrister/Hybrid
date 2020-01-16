@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="AccessClaimsProvider.cs" company="com.esoftor">
+//  <copyright file="AccessClaimsProvider.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -52,7 +52,7 @@ namespace Hybrid.Zero.Identity
             TUser user = await userManager.FindByIdAsync(userId);
             if (user == null)
             {
-                throw new ESoftorException($"编号为“{userId}”的用户信息不存在。");
+                throw new HybridException($"编号为“{userId}”的用户信息不存在。");
             }
 
             Claim[] claims =

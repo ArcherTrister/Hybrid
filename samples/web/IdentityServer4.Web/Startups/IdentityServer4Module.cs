@@ -1,18 +1,18 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="IdentityServer4Module.cs" company="com.esoftor">
-//      Copyright © 2019-2020 ESoftor. All rights reserved.
+//  <copyright file="IdentityServer4Module.cs" company="cn.lxking">
+//      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Core.Options;
-using ESoftor.Data;
-using ESoftor.Exceptions;
-using ESoftor.Zero.IdentityServer4;
-using ESoftor.Web.Identity;
-using ESoftor.Web.Identity.Entity;
+using Hybrid.Core.Options;
+using Hybrid.Data;
+using Hybrid.Exceptions;
+using Hybrid.Zero.IdentityServer4;
+using Hybrid.Web.Identity;
+using Hybrid.Web.Identity.Entity;
 
 using IdentityServer4;
 using IdentityServer4.Configuration;
@@ -27,7 +27,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.IdentityModel.Tokens.Jwt;
 
-namespace ESoftor.Web.Startups
+namespace Hybrid.Web.Startups
 {
     /// <summary>
     /// 身份认证模块，此模块必须在MVC模块之前启动
@@ -129,16 +129,16 @@ namespace ESoftor.Web.Startups
             AuthenticationBuilder authenticationBuilder = services.AddAuthentication();
             // 1.如果在本项目中使用webapi则添加，并且在UseModule中不能使用app.UseAuthentication
             // 2.在webapi上添加[Authorize(AuthenticationSchemes = IdentityServerConstants.LocalApi.AuthenticationScheme)]标记
-            // 3.在本框架中使用ESoftorConstants.LocalApi.AuthenticationScheme
-            authenticationBuilder.AddLocalApi(ESoftorConstants.LocalApi.AuthenticationScheme, 
+            // 3.在本框架中使用HybridConstants.LocalApi.AuthenticationScheme
+            authenticationBuilder.AddLocalApi(HybridConstants.LocalApi.AuthenticationScheme, 
                 options => 
                 {
-                    options.ExpectedScope = ESoftorConstants.LocalApi.ScopeName;
+                    options.ExpectedScope = HybridConstants.LocalApi.ScopeName;
                     options.SaveToken = true;
                 });
 
             // OAuth2
-            IConfigurationSection section = configuration.GetSection("ESoftor:OAuth2");
+            IConfigurationSection section = configuration.GetSection("Hybrid:OAuth2");
             IDictionary<string, OAuth2Options> dict = section.Get<Dictionary<string, OAuth2Options>>();
             if (dict == null)
             {
@@ -153,11 +153,11 @@ namespace ESoftor.Web.Startups
                 }
                 if (string.IsNullOrEmpty(value.ClientId))
                 {
-                    throw new ESoftorException($"配置文件中ESoftor:OAuth2配置的{pair.Key}节点的ClientId不能为空");
+                    throw new HybridException($"配置文件中Hybrid:OAuth2配置的{pair.Key}节点的ClientId不能为空");
                 }
                 if (string.IsNullOrEmpty(value.ClientSecret))
                 {
-                    throw new ESoftorException($"配置文件中ESoftor:OAuth2配置的{pair.Key}节点的ClientSecret不能为空");
+                    throw new HybridException($"配置文件中Hybrid:OAuth2配置的{pair.Key}节点的ClientSecret不能为空");
                 }
                 //https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers
                 switch (pair.Key)
@@ -204,7 +204,7 @@ namespace ESoftor.Web.Startups
             ////IConfiguration configuration = services.GetConfiguration();
             ////Add-Migration InitialIdentityServerPersistedGrantDbMigration -c PersistedGrantDbContext -o Data/Migrations/IdentityServer/PersistedGrantDb
             ////Add-Migration InitialIdentityServerConfigurationDbMigration -c ConfigurationDbContext -o Data/Migrations/IdentityServer/ConfigurationDb
-            ////IConfigurationSection section = configuration.GetSection("ESoftor:Idxxxxxx");
+            ////IConfigurationSection section = configuration.GetSection("Hybrid:Idxxxxxx");
             //string entryAssemblyName = Assembly.GetExecutingAssembly().GetName().Name;
             //return builder
             //        // this adds the config data from DB (clients, resources)

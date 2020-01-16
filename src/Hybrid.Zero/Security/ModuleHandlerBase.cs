@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="ModuleHandlerBase.cs" company="com.esoftor">
+//  <copyright file="ModuleHandlerBase.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -117,7 +117,7 @@ namespace Hybrid.Zero.Security
                 OperationResult result = moduleStore.DeleteModule(id).GetAwaiter().GetResult();
                 if (result.Error)
                 {
-                    throw new ESoftorException(result.Message);
+                    throw new HybridException(result.Message);
                 }
             }
 
@@ -133,7 +133,7 @@ namespace Hybrid.Zero.Security
                     TModule parent1 = GetModule(moduleStore, parent1Position);
                     if (parent1 == null)
                     {
-                        throw new ESoftorException($"路径为“{parent1Position}”的模块信息无法找到");
+                        throw new HybridException($"路径为“{parent1Position}”的模块信息无法找到");
                     }
                     string parentCode = info.Position.Substring(lastIndex + 1, info.Position.Length - lastIndex - 1);
                     ModuleInfo parentInfo = new ModuleInfo() { Code = parentCode, Name = info.PositionName ?? parentCode, Position = parent1Position };
@@ -141,7 +141,7 @@ namespace Hybrid.Zero.Security
                     OperationResult result = moduleStore.CreateModule(dto).GetAwaiter().GetResult();
                     if (result.Error)
                     {
-                        throw new ESoftorException(result.Message);
+                        throw new HybridException(result.Message);
                     }
                     parent = moduleStore.Modules.First(m => m.ParentId.Equals(parent1.Id) && m.Code == parentCode);
                 }
@@ -153,7 +153,7 @@ namespace Hybrid.Zero.Security
                     OperationResult result = moduleStore.CreateModule(dto).GetAwaiter().GetResult();
                     if (result.Error)
                     {
-                        throw new ESoftorException(result.Message);
+                        throw new HybridException(result.Message);
                     }
                     module = moduleStore.Modules.First(m => m.ParentId.Equals(parent.Id) && m.Code == info.Code);
                 }
@@ -163,7 +163,7 @@ namespace Hybrid.Zero.Security
                     OperationResult result = moduleStore.UpdateModule(dto).GetAwaiter().GetResult();
                     if (result.Error)
                     {
-                        throw new ESoftorException(result.Message);
+                        throw new HybridException(result.Message);
                     }
                 }
                 if (info.DependOnFunctions.Length > 0)
@@ -172,7 +172,7 @@ namespace Hybrid.Zero.Security
                     OperationResult result = moduleFunctionStore.SetModuleFunctions(module.Id, functionIds).GetAwaiter().GetResult();
                     if (result.Error)
                     {
-                        throw new ESoftorException(result.Message);
+                        throw new HybridException(result.Message);
                     }
                 }
             }

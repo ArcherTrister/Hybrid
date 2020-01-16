@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="Repository.cs" company="com.esoftor">
+//  <copyright file="Repository.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -137,7 +137,7 @@ namespace Hybrid.EntityFrameworkCore
                     entity = CheckInsert(entity)[0];
                     _dbSet.Add(entity);
                 }
-                catch (ESoftorException e)
+                catch (HybridException e)
                 {
                     return new OperationResult(OperationResultType.Error, e.Message);
                 }
@@ -213,7 +213,7 @@ namespace Hybrid.EntityFrameworkCore
                     }
                     DeleteInternal(entity);
                 }
-                catch (ESoftorException e)
+                catch (HybridException e)
                 {
                     return new OperationResult(OperationResultType.Error, e.Message);
                 }
@@ -304,7 +304,7 @@ namespace Hybrid.EntityFrameworkCore
                     entity = CheckUpdate(entity)[0];
                     ((DbContext)_dbContext).Update<TEntity, TKey>(entity);
                 }
-                catch (ESoftorException e)
+                catch (HybridException e)
                 {
                     return new OperationResult(OperationResultType.Error, e.Message);
                 }
@@ -540,7 +540,7 @@ namespace Hybrid.EntityFrameworkCore
                     entity = CheckInsert(entity)[0];
                     await _dbSet.AddAsync(entity, _cancellationTokenProvider.Token);
                 }
-                catch (ESoftorException e)
+                catch (HybridException e)
                 {
                     return new OperationResult(OperationResultType.Error, e.Message);
                 }
@@ -618,7 +618,7 @@ namespace Hybrid.EntityFrameworkCore
                     }
                     DeleteInternal(entity);
                 }
-                catch (ESoftorException e)
+                catch (HybridException e)
                 {
                     return new OperationResult(OperationResultType.Error, e.Message);
                 }
@@ -709,7 +709,7 @@ namespace Hybrid.EntityFrameworkCore
                     entity = CheckUpdate(entity)[0];
                     ((DbContext)_dbContext).Update<TEntity, TKey>(entity);
                 }
-                catch (ESoftorException e)
+                catch (HybridException e)
                 {
                     return new OperationResult(OperationResultType.Error, e.Message);
                 }
@@ -827,7 +827,7 @@ namespace Hybrid.EntityFrameworkCore
             bool flag = entities.All(func);
             if (!flag)
             {
-                throw new ESoftorException($"实体“{typeof(TEntity)}”的数据“{entities.ExpandAndToString(m => m.Id.ToString())}”进行“{operation.ToDescription()}”操作时权限不足");
+                throw new HybridException($"实体“{typeof(TEntity)}”的数据“{entities.ExpandAndToString(m => m.Id.ToString())}”进行“{operation.ToDescription()}”操作时权限不足");
             }
         }
 

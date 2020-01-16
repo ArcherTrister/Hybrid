@@ -1,5 +1,5 @@
 // -----------------------------------------------------------------------
-//  <copyright file="EntityManager.cs" company="com.esoftor">
+//  <copyright file="EntityManager.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -102,7 +102,7 @@ namespace Hybrid.EntityFrameworkCore
             var dict = _entityRegistersDict;
             if (dict.Count == 0)
             {
-                throw new ESoftorException($"未发现任何数据上下文实体映射配置，请通过对各个实体继承基类“EntityTypeConfigurationBase<TEntity, TKey>”以使实体加载到上下文中");
+                throw new HybridException($"未发现任何数据上下文实体映射配置，请通过对各个实体继承基类“EntityTypeConfigurationBase<TEntity, TKey>”以使实体加载到上下文中");
             }
 
             foreach (var item in _entityRegistersDict)
@@ -113,7 +113,7 @@ namespace Hybrid.EntityFrameworkCore
                 }
             }
 
-            throw new ESoftorException($"无法获取实体类“{entityType}”的所属上下文类型，请通过继承基类“EntityTypeConfigurationBase<TEntity, TKey>”配置实体加载到上下文中");
+            throw new HybridException($"无法获取实体类“{entityType}”的所属上下文类型，请通过继承基类“EntityTypeConfigurationBase<TEntity, TKey>”配置实体加载到上下文中");
         }
 
         private class EntityInfoConfiguration : EntityTypeConfigurationBase<EntityInfo, Guid>

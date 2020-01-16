@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="DistributedCacheExtensions.cs" company="com.esoftor">
+//  <copyright file="DistributedCacheExtensions.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -737,7 +737,7 @@ namespace Hybrid.Caching
                 }
                 else
                 {
-                    throw new ESoftorException($"类型“{typeof(TEntity)}”未添加默认排序方式");
+                    throw new HybridException($"类型“{typeof(TEntity)}”未添加默认排序方式");
                 }
             }
             else
@@ -781,7 +781,7 @@ namespace Hybrid.Caching
                 }
                 else
                 {
-                    throw new ESoftorException($"类型“{typeof(TEntity)}”未添加默认排序方式");
+                    throw new HybridException($"类型“{typeof(TEntity)}”未添加默认排序方式");
                 }
             }
             else

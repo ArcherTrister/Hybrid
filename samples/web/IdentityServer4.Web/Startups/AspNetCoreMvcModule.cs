@@ -1,19 +1,19 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="AspNetCoreMvcModule.cs" company="com.esoftor">
-//      Copyright © 2019-2020 ESoftor. All rights reserved.
+//  <copyright file="AspNetCoreMvcModule.cs" company="cn.lxking">
+//      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.AspNetCore.Mvc;
+using Hybrid.AspNetCore.Mvc;
 
 using Microsoft.Extensions.DependencyInjection;
 
 using System.ComponentModel;
 
-namespace ESoftor.Web.Startups
+namespace Hybrid.Web.Startups
 {
     /// <summary>
     /// MVC模块，此模块需要在Identity之后启动

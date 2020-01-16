@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="ESoftorResult.cs" company="com.esoftor">
+//  <copyright file="HybridResult.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -17,33 +17,33 @@ namespace Hybrid.Data
     /// Hybrid结果基类
     /// </summary>
     /// <typeparam name="TResultType"></typeparam>
-    public abstract class ESoftorResult<TResultType> : ESoftorResult<TResultType, object>, IESoftorResult<TResultType>
+    public abstract class HybridResult<TResultType> : HybridResult<TResultType, object>, IHybridResult<TResultType>
     {
         /// <summary>
-        /// 初始化一个<see cref="ESoftorResult{TResultType}"/>类型的新实例
+        /// 初始化一个<see cref="HybridResult{TResultType}"/>类型的新实例
         /// </summary>
-        protected ESoftorResult()
+        protected HybridResult()
             : this(default(TResultType))
         { }
 
         /// <summary>
-        /// 初始化一个<see cref="ESoftorResult{TResultType}"/>类型的新实例
+        /// 初始化一个<see cref="HybridResult{TResultType}"/>类型的新实例
         /// </summary>
-        protected ESoftorResult(TResultType type)
+        protected HybridResult(TResultType type)
             : this(type, null, null)
         { }
 
         /// <summary>
-        /// 初始化一个<see cref="ESoftorResult{TResultType}"/>类型的新实例
+        /// 初始化一个<see cref="HybridResult{TResultType}"/>类型的新实例
         /// </summary>
-        protected ESoftorResult(TResultType type, string message)
+        protected HybridResult(TResultType type, string message)
             : this(type, message, null)
         { }
 
         /// <summary>
-        /// 初始化一个<see cref="ESoftorResult{TResultType}"/>类型的新实例
+        /// 初始化一个<see cref="HybridResult{TResultType}"/>类型的新实例
         /// </summary>
-        protected ESoftorResult(TResultType type, string message, object data)
+        protected HybridResult(TResultType type, string message, object data)
             : base(type, message, data)
         { }
     }
@@ -53,7 +53,7 @@ namespace Hybrid.Data
     /// </summary>
     /// <typeparam name="TResultType">结果类型</typeparam>
     /// <typeparam name="TData">结果数据类型</typeparam>
-    public abstract class ESoftorResult<TResultType, TData> : IESoftorResult<TResultType, TData>
+    public abstract class HybridResult<TResultType, TData> : IHybridResult<TResultType, TData>
     {
         /// <summary>
         /// 内部消息
@@ -61,30 +61,30 @@ namespace Hybrid.Data
         protected string _message;
 
         /// <summary>
-        /// 初始化一个<see cref="ESoftorResult{TResultType,TData}"/>类型的新实例
+        /// 初始化一个<see cref="HybridResult{TResultType,TData}"/>类型的新实例
         /// </summary>
-        protected ESoftorResult()
+        protected HybridResult()
             : this(default(TResultType))
         { }
 
         /// <summary>
-        /// 初始化一个<see cref="ESoftorResult{TResultType,TData}"/>类型的新实例
+        /// 初始化一个<see cref="HybridResult{TResultType,TData}"/>类型的新实例
         /// </summary>
-        protected ESoftorResult(TResultType type)
+        protected HybridResult(TResultType type)
             : this(type, null, default(TData))
         { }
 
         /// <summary>
-        /// 初始化一个<see cref="ESoftorResult{TResultType,TData}"/>类型的新实例
+        /// 初始化一个<see cref="HybridResult{TResultType,TData}"/>类型的新实例
         /// </summary>
-        protected ESoftorResult(TResultType type, string message)
+        protected HybridResult(TResultType type, string message)
             : this(type, message, default(TData))
         { }
 
         /// <summary>
-        /// 初始化一个<see cref="ESoftorResult{TResultType,TData}"/>类型的新实例
+        /// 初始化一个<see cref="HybridResult{TResultType,TData}"/>类型的新实例
         /// </summary>
-        protected ESoftorResult(TResultType type, string message, TData data)
+        protected HybridResult(TResultType type, string message, TData data)
         {
             if (message == null && typeof(TResultType).IsEnum)
             {

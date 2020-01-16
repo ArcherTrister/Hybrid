@@ -1,19 +1,19 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="SqlServerDesignTimeDefaultDbContextFactory.cs" company="com.esoftor">
-//      Copyright © 2019-2020 ESoftor. All rights reserved.
+//  <copyright file="SqlServerDesignTimeDefaultDbContextFactory.cs" company="cn.lxking">
+//      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>http://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-06-27 4:50</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Core.Options;
-using ESoftor.Data;
-using ESoftor.EntityFrameworkCore;
-using ESoftor.EntityFrameworkCore.Defaults;
-using ESoftor.Exceptions;
-using ESoftor.Extensions;
-using ESoftor.Reflection;
+using Hybrid.Core.Options;
+using Hybrid.Data;
+using Hybrid.EntityFrameworkCore;
+using Hybrid.EntityFrameworkCore.Defaults;
+using Hybrid.Exceptions;
+using Hybrid.Extensions;
+using Hybrid.Reflection;
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -22,7 +22,7 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Reflection;
 
-namespace ESoftor.Web.Startups.SqlServer
+namespace Hybrid.Web.Startups.SqlServer
 {
     public class SqlServerDesignTimeDefaultDbContextFactory : DesignTimeDbContextFactoryBase<DefaultDbContext>
     {
@@ -41,15 +41,15 @@ namespace ESoftor.Web.Startups.SqlServer
             if (_serviceProvider == null)
             {
                 IConfiguration configuration = Singleton<IConfiguration>.Instance;
-                string str = configuration["ESoftor:DbContexts:SqlServer:ConnectionString"]
+                string str = configuration["Hybrid:DbContexts:SqlServer:ConnectionString"]
                     ?? configuration["ConnectionStrings:DefaultDbContext"];
                 return str;
             }
-            ESoftorOptions options = _serviceProvider.GetESoftorOptions();
-            ESoftorDbContextOptions contextOptions = options.GetDbContextOptions(typeof(DefaultDbContext));
+            HybridOptions options = _serviceProvider.GetHybridOptions();
+            HybridDbContextOptions contextOptions = options.GetDbContextOptions(typeof(DefaultDbContext));
             if (contextOptions == null)
             {
-                throw new ESoftorException($"上下文“{typeof(DefaultDbContext)}”的配置信息不存在");
+                throw new HybridException($"上下文“{typeof(DefaultDbContext)}”的配置信息不存在");
             }
             return contextOptions.ConnectionString;
         }
@@ -75,13 +75,13 @@ namespace ESoftor.Web.Startups.SqlServer
             if (_serviceProvider == null)
             {
                 IConfiguration configuration = Singleton<IConfiguration>.Instance;
-                return configuration["ESoftor:DbContexts:SqlServer:LazyLoadingProxiesEnabled"].CastTo(false);
+                return configuration["Hybrid:DbContexts:SqlServer:LazyLoadingProxiesEnabled"].CastTo(false);
             }
-            ESoftorOptions options = _serviceProvider.GetESoftorOptions();
-            ESoftorDbContextOptions contextOptions = options.GetDbContextOptions(typeof(DefaultDbContext));
+            HybridOptions options = _serviceProvider.GetHybridOptions();
+            HybridDbContextOptions contextOptions = options.GetDbContextOptions(typeof(DefaultDbContext));
             if (contextOptions == null)
             {
-                throw new ESoftorException($"上下文“{typeof(DefaultDbContext)}”的配置信息不存在");
+                throw new HybridException($"上下文“{typeof(DefaultDbContext)}”的配置信息不存在");
             }
 
             return contextOptions.LazyLoadingProxiesEnabled;

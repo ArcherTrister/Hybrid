@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="EventBusModule.cs" company="com.esoftor">
+//  <copyright file="EventBusModule.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -22,7 +22,7 @@ namespace Hybrid.EventBuses
     /// 事件总线模块
     /// </summary>
     [Description("事件总线模块")]
-    public class EventBusModule : ESoftorModule
+    public class EventBusModule : HybridModule
     {
         /// <summary>
         /// 获取 模块级别

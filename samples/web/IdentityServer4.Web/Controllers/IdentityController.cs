@@ -1,33 +1,33 @@
 ﻿//// -----------------------------------------------------------------------
-//// <copyright file="IdentityController.cs" company="com.esoftor">
-////     Copyright © 2019-2020 ESoftor. All rights reserved.
+//// <copyright file="IdentityController.cs" company="cn.lxking">
+////     Copyright © 2019-2020 Hybrid. All rights reserved.
 //// </copyright>
 //// <site>https://www.lxking.cn</site>
 //// <last-editor>ArcherTrister</last-editor>
 //// <last-date>2018-08-02 17:56</last-date>
 //// -----------------------------------------------------------------------
 
-//using ESoftor.AspNetCore.Extensions;
-//using ESoftor.AspNetCore.Mvc.Controllers;
-//using ESoftor.AspNetCore.Services;
-//using ESoftor.AspNetCore.UI;
-//using ESoftor.Collections;
-//using ESoftor.Core;
-//using ESoftor.Core.ModuleInfos;
-//using ESoftor.Data;
-//using ESoftor.Domain.Uow;
-//using ESoftor.Extensions;
-//using ESoftor.Filter;
-//using ESoftor.Json;
-//using ESoftor.Mapping;
-//using ESoftor.Net;
-//using ESoftor.Security.Claims;
-//using ESoftor.Web.Identity;
-//using ESoftor.Web.Identity.Dto;
-//using ESoftor.Web.Identity.Dtos;
-//using ESoftor.Web.Identity.Entity;
-//using ESoftor.Zero.Identity;
-//using ESoftor.Zero.Identity.Extensions;
+//using Hybrid.AspNetCore.Extensions;
+//using Hybrid.AspNetCore.Mvc.Controllers;
+//using Hybrid.AspNetCore.Services;
+//using Hybrid.AspNetCore.UI;
+//using Hybrid.Collections;
+//using Hybrid.Core;
+//using Hybrid.Core.ModuleInfos;
+//using Hybrid.Data;
+//using Hybrid.Domain.Uow;
+//using Hybrid.Extensions;
+//using Hybrid.Filter;
+//using Hybrid.Json;
+//using Hybrid.Mapping;
+//using Hybrid.Net;
+//using Hybrid.Security.Claims;
+//using Hybrid.Web.Identity;
+//using Hybrid.Web.Identity.Dto;
+//using Hybrid.Web.Identity.Dtos;
+//using Hybrid.Web.Identity.Entity;
+//using Hybrid.Zero.Identity;
+//using Hybrid.Zero.Identity.Extensions;
 
 //using Microsoft.AspNetCore.Authentication;
 //using Microsoft.AspNetCore.Http;

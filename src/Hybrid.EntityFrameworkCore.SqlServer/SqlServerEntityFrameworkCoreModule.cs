@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="SqlServerEntityFrameworkCoreModule.cs" company="com.esoftor">
+//  <copyright file="SqlServerEntityFrameworkCoreModule.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -54,7 +54,7 @@ namespace Hybrid.EntityFrameworkCore.SqlServer
         /// <param name="provider">服务提供者</param>
         public override void UseModule(IServiceProvider provider)
         {
-            bool? hasMsSql = provider.GetESoftorOptions()?.DbContexts?.Values.Any(m => m.DatabaseType == DatabaseType.SqlServer);
+            bool? hasMsSql = provider.GetHybridOptions()?.DbContexts?.Values.Any(m => m.DatabaseType == DatabaseType.SqlServer);
             if (hasMsSql == null || !hasMsSql.Value)
             {
                 return;

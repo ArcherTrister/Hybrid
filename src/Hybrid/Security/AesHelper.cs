@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="AesHelper.cs" company="com.esoftor">
+//  <copyright file="AesHelper.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -111,7 +111,7 @@ namespace Hybrid.Security
             {
                 if (aes == null)
                 {
-                    throw new ESoftorException("AES加密时获取加密实例失败");
+                    throw new HybridException("AES加密时获取加密实例失败");
                 }
                 aes.Key = CheckKey(key);
                 aes.Padding = PaddingMode.PKCS7;
@@ -142,7 +142,7 @@ namespace Hybrid.Security
             {
                 if (aes == null)
                 {
-                    throw new ESoftorException("AES加密时获取加密实例失败");
+                    throw new HybridException("AES加密时获取加密实例失败");
                 }
                 aes.Key = CheckKey(key);
                 aes.Padding = PaddingMode.PKCS7;

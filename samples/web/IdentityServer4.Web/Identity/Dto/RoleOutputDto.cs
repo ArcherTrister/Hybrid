@@ -1,20 +1,20 @@
 ﻿// -----------------------------------------------------------------------
 //  <copyright file="RoleOutputDto.cs" company="cn.lxking">
-//      Copyright © 2019-2020 ESoftor. All rights reserved.
+//      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-06-27 4:44</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Domain.Entities;
-using ESoftor.Mapping;
-using ESoftor.Web.Identity.Entity;
+using Hybrid.Domain.Entities;
+using Hybrid.Mapping;
+using Hybrid.Web.Identity.Entity;
 
 using System;
 using System.ComponentModel;
 
-namespace ESoftor.Web.Identity.Dtos
+namespace Hybrid.Web.Identity.Dtos
 {
     /// <summary>
     /// 角色输出DTO

@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="UserStoreBase.cs" company="com.esoftor">
+//  <copyright file="UserStoreBase.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -48,7 +48,7 @@ namespace Hybrid.Zero.Identity
         IUserAuthenticationTokenStore<TUser>,
         IUserAuthenticatorKeyStore<TUser>,
         IUserTwoFactorRecoveryCodeStore<TUser>,
-        IESoftorUserAuthenticationTokenStore<TUser, TUserKey>,
+        IHybridUserAuthenticationTokenStore<TUser, TUserKey>,
         IUserRoleStore<TUser>,
         IProtectedUserStore<TUser>
         where TUser : UserBase<TUserKey>

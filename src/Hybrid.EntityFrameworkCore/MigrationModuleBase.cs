@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="MigrationModuleBase.cs" company="com.esoftor">
+//  <copyright file="MigrationModuleBase.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -21,7 +21,7 @@ namespace Hybrid.EntityFrameworkCore
     /// 数据迁移模块基类
     /// </summary>
     /// <typeparam name="TDbContext">数据上下文类型</typeparam>
-    public abstract class MigrationModuleBase<TDbContext> : ESoftorModule
+    public abstract class MigrationModuleBase<TDbContext> : HybridModule
         where TDbContext : DbContext
     {
         /// <summary>
@@ -40,8 +40,8 @@ namespace Hybrid.EntityFrameworkCore
         /// <param name="provider">服务提供者</param>
         public override void UseModule(IServiceProvider provider)
         {
-            ESoftorOptions options = provider.GetESoftorOptions();
-            ESoftorDbContextOptions contextOptions = options.GetDbContextOptions(typeof(TDbContext));
+            HybridOptions options = provider.GetHybridOptions();
+            HybridDbContextOptions contextOptions = options.GetDbContextOptions(typeof(TDbContext));
             if (contextOptions?.DatabaseType != DatabaseType)
             {
                 return;

@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="ESoftorOptions.cs" company="com.esoftor">
+//  <copyright file="HybridOptions.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -19,14 +19,14 @@ namespace Hybrid.Core.Options
     /// <summary>
     /// Hybrid框架配置选项信息
     /// </summary>
-    public class ESoftorOptions
+    public class HybridOptions
     {
         /// <summary>
-        /// 初始化一个<see cref="ESoftorOptions"/>类型的新实例
+        /// 初始化一个<see cref="HybridOptions"/>类型的新实例
         /// </summary>
-        public ESoftorOptions()
+        public HybridOptions()
         {
-            DbContexts = new ConcurrentDictionary<string, ESoftorDbContextOptions>(StringComparer.OrdinalIgnoreCase);
+            DbContexts = new ConcurrentDictionary<string, HybridDbContextOptions>(StringComparer.OrdinalIgnoreCase);
             OAuth2S = new ConcurrentDictionary<string, OAuth2Options>();
             AuditingConfiguration = new AuditingConfiguration();
         }
@@ -39,7 +39,7 @@ namespace Hybrid.Core.Options
         /// <summary>
         /// 获取 数据上下文配置信息
         /// </summary>
-        public IDictionary<string, ESoftorDbContextOptions> DbContexts { get; }
+        public IDictionary<string, HybridDbContextOptions> DbContexts { get; }
 
         /// <summary>
         /// 获取 第三方OAuth2登录配置信息
@@ -69,7 +69,7 @@ namespace Hybrid.Core.Options
         /// <summary>
         /// 获取指定上下文类和指定数据库类型的上下文配置信息
         /// </summary>
-        public ESoftorDbContextOptions GetDbContextOptions(Type dbContextType)
+        public HybridDbContextOptions GetDbContextOptions(Type dbContextType)
         {
             return DbContexts.Values.SingleOrDefault(m => m.DbContextType == dbContextType);
         }

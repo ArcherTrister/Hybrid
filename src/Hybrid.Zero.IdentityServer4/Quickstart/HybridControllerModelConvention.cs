@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="HybridControllerModelConvention.cs" company="com.esoftor">
+//  <copyright file="HybridControllerModelConvention.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -19,7 +19,7 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
     {
         public void Apply(ControllerModel model)
         {
-            bool defaultUIAttribute = ESoftorConstants.CustomController.ValidEndings.Any(x =>
+            bool defaultUIAttribute = HybridConstants.CustomController.ValidEndings.Any(x =>
                     model.ControllerName.EndsWith(x, StringComparison.OrdinalIgnoreCase));
             if (defaultUIAttribute)
             {

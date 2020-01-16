@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="IdentityServer4ModuleBase.cs" company="com.esoftor">
+//  <copyright file="IdentityServer4ModuleBase.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -28,7 +28,7 @@ namespace Hybrid.Zero.IdentityServer4
     /// 身份论证模块基类
     /// </summary>
     [DependsOnModules(typeof(EventBusModule), typeof(AspNetCoreModule))]
-    public abstract class IdentityServer4ModuleBase<TUserStore, TRoleStore, TUser, TRole, TUserKey, TRoleKey> : AspESoftorModule
+    public abstract class IdentityServer4ModuleBase<TUserStore, TRoleStore, TUser, TRole, TUserKey, TRoleKey> : AspHybridModule
         where TUserStore : class, IUserStore<TUser>
         where TRoleStore : class, IRoleStore<TRole>
         where TUser : UserBase<TUserKey>

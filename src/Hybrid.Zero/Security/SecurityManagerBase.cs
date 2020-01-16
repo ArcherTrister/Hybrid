@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="SecurityManagerBase.cs" company="com.esoftor">
+//  <copyright file="SecurityManagerBase.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -162,7 +162,7 @@ namespace Hybrid.Zero.Security
                     if (dto.IsLocked && entity.Area == "Admin" && entity.Controller == "Function"
                         && (entity.Action == "Update" || entity.Action == "Read"))
                     {
-                        throw new ESoftorException($"功能信息“{entity.Name}”不能锁定");
+                        throw new HybridException($"功能信息“{entity.Name}”不能锁定");
                     }
                     if (dto.AuditEntityEnabled && !dto.AuditOperationEnabled && !entity.AuditOperationEnabled && !entity.AuditEntityEnabled)
                     {
@@ -762,21 +762,21 @@ namespace Hybrid.Zero.Security
                     TRole role = await _roleRepository.GetAsync(dto.RoleId);
                     if (role == null)
                     {
-                        throw new ESoftorException($"编号为“{dto.RoleId}”的角色信息不存在");
+                        throw new HybridException($"编号为“{dto.RoleId}”的角色信息不存在");
                     }
                     TEntityInfo entityInfo = await _entityInfoRepository.GetAsync(dto.EntityId);
                     if (entityInfo == null)
                     {
-                        throw new ESoftorException($"编号为“{dto.EntityId}”的数据实体信息不存在");
+                        throw new HybridException($"编号为“{dto.EntityId}”的数据实体信息不存在");
                     }
                     if (await CheckEntityRoleExists(m => m.RoleId.Equals(dto.RoleId) && m.EntityId == dto.EntityId && m.Operation == dto.Operation))
                     {
-                        throw new ESoftorException($"角色“{role.Name}”和实体“{entityInfo.Name}”和操作“{dto.Operation}”的数据权限规则已存在，不能重复添加");
+                        throw new HybridException($"角色“{role.Name}”和实体“{entityInfo.Name}”和操作“{dto.Operation}”的数据权限规则已存在，不能重复添加");
                     }
                     OperationResult checkResult = CheckFilterGroup(dto.FilterGroup, entityInfo);
                     if (!checkResult.Successed)
                     {
-                        throw new ESoftorException($"数据规则验证失败：{checkResult.Message}");
+                        throw new HybridException($"数据规则验证失败：{checkResult.Message}");
                     }
                     if (!dto.IsLocked)
                     {
@@ -812,21 +812,21 @@ namespace Hybrid.Zero.Security
                     TRole role = await _roleRepository.GetAsync(dto.RoleId);
                     if (role == null)
                     {
-                        throw new ESoftorException($"编号为“{dto.RoleId}”的角色信息不存在");
+                        throw new HybridException($"编号为“{dto.RoleId}”的角色信息不存在");
                     }
                     TEntityInfo entityInfo = await _entityInfoRepository.GetAsync(dto.EntityId);
                     if (entityInfo == null)
                     {
-                        throw new ESoftorException($"编号为“{dto.EntityId}”的数据实体信息不存在");
+                        throw new HybridException($"编号为“{dto.EntityId}”的数据实体信息不存在");
                     }
                     if (await CheckEntityRoleExists(m => m.RoleId.Equals(dto.RoleId) && m.EntityId == dto.EntityId && m.Operation == dto.Operation, dto.Id))
                     {
-                        throw new ESoftorException($"角色“{role.Name}”和实体“{entityInfo.Name}”和操作“{dto.Operation}”的数据权限规则已存在，不能重复添加");
+                        throw new HybridException($"角色“{role.Name}”和实体“{entityInfo.Name}”和操作“{dto.Operation}”的数据权限规则已存在，不能重复添加");
                     }
                     OperationResult checkResult = CheckFilterGroup(dto.FilterGroup, entityInfo);
                     if (!checkResult.Successed)
                     {
-                        throw new ESoftorException($"数据规则验证失败：{checkResult.Message}");
+                        throw new HybridException($"数据规则验证失败：{checkResult.Message}");
                     }
                     DataAuthCacheItem cacheItem = new DataAuthCacheItem()
                     {

@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
 //  <copyright file="AutoMapperConfiguration.cs" company="cn.lxking">
-//      Copyright © 2019-2020 ESoftor. All rights reserved.
+//      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
@@ -9,13 +9,14 @@
 
 using AutoMapper.Configuration;
 
-using ESoftor.AutoMapper;
-using ESoftor.Dependency;
-using ESoftor.Web.Identity.Entity;
+using Hybrid.Web.Identity.Entity;
+
+using Hybrid.AutoMapper;
+using Hybrid.Dependency;
 
 using Microsoft.Extensions.DependencyInjection;
 
-namespace ESoftor.Web.Identity.Dtos
+namespace Hybrid.Web.Identity.Dtos
 {
     /// <summary>
     /// DTO对象映射配置

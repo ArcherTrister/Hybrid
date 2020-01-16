@@ -7,10 +7,10 @@ using System.ComponentModel;
 namespace Hybrid.MailKit
 {
     /// <summary>
-    /// MailKitPack模块
+    /// MailKit模块
     /// </summary>
     [Description("MailKit模块")]
-    public class MailKitModule : ESoftorModule
+    public class MailKitModule : HybridModule
     {
         /// <summary>
         /// 获取 模块级别，级别越小越先启动

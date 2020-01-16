@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="MvcModuleInfoPicker.cs" company="com.esoftor">
+//  <copyright file="MvcModuleInfoPicker.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -135,7 +135,7 @@ namespace Hybrid.AspNetCore.Mvc
                 IFunction function = FunctionHandler.GetFunction(dependArea, dependController, dependOnAttr.Action);
                 if (function == null)
                 {
-                    throw new ESoftorException($"功能“{area}/{controller}/{method.Name}”的依赖功能“{dependArea}/{dependController}/{dependOnAttr.Action}”无法找到");
+                    throw new HybridException($"功能“{area}/{controller}/{method.Name}”的依赖功能“{dependArea}/{dependController}/{dependOnAttr.Action}”无法找到");
                 }
                 dependOnFunctions.Add(function);
             }

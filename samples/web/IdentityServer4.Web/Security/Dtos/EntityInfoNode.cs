@@ -1,18 +1,18 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="EntityInfoNode.cs" company="com.esoftor">
-//      Copyright © 2019-2020 ESoftor. All rights reserved.
+//  <copyright file="EntityInfoNode.cs" company="cn.lxking">
+//      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>http://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-07-08 3:03</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Core.EntityInfos;
-using ESoftor.Mapping;
+using Hybrid.Core.EntityInfos;
+using Hybrid.Mapping;
 
 using System;
 
-namespace ESoftor.Web.Security.Dtos
+namespace Hybrid.Web.Security.Dtos
 {
     /// <summary>
     /// 实体信息节点

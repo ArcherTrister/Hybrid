@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="ServiceExtensions.cs" company="com.esoftor">
+//  <copyright file="ServiceExtensions.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -32,10 +32,10 @@ namespace Microsoft.Extensions.DependencyInjection
     public static class ServiceExtensions
     {
         /// <summary>
-        /// 将Hybrid服务，各个<see cref="ESoftorModule"/>模块的服务添加到服务容器中
+        /// 将Hybrid服务，各个<see cref="HybridModule"/>模块的服务添加到服务容器中
         /// </summary>
-        public static IServiceCollection AddESoftor<TESoftorModuleManager>(this IServiceCollection services, Action<IESoftorBuilder> builderAction = null)
-            where TESoftorModuleManager : IESoftorModuleManager, new()
+        public static IServiceCollection AddHybrid<THybridModuleManager>(this IServiceCollection services, Action<IHybridBuilder> builderAction = null)
+            where THybridModuleManager : IHybridModuleManager, new()
         {
             Check.NotNull(services, nameof(services));
 
@@ -45,12 +45,12 @@ namespace Microsoft.Extensions.DependencyInjection
             //初始化所有程序集查找器
             services.TryAddSingleton<IAllAssemblyFinder>(new AppDomainAllAssemblyFinder());
 
-            IESoftorBuilder builder = services.GetSingletonInstanceOrNull<IESoftorBuilder>() ?? new ESoftorBuilder();
+            IHybridBuilder builder = services.GetSingletonInstanceOrNull<IHybridBuilder>() ?? new HybridBuilder();
             builderAction?.Invoke(builder);
-            services.TryAddSingleton<IESoftorBuilder>(builder);
+            services.TryAddSingleton<IHybridBuilder>(builder);
 
-            TESoftorModuleManager manager = new TESoftorModuleManager();
-            services.AddSingleton<IESoftorModuleManager>(manager);
+            THybridModuleManager manager = new THybridModuleManager();
+            services.AddSingleton<IHybridModuleManager>(manager);
             manager.LoadModules(services);
 
             services.TryAddSingleton<IHybridStartupConfiguration, HybridStartupConfiguration>();
@@ -67,11 +67,11 @@ namespace Microsoft.Extensions.DependencyInjection
         }
 
         /// <summary>
-        /// 从服务提供者中获取ESoftorOptions
+        /// 从服务提供者中获取HybridOptions
         /// </summary>
-        public static ESoftorOptions GetESoftorOptions(this IServiceProvider provider)
+        public static HybridOptions GetHybridOptions(this IServiceProvider provider)
         {
-            return provider.GetService<IOptions<ESoftorOptions>>()?.Value;
+            return provider.GetService<IOptions<HybridOptions>>()?.Value;
         }
 
         /// <summary>
@@ -127,9 +127,9 @@ namespace Microsoft.Extensions.DependencyInjection
         /// <summary>
         /// Hybrid框架初始化，适用于非AspNetCore环境
         /// </summary>
-        public static IServiceProvider UseESoftor(this IServiceProvider provider)
+        public static IServiceProvider UseHybrid(this IServiceProvider provider)
         {
-            IESoftorModuleManager moduleManager = provider.GetService<IESoftorModuleManager>();
+            IHybridModuleManager moduleManager = provider.GetService<IHybridModuleManager>();
             moduleManager.UseModule(provider);
             return provider;
         }

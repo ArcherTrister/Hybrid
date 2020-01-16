@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="CommunicationCryptor.cs" company="com.esoftor">
+//  <copyright file="CommunicationCryptor.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <last-editor>ArcherTrister</last-editor>
@@ -21,7 +21,7 @@ namespace Hybrid.Security
     {
         private readonly string _ownPrivateKey;
         private readonly string _facePublicKey;
-        private static readonly string Separator = Convert.ToBase64String(Encoding.UTF8.GetBytes("#@|esoftor|@#"));
+        private static readonly string Separator = Convert.ToBase64String(Encoding.UTF8.GetBytes("#@|hybrid|@#"));
 
         /// <summary>
         /// 初始化一个<see cref="TransmissionEncryptor"/>类型的新实例

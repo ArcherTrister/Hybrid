@@ -74,7 +74,7 @@ namespace Hybrid.EntityFrameworkCore
         {
             if (!entityType.IsEntityType())
             {
-                throw new ESoftorException($"类型“{entityType}”不是实体类型");
+                throw new HybridException($"类型“{entityType}”不是实体类型");
             }
 
             IUnitOfWork unitOfWork = _scopedDictionary.GetEntityUnitOfWork(entityType);
@@ -87,9 +87,9 @@ namespace Hybrid.EntityFrameworkCore
             Type dbContextType = entityManager.GetDbContextTypeForEntity(entityType);
             if (dbContextType == null)
             {
-                throw new ESoftorException($"实体类“{entityType}”的所属上下文类型无法找到");
+                throw new HybridException($"实体类“{entityType}”的所属上下文类型无法找到");
             }
-            ESoftorDbContextOptions dbContextOptions = GetDbContextResolveOptions(dbContextType);
+            HybridDbContextOptions dbContextOptions = GetDbContextResolveOptions(dbContextType);
             unitOfWork = _scopedDictionary.GetConnUnitOfWork(dbContextOptions.ConnectionString);
             if (unitOfWork != null)
             {
@@ -118,12 +118,12 @@ namespace Hybrid.EntityFrameworkCore
         /// </summary>
         /// <param name="dbContextType">数据上下文类型</param>
         /// <returns>数据上下文选项</returns>
-        public ESoftorDbContextOptions GetDbContextResolveOptions(Type dbContextType)
+        public HybridDbContextOptions GetDbContextResolveOptions(Type dbContextType)
         {
-            ESoftorDbContextOptions dbContextOptions = ServiceProvider.GetESoftorOptions()?.GetDbContextOptions(dbContextType);
+            HybridDbContextOptions dbContextOptions = ServiceProvider.GetHybridOptions()?.GetDbContextOptions(dbContextType);
             if (dbContextOptions == null)
             {
-                throw new ESoftorException($"无法找到数据上下文“{dbContextType}”的配置信息");
+                throw new HybridException($"无法找到数据上下文“{dbContextType}”的配置信息");
             }
             return dbContextOptions;
         }

@@ -133,7 +133,7 @@
     <value>名称为“{0}”的类型不存在</value>
   </data>
   <data name="Context_BuildServicesFirst" xml:space="preserve">
-    <value>请先初始化依赖注入服务，再使用ESoftorContext.IocRegisterServices属性</value>
+    <value>请先初始化依赖注入服务，再使用HybridContext.IocRegisterServices属性</value>
   </data>
   <data name="DbContextInitializerConfig_InitializerNotExists" xml:space="preserve">
     <value>上下文初始化类型“{0}”不存在</value>

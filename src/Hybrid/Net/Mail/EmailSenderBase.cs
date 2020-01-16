@@ -29,14 +29,14 @@ namespace Hybrid.Net.Mail
         protected EmailSenderBase(IServiceProvider provider)
         {
             _provider = provider;
-            MailSenderOptions = _provider.GetESoftorOptions().MailSender;
+            MailSenderOptions = _provider.GetHybridOptions().MailSender;
             if (MailSenderOptions == null ||
                 MailSenderOptions.Host.IsNullOrEmpty() ||
                 MailSenderOptions.Host.Contains("请替换") ||
                 MailSenderOptions.UserName.IsNullOrEmpty() ||
                 MailSenderOptions.Password.IsNullOrEmpty())
             {
-                throw new ESoftorException("邮件发送选项不存在，请在appsetting.json配置Hybrid.MailKitSender节点");
+                throw new HybridException("邮件发送选项不存在，请在appsetting.json配置Hybrid.MailKitSender节点");
             }
         }
 

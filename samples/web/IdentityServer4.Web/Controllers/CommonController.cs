@@ -1,23 +1,22 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="CommonController.cs" company="com.esoftor">
-//      Copyright © 2019-2020 ESoftor. All rights reserved.
+//  <copyright file="CommonController.cs" company="cn.lxking">
+//      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.AspNetCore.Mvc.Controllers;
-using ESoftor.AspNetCore.Services;
-using ESoftor.AspNetCore.UI;
-using ESoftor.CodeGenerator;
-using ESoftor.Core.ModuleInfos;
-using ESoftor.Core.Modules;
-using ESoftor.Data;
-using ESoftor.Drawing;
-using ESoftor.IO;
-using ESoftor.Reflection;
-
+using Hybrid.AspNetCore.Mvc.Controllers;
+using Hybrid.AspNetCore.Services;
+using Hybrid.AspNetCore.UI;
+using Hybrid.CodeGenerator;
+using Hybrid.Core.ModuleInfos;
+using Hybrid.Core.Modules;
+using Hybrid.Data;
+using Hybrid.Drawing;
+using Hybrid.IO;
+using Hybrid.Reflection;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -33,7 +32,7 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 
-using AssemblyExtensions = ESoftor.Reflection.AssemblyExtensions;
+using AssemblyExtensions = Hybrid.Reflection.AssemblyExtensions;
 
 namespace IdentityServer4.Web.Controllers
 {
@@ -126,7 +125,7 @@ namespace IdentityServer4.Web.Controllers
             IServiceProvider provider = HttpContext.RequestServices;
 
             dynamic info = new ExpandoObject();
-            IESoftorModuleManager moduleManager = provider.GetService<IESoftorModuleManager>();
+            IHybridModuleManager moduleManager = provider.GetService<IHybridModuleManager>();
             info.Modules = moduleManager.SourceModules.OrderBy(m => m.Level).ThenBy(m => m.Order).ThenBy(m => m.GetType().FullName).Select(m => new
             {
                 m.GetType().Name,
@@ -143,7 +142,7 @@ namespace IdentityServer4.Web.Controllers
             {
                 Message = "WebApi 数据服务已启动",
                 CliVersion = cliVersion,
-                ESoftorVersion = eSoftorVersion
+                HybridVersion = eSoftorVersion
             };
 
             return info;

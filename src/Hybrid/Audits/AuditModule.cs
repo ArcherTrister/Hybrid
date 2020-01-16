@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="AuditModule.cs" company="com.esoftor">
+//  <copyright file="AuditModule.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -22,7 +22,7 @@ namespace Hybrid.Audits
     /// </summary>
     [Description("审计模块")]
     [DependsOnModules(typeof(EventBusModule))]
-    public class AuditModule : ESoftorModule
+    public class AuditModule : HybridModule
     {
         /// <summary>
         /// 获取 模块级别，级别越小越先启动
@@ -49,7 +49,7 @@ namespace Hybrid.Audits
 
         public override void UseModule(IServiceProvider provider)
         {
-            AuditingConfiguration auditingConfiguration = provider.GetESoftorOptions().AuditingConfiguration;
+            AuditingConfiguration auditingConfiguration = provider.GetHybridOptions().AuditingConfiguration;
             IsEnabled = auditingConfiguration.IsEnabled;
         }
     }

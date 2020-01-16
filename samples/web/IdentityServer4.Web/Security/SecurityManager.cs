@@ -1,25 +1,25 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="SecurityManager.cs" company="com.esoftor">
-//      Copyright © 2019-2020 ESoftor. All rights reserved.
+//  <copyright file="SecurityManager.cs" company="cn.lxking">
+//      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>http://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-07-04 1:13</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Core.EntityInfos;
-using ESoftor.Core.Functions;
-using ESoftor.Domain.Repositories;
-using ESoftor.EventBuses;
-using ESoftor.Zero.Security;
-using ESoftor.Zero.Security.Dtos;
-using ESoftor.Web.Identity.Entity;
-using ESoftor.Web.Security.Dtos;
-using ESoftor.Web.Security.Entities;
+using Hybrid.Core.EntityInfos;
+using Hybrid.Core.Functions;
+using Hybrid.Domain.Repositories;
+using Hybrid.EventBuses;
+using Hybrid.Zero.Security;
+using Hybrid.Zero.Security.Dtos;
+using Hybrid.Web.Identity.Entity;
+using Hybrid.Web.Security.Dtos;
+using Hybrid.Web.Security.Entities;
 
 using System;
 
-namespace ESoftor.Web.Security
+namespace Hybrid.Web.Security
 {
     /// <summary>
     /// 权限安全管理器

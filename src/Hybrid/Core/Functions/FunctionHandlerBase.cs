@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="FunctionHandlerBase.cs" company="com.esoftor">
+//  <copyright file="FunctionHandlerBase.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -285,7 +285,7 @@ namespace Hybrid.Core.Functions
                 }
                 catch (InvalidOperationException)
                 {
-                    throw new ESoftorException($"发现多个“{item.Area}-{item.Controller}-{item.Action}”的功能信息，不允许重名");
+                    throw new HybridException($"发现多个“{item.Area}-{item.Controller}-{item.Action}”的功能信息，不允许重名");
                 }
                 if (function == null)
                 {

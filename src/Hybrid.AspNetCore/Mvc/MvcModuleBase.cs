@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="MvcModuleBase.cs" company="com.esoftor">
+//  <copyright file="MvcModuleBase.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -21,7 +21,7 @@ namespace Hybrid.AspNetCore.Mvc
     /// Mvc模块基类
     /// </summary>
     [DependsOnModules(typeof(AspNetCoreModule))]
-    public abstract class MvcModuleBase : AspESoftorModule
+    public abstract class MvcModuleBase : AspHybridModule
     {
         /// <summary>
         /// 获取 模块级别，级别越小越先启动

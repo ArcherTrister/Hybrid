@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="LocalAreaApiController.cs" company="com.esoftor">
+//  <copyright file="LocalAreaApiController.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -23,7 +23,7 @@ namespace Hybrid.AspNetCore.Mvc.Controllers
     /// </summary>
     [ApiController]
     [Route("api/[area]/[controller]/[action]")]
-    [Authorize(AuthenticationSchemes = ESoftorConstants.LocalApi.AuthenticationScheme)]
+    [Authorize(AuthenticationSchemes = HybridConstants.LocalApi.AuthenticationScheme)]
     public abstract class LocalAreaApiController : Controller
     {
         /// <summary>

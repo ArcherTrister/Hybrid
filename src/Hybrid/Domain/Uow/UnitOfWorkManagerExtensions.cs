@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="UnitOfWorkManagerExtensions.cs" company="com.esoftor">
+//  <copyright file="UnitOfWorkManagerExtensions.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -42,7 +42,7 @@ namespace Hybrid.Domain.Uow
         {
             if (!entityType.IsEntityType())
             {
-                throw new ESoftorException($"类型“{entityType}”不是实体类型");
+                throw new HybridException($"类型“{entityType}”不是实体类型");
             }
             IUnitOfWork unitOfWork = unitOfWorkManager.GetUnitOfWork(entityType);
             return unitOfWork?.GetDbContext(entityType);
@@ -51,7 +51,7 @@ namespace Hybrid.Domain.Uow
         /// <summary>
         /// 获取指定实体类型的数据上下文选项
         /// </summary>
-        public static ESoftorDbContextOptions GetDbContextResolveOptions<TEntity, TKey>(this IUnitOfWorkManager unitOfWorkManager) where TEntity : IEntity<TKey>
+        public static HybridDbContextOptions GetDbContextResolveOptions<TEntity, TKey>(this IUnitOfWorkManager unitOfWorkManager) where TEntity : IEntity<TKey>
         {
             Type entityType = typeof(TEntity);
             return unitOfWorkManager.GetDbContextResolveOptions(entityType);
@@ -60,13 +60,13 @@ namespace Hybrid.Domain.Uow
         /// <summary>
         /// 获取指定实体类型的数据上下文选项
         /// </summary>
-        public static ESoftorDbContextOptions GetDbContextResolveOptions(this IUnitOfWorkManager unitOfWorkManager, Type entityType)
+        public static HybridDbContextOptions GetDbContextResolveOptions(this IUnitOfWorkManager unitOfWorkManager, Type entityType)
         {
             Type dbContextType = unitOfWorkManager.GetDbContextType(entityType);
-            ESoftorDbContextOptions dbContextOptions = unitOfWorkManager.ServiceProvider.GetESoftorOptions()?.GetDbContextOptions(dbContextType);
+            HybridDbContextOptions dbContextOptions = unitOfWorkManager.ServiceProvider.GetHybridOptions()?.GetDbContextOptions(dbContextType);
             if (dbContextOptions == null)
             {
-                throw new ESoftorException($"无法找到数据上下文“{dbContextType}”的配置信息");
+                throw new HybridException($"无法找到数据上下文“{dbContextType}”的配置信息");
             }
             return dbContextOptions;
         }
@@ -76,7 +76,7 @@ namespace Hybrid.Domain.Uow
         /// </summary>
         public static ISqlExecutor<TEntity, TKey> GetSqlExecutor<TEntity, TKey>(this IUnitOfWorkManager unitOfWorkManager) where TEntity : IEntity<TKey>
         {
-            ESoftorDbContextOptions options = unitOfWorkManager.GetDbContextResolveOptions(typeof(TEntity));
+            HybridDbContextOptions options = unitOfWorkManager.GetDbContextResolveOptions(typeof(TEntity));
             DatabaseType databaseType = options.DatabaseType;
             IList<ISqlExecutor<TEntity, TKey>> executors = unitOfWorkManager.ServiceProvider.GetServices<ISqlExecutor<TEntity, TKey>>().ToList();
             return executors.FirstOrDefault(m => m.DatabaseType == databaseType);

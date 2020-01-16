@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="HybridApplicationModelConvention.cs" company="com.esoftor">
+//  <copyright file="HybridApplicationModelConvention.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -20,7 +20,7 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
         public void Apply(ApplicationModel application)
         {
             var removeList = application.Controllers.Where(p =>
-                ESoftorConstants.CustomController.ValidEndings.Any(x=> 
+                HybridConstants.CustomController.ValidEndings.Any(x=> 
                     p.ControllerName.EndsWith(x, StringComparison.OrdinalIgnoreCase))
                 && !p.ControllerType.GenericTypeArguments.Any()).ToList();
             foreach (var item in removeList)

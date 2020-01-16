@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <UserSecretsId>aspnet-ESoftor.Web-14199B0F-D4A5-473C-AC2D-54A47E5A2732</UserSecretsId>
+    <UserSecretsId>aspnet-Hybrid.Web-14199B0F-D4A5-473C-AC2D-54A47E5A2732</UserSecretsId>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
   </PropertyGroup>
 

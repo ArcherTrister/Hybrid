@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="MvcController.cs" company="com.esoftor">
+//  <copyright file="MvcController.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -51,7 +51,7 @@ namespace Hybrid.AspNetCore.Mvc.Controllers
             {
                 if (LocalizationSourceName == null)
                 {
-                    throw new ESoftorException("Must set LocalizationSourceName before, in order to get LocalizationSource");
+                    throw new HybridException("Must set LocalizationSourceName before, in order to get LocalizationSource");
                 }
 
                 if (_localizationSource == null || _localizationSource.Name != LocalizationSourceName)
@@ -81,7 +81,7 @@ namespace Hybrid.AspNetCore.Mvc.Controllers
         {
             get
             {
-                string value = HttpContext.Request.Cookies[ESoftorConstants.HybridCookieName];
+                string value = HttpContext.Request.Cookies[HybridConstants.HybridCookieName];
                 if (value.IsNullOrWhiteSpace())
                 {
                     return null;

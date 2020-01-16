@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="HybridControllerFeatureProvider.cs" company="com.esoftor">
+//  <copyright file="HybridControllerFeatureProvider.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -24,7 +24,7 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
 
             if (!isController)
             {
-                isController = ESoftorConstants.CustomController.ValidEndings.Any(x =>
+                isController = HybridConstants.CustomController.ValidEndings.Any(x =>
                     typeInfo.Name.EndsWith(x, StringComparison.OrdinalIgnoreCase)) 
                     && typeInfo.GenericTypeArguments.Any();
             }

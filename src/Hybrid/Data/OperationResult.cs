@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="OperationResult.cs" company="com.esoftor">
+//  <copyright file="OperationResult.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -81,7 +81,7 @@ namespace Hybrid.Data
     /// 泛型版本的业务操作结果信息类，对操作结果进行封装
     /// </summary>
     /// <typeparam name="TData">返回数据的类型</typeparam>
-    public class OperationResult<TData> : ESoftorResult<OperationResultType, TData>
+    public class OperationResult<TData> : HybridResult<OperationResultType, TData>
     {
         static OperationResult()
         {

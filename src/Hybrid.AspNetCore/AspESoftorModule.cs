@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="AspESoftorModule.cs" company="com.esoftor">
+//  <copyright file="AspHybridModule.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -16,7 +16,7 @@ namespace Hybrid.AspNetCore
     /// <summary>
     ///  基于AspNetCore环境的Module模块基类
     /// </summary>
-    public abstract class AspESoftorModule : ESoftorModule
+    public abstract class AspHybridModule : HybridModule
     {
         /// <summary>
         /// 应用AspNetCore的服务业务

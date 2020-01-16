@@ -1,17 +1,17 @@
 ﻿// -----------------------------------------------------------------------
 //  <copyright file="UserLoginOutputDto.cs" company="cn.lxking">
-//      Copyright © 2019-2020-2019 ESoftor. All rights reserved.
+//      Copyright © 2019-2020-2019 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2019-03-24 15:11</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Domain.Entities;
+using Hybrid.Domain.Entities;
 
 using System;
 
-namespace ESoftor.Web.Identity.Dtos
+namespace Hybrid.Web.Identity.Dtos
 {
     /// <summary>
     /// 输出DTO：OAuth2登录信息

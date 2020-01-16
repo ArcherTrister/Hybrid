@@ -1,5 +1,5 @@
 // -----------------------------------------------------------------------
-//  <copyright file="DbContextBase.cs" company="com.esoftor">
+//  <copyright file="DbContextBase.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -32,7 +32,7 @@ namespace Hybrid.EntityFrameworkCore
     {
         private readonly IEntityManager _entityManager;
         private readonly ILogger _logger;
-        private readonly ESoftorDbContextOptions _esoftorDbOptions;
+        private readonly HybridDbContextOptions _hybridDbOptions;
         private readonly IServiceProvider _serviceProvider;
 
         /// <summary>
@@ -43,7 +43,7 @@ namespace Hybrid.EntityFrameworkCore
         {
             _entityManager = entityManager;
             _serviceProvider = serviceProvider;
-            _esoftorDbOptions = serviceProvider?.GetESoftorOptions()?.DbContexts?.Values.FirstOrDefault(m => m.DbContextType == GetType());
+            _hybridDbOptions = serviceProvider?.GetHybridOptions()?.DbContexts?.Values.FirstOrDefault(m => m.DbContextType == GetType());
             _logger = serviceProvider?.GetLogger(GetType());
         }
 
@@ -74,7 +74,7 @@ namespace Hybrid.EntityFrameworkCore
         public override int SaveChanges()
         {
             IList<AuditEntityEntry> auditEntities = new List<AuditEntityEntry>();
-            if (_esoftorDbOptions?.AuditEntityEnabled == true)
+            if (_hybridDbOptions?.AuditEntityEnabled == true)
             {
                 IAuditEntityProvider auditEntityProvider = _serviceProvider.GetService<IAuditEntityProvider>();
                 auditEntities = auditEntityProvider?.GetAuditEntities(this)?.ToList();
@@ -122,7 +122,7 @@ namespace Hybrid.EntityFrameworkCore
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
         {
             IList<AuditEntityEntry> auditEntities = new List<AuditEntityEntry>();
-            if (_esoftorDbOptions?.AuditEntityEnabled == true)
+            if (_hybridDbOptions?.AuditEntityEnabled == true)
             {
                 IAuditEntityProvider auditEntityProvider = _serviceProvider.GetService<IAuditEntityProvider>();
                 auditEntities = auditEntityProvider?.GetAuditEntities(this)?.ToList();
@@ -195,7 +195,7 @@ namespace Hybrid.EntityFrameworkCore
         ///// <param name="optionsBuilder"></param>
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{
-        //    if (_esoftorDbOptions != null && _esoftorDbOptions.LazyLoadingProxiesEnabled)
+        //    if (_hybridDbOptions != null && _hybridDbOptions.LazyLoadingProxiesEnabled)
         //    {
         //        optionsBuilder.UseLazyLoadingProxies();
         //    }

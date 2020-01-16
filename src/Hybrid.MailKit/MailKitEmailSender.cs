@@ -43,7 +43,7 @@ namespace Hybrid.MailKit
             catch (Exception)
             {
                 client.Dispose();
-                throw new ESoftorException("创建发送邮件客户端失败");
+                throw new HybridException("创建发送邮件客户端失败");
             }
         }
 

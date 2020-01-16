@@ -1,20 +1,20 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="LoginLogConfiguration.cs" company="com.esoftor">
-//      Copyright © 2019-2020 ESoftor. All rights reserved.
+//  <copyright file="LoginLogConfiguration.cs" company="cn.lxking">
+//      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>http://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-06-27 4:48</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.EntityFrameworkCore;
+using Hybrid.EntityFrameworkCore;
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 using System;
 
-namespace ESoftor.Web.Identity.Entity.EntityConfiguration
+namespace Hybrid.Web.Identity.Entity.EntityConfiguration
 {
     public class LoginLogConfiguration : EntityTypeConfigurationBase<LoginLog, Guid>
     {

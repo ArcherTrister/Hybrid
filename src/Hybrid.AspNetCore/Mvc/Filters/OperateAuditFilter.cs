@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="OperateAuditFilter.cs" company="com.esoftor">
+//  <copyright file="OperateAuditFilter.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -41,7 +41,7 @@ namespace Hybrid.AspNetCore.Mvc.Filters
             ClaimsPrincipal principal = context.HttpContext.User;
             string[] roleName = functionAuthorization.GetOkRoles(function, principal);
             dict.DataAuthValidRoleNames = roleName;
-            AuditingConfiguration configuration = provider.GetESoftorOptions().AuditingConfiguration;
+            AuditingConfiguration configuration = provider.GetHybridOptions().AuditingConfiguration;
             if (!AuditingHelper.ShouldSaveAudit(configuration, principal, function, context.ActionDescriptor.GetMethodInfo()))
             {
                 return;

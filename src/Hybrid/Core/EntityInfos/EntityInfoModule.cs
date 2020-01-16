@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="EntityInfoModule.cs" company="com.esoftor">
+//  <copyright file="EntityInfoModule.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -20,7 +20,7 @@ namespace Hybrid.Core.EntityInfos
     /// 实体信息模块
     /// </summary>
     [Description("数据实体模块")]
-    public class EntityInfoModule : ESoftorModule
+    public class EntityInfoModule : HybridModule
     {
         /// <summary>
         /// 获取 模块级别

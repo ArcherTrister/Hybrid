@@ -62,9 +62,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hybrid.Zero.IdentityServer4
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hybrid.MailKit", "src\Hybrid.MailKit\Hybrid.MailKit.csproj", "{3A2C2DE9-1E36-49F4-8ABE-F5AB912C1803}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OSharp.EntityFrameworkCore.MySql", "src\Hybrid.EntityFrameworkCore.MySql\OSharp.EntityFrameworkCore.MySql.csproj", "{31D44F20-C7DF-4763-9ABD-93B235379B5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hybrid.EntityFrameworkCore.MySql", "src\Hybrid.EntityFrameworkCore.MySql\Hybrid.EntityFrameworkCore.MySql.csproj", "{31D44F20-C7DF-4763-9ABD-93B235379B5F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OSharp.EntityFrameworkCore.Sqlite", "src\Hybrid.EntityFrameworkCore.Sqlite\OSharp.EntityFrameworkCore.Sqlite.csproj", "{EA1355AC-1DA1-4518-BDDE-9186A94B675A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hybrid.EntityFrameworkCore.Sqlite", "src\Hybrid.EntityFrameworkCore.Sqlite\Hybrid.EntityFrameworkCore.Sqlite.csproj", "{EA1355AC-1DA1-4518-BDDE-9186A94B675A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

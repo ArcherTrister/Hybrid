@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="ESoftorModuleManager.cs" company="com.esoftor">
+//  <copyright file="HybridModuleManager.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -24,28 +24,28 @@ namespace Hybrid.Core.Modules
     /// <summary>
     /// Hybrid模块管理器
     /// </summary>
-    public class ESoftorModuleManager : IESoftorModuleManager
+    public class HybridModuleManager : IHybridModuleManager
     {
-        private readonly List<ESoftorModule> _sourceModules;
+        private readonly List<HybridModule> _sourceModules;
 
         /// <summary>
-        /// 初始化一个<see cref="ESoftorModuleManager"/>类型的新实例
+        /// 初始化一个<see cref="HybridModuleManager"/>类型的新实例
         /// </summary>
-        public ESoftorModuleManager()
+        public HybridModuleManager()
         {
-            _sourceModules = new List<ESoftorModule>();
-            LoadedModules = new List<ESoftorModule>();
+            _sourceModules = new List<HybridModule>();
+            LoadedModules = new List<HybridModule>();
         }
 
         /// <summary>
         /// 获取 自动检索到的所有模块信息
         /// </summary>
-        public IEnumerable<ESoftorModule> SourceModules => _sourceModules;
+        public IEnumerable<HybridModule> SourceModules => _sourceModules;
 
         /// <summary>
         /// 获取 最终加载的模块信息集合
         /// </summary>
-        public IEnumerable<ESoftorModule> LoadedModules { get; private set; }
+        public IEnumerable<HybridModule> LoadedModules { get; private set; }
 
         /// <summary>
         /// 加载模块服务
@@ -54,29 +54,29 @@ namespace Hybrid.Core.Modules
         /// <returns></returns>
         public virtual IServiceCollection LoadModules(IServiceCollection services)
         {
-            IESoftorModuleTypeFinder moduleTypeFinder =
-                services.GetOrAddTypeFinder<IESoftorModuleTypeFinder>(assemblyFinder => new ESoftorModuleTypeFinder(assemblyFinder));
+            IHybridModuleTypeFinder moduleTypeFinder =
+                services.GetOrAddTypeFinder<IHybridModuleTypeFinder>(assemblyFinder => new HybridModuleTypeFinder(assemblyFinder));
             Type[] moduleTypes = moduleTypeFinder.FindAll();
             _sourceModules.Clear();
-            _sourceModules.AddRange(moduleTypes.Select(m => (ESoftorModule)Activator.CreateInstance(m)));
+            _sourceModules.AddRange(moduleTypes.Select(m => (HybridModule)Activator.CreateInstance(m)));
 
-            IESoftorBuilder builder = services.GetSingletonInstance<IESoftorBuilder>();
-            List<ESoftorModule> modules;
+            IHybridBuilder builder = services.GetSingletonInstance<IHybridBuilder>();
+            List<HybridModule> modules;
             if (builder.AddModules.Any())
             {
                 modules = _sourceModules.Where(m => m.Level == ModuleLevel.Core)
                     .Union(_sourceModules.Where(m => builder.AddModules.Contains(m.GetType()))).Distinct()
                     .OrderBy(m => m.Level).ThenBy(m => m.Order).ToList();
-                List<ESoftorModule> dependModules = new List<ESoftorModule>();
-                foreach (ESoftorModule module in modules)
+                List<HybridModule> dependModules = new List<HybridModule>();
+                foreach (HybridModule module in modules)
                 {
                     Type[] dependModuleTypes = module.GetDependModuleTypes();
                     foreach (Type dependModuleType in dependModuleTypes)
                     {
-                        ESoftorModule dependModule = _sourceModules.Find(m => m.GetType() == dependModuleType);
+                        HybridModule dependModule = _sourceModules.Find(m => m.GetType() == dependModuleType);
                         if (dependModule == null)
                         {
-                            throw new ESoftorException($"加载模块{module.GetType().FullName}时无法找到依赖模块{dependModuleType.FullName}");
+                            throw new HybridException($"加载模块{module.GetType().FullName}时无法找到依赖模块{dependModuleType.FullName}");
                         }
                         dependModules.AddIfNotExist(dependModule);
                     }
@@ -92,7 +92,7 @@ namespace Hybrid.Core.Modules
             // 按先层级后顺序的规则进行排序
             modules = modules.OrderBy(m => m.Level).ThenBy(m => m.Order).ToList();
             LoadedModules = modules;
-            foreach (ESoftorModule module in LoadedModules)
+            foreach (HybridModule module in LoadedModules)
             {
                 services = module.AddServices(services);
             }
@@ -106,11 +106,11 @@ namespace Hybrid.Core.Modules
         /// <param name="provider">服务提供者</param>
         public virtual void UseModule(IServiceProvider provider)
         {
-            ILogger logger = provider.GetLogger<ESoftorModuleManager>();
+            ILogger logger = provider.GetLogger<HybridModuleManager>();
             logger.LogInformation("Hybrid框架初始化开始");
             DateTime dtStart = DateTime.Now;
 
-            foreach (ESoftorModule module in LoadedModules)
+            foreach (HybridModule module in LoadedModules)
             {
                 module.UseModule(provider);
                 logger.LogInformation($"模块{module.GetType()}加载成功");

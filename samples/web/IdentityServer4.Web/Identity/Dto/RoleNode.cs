@@ -1,13 +1,13 @@
 ﻿// -----------------------------------------------------------------------
 //  <copyright file="RoleNode.cs" company="cn.lxking">
-//      Copyright © 2019-2020 ESoftor. All rights reserved.
+//      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-06-27 4:44</last-date>
 // -----------------------------------------------------------------------
 
-namespace ESoftor.Web.Identity.Dtos
+namespace Hybrid.Web.Identity.Dtos
 {
     /// <summary>
     /// 角色节点

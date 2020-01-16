@@ -1,9 +1,9 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="DbContextOptionsBuilderCreator.cs" company="OSharp开源团队">
-//      Copyright (c) 2014-2018 OSharp. All rights reserved.
+//  <copyright file="DbContextOptionsBuilderDriveHandler.cs" company="cn.lxking">
+//      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
-//  <site>http://www.osharp.org</site>
-//  <last-editor>郭明锋</last-editor>
+//  <site>https://www.lxking.cn</site>
+//  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-11-05 16:29</last-date>
 // -----------------------------------------------------------------------
 
@@ -12,10 +12,10 @@ using System.Data.Common;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-using OSharp.Dependency;
+using Hybrid.Dependency;
+using Hybrid.Domain.EntityFramework;
 
-
-namespace OSharp.Entity.Sqlite
+namespace Hybrid.EntityFrameworkCore.Sqlite
 {
     /// <summary>
     /// Sqlite的<see cref="DbContextOptionsBuilder"/>数据库驱动差异处理器

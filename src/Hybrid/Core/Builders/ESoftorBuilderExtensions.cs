@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="ESoftorBuilderExtensions.cs" company="com.esoftor">
+//  <copyright file="HybridBuilderExtensions.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -12,16 +12,16 @@ using Hybrid.Core.Modules;
 namespace Hybrid.Core.Builders
 {
     /// <summary>
-    /// IESoftorBuilder扩展方法
+    /// IHybridBuilder扩展方法
     /// </summary>
-    public static class ESoftorBuilderExtensions
+    public static class HybridBuilderExtensions
     {
         /// <summary>
         /// 添加CoreModule
         /// </summary>
-        public static IESoftorBuilder AddCoreModule(this IESoftorBuilder builder)
+        public static IHybridBuilder AddCoreModule(this IHybridBuilder builder)
         {
-            return builder.AddModule<ESoftorCoreModule>();
+            return builder.AddModule<HybridCoreModule>();
         }
     }
 }

@@ -1,25 +1,25 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="SecurityModule.cs" company="com.esoftor">
-//      Copyright © 2019-2020 ESoftor. All rights reserved.
+//  <copyright file="SecurityModule.cs" company="cn.lxking">
+//      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>http://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-06-27 4:44</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Core.EntityInfos;
-using ESoftor.Core.Functions;
-using ESoftor.Zero.Security;
-using ESoftor.Zero.Security.Dtos;
-using ESoftor.Security;
-using ESoftor.Web.Security;
-using ESoftor.Web.Security.Dtos;
-using ESoftor.Web.Security.Entities;
+using Hybrid.Core.EntityInfos;
+using Hybrid.Core.Functions;
+using Hybrid.Zero.Security;
+using Hybrid.Zero.Security.Dtos;
+using Hybrid.Security;
+using Hybrid.Web.Security;
+using Hybrid.Web.Security.Dtos;
+using Hybrid.Web.Security.Entities;
 
 using System;
 using System.ComponentModel;
 
-namespace ESoftor.Web.Startups
+namespace Hybrid.Web.Startups
 {
     /// <summary>
     /// 权限安全模块

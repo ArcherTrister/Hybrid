@@ -1,5 +1,5 @@
 // -----------------------------------------------------------------------
-//  <copyright file="UnitOfWork.cs" company="com.esoftor">
+//  <copyright file="UnitOfWork.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -37,7 +37,7 @@ namespace Hybrid.EntityFrameworkCore
         private readonly List<DbContextBase> _dbContexts = new List<DbContextBase>();
         private DbTransaction _transaction;
         private DbConnection _connection;
-        private ESoftorDbContextOptions _dbContextOptions;
+        private HybridDbContextOptions _dbContextOptions;
         private bool _disposed;
 
         /// <summary>
@@ -74,7 +74,7 @@ namespace Hybrid.EntityFrameworkCore
         {
             if (!entityType.IsEntityType())
             {
-                throw new ESoftorException($"类型“{entityType}”不是实体类型");
+                throw new HybridException($"类型“{entityType}”不是实体类型");
             }
 
             IEntityManager manager = _serviceProvider.GetService<IEntityManager>();
@@ -90,10 +90,10 @@ namespace Hybrid.EntityFrameworkCore
             dbContext = (DbContextBase)_serviceProvider.GetService(dbContextType);
             if (!dbContext.ExistsRelationalDatabase())
             {
-                throw new ESoftorException($"数据上下文“{dbContext.GetType().FullName}”的数据库不存在，请通过 Migration 功能进行数据迁移创建数据库。");
+                throw new HybridException($"数据上下文“{dbContext.GetType().FullName}”的数据库不存在，请通过 Migration 功能进行数据迁移创建数据库。");
             }
 
-            _dbContextOptions = _serviceProvider.GetESoftorOptions().GetDbContextOptions(dbContextType);
+            _dbContextOptions = _serviceProvider.GetHybridOptions().GetDbContextOptions(dbContextType);
             ScopedDictionary scopedDictionary = _serviceProvider.GetService<ScopedDictionary>();
             _connection = dbContext.Database.GetDbConnection();
             scopedDictionary.TryAdd($"DnConnection_{_dbContextOptions.ConnectionString}", _connection);

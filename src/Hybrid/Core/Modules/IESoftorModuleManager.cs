@@ -1,5 +1,5 @@
 // -----------------------------------------------------------------------
-//  <copyright file="IESoftorModuleManager.cs" company="com.esoftor">
+//  <copyright file="IHybridModuleManager.cs" company="cn.lxking">
 //      Copyright ? 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -17,17 +17,17 @@ namespace Hybrid.Core.Modules
     /// <summary>
     /// 定义Hybrid模块管理器
     /// </summary>
-    public interface IESoftorModuleManager
+    public interface IHybridModuleManager
     {
         /// <summary>
         /// 获取 自动检索到的所有模块信息
         /// </summary>
-        IEnumerable<ESoftorModule> SourceModules { get; }
+        IEnumerable<HybridModule> SourceModules { get; }
 
         /// <summary>
         /// 获取 最终加载的模块信息集合
         /// </summary>
-        IEnumerable<ESoftorModule> LoadedModules { get; }
+        IEnumerable<HybridModule> LoadedModules { get; }
 
         /// <summary>
         /// 加载模块服务

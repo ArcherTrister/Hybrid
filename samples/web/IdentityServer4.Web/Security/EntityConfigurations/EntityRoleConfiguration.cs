@@ -1,23 +1,23 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="EntityRoleConfiguration.cs" company="com.esoftor">
-//      Copyright © 2019-2020 ESoftor. All rights reserved.
+//  <copyright file="EntityRoleConfiguration.cs" company="cn.lxking">
+//      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>http://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2019-01-06 15:16</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Core.EntityInfos;
-using ESoftor.EntityFrameworkCore;
-using ESoftor.Web.Identity.Entity;
-using ESoftor.Web.Security.Entities;
+using Hybrid.Core.EntityInfos;
+using Hybrid.EntityFrameworkCore;
+using Hybrid.Web.Identity.Entity;
+using Hybrid.Web.Security.Entities;
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 using System;
 
-namespace ESoftor.Web.EntityConfiguration.Security
+namespace Hybrid.Web.EntityConfiguration.Security
 {
     public class EntityRoleConfiguration : EntityTypeConfigurationBase<EntityRole, Guid>
     {

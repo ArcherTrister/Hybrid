@@ -7,14 +7,12 @@
 //  <last-date>2020-01-12 14:05:58</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.AspNetCore.Mvc;
-using ESoftor.AspNetCore.Mvc.Controllers;
-using ESoftor.Core.Functions;
-using ESoftor.Core.ModuleInfos;
-using ESoftor.Extensions;
-using ESoftor.Security;
-using ESoftor.Web.Security;
-using ESoftor.Web.Security.Entities;
+using Hybrid.Web.Security;
+using Hybrid.Web.Security.Entities;
+
+using Hybrid.AspNetCore.Mvc;
+using Hybrid.AspNetCore.Mvc.Controllers;
+using Hybrid.Core.ModuleInfos;
 
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
@@ -24,6 +22,9 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using Hybrid.Security;
+using Hybrid.Core.Functions;
+using Hybrid.Extensions;
 
 namespace IdentityServer4.Web.Controllers
 {

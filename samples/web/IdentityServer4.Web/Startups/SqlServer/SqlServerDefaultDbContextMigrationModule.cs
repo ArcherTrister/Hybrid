@@ -1,22 +1,22 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="SqlServerDefaultDbContextMigrationModule.cs" company="com.esoftor">
-//      Copyright © 2019-2020 ESoftor. All rights reserved.
+//  <copyright file="SqlServerDefaultDbContextMigrationModule.cs" company="cn.lxking">
+//      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>http://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-06-27 4:50</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Core.Modules;
-using ESoftor.Domain.EntityFramework;
-using ESoftor.EntityFrameworkCore;
-using ESoftor.EntityFrameworkCore.Defaults;
-using ESoftor.EntityFrameworkCore.SqlServer;
+using Hybrid.Core.Modules;
+using Hybrid.Domain.EntityFramework;
+using Hybrid.EntityFrameworkCore;
+using Hybrid.EntityFrameworkCore.Defaults;
+using Hybrid.EntityFrameworkCore.SqlServer;
 
 using System;
 using System.ComponentModel;
 
-namespace ESoftor.Web.Startups.SqlServer
+namespace Hybrid.Web.Startups.SqlServer
 {
     /// <summary>
     /// SqlServer-DefaultDbContext迁移模块

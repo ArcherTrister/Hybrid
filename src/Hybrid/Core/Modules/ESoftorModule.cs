@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="ESoftorModule.cs" company="com.esoftor">
+//  <copyright file="HybridModule.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -23,7 +23,7 @@ namespace Hybrid.Core.Modules
     /// Hybrid模块基类
     /// </summary>
     [Description("Hybrid模块")]
-    public abstract class ESoftorModule
+    public abstract class HybridModule
     {
         /// <summary>
         /// 获取 模块级别，级别越小越先启动

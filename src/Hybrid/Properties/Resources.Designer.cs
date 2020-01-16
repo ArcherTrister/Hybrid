@@ -106,7 +106,7 @@ namespace Hybrid.Properties {
         }
 
         /// <summary>
-        ///   查找类似 请先初始化依赖注入服务，再使用ESoftorContext.IocRegisterServices属性 的本地化字符串。
+        ///   查找类似 请先初始化依赖注入服务，再使用HybridContext.IocRegisterServices属性 的本地化字符串。
         /// </summary>
         internal static string Context_BuildServicesFirst {
             get {

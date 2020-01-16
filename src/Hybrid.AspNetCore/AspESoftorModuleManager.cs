@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="AspESoftorModuleManager.cs" company="com.esoftor">
+//  <copyright file="AspHybridModuleManager.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -22,7 +22,7 @@ namespace Hybrid.AspNetCore
     /// <summary>
     /// AspNetCore 模块管理器
     /// </summary>
-    public class AspESoftorModuleManager : ESoftorModuleManager, IAspUseModule
+    public class AspHybridModuleManager : HybridModuleManager, IAspUseModule
     {
         /// <summary>
         /// 应用模块服务，仅在非AspNetCore环境下调用，AspNetCore环境请执行<see cref="UseModule(IApplicationBuilder)"/>功能
@@ -34,7 +34,7 @@ namespace Hybrid.AspNetCore
             IWebHostEnvironment environment = provider.GetService<IWebHostEnvironment>();
             if (environment != null)
             {
-                throw new ESoftorException("当前处于AspNetCore环境，请使用UsePack(IApplicationBuilder)进行初始化");
+                throw new HybridException("当前处于AspNetCore环境，请使用UseModule(IApplicationBuilder)进行初始化");
             }
             base.UseModule(provider);
         }
@@ -45,13 +45,13 @@ namespace Hybrid.AspNetCore
         /// <param name="app">应用程序构建器</param>
         public void UseModule(IApplicationBuilder app)
         {
-            ILogger logger = app.ApplicationServices.GetLogger<AspESoftorModuleManager>();
+            ILogger logger = app.ApplicationServices.GetLogger<AspHybridModuleManager>();
             logger.LogInformation("Hybrid框架初始化开始");
             DateTime dtStart = DateTime.Now;
 
-            foreach (ESoftorModule module in LoadedModules)
+            foreach (HybridModule module in LoadedModules)
             {
-                if (module is AspESoftorModule aspModule)
+                if (module is AspHybridModule aspModule)
                 {
                     aspModule.UseModule(app);
                 }

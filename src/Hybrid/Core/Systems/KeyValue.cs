@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="KeyValue.cs" company="com.esoftor">
+//  <copyright file="KeyValue.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -77,7 +77,7 @@ namespace Hybrid.Core.Systems
                 Type type = Type.GetType(ValueType);
                 if (type == null)
                 {
-                    throw new ESoftorException($"获取Key为“{Key}”的字典值时类型“{ValueType}”无法获取");
+                    throw new HybridException($"获取Key为“{Key}”的字典值时类型“{ValueType}”无法获取");
                 }
                 return ValueJson.FromJsonString(type);
             }
@@ -114,7 +114,7 @@ namespace Hybrid.Core.Systems
             }
             catch (Exception)
             {
-                throw new ESoftorException($"获取强类型字典值时传入类型“{typeof(T)}”与实际数据类型“{ValueType}”不匹配");
+                throw new HybridException($"获取强类型字典值时传入类型“{typeof(T)}”与实际数据类型“{ValueType}”不匹配");
             }
         }
     }

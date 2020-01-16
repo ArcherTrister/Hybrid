@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="ESoftorConstants.cs" company="com.esoftor">
+//  <copyright file="HybridConstants.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -12,17 +12,17 @@ namespace Hybrid.Data
     /// <summary>
     /// 框架中使用到的一些常量
     /// </summary>
-    public class ESoftorConstants
+    public class HybridConstants
     {
         /// <summary>
         /// 当前MVC功能键名
         /// </summary>
-        public const string CurrentMvcFunctionKey = "ESoftor_MVC_FUNCTION_CURRENT";
+        public const string CurrentMvcFunctionKey = "Hybrid_MVC_FUNCTION_CURRENT";
 
         /// <summary>
         /// 验证码缓存键名前缀
         /// </summary>
-        public const string VerifyCodeKeyPrefix = "ESoftor_VERIFY_CODE";
+        public const string VerifyCodeKeyPrefix = "Hybrid_VERIFY_CODE";
 
         /// <summary>
         /// Cookie名称

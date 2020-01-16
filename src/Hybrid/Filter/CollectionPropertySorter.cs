@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="CollectionPropertySorter.cs" company="com.esoftor">
+//  <copyright file="CollectionPropertySorter.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <last-editor>ArcherTrister</last-editor>
@@ -109,7 +109,7 @@ namespace Hybrid.Filter
                 PropertyInfo property = type.GetProperty(propertyName);
                 if (property == null)
                 {
-                    throw new ESoftorException(string.Format(Resources.ObjectExtensions_PropertyNameNotExistsInType, propertyName));
+                    throw new HybridException(string.Format(Resources.ObjectExtensions_PropertyNameNotExistsInType, propertyName));
                 }
                 type = property.PropertyType;
                 propertyAccess = Expression.MakeMemberAccess(propertyAccess, property);

@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="VerifyCodeService.cs" company="com.esoftor">
+//  <copyright file="VerifyCodeService.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -52,7 +52,7 @@ namespace Hybrid.AspNetCore.Services
                 return false;
             }
 
-            string key = $"{ESoftorConstants.VerifyCodeKeyPrefix}_{id}";
+            string key = $"{HybridConstants.VerifyCodeKeyPrefix}_{id}";
             bool flag = code.Equals(_cache.GetString(key), StringComparison.OrdinalIgnoreCase);
             if (removeIfSuccess && flag)
             {
@@ -68,7 +68,7 @@ namespace Hybrid.AspNetCore.Services
         public void SetCode(string code, out string id)
         {
             id = Guid.NewGuid().ToString("N");
-            string key = $"{ESoftorConstants.VerifyCodeKeyPrefix}_{id}";
+            string key = $"{HybridConstants.VerifyCodeKeyPrefix}_{id}";
             const int seconds = 60 * 3;
             _cache.SetString(key, code, new DistributedCacheEntryOptions() { AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(seconds) });
         }

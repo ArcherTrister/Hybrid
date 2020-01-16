@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="UserManagerExtensions.cs" company="com.esoftor">
+//  <copyright file="UserManagerExtensions.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -33,7 +33,7 @@ namespace Hybrid.Zero.Identity.Extensions
             TUser user = await userManager.FindByIdAsync(userId);
             if (user == null)
             {
-                throw new ESoftorException($"编号为“{userId}”的用户信息不存在");
+                throw new HybridException($"编号为“{userId}”的用户信息不存在");
             }
             return await userManager.GetRefreshToken<TUser, TUserKey>(user, clientId);
         }

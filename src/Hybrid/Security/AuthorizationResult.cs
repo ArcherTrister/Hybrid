@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="AuthorizationResult.cs" company="com.esoftor">
+//  <copyright file="AuthorizationResult.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -18,7 +18,7 @@ namespace Hybrid.Security
     /// 权限检查结果
     /// </summary>
     [DebuggerDisplay("{ResultType}-{Message}")]
-    public sealed class AuthorizationResult : ESoftorResult<AuthorizationStatus>
+    public sealed class AuthorizationResult : HybridResult<AuthorizationStatus>
     {
         /// <summary>
         /// 初始化一个<see cref="AuthorizationResult"/>类型的新实例

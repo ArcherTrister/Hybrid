@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="ActionDescriptorExtensions.cs" company="com.esoftor">
+//  <copyright file="ActionDescriptorExtensions.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -22,7 +22,7 @@ namespace Hybrid.AspNetCore.Extensions
         {
             if (!actionDescriptor.IsControllerAction())
             {
-                throw new ESoftorException($"{nameof(actionDescriptor)} should be type of {typeof(ControllerActionDescriptor).AssemblyQualifiedName}");
+                throw new HybridException($"{nameof(actionDescriptor)} should be type of {typeof(ControllerActionDescriptor).AssemblyQualifiedName}");
             }
 
             return actionDescriptor as ControllerActionDescriptor;

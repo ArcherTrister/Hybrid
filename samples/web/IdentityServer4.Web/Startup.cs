@@ -1,15 +1,15 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="Startup.cs" company="com.esoftor">
-//      Copyright © 2019-2020 ESoftor. All rights reserved.
+//  <copyright file="Startup.cs" company="cn.lxking">
+//      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.AspNetCore;
-using ESoftor.AspNetCore.Middlewares;
-using ESoftor.Data;
+using Hybrid.AspNetCore;
+using Hybrid.AspNetCore.Middlewares;
+using Hybrid.Data;
 
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -25,7 +25,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace ESoftor.Web
+namespace Hybrid.Web
 {
     public class Startup
     {
@@ -47,11 +47,11 @@ namespace ESoftor.Web
             });
 
             //Add-Migration Init -Verbose -o Data/Migrations
-            services.AddESoftor<AspESoftorModuleManager>();
+            services.AddHybrid<AspHybridModuleManager>();
 
             //services.AddSwaggerGen(options =>
             //{
-            //    options.SwaggerDoc("v1", new Info { Title = "esoftor web api", Version = "v1" });
+            //    options.SwaggerDoc("v1", new Info { Title = "hybrid web api", Version = "v1" });
             //    Directory.GetFiles(AppDomain.CurrentDomain.BaseDirectory, "*.xml").ToList().ForEach(file =>
             //    {
             //        options.IncludeXmlComments(file);
@@ -73,7 +73,7 @@ namespace ESoftor.Web
             //            AuthorizationUrl = "http://localhost:5002/connect/authorize",
             //            Scopes = new Dictionary<string, string>
             //            {
-            //                { ESoftorConstants.LocalApi.ScopeName, "IdentityServerApi授权" }
+            //                { HybridConstants.LocalApi.ScopeName, "IdentityServerApi授权" }
             //            }
             //        });
 
@@ -90,7 +90,7 @@ namespace ESoftor.Web
             services.AddMvcCore().AddApiExplorer();
             services.AddSwaggerGen(options =>
             {
-                options.SwaggerDoc($"v1", new OpenApiInfo() { Title = "esoftor web api", Version = "v1" });
+                options.SwaggerDoc($"v1", new OpenApiInfo() { Title = "hybrid web api", Version = "v1" });
 
                 Directory.GetFiles(AppDomain.CurrentDomain.BaseDirectory, "*.xml").ToList().ForEach(file =>
                 {
@@ -167,12 +167,12 @@ namespace ESoftor.Web
                 .UseMiddleware<NodeExceptionHandlerMiddleware>()
                 .UseDefaultFiles()
                 .UseStaticFiles()
-                .UseESoftor();
+                .UseHybrid();
 
             app.UseSwagger().
                 UseSwaggerUI(options =>
                 {
-                    options.SwaggerEndpoint("/swagger/v1/swagger.json", "esoftor web api V1");
+                    options.SwaggerEndpoint("/swagger/v1/swagger.json", "hybrid web api V1");
                     options.OAuthClientId("swaggerClient");//客服端名称
                 });
         }

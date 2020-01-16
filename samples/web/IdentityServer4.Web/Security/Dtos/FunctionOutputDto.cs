@@ -1,19 +1,19 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="FunctionOutputDto.cs" company="com.esoftor">
-//      Copyright © 2019-2020 ESoftor. All rights reserved.
+//  <copyright file="FunctionOutputDto.cs" company="cn.lxking">
+//      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>http://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-06-27 4:44</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Core.Functions;
-using ESoftor.Domain.Entities;
-using ESoftor.Mapping;
+using Hybrid.Core.Functions;
+using Hybrid.Domain.Entities;
+using Hybrid.Mapping;
 
 using System;
 
-namespace ESoftor.Web.Security.Dtos
+namespace Hybrid.Web.Security.Dtos
 {
     /// <summary>
     /// 功能输出DTO

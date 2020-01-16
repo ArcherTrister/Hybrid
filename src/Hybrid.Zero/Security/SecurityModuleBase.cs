@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="SecurityModuleBase.cs" company="com.esoftor">
+//  <copyright file="SecurityModuleBase.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -44,7 +44,7 @@ namespace Hybrid.Zero.Security
     /// <typeparam name="TUserKey">用户编号类型</typeparam>
     //[DependsOnModules(typeof(EventBusModule), typeof(MvcFunctionModule))]
     public abstract class SecurityModuleBase<TSecurityManager, TFunctionAuthorization, TFunctionAuthCache, TDataAuthCache, TModuleHandler, TFunction, TFunctionInputDto, TEntityInfo,
-        TEntityInfoInputDto, TModule, TModuleInputDto, TModuleKey, TModuleFunction, TModuleRole, TModuleUser, TEntityRole, TEntityRoleInputDto, TRoleKey, TUserKey> : ESoftorModule
+        TEntityInfoInputDto, TModule, TModuleInputDto, TModuleKey, TModuleFunction, TModuleRole, TModuleUser, TEntityRole, TEntityRoleInputDto, TRoleKey, TUserKey> : HybridModule
         where TSecurityManager : class, IFunctionStore<TFunction, TFunctionInputDto>,
         IEntityInfoStore<TEntityInfo, TEntityInfoInputDto>,
         IModuleStore<TModule, TModuleInputDto, TModuleKey>,

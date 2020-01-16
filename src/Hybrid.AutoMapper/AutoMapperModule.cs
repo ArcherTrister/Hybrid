@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="AutoMapperModule.cs" company="com.esoftor">
+//  <copyright file="AutoMapperModule.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -28,7 +28,7 @@ namespace Hybrid.AutoMapper
     /// AutoMapper模块
     /// </summary>
     [Description("AutoMapper模块")]
-    public class AutoMapperModule : ESoftorModule
+    public class AutoMapperModule : HybridModule
     {
         /// <summary>
         /// 获取 模块级别

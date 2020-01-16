@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="ServiceCollectionExtensions.cs" company="com.esoftor">
+//  <copyright file="ServiceCollectionExtensions.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -35,37 +35,37 @@ namespace Hybrid.EntityFrameworkCore
         /// <param name="services">依赖注入服务集合</param>
         /// <param name="optionsAction">数据库选项创建配置，将在内置配置后运行</param>
         /// <returns>依赖注入服务集合</returns>
-        public static IServiceCollection AddESoftorDbContext<TDbContext>(this IServiceCollection services, Action<IServiceProvider, DbContextOptionsBuilder> optionsAction = null) where TDbContext : DbContextBase
+        public static IServiceCollection AddHybridDbContext<TDbContext>(this IServiceCollection services, Action<IServiceProvider, DbContextOptionsBuilder> optionsAction = null) where TDbContext : DbContextBase
         {
             services.AddDbContext<TDbContext>((provider, builder) =>
             {
                 Type dbContextType = typeof(TDbContext);
-                ESoftorOptions esoftorOptions = provider.GetESoftorOptions();
-                ESoftorDbContextOptions esoftorDbContextOptions = esoftorOptions?.GetDbContextOptions(dbContextType);
-                if (esoftorDbContextOptions == null)
+                HybridOptions hybridOptions = provider.GetHybridOptions();
+                HybridDbContextOptions hybridDbContextOptions = hybridOptions?.GetDbContextOptions(dbContextType);
+                if (hybridDbContextOptions == null)
                 {
-                    throw new ESoftorException($"无法找到数据上下文“{dbContextType.DisplayName()}”的配置信息");
+                    throw new HybridException($"无法找到数据上下文“{dbContextType.DisplayName()}”的配置信息");
                 }
 
                 //启用延迟加载
-                if (esoftorDbContextOptions.LazyLoadingProxiesEnabled)
+                if (hybridDbContextOptions.LazyLoadingProxiesEnabled)
                 {
                     builder = builder.UseLazyLoadingProxies();
                 }
-                DatabaseType databaseType = esoftorDbContextOptions.DatabaseType;
+                DatabaseType databaseType = hybridDbContextOptions.DatabaseType;
 
                 //处理数据库驱动差异处理
                 IDbContextOptionsBuilderDriveHandler driveHandler = provider.GetServices<IDbContextOptionsBuilderDriveHandler>()
                     .FirstOrDefault(m => m.Type == databaseType);
                 if (driveHandler == null)
                 {
-                    throw new ESoftorException($"无法解析类型为“{databaseType}”的 {typeof(IDbContextOptionsBuilderDriveHandler).DisplayName()} 实例");
+                    throw new HybridException($"无法解析类型为“{databaseType}”的 {typeof(IDbContextOptionsBuilderDriveHandler).DisplayName()} 实例");
                 }
 
                 ScopedDictionary scopedDictionary = provider.GetService<ScopedDictionary>();
-                string key = $"DnConnection_{esoftorDbContextOptions.ConnectionString}";
+                string key = $"DnConnection_{hybridDbContextOptions.ConnectionString}";
                 DbConnection existingDbConnection = scopedDictionary.GetValue<DbConnection>(key);
-                builder = driveHandler.Handle(builder, esoftorDbContextOptions.ConnectionString, existingDbConnection);
+                builder = driveHandler.Handle(builder, hybridDbContextOptions.ConnectionString, existingDbConnection);
 
                 //使用模型缓存
                 DbContextModelCache modelCache = provider.GetService<DbContextModelCache>();

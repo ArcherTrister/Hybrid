@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="DbContextConfig.cs" company="com.esoftor">
+//  <copyright file="DbContextConfig.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -16,12 +16,12 @@ namespace Hybrid.Core.Options
     /// <summary>
     /// 数据上下文配置节点
     /// </summary>
-    public class ESoftorDbContextOptions
+    public class HybridDbContextOptions
     {
         /// <summary>
-        /// 初始化一个<see cref="ESoftorDbContextOptions"/>类型的新实例
+        /// 初始化一个<see cref="HybridDbContextOptions"/>类型的新实例
         /// </summary>
-        public ESoftorDbContextOptions()
+        public HybridDbContextOptions()
         {
             LazyLoadingProxiesEnabled = false;
             AuditEntityEnabled = false;

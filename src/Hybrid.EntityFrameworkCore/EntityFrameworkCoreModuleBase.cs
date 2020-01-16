@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="EntityFrameworkCoreModule.cs" company="com.esoftor">
+//  <copyright file="EntityFrameworkCoreModule.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -22,7 +22,7 @@ namespace Hybrid.EntityFrameworkCore
     /// EntityFrameworkCore基模块
     /// </summary>
     [DependsOnModules(typeof(EventBusModule))]
-    public abstract class EntityFrameworkCoreModuleBase : ESoftorModule
+    public abstract class EntityFrameworkCoreModuleBase : HybridModule
     {
         /// <summary>
         /// 获取 模块级别，级别越小越先启动
@@ -37,7 +37,7 @@ namespace Hybrid.EntityFrameworkCore
         public override IServiceCollection AddServices(IServiceCollection services)
         {
             services.TryAddScoped(typeof(IRepository<,>), typeof(Repository<,>));
-            services.AddESoftorDbContext<DefaultDbContext>();
+            services.AddHybridDbContext<DefaultDbContext>();
 
             return services;
         }

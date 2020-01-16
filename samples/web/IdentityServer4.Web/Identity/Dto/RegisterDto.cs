@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="RegisterDto.cs" company="com.esoftor">
-//      Copyright © 2019-2020 ESoftor. All rights reserved.
+//  <copyright file="RegisterDto.cs" company="cn.lxking">
+//      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2017-09-01 20:39:00</last-date>
@@ -8,7 +8,7 @@
 
 using System.ComponentModel.DataAnnotations;
 
-namespace ESoftor.Web.Identity.Dto
+namespace Hybrid.Web.Identity.Dto
 {
     public class RegisterDto
     {

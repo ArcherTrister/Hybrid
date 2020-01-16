@@ -13,6 +13,7 @@
       "UserName": "xxx@qq.com",
       "Password": "",
       "Port": 465,
+	  "Domain": ""
       "EnableSsl": true, //是否启用ssl
       "UseDefaultCredentials": false //是否验证
     }

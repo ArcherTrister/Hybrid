@@ -1,19 +1,19 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="ModuleHandler.cs" company="com.esoftor">
-//      Copyright © 2019-2020 ESoftor. All rights reserved.
+//  <copyright file="ModuleHandler.cs" company="cn.lxking">
+//      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>http://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-06-27 4:44</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Zero.Security;
-using ESoftor.Web.Security.Dtos;
-using ESoftor.Web.Security.Entities;
+using Hybrid.Zero.Security;
+using Hybrid.Web.Security.Dtos;
+using Hybrid.Web.Security.Entities;
 
 using System;
 
-namespace ESoftor.Web.Security
+namespace Hybrid.Web.Security
 {
     /// <summary>
     /// 模块信息处理器

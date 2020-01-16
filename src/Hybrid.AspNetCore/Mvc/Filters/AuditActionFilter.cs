@@ -42,7 +42,7 @@ namespace Hybrid.AspNetCore.Mvc.Filters
 
         public async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
         {
-            AuditingConfiguration configuration = _provider.GetESoftorOptions().AuditingConfiguration;
+            AuditingConfiguration configuration = _provider.GetHybridOptions().AuditingConfiguration;
             if (!ShouldSaveAudit(context, configuration))
             {
                 await next();

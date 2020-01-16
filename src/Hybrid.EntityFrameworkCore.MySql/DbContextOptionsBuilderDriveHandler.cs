@@ -1,8 +1,8 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="MySqlDbContextOptionsBuilderCreator.cs" company="OSharp开源团队">
-//      Copyright (c) 2014-2017 OSharp. All rights reserved.
+//  <copyright file="DbContextOptionsBuilderDriveHandler.cs" company="cn.lxking">
+//      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
-//  <site>http://www.osharp.org</site>
+//  <site>https://www.lxking.cn</site>
 //  <last-editor>hejiyong</last-editor>
 //  <last-date>2017-09-19 5:09</last-date>
 // -----------------------------------------------------------------------
@@ -12,10 +12,10 @@ using System.Data.Common;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-using OSharp.Dependency;
+using Hybrid.Dependency;
+using Hybrid.Domain.EntityFramework;
 
-
-namespace OSharp.Entity.MySql
+namespace Hybrid.EntityFrameworkCore.MySql
 {
     /// <summary>
     /// MySql<see cref="DbContextOptionsBuilder"/>数据库驱动差异处理器

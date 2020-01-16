@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="ESoftorBuilder.cs" company="com.esoftor">
+//  <copyright file="HybridBuilder.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -21,12 +21,12 @@ namespace Hybrid.Core.Builders
     /// <summary>
     /// Hybrid构建器
     /// </summary>
-    public class ESoftorBuilder : IESoftorBuilder
+    public class HybridBuilder : IHybridBuilder
     {
         /// <summary>
-        /// 初始化一个<see cref="ESoftorBuilder"/>类型的新实例
+        /// 初始化一个<see cref="HybridBuilder"/>类型的新实例
         /// </summary>
-        public ESoftorBuilder()
+        public HybridBuilder()
         {
             AddModules = new List<Type>();
             ExceptModules = new List<Type>();
@@ -45,13 +45,13 @@ namespace Hybrid.Core.Builders
         /// <summary>
         /// 获取 Hybrid选项配置委托
         /// </summary>
-        public Action<ESoftorOptions> OptionsAction { get; private set; }
+        public Action<HybridOptions> OptionsAction { get; private set; }
 
         /// <summary>
         /// 添加指定模块，执行此功能后将仅加载指定的模块
         /// </summary>
         /// <typeparam name="TModule">要添加的模块类型</typeparam>
-        public IESoftorBuilder AddModule<TModule>() where TModule : ESoftorModule
+        public IHybridBuilder AddModule<TModule>() where TModule : HybridModule
         {
             List<Type> list = AddModules.ToList();
             list.AddIfNotExist(typeof(TModule));
@@ -64,7 +64,7 @@ namespace Hybrid.Core.Builders
         /// </summary>
         /// <typeparam name="TModule"></typeparam>
         /// <returns></returns>
-        public IESoftorBuilder ExceptModule<TModule>() where TModule : ESoftorModule
+        public IHybridBuilder ExceptModule<TModule>() where TModule : HybridModule
         {
             List<Type> list = ExceptModules.ToList();
             list.AddIfNotExist(typeof(TModule));
@@ -77,7 +77,7 @@ namespace Hybrid.Core.Builders
         /// </summary>
         /// <param name="optionsAction">Hybrid操作选项</param>
         /// <returns>Hybrid构建器</returns>
-        public IESoftorBuilder AddOptions(Action<ESoftorOptions> optionsAction)
+        public IHybridBuilder AddOptions(Action<HybridOptions> optionsAction)
         {
             Check.NotNull(optionsAction, nameof(optionsAction));
             OptionsAction = optionsAction;

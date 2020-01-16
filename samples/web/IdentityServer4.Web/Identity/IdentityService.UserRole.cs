@@ -1,8 +1,8 @@
-﻿using ESoftor.Data;
-using ESoftor.Extensions;
-using ESoftor.Web.Identity.Dto;
-using ESoftor.Web.Identity.Entity;
-using ESoftor.Zero.Identity.Extensions;
+﻿using Hybrid.Data;
+using Hybrid.Extensions;
+using Hybrid.Web.Identity.Dto;
+using Hybrid.Web.Identity.Entity;
+using Hybrid.Zero.Identity.Extensions;
 
 using Microsoft.AspNetCore.Identity;
 
@@ -12,7 +12,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace ESoftor.Web.Identity
+namespace Hybrid.Web.Identity
 {
     public partial class IdentityService
     {

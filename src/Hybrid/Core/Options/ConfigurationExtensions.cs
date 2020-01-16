@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="ConfigurationExtensions.cs" company="com.esoftor">
+//  <copyright file="ConfigurationExtensions.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -17,12 +17,12 @@ namespace Hybrid.Core.Options
     public static class ConfigurationExtensions
     {
         /// <summary>
-        /// 从<see cref="IConfiguration"/>创建<see cref="ESoftorOptions"/>
+        /// 从<see cref="IConfiguration"/>创建<see cref="HybridOptions"/>
         /// </summary>
-        public static ESoftorOptions GetESoftorOptions(this IConfiguration configuration)
+        public static HybridOptions GetHybridOptions(this IConfiguration configuration)
         {
-            ESoftorOptions options = new ESoftorOptions();
-            new ESoftorOptionsSetup(configuration).Configure(options);
+            HybridOptions options = new HybridOptions();
+            new HybridOptionsSetup(configuration).Configure(options);
             return options;
         }
     }

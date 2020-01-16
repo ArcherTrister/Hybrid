@@ -516,8 +516,8 @@ namespace IdentityServer4.Web.Data.Migrations
                 columns: new[] { "Id", "IsLocked", "Key", "ValueJson", "ValueType" },
                 values: new object[,]
                 {
-                    { new Guid("534d7813-0eea-44cc-b88e-a9cb010c6981"), false, "Site.Name", "\"ESoftor\"", "System.String,System.Private.CoreLib" },
-                    { new Guid("977e4bba-97b2-4759-a768-a9cb010c698c"), false, "Site.Description", "\"ESoftor with .NetStandard2.0 & Angular6\"", "System.String,System.Private.CoreLib" }
+                    { new Guid("534d7813-0eea-44cc-b88e-a9cb010c6981"), false, "Site.Name", "\"Hybrid\"", "System.String,System.Private.CoreLib" },
+                    { new Guid("977e4bba-97b2-4759-a768-a9cb010c698c"), false, "Site.Description", "\"Hybrid with .NetStandard2.0 & Angular6\"", "System.String,System.Private.CoreLib" }
                 });
 
             migrationBuilder.InsertData(

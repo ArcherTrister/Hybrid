@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="MvcExtensions.cs" company="com.esoftor">
+//  <copyright file="MvcExtensions.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -102,7 +102,7 @@ namespace Hybrid.AspNetCore.Mvc
             IFunctionHandler functionHandler = provider.GetService<IFunctionHandler>();
             if (functionHandler == null)
             {
-                throw new ESoftorException("获取正在执行的功能时 IFunctionHandler 无法解析");
+                throw new HybridException("获取正在执行的功能时 IFunctionHandler 无法解析");
             }
             IFunction function = functionHandler.GetFunction(area, controller, action);
             if (function != null)

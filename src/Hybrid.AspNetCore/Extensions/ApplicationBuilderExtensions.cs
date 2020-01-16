@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="ApplicationBuilderExtensions.cs" company="com.esoftor">
+//  <copyright file="ApplicationBuilderExtensions.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -25,12 +25,12 @@ namespace Microsoft.AspNetCore.Builder
         /// <summary>
         /// Hybrid框架初始化，适用于AspNetCore环境
         /// </summary>
-        public static IApplicationBuilder UseESoftor(this IApplicationBuilder app)
+        public static IApplicationBuilder UseHybrid(this IApplicationBuilder app)
         {
             IServiceProvider provider = app.ApplicationServices;
-            if (!(provider.GetService<IESoftorModuleManager>() is IAspUseModule aspModuleManager))
+            if (!(provider.GetService<IHybridModuleManager>() is IAspUseModule aspModuleManager))
             {
-                throw new ESoftorException("接口 IESoftorModuleManager 的注入类型不正确，该类型应同时实现接口 IAspUseModule");
+                throw new HybridException("接口 IHybridModuleManager 的注入类型不正确，该类型应同时实现接口 IAspUseModule");
             }
             aspModuleManager.UseModule(app);
 

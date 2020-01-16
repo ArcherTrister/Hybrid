@@ -1,22 +1,22 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="EntityRoleOutputDto.cs" company="com.esoftor">
-//      Copyright © 2019-2020 ESoftor. All rights reserved.
+//  <copyright file="EntityRoleOutputDto.cs" company="cn.lxking">
+//      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>http://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-07-04 15:12</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Domain.Entities;
-using ESoftor.Extensions;
-using ESoftor.Filter;
-using ESoftor.Mapping;
-using ESoftor.Security;
-using ESoftor.Web.Security.Entities;
+using Hybrid.Domain.Entities;
+using Hybrid.Extensions;
+using Hybrid.Filter;
+using Hybrid.Mapping;
+using Hybrid.Security;
+using Hybrid.Web.Security.Entities;
 
 using System;
 
-namespace ESoftor.Web.Security.Dtos
+namespace Hybrid.Web.Security.Dtos
 {
     /// <summary>
     /// 输出DTO: 角色数据权限

@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="IESoftorResult.cs" company="com.esoftor">
+//  <copyright file="IHybridResult.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -13,13 +13,13 @@ namespace Hybrid.Data
     /// Hybrid操作结果
     /// </summary>
     /// <typeparam name="TResultType"></typeparam>
-    public interface IESoftorResult<TResultType> : IESoftorResult<TResultType, object>
+    public interface IHybridResult<TResultType> : IHybridResult<TResultType, object>
     { }
 
     /// <summary>
     /// Hybrid操作结果
     /// </summary>
-    public interface IESoftorResult<TResultType, TData>
+    public interface IHybridResult<TResultType, TData>
     {
         /// <summary>
         /// 获取或设置 结果类型

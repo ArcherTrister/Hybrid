@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="EndpointsModuleBase.cs" company="com.esoftor">
+//  <copyright file="EndpointsModuleBase.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -18,7 +18,7 @@ namespace Hybrid.AspNetCore.Routing
     /// Endpoints模块，处理MVC和SignalR的路由结点配置
     /// </summary>
     [DependsOnModules(typeof(AspNetCoreModule))]
-    public abstract class EndpointsModuleBase : AspESoftorModule
+    public abstract class EndpointsModuleBase : AspHybridModule
     {
         /// <summary>
         /// 获取 模块级别，级别越小越先启动

@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="JwtHandler.cs" company="com.esoftor">
+//  <copyright file="JwtHandler.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -27,13 +27,13 @@ namespace Hybrid.Zero.Identity
         /// <summary>
         /// 生成JwtToken
         /// </summary>
-        public static string CreateToken(Claim[] claims, ESoftorOptions options)
+        public static string CreateToken(Claim[] claims, HybridOptions options)
         {
             JwtOptions jwtOptions = options.Jwt;
             string secret = jwtOptions.Secret;
             if (secret == null)
             {
-                throw new ESoftorException("创建JwtToken时Secret为空");
+                throw new HybridException("创建JwtToken时Secret为空");
             }
             SecurityKey key = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(secret));
             SigningCredentials credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256Signature);

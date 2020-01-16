@@ -1,19 +1,19 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="User.cs" company="com.esoftor">
-//      Copyright © 2019-2020 ESoftor. All rights reserved.
+//  <copyright file="User.cs" company="cn.lxking">
+//      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Zero.Identity;
+using Hybrid.Zero.Identity;
 
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 
-namespace ESoftor.Web.Identity.Entity
+namespace Hybrid.Web.Identity.Entity
 {
     /// <summary>
     /// 实体类：用户信息

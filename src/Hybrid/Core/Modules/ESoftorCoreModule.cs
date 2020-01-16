@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="ESoftorCoreModule.cs" company="com.esoftor">
+//  <copyright file="HybridCoreModule.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -36,7 +36,7 @@ namespace Hybrid.Core.Modules
     /// Hybrid核心模块
     /// </summary>
     [Description("Hybrid核心模块")]
-    public class ESoftorCoreModule : ESoftorModule
+    public class HybridCoreModule : HybridModule
     {
         /// <summary>
         /// 获取 模块级别
@@ -51,7 +51,7 @@ namespace Hybrid.Core.Modules
         public override IServiceCollection AddServices(IServiceCollection services)
         {
             services.TryAddSingleton<ISingletonFactory, SingletonFactory>();
-            services.TryAddSingleton<IConfigureOptions<ESoftorOptions>, ESoftorOptionsSetup>();
+            services.TryAddSingleton<IConfigureOptions<HybridOptions>, HybridOptionsSetup>();
             services.TryAddSingleton<IEntityTypeFinder, EntityTypeFinder>();
             services.TryAddSingleton<IInputDtoTypeFinder, InputDtoTypeFinder>();
             services.TryAddSingleton<IOutputDtoTypeFinder, OutputDtoTypeFinder>();
@@ -73,7 +73,7 @@ namespace Hybrid.Core.Modules
 
         public override void UseModule(IServiceProvider provider)
         {
-            AuditingConfiguration configuration = provider.GetESoftorOptions().AuditingConfiguration;
+            AuditingConfiguration configuration = provider.GetHybridOptions().AuditingConfiguration;
             AddIgnoredTypes(configuration);
             ILocalizationManager localizationManager = provider.GetService<ILocalizationManager>();
             localizationManager.Initialize();

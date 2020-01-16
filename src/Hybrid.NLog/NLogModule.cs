@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="NLogModule.cs" company="com.esoftor">
+//  <copyright file="NLogModule.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -20,7 +20,7 @@ namespace Hybrid.NLog
     /// NLog模块
     /// </summary>
     [Description("NLog日志模块")]
-    public class NLogModule : ESoftorModule
+    public class NLogModule : HybridModule
     {
         /// <summary>
         /// 获取 模块级别，级别越小越先启动

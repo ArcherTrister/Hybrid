@@ -1,19 +1,19 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="Organization.cs" company="com.esoftor">
-//      Copyright © 2019-2020 ESoftor. All rights reserved.
+//  <copyright file="Organization.cs" company="cn.lxking">
+//      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>http://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-06-27 4:44</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Domain.Entities;
+using Hybrid.Domain.Entities;
 
 using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace ESoftor.Web.Identity.Entity
+namespace Hybrid.Web.Identity.Entity
 {
     /// <summary>
     /// 实体类：组织机构
