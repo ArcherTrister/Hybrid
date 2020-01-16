@@ -1,7 +1,7 @@
 ﻿using Hybrid.AspNetCore.Mvc.Models;
 using Hybrid.Collections;
 using Hybrid.Extensions;
-
+using Hybrid.Filter;
 using Microsoft.EntityFrameworkCore;
 
 using Quartz;
@@ -127,7 +127,7 @@ namespace Hybrid.Quartz.Plugins.History
                 IQueryable<ExecutionHistoryEntry> query = _data.AsQueryable();
                 return new PageResult<ExecutionHistoryEntry>
                 {
-                    TotalRecords = query.WhereIf(!string.IsNullOrEmpty(schedulerName), q => q.SchedulerName.Equals(schedulerName)).LongCount(),
+                    Total = query.WhereIf(!string.IsNullOrEmpty(schedulerName), q => q.SchedulerName.Equals(schedulerName)).Count(),
                     Data = await query.WhereIf(!string.IsNullOrEmpty(schedulerName), q => q.SchedulerName.Equals(schedulerName)).MultiOrderBy(orderByStr).Take(pageSize * pageIndex).Skip(pageSize * (pageIndex - 1)).ToListAsync()
                 };
             }

@@ -1,38 +1,37 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="RedisPackCore.cs" company="OSharp开源团队">
-//      Copyright (c) 2014-2018 OSharp. All rights reserved.
+//  <copyright file="RedisModuleBase.cs" company="Hybrid开源团队">
+//      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
-//  <site>http://www.osharp.org</site>
-//  <last-editor>郭明锋</last-editor>
+//  <site>https://www.lxking.cn</site>
+//  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-12-14 16:25</last-date>
 // -----------------------------------------------------------------------
 
-using System;
+using Hybrid.Core.Modules;
+using Hybrid.Exceptions;
+using Hybrid.Extensions;
 
 using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
-using OSharp.Core.Packs;
-using OSharp.Data;
-using OSharp.Exceptions;
-using OSharp.Extensions;
+using System;
 
 
-namespace OSharp.Redis
+namespace Hybrid.Redis
 {
     /// <summary>
     /// Redis模块基类
     /// </summary>
-    public abstract class RedisPackBase : OsharpPack
+    public abstract class RedisModuleBase : HybridModule
     {
         private bool _enabled = false;
 
         /// <summary>
         /// 获取 模块级别，级别越小越先启动
         /// </summary>
-        public override PackLevel Level => PackLevel.Framework;
+        public override ModuleLevel Level => ModuleLevel.Framework;
 
         /// <summary>
         /// 将模块服务添加到依赖注入服务容器中
@@ -42,18 +41,18 @@ namespace OSharp.Redis
         public override IServiceCollection AddServices(IServiceCollection services)
         {
             IConfiguration configuration = services.GetConfiguration();
-            _enabled = configuration["OSharp:Redis:Enabled"].CastTo(false);
+            _enabled = configuration["Hybrid:Redis:Enabled"].CastTo(false);
             if (!_enabled)
             {
                 return services;
             }
 
-            string config = configuration["OSharp:Redis:Configuration"];
+            string config = configuration["Hybrid:Redis:Configuration"];
             if (config.IsNullOrEmpty())
             {
-                throw new OsharpException("配置文件中Redis节点的Configuration不能为空");
+                throw new HybridException("配置文件中Redis节点的Configuration不能为空");
             }
-            string name = configuration["OSharp:Redis:InstanceName"].CastTo("RedisName");
+            string name = configuration["Hybrid:Redis:InstanceName"].CastTo("RedisName");
 
             services.RemoveAll(typeof(IDistributedCache));
             services.AddStackExchangeRedisCache(opts =>
@@ -69,7 +68,7 @@ namespace OSharp.Redis
         /// 应用模块服务
         /// </summary>
         /// <param name="provider">服务提供者</param>
-        public override void UsePack(IServiceProvider provider)
+        public override void UseModule(IServiceProvider provider)
         {
             IsEnabled = _enabled;
         }

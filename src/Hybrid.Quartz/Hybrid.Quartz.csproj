@@ -3,38 +3,59 @@
   <Import Project="..\..\build\packages.props" />
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;</TargetFrameworks>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Hybrid.Quartz</RootNamespace>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\Release\Hybrid.Quartz.xml</DocumentationFile>
+    <OutputPath>bin\Release</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Dashboard\**" />
+    <Content Remove="Dashboard\**" />
+    <EmbeddedResource Remove="Dashboard\**" />
+    <None Remove="Dashboard\**" />
+  </ItemGroup>
+  
+  <!--
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
   </PropertyGroup>
 
   <PropertyGroup>
-    <!--产品-->
+    --><!--产品--><!--
     <Product>Hybrid.Quartz</Product>
-    <!--说明-->
+    --><!--说明--><!--
     <Description>Clean up the code, Improving the dashboard.</Description>
-    <!--包ID-->
+    --><!--包ID--><!--
     <PackageId>Hybrid.Quartz</PackageId>
-    <!--标题 如果未指定，则改为使用包 ID-->
-    <!--<Title></Title>-->
-    <!--包版本-->
-    <!--<Version>1.0.0</Version>-->
-    <!--标记-->
+    --><!--标题 如果未指定，则改为使用包 ID--><!--
+    --><!--<Title></Title>--><!--
+    --><!--包版本--><!--
+    --><!--<Version>1.0.0</Version>--><!--
+    --><!--标记--><!--
     <PackageTags>aspnetcore;quartz;dashboard</PackageTags>
-    <!--发行说明-->
+    --><!--发行说明--><!--
     <PackageReleaseNotes>A package to help you use .Net Core easily.</PackageReleaseNotes>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
     <DocumentationFile>bin\Release\netstandard2.0\Hybrid.Quartz.xml</DocumentationFile>
-  </PropertyGroup>
+  </PropertyGroup>-->
 
   <!--<ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="1.0.0" />
-    <PackageReference Include="System.Text.Encodings.Web" Version="4.5.0" />
-  </ItemGroup>-->
-
-  <ItemGroup>
     <PackageReference Include="JetBrains.Annotations" Version="2019.1.3" />
     <PackageReference Include="Microsoft.AspNetCore.Antiforgery" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics" Version="2.2.0" />
@@ -54,7 +75,7 @@
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="Quartz" Version="3.0.7" />
     <PackageReference Include="Quartz.Serialization.Json" Version="3.0.7" />
-  </ItemGroup>
+  </ItemGroup>-->
 
   <!-- Full MSBuild is required to generate Razor classes -->
   <!--<PropertyGroup>
@@ -69,34 +90,19 @@
   </Target>-->
 
   <ItemGroup>
-    <EmbeddedResource Include="Dashboard\Content\**\*" />
-    <Compile Remove="Dashboard\Content\css\themes\**" />
-    <Content Remove="Dashboard\Content\css\themes\**" />
-    <EmbeddedResource Remove="Dashboard\Content\css\themes\**" />
-    <None Remove="Dashboard\Content\css\themes\**" />
-    <Compile Remove="Dashboard\RoleAuthorizeAttribute.cs" />
     <Compile Remove="QuartzBuilderExtensions.cs" />
     <Compile Remove="QuartzServiceCollectionExtensions.cs" />
-    <None Remove="Dashboard\Content\css\dashboard.css" />
-    <None Remove="Dashboard\Content\js\highcharts.js" />
-    <None Remove="Dashboard\Content\js\jquery.core.js" />
-    <None Remove="Dashboard\Content\js\jquery.validate.min.js" />
-    <None Remove="Dashboard\Content\js\jquery.validate.unobtrusive.min.js" />
-    <EmbeddedResource Include="Dashboard\Localization\Sources\JsonSource\HybridQuartzDashboard-en-US.json" />
-    <EmbeddedResource Include="Dashboard\Localization\Sources\JsonSource\HybridQuartzDashboard-zh-CN.json" />
-    <EmbeddedResource Include="Dashboard\Localization\Sources\XmlSource\HybridQuartzDashboard-en-US.xml" />
-    <EmbeddedResource Include="Dashboard\Localization\Sources\XmlSource\HybridQuartzDashboard-zh-CN.xml" />
     <EmbeddedResource Include="MySql\Install.sql" />
     <EmbeddedResource Include="SqlServer\Install.sql" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Hybrid.AspNetCore\Hybrid.AspNetCore.csproj" />
-    <ProjectReference Include="..\Hybrid\Hybrid.csproj" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.1" Condition="'$(Configuration)' == 'Debug'" />
+    <PackageReference Include="Quartz" Version="3.0.7" />
   </ItemGroup>
 
-  <ProjectExtensions>
-    <VisualStudio><UserProperties /></VisualStudio>
-  </ProjectExtensions>
+  <ItemGroup>
+    <ProjectReference Include="..\Hybrid.AspNetCore\Hybrid.AspNetCore.csproj" />
+  </ItemGroup>
 
 </Project>

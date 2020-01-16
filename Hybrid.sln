@@ -66,6 +66,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hybrid.EntityFrameworkCore.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hybrid.EntityFrameworkCore.Sqlite", "src\Hybrid.EntityFrameworkCore.Sqlite\Hybrid.EntityFrameworkCore.Sqlite.csproj", "{EA1355AC-1DA1-4518-BDDE-9186A94B675A}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hybrid.Quartz", "src\Hybrid.Quartz\Hybrid.Quartz.csproj", "{F7B56B25-72AD-469C-81A1-03C7AE3FACD7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hybrid.Redis", "src\Hybrid.Redis\Hybrid.Redis.csproj", "{71A4644B-3B5B-4793-AF86-EA928D8F9DAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -140,6 +144,14 @@ Global
 		{EA1355AC-1DA1-4518-BDDE-9186A94B675A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA1355AC-1DA1-4518-BDDE-9186A94B675A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA1355AC-1DA1-4518-BDDE-9186A94B675A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7B56B25-72AD-469C-81A1-03C7AE3FACD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7B56B25-72AD-469C-81A1-03C7AE3FACD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7B56B25-72AD-469C-81A1-03C7AE3FACD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7B56B25-72AD-469C-81A1-03C7AE3FACD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71A4644B-3B5B-4793-AF86-EA928D8F9DAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71A4644B-3B5B-4793-AF86-EA928D8F9DAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71A4644B-3B5B-4793-AF86-EA928D8F9DAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71A4644B-3B5B-4793-AF86-EA928D8F9DAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -164,6 +176,8 @@ Global
 		{3A2C2DE9-1E36-49F4-8ABE-F5AB912C1803} = {62BF61E9-EA6F-4034-AD89-85C86B0968EB}
 		{31D44F20-C7DF-4763-9ABD-93B235379B5F} = {62BF61E9-EA6F-4034-AD89-85C86B0968EB}
 		{EA1355AC-1DA1-4518-BDDE-9186A94B675A} = {62BF61E9-EA6F-4034-AD89-85C86B0968EB}
+		{F7B56B25-72AD-469C-81A1-03C7AE3FACD7} = {62BF61E9-EA6F-4034-AD89-85C86B0968EB}
+		{71A4644B-3B5B-4793-AF86-EA928D8F9DAF} = {62BF61E9-EA6F-4034-AD89-85C86B0968EB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EB048828-DF83-45AB-943F-330B891075BB}

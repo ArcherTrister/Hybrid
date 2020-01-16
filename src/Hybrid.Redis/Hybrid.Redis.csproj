@@ -4,7 +4,9 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>Hybrid.Zero</RootNamespace>
+    <PackageId>Hybrid.Redis</PackageId>
+    <Summary>Hybrid Redis 缓存组件</Summary>
+    <Description>Hybrid Redis 缓存组件，封装基于Redis客户端的缓存实现</Description>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -13,15 +15,16 @@
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <DocumentationFile>bin\Release\Hybrid.Zero.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\Hybrid.Redis.xml</DocumentationFile>
     <OutputPath>bin\Release</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="3.1.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Hybrid.AspNetCore\Hybrid.AspNetCore.csproj" />
+    <ProjectReference Include="..\Hybrid\Hybrid.csproj" />
   </ItemGroup>
+
 </Project>
