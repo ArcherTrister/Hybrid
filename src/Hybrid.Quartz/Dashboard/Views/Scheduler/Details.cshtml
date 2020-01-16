@@ -1,0 +1,210 @@
+﻿@model Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerDto
+@{
+    ViewData["Title"] = "SchedulerDetails";
+}
+
+<!-- scheduler-details start -->
+<section>
+    <h2 class="page-header">@L("SchedulerDetails")</h2>
+    @if (Model != null)
+    {
+        <div class="panel panel-info">
+            <!-- Default panel contents -->
+            @*<div class="panel-heading heading-padding">
+                    <div class="pull-right">
+                        @*//todo:根据状态改变按钮display属性值*
+                        <button id="btn_start" class="btn btn-primary" data-loading-text="@L("Loading...")" type="button">@L("SchedulerStart")</button>
+                        <button id="btn_standby" class="btn btn-primary" data-loading-text="@L("Loading...")" type="button">@L("SchedulerStandby")</button>
+                        <button id="btn_shutdown" class="btn btn-primary" data-loading-text="@L("Loading...")" type="button">@L("SchedulerShutdown")</button>
+                    </div>
+                </div>*@
+
+            <!-- List group -->
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">@L("BasicInformation")</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-xs-4">@L("SchedulerName")</div>
+                                <div class="col-xs-8">@Model.Name</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">@L("SchedulerInstanceId")</div>
+                                <div class="col-xs-8">@Model.SchedulerInstanceId</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">@L("SchedulerStatus")</div>
+                                <div class="col-xs-8">@Model.Status</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">@L("JobStore")</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-xs-4">@L("JobStoreType")</div>
+                                <div class="col-xs-8">@Model.JobStore?.Type</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">@L("JobStoreClustered")</div>
+                                <div class="col-xs-8">@Model.JobStore?.Clustered</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">@L("JobStorePersistent")</div>
+                                <div class="col-xs-8">@Model.JobStore?.Persistent</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">@L("ThreadPool")</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-xs-4">@L("ThreadPoolType")</div>
+                                <div class="col-xs-8">@Model.ThreadPool?.Type</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">@L("ThreadPoolSize")</div>
+                                <div class="col-xs-8">@Model.ThreadPool?.Size</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">@L("Statistics")</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-xs-4">@L("NumberOfJobsExecuted")</div>
+                                <div class="col-xs-8">@Model.Statistics?.NumberOfJobsExecuted</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">@L("CurrentlyExecutingJobs")</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <table id="SchedulerDetailsTable"></table>
+
+                                <script>
+                                    //var $start = $('#btn_start');
+                                    //var $standby = $('#btn_standby');
+                                    //var $shutdown = $('#btn_shutdown');
+                                    var $table = $('#SchedulerDetailsTable');
+
+                                    @*$start.click(function(e) {
+                                        $(this).button('loading').delay(100).queue(function() {
+                                            $.ajax({
+                                                url: '/api/Quartz/Start',
+                                                type: 'post',
+                                                data: { 'schedulerName': '@Model.Name', 'delayMilliseconds': 0 },
+                                                success: function (res) { console.log(res) },
+                                                error: function (err) { console.log(err) }
+                                            });
+                                            $(this).button('reset');
+                                            $(this).dequeue();
+                                        });
+                                        e.stopPropagation();
+                                    });
+
+                                    $standby.click(function(e) {
+
+                                        e.stopPropagation();
+                                    });
+
+                                    $shutdown.click(function(e) {
+
+                                        e.stopPropagation();
+                                    });*@
+
+                                    //初始化表格
+                                    function initTable() {
+                                        $table.bootstrapTable('destroy').bootstrapTable({
+                                            height: 617, //表格高度
+                                            classes: ['table', 'table-bordered', 'table-hover', 'table-striped', 'table-sm']
+                                                .join(' '), //表格样式
+                                            //theadClasses rowStyle rowAttributes undefinedText
+                                            locale: $('#locale').val(), //语言
+                                            //virtualScroll virtualScrollItemHeight sortable
+                                            sortClass: 'table-active',
+                                            //sortName
+                                            showRefresh: true, //隐藏/显示刷新按钮
+                                            showToggle: true, //切换
+                                            showFullscreen: true, //全屏
+                                            showColumns: true, //列
+                                            columns: [
+                                                {
+                                                    title: '@L("JobGroupAndName")',
+                                                    field: 'name',
+                                                    align: 'center',
+                                                    sortable: true,
+                                                    formatter: function(value, row, index) {
+                                                        return row.job.group + '.' + row.job.name;
+                                                    }
+                                                },
+                                                {
+                                                    title: '@L("TriggerGroupAndName")',
+                                                    field: 'group',
+                                                    sortable: true,
+                                                    align: 'center',
+                                                    formatter: function(value, row, index) {
+                                                        return row.trigger.group + '.' + row.trigger.name;
+                                                    }
+                                                }, {
+                                                    title: '@L("JobRunTime")',
+                                                    field: 'jobRunTime',
+                                                    sortable: true,
+                                                    align: 'center'
+                                                }
+                                            ],
+                                            url:
+                                                '/api/quartz/CurrentlyExecutingJobs?schedulerName=@LocalSchedulerName',
+                                            cache: false,
+                                            //queryParams totalField totalNotFilteredField data-loading-text="Loading..." There are no currently executing jobs.
+                                            pagination: true,
+                                            //pageList: [10, 25, 50, 100]
+                                            sidePagination: 'server',
+                                            showPaginationSwitch: true, //隐藏/显示分页
+                                            search: true,
+                                            showSearchClearButton: true,
+                                            idField: 'name'
+                                        });
+                                    }
+
+                                    $(function() {
+                                        initTable();
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    }
+    else
+    {
+        <div class="row">
+            <div class="card">
+                <div class="card-body">没有找到相关数据！</div>
+            </div>
+        </div>
+    }
+</section>
+<!-- scheduler-details end -->

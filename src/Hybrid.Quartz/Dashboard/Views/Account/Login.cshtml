@@ -1,0 +1,127 @@
+﻿@model LoginViewModel
+
+@{
+    Layout = null;
+    ViewData["Title"] = L("LogIn");
+}
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>@ViewData["Title"] - Quartz</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="~/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+
+    <link href="~/css/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="~/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="~/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="~/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="~/js/html5shiv.min.js"></script>
+      <script src="~/js/respond.min.js"></script>
+    <![endif]-->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/jquery.validate.min.js"></script>
+    <script src="~/js/jquery.validate.unobtrusive.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="~/js/ie10-viewport-bug-workaround.js"></script>
+</head>
+
+<body>
+    <div class="modal-dialog" style="margin-top: 15%;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title text-center" id="myModalLabel">@ViewData["Title"]</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <section>
+                        <form asp-controller="Account" asp-action="Login" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="form-horizontal" role="form">
+                            <div class="modal-body" id="model-body">
+                                @*<div asp-validation-summary="All" class="text-danger"></div>*@
+                                <div class="form-group">
+                                    <label asp-for="UserName" class="col-md-2 control-label"></label>
+                                    <div class="col-md-10">
+                                        <input asp-for="UserName" class="form-control" />
+                                        <span asp-validation-for="UserName" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="Password" class="col-md-2 control-label"></label>
+                                    <div class="col-md-10">
+                                        <input asp-for="Password" class="form-control" />
+                                        <span asp-validation-for="Password" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-offset-2 col-md-10">
+                                        <div class="checkbox">
+                                            <label asp-for="RememberMe">
+                                                <input asp-for="RememberMe" />
+                                                @Html.DisplayNameFor(m => m.RememberMe)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="form-group">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <button type="submit" class="btn btn-primary form-control">@L("LogIn")</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*@section Scripts {
+        @await Html.PartialAsync("_ValidationScriptsPartial")
+    }*@
+    <script>
+        jQuery.extend(jQuery.validator.messages, {
+            required: "这是必填字段",
+            remote: "请修正该字段",
+            email: "请输入正确格式的电子邮件",
+            url: "请输入合法的网址",
+            date: "请输入合法的日期",
+            dateISO: "请输入合法的日期 (ISO).",
+            number: "请输入合法的数字",
+            digits: "只能输入整数",
+            creditcard: "请输入合法的信用卡号",
+            equalTo: "请再次输入相同的值",
+            accept: "请输入拥有合法后缀名的字符串",
+            maxlength: jQuery.validator.format("请输入一个 长度最多是 {0} 的字符串"),
+            minlength: jQuery.validator.format("请输入一个 长度最少是 {0} 的字符串"),
+            rangelength: jQuery.validator.format("请输入 一个长度介于 {0} 和 {1} 之间的字符串"),
+            range: jQuery.validator.format("请输入一个介于 {0} 和 {1} 之间的值"),
+            max: jQuery.validator.format("请输入一个最大为{0} 的值"),
+            min: jQuery.validator.format("请输入一个最小为{0} 的值")
+        });
+    </script>
+</body>
+</html>

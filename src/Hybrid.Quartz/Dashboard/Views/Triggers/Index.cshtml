@@ -1,0 +1,77 @@
+﻿@{
+    ViewData["Title"] = L("Triggers");
+}
+
+<!-- triggers start -->
+<h2 class="page-header">@L("Triggers")</h2>
+
+<table id="TriggersTable"
+       data-search="true"
+       data-id-field="Group"
+       data-side-pagination="server"
+       data-method="post"
+       data-url="/api/quartz/Triggers?schedulerName=@LocalSchedulerName"></table>
+
+<script>
+    var $table = $('#TriggersTable');
+
+    //操作列
+    function operateFormatter(value, row, index) {
+        return [
+            `<a class="like" href="/Quartz/Triggers/Details?schedulerName=@LocalSchedulerName&triggerGroup=${row.Group}&triggerName=${row.Name}" title="@L("Details")">`,
+            '<i class="fa fa-telegram"></i>',
+            '</a>  '
+        ].join('');
+    }
+
+    //页脚标题
+    function totalTextFormatter(data) {
+        return '@L("Total")';
+    }
+
+    //总数量
+    function totalNameFormatter(data) {
+        return data.length;
+    }
+
+    //初始化表格
+    function initTable() {
+        $table.bootstrapTable('destroy').bootstrapTable({
+            height: 617,
+            locale: $('#locale').val(),
+            //showPaginationSwitch: true,//隐藏/显示分页
+            showRefresh: true, //隐藏/显示刷新按钮
+            showToggle: true,//切换
+            showFullscreen: true,//全屏
+            showColumns: true,//列
+            //showExport: true,//导出
+            showFooter: true,//total
+            columns: [
+                {
+                    title: '@L("TriggerGroup")',
+                    field: 'Group',
+                    align: 'center',
+                    sortable: false,
+                    footerFormatter: totalTextFormatter
+                },
+                {
+                    title: '@L("TriggerName")',
+                    field: 'Name',
+                    sortable: false,
+                    footerFormatter: totalNameFormatter,
+                    align: 'center'
+                }, {
+                    title: '@L("Operate")',
+                    field: 'operate',
+                    align: 'center',
+                    formatter: operateFormatter
+                }
+            ]
+        });
+    }
+
+    $(function () {
+        initTable();
+    });
+</script>
+<!-- triggers end -->

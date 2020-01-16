@@ -1,0 +1,113 @@
+﻿@{
+    ViewData["Title"] = L("Jobs");
+}
+
+<!-- jobs start -->
+<div class="row">
+    <div class="col-md-3 col-lg-2">
+        <partial name="_SideBar" />
+    </div>
+    <div class="col-md-9 col-lg-10">
+        <h2 class="page-header">@L("AllJobs")</h2>
+        <table id="JobsTable"
+               data-search="true"
+               data-id-field=""
+               data-side-pagination="client"
+               data-ajax="ajaxRequest"></table>
+    </div>
+</div>
+<script>
+    var $table = $('#JobsTable');
+    //请求数据
+    //data-method="post"
+    //data-url="/api/quartz/Jobs?schedulerName=@LocalSchedulerName"
+    function ajaxRequest(params) {
+        $.ajax({
+            url: '/api/Quartz/Jobs',
+            type: 'post',
+            dataType: "json",
+            contentType: "application/json;charset=UTF-8",
+            data: JSON.stringify({
+                "SchedulerName":"@LocalSchedulerName",
+                "NameContains": "",
+                "NameEndsWith": "",
+                "NameStartsWith": "",
+                "NameEquals": ""
+            }),
+            success: function (res) {
+                if (res.Success) {
+                    params.success(res.Result);
+                    $('#job_badge_Index').text(res.Result.length);
+                } else {
+                    params.success(null);
+                }
+            },
+            error: function (err) { params.error(err); }
+        });
+    }
+
+    //操作列
+    function operateFormatter(value, row, index) {
+        return [
+            `<a class="like" href="/Quartz/Jobs/Details?schedulerName=@LocalSchedulerName&jobGroup=${row.Group}&jobName=${row.Name
+            }" title="@L("Details")">`,
+            '<i class="fa fa-telegram"></i>',
+            '</a>  '
+        ].join('');
+    }
+
+    //页脚标题
+    function totalTextFormatter(data) {
+        return '@L("Total")';
+    }
+
+    //总数量
+    function totalNameFormatter(data) {
+        return data.length;
+    }
+
+    //初始化表格
+    function initTable() {
+        $table.bootstrapTable('destroy').bootstrapTable({
+            height: 617,
+            locale: $('#locale').val(),
+            showPaginationSwitch: true,//隐藏/显示分页
+            minimumCountColumns: 2,  //当列数小于此值时，将隐藏内容列下拉框。
+            pageNumber: 1,  //初始化加载第一页，默认第一页
+            pageSize: 15,  //每页的记录行数（*）
+            pageList: [5, 10, 15],  //可供选择的每页的行数
+            pagination: true,//是否分页
+            showRefresh: true, //隐藏/显示刷新按钮
+            showToggle: true,//切换
+            showFullscreen: true,//全屏
+            showColumns: true,//列
+            //showExport: true,//导出
+            showFooter: true,//total
+            columns: [
+                {
+                    title: '@L("JobGroup")',
+                    field: 'Group',
+                    align: 'center',
+                    sortable: false,
+                    footerFormatter: totalTextFormatter
+                },
+                {
+                    title: '@L("JobName")',
+                    field: 'Name',
+                    sortable: false,
+                    footerFormatter: totalNameFormatter,
+                    align: 'center'
+                }, {
+                    title: '@L("Operate")',
+                    field: 'operate',
+                    align: 'center',
+                    formatter: operateFormatter
+                }
+            ]
+        });
+    }
+
+    $(function () {
+        initTable();
+    });
+</script>

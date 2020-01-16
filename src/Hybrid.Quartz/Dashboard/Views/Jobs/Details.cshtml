@@ -1,0 +1,211 @@
+﻿@model Hybrid.Quartz.Dashboard.Models.Dtos.JobDetailDto
+@{
+    ViewData["Title"] = L("JobDetails");
+}
+
+<!-- job-details start -->
+<section>
+    <h2 class="page-header">@L("JobDetails")</h2>
+
+    @if (Model != null)
+    {
+        <div class="panel panel-info">
+            <div class="panel-heading  heading-padding">
+                <div class="pull-right">
+                    <button id="btn_job_pause" class="btn btn-warning" data-loading-text="@L("Loading...")" type="button">@L("JobPause")</button>
+                    <button id="btn_job_resume" class="btn btn-success" data-loading-text="@L("Loading...")" type="button">@L("JobResume")</button>
+                    <button id="btn_job_trigger" class="btn btn-info" data-loading-text="@L("Loading...")" type="button">@L("JobTrigger")</button>
+                    <button id="btn_job_delete" class="btn btn-danger" data-loading-text="@L("Loading...")" type="button">@L("JobDelete")</button>
+                </div>
+            </div>
+            <!-- List group -->
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">@L("BasicInformation")</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-xs-4">@L("JobType")</div>
+                                <div class="col-xs-8">@Model.JobType</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">@L("JobKey")</div>
+                                <div class="col-xs-8">@Model.Name.@Model.Group</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">@L("JobDescription")</div>
+                                <div class="col-xs-8">@Model.Description</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">@L("Durable")</div>
+                                <div class="col-xs-8">@Model.Durable</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">@L("RequestsRecovery")</div>
+                                <div class="col-xs-8">@Model.RequestsRecovery</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">@L("ConcurrentExecutionDisallowed")</div>
+                                <div class="col-xs-8">@Model.ConcurrentExecutionDisallowed</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">@L("PersistJobDataAfterExecution")</div>
+                                <div class="col-xs-8">@Model.PersistJobDataAfterExecution</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <script>
+                var $pause = $('#btn_job_pause');
+                var $resume = $('#btn_job_resume');
+                var $trigger = $('#btn_job_trigger');
+                var $delete = $('#btn_job_delete');
+                var requestData = { 'SchedulerName': '@Model.SchedulerName', 'JobGroup': '@Model.Group', 'JobName': '@Model.Name' };
+
+                $pause.click(function (e) {
+                    $(this).button('loading').delay(100).queue(function() {
+                        $.ajax({
+                            url: '/api/Quartz/PauseJob',
+                            type: 'post',
+                            dataType: "json",
+                            contentType: "application/json;charset=UTF-8",
+                            data: JSON.stringify(requestData),
+                            success: function (res) {
+                                if (res.Success) {
+                                    toastr.success("暂停成功");
+                                } else {
+                                    if (res.UnAuthorizedRequest) {
+                                        toastr.info("暂停失败，权限不足");
+                                    } else {
+                                        let options = toastr.options;
+                                        options.onHidden = function () {
+                                            go(res.TargetUrl);
+                                        }
+                                        toastr.warning("暂停失败，请先登录", "", options);
+                                    }
+                                }
+                            },
+                            error: function (err) {
+                                toastr.error("未知异常，请重试");
+                            }
+                        });
+                        $(this).button('reset');
+                        $(this).dequeue();
+                    });
+                    e.stopPropagation();
+                });
+                $resume.click(function (e) {
+                    $(this).button('loading').delay(100).queue(function() {
+                        $.ajax({
+                            url: '/api/Quartz/ResumeJob',
+                            type: 'post',
+                            dataType: "json",
+                            contentType: "application/json;charset=UTF-8",
+                            data: JSON.stringify(requestData),
+                            success: function (res) {
+                                if (res.Success) {
+                                    toastr.success("恢复成功");
+                                } else {
+                                    if (res.UnAuthorizedRequest) {
+                                        toastr.info("恢复失败，权限不足");
+                                    } else {
+                                        let options = toastr.options;
+                                        options.onHidden = function () {
+                                            go(res.TargetUrl);
+                                        }
+                                        toastr.warning("恢复失败，请先登录", "", options);
+                                    }
+                                }
+                            },
+                            error: function (err) {
+                                toastr.error("未知异常，请重试");
+                            }
+                        });
+                        $(this).button('reset');
+                        $(this).dequeue();
+                    });
+                    e.stopPropagation();
+                });
+                //触发任务【立即执行】
+                $trigger.click(function (e) {
+                    $(this).button('loading').delay(100).queue(function () {
+                        $.ajax({
+                            url: '/api/Quartz/TriggerJob',
+                            type: 'post',
+                            dataType: "json",
+                            contentType: "application/json;charset=UTF-8",
+                            data: JSON.stringify(requestData),
+                            success: function (res) {
+                                if (res.Success) {
+                                    toastr.success("执行成功");
+                                } else {
+                                    if (res.UnAuthorizedRequest) {
+                                        toastr.info("执行失败，权限不足");
+                                    } else {
+                                        let options = toastr.options;
+                                        options.onHidden = function () {
+                                            go(res.TargetUrl);
+                                        }
+                                        toastr.warning("执行失败，请先登录", "", options);
+                                    }
+                                }
+                            },
+                            error: function (err) {
+                                toastr.error("未知异常，请重试");
+                            }
+                        });
+                        $(this).button('reset');
+                        $(this).dequeue();
+                    });
+                    e.stopPropagation();
+                });
+                $delete.click(function (e) {
+                    $(this).button('loading').delay(100).queue(function() {
+                        $.ajax({
+                            url: '/api/Quartz/DeleteJob',
+                            type: 'delete',
+                            dataType: "json",
+                            contentType: "application/json;charset=UTF-8",
+                            data: JSON.stringify(requestData),
+                            success: function (res) {
+                                if (res.Success) {
+                                    toastr.success("删除成功");
+                                } else {
+                                    if (res.UnAuthorizedRequest) {
+                                        toastr.info("删除失败，权限不足");
+                                    } else {
+                                        let options = toastr.options;
+                                        options.onHidden = function () {
+                                            go(res.TargetUrl);
+                                        }
+                                        toastr.warning("删除失败，请先登录", "", options);
+                                    }
+                                }
+                            },
+                            error: function (err) {
+                                toastr.error("未知异常，请重试");
+                            }
+                        });
+                        $(this).button('reset');
+                        $(this).dequeue();
+                    });
+                    e.stopPropagation();
+                });
+            </script>
+        </div>
+    }
+    else
+    {
+        <div class="row">
+            <div class="card">
+                <div class="card-body">没有找到相关数据，请刷新后重试！</div>
+            </div>
+        </div>
+    }
+</section>
+
+<!-- job-details end -->

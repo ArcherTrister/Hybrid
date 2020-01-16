@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<localizationDictionary culture="en-US">
+  <texts>
+    <!-- login -->
+    <text name="LogIn">Log In</text>
+    <text name="UserName">User Name</text>
+    <text name="Password">Password</text>
+    <text name="RememberMe">Remember Me?</text>
+    <!-- header -->
+    <text name="QuartzManage">Quartz Manage</text>
+    <text name="Home">Home</text>
+    <text name="Jobs">Jobs</text>
+    <text name="Scheduler">Scheduler</text>
+    <text name="Calendars">Calendars</text>
+    <text name="History">History</text>
+    <text name="LiveLog">LiveLog</text>
+    <text name="Triggers">Triggers</text>
+    <text name="Hello">您好 </text>
+    <text name="LogOut">Log Out</text>
+    <text name="Recurring">Recurring</text>
+    <text name="Welcome">Welcome To Use This System</text>
+    <!-- footer -->
+    <text name="Time">Time: {0}</text>
+    <text name="TimeConsuming">Time Consuming {0} ms</text>
+    <!-- dashboard -->
+    <text name="Dashboard">Dashboard</text>
+    <text name="SchedulerInstanceId">Scheduler Instance Id</text>
+    <text name="SchedulerName">Scheduler Name</text>
+    <text name="SchedulerInstance">Scheduler Instance</text>
+    <text name="SchedulerStatus">Scheduler Status</text>
+    <text name="Details">Details</text>
+    <text name="Operate">Operate</text>
+    <text name="Total">Total</text>
+    <text name="PleaseWait">Please Wait …</text>
+    <!-- SchedulerDetails -->
+    <text name="SchedulerDetails">Scheduler Details</text>
+    <text name="SchedulerStart">Start</text>
+    <text name="SchedulerStandby">Standby</text>
+    <text name="SchedulerShutdown">Shutdown</text>
+    <text name="Loading">Loading...</text>
+    <text name="BasicInformation">Basic Information</text>
+    <text name="JobStore">Job Store</text>
+    <text name="JobStoreType">Job Store Type</text>
+    <text name="JobStoreClustered">Job Store Clustered</text>
+    <text name="JobStorePersistent">Job Store Persistent</text>
+    <text name="ThreadPool">Thread Pool</text>
+    <text name="ThreadPoolType">Thread Pool Type</text>
+    <text name="ThreadPoolSize">Thread Pool Size</text>
+    <text name="Statistics">Statistics</text>
+    <text name="NumberOfJobsExecuted">Number Of Jobs Executed</text>
+    <text name="JobGroupAndName">Job Group And Name</text>
+    <text name="TriggerGroupAndName">Trigger Group And Name</text>
+    <text name="JobRunTime">Job Run Time</text>
+    <text name="CurrentlyExecutingJobs">Currently Executing Jobs</text>
+    <!-- jobs -->
+    <text name="AllJobs">All Jobs</text>
+    <text name="Queued">Queued</text>
+    <text name="Plan">Plan</text>
+    <text name="Executing">Executing</text>
+    <text name="Complete">Complete</text>
+    <text name="Fail">Fail</text>
+    <text name="Delete">Delete</text>
+    <text name="Waiting">Waiting</text>
+    <text name="JobGroup">Job Group</text>
+    <text name="JobName">Job Name</text>
+    <!-- job details -->
+    <text name="JobDetails">Job Details</text>
+    <text name="JobType">Job Type</text>
+    <text name="JobKey">Job Key</text>
+    <text name="Description">Description</text>
+    <text name="Durable">Durable</text>
+    <text name="RequestsRecovery">RequestsRecovery</text>
+    <text name="ConcurrentExecutionDisallowed">ConcurrentExecutionDisallowed</text>
+    <text name="PersistJobDataAfterExecution">PersistJobDataAfterExecution</text>
+    <text name="JobPause">Pause Job</text>
+    <text name="JobResume">Resume Job</text>
+    <text name="JobTrigger">Trigger Job</text>
+    <text name="JobDelete">Delete Job</text>
+    <!-- CookieConsent -->
+    <text name="CookieConsent">Use this space to summarize your privacy and cookie use policy.</text>
+    <text name="Accept">Accept</text>
+    <text name="TriggerGroup">Trigger Group</text>
+    <text name="TriggerName">Trigger Name</text>
+    <text name="TriggerDetails">Trigger Details</text>
+    <text name="TriggerType">Trigger Type</text>
+    <text name="TriggerKey">Trigger Key</text>
+    <text name="SchedulingConfiguration">Scheduling Configuration</text>
+    <text name="Priority">Priority</text>
+    <text name="TriggerStart">Start Time</text>
+    <text name="TriggerEnd">End Time</text>
+    <text name="RepeatInterval">Repeat Interval</text>
+    <text name="RepeatCount">Repeat Count</text>
+    <text name="CronExpression">Cron Expression</text>
+    <text name="TimeZone">Time Zone</text>
+    <text name="PreserveHourOfDay">Preserve Hour of Day Across Daylight Savings</text>
+    <text name="SkipDay">Skip Day If Hour Doesn't Exist</text>
+    <text name="NextTenFireTimes">Next 10 Fire Times</text>
+    <text name="TriggerPause">Pause</text>
+    <text name="TriggerResume">Resume</text>
+    <text name="ShowTriggerInfo">Show trigger info</text>
+    <text name="ShowJobInfo">Show job info</text>
+    <text name="Job">Job</text>
+    <text name="ScheduledTime">Scheduled Time</text>
+    <text name="FiredTime">Fired Time</text>
+    <text name="Duration">Duration</text>
+    <text name="SchedulerRouter">Scheduler Router</text>
+    <!-- Calendars -->
+    <text name="CalendarName">Calendar Name</text>
+    <text name="CalendarDetails">Calendar Details</text>
+    <text name="CalendarDelete">Delete</text>
+    <text name="CalendarType">Calendar Type</text>
+    <text name="CalendarDescription">Description</text>
+    <text name="BaseCalendar">Base Calendar</text>
+    <text name="CalendarCronExpression">Calendar Cron Expression</text>
+    <text name="CalendarTimeZone">Calendar Time Zone</text>
+    <!-- History -->
+    <text name="Trigger">Trigger</text>
+  </texts>
+</localizationDictionary>

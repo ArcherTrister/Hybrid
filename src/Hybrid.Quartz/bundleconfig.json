@@ -1,0 +1,56 @@
+[
+  {
+    "outputFileName": "Dashboard/Content/css/quartz.min.css",
+    "inputFiles": [
+      "Dashboard/Content/css/quartz.css"
+    ]
+  },
+  {
+    "outputFileName": "Dashboard/Content/css/core.min.css",
+    "inputFiles": [
+      "Dashboard/Content/css/core.css"
+    ]
+  },
+  {
+    "outputFileName": "Dashboard/Content/css/components.min.css",
+    "inputFiles": [
+      "Dashboard/Content/css/components.css"
+    ]
+  },
+  {
+    "outputFileName": "Dashboard/Content/js/highcharts.min.js",
+    "inputFiles": [
+      "Dashboard/Content/js/highcharts.js"
+    ]
+  },
+  {
+    "outputFileName": "Dashboard/Content/js/jquery.knob.min.js",
+    "inputFiles": [
+      "Dashboard/Content/js/jquery.knob.js"
+    ]
+  },
+  {
+    "outputFileName": "Dashboard/Content/js/jquery.core.min.js",
+    "inputFiles": [
+      "Dashboard/Content/js/jquery.core.js"
+    ]
+  },
+  {
+    "outputFileName": "Dashboard/Content/js/excanvas.min.js",
+    "inputFiles": [
+      "Dashboard/Content/js/excanvas.js"
+    ]
+  },
+  {
+    "outputFileName": "Dashboard/Content/css/semantic.min.css",
+    "inputFiles": [
+      "Dashboard/Content/css/semantic.css"
+    ]
+  },
+  {
+    "outputFileName": "Dashboard/Content/css/dashboard.min.css",
+    "inputFiles": [
+      "Dashboard/Content/css/dashboard.css"
+    ]
+  }
+]

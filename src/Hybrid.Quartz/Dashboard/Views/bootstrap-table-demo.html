@@ -1,0 +1,205 @@
+﻿@{
+    ViewData["Title"] = L("Calendars");
+}
+
+<style>
+    .like {
+        margin-right: 10px;
+    }
+</style>
+
+<!-- calendars start -->
+<h2 class="page-header">@L("Calendars")</h2>
+
+<div id="toolbar">
+    <button id="remove" class="btn btn-danger" disabled>
+        <i class="glyphicon glyphicon-remove"></i> @L("Delete")
+    </button>
+</div>
+
+<table id="table"
+       data-toolbar="#toolbar"
+       data-search="true"
+       data-detail-view="true"
+       data-click-to-select="true"
+       data-detail-formatter="detailFormatter"
+       data-minimum-count-columns="2"
+       data-pagination="true"
+       data-id-field="id"
+       data-page-list="[10, 25, 50, 100, all]"
+       data-side-pagination="server"
+       data-url="https://examples.wenzhixin.net.cn/examples/bootstrap_table/data"
+       data-response-handler="responseHandler"></table>
+
+<script>
+    var $table = $('#table');
+    var $remove = $('#remove');
+    var selections = [];
+    //获取选中项
+    function getIdSelections() {
+        return $.map($table.bootstrapTable('getSelections'),
+            function (row) {
+                return row.id;
+            });
+    }
+    //请求数据处理
+    function responseHandler(res) {
+        console.log(res);
+        $.each(res.rows,
+            function (i, row) {
+                row.state = $.inArray(row.id, selections) !== -1;
+            });
+        console.log(res);
+        return res;
+    }
+    //详情面板
+    function detailFormatter(index, row) {
+        console.log(JSON.stringify(row), 'detail');
+        var html = [];
+        $.each(row,
+            function (key, value) {
+                html.push('<p><b>' + key + ':</b> ' + value + '</p>');
+            });
+        return html.join('');
+    }
+    //操作列
+    function operateFormatter(value, row, index) {
+        return [
+            '<a class="like" href="javascript:void(0)" title="Like">',
+            '<i class="fa fa-heart"></i>',
+            '</a>  ',
+            '<a class="remove" href="javascript:void(0)" title="Remove">',
+            '<i class="fa fa-trash"></i>',
+            '</a>'
+        ].join('');
+    }
+    //操作事件
+    window.operateEvents = {
+        'click .like': function (e, value, row, index) {
+            alert(`You click like action, row: ${JSON.stringify(row)}`);
+        },
+        'click .remove': function (e, value, row, index) {
+            $table.bootstrapTable('remove',
+                {
+                    field: 'id',
+                    values: [row.id]
+                });
+        }
+    }
+    //页脚标题
+    function totalTextFormatter(data) {
+        return 'Total';
+    }
+    //总数量
+    function totalNameFormatter(data) {
+        return data.length;
+    }
+    //计算总价
+    function totalPriceFormatter(data) {
+        var field = this.field;
+        return `$${data.map(function (row) {
+            return +row[field].substring(1);
+        }).reduce(function (sum, i) {
+                return sum + i;
+            },
+            0)}`;
+    }
+    //查询参数
+    function searchParams(params) { //配置参数
+        const temp = {   //这里的键的名字和控制器的变量名必须一直，这边改动，控制器也需要改成一样的
+            pageSize: params.limit,   //页面大小
+            pageIndex: params.pageNumber,  //页码
+            minSize: $("#leftLabel").val(),
+            maxSize: $("#rightLabel").val(),
+            minPrice: $("#priceleftLabel").val(),
+            maxPrice: $("#pricerightLabel").val(),
+            offset: params.offset,
+            limit: params.limit,
+            sort: params.sort,//排序列名
+            order: params.order,
+            Cut: Cut,
+            Color: Color,
+            Clarity: Clarity,
+            sortOrder: params.order//排位命令（desc，asc）
+            // search:params.search,
+            //可以是添加自己要筛选的列与project属性对应
+        };
+        return temp;
+    }
+    //初始化表格
+    function initTable() {
+        $table.bootstrapTable('destroy').bootstrapTable({
+            height: 617,
+            locale: $('#locale').val(),
+            striped: true,      //是否显示行间隔色
+            cache: false, //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
+            showPaginationSwitch: true,//隐藏/显示分页
+            showRefresh: true, //隐藏/显示刷新按钮
+            showToggle: true,//切换
+            showFullscreen: true,//全屏
+            showColumns: true,//列
+            showExport: true,//导出
+            //showFooter: true,//total
+            columns: [
+                {
+                    field: 'state',
+                    checkbox: true,
+                    align: 'center',
+                }, {
+                    title: 'Item ID',
+                    field: 'id',
+                    align: 'center',
+                    sortable: true,
+                    footerFormatter: totalTextFormatter
+                },
+                {
+                    title: 'Item Name',
+                    field: 'name',
+                    sortable: true,
+                    footerFormatter: totalNameFormatter,
+                    align: 'center'
+                }, {
+                    title: 'Item Price',
+                    field: 'price',
+                    sortable: true,
+                    align: 'center',
+                    footerFormatter: totalPriceFormatter
+                }, {
+                    title: '@L("Operate")',
+                    field: 'operate',
+                    align: 'center',
+                    events: window.operateEvents,
+                    formatter: operateFormatter
+                }
+            ]
+        });
+        $table.on('check.bs.table uncheck.bs.table ' +
+            'check-all.bs.table uncheck-all.bs.table',
+            function () {
+                $remove.prop('disabled', !$table.bootstrapTable('getSelections').length);
+                // save your data, here just save the current page
+                selections = getIdSelections();
+                // push or splice the selections if you want to save all data selections
+            });
+        $table.on('all.bs.table',
+            function (e, name, args) {
+                console.log(name, args);
+            });
+        $remove.click(function () {
+            const ids = getIdSelections();
+            $table.bootstrapTable('remove',
+                {
+                    field: 'id',
+                    values: ids
+                });
+            $remove.prop('disabled', true);
+        });
+    }
+
+    $(function () {
+        $('#locale').val();
+        initTable();
+        $('#locale').change(initTable);
+    });
+</script>
+<!-- calendars end -->

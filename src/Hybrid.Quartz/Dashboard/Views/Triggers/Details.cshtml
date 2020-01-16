@@ -1,0 +1,149 @@
+﻿@model dynamic
+@{
+    ViewData["Title"] = "TriggerDetails";
+}
+
+<!-- trigger-details start -->
+<section>
+    <h2 class="page-header">@L("TriggerDetails")</h2>
+
+    @if (Model != null)
+    {
+        <div class="panel panel-info">
+            <div class="panel-heading  heading-padding">
+                <div class="pull-right">
+                    <button id="btn_trigger_pause" class="btn btn-primary" data-loading-text="@L("Loading...")" type="button">@L("TriggerPause")</button>
+                    <button id="btn_trigger_resume" class="btn btn-primary" data-loading-text="@L("Loading...")" type="button">@L("TriggerResume")</button>
+                </div>
+            </div>
+            <!-- List group -->
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">@L("BasicInformation")</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-xs-4">@L("TriggerType")</div>
+                                <div class="col-xs-8">@Model.TriggerType</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">@L("TriggerKey")</div>
+                                <div class="col-xs-8">@Model.Name.@Model.Group</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">@L("TriggerDescription")</div>
+                                <div class="col-xs-8">@Model.Description</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">@L("Priority")</div>
+                                <div class="col-xs-8">@Model.Priority</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">@L("SchedulingConfiguration")</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-xs-4">@L("TriggerStart")</div>
+                                <div class="col-xs-8">@(Model.StartTimeUtc == null ? "" : Model.StartTimeUtc.ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss"))</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">@L("TriggerEnd")</div>
+                                <div class="col-xs-8">@(Model.EndTimeUtc == null ? "" : Model.EndTimeUtc.ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss"))</div>
+                            </div>
+                            @if (Model.TriggerType.IndexOf("SimpleTrigger", StringComparison.OrdinalIgnoreCase) > -1)
+                            {
+                                <div class="row">
+                                    <div class="col-xs-4">@L("RepeatInterval")</div>
+                                    <div class="col-xs-8">@Model.RepeatInterval</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-4">@L("RepeatCount")</div>
+                                    <div class="col-xs-8">@(Model.RepeatCount == -1 ? "Infinite" : Model.RepeatCount)</div>
+                                </div>
+                            }
+                            @if (Model.TriggerType.IndexOf("CronTrigger", StringComparison.OrdinalIgnoreCase) > -1)
+                            {
+                                <div class="row">
+                                    <div class="col-xs-4">@L("CronExpression")</div>
+                                    <div class="col-xs-8">@Model.CronExpression</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-4">@L("TimeZone")</div>
+                                    <div class="col-xs-8">@Model.TimeZone.DisplayName</div>
+                                </div>
+                            }
+                            @if (Model.TriggerType.IndexOf("CalendarIntervalTrigger", StringComparison.OrdinalIgnoreCase) > -1)
+                            {
+                                <div class="row">
+                                    <div class="col-xs-4">@L("RepeatInterval")</div>
+                                    <div class="col-xs-8">@Model.RepeatInterval / @Model.RepeatIntervalUnit</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-4">@L("TimeZone")</div>
+                                    <div class="col-xs-8">@Model.TimeZone.DisplayName</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-4">@L("PreserveHourOfDay")</div>
+                                    <div class="col-xs-8">@Model.PreserveHourOfDayAcrossDaylightSavings</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-4">@L("SkipDay")</div>
+                                    <div class="col-xs-8">@Model.SkipDayIfHourDoesNotExist</div>
+                                </div>
+                            }
+                            @*@if (Model.TriggerType.IndexOf("DailyTimeIntervalTrigger", StringComparison.OrdinalIgnoreCase) > -1)
+                            {
+
+                            }
+                            <div class="row">
+                                <div class="col-xs-4">@L("Calendar")</div>
+                                <div class="col-xs-8">
+                                    @if (Model.Calendar)
+                                    {
+                                        <a asp-area="Quartz" asp-controller="Calendars" asp-action="Details" asp-all-route-data="null" route-href="params.bind: { schedulerName: scheduler.name, name: details.calendar }">@L(Model.Calendar)</a>
+                                    }
+                                </div>
+                            </div>*@
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">@L("NextTenFireTimes")</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <pre>
+                                    @foreach(DateTimeOffset fireTime in Model.NextFireTimes)
+                                    {
+                                        <code>
+                                            @fireTime.ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss")
+                                            <br />
+                                        </code>
+                                    }
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    }
+    else
+    {
+        <div class="row">
+            <div class="card">
+                <div class="card-body">没有找到相关数据，请刷新后重试！</div>
+            </div>
+        </div>
+    }
+</section>
+<!-- trigger-details end -->

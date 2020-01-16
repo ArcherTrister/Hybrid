@@ -1,0 +1,78 @@
+﻿@model dynamic
+@{
+    ViewData["Title"] = "CalendarDetails";
+}
+
+<!-- calendar-details start -->
+<section>
+    <h2 class="page-header">@L("CalendarDetails")</h2>
+
+    @if (Model != null)
+    {
+        <div class="panel panel-info">
+            <div class="panel-heading  heading-padding">
+                <div class="pull-right">
+                    <button id="btn_calendar_delete" class="btn btn-primary" data-loading-text="@L("Loading...")" type="button">@L("CalendarDelete")</button>
+                </div>
+            </div>
+            <!-- List group -->
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">@L("BasicInformation")</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-xs-4">@L("CalendarName")</div>
+                                <div class="col-xs-8">@Model.Name</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    @L("CalendarType")
+                                </div>
+                                <div class="col-xs-8">@Model.CalendarType</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    @L("CalendarDescription")
+                                </div>
+                                <div class="col-xs-8">@Model.Description</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    @L("BaseCalendar")
+                                </div>
+                                <div class="col-xs-8">@Model.CalendarBase</div>
+                            </div>
+                            @if (Model.CalendarType.IndexOf("CronCalendar", StringComparison.OrdinalIgnoreCase) > -1)
+                            {
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        @L("CalendarCronExpression")
+                                    </div>
+                                    <div class="col-xs-8">@Model.CronExpression</div>
+                                </div>
+                            }
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    @L("CalendarTimeZone")
+                                </div>
+                                <div class="col-xs-8">@Model.TimeZone.DisplayName</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    }
+    else
+    {
+        <div class="row">
+            <div class="card">
+                <div class="card-body">没有找到相关数据！</div>
+            </div>
+        </div>
+    }
+</section>
+<!-- calendar-details end -->

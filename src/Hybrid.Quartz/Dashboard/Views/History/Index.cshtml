@@ -1,0 +1,127 @@
+﻿@{
+    ViewData["Title"] = L("History");
+}
+
+<!-- history start-->
+<h2 class="page-header">@L("History")</h2>
+
+<table id="HistoryTable"
+       data-search="true"
+       data-id-field=""
+       data-side-pagination="server"
+       data-url="/api/quartz/SchedulerHistory"></table>
+
+<script>
+    var $table = $('#HistoryTable');
+
+    //查询参数
+    function searchParams(params) { //配置参数
+        params.schedulerName = '@LocalSchedulerName';
+        return params;
+    }
+
+    //初始化表格
+    function initTable() {
+        $table.bootstrapTable('destroy').bootstrapTable({
+            height: 617,
+            locale: $('#locale').val(),
+            showPaginationSwitch: true,//隐藏/显示分页
+            showRefresh: true, //隐藏/显示刷新按钮
+            showToggle: true,//切换
+            showFullscreen: true,//全屏
+            showColumns: true,//列
+            //showExport: true,//导出
+            //showFooter: true,//total
+            queryParamsType:'',
+            queryParams: searchParams,
+            sortName: "FIRED_TIME",
+            sortOrder: "desc",
+            pageNumber: 1,
+            pageSize: 50,
+            pageList: [50, 100, 200, 300],
+            pagination: true,
+            columns: [
+                {
+                    title: '@L("Job")',
+                    field: 'Job',
+                    align: 'center',
+                    sortable: false,
+                    formatter: function (value, row, index) {
+                        return row.JobName + '.' + row.JobGroup;
+                    }
+                },
+                {
+                    title: '@L("Trigger")',
+                    field: 'Trigger',
+                    sortable: false,
+                    align: 'center',
+                    formatter: function (value, row, index) {
+                        return row.TriggerName + '.' + row.TriggerGroup;
+                    }
+                }, {
+                    title: '@L("ScheduledTime")',
+                    field: 'ScheduledTime',
+                    sortable: false,
+                    align: 'center',
+                    formatter: function (value) {
+                        return moment(value).format("YYYY-MM-DD HH:mm:ss");
+                    }
+                }, {
+                    title: '@L("FiredTime")',
+                    field: 'FiredTime',
+                    sortable: false,
+                    align: 'center',
+                    formatter: function (value) {
+                        return moment(value).format('YYYY-MM-DD HH:mm:ss');
+                    }
+                }, {
+                    title: '@L("Duration")',
+                    field: 'RunTime',
+                    sortable: false,
+                    align: 'center',
+                    formatter: function (value) {
+                        var ms = "000000";
+                        if (value.indexOf(".") > -1) {
+                            const times = value.split('.');
+                            if (times[1].length < 6) {
+                                const count = 6 - times[1];
+                                ms = times[1];
+                                for (let i = 1; i < count; i++) {
+                                    ms = ms + "0";
+                                }
+                            }
+                            if (times[1].length > 6) {
+                                ms = times[1].substring(0, 6);
+                            }
+                            if (times[1].length == 6) {
+                                return value;
+                            }
+                            return times[0] + '.' + ms;
+                        } else {
+                            return value + '.' + ms;
+                        }
+                    }
+                }
+            ],
+            responseHandler: function (res) {
+                if (res.Success) {
+                    return {
+                        "total": res.Result.TotalRecords, //总页数
+                        "rows": res.Result.Data //数据
+                    };
+                } else {
+                    toastr.options = {
+                        "positionClass": "toast-top-center"//弹出窗的位置
+                    };
+                    toastr.error(res.Error.Message);
+                    return {};
+                }
+            }
+        });
+    }
+
+    $(function () {
+        initTable();
+    });
+</script>
+<!-- history end-->

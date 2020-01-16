@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = L("SchedulerRouter");
+}
+
+<!-- scheduler-router start -->
+<section>
+    <h2 class="page-header">@L("SchedulerRouter")</h2>
+    <div>
+        <div class="col-md-2">
+            <ul class="well nav nav-pills nav-stacked">
+                <li repeat.for="row of router.navigation" class="${row.isActive ? 'active' : ''}">
+                    <a href.bind="row.href">${row.title}</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-10" style="padding: 0">
+            <router-view></router-view>
+        </div>
+    </div>
+</section>
+<!-- scheduler-router end -->
