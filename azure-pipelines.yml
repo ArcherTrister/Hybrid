@@ -1,0 +1,61 @@
+# ASP.NET Core (.NET Framework)
+# Build and test ASP.NET Core projects targeting the full .NET Framework.
+# Add steps that publish symbols, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+trigger:
+- master
+
+#pr:
+#- master
+
+pool:
+  #vmImage: 'windows-latest'
+  vmImage: 'ubuntu-latest'
+  #vmImage: 'macOS-latest'
+
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+  buildProjectPath: '**/src/**/*.csproj' # '**/*.csproj' 全匹配
+
+steps:
+- task: UseDotNet@2
+  displayName: 'Install .NET Core SDK'
+  inputs:
+    packageType: 'sdk'
+    version: '2.x'
+
+- task: DotNetCoreCLI@2
+  displayName: 'Build the project'
+  inputs:
+    command: 'build'
+    configuration: $(buildConfiguration)
+    projects: '$(buildProjectPath)'
+    arguments: '--output $(Build.ArtifactStagingDirectory)'
+
+# - task: DotNetCoreCLI@2
+#   displayName: 'Pack the package'
+#   inputs:
+#     command: 'pack'
+#     configuration: $(buildConfiguration)
+#     packagesToPack: '$(buildProjectPath)'
+#     nobuild: true
+#     versioningScheme: 'off'
+#     arguments: '--output $(Build.ArtifactStagingDirectory)'
+
+# - task: PublishBuildArtifacts@1
+#   displayName: 'Publish the package'
+#   inputs:
+#     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+#     ArtifactName: 'drop'
+#     publishLocation: 'Container'
+
+- task: NuGetCommand@2
+  displayName: 'NuGet push'
+  inputs:
+    command: push
+    packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
+    nuGetFeedType: external
+    publishFeedCredentials: nuget

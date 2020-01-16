@@ -7,10 +7,10 @@
 //  <last-date>2018-06-23 15:18</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Collections;
 using ESoftor.Core.Builders;
 using ESoftor.Dependency;
 using ESoftor.Exceptions;
+using ESoftor.Extensions;
 
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;

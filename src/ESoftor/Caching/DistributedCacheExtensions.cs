@@ -7,7 +7,6 @@
 //  <last-date>2017-09-17 16:45</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Collections;
 using ESoftor.Core.Functions;
 using ESoftor.Data;
 using ESoftor.Dependency;
@@ -16,7 +15,6 @@ using ESoftor.Exceptions;
 using ESoftor.Extensions;
 using ESoftor.Filter;
 using ESoftor.Json;
-using ESoftor.Reflection;
 
 using Microsoft.Extensions.Caching.Distributed;
 

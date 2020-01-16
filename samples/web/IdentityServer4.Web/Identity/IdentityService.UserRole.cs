@@ -1,8 +1,8 @@
-﻿using ESoftor.Collections;
-using ESoftor.Data;
-using ESoftor.Zero.Identity.Extensions;
+﻿using ESoftor.Data;
+using ESoftor.Extensions;
 using ESoftor.Web.Identity.Dto;
 using ESoftor.Web.Identity.Entity;
+using ESoftor.Zero.Identity.Extensions;
 
 using Microsoft.AspNetCore.Identity;
 
@@ -76,7 +76,7 @@ namespace ESoftor.Web.Identity
                     userNames.AddIfNotNull(userName);
                     return Task.FromResult(0);
                 });
-            //todo
+            ////TODO
             //if (result.Successed && userNames.Count > 0)
             //{
             //    OnlineUserCacheRemoveEventData eventData = new OnlineUserCacheRemoveEventData() { UserNames = userNames.ToArray() };

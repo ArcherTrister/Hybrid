@@ -9,7 +9,7 @@
 
 using System;
 
-namespace ESoftor.Collections
+namespace ESoftor.Extensions
 {
     /// <summary>
     /// 数组扩展方法

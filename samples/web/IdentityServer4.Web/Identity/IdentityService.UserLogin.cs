@@ -1,4 +1,6 @@
 ﻿using ESoftor.Data;
+using ESoftor.Exceptions;
+using ESoftor.Security.Claims;
 using ESoftor.Web.Identity.Entity;
 
 using System;
@@ -24,24 +26,23 @@ namespace ESoftor.Web.Identity
         /// <returns>业务操作结果</returns>
         public Task<OperationResult> DeleteUserLogins(params Guid[] ids)
         {
-            throw new NotImplementedException();
-            //return _userLoginRepository.DeleteAsync(ids,
-            //    entity =>
-            //    {
-            //        Guid userId = _currentUser.Identity.GetUserId<Guid>();
-            //        if (entity.UserId != userId)
-            //        {
-            //            throw new ESoftorException("要解除的第三方登录绑定不属于当前用户");
-            //        }
+            return _userLoginRepository.DeleteAsync(ids,
+                entity =>
+                {
+                    Guid userId = _currentUser.Identity.GetUserId<Guid>();
+                    if (entity.UserId != userId)
+                    {
+                        throw new ESoftorException("要解除的第三方登录绑定不属于当前用户");
+                    }
 
-            //        var user = _userManager.Users.Where(m => m.Id == userId).Select(m => new { m.PasswordHash, m.NormalizeEmail }).First();
-            //        if ((string.IsNullOrEmpty(user.PasswordHash) || string.IsNullOrEmpty(user.NormalizeEmail))
-            //            && _userLoginRepository.QueryAsNoTracking(m => m.UserId == entity.UserId).Count() == 1)
-            //        {
-            //            throw new ESoftorException("当前用户未设置登录密码，并且要解除的第三方登录是唯一登录方式，无法解除");
-            //        }
-            //        return Task.FromResult(0);
-            //    });
+                    var user = _userManager.Users.Where(m => m.Id == userId).Select(m => new { m.PasswordHash, m.NormalizedEmail }).First();
+                    if ((string.IsNullOrEmpty(user.PasswordHash) || string.IsNullOrEmpty(user.NormalizedEmail))
+                        && _userLoginRepository.QueryAsNoTracking(m => m.UserId == entity.UserId).Count() == 1)
+                    {
+                        throw new ESoftorException("当前用户未设置登录密码，并且要解除的第三方登录是唯一登录方式，无法解除");
+                    }
+                    return Task.FromResult(0);
+                });
         }
     }
 }

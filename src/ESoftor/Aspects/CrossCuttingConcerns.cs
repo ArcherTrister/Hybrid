@@ -8,7 +8,7 @@
 // -----------------------------------------------------------------------
 
 using ESoftor.Application.Services;
-using ESoftor.Collections;
+using ESoftor.Extensions;
 
 using JetBrains.Annotations;
 

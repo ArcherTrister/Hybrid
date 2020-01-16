@@ -7,7 +7,6 @@
 //  <last-date>2017-11-15 19:20</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Collections;
 using ESoftor.Data;
 using ESoftor.Domain.Entities;
 using ESoftor.Domain.EntityFramework;

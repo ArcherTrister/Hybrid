@@ -9,7 +9,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace ESoftor.Collections
+namespace ESoftor.Helpers
 {
     /// <summary>
     /// 比较器辅助类，用于快速创建<see cref="IComparer{T}"/>接口的实例

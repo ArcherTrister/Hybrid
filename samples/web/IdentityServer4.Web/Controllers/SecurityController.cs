@@ -9,9 +9,9 @@
 
 using ESoftor.AspNetCore.Mvc;
 using ESoftor.AspNetCore.Mvc.Controllers;
-using ESoftor.Collections;
 using ESoftor.Core.Functions;
 using ESoftor.Core.ModuleInfos;
+using ESoftor.Extensions;
 using ESoftor.Security;
 using ESoftor.Web.Security;
 using ESoftor.Web.Security.Entities;

@@ -16,7 +16,7 @@ using ESoftor.Domain.Entities;
 using ESoftor.Domain.EntityFramework;
 using ESoftor.Domain.Uow;
 using ESoftor.Reflection;
-
+using Hybrid.Configuration;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Logging;
@@ -52,6 +52,9 @@ namespace Microsoft.Extensions.DependencyInjection
             TESoftorModuleManager manager = new TESoftorModuleManager();
             services.AddSingleton<IESoftorModuleManager>(manager);
             manager.LoadModules(services);
+
+            services.TryAddSingleton<IHybridStartupConfiguration, HybridStartupConfiguration>();
+
             return services;
         }
 

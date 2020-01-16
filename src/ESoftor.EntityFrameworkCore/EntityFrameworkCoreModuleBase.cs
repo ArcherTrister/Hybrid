@@ -10,7 +10,7 @@
 using ESoftor.Core.Modules;
 using ESoftor.Domain.Repositories;
 using ESoftor.EntityFrameworkCore.Defaults;
-
+using ESoftor.EventBuses;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
@@ -18,11 +18,10 @@ using System;
 
 namespace ESoftor.EntityFrameworkCore
 {
-    //todo:
     /// <summary>
     /// EntityFrameworkCore基模块
     /// </summary>
-    //[DependsOnModules(typeof(EventBusModule))]
+    [DependsOnModules(typeof(EventBusModule))]
     public abstract class EntityFrameworkCoreModuleBase : ESoftorModule
     {
         /// <summary>

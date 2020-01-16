@@ -7,13 +7,12 @@
 //  <last-date>2017-09-15 20:53</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Collections;
 using ESoftor.Data;
 using ESoftor.Dependency;
 using ESoftor.Domain.Entities;
 using ESoftor.Domain.Repositories;
 using ESoftor.Extensions;
-using ESoftor.Reflection;
+using ESoftor.Helpers;
 
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;

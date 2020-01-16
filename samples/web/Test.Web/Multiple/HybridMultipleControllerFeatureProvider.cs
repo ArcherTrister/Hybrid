@@ -18,7 +18,6 @@ namespace Test.Web.Multiple
 
                 //isController = validEndings.Any(x =>
                 //    typeInfo.Name.EndsWith(x, StringComparison.OrdinalIgnoreCase));
-                //TODO:ContainsGenericParameters GenericTypeArguments
                 isController = typeInfo.Name.EndsWith("Controller`2", StringComparison.OrdinalIgnoreCase)
                     && typeInfo.GenericTypeArguments.Any();
             }

@@ -43,7 +43,6 @@ namespace ESoftor.AspNetCore.Mvc
         /// </summary>
         public static bool IsController(this TypeInfo typeInfo)
         {
-            //TODO:ContainsGenericParameters
             return (typeInfo.IsClass && !typeInfo.IsAbstract && typeInfo.IsPublic
                 && !typeInfo.ContainsGenericParameters
                 && !typeInfo.IsDefined(typeof(NonControllerAttribute))

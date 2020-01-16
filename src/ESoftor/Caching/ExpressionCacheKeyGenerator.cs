@@ -7,7 +7,7 @@
 //  <last-date>2017-09-17 11:44</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Collections;
+using ESoftor.Extensions;
 
 using System.Linq;
 using System.Linq.Expressions;

@@ -7,11 +7,11 @@
 //  <last-date>2017-09-20 1:06</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Collections;
 using ESoftor.Data;
 using ESoftor.Domain.Entities;
 using ESoftor.Domain.EntityFramework;
 using ESoftor.Exceptions;
+using ESoftor.Extensions;
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;

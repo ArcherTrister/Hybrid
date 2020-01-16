@@ -31,5 +31,19 @@ namespace ESoftor.Extensions
                 return reader.ReadToEnd();
             }
         }
+
+        /// <summary>
+        /// 流转换字节数组
+        /// </summary>
+        /// <param name="stream"></param>
+        /// <returns></returns>
+        public static byte[] GetAllBytes(this Stream stream)
+        {
+            using (var memoryStream = new MemoryStream())
+            {
+                stream.CopyTo(memoryStream);
+                return memoryStream.ToArray();
+            }
+        }
     }
 }

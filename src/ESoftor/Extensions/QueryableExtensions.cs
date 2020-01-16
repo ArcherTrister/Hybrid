@@ -21,7 +21,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace ESoftor.Collections
+namespace ESoftor.Extensions
 {
     /// <summary>
     /// IQueryable集合扩展方法

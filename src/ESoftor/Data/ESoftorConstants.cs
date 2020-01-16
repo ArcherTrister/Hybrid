@@ -25,6 +25,11 @@ namespace ESoftor.Data
         public const string VerifyCodeKeyPrefix = "ESoftor_VERIFY_CODE";
 
         /// <summary>
+        /// Cookie名称
+        /// </summary>
+        public const string HybridCookieName = "ESoftor.Hybrid";
+
+        /// <summary>
         /// 本地标识服务器访问令牌身份验证的常量
         /// </summary>
         public static class LocalApi

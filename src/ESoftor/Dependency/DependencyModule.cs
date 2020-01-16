@@ -7,10 +7,8 @@
 //  <last-date>2018-07-29 1:24</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Collections;
 using ESoftor.Core.Modules;
 using ESoftor.Extensions;
-using ESoftor.Reflection;
 
 using JetBrains.Annotations;
 

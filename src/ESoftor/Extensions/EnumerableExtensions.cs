@@ -3,26 +3,77 @@
 //      Copyright © 2019-2020 ESoftor. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
-//  <last-editor></last-editor>
-//  <last-date>2017-09-17 11:44</last-date>
+//  <last-editor>ArcherTrister</last-editor>
+//  <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Extensions;
 using ESoftor.Filter;
-
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
 
-namespace ESoftor.Collections
+namespace ESoftor.Extensions
 {
     /// <summary>
     /// Enumerable集合扩展方法
     /// </summary>
     public static class EnumerableExtensions
     {
+        /// <summary>
+        /// Concatenates the members of a constructed <see cref="IEnumerable{T}"/> collection of type System.String, using the specified separator between each member.
+        /// This is a shortcut for string.Join(...)
+        /// </summary>
+        /// <param name="source">A collection that contains the strings to concatenate.</param>
+        /// <param name="separator">The string to use as a separator. separator is included in the returned string only if values has more than one element.</param>
+        /// <returns>A string that consists of the members of values delimited by the separator string. If values has no members, the method returns System.String.Empty.</returns>
+        public static string JoinAsString(this IEnumerable<string> source, string separator)
+        {
+            return string.Join(separator, source);
+        }
+
+        /// <summary>
+        /// Concatenates the members of a collection, using the specified separator between each member.
+        /// This is a shortcut for string.Join(...)
+        /// </summary>
+        /// <param name="source">A collection that contains the objects to concatenate.</param>
+        /// <param name="separator">The string to use as a separator. separator is included in the returned string only if values has more than one element.</param>
+        /// <typeparam name="T">The type of the members of values.</typeparam>
+        /// <returns>A string that consists of the members of values delimited by the separator string. If values has no members, the method returns System.String.Empty.</returns>
+        public static string JoinAsString<T>(this IEnumerable<T> source, string separator)
+        {
+            return string.Join(separator, source);
+        }
+
+        /// <summary>
+        /// Filters a <see cref="IEnumerable{T}"/> by given predicate if given condition is true.
+        /// </summary>
+        /// <param name="source">Enumerable to apply filtering</param>
+        /// <param name="condition">A boolean value</param>
+        /// <param name="predicate">Predicate to filter the enumerable</param>
+        /// <returns>Filtered or not filtered enumerable based on <paramref name="condition"/></returns>
+        public static IEnumerable<T> WhereIf<T>(this IEnumerable<T> source, bool condition, Func<T, bool> predicate)
+        {
+            return condition
+                ? source.Where(predicate)
+                : source;
+        }
+
+        /// <summary>
+        /// Filters a <see cref="IEnumerable{T}"/> by given predicate if given condition is true.
+        /// </summary>
+        /// <param name="source">Enumerable to apply filtering</param>
+        /// <param name="condition">A boolean value</param>
+        /// <param name="predicate">Predicate to filter the enumerable</param>
+        /// <returns>Filtered or not filtered enumerable based on <paramref name="condition"/></returns>
+        public static IEnumerable<T> WhereIf<T>(this IEnumerable<T> source, bool condition, Func<T, int, bool> predicate)
+        {
+            return condition
+                ? source.Where(predicate)
+                : source;
+        }
+
         /// <summary>
         /// 打乱一个集合的项顺序
         /// </summary>
@@ -106,23 +157,6 @@ namespace ESoftor.Collections
             source = source as IList<T> ?? source.ToList();
 
             return condition ? source.Where(predicate) : source;
-        }
-
-        /// <summary>
-        /// 将字符串集合按指定前缀排序
-        /// </summary>
-        public static IEnumerable<T> OrderByPrefixes<T>(this IEnumerable<T> source, Func<T, string> keySelector, params string[] prefixes)
-        {
-            List<T> all = source.OrderBy(keySelector).ToList();
-            List<T> result = new List<T>();
-            foreach (string prefix in prefixes)
-            {
-                List<T> tmpList = all.Where(m => keySelector(m).StartsWith(prefix)).OrderBy(keySelector).ToList();
-                all = all.Except(tmpList).ToList();
-                result.AddRange(tmpList);
-            }
-            result.AddRange(all);
-            return result;
         }
 
         /// <summary>
@@ -212,6 +246,23 @@ namespace ESoftor.Collections
             sortCondition.CheckNotNull("sortCondition");
 
             return source.ThenBy(sortCondition.SortField, sortCondition.ListSortDirection);
+        }
+
+        /// <summary>
+        /// 将字符串集合按指定前缀排序
+        /// </summary>
+        public static IEnumerable<T> OrderByPrefixes<T>(this IEnumerable<T> source, Func<T, string> keySelector, params string[] prefixes)
+        {
+            List<T> all = source.OrderBy(keySelector).ToList();
+            List<T> result = new List<T>();
+            foreach (string prefix in prefixes)
+            {
+                List<T> tmpList = all.Where(m => keySelector(m).StartsWith(prefix)).OrderBy(keySelector).ToList();
+                all = all.Except(tmpList).ToList();
+                result.AddRange(tmpList);
+            }
+            result.AddRange(all);
+            return result;
         }
     }
 }

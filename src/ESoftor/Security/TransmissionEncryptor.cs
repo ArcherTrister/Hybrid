@@ -6,7 +6,6 @@
 //  <last-date>2014-11-13 22:19</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Collections;
 using ESoftor.Extensions;
 
 using System;

@@ -8,10 +8,10 @@
 // -----------------------------------------------------------------------
 
 using ESoftor.Audits;
-using ESoftor.Collections;
 using ESoftor.Core.EntityInfos;
 using ESoftor.Core.Functions;
 using ESoftor.Dependency;
+using ESoftor.Extensions;
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;

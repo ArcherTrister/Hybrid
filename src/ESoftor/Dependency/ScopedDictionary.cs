@@ -39,7 +39,6 @@ namespace ESoftor.Dependency
         /// </summary>
         public AuditOperationEntry AuditOperation { get; set; }
 
-        //todo
         /// <summary>
         /// 获取或设置 当前用户
         /// </summary>

@@ -9,10 +9,17 @@
 
 using ESoftor.Audits;
 using ESoftor.Caching;
-using ESoftor.Collections;
 using ESoftor.Core.Options;
+using ESoftor.Dependency;
 using ESoftor.Domain.Entities;
+using ESoftor.Extensions;
 using ESoftor.Filter;
+
+using Hybrid.Localization;
+using Hybrid.Localization.Configuration;
+using Hybrid.Localization.Dictionaries;
+using Hybrid.Localization.Sources;
+using Hybrid.Localization.Sources.Resource;
 
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
@@ -43,6 +50,7 @@ namespace ESoftor.Core.Modules
         /// <returns></returns>
         public override IServiceCollection AddServices(IServiceCollection services)
         {
+            services.TryAddSingleton<ISingletonFactory, SingletonFactory>();
             services.TryAddSingleton<IConfigureOptions<ESoftorOptions>, ESoftorOptionsSetup>();
             services.TryAddSingleton<IEntityTypeFinder, EntityTypeFinder>();
             services.TryAddSingleton<IInputDtoTypeFinder, InputDtoTypeFinder>();
@@ -51,6 +59,15 @@ namespace ESoftor.Core.Modules
             services.TryAddSingleton<ICacheService, CacheService>();
             services.TryAddScoped<IFilterService, FilterService>();
 
+            //Add Localization Service
+            services.AddTransient<ILanguageManager, LanguageManager>();
+            services.AddTransient<ILanguageProvider, DefaultLanguageProvider>();
+            services.AddSingleton<ILocalizationContext, LocalizationContext>();
+            services.AddSingleton<ILocalizationSource, ResourceFileLocalizationSource>();
+            services.AddSingleton<IDictionaryBasedLocalizationSource, DictionaryBasedLocalizationSource>();
+            services.AddSingleton<ILocalizationConfiguration, LocalizationConfiguration>();
+            services.AddSingleton<ILocalizationManager, LocalizationManager>();
+
             return services;
         }
 
@@ -58,6 +75,8 @@ namespace ESoftor.Core.Modules
         {
             AuditingConfiguration configuration = provider.GetESoftorOptions().AuditingConfiguration;
             AddIgnoredTypes(configuration);
+            ILocalizationManager localizationManager = provider.GetService<ILocalizationManager>();
+            localizationManager.Initialize();
         }
 
         private void AddIgnoredTypes(AuditingConfiguration configuration)

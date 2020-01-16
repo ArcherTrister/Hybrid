@@ -7,14 +7,12 @@
 //  <last-date>2019-06-27 9:04</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Collections;
 using ESoftor.Core.EntityInfos;
 using ESoftor.Core.Functions;
 using ESoftor.Dependency;
 using ESoftor.EntityFrameworkCore.Defaults;
 using ESoftor.Exceptions;
 using ESoftor.Extensions;
-using ESoftor.Reflection;
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;

@@ -23,6 +23,8 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using System.Security.Principal;
 
 namespace ESoftor.Web.Identity
 {
@@ -37,6 +39,8 @@ namespace ESoftor.Web.Identity
         private readonly IRepository<UserDetail, Guid> _userDetailRepository;
         private readonly IRepository<UserLogin, Guid> _userLoginRepository;
         private readonly IDistributedCache _cache;
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly IPrincipal _currentUser;
         private readonly UserManager<User> _userManager;
         private readonly IRepository<UserRole, Guid> _userRoleRepository;
         private readonly ILogger<IdentityService> _logger;
@@ -47,6 +51,7 @@ namespace ESoftor.Web.Identity
         public IdentityService(UserManager<User> userManager,
             RoleManager<Role> roleManager,
             SignInManager<User> signInManager,
+            IHttpContextAccessor httpContextAccessor,
             IEventBus eventBus,
             ILoggerFactory loggerFactory,
             IRepository<UserRole, Guid> userRoleRepository,
@@ -57,6 +62,7 @@ namespace ESoftor.Web.Identity
             _userManager = userManager;
             _roleManager = roleManager;
             _signInManager = signInManager;
+            _currentUser = httpContextAccessor?.HttpContext?.User;
             _eventBus = eventBus;
             _logger = loggerFactory.CreateLogger<IdentityService>();
             _userRoleRepository = userRoleRepository;

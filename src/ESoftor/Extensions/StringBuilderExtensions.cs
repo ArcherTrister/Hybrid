@@ -1,9 +1,10 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="AbstractBuilder.cs" company="com.esoftor">
+//  <copyright file="StringBuilderExtensions.cs" company="com.esoftor">
 //      Copyright © 2019-2020 ESoftor. All rights reserved.
 //  </copyright>
-//  <last-editor>王明杰</last-editor>
-//  <last-date>2014:07:09 11:40</last-date>
+//  <site>https://www.lxking.cn</site>
+//  <last-editor>ArcherTrister</last-editor>
+//  <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
 using System;

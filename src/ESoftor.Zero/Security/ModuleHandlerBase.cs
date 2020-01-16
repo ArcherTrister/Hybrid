@@ -7,13 +7,13 @@
 //  <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Collections;
 using ESoftor.Core.ModuleInfos;
 using ESoftor.Data;
 using ESoftor.Dependency;
 using ESoftor.Domain.Entities;
 using ESoftor.Domain.Uow;
 using ESoftor.Exceptions;
+using ESoftor.Extensions;
 using ESoftor.Zero.Security.Dtos;
 
 using Microsoft.Extensions.DependencyInjection;

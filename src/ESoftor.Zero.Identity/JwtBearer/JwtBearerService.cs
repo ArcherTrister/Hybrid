@@ -147,12 +147,11 @@ namespace ESoftor.Zero.Identity
                     {
                         userManager = provider.GetService<UserManager<TUser>>();
                         var result = await userManager.RemoveRefreshToken<TUser, TUserKey>(userId, clientId);
-                        //todo
-                        //if (result.Succeeded)
-                        //{
-                        //    IUnitOfWork unitOfWork = provider.GetUnitOfWork<TUser, TUserKey>();
-                        //    unitOfWork.Commit();
-                        //}
+                        if (result.Succeeded)
+                        {
+                            IUnitOfWork unitOfWork = provider.GetUnitOfWork<TUser, TUserKey>();
+                            unitOfWork.Commit();
+                        }
 
                         return result;
                     },

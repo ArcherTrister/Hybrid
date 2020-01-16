@@ -13,7 +13,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ESoftor.Collections
+namespace ESoftor.Extensions
 {
     /// <summary>
     /// 集合扩展方法

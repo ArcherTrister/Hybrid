@@ -9,6 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{62BF61E9-EA6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{06C2DD10-FEE9-4642-BE3A-02376604EC55}"
 	ProjectSection(SolutionItems) = preProject
+		azure-pipelines.yml = azure-pipelines.yml
 		build\build-docs.bat = build\build-docs.bat
 		build\build-snk.bat = build\build-snk.bat
 		build\common.props = build\common.props

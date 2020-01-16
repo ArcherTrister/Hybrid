@@ -7,7 +7,6 @@
 //  <last-date>2016-11-16 23:41</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Collections;
 using ESoftor.Extensions;
 
 namespace ESoftor.Caching

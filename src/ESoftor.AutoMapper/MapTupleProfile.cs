@@ -9,11 +9,9 @@
 
 using AutoMapper;
 
-using ESoftor.Collections;
 using ESoftor.Dependency;
 using ESoftor.Extensions;
 using ESoftor.Mapping;
-using ESoftor.Reflection;
 
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;

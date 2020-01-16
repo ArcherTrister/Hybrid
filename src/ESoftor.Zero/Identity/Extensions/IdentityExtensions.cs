@@ -7,8 +7,8 @@
 //  <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Collections;
 using ESoftor.Data;
+using ESoftor.Extensions;
 
 using Microsoft.AspNetCore.Identity;
 

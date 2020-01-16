@@ -7,7 +7,6 @@
 //  <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Collections;
 using ESoftor.Core.EntityInfos;
 using ESoftor.Core.Functions;
 using ESoftor.Data;
@@ -17,10 +16,10 @@ using ESoftor.Exceptions;
 using ESoftor.Extensions;
 using ESoftor.Filter;
 using ESoftor.Mapping;
+using ESoftor.Security;
 using ESoftor.Zero.Identity;
 using ESoftor.Zero.Security.Dtos;
 using ESoftor.Zero.Security.Events;
-using ESoftor.Security;
 
 using System;
 using System.Collections.Generic;

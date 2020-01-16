@@ -7,10 +7,8 @@
 //  <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Collections;
+using ESoftor.Extensions;
 using ESoftor.Reflection;
-
-using Microsoft.AspNetCore.Mvc;
 
 using System;
 using System.Collections.Generic;
@@ -56,13 +54,5 @@ namespace ESoftor.AspNetCore.Mvc
 
             return types.SelectMany(m => m.GetMethods(BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly)).ToArray();
         }
-
-        //TODO:
-        //private static bool IsController(Type type)
-        //{
-        //    return type != null && type.IsClass && type.IsPublic && !type.ContainsGenericParameters
-        //        && !type.IsDefined(typeof(NonControllerAttribute)) && (type.Name.EndsWith("Controller") || type.Name.EndsWith("ControllerBase")
-        //            || type.IsDefined(typeof(ControllerAttribute)));
-        //}
     }
 }

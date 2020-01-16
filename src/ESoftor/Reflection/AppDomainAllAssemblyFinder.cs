@@ -7,7 +7,7 @@
 //  <last-date>2017-08-15 23:33</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Collections;
+using ESoftor.Extensions;
 using ESoftor.Finders;
 
 using Microsoft.Extensions.DependencyModel;
