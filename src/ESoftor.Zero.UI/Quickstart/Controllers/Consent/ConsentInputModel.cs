@@ -1,6 +1,11 @@
-﻿// Copyright (c) Brock Allen & Dominick Baier. All rights reserved.
-// Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
-
+﻿// -----------------------------------------------------------------------
+//  <copyright file="ConsentInputModel.cs" company="com.esoftor">
+//      Copyright © 2019-2020 ESoftor. All rights reserved.
+//  </copyright>
+//  <site>https://www.lxking.cn</site>
+//  <last-editor>ArcherTrister</last-editor>
+//  <last-date>2018-08-02 17:56</last-date>
+// -----------------------------------------------------------------------
 
 using System.Collections.Generic;
 

@@ -8,8 +8,9 @@
 // -----------------------------------------------------------------------
 
 using ESoftor.AspNetCore.Mvc;
-using ESoftor.Web.Identity.Entity;
-using System;
+
+using Microsoft.Extensions.DependencyInjection;
+
 using System.ComponentModel;
 
 namespace ESoftor.Web.Startups
@@ -25,5 +26,17 @@ namespace ESoftor.Web.Startups
         /// 级别默认为0，表示无依赖，需要在同级别有依赖顺序的时候，再重写为>0的顺序值
         /// </summary>
         public override int Order => 0;
+
+        /// <summary>
+        /// 将模块服务添加到依赖注入服务容器中
+        /// </summary>
+        /// <param name="services">依赖注入服务容器</param>
+        /// <returns></returns>
+        public override IServiceCollection AddServices(IServiceCollection services)
+        {
+            //services.AddRazorPages();
+            //services.AddHttpsRedirection(opts => opts.HttpsPort = 443);
+            return base.AddServices(services);
+        }
     }
 }

@@ -37,8 +37,6 @@ namespace ESoftor.AspNetCore.Mvc
         {
             services = AddCors(services);
 
-
-
             var builder = services.AddControllersWithViews(options =>
             {
                 //    //options.Conventions.Add(new DashedRoutingConvention());
@@ -46,18 +44,15 @@ namespace ESoftor.AspNetCore.Mvc
                 options.Filters.Add(new FunctionAuthorizationFilter()); // 全局功能权限过滤器
                 options.Filters.Add(new OperateAuditFilter());
                 options.Filters.Add(new MvcUnitOfWorkFilter());
-                options.Filters.Add(new PageUnitOfWorkFilter());
+                //options.Filters.Add(new PageUnitOfWorkFilter());
             }).AddNewtonsoftJson(options =>
             {
                 options.SerializerSettings.ContractResolver = new DefaultContractResolver();
             });
 
-            services.AddRazorPages();
-
             //services.AddScoped<OperateAuditFilter>();
             services.AddScoped<MvcUnitOfWorkFilter>();
-            services.AddScoped<PageUnitOfWorkFilter>();
-            services.AddHttpsRedirection(opts => opts.HttpsPort = 443);
+            //services.AddScoped<PageUnitOfWorkFilter>();
             services.AddDistributedMemoryCache();
 
             return services;

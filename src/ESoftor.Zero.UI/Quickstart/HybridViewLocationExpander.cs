@@ -1,10 +1,10 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="IViewLocationExpander" company="cn.lxking">
-//      Copyright (c) 2014 Hybrid. All rights reserved.
+//  <copyright file="HybridViewLocationExpander.cs" company="com.esoftor">
+//      Copyright © 2019-2020 ESoftor. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2020-01-14 21:16:35</last-date>
+//  <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
 using Microsoft.AspNetCore.Mvc.Razor;

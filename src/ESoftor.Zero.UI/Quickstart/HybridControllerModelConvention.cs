@@ -1,10 +1,10 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="GenericControllerNameAttribute" company="cn.lxking">
-//      Copyright (c) 2014 Hybrid. All rights reserved.
+//  <copyright file="HybridControllerModelConvention.cs" company="com.esoftor">
+//      Copyright © 2019-2020 ESoftor. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2020-01-13 20:32:00</last-date>
+//  <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
 using ESoftor.Data;
