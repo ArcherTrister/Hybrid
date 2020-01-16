@@ -10,7 +10,7 @@
 using ESoftor.Collections;
 using ESoftor.Data;
 using ESoftor.Domain.Entities;
-using ESoftor.Entity;
+using ESoftor.Domain.EntityFramework;
 using ESoftor.Exceptions;
 
 using Microsoft.EntityFrameworkCore;

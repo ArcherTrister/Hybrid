@@ -9,10 +9,9 @@
 
 using ESoftor.Core.Options;
 using ESoftor.Dependency;
-using ESoftor.Entity;
+using ESoftor.Domain.EntityFramework;
 using ESoftor.Exceptions;
 using ESoftor.Extensions;
-using ESoftor.Reflection;
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;

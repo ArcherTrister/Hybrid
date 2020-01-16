@@ -7,7 +7,7 @@
 //  <last-date>2017-09-03 0:54</last-date>
 // -----------------------------------------------------------------------
 
-using ESoftor.Entity;
+using ESoftor.Domain.EntityFramework;
 
 using System;
 

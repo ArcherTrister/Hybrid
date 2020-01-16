@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 using IdentityServer4.Events;
 using IdentityServer4.Extensions;
 
-namespace ESoftor.Zero.UI.Quickstart
+namespace ESoftor.Zero.IdentityServer4.Quickstart
 {
     /// <summary>
     /// This sample controller allows a user to revoke grants given to clients

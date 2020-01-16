@@ -8,8 +8,8 @@
 // -----------------------------------------------------------------------
 
 using ESoftor.Core.Modules;
+using ESoftor.Domain.EntityFramework;
 using ESoftor.Domain.Repositories;
-using ESoftor.Entity;
 
 using Microsoft.Extensions.DependencyInjection;
 

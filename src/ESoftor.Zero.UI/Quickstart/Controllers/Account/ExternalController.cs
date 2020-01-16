@@ -21,7 +21,7 @@ using System.Security.Claims;
 using System.Security.Principal;
 using System.Threading.Tasks;
 
-namespace ESoftor.Zero.UI.Quickstart
+namespace ESoftor.Zero.IdentityServer4.Quickstart
 {
     [HybridDefaultUI(typeof(ExternalController<,>))]
     public abstract class ExternalController : MvcController

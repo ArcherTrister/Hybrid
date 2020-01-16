@@ -9,12 +9,11 @@
 
 using ESoftor.Data;
 using ESoftor.Dependency;
-using ESoftor.Entity;
+using ESoftor.Domain.Entities;
 using ESoftor.Exceptions;
 using ESoftor.Extensions;
 using ESoftor.Linq;
 using ESoftor.Properties;
-using ESoftor.Reflection;
 using ESoftor.Security;
 using ESoftor.Security.Claims;
 

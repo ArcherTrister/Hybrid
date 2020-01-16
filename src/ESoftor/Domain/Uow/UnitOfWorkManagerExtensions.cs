@@ -9,8 +9,8 @@
 
 using ESoftor.Core.Options;
 using ESoftor.Domain.Entities;
+using ESoftor.Domain.EntityFramework;
 using ESoftor.Domain.Repositories;
-using ESoftor.Entity;
 using ESoftor.Exceptions;
 
 using Microsoft.Extensions.DependencyInjection;

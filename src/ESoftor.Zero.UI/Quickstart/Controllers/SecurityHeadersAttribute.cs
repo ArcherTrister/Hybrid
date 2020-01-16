@@ -5,7 +5,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace ESoftor.Zero.UI.Quickstart
+namespace ESoftor.Zero.IdentityServer4.Quickstart
 {
     public class SecurityHeadersAttribute : ActionFilterAttribute
     {

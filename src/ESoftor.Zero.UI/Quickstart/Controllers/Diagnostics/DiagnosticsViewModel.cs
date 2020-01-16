@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ESoftor.Zero.UI.Quickstart
+namespace ESoftor.Zero.IdentityServer4.Quickstart
 {
     public class DiagnosticsViewModel
     {

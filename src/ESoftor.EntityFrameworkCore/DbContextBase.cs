@@ -9,8 +9,8 @@
 
 using ESoftor.Audits;
 using ESoftor.Core.Options;
+using ESoftor.Domain.EntityFramework;
 using ESoftor.Domain.Uow;
-using ESoftor.Entity;
 using ESoftor.EventBuses;
 
 using Microsoft.EntityFrameworkCore;

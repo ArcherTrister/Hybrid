@@ -2,7 +2,7 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-namespace ESoftor.Zero.UI.Quickstart.Device
+namespace ESoftor.Zero.IdentityServer4.Quickstart.Device
 {
     public class DeviceAuthorizationViewModel : ConsentViewModel
     {

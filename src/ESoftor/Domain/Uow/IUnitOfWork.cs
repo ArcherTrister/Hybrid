@@ -8,7 +8,7 @@
 // -----------------------------------------------------------------------
 
 using ESoftor.Domain.Entities;
-using ESoftor.Entity;
+using ESoftor.Domain.EntityFramework;
 
 using System;
 using System.Threading;

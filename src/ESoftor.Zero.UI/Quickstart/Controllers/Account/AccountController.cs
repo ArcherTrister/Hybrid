@@ -23,7 +23,7 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ESoftor.Zero.UI.Quickstart
+namespace ESoftor.Zero.IdentityServer4.Quickstart
 {
     [HybridDefaultUI(typeof(AccountController<,>))]
     public abstract class AccountController : MvcController

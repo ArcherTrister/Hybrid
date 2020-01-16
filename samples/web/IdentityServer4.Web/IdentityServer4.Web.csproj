@@ -40,7 +40,8 @@
     <ProjectReference Include="..\..\..\src\ESoftor.AutoMapper\ESoftor.AutoMapper.csproj" />
     <ProjectReference Include="..\..\..\src\ESoftor.EntityFrameworkCore.SqlServer\ESoftor.EntityFrameworkCore.SqlServer.csproj" />
     <ProjectReference Include="..\..\..\src\ESoftor.EntityFrameworkCore\ESoftor.EntityFrameworkCore.csproj" />
-    <ProjectReference Include="..\..\..\src\ESoftor.Zero.UI\ESoftor.Zero.UI.csproj" />
+    <ProjectReference Include="..\..\..\src\ESoftor.NLog\ESoftor.NLog.csproj" />
+    <ProjectReference Include="..\..\..\src\ESoftor.Zero.UI\ESoftor.Zero.IdentityServer4.csproj" />
     <ProjectReference Include="..\..\..\src\ESoftor.Zero\ESoftor.Zero.csproj" />
     <ProjectReference Include="..\..\..\src\ESoftor\ESoftor.csproj" />
   </ItemGroup>

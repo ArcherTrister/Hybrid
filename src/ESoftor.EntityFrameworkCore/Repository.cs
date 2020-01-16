@@ -10,9 +10,9 @@
 using ESoftor.Collections;
 using ESoftor.Data;
 using ESoftor.Domain.Entities;
+using ESoftor.Domain.EntityFramework;
 using ESoftor.Domain.Repositories;
 using ESoftor.Domain.Uow;
-using ESoftor.Entity;
 using ESoftor.Exceptions;
 using ESoftor.Extensions;
 using ESoftor.Filter;

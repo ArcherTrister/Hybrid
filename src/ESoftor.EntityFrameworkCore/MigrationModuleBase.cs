@@ -9,8 +9,7 @@
 
 using ESoftor.Core.Modules;
 using ESoftor.Core.Options;
-using ESoftor.Entity;
-
+using ESoftor.Domain.EntityFramework;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 

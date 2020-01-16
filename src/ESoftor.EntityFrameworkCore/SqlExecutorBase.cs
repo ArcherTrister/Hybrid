@@ -10,9 +10,9 @@
 using Dapper;
 
 using ESoftor.Domain.Entities;
+using ESoftor.Domain.EntityFramework;
 using ESoftor.Domain.Repositories;
 using ESoftor.Domain.Uow;
-using ESoftor.Entity;
 
 using Microsoft.EntityFrameworkCore;
 

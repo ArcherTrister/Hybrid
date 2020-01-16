@@ -13,8 +13,8 @@ using ESoftor.Core.Options;
 using ESoftor.Data;
 using ESoftor.Dependency;
 using ESoftor.Domain.Entities;
+using ESoftor.Domain.EntityFramework;
 using ESoftor.Domain.Uow;
-using ESoftor.Entity;
 using ESoftor.Reflection;
 
 using Microsoft.Extensions.Configuration;

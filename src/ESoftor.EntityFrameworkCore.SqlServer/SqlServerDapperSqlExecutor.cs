@@ -8,8 +8,8 @@
 // -----------------------------------------------------------------------
 
 using ESoftor.Domain.Entities;
+using ESoftor.Domain.EntityFramework;
 using ESoftor.Domain.Uow;
-using ESoftor.Entity;
 
 using System.Data;
 using System.Data.SqlClient;

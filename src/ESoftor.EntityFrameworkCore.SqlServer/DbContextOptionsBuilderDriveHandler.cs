@@ -8,7 +8,7 @@
 // -----------------------------------------------------------------------
 
 using ESoftor.Dependency;
-using ESoftor.Entity;
+using ESoftor.Domain.EntityFramework;
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;

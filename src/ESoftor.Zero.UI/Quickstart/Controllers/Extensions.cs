@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
 using IdentityServer4.Stores;
 
-namespace ESoftor.Zero.UI.Quickstart
+namespace ESoftor.Zero.IdentityServer4.Quickstart
 {
     public static class Extensions
     {

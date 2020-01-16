@@ -10,7 +10,6 @@
 using ESoftor.Data;
 using ESoftor.Domain.Repositories;
 using ESoftor.Zero.Identity.Extensions;
-
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 

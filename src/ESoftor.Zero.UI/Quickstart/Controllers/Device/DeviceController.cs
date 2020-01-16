@@ -15,7 +15,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace ESoftor.Zero.UI.Quickstart.Device
+namespace ESoftor.Zero.IdentityServer4.Quickstart.Device
 {
     [Authorize]
     [SecurityHeaders]

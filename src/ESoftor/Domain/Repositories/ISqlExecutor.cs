@@ -9,8 +9,7 @@
 
 using ESoftor.Dependency;
 using ESoftor.Domain.Entities;
-using ESoftor.Entity;
-
+using ESoftor.Domain.EntityFramework;
 using System.Collections.Generic;
 
 namespace ESoftor.Domain.Repositories

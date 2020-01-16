@@ -8,7 +8,7 @@
 // -----------------------------------------------------------------------
 
 using ESoftor.Core.Modules;
-using ESoftor.Entity;
+using ESoftor.Domain.EntityFramework;
 using ESoftor.EntityFrameworkCore;
 using ESoftor.EntityFrameworkCore.Defaults;
 using ESoftor.EntityFrameworkCore.SqlServer;

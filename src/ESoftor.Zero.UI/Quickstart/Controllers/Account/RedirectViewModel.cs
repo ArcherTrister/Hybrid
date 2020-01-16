@@ -3,7 +3,7 @@
 
 
 
-namespace ESoftor.Zero.UI.Quickstart
+namespace ESoftor.Zero.IdentityServer4.Quickstart
 {
     public class RedirectViewModel
     {

@@ -14,7 +14,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using IdentityServer4;
 
-namespace ESoftor.Zero.UI.Quickstart
+namespace ESoftor.Zero.IdentityServer4.Quickstart
 {
     /// <summary>
     /// This controller processes the consent UI
