@@ -1,8 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
-using System;
-
-namespace IdentityServer4.Web.Data.Migrations
+namespace IdentityServer4.Web.Data.Migrations.Application
 {
     public partial class Init : Migration
     {
@@ -62,7 +61,8 @@ namespace IdentityServer4.Web.Data.Migrations
                     AuditEntityEnabled = table.Column<bool>(nullable: false),
                     CacheExpirationSeconds = table.Column<int>(nullable: false),
                     IsCacheSliding = table.Column<bool>(nullable: false),
-                    IsLocked = table.Column<bool>(nullable: false)
+                    IsLocked = table.Column<bool>(nullable: false),
+                    IsMvc = table.Column<bool>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -538,7 +538,7 @@ namespace IdentityServer4.Web.Data.Migrations
             migrationBuilder.InsertData(
                 table: "UserRole",
                 columns: new[] { "Id", "CreatedTime", "IsDeleted", "IsLocked", "RoleId", "UserId" },
-                values: new object[] { new Guid("479415b8-f7ca-41fe-9bc9-135655a08ece"), new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), false, false, new Guid("4f10b9ba-2391-4eb2-a378-aaf3012fb2d3"), new Guid("8d86feea-83d5-4a0c-9733-305ac6cfe58d") });
+                values: new object[] { new Guid("07b18723-8eb6-4775-87b3-ae1564d87794"), new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), false, false, new Guid("4f10b9ba-2391-4eb2-a378-aaf3012fb2d3"), new Guid("8d86feea-83d5-4a0c-9733-305ac6cfe58d") });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AuditEntity_OperationId",

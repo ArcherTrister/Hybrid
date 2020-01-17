@@ -7,35 +7,40 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace IdentityServer4.Web.Data.Migrations
+namespace IdentityServer4.Web.Data.Migrations.Application
 {
     [DbContext(typeof(DefaultDbContext))]
-    [Migration("20200112085708_Init")]
+    [Migration("20200117160150_Init")]
     partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.2.6-servicing-10079")
+                .HasAnnotation("ProductVersion", "3.1.1")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("Hybrid.Core.EntityInfos.EntityInfo", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<bool>("AuditEnabled");
+                    b.Property<bool>("AuditEnabled")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Name")
-                        .IsRequired();
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PropertyJson")
-                        .IsRequired();
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TypeName")
-                        .IsRequired();
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
 
@@ -49,33 +54,50 @@ namespace IdentityServer4.Web.Data.Migrations
             modelBuilder.Entity("Hybrid.Core.Functions.Function", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("AccessType");
+                    b.Property<int>("AccessType")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Action");
+                    b.Property<string>("Action")
+                        .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("Area");
+                    b.Property<string>("Area")
+                        .HasColumnType("nvarchar(450)");
 
-                    b.Property<bool>("AuditEntityEnabled");
+                    b.Property<bool>("AuditEntityEnabled")
+                        .HasColumnType("bit");
 
-                    b.Property<bool>("AuditOperationEnabled");
+                    b.Property<bool>("AuditOperationEnabled")
+                        .HasColumnType("bit");
 
-                    b.Property<int>("CacheExpirationSeconds");
+                    b.Property<int>("CacheExpirationSeconds")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Controller");
+                    b.Property<string>("Controller")
+                        .HasColumnType("nvarchar(450)");
 
-                    b.Property<bool>("IsAccessTypeChanged");
+                    b.Property<bool>("IsAccessTypeChanged")
+                        .HasColumnType("bit");
 
-                    b.Property<bool>("IsAjax");
+                    b.Property<bool>("IsAjax")
+                        .HasColumnType("bit");
 
-                    b.Property<bool>("IsCacheSliding");
+                    b.Property<bool>("IsCacheSliding")
+                        .HasColumnType("bit");
 
-                    b.Property<bool>("IsController");
+                    b.Property<bool>("IsController")
+                        .HasColumnType("bit");
 
-                    b.Property<bool>("IsLocked");
+                    b.Property<bool>("IsLocked")
+                        .HasColumnType("bit");
 
-                    b.Property<string>("Name");
+                    b.Property<bool>("IsMvc")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -90,16 +112,21 @@ namespace IdentityServer4.Web.Data.Migrations
             modelBuilder.Entity("Hybrid.Core.Systems.KeyValue", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<bool>("IsLocked");
+                    b.Property<bool>("IsLocked")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Key")
-                        .IsRequired();
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ValueJson");
+                    b.Property<string>("ValueJson")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ValueType");
+                    b.Property<string>("ValueType")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -127,17 +154,23 @@ namespace IdentityServer4.Web.Data.Migrations
             modelBuilder.Entity("Hybrid.Domain.Entities.Auditing.AuditEntity", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("EntityKey");
+                    b.Property<string>("EntityKey")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("OperateType");
+                    b.Property<int>("OperateType")
+                        .HasColumnType("int");
 
-                    b.Property<Guid>("OperationId");
+                    b.Property<Guid>("OperationId")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("TypeName");
+                    b.Property<string>("TypeName")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -149,29 +182,41 @@ namespace IdentityServer4.Web.Data.Migrations
             modelBuilder.Entity("Hybrid.Domain.Entities.Auditing.AuditOperation", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("Browser");
+                    b.Property<string>("Browser")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ClientIpAddress");
+                    b.Property<string>("ClientIpAddress")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("CreatedTime");
+                    b.Property<DateTime>("CreatedTime")
+                        .HasColumnType("datetime2");
 
-                    b.Property<int>("Elapsed");
+                    b.Property<int>("Elapsed")
+                        .HasColumnType("int");
 
-                    b.Property<string>("FunctionName");
+                    b.Property<string>("FunctionName")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Message");
+                    b.Property<string>("Message")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("OperationSystem");
+                    b.Property<string>("OperationSystem")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ResultType");
+                    b.Property<int>("ResultType")
+                        .HasColumnType("int");
 
-                    b.Property<string>("UserAgent");
+                    b.Property<string>("UserAgent")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("UserId");
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("UserName");
+                    b.Property<string>("UserName")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -181,19 +226,26 @@ namespace IdentityServer4.Web.Data.Migrations
             modelBuilder.Entity("Hybrid.Domain.Entities.Auditing.AuditProperty", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("AuditEntityId");
+                    b.Property<Guid>("AuditEntityId")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("DataType");
+                    b.Property<string>("DataType")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("DisplayName");
+                    b.Property<string>("DisplayName")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("FieldName");
+                    b.Property<string>("FieldName")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NewValue");
+                    b.Property<string>("NewValue")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("OriginalValue");
+                    b.Property<string>("OriginalValue")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -205,17 +257,23 @@ namespace IdentityServer4.Web.Data.Migrations
             modelBuilder.Entity("Hybrid.Web.Identity.Entity.LoginLog", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime>("CreatedTime");
+                    b.Property<DateTime>("CreatedTime")
+                        .HasColumnType("datetime2");
 
-                    b.Property<string>("Ip");
+                    b.Property<string>("Ip")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime?>("LogoutTime");
+                    b.Property<DateTime?>("LogoutTime")
+                        .HasColumnType("datetime2");
 
-                    b.Property<string>("UserAgent");
+                    b.Property<string>("UserAgent")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("UserId");
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -227,14 +285,18 @@ namespace IdentityServer4.Web.Data.Migrations
             modelBuilder.Entity("Hybrid.Web.Identity.Entity.Organization", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
-                        .IsRequired();
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid?>("ParentId");
+                    b.Property<Guid?>("ParentId")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("Remark");
+                    b.Property<string>("Remark")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -246,30 +308,41 @@ namespace IdentityServer4.Web.Data.Migrations
             modelBuilder.Entity("Hybrid.Web.Identity.Entity.Role", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("ConcurrencyStamp")
-                        .IsConcurrencyToken();
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("CreatedTime");
+                    b.Property<DateTime>("CreatedTime")
+                        .HasColumnType("datetime2");
 
-                    b.Property<bool>("IsAdmin");
+                    b.Property<bool>("IsAdmin")
+                        .HasColumnType("bit");
 
-                    b.Property<bool>("IsDefault");
+                    b.Property<bool>("IsDefault")
+                        .HasColumnType("bit");
 
-                    b.Property<bool>("IsDeleted");
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
 
-                    b.Property<bool>("IsLocked");
+                    b.Property<bool>("IsLocked")
+                        .HasColumnType("bit");
 
-                    b.Property<bool>("IsSystem");
+                    b.Property<bool>("IsSystem")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Name")
-                        .IsRequired();
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NormalizedName")
-                        .IsRequired();
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Remark")
+                        .HasColumnType("nvarchar(512)")
                         .HasMaxLength(512);
 
                     b.HasKey("Id");
@@ -300,13 +373,17 @@ namespace IdentityServer4.Web.Data.Migrations
             modelBuilder.Entity("Hybrid.Web.Identity.Entity.RoleClaim", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("ClaimType");
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ClaimValue");
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("RoleId");
+                    b.Property<Guid>("RoleId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -318,52 +395,74 @@ namespace IdentityServer4.Web.Data.Migrations
             modelBuilder.Entity("Hybrid.Web.Identity.Entity.User", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("AccessFailedCount");
+                    b.Property<int>("AccessFailedCount")
+                        .HasColumnType("int");
 
                     b.Property<string>("ConcurrencyStamp")
-                        .IsConcurrencyToken();
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("CreatedTime");
+                    b.Property<DateTime>("CreatedTime")
+                        .HasColumnType("datetime2");
 
-                    b.Property<string>("Email");
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("EmailConfirmed");
+                    b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("bit");
 
-                    b.Property<string>("HeadImg");
+                    b.Property<string>("HeadImg")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("IsDeleted");
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
 
-                    b.Property<bool>("IsLocked");
+                    b.Property<bool>("IsLocked")
+                        .HasColumnType("bit");
 
-                    b.Property<bool>("IsSystem");
+                    b.Property<bool>("IsSystem")
+                        .HasColumnType("bit");
 
-                    b.Property<bool>("LockoutEnabled");
+                    b.Property<bool>("LockoutEnabled")
+                        .HasColumnType("bit");
 
-                    b.Property<DateTimeOffset?>("LockoutEnd");
+                    b.Property<DateTimeOffset?>("LockoutEnd")
+                        .HasColumnType("datetimeoffset");
 
-                    b.Property<string>("NickName");
+                    b.Property<string>("NickName")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NormalizedEmail");
+                    b.Property<string>("NormalizedEmail")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("NormalizedUserName")
-                        .IsRequired();
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("PasswordHash");
+                    b.Property<string>("PasswordHash")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("PhoneNumber");
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("PhoneNumberConfirmed");
+                    b.Property<bool>("PhoneNumberConfirmed")
+                        .HasColumnType("bit");
 
-                    b.Property<string>("Remark");
+                    b.Property<string>("Remark")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("SecurityStamp");
+                    b.Property<string>("SecurityStamp")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("TwoFactorEnabled");
+                    b.Property<bool>("TwoFactorEnabled")
+                        .HasColumnType("bit");
 
                     b.Property<string>("UserName")
-                        .IsRequired();
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -403,14 +502,18 @@ namespace IdentityServer4.Web.Data.Migrations
             modelBuilder.Entity("Hybrid.Web.Identity.Entity.UserClaim", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("ClaimType")
-                        .IsRequired();
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ClaimValue");
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("UserId");
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -422,11 +525,14 @@ namespace IdentityServer4.Web.Data.Migrations
             modelBuilder.Entity("Hybrid.Web.Identity.Entity.UserDetail", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("RegisterIp");
+                    b.Property<string>("RegisterIp")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("UserId");
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -439,19 +545,26 @@ namespace IdentityServer4.Web.Data.Migrations
             modelBuilder.Entity("Hybrid.Web.Identity.Entity.UserLogin", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("Avatar");
+                    b.Property<string>("Avatar")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("CreatedTime");
+                    b.Property<DateTime>("CreatedTime")
+                        .HasColumnType("datetime2");
 
-                    b.Property<string>("LoginProvider");
+                    b.Property<string>("LoginProvider")
+                        .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("ProviderDisplayName");
+                    b.Property<string>("ProviderDisplayName")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ProviderKey");
+                    b.Property<string>("ProviderKey")
+                        .HasColumnType("nvarchar(450)");
 
-                    b.Property<Guid>("UserId");
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -468,17 +581,23 @@ namespace IdentityServer4.Web.Data.Migrations
             modelBuilder.Entity("Hybrid.Web.Identity.Entity.UserRole", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime>("CreatedTime");
+                    b.Property<DateTime>("CreatedTime")
+                        .HasColumnType("datetime2");
 
-                    b.Property<bool>("IsDeleted");
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
 
-                    b.Property<bool>("IsLocked");
+                    b.Property<bool>("IsLocked")
+                        .HasColumnType("bit");
 
-                    b.Property<Guid>("RoleId");
+                    b.Property<Guid>("RoleId")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("UserId");
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -493,7 +612,7 @@ namespace IdentityServer4.Web.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("479415b8-f7ca-41fe-9bc9-135655a08ece"),
+                            Id = new Guid("07b18723-8eb6-4775-87b3-ae1564d87794"),
                             CreatedTime = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsDeleted = false,
                             IsLocked = false,
@@ -505,15 +624,20 @@ namespace IdentityServer4.Web.Data.Migrations
             modelBuilder.Entity("Hybrid.Web.Identity.Entity.UserToken", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("LoginProvider");
+                    b.Property<string>("LoginProvider")
+                        .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(450)");
 
-                    b.Property<Guid>("UserId");
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("Value");
+                    b.Property<string>("Value")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -528,19 +652,26 @@ namespace IdentityServer4.Web.Data.Migrations
             modelBuilder.Entity("Hybrid.Web.Security.Entities.EntityRole", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime>("CreatedTime");
+                    b.Property<DateTime>("CreatedTime")
+                        .HasColumnType("datetime2");
 
-                    b.Property<Guid>("EntityId");
+                    b.Property<Guid>("EntityId")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("FilterGroupJson");
+                    b.Property<string>("FilterGroupJson")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("IsLocked");
+                    b.Property<bool>("IsLocked")
+                        .HasColumnType("bit");
 
-                    b.Property<int>("Operation");
+                    b.Property<int>("Operation")
+                        .HasColumnType("int");
 
-                    b.Property<Guid>("RoleId");
+                    b.Property<Guid>("RoleId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -556,17 +687,23 @@ namespace IdentityServer4.Web.Data.Migrations
             modelBuilder.Entity("Hybrid.Web.Security.Entities.EntityUser", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime>("CreatedTime");
+                    b.Property<DateTime>("CreatedTime")
+                        .HasColumnType("datetime2");
 
-                    b.Property<Guid>("EntityId");
+                    b.Property<Guid>("EntityId")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("FilterGroupJson");
+                    b.Property<string>("FilterGroupJson")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("IsLocked");
+                    b.Property<bool>("IsLocked")
+                        .HasColumnType("bit");
 
-                    b.Property<Guid>("UserId");
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -581,21 +718,28 @@ namespace IdentityServer4.Web.Data.Migrations
             modelBuilder.Entity("Hybrid.Web.Security.Entities.Module", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Code")
-                        .IsRequired();
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
-                        .IsRequired();
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("OrderCode");
+                    b.Property<double>("OrderCode")
+                        .HasColumnType("float");
 
-                    b.Property<Guid?>("ParentId");
+                    b.Property<Guid?>("ParentId")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("Remark");
+                    b.Property<string>("Remark")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("TreePathString");
+                    b.Property<string>("TreePathString")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -618,11 +762,14 @@ namespace IdentityServer4.Web.Data.Migrations
             modelBuilder.Entity("Hybrid.Web.Security.Entities.ModuleFunction", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("FunctionId");
+                    b.Property<Guid>("FunctionId")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("ModuleId");
+                    b.Property<Guid>("ModuleId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -638,11 +785,14 @@ namespace IdentityServer4.Web.Data.Migrations
             modelBuilder.Entity("Hybrid.Web.Security.Entities.ModuleRole", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("ModuleId");
+                    b.Property<Guid>("ModuleId")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("RoleId");
+                    b.Property<Guid>("RoleId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -658,13 +808,17 @@ namespace IdentityServer4.Web.Data.Migrations
             modelBuilder.Entity("Hybrid.Web.Security.Entities.ModuleUser", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<bool>("Disabled");
+                    b.Property<bool>("Disabled")
+                        .HasColumnType("bit");
 
-                    b.Property<Guid>("ModuleId");
+                    b.Property<Guid>("ModuleId")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("UserId");
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -682,7 +836,8 @@ namespace IdentityServer4.Web.Data.Migrations
                     b.HasOne("Hybrid.Domain.Entities.Auditing.AuditOperation", "Operation")
                         .WithMany("AuditEntities")
                         .HasForeignKey("OperationId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Hybrid.Domain.Entities.Auditing.AuditProperty", b =>
@@ -690,7 +845,8 @@ namespace IdentityServer4.Web.Data.Migrations
                     b.HasOne("Hybrid.Domain.Entities.Auditing.AuditEntity", "AuditEntity")
                         .WithMany("Properties")
                         .HasForeignKey("AuditEntityId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Hybrid.Web.Identity.Entity.LoginLog", b =>
@@ -698,12 +854,13 @@ namespace IdentityServer4.Web.Data.Migrations
                     b.HasOne("Hybrid.Web.Identity.Entity.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Hybrid.Web.Identity.Entity.Organization", b =>
                 {
-                    b.HasOne("Hybrid.Web.Identity.Entity.Organization")
+                    b.HasOne("Hybrid.Web.Identity.Entity.Organization", null)
                         .WithMany()
                         .HasForeignKey("ParentId");
                 });
@@ -713,7 +870,8 @@ namespace IdentityServer4.Web.Data.Migrations
                     b.HasOne("Hybrid.Web.Identity.Entity.Role", "Role")
                         .WithMany("RoleClaims")
                         .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Hybrid.Web.Identity.Entity.UserClaim", b =>
@@ -721,7 +879,8 @@ namespace IdentityServer4.Web.Data.Migrations
                     b.HasOne("Hybrid.Web.Identity.Entity.User", "User")
                         .WithMany("UserClaims")
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Hybrid.Web.Identity.Entity.UserDetail", b =>
@@ -729,7 +888,8 @@ namespace IdentityServer4.Web.Data.Migrations
                     b.HasOne("Hybrid.Web.Identity.Entity.User", "User")
                         .WithOne("UserDetail")
                         .HasForeignKey("Hybrid.Web.Identity.Entity.UserDetail", "UserId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Hybrid.Web.Identity.Entity.UserLogin", b =>
@@ -737,7 +897,8 @@ namespace IdentityServer4.Web.Data.Migrations
                     b.HasOne("Hybrid.Web.Identity.Entity.User", "User")
                         .WithMany("UserLogins")
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Hybrid.Web.Identity.Entity.UserRole", b =>
@@ -745,12 +906,14 @@ namespace IdentityServer4.Web.Data.Migrations
                     b.HasOne("Hybrid.Web.Identity.Entity.Role", "Role")
                         .WithMany("UserRoles")
                         .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("Hybrid.Web.Identity.Entity.User", "User")
                         .WithMany("UserRoles")
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Hybrid.Web.Identity.Entity.UserToken", b =>
@@ -758,7 +921,8 @@ namespace IdentityServer4.Web.Data.Migrations
                     b.HasOne("Hybrid.Web.Identity.Entity.User", "User")
                         .WithMany("UserTokens")
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Hybrid.Web.Security.Entities.EntityRole", b =>
@@ -766,12 +930,14 @@ namespace IdentityServer4.Web.Data.Migrations
                     b.HasOne("Hybrid.Core.EntityInfos.EntityInfo", "EntityInfo")
                         .WithMany()
                         .HasForeignKey("EntityId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("Hybrid.Web.Identity.Entity.Role", "Role")
                         .WithMany()
                         .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Hybrid.Web.Security.Entities.EntityUser", b =>
@@ -779,12 +945,14 @@ namespace IdentityServer4.Web.Data.Migrations
                     b.HasOne("Hybrid.Core.EntityInfos.EntityInfo", "EntityInfo")
                         .WithMany()
                         .HasForeignKey("EntityId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("Hybrid.Web.Identity.Entity.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Hybrid.Web.Security.Entities.Module", b =>
@@ -799,12 +967,14 @@ namespace IdentityServer4.Web.Data.Migrations
                     b.HasOne("Hybrid.Core.Functions.Function", "Function")
                         .WithMany()
                         .HasForeignKey("FunctionId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("Hybrid.Web.Security.Entities.Module", "Module")
                         .WithMany()
                         .HasForeignKey("ModuleId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Hybrid.Web.Security.Entities.ModuleRole", b =>
@@ -812,12 +982,14 @@ namespace IdentityServer4.Web.Data.Migrations
                     b.HasOne("Hybrid.Web.Security.Entities.Module", "Module")
                         .WithMany()
                         .HasForeignKey("ModuleId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("Hybrid.Web.Identity.Entity.Role", "Role")
                         .WithMany()
                         .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Hybrid.Web.Security.Entities.ModuleUser", b =>
@@ -825,12 +997,14 @@ namespace IdentityServer4.Web.Data.Migrations
                     b.HasOne("Hybrid.Web.Security.Entities.Module", "Module")
                         .WithMany()
                         .HasForeignKey("ModuleId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("Hybrid.Web.Identity.Entity.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

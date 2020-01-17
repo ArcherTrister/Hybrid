@@ -77,5 +77,10 @@ namespace Hybrid.Core.Functions
         /// 获取或设置 是否相对过期时间，否则为绝对过期
         /// </summary>
         bool IsCacheSliding { get; set; }
+
+        /// <summary>
+        /// 获取或设置 是否Mvc
+        /// </summary>
+        bool IsMvc { get; set; }
     }
 }

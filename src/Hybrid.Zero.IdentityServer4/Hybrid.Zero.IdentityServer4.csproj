@@ -43,7 +43,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Hybrid.AspNetCore\Hybrid.AspNetCore.csproj" />
     <ProjectReference Include="..\Hybrid.Zero\Hybrid.Zero.csproj" />
   </ItemGroup>
 

@@ -44,7 +44,7 @@ namespace Hybrid.Web
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            //Add-Migration Init -Verbose -o Data/Migrations
+            //Add-Migration Init -Verbose -o Data/Migrations/Application
             services.AddHybrid<AspHybridModuleManager>();
 
             //services.AddSwaggerGen(options =>

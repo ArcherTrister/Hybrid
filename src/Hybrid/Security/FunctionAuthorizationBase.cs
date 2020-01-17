@@ -87,25 +87,25 @@ namespace Hybrid.Security
         {
             if (function == null)
             {
-                return new AuthorizationResult(AuthorizationStatus.NoFound);
+                return new AuthorizationResult(AuthorizationStatus.NoFound, function.IsMvc);
             }
             if (function.IsLocked)
             {
-                return new AuthorizationResult(AuthorizationStatus.Locked, $"功能“{function.Name}”已被禁用，无法执行");
+                return new AuthorizationResult(AuthorizationStatus.Locked, function.IsMvc, $"功能“{function.Name}”已被禁用，无法执行");
             }
             if (function.AccessType == FunctionAccessType.Anonymous)
             {
-                return AuthorizationResult.OK;
+                return new AuthorizationResult(AuthorizationStatus.OK, function.IsMvc);
             }
             //未登录
             if (principal == null || !principal.Identity.IsAuthenticated)
             {
-                return new AuthorizationResult(AuthorizationStatus.Unauthorized);
+                return new AuthorizationResult(AuthorizationStatus.Unauthorized, function.IsMvc);
             }
             //已登录，无角色限制
             if (function.AccessType == FunctionAccessType.LoggedIn)
             {
-                return AuthorizationResult.OK;
+                return new AuthorizationResult(AuthorizationStatus.OK, function.IsMvc);
             }
             return AuthorizeRoleLimit(function, principal);
         }
@@ -121,7 +121,7 @@ namespace Hybrid.Security
             //角色限制
             if (!(principal.Identity is ClaimsIdentity identity))
             {
-                return new AuthorizationResult(AuthorizationStatus.Error, "当前用户标识IIdentity格式不正确，仅支持ClaimsIdentity类型的用户标识");
+                return new AuthorizationResult(AuthorizationStatus.Error, function.IsMvc, "当前用户标识IIdentity格式不正确，仅支持ClaimsIdentity类型的用户标识");
             }
             //检查角色-功能的权限
             string[] userRoleNames = identity.GetRoles().ToArray();
@@ -146,18 +146,18 @@ namespace Hybrid.Security
 
             if (roleNames.Length == 0)
             {
-                return new AuthorizationResult(AuthorizationStatus.Forbidden);
+                return new AuthorizationResult(AuthorizationStatus.Forbidden, function.IsMvc);
             }
             if (function.AccessType != FunctionAccessType.RoleLimit || roleNames.Contains(SuperRoleName))
             {
-                return AuthorizationResult.OK;
+                return new AuthorizationResult(AuthorizationStatus.OK, function.IsMvc);
             }
             string[] functionRoleNames = FunctionAuthCache.GetFunctionRoles(function.Id);
             if (roleNames.Intersect(functionRoleNames).Any())
             {
-                return AuthorizationResult.OK;
+                return new AuthorizationResult(AuthorizationStatus.OK, function.IsMvc);
             }
-            return new AuthorizationResult(AuthorizationStatus.Forbidden);
+            return new AuthorizationResult(AuthorizationStatus.Forbidden, function.IsMvc);
         }
 
         /// <summary>
@@ -170,15 +170,15 @@ namespace Hybrid.Security
         {
             if (function.AccessType != FunctionAccessType.RoleLimit)
             {
-                return AuthorizationResult.OK;
+                return new AuthorizationResult(AuthorizationStatus.OK, function.IsMvc);
             }
 
             Guid[] functionIds = FunctionAuthCache.GetUserFunctions(userName);
             if (functionIds.Contains(function.Id))
             {
-                return AuthorizationResult.OK;
+                return new AuthorizationResult(AuthorizationStatus.OK, function.IsMvc);
             }
-            return new AuthorizationResult(AuthorizationStatus.Forbidden);
+            return new AuthorizationResult(AuthorizationStatus.Forbidden, function.IsMvc);
         }
     }
 }

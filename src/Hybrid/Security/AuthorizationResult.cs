@@ -23,23 +23,30 @@ namespace Hybrid.Security
         /// <summary>
         /// 初始化一个<see cref="AuthorizationResult"/>类型的新实例
         /// </summary>
-        public AuthorizationResult(AuthorizationStatus status)
-            : this(status, null)
+        public AuthorizationResult(AuthorizationStatus status, bool isMvc)
+            : this(status, isMvc, null)
         { }
 
         /// <summary>
         /// 初始化一个<see cref="AuthorizationResult"/>类型的新实例
         /// </summary>
-        public AuthorizationResult(AuthorizationStatus status, string message)
-            : this(status, message, null)
+        public AuthorizationResult(AuthorizationStatus status, bool isMvc, string message)
+            : this(status, isMvc, message, null)
         { }
 
         /// <summary>
         /// 初始化一个<see cref="AuthorizationResult"/>类型的新实例
         /// </summary>
-        public AuthorizationResult(AuthorizationStatus status, string message, object data)
+        public AuthorizationResult(AuthorizationStatus status, bool isMvc, string message, object data)
             : base(status, message, data)
-        { }
+        {
+            IsMvc = isMvc;
+        }
+
+        /// <summary>
+        /// 获取或设置 是否Mvc
+        /// </summary>
+        public bool IsMvc { get; set; } = false;
 
         /// <summary>
         /// 获取或设置 返回消息
@@ -98,9 +105,9 @@ namespace Hybrid.Security
             get { return ResultType == AuthorizationStatus.Error; }
         }
 
-        /// <summary>
-        /// 获取 检查成功的结果
-        /// </summary>
-        public static AuthorizationResult OK { get; } = new AuthorizationResult(AuthorizationStatus.OK);
+        ///// <summary>
+        ///// 获取 检查成功的结果
+        ///// </summary>
+        //public static AuthorizationResult OK { get; } = new AuthorizationResult(AuthorizationStatus.OK);
     }
 }

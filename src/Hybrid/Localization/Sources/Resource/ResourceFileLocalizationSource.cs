@@ -1,5 +1,4 @@
-﻿using Hybrid.Dependency;
-using Hybrid.Localization.Configuration;
+﻿using Hybrid.Localization.Configuration;
 
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -18,7 +17,7 @@ namespace Hybrid.Localization.Sources.Resource
     /// This class is used to simplify to create a localization source that
     /// uses resource a file.
     /// </summary>
-    public class ResourceFileLocalizationSource : ILocalizationSource, ISingletonDependency
+    public class ResourceFileLocalizationSource : ILocalizationSource
     {
         /// <summary>
         /// Unique Name of the source.

@@ -21,8 +21,6 @@ using Hybrid.Localization;
 using Hybrid.Localization.Configuration;
 using Hybrid.Localization.Dictionaries;
 using Hybrid.Localization.Dictionaries.Xml;
-using Hybrid.Localization.Sources;
-using Hybrid.Localization.Sources.Resource;
 
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
