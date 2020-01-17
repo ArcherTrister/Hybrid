@@ -4,6 +4,9 @@
   
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PackageId>Hybrid.EntityFrameworkCore</PackageId>
+    <Description>Hybrid数据访问组件，封装EntityFrameworkCore数据访问功能的实现</Description>
+    <Summary>Hybrid数据访问组件</Summary>
     <RootNamespace>Hybrid.EntityFrameworkCore</RootNamespace>
   </PropertyGroup>
 

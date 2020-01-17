@@ -4,6 +4,9 @@
   
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PackageId>Hybrid.AutoMapper</PackageId>
+    <Summary>Hybrid AutoMapper 对象映射组件</Summary>
+    <Description>Hybrid AutoMapper 对象映射组件，封装基于AutoMapper的对象映射实现</Description>
     <RootNamespace>Hybrid.AutoMapper</RootNamespace>
   </PropertyGroup>
 

@@ -4,7 +4,7 @@
   
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <ModuleageId>Hybrid</ModuleageId>
+    <PackageId>Hybrid</PackageId>
     <Description>Hybrid核心组件，封装着框架核心及数据存储，缓存，辅助操作等功能</Description>
     <Summary>Hybrid核心组件</Summary>
     <RootNamespace>Hybrid</RootNamespace>

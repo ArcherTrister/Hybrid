@@ -4,7 +4,11 @@
   
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PackageId>Hybrid.AspNetCore</PackageId>
+    <Summary>Hybrid AspNetCore组件</Summary>
+    <Description>Hybrid AspNetCore组件，提供AspNetCore的服务端功能的封装</Description>
     <RootNamespace>Hybrid.AspNetCore</RootNamespace>
+    <AssemblyName>Hybrid.AspNetCore</AssemblyName>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

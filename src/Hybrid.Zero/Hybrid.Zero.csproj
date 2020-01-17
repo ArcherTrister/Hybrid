@@ -4,6 +4,9 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PackageId>Hybrid.Zero</PackageId>
+    <Summary>Hybrid Zero 框架级别基础功能组件</Summary>
+    <Description>Hybrid Zero 封装框架模块管理，安全管理，系统设置等功能的实现</Description>
     <RootNamespace>Hybrid.Zero</RootNamespace>
   </PropertyGroup>
 
