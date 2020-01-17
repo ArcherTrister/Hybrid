@@ -5,7 +5,7 @@ using Hybrid.Localization.Dictionaries.Json;
 using Hybrid.Quartz;
 using Hybrid.Quartz.Dashboard;
 using Hybrid.Quartz.Dashboard.Hubs.LiveLog;
-
+using Hybrid.Quartz.Plugins.LiveLog;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Internal;
 using Microsoft.AspNetCore.Routing;

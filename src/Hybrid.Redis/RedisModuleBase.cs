@@ -18,7 +18,6 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 
 using System;
 
-
 namespace Hybrid.Redis
 {
     /// <summary>

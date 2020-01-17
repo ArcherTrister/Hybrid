@@ -1,6 +1,4 @@
-﻿using Hybrid.Localization;
-
-using System.ComponentModel;
+﻿using System.ComponentModel;
 
 namespace Hybrid.Localization
 {

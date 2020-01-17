@@ -7,10 +7,12 @@
 //  <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.AspNetCore.Mvc;
 using Hybrid.AspNetCore.Mvc.Controllers;
-using Hybrid.AspNetCore.UI;
 using Hybrid.Zero.Identity;
+
 using IdentityModel;
+
 using IdentityServer4;
 using IdentityServer4.Events;
 using IdentityServer4.Services;
@@ -90,7 +92,7 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
             }
             else
             {
-                // start challenge and roundtrip the return URL and scheme 
+                // start challenge and roundtrip the return URL and scheme
                 var props = new AuthenticationProperties
                 {
                     RedirectUri = Url.Action(nameof(Callback)),
@@ -305,7 +307,6 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
 
             return user;
         }
-
 
         private void ProcessLoginCallbackForOidc(AuthenticateResult externalResult, List<Claim> localClaims, AuthenticationProperties localSignInProps)
         {

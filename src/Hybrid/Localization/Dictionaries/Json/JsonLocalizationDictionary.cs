@@ -1,5 +1,5 @@
-﻿
-using Hybrid.Extensions;
+﻿using Hybrid.Extensions;
+
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 

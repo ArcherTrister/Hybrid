@@ -137,8 +137,7 @@ namespace Hybrid.Core.Functions
                     functions.Add(controller);
                 }
                 if (controller.Controller.Equals("Account"))
-                { 
-                
+                {
                 }
                 List<MethodInfo> methods = MethodInfoFinder.FindAll(type).ToList();
                 // 移除已被重写的方法

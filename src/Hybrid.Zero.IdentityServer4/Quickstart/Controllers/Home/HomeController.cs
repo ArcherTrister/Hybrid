@@ -8,11 +8,13 @@
 // -----------------------------------------------------------------------
 
 using IdentityServer4.Services;
+
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+
 using System.Threading.Tasks;
 
 namespace Hybrid.Zero.IdentityServer4.Quickstart

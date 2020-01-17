@@ -304,7 +304,6 @@ namespace Hybrid.Extensions
             return method.GetBaseDefinition().DeclaringType != method.DeclaringType;
         }
 
-
         #region 私有方法
 
         private static readonly Dictionary<Type, string> BuiltInTypeNames = new Dictionary<Type, string>
@@ -417,6 +416,5 @@ namespace Hybrid.Extensions
         }
 
         #endregion 私有方法
-
     }
 }

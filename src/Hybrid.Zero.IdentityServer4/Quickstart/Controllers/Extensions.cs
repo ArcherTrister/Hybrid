@@ -7,8 +7,9 @@
 //  <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
-using System.Threading.Tasks;
 using IdentityServer4.Stores;
+
+using System.Threading.Tasks;
 
 namespace Hybrid.Zero.IdentityServer4.Quickstart
 {

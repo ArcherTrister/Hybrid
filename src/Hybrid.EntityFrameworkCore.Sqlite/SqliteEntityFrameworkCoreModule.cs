@@ -7,15 +7,15 @@
 //  <last-date>2018-11-05 16:29</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.ComponentModel;
-using System.Linq;
+using Hybrid.Core.Modules;
+using Hybrid.Domain.EntityFramework;
+using Hybrid.Domain.Repositories;
 
 using Microsoft.Extensions.DependencyInjection;
 
-using Hybrid.Core.Modules;
-using Hybrid.Domain.Repositories;
-using Hybrid.Domain.EntityFramework;
+using System;
+using System.ComponentModel;
+using System.Linq;
 
 namespace Hybrid.EntityFrameworkCore.Sqlite
 {
@@ -48,7 +48,7 @@ namespace Hybrid.EntityFrameworkCore.Sqlite
 
             return services;
         }
-        
+
         /// <summary>
         /// 应用模块服务
         /// </summary>

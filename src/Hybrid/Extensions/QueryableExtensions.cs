@@ -12,7 +12,6 @@ using Hybrid.Exceptions;
 using Hybrid.Extensions;
 using Hybrid.Filter;
 using Hybrid.Mapping;
-using Hybrid.Reflection;
 using Hybrid.Security;
 
 using System;
@@ -42,6 +41,34 @@ namespace Hybrid.Extensions
             predicate.CheckNotNull("predicate");
 
             return condition ? source.Where(predicate) : source;
+        }
+
+        /// <summary>
+        /// Filters a <see cref="IQueryable{T}"/> by given predicate if given condition is true.
+        /// </summary>
+        /// <param name="query">Queryable to apply filtering</param>
+        /// <param name="condition">A boolean value</param>
+        /// <param name="predicate">Predicate to filter the query</param>
+        /// <returns>Filtered or not filtered query based on <paramref name="condition"/></returns>
+        public static IQueryable<T> WhereIf<T>(this IQueryable<T> query, bool condition, Expression<Func<T, bool>> predicate)
+        {
+            return condition
+                ? query.Where(predicate)
+                : query;
+        }
+
+        /// <summary>
+        /// Filters a <see cref="IQueryable{T}"/> by given predicate if given condition is true.
+        /// </summary>
+        /// <param name="query">Queryable to apply filtering</param>
+        /// <param name="condition">A boolean value</param>
+        /// <param name="predicate">Predicate to filter the query</param>
+        /// <returns>Filtered or not filtered query based on <paramref name="condition"/></returns>
+        public static IQueryable<T> WhereIf<T>(this IQueryable<T> query, bool condition, Expression<Func<T, int, bool>> predicate)
+        {
+            return condition
+                ? query.Where(predicate)
+                : query;
         }
 
         /// <summary>
@@ -450,6 +477,57 @@ namespace Hybrid.Extensions
             where TEntity : ILockable
         {
             return source.Where(m => m.IsLocked);
+        }
+
+        /// <summary>
+        /// 多属性排序
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="query"></param>
+        /// <param name="condition">eg:Id asc,Age desc</param>
+        /// <returns></returns>
+        public static IOrderedQueryable<T> MultiOrderBy<T>(this IQueryable<T> query, string condition)
+        {
+            string[] conditions = condition.Split(',');
+
+            if (conditions.Length == 0)
+            {
+                return (IOrderedQueryable<T>)query;
+            }
+
+            IOrderedQueryable<T> res = null;
+
+            for (int i = 0; i < conditions.Length; i++)
+            {
+                string[] strings = conditions[i].Split(" ");
+                var fieldName = strings[0];
+                var direction = strings[1];
+
+                var param = Expression.Parameter(typeof(T), "p");
+                var prop = Expression.Property(param, fieldName);
+                var exp = Expression.Lambda(prop, param);
+
+                string method;
+
+                if (i == 0)
+                {
+                    method = direction.ToLower() == "asc" ? "OrderBy" : "OrderByDescending";
+                }
+                else
+                {
+                    method = direction.ToLower() == "asc" ? "ThenBy" : "ThenByDescending";
+                }
+                Type[] types = { query.ElementType, exp.Body.Type };
+                var mce = i == 0 ? Expression.Call(typeof(Queryable), method, types, query.Expression, exp) : Expression.Call(typeof(Queryable), method, types, res.Expression, exp);
+
+                if (conditions.Length == 1)
+                {
+                    return (IOrderedQueryable<T>)query.Provider.CreateQuery<T>(mce);
+                }
+
+                res = i == 0 ? (IOrderedQueryable<T>)query.Provider.CreateQuery<T>(mce) : (IOrderedQueryable<T>)res.Provider.CreateQuery<T>(mce);
+            }
+            return res;
         }
     }
 }

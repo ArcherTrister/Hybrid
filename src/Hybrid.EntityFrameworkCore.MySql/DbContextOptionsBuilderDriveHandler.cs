@@ -7,13 +7,13 @@
 //  <last-date>2017-09-19 5:09</last-date>
 // -----------------------------------------------------------------------
 
-using System.Data.Common;
+using Hybrid.Dependency;
+using Hybrid.Domain.EntityFramework;
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-using Hybrid.Dependency;
-using Hybrid.Domain.EntityFramework;
+using System.Data.Common;
 
 namespace Hybrid.EntityFrameworkCore.MySql
 {

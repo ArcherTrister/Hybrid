@@ -10,11 +10,10 @@
 using Hybrid.Core.Options;
 using Hybrid.Data;
 using Hybrid.Exceptions;
-using Hybrid.Zero.IdentityServer4;
 using Hybrid.Web.Identity;
 using Hybrid.Web.Identity.Entity;
+using Hybrid.Zero.IdentityServer4;
 
-using IdentityServer4;
 using IdentityServer4.Configuration;
 
 using Microsoft.AspNetCore.Authentication;
@@ -130,8 +129,8 @@ namespace Hybrid.Web.Startups
             // 1.如果在本项目中使用webapi则添加，并且在UseModule中不能使用app.UseAuthentication
             // 2.在webapi上添加[Authorize(AuthenticationSchemes = IdentityServerConstants.LocalApi.AuthenticationScheme)]标记
             // 3.在本框架中使用HybridConstants.LocalApi.AuthenticationScheme
-            authenticationBuilder.AddLocalApi(HybridConstants.LocalApi.AuthenticationScheme, 
-                options => 
+            authenticationBuilder.AddLocalApi(HybridConstants.LocalApi.AuthenticationScheme,
+                options =>
                 {
                     options.ExpectedScope = HybridConstants.LocalApi.ScopeName;
                     options.SaveToken = true;

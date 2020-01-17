@@ -2,6 +2,7 @@ using Hybrid.Data;
 using Hybrid.Extensions;
 
 using Hybrid.Localization.Configuration;
+
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 

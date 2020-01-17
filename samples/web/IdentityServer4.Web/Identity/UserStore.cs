@@ -8,8 +8,8 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.Domain.Repositories;
-using Hybrid.Zero.Identity;
 using Hybrid.Web.Identity.Entity;
+using Hybrid.Zero.Identity;
 
 using Microsoft.AspNetCore.Identity;
 

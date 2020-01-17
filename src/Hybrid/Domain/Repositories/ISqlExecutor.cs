@@ -10,6 +10,7 @@
 using Hybrid.Dependency;
 using Hybrid.Domain.Entities;
 using Hybrid.Domain.EntityFramework;
+
 using System.Collections.Generic;
 
 namespace Hybrid.Domain.Repositories

@@ -12,7 +12,6 @@ using Hybrid.Dependency;
 using Hybrid.Exceptions;
 using Hybrid.Extensions;
 using Hybrid.Security;
-using Hybrid.AspNetCore.UI;
 
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -47,7 +46,7 @@ namespace Hybrid.AspNetCore.Mvc
                 && !typeInfo.ContainsGenericParameters
                 && !typeInfo.IsDefined(typeof(NonControllerAttribute))
                 && (typeInfo.Name.EndsWith("Controller", StringComparison.OrdinalIgnoreCase)
-                    || typeInfo.IsDefined(typeof(ControllerAttribute)))) 
+                    || typeInfo.IsDefined(typeof(ControllerAttribute))))
                 || (typeInfo.HasAttribute<HybridDefaultUIAttribute>()
                     && typeInfo.ContainsGenericParameters);
         }

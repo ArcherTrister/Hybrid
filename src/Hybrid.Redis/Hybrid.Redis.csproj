@@ -8,6 +8,7 @@
     <Summary>Hybrid Redis 缓存组件</Summary>
     <Description>Hybrid Redis 缓存组件，封装基于Redis客户端的缓存实现</Description>
     <RootNamespace>Hybrid.Redis</RootNamespace>
+    <AssemblyName>Hybrid.Redis</AssemblyName>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

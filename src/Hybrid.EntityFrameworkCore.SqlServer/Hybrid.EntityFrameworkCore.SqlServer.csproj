@@ -8,6 +8,7 @@
     <Description>Hybrid 数据访问组件，封装EntityFrameworkCore的SqlServer数据访问功能的实现</Description>
     <Summary>Hybrid 数据访问组件SqlServer</Summary>
     <RootNamespace>Hybrid.EntityFrameworkCore.SqlServer</RootNamespace>
+    <AssemblyName>Hybrid.EntityFrameworkCore.SqlServer</AssemblyName>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

@@ -1,4 +1,4 @@
-﻿using Hybrid.AspNetCore.Mvc.Models;
+﻿using Hybrid.Application.Services.Dtos;
 
 using Quartz;
 using Quartz.Impl.AdoJobStore;
@@ -133,7 +133,7 @@ namespace Hybrid.Quartz.Plugins.History
 
         private const string PropertySqlSelectHistoryCount = "SELECT COUNT(1) FROM {0}JOB_HISTORY WHERE SCHED_NAME = @schedulerName";
 
-        public async Task<long> GetAllCount(string schedulerName, CancellationToken cancellationToken = default)
+        public async Task<int> GetAllCount(string schedulerName, CancellationToken cancellationToken = default)
         {
             using (ConnectionAndTransactionHolder dbConnection = GetConnection(IsolationLevel.ReadUncommitted))
             {
@@ -142,7 +142,7 @@ namespace Hybrid.Quartz.Plugins.History
                 using (DbCommand dbCommand = Delegate.PrepareCommand(dbConnection, sqlCount))
                 {
                     Delegate.AddCommandParameter(dbCommand, "schedulerName", schedulerName);
-                    return (long)await dbCommand.ExecuteScalarAsync(cancellationToken).ConfigureAwait(false);
+                    return (int)await dbCommand.ExecuteScalarAsync(cancellationToken).ConfigureAwait(false);
                 }
             }
         }
@@ -162,13 +162,13 @@ namespace Hybrid.Quartz.Plugins.History
             "TRIGGER_NAME, TRIGGER_GROUP, JOB_NAME, JOB_GROUP, FIRED_TIME, SCHED_TIME, RUN_TIME, ERROR, ERROR_MESSAGE FROM {0}JOB_HISTORY " +
             "WHERE SCHED_NAME = @schedulerName ORDER BY {1} LIMIT @page, @pageSize";
 
-        public async Task<PageResult<ExecutionHistoryEntry>> GetPageJobHistoryEntries(
+        public async Task<PagedResultDto<ExecutionHistoryEntry>> GetPageJobHistoryEntries(
             string schedulerName,
             int pageIndex, int pageSize,
             string orderByStr,
             CancellationToken cancellationToken = default)
         {
-            var pageResult = new PageResult<ExecutionHistoryEntry>();
+            var pageResult = new PagedResultDto<ExecutionHistoryEntry>();
 
             using (ConnectionAndTransactionHolder dbConnection = GetConnection(IsolationLevel.ReadUncommitted))
             {
@@ -182,7 +182,7 @@ namespace Hybrid.Quartz.Plugins.History
                     sql = string.Format(PropertyMySqlSelectHistoryEntryPage, _tablePrefix, orderByStr);
                 }
 
-                pageResult.TotalRecords = await GetAllCount(schedulerName, cancellationToken);
+                pageResult.TotalCount = await GetAllCount(schedulerName, cancellationToken);
 
                 using (DbCommand dbCommand = Delegate.PrepareCommand(dbConnection, sql))
                 {
@@ -204,6 +204,7 @@ namespace Hybrid.Quartz.Plugins.History
 
                     using (DbDataReader reader = await dbCommand.ExecuteReaderAsync(cancellationToken).ConfigureAwait(false))
                     {
+                        List<ExecutionHistoryEntry> list = new List<ExecutionHistoryEntry>();
                         while (await reader.ReadAsync(cancellationToken).ConfigureAwait(false))
                         {
                             var entry = new ExecutionHistoryEntry
@@ -226,8 +227,9 @@ namespace Hybrid.Quartz.Plugins.History
                                 Error = Delegate.GetBooleanFromDbValue(reader["ERROR"]),
                                 ErrorMessage = reader.GetString("ERROR_MESSAGE")
                             };
-                            pageResult.Data.Add(entry);
+                            list.Add(entry);
                         }
+                        pageResult.Items = list.AsReadOnly();
                     }
                 }
             }

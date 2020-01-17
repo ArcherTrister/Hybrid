@@ -7,12 +7,14 @@
 //  <last-date>2020-01-12 14:05:58</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Web.Security;
-using Hybrid.Web.Security.Entities;
-
 using Hybrid.AspNetCore.Mvc;
 using Hybrid.AspNetCore.Mvc.Controllers;
+using Hybrid.Core.Functions;
 using Hybrid.Core.ModuleInfos;
+using Hybrid.Extensions;
+using Hybrid.Security;
+using Hybrid.Web.Security;
+using Hybrid.Web.Security.Entities;
 
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
@@ -22,9 +24,6 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
-using Hybrid.Security;
-using Hybrid.Core.Functions;
-using Hybrid.Extensions;
 
 namespace IdentityServer4.Web.Controllers
 {

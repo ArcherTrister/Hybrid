@@ -1,12 +1,14 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <Import Project="..\..\build\packages.props" />
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PackageId>Hybrid.Quartz</PackageId>
+    <Summary>Hybrid.Quartz组件</Summary>
+    <Description>Hybrid.Quartz组件，封装基于Quartz后台任务的服务端实现</Description>
     <RootNamespace>Hybrid.Quartz</RootNamespace>
-    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
-    <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
+    <AssemblyName>Hybrid.Quartz</AssemblyName>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -20,85 +22,23 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Dashboard\**" />
-    <Content Remove="Dashboard\**" />
-    <EmbeddedResource Remove="Dashboard\**" />
-    <None Remove="Dashboard\**" />
+    <Compile Remove="QuartzBuilderExtensions.cs" />
+    <Compile Remove="QuartzHybridOptionsExtension.cs" />
+    <Compile Remove="QuartzServiceCollectionExtensions.cs" />
   </ItemGroup>
-  
-  <!--
-
-  <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-    <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
-  </PropertyGroup>
-
-  <PropertyGroup>
-    --><!--产品--><!--
-    <Product>Hybrid.Quartz</Product>
-    --><!--说明--><!--
-    <Description>Clean up the code, Improving the dashboard.</Description>
-    --><!--包ID--><!--
-    <PackageId>Hybrid.Quartz</PackageId>
-    --><!--标题 如果未指定，则改为使用包 ID--><!--
-    --><!--<Title></Title>--><!--
-    --><!--包版本--><!--
-    --><!--<Version>1.0.0</Version>--><!--
-    --><!--标记--><!--
-    <PackageTags>aspnetcore;quartz;dashboard</PackageTags>
-    --><!--发行说明--><!--
-    <PackageReleaseNotes>A package to help you use .Net Core easily.</PackageReleaseNotes>
-    <LangVersion>latest</LangVersion>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
-    <DocumentationFile>bin\Release\netstandard2.0\Hybrid.Quartz.xml</DocumentationFile>
-  </PropertyGroup>-->
-
-  <!--<ItemGroup>
-    <PackageReference Include="JetBrains.Annotations" Version="2019.1.3" />
-    <PackageReference Include="Microsoft.AspNetCore.Antiforgery" Version="2.2.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Diagnostics" Version="2.2.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.2.0" />
-    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
-    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.2.0" />
-    <PackageReference Include="Microsoft.Extensions.FileProviders.Composite" Version="2.2.0" />
-    <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="2.2.0" />
-    <PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.1.0" />
-    <PackageReference Include="MySql.Data" Version="8.0.16" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-    <PackageReference Include="Quartz" Version="3.0.7" />
-    <PackageReference Include="Quartz.Serialization.Json" Version="3.0.7" />
-  </ItemGroup>-->
-
-  <!-- Full MSBuild is required to generate Razor classes -->
-  <!--<PropertyGroup>
-    <MSBuildFullPath>$(MSBuildBinPath)\MSBuild.exe</MSBuildFullPath>
-    <RazorProjectFile>Razor.build</RazorProjectFile>
-    <InnerTargets>GenerateRazorClasses;Build</InnerTargets>
-  </PropertyGroup>-->
-
-  <!--<Target Name="GenerateRazorClasses">
-    <Exec Command="&quot;$(MSBuildFullPath)&quot; $(RazorProjectFile) /v:quiet /nologo" Condition="Exists('$(MSBuildFullPath)')" />
-    <Warning Text="Classes for Razor files (*.cshtml) weren't re-generated: couldn't find the '$(MSBuildFullPath)' file" Condition="!Exists('$(MSBuildFullPath)')" />
-  </Target>-->
 
   <ItemGroup>
-    <Compile Remove="QuartzBuilderExtensions.cs" />
-    <Compile Remove="QuartzServiceCollectionExtensions.cs" />
     <EmbeddedResource Include="MySql\Install.sql" />
     <EmbeddedResource Include="SqlServer\Install.sql" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.1" Condition="'$(Configuration)' == 'Debug'" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.1" />
+    <PackageReference Include="MySql.Data" Version="8.0.19" />
     <PackageReference Include="Quartz" Version="3.0.7" />
+    <PackageReference Include="Quartz.Plugins" Version="3.0.7" />
+    <PackageReference Include="Quartz.Serialization.Json" Version="3.0.7" />
   </ItemGroup>
 
   <ItemGroup>

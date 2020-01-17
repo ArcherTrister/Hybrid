@@ -8,6 +8,7 @@
     <Description>Hybrid数据访问组件，封装EntityFrameworkCore数据访问功能的实现</Description>
     <Summary>Hybrid数据访问组件</Summary>
     <RootNamespace>Hybrid.EntityFrameworkCore</RootNamespace>
+    <AssemblyName>Hybrid.EntityFrameworkCore</AssemblyName>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

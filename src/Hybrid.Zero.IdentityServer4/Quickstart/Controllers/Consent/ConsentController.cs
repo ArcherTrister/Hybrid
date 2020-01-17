@@ -7,17 +7,19 @@
 //  <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
+using IdentityServer4;
 using IdentityServer4.Events;
+using IdentityServer4.Extensions;
 using IdentityServer4.Models;
 using IdentityServer4.Services;
 using IdentityServer4.Stores;
-using IdentityServer4.Extensions;
+
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+
 using System.Linq;
 using System.Threading.Tasks;
-using IdentityServer4;
 
 namespace Hybrid.Zero.IdentityServer4.Quickstart
 {
@@ -102,6 +104,7 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
         /*****************************************/
         /* helper APIs for the ConsentController */
         /*****************************************/
+
         private async Task<ProcessConsentResult> ProcessConsent(ConsentInputModel model)
         {
             var result = new ProcessConsentResult();

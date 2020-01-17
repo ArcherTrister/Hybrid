@@ -7,9 +7,9 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.Data;
-using Hybrid.Zero.Identity;
 using Hybrid.Web.Identity.Dto;
 using Hybrid.Web.Identity.Entity;
+using Hybrid.Zero.Identity;
 
 using System;
 using System.Linq;

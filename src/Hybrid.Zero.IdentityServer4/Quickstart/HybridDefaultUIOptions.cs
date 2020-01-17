@@ -7,14 +7,9 @@
 //  <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.Text;
-
 namespace Hybrid.Zero.IdentityServer4.Quickstart
 {
     public class HybridDefaultUIOptions
     {
-
     }
 }

@@ -29,16 +29,15 @@ namespace Microsoft.Extensions.DependencyInjection
 
             //services.AddSingleton(hybridDefaultUIOptions);
 
-
             IHybridDefaultUIAttributeTypeFinder typeFinder =
             builder.Services.GetOrAddTypeFinder<IHybridDefaultUIAttributeTypeFinder>(assemblyFinder => new HybridDefaultUIAttributeTypeFinder(assemblyFinder));
 
             builder.Services.ConfigureOptions(typeof(HybridDefaultUIConfigureOptions));
 
-            builder.Services.Configure<RazorViewEngineOptions>(options => {
+            builder.Services.Configure<RazorViewEngineOptions>(options =>
+            {
                 options.ViewLocationExpanders.Add(new HybridViewLocationExpander());
             });
-
 
             IMvcBuilder mvcBuilder = builder.Services.AddMvc()
                 .AddMvcOptions(o =>

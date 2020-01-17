@@ -8,6 +8,7 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.Data;
+
 using Microsoft.AspNetCore.Mvc.Controllers;
 
 using System;
@@ -25,7 +26,7 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
             if (!isController)
             {
                 isController = HybridConstants.CustomController.ValidEndings.Any(x =>
-                    typeInfo.Name.EndsWith(x, StringComparison.OrdinalIgnoreCase)) 
+                    typeInfo.Name.EndsWith(x, StringComparison.OrdinalIgnoreCase))
                     && typeInfo.GenericTypeArguments.Any();
             }
 #if DEBUG

@@ -8,6 +8,7 @@
     <Summary>Hybrid Zero Identity 基于Identity的用户认证与权限验证组件</Summary>
     <Description>Hybrid Zero Identity 基于Identity封装用户认证与权限验证的基础实现</Description>
     <RootNamespace>Hybrid.Zero.Identity</RootNamespace>
+    <AssemblyName>Hybrid.Zero.Identity</AssemblyName>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

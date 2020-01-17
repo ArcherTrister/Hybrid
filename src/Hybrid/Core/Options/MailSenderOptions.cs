@@ -37,7 +37,7 @@ namespace Hybrid.Core.Options
         /// <summary>
         /// 获取或设置 邮件发送服务器端口
         /// </summary>
-        public int Port { get; set; } = 25;
+        public int Port { get; set; }
 
         /// <summary>
         /// 登录SMTP服务器的域名
@@ -47,12 +47,12 @@ namespace Hybrid.Core.Options
         /// <summary>
         /// 获取或设置 是否启用ssl
         /// </summary>
-        public bool EnableSsl { get; set; } = false;
+        public bool EnableSsl { get; set; }
 
         /// <summary>
         /// 是否验证?
         /// </summary>
-        public bool UseDefaultCredentials { get; set; } = false;
+        public bool UseDefaultCredentials { get; set; }
 
         ///// <summary>
         ///// 安全套接字选项

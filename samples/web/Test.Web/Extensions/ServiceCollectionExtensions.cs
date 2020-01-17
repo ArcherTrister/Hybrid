@@ -42,7 +42,7 @@ namespace Microsoft.Extensions.DependencyInjection
             //        c.FeatureProviders.Add(new MyControllerFeatureProvider());
             //        //c.FeatureProviders.Add(new GenericControllerFeatureProvider<TUser>(models));
             //        //c.FeatureProviders.Add(new GenericControllerFeatureProvider<TUser>(models));
-            //    }); 
+            //    });
 
             //services.Configure<RazorViewEngineOptions>(options =>
             //{
@@ -55,7 +55,6 @@ namespace Microsoft.Extensions.DependencyInjection
             //    //options.AreaViewLocationFormats.Add("/Views/Shared/{0}.cshtml");
             //});
         }
-
 
         public static void AddUI<TUser, TUserKey>(
     this IServiceCollection services)
@@ -79,7 +78,6 @@ namespace Microsoft.Extensions.DependencyInjection
                     {
                         c.ApplicationParts.Add(new HybridMultipleControllerApplicationPart(models, typeof(TUser), typeof(Guid)));
                         c.FeatureProviders.Add(new HybridMultipleControllerFeatureProvider());
-
                     });
 
             //services.Configure<RazorViewEngineOptions>(options =>

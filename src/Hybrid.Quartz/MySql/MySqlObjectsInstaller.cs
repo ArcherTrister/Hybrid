@@ -1,5 +1,4 @@
 ﻿using Hybrid.Extensions;
-using Hybrid.Logging;
 
 using MySql.Data.MySqlClient;
 
@@ -14,13 +13,14 @@ namespace Hybrid.Quartz.MySql
 {
     public class MySqlObjectsInstaller
     {
-        private static readonly ILog Logger = LogProvider.For<MySqlObjectsInstaller>();
+        //TODO:ILog
+        //private static readonly ILog Logger = LogProvider.For<MySqlObjectsInstaller>();
 
         internal static void Initialize(string connectionString, string tablePrefix)
         {
             if (connectionString == null) throw new ArgumentNullException(nameof(connectionString));
 
-            Logger.Info("Start installing Quartz SQL objects...");
+            //Logger.Info("Start installing Quartz SQL objects...");
 
             try
             {
@@ -48,7 +48,7 @@ namespace Hybrid.Quartz.MySql
 
                     if (!string.IsNullOrEmpty(checkTablesExists))
                     {
-                        Logger.Info("DB tables already exist. Exit install");
+                        //Logger.Info("DB tables already exist. Exit install");
                         return;
                     }
 
@@ -65,12 +65,12 @@ namespace Hybrid.Quartz.MySql
 
                     connection.Close();
                 }
-                Logger.Info("Quartz SQL objects installed.");
+                //Logger.Info("Quartz SQL objects installed.");
             }
-            catch (DbException ex)
+            catch (DbException)
             {
-                Logger.WarnException("An exception occurred while trying to perform the migration.", ex);
-                Logger.Warn("Was unable to perform the Quartz schema migration due to an exception. Ignore this message unless you've just installed or upgraded Quartz.");
+                //Logger.WarnException("An exception occurred while trying to perform the migration.", ex);
+                //Logger.Warn("Was unable to perform the Quartz schema migration due to an exception. Ignore this message unless you've just installed or upgraded Quartz.");
             }
         }
 

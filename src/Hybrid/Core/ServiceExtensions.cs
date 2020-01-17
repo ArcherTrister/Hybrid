@@ -7,6 +7,7 @@
 //  <last-date>2018-07-26 12:22</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Configuration;
 using Hybrid.Core.Builders;
 using Hybrid.Core.Modules;
 using Hybrid.Core.Options;
@@ -16,7 +17,7 @@ using Hybrid.Domain.Entities;
 using Hybrid.Domain.EntityFramework;
 using Hybrid.Domain.Uow;
 using Hybrid.Reflection;
-using Hybrid.Configuration;
+
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Logging;

@@ -8,8 +8,7 @@ namespace Test.Web.Models
     /// <typeparam name="TUserKey"></typeparam>
     public abstract class UserBase<TUserKey>
         where TUserKey : IEquatable<TUserKey>
-    { 
-    
+    {
     }
 
     public class User : UserBase<Guid>

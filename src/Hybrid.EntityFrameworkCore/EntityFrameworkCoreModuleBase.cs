@@ -11,6 +11,7 @@ using Hybrid.Core.Modules;
 using Hybrid.Domain.Repositories;
 using Hybrid.EntityFrameworkCore.Defaults;
 using Hybrid.EventBuses;
+
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 

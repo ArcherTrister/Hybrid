@@ -12,6 +12,7 @@ using Hybrid.AspNetCore.UI;
 using Hybrid.Core.Functions;
 using Hybrid.Data;
 using Hybrid.Security;
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.DependencyInjection;
@@ -74,21 +75,25 @@ namespace Hybrid.AspNetCore.Mvc.Filters
                         ? (IActionResult)new JsonResult(new AjaxResult(result.Message, AjaxResultType.UnAuth))
                         : new UnauthorizedResult();
                     break;
+
                 case AuthorizationStatus.Forbidden:
                     context.Result = isJsRequest
                         ? (IActionResult)new JsonResult(new AjaxResult(result.Message, AjaxResultType.Forbidden))
                         : new StatusCodeResult(403);
                     break;
+
                 case AuthorizationStatus.NoFound:
                     context.Result = isJsRequest
                         ? (IActionResult)new JsonResult(new AjaxResult(result.Message, AjaxResultType.NoFound))
                         : new StatusCodeResult(404);
                     break;
+
                 case AuthorizationStatus.Locked:
                     context.Result = isJsRequest
                         ? (IActionResult)new JsonResult(new AjaxResult(result.Message, AjaxResultType.Locked))
                         : new StatusCodeResult(423);
                     break;
+
                 case AuthorizationStatus.Error:
                     context.Result = isJsRequest
                         ? (IActionResult)new JsonResult(new AjaxResult(result.Message, AjaxResultType.Error))

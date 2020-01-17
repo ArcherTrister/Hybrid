@@ -62,32 +62,8 @@ namespace OSharp.AspNetCore.SignalR
         /// <returns></returns>
         protected virtual Action<ISignalRServerBuilder> GetSignalRServerBuildAction(IServiceCollection services)
         {
-#if NETCOREAPP3_0
             return builder => builder.AddNewtonsoftJsonProtocol(options =>
                 options.PayloadSerializerSettings.ContractResolver = new DefaultContractResolver());
-#else
-            return builder => builder.AddJsonProtocol(config =>
-                config.PayloadSerializerSettings.ContractResolver = new DefaultContractResolver());
-#endif
         }
-
-#if NETSTANDARD
-        /// <summary>
-        /// 应用AspNetCore的服务业务
-        /// </summary>
-        /// <param name="app">Asp应用程序构建器</param>
-        public override void UsePack(IApplicationBuilder app)
-        {
-            Action<HubRouteBuilder> hubRouteBuildAction = GetHubRouteBuildAction(app.ApplicationServices);
-            app.UseSignalR(hubRouteBuildAction);
-        }
-
-        /// <summary>
-        /// 重写以获取Hub路由创建委托
-        /// </summary>
-        /// <param name="serviceProvider">服务提供者</param>
-        /// <returns></returns>
-        protected abstract Action<HubRouteBuilder> GetHubRouteBuildAction(IServiceProvider serviceProvider);
-#endif
     }
 }

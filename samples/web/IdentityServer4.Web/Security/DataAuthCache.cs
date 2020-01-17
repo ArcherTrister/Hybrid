@@ -2,15 +2,15 @@
 //  <copyright file="DataAuthCache.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
-//  <site>http://www.lxking.cn</site>
+//  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-07-04 18:25</last-date>
 // -----------------------------------------------------------------------
 
 using Hybrid.Core.EntityInfos;
-using Hybrid.Zero.Security;
 using Hybrid.Web.Identity.Entity;
 using Hybrid.Web.Security.Entities;
+using Hybrid.Zero.Security;
 
 using System;
 

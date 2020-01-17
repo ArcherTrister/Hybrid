@@ -10,6 +10,7 @@
 using Hybrid.AspNetCore;
 using Hybrid.Core.Modules;
 using Hybrid.Exceptions;
+
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 

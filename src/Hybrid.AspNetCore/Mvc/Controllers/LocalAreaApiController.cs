@@ -14,8 +14,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-using System;
-
 namespace Hybrid.AspNetCore.Mvc.Controllers
 {
     /// <summary>

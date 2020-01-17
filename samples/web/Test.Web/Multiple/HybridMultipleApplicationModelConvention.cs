@@ -9,7 +9,7 @@ namespace Test.Web.Multiple
     {
         public void Apply(ApplicationModel application)
         {
-            var removeList = application.Controllers.Where(p=>p.ControllerName.EndsWith("Controller`2", StringComparison.OrdinalIgnoreCase) && !p.ControllerType.GenericTypeArguments.Any()).ToList();
+            var removeList = application.Controllers.Where(p => p.ControllerName.EndsWith("Controller`2", StringComparison.OrdinalIgnoreCase) && !p.ControllerType.GenericTypeArguments.Any()).ToList();
             foreach (var item in removeList)
             {
                 application.Controllers.Remove(item);

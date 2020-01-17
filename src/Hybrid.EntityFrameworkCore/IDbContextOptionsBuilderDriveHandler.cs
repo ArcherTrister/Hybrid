@@ -8,6 +8,7 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.Domain.EntityFramework;
+
 using Microsoft.EntityFrameworkCore;
 
 using System.Data.Common;

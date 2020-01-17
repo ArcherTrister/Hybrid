@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Hybrid.Localization
+﻿namespace Hybrid.Localization
 {
     public static class LocalizationIocManager
     {

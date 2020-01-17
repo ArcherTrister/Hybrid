@@ -10,12 +10,13 @@
 using Hybrid.Data;
 using Hybrid.Exceptions;
 using Hybrid.Extensions;
-using Hybrid.Security;
 using Hybrid.Localization;
 using Hybrid.Localization.Sources;
+using Hybrid.Security;
+
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+
 using System.Diagnostics;
 using System.Globalization;
 using System.Linq;

@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\build\packages.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <ModuleageId>Hybrid.AspNetCore.Diagnostics</ModuleageId>
+    <Summary>Hybrid AspNetCore性能诊断组件</Summary>
+    <Description>Hybrid AspNetCore性能诊断组件，提供AspNetCore性能诊断功能的封装</Description>
+    <RootNamespace>Hybrid.AspNetCore.Diagnostics</RootNamespace>
+    <AssemblyName>Hybrid.AspNetCore.Diagnostics</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\Release\Hybrid.AspNetCore.Diagnostics.xml</DocumentationFile>
+    <OutputPath>bin\Release</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCore.HealthChecks.Hangfire" Version="3.0.0" />
+    <PackageReference Include="AspNetCore.HealthChecks.MongoDb" Version="3.0.0" />
+    <PackageReference Include="AspNetCore.HealthChecks.MySql" Version="3.0.0" />
+    <PackageReference Include="AspNetCore.HealthChecks.Network" Version="3.0.0" />
+    <PackageReference Include="AspNetCore.HealthChecks.Npgsql" Version="3.0.0" />
+    <PackageReference Include="AspNetCore.HealthChecks.Oracle" Version="3.0.0" />
+    <PackageReference Include="AspNetCore.HealthChecks.Redis" Version="3.0.0" />
+    <PackageReference Include="AspNetCore.HealthChecks.SignalR" Version="3.0.0" />
+    <PackageReference Include="AspNetCore.HealthChecks.SqLite" Version="3.0.0" />
+    <PackageReference Include="AspNetCore.HealthChecks.SqlServer" Version="3.0.0" />
+    <PackageReference Include="AspNetCore.HealthChecks.Network" Version="3.0.0" />
+    <PackageReference Include="AspNetCore.HealthChecks.System" Version="3.0.0" />
+    <PackageReference Include="AspNetCore.HealthChecks.Uris" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hybrid.AspNetCore\Hybrid.AspNetCore.csproj" />
+  </ItemGroup>
+
+</Project>

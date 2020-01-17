@@ -18,6 +18,7 @@ namespace Hybrid.Localization
 
         //private readonly ILanguageManager _languageManager;
         private readonly ILocalizationConfiguration _configuration;
+
         private readonly IServiceProvider _provider;
         private readonly IDictionary<string, ILocalizationSource> _sources;
 

@@ -75,6 +75,5 @@ namespace Hybrid.AspNetCore.Routing
         {
             return endpoints;
         }
-
     }
 }

@@ -7,8 +7,8 @@
 //  <last-date>2020-01-12 17:17:13</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Zero.Identity;
 using Hybrid.Security.Claims;
+using Hybrid.Zero.Identity;
 
 using Microsoft.AspNetCore.Identity;
 

@@ -9,7 +9,9 @@
 
 using Hybrid.Audits;
 using Hybrid.Caching;
+using Hybrid.Configuration;
 using Hybrid.Core.Options;
+using Hybrid.Data;
 using Hybrid.Dependency;
 using Hybrid.Domain.Entities;
 using Hybrid.Extensions;
@@ -18,6 +20,7 @@ using Hybrid.Filter;
 using Hybrid.Localization;
 using Hybrid.Localization.Configuration;
 using Hybrid.Localization.Dictionaries;
+using Hybrid.Localization.Dictionaries.Xml;
 using Hybrid.Localization.Sources;
 using Hybrid.Localization.Sources.Resource;
 
@@ -63,8 +66,8 @@ namespace Hybrid.Core.Modules
             services.AddTransient<ILanguageManager, LanguageManager>();
             services.AddTransient<ILanguageProvider, DefaultLanguageProvider>();
             services.AddSingleton<ILocalizationContext, LocalizationContext>();
-            services.AddSingleton<ILocalizationSource, ResourceFileLocalizationSource>();
-            services.AddSingleton<IDictionaryBasedLocalizationSource, DictionaryBasedLocalizationSource>();
+            //services.AddSingleton<ILocalizationSource, ResourceFileLocalizationSource>();
+            //services.AddSingleton<IDictionaryBasedLocalizationSource, DictionaryBasedLocalizationSource>();
             services.AddSingleton<ILocalizationConfiguration, LocalizationConfiguration>();
             services.AddSingleton<ILocalizationManager, LocalizationManager>();
 
@@ -75,6 +78,16 @@ namespace Hybrid.Core.Modules
         {
             AuditingConfiguration configuration = provider.GetHybridOptions().AuditingConfiguration;
             AddIgnoredTypes(configuration);
+
+            var Configuration = provider.GetService<IHybridStartupConfiguration>();
+
+            Configuration.Localization.Sources.Add(
+                new DictionaryBasedLocalizationSource(
+                    HybridConstants.LocalizationSourceName,
+                    new XmlEmbeddedFileLocalizationDictionaryProvider(
+                        typeof(QuartzOptions).GetAssembly(), "Hybrid.Localization.Sources.XmlSource"
+            )));
+
             ILocalizationManager localizationManager = provider.GetService<ILocalizationManager>();
             localizationManager.Initialize();
         }

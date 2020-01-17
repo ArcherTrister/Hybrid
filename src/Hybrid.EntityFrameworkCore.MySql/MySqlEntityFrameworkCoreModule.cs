@@ -7,14 +7,15 @@
 //  <last-date>2018-06-23 15:24</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Core.Modules;
+using Hybrid.Domain.EntityFramework;
+using Hybrid.Domain.Repositories;
+
+using Microsoft.Extensions.DependencyInjection;
+
 using System;
 using System.ComponentModel;
 using System.Linq;
-
-using Microsoft.Extensions.DependencyInjection;
-using Hybrid.Core.Modules;
-using Hybrid.Domain.Repositories;
-using Hybrid.Domain.EntityFramework;
 
 namespace Hybrid.EntityFrameworkCore.MySql
 {

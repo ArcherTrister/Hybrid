@@ -8,7 +8,7 @@
     <Summary>Hybrid.NLog组件</Summary>
     <Description>Hybrid.NLog组件，封装使用nlog组件来实现框架的日志输出功能</Description>
     <RootNamespace>Hybrid.NLog</RootNamespace>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <AssemblyName>Hybrid.NLog</AssemblyName>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">

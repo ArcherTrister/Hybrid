@@ -2,13 +2,13 @@
 //  <copyright file="ModuleUser.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
-//  <site>http://www.lxking.cn</site>
+//  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2019-01-06 15:25</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Zero.Security;
 using Hybrid.Web.Identity.Entity;
+using Hybrid.Zero.Security;
 
 using System;
 using System.ComponentModel;

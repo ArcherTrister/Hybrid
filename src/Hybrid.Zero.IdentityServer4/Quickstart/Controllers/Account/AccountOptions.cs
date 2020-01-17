@@ -22,6 +22,7 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
 
         // specify the Windows authentication scheme being used
         public static readonly string WindowsAuthenticationSchemeName = Microsoft.AspNetCore.Server.IISIntegration.IISDefaults.AuthenticationScheme;
+
         // if user uses windows auth, should we load the groups from windows
         public static bool IncludeWindowsGroups = false;
 

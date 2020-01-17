@@ -10,7 +10,6 @@
 using Hybrid.AspNetCore;
 using Hybrid.Core.Modules;
 using Hybrid.EventBuses;
-using Hybrid.RealTime;
 using Hybrid.Zero.Identity;
 
 using IdentityServer4.Configuration;

@@ -8,8 +8,8 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.Mapping;
-using Hybrid.Zero.Identity;
 using Hybrid.Web.Identity.Entity;
+using Hybrid.Zero.Identity;
 
 using System;
 

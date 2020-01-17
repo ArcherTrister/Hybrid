@@ -1,5 +1,5 @@
-﻿
-using Hybrid.Extensions;
+﻿using Hybrid.Extensions;
+
 using System.Globalization;
 
 // ReSharper disable once CheckNamespace

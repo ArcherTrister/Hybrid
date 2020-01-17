@@ -11,8 +11,8 @@ using Hybrid.Core.EntityInfos;
 using Hybrid.Core.Functions;
 using Hybrid.Core.ModuleInfos;
 using Hybrid.Core.Modules;
-using Hybrid.Zero.Security.Dtos;
 using Hybrid.Security;
+using Hybrid.Zero.Security.Dtos;
 
 using Microsoft.Extensions.DependencyInjection;
 

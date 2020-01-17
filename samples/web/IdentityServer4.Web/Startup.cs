@@ -9,7 +9,6 @@
 
 using Hybrid.AspNetCore;
 using Hybrid.AspNetCore.Middlewares;
-using Hybrid.Data;
 
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -18,7 +17,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using Swashbuckle.AspNetCore.Swagger;
 
 using System;
 using System.Collections.Generic;
@@ -143,7 +141,6 @@ namespace Hybrid.Web
                   });
 
                 options.OperationFilter<AuthorizeCheckOperationFilter>(); // 添加IdentityServer4认证过滤
-
             });
         }
 

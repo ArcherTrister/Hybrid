@@ -14,9 +14,9 @@ using Hybrid.Domain.Uow;
 using Hybrid.Exceptions;
 using Hybrid.Extensions;
 using Hybrid.Identity.JwtBearer;
-using Hybrid.Zero.Identity.Extensions;
 using Hybrid.Security.Claims;
 using Hybrid.Timing;
+using Hybrid.Zero.Identity.Extensions;
 
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;

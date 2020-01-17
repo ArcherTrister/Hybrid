@@ -8,6 +8,7 @@
     <Summary>Hybrid Zero 框架级别基础功能组件</Summary>
     <Description>Hybrid Zero 封装框架模块管理，安全管理，系统设置等功能的实现</Description>
     <RootNamespace>Hybrid.Zero</RootNamespace>
+    <AssemblyName>Hybrid.Zero</AssemblyName>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

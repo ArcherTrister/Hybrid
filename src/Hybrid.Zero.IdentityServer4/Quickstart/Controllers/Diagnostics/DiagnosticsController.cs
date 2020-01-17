@@ -7,11 +7,12 @@
 //  <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Hybrid.Zero.IdentityServer4.Quickstart
 {

@@ -7,10 +7,12 @@
 //  <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.AspNetCore.Mvc;
 using Hybrid.AspNetCore.Mvc.Controllers;
-using Hybrid.AspNetCore.UI;
 using Hybrid.Zero.Identity;
+
 using IdentityModel;
+
 using IdentityServer4;
 using IdentityServer4.Events;
 using IdentityServer4.Extensions;
@@ -33,7 +35,6 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
     [HybridDefaultUI(typeof(AccountController<,>))]
     public abstract class AccountController : MvcController
     {
-
     }
 
     [SecurityHeaders]
@@ -101,7 +102,7 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
             {
                 if (context != null)
                 {
-                    // if the user cancels, send a result back into IdentityServer as if they 
+                    // if the user cancels, send a result back into IdentityServer as if they
                     // denied the consent (even if this client does not require consent).
                     // this will send back an access denied OIDC error response to the client.
                     await _interaction.GrantConsentAsync(context, ConsentResponse.Denied);
@@ -160,7 +161,7 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
                     }
                 }
 
-                await _events.RaiseAsync(new UserLoginFailureEvent(model.Username, "invalid credentials", clientId:context?.ClientId));
+                await _events.RaiseAsync(new UserLoginFailureEvent(model.Username, "invalid credentials", clientId: context?.ClientId));
                 ModelState.AddModelError(string.Empty, AccountOptions.InvalidCredentialsErrorMessage);
             }
 
@@ -169,7 +170,6 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
             return View(vm);
         }
 
-        
         /// <summary>
         /// Show logout page
         /// </summary>
@@ -232,10 +232,10 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
             return View();
         }
 
-
         /*****************************************/
         /* helper APIs for the AccountController */
         /*****************************************/
+
         private async Task<LoginViewModel> BuildLoginViewModelAsync(string returnUrl)
         {
             var context = await _interaction.GetAuthorizationContextAsync(returnUrl);

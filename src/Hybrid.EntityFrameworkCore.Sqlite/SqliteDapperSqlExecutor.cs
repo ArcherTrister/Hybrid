@@ -7,12 +7,13 @@
 //  <last-date>2018-12-15 19:37</last-date>
 // -----------------------------------------------------------------------
 
-using System.Data;
 using Hybrid.Domain.Entities;
 using Hybrid.Domain.EntityFramework;
 using Hybrid.Domain.Uow;
+
 using Microsoft.Data.Sqlite;
 
+using System.Data;
 
 namespace Hybrid.EntityFrameworkCore.Sqlite
 {
@@ -29,7 +30,7 @@ namespace Hybrid.EntityFrameworkCore.Sqlite
         public SqliteDapperSqlExecutor(IUnitOfWorkManager unitOfWorkManager)
             : base(unitOfWorkManager)
         { }
-        
+
         /// <summary>
         /// 获取 数据库类型
         /// </summary>

@@ -1,7 +1,6 @@
-﻿using Hybrid.AspNetCore.Mvc.Models;
-using Hybrid.Collections;
+﻿using Hybrid.Application.Services.Dtos;
 using Hybrid.Extensions;
-using Hybrid.Filter;
+
 using Microsoft.EntityFrameworkCore;
 
 using Quartz;
@@ -96,11 +95,11 @@ namespace Hybrid.Quartz.Plugins.History
             }
         }
 
-        public Task<long> GetAllCount(string schedulerName, CancellationToken cancellationToken = default)
+        public Task<int> GetAllCount(string schedulerName, CancellationToken cancellationToken = default)
         {
             lock (_data)
             {
-                var result = _data.Where(p => p.SchedulerName.Equals(schedulerName)).LongCount();
+                var result = _data.Where(p => p.SchedulerName.Equals(schedulerName)).Count();
                 return Task.FromResult(result);
             }
         }
@@ -120,19 +119,19 @@ namespace Hybrid.Quartz.Plugins.History
             }
         }
 
-        public async Task<PageResult<ExecutionHistoryEntry>> GetPageJobHistoryEntries(string schedulerName, int pageIndex, int pageSize, string orderByStr, CancellationToken cancellationToken = default)
+        public async Task<PagedResultDto<ExecutionHistoryEntry>> GetPageJobHistoryEntries(string schedulerName, int pageIndex, int pageSize, string orderByStr, CancellationToken cancellationToken = default)
         {
             try
             {
                 IQueryable<ExecutionHistoryEntry> query = _data.AsQueryable();
-                return new PageResult<ExecutionHistoryEntry>
+                return new PagedResultDto<ExecutionHistoryEntry>
                 {
-                    Total = query.WhereIf(!string.IsNullOrEmpty(schedulerName), q => q.SchedulerName.Equals(schedulerName)).Count(),
-                    Data = await query.WhereIf(!string.IsNullOrEmpty(schedulerName), q => q.SchedulerName.Equals(schedulerName)).MultiOrderBy(orderByStr).Take(pageSize * pageIndex).Skip(pageSize * (pageIndex - 1)).ToListAsync()
+                    TotalCount = query.WhereIf(!string.IsNullOrEmpty(schedulerName), q => q.SchedulerName.Equals(schedulerName)).Count(),
+                    Items = await query.WhereIf(!string.IsNullOrEmpty(schedulerName), q => q.SchedulerName.Equals(schedulerName)).MultiOrderBy(orderByStr).Take(pageSize * pageIndex).Skip(pageSize * (pageIndex - 1)).ToListAsync()
                 };
             }
             catch (Exception) { }
-            return new PageResult<ExecutionHistoryEntry>();
+            return new PagedResultDto<ExecutionHistoryEntry>();
         }
 
         public Task Purge(string schedulerName, CancellationToken cancellationToken = default)
@@ -216,7 +215,7 @@ namespace Hybrid.Quartz.Plugins.History
 
         private async Task Create(ExecutionHistoryEntry entry)
         {
-            if (_data.Count >= 100)
+            if (_data.Count >= 500)
             {
                 await Purge(entry.SchedulerName);
             }

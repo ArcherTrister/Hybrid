@@ -15,19 +15,34 @@ namespace Hybrid.Data
     public class HybridConstants
     {
         /// <summary>
+        /// Hybrid组件本地化资源名称
+        /// </summary>
+        public const string LocalizationSourceName = "Hybrid";
+
+        /// <summary>
         /// 当前MVC功能键名
         /// </summary>
-        public const string CurrentMvcFunctionKey = "Hybrid_MVC_FUNCTION_CURRENT";
+        public const string CurrentMvcFunctionKey = "HYBRID_MVC_FUNCTION_CURRENT";
 
         /// <summary>
         /// 验证码缓存键名前缀
         /// </summary>
-        public const string VerifyCodeKeyPrefix = "Hybrid_VERIFY_CODE";
+        public const string VerifyCodeKeyPrefix = "HYBRID_VERIFY_CODE";
 
         /// <summary>
         /// Cookie名称
         /// </summary>
-        public const string HybridCookieName = "Hybrid.Hybrid";
+        public const string HybridCookieName = "_hybrid";
+
+        /// <summary>
+        /// 调度名称
+        /// </summary>
+        public const string DefaultSchedulerName = "HybridScheduler";
+
+        /// <summary>
+        /// Quartz表前缀
+        /// </summary>
+        public const string QuartzDefaultTablePrefix = "QRTZ_";
 
         /// <summary>
         /// 本地标识服务器访问令牌身份验证的常量

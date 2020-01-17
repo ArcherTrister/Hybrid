@@ -9,10 +9,9 @@
 
 using AutoMapper.Configuration;
 
-using Hybrid.Web.Identity.Entity;
-
 using Hybrid.AutoMapper;
 using Hybrid.Dependency;
+using Hybrid.Web.Identity.Entity;
 
 using Microsoft.Extensions.DependencyInjection;
 

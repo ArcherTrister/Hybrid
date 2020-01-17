@@ -88,6 +88,19 @@ namespace Hybrid.Core.Options
                 options.Redis = redis;
             }
 
+            //TODO:QuartzOptions
+            // QuartzOptions
+            //section = _configuration.GetSection("Hybrid:Redis");
+            //RedisOptions redis = section.Get<RedisOptions>();
+            //if (redis != null)
+            //{
+            //    if (redis.Configuration.IsMissing())
+            //    {
+            //        throw new HybridException("配置文件中Redis节点的Configuration不能为空");
+            //    }
+            //    options.Redis = redis;
+            //}
+
             // SwaggerOptions
             section = _configuration.GetSection("Hybrid:Swagger");
             SwaggerOptions swagger = section.Get<SwaggerOptions>();

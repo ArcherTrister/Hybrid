@@ -4,10 +4,11 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <ModuleageId>Hybrid.EntityFrameworkCore.MySql</ModuleageId>
+    <PackageId>Hybrid.EntityFrameworkCore.MySql</PackageId>
     <Description>Hybrid 数据访问组件，封装EntityFrameworkCore的MySql数据访问功能的实现</Description>
     <Summary>Hybrid 数据访问组件MySql</Summary>
     <RootNamespace>Hybrid.EntityFrameworkCore.MySql</RootNamespace>
+    <AssemblyName>Hybrid.EntityFrameworkCore.MySql</AssemblyName>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

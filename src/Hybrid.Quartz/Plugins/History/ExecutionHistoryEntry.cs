@@ -1,7 +1,4 @@
-﻿using Hybrid.Domain.Entities;
-using System;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System;
 
 namespace Hybrid.Quartz.Plugins.History
 {
@@ -38,12 +35,12 @@ namespace Hybrid.Quartz.Plugins.History
         public bool Vetoed { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DateTime? FinishedTimeUtc { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string ErrorMessage { get; set; }
     }

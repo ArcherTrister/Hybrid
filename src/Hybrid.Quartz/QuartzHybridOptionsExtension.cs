@@ -2,13 +2,10 @@
 using Hybrid.Extensions;
 using Hybrid.Localization.Dictionaries;
 using Hybrid.Localization.Dictionaries.Json;
-using Hybrid.Quartz.Dashboard;
-using Hybrid.Quartz.Dashboard.Hubs.LiveLog;
 using Hybrid.Quartz.Extensions;
 
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc.Internal;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.DependencyInjection;
@@ -19,8 +16,6 @@ using Quartz.Impl;
 using Quartz.Spi;
 
 using System;
-
-using static Hybrid.HybridConsts;
 
 namespace Hybrid.Quartz
 {

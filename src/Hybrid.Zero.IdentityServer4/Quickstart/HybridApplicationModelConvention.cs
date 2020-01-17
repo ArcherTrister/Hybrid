@@ -8,6 +8,7 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.Data;
+
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
 
 using System;
@@ -20,7 +21,7 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
         public void Apply(ApplicationModel application)
         {
             var removeList = application.Controllers.Where(p =>
-                HybridConstants.CustomController.ValidEndings.Any(x=> 
+                HybridConstants.CustomController.ValidEndings.Any(x =>
                     p.ControllerName.EndsWith(x, StringComparison.OrdinalIgnoreCase))
                 && !p.ControllerType.GenericTypeArguments.Any()).ToList();
             foreach (var item in removeList)

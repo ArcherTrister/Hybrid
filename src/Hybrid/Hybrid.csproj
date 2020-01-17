@@ -24,6 +24,10 @@
   <ItemGroup>
     <Compile Remove="Net\Mail\DefaultEmailSender.cs" />
   </ItemGroup>
+  
+  <ItemGroup>
+    <EmbeddedResource Include="Localization\Sources\XmlSource\*" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="JetBrains.Annotations" Version="2019.1.3" />

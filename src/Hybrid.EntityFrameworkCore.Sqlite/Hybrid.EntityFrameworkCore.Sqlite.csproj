@@ -4,10 +4,11 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <ModuleageId>Hybrid.EntityFrameworkCore.Sqlite</ModuleageId>
+    <PackageId>Hybrid.EntityFrameworkCore.Sqlite</PackageId>
     <Description>Hybrid 数据访问组件，封装EntityFrameworkCore的Sqlite数据访问功能的实现</Description>
     <Summary>Hybrid 数据访问组件Sqlite</Summary>
     <RootNamespace>Hybrid.EntityFrameworkCore.Sqlite</RootNamespace>
+    <AssemblyName>Hybrid.EntityFrameworkCore.Sqlite</AssemblyName>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

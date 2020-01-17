@@ -1,4 +1,4 @@
-﻿using Hybrid.AspNetCore.Mvc.Models;
+﻿using Hybrid.Application.Services.Dtos;
 
 using Quartz;
 
@@ -46,7 +46,7 @@ namespace Hybrid.Quartz.Plugins.History
         /// <param name="schedulerName">调度名称</param>
         /// <param name="cancellationToken"></param>
         /// <returns></returns>
-        Task<long> GetAllCount(string schedulerName, CancellationToken cancellationToken = default);
+        Task<int> GetAllCount(string schedulerName, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// 根据执行Id获取任务执行历史记录
@@ -66,7 +66,7 @@ namespace Hybrid.Quartz.Plugins.History
         /// <param name="orderByStr">排序字符串</param>
         /// <param name="cancellationToken"></param>
         /// <returns></returns>
-        Task<PageResult<ExecutionHistoryEntry>> GetPageJobHistoryEntries(
+        Task<PagedResultDto<ExecutionHistoryEntry>> GetPageJobHistoryEntries(
             string schedulerName,
             int pageIndex, int pageSize,
             string orderByStr,

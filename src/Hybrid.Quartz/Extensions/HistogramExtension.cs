@@ -1,5 +1,5 @@
 ﻿using Hybrid.Extensions;
-using Hybrid.Quartz.Dashboard.Models;
+using Hybrid.Quartz.Models;
 using Hybrid.Quartz.Plugins.History;
 
 using System;

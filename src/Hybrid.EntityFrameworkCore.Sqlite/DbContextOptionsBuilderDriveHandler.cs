@@ -7,13 +7,13 @@
 //  <last-date>2018-11-05 16:29</last-date>
 // -----------------------------------------------------------------------
 
-using System.Data.Common;
+using Hybrid.Dependency;
+using Hybrid.Domain.EntityFramework;
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-using Hybrid.Dependency;
-using Hybrid.Domain.EntityFramework;
+using System.Data.Common;
 
 namespace Hybrid.EntityFrameworkCore.Sqlite
 {
