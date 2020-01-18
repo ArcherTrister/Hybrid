@@ -49,7 +49,7 @@ namespace Hybrid.Core.Options
         /// <summary>
         /// 获取或设置 邮件发送选项
         /// </summary>
-        public MailSenderOptions MailSender { get; set; }
+        public MailSenderConfiguration MailSenderConfiguration { get; set; }
 
         /// <summary>
         /// 获取或设置 JWT身份认证选项

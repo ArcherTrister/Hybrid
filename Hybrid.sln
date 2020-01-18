@@ -72,6 +72,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hybrid.Quartz", "src\Hybrid
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hybrid.AspNetCore.Diagnostics", "src\Hybrid.AspNetCore.Diagnostics\Hybrid.AspNetCore.Diagnostics.csproj", "{BB6F7B67-371B-4349-BA38-BF35765016B1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validate.Tests", "test\Validate.Tests\Validate.Tests.csproj", "{4B28209C-8DCC-4306-9E93-B6B1C8101CED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -158,6 +160,10 @@ Global
 		{BB6F7B67-371B-4349-BA38-BF35765016B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB6F7B67-371B-4349-BA38-BF35765016B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB6F7B67-371B-4349-BA38-BF35765016B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B28209C-8DCC-4306-9E93-B6B1C8101CED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B28209C-8DCC-4306-9E93-B6B1C8101CED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B28209C-8DCC-4306-9E93-B6B1C8101CED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B28209C-8DCC-4306-9E93-B6B1C8101CED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -185,6 +191,7 @@ Global
 		{71A4644B-3B5B-4793-AF86-EA928D8F9DAF} = {62BF61E9-EA6F-4034-AD89-85C86B0968EB}
 		{6C2EFE49-35C1-40FD-B385-104ED87C627A} = {62BF61E9-EA6F-4034-AD89-85C86B0968EB}
 		{BB6F7B67-371B-4349-BA38-BF35765016B1} = {62BF61E9-EA6F-4034-AD89-85C86B0968EB}
+		{4B28209C-8DCC-4306-9E93-B6B1C8101CED} = {FDC69CA5-A426-431B-AE34-787822004FB0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EB048828-DF83-45AB-943F-330B891075BB}

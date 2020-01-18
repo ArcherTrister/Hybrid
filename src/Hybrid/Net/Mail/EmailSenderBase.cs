@@ -21,7 +21,7 @@ namespace Hybrid.Net.Mail
         /// <summary>
         /// SMTP服务器配置参数
         /// </summary>
-        public MailSenderOptions MailSenderOptions { get; }
+        public MailSenderConfiguration MailSenderOptions { get; }
 
         /// <summary>
         /// 初始化一个<see cref="EmailSenderBase"/>类型的新实例
@@ -29,7 +29,7 @@ namespace Hybrid.Net.Mail
         protected EmailSenderBase(IServiceProvider provider)
         {
             _provider = provider;
-            MailSenderOptions = _provider.GetHybridOptions().MailSender;
+            MailSenderOptions = _provider.GetHybridOptions().MailSenderConfiguration;
             if (MailSenderOptions == null ||
                 MailSenderOptions.Host.IsNullOrEmpty() ||
                 MailSenderOptions.Host.Contains("请替换") ||

@@ -7,6 +7,8 @@
 //  <last-date>2018-08-02 15:10</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Domain.Entities;
+
 using System;
 using System.Collections.Generic;
 
@@ -15,7 +17,7 @@ namespace Hybrid.Audits
     /// <summary>
     /// 审计日志配置
     /// </summary>
-    public sealed class AuditingConfiguration
+    public sealed class AuditingConfiguration : IEnabled
     {
         /// <summary>
         /// 是否启用

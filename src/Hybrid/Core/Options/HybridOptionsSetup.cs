@@ -54,14 +54,14 @@ namespace Hybrid.Core.Options
 
             //MailSender
             section = _configuration.GetSection("Hybrid:MailSender");
-            MailSenderOptions sender = section.Get<MailSenderOptions>();
+            MailSenderConfiguration sender = section.Get<MailSenderConfiguration>();
             if (sender != null)
             {
                 if (sender.Password == null)
                 {
                     sender.Password = _configuration["Hybrid:MailSender:Password"];
                 }
-                options.MailSender = sender;
+                options.MailSenderConfiguration = sender;
             }
 
             //JwtOptions
