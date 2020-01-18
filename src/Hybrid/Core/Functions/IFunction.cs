@@ -78,9 +78,9 @@ namespace Hybrid.Core.Functions
         /// </summary>
         bool IsCacheSliding { get; set; }
 
-        /// <summary>
-        /// 获取或设置 是否Mvc
-        /// </summary>
-        bool IsMvc { get; set; }
+        ///// <summary>
+        ///// 获取或设置 是否Api
+        ///// </summary>
+        //bool IsApi { get; set; }
     }
 }

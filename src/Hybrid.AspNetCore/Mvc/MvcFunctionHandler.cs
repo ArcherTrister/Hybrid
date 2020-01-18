@@ -65,12 +65,6 @@ namespace Hybrid.AspNetCore.Mvc
                 : controllerType.HasAttribute<RoleLimitAttribute>()
                     ? FunctionAccessType.RoleLimit
                     : FunctionAccessType.Anonymous;
-            //todo
-            var aaa = controllerType.BaseType.Name.Equals("MvcController");
-            if (aaa)
-            { 
-            
-            }
             Function function = new Function()
             {
                 Name = controllerType.GetDescription(),
@@ -81,7 +75,7 @@ namespace Hybrid.AspNetCore.Mvc
                                 .Replace("`1", string.Empty)
                                 .Replace("`2", string.Empty),
                 IsController = true,
-                IsMvc = controllerType.BaseType.Name.Equals("MvcController"),
+                //IsApi = controllerType.BaseType.HasAttribute<ApiControllerAttribute>(),
                 AccessType = accessType
             };
             return function;
@@ -110,7 +104,7 @@ namespace Hybrid.AspNetCore.Mvc
                 Action = method.Name,
                 AccessType = accessType,
                 IsController = false,
-                IsMvc = typeFunction.IsMvc,
+                //IsApi = typeFunction.IsApi,
                 IsAjax = method.HasAttribute<AjaxOnlyAttribute>()
             };
             return function;

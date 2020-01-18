@@ -20,33 +20,28 @@ namespace Hybrid.Security
     [DebuggerDisplay("{ResultType}-{Message}")]
     public sealed class AuthorizationResult : HybridResult<AuthorizationStatus>
     {
+        #region NoApi
+
         /// <summary>
         /// 初始化一个<see cref="AuthorizationResult"/>类型的新实例
         /// </summary>
-        public AuthorizationResult(AuthorizationStatus status, bool isMvc)
-            : this(status, isMvc, null)
+        public AuthorizationResult(AuthorizationStatus status)
+            : this(status, null)
         { }
 
         /// <summary>
         /// 初始化一个<see cref="AuthorizationResult"/>类型的新实例
         /// </summary>
-        public AuthorizationResult(AuthorizationStatus status, bool isMvc, string message)
-            : this(status, isMvc, message, null)
+        public AuthorizationResult(AuthorizationStatus status, string message)
+            : this(status, message, null)
         { }
 
         /// <summary>
         /// 初始化一个<see cref="AuthorizationResult"/>类型的新实例
         /// </summary>
-        public AuthorizationResult(AuthorizationStatus status, bool isMvc, string message, object data)
+        public AuthorizationResult(AuthorizationStatus status, string message, object data)
             : base(status, message, data)
-        {
-            IsMvc = isMvc;
-        }
-
-        /// <summary>
-        /// 获取或设置 是否Mvc
-        /// </summary>
-        public bool IsMvc { get; set; } = false;
+        { }
 
         /// <summary>
         /// 获取或设置 返回消息
@@ -105,9 +100,100 @@ namespace Hybrid.Security
             get { return ResultType == AuthorizationStatus.Error; }
         }
 
-        ///// <summary>
-        ///// 获取 检查成功的结果
-        ///// </summary>
-        //public static AuthorizationResult OK { get; } = new AuthorizationResult(AuthorizationStatus.OK);
+        /// <summary>
+        /// 获取 检查成功的结果
+        /// </summary>
+        public static AuthorizationResult OK { get; } = new AuthorizationResult(AuthorizationStatus.OK);
+
+        #endregion
+
+        #region Api
+
+        //    /// <summary>
+        //    /// 初始化一个<see cref="AuthorizationResult"/>类型的新实例
+        //    /// </summary>
+        //    public AuthorizationResult(AuthorizationStatus status, bool isApi)
+        //        : this(status, isApi, null)
+        //    { }
+
+        //    /// <summary>
+        //    /// 初始化一个<see cref="AuthorizationResult"/>类型的新实例
+        //    /// </summary>
+        //    public AuthorizationResult(AuthorizationStatus status, bool isApi, string message)
+        //        : this(status, isApi, message, null)
+        //    { }
+
+        //    /// <summary>
+        //    /// 初始化一个<see cref="AuthorizationResult"/>类型的新实例
+        //    /// </summary>
+        //    public AuthorizationResult(AuthorizationStatus status, bool isApi, string message, object data)
+        //        : base(status, message, data)
+        //    {
+        //        IsApi = isApi;
+        //    }
+
+        //    /// <summary>
+        //    /// 获取或设置 是否Api
+        //    /// </summary>
+        //    public bool IsApi { get; set; } = false;
+
+        //    /// <summary>
+        //    /// 获取或设置 返回消息
+        //    /// </summary>
+        //    public override string Message
+        //    {
+        //        get { return _message ?? ResultType.ToDescription(); }
+        //        set { _message = value; }
+        //    }
+
+        //    /// <summary>
+        //    /// 获取 是否 <see cref="AuthorizationStatus.OK"/>
+        //    /// </summary>
+        //    public bool IsOk
+        //    {
+        //        get { return ResultType == AuthorizationStatus.OK; }
+        //    }
+
+        //    /// <summary>
+        //    /// 获取 是否 <see cref="AuthorizationStatus.OK"/>
+        //    /// </summary>
+        //    public bool IsUnauthorized
+        //    {
+        //        get { return ResultType == AuthorizationStatus.Unauthorized; }
+        //    }
+
+        //    /// <summary>
+        //    /// 获取 是否 <see cref="AuthorizationStatus.OK"/>
+        //    /// </summary>
+        //    public bool IsForbidden
+        //    {
+        //        get { return ResultType == AuthorizationStatus.Forbidden; }
+        //    }
+
+        //    /// <summary>
+        //    /// 获取 是否 <see cref="AuthorizationStatus.OK"/>
+        //    /// </summary>
+        //    public bool IsNoFound
+        //    {
+        //        get { return ResultType == AuthorizationStatus.NoFound; }
+        //    }
+
+        //    /// <summary>
+        //    /// 获取 是否 <see cref="AuthorizationStatus.OK"/>
+        //    /// </summary>
+        //    public bool IsLocked
+        //    {
+        //        get { return ResultType == AuthorizationStatus.Locked; }
+        //    }
+
+        //    /// <summary>
+        //    /// 获取 是否 <see cref="AuthorizationStatus.OK"/>
+        //    /// </summary>
+        //    public bool IsError
+        //    {
+        //        get { return ResultType == AuthorizationStatus.Error; }
+        //    }
+
+        #endregion
     }
 }

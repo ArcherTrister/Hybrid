@@ -27,6 +27,8 @@ namespace Hybrid.AspNetCore.Mvc.Filters
     /// </summary>
     public class FunctionAuthorizationFilter : Attribute, IAuthorizationFilter
     {
+        #region NoApi
+
         /// <summary>
         /// Called early in the filter pipeline to confirm request is authorized.
         /// </summary>
@@ -34,12 +36,11 @@ namespace Hybrid.AspNetCore.Mvc.Filters
         public void OnAuthorization(AuthorizationFilterContext context)
         {
             //Check.NotNull(context, nameof(context));
-            IServiceProvider provider = context.HttpContext.RequestServices;
             IFunction function = context.GetExecuteFunction();
-            AuthorizationResult result = AuthorizeCore(context, provider, function);
+            AuthorizationResult result = AuthorizeCore(context, function);
             if (!result.IsOk)
             {
-                HandleUnauthorizedRequest(context, provider, result);
+                HandleUnauthorizedRequest(context, result);
             }
         }
 
@@ -49,9 +50,10 @@ namespace Hybrid.AspNetCore.Mvc.Filters
         /// <param name="context">权限过滤器上下文</param>
         /// <param name="function">要验证的功能</param>
         /// <returns>权限验证结果</returns>
-        protected virtual AuthorizationResult AuthorizeCore(AuthorizationFilterContext context, IServiceProvider provider, IFunction function)
+        protected virtual AuthorizationResult AuthorizeCore(AuthorizationFilterContext context, IFunction function)
         {
             IPrincipal user = context.HttpContext.User;
+            IServiceProvider provider = context.HttpContext.RequestServices;
             IFunctionAuthorization authorization = provider.GetService<IFunctionAuthorization>();
             AuthorizationResult result = authorization.Authorize(function, user);
             return result;
@@ -62,65 +64,152 @@ namespace Hybrid.AspNetCore.Mvc.Filters
         /// </summary>
         /// <param name="context">权限验证上下文</param>
         /// <param name="result">权限检查结果</param>
-        protected virtual void HandleUnauthorizedRequest(AuthorizationFilterContext context, IServiceProvider provider, AuthorizationResult result)
+        protected virtual void HandleUnauthorizedRequest(AuthorizationFilterContext context, AuthorizationResult result)
         {
-            //todo:判断是否是mvc
-            if (result.IsMvc)
+            //Json方式请求，返回AjaxResult
+            bool isJsRequest = context.HttpContext.Request.IsAjaxRequest() || context.HttpContext.Request.IsJsonContextType();
+
+            AuthorizationStatus status = result.ResultType;
+            switch (status)
             {
-                //IdentityServer4Options options = provider.GetHybridOptions().IdentityServer;
-                //string returnUrl = context.HttpContext.Request.Path + context.HttpContext.Request.QueryString;
-                //string loginUrl = options.LoginUrl;
-                //if (!loginUrl.IsLocalUrl())
-                //{
-                //    returnUrl = context.HttpContext.GetServerHost().EnsureTrailingSlash() + returnUrl.RemoveLeadingSlash();
-                //}
-                //var url = loginUrl.AddQueryString("ReturnUrl", returnUrl);
-                //context.HttpContext.Response.RedirectToAbsoluteUrl(url);
+                case AuthorizationStatus.OK:
+                    break;
+                case AuthorizationStatus.Unauthorized:
+                    context.Result = isJsRequest
+                        ? (IActionResult)new JsonResult(new AjaxResult(result.Message, AjaxResultType.UnAuth))
+                        : new UnauthorizedResult();
+                    break;
+
+                case AuthorizationStatus.Forbidden:
+                    context.Result = isJsRequest
+                        ? (IActionResult)new JsonResult(new AjaxResult(result.Message, AjaxResultType.Forbidden))
+                        : new StatusCodeResult(403);
+                    break;
+
+                case AuthorizationStatus.NoFound:
+                    context.Result = isJsRequest
+                        ? (IActionResult)new JsonResult(new AjaxResult(result.Message, AjaxResultType.NoFound))
+                        : new StatusCodeResult(404);
+                    break;
+
+                case AuthorizationStatus.Locked:
+                    context.Result = isJsRequest
+                        ? (IActionResult)new JsonResult(new AjaxResult(result.Message, AjaxResultType.Locked))
+                        : new StatusCodeResult(423);
+                    break;
+
+                case AuthorizationStatus.Error:
+                    context.Result = isJsRequest
+                        ? (IActionResult)new JsonResult(new AjaxResult(result.Message, AjaxResultType.Error))
+                        : new StatusCodeResult(500);
+                    break;
             }
-            else {
-                //Json方式请求，返回AjaxResult
-                bool isJsRequest = context.HttpContext.Request.IsAjaxRequest() || context.HttpContext.Request.IsJsonContextType();
-
-                AuthorizationStatus status = result.ResultType;
-                switch (status)
-                {
-                    case AuthorizationStatus.OK:
-                        break;
-                    case AuthorizationStatus.Unauthorized:
-                        context.Result = isJsRequest
-                            ? (IActionResult)new JsonResult(new AjaxResult(result.Message, AjaxResultType.UnAuth))
-                            : new UnauthorizedResult();
-                        break;
-
-                    case AuthorizationStatus.Forbidden:
-                        context.Result = isJsRequest
-                            ? (IActionResult)new JsonResult(new AjaxResult(result.Message, AjaxResultType.Forbidden))
-                            : new StatusCodeResult(403);
-                        break;
-
-                    case AuthorizationStatus.NoFound:
-                        context.Result = isJsRequest
-                            ? (IActionResult)new JsonResult(new AjaxResult(result.Message, AjaxResultType.NoFound))
-                            : new StatusCodeResult(404);
-                        break;
-
-                    case AuthorizationStatus.Locked:
-                        context.Result = isJsRequest
-                            ? (IActionResult)new JsonResult(new AjaxResult(result.Message, AjaxResultType.Locked))
-                            : new StatusCodeResult(423);
-                        break;
-
-                    case AuthorizationStatus.Error:
-                        context.Result = isJsRequest
-                            ? (IActionResult)new JsonResult(new AjaxResult(result.Message, AjaxResultType.Error))
-                            : new StatusCodeResult(500);
-                        break;
-                }
-                if (isJsRequest)
-                {
-                    context.HttpContext.Response.StatusCode = 200;
-                }
+            if (isJsRequest)
+            {
+                context.HttpContext.Response.StatusCode = 200;
             }
         }
+
+        #endregion
+
+        #region Api
+
+        ///// <summary>
+        ///// Called early in the filter pipeline to confirm request is authorized.
+        ///// </summary>
+        ///// <param name="context">The <see cref="T:Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext" />.</param>
+        //public void OnAuthorization(AuthorizationFilterContext context)
+        //{
+        //    //Check.NotNull(context, nameof(context));
+        //    IServiceProvider provider = context.HttpContext.RequestServices;
+        //    IFunction function = context.GetExecuteFunction();
+        //    AuthorizationResult result = AuthorizeCore(context, provider, function);
+        //    if (!result.IsOk)
+        //    {
+        //        HandleUnauthorizedRequest(context, provider, result);
+        //    }
+        //}
+
+        ///// <summary>
+        ///// 重写以实现功能权限的核心验证逻辑
+        ///// </summary>
+        ///// <param name="context">权限过滤器上下文</param>
+        ///// <param name="function">要验证的功能</param>
+        ///// <returns>权限验证结果</returns>
+        //protected virtual AuthorizationResult AuthorizeCore(AuthorizationFilterContext context, IServiceProvider provider, IFunction function)
+        //{
+        //    IPrincipal user = context.HttpContext.User;
+        //    IFunctionAuthorization authorization = provider.GetService<IFunctionAuthorization>();
+        //    AuthorizationResult result = authorization.Authorize(function, user);
+        //    return result;
+        //}
+
+        ///// <summary>
+        ///// 重写以实现授权未通过的处理逻辑
+        ///// </summary>
+        ///// <param name="context">权限验证上下文</param>
+        ///// <param name="result">权限检查结果</param>
+        //protected virtual void HandleUnauthorizedRequest(AuthorizationFilterContext context, IServiceProvider provider, AuthorizationResult result)
+        //{
+        //    ////todo:判断是否是Api
+        //    //if (result.IsApi)
+        //    //{
+        //    //    //Json方式请求，返回AjaxResult
+        //    //    bool isJsRequest = context.HttpContext.Request.IsAjaxRequest() || context.HttpContext.Request.IsJsonContextType();
+
+        //    //    AuthorizationStatus status = result.ResultType;
+        //    //    switch (status)
+        //    //    {
+        //    //        case AuthorizationStatus.OK:
+        //    //            break;
+        //    //        case AuthorizationStatus.Unauthorized:
+        //    //            context.Result = isJsRequest
+        //    //                ? (IActionResult)new JsonResult(new AjaxResult(result.Message, AjaxResultType.UnAuth))
+        //    //                : new UnauthorizedResult();
+        //    //            break;
+
+        //    //        case AuthorizationStatus.Forbidden:
+        //    //            context.Result = isJsRequest
+        //    //                ? (IActionResult)new JsonResult(new AjaxResult(result.Message, AjaxResultType.Forbidden))
+        //    //                : new StatusCodeResult(403);
+        //    //            break;
+
+        //    //        case AuthorizationStatus.NoFound:
+        //    //            context.Result = isJsRequest
+        //    //                ? (IActionResult)new JsonResult(new AjaxResult(result.Message, AjaxResultType.NoFound))
+        //    //                : new StatusCodeResult(404);
+        //    //            break;
+
+        //    //        case AuthorizationStatus.Locked:
+        //    //            context.Result = isJsRequest
+        //    //                ? (IActionResult)new JsonResult(new AjaxResult(result.Message, AjaxResultType.Locked))
+        //    //                : new StatusCodeResult(423);
+        //    //            break;
+
+        //    //        case AuthorizationStatus.Error:
+        //    //            context.Result = isJsRequest
+        //    //                ? (IActionResult)new JsonResult(new AjaxResult(result.Message, AjaxResultType.Error))
+        //    //                : new StatusCodeResult(500);
+        //    //            break;
+        //    //    }
+        //    //    if (isJsRequest)
+        //    //    {
+        //    //        context.HttpContext.Response.StatusCode = 200;
+        //    //    }
+        //    //}
+        //    //else {
+        //    //    //IdentityServer4Options options = provider.GetHybridOptions().IdentityServer;
+        //    //    //string returnUrl = context.HttpContext.Request.Path + context.HttpContext.Request.QueryString;
+        //    //    //string loginUrl = options.LoginUrl;
+        //    //    //if (!loginUrl.IsLocalUrl())
+        //    //    //{
+        //    //    //    returnUrl = context.HttpContext.GetServerHost().EnsureTrailingSlash() + returnUrl.RemoveLeadingSlash();
+        //    //    //}
+        //    //    //var url = loginUrl.AddQueryString("ReturnUrl", returnUrl);
+        //    //    //context.HttpContext.Response.RedirectToAbsoluteUrl(url);
+        //    //}
+        //}
+
+        #endregion
     }
 }

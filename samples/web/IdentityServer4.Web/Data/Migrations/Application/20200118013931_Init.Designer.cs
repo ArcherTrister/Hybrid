@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace IdentityServer4.Web.Data.Migrations.Application
 {
     [DbContext(typeof(DefaultDbContext))]
-    [Migration("20200117160150_Init")]
+    [Migration("20200118013931_Init")]
     partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -91,9 +91,6 @@ namespace IdentityServer4.Web.Data.Migrations.Application
                         .HasColumnType("bit");
 
                     b.Property<bool>("IsLocked")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("IsMvc")
                         .HasColumnType("bit");
 
                     b.Property<string>("Name")
@@ -612,7 +609,7 @@ namespace IdentityServer4.Web.Data.Migrations.Application
                     b.HasData(
                         new
                         {
-                            Id = new Guid("07b18723-8eb6-4775-87b3-ae1564d87794"),
+                            Id = new Guid("f19c27ef-06fa-4897-a07a-b0727f244709"),
                             CreatedTime = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsDeleted = false,
                             IsLocked = false,

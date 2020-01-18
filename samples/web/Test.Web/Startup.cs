@@ -22,6 +22,14 @@ namespace Test.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //services.AddOptions<AnnotatedOptions>()
+            //    .Configure(o =>
+            //    {
+            //        o.StringLength = "111111";
+            //        o.IntRange = 10;
+            //        o.Custom = "nowhere";
+            //    })
+            //    .ValidateDataAnnotations();
             services.AddControllersWithViews();
 
             //services.AddUI<User>();

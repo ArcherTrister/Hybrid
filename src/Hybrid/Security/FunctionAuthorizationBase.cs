@@ -77,6 +77,8 @@ namespace Hybrid.Security
             return userRoles.Intersect(functionRoles).ToArray();
         }
 
+        #region NoApi
+
         /// <summary>
         /// 重写以实现权限检查核心验证操作
         /// </summary>
@@ -87,25 +89,25 @@ namespace Hybrid.Security
         {
             if (function == null)
             {
-                return new AuthorizationResult(AuthorizationStatus.NoFound, function.IsMvc);
+                return new AuthorizationResult(AuthorizationStatus.NoFound);
             }
             if (function.IsLocked)
             {
-                return new AuthorizationResult(AuthorizationStatus.Locked, function.IsMvc, $"功能“{function.Name}”已被禁用，无法执行");
+                return new AuthorizationResult(AuthorizationStatus.Locked, $"功能“{function.Name}”已被禁用，无法执行");
             }
             if (function.AccessType == FunctionAccessType.Anonymous)
             {
-                return new AuthorizationResult(AuthorizationStatus.OK, function.IsMvc);
+                return AuthorizationResult.OK;
             }
             //未登录
             if (principal == null || !principal.Identity.IsAuthenticated)
             {
-                return new AuthorizationResult(AuthorizationStatus.Unauthorized, function.IsMvc);
+                return new AuthorizationResult(AuthorizationStatus.Unauthorized);
             }
             //已登录，无角色限制
             if (function.AccessType == FunctionAccessType.LoggedIn)
             {
-                return new AuthorizationResult(AuthorizationStatus.OK, function.IsMvc);
+                return AuthorizationResult.OK;
             }
             return AuthorizeRoleLimit(function, principal);
         }
@@ -121,7 +123,7 @@ namespace Hybrid.Security
             //角色限制
             if (!(principal.Identity is ClaimsIdentity identity))
             {
-                return new AuthorizationResult(AuthorizationStatus.Error, function.IsMvc, "当前用户标识IIdentity格式不正确，仅支持ClaimsIdentity类型的用户标识");
+                return new AuthorizationResult(AuthorizationStatus.Error, "当前用户标识IIdentity格式不正确，仅支持ClaimsIdentity类型的用户标识");
             }
             //检查角色-功能的权限
             string[] userRoleNames = identity.GetRoles().ToArray();
@@ -146,18 +148,18 @@ namespace Hybrid.Security
 
             if (roleNames.Length == 0)
             {
-                return new AuthorizationResult(AuthorizationStatus.Forbidden, function.IsMvc);
+                return new AuthorizationResult(AuthorizationStatus.Forbidden);
             }
             if (function.AccessType != FunctionAccessType.RoleLimit || roleNames.Contains(SuperRoleName))
             {
-                return new AuthorizationResult(AuthorizationStatus.OK, function.IsMvc);
+                return AuthorizationResult.OK;
             }
             string[] functionRoleNames = FunctionAuthCache.GetFunctionRoles(function.Id);
             if (roleNames.Intersect(functionRoleNames).Any())
             {
-                return new AuthorizationResult(AuthorizationStatus.OK, function.IsMvc);
+                return AuthorizationResult.OK;
             }
-            return new AuthorizationResult(AuthorizationStatus.Forbidden, function.IsMvc);
+            return new AuthorizationResult(AuthorizationStatus.Forbidden);
         }
 
         /// <summary>
@@ -170,15 +172,125 @@ namespace Hybrid.Security
         {
             if (function.AccessType != FunctionAccessType.RoleLimit)
             {
-                return new AuthorizationResult(AuthorizationStatus.OK, function.IsMvc);
+                return AuthorizationResult.OK;
             }
 
             Guid[] functionIds = FunctionAuthCache.GetUserFunctions(userName);
             if (functionIds.Contains(function.Id))
             {
-                return new AuthorizationResult(AuthorizationStatus.OK, function.IsMvc);
+                return AuthorizationResult.OK;
             }
-            return new AuthorizationResult(AuthorizationStatus.Forbidden, function.IsMvc);
+            return new AuthorizationResult(AuthorizationStatus.Forbidden);
         }
+
+        #endregion
+
+        #region Api
+
+        ///// <summary>
+        ///// 重写以实现权限检查核心验证操作
+        ///// </summary>
+        ///// <param name="function">要验证的功能信息</param>
+        ///// <param name="principal">当前用户在线信息</param>
+        ///// <returns>功能权限验证结果</returns>
+        //protected virtual AuthorizationResult AuthorizeCore(IFunction function, IPrincipal principal)
+        //{
+        //    if (function == null)
+        //    {
+        //        return new AuthorizationResult(AuthorizationStatus.NoFound, function.IsApi);
+        //    }
+        //    if (function.IsLocked)
+        //    {
+        //        return new AuthorizationResult(AuthorizationStatus.Locked, function.IsApi, $"功能“{function.Name}”已被禁用，无法执行");
+        //    }
+        //    if (function.AccessType == FunctionAccessType.Anonymous)
+        //    {
+        //        return new AuthorizationResult(AuthorizationStatus.OK, function.IsApi);
+        //    }
+        //    //未登录
+        //    if (principal == null || !principal.Identity.IsAuthenticated)
+        //    {
+        //        return new AuthorizationResult(AuthorizationStatus.Unauthorized, function.IsApi);
+        //    }
+        //    //已登录，无角色限制
+        //    if (function.AccessType == FunctionAccessType.LoggedIn)
+        //    {
+        //        return new AuthorizationResult(AuthorizationStatus.OK, function.IsApi);
+        //    }
+        //    return AuthorizeRoleLimit(function, principal);
+        //}
+
+        ///// <summary>
+        ///// 重写以实现 角色限制 的功能的功能权限检查
+        ///// </summary>
+        ///// <param name="function">要验证的功能信息</param>
+        ///// <param name="principal">用户在线信息</param>
+        ///// <returns>功能权限验证结果</returns>
+        //protected virtual AuthorizationResult AuthorizeRoleLimit(IFunction function, IPrincipal principal)
+        //{
+        //    //角色限制
+        //    if (!(principal.Identity is ClaimsIdentity identity))
+        //    {
+        //        return new AuthorizationResult(AuthorizationStatus.Error, function.IsApi, "当前用户标识IIdentity格式不正确，仅支持ClaimsIdentity类型的用户标识");
+        //    }
+        //    //检查角色-功能的权限
+        //    string[] userRoleNames = identity.GetRoles().ToArray();
+        //    AuthorizationResult result = AuthorizeRoleNames(function, userRoleNames);
+        //    if (result.IsOk)
+        //    {
+        //        return result;
+        //    }
+        //    result = AuthorizeUserName(function, principal.Identity.GetUserName());
+        //    return result;
+        //}
+
+        ///// <summary>
+        ///// 重写以实现指定角色是否有执行指定功能的权限
+        ///// </summary>
+        ///// <param name="function">功能信息</param>
+        ///// <param name="roleNames">角色名称</param>
+        ///// <returns>功能权限检查结果</returns>
+        //protected virtual AuthorizationResult AuthorizeRoleNames(IFunction function, params string[] roleNames)
+        //{
+        //    Check.NotNull(roleNames, nameof(roleNames));
+
+        //    if (roleNames.Length == 0)
+        //    {
+        //        return new AuthorizationResult(AuthorizationStatus.Forbidden, function.IsApi);
+        //    }
+        //    if (function.AccessType != FunctionAccessType.RoleLimit || roleNames.Contains(SuperRoleName))
+        //    {
+        //        return new AuthorizationResult(AuthorizationStatus.OK, function.IsApi);
+        //    }
+        //    string[] functionRoleNames = FunctionAuthCache.GetFunctionRoles(function.Id);
+        //    if (roleNames.Intersect(functionRoleNames).Any())
+        //    {
+        //        return new AuthorizationResult(AuthorizationStatus.OK, function.IsApi);
+        //    }
+        //    return new AuthorizationResult(AuthorizationStatus.Forbidden, function.IsApi);
+        //}
+
+        ///// <summary>
+        ///// 重写以实现指定用户是否有执行指定功能的权限
+        ///// </summary>
+        ///// <param name="function">功能信息</param>
+        ///// <param name="userName">用户名</param>
+        ///// <returns>功能权限检查结果</returns>
+        //protected virtual AuthorizationResult AuthorizeUserName(IFunction function, string userName)
+        //{
+        //    if (function.AccessType != FunctionAccessType.RoleLimit)
+        //    {
+        //        return new AuthorizationResult(AuthorizationStatus.OK, function.IsApi);
+        //    }
+
+        //    Guid[] functionIds = FunctionAuthCache.GetUserFunctions(userName);
+        //    if (functionIds.Contains(function.Id))
+        //    {
+        //        return new AuthorizationResult(AuthorizationStatus.OK, function.IsApi);
+        //    }
+        //    return new AuthorizationResult(AuthorizationStatus.Forbidden, function.IsApi);
+        //}
+
+        #endregion
     }
 }
