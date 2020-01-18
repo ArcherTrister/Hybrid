@@ -139,9 +139,9 @@ namespace Hybrid.AspNetCore.Diagnostics
             }
 
             //SMTP
-            if (options.MailSender != null)
+            if (options.MailSenderConfiguration != null)
             {
-                var smtp = options.MailSender;
+                var smtp = options.MailSenderConfiguration;
                 builder.AddSmtpHealthCheck(smtpOptions =>
                 {
                     smtpOptions.Host = smtp.Host;
