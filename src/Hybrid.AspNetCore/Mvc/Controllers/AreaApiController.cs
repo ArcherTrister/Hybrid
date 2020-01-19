@@ -18,7 +18,7 @@ namespace Hybrid.AspNetCore.Mvc.Controllers
     /// </summary>
     [ApiController]
     [Route("api/[area]/[controller]/[action]")]
-    public abstract class AreaApiController : Controller
+    public abstract class AreaApiController : ControllerBase
     {
         /// <summary>
         /// 获取或设置 日志对象

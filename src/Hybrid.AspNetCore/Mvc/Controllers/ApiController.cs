@@ -18,7 +18,7 @@ namespace Hybrid.AspNetCore.Mvc.Controllers
     /// </summary>
     [ApiController]
     [Route("api/[controller]/[action]")]
-    public abstract class ApiController : Controller
+    public abstract class ApiController : ControllerBase
     {
         /// <summary>
         /// 获取或设置 日志对象

@@ -165,6 +165,20 @@ namespace Hybrid.AspNetCore.Mvc
         }
 
         /// <summary>
+        /// 检测当前用户是否拥有指定URL的功能权限
+        /// </summary>
+        public static bool CheckFunctionAuth(this ControllerBase controllerBase, string url)
+        {
+            IFunction function = controllerBase.GetFunction(url);
+            if (function == null)
+            {
+                return false;
+            }
+            IFunctionAuthorization authorization = controllerBase.HttpContext.RequestServices.GetService<IFunctionAuthorization>();
+            return authorization.Authorize(function, controllerBase.User).IsOk;
+        }
+
+        /// <summary>
         /// 检测当前用户是否有指定功能的功能权限
         /// </summary>
         public static bool CheckFunctionAuth(this Controller controller, string actionName, string controllerName, string areaName = null)
@@ -178,6 +192,22 @@ namespace Hybrid.AspNetCore.Mvc
             }
             IFunctionAuthorization authorization = provider.GetService<IFunctionAuthorization>();
             return authorization.Authorize(function, controller.User).IsOk;
+        }
+
+        /// <summary>
+        /// 检测当前用户是否有指定功能的功能权限
+        /// </summary>
+        public static bool CheckFunctionAuth(this ControllerBase controllerBase, string actionName, string controllerName, string areaName = null)
+        {
+            IServiceProvider provider = controllerBase.HttpContext.RequestServices;
+            IFunctionHandler functionHandler = provider.GetService<IFunctionHandler>();
+            IFunction function = functionHandler?.GetFunction(areaName, controllerName, actionName);
+            if (function == null)
+            {
+                return false;
+            }
+            IFunctionAuthorization authorization = provider.GetService<IFunctionAuthorization>();
+            return authorization.Authorize(function, controllerBase.User).IsOk;
         }
     }
 }

@@ -22,7 +22,7 @@ namespace Hybrid.AspNetCore.Mvc.Controllers
     [ApiController]
     [Route("api/[area]/[controller]/[action]")]
     [Authorize(AuthenticationSchemes = HybridConstants.LocalApi.AuthenticationScheme)]
-    public abstract class LocalAreaApiController : Controller
+    public abstract class LocalAreaApiController : ControllerBase
     {
         /// <summary>
         /// 获取或设置 日志对象
