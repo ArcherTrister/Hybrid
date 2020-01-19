@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="UserNameUserIdProvider.cs" company="OSharp开源团队">
-//      Copyright (c) 2014-2019 OSharp. All rights reserved.
+//  <copyright file="UserNameUserIdProvider.cs" company="cn.lxking">
+//      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>http://www.osharp.org</site>
 //  <last-editor>郭明锋</last-editor>
@@ -12,7 +12,7 @@ using System.Security.Claims;
 using Microsoft.AspNetCore.SignalR;
 
 
-namespace OSharp.AspNetCore.SignalR
+namespace Hybrid.AspNetCore.SignalR
 {
     /// <summary>
     /// 用户名用户标识提供者

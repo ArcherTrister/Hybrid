@@ -1,22 +1,22 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="ConnectionUserCache.cs" company="OSharp开源团队">
-//      Copyright (c) 2014-2019 OSharp. All rights reserved.
+//  <copyright file="ConnectionUserCache.cs" company="cn.lxking">
+//      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>http://www.osharp.org</site>
 //  <last-editor>郭明锋</last-editor>
 //  <last-date>2019-01-04 20:30</last-date>
 // -----------------------------------------------------------------------
 
-using System.Linq;
-using System.Threading.Tasks;
+using Hybrid.Caching;
+using Hybrid.Extensions;
 
 using Microsoft.Extensions.Caching.Distributed;
 
-using OSharp.Caching;
-using OSharp.Collections;
+using System.Linq;
+using System.Threading.Tasks;
 
 
-namespace OSharp.AspNetCore.SignalR
+namespace Hybrid.AspNetCore.SignalR
 {
     /// <summary>
     /// SignalR连接用户缓存
