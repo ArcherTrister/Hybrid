@@ -7,7 +7,7 @@
 //  <last-date>2019-01-04 20:34</last-date>
 // -----------------------------------------------------------------------
 
-using System.Security.Claims;
+using Hybrid.Security.Claims;
 
 using Microsoft.AspNetCore.SignalR;
 
@@ -21,7 +21,7 @@ namespace Hybrid.AspNetCore.SignalR
     {
         public string GetUserId(HubConnectionContext connection)
         {
-            return connection.User?.FindFirst(ClaimTypes.Name)?.Value;
+            return connection.User?.FindFirst(HybridClaimTypes.UserId)?.Value;
         }
     }
 }
