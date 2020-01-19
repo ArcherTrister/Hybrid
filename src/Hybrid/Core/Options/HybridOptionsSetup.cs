@@ -10,7 +10,7 @@
 using Hybrid.Domain.EntityFramework;
 using Hybrid.Exceptions;
 using Hybrid.Extensions;
-
+using Hybrid.Net.Mail.Configuration;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 
@@ -54,14 +54,14 @@ namespace Hybrid.Core.Options
 
             //MailSender
             section = _configuration.GetSection("Hybrid:MailSender");
-            MailSenderConfiguration sender = section.Get<MailSenderConfiguration>();
+            EmailSenderConfiguration sender = section.Get<EmailSenderConfiguration>();
             if (sender != null)
             {
                 if (sender.Password == null)
                 {
                     sender.Password = _configuration["Hybrid:MailSender:Password"];
                 }
-                options.MailSenderConfiguration = sender;
+                options.EmailSender = sender;
             }
 
             //JwtOptions

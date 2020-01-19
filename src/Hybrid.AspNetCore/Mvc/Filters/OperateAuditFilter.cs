@@ -9,6 +9,7 @@
 
 using Hybrid.AspNetCore.Extensions;
 using Hybrid.Audits;
+using Hybrid.Audits.Configuration;
 using Hybrid.Core.Functions;
 using Hybrid.Dependency;
 using Hybrid.Domain.Uow;
@@ -41,7 +42,7 @@ namespace Hybrid.AspNetCore.Mvc.Filters
             ClaimsPrincipal principal = context.HttpContext.User;
             string[] roleName = functionAuthorization.GetOkRoles(function, principal);
             dict.DataAuthValidRoleNames = roleName;
-            AuditingConfiguration configuration = provider.GetHybridOptions().AuditingConfiguration;
+            IAuditingConfiguration configuration = provider.GetRequiredService<IAuditingConfiguration>();
             if (!AuditingHelper.ShouldSaveAudit(configuration, principal, function, context.ActionDescriptor.GetMethodInfo()))
             {
                 return;

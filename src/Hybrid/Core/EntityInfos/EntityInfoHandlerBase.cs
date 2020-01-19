@@ -42,7 +42,7 @@ namespace Hybrid.Core.EntityInfos
         protected EntityInfoHandlerBase(IServiceProvider serviceProvider)
         {
             _serviceProvider = serviceProvider;
-            _entityTypeFinder = serviceProvider.GetService<IEntityTypeFinder>();
+            _entityTypeFinder = serviceProvider.GetRequiredService<IEntityTypeFinder>();
             _logger = serviceProvider.GetLogger<TEntityInfoHandler>();
         }
 
@@ -127,7 +127,7 @@ namespace Hybrid.Core.EntityInfos
         /// </summary>
         protected virtual void SyncToDatabase(IServiceProvider scopedProvider, List<TEntityInfo> entityInfos)
         {
-            IRepository<TEntityInfo, Guid> repository = scopedProvider.GetService<IRepository<TEntityInfo, Guid>>();
+            IRepository<TEntityInfo, Guid> repository = scopedProvider.GetRequiredService<IRepository<TEntityInfo, Guid>>();
             if (repository == null)
             {
                 _logger.LogWarning("初始化实体数据时，IRepository<,>的服务未找到，请初始化 EntityFrameworkCoreModule 模块");
@@ -209,7 +209,7 @@ namespace Hybrid.Core.EntityInfos
         /// <returns></returns>
         protected virtual TEntityInfo[] GetFromDatabase(IServiceProvider scopedProvider)
         {
-            IRepository<TEntityInfo, Guid> repository = scopedProvider.GetService<IRepository<TEntityInfo, Guid>>();
+            IRepository<TEntityInfo, Guid> repository = scopedProvider.GetRequiredService<IRepository<TEntityInfo, Guid>>();
             if (repository == null)
             {
                 return new TEntityInfo[0];

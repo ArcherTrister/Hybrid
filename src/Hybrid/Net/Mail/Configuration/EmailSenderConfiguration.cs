@@ -1,21 +1,13 @@
-﻿// -----------------------------------------------------------------------
-//  <copyright file="MailSenderOptions.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
-//  </copyright>
-//  <site>https://www.lxking.cn</site>
-//  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2018-05-08 3:06</last-date>
-// -----------------------------------------------------------------------
-
-using Hybrid.Domain.Entities;
+﻿using Hybrid.Core.Options;
+using Microsoft.Extensions.Options;
 using System.ComponentModel.DataAnnotations;
 
-namespace Hybrid.Core.Options
+namespace Hybrid.Net.Mail.Configuration
 {
     /// <summary>
     /// 邮件发送选项
     /// </summary>
-    public sealed class MailSenderConfiguration : IEnabled
+    public sealed class EmailSenderConfiguration : IEmailSenderConfiguration
     {
         /// <summary>
         /// 获取或设置 邮件发送服务器

@@ -30,7 +30,7 @@ namespace Hybrid.Dependency
         public static void ExecuteScopedWork(this IServiceProvider provider, Action<IServiceProvider> action, bool useHttpScope = true)
         {
             using (IServiceScope scope = useHttpScope
-                ? provider.GetService<IHybridServiceScopeFactory>().CreateScope()
+                ? provider.GetRequiredService<IHybridServiceScopeFactory>().CreateScope()
                 : provider.CreateScope())
             {
                 action(scope.ServiceProvider);
@@ -46,7 +46,7 @@ namespace Hybrid.Dependency
         public static async Task ExecuteScopedWorkAsync(this IServiceProvider provider, Func<IServiceProvider, Task> action, bool useHttpScope = true)
         {
             using (IServiceScope scope = useHttpScope
-                ? provider.GetService<IHybridServiceScopeFactory>().CreateScope()
+                ? provider.GetRequiredService<IHybridServiceScopeFactory>().CreateScope()
                 : provider.CreateScope())
             {
                 await action(scope.ServiceProvider);
@@ -62,7 +62,7 @@ namespace Hybrid.Dependency
         public static TResult ExecuteScopedWork<TResult>(this IServiceProvider provider, Func<IServiceProvider, TResult> func, bool useHttpScope = true)
         {
             using (IServiceScope scope = useHttpScope
-                ? provider.GetService<IHybridServiceScopeFactory>().CreateScope()
+                ? provider.GetRequiredService<IHybridServiceScopeFactory>().CreateScope()
                 : provider.CreateScope())
             {
                 return func(scope.ServiceProvider);
@@ -78,7 +78,7 @@ namespace Hybrid.Dependency
         public static async Task<TResult> ExecuteScopedWorkAsync<TResult>(this IServiceProvider provider, Func<IServiceProvider, Task<TResult>> func, bool useHttpScope = true)
         {
             using (IServiceScope scope = useHttpScope
-                ? provider.GetService<IHybridServiceScopeFactory>().CreateScope()
+                ? provider.GetRequiredService<IHybridServiceScopeFactory>().CreateScope()
                 : provider.CreateScope())
             {
                 return await func(scope.ServiceProvider);
@@ -92,7 +92,7 @@ namespace Hybrid.Dependency
         {
             try
             {
-                IPrincipal user = provider.GetService<IPrincipal>();
+                IPrincipal user = provider.GetRequiredService<IPrincipal>();
                 return user as ClaimsPrincipal;
             }
             catch

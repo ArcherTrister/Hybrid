@@ -38,7 +38,7 @@ namespace Hybrid.Domain.Entities
                 return false;
             }
             string hash = hashes.Select(m => m.GetHash()).ExpandAndToString().ToMd5Hash();
-            IKeyValueStore store = provider.GetService<IKeyValueStore>();
+            IKeyValueStore store = provider.GetRequiredService<IKeyValueStore>();
             string entityType = hashes[0].GetType().FullName;
             string key = $"Hybrid.Initialize.SyncToDatabaseHash-{entityType}";
             IKeyValue keyValue = store.GetKeyValue(key);

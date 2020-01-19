@@ -7,6 +7,7 @@
 //  <last-date>2018-08-02 15:10</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Audits.Configuration;
 using Hybrid.Core.Functions;
 
 using Newtonsoft.Json;
@@ -20,7 +21,7 @@ namespace Hybrid.Audits
 {
     public static class AuditingHelper
     {
-        public static bool ShouldSaveAudit(AuditingConfiguration configuration, ClaimsPrincipal principal, IFunction function, MethodInfo methodInfo)
+        public static bool ShouldSaveAudit(IAuditingConfiguration configuration, ClaimsPrincipal principal, IFunction function, MethodInfo methodInfo)
         {
             if (!configuration.IsEnabled)
             {

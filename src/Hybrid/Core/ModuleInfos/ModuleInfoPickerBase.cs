@@ -34,7 +34,7 @@ namespace Hybrid.Core.ModuleInfos
         protected ModuleInfoPickerBase(IServiceProvider serviceProvider)
         {
             Logger = serviceProvider.GetLogger(GetType());
-            FunctionHandler = serviceProvider.GetService<IFunctionHandler>();
+            FunctionHandler = serviceProvider.GetRequiredService<IFunctionHandler>();
         }
 
         /// <summary>

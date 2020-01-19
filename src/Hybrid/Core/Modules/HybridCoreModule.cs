@@ -7,7 +7,7 @@
 //  <last-date>2018-06-23 15:19</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Audits;
+using Hybrid.Audits.Configuration;
 using Hybrid.Caching;
 using Hybrid.Configuration;
 using Hybrid.Core.Options;
@@ -21,6 +21,7 @@ using Hybrid.Localization;
 using Hybrid.Localization.Configuration;
 using Hybrid.Localization.Dictionaries;
 using Hybrid.Localization.Dictionaries.Xml;
+using Hybrid.Net.Mail.Configuration;
 
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
@@ -52,7 +53,7 @@ namespace Hybrid.Core.Modules
         public override IServiceCollection AddServices(IServiceCollection services)
         {
             services.TryAddSingleton<ISingletonFactory, SingletonFactory>();
-            services.TryAddSingleton<IConfigureOptions<HybridOptions>, HybridOptionsSetup>();
+            //services.TryAddSingleton<IConfigureOptions<HybridOptions>, HybridOptionsSetup>();
             services.TryAddSingleton<IEntityTypeFinder, EntityTypeFinder>();
             services.TryAddSingleton<IInputDtoTypeFinder, InputDtoTypeFinder>();
             services.TryAddSingleton<IOutputDtoTypeFinder, OutputDtoTypeFinder>();
@@ -64,20 +65,20 @@ namespace Hybrid.Core.Modules
             services.AddTransient<ILanguageManager, LanguageManager>();
             services.AddTransient<ILanguageProvider, DefaultLanguageProvider>();
             services.AddSingleton<ILocalizationContext, LocalizationContext>();
-            //services.AddSingleton<ILocalizationSource, ResourceFileLocalizationSource>();
-            //services.AddSingleton<IDictionaryBasedLocalizationSource, DictionaryBasedLocalizationSource>();
-            services.AddSingleton<ILocalizationConfiguration, LocalizationConfiguration>();
             services.AddSingleton<ILocalizationManager, LocalizationManager>();
+
+            //Add Configuration Service
+            services.AddSingleton<ILocalizationConfiguration, LocalizationConfiguration>();
+            services.AddSingleton<IEmailSenderConfiguration, EmailSenderConfiguration>();
+            services.AddSingleton<IAuditingConfiguration, AuditingConfiguration>();
 
             return services;
         }
 
         public override void UseModule(IServiceProvider provider)
         {
-            AuditingConfiguration configuration = provider.GetHybridOptions().AuditingConfiguration;
-            AddIgnoredTypes(configuration);
-
-            var Configuration = provider.GetService<IHybridStartupConfiguration>();
+            IHybridStartupConfiguration Configuration = provider.GetRequiredService<IHybridStartupConfiguration>();
+            HybridOptions Options = provider.GetRequiredService<IOptions<HybridOptions>>().Value;
 
             Configuration.Localization.Sources.Add(
                 new DictionaryBasedLocalizationSource(
@@ -86,12 +87,18 @@ namespace Hybrid.Core.Modules
                         typeof(QuartzOptions).GetAssembly(), "Hybrid.Localization.Sources.XmlSource"
             )));
 
-            ILocalizationManager localizationManager = provider.GetService<ILocalizationManager>();
+            ILocalizationManager localizationManager = provider.GetRequiredService<ILocalizationManager>();
             localizationManager.Initialize();
+
+            InitConfiguration(Configuration, Options);
+
+            //TODO:Config
         }
 
-        private void AddIgnoredTypes(AuditingConfiguration configuration)
+        private void InitConfiguration(IHybridStartupConfiguration configuration, HybridOptions options)
         {
+            //Auditing
+            configuration.Auditing = options.Auditing;
             var commonIgnoredTypes = new[]
             {
                 typeof(Stream),
@@ -100,15 +107,17 @@ namespace Hybrid.Core.Modules
 
             foreach (var ignoredType in commonIgnoredTypes)
             {
-                configuration.IgnoredTypes.AddIfNotContains(ignoredType);
+                configuration.Auditing.IgnoredTypes.AddIfNotContains(ignoredType);
                 //Configuration.Validation.IgnoredTypes.AddIfNotContains(ignoredType);
             }
-
             //var validationIgnoredTypes = new[] { typeof(Type) };
             //foreach (var ignoredType in validationIgnoredTypes)
             //{
             //    Configuration.Validation.IgnoredTypes.AddIfNotContains(ignoredType);
             //}
+
+            //Email
+            configuration.EmailSender = options.EmailSender;
         }
     }
 }

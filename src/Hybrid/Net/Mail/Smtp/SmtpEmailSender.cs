@@ -1,5 +1,6 @@
 using Hybrid.Dependency;
 using Hybrid.Extensions;
+using Hybrid.Net.Mail.Configuration;
 
 using System;
 using System.Net;
@@ -13,32 +14,32 @@ namespace Hybrid.Net.Mail.Smtp
     /// </summary>
     public class SmtpEmailSender : EmailSenderBase, ISmtpEmailSender, ITransientDependency
     {
-        private readonly IServiceProvider _provider;
+        private readonly IEmailSenderConfiguration _configuration;
 
         /// <summary>
         /// Creates a new <see cref="SmtpEmailSender"/>.
         /// </summary>
-        /// <param name="provider">Configuration</param>
-        public SmtpEmailSender(IServiceProvider provider)
-            : base(provider)
+        /// <param name="configuration">Configuration</param>
+        public SmtpEmailSender(IEmailSenderConfiguration configuration)
+            : base(configuration)
         {
-            _provider = provider;
+            _configuration = configuration;
         }
 
         public SmtpClient BuildClient()
         {
-            var host = MailSenderOptions.Host;
-            var port = MailSenderOptions.Port;
+            var host = _configuration.Host;
+            var port = _configuration.Port;
 
             var smtpClient = new SmtpClient(host, port);
             try
             {
-                if (MailSenderOptions.EnableSsl)
+                if (_configuration.EnableSsl)
                 {
                     smtpClient.EnableSsl = true;
                 }
 
-                if (MailSenderOptions.UseDefaultCredentials)
+                if (_configuration.UseDefaultCredentials)
                 {
                     smtpClient.UseDefaultCredentials = true;
                 }
@@ -46,11 +47,11 @@ namespace Hybrid.Net.Mail.Smtp
                 {
                     smtpClient.UseDefaultCredentials = false;
 
-                    var userName = MailSenderOptions.UserName;
+                    var userName = _configuration.UserName;
                     if (!userName.IsNullOrEmpty())
                     {
-                        var password = MailSenderOptions.Password;
-                        var domain = MailSenderOptions.Domain;
+                        var password = _configuration.Password;
+                        var domain = _configuration.Domain;
                         smtpClient.Credentials = !domain.IsNullOrEmpty()
                             ? new NetworkCredential(userName, password, domain)
                             : new NetworkCredential(userName, password);

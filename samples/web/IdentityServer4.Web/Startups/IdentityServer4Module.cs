@@ -146,18 +146,6 @@ namespace Hybrid.Web.Startups
             foreach (KeyValuePair<string, OAuth2Options> pair in dict)
             {
                 OAuth2Options value = pair.Value;
-                if (!value.Enabled)
-                {
-                    continue;
-                }
-                if (string.IsNullOrEmpty(value.ClientId))
-                {
-                    throw new HybridException($"配置文件中Hybrid:OAuth2配置的{pair.Key}节点的ClientId不能为空");
-                }
-                if (string.IsNullOrEmpty(value.ClientSecret))
-                {
-                    throw new HybridException($"配置文件中Hybrid:OAuth2配置的{pair.Key}节点的ClientSecret不能为空");
-                }
                 //https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers
                 switch (pair.Key)
                 {
@@ -168,20 +156,22 @@ namespace Hybrid.Web.Startups
                             opts.ClientSecret = value.ClientSecret;
                         });
                         break;
-                        //case "Microsoft":
-                        //    authenticationBuilder.AddMicrosoftAccount(opts =>
-                        //    {
-                        //        opts.ClientId = value.ClientId;
-                        //        opts.ClientSecret = value.ClientSecret;
-                        //    });
-                        //    break;
-                        //case "GitHub":
-                        //    authenticationBuilder.AddGitHub(opts =>
-                        //    {
-                        //        opts.ClientId = value.ClientId;
-                        //        opts.ClientSecret = value.ClientSecret;
-                        //    });
-                        //    break;
+                    //case "Microsoft":
+                    //    authenticationBuilder.AddMicrosoftAccount(opts =>
+                    //    {
+                    //        opts.ClientId = value.ClientId;
+                    //        opts.ClientSecret = value.ClientSecret;
+                    //    });
+                    //    break;
+                    //case "GitHub":
+                    //    authenticationBuilder.AddGitHub(opts =>
+                    //    {
+                    //        opts.ClientId = value.ClientId;
+                    //        opts.ClientSecret = value.ClientSecret;
+                    //    });
+                    //    break;
+                    default:
+                        break;
                 }
             }
         }

@@ -1,7 +1,7 @@
 ﻿using Hybrid.Core.Options;
 using Hybrid.Exceptions;
 using Hybrid.Extensions;
-
+using Hybrid.Net.Mail.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 using System;
@@ -16,28 +16,17 @@ namespace Hybrid.Net.Mail
     /// </summary>
     public abstract class EmailSenderBase : IEmailSender
     {
-        private readonly IServiceProvider _provider;
-
         /// <summary>
         /// SMTP服务器配置参数
         /// </summary>
-        public MailSenderConfiguration MailSenderOptions { get; }
+        public IEmailSenderConfiguration Configuration { get; }
 
         /// <summary>
         /// 初始化一个<see cref="EmailSenderBase"/>类型的新实例
         /// </summary>
-        protected EmailSenderBase(IServiceProvider provider)
+        protected EmailSenderBase(IEmailSenderConfiguration configuration)
         {
-            _provider = provider;
-            MailSenderOptions = _provider.GetHybridOptions().MailSenderConfiguration;
-            if (MailSenderOptions == null ||
-                MailSenderOptions.Host.IsNullOrEmpty() ||
-                MailSenderOptions.Host.Contains("请替换") ||
-                MailSenderOptions.UserName.IsNullOrEmpty() ||
-                MailSenderOptions.Password.IsNullOrEmpty())
-            {
-                throw new HybridException("邮件发送选项不存在，请在appsetting.json配置Hybrid.MailKitSender节点");
-            }
+            Configuration = configuration;
         }
 
         /// <summary>
@@ -167,8 +156,8 @@ namespace Hybrid.Net.Mail
             if (mail.From == null || mail.From.Address.IsNullOrEmpty())
             {
                 mail.From = new MailAddress(
-                    MailSenderOptions.UserName,
-                    MailSenderOptions.DisplayName,
+                    Configuration.UserName,
+                    Configuration.DisplayName,
                     Encoding.UTF8
                     );
             }

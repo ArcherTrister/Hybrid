@@ -11,6 +11,7 @@ using Hybrid.Aspects;
 using Hybrid.AspNetCore.Extensions;
 using Hybrid.AspNetCore.UI;
 using Hybrid.Audits;
+using Hybrid.Audits.Configuration;
 using Hybrid.Core.Functions;
 using Hybrid.Extensions;
 using Hybrid.Security.Claims;
@@ -42,7 +43,7 @@ namespace Hybrid.AspNetCore.Mvc.Filters
 
         public async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
         {
-            AuditingConfiguration configuration = _provider.GetHybridOptions().AuditingConfiguration;
+            IAuditingConfiguration configuration = _provider.GetRequiredService<IAuditingConfiguration>();
             if (!ShouldSaveAudit(context, configuration))
             {
                 await next();
@@ -157,7 +158,7 @@ namespace Hybrid.AspNetCore.Mvc.Filters
             }
         }
 
-        private bool ShouldSaveAudit(ActionExecutingContext actionContext, AuditingConfiguration configuration)
+        private bool ShouldSaveAudit(ActionExecutingContext actionContext, IAuditingConfiguration configuration)
         {
             return AuditingHelper.ShouldSaveAudit(configuration, actionContext.HttpContext.User, actionContext.GetExecuteFunction(), actionContext.ActionDescriptor.GetMethodInfo());
         }

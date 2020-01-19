@@ -1,12 +1,24 @@
-﻿using Hybrid.Localization.Configuration;
+﻿using Hybrid.Audits.Configuration;
+using Hybrid.Localization.Configuration;
+using Hybrid.Net.Mail.Configuration;
 
 namespace Hybrid.Configuration
 {
-    public interface IHybridStartupConfiguration : IDictionaryBasedConfig
+    internal interface IHybridStartupConfiguration : IDictionaryBasedConfig
     {
         /// <summary>
-        /// Used to set localization configuration.
+        /// 用于设置本地化配置
         /// </summary>
-        ILocalizationConfiguration Localization { get; }
+        ILocalizationConfiguration Localization { get; set; }
+
+        /// <summary>
+        /// 用于设置邮件发送配置
+        /// </summary>
+        IEmailSenderConfiguration EmailSender { get; set; }
+
+        /// <summary>
+        /// 用于设置审计配置
+        /// </summary>
+        IAuditingConfiguration Auditing { get; set; }
     }
 }

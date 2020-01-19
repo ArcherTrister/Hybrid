@@ -69,7 +69,7 @@ namespace Hybrid.AspNetCore.Diagnostics
         public override void UseModule(IApplicationBuilder app)
         {
             IServiceProvider provider = app.ApplicationServices;
-            IConfiguration configuration = provider.GetService<IConfiguration>();
+            IConfiguration configuration = provider.GetRequiredService<IConfiguration>();
             bool enabled = configuration["OSharp:HealthChecks:Enabled"].CastTo(false);
             if (!enabled)
             {
@@ -98,6 +98,9 @@ namespace Hybrid.AspNetCore.Diagnostics
         /// <returns></returns>
         protected virtual IHealthChecksBuilder BuildHealthChecks(IHealthChecksBuilder builder, IConfiguration configuration)
         {
+            IConfigurationSection section = configuration.GetSection("Hybrid");
+            HybridOptions options = section.Get<HybridOptions>();
+
             //system
             long providerMemory = configuration["OSharp:HealthChecks:PrivateMemory"].CastTo(1000_000_000L);
             long virtualMemorySize = configuration["OSharp:HealthChecks:VirtualMemorySize"].CastTo(1000_000_000L);
@@ -106,7 +109,7 @@ namespace Hybrid.AspNetCore.Diagnostics
             builder.AddVirtualMemorySizeHealthCheck(virtualMemorySize); //最大虚拟内存
             builder.AddWorkingSetHealthCheck(workingSet); //最大工作内存
 
-            HybridOptions options = configuration.GetHybridOptions();
+
             //数据库
             foreach (var pair in options.DbContexts.OrderBy(m => m.Value.DatabaseType))
             {
@@ -138,16 +141,16 @@ namespace Hybrid.AspNetCore.Diagnostics
                 }
             }
 
-            //SMTP
-            if (options.MailSenderConfiguration != null)
-            {
-                var smtp = options.MailSenderConfiguration;
-                builder.AddSmtpHealthCheck(smtpOptions =>
-                {
-                    smtpOptions.Host = smtp.Host;
-                    smtpOptions.LoginWith(smtp.UserName, smtp.Password);
-                });
-            }
+            ////SMTP
+            //if (options.MailSenderConfiguration != null)
+            //{
+            //    var smtp = options.MailSenderConfiguration;
+            //    builder.AddSmtpHealthCheck(smtpOptions =>
+            //    {
+            //        smtpOptions.Host = smtp.Host;
+            //        smtpOptions.LoginWith(smtp.UserName, smtp.Password);
+            //    });
+            //}
 
             //Redis
             if (options.Redis != null && options.Redis.Enabled)

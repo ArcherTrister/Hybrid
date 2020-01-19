@@ -33,7 +33,7 @@ namespace Hybrid.Core.EntityInfos
         /// <param name="provider">服务提供者</param>
         public override void UseModule(IServiceProvider provider)
         {
-            IEntityInfoHandler handler = provider.GetService<IEntityInfoHandler>();
+            IEntityInfoHandler handler = provider.GetRequiredService<IEntityInfoHandler>();
             handler.Initialize();
             IsEnabled = true;
         }

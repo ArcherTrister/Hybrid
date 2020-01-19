@@ -41,7 +41,7 @@ namespace Hybrid.EventBuses.Internal
         public EventHandlerDisposeWrapper GetHandler()
         {
             IServiceScope scope = _serviceScopeFactory.CreateScope();
-            return new EventHandlerDisposeWrapper((IEventHandler)scope.ServiceProvider.GetService(_handlerType), () => scope.Dispose());
+            return new EventHandlerDisposeWrapper((IEventHandler)scope.ServiceProvider.GetRequiredService(_handlerType), () => scope.Dispose());
         }
     }
 }

@@ -13,7 +13,7 @@ namespace Hybrid.Dependency
         //services.AddSingleton(singletonFactory);
         //public XXXX(SingletonFactory singletonFactory)
         //{
-        //    this.serviceA = singletonFactory.GetService<IServiceA>("impla2"); //使用标识从SingletonFactory获取自己想要的服务实现
+        //    this.serviceA = singletonFactory.GetRequiredService<IServiceA>("impla2"); //使用标识从SingletonFactory获取自己想要的服务实现
         //}
 
         private readonly Dictionary<Type, Dictionary<string, object>> _serviceDict;

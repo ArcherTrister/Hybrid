@@ -7,6 +7,7 @@
 //  <last-date>2018-08-02 15:16</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Audits.Configuration;
 using Hybrid.Core.Modules;
 using Hybrid.EventBuses;
 
@@ -49,7 +50,7 @@ namespace Hybrid.Audits
 
         public override void UseModule(IServiceProvider provider)
         {
-            AuditingConfiguration auditingConfiguration = provider.GetHybridOptions().AuditingConfiguration;
+            IAuditingConfiguration auditingConfiguration = provider.GetRequiredService<IAuditingConfiguration>();
             IsEnabled = auditingConfiguration.IsEnabled;
         }
     }

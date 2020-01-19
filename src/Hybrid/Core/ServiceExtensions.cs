@@ -16,6 +16,7 @@ using Hybrid.Dependency;
 using Hybrid.Domain.Entities;
 using Hybrid.Domain.EntityFramework;
 using Hybrid.Domain.Uow;
+using Hybrid.Extensions;
 using Hybrid.Reflection;
 
 using Microsoft.Extensions.Configuration;
@@ -42,6 +43,10 @@ namespace Microsoft.Extensions.DependencyInjection
 
             IConfiguration configuration = services.GetConfiguration();
             Singleton<IConfiguration>.Instance = configuration;
+
+            services.AddOptions();
+            //services.ConfigureAndValidate<HybridOptions>("Hybrid", Configuration);
+            services.ConfigureAndValidateHybridOption<HybridOptions>(configuration);
 
             //初始化所有程序集查找器
             services.TryAddSingleton<IAllAssemblyFinder>(new AppDomainAllAssemblyFinder());
@@ -72,7 +77,7 @@ namespace Microsoft.Extensions.DependencyInjection
         /// </summary>
         public static HybridOptions GetHybridOptions(this IServiceProvider provider)
         {
-            return provider.GetService<IOptions<HybridOptions>>()?.Value;
+            return provider.GetRequiredService<IOptions<HybridOptions>>()?.Value;
         }
 
         /// <summary>
@@ -82,7 +87,7 @@ namespace Microsoft.Extensions.DependencyInjection
         /// <returns>日志对象</returns>
         public static ILogger<T> GetLogger<T>(this IServiceProvider provider)
         {
-            ILoggerFactory factory = provider.GetService<ILoggerFactory>();
+            ILoggerFactory factory = provider.GetRequiredService<ILoggerFactory>();
             return factory.CreateLogger<T>();
         }
 
@@ -94,7 +99,7 @@ namespace Microsoft.Extensions.DependencyInjection
         /// <returns>日志对象</returns>
         public static ILogger GetLogger(this IServiceProvider provider, Type type)
         {
-            ILoggerFactory factory = provider.GetService<ILoggerFactory>();
+            ILoggerFactory factory = provider.GetRequiredService<ILoggerFactory>();
             return factory.CreateLogger(type);
         }
 
@@ -103,7 +108,7 @@ namespace Microsoft.Extensions.DependencyInjection
         /// </summary>
         public static ILogger GetLogger(this IServiceProvider provider, string name)
         {
-            ILoggerFactory factory = provider.GetService<ILoggerFactory>();
+            ILoggerFactory factory = provider.GetRequiredService<ILoggerFactory>();
             return factory.CreateLogger(name);
         }
 
@@ -112,7 +117,7 @@ namespace Microsoft.Extensions.DependencyInjection
         /// </summary>
         public static IUnitOfWork GetUnitOfWork<TEntity, TKey>(this IServiceProvider provider) where TEntity : IEntity<TKey>
         {
-            IUnitOfWorkManager unitOfWorkManager = provider.GetService<IUnitOfWorkManager>();
+            IUnitOfWorkManager unitOfWorkManager = provider.GetRequiredService<IUnitOfWorkManager>();
             return unitOfWorkManager.GetUnitOfWork<TEntity, TKey>();
         }
 
@@ -121,7 +126,7 @@ namespace Microsoft.Extensions.DependencyInjection
         /// </summary>
         public static IDbContext GetDbContext<TEntity, TKey>(this IServiceProvider provider) where TEntity : IEntity<TKey>
         {
-            IUnitOfWorkManager unitOfWorkManager = provider.GetService<IUnitOfWorkManager>();
+            IUnitOfWorkManager unitOfWorkManager = provider.GetRequiredService<IUnitOfWorkManager>();
             return unitOfWorkManager.GetDbContext<TEntity, TKey>();
         }
 
@@ -130,7 +135,7 @@ namespace Microsoft.Extensions.DependencyInjection
         /// </summary>
         public static IServiceProvider UseHybrid(this IServiceProvider provider)
         {
-            IHybridModuleManager moduleManager = provider.GetService<IHybridModuleManager>();
+            IHybridModuleManager moduleManager = provider.GetRequiredService<IHybridModuleManager>();
             moduleManager.UseModule(provider);
             return provider;
         }

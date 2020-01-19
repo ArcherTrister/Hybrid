@@ -25,32 +25,32 @@ namespace Hybrid.Extensions
             throw new Exception($"Invalid configuration of section '{sectionName}':\n{msg}");
         }
 
-        public static OptionsBuilder<TOptions> ValidateDataAnnotation<TOptions>(
-    this OptionsBuilder<TOptions> builder,
-    string sectionName)
-    where TOptions : class
-        {
-            return builder.PostConfigure(x =>
-            {
-                ValidateByDataAnnotation(x, sectionName);
-            });
-        }
+    //    public static OptionsBuilder<TOptions> ValidateDataAnnotation<TOptions>(
+    //this OptionsBuilder<TOptions> builder,
+    //string sectionName)
+    //where TOptions : class
+    //    {
+    //        return builder.PostConfigure(x =>
+    //        {
+    //            ValidateByDataAnnotation(x, sectionName);
+    //        });
+    //    }
 
-        public static IServiceCollection ConfigureAndValidate<TOptions>(
-            this IServiceCollection services,
-            string sectionName,
-            IConfiguration configuration)
-            where TOptions : class
-        {
-            var section = configuration.GetSection(sectionName);
+    //    public static IServiceCollection ConfigureAndValidate<TOptions>(
+    //        this IServiceCollection services,
+    //        string sectionName,
+    //        IConfiguration configuration)
+    //        where TOptions : class
+    //    {
+    //        var section = configuration.GetSection(sectionName);
 
-            services
-                .AddOptions<TOptions>()
-                .Bind(section)
-                .ValidateDataAnnotation(sectionName);
+    //        services
+    //            .AddOptions<TOptions>()
+    //            .Bind(section)
+    //            .ValidateDataAnnotation(sectionName);
 
-            return services;
-        }
+    //        return services;
+    //    }
 
         public static OptionsBuilder<TOptions> ValidateDataAnnotationByEnabled<TOptions>(
             this OptionsBuilder<TOptions> builder,
@@ -87,13 +87,21 @@ namespace Hybrid.Extensions
         {
             return builder.PostConfigure(x =>
             {
-                //if (x.AuditingConfiguration.IsEnabled)
+                //if (x.Auditing.IsEnabled)
                 //{
-                //    ValidateByDataAnnotation(x.AuditingConfiguration, x.AuditingConfiguration.GetType().Name);
+                //    ValidateByDataAnnotation(x.Auditing, x.Auditing.GetType().Name);
                 //}
-                if (x.MailSenderConfiguration.IsEnabled)
+                foreach (var item in x.DbContexts)
                 {
-                    ValidateByDataAnnotation(x.MailSenderConfiguration, x.MailSenderConfiguration.GetType().Name);
+                    ValidateByDataAnnotation(item.Value, item.Value.GetType().Name);
+                }
+                if (x.EmailSender.IsEnabled)
+                {
+                    ValidateByDataAnnotation(x.EmailSender, x.EmailSender.GetType().Name);
+                }
+                foreach (var item in x.OAuth2S)
+                {
+                    ValidateByDataAnnotation(item.Value, item.Value.GetType().Name);
                 }
             });
         }

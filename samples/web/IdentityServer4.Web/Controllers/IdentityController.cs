@@ -402,7 +402,7 @@
 //        private async Task<JsonWebToken> CreateJwtToken(User user)
 //        {
 //            IServiceProvider provider = HttpContext.RequestServices;
-//            IJwtBearerService jwtBearerService = provider.GetService<IJwtBearerService>();
+//            IJwtBearerService jwtBearerService = provider.GetRequiredService<IJwtBearerService>();
 //            JsonWebToken token = await jwtBearerService.CreateToken(user.Id.ToString(), user.UserName);
 
 //            return token;
@@ -411,7 +411,7 @@
 //        private async Task<JsonWebToken> CreateJwtToken(string refreshToken)
 //        {
 //            IServiceProvider provider = HttpContext.RequestServices;
-//            IJwtBearerService jwtBearerService = provider.GetService<IJwtBearerService>();
+//            IJwtBearerService jwtBearerService = provider.GetRequiredService<IJwtBearerService>();
 //            JsonWebToken token = await jwtBearerService.RefreshToken(refreshToken);
 //            return token;
 //        }
@@ -462,7 +462,7 @@
 //                return null;
 //            }
 
-//            IOnlineUserProvider onlineUserProvider = HttpContext.RequestServices.GetService<IOnlineUserProvider>();
+//            IOnlineUserProvider onlineUserProvider = HttpContext.RequestServices.GetRequiredService<IOnlineUserProvider>();
 //            if (onlineUserProvider == null)
 //            {
 //                return null;
@@ -627,7 +627,7 @@
 
 //            string token = await _userManager.GeneratePasswordResetTokenAsync(user);
 //            token = UrlBase64ReplaceChar(token);
-//            IEmailSender sender = HttpContext.RequestServices.GetService<IEmailSender>();
+//            IEmailSender sender = HttpContext.RequestServices.GetRequiredService<IEmailSender>();
 //            string url = $"{Request.Scheme}://{Request.Host}/#/passport/reset-password?userId={user.Id}&token={token}";
 //            string body = $"亲爱的用户 <strong>{user.NickName}</strong>[{user.UserName}]，您好！<br>"
 //                + $"欢迎使用柳柳软件账户密码重置功能，请 <a href=\"{url}\" target=\"_blank\"><strong>点击这里</strong></a><br>"
@@ -664,7 +664,7 @@
 
 //        private async Task SendMailAsync(string email, string subject, string body)
 //        {
-//            IEmailSender sender = HttpContext.RequestServices.GetService<IEmailSender>();
+//            IEmailSender sender = HttpContext.RequestServices.GetRequiredService<IEmailSender>();
 //            await sender.SendEmailAsync(email, subject, body);
 //        }
 

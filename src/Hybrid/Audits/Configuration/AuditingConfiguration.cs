@@ -1,23 +1,12 @@
-﻿// -----------------------------------------------------------------------
-//  <copyright file="AuditingConfiguration.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
-//  </copyright>
-//  <site>https://www.lxking.cn</site>
-//  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2018-08-02 15:10</last-date>
-// -----------------------------------------------------------------------
-
-using Hybrid.Domain.Entities;
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 
-namespace Hybrid.Audits
+namespace Hybrid.Audits.Configuration
 {
     /// <summary>
     /// 审计日志配置
     /// </summary>
-    public sealed class AuditingConfiguration : IEnabled
+    public sealed class AuditingConfiguration : IAuditingConfiguration
     {
         /// <summary>
         /// 是否启用

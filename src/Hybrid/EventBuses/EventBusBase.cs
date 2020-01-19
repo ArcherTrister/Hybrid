@@ -35,7 +35,7 @@ namespace Hybrid.EventBuses
         {
             _serviceProvider = serviceProvider;
             ServiceScopeFactory = serviceScopeFactory;
-            EventStore = serviceProvider.GetService<IEventStore>();
+            EventStore = serviceProvider.GetRequiredService<IEventStore>();
             Logger = serviceProvider.GetLogger(GetType());
         }
 
@@ -389,7 +389,7 @@ namespace Hybrid.EventBuses
         {
             try
             {
-                ICancellationTokenProvider cancellationTokenProvider = _serviceProvider.GetService<ICancellationTokenProvider>();
+                ICancellationTokenProvider cancellationTokenProvider = _serviceProvider.GetRequiredService<ICancellationTokenProvider>();
                 return handler.HandleAsync(eventData, cancellationTokenProvider.Token);
             }
             catch (Exception ex)

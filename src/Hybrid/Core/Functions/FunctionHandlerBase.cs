@@ -241,7 +241,7 @@ namespace Hybrid.Core.Functions
                 return;
             }
 
-            IRepository<TFunction, Guid> repository = scopedProvider.GetService<IRepository<TFunction, Guid>>();
+            IRepository<TFunction, Guid> repository = scopedProvider.GetRequiredService<IRepository<TFunction, Guid>>();
             if (repository == null)
             {
                 Logger.LogWarning("初始化功能数据时，IRepository<,>的服务未找到，请初始化 EntityFrameworkCoreModule 模块");
@@ -346,7 +346,7 @@ namespace Hybrid.Core.Functions
         /// <returns></returns>
         protected virtual TFunction[] GetFromDatabase(IServiceProvider scopedProvider)
         {
-            IRepository<TFunction, Guid> repository = scopedProvider.GetService<IRepository<TFunction, Guid>>();
+            IRepository<TFunction, Guid> repository = scopedProvider.GetRequiredService<IRepository<TFunction, Guid>>();
             if (repository == null)
             {
                 return new TFunction[0];

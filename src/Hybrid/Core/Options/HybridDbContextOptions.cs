@@ -10,6 +10,7 @@
 using Hybrid.Domain.EntityFramework;
 
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Hybrid.Core.Options
 {
@@ -36,16 +37,19 @@ namespace Hybrid.Core.Options
         /// <summary>
         /// 获取或设置 上下文类型全名
         /// </summary>
+        [Required(ErrorMessage = "上下文类型全名不能为空")]
         public string DbContextTypeName { get; set; }
 
         /// <summary>
         /// 获取或设置 连接字符串
         /// </summary>
+        [Required(ErrorMessage = "数据库连接字符串不能为空")]
         public string ConnectionString { get; set; }
 
         /// <summary>
         /// 获取或设置 数据库类型
         /// </summary>
+        [Required(ErrorMessage = "数据库类型不能为空")]
         public DatabaseType DatabaseType { get; set; }
 
         /// <summary>

@@ -98,7 +98,7 @@ namespace IdentityServer4.Web.Controllers
         private bool CheckFuncAuth(Module module, out bool empty)
         {
             IServiceProvider services = HttpContext.RequestServices;
-            IFunctionAuthorization authorization = services.GetService<IFunctionAuthorization>();
+            IFunctionAuthorization authorization = services.GetRequiredService<IFunctionAuthorization>();
 
             Function[] functions = _securityManager.ModuleFunctions.Where(m => m.ModuleId == module.Id).Select(m => m.Function).ToArray();
             empty = functions.Length == 0;

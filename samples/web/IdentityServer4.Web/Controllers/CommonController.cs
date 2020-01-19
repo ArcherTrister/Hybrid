@@ -126,7 +126,7 @@ namespace IdentityServer4.Web.Controllers
             IServiceProvider provider = HttpContext.RequestServices;
 
             dynamic info = new ExpandoObject();
-            IHybridModuleManager moduleManager = provider.GetService<IHybridModuleManager>();
+            IHybridModuleManager moduleManager = provider.GetRequiredService<IHybridModuleManager>();
             info.Modules = moduleManager.SourceModules.OrderBy(m => m.Level).ThenBy(m => m.Order).ThenBy(m => m.GetType().FullName).Select(m => new
             {
                 m.GetType().Name,

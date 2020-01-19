@@ -1,6 +1,6 @@
 ﻿using Hybrid.Exceptions;
 using Hybrid.Net.Mail;
-
+using Hybrid.Net.Mail.Configuration;
 using MailKit.Security;
 
 using MimeKit;
@@ -18,13 +18,16 @@ namespace Hybrid.MailKit
     /// </summary>
     public class MailKitEmailSender : EmailSenderBase
     {
+        private readonly IEmailSenderConfiguration _configuration;
+
         /// <summary>
         /// 创建一个新的MailKitEmailSender实例 <see cref="MailKitEmailSender"/>.
         /// </summary>
         /// <param name="provider">provider</param>
-        public MailKitEmailSender(IServiceProvider provider)
-            : base(provider)
+        public MailKitEmailSender(IEmailSenderConfiguration configuration)
+    :       base(configuration)
         {
+            _configuration = configuration;
         }
 
         /// <summary>
@@ -50,19 +53,19 @@ namespace Hybrid.MailKit
         protected virtual void ConfigureClient(SmtpClient client)
         {
             client.Connect(
-                MailSenderOptions.Host,
-                MailSenderOptions.Port,
+                _configuration.Host,
+                _configuration.Port,
                 GetSecureSocketOption()
             );
 
-            if (MailSenderOptions.UseDefaultCredentials)
+            if (_configuration.UseDefaultCredentials)
             {
                 return;
             }
 
             client.Authenticate(
-                MailSenderOptions.UserName,
-                MailSenderOptions.Password
+                _configuration.UserName,
+                _configuration.Password
             );
         }
 
@@ -73,7 +76,7 @@ namespace Hybrid.MailKit
             //    return mailSenderOptions.SecureSocketOption.Value;
             //}
 
-            return MailSenderOptions.EnableSsl
+            return _configuration.EnableSsl
                 ? SecureSocketOptions.SslOnConnect
                 : SecureSocketOptions.None;
         }

@@ -58,7 +58,7 @@ namespace Hybrid.Web.Startups.SqlServer
         {
             if (_serviceProvider != null)
             {
-                return _serviceProvider.GetService<IEntityManager>();
+                return _serviceProvider.GetRequiredService<IEntityManager>();
             }
             IEntityConfigurationTypeFinder typeFinder = new EntityConfigurationTypeFinder(new AppDomainAllAssemblyFinder());
             IEntityManager entityManager = new EntityManager(typeFinder);

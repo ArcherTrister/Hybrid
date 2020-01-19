@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using Hybrid.Domain.Entities;
+using System.Collections.Generic;
 
 namespace Hybrid.Localization.Configuration
 {
     /// <summary>
     /// Used for localization configurations.
     /// </summary>
-    public interface ILocalizationConfiguration
+    public interface ILocalizationConfiguration : IEnabled
     {
         /// <summary>
         /// Used to set languages available for this application.
@@ -16,12 +17,6 @@ namespace Hybrid.Localization.Configuration
         /// List of localization sources.
         /// </summary>
         ILocalizationSourceList Sources { get; }
-
-        /// <summary>
-        /// Used to enable/disable localization system.
-        /// Default: true.
-        /// </summary>
-        bool IsEnabled { get; set; }
 
         /// <summary>
         /// If this is set to true, the given text (name) is returned
