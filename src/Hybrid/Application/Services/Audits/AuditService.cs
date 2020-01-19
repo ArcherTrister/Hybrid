@@ -38,7 +38,7 @@ namespace Hybrid.Application.Services.Audits
             _propertyRepository = propertyRepository;
         }
 
-        #region Implementation of IAuditContract
+        #region Implementation of IAuditService
 
         /// <summary>
         /// 获取 操作审计信息查询数据集
@@ -75,6 +75,6 @@ namespace Hybrid.Application.Services.Audits
             return _entityRepository.DeleteAsync(ids);
         }
 
-        #endregion Implementation of IAuditContract
+        #endregion Implementation of IAuditService
     }
 }

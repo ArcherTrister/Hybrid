@@ -52,7 +52,7 @@ namespace Hybrid.Net.Mail.Configuration
         /// <summary>
         /// 是否验证
         /// </summary>
-        public bool UseDefaultCredentials { get; set; } = false;
+        public bool UseDefaultCredentials { get; set; }
 
         /// <summary>
         /// 是否启用

@@ -31,7 +31,7 @@ namespace Hybrid.Web.Identity
     /// <summary>
     /// 业务实现：身份认证模块
     /// </summary>
-    public partial class IdentityService : IIdentityContract
+    public partial class IdentityService : IIdentityService
     {
         private readonly IEventBus _eventBus;
         private readonly RoleManager<Role> _roleManager;
@@ -39,7 +39,6 @@ namespace Hybrid.Web.Identity
         private readonly IRepository<UserDetail, Guid> _userDetailRepository;
         private readonly IRepository<UserLogin, Guid> _userLoginRepository;
         private readonly IDistributedCache _cache;
-        private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly IPrincipal _currentUser;
         private readonly UserManager<User> _userManager;
         private readonly IRepository<UserRole, Guid> _userRoleRepository;

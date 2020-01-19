@@ -35,7 +35,7 @@ using System.Threading.Tasks;
 
 using AssemblyExtensions = Hybrid.Reflection.AssemblyExtensions;
 
-namespace IdentityServer4.Web.Controllers
+namespace Hybrid.Web.Controllers
 {
     [Description("网站-通用")]
     [ModuleInfo(Order = 3)]
@@ -137,13 +137,13 @@ namespace IdentityServer4.Web.Controllers
             }).ToList();
 
             string cliVersion = AssemblyExtensions.GetCliVersion();
-            string eSoftorVersion = Assembly.GetExecutingAssembly().GetProductVersion();
+            string hybridVersion = Assembly.GetExecutingAssembly().GetProductVersion();
 
             info.Object = new
             {
                 Message = "WebApi 数据服务已启动",
                 CliVersion = cliVersion,
-                HybridVersion = eSoftorVersion
+                HybridVersion = hybridVersion
             };
 
             return info;

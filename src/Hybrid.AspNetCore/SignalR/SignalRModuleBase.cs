@@ -2,8 +2,8 @@
 //  <copyright file="SignalRPackBase.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
-//  <site>http://www.osharp.org</site>
-//  <last-editor>郭明锋</last-editor>
+//  <site>https://www.lxking.cn</site>
+//  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2019-01-04 20:42</last-date>
 // -----------------------------------------------------------------------
 

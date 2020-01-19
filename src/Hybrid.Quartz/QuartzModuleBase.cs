@@ -1,14 +1,10 @@
 ﻿using Hybrid.AspNetCore;
 using Hybrid.Core.Modules;
 using Hybrid.Core.Options;
-using Hybrid.Data;
 using Hybrid.EventBuses;
 using Hybrid.Exceptions;
-using Hybrid.Extensions;
-using Hybrid.Quartz.Extensions;
 using Hybrid.Quartz.Plugins.LiveLog;
 
-using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
@@ -36,26 +32,21 @@ namespace Hybrid.Quartz
 
         public override IServiceCollection AddServices(IServiceCollection services)
         {
-            //TODO:Options
             IConfiguration configuration = services.GetConfiguration();
-            _enabled = configuration["Hybrid:Quartz:Enabled"].CastTo(false);
+            QuartzOptions quartzOptions = configuration.GetSection("Hybrid:Quartz").Get<QuartzOptions>();
+            _enabled = quartzOptions.IsEnabled;
             if (!_enabled)
             {
                 return services;
             }
-            QuartzStorageType storageType = configuration["Hybrid:Quartz:StorageType"].CastTo(default(QuartzStorageType));
-
-            if (storageType.Equals(QuartzStorageType.InMemory))
+            if (quartzOptions.StorageType.Equals(QuartzStorageType.InMemory))
             {
-                QuartzOptions quartzOptions = configuration.GetSection("Hybrid:Quartz").Get<QuartzOptions>();
                 services.UseInMemoryStorage(quartzOptions);
             }
-            else if (storageType.Equals(QuartzStorageType.SqlServer)) {
-                QuartzOptions quartzOptions = configuration.GetSection("Hybrid:Quartz").Get<QuartzOptions>();
+            else if (quartzOptions.StorageType.Equals(QuartzStorageType.SqlServer)) {
                 services.UseSqlServer(quartzOptions);
             }
-            else if(storageType.Equals(QuartzStorageType.SqlServer)){
-                QuartzOptions quartzOptions = configuration.GetSection("Hybrid:Quartz").Get<QuartzOptions>();
+            else if(quartzOptions.StorageType.Equals(QuartzStorageType.SqlServer)){
                 services.UseMySql(quartzOptions);
             }
             else
@@ -76,13 +67,12 @@ namespace Hybrid.Quartz
             return base.AddServices(services);
         }
 
-        public override void UseModule(IApplicationBuilder app)
+        public override void UseModule(IServiceProvider provider)
         {
             if (!_enabled)
             {
                 return;
             }
-            IServiceProvider provider = app.ApplicationServices;
 
             var scheduler = provider.GetService<IScheduler>();
 
@@ -99,9 +89,8 @@ namespace Hybrid.Quartz
             scheduler.ListenerManager.AddTriggerListener(liveLogPlugin);
             scheduler.ListenerManager.AddSchedulerListener(liveLogPlugin);
 
-            scheduler.Start();
+            scheduler.Start().Wait();
 
-            //todo:启动 关闭
             //var lifetime = provider.GetService<IApplicationLifetime>();
             //lifetime.ApplicationStarted.Register(() =>
             //{
@@ -118,8 +107,7 @@ namespace Hybrid.Quartz
             //if (dashboardQuartzOptions == null) return;
 
             //app.UseDashboard(dashboardQuartzOptions);
-
-            base.UseModule(app);
+            base.UseModule(provider);
         }
     }
 }

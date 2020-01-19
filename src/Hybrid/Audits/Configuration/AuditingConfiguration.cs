@@ -16,7 +16,7 @@ namespace Hybrid.Audits.Configuration
         /// <summary>
         /// 匿名登录是否审计
         /// </summary>
-        public bool IsEnabledForAnonymousUsers { get; set; } = false;
+        public bool IsEnabledForAnonymousUsers { get; set; }
 
         /// <summary>
         /// Ignored types for serialization on audit logging.
@@ -26,6 +26,6 @@ namespace Hybrid.Audits.Configuration
         /// <summary>
         /// 是否保存返回数据
         /// </summary>
-        public bool SaveReturnValues { get; set; } = false;
+        public bool SaveReturnValues { get; set; }
     }
 }

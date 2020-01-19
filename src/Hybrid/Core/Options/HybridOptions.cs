@@ -31,6 +31,9 @@ namespace Hybrid.Core.Options
             OAuth2S = new ConcurrentDictionary<string, OAuth2Options>();
             Auditing = new AuditingConfiguration();
             EmailSender = new EmailSenderConfiguration();
+            Quartz = new QuartzOptions();
+            Ids = new IdsOptions();
+            Jwt = new JwtOptions();
         }
 
         /// <summary>
@@ -54,6 +57,16 @@ namespace Hybrid.Core.Options
         public EmailSenderConfiguration EmailSender { get; set; }
 
         /// <summary>
+        /// 获取或设置 Quartz选项
+        /// </summary>
+        public QuartzOptions Quartz { get; set; }
+
+        /// <summary>
+        /// 获取或设置 IdentityServer4身份认证选项
+        /// </summary>
+        public IdsOptions Ids { get; set; }
+
+        /// <summary>
         /// 获取或设置 JWT身份认证选项
         /// </summary>
         public JwtOptions Jwt { get; set; }
@@ -67,11 +80,6 @@ namespace Hybrid.Core.Options
         /// 获取或设置 Swagger选项
         /// </summary>
         public SwaggerOptions Swagger { get; set; }
-
-        /// <summary>
-        /// 获取或设置 Quartz选项
-        /// </summary>
-        public QuartzOptions Quartz { get; set; }
 
         /// <summary>
         /// 获取指定上下文类和指定数据库类型的上下文配置信息

@@ -25,7 +25,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 
-namespace IdentityServer4.Web.Controllers
+namespace Hybrid.Web.Controllers
 {
     [Description("网站-授权")]
     [ModuleInfo(Order = 2)]

@@ -17,7 +17,7 @@ namespace Hybrid.Core.Options
     /// <summary>
     /// 数据上下文配置节点
     /// </summary>
-    public class HybridDbContextOptions
+    public sealed class HybridDbContextOptions
     {
         /// <summary>
         /// 初始化一个<see cref="HybridDbContextOptions"/>类型的新实例

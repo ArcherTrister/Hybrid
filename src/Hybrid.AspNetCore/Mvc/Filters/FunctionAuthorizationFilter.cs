@@ -151,7 +151,6 @@ namespace Hybrid.AspNetCore.Mvc.Filters
         ///// <param name="result">权限检查结果</param>
         //protected virtual void HandleUnauthorizedRequest(AuthorizationFilterContext context, IServiceProvider provider, AuthorizationResult result)
         //{
-        //    ////todo:判断是否是Api
         //    //if (result.IsApi)
         //    //{
         //    //    //Json方式请求，返回AjaxResult

@@ -1,5 +1,7 @@
 ﻿using Hybrid.Extensions;
 
+using Microsoft.Extensions.Logging;
+
 using MySql.Data.MySqlClient;
 
 using Quartz.Impl.AdoJobStore;
@@ -13,64 +15,65 @@ namespace Hybrid.Quartz.MySql
 {
     public class MySqlObjectsInstaller
     {
-        //TODO:ILog
-        //private static readonly ILog Logger = LogProvider.For<MySqlObjectsInstaller>();
-
         internal static void Initialize(string connectionString, string tablePrefix)
         {
-            if (connectionString == null) throw new ArgumentNullException(nameof(connectionString));
-
-            //Logger.Info("Start installing Quartz SQL objects...");
-
-            try
+            using (var loggerFactory = LoggerFactory.Create(builder => builder.AddConsole()))
             {
-                using (var connection = new MySqlConnection(connectionString))
+                if (connectionString == null) throw new ArgumentNullException(nameof(connectionString));
+
+                var Logger = loggerFactory.CreateLogger<MySqlObjectsInstaller>();
+                Logger.LogInformation("Start installing Quartz SQL objects...");
+
+                try
                 {
-                    if (connection.State == ConnectionState.Closed)
+                    using (var connection = new MySqlConnection(connectionString))
                     {
-                        connection.Open();
+                        if (connection.State == ConnectionState.Closed)
+                        {
+                            connection.Open();
+                        }
+
+                        //if (TablesExists(connection, tablePrefix))
+                        //{
+                        //    logger.Info("DB tables already exist. Exit install");
+                        //    return;
+                        //}
+
+                        //Install(connection, tablePrefix);
+
+                        string checkTablesExists;
+
+                        using (var cmd = new MySqlCommand($"SHOW TABLES LIKE '{tablePrefix}Job';", connection))
+                        {
+                            checkTablesExists = (string)cmd.ExecuteScalar();//对连接执行sql语句，并返回受影响的行数
+                        }
+
+                        if (!string.IsNullOrEmpty(checkTablesExists))
+                        {
+                            Logger.LogInformation("DB tables already exist. Exit install");
+                            return;
+                        }
+
+                        //string script = AssemblyExtensions.GetStringResource(typeof(MySqlObjectsInstaller).GetTypeInfo().Assembly, "Hybrid.Quartz.MySql.Install.sql");
+
+                        string script = typeof(MySqlObjectsInstaller).GetTypeInfo().Assembly.GetStringByResource("Hybrid.Quartz.MySql.Install.sql");
+
+                        string sql = script.Replace("$(TablePrefix)", !string.IsNullOrWhiteSpace(tablePrefix) ? tablePrefix : AdoConstants.DefaultTablePrefix);
+
+                        using (var cmd = new MySqlCommand(sql, connection))
+                        {
+                            cmd.ExecuteNonQuery();//对连接执行sql语句，并返回受影响的行数
+                        }
+
+                        connection.Close();
                     }
-
-                    //if (TablesExists(connection, tablePrefix))
-                    //{
-                    //    logger.Info("DB tables already exist. Exit install");
-                    //    return;
-                    //}
-
-                    //Install(connection, tablePrefix);
-
-                    string checkTablesExists;
-
-                    using (var cmd = new MySqlCommand($"SHOW TABLES LIKE '{tablePrefix}Job';", connection))
-                    {
-                        checkTablesExists = (string)cmd.ExecuteScalar();//对连接执行sql语句，并返回受影响的行数
-                    }
-
-                    if (!string.IsNullOrEmpty(checkTablesExists))
-                    {
-                        //Logger.Info("DB tables already exist. Exit install");
-                        return;
-                    }
-
-                    //string script = AssemblyExtensions.GetStringResource(typeof(MySqlObjectsInstaller).GetTypeInfo().Assembly, "Hybrid.Quartz.MySql.Install.sql");
-
-                    string script = typeof(MySqlObjectsInstaller).GetTypeInfo().Assembly.GetStringByResource("Hybrid.Quartz.MySql.Install.sql");
-
-                    string sql = script.Replace("$(TablePrefix)", !string.IsNullOrWhiteSpace(tablePrefix) ? tablePrefix : AdoConstants.DefaultTablePrefix);
-
-                    using (var cmd = new MySqlCommand(sql, connection))
-                    {
-                        cmd.ExecuteNonQuery();//对连接执行sql语句，并返回受影响的行数
-                    }
-
-                    connection.Close();
+                    Logger.LogInformation("Quartz SQL objects installed.");
                 }
-                //Logger.Info("Quartz SQL objects installed.");
-            }
-            catch (DbException)
-            {
-                //Logger.WarnException("An exception occurred while trying to perform the migration.", ex);
-                //Logger.Warn("Was unable to perform the Quartz schema migration due to an exception. Ignore this message unless you've just installed or upgraded Quartz.");
+                catch (DbException ex)
+                {
+                    Logger.LogError(ex, "An exception occurred while trying to perform the migration.");
+                    Logger.LogError("Was unable to perform the Quartz schema migration due to an exception. Ignore this message unless you've just installed or upgraded Quartz.");
+                }
             }
         }
 

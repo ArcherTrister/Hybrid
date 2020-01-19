@@ -42,7 +42,7 @@
 //using System.Linq.Expressions;
 //using System.Threading.Tasks;
 
-//namespace IdentityServer4.Web.Controllers
+//namespace Hybrid.Web.Controllers
 //{
 //    [Description("网站-认证")]
 //    [ModuleInfo(Order = 1)]

@@ -23,22 +23,10 @@ namespace Microsoft.Extensions.DependencyInjection
     {
         public static void UseMySql(this IServiceCollection services, QuartzOptions mySqlQuartzOptions)
         {
-            if (mySqlQuartzOptions.SchedulerName.IsMissing())
-            {
-                mySqlQuartzOptions.SchedulerName = HybridConstants.DefaultSchedulerName;
-            }
-            if (mySqlQuartzOptions.ConnectionString.IsMissing())
-            {
-                throw new HybridException("配置文件中Quartz节点的ConnectionString不能为空");
-            }
-            if (!(mySqlQuartzOptions.SerializerType.Equals(0) && mySqlQuartzOptions.SerializerType.Equals(1)))
-            {
-                mySqlQuartzOptions.SerializerType = QuartzSerializerType.Binary;
-            }
             IScheduler scheduler = new StdSchedulerFactory(SetProperties(mySqlQuartzOptions)).GetScheduler().Result;
             services.AddSingleton(scheduler);
             // 初始化数据库
-            MySqlObjectsInstaller.Initialize(mySqlQuartzOptions.ConnectionString, mySqlQuartzOptions.TablePrefix);
+            MySqlObjectsInstaller.Initialize(mySqlQuartzOptions.ConnectionStringOrCacheName, mySqlQuartzOptions.TablePrefix);
         }
 
         private static NameValueCollection SetProperties(QuartzOptions mySqlQuartzOptions)
@@ -50,7 +38,7 @@ namespace Microsoft.Extensions.DependencyInjection
 
             properties.Set("quartz.jobStore.useProperties", "true");
             properties.Set("quartz.jobStore.dataSource", "default");
-            properties.Set("quartz.dataSource.default.connectionString", mySqlQuartzOptions.ConnectionString);
+            properties.Set("quartz.dataSource.default.connectionString", mySqlQuartzOptions.ConnectionStringOrCacheName);
             properties.Set("quartz.dataSource.default.provider", "MySql");
             properties.Set("quartz.jobStore.driverDelegateType", "Quartz.Impl.AdoJobStore.MySQLDelegate, Quartz");
             properties.Set("quartz.jobStore.tablePrefix", mySqlQuartzOptions.TablePrefix);

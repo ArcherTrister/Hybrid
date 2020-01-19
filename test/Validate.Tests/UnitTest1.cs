@@ -105,5 +105,11 @@ namespace Validate.Tests
             var error = Assert.ThrowsException<OptionsValidationException>(() =>
     sp.GetRequiredService<IOptionsMonitor<AnnotatedOptions>>().CurrentValue);
         }
+
+        [Fact]
+        public void Validate()
+        {
+        
+        }
     }
 }

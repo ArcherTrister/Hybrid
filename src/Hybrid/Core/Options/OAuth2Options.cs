@@ -14,7 +14,7 @@ namespace Hybrid.Core.Options
     /// <summary>
     /// 第三方OAuth2登录的配置选项
     /// </summary>
-    public class OAuth2Options
+    public sealed class OAuth2Options
     {
         /// <summary>
         /// 获取或设置 本应用在第三方OAuth2系统中的客户端Id

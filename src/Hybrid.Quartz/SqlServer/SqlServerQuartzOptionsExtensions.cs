@@ -20,23 +20,10 @@ namespace Microsoft.Extensions.DependencyInjection
     {
         public static void UseSqlServer(this IServiceCollection services, QuartzOptions sqlServerQuartzOptions)
         {
-            if (sqlServerQuartzOptions.SchedulerName.IsMissing())
-            {
-                sqlServerQuartzOptions.SchedulerName = HybridConstants.DefaultSchedulerName;
-            }
-            if (sqlServerQuartzOptions.ConnectionString.IsMissing())
-            {
-                throw new HybridException("配置文件中Quartz节点的ConnectionString不能为空");
-            }
-            if (!(sqlServerQuartzOptions.SerializerType.Equals(0) && sqlServerQuartzOptions.SerializerType.Equals(1)))
-            {
-                sqlServerQuartzOptions.SerializerType = QuartzSerializerType.Binary;
-            }
-
             IScheduler scheduler = new StdSchedulerFactory(SetProperties(sqlServerQuartzOptions)).GetScheduler().Result;
             services.AddSingleton(scheduler);
             // 初始化数据库
-            SqlServerObjectsInstaller.Initialize(sqlServerQuartzOptions.ConnectionString, sqlServerQuartzOptions.TablePrefix);
+            SqlServerObjectsInstaller.Initialize(sqlServerQuartzOptions.ConnectionStringOrCacheName, sqlServerQuartzOptions.TablePrefix);
         }
 
         private static NameValueCollection SetProperties(QuartzOptions sqlServerQuartzOptions)
@@ -47,7 +34,7 @@ namespace Microsoft.Extensions.DependencyInjection
             properties.Set(StdSchedulerFactory.PropertyJobStoreType, "Quartz.Impl.AdoJobStore.JobStoreTX, Quartz");
             properties.Set("quartz.jobStore.useProperties", "true");
             properties.Set("quartz.jobStore.dataSource", "default");
-            properties.Set("quartz.dataSource.default.connectionString", sqlServerQuartzOptions.ConnectionString);
+            properties.Set("quartz.dataSource.default.connectionString", sqlServerQuartzOptions.ConnectionStringOrCacheName);
             properties.Set("quartz.dataSource.default.provider", "SqlServer");
 
             properties.Set("quartz.jobStore.driverDelegateType", "Quartz.Impl.AdoJobStore.StdAdoDelegate, Quartz");

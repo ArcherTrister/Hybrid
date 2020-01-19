@@ -1,6 +1,6 @@
 ﻿using Hybrid.Core.Options;
 using Hybrid.Domain.Entities;
-
+using Hybrid.Exceptions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
@@ -22,7 +22,7 @@ namespace Hybrid.Extensions
             if (valid) return;
 
             var msg = string.Join("\n", validationResults.Select(r => r.ErrorMessage));
-            throw new Exception($"Invalid configuration of section '{sectionName}':\n{msg}");
+            throw new HybridException($"Invalid configuration of section '{sectionName}':\n{msg}");
         }
 
     //    public static OptionsBuilder<TOptions> ValidateDataAnnotation<TOptions>(
@@ -99,9 +99,33 @@ namespace Hybrid.Extensions
                 {
                     ValidateByDataAnnotation(x.EmailSender, x.EmailSender.GetType().Name);
                 }
-                foreach (var item in x.OAuth2S)
+                //foreach (var item in x.OAuth2S)
+                //{
+                //    ValidateByDataAnnotation(item.Value, item.Value.GetType().Name);
+                //}
+                if (x.OAuth2S.Count > 0)
                 {
-                    ValidateByDataAnnotation(item.Value, item.Value.GetType().Name);
+                    ValidateByDataAnnotation(x.OAuth2S, x.OAuth2S.GetType().Name);
+                }
+                if (x.Quartz.IsEnabled)
+                {
+                    ValidateByDataAnnotation(x.Quartz, x.Quartz.GetType().Name);
+                }
+                if (x.Ids.IsEnabled && x.Jwt.IsEnabled)
+                {
+                    throw new HybridException("不能同时启用Ids服务和Jwt服务");
+                }
+                if (x.Ids.IsEnabled)
+                {
+                    ValidateByDataAnnotation(x.Ids, x.Ids.GetType().Name);
+                }
+                if (x.Jwt.IsEnabled)
+                {
+                    ValidateByDataAnnotation(x.Jwt, x.Jwt.GetType().Name);
+                }
+                if (x.Redis.IsEnabled)
+                {
+                    ValidateByDataAnnotation(x.Redis, x.Redis.GetType().Name);
                 }
             });
         }

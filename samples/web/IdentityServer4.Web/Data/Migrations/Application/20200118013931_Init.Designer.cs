@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace IdentityServer4.Web.Data.Migrations.Application
+namespace Hybrid.Web.Data.Migrations.Application
 {
     [DbContext(typeof(DefaultDbContext))]
     [Migration("20200118013931_Init")]

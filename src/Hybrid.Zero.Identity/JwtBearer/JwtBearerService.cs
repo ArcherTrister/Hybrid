@@ -175,11 +175,6 @@ namespace Hybrid.Zero.Identity
         private (string, DateTime) CreateToken(IEnumerable<Claim> claims, JwtOptions options, JwtTokenType tokenType, RefreshToken refreshToken = null)
         {
             string secret = options.Secret;
-            if (secret == null)
-            {
-                throw new HybridException("创建JwtToken时Secret为空，请在Hybrid:Jwt:Secret节点中进行配置");
-            }
-
             DateTime expires;
             DateTime now = DateTime.UtcNow;
             if (tokenType == JwtTokenType.AccessToken)

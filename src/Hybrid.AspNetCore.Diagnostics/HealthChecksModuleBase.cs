@@ -51,7 +51,7 @@ namespace Hybrid.AspNetCore.Diagnostics
         public override IServiceCollection AddServices(IServiceCollection services)
         {
             IConfiguration configuration = services.GetConfiguration();
-            bool enabled = configuration["OSharp:HealthChecks:Enabled"].CastTo(false);
+            bool enabled = configuration["Hybrid:HealthChecks:Enabled"].CastTo(false);
             if (!enabled)
             {
                 return services;
@@ -70,13 +70,13 @@ namespace Hybrid.AspNetCore.Diagnostics
         {
             IServiceProvider provider = app.ApplicationServices;
             IConfiguration configuration = provider.GetRequiredService<IConfiguration>();
-            bool enabled = configuration["OSharp:HealthChecks:Enabled"].CastTo(false);
+            bool enabled = configuration["Hybrid:HealthChecks:Enabled"].CastTo(false);
             if (!enabled)
             {
                 return;
             }
 
-            string url = configuration["OSharp:HealthChecks:Url"] ?? "/health";
+            string url = configuration["Hybrid:HealthChecks:Url"] ?? "/health";
             HealthCheckOptions options = GetHealthCheckOptions(provider);
             if (options != null)
             {
@@ -102,9 +102,9 @@ namespace Hybrid.AspNetCore.Diagnostics
             HybridOptions options = section.Get<HybridOptions>();
 
             //system
-            long providerMemory = configuration["OSharp:HealthChecks:PrivateMemory"].CastTo(1000_000_000L);
-            long virtualMemorySize = configuration["OSharp:HealthChecks:VirtualMemorySize"].CastTo(1000_000_000L);
-            long workingSet = configuration["OSharp:HealthChecks:WorkingSet"].CastTo(1000_000_000L);
+            long providerMemory = configuration["Hybrid:HealthChecks:PrivateMemory"].CastTo(1000_000_000L);
+            long virtualMemorySize = configuration["Hybrid:HealthChecks:VirtualMemorySize"].CastTo(1000_000_000L);
+            long workingSet = configuration["Hybrid:HealthChecks:WorkingSet"].CastTo(1000_000_000L);
             builder.AddPrivateMemoryHealthCheck(providerMemory); //最大私有内存
             builder.AddVirtualMemorySizeHealthCheck(virtualMemorySize); //最大虚拟内存
             builder.AddWorkingSetHealthCheck(workingSet); //最大工作内存
@@ -137,30 +137,30 @@ namespace Hybrid.AspNetCore.Diagnostics
                         break;
 
                     default:
-                        throw new ArgumentOutOfRangeException($"OSharpOptions中 {pair.Value.DatabaseType} 不受支持");
+                        throw new ArgumentOutOfRangeException($"HybridOptions中 {pair.Value.DatabaseType} 不受支持");
                 }
             }
 
-            ////SMTP
-            //if (options.MailSenderConfiguration != null)
-            //{
-            //    var smtp = options.MailSenderConfiguration;
-            //    builder.AddSmtpHealthCheck(smtpOptions =>
-            //    {
-            //        smtpOptions.Host = smtp.Host;
-            //        smtpOptions.LoginWith(smtp.UserName, smtp.Password);
-            //    });
-            //}
+            //SMTP
+            if (options.EmailSender != null)
+            {
+                var smtp = options.EmailSender;
+                builder.AddSmtpHealthCheck(smtpOptions =>
+                {
+                    smtpOptions.Host = smtp.Host;
+                    smtpOptions.LoginWith(smtp.UserName, smtp.Password);
+                });
+            }
 
             //Redis
-            if (options.Redis != null && options.Redis.Enabled)
+            if (options.Redis != null && options.Redis.IsEnabled)
             {
                 var redis = options.Redis;
                 builder.AddRedis(redis.Configuration);
             }
 
             //Hangfire
-            if (configuration["OSharp:Hangfire:Enabled"].CastTo(false))
+            if (configuration["Hybrid:Hangfire:Enabled"].CastTo(false))
             {
                 builder.AddHangfire(hangfireOptions =>
                 {

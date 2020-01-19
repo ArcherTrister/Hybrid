@@ -14,7 +14,7 @@ using Microsoft.AspNetCore.Mvc;
 
 using System.Collections.Generic;
 
-namespace IdentityServer4.Web.Controllers
+namespace Hybrid.Web.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]

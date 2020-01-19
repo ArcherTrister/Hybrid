@@ -9,6 +9,7 @@
 
 using Hybrid.AspNetCore;
 using Hybrid.Core.Modules;
+using Hybrid.Core.Options;
 using Hybrid.EventBuses;
 using Hybrid.Zero.Identity;
 
@@ -16,6 +17,7 @@ using IdentityServer4.Configuration;
 
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
@@ -64,7 +66,14 @@ namespace Hybrid.Zero.IdentityServer4
 
             var identityBuilder = services.AddIdentityServer(identityServerOptionsAction).AddHybridIdentity<TUser, TUserKey>();
 
-            AddIdentityServerBuild(identityBuilder, services);
+            IConfiguration configuration = services.GetConfiguration();
+            IdsOptions idsOptions = configuration.GetSection("Hybrid:Ids").Get<IdsOptions>();
+
+            if (idsOptions.IsLocalApi)
+            {
+                AddIdentityServerBuild(identityBuilder, services);
+            }
+
 
             //Action<CookieAuthenticationOptions> cookieOptionsAction = CookieOptionsAction();
             //if (cookieOptionsAction != null)
@@ -72,7 +81,7 @@ namespace Hybrid.Zero.IdentityServer4
             //    services.ConfigureApplicationCookie(cookieOptionsAction);
             //}
 
-            AddAuthentication(services);
+            AddAuthentication(services, idsOptions);
 
             return services;
         }
@@ -83,7 +92,18 @@ namespace Hybrid.Zero.IdentityServer4
         /// <returns></returns>
         protected virtual Action<IdentityOptions> IdentityOptionsAction()
         {
-            return null;
+            return options =>
+            {
+                //登录
+                options.SignIn.RequireConfirmedEmail = false;
+                //密码
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = false;
+                //用户
+                options.User.RequireUniqueEmail = false;
+                //锁定
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(15);
+            };
         }
 
         /// <summary>
@@ -99,9 +119,43 @@ namespace Hybrid.Zero.IdentityServer4
         /// };
         /// </example>
         /// <returns></returns>
-        protected virtual Action<IdentityServerOptions> IdentityServerOptionsAction()
+        protected Action<IdentityServerOptions> IdentityServerOptionsAction()
         {
-            return null;
+            return options =>
+            {
+                //Authentication
+                ////设置用于交互用户的主机所混杂的cookie创作方案。如果未设置，则该方案将从主机的默认身份验证方案中推断。当主机中使用AddPolicyScheme作为默认方案时，通常使用此设置。
+                //options.Authentication.CookieAuthenticationScheme = IdentityServerConstants.DefaultCheckSessionCookieName;
+                //用于检查会话终结点的cookie的名称。默认为idsrv.session
+                //options.Authentication.CheckSessionCookieName = "";
+                //身份验证cookie生存期(只有在使用IdghtyServer提供的cookie处理程序时才有效)。
+                options.Authentication.CookieLifetime = TimeSpan.FromMinutes(720);
+                //指定Cookie是否应该是滑动的(只有在使用IdghtyServer提供的Cookie处理程序时才有效)。
+                options.Authentication.CookieSlidingExpiration = true;
+                //指示用户是否必须通过身份验证才能接受结束会话终结点的参数。默认为false。
+                //options.Authentication.RequireAuthenticatedUserForSignOutMessage = false;
+                //如果设置，将需要在结束会话回调端点上发出帧-src csp报头，该端点将iframes呈现给客户端以进行前端通道签名通知。默认为true。
+                //options.Authentication.RequireCspFrameSrcForSignout = true;
+
+                options.Events.RaiseErrorEvents = true;
+                options.Events.RaiseFailureEvents = true;
+                options.Events.RaiseInformationEvents = true;
+                options.Events.RaiseSuccessEvents = true;
+
+                options.UserInteraction = new UserInteractionOptions
+                {
+                    LoginUrl = "/Account/Login",//【必备】登录地址
+                    LogoutUrl = "/Account/Logout",//【必备】退出地址
+                    ConsentUrl = "/Consent/Index",//【必备】允许授权同意页面地址
+                    ErrorUrl = "/Home/Error", //【必备】错误页面地址
+                    LoginReturnUrlParameter = "ReturnUrl",//【必备】设置传递给登录页面的返回URL参数的名称。默认为returnUrl
+                    LogoutIdParameter = "logoutId", //【必备】设置传递给注销页面的注销消息ID参数的名称。缺省为logoutId
+                    ConsentReturnUrlParameter = "ReturnUrl", //【必备】设置传递给同意页面的返回URL参数的名称。默认为returnUrl
+                    ErrorIdParameter = "errorId", //【必备】设置传递给错误页面的错误消息ID参数的名称。缺省为errorId
+                    CustomRedirectReturnUrlParameter = "ReturnUrl", //【必备】设置从授权端点传递给自定义重定向的返回URL参数的名称。默认为returnUrl
+                    CookieMessageThreshold = 5 //【必备】由于浏览器对Cookie的大小有限制，设置Cookies数量的限制，有效的保证了浏览器打开多个选项卡，一旦超出了Cookies限制就会清除以前的Cookies值
+                };
+            };
         }
 
         ///// <summary>
@@ -117,7 +171,7 @@ namespace Hybrid.Zero.IdentityServer4
         /// 添加Authentication服务
         /// </summary>
         /// <param name="services">服务集合</param>
-        protected virtual void AddAuthentication(IServiceCollection services)
+        protected virtual void AddAuthentication(IServiceCollection services, IdsOptions idsOptions)
         { }
 
         /// <summary>

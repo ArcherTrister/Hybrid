@@ -21,7 +21,7 @@ namespace Hybrid.Web.Identity
     /// <summary>
     /// 业务契约：身份认证模块
     /// </summary>
-    public interface IIdentityContract
+    public interface IIdentityService
     {
         #region 用户信息业务
 

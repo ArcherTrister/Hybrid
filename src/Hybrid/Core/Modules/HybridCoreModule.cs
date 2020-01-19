@@ -91,8 +91,6 @@ namespace Hybrid.Core.Modules
             localizationManager.Initialize();
 
             InitConfiguration(Configuration, Options);
-
-            //TODO:Config
         }
 
         private void InitConfiguration(IHybridStartupConfiguration configuration, HybridOptions options)

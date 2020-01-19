@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace IdentityServer4.Web.Data.Migrations.Application
+namespace Hybrid.Web.Data.Migrations.Application
 {
     public partial class Init : Migration
     {

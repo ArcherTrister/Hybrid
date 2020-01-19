@@ -12,37 +12,31 @@ using System.ComponentModel.DataAnnotations;
 namespace Hybrid.Core.Options
 {
     /// <summary>
-    /// JWT身份认证选项
+    /// IdentityServer4身份认证选项
     /// </summary>
-    public sealed class JwtOptions
+    public sealed class IdsOptions
     {
         /// <summary>
-        /// 获取或设置 密钥
+        /// 获取或设置 授权服务器地址
         /// </summary>
-        [Required(ErrorMessage = "密钥不能为空")]
-        public string Secret { get; set; }
-
-        /// <summary>
-        /// 获取或设置 发行方
-        /// </summary>
-        [Required(ErrorMessage = "发行方不能为空")]
-        public string Issuer { get; set; }
+        [Required(ErrorMessage = "授权服务器地址不能为空")]
+        public string Authority { get; set; }
 
         /// <summary>
         /// 获取或设置 订阅方(要验证的Api)，多个用逗号隔开
         /// </summary>
-        [Required(ErrorMessage = "订阅方不能为空")]
+        [Required(ErrorMessage = "验证令牌的Api不能为空")]
         public string Audience { get; set; }
 
         /// <summary>
-        /// 获取或设置 AccessToken有效期分钟数
+        /// 获取或设置 是否使用ssl
         /// </summary>
-        public double AccessExpireMins { get; set; }
+        public bool UseHttps { get; set; }
 
         /// <summary>
-        /// 获取或设置 RefreshToken有效期分钟数
+        /// 获取或设置 授权服务器与Api集成/授权服务器则设置为true,如果只有Api则设置为false
         /// </summary>
-        public double RefreshExpireMins { get; set; }
+        public bool IsLocalApi { get; set; }
 
         /// <summary>
         /// 获取或设置 是否启用

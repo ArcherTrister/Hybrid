@@ -38,6 +38,6 @@
         /// <summary>
         /// 是否替换
         /// </summary>
-        public bool Replace { get; set; } = false;
+        public bool Replace { get; set; }
     }
 }

@@ -8,6 +8,7 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.Core.Modules;
+using Hybrid.Core.Options;
 using Hybrid.Exceptions;
 using Hybrid.Extensions;
 
@@ -40,24 +41,17 @@ namespace Hybrid.Redis
         public override IServiceCollection AddServices(IServiceCollection services)
         {
             IConfiguration configuration = services.GetConfiguration();
-            _enabled = configuration["Hybrid:Redis:Enabled"].CastTo(false);
+            RedisOptions redisOptions = configuration.GetSection("Hybrid:Redis").Get<RedisOptions>();
+            _enabled = redisOptions.IsEnabled;
             if (!_enabled)
             {
                 return services;
             }
-
-            string config = configuration["Hybrid:Redis:Configuration"];
-            if (config.IsNullOrEmpty())
-            {
-                throw new HybridException("配置文件中Redis节点的Configuration不能为空");
-            }
-            string name = configuration["Hybrid:Redis:InstanceName"].CastTo("RedisName");
-
             services.RemoveAll(typeof(IDistributedCache));
             services.AddStackExchangeRedisCache(opts =>
             {
-                opts.Configuration = config;
-                opts.InstanceName = name;
+                opts.Configuration = redisOptions.Configuration;
+                opts.InstanceName = redisOptions.InstanceName;
             });
 
             return services;
