@@ -31,14 +31,14 @@
     <!--<PackageLicenseUrl>https://choosealicense.com/licenses/apache-2.0/</PackageLicenseUrl>-->
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <!--图标URL-->
-    <PackageIcon>icon.ico</PackageIcon>
+    <PackageIcon>icon.png</PackageIcon>
     <!--存储库类型-->
     <RepositoryType>git</RepositoryType>
     <NeutralLanguage>zh-CHS</NeutralLanguage>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\build\icon.ico" Pack="true" Visible="false" PackagePath="\" />
+    <None Include="..\..\build\icon.png" Pack="true" Visible="false" PackagePath="\" />
   </ItemGroup>
   
 </Project>
