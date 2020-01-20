@@ -1,10 +1,6 @@
-﻿using Hybrid.Core.Options;
-using Hybrid.Exceptions;
-using Hybrid.Extensions;
+﻿using Hybrid.Extensions;
 using Hybrid.Net.Mail.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 
-using System;
 using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,7 +28,6 @@ namespace Hybrid.Net.Mail
         /// <summary>
         /// 发送Email
         /// </summary>
-        /// <param name="from">发送人Email</param>
         /// <param name="to">接收人Email</param>
         /// <param name="subject">Email标题</param>
         /// <param name="body">Email内容</param>
@@ -52,7 +47,6 @@ namespace Hybrid.Net.Mail
         /// <summary>
         /// 发送Email
         /// </summary>
-        /// <param name="from">发送人Email</param>
         /// <param name="to">接收人Email</param>
         /// <param name="subject">Email标题</param>
         /// <param name="body">Email内容</param>

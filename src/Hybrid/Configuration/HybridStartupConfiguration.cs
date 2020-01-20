@@ -21,16 +21,16 @@ namespace Hybrid.Configuration
         /// <summary>
         /// 用于设置本地化配置
         /// </summary>
-        public ILocalizationConfiguration Localization { get; set; }
+        public ILocalizationConfiguration Localization { get; private set; }
 
         /// <summary>
         /// 用于设置邮件发送配置
         /// </summary>
-        public IEmailSenderConfiguration EmailSender { get; set; }
+        public IEmailSenderConfiguration EmailSender { get; private set; }
 
         /// <summary>
         /// 用于设置审计配置
         /// </summary>
-        public IAuditingConfiguration Auditing { get; set; }
+        public IAuditingConfiguration Auditing { get; private set; }
     }
 }

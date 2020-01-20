@@ -1,6 +1,4 @@
-﻿using Hybrid.Core.Options;
-using Microsoft.Extensions.Options;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Hybrid.Net.Mail.Configuration
 {
@@ -9,6 +7,14 @@ namespace Hybrid.Net.Mail.Configuration
     /// </summary>
     public sealed class EmailSenderConfiguration : IEmailSenderConfiguration
     {
+        /// <summary>
+        /// Creates a new <see cref="EmailSenderConfiguration"/>.
+        /// </summary>
+        public EmailSenderConfiguration()
+        {
+
+        }
+
         /// <summary>
         /// 获取或设置 邮件发送服务器
         /// </summary>

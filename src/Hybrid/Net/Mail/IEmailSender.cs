@@ -18,42 +18,64 @@ namespace Hybrid.Net.Mail
     public interface IEmailSender
     {
         /// <summary>
-        /// Sends an email.
+        /// 异步发送Email
         /// </summary>
+        /// <param name="to">接收人Email</param>
+        /// <param name="subject">Email标题</param>
+        /// <param name="body">Email内容</param>
+        /// <param name="isBodyHtml">Email内容是否是Html</param>
+        /// <returns></returns>
         Task SendAsync(string to, string subject, string body, bool isBodyHtml = true);
 
         /// <summary>
-        /// Sends an email.
+        /// 发送Email
         /// </summary>
+        /// <param name="to">接收人Email</param>
+        /// <param name="subject">Email标题</param>
+        /// <param name="body">Email内容</param>
+        /// <param name="isBodyHtml">Email内容是否是Html</param>
+        /// <returns></returns>
         void Send(string to, string subject, string body, bool isBodyHtml = true);
 
         /// <summary>
-        /// Sends an email.
+        /// 异步发送Email
         /// </summary>
+        /// <param name="from">发送人Email</param>
+        /// <param name="to">接收人Email</param>
+        /// <param name="subject">Email标题</param>
+        /// <param name="body">Email内容</param>
+        /// <param name="isBodyHtml">Email内容是否是Html</param>
+        /// <returns></returns>
         Task SendAsync(string from, string to, string subject, string body, bool isBodyHtml = true);
 
         /// <summary>
-        /// Sends an email.
+        /// 发送Email
         /// </summary>
+        /// <param name="from">发送人Email</param>
+        /// <param name="to">接收人Email</param>
+        /// <param name="subject">Email标题</param>
+        /// <param name="body">Email内容</param>
+        /// <param name="isBodyHtml">Email内容是否是Html</param>
+        /// <returns></returns>
         void Send(string from, string to, string subject, string body, bool isBodyHtml = true);
 
         /// <summary>
-        /// Sends an email.
+        /// 发送Email
         /// </summary>
-        /// <param name="mail">Mail to be sent</param>
+        /// <param name="mail">要发送的邮件</param>
         /// <param name="normalize">
-        /// Should normalize email?
-        /// If true, it sets sender address/name if it's not set before and makes mail encoding UTF-8.
+        /// 是否要标准化邮件
+        /// 如果是，如果他们没有设置地址/名称，他将自动设置，并且设置UTF-8编码
         /// </param>
         void Send(MailMessage mail, bool normalize = true);
 
         /// <summary>
-        /// Sends an email.
+        /// 异步发送Email
         /// </summary>
-        /// <param name="mail">Mail to be sent</param>
+        /// <param name="mail">要发送的邮件</param>
         /// <param name="normalize">
-        /// Should normalize email?
-        /// If true, it sets sender address/name if it's not set before and makes mail encoding UTF-8.
+        /// 是否要标准化邮件
+        /// 如果是，如果他们没有设置地址/名称，他将自动设置，并且设置UTF-8编码
         /// </param>
         Task SendAsync(MailMessage mail, bool normalize = true);
     }

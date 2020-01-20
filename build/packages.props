@@ -22,7 +22,7 @@
     <RepositoryUrl>https://github.com/ArcherTrister/Hybrid</RepositoryUrl>
     <!--<TargetFramework>netstandard2.0</TargetFramework>-->
     <!--在生成期间自动生成包-->
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <!--一个布尔值，指定客户端是否必须提示使用者接受包许可证后才可安装包。默认值为 false-->
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <Authors>ArcherTrister</Authors>

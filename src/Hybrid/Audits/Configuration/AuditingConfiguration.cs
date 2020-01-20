@@ -9,6 +9,17 @@ namespace Hybrid.Audits.Configuration
     public sealed class AuditingConfiguration : IAuditingConfiguration
     {
         /// <summary>
+        /// Creates a new <see cref="AuditingConfiguration"/>.
+        /// </summary>
+        public AuditingConfiguration()
+        {
+            IsEnabled = true;
+            IgnoredTypes = new List<Type>();
+            SaveReturnValues = false;
+            IsEnabledForAnonymousUsers = false;
+        }
+
+        /// <summary>
         /// 是否启用
         /// </summary>
         public bool IsEnabled { get; set; } = true;

@@ -38,7 +38,7 @@ namespace Hybrid.Core.Modules
     /// Hybrid核心模块
     /// </summary>
     [Description("Hybrid核心模块")]
-    public class HybridCoreModule : HybridModule
+    public sealed class HybridCoreModule : HybridModule
     {
         /// <summary>
         /// 获取 模块级别
@@ -96,7 +96,9 @@ namespace Hybrid.Core.Modules
         private void InitConfiguration(IHybridStartupConfiguration configuration, HybridOptions options)
         {
             //Auditing
-            configuration.Auditing = options.Auditing;
+            configuration.Auditing.IsEnabled = options.Auditing.IsEnabled;
+            configuration.Auditing.IsEnabledForAnonymousUsers = options.Auditing.IsEnabledForAnonymousUsers;
+            configuration.Auditing.SaveReturnValues = options.Auditing.SaveReturnValues;
             var commonIgnoredTypes = new[]
             {
                 typeof(Stream),
@@ -115,7 +117,15 @@ namespace Hybrid.Core.Modules
             //}
 
             //Email
-            configuration.EmailSender = options.EmailSender;
+            configuration.EmailSender.DisplayName = options.EmailSender.DisplayName;
+            configuration.EmailSender.Domain = options.EmailSender.Domain;
+            configuration.EmailSender.EnableSsl = options.EmailSender.EnableSsl;
+            configuration.EmailSender.Host = options.EmailSender.Host;
+            configuration.EmailSender.IsEnabled = options.EmailSender.IsEnabled;
+            configuration.EmailSender.Password = options.EmailSender.Password;
+            configuration.EmailSender.Port = options.EmailSender.Port;
+            configuration.EmailSender.UseDefaultCredentials = options.EmailSender.UseDefaultCredentials;
+            configuration.EmailSender.UserName = options.EmailSender.UserName;
         }
     }
 }
