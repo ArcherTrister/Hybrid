@@ -33,8 +33,6 @@ namespace Hybrid.AspNetCore.Middlewares
         /// </summary>
         public NodeExceptionHandlerMiddleware(RequestDelegate next, ILoggerFactory loggerFactory)
         {
-            Check.NotNull(next, nameof(next));
-
             _next = next;
             _logger = loggerFactory.CreateLogger<NodeExceptionHandlerMiddleware>();
         }
@@ -44,7 +42,7 @@ namespace Hybrid.AspNetCore.Middlewares
         /// </summary>
         /// <param name="context">Http上下文</param>
         /// <returns></returns>
-        public async Task Invoke(HttpContext context)
+        public async Task InvokeAsync(HttpContext context)
         {
             try
             {
@@ -59,8 +57,8 @@ namespace Hybrid.AspNetCore.Middlewares
                     {
                         return;
                     }
-                    context.Response.StatusCode = 500;
                     context.Response.Clear();
+                    context.Response.StatusCode = 200;
                     context.Response.ContentType = "application/json; charset=utf-8";
                     await context.Response.WriteAsync(new AjaxResult(ex.Message, AjaxResultType.Error).ToJsonString());
                     return;

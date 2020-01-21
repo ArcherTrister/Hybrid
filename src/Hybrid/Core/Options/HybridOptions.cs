@@ -8,6 +8,7 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.Audits.Configuration;
+using Hybrid.Http.Configuration;
 using Hybrid.Net.Mail.Configuration;
 
 using System;
@@ -34,6 +35,7 @@ namespace Hybrid.Core.Options
             Quartz = new QuartzOptions();
             Ids = new IdsOptions();
             Jwt = new JwtOptions();
+            HttpEncrypt = new HttpEncryptConfiguration();
         }
 
         /// <summary>
@@ -75,6 +77,11 @@ namespace Hybrid.Core.Options
         /// 获取或设置 Redis选项
         /// </summary>
         public RedisOptions Redis { get; set; }
+
+        /// <summary>
+        /// 获取或设置 Http通信加密选项
+        /// </summary>
+        public HttpEncryptConfiguration HttpEncrypt { get; set; }
 
         /// <summary>
         /// 获取或设置 Swagger选项

@@ -16,7 +16,7 @@ using Hybrid.Dependency;
 using Hybrid.Domain.Entities;
 using Hybrid.Extensions;
 using Hybrid.Filter;
-
+using Hybrid.Http.Configuration;
 using Hybrid.Localization;
 using Hybrid.Localization.Configuration;
 using Hybrid.Localization.Dictionaries;
@@ -67,10 +67,11 @@ namespace Hybrid.Core.Modules
             services.AddSingleton<ILocalizationContext, LocalizationContext>();
             services.AddSingleton<ILocalizationManager, LocalizationManager>();
 
-            //Add Configuration Service
+            //TODO:Add Configuration Service
             services.AddSingleton<ILocalizationConfiguration, LocalizationConfiguration>();
             services.AddSingleton<IEmailSenderConfiguration, EmailSenderConfiguration>();
             services.AddSingleton<IAuditingConfiguration, AuditingConfiguration>();
+            services.AddSingleton<IHttpEncryptConfiguration, HttpEncryptConfiguration>();
 
             return services;
         }
@@ -93,8 +94,15 @@ namespace Hybrid.Core.Modules
             InitConfiguration(Configuration, Options);
         }
 
+        /// <summary>
+        /// 初始化配置
+        /// </summary>
+        /// <param name="configuration"></param>
+        /// <param name="options"></param>
         private void InitConfiguration(IHybridStartupConfiguration configuration, HybridOptions options)
         {
+            //TODO:InitConfiguration
+
             //Auditing
             configuration.Auditing.IsEnabled = options.Auditing.IsEnabled;
             configuration.Auditing.IsEnabledForAnonymousUsers = options.Auditing.IsEnabledForAnonymousUsers;
@@ -126,6 +134,11 @@ namespace Hybrid.Core.Modules
             configuration.EmailSender.Port = options.EmailSender.Port;
             configuration.EmailSender.UseDefaultCredentials = options.EmailSender.UseDefaultCredentials;
             configuration.EmailSender.UserName = options.EmailSender.UserName;
+
+            //HttpEncrypt
+            configuration.HttpEncrypt.ClientPublicKey = options.HttpEncrypt.ClientPublicKey;
+            configuration.HttpEncrypt.HostPrivateKey = options.HttpEncrypt.HostPrivateKey;
+            configuration.HttpEncrypt.IsEnabled = options.HttpEncrypt.IsEnabled;
         }
     }
 }

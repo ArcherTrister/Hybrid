@@ -7,6 +7,11 @@
 //  <last-date>2019-06-12 15:31</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Extensions;
+using Hybrid.Timing;
+
+using System;
+
 namespace Hybrid.Identity.JwtBearer
 {
     /// <summary>
@@ -28,5 +33,15 @@ namespace Hybrid.Identity.JwtBearer
         /// 获取或设置 RefreshToken有效期，UTC标准
         /// </summary>
         public long RefreshUctExpires { get; set; }
+
+        /// <summary>
+        /// 刷新Token是否过期
+        /// </summary>
+        public bool IsRefreshExpired()
+        {
+            DateTime now = DateTime.Now;
+            long nowTick = now.ToJsGetTime().CastTo<long>(0);
+            return RefreshUctExpires > nowTick;
+        }
     }
 }

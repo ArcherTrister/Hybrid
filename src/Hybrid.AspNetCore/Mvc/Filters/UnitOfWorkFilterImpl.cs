@@ -1,10 +1,10 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="MvcUnitOfWorkFilter.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="UnitOfWorkFilterImpl.cs" company="OSharp开源团队">
+//      Copyright (c) 2014-2019 OSharp. All rights reserved.
 //  </copyright>
-//  <site>https://www.lxking.cn</site>
-//  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2018-08-02 17:56</last-date>
+//  <site>http://www.osharp.org</site>
+//  <last-editor>郭明锋</last-editor>
+//  <last-date>2019-05-14 17:29</last-date>
 // -----------------------------------------------------------------------
 
 using Hybrid.AspNetCore.Extensions;
@@ -22,18 +22,18 @@ using System;
 
 namespace Hybrid.AspNetCore.Mvc.Filters
 {
-    internal class MvcUnitOfWorkFilter : IActionFilter
+    internal class UnitOfWorkFilterImpl : IActionFilter
     {
         private readonly IUnitOfWorkManager _unitOfWorkManager;
         private readonly ILogger _logger;
 
         /// <summary>
-        /// 初始化一个<see cref="MvcUnitOfWorkFilter"/>类型的新实例
+        /// 初始化一个<see cref="UnitOfWorkFilterImpl"/>类型的新实例
         /// </summary>
-        public MvcUnitOfWorkFilter(IServiceProvider serviceProvider)
+        public UnitOfWorkFilterImpl(IServiceProvider serviceProvider)
         {
             _unitOfWorkManager = serviceProvider.GetService<IUnitOfWorkManager>();
-            _logger = serviceProvider.GetLogger<MvcUnitOfWorkFilter>();
+            _logger = serviceProvider.GetLogger<UnitOfWorkFilterImpl>();
         }
 
         /// <summary>
@@ -66,9 +66,9 @@ namespace Hybrid.AspNetCore.Mvc.Filters
                     context.ExceptionHandled = true;
                 }
             }
-            if (context.Result is JsonResult jsonResult)
+            if (context.Result is JsonResult result1)
             {
-                if (jsonResult.Value is AjaxResult ajax)
+                if (result1.Value is AjaxResult ajax)
                 {
                     type = ajax.Type;
                     message = ajax.Content;
@@ -78,9 +78,9 @@ namespace Hybrid.AspNetCore.Mvc.Filters
                     }
                 }
             }
-            else if (context.Result is ObjectResult objectResult)
+            else if (context.Result is ObjectResult result2)
             {
-                if (objectResult.Value is AjaxResult ajax)
+                if (result2.Value is AjaxResult ajax)
                 {
                     type = ajax.Type;
                     message = ajax.Content;
