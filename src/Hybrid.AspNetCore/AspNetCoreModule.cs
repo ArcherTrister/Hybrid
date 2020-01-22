@@ -40,7 +40,7 @@ namespace Hybrid.AspNetCore
         {
             services.AddHttpContextAccessor();
 
-            //TODO:IPrincipal
+            // TODO: IPrincipal
             ////注入当前用户，替换Thread.CurrentPrincipal的作用
             //services.AddTransient<IPrincipal>(provider =>
             //{

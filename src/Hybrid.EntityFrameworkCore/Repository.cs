@@ -203,10 +203,7 @@ namespace Hybrid.EntityFrameworkCore
                 }
                 try
                 {
-                    if (checkAction != null)
-                    {
-                        checkAction(entity);
-                    }
+                    checkAction?.Invoke(entity);
                     if (deleteFunc != null)
                     {
                         entity = deleteFunc(entity);
@@ -241,15 +238,40 @@ namespace Hybrid.EntityFrameworkCore
         public virtual int DeleteBatch(Expression<Func<TEntity, bool>> predicate)
         {
             Check.NotNull(predicate, nameof(predicate));
-            // todo: 检测删除的数据权限
-
             ((DbContextBase)_dbContext).BeginOrUseTransaction();
+            // TODO: 檢查性能 逻辑删除
+            TEntity[] entities = _dbSet.Where(predicate).ToArray();
+            // TODO: 检测删除的数据权限
+            CheckDataAuth(DataAuthOperation.Delete, entities);
+            //TEntity[] entities = _dbSet.Where(predicate).AsTracking().ToArray();
+            //// 检测删除的数据权限
+            //CheckDataAuth(DataAuthOperation.Delete, entities);
             if (typeof(ISoftDelete).IsAssignableFrom(typeof(TEntity)))
             {
-                // 逻辑删除
-                TEntity[] entities = _dbSet.Where(predicate).ToArray();
-                DeleteInternal(entities);
+                foreach (TEntity entity in entities)
+                {
+                    ISoftDelete softDeletableEntity = (ISoftDelete)entity;
+                    softDeletableEntity.IsDeleted = true;
+                }
                 return _dbContext.SaveChanges();
+
+                ////TODO: nameof(ISoftDelete)
+                //// Create a MemberBinding object for each member
+                //// that you want to initialize.
+                //MemberBinding speciesMemberBinding =
+                //    Expression.Bind(
+                //        typeof(TEntity).GetMember("IsDeleted")[0],
+                //        Expression.Constant(true));
+
+                //// Create a MemberInitExpression that represents initializing
+                //MemberInitExpression memberInitExpression =
+                //    Expression.MemberInit(
+                //        Expression.New(typeof(TEntity)),
+                //        speciesMemberBinding);
+
+                //ParameterExpression input = Expression.Parameter(typeof(TEntity), "p");
+                //Expression<Func<TEntity, TEntity>> updateExpression = Expression.Lambda<Func<TEntity, TEntity>>(memberInitExpression, input);
+                //return await _dbSet.Where(predicate).Update(updateExpression);
             }
 
             //物理删除
@@ -646,15 +668,40 @@ namespace Hybrid.EntityFrameworkCore
         public virtual async Task<int> DeleteBatchAsync(Expression<Func<TEntity, bool>> predicate)
         {
             Check.NotNull(predicate, nameof(predicate));
-            // todo: 检测删除的数据权限
-
             await ((DbContextBase)_dbContext).BeginOrUseTransactionAsync(_cancellationTokenProvider.Token);
+            // TODO: 檢查性能 逻辑删除
+            TEntity[] entities = _dbSet.Where(predicate).ToArray();
+            // TODO: 检测删除的数据权限
+            CheckDataAuth(DataAuthOperation.Delete, entities);
+            //TEntity[] entities = _dbSet.Where(predicate).AsTracking().ToArray();
+            //// 检测删除的数据权限
+            //CheckDataAuth(DataAuthOperation.Delete, entities);
             if (typeof(ISoftDelete).IsAssignableFrom(typeof(TEntity)))
             {
-                // 逻辑删除
-                TEntity[] entities = _dbSet.Where(predicate).ToArray();
-                DeleteInternal(entities);
+                foreach (TEntity entity in entities)
+                {
+                    ISoftDelete softDeletableEntity = (ISoftDelete)entity;
+                    softDeletableEntity.IsDeleted = true;
+                }
                 return await _dbContext.SaveChangesAsync(_cancellationTokenProvider.Token);
+
+                //// TODO: nameof(ISoftDelete)
+                //// Create a MemberBinding object for each member
+                //// that you want to initialize.
+                //MemberBinding speciesMemberBinding =
+                //    Expression.Bind(
+                //        typeof(TEntity).GetMember("IsDeleted")[0],
+                //        Expression.Constant(true));
+
+                //// Create a MemberInitExpression that represents initializing
+                //MemberInitExpression memberInitExpression =
+                //    Expression.MemberInit(
+                //        Expression.New(typeof(TEntity)),
+                //        speciesMemberBinding);
+
+                //ParameterExpression input = Expression.Parameter(typeof(TEntity), "p");
+                //Expression<Func<TEntity, TEntity>> updateExpression = Expression.Lambda<Func<TEntity, TEntity>>(memberInitExpression, input);
+                //return await _dbSet.Where(predicate).UpdateAsync(updateExpression);
             }
 
             // 物理删除

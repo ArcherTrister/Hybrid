@@ -67,7 +67,7 @@ namespace Hybrid.Core.Modules
             services.AddSingleton<ILocalizationContext, LocalizationContext>();
             services.AddSingleton<ILocalizationManager, LocalizationManager>();
 
-            //TODO:Add Configuration Service
+            // TODO: Add Configuration Service
             services.AddSingleton<ILocalizationConfiguration, LocalizationConfiguration>();
             services.AddSingleton<IEmailSenderConfiguration, EmailSenderConfiguration>();
             services.AddSingleton<IAuditingConfiguration, AuditingConfiguration>();
@@ -101,7 +101,7 @@ namespace Hybrid.Core.Modules
         /// <param name="options"></param>
         private void InitConfiguration(IHybridStartupConfiguration configuration, HybridOptions options)
         {
-            //TODO:InitConfiguration
+            // TODO: InitConfiguration
 
             //Auditing
             configuration.Auditing.IsEnabled = options.Auditing.IsEnabled;

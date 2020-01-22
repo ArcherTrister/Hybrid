@@ -76,7 +76,7 @@ namespace Hybrid.Web.Identity
                     userNames.AddIfNotNull(userName);
                     return Task.FromResult(0);
                 });
-            ////TODO
+            //// TODO
             //if (result.Successed && userNames.Count > 0)
             //{
             //    OnlineUserCacheRemoveEventData eventData = new OnlineUserCacheRemoveEventData() { UserNames = userNames.ToArray() };

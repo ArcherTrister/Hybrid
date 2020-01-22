@@ -49,7 +49,7 @@ namespace Hybrid.Zero.IdentityServer4
         /// <returns></returns>
         public override IServiceCollection AddServices(IServiceCollection services)
         {
-            //TODO:在线用户缓存
+            // TODO: 在线用户缓存
             //services.TryAddScoped<IOnlineUserProvider, OnlineUserProvider<TUser, TUserKey, TRole, TRoleKey>>();
 
             Action<IdentityOptions> identityOptionsAction = IdentityOptionsAction();

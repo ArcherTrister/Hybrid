@@ -176,7 +176,7 @@ namespace Hybrid.Web.Startups
                 }
             }
             else {
-                //TODO:IdentityServer
+                // TODO: IdentityServer
                 //// IdentityServer
                 //services.AddAuthentication(Configuration["IdentityService:DefaultScheme"])
                 //    //.AddIdentityServerAuthentication(options =>

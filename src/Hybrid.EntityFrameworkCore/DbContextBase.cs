@@ -86,9 +86,9 @@ namespace Hybrid.EntityFrameworkCore
             int count = base.SaveChanges();
             if (count > 0 && auditEntities?.Count > 0)
             {
-                //AuditEntityEventData eventData = new AuditEntityEventData(auditEntities);
-                //IEventBus eventBus = _serviceProvider.GetService<IEventBus>();
-                //eventBus?.Publish(this, eventData);
+                AuditEntityEventData eventData = new AuditEntityEventData(auditEntities);
+                IEventBus eventBus = _serviceProvider.GetService<IEventBus>();
+                eventBus?.Publish(this, eventData);
             }
 
             return count;
