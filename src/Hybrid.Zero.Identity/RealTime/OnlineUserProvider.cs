@@ -82,7 +82,7 @@ namespace Hybrid.Zero.Identity.RealTime
                             UserName = user.UserName,
                             NickName = user.NickName,
                             Email = user.Email,
-                            HeadImg = user.HeadImg,
+                            AvatarUrl = user.AvatarUrl,
                             IsAdmin = isAdmin,
                             Roles = roles.ToArray(),
                             RefreshTokens = refreshTokens.ToDictionary(m => m.ClientId, m => m)

@@ -6,6 +6,11 @@
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\IdentityServer4.Web.xml</DocumentationFile>
+    <OutputPath></OutputPath>
+  </PropertyGroup>
+
   <ItemGroup>
     <Compile Remove="Areas\**" />
     <Content Remove="Areas\**" />
@@ -27,17 +32,16 @@
     <None Include="wwwroot\lib\jquery\jquery.min.map" />
   </ItemGroup>
 
-
   <ItemGroup>
     <PackageReference Include="AspNet.Security.OAuth.QQ" Version="3.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Http.Polly" Version="3.1.1" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0" />
   </ItemGroup>
-
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\src\Hybrid.AspNetCore.Diagnostics\Hybrid.AspNetCore.Diagnostics.csproj" />
@@ -53,4 +57,8 @@
     <ProjectReference Include="..\..\..\src\Hybrid\Hybrid.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Ruqi\Entities\" />
+    <Folder Include="Ruqi\EntityConfigurations\" />
+  </ItemGroup>
 </Project>

@@ -35,7 +35,7 @@ namespace Hybrid.AspNetCore.Mvc.Filters
         /// <param name="context">The <see cref="T:Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext" />.</param>
         public void OnAuthorization(AuthorizationFilterContext context)
         {
-            //Check.NotNull(context, nameof(context));
+            Check.NotNull(context, nameof(context));
             IFunction function = context.GetExecuteFunction();
             AuthorizationResult result = AuthorizeCore(context, function);
             if (!result.IsOk)
@@ -74,6 +74,7 @@ namespace Hybrid.AspNetCore.Mvc.Filters
             {
                 case AuthorizationStatus.OK:
                     break;
+
                 case AuthorizationStatus.Unauthorized:
                     context.Result = isJsRequest
                         ? (IActionResult)new JsonResult(new AjaxResult(result.Message, AjaxResultType.UnAuth))
@@ -110,7 +111,7 @@ namespace Hybrid.AspNetCore.Mvc.Filters
             }
         }
 
-        #endregion
+        #endregion NoApi
 
         #region Api
 
@@ -209,6 +210,6 @@ namespace Hybrid.AspNetCore.Mvc.Filters
         //    //}
         //}
 
-        #endregion
+        #endregion Api
     }
 }

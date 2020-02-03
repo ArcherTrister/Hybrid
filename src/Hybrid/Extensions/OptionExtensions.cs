@@ -25,32 +25,32 @@ namespace Hybrid.Extensions
             throw new HybridException($"Invalid configuration of section '{sectionName}':\n{msg}");
         }
 
-    //    public static OptionsBuilder<TOptions> ValidateDataAnnotation<TOptions>(
-    //this OptionsBuilder<TOptions> builder,
-    //string sectionName)
-    //where TOptions : class
-    //    {
-    //        return builder.PostConfigure(x =>
-    //        {
-    //            ValidateByDataAnnotation(x, sectionName);
-    //        });
-    //    }
+        //    public static OptionsBuilder<TOptions> ValidateDataAnnotation<TOptions>(
+        //this OptionsBuilder<TOptions> builder,
+        //string sectionName)
+        //where TOptions : class
+        //    {
+        //        return builder.PostConfigure(x =>
+        //        {
+        //            ValidateByDataAnnotation(x, sectionName);
+        //        });
+        //    }
 
-    //    public static IServiceCollection ConfigureAndValidate<TOptions>(
-    //        this IServiceCollection services,
-    //        string sectionName,
-    //        IConfiguration configuration)
-    //        where TOptions : class
-    //    {
-    //        var section = configuration.GetSection(sectionName);
+        //    public static IServiceCollection ConfigureAndValidate<TOptions>(
+        //        this IServiceCollection services,
+        //        string sectionName,
+        //        IConfiguration configuration)
+        //        where TOptions : class
+        //    {
+        //        var section = configuration.GetSection(sectionName);
 
-    //        services
-    //            .AddOptions<TOptions>()
-    //            .Bind(section)
-    //            .ValidateDataAnnotation(sectionName);
+        //        services
+        //            .AddOptions<TOptions>()
+        //            .Bind(section)
+        //            .ValidateDataAnnotation(sectionName);
 
-    //        return services;
-    //    }
+        //        return services;
+        //    }
 
         public static OptionsBuilder<TOptions> ValidateDataAnnotationByEnabled<TOptions>(
             this OptionsBuilder<TOptions> builder,
@@ -115,7 +115,7 @@ namespace Hybrid.Extensions
                 {
                     throw new HybridException("不能同时启用Ids服务和Jwt服务");
                 }
-                if (x.Ids.IsEnabled)
+                if (x.Ids.IsEnabled && !x.Ids.IsLocalApi)
                 {
                     ValidateByDataAnnotation(x.Ids, x.Ids.GetType().Name);
                 }

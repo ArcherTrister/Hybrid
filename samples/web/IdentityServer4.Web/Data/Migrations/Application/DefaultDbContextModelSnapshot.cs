@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace Hybrid.Web.Data.Migrations.Application
+namespace IdentityServer4.Web.Data.Migrations.Application
 {
     [DbContext(typeof(DefaultDbContext))]
     partial class DefaultDbContextModelSnapshot : ModelSnapshot
@@ -396,6 +396,9 @@ namespace Hybrid.Web.Data.Migrations.Application
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
+                    b.Property<string>("AvatarUrl")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
@@ -409,8 +412,11 @@ namespace Hybrid.Web.Data.Migrations.Application
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
 
-                    b.Property<string>("HeadImg")
+                    b.Property<string>("IdCard")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IdCardConfirmed")
+                        .HasColumnType("bit");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
@@ -452,6 +458,9 @@ namespace Hybrid.Web.Data.Migrations.Application
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("TrueName")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("bit");
 
@@ -479,6 +488,7 @@ namespace Hybrid.Web.Data.Migrations.Application
                             CreatedTime = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "Admin@example.com",
                             EmailConfirmed = true,
+                            IdCardConfirmed = false,
                             IsDeleted = false,
                             IsLocked = false,
                             IsSystem = true,
@@ -487,6 +497,7 @@ namespace Hybrid.Web.Data.Migrations.Application
                             NormalizedEmail = "ADMIN@EXAMPLE.COM",
                             NormalizedUserName = "ADMIN",
                             PasswordHash = "AQAAAAEAACcQAAAAEB6lgMDV9JoidhR4cfIK+bKOQfo9eE6M02N68wV0KxCbx+c5gxkBrZWOp0FwI5Id8g==",
+                            PhoneNumber = "18100000000",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "RRYXXETXCDKPXE6QPNDGLMCYNBA2ZF4P",
                             TwoFactorEnabled = false,
@@ -607,7 +618,7 @@ namespace Hybrid.Web.Data.Migrations.Application
                     b.HasData(
                         new
                         {
-                            Id = new Guid("f19c27ef-06fa-4897-a07a-b0727f244709"),
+                            Id = new Guid("3a95c920-d49a-4e63-b944-af95d694e221"),
                             CreatedTime = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsDeleted = false,
                             IsLocked = false,

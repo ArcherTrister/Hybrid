@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Hybrid.Web.Data.Migrations.Application
+namespace IdentityServer4.Web.Data.Migrations.Application
 {
     public partial class Init : Migration
     {
@@ -159,7 +159,10 @@ namespace Hybrid.Web.Data.Migrations.Application
                     NormalizedEmail = table.Column<string>(nullable: true),
                     EmailConfirmed = table.Column<bool>(nullable: false),
                     PasswordHash = table.Column<string>(nullable: true),
-                    HeadImg = table.Column<string>(nullable: true),
+                    AvatarUrl = table.Column<string>(nullable: true),
+                    TrueName = table.Column<string>(nullable: true),
+                    IdCard = table.Column<string>(nullable: true),
+                    IdCardConfirmed = table.Column<bool>(nullable: false),
                     SecurityStamp = table.Column<string>(nullable: true),
                     ConcurrencyStamp = table.Column<string>(nullable: true),
                     PhoneNumber = table.Column<string>(nullable: true),
@@ -531,13 +534,13 @@ namespace Hybrid.Web.Data.Migrations.Application
 
             migrationBuilder.InsertData(
                 table: "User",
-                columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "CreatedTime", "Email", "EmailConfirmed", "HeadImg", "IsDeleted", "IsLocked", "IsSystem", "LockoutEnabled", "LockoutEnd", "NickName", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "Remark", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { new Guid("8d86feea-83d5-4a0c-9733-305ac6cfe58d"), 0, "e50ea89e-c966-4ade-8fe4-6fe94de83777", new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Admin@example.com", true, null, false, false, true, true, null, "SuperAdmin", "ADMIN@EXAMPLE.COM", "ADMIN", "AQAAAAEAACcQAAAAEB6lgMDV9JoidhR4cfIK+bKOQfo9eE6M02N68wV0KxCbx+c5gxkBrZWOp0FwI5Id8g==", null, false, null, "RRYXXETXCDKPXE6QPNDGLMCYNBA2ZF4P", false, "Admin" });
+                columns: new[] { "Id", "AccessFailedCount", "AvatarUrl", "ConcurrencyStamp", "CreatedTime", "Email", "EmailConfirmed", "IdCard", "IdCardConfirmed", "IsDeleted", "IsLocked", "IsSystem", "LockoutEnabled", "LockoutEnd", "NickName", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "Remark", "SecurityStamp", "TrueName", "TwoFactorEnabled", "UserName" },
+                values: new object[] { new Guid("8d86feea-83d5-4a0c-9733-305ac6cfe58d"), 0, null, "e50ea89e-c966-4ade-8fe4-6fe94de83777", new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Admin@example.com", true, null, false, false, false, true, true, null, "SuperAdmin", "ADMIN@EXAMPLE.COM", "ADMIN", "AQAAAAEAACcQAAAAEB6lgMDV9JoidhR4cfIK+bKOQfo9eE6M02N68wV0KxCbx+c5gxkBrZWOp0FwI5Id8g==", "18100000000", false, null, "RRYXXETXCDKPXE6QPNDGLMCYNBA2ZF4P", null, false, "Admin" });
 
             migrationBuilder.InsertData(
                 table: "UserRole",
                 columns: new[] { "Id", "CreatedTime", "IsDeleted", "IsLocked", "RoleId", "UserId" },
-                values: new object[] { new Guid("f19c27ef-06fa-4897-a07a-b0727f244709"), new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), false, false, new Guid("4f10b9ba-2391-4eb2-a378-aaf3012fb2d3"), new Guid("8d86feea-83d5-4a0c-9733-305ac6cfe58d") });
+                values: new object[] { new Guid("3a95c920-d49a-4e63-b944-af95d694e221"), new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), false, false, new Guid("4f10b9ba-2391-4eb2-a378-aaf3012fb2d3"), new Guid("8d86feea-83d5-4a0c-9733-305ac6cfe58d") });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AuditEntity_OperationId",

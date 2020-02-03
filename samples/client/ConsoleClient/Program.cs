@@ -23,14 +23,14 @@ namespace ConsoleClient
     {
         private static async Task Main(string[] args)
         {
-            int a = 3;
-            double b = 0.6;
-            Console.WriteLine(a + b);
+            //int a = 3;
+            //double b = 0.6;
+            //Console.WriteLine(a + b);
 
-            Console.WriteLine(a / b);
+            //Console.WriteLine(a / b);
 
-            Console.WriteLine(a * b);
-            Console.WriteLine(a - b);
+            //Console.WriteLine(a * b);
+            //Console.WriteLine(a - b);
             // discovery endpoint
             var client = new HttpClient();
             var disco = await client.GetDiscoveryDocumentAsync("http://localhost:5002/");

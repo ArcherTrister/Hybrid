@@ -76,7 +76,25 @@ namespace Hybrid.Zero.Identity
         /// 获取或设置 用户头像
         /// </summary>
         [DisplayName("用户头像")]
-        public string HeadImg { get; set; }
+        public string AvatarUrl { get; set; }
+
+        /// <summary>
+        /// 获取或设置 用户真实姓名
+        /// </summary>
+        [DisplayName("用户真实姓名")]
+        public string TrueName { get; set; }
+
+        /// <summary>
+        /// 获取或设置 身份证
+        /// </summary>
+        [DisplayName("身份证")]
+        public string IdCard { get; set; }
+
+        /// <summary>
+        /// 获取或设置 身份证验证
+        /// </summary>
+        [DisplayName("身份证验证")]
+        public bool IdCardConfirmed { get; set; }
 
         /// <summary>
         /// 获取或设置 每当用户凭据发生变化（密码更改、登录删除）时必须更改的随机值。

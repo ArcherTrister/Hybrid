@@ -9,7 +9,6 @@
 
 using Hybrid.Security.Claims;
 using Hybrid.Zero.Identity;
-
 using Microsoft.AspNetCore.Identity;
 
 using System;
@@ -69,41 +68,80 @@ namespace Hybrid.Zero.IdentityServer4.Identity
                 identity.AddClaim(new Claim(HybridClaimTypes.UserName, username));
             }
 
-            if (!identity.HasClaim(x => x.Type == HybridClaimTypes.NickName))
-            {
-                var nickName = findUser.NickName;
-                identity.AddClaim(new Claim(HybridClaimTypes.NickName, nickName));
-            }
+            //if (!identity.HasClaim(x => x.Type == HybridClaimTypes.NickName))
+            //{
+            //    identity.AddClaim(new Claim(HybridClaimTypes.NickName, findUser.NickName));
+            //}
 
+            //if (!identity.HasClaim(x => x.Type == HybridClaimTypes.TrueName))
+            //{
+            //    identity.AddClaim(new Claim(HybridClaimTypes.TrueName, findUser.TrueName));
+            //}
+            //if (!identity.HasClaim(x => x.Type == HybridClaimTypes.AvatarUrl))
+            //{
+            //    identity.AddClaim(new Claim(HybridClaimTypes.AvatarUrl, findUser.AvatarUrl));
+            //}
+            identity.AddClaim(new Claim(HybridClaimTypes.NickName, findUser.NickName ?? ""));
+            identity.AddClaim(new Claim(HybridClaimTypes.TrueName, findUser.TrueName ?? ""));
+            identity.AddClaim(new Claim(HybridClaimTypes.AvatarUrl, findUser.AvatarUrl ?? ""));
+
+            identity.AddClaim(new Claim(HybridClaimTypes.IdCard, findUser.IdCard ?? ""));
+            identity.AddClaim(new Claim(HybridClaimTypes.IdCardVerified, findUser.IdCardConfirmed ? "true" : "false", ClaimValueTypes.Boolean));
+
+            //if (_userManager.SupportsUserEmail)
+            //{
+            //    var email = findUser.Email;
+            //    if (!string.IsNullOrWhiteSpace(email))
+            //    {
+            //        identity.AddClaims(new[]
+            //        {
+            //            new Claim(HybridClaimTypes.Email, email),
+            //            new Claim(HybridClaimTypes.EmailVerified,
+            //                findUser.EmailConfirmed
+            //                ? "true" : "false", ClaimValueTypes.Boolean)
+            //        });
+            //    }
+            //}
+
+            identity.AddClaim(new Claim(HybridClaimTypes.Email, findUser.Email ?? ""));
             if (_userManager.SupportsUserEmail)
             {
-                var email = findUser.Email;
-                if (!string.IsNullOrWhiteSpace(email))
-                {
-                    identity.AddClaims(new[]
-                    {
-                        new Claim(HybridClaimTypes.Email, email),
-                        new Claim(HybridClaimTypes.EmailVerified,
+                identity.AddClaim(new Claim(HybridClaimTypes.EmailVerified,
                             findUser.EmailConfirmed
-                            ? "true" : "false", ClaimValueTypes.Boolean)
-                    });
-                }
+                            ? "true" : "false", ClaimValueTypes.Boolean));
+            }
+            else
+            {
+                identity.AddClaim(new Claim(HybridClaimTypes.EmailVerified, "true", ClaimValueTypes.Boolean));
             }
 
+            //if (_userManager.SupportsUserPhoneNumber)
+            //{
+            //    var phoneNumber = findUser.PhoneNumber;
+            //    if (!string.IsNullOrWhiteSpace(phoneNumber))
+            //    {
+            //        identity.AddClaims(new[]
+            //        {
+            //            new Claim(HybridClaimTypes.PhoneNumber, phoneNumber),
+            //            new Claim(HybridClaimTypes.PhoneNumberVerified,
+            //                findUser.PhoneNumberConfirmed
+            //                ? "true" : "false", ClaimValueTypes.Boolean)
+            //        });
+            //    }
+            //}
+
+            identity.AddClaim(new Claim(HybridClaimTypes.PhoneNumber, findUser.PhoneNumber ?? ""));
             if (_userManager.SupportsUserPhoneNumber)
             {
-                var phoneNumber = findUser.PhoneNumber;
-                if (!string.IsNullOrWhiteSpace(phoneNumber))
-                {
-                    identity.AddClaims(new[]
-                    {
-                        new Claim(HybridClaimTypes.MobilePhone, phoneNumber),
-                        new Claim(HybridClaimTypes.PhoneNumberVerified,
+                identity.AddClaim(new Claim(HybridClaimTypes.PhoneNumberVerified,
                             findUser.PhoneNumberConfirmed
-                            ? "true" : "false", ClaimValueTypes.Boolean)
-                    });
-                }
+                            ? "true" : "false", ClaimValueTypes.Boolean));
             }
+            else
+            {
+                identity.AddClaim(new Claim(HybridClaimTypes.PhoneNumberVerified, "true", ClaimValueTypes.Boolean));
+            }
+
             return principal;
         }
     }

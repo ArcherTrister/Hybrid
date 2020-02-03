@@ -214,7 +214,7 @@ namespace Hybrid.Web.Identity
                 {
                     UserName = $"{loginInfoEx.LoginProvider}_{loginInfoEx.ProviderKey}",
                     NickName = loginInfoEx.ProviderDisplayName,
-                    HeadImg = loginInfoEx.AvatarUrl
+                    AvatarUrl = loginInfoEx.AvatarUrl
                 };
                 result = await _userManager.CreateAsync(user);
                 if (!result.Succeeded)
@@ -239,9 +239,9 @@ namespace Hybrid.Web.Identity
 
         private async Task<IdentityResult> CreateOrUpdateUserLogin(User user, UserLoginInfoEx loginInfoEx)
         {
-            if (string.IsNullOrEmpty(user.HeadImg) && !string.IsNullOrEmpty(loginInfoEx.AvatarUrl))
+            if (string.IsNullOrEmpty(user.AvatarUrl) && !string.IsNullOrEmpty(loginInfoEx.AvatarUrl))
             {
-                user.HeadImg = loginInfoEx.AvatarUrl;
+                user.AvatarUrl = loginInfoEx.AvatarUrl;
             }
             UserLogin userLogin = _userLoginRepository.GetFirst(m =>
                 m.LoginProvider == loginInfoEx.LoginProvider && m.ProviderKey == loginInfoEx.ProviderKey);

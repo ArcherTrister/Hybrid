@@ -17,11 +17,12 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-
+using Polly;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.Http.Headers;
 
 namespace Hybrid.Web
 {
@@ -43,6 +44,34 @@ namespace Hybrid.Web
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
+
+            services.AddHttpClient("SignInOrOutClient",
+            options =>
+            {
+                options.BaseAddress = new Uri(Configuration["Hybrid:Ids:Authority"]);
+                options.DefaultRequestHeaders.Accept.Add(
+                    new MediaTypeWithQualityHeaderValue("application/json"));
+                options.DefaultRequestHeaders.AcceptCharset.Add(new StringWithQualityHeaderValue("utf-8"));
+            })
+            .AddTransientHttpErrorPolicy(
+                p => p.WaitAndRetryAsync(3, _ => TimeSpan.FromMilliseconds(600)
+            )
+)
+.SetHandlerLifetime(TimeSpan.FromMinutes(5));
+
+            services.AddHttpClient("requestClient",
+            options =>
+            {
+                //options.BaseAddress = new Uri(Configuration["QMWallet:GateWayUrl"]);
+                options.DefaultRequestHeaders.Accept.Add(
+                    new MediaTypeWithQualityHeaderValue("application/json"));
+                options.DefaultRequestHeaders.AcceptCharset.Add(new StringWithQualityHeaderValue("utf-8"));
+            })
+            .AddTransientHttpErrorPolicy(
+                p => p.WaitAndRetryAsync(3, _ => TimeSpan.FromMilliseconds(600)
+            )
+)
+.SetHandlerLifetime(TimeSpan.FromMinutes(5));
 
             //Add-Migration Init -Verbose -o Data/Migrations/Application
             services.AddHybrid<AspHybridModuleManager>();

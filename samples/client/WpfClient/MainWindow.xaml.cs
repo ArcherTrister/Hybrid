@@ -46,10 +46,12 @@ namespace WpfClient
             var tokenResponse = await client.RequestPasswordTokenAsync(new PasswordTokenRequest
             {
                 Address = disco.TokenEndpoint,
-                ClientId = "wpfClient",
-                ClientSecret = "wpf secrect",
-                //Scope = "IdentityServerApi openid profile address phone email",
-                Scope = "IdentityServerApi openid profile",
+                //ClientId = "wpfClient",
+                //ClientSecret = "wpf secrect",
+                ClientId = "mobileAppClient",
+                ClientSecret = "mobile app secrect",
+                Scope = "IdentityServerApi openid profile HybridCustom offline_access",
+                //Scope = "IdentityServerApi openid profile",
                 UserName = userName,
                 Password = password
             });
@@ -62,6 +64,8 @@ namespace WpfClient
 
             _accessToken = tokenResponse.AccessToken;
             AccessTokenTextBlock.Text = tokenResponse.Json.ToString();
+
+            getIdentity();
         }
 
         private async void RequestApi1Resource_ButtonClick(object sender, RoutedEventArgs e)
@@ -83,6 +87,24 @@ namespace WpfClient
         }
 
         private async void RequestIdentityResource_ButtonClick(object sender, RoutedEventArgs e)
+        {
+            // call Identity Resource from Identity Server
+            var apiClient = new HttpClient();
+            apiClient.SetBearerToken(_accessToken);
+
+            var response = await apiClient.GetAsync(_disco.UserInfoEndpoint);
+            if (!response.IsSuccessStatusCode)
+            {
+                MessageBox.Show(response.StatusCode.ToString());
+            }
+            else
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                IdentityResponseTextBlock.Text = content;
+            }
+        }
+
+        private async void getIdentity()
         {
             // call Identity Resource from Identity Server
             var apiClient = new HttpClient();

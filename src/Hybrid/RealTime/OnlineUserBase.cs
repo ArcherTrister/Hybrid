@@ -39,7 +39,7 @@ namespace Hybrid.RealTime
         /// <summary>
         /// 获取或设置 用户头像
         /// </summary>
-        public string HeadImg { get; set; }
+        public string AvatarUrl { get; set; }
 
         /// <summary>
         /// 获取或设置 是否管理

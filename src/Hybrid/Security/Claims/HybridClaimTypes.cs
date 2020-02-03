@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="HybridClaimTypes" company="cn.lxking">
+//  <copyright file="HybridClaimTypes.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -7,29 +7,25 @@
 //  <last-date>2020-01-12 17:24:52</last-date>
 // -----------------------------------------------------------------------
 
-using System.Security.Claims;
-
 namespace Hybrid.Security.Claims
 {
     /// <summary>
-    ///
-    /// <see cref="ClaimTypes"/>
-    /// <!-- https://docs.microsoft.com/zh-cn/dotnet/api/system.security.claims.claimtypes?redirectedfrom=MSDN&view=netframework-4.8 -->
+    /// 自定义ClaimType
     /// <!-- JwtClaimTypes -->
     /// </summary>
     public static class HybridClaimTypes
     {
         /// <summary>
         /// 租户Id
-        /// Default: https://www.lxking.cn/identity/claims/tenantId
+        /// Default: TenantId
         /// </summary>
-        public const string TenantId = "https://www.lxking.cn/identity/claims/tenantId";
+        public const string TenantId = "TenantId";
 
         /// <summary>
         /// 用户Id
-        /// Default: <see cref="ClaimTypes.NameIdentifier"/>
+        /// Default: UserId
         /// </summary>
-        public const string UserId = ClaimTypes.NameIdentifier;
+        public const string UserId = "UserId";
 
         public const string Subject = "sub";
 
@@ -37,83 +33,95 @@ namespace Hybrid.Security.Claims
 
         /// <summary>
         /// 用户名
-        /// Default: <see cref="ClaimTypes.Name"/>
+        /// Default: UserName
         /// </summary>
-        public const string UserName = ClaimTypes.Name;
+        public const string UserName = "UserName";
 
         /// <summary>
         /// 角色
-        /// Default: <see cref="ClaimTypes.Role"/>
+        /// Default: Role
         /// </summary>
-        public const string Role = ClaimTypes.Role;
+        public const string Role = "Role";
 
         /// <summary>
         /// 电子邮件地址
-        /// Default: <see cref="ClaimTypes.Email"/>
+        /// Default: Email
         /// </summary>
-        public const string Email = ClaimTypes.Email;
+        public const string Email = "Email";
 
         /// <summary>
         /// 移动电话号码
-        /// Default: <see cref="ClaimTypes.MobilePhone"/>
+        /// Default: PhoneNumber
         /// </summary>
-        public const string MobilePhone = ClaimTypes.MobilePhone;
+        public const string PhoneNumber = "PhoneNumber";
 
         /// <summary>
         /// 性别
-        /// Default: <see cref="ClaimTypes.Gender"/>
+        /// Default: Gender
         /// </summary>
-        public const string Gender = ClaimTypes.Gender;
+        public const string Gender = "Gender";
 
         /// <summary>
         /// 邮政编码
-        /// Default: <see cref="ClaimTypes.PostalCode"/>
+        /// Default: PostalCode
         /// </summary>
-        public const string PostalCode = ClaimTypes.PostalCode;
+        public const string PostalCode = "PostalCode";
 
         /// <summary>
         /// 昵称
-        /// Default: <see cref="ClaimTypes.GivenName"/>
+        /// Default: NickName
         /// </summary>
-        public const string NickName = ClaimTypes.GivenName;
+        public const string NickName = "NickName";
 
         /// <summary>
         /// 头像Url
-        /// Default: https://www.lxking.cn/identity/claims/picture
+        /// Default: AvatarUrl
         /// </summary>
-        public const string AvatarUrl = "https://www.lxking.cn/identity/claims/picture";
+        public const string AvatarUrl = "AvatarUrl";
 
         /// <summary>
         /// 手机验证
         /// </summary>
-        public const string PhoneNumberVerified = "https://www.lxking.cn/identity/claims/phone_number_verified";
+        public const string PhoneNumberVerified = "PhoneNumberVerified";
 
         /// <summary>
         /// 邮箱验证
         /// </summary>
-        public const string EmailVerified = "https://www.lxking.cn/identity/claims/email_verified";
+        public const string EmailVerified = "EmailVerified";
 
         /// <summary>
         /// 客户端Id
         /// </summary>
-        public const string ClientId = "https://www.lxking.cn/identity/claims/client_id";
+        public const string ClientId = "ClientId";
 
         /// <summary>
         /// 设置用户主键类型，用以在Repository进行审计时注入正确用户主键类型
         /// </summary>
-        public const string UserIdTypeName = "https://www.lxking.cn/identity/claims/userIdTypeName";
+        public const string UserIdTypeName = "UserIdTypeName";
 
-        ///// <summary>
-        ///// 参与者
-        ///// Default: <see cref="ClaimTypes.Actor"/>
-        ///// </summary>
-        //public const string Actor  = ClaimTypes.Actor;
+        /// <summary>
+        /// 参与者
+        /// Default: Actor
+        /// </summary>
+        public const string Actor = "Actor";
 
-        ///// <summary>
-        ///// 真实姓名
-        ///// Default: https://www.lxking.cn/identity/claims/TrueName
-        ///// </summary>
-        //public const string TrueName  = "https://www.lxking.cn/identity/claims/TrueName";
+        /// <summary>
+        /// 真实姓名
+        /// Default: TrueName
+        /// </summary>
+        public const string TrueName = "TrueName";
+
+        /// <summary>
+        /// 身份证
+        /// Default: IdCard
+        /// </summary>
+        public const string IdCard = "IdCard";
+
+        /// <summary>
+        /// 身份证验证
+        /// Default: IdCardVerified
+        /// </summary>
+        public const string IdCardVerified = "IdCardVerified";
 
         //        //
         //        // 摘要:

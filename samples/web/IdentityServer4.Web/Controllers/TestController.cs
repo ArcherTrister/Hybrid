@@ -25,7 +25,7 @@ namespace Hybrid.Web.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        [AllowAnonymous]
+        //[AllowAnonymous]
         public IActionResult Get()
         {
             return new JsonResult(
