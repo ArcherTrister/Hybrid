@@ -1,4 +1,5 @@
 ﻿using Hybrid.Audits.Configuration;
+using Hybrid.Http.Configuration;
 using Hybrid.Localization.Configuration;
 using Hybrid.Net.Mail.Configuration;
 
@@ -9,16 +10,21 @@ namespace Hybrid.Configuration
         /// <summary>
         /// 用于设置本地化配置
         /// </summary>
-        ILocalizationConfiguration Localization { get; set; }
+        ILocalizationConfiguration Localization { get; }
 
         /// <summary>
         /// 用于设置邮件发送配置
         /// </summary>
-        IEmailSenderConfiguration EmailSender { get; set; }
+        IEmailSenderConfiguration EmailSender { get; }
 
         /// <summary>
         /// 用于设置审计配置
         /// </summary>
-        IAuditingConfiguration Auditing { get; set; }
+        IAuditingConfiguration Auditing { get; }
+
+        /// <summary>
+        /// 用于设置Http通信加密选项配置
+        /// </summary>
+        IHttpEncryptConfiguration HttpEncrypt { get; }
     }
 }

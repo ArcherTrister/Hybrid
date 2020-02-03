@@ -21,7 +21,7 @@ namespace Hybrid.AspNetCore.SignalR
     {
         public string GetUserId(HubConnectionContext connection)
         {
-            return connection.User?.FindFirst(HybridClaimTypes.UserId)?.Value;
+            return connection.User?.FindFirst(HybridClaimTypes.UserName)?.Value;
         }
     }
 }

@@ -11,6 +11,7 @@ using Hybrid.AspNetCore.Mvc.Filters;
 using Hybrid.Core.Modules;
 
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 
 using Newtonsoft.Json.Serialization;
@@ -40,18 +41,19 @@ namespace Hybrid.AspNetCore.Mvc
             var builder = services.AddControllersWithViews(options =>
             {
                 //    //options.Conventions.Add(new DashedRoutingConvention());
-                //    //options.Filters.Add(new OnlineUserAuthorizationFilter()); // 构建在线用户信息
+                options.Filters.Add(new OnlineUserAuthorizationFilter()); // 构建在线用户信息
                 options.Filters.Add(new FunctionAuthorizationFilter()); // 全局功能权限过滤器
                 options.Filters.Add(new OperateAuditFilter());
-                options.Filters.Add(new MvcUnitOfWorkFilter());
+                //options.Filters.Add(new MvcUnitOfWorkFilter());
                 //options.Filters.Add(new PageUnitOfWorkFilter());
             }).AddNewtonsoftJson(options =>
             {
                 options.SerializerSettings.ContractResolver = new DefaultContractResolver();
-            });
+            }).SetCompatibilityVersion(CompatibilityVersion.Latest);
 
+            services.AddScoped<UnitOfWorkFilterImpl>();
             //services.AddScoped<OperateAuditFilter>();
-            services.AddScoped<MvcUnitOfWorkFilter>();
+            //services.AddScoped<MvcUnitOfWorkFilter>();
             //services.AddScoped<PageUnitOfWorkFilter>();
             services.AddDistributedMemoryCache();
 

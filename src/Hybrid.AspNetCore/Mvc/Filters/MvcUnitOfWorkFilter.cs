@@ -24,6 +24,18 @@ namespace Hybrid.AspNetCore.Mvc.Filters
 {
     internal class MvcUnitOfWorkFilter : IActionFilter
     {
+        private readonly IUnitOfWorkManager _unitOfWorkManager;
+        private readonly ILogger _logger;
+
+        /// <summary>
+        /// 初始化一个<see cref="MvcUnitOfWorkFilter"/>类型的新实例
+        /// </summary>
+        public MvcUnitOfWorkFilter(IServiceProvider serviceProvider)
+        {
+            _unitOfWorkManager = serviceProvider.GetService<IUnitOfWorkManager>();
+            _logger = serviceProvider.GetLogger<MvcUnitOfWorkFilter>();
+        }
+
         /// <summary>
         /// Called before the action executes, after model binding is complete.
         /// </summary>
@@ -37,16 +49,13 @@ namespace Hybrid.AspNetCore.Mvc.Filters
         /// <param name="context">The <see cref="T:Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext" />.</param>
         public void OnActionExecuted(ActionExecutedContext context)
         {
-            IServiceProvider provider = context.HttpContext.RequestServices;
-            ScopedDictionary dict = provider.GetService<ScopedDictionary>();
-            IUnitOfWorkManager unitOfWorkManager = provider.GetService<IUnitOfWorkManager>();
-            ILogger logger = provider.GetLogger<MvcUnitOfWorkFilter>();
+            ScopedDictionary dict = context.HttpContext.RequestServices.GetService<ScopedDictionary>();
             AjaxResultType type = AjaxResultType.Success;
             string message = null;
             if (context.Exception != null && !context.ExceptionHandled)
             {
                 Exception ex = context.Exception;
-                logger.LogError(new EventId(), ex, ex.Message);
+                _logger.LogError(new EventId(), ex, ex.Message);
                 message = ex.Message;
                 if (context.HttpContext.Request.IsAjaxRequest() || context.HttpContext.Request.IsJsonContextType())
                 {
@@ -57,32 +66,32 @@ namespace Hybrid.AspNetCore.Mvc.Filters
                     context.ExceptionHandled = true;
                 }
             }
-            if (context.Result is JsonResult result1)
+            if (context.Result is JsonResult jsonResult)
             {
-                if (result1.Value is AjaxResult ajax)
+                if (jsonResult.Value is AjaxResult ajax)
                 {
                     type = ajax.Type;
                     message = ajax.Content;
                     if (ajax.Succeeded())
                     {
-                        unitOfWorkManager?.Commit();
+                        _unitOfWorkManager?.Commit();
                     }
                 }
             }
-            else if (context.Result is ObjectResult result2)
+            else if (context.Result is ObjectResult objectResult)
             {
-                if (result2.Value is AjaxResult ajax)
+                if (objectResult.Value is AjaxResult ajax)
                 {
                     type = ajax.Type;
                     message = ajax.Content;
                     if (ajax.Succeeded())
                     {
-                        unitOfWorkManager?.Commit();
+                        _unitOfWorkManager?.Commit();
                     }
                 }
                 else
                 {
-                    unitOfWorkManager?.Commit();
+                    _unitOfWorkManager?.Commit();
                 }
             }
             //普通请求
@@ -93,19 +102,15 @@ namespace Hybrid.AspNetCore.Mvc.Filters
                     case 401:
                         type = AjaxResultType.UnAuth;
                         break;
-
                     case 403:
-                        type = AjaxResultType.Forbidden;
+                        type = AjaxResultType.UnAuth;
                         break;
-
                     case 404:
-                        type = AjaxResultType.NoFound;
+                        type = AjaxResultType.UnAuth;
                         break;
-
                     case 423:
-                        type = AjaxResultType.Locked;
+                        type = AjaxResultType.UnAuth;
                         break;
-
                     default:
                         type = AjaxResultType.Error;
                         break;
@@ -114,7 +119,7 @@ namespace Hybrid.AspNetCore.Mvc.Filters
             else
             {
                 type = AjaxResultType.Success;
-                unitOfWorkManager?.Commit();
+                _unitOfWorkManager?.Commit();
             }
 
             if (dict.AuditOperation != null)

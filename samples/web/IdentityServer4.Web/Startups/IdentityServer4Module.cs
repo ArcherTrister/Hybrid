@@ -12,7 +12,7 @@ using Hybrid.Data;
 using Hybrid.Web.Identity;
 using Hybrid.Web.Identity.Entity;
 using Hybrid.Zero.IdentityServer4;
-using IdentityModel;
+
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
@@ -175,9 +175,8 @@ namespace Hybrid.Web.Startups
                     }
                 }
             }
-            else
-            {
-                //TODO:IdentityServer
+            else {
+                // TODO: IdentityServer
                 //// IdentityServer
                 //services.AddAuthentication(Configuration["IdentityService:DefaultScheme"])
                 //    //.AddIdentityServerAuthentication(options =>

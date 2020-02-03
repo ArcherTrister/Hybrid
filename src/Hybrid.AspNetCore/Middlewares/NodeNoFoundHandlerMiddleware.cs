@@ -39,7 +39,7 @@ namespace Hybrid.AspNetCore.Middlewares
         /// </summary>
         /// <param name="context">Http上下文</param>
         /// <returns></returns>
-        public async Task Invoke(HttpContext context)
+        public async Task InvokeAsync(HttpContext context)
         {
             await _next(context);
             if (context.Response.StatusCode == 404 && !Path.HasExtension(context.Request.Path.Value)

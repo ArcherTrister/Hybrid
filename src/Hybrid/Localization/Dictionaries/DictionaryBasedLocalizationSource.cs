@@ -122,7 +122,7 @@ namespace Hybrid.Localization.Dictionaries
         /// <inheritdoc/>
         public IReadOnlyList<LocalizedString> GetAllStrings(CultureInfo culture, bool includeDefaults = true)
         {
-            //TODO: Can be optimized (example: if it's already default dictionary, skip overriding)
+            // TODO: Can be optimized (example: if it's already default dictionary, skip overriding)
 
             IDictionary<string, ILocalizationDictionary> dictionaries = DictionaryProvider.Dictionaries;
 

@@ -7,6 +7,7 @@
 //  <last-date>2019-06-13 11:59</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Zero.Identity;
 using System.ComponentModel.DataAnnotations;
 
 namespace Hybrid.Identity.JwtBearer.Dtos
@@ -36,6 +37,11 @@ namespace Hybrid.Identity.JwtBearer.Dtos
         /// 获取或设置 验证码
         /// </summary>
         public string VerifyCode { get; set; }
+
+        /// <summary>
+        /// 获取或设置 客户端类型
+        /// </summary>
+        public RequestClientType ClientType { get; set; }
 
         /// <summary>
         /// 获取或设置 刷新Token

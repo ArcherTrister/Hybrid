@@ -7,12 +7,13 @@
 //  <last-date>2019-01-04 20:42</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.AspNetCore.Extensions;
 using Hybrid.Core.Modules;
-
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
-
+using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json.Serialization;
 
 using System;
@@ -47,11 +48,32 @@ namespace Hybrid.AspNetCore.SignalR
             services.TryAddSingleton<IUserIdProvider, UserNameUserIdProvider>();
             services.TryAddSingleton<IConnectionUserCache, ConnectionUserCache>();
 
-            ISignalRServerBuilder builder = services.AddSignalR();
+            Action<HubOptions> hubOptions = GetHubOptionsAction(services);
+            ISignalRServerBuilder builder = hubOptions == null
+                ? services.AddSignalR()
+                : services.AddSignalR(hubOptions);
+
             Action<ISignalRServerBuilder> buildAction = GetSignalRServerBuildAction(services);
             buildAction?.Invoke(builder);
 
             return services;
+        }
+
+        /// <summary>
+        /// 重写以获取HubOptions创建委托
+        /// </summary>
+        /// <param name="services">依赖注入服务容器</param>
+        /// <returns></returns>
+        protected virtual Action<HubOptions> GetHubOptionsAction(IServiceCollection services)
+        {
+            return config =>
+            {
+                IWebHostEnvironment environment = services.GetWebHostEnvironment();
+                if (environment.IsDevelopment())
+                {
+                    config.EnableDetailedErrors = true;
+                }
+            };
         }
 
         /// <summary>

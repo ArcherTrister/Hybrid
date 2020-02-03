@@ -89,27 +89,23 @@ namespace Hybrid.Extensions
             {
                 //if (x.Auditing.IsEnabled)
                 //{
-                //    ValidateByDataAnnotation(x.Auditing, x.Auditing.GetType().Name);
+                //    ValidateByDataAnnotation(x.Auditing, nameof(x.Auditing));
                 //}
-                foreach (var item in x.DbContexts)
+                if (x.DbContexts.Any())
                 {
-                    ValidateByDataAnnotation(item.Value, item.Value.GetType().Name);
+                    ValidateByDataAnnotation(x.DbContexts, nameof(x.DbContexts));
                 }
                 if (x.EmailSender.IsEnabled)
                 {
-                    ValidateByDataAnnotation(x.EmailSender, x.EmailSender.GetType().Name);
+                    ValidateByDataAnnotation(x.EmailSender, nameof(x.EmailSender));
                 }
-                //foreach (var item in x.OAuth2S)
-                //{
-                //    ValidateByDataAnnotation(item.Value, item.Value.GetType().Name);
-                //}
-                if (x.OAuth2S.Count > 0)
+                if (x.OAuth2S.Any())
                 {
-                    ValidateByDataAnnotation(x.OAuth2S, x.OAuth2S.GetType().Name);
+                    ValidateByDataAnnotation(x.OAuth2S, nameof(x.OAuth2S));
                 }
                 if (x.Quartz.IsEnabled)
                 {
-                    ValidateByDataAnnotation(x.Quartz, x.Quartz.GetType().Name);
+                    ValidateByDataAnnotation(x.Quartz, nameof(x.Quartz));
                 }
                 if (x.Ids.IsEnabled && x.Jwt.IsEnabled)
                 {
@@ -117,15 +113,15 @@ namespace Hybrid.Extensions
                 }
                 if (x.Ids.IsEnabled && !x.Ids.IsLocalApi)
                 {
-                    ValidateByDataAnnotation(x.Ids, x.Ids.GetType().Name);
+                    ValidateByDataAnnotation(x.Ids, nameof(x.Ids));
                 }
                 if (x.Jwt.IsEnabled)
                 {
-                    ValidateByDataAnnotation(x.Jwt, x.Jwt.GetType().Name);
+                    ValidateByDataAnnotation(x.Jwt, nameof(x.Jwt));
                 }
                 if (x.Redis.IsEnabled)
                 {
-                    ValidateByDataAnnotation(x.Redis, x.Redis.GetType().Name);
+                    ValidateByDataAnnotation(x.Redis, nameof(x.Redis));
                 }
             });
         }

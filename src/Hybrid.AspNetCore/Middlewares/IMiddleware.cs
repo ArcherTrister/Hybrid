@@ -23,6 +23,6 @@ namespace Hybrid.AspNetCore.Middlewares
         /// </summary>
         /// <param name="context">Http上下文</param>
         /// <returns></returns>
-        Task Invoke(HttpContext context);
+        Task InvokeAsync(HttpContext context);
     }
 }
