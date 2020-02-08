@@ -33,7 +33,6 @@
 
   <ItemGroup>
     <!--<PackageReference Include="IdentityModel.AspNetCore" Version="1.0.0-rc.2" />-->
-    <PackageReference Include="IdentityServer4" Version="3.1.1" Condition="'$(Configuration)' == 'Release'" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.1" Condition="'$(Configuration)' == 'Debug'" />
     <PackageReference Include="Microsoft.Extensions.FileProviders.Composite" Version="3.1.1" />
     <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="3.1.1" />
@@ -44,7 +43,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\test\IdentityServer4\src\IdentityServer4\src\IdentityServer4.csproj" Condition="'$(Configuration)' == 'Debug'" />
     <ProjectReference Include="..\Hybrid.Zero\Hybrid.Zero.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <ProjectReference Include="..\..\test\IdentityServer4\src\IdentityServer4\src\IdentityServer4.csproj" Condition="'$(Configuration)' == 'Debug'" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <PackageReference Include="IdentityServer4" Version="3.1.1" />
   </ItemGroup>
 </Project>
