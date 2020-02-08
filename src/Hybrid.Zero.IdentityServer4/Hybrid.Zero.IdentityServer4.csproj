@@ -47,7 +47,7 @@
   </ItemGroup>
 
   <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <ProjectReference Include="..\..\test\IdentityServer4\src\IdentityServer4\src\IdentityServer4.csproj" Condition="'$(Configuration)' == 'Debug'" />
+    <ProjectReference Include="..\..\test\IdentityServer4\src\IdentityServer4\src\IdentityServer4.csproj" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
