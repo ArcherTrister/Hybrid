@@ -20,6 +20,8 @@ namespace Hybrid.Security
     [DebuggerDisplay("{ResultType}-{Message}")]
     public sealed class AuthorizationResult : HybridResult<AuthorizationStatus>
     {
+        // TODO: 400 405 406
+
         #region NoApi
 
         /// <summary>
@@ -105,7 +107,7 @@ namespace Hybrid.Security
         /// </summary>
         public static AuthorizationResult OK { get; } = new AuthorizationResult(AuthorizationStatus.OK);
 
-        #endregion
+        #endregion NoApi
 
         #region Api
 
@@ -194,6 +196,6 @@ namespace Hybrid.Security
         //        get { return ResultType == AuthorizationStatus.Error; }
         //    }
 
-        #endregion
+        #endregion Api
     }
 }

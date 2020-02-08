@@ -26,7 +26,7 @@ namespace Hybrid.AspNetCore.UI
             string content = result.Message ?? result.ResultType.ToDescription();
             AjaxResultType type = result.ResultType.ToAjaxResultType();
             object data = dataFunc == null ? result.Data : dataFunc(result.Data);
-            return new AjaxResult(content, type, data);
+            return new AjaxResult(content, data, type);
         }
 
         /// <summary>
@@ -39,7 +39,7 @@ namespace Hybrid.AspNetCore.UI
         {
             string content = result.Message ?? result.ResultType.ToDescription();
             AjaxResultType type = result.ResultType.ToAjaxResultType();
-            return containsData ? new AjaxResult(content, type, result.Data) : new AjaxResult(content, type);
+            return containsData ? new AjaxResult(content, result.Data, type) : new AjaxResult(content, type);
         }
 
         /// <summary>
@@ -57,7 +57,7 @@ namespace Hybrid.AspNetCore.UI
                     data = dataFunc(resultData);
                 }
             }
-            return new AjaxResult(content, type, data);
+            return new AjaxResult(content, data, type);
         }
 
         /// <summary>

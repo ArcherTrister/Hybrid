@@ -26,6 +26,8 @@ namespace Hybrid.Web.Startups
                 new IdentityResources.OpenId(),
                 new IdentityResources.Profile(),
                 new IdentityResources.Address(),
+                //new IdentityResources.Email(),
+                //new IdentityResources.Phone(),
                 new IdentityResourcesExtensions.HybridCustomResource()
             };
 
@@ -40,7 +42,18 @@ namespace Hybrid.Web.Startups
                         HybridClaimTypes.EmailVerified,
                         HybridClaimTypes.PhoneNumberVerified,
                         HybridClaimTypes.PostalCode,
-                        HybridClaimTypes.Role
+                        HybridClaimTypes.Role,
+                        HybridClaimTypes.UserId,
+                        HybridClaimTypes.UserName,
+                        HybridClaimTypes.TrueName,
+                        HybridClaimTypes.IdCard,
+                        HybridClaimTypes.IdCardVerified,
+                        HybridClaimTypes.Gender,
+                        HybridClaimTypes.NickName,
+                        HybridClaimTypes.PhoneNumber,
+                        HybridClaimTypes.AvatarUrl,
+                        HybridClaimTypes.Email,
+                        //HybridClaimTypes.TenantId
                     }
                 )
             };
@@ -86,6 +99,7 @@ namespace Hybrid.Web.Startups
                     {
                         new Secret("mobile app secrect".Sha256())
                     },
+                    AccessTokenType = AccessTokenType.Reference,
                     AllowOfflineAccess = true,
                     AllowedScopes = {
                         HybridConstants.LocalApi.ScopeName,
@@ -120,23 +134,29 @@ namespace Hybrid.Web.Startups
                     AllowedScopes = { HybridConstants.LocalApi.ScopeName }
                 },
 
-                //// MVC client using code flow + pkce
-                //new Client
-                //{
-                //    ClientId = "mvc",
-                //    ClientName = "MVC Client",
+                // MVC client using code flow + pkce
+                new Client
+                {
+                    ClientId = "mvc",
+                    ClientName = "MVC Client",
 
-                //    AllowedGrantTypes = GrantTypes.CodeAndClientCredentials,
-                //    RequirePkce = true,
-                //    ClientSecrets = { new Secret("49C1A7E1-0C79-4A89-A3D6-A37998FB86B0".Sha256()) },
+                    AllowedGrantTypes = GrantTypes.CodeAndClientCredentials,
+                    RequirePkce = true,
+                    ClientSecrets = { new Secret("49C1A7E1-0C79-4A89-A3D6-A37998FB86B0".Sha256()) },
 
-                //    RedirectUris = { "http://localhost:5003/signin-oidc" },
-                //    FrontChannelLogoutUri = "http://localhost:5003/signout-oidc",
-                //    PostLogoutRedirectUris = { "http://localhost:5003/signout-callback-oidc" },
+                    RedirectUris = { "http://localhost:5003/signin-oidc" },
+                    FrontChannelLogoutUri = "http://localhost:5003/signout-oidc",
+                    PostLogoutRedirectUris = { "http://localhost:5003/signout-callback-oidc" },
 
-                //    AllowOfflineAccess = true,
-                //    AllowedScopes = { "openid", "profile", HybridConstants.LocalApi.ScopeName }
-                //},
+                    AllowOfflineAccess = true,
+                    AllowedScopes = {
+                        HybridConstants.LocalApi.ScopeName,
+                        IdentityResourcesExtensions.HybridCustomName,
+                        IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Address,
+                        IdentityServerConstants.StandardScopes.Profile
+                    }
+                },
 
                 //// SPA client using code flow + pkce
                 //new Client

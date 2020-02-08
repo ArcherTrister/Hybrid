@@ -412,6 +412,9 @@ namespace IdentityServer4.Web.Data.Migrations.Application
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
 
+                    b.Property<int>("Gender")
+                        .HasColumnType("int");
+
                     b.Property<string>("IdCard")
                         .HasColumnType("nvarchar(max)");
 
@@ -488,6 +491,7 @@ namespace IdentityServer4.Web.Data.Migrations.Application
                             CreatedTime = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "Admin@example.com",
                             EmailConfirmed = true,
+                            Gender = 0,
                             IdCardConfirmed = false,
                             IsDeleted = false,
                             IsLocked = false,
@@ -618,7 +622,7 @@ namespace IdentityServer4.Web.Data.Migrations.Application
                     b.HasData(
                         new
                         {
-                            Id = new Guid("3a95c920-d49a-4e63-b944-af95d694e221"),
+                            Id = new Guid("9bb55628-8a8e-4e89-8ccd-d12de128cba8"),
                             CreatedTime = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsDeleted = false,
                             IsLocked = false,

@@ -35,6 +35,7 @@ namespace Hybrid.Web.Identity.Entity.EntityConfiguration
                 UserName = "Admin",
                 NormalizedUserName = "ADMIN",
                 NickName = "SuperAdmin",
+                Gender = Data.GenderType.Male,
                 Email = "Admin@example.com",
                 NormalizedEmail = "ADMIN@EXAMPLE.COM",
                 EmailConfirmed = true,

@@ -27,16 +27,14 @@ namespace Hybrid.Zero.IdentityServer4.Extensions
                 Emphasize = true;
                 UserClaims = new[]
                 {
-                    HybridClaimTypes.UserId,
-                    HybridClaimTypes.UserName,
                     HybridClaimTypes.TrueName,
                     HybridClaimTypes.IdCard,
                     HybridClaimTypes.IdCardVerified,
                     HybridClaimTypes.Gender,
                     HybridClaimTypes.NickName,
-                    HybridClaimTypes.PhoneNumber,
                     HybridClaimTypes.AvatarUrl,
                     HybridClaimTypes.Email,
+                    HybridClaimTypes.PhoneNumber
                     //HybridClaimTypes.TenantId
                 };
             }

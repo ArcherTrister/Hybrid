@@ -9,6 +9,8 @@
 
 using IdentityServer4.Stores;
 
+using Microsoft.AspNetCore.Mvc;
+
 using System.Threading.Tasks;
 
 namespace Hybrid.Zero.IdentityServer4.Quickstart
@@ -30,6 +32,14 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
             }
 
             return false;
+        }
+
+        public static IActionResult LoadingPage(this Controller controller, string viewName, string redirectUri)
+        {
+            controller.HttpContext.Response.StatusCode = 200;
+            controller.HttpContext.Response.Headers["Location"] = "";
+
+            return controller.View(viewName, new RedirectViewModel { RedirectUrl = redirectUri });
         }
     }
 }

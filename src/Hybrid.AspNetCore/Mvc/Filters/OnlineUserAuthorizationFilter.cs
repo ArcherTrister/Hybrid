@@ -34,7 +34,8 @@ namespace Hybrid.AspNetCore.Mvc.Filters
             {
                 // 由在线缓存获取用户信息赋给Identity
                 IOnlineUserProvider onlineUserProvider = provider.GetService<IOnlineUserProvider>();
-                OnlineUserBase onlineUser = await onlineUserProvider.GetOrCreate(identity.Name);
+                var name = identity.Name ?? identity.GetUserName();
+                OnlineUserBase onlineUser = await onlineUserProvider.GetOrCreate(name);
                 if (onlineUser == null)
                 {
                     return;

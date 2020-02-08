@@ -110,7 +110,7 @@ namespace Hybrid.Web.Controllers
                 await file.CopyToAsync(fs);
             }
 
-            return new AjaxResult("上传成功", AjaxResultType.Success, $"upload-files/{fileName}");
+            return new AjaxResult("上传成功", $"upload-files/{fileName}", AjaxResultType.Success);
         }
 
         /// <summary>

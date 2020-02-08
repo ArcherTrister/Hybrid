@@ -17,7 +17,8 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-
+using Microsoft.IdentityModel.Tokens;
+using Polly;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -115,16 +116,59 @@ namespace Hybrid.Web.Startups
         /// <summary>
         /// 添加Authentication服务
         /// </summary>
-        /// <param name="services">服务集合</param>
-        protected override void AddAuthentication(IServiceCollection services, IdsOptions options)
+        /// <param name="services"></param>
+        /// <param name="idsOptions"></param>
+        /// <param name="configuration"></param>
+        protected override void AddAuthentication(IServiceCollection services, IdsOptions idsOptions, IConfiguration configuration)
         {
-            IConfiguration configuration = services.GetConfiguration();
-
             JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
 
             AuthenticationBuilder authenticationBuilder = services.AddAuthentication();
 
-            if (options.IsLocalApi)
+            //AuthenticationBuilder authenticationBuilder = services.AddAuthentication(options =>
+            //{
+            //    //options.DefaultScheme = "cookie";
+            //    options.DefaultChallengeScheme = "oidc";
+            //});
+
+            //authenticationBuilder.AddCookie(options =>
+            //{
+            //    options.Cookie.Name = "HybridCookie";
+            //    //options.Events.OnSigningOut = async e => { await e.HttpContext.RevokeUserRefreshTokenAsync(); };
+            //});
+            //authenticationBuilder.AddOpenIdConnect("oidc", options =>
+            //                 {
+            //                     options.Authority = idsOptions.Authority;
+
+            //                     options.ClientId = "";
+            //                     options.ClientSecret = "secret";
+
+            //                     // code flow + PKCE (PKCE is turned on by default)
+            //                     options.ResponseType = "code";
+            //                     options.UsePkce = true;
+
+            //                     options.Scope.Clear();
+            //                     options.Scope.Add("openid");
+            //                     options.Scope.Add("profile");
+            //                     options.Scope.Add("email");
+            //                     options.Scope.Add("offline_access");
+            //                     options.Scope.Add(idsOptions.Audience);
+
+            //                     // not mapped by default
+            //                     options.ClaimActions.MapJsonKey("website", "website");
+
+            //                     // keeps id_token smaller
+            //                     options.GetClaimsFromUserInfoEndpoint = true;
+            //                     options.SaveTokens = true;
+
+            //                     options.TokenValidationParameters = new TokenValidationParameters
+            //                     {
+            //                         NameClaimType = "name",
+            //                         RoleClaimType = "role"
+            //                     };
+            //                 });
+
+            if (idsOptions.IsLocalApi)
             {
                 // 1.如果在本项目中使用webapi则添加，并且在UseModule中不能使用app.UseAuthentication
                 // 2.在webapi上添加[Authorize(AuthenticationSchemes = IdentityServerConstants.LocalApi.AuthenticationScheme)]标记
@@ -175,7 +219,8 @@ namespace Hybrid.Web.Startups
                     }
                 }
             }
-            else {
+            else
+            {
                 // TODO: IdentityServer
                 //// IdentityServer
                 //services.AddAuthentication(Configuration["IdentityService:DefaultScheme"])
@@ -194,17 +239,38 @@ namespace Hybrid.Web.Startups
                 //    options.TokenValidationParameters.RequireExpirationTime = true;
                 //    });
             }
+
+            //// adds user and client access token management
+            //services.AddAccessTokenManagement(options =>
+            //{
+            //    // client config is inferred from OpenID Connect settings
+            //    // if you want to specify scopes explicitly, do it here, otherwise the scope parameter will not be sent
+            //    options.Client.Scope = HybridConstants.LocalApi.ScopeName;
+            //})
+            //    .ConfigureBackchannelHttpClient()
+            //        .AddTransientHttpErrorPolicy(policy => policy.WaitAndRetryAsync(new[]
+            //        {
+            //            TimeSpan.FromSeconds(1),
+            //            TimeSpan.FromSeconds(2),
+            //            TimeSpan.FromSeconds(3)
+            //        }));
         }
 
         /// <summary>
         /// 重写以实现 AddIdentityServer 之后的构建逻辑，如果非授权服务器，此处配置无效
         /// </summary>
         /// <param name="builder"></param>
+        /// <param name="services"></param>
         /// <returns></returns>
         protected override IIdentityServerBuilder AddIdentityServerBuild(IIdentityServerBuilder builder, IServiceCollection services)
         {
             return builder.AddDeveloperSigningCredential()
+                //.AddSigningCredential()
+                //.AddCustomAuthorizeRequestValidator<>()
+                //.AddCustomTokenRequestValidator<>()
+                //.AddValidators()
                 .AddHybridDefaultUI<User, Guid>()
+                //.AddHybridCustomTokenValidator<CustomTokenValidator>()
                 .AddInMemoryIdentityResources(IdentityServer4Config.GetIdentityResources())
                 .AddInMemoryApiResources(IdentityServer4Config.GetApis())
                 .AddInMemoryClients(IdentityServer4Config.GetClients());

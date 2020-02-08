@@ -16,7 +16,6 @@ using Microsoft.Extensions.DependencyInjection;
 
 using System;
 
-
 namespace Hybrid.AspNetCore.Mvc.Filters
 {
     /// <summary>

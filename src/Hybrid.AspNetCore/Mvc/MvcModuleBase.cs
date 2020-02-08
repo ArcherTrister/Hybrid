@@ -7,7 +7,9 @@
 //  <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.AspNetCore.Extensions;
 using Hybrid.AspNetCore.Mvc.Filters;
+using Hybrid.AspNetCore.UI;
 using Hybrid.Core.Modules;
 
 using Microsoft.AspNetCore.Builder;
@@ -40,16 +42,38 @@ namespace Hybrid.AspNetCore.Mvc
 
             var builder = services.AddControllersWithViews(options =>
             {
+                //不支持的系列化返回406状态码
+                options.ReturnHttpNotAcceptable = true;
+                //options.OutputFormatters.Add(new XmlDataContractSerializerOutputFormatter());
+                //options.OutputFormatters.Insert(0, new XmlDataContractSerializerOutputFormatter());
                 //    //options.Conventions.Add(new DashedRoutingConvention());
                 options.Filters.Add(new OnlineUserAuthorizationFilter()); // 构建在线用户信息
                 options.Filters.Add(new FunctionAuthorizationFilter()); // 全局功能权限过滤器
                 options.Filters.Add(new OperateAuditFilter());
                 //options.Filters.Add(new MvcUnitOfWorkFilter());
                 //options.Filters.Add(new PageUnitOfWorkFilter());
-            }).AddNewtonsoftJson(options =>
+            })
+                //.AddXmlDataContractSerializerFormatters()
+                .AddNewtonsoftJson(options =>
             {
                 options.SerializerSettings.ContractResolver = new DefaultContractResolver();
             }).SetCompatibilityVersion(CompatibilityVersion.Latest);
+
+            //参数验证
+            ////①禁用默认行为
+            //services.Configure<ApiBehaviorOptions>(options =>
+            //{
+            //    options.SuppressModelStateInvalidFilter = true;
+            //});
+            //②覆盖默认行为
+            services.Configure<ApiBehaviorOptions>(options =>
+            {
+                options.InvalidModelStateResponseFactory = (context) =>
+                {
+                    var error = context.ModelState.GetValidationSummary();
+                    return new JsonResult(new AjaxResult(error, Data.AjaxResultType.RequestError));
+                };
+            });
 
             services.AddScoped<UnitOfWorkFilterImpl>();
             //services.AddScoped<OperateAuditFilter>();

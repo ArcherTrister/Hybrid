@@ -8,6 +8,7 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.AspNetCore.Extensions;
+using Hybrid.AspNetCore.Mvc.Models;
 using Hybrid.AspNetCore.UI;
 using Hybrid.Data;
 using Hybrid.Json;
@@ -25,7 +26,9 @@ namespace Hybrid.AspNetCore.Middlewares
     /// </summary>
     public class NodeExceptionHandlerMiddleware : IMiddleware
     {
+        //private static int[] IgnoreStatusCode = new int[] { 200, 302 };
         private readonly RequestDelegate _next;
+
         private readonly ILogger<NodeExceptionHandlerMiddleware> _logger;
 
         /// <summary>
@@ -57,14 +60,72 @@ namespace Hybrid.AspNetCore.Middlewares
                     {
                         return;
                     }
-                    context.Response.Clear();
-                    context.Response.StatusCode = 200;
-                    context.Response.ContentType = "application/json; charset=utf-8";
-                    await context.Response.WriteAsync(new AjaxResult(ex.Message, AjaxResultType.Error).ToJsonString());
+                    await HandleExceptionAsync(context, 200, "服务提供异常，请重试或联系管理员", AjaxResultType.Error);
                     return;
                 }
                 throw;
             }
+            finally
+            {
+                int statusCode = context.Response.StatusCode;
+                //!IgnoreStatusCode.AsSpan().Contains(statusCode)
+                if (statusCode >= 400)
+                {
+                    AjaxResultType resultType;
+                    string msg;
+                    switch (statusCode)
+                    {
+                        case 400:
+                            msg = "请求错误";
+                            resultType = AjaxResultType.RequestError;
+                            break;
+
+                        case 401:
+                            msg = "用户未登录，请先登录";
+                            resultType = AjaxResultType.UnAuth;
+                            break;
+
+                        case 403:
+                            msg = "已登录，但权限不足";
+                            resultType = AjaxResultType.Forbidden;
+                            break;
+
+                        case 404:
+                            msg = "资源未找到，无法访问";
+                            resultType = AjaxResultType.NoFound;
+                            break;
+
+                        case 405:
+                            msg = "方法被禁用";
+                            resultType = AjaxResultType.MethodDisabled;
+                            break;
+
+                        case 406:
+                            msg = "不支持此格式";
+                            resultType = AjaxResultType.NoSupport;
+                            break;
+
+                        case 423:
+                            msg = "资源被锁定，无法访问";
+                            resultType = AjaxResultType.Locked;
+                            break;
+
+                        default:
+                            msg = "服务器异常，请重试或联系管理员";
+                            resultType = AjaxResultType.Error;
+                            break;
+                    }
+                    await HandleExceptionAsync(context, statusCode, msg, resultType);
+                }
+            }
+        }
+
+        private static Task HandleExceptionAsync(HttpContext context, int statusCode, string msg, AjaxResultType resultType)
+        {
+            context.Response.Clear();
+            context.Response.StatusCode = statusCode;
+            context.Response.ContentType = "application/json; charset=utf-8";
+            return context.Response.WriteAsync(new AjaxResult(content: msg, ajaxResultType: resultType, unAuthorizedRequest: statusCode.Equals(401)).ToJsonString());
         }
     }
 }

@@ -7,10 +7,10 @@ namespace Hybrid.Json
     /// <summary>
     /// 驼峰转下划线(+大写)
     /// </summary>
-    public class UnderScoreCasePropertyNamesContractResolver : DefaultContractResolver
+    public class CamelCaseToUnderScoreCasePropertyNamesContractResolver : DefaultContractResolver
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="propertyName"></param>
         /// <returns></returns>

@@ -70,9 +70,9 @@ namespace Hybrid.AspNetCore.Mvc.Filters
             {
                 if (jsonResult.Value is AjaxResult ajax)
                 {
-                    type = ajax.Type;
+                    type = ajax.ResultType;
                     message = ajax.Content;
-                    if (ajax.Succeeded())
+                    if (ajax.Success)
                     {
                         _unitOfWorkManager?.Commit();
                     }
@@ -82,9 +82,9 @@ namespace Hybrid.AspNetCore.Mvc.Filters
             {
                 if (objectResult.Value is AjaxResult ajax)
                 {
-                    type = ajax.Type;
+                    type = ajax.ResultType;
                     message = ajax.Content;
-                    if (ajax.Succeeded())
+                    if (ajax.Success)
                     {
                         _unitOfWorkManager?.Commit();
                     }
@@ -99,18 +99,34 @@ namespace Hybrid.AspNetCore.Mvc.Filters
             {
                 switch (context.HttpContext.Response.StatusCode)
                 {
+                    case 400:
+                        type = AjaxResultType.RequestError;
+                        break;
+
                     case 401:
                         type = AjaxResultType.UnAuth;
                         break;
+
                     case 403:
-                        type = AjaxResultType.UnAuth;
+                        type = AjaxResultType.Forbidden;
                         break;
+
                     case 404:
-                        type = AjaxResultType.UnAuth;
+                        type = AjaxResultType.NoFound;
                         break;
+
+                    case 405:
+                        type = AjaxResultType.MethodDisabled;
+                        break;
+
+                    case 406:
+                        type = AjaxResultType.NoSupport;
+                        break;
+
                     case 423:
-                        type = AjaxResultType.UnAuth;
+                        type = AjaxResultType.Locked;
                         break;
+
                     default:
                         type = AjaxResultType.Error;
                         break;

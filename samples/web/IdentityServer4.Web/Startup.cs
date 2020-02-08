@@ -45,7 +45,7 @@ namespace Hybrid.Web
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            services.AddHttpClient("SignInOrOutClient",
+            services.AddHttpClient("Identityserver4Client",
             options =>
             {
                 options.BaseAddress = new Uri(Configuration["Hybrid:Ids:Authority"]);

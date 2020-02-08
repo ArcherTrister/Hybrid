@@ -7,8 +7,10 @@
 //  <last-date>2020-01-12 17:17:13</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Data;
 using Hybrid.Security.Claims;
 using Hybrid.Zero.Identity;
+
 using Microsoft.AspNetCore.Identity;
 
 using System;
@@ -55,17 +57,17 @@ namespace Hybrid.Zero.IdentityServer4.Identity
                 identity.AddClaim(new Claim(HybridClaimTypes.UserIdTypeName, property.PropertyType.FullName));
             }
 
-            var username = findUser.UserName;
-            var usernameClaim = identity.FindFirst(claim => claim.Type == _userManager.Options.ClaimsIdentity.UserNameClaimType && claim.Value == username);
-            if (usernameClaim != null)
-            {
-                identity.RemoveClaim(usernameClaim);
-                identity.AddClaim(new Claim(HybridClaimTypes.PreferredUserName, username));
-            }
+            //var username = findUser.UserName;
+            //var usernameClaim = identity.FindFirst(claim => claim.Type == _userManager.Options.ClaimsIdentity.UserNameClaimType && claim.Value == username);
+            //if (usernameClaim != null)
+            //{
+            //    //identity.RemoveClaim(usernameClaim);
+            //    identity.AddClaim(new Claim(HybridClaimTypes.PreferredUserName, username));
+            //}
 
             if (!identity.HasClaim(x => x.Type == HybridClaimTypes.UserName))
             {
-                identity.AddClaim(new Claim(HybridClaimTypes.UserName, username));
+                identity.AddClaim(new Claim(HybridClaimTypes.UserName, findUser.UserName));
             }
 
             //if (!identity.HasClaim(x => x.Type == HybridClaimTypes.NickName))
@@ -84,7 +86,7 @@ namespace Hybrid.Zero.IdentityServer4.Identity
             identity.AddClaim(new Claim(HybridClaimTypes.NickName, findUser.NickName ?? ""));
             identity.AddClaim(new Claim(HybridClaimTypes.TrueName, findUser.TrueName ?? ""));
             identity.AddClaim(new Claim(HybridClaimTypes.AvatarUrl, findUser.AvatarUrl ?? ""));
-
+            identity.AddClaim(new Claim(HybridClaimTypes.Gender, findUser.Gender.ToString() ?? GenderType.Security.ToString()));
             identity.AddClaim(new Claim(HybridClaimTypes.IdCard, findUser.IdCard ?? ""));
             identity.AddClaim(new Claim(HybridClaimTypes.IdCardVerified, findUser.IdCardConfirmed ? "true" : "false", ClaimValueTypes.Boolean));
 

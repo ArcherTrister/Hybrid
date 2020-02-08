@@ -11,8 +11,9 @@ using Hybrid.AspNetCore;
 using Hybrid.Core.Modules;
 using Hybrid.Core.Options;
 using Hybrid.EventBuses;
+using Hybrid.RealTime;
 using Hybrid.Zero.Identity;
-
+using Hybrid.Zero.IdentityServer4.RealTime;
 using IdentityServer4.Configuration;
 
 using Microsoft.AspNetCore.Builder;
@@ -49,8 +50,8 @@ namespace Hybrid.Zero.IdentityServer4
         /// <returns></returns>
         public override IServiceCollection AddServices(IServiceCollection services)
         {
-            // TODO: 在线用户缓存
-            //services.TryAddScoped<IOnlineUserProvider, OnlineUserProvider<TUser, TUserKey, TRole, TRoleKey>>();
+            //在线用户缓存
+            services.TryAddScoped<IOnlineUserProvider, OnlineUserProvider<TUser, TUserKey, TRole, TRoleKey>>();
 
             Action<IdentityOptions> identityOptionsAction = IdentityOptionsAction();
             IdentityBuilder builder = services.AddIdentity<TUser, TRole>(identityOptionsAction)
@@ -74,14 +75,13 @@ namespace Hybrid.Zero.IdentityServer4
                 AddIdentityServerBuild(identityBuilder, services);
             }
 
-
             //Action<CookieAuthenticationOptions> cookieOptionsAction = CookieOptionsAction();
             //if (cookieOptionsAction != null)
             //{
             //    services.ConfigureApplicationCookie(cookieOptionsAction);
             //}
 
-            AddAuthentication(services, idsOptions);
+            AddAuthentication(services, idsOptions, configuration);
 
             return services;
         }
@@ -171,7 +171,7 @@ namespace Hybrid.Zero.IdentityServer4
         /// 添加Authentication服务
         /// </summary>
         /// <param name="services">服务集合</param>
-        protected virtual void AddAuthentication(IServiceCollection services, IdsOptions idsOptions)
+        protected virtual void AddAuthentication(IServiceCollection services, IdsOptions idsOptions, IConfiguration configuration)
         { }
 
         /// <summary>

@@ -7,6 +7,7 @@
 //  <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Data;
 using Hybrid.Domain.Entities;
 
 using System;
@@ -47,6 +48,12 @@ namespace Hybrid.Zero.Identity
         /// </summary>
         [DisplayName("用户昵称")]
         public string NickName { get; set; }
+
+        /// <summary>
+        /// 获取或设置 用户性别
+        /// </summary>
+        [DisplayName("用户性别")]
+        public GenderType Gender { get; set; }
 
         /// <summary>
         /// 获取或设置 电子邮箱

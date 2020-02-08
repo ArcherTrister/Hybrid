@@ -2,23 +2,30 @@
 
 using Hybrid.AspNetCore.Mvc.Controllers;
 using Hybrid.AspNetCore.Mvc.Models;
+using Hybrid.AspNetCore.UI;
 using Hybrid.Core.ModuleInfos;
 using Hybrid.Data;
 using Hybrid.Web.Identity.Entity;
 using Hybrid.Zero.IdentityServer4;
 
 using IdentityModel.Client;
+
 using IdentityServer4.Events;
 using IdentityServer4.Extensions;
 using IdentityServer4.Services;
+using IdentityServer4.Web.Ruqi.Dtos;
+
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
+
 using Newtonsoft.Json;
 
+using System;
 using System.ComponentModel;
+using System.Globalization;
 using System.Net.Http;
 using System.Threading.Tasks;
 
@@ -32,8 +39,8 @@ namespace FlyingFish.Mobile.Controllers
     public sealed class AppAccountController : LocalApiController
     {
         private readonly IHttpClientFactory _httpClientFactory;
-        //private readonly SignInManager<User> _signInManager;
-        //private readonly IEventService _events;
+        private readonly SignInManager<User> _signInManager;
+        private readonly IEventService _events;
 
         /// <summary>
         ///
@@ -41,14 +48,14 @@ namespace FlyingFish.Mobile.Controllers
         /// <param name="httpClientFactory"></param>
         /// <param name="signInManager"></param>
         /// <param name="events"></param>
-        public AppAccountController(IHttpClientFactory httpClientFactory)
-        //,
-        //SignInManager<User> signInManager,
-        //IEventService events)
+        public AppAccountController(
+            IHttpClientFactory httpClientFactory,
+            SignInManager<User> signInManager,
+            IEventService events)
         {
             _httpClientFactory = httpClientFactory;
-            //_signInManager = signInManager;
-            //_events = events;
+            _signInManager = signInManager;
+            _events = events;
         }
 
         /// <summary>
@@ -58,10 +65,10 @@ namespace FlyingFish.Mobile.Controllers
         /// <returns></returns>
         [HttpPost]
         [AllowAnonymous]
-        public async Task<AjaxResponse<LoginResponse>> Login(LoginRequest loginRequest)
+        public async Task<AjaxResult<LoginResponse>> Login(LoginRequest loginRequest)
         {
-            AjaxResponse<LoginResponse> ajaxResponse = new AjaxResponse<LoginResponse>(true);
-            HttpClient signInClient = _httpClientFactory.CreateClient("SignInOrOutClient");
+            AjaxResult<LoginResponse> ajaxResponse = new AjaxResult<LoginResponse>();
+            HttpClient signInClient = _httpClientFactory.CreateClient("Identityserver4Client");
 
             // request access token
             var tokenResponse = await signInClient.RequestPasswordTokenAsync(new PasswordTokenRequest
@@ -77,7 +84,8 @@ namespace FlyingFish.Mobile.Controllers
             if (tokenResponse.IsError)
             {
                 ajaxResponse.Success = false;
-                ajaxResponse.Error = new ErrorInfo { Details = tokenResponse.Error, Message = tokenResponse.Exception.Message };
+                //ajaxResponse.Error = new ErrorInfo(tokenResponse.Exception.Message, tokenResponse.Error);
+                ajaxResponse.Content = tokenResponse.Error;
                 return ajaxResponse;
             }
 
@@ -89,16 +97,72 @@ namespace FlyingFish.Mobile.Controllers
             if (userInfoResponse.IsError)
             {
                 ajaxResponse.Success = false;
-                ajaxResponse.Error = new ErrorInfo { Details = userInfoResponse.Error, Message = userInfoResponse.Exception.Message };
+                //ajaxResponse.Error = new ErrorInfo(userInfoResponse.Exception.Message, userInfoResponse.Error);
+                ajaxResponse.Content = userInfoResponse.Error;
                 return ajaxResponse;
             }
             else
             {
-                CustomUserInfoResponse customUserInfoResponse = JsonConvert.DeserializeObject<CustomUserInfoResponse>(userInfoResponse.Raw);
+                CustomUserInfoResponse customUserInfoResponse = JsonConvert.DeserializeObject<CustomUserInfoResponse>(userInfoResponse.Raw);//, new JsonSerializerSettings { ContractResolver = new UnderScoreCaseToCamelCasePropertyNamesContractResolver() }
                 CustomTokenResponse customTokenResponse = new CustomTokenResponse { AccessToken = tokenResponse.AccessToken, TokenType = tokenResponse.TokenType, ExpiresIn = tokenResponse.ExpiresIn, IdentityToken = tokenResponse.IdentityToken, RefreshToken = tokenResponse.RefreshToken };
                 ajaxResponse.Result = new LoginResponse { TokenResponse = customTokenResponse, UserInfoResponse = customUserInfoResponse };
                 return ajaxResponse;
             }
+        }
+
+        /// <summary>
+        /// 刷新Token
+        /// </summary>
+        /// <returns></returns>
+        public async Task<AjaxResult<CustomTokenResponse>> RefreshToken(RefreshTokensRequest refreshTokensRequest)
+        {
+            AjaxResult<CustomTokenResponse> ajaxResponse = new AjaxResult<CustomTokenResponse>("刷新成功！");
+            HttpClient refreshTokenClient = _httpClientFactory.CreateClient("Identityserver4Client");
+
+            var refreshTokenResponse = await refreshTokenClient.RequestRefreshTokenAsync(new RefreshTokenRequest
+            {
+                Address = refreshTokenClient.BaseAddress + "connect/token",
+                ClientId = "mobileAppClient",
+                ClientSecret = "mobile app secrect",
+                RefreshToken = refreshTokensRequest.RefreshToken
+            });
+            if (refreshTokenResponse.IsError)
+            {
+                ajaxResponse.Success = false;
+                ajaxResponse.Content = refreshTokenResponse.Error;
+                return ajaxResponse;
+            }
+            var identityToken = await HttpContext.GetTokenAsync(OpenIdConnectParameterNames.IdToken);
+            var expiresAt = DateTime.UtcNow + TimeSpan.FromSeconds(refreshTokenResponse.ExpiresIn);
+            var tokens = new[]
+            {
+                new AuthenticationToken
+                {
+                    Name = OpenIdConnectParameterNames.IdToken,
+                    Value = identityToken
+                },
+                new AuthenticationToken
+                {
+                    Name = OpenIdConnectParameterNames.AccessToken,
+                    Value = refreshTokenResponse.AccessToken
+                },
+                new AuthenticationToken
+                {
+                    Name = OpenIdConnectParameterNames.RefreshToken,
+                    Value = refreshTokenResponse.RefreshToken
+                },
+                new AuthenticationToken
+                {
+                    Name = "expires_at",
+                    Value = expiresAt.ToString("o", CultureInfo.InvariantCulture)
+                }
+            };
+            var authenticationInfo = await HttpContext.AuthenticateAsync(HybridConstants.LocalApi.AuthenticationScheme);
+            authenticationInfo.Properties.StoreTokens(tokens);
+            //await HttpContext.SignInAsync(HybridConstants.LocalApi.AuthenticationScheme, authenticationInfo.Principal, authenticationInfo.Properties);
+            await HttpContext.SignInAsync(authenticationInfo.Principal, authenticationInfo.Properties);
+            ajaxResponse.Result = new CustomTokenResponse { AccessToken = refreshTokenResponse.AccessToken, RefreshToken = refreshTokenResponse.RefreshToken, ExpiresIn = refreshTokenResponse.ExpiresIn, IdentityToken = refreshTokenResponse.IdentityToken, TokenType = refreshTokenResponse.TokenType };
+            return ajaxResponse;
         }
 
         /// <summary>
@@ -107,19 +171,20 @@ namespace FlyingFish.Mobile.Controllers
         /// <returns></returns>
         [HttpPost]
         //[ValidateAntiForgeryToken]
-        public async Task<AjaxResponse<string>> Logout()
+        public async Task<AjaxResult<string>> Logout(LogoutRequest logoutRequest)
         {
-            AjaxResponse<string> ajaxResponse = new AjaxResponse<string>("退出成功！");
+            AjaxResult<string> ajaxResponse = new AjaxResult<string>("退出成功！");
+            HttpClient signOutClient = _httpClientFactory.CreateClient("Identityserver4Client");
 
-            //if (User?.Identity.IsAuthenticated == true)
-            //{
-            //    // delete local authentication cookie
-            //    await _signInManager.SignOutAsync();
+            if (User?.Identity.IsAuthenticated == true)
+            {
+                // delete local authentication cookie
+                await _signInManager.SignOutAsync();
 
-            //    // raise the logout event
-            //    await _events.RaiseAsync(new UserLogoutSuccessEvent(User.GetSubjectId(), User.GetDisplayName()));
-            //}
-            HttpClient signOutClient = _httpClientFactory.CreateClient("SignInOrOutClient");
+                // raise the logout event
+                await _events.RaiseAsync(new UserLogoutSuccessEvent(User.GetSubjectId(), User.GetDisplayName()));
+            }
+
             string accessToken = await HttpContext.GetTokenAsync(HybridConstants.LocalApi.AuthenticationScheme, OpenIdConnectParameterNames.AccessToken);
 
             if (!string.IsNullOrWhiteSpace(accessToken))
@@ -129,34 +194,33 @@ namespace FlyingFish.Mobile.Controllers
                     Address = signOutClient.BaseAddress + "connect/revocation",
                     ClientId = "mobileAppClient",
                     ClientSecret = "mobile app secrect",
+                    TokenTypeHint = OpenIdConnectParameterNames.AccessToken,
                     Token = accessToken
                 });
                 if (accessTokenRevocationResponse.IsError)
                 {
                     ajaxResponse.Success = false;
-                    ajaxResponse.Error = new ErrorInfo { Message = accessTokenRevocationResponse.Error };
+                    ajaxResponse.Content = accessTokenRevocationResponse.Error;
                     return ajaxResponse;
                 }
             }
+            var refreshTokenRevocationResponse = await signOutClient.RevokeTokenAsync(new TokenRevocationRequest
+            {
+                Address = signOutClient.BaseAddress + "connect/revocation",
+                ClientId = "mobileAppClient",
+                ClientSecret = "mobile app secrect",
+                TokenTypeHint = OpenIdConnectParameterNames.RefreshToken,
+                Token = logoutRequest.RefreshToken
+            });
+            if (refreshTokenRevocationResponse.IsError)
+            {
+                ajaxResponse.Success = false;
+                ajaxResponse.Error = new ErrorInfo { Message = refreshTokenRevocationResponse.Error };
+                return ajaxResponse;
+            }
 
-            //string refreshToken = await HttpContext.GetTokenAsync(HybridConstants.LocalApi.AuthenticationScheme, OpenIdConnectParameterNames.RefreshToken);
+            await HttpContext.SignOutAsync();
 
-            //if (!string.IsNullOrWhiteSpace(refreshToken))
-            //{
-            //    var refreshTokenRevocationResponse = await signOutClient.RevokeTokenAsync(new TokenRevocationRequest
-            //    {
-            //        Address = "",
-            //        ClientId = "",
-            //        ClientSecret = "",
-            //        Token = refreshToken
-            //    });
-            //    if (refreshTokenRevocationResponse.IsError)
-            //    {
-            //        ajaxResponse.Success = false;
-            //        ajaxResponse.Error = new ErrorInfo { Message = refreshTokenRevocationResponse.Error };
-            //        return ajaxResponse;
-            //    }
-            //}
             return ajaxResponse;
         }
     }

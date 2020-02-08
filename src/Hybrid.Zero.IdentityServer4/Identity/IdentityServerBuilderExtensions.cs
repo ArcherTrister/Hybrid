@@ -13,7 +13,7 @@ using Hybrid.Zero.IdentityServer4.Identity;
 using IdentityModel;
 
 using IdentityServer4;
-
+using IdentityServer4.Validation;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 
@@ -90,6 +90,20 @@ namespace Microsoft.Extensions.DependencyInjection
 
             builder.AddResourceOwnerValidator<ResourceOwnerPasswordValidator<TUser, TUserKey>>();
             builder.AddProfileService<ProfileService<TUser, TUserKey>>();
+
+            return builder;
+        }
+
+        /// <summary>
+        /// Adds the custom token validator.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="builder">The builder.</param>
+        /// <returns></returns>
+        public static IIdentityServerBuilder AddHybridCustomTokenValidator<T>(this IIdentityServerBuilder builder)
+           where T : class, ICustomTokenValidator
+        {
+            builder.Services.AddTransient<ICustomTokenValidator, T>();
 
             return builder;
         }

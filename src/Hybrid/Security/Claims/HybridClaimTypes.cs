@@ -19,59 +19,62 @@ namespace Hybrid.Security.Claims
         /// 租户Id
         /// Default: TenantId
         /// </summary>
-        public const string TenantId = "TenantId";
+        public const string TenantId = "tenantId";
 
         /// <summary>
         /// 用户Id
-        /// Default: UserId
+        /// Default: id
         /// </summary>
-        public const string UserId = "UserId";
+        public const string UserId = "id";
 
+        /// <summary>
+        /// 用户Id
+        /// </summary>
         public const string Subject = "sub";
 
-        public const string PreferredUserName = "preferred_username";
+        //public const string PreferredUserName = "preferred_username";
 
         /// <summary>
         /// 用户名
         /// Default: UserName
         /// </summary>
-        public const string UserName = "UserName";
+        public const string UserName = "name";
 
         /// <summary>
         /// 角色
         /// Default: Role
         /// </summary>
-        public const string Role = "Role";
+        public const string Role = "role";
 
         /// <summary>
         /// 电子邮件地址
         /// Default: Email
         /// </summary>
-        public const string Email = "Email";
+        public const string Email = "email";
 
         /// <summary>
         /// 移动电话号码
         /// Default: PhoneNumber
         /// </summary>
-        public const string PhoneNumber = "PhoneNumber";
+        public const string PhoneNumber = "phone_number";
 
         /// <summary>
         /// 性别
         /// Default: Gender
         /// </summary>
-        public const string Gender = "Gender";
+        public const string Gender = "gender";
 
         /// <summary>
         /// 邮政编码
         /// Default: PostalCode
         /// </summary>
-        public const string PostalCode = "PostalCode";
+        public const string PostalCode = "postal_code";
 
         /// <summary>
         /// 昵称
         /// Default: NickName
         /// </summary>
-        public const string NickName = "NickName";
+        public const string NickName = "nick_name";
 
         /// <summary>
         /// 头像Url
@@ -82,17 +85,17 @@ namespace Hybrid.Security.Claims
         /// <summary>
         /// 手机验证
         /// </summary>
-        public const string PhoneNumberVerified = "PhoneNumberVerified";
+        public const string PhoneNumberVerified = "phone_number_verified";
 
         /// <summary>
         /// 邮箱验证
         /// </summary>
-        public const string EmailVerified = "EmailVerified";
+        public const string EmailVerified = "email_verified";
 
         /// <summary>
         /// 客户端Id
         /// </summary>
-        public const string ClientId = "ClientId";
+        public const string ClientId = "client_id";
 
         /// <summary>
         /// 设置用户主键类型，用以在Repository进行审计时注入正确用户主键类型
@@ -103,7 +106,7 @@ namespace Hybrid.Security.Claims
         /// 参与者
         /// Default: Actor
         /// </summary>
-        public const string Actor = "Actor";
+        public const string Actor = "act";
 
         /// <summary>
         /// 真实姓名
