@@ -68,7 +68,7 @@ namespace Hybrid.AspNetCore.Mvc.Controllers
         {
             get
             {
-                string value = HttpContext.Request.Cookies[CookieRequestCultureProvider.DefaultCookieName];
+                string value = HttpContext.Request.Cookies[HybridConstants.CultureCookieName];
                 if (value.IsNullOrWhiteSpace())
                 {
                     return CultureInfo.CurrentUICulture;

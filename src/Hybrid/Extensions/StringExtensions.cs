@@ -944,6 +944,69 @@ namespace Hybrid.Extensions
 
         #endregion 其他操作
 
+        [DebuggerStepThrough]
+        public static bool IsPresent(this string value)
+        {
+            return !string.IsNullOrWhiteSpace(value);
+        }
+
+        [DebuggerStepThrough]
+        public static string EnsureLeadingSlash(this string url)
+        {
+            if (url != null && !url.StartsWith("/"))
+            {
+                return "/" + url;
+            }
+
+            return url;
+        }
+
+        [DebuggerStepThrough]
+        public static string EnsureTrailingSlash(this string url)
+        {
+            if (url != null && !url.EndsWith("/"))
+            {
+                return url + "/";
+            }
+
+            return url;
+        }
+
+        [DebuggerStepThrough]
+        public static string RemoveLeadingSlash(this string url)
+        {
+            if (url != null && url.StartsWith("/"))
+            {
+                url = url.Substring(1);
+            }
+
+            return url;
+        }
+
+        [DebuggerStepThrough]
+        public static string RemoveTrailingSlash(this string url)
+        {
+            if (url != null && url.EndsWith("/"))
+            {
+                url = url.Substring(0, url.Length - 1);
+            }
+
+            return url;
+        }
+
+        [DebuggerStepThrough]
+        public static string CleanUrlPath(this string url)
+        {
+            if (String.IsNullOrWhiteSpace(url)) url = "/";
+
+            if (url != "/" && url.EndsWith("/"))
+            {
+                url = url.Substring(0, url.Length - 1);
+            }
+
+            return url;
+        }
+
         /// <summary>
         /// Adds a char to end of given string if it does not ends with the char.
         /// </summary>

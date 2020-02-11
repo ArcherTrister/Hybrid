@@ -1,0 +1,60 @@
+﻿@using Hybrid.Quartz
+@{
+    ViewData["Title"] = L("Calendars");
+}
+
+<!-- calendars start -->
+<h2 class="page-header">@L("Calendars")</h2>
+
+<table id="CalendarsTable"
+       data-search="true"
+       data-id-field="Group"
+       data-side-pagination="server"
+       data-url="/api/quartz/Calendars?schedulerName=@LocalSchedulerName"></table>
+
+<script>
+    var $table = $('#CalendarsTable');
+
+    //操作列
+    function operateFormatter(value, row, index) {
+        return [
+            `<a class="like" href="/Quartz/Calendars/Details?schedulerName=@LocalSchedulerName&calendarName=${row.CalendarName}" title="@L("Details")">`,
+            '<i class="fa fa-telegram"></i>',
+            '</a>  '
+        ].join('');
+    }
+
+    //初始化表格
+    function initTable() {
+        $table.bootstrapTable('destroy').bootstrapTable({
+            height: 617,
+            locale: $('#locale').val(),
+            //showPaginationSwitch: true,//隐藏/显示分页
+            showRefresh: true, //隐藏/显示刷新按钮
+            showToggle: true,//切换
+            showFullscreen: true,//全屏
+            showColumns: true,//列
+            //showExport: true,//导出
+            //showFooter: true,//total
+            columns: [
+                {
+                    title: '@L("CalendarName")',
+                    field: 'CalendarName',
+                    sortable: false,
+                    align: 'center'
+                }, {
+                    title: '@L("Operate")',
+                    field: 'operate',
+                    align: 'center',
+                    formatter: operateFormatter
+                }
+            ]
+        });
+    }
+
+    $(function () {
+        initTable();
+    });
+</script>
+
+<!-- calendars end -->

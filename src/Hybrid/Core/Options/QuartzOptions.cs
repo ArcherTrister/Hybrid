@@ -53,7 +53,7 @@ namespace Hybrid.Core.Options
         /// <summary>
         /// 是否使用仪表板
         /// </summary>
-        public bool UseDashboard { get; set; }
+        public bool UseDashboard { get; set; } = true;
 
         /// <summary>
         /// 是否启用

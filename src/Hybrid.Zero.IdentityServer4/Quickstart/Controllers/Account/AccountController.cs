@@ -25,9 +25,10 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-
+using Microsoft.AspNetCore.WebUtilities;
 using System;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace Hybrid.Zero.IdentityServer4.Quickstart
@@ -124,6 +125,73 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
                 }
             }
 
+            #region UI
+
+            //if (ModelState.IsValid)
+            //{
+            //    // validate username/password against in-memory store
+            //    if (_users.ValidateCredentials(model.Username, model.Password))
+            //    {
+            //        var user = await _userManager.FindByNameAsync(model.Username);
+            //        await _events.RaiseAsync(new UserLoginSuccessEvent(user.UserName, user.Id.ToString(), user.UserName, clientId: context?.ClientId));
+
+            //        // only set explicit expiration here if user chooses "remember me".
+            //        // otherwise we rely upon expiration configured in cookie middleware.
+            //        AuthenticationProperties props = null;
+            //        if (AccountOptions.AllowRememberLogin && model.RememberLogin)
+            //        {
+            //            props = new AuthenticationProperties
+            //            {
+            //                IsPersistent = true,
+            //                ExpiresUtc = DateTimeOffset.UtcNow.Add(AccountOptions.RememberMeLoginDuration)
+            //            };
+            //        };
+
+            //        // issue authentication cookie with subject ID and username
+            //        var isuser = new IdentityServerUser(user.Id.ToString())
+            //        {
+            //            DisplayName = user.UserName
+            //        };
+
+            //        await HttpContext.SignInAsync(isuser, props);
+
+            //        if (context != null)
+            //        {
+            //            if (await _clientStore.IsPkceClientAsync(context.ClientId))
+            //            {
+            //                // if the client is PKCE then we assume it's native, so this change in how to
+            //                // return the response is for better UX for the end user.
+            //                return this.LoadingPage("Redirect", model.ReturnUrl);
+            //            }
+
+            //            // we can trust model.ReturnUrl since GetAuthorizationContextAsync returned non-null
+            //            return Redirect(model.ReturnUrl);
+            //        }
+
+            //        // request for a local page
+            //        if (Url.IsLocalUrl(model.ReturnUrl))
+            //        {
+            //            return Redirect(model.ReturnUrl);
+            //        }
+            //        else if (string.IsNullOrEmpty(model.ReturnUrl))
+            //        {
+            //            return Redirect("~/");
+            //        }
+            //        else
+            //        {
+            //            // user might have clicked on a malicious link - should be logged
+            //            throw new Exception("invalid return URL");
+            //        }
+            //    }
+
+            //    await _events.RaiseAsync(new UserLoginFailureEvent(model.Username, "invalid credentials", clientId: context?.ClientId));
+            //    ModelState.AddModelError(string.Empty, AccountOptions.InvalidCredentialsErrorMessage);
+            //}
+
+            #endregion UI
+
+            #region AspNetIdentity UI
+
             if (ModelState.IsValid)
             {
                 var result = await _signInManager.PasswordSignInAsync(model.Username, model.Password, model.RememberLogin, lockoutOnFailure: true);
@@ -138,7 +206,7 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
                         {
                             // if the client is PKCE then we assume it's native, so this change in how to
                             // return the response is for better UX for the end user.
-                            return View("Redirect", new RedirectViewModel { RedirectUrl = model.ReturnUrl });
+                            return this.LoadingPage("Redirect", model.ReturnUrl);
                         }
 
                         // we can trust model.ReturnUrl since GetAuthorizationContextAsync returned non-null
@@ -164,6 +232,8 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
                 await _events.RaiseAsync(new UserLoginFailureEvent(model.Username, "invalid credentials", clientId: context?.ClientId));
                 ModelState.AddModelError(string.Empty, AccountOptions.InvalidCredentialsErrorMessage);
             }
+
+            #endregion AspNetIdentity UI
 
             // something went wrong, show form with error
             var vm = await BuildLoginViewModelAsync(model);
@@ -229,6 +299,30 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
         [Route("AccessDenied")]
         public IActionResult AccessDenied()
         {
+            return View();
+        }
+
+        [HttpGet]
+        [Route("ConfirmEmail")]
+        public async Task<IActionResult> ConfirmEmail(string userId, string code)
+        {
+            if (userId == null || code == null)
+            {
+                ViewBag.Status = false;
+                ViewBag.StatusMessage = "Error confirming your email.";
+                return View();
+            }
+
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null)
+            {
+                return NotFound($"Unable to load user with ID '{userId}'.");
+            }
+
+            code = Encoding.UTF8.GetString(WebEncoders.Base64UrlDecode(code));
+            var result = await _userManager.ConfirmEmailAsync(user, code);
+            ViewBag.StatusMessage = result.Succeeded ? "Thank you for confirming your email." : "Error confirming your email.";
+            ViewBag.Status = result.Succeeded;
             return View();
         }
 

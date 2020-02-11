@@ -23,10 +23,10 @@ namespace Microsoft.Extensions.DependencyInjection
     {
         public static void UseMySql(this IServiceCollection services, QuartzOptions mySqlQuartzOptions)
         {
-            IScheduler scheduler = new StdSchedulerFactory(SetProperties(mySqlQuartzOptions)).GetScheduler().Result;
-            services.AddSingleton(scheduler);
             // 初始化数据库
             MySqlObjectsInstaller.Initialize(mySqlQuartzOptions.ConnectionStringOrCacheName, mySqlQuartzOptions.TablePrefix);
+            IScheduler scheduler = new StdSchedulerFactory(SetProperties(mySqlQuartzOptions)).GetScheduler().Result;
+            services.AddSingleton(scheduler);
         }
 
         private static NameValueCollection SetProperties(QuartzOptions mySqlQuartzOptions)

@@ -1,0 +1,29 @@
+﻿@using Hybrid.Extensions
+@using Hybrid.Quartz
+@{
+    var navBars = new List<MenuItem>
+    {
+        new MenuItem("Quartz","Jobs","Index") { Name = "AllJobs", Title = "All Jobs" },
+        new MenuItem("Quartz","Jobs","Queued") { Name = "Queued", Title = "Queued" },
+        new MenuItem("Quartz","Jobs","Plan") { Name = "Plan", Title = "Plan" },
+        new MenuItem("Quartz","Jobs","Executing") { Name = "Executing", Title = "Executing" },
+        new MenuItem("Quartz","Jobs","Complete") { Name = "Complete", Title = "Complete" },
+        new MenuItem("Quartz","Jobs","Fail") { Name = "Fail", Title = "Fail" },
+        new MenuItem("Quartz","Jobs","Delete") { Name = "Delete", Title = "Delete" },
+        new MenuItem("Quartz","Jobs","Waiting") { Name = "Waiting", Title = "Waiting" }
+    };
+}
+<div id="stats">
+    <ul class="nav nav-pills nav-stacked">
+        @foreach (MenuItem item in navBars)
+        {
+            <li class="@(item.Url.Equals(Html.ViewContext.HttpContext.Request.Path.Value, StringComparison.OrdinalIgnoreCase) ? "active" : "")"><a asp-area="@item.AreaName" asp-controller="@item.ControllerName" asp-action="@item.ActionName" asp-route-schedulerName="@LocalSchedulerName" title="@item.Title">@L(item.Name)<span class="badge pull-right">@item.Metrics</span></a></li>
+        }
+    </ul>
+    <script type="text/javascript">
+        @*$(function () {
+            const index = @navBars.FindIndexOrDefault(p=>p.Url.Equals(Html.ViewContext.HttpContext.Request.Path.Value, StringComparison.OrdinalIgnoreCase));
+            $("#stats ul li").eq(index).addClass("active").siblings().removeClass('active');
+        });*@
+    </script>
+</div>

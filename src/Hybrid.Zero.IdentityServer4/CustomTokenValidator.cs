@@ -1,5 +1,4 @@
 ﻿using IdentityServer4.Models;
-using IdentityServer4.Services;
 using IdentityServer4.Stores;
 using IdentityServer4.Validation;
 
@@ -20,31 +19,18 @@ namespace Hybrid.Zero.IdentityServer4
         protected readonly ILogger Logger;
 
         /// <summary>
-        /// The user service
+        /// The referenceTokenStore.
         /// </summary>
-        protected readonly IProfileService Profile;
-
-        /// <summary>
-        /// The client store
-        /// </summary>
-        protected readonly IClientStore Clients;
-
-        /// <summary>
-        /// Gets the reference token store.
-        /// </summary>
-        /// <value>
-        /// The reference token store.
-        /// </value>
-        protected readonly IReferenceTokenStore ReferenceTokenStore;
+        protected readonly IReferenceTokenStore Store;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CustomTokenValidator" /> class.
         /// </summary>
-        /// <param name="referenceTokenStore">The reference token store.</param>
+        /// <param name="store">The referenceToken store.</param>
         /// <param name="logger">The logger.</param>
-        public CustomTokenValidator(IReferenceTokenStore referenceTokenStore, ILogger<CustomTokenValidator> logger)
+        public CustomTokenValidator(IReferenceTokenStore store, ILogger<CustomTokenValidator> logger)
         {
-            ReferenceTokenStore = referenceTokenStore;
+            Store = store;
             Logger = logger;
         }
 
@@ -57,12 +43,14 @@ namespace Hybrid.Zero.IdentityServer4
         /// </returns>
         public async Task<TokenValidationResult> ValidateAccessTokenAsync(TokenValidationResult result)
         {
-            Token token = await ReferenceTokenStore.GetReferenceTokenAsync(result.ReferenceTokenId);
-            //if (token == null)
-            //{
-            //    result.IsError = true;
-            //}
-            await Task.CompletedTask;
+            if (!string.IsNullOrWhiteSpace(result.Jwt) && !result.IsError)
+            {
+                Token token = await Store.GetReferenceTokenAsync(result.Jwt);
+                if (token == null)
+                {
+                    result.IsError = true;
+                }
+            }
             return result;
         }
 

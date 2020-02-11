@@ -99,7 +99,7 @@ namespace Hybrid.Web.Startups
                     {
                         new Secret("mobile app secrect".Sha256())
                     },
-                    AccessTokenType = AccessTokenType.Reference,
+                    AccessTokenType = AccessTokenType.Jwt,
                     AllowOfflineAccess = true,
                     AllowedScopes = {
                         HybridConstants.LocalApi.ScopeName,

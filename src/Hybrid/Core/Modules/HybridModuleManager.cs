@@ -11,7 +11,7 @@ using Hybrid.Core.Builders;
 using Hybrid.Dependency;
 using Hybrid.Exceptions;
 using Hybrid.Extensions;
-
+using Hybrid.Localization;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
@@ -115,6 +115,9 @@ namespace Hybrid.Core.Modules
                 module.UseModule(provider);
                 logger.LogInformation($"模块{module.GetType()}加载成功");
             }
+
+            ILocalizationManager localizationManager = provider.GetRequiredService<ILocalizationManager>();
+            localizationManager.Initialize();
 
             TimeSpan ts = DateTime.Now.Subtract(dtStart);
             logger.LogInformation($"Hybrid框架初始化完成，耗时：{ts:g}");

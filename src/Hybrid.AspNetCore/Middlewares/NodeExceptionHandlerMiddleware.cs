@@ -8,7 +8,6 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.AspNetCore.Extensions;
-using Hybrid.AspNetCore.Mvc.Models;
 using Hybrid.AspNetCore.UI;
 using Hybrid.Data;
 using Hybrid.Json;
@@ -60,7 +59,7 @@ namespace Hybrid.AspNetCore.Middlewares
                     {
                         return;
                     }
-                    await HandleExceptionAsync(context, 200, "服务提供异常，请重试或联系管理员", AjaxResultType.Error);
+                    await HandleExceptionAsync(context, 500, "服务提供异常，请重试或联系管理员", AjaxResultType.Error);
                     return;
                 }
                 throw;

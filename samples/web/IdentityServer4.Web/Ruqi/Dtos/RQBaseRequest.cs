@@ -1,15 +1,17 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace FlyingFish.Mobile.Ruqi.Dtos
 {
     /// <summary>
-    ///
+    /// 如期请求模型基类
     /// </summary>
     public class RQBaseRequest
     {
         /// <summary>
         /// 签名
         /// </summary>
+        [Required]
         public string sign { get; set; }
 
         /// <summary>
@@ -20,6 +22,7 @@ namespace FlyingFish.Mobile.Ruqi.Dtos
         /// <summary>
         /// 请求的业务数据
         /// </summary>
+        [Required]
         public string bizData { get; set; }
 
         /// <summary>

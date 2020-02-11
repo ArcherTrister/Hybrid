@@ -20,10 +20,10 @@ namespace Microsoft.Extensions.DependencyInjection
     {
         public static void UseSqlServer(this IServiceCollection services, QuartzOptions sqlServerQuartzOptions)
         {
-            IScheduler scheduler = new StdSchedulerFactory(SetProperties(sqlServerQuartzOptions)).GetScheduler().Result;
-            services.AddSingleton(scheduler);
             // 初始化数据库
             SqlServerObjectsInstaller.Initialize(sqlServerQuartzOptions.ConnectionStringOrCacheName, sqlServerQuartzOptions.TablePrefix);
+            IScheduler scheduler = new StdSchedulerFactory(SetProperties(sqlServerQuartzOptions)).GetScheduler().Result;
+            services.AddSingleton(scheduler);
         }
 
         private static NameValueCollection SetProperties(QuartzOptions sqlServerQuartzOptions)

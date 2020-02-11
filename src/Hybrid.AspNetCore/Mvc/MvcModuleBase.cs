@@ -42,8 +42,9 @@ namespace Hybrid.AspNetCore.Mvc
 
             var builder = services.AddControllersWithViews(options =>
             {
-                //不支持的系列化返回406状态码
+                //不支持的序列化返回406状态码
                 options.ReturnHttpNotAcceptable = true;
+                //options.InputFormatters.Add(new XmlDataContractSerializerInputFormatter());
                 //options.OutputFormatters.Add(new XmlDataContractSerializerOutputFormatter());
                 //options.OutputFormatters.Insert(0, new XmlDataContractSerializerOutputFormatter());
                 //    //options.Conventions.Add(new DashedRoutingConvention());
@@ -53,10 +54,11 @@ namespace Hybrid.AspNetCore.Mvc
                 //options.Filters.Add(new MvcUnitOfWorkFilter());
                 //options.Filters.Add(new PageUnitOfWorkFilter());
             })
-                //.AddXmlDataContractSerializerFormatters()
+                .AddXmlDataContractSerializerFormatters()
                 .AddNewtonsoftJson(options =>
             {
                 options.SerializerSettings.ContractResolver = new DefaultContractResolver();
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
             }).SetCompatibilityVersion(CompatibilityVersion.Latest);
 
             //参数验证

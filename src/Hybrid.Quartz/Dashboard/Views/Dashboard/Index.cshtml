@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = L("Dashboard");
+}
+
+<!-- dashboard start -->
+<!-- Page Loader -->
+<div class="page-loader-wrapper">
+    <div class="loader">
+        <div class="preloader">
+            <div class="spinner-layer pl-red">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+        <p>@L("PleaseWait")</p>
+    </div>
+</div>
+<!-- #END# Page Loader -->
+<h2 class="page-header">@L("Dashboard")</h2>
+
+<script>
+    $(function () {
+        setTimeout(function () { $('.page-loader-wrapper').fadeOut(); }, 2000);
+    });
+</script>
+<!-- dashboard end -->

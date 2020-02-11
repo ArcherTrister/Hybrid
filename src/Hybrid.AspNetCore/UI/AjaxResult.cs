@@ -64,6 +64,7 @@ namespace Hybrid.AspNetCore.UI
         public AjaxResult()
         {
             Success = true;
+            ResultType = AjaxResultType.Success;
         }
 
         /// <summary>

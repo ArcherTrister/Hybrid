@@ -66,7 +66,7 @@ namespace Hybrid.AspNetCore.Mvc.Views
         {
             get
             {
-                string value = HttpContext.Request.Cookies[CookieRequestCultureProvider.DefaultCookieName];
+                string value = HttpContext.Request.Cookies[HybridConstants.CultureCookieName];
                 if (value.IsNullOrWhiteSpace())
                 {
                     return CultureInfo.CurrentUICulture;

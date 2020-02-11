@@ -1,0 +1,81 @@
+﻿@{
+    ViewData["Title"] = L("Scheduler");
+}
+
+<!-- dashboard start -->
+<h2 class="page-header">@L("Scheduler")</h2>
+
+<table id="SchedulersTable"
+       data-search="true"
+       data-id-field="SchedulerInstanceId"
+       data-side-pagination="server"
+       data-url="/api/quartz/AllSchedulers"></table>
+
+<script>
+    var $table = $('#SchedulersTable');
+
+    //操作列
+    function operateFormatter(value, row, index) {
+        return [
+            `<a class="like" href="/Quartz/Scheduler/Details?schedulerName=${row.Name}" title="@L("Details")">`,
+            '<i class="fa fa-telegram"></i>',
+            '</a>  '
+        ].join('');
+    }
+
+    //页脚标题
+    function totalTextFormatter(data) {
+        return '@L("Total")';
+    }
+
+    //总数量
+    function totalNameFormatter(data) {
+        return data.length;
+    }
+
+    //初始化表格
+    function initTable() {
+        $table.bootstrapTable('destroy').bootstrapTable({
+            height: 617,
+            locale: $('#locale').val(),
+            //showPaginationSwitch: true,//隐藏/显示分页
+            showRefresh: true, //隐藏/显示刷新按钮
+            showToggle: true,//切换
+            showFullscreen: true,//全屏
+            showColumns: true,//列
+            //showExport: true,//导出
+            showFooter: true,//total
+            columns: [
+                {
+                    title: '@L("SchedulerInstanceId")',
+                    field: 'SchedulerInstanceId',
+                    align: 'center',
+                    sortable: false,
+                    footerFormatter: totalTextFormatter
+                },
+                {
+                    title: '@L("SchedulerName")',
+                    field: 'Name',
+                    sortable: false,
+                    footerFormatter: totalNameFormatter,
+                    align: 'center'
+                }, {
+                    title: '@L("SchedulerStatus")',
+                    field: 'Status',
+                    sortable: false,
+                    align: 'center'
+                }, {
+                    title: '@L("Operate")',
+                    field: 'operate',
+                    align: 'center',
+                    formatter: operateFormatter
+                }
+            ]
+        });
+    }
+
+    $(function () {
+        initTable();
+    });
+</script>
+<!-- dashboard end -->

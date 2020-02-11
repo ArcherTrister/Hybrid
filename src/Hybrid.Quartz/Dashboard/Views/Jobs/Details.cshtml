@@ -1,0 +1,73 @@
+﻿@model Hybrid.Quartz.Dashboard.Models.Dtos.JobDetailDto
+@{
+    ViewData["Title"] = L("JobDetails");
+}
+
+<!-- job-details start -->
+<section>
+    <h2 class="page-header">@L("JobDetails")</h2>
+
+    @if (Model != null)
+    {
+        <div class="panel panel-info">
+            <div class="panel-heading  heading-padding">
+                <div class="pull-right">
+                    <button id="btn_job_pause" class="btn btn-primary" data-loading-text="@L("Loading...")" type="button">@L("JobPause")</button>
+                    <button id="btn_job_resume" class="btn btn-primary" data-loading-text="@L("Loading...")" type="button">@L("JobResume")</button>
+                    <button id="btn_job_trigger" class="btn btn-primary" data-loading-text="@L("Loading...")" type="button">@L("JobTrigger")</button>
+                    <button id="btn_job_delete" class="btn btn-primary" data-loading-text="@L("Loading...")" type="button">@L("JobDelete")</button>
+                </div>
+            </div>
+            <!-- List group -->
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">@L("BasicInformation")</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-xs-4">@L("JobType")</div>
+                                <div class="col-xs-8">@Model.JobType</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">@L("JobKey")</div>
+                                <div class="col-xs-8">@Model.Name.@Model.Group</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">@L("JobDescription")</div>
+                                <div class="col-xs-8">@Model.Description</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">@L("Durable")</div>
+                                <div class="col-xs-8">@Model.Durable</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">@L("RequestsRecovery")</div>
+                                <div class="col-xs-8">@Model.RequestsRecovery</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">@L("ConcurrentExecutionDisallowed")</div>
+                                <div class="col-xs-8">@Model.ConcurrentExecutionDisallowed</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">@L("PersistJobDataAfterExecution")</div>
+                                <div class="col-xs-8">@Model.PersistJobDataAfterExecution</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    }
+    else
+    {
+        <div class="row">
+            <div class="card">
+                <div class="card-body">没有找到相关数据，请刷新后重试！</div>
+            </div>
+        </div>
+    }
+</section>
+
+<!-- job-details end -->

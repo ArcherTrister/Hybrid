@@ -9,7 +9,7 @@
 
 using Hybrid.Core.Modules;
 using Hybrid.Exceptions;
-
+using Hybrid.Localization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
@@ -61,6 +61,9 @@ namespace Hybrid.AspNetCore
                     module.UseModule(app.ApplicationServices);
                 }
             }
+            IServiceProvider provider = app.ApplicationServices;
+            ILocalizationManager localizationManager = provider.GetRequiredService<ILocalizationManager>();
+            localizationManager.Initialize();
 
             TimeSpan ts = DateTime.Now.Subtract(dtStart);
             logger.LogInformation($"Hybrid框架初始化完成，耗时：{ts:g}");

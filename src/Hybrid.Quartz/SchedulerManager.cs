@@ -1,4 +1,4 @@
-﻿using Hybrid.Quartz.Models.Dtos;
+﻿using Hybrid.Quartz.Dashboard.Models.Dtos;
 
 using Quartz;
 using Quartz.Impl;

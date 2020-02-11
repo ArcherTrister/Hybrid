@@ -58,7 +58,7 @@ namespace Hybrid.Quartz.MySql
 
                         string script = typeof(MySqlObjectsInstaller).GetTypeInfo().Assembly.GetStringByResource("Hybrid.Quartz.MySql.Install.sql");
 
-                        string sql = script.Replace("$(TablePrefix)", !string.IsNullOrWhiteSpace(tablePrefix) ? tablePrefix : AdoConstants.DefaultTablePrefix);
+                        string sql = script.Replace("$(TablePrefix)", tablePrefix);
 
                         using (var cmd = new MySqlCommand(sql, connection))
                         {

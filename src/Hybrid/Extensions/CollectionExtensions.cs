@@ -115,5 +115,17 @@ namespace Hybrid.Extensions
 
             return item;
         }
+
+        public static int FindIndexOrDefault<T>(this List<T> ts, Predicate<T> match) where T : class
+        {
+            try
+            {
+                return ts.FindIndex(match);
+            }
+            catch (Exception)
+            {
+                return -1;
+            }
+        }
     }
 }

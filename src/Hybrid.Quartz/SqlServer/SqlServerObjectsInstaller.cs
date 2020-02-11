@@ -53,7 +53,7 @@ namespace Hybrid.Quartz.SqlServer
 
                         string script = typeof(SqlServerObjectsInstaller).GetTypeInfo().Assembly.GetStringByResource("Hybrid.Quartz.SqlServer.Install.sql");
 
-                        string sql = script.Replace("$(TablePrefix)", !string.IsNullOrWhiteSpace(tablePrefix) ? tablePrefix : AdoConstants.DefaultTablePrefix);
+                        string sql = script.Replace("$(TablePrefix)", tablePrefix);
 
                         using (var cmd = new SqlCommand(sql, connection))
                         {

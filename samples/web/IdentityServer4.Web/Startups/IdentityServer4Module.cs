@@ -17,8 +17,7 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.IdentityModel.Tokens;
-using Polly;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -270,7 +269,8 @@ namespace Hybrid.Web.Startups
                 //.AddCustomTokenRequestValidator<>()
                 //.AddValidators()
                 .AddHybridDefaultUI<User, Guid>()
-                //.AddHybridCustomTokenValidator<CustomTokenValidator>()
+                .AddHybridTokenCreationService<CustomTokenCreationService>()
+                .AddHybridCustomTokenValidator<CustomTokenValidator>()
                 .AddInMemoryIdentityResources(IdentityServer4Config.GetIdentityResources())
                 .AddInMemoryApiResources(IdentityServer4Config.GetApis())
                 .AddInMemoryClients(IdentityServer4Config.GetClients());

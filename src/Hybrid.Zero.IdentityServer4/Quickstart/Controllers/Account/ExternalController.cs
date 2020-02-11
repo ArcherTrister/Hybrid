@@ -135,7 +135,7 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
                 // this might be where you might initiate a custom workflow for user registration
                 // in this sample we don't show how that would be done, as our sample implementation
                 // simply auto-provisions new external user
-                user = await AutoProvisionUser(provider, providerUserId, claims);
+                user = await AutoProvisionUserAsync(provider, providerUserId, claims);
             }
 
             // this allows us to collect any additional claims or properties
@@ -251,7 +251,7 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
             return (user, provider, providerUserId, claims);
         }
 
-        private async Task<TUser> AutoProvisionUser(string provider, string providerUserId, IEnumerable<Claim> claims)
+        private async Task<TUser> AutoProvisionUserAsync(string provider, string providerUserId, IEnumerable<Claim> claims)
         {
             // create a list of claims that we want to transfer into our store
             var filtered = new List<Claim>();

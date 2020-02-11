@@ -1,0 +1,142 @@
+﻿@using System.Reflection
+@using Hybrid.Extensions
+@using Hybrid.Quartz
+@{
+    var navBars = new NavBars
+    {
+        Title = "QuartzDashboard",
+        Routers = new List<MenuItem>
+        {
+            //new Router {Name = "Home", Title = "Home", Url = "/Quartz/Home/Index", Active = false},
+            new MenuItem("Quartz", "Scheduler", "Index") { Name = "Scheduler", Title = "Scheduler" },
+            new MenuItem("Quartz", "Jobs", "Index") { Name = "Jobs", Title = "Jobs" },
+            new MenuItem("Quartz", "Triggers", "Index") { Name = "Triggers", Title = "Triggers" },
+            //new MenuItem("Quartz", "Recurring", "Index") { Name = "Recurring", Title = "Recurring", Active = false },
+            new MenuItem("Quartz", "Calendars", "Index") { Name = "Calendars", Title = "Calendars" },
+            new MenuItem("Quartz", "History", "Index") { Name = "History", Title = "History" }
+            //new MenuItem("Quartz", "LiveLog", "Index") { Name = "LiveLog", Title = "LiveLog", Active = false }
+        }
+    };
+    Version version = typeof(Quartz.IScheduler).GetTypeInfo().Assembly.GetName().Version;
+}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>@ViewData["Title"] - Quartz</title>
+    <link rel="icon" href="~/favicon.ico" mce_href="~/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="~/favicon.ico" mce_href="~/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap core CSS -->
+    <link href="~/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="~/css/bootstrap-table.min.css">
+    <link rel="stylesheet" href="~/css/toastr.min.css">
+    <link href="~/css/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="~/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="~/css/quartz.min.css" rel="stylesheet">
+    <!-- flags-->
+    <link href="~/css/flags.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="~/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="~/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="~/js/html5shiv.min.js"></script>
+      <script src="~/js/respond.min.js"></script>
+    <![endif]-->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/signalr.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/toastr.min.js"></script>
+    <script src="~/js/moment-with-locales.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="~/js/bootstrap-table.min.js"></script>
+    <script src="~/js/bootstrap-table-locale-all.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="~/js/ie10-viewport-bug-workaround.js"></script>
+
+    @RenderSection("Scripts", required: false)
+</head>
+
+<body>
+    <!-- Overlay For Sidebars -->
+    @*<div class="overlay"></div>*@
+    <!-- #END# Overlay For Sidebars -->
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" asp-area="Quartz" asp-controller="Dashboard" asp-action="Index" asp-route-schedulerName="@LocalSchedulerName">@L(navBars.Title)</a>
+                </div>
+                <div id="navbarSupportedContent" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        @foreach (MenuItem item in navBars.Routers)
+                        {
+                            /*class= "@(router.Active? "active" : null)"*/
+                        <li class="@(item.Url.Equals(Html.ViewContext.HttpContext.Request.Path.Value, StringComparison.OrdinalIgnoreCase) ? "active" : "")">
+                            <a asp-area="@item.AreaName" asp-controller="@item.ControllerName" asp-action="@item.ActionName" asp-route-schedulerName="@LocalSchedulerName" title="@item.Title">@L(item.Name)</a>
+                        </li>
+                        }
+                    </ul>
+                    <partial name="_LoginPartial" />
+                </div><!--/.nav-collapse -->
+            </div>
+            <script type="text/javascript">
+                $(function() {
+                    //const index = @navBars.Routers.FindIndexOrDefault(p => p.Url.Equals(Html.ViewContext.HttpContext.Request.Path.Value, StringComparison.OrdinalIgnoreCase));
+                    //if (index < 0) {
+                    //    $("#navbarSupportedContent ul li").removeClass('active');
+                    //} else {
+                    //    $("#navbarSupportedContent ul li").eq(index).addClass("active").siblings().removeClass('active');
+                    //}
+                    moment.locale($('#locale').val());
+                });
+            </script>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <partial name="_CookieConsentPartial" />
+            @RenderBody()
+        </div>
+    </main>
+
+    <footer>
+        <nav class="navbar navbar-default navbar-fixed-bottom">
+            <div class="container">
+                <p>
+                </p>
+                <ul class="list-inline credit">
+                    <li>
+                        <a href="https://github.com/ArcherTrister/Hybrid" target="_blank">Quartz @($"{version.Major}.{version.Minor}.{version.Build}")</a>
+                    </li>
+                    <li>Server: 127.0.0.1@quartz</li>
+                    <li><span class="text-muted"></span>@L("Time", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"))</li>
+                    <li><span class="text-muted">@L("TimeConsuming", GetGenerationTime().Elapsed.TotalMilliseconds.ToString("N"))</span></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>

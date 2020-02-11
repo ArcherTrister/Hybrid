@@ -35,6 +35,16 @@ namespace Hybrid.Data
         public const string HybridCookieName = "_hybrid";
 
         /// <summary>
+        /// 存放调度名Cookie名
+        /// </summary>
+        public const string SchedulerCookieName = "_Hybrid.Scheduler";
+
+        /// <summary>
+        /// 存放Culture Cookie名
+        /// </summary>
+        public const string CultureCookieName = "_Hybrid.Culture";
+
+        /// <summary>
         /// 调度名称
         /// </summary>
         public const string DefaultSchedulerName = "HybridScheduler";

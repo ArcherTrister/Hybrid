@@ -88,9 +88,6 @@ namespace Hybrid.Core.Modules
                         typeof(QuartzOptions).GetAssembly(), "Hybrid.Localization.Sources.XmlSource"
             )));
 
-            ILocalizationManager localizationManager = provider.GetRequiredService<ILocalizationManager>();
-            localizationManager.Initialize();
-
             InitConfiguration(Configuration, Options);
         }
 

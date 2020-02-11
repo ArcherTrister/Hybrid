@@ -51,7 +51,7 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
         /// </summary>
         public async Task<IActionResult> Error(string errorId)
         {
-            var vm = new ErrorViewModel();
+            var vm = new IdentityServerErrorViewModel();
 
             // retrieve error details from identityserver
             var message = await _interaction.GetErrorContextAsync(errorId);
