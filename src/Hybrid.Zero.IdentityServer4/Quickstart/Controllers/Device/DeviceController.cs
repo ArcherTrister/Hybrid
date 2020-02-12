@@ -28,7 +28,7 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart.Device
 {
     [Authorize]
     [SecurityHeaders]
-    public class DeviceController : Controller
+    public class DeviceController : IdentityServerBaseController
     {
         private readonly IDeviceFlowInteractionService _interaction;
         private readonly IClientStore _clientStore;

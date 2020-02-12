@@ -1,4 +1,4 @@
-﻿using Hybrid.Quartz.Dashboard.Models;
+﻿using Hybrid.AspNetCore.Mvc.Models;
 
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -14,7 +14,7 @@ namespace Hybrid.Quartz.Dashboard.Controllers
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
-            return View("Quartz/Error", new QuartzErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View(new HybridErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }

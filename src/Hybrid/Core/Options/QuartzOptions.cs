@@ -37,7 +37,7 @@ namespace Hybrid.Core.Options
         /// <summary>
         /// SqlServer表前缀
         /// </summary>
-        public string TablePrefix { get; set; } = HybridConstants.QuartzDefaultTablePrefix;
+        public string TablePrefix { get; set; }
 
         /// <summary>
         /// 序列化类型
@@ -50,10 +50,10 @@ namespace Hybrid.Core.Options
         /// </summary>
         public bool IsUseHistoryPlugin { get; set; }
 
-        /// <summary>
-        /// 是否使用仪表板
-        /// </summary>
-        public bool UseDashboard { get; set; } = true;
+        ///// <summary>
+        ///// 是否使用仪表板
+        ///// </summary>
+        //public bool UseDashboard { get; set; } = true;
 
         /// <summary>
         /// 是否启用

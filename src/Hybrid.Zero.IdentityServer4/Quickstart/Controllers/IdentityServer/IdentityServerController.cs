@@ -7,6 +7,8 @@
 //  <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.AspNetCore.Mvc.Models;
+
 using IdentityServer4.Services;
 
 using Microsoft.AspNetCore.Authorization;
@@ -21,13 +23,13 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
 {
     [SecurityHeaders]
     [AllowAnonymous]
-    public class HomeController : Controller
+    public class IdentityServerController : IdentityServerBaseController
     {
         private readonly IIdentityServerInteractionService _interaction;
         private readonly IWebHostEnvironment _environment;
         private readonly ILogger _logger;
 
-        public HomeController(IIdentityServerInteractionService interaction, IWebHostEnvironment environment, ILogger<HomeController> logger)
+        public IdentityServerController(IIdentityServerInteractionService interaction, IWebHostEnvironment environment, ILogger<IdentityServerController> logger)
         {
             _interaction = interaction;
             _environment = environment;
@@ -51,13 +53,22 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
         /// </summary>
         public async Task<IActionResult> Error(string errorId)
         {
-            var vm = new IdentityServerErrorViewModel();
-
+            var vm = new HybridErrorViewModel();
             // retrieve error details from identityserver
             var message = await _interaction.GetErrorContextAsync(errorId);
             if (message != null)
             {
-                vm.Error = message;
+                vm.Error = new ErrorInfos
+                {
+                    ClientId = message.ClientId,
+                    DisplayMode = message.DisplayMode,
+                    Error = message.Error,
+                    ErrorDescription = message.ErrorDescription,
+                    RedirectUri = message.RedirectUri,
+                    RequestId = message.RequestId,
+                    ResponseMode = message.ResponseMode,
+                    UiLocales = message.UiLocales
+                };
 
                 if (!_environment.IsDevelopment())
                 {
@@ -66,7 +77,7 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
                 }
             }
 
-            return View("Error", vm);
+            return View(vm);
         }
     }
 }

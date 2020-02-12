@@ -1,6 +1,7 @@
 ﻿{
   "culture": "en-US",
   "texts": {
+    "AuthCenter": "Authorization Center",
     //login
     "LogIn": "Log In",
     "UserName": "User Name",

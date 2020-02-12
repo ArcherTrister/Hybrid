@@ -26,12 +26,14 @@ namespace Hybrid.Quartz.Plugins.History
         private Type _delegateType = typeof(StdAdoDelegate);
         private readonly string _tablePrefix;
         private readonly string _dataSource;
+        private readonly string _provider;
 
         protected ITypeLoadHelper TypeLoadHelper { get; private set; }
 
-        public DatabaseExecutionHistoryStore(string dataSource, string delegateTypeName, string tablePrefix)
+        public DatabaseExecutionHistoryStore(string dataSource, string delegateTypeName, string tablePrefix, string provider)
         {
             _dataSource = dataSource;
+            _provider = provider;
             _delegateTypeName = delegateTypeName;
             _tablePrefix = tablePrefix ?? AdoConstants.DefaultTablePrefix;
             TypeLoadHelper = new SimpleTypeLoadHelper();
@@ -152,10 +154,10 @@ namespace Hybrid.Quartz.Plugins.History
             throw new NotImplementedException();
         }
 
-        private const string PropertySqlServerSelectHistoryEntryPage =
-        "SELECT ENTRY_ID, SCHED_NAME, Scheduler_Instance_Id, Fire_Instance_Id, Scheduled_Fire_Time_Utc, Actual_Fire_Time_Utc, Finished_Time_Utc, Recovering, Vetoed, TRIGGER_NAME, TRIGGER_GROUP, JOB_NAME, JOB_GROUP, FIRED_TIME, SCHED_TIME, RUN_TIME, ERROR, ERROR_MESSAGE FROM" +
-        " (SELECT ROW_NUMBER() OVER(ORDER BY {1}) AS ROWS FROM {0}JOB_HISTORY) AS T" +
-        " WHERE SCHED_NAME = @schedulerName AND ROWS BETWEEN @page AND @endPage";
+        private const string PropertySqlServerSelectHistoryEntryPage = 
+            "SELECT ENTRY_ID, SCHED_NAME, Scheduler_Instance_Id, Fire_Instance_Id, Scheduled_Fire_Time_Utc, Actual_Fire_Time_Utc, Finished_Time_Utc, Recovering,Vetoed, " +
+            "TRIGGER_NAME, TRIGGER_GROUP, JOB_NAME, JOB_GROUP, FIRED_TIME, SCHED_TIME, RUN_TIME, ERROR, ERROR_MESSAGE FROM (SELECT *, ROW_NUMBER() OVER (ORDER BY {1}) AS RowNumber FROM {0}JOB_HISTORY ) as B " +
+            "WHERE SCHED_NAME = @schedulerName AND RowNumber BETWEEN @page AND @endPage";
 
         private const string PropertyMySqlSelectHistoryEntryPage =
             "SELECT ENTRY_ID, SCHED_NAME, Scheduler_Instance_Id, Fire_Instance_Id, Scheduled_Fire_Time_Utc, Actual_Fire_Time_Utc, Finished_Time_Utc, Recovering, Vetoed, " +
@@ -176,7 +178,7 @@ namespace Hybrid.Quartz.Plugins.History
 
                 string sql = string.Format(PropertySqlServerSelectHistoryEntryPage, _tablePrefix, orderByStr);
 
-                if (Delegate is MySQLDelegate)
+                if (_provider.Equals("MySql"))
                 {
                     //sql = AdoJobStoreUtil.ReplaceTablePrefix(PropertyMySqlSelectHistoryEntry, _tablePrefix, null);
                     sql = string.Format(PropertyMySqlSelectHistoryEntryPage, _tablePrefix, orderByStr);
@@ -191,15 +193,14 @@ namespace Hybrid.Quartz.Plugins.History
                     Delegate.AddCommandParameter(dbCommand, "schedulerName", schedulerName);
                     Delegate.AddCommandParameter(dbCommand, "page", page);
 
-                    if (Delegate is SqlServerDelegate)
-                    {
-                        // endPage
-                        Delegate.AddCommandParameter(dbCommand, "endPage", page + pageSize);
-                    }
-                    if (Delegate is MySQLDelegate)
+                    if (_provider.Equals("MySql"))
                     {
                         // pageSize
                         Delegate.AddCommandParameter(dbCommand, "pageSize", pageSize);
+                    }
+                    else {
+                        // endPage
+                        Delegate.AddCommandParameter(dbCommand, "endPage", page + pageSize);
                     }
 
                     using (DbDataReader reader = await dbCommand.ExecuteReaderAsync(cancellationToken).ConfigureAwait(false))
@@ -251,7 +252,7 @@ namespace Hybrid.Quartz.Plugins.History
             {
                 string sql = string.Format(PropertySqlServerSelectHistoryGroupByJob, _tablePrefix);
 
-                if (Delegate is MySQLDelegate)
+                if (_provider.Equals("MySql"))
                 {
                     sql = string.Format(PropertyMySqlSelectHistoryGroupByJob, _tablePrefix);
                 }
@@ -305,7 +306,7 @@ namespace Hybrid.Quartz.Plugins.History
             {
                 string sql = string.Format(PropertySqlServerSelectHistoryGroupByTrigger, _tablePrefix);
 
-                if (Delegate is MySQLDelegate)
+                if (_provider.Equals("MySql"))
                 {
                     sql = string.Format(PropertyMySqlSelectHistoryGroupByTrigger, _tablePrefix);
                 }
@@ -360,7 +361,7 @@ namespace Hybrid.Quartz.Plugins.History
             {
                 string sql = string.Format(PropertySqlServerSelectHistory, _tablePrefix);
 
-                if (Delegate is MySQLDelegate)
+                if (_provider.Equals("MySql"))
                 {
                     sql = string.Format(PropertyMySqlSelectHistory, _tablePrefix);
                 }

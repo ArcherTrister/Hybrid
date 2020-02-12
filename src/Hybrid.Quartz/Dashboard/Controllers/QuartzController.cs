@@ -1,5 +1,4 @@
 ﻿using Hybrid.Application.Services.Dtos;
-using Hybrid.AspNetCore.Mvc.Models;
 using Hybrid.AspNetCore.UI;
 using Hybrid.Quartz.Dashboard.Models;
 using Hybrid.Quartz.Dashboard.Models.Dtos;

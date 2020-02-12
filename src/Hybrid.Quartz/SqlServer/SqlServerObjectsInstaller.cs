@@ -2,8 +2,6 @@
 
 using Microsoft.Extensions.Logging;
 
-using Quartz.Impl.AdoJobStore;
-
 using System;
 using System.Data;
 using System.Data.Common;

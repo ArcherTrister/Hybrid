@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Globalization;
 
 namespace Hybrid.Localization
@@ -75,6 +76,19 @@ namespace Hybrid.Localization
             Icon = icon;
             IsDefault = isDefault;
             IsDisabled = isDisabled;
+        }
+    }
+
+    public class LanguageInfoCompare : IEqualityComparer<LanguageInfo>
+    {
+        public bool Equals(LanguageInfo x, LanguageInfo y)
+        {
+            return x.Name == y.Name;
+        }
+
+        public int GetHashCode(LanguageInfo obj)
+        {
+            return obj.Name.GetHashCode();
         }
     }
 }

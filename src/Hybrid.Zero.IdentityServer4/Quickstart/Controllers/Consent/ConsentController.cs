@@ -28,7 +28,7 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
     /// </summary>
     [SecurityHeaders]
     [Authorize]
-    public class ConsentController : Controller
+    public class ConsentController : IdentityServerBaseController
     {
         private readonly IIdentityServerInteractionService _interaction;
         private readonly IClientStore _clientStore;

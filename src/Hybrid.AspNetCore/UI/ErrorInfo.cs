@@ -16,7 +16,7 @@ namespace Hybrid.AspNetCore.Mvc.Models
     /// Used to store information about an error.
     /// </summary>
     [Serializable]
-    public class ErrorInfo
+    public sealed class ErrorInfo
     {
         /// <summary>
         /// Error code.

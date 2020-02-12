@@ -1,14 +1,12 @@
-@using Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarSchedulerSwitch
-@using Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarLanguageSwitch
+@using Hybrid.Zero.IdentityServer4.Quickstart.Views.Shared.Components.TopBarLanguageSwitch
 
 @inject Microsoft.Extensions.Options.IOptions<Hybrid.Core.Options.HybridOptions> options
 
 
 @if (User.Identity.IsAuthenticated && options.Value.Ids.IsEnabled)
 {
-    <form asp-area="" asp-controller="Account" asp-action="Logout" method="post" id="logoutForm" class="navbar-right">
+    <form asp-area="IdentityServer" asp-controller="Account" asp-action="Logout" method="post" id="logoutForm" class="navbar-right">
         <ul class="nav navbar-nav navbar-right">
-            @await Component.InvokeAsync(typeof(TopBarSchedulerSwitchViewComponent))
             @await Component.InvokeAsync(typeof(TopBarLanguageSwitchViewComponent))
 
             <li class="dropdown">
@@ -19,7 +17,7 @@
                 </a>
                 <ul class="dropdown-menu pull-right">
                     <li>
-                        <a asp-area="" asp-controller="Home" asp-action="Index" class="btn btn-link navbar-btn navbar-link">@L("AuthCenter")</a>
+                        <a asp-area="IdentityServer" asp-controller="Home" asp-action="Index" class="btn btn-link navbar-btn navbar-link">@L("AuthCenter")</a>
                     </li>
                     <li style="text-align:center;">
                         <button type="submit" class="btn btn-link navbar-btn navbar-link">@L("LogOut")</button>
@@ -38,7 +36,6 @@ else
     {
         <form method="get" id="loginForm" class="navbar-right" onsubmit="return false;">
             <ul class="nav navbar-nav navbar-right">
-                @await Component.InvokeAsync(typeof(TopBarSchedulerSwitchViewComponent))
                 @await Component.InvokeAsync(typeof(TopBarLanguageSwitchViewComponent))
 
                 <li class="dropdown">
@@ -49,10 +46,10 @@ else
                     </a>
                     <ul class="dropdown-menu pull-right">
                         <li>
-                            <a asp-area="" asp-controller="Home" asp-action="Index" class="btn btn-link navbar-btn navbar-link">@L("AuthCenter")</a>
+                            <a asp-area="IdentityServer" asp-controller="Home" asp-action="Index" class="btn btn-link navbar-btn navbar-link">@L("AuthCenter")</a>
                         </li>
                         <li>
-                            <a asp-area="" asp-controller="Account" asp-action="Login" asp-route-returnurl="@Context.Request.Path" class="btn btn-link navbar-btn navbar-link">@L("LogIn")</a>
+                            <a asp-area="IdentityServer" asp-controller="Account" asp-action="Login" asp-route-returnurl="@Context.Request.Path" class="btn btn-link navbar-btn navbar-link">@L("LogIn")</a>
                         </li>
                     </ul>
                 </li>
@@ -66,7 +63,6 @@ else
     {
         <form method="get" id="noForm" class="navbar-right" onsubmit="return false;">
             <ul class="nav navbar-nav navbar-right">
-                @await Component.InvokeAsync(typeof(TopBarSchedulerSwitchViewComponent))
                 @await Component.InvokeAsync(typeof(TopBarLanguageSwitchViewComponent))
 
                 <li class="dropdown">

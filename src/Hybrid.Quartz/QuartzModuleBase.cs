@@ -8,7 +8,9 @@ using Hybrid.Extensions;
 using Hybrid.Localization.Dictionaries;
 using Hybrid.Localization.Dictionaries.Json;
 using Hybrid.Quartz.Dashboard;
+using Hybrid.Quartz.MySql;
 using Hybrid.Quartz.Plugins.LiveLog;
+using Hybrid.Quartz.SqlServer;
 
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Mvc.Razor;
@@ -18,6 +20,7 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 
 using Quartz;
 using Quartz.Impl;
+using Quartz.Impl.AdoJobStore;
 using Quartz.Spi;
 
 using System;
@@ -31,7 +34,6 @@ namespace Hybrid.Quartz
     public abstract class QuartzModuleBase : AspHybridModule
     {
         private bool _enabled = true;
-        private bool _useDashboard = true;
 
         /// <summary>
         /// 获取 模块级别，级别越小越先启动
@@ -43,11 +45,16 @@ namespace Hybrid.Quartz
             IConfiguration configuration = services.GetConfiguration();
             QuartzOptions quartzOptions = configuration.GetSection("Hybrid:Quartz").Get<QuartzOptions>();
             _enabled = quartzOptions.IsEnabled;
-            _useDashboard = quartzOptions.UseDashboard;
+            // _useDashboard = quartzOptions.UseDashboard;
             if (!_enabled)
             {
                 return services;
             }
+            if (string.IsNullOrWhiteSpace(quartzOptions.TablePrefix))
+            {
+                quartzOptions.TablePrefix = AdoConstants.DefaultTablePrefix;
+            }
+            services.AddSingleton(quartzOptions);
             if (quartzOptions.StorageType.Equals(QuartzStorageType.InMemory))
             {
                 services.UseInMemoryStorage(quartzOptions);
@@ -76,69 +83,10 @@ namespace Hybrid.Quartz
             //services.AddSingleton(new JobFactory(services.BuildServiceProvider()));
             //services.AddTransient<LoggingProvider>();
 
-            if (quartzOptions.UseDashboard)
-            {
-                UseQuartzUI(services);
-            }
+            UseQuartzUI(services);
 
             return base.AddServices(services);
         }
-
-        //public override void UseModule(IServiceProvider provider)
-        //{
-        //    if (!_enabled)
-        //    {
-        //        return;
-        //    }
-
-        //    var scheduler = provider.GetService<IScheduler>();
-
-        //    //:jobFactory quartz.net Execute 使用依赖注入
-        //    //scheduler.JobFactory = jobFactory ?? throw new InvalidOperationException(
-        //    //        "You must be config used message queue provider at AddQuartz() options!   eg: services.AddQuartz(options=>{ options.UseInMemory(...) })");
-
-        //    scheduler.JobFactory = new JobFactory(provider);
-
-        //    //LogProvider.SetCurrentLogProvider(loggingProvider);
-
-        //    var liveLogPlugin = new LiveLogPlugin(provider);
-        //    scheduler.ListenerManager.AddJobListener(liveLogPlugin);
-        //    scheduler.ListenerManager.AddTriggerListener(liveLogPlugin);
-        //    scheduler.ListenerManager.AddSchedulerListener(liveLogPlugin);
-
-        //    scheduler.Start().Wait();
-
-        //    //var lifetime = provider.GetService<IApplicationLifetime>();
-        //    //lifetime.ApplicationStarted.Register(() =>
-        //    //{
-        //    //    scheduler.Start().Wait(); //网站启动完成执行
-        //    //});
-
-        //    //lifetime.ApplicationStopped.Register(() =>
-        //    //{
-        //    //    scheduler.Shutdown().Wait(); //网站停止完成执行
-        //    //});
-
-        //    //var dashboardQuartzOptions = provider.GetService<DashboardQuartzOptions>();
-
-        //    //if (dashboardQuartzOptions == null) return;
-
-        //    //app.UseDashboard(dashboardQuartzOptions);
-
-        //    if (_useDashboard)
-        //    {
-        //        var Configuration = provider.GetService<IHybridStartupConfiguration>();
-
-        //        Configuration.Localization.Sources.Add(
-        //            new DictionaryBasedLocalizationSource(
-        //                QuartzConsts.LocalizationSourceName,
-        //                new JsonEmbeddedFileLocalizationDictionaryProvider(
-        //                    typeof(QuartzOptions).GetAssembly(), "Hybrid.Quartz.Dashboard.Localization.Sources.JsonSource"
-        //        )));
-        //    }
-
-        //    base.UseModule(provider);
-        //}
 
         public override void UseModule(IApplicationBuilder app)
         {
@@ -146,7 +94,21 @@ namespace Hybrid.Quartz
             {
                 return;
             }
+
             IServiceProvider provider = app.ApplicationServices;
+
+            var quartzOptions = provider.GetRequiredService<QuartzOptions>();
+            if (quartzOptions.StorageType.Equals(QuartzStorageType.InMemory))
+            {
+                // 初始化数据库
+                MySqlObjectsInstaller.Initialize(quartzOptions.ConnectionStringOrCacheName, quartzOptions.TablePrefix);
+            }
+            if (quartzOptions.StorageType.Equals(QuartzStorageType.SqlServer))
+            {
+                // 初始化SqlServer数据库
+                SqlServerObjectsInstaller.Initialize(quartzOptions.ConnectionStringOrCacheName, quartzOptions.TablePrefix);
+            }
+
             var scheduler = provider.GetService<IScheduler>();
 
             //:jobFactory quartz.net Execute 使用依赖注入
@@ -181,27 +143,21 @@ namespace Hybrid.Quartz
 
             //app.UseDashboard(dashboardQuartzOptions);
 
-            if (_useDashboard)
-            {
-                var Configuration = provider.GetService<IHybridStartupConfiguration>();
+            var Configuration = provider.GetService<IHybridStartupConfiguration>();
 
-                Configuration.Localization.Sources.Add(
-                    new DictionaryBasedLocalizationSource(
-                        QuartzConsts.LocalizationSourceName,
-                        new JsonEmbeddedFileLocalizationDictionaryProvider(
-                            typeof(QuartzModuleBase).GetAssembly(), "Hybrid.Quartz.Dashboard.Localization.Sources.JsonSource"
-                )));
-            }
+            Configuration.Localization.Sources.Add(
+                new DictionaryBasedLocalizationSource(
+                    QuartzConsts.LocalizationSourceName,
+                    new JsonEmbeddedFileLocalizationDictionaryProvider(
+                        typeof(QuartzModuleBase).GetAssembly(), "Hybrid.Quartz.Dashboard.Localization.Sources.JsonSource"
+            )));
 
-            if (_useDashboard)
+            app.UseSignalR(routes =>
             {
-                app.UseSignalR(routes =>
-                {
-                    //这里要说下，为啥地址要写 /api/xxx
-                    //如果你不用/api/xxx的这个规则的话，会出现跨域问题，毕竟这个不是我的MVC的路由，而且自己定义的路由
-                    routes.MapHub<LiveLogHub>("/api/liveLogHub");
-                });
-            }
+                //这里要说下，为啥地址要写 /api/xxx
+                //如果你不用/api/xxx的这个规则的话，会出现跨域问题，毕竟这个不是我的MVC的路由，而且自己定义的路由
+                routes.MapHub<LiveLogHub>("/api/liveLogHub");
+            });
 
             base.UseModule(app);
         }

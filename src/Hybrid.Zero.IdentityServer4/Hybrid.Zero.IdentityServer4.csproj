@@ -28,6 +28,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="Quickstart\Localization\Sources\JsonSource\HybridIdentityServer-en-US.json" />
+    <Content Remove="Quickstart\Localization\Sources\JsonSource\HybridIdentityServer-zh-CN.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Quickstart\Localization\Sources\JsonSource\HybridIdentityServer-en-US.json" />
+    <EmbeddedResource Include="Quickstart\Localization\Sources\JsonSource\HybridIdentityServer-zh-CN.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 

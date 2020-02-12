@@ -8,9 +8,13 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.AspNetCore;
+using Hybrid.Configuration;
 using Hybrid.Core.Modules;
 using Hybrid.Core.Options;
 using Hybrid.EventBuses;
+using Hybrid.Extensions;
+using Hybrid.Localization.Dictionaries;
+using Hybrid.Localization.Dictionaries.Json;
 using Hybrid.RealTime;
 using Hybrid.Zero.Identity;
 using Hybrid.Zero.IdentityServer4.RealTime;
@@ -147,7 +151,7 @@ namespace Hybrid.Zero.IdentityServer4
                     LoginUrl = "/Account/Login",//【必备】登录地址
                     LogoutUrl = "/Account/Logout",//【必备】退出地址
                     ConsentUrl = "/Consent/Index",//【必备】允许授权同意页面地址
-                    ErrorUrl = "/Home/Error", //【必备】错误页面地址
+                    ErrorUrl = "/IdentityServer/Error", //【必备】错误页面地址
                     LoginReturnUrlParameter = "ReturnUrl",//【必备】设置传递给登录页面的返回URL参数的名称。默认为returnUrl
                     LogoutIdParameter = "logoutId", //【必备】设置传递给注销页面的注销消息ID参数的名称。缺省为logoutId
                     ConsentReturnUrlParameter = "ReturnUrl", //【必备】设置传递给同意页面的返回URL参数的名称。默认为returnUrl
@@ -197,6 +201,16 @@ namespace Hybrid.Zero.IdentityServer4
             app.UseIdentityServer();
 
             app.UseAuthorization();
+
+            IServiceProvider provider = app.ApplicationServices;
+            var Configuration = provider.GetService<IHybridStartupConfiguration>();
+
+            Configuration.Localization.Sources.Add(
+                new DictionaryBasedLocalizationSource(
+                    IdentityServerConsts.LocalizationSourceName,
+                    new JsonEmbeddedFileLocalizationDictionaryProvider(
+                        typeof(IdentityServerConsts).GetAssembly(), "Hybrid.Zero.IdentityServer4.Quickstart.Localization.Sources.JsonSource"
+            )));
 
             IsEnabled = true;
         }

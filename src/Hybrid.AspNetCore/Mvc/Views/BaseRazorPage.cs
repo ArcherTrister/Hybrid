@@ -67,7 +67,7 @@ namespace Hybrid.AspNetCore.Mvc.Views
         {
             get
             {
-                string value = Context.Request.Cookies[HybridConstants.HybridCookieName];
+                string value = Context.Request.Cookies[HybridConstants.SchedulerCookieName];
                 if (value.IsNullOrWhiteSpace())
                 {
                     return null;

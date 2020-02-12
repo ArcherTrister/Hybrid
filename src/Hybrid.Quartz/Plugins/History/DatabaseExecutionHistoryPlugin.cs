@@ -34,6 +34,8 @@ namespace Hybrid.Quartz.Plugins.History
         public string DataSource { get; set; }
         public string DriverDelegateType { get; set; }
 
+        public string Provider { get; set; }
+
         /// <summary>
         /// Called during creation of the <see cref="IScheduler" /> in order to give
         /// the <see cref="ISchedulerPlugin" /> a chance to Initialize.
@@ -62,7 +64,7 @@ namespace Hybrid.Quartz.Plugins.History
             if (_store == null)
             {
                 if (StoreType != null)
-                    _store = (IExecutionHistoryStore)Activator.CreateInstance(StoreType, new string[] { DataSource, DriverDelegateType, TablePrefix });
+                    _store = (IExecutionHistoryStore)Activator.CreateInstance(StoreType, new string[] { DataSource, DriverDelegateType, TablePrefix, Provider });
 
                 if (_store == null)
                     throw new Exception(nameof(StoreType) + " is not set.");

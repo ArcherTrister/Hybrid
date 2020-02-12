@@ -1,16 +1,23 @@
 ﻿using Hybrid.AspNetCore.Extensions;
 using Hybrid.AspNetCore.UI;
 using Hybrid.Data;
+
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 
 using System;
 
-namespace Hybrid.Quartz.Dashboard.Controllers
+namespace Hybrid.AspNetCore.Mvc.Controllers
 {
-    public class LocalizationController : QuartzBaseController
+    public class LocalizationController : MvcController
     {
+        /// <summary>
+        /// 切换语言
+        /// </summary>
+        /// <param name="cultureName"></param>
+        /// <returns></returns>
+        [HttpGet]
         public virtual ActionResult ChangeCulture(string cultureName)
         {
             if (!Localization.GlobalizationHelper.IsValidCultureCode(cultureName))

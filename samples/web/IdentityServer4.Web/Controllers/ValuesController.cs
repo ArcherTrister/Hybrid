@@ -20,6 +20,16 @@ namespace Hybrid.Web.Controllers
     [ApiController]
     public class ValuesController : LocalApiController
     {
+     private readonly   Hybrid.Core.Options.QuartzOptions QuartzOptions;
+        private readonly Hybrid.Core.Options.IdsOptions IdsOptions;
+
+        public ValuesController(
+            Microsoft.Extensions.Options.IOptions<Hybrid.Core.Options.HybridOptions> options)
+        {
+            QuartzOptions = options.Value.Quartz;
+            IdsOptions = options.Value.Ids;
+        }
+
         // GET api/values
         [HttpPost]
         [AllowAnonymous]

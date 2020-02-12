@@ -54,7 +54,7 @@ namespace Hybrid.AspNetCore.Mvc
                 //options.Filters.Add(new MvcUnitOfWorkFilter());
                 //options.Filters.Add(new PageUnitOfWorkFilter());
             })
-                .AddXmlDataContractSerializerFormatters()
+                //.AddXmlDataContractSerializerFormatters()
                 .AddNewtonsoftJson(options =>
             {
                 options.SerializerSettings.ContractResolver = new DefaultContractResolver();

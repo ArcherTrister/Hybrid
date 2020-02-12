@@ -26,7 +26,7 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
     /// </summary>
     [SecurityHeaders]
     [Authorize]
-    public class GrantsController : Controller
+    public class GrantsController : IdentityServerBaseController
     {
         private readonly IIdentityServerInteractionService _interaction;
         private readonly IClientStore _clients;

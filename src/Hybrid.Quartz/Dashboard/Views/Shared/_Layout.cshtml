@@ -6,7 +6,7 @@
     {
         Title = "QuartzDashboard",
         Routers = new List<MenuItem>
-        {
+{
             //new Router {Name = "Home", Title = "Home", Url = "/Quartz/Home/Index", Active = false},
             new MenuItem("Quartz", "Scheduler", "Index") { Name = "Scheduler", Title = "Scheduler" },
             new MenuItem("Quartz", "Jobs", "Index") { Name = "Jobs", Title = "Jobs" },
@@ -93,9 +93,9 @@
                         @foreach (MenuItem item in navBars.Routers)
                         {
                             /*class= "@(router.Active? "active" : null)"*/
-                        <li class="@(item.Url.Equals(Html.ViewContext.HttpContext.Request.Path.Value, StringComparison.OrdinalIgnoreCase) ? "active" : "")">
-                            <a asp-area="@item.AreaName" asp-controller="@item.ControllerName" asp-action="@item.ActionName" asp-route-schedulerName="@LocalSchedulerName" title="@item.Title">@L(item.Name)</a>
-                        </li>
+                            <li class="@(item.Url.Equals(Html.ViewContext.HttpContext.Request.Path.Value, StringComparison.OrdinalIgnoreCase) ? "active" : "")">
+                                <a asp-area="@item.AreaName" asp-controller="@item.ControllerName" asp-action="@item.ActionName" asp-route-schedulerName="@LocalSchedulerName" title="@item.Title">@L(item.Name)</a>
+                            </li>
                         }
                     </ul>
                     <partial name="_LoginPartial" />
@@ -131,7 +131,7 @@
                     <li>
                         <a href="https://github.com/ArcherTrister/Hybrid" target="_blank">Quartz @($"{version.Major}.{version.Minor}.{version.Build}")</a>
                     </li>
-                    <li>Server: 127.0.0.1@quartz</li>
+                    <li>Server: @Context.Request.Host@@quartz</li>
                     <li><span class="text-muted"></span>@L("Time", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"))</li>
                     <li><span class="text-muted">@L("TimeConsuming", GetGenerationTime().Elapsed.TotalMilliseconds.ToString("N"))</span></li>
                 </ul>

@@ -5,9 +5,9 @@ using Microsoft.AspNetCore.Mvc;
 
 using System.Linq;
 
-namespace Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarLanguageSwitch
+namespace Hybrid.Zero.IdentityServer4.Quickstart.Views.Shared.Components.TopBarLanguageSwitch
 {
-    public class TopBarLanguageSwitchViewComponent : QuartzViewComponent
+    public class TopBarLanguageSwitchViewComponent : IdentityServerViewComponent
     {
         private readonly ILanguageManager _languageManager;
 

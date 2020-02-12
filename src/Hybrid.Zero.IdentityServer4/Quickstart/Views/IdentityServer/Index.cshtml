@@ -1,13 +1,13 @@
 @{
-    var version = typeof(IdentityServer4.Hosting.IdentityServerMiddleware).Assembly.GetName().Version.ToString();
+    var version = typeof(Hybrid.Zero.IdentityServer4.IdentityServerConsts).Assembly.GetName().Version.ToString();
 }
 
 <div class="welcome-page">
     <div class="row page-header">
         <div class="col-sm-10">
             <h1>
-                <img class="icon" src="~/icon.jpg">
-                Welcome to IdentityServer4
+                <img class="icon" src="~/icon.png">
+                Welcome to Hybrid
                 <small>(version @version)</small>
             </h1>
         </div>
@@ -17,7 +17,7 @@
         <div class="col-sm-8">
             <p>
                 IdentityServer publishes a
-                <a href="~/.well-known/openid-configuration">discovery document</a>
+                <a href="~/.well-known/openid-configuration" target="_blank">discovery document</a>
                 where you can find metadata and links to all the endpoints, key material, etc.
             </p>
         </div>
@@ -31,8 +31,8 @@
         <div class="col-sm-8">
             <p>
                 Here are links to the
-                <a href="https://github.com/identityserver/IdentityServer4">source code repository</a>,
-                and <a href="https://github.com/IdentityServer/IdentityServer4/tree/master/samples">ready to use samples</a>.
+                <a href="https://github.com/ArcherTrister/Hybrid" target="_blank">source code repository</a>,
+                and <a href="https://github.com/ArcherTrister/Hybrid/tree/master/samples" target="_blank">ready to use samples</a>.
             </p>
         </div>
     </div>

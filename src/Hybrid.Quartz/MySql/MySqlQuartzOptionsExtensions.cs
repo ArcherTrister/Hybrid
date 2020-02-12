@@ -1,8 +1,4 @@
 ﻿using Hybrid.Core.Options;
-using Hybrid.Data;
-using Hybrid.Exceptions;
-using Hybrid.Extensions;
-using Hybrid.Quartz.MySql;
 
 using Quartz;
 using Quartz.Impl;
@@ -23,8 +19,6 @@ namespace Microsoft.Extensions.DependencyInjection
     {
         public static void UseMySql(this IServiceCollection services, QuartzOptions mySqlQuartzOptions)
         {
-            // 初始化数据库
-            MySqlObjectsInstaller.Initialize(mySqlQuartzOptions.ConnectionStringOrCacheName, mySqlQuartzOptions.TablePrefix);
             IScheduler scheduler = new StdSchedulerFactory(SetProperties(mySqlQuartzOptions)).GetScheduler().Result;
             services.AddSingleton(scheduler);
         }
@@ -49,9 +43,11 @@ namespace Microsoft.Extensions.DependencyInjection
                 // 加载插件
                 // properties.Set("quartz.plugin.自定义名称.type","命名空间.类名,程序集名称");
                 properties.Set("quartz.plugin.DatabaseExecutionHistory.type", "Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin,Hybrid.Quartz");
-                properties.Set("quartz.plugin.DatabaseExecutionHistory.DataSource", "default");
-                properties.Set("quartz.plugin.DatabaseExecutionHistory.DriverDelegateType", "Quartz.Impl.AdoJobStore.MySQLDelegate, Quartz");
+                properties.Set("quartz.plugin.DatabaseExecutionHistory.dataSource", "default");
+                properties.Set("quartz.plugin.DatabaseExecutionHistory.driverDelegateType", "Quartz.Impl.AdoJobStore.MySQLDelegate, Quartz");
                 properties.Set("quartz.plugin.DatabaseExecutionHistory.storeType", "Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryStore, Hybrid.Quartz");
+                properties.Set("quartz.plugin.DatabaseExecutionHistory.tablePrefix", mySqlQuartzOptions.TablePrefix);
+                properties.Set("quartz.plugin.DatabaseExecutionHistory.provider", "MySql");
             }
 
             return properties;

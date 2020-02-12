@@ -2,7 +2,7 @@
 
 using System.Collections.Generic;
 
-namespace Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarLanguageSwitch
+namespace Hybrid.AspNetCore.Mvc.Models
 {
     public class TopBarLanguageSwitchViewModel
     {

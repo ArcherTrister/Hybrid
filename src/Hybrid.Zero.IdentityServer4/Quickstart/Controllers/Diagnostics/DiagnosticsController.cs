@@ -18,7 +18,7 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
 {
     [SecurityHeaders]
     [Authorize]
-    public class DiagnosticsController : Controller
+    public class DiagnosticsController : IdentityServerBaseController
     {
         public async Task<IActionResult> Index()
         {

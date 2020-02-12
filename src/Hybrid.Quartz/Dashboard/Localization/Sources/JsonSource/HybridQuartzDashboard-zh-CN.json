@@ -1,6 +1,7 @@
 ﻿{
   "culture": "zh-CN",
   "texts": {
+    "AuthCenter": "授权中心",
     //login
     "LogIn": "登录",
     "UserName": "用户名",

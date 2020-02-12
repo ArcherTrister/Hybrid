@@ -1,8 +1,4 @@
 ﻿using Hybrid.Core.Options;
-using Hybrid.Data;
-using Hybrid.Exceptions;
-using Hybrid.Extensions;
-using Hybrid.Quartz.SqlServer;
 
 using Quartz;
 using Quartz.Impl;
@@ -20,8 +16,6 @@ namespace Microsoft.Extensions.DependencyInjection
     {
         public static void UseSqlServer(this IServiceCollection services, QuartzOptions sqlServerQuartzOptions)
         {
-            // 初始化数据库
-            SqlServerObjectsInstaller.Initialize(sqlServerQuartzOptions.ConnectionStringOrCacheName, sqlServerQuartzOptions.TablePrefix);
             IScheduler scheduler = new StdSchedulerFactory(SetProperties(sqlServerQuartzOptions)).GetScheduler().Result;
             services.AddSingleton(scheduler);
         }
@@ -46,9 +40,11 @@ namespace Microsoft.Extensions.DependencyInjection
                 // 加载插件
                 // properties.Set("quartz.plugin.自定义名称.type","命名空间.类名,程序集名称");
                 properties.Set("quartz.plugin.DatabaseExecutionHistory.type", "Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin,Hybrid.Quartz");
-                properties.Set("quartz.plugin.DatabaseExecutionHistory.DataSource", "default");
-                properties.Set("quartz.plugin.DatabaseExecutionHistory.DriverDelegateType", "Quartz.Impl.AdoJobStore.StdAdoDelegate, Quartz");
+                properties.Set("quartz.plugin.DatabaseExecutionHistory.dataSource", "default");
+                properties.Set("quartz.plugin.DatabaseExecutionHistory.driverDelegateType", "Quartz.Impl.AdoJobStore.StdAdoDelegate, Quartz");
                 properties.Set("quartz.plugin.DatabaseExecutionHistory.storeType", "Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryStore, Hybrid.Quartz");
+                properties.Set("quartz.plugin.DatabaseExecutionHistory.tablePrefix", sqlServerQuartzOptions.TablePrefix);
+                properties.Set("quartz.plugin.DatabaseExecutionHistory.provider", "SqlServer");
             }
 
             return properties;
