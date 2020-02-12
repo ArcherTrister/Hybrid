@@ -47,7 +47,7 @@ namespace Hybrid.Zero.Security
         /// 获取或设置 节点内排序码
         /// </summary>
         [DisplayName("排序码")]
-        public double OrderCode { get; set; }
+        public int OrderCode { get; set; }
 
         /// <summary>
         /// 获取或设置 父节点树形路径，父级树链Id根据一定格式构建的字符串，形如："$1$,$3$,$4$,$7$"，编辑时更新

@@ -51,7 +51,7 @@ namespace Hybrid.Zero.Security.Dtos
         /// 获取或设置 节点内排序码
         /// </summary>
         [DisplayName("排序码")]
-        public double OrderCode { get; set; }
+        public int OrderCode { get; set; }
 
         /// <summary>
         /// 获取或设置 父模块编号

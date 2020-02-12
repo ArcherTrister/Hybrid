@@ -44,7 +44,7 @@ namespace Hybrid.Web.Security.Dtos
         /// <summary>
         /// 获取或设置 节点内排序码
         /// </summary>
-        public double OrderCode { get; set; }
+        public int OrderCode { get; set; }
 
         /// <summary>
         /// 获取或设置 父模块编号

@@ -91,7 +91,7 @@ namespace IdentityServer4.Web.Data.Migrations.Application
                     Name = table.Column<string>(nullable: false),
                     Remark = table.Column<string>(nullable: true),
                     Code = table.Column<string>(nullable: false),
-                    OrderCode = table.Column<double>(nullable: false),
+                    OrderCode = table.Column<int>(nullable: false),
                     TreePathString = table.Column<string>(nullable: true),
                     ParentId = table.Column<Guid>(nullable: true)
                 },
@@ -155,6 +155,7 @@ namespace IdentityServer4.Web.Data.Migrations.Application
                     UserName = table.Column<string>(nullable: false),
                     NormalizedUserName = table.Column<string>(nullable: false),
                     NickName = table.Column<string>(nullable: true),
+                    Gender = table.Column<int>(nullable: false),
                     Email = table.Column<string>(nullable: true),
                     NormalizedEmail = table.Column<string>(nullable: true),
                     EmailConfirmed = table.Column<bool>(nullable: false),
@@ -525,7 +526,7 @@ namespace IdentityServer4.Web.Data.Migrations.Application
             migrationBuilder.InsertData(
                 table: "Module",
                 columns: new[] { "Id", "Code", "Name", "OrderCode", "ParentId", "Remark", "TreePathString" },
-                values: new object[] { new Guid("eb972ec2-e163-45e8-b314-aaef01716b06"), "Root", "根节点", 1.0, null, "系统根节点", "$eb972ec2-e163-45e8-b314-aaef01716b06$" });
+                values: new object[] { new Guid("eb972ec2-e163-45e8-b314-aaef01716b06"), "Root", "根节点", 1, null, "系统根节点", "$eb972ec2-e163-45e8-b314-aaef01716b06$" });
 
             migrationBuilder.InsertData(
                 table: "Role",
@@ -534,13 +535,13 @@ namespace IdentityServer4.Web.Data.Migrations.Application
 
             migrationBuilder.InsertData(
                 table: "User",
-                columns: new[] { "Id", "AccessFailedCount", "AvatarUrl", "ConcurrencyStamp", "CreatedTime", "Email", "EmailConfirmed", "IdCard", "IdCardConfirmed", "IsDeleted", "IsLocked", "IsSystem", "LockoutEnabled", "LockoutEnd", "NickName", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "Remark", "SecurityStamp", "TrueName", "TwoFactorEnabled", "UserName" },
-                values: new object[] { new Guid("8d86feea-83d5-4a0c-9733-305ac6cfe58d"), 0, null, "e50ea89e-c966-4ade-8fe4-6fe94de83777", new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Admin@example.com", true, null, false, false, false, true, true, null, "SuperAdmin", "ADMIN@EXAMPLE.COM", "ADMIN", "AQAAAAEAACcQAAAAEB6lgMDV9JoidhR4cfIK+bKOQfo9eE6M02N68wV0KxCbx+c5gxkBrZWOp0FwI5Id8g==", "18100000000", false, null, "RRYXXETXCDKPXE6QPNDGLMCYNBA2ZF4P", null, false, "Admin" });
+                columns: new[] { "Id", "AccessFailedCount", "AvatarUrl", "ConcurrencyStamp", "CreatedTime", "Email", "EmailConfirmed", "Gender", "IdCard", "IdCardConfirmed", "IsDeleted", "IsLocked", "IsSystem", "LockoutEnabled", "LockoutEnd", "NickName", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "Remark", "SecurityStamp", "TrueName", "TwoFactorEnabled", "UserName" },
+                values: new object[] { new Guid("8d86feea-83d5-4a0c-9733-305ac6cfe58d"), 0, null, "e50ea89e-c966-4ade-8fe4-6fe94de83777", new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Admin@example.com", true, 0, null, false, false, false, true, true, null, "SuperAdmin", "ADMIN@EXAMPLE.COM", "ADMIN", "AQAAAAEAACcQAAAAEB6lgMDV9JoidhR4cfIK+bKOQfo9eE6M02N68wV0KxCbx+c5gxkBrZWOp0FwI5Id8g==", "18100000000", false, null, "RRYXXETXCDKPXE6QPNDGLMCYNBA2ZF4P", null, false, "Admin" });
 
             migrationBuilder.InsertData(
                 table: "UserRole",
                 columns: new[] { "Id", "CreatedTime", "IsDeleted", "IsLocked", "RoleId", "UserId" },
-                values: new object[] { new Guid("3a95c920-d49a-4e63-b944-af95d694e221"), new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), false, false, new Guid("4f10b9ba-2391-4eb2-a378-aaf3012fb2d3"), new Guid("8d86feea-83d5-4a0c-9733-305ac6cfe58d") });
+                values: new object[] { new Guid("66c1c6ab-5fa1-45f6-9704-509df0c03f28"), new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), false, false, new Guid("4f10b9ba-2391-4eb2-a378-aaf3012fb2d3"), new Guid("8d86feea-83d5-4a0c-9733-305ac6cfe58d") });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AuditEntity_OperationId",
@@ -583,8 +584,7 @@ namespace IdentityServer4.Web.Data.Migrations.Application
                 name: "AreaControllerActionIndex",
                 table: "Function",
                 columns: new[] { "Area", "Controller", "Action" },
-                unique: true,
-                filter: "[Area] IS NOT NULL AND [Controller] IS NOT NULL AND [Action] IS NOT NULL");
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_LoginLog_UserId",
@@ -676,8 +676,7 @@ namespace IdentityServer4.Web.Data.Migrations.Application
                 name: "UserLoginIndex",
                 table: "UserLogin",
                 columns: new[] { "LoginProvider", "ProviderKey" },
-                unique: true,
-                filter: "[LoginProvider] IS NOT NULL AND [ProviderKey] IS NOT NULL");
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_UserRole_RoleId",
@@ -694,8 +693,7 @@ namespace IdentityServer4.Web.Data.Migrations.Application
                 name: "UserTokenIndex",
                 table: "UserToken",
                 columns: new[] { "UserId", "LoginProvider", "Name" },
-                unique: true,
-                filter: "[LoginProvider] IS NOT NULL AND [Name] IS NOT NULL");
+                unique: true);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

@@ -280,7 +280,7 @@ namespace Hybrid.Zero.Security
             }
             else
             {
-                double maxCode = peerModules.Max(m => m.OrderCode);
+                int maxCode = peerModules.Max(m => m.OrderCode);
                 entity.OrderCode = maxCode + 1;
             }
             //父模块
@@ -926,6 +926,6 @@ namespace Hybrid.Zero.Security
             return OperationResult.Success;
         }
 
-        #endregion
+        #endregion Implementation of IEntityRoleStore<TEntityRole,in TEntityRoleInputDto,in TRoleKey>
     }
 }

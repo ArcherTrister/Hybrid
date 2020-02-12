@@ -33,7 +33,7 @@ namespace Hybrid.Core.ModuleInfos
         /// <summary>
         /// 获取或设置 层次序号
         /// </summary>
-        public double Order { get; set; }
+        public int Order { get; set; }
 
         /// <summary>
         /// 获取或设置 模块位置，父模块Code以点号 . 相连的字符串

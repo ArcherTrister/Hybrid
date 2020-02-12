@@ -31,7 +31,7 @@ namespace Hybrid.Core.ModuleInfos
         /// <summary>
         /// 获取或设置 层次序号
         /// </summary>
-        public double Order { get; set; }
+        public int Order { get; set; }
 
         /// <summary>
         /// 获取或设置 模块位置，父级模块，模块在树节点的位置，默认取所在类的位置，需要在命名空间与当前类之间加模块，才设置此值
