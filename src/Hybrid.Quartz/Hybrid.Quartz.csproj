@@ -49,8 +49,21 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Dashboard\Localization\Sources\JsonSource\HybridQuartz-en-US.json" />
-    <EmbeddedResource Include="Dashboard\Localization\Sources\JsonSource\HybridQuartz-zh-CN.json" />
+    <Content Remove="Dashboard\Localization\Sources\JsonSource\HybridIdentityServer-en-US.json" />
+    <Content Remove="Dashboard\Localization\Sources\JsonSource\HybridIdentityServer-zh-CN.json" />
+    <Content Remove="Dashboard\Localization\Sources\JsonSource\HybridQuartz1-en-US.json" />
+    <Content Remove="Dashboard\Localization\Sources\JsonSource\HybridQuartz1-zh-CN.json" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <EmbeddedResource Include="Dashboard\Localization\Sources\JsonSource\HybridIdentityServer-en-US.json" />
+    <EmbeddedResource Include="Dashboard\Localization\Sources\JsonSource\HybridIdentityServer-zh-CN.json" />
+    <EmbeddedResource Include="Dashboard\Localization\Sources\JsonSource\HybridQuartz1-en-US.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\Localization\Sources\JsonSource\HybridQuartz1-zh-CN.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard\Localization\Sources\XmlSource\HybridQuartz-en-US.xml" />
     <EmbeddedResource Include="Dashboard\Localization\Sources\XmlSource\HybridQuartz-zh-CN.xml" />
     <EmbeddedResource Include="MySql\Install.sql" />
