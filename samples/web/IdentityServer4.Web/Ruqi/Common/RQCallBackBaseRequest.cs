@@ -1,17 +1,15 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations;
 
-namespace FlyingFish.Mobile.Ruqi.Dtos
+namespace FlyingFish.Mobile.Ruqi.Common
 {
     /// <summary>
-    /// 如期请求模型基类
+    /// 
     /// </summary>
-    public class RQBaseRequest
+    public class RQCallBackBaseRequest
     {
         /// <summary>
         /// 签名
         /// </summary>
-        [Required]
         public string sign { get; set; }
 
         /// <summary>
@@ -22,7 +20,6 @@ namespace FlyingFish.Mobile.Ruqi.Dtos
         /// <summary>
         /// 请求的业务数据
         /// </summary>
-        [Required]
         public string bizData { get; set; }
 
         /// <summary>
@@ -39,5 +36,10 @@ namespace FlyingFish.Mobile.Ruqi.Dtos
         /// 时间戳
         /// </summary>
         public string timestamp { get; set; } = DateTime.Now.ToString("yyyyMMddHHmmss");
+
+        /// <summary>
+        /// 要请求的API方法名
+        /// </summary>
+        public string call { get; set; }
     }
 }

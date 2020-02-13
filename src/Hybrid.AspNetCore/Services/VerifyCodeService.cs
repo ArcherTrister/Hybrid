@@ -52,7 +52,7 @@ namespace Hybrid.AspNetCore.Services
                 return false;
             }
 
-            string key = $"{HybridConstants.VerifyCodeKeyPrefix}_{id}";
+            string key = $"{HybridConsts.VerifyCodeKeyPrefix}_{id}";
             bool flag = code.Equals(_cache.GetString(key), StringComparison.OrdinalIgnoreCase);
             if (removeIfSuccess && flag)
             {
@@ -68,7 +68,7 @@ namespace Hybrid.AspNetCore.Services
         public void SetCode(string code, out string id)
         {
             id = Guid.NewGuid().ToString("N");
-            string key = $"{HybridConstants.VerifyCodeKeyPrefix}_{id}";
+            string key = $"{HybridConsts.VerifyCodeKeyPrefix}_{id}";
             const int seconds = 60 * 3;
             _cache.SetString(key, code, new DistributedCacheEntryOptions() { AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(seconds) });
         }

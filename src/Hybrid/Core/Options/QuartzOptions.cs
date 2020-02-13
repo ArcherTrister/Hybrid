@@ -20,7 +20,7 @@ namespace Hybrid.Core.Options
         /// <summary>
         /// 调度名称
         /// </summary>
-        public string SchedulerName { get; set; } = HybridConstants.DefaultSchedulerName;
+        public string SchedulerName { get; set; } = HybridConsts.DefaultSchedulerName;
 
         /// <summary>
         /// 存储类型

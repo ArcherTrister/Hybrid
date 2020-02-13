@@ -20,7 +20,7 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
     {
         public void Apply(ControllerModel model)
         {
-            bool defaultUIAttribute = HybridConstants.CustomController.ValidEndings.Any(x =>
+            bool defaultUIAttribute = HybridConsts.CustomController.ValidEndings.Any(x =>
                     model.ControllerName.EndsWith(x, StringComparison.OrdinalIgnoreCase));
             if (defaultUIAttribute)
             {

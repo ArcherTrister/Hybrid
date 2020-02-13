@@ -83,7 +83,7 @@ namespace Hybrid.Core.Modules
 
             Configuration.Localization.Sources.Add(
                 new DictionaryBasedLocalizationSource(
-                    HybridConstants.LocalizationSourceName,
+                    LocalizationConsts.HybridSourceName,
                     new XmlEmbeddedFileLocalizationDictionaryProvider(
                         typeof(QuartzOptions).GetAssembly(), "Hybrid.Localization.Sources.XmlSource"
             )));

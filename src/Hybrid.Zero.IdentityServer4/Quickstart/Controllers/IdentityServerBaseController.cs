@@ -1,5 +1,5 @@
 ﻿using Hybrid.AspNetCore.Mvc.Controllers;
-
+using Hybrid.Localization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Hybrid.Zero.IdentityServer4.Quickstart
@@ -11,7 +11,7 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
     {
         public IdentityServerBaseController()
         {
-            LocalizationSourceName = IdentityServerConsts.LocalizationSourceName;
+            LocalizationSourceName = LocalizationConsts.IdentityServerSourceName;
         }
     }
 }

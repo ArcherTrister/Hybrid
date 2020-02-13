@@ -25,7 +25,7 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
 
             if (!isController)
             {
-                isController = HybridConstants.CustomController.ValidEndings.Any(x =>
+                isController = HybridConsts.CustomController.ValidEndings.Any(x =>
                     typeInfo.Name.EndsWith(x, StringComparison.OrdinalIgnoreCase))
                     && typeInfo.GenericTypeArguments.Any();
             }

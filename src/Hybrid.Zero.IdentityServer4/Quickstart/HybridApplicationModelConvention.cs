@@ -21,7 +21,7 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
         public void Apply(ApplicationModel application)
         {
             var removeList = application.Controllers.Where(p =>
-                HybridConstants.CustomController.ValidEndings.Any(x =>
+                HybridConsts.CustomController.ValidEndings.Any(x =>
                     p.ControllerName.EndsWith(x, StringComparison.OrdinalIgnoreCase))
                 && !p.ControllerType.GenericTypeArguments.Any()).ToList();
             foreach (var item in removeList)

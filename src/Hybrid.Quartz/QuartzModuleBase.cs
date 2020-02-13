@@ -5,6 +5,7 @@ using Hybrid.Core.Options;
 using Hybrid.EventBuses;
 using Hybrid.Exceptions;
 using Hybrid.Extensions;
+using Hybrid.Localization;
 using Hybrid.Localization.Dictionaries;
 using Hybrid.Localization.Dictionaries.Json;
 using Hybrid.Quartz.Dashboard;
@@ -147,7 +148,7 @@ namespace Hybrid.Quartz
 
             Configuration.Localization.Sources.Add(
                 new DictionaryBasedLocalizationSource(
-                    QuartzConsts.LocalizationSourceName,
+                    LocalizationConsts.QuartzSourceName,
                     new JsonEmbeddedFileLocalizationDictionaryProvider(
                         typeof(QuartzModuleBase).GetAssembly(), "Hybrid.Quartz.Dashboard.Localization.Sources.JsonSource"
             )));

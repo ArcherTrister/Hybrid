@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="HybridConstants.cs" company="cn.lxking">
+//  <copyright file="HybridConsts.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -12,13 +12,8 @@ namespace Hybrid.Data
     /// <summary>
     /// 框架中使用到的一些常量
     /// </summary>
-    public class HybridConstants
+    public class HybridConsts
     {
-        /// <summary>
-        /// Hybrid组件本地化资源名称
-        /// </summary>
-        public const string LocalizationSourceName = "Hybrid";
-
         /// <summary>
         /// 当前MVC功能键名
         /// </summary>

@@ -1,11 +1,14 @@
-﻿using Hybrid.Data;
+﻿using Hybrid.AspNetCore.Mvc.Models;
+using Hybrid.Data;
 using Hybrid.Quartz.Dashboard.Models.Dtos;
 using Hybrid.Security;
 
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 using System;
+using System.Diagnostics;
 using System.Threading.Tasks;
 
 namespace Hybrid.Quartz.Dashboard.Controllers
@@ -29,7 +32,7 @@ namespace Hybrid.Quartz.Dashboard.Controllers
             string cookieValue = Crypto.DesEncrypt(schedulerHeader.Name);
 
             Response.Cookies.Append(
-                HybridConstants.SchedulerCookieName,
+                HybridConsts.SchedulerCookieName,
                 cookieValue,
                 new CookieOptions
                 {
@@ -39,6 +42,14 @@ namespace Hybrid.Quartz.Dashboard.Controllers
             );
 
             return View();
+        }
+
+        [HttpGet]
+        [AllowAnonymous]
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new HybridErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }

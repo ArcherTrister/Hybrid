@@ -1,4 +1,5 @@
 ﻿using Hybrid.AspNetCore.Mvc.Views;
+using Hybrid.Localization;
 
 namespace Hybrid.Zero.IdentityServer4.Quickstart.Views
 {
@@ -6,7 +7,7 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart.Views
     {
         protected IdentityServerViewComponent()
         {
-            LocalizationSourceName = IdentityServerConsts.LocalizationSourceName;
+            LocalizationSourceName = LocalizationConsts.IdentityServerSourceName;
         }
     }
 }

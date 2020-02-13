@@ -5,22 +5,22 @@
 
 @if (User.Identity.IsAuthenticated && options.Value.Ids.IsEnabled)
 {
-    <form asp-area="IdentityServer" asp-controller="Account" asp-action="Logout" method="post" id="logoutForm" class="navbar-right">
+    <form asp-area="" asp-controller="Account" asp-action="Logout" method="post" id="logoutForm" class="navbar-right">
         <ul class="nav navbar-nav navbar-right">
             @await Component.InvokeAsync(typeof(TopBarLanguageSwitchViewComponent))
 
             <li class="dropdown">
                 <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
                     <i class="" title="@User.Identity.Name"></i>
-                    <span>@L("Hello") @User.Identity.Name!</span>
+                    <span>@Ls(Hybrid.Localization.LocalizationConsts.QuartzSourceName, "Hello") @User.Identity.Name!</span>
                     <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu pull-right">
                     <li>
-                        <a asp-area="IdentityServer" asp-controller="Home" asp-action="Index" class="btn btn-link navbar-btn navbar-link">@L("AuthCenter")</a>
+                        <a asp-area="Quartz" asp-controller="Dashboard" asp-action="Index" class="btn btn-link navbar-btn navbar-link">@L("QuartzManager")</a>
                     </li>
                     <li style="text-align:center;">
-                        <button type="submit" class="btn btn-link navbar-btn navbar-link">@L("LogOut")</button>
+                        <button type="submit" class="btn btn-link navbar-btn navbar-link">@Ls(Hybrid.Localization.LocalizationConsts.QuartzSourceName, "LogOut")</button>
                     </li>
                 </ul>
             </li>
@@ -41,15 +41,15 @@ else
                 <li class="dropdown">
                     <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
                         <i class="" title="点击进行操作"></i>
-                        <span>@L("Welcome")</span>
+                        <span>@Ls(Hybrid.Localization.LocalizationConsts.QuartzSourceName, "Welcome")</span>
                         <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu pull-right">
                         <li>
-                            <a asp-area="IdentityServer" asp-controller="Home" asp-action="Index" class="btn btn-link navbar-btn navbar-link">@L("AuthCenter")</a>
+                            <a asp-area="Quartz" asp-controller="Dashboard" asp-action="Index" class="btn btn-link navbar-btn navbar-link">@L("QuartzManager")</a>
                         </li>
                         <li>
-                            <a asp-area="IdentityServer" asp-controller="Account" asp-action="Login" asp-route-returnurl="@Context.Request.Path" class="btn btn-link navbar-btn navbar-link">@L("LogIn")</a>
+                            <a asp-area="" asp-controller="Account" asp-action="Login" asp-route-returnurl="@Context.Request.Path" class="btn btn-link navbar-btn navbar-link">@Ls(Hybrid.Localization.LocalizationConsts.QuartzSourceName, "LogIn")</a>
                         </li>
                     </ul>
                 </li>
@@ -67,7 +67,7 @@ else
 
                 <li class="dropdown">
                     <i class="" title="点击进行操作"></i>
-                    <span>@L("Welcome")</span>
+                    <span>@Ls(Hybrid.Localization.LocalizationConsts.QuartzSourceName, "Welcome")</span>
                 </li>
                 <li>
                     <i class="fa fa-spinner fa-spin fa-2x" style="margin-top:10px;"></i>

@@ -171,11 +171,11 @@ namespace Hybrid.Web.Startups
             {
                 // 1.如果在本项目中使用webapi则添加，并且在UseModule中不能使用app.UseAuthentication
                 // 2.在webapi上添加[Authorize(AuthenticationSchemes = IdentityServerConstants.LocalApi.AuthenticationScheme)]标记
-                // 3.在本框架中使用HybridConstants.LocalApi.AuthenticationScheme
-                authenticationBuilder.AddLocalApi(HybridConstants.LocalApi.AuthenticationScheme,
+                // 3.在本框架中使用HybridConsts.LocalApi.AuthenticationScheme
+                authenticationBuilder.AddLocalApi(HybridConsts.LocalApi.AuthenticationScheme,
                     options =>
                     {
-                        options.ExpectedScope = HybridConstants.LocalApi.ScopeName;
+                        options.ExpectedScope = HybridConsts.LocalApi.ScopeName;
                         options.SaveToken = true;
                     });
 
@@ -244,7 +244,7 @@ namespace Hybrid.Web.Startups
             //{
             //    // client config is inferred from OpenID Connect settings
             //    // if you want to specify scopes explicitly, do it here, otherwise the scope parameter will not be sent
-            //    options.Client.Scope = HybridConstants.LocalApi.ScopeName;
+            //    options.Client.Scope = HybridConsts.LocalApi.ScopeName;
             //})
             //    .ConfigureBackchannelHttpClient()
             //        .AddTransientHttpErrorPolicy(policy => policy.WaitAndRetryAsync(new[]

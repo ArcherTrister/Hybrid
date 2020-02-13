@@ -32,7 +32,7 @@ namespace Hybrid.AspNetCore.Mvc.Controllers
             string cookieValue = CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(cultureName, cultureName));
 
             Response.Cookies.Append(
-                HybridConstants.CultureCookieName,
+                HybridConsts.CultureCookieName,
                 cookieValue,
                 new CookieOptions
                 {

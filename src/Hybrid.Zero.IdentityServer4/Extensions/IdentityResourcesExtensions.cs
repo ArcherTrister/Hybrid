@@ -12,7 +12,7 @@ namespace Hybrid.Zero.IdentityServer4.Extensions
         /// <summary>
         /// Identity扩展资源名称
         /// </summary>
-        public const string HybridCustomName = "HybridCustom";
+        public const string HybridCustomName = "HybridCustomIdentity";
 
         /// <summary>
         /// Identity扩展资源

@@ -42,7 +42,7 @@ namespace Hybrid.Quartz.Dashboard.Controllers
             string cookieValue = Crypto.DesEncrypt(schedulerName);
 
             Response.Cookies.Append(
-                HybridConstants.SchedulerCookieName,
+                HybridConsts.SchedulerCookieName,
                 cookieValue,
                 new CookieOptions
                 {

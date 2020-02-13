@@ -17,7 +17,7 @@ namespace Microsoft.Extensions.DependencyInjection
         {
             if (inMemoryQuartzOptions.SchedulerName.IsMissing())
             {
-                inMemoryQuartzOptions.SchedulerName = HybridConstants.DefaultSchedulerName;
+                inMemoryQuartzOptions.SchedulerName = HybridConsts.DefaultSchedulerName;
             }
             IScheduler scheduler = new StdSchedulerFactory(SetProperties(inMemoryQuartzOptions)).GetScheduler().Result;
             services.AddSingleton(scheduler);

@@ -229,12 +229,12 @@ namespace FlyingFish.Mobile.Controllers
                     Value = expiresAt.ToString("o", CultureInfo.InvariantCulture)
                 }
             };
-            var authenticationInfo = await HttpContext.AuthenticateAsync(HybridConstants.LocalApi.AuthenticationScheme);
+            var authenticationInfo = await HttpContext.AuthenticateAsync(HybridConsts.LocalApi.AuthenticationScheme);
             authenticationInfo.Properties.StoreTokens(tokens);
             //// 登录
             //await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
             //    authenticationInfo.Principal, authenticationInfo.Properties);
-            //await HttpContext.SignInAsync(HybridConstants.LocalApi.AuthenticationScheme, authenticationInfo.Principal, authenticationInfo.Properties);
+            //await HttpContext.SignInAsync(HybridConsts.LocalApi.AuthenticationScheme, authenticationInfo.Principal, authenticationInfo.Properties);
             await HttpContext.SignInAsync(authenticationInfo.Principal, authenticationInfo.Properties);
             ajaxResponse.Result = new CustomTokenResponse { AccessToken = refreshTokenResponse.AccessToken, RefreshToken = refreshTokenResponse.RefreshToken, ExpiresIn = refreshTokenResponse.ExpiresIn, IdentityToken = refreshTokenResponse.IdentityToken, TokenType = refreshTokenResponse.TokenType };
             return ajaxResponse;
@@ -260,7 +260,7 @@ namespace FlyingFish.Mobile.Controllers
             }
             await HttpContext.SignOutAsync();
 
-            string accessToken = await HttpContext.GetTokenAsync(HybridConstants.LocalApi.AuthenticationScheme, OpenIdConnectParameterNames.AccessToken);
+            string accessToken = await HttpContext.GetTokenAsync(HybridConsts.LocalApi.AuthenticationScheme, OpenIdConnectParameterNames.AccessToken);
 
             if (!string.IsNullOrWhiteSpace(accessToken))
             {

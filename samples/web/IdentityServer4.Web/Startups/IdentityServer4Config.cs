@@ -34,7 +34,7 @@ namespace Hybrid.Web.Startups
         public static IEnumerable<ApiResource> GetApis() =>
             new ApiResource[]
             {
-                new ApiResource(HybridConstants.LocalApi.ScopeName, "My API #1",
+                new ApiResource(HybridConsts.LocalApi.ScopeName, "My API #1",
                     new List<string>
                     {
                         HybridClaimTypes.UserIdTypeName,
@@ -71,7 +71,7 @@ namespace Hybrid.Web.Startups
 
                     ClientSecrets = { new Secret("511536EF-F270-4058-80CA-1C89C192F69A".Sha256()) },
 
-                    AllowedScopes = { HybridConstants.LocalApi.ScopeName }
+                    AllowedScopes = { HybridConsts.LocalApi.ScopeName }
                 },
                 // wpf client, password grant
                 new Client
@@ -83,7 +83,7 @@ namespace Hybrid.Web.Startups
                         new Secret("wpf secrect".Sha256())
                     },
                     AllowedScopes = {
-                        HybridConstants.LocalApi.ScopeName,
+                        HybridConsts.LocalApi.ScopeName,
                         IdentityResourcesExtensions.HybridCustomName,
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Address,
@@ -102,7 +102,7 @@ namespace Hybrid.Web.Startups
                     AccessTokenType = AccessTokenType.Jwt,
                     AllowOfflineAccess = true,
                     AllowedScopes = {
-                        HybridConstants.LocalApi.ScopeName,
+                        HybridConsts.LocalApi.ScopeName,
                         IdentityResourcesExtensions.HybridCustomName,
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Address,
@@ -120,7 +120,7 @@ namespace Hybrid.Web.Startups
                     {
                         "http://localhost:5002/swagger/oauth2-redirect.html"
                     },
-                    AllowedScopes = { HybridConstants.LocalApi.ScopeName }//指定客户端请求的api作用域。 如果为空，则客户端无法访问
+                    AllowedScopes = { HybridConsts.LocalApi.ScopeName }//指定客户端请求的api作用域。 如果为空，则客户端无法访问
                 },
                 // client credentials flow client
                 new Client
@@ -131,7 +131,7 @@ namespace Hybrid.Web.Startups
                     AllowedGrantTypes = GrantTypes.ClientCredentials,
                     ClientSecrets = { new Secret("511536EF-F270-4058-80CA-1C89C192F69A".Sha256()) },
 
-                    AllowedScopes = { HybridConstants.LocalApi.ScopeName }
+                    AllowedScopes = { HybridConsts.LocalApi.ScopeName }
                 },
 
                 // MVC client using code flow + pkce
@@ -150,7 +150,7 @@ namespace Hybrid.Web.Startups
 
                     AllowOfflineAccess = true,
                     AllowedScopes = {
-                        HybridConstants.LocalApi.ScopeName,
+                        HybridConsts.LocalApi.ScopeName,
                         IdentityResourcesExtensions.HybridCustomName,
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Address,
@@ -180,7 +180,7 @@ namespace Hybrid.Web.Startups
                 //    PostLogoutRedirectUris = { "http://localhost:5002/index.html" },
                 //    AllowedCorsOrigins = { "http://localhost:5002" },
 
-                //    AllowedScopes = { "openid", "profile", HybridConstants.LocalApi.ScopeName }
+                //    AllowedScopes = { "openid", "profile", HybridConsts.LocalApi.ScopeName }
                 //}
             };
     }

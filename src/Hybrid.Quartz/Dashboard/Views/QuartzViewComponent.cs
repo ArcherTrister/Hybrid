@@ -1,4 +1,5 @@
 ﻿using Hybrid.AspNetCore.Mvc.Views;
+using Hybrid.Localization;
 
 namespace Hybrid.Quartz.Dashboard.Views
 {
@@ -6,7 +7,7 @@ namespace Hybrid.Quartz.Dashboard.Views
     {
         protected QuartzViewComponent()
         {
-            LocalizationSourceName = QuartzConsts.LocalizationSourceName;
+            LocalizationSourceName = LocalizationConsts.QuartzSourceName;
         }
     }
 }

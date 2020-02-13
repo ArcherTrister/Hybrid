@@ -100,7 +100,7 @@ namespace Hybrid.Web
             //            AuthorizationUrl = "http://localhost:5002/connect/authorize",
             //            Scopes = new Dictionary<string, string>
             //            {
-            //                { HybridConstants.LocalApi.ScopeName, "IdentityServerApi授权" }
+            //                { HybridConsts.LocalApi.ScopeName, "IdentityServerApi授权" }
             //            }
             //        });
 

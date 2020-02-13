@@ -66,7 +66,7 @@ namespace Hybrid.AspNetCore.Mvc.Views
         {
             get
             {
-                string value = HttpContext.Request.Cookies[HybridConstants.CultureCookieName];
+                string value = HttpContext.Request.Cookies[HybridConsts.CultureCookieName];
                 if (value.IsNullOrWhiteSpace())
                 {
                     return CultureInfo.CurrentUICulture;
@@ -80,7 +80,7 @@ namespace Hybrid.AspNetCore.Mvc.Views
         {
             get
             {
-                string value = HttpContext.Request.Cookies[HybridConstants.SchedulerCookieName];
+                string value = HttpContext.Request.Cookies[HybridConsts.SchedulerCookieName];
                 if (value.IsNullOrWhiteSpace())
                 {
                     return null;

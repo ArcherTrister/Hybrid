@@ -13,6 +13,7 @@ using Hybrid.Core.Modules;
 using Hybrid.Core.Options;
 using Hybrid.EventBuses;
 using Hybrid.Extensions;
+using Hybrid.Localization;
 using Hybrid.Localization.Dictionaries;
 using Hybrid.Localization.Dictionaries.Json;
 using Hybrid.RealTime;
@@ -207,9 +208,9 @@ namespace Hybrid.Zero.IdentityServer4
 
             Configuration.Localization.Sources.Add(
                 new DictionaryBasedLocalizationSource(
-                    IdentityServerConsts.LocalizationSourceName,
+                    LocalizationConsts.IdentityServerSourceName,
                     new JsonEmbeddedFileLocalizationDictionaryProvider(
-                        typeof(IdentityServerConsts).GetAssembly(), "Hybrid.Zero.IdentityServer4.Quickstart.Localization.Sources.JsonSource"
+                        typeof(CustomUserInfoResponse).GetAssembly(), "Hybrid.Zero.IdentityServer4.Quickstart.Localization.Sources.JsonSource"
             )));
 
             IsEnabled = true;

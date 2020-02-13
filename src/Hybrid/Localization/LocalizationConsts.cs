@@ -5,10 +5,23 @@ namespace Hybrid.Localization
     public static class LocalizationConsts
     {
         /// <summary>
-        /// Localization source name.
+        /// Hybrid组件本地化资源名称
         /// </summary>
-        public const string LocalizationSourceName = "Hybrid";
+        public const string HybridSourceName = "Hybrid";
 
+        /// <summary>
+        /// Quartz多语言资源名称
+        /// </summary>
+        public const string QuartzSourceName = "HybridQuartz";
+
+        /// <summary>
+        /// IdentityServer多语言资源名称
+        /// </summary>
+        public const string IdentityServerSourceName = "HybridIdentityServer";
+
+        /// <summary>
+        /// 语言图标
+        /// </summary>
         public static List<LanguageIcon> LanguageIcons = new List<LanguageIcon>
         {
             //南非语

@@ -1,5 +1,5 @@
 ﻿using Hybrid.AspNetCore.Mvc.Controllers;
-
+using Hybrid.Localization;
 using Microsoft.AspNetCore.Mvc;
 
 using Quartz;
@@ -18,7 +18,7 @@ namespace Hybrid.Quartz.Dashboard.Controllers
     {
         public QuartzBaseController()
         {
-            LocalizationSourceName = QuartzConsts.LocalizationSourceName;
+            LocalizationSourceName = LocalizationConsts.QuartzSourceName;
         }
 
         #region 私有方法
