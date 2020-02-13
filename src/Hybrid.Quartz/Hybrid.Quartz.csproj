@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <Import Project="..\..\build\packages.props" />
-
+  <!--https://docs.microsoft.com/zh-cn/aspnet/core/razor-pages/sdk?view=aspnetcore-3.1-->
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <PackageId>Hybrid.Quartz</PackageId>
@@ -10,6 +10,7 @@
     <RootNamespace>Hybrid.Quartz</RootNamespace>
     <AssemblyName>Hybrid.Quartz</AssemblyName>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <EnableDefaultContentItems>false</EnableDefaultContentItems>
     <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
   </PropertyGroup>
 
@@ -63,7 +64,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.1" Condition="'$(Configuration)' == 'Debug'" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.1" />
     <PackageReference Include="Microsoft.Extensions.FileProviders.Composite" Version="3.1.1" />
     <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="3.1.1" />

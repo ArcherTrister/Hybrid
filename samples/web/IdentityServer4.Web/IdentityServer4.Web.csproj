@@ -12,13 +12,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Areas\**" />
+    <Compile Remove="Areas\Admin\**" />
     <Compile Remove="Startups\SqlServer\**" />
-    <Content Remove="Areas\**" />
+    <Content Remove="Areas\Admin\**" />
     <Content Remove="Startups\SqlServer\**" />
-    <EmbeddedResource Remove="Areas\**" />
+    <EmbeddedResource Remove="Areas\Admin\**" />
     <EmbeddedResource Remove="Startups\SqlServer\**" />
-    <None Remove="Areas\**" />
+    <None Remove="Areas\Admin\**" />
     <None Remove="Startups\SqlServer\**" />
   </ItemGroup>
 
@@ -27,7 +27,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="appsettings.Production.json" />
+    <None Include="appsettings.Production.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="wwwroot\css\site.less" />
     <None Include="wwwroot\js\signin-redirect.js" />
     <None Include="wwwroot\js\signout-redirect.js" />
@@ -68,6 +70,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\Ids\Data\" />
+    <Folder Include="Areas\Ids\Models\" />
     <Folder Include="Ruqi\Entities\" />
     <Folder Include="Ruqi\EntityConfigurations\" />
   </ItemGroup>

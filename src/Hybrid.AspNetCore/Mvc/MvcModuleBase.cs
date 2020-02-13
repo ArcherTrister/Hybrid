@@ -61,6 +61,10 @@ namespace Hybrid.AspNetCore.Mvc
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
             }).SetCompatibilityVersion(CompatibilityVersion.Latest);
 
+#if DEBUG
+            builder.AddRazorRuntimeCompilation();
+#endif
+
             //参数验证
             ////①禁用默认行为
             //services.Configure<ApiBehaviorOptions>(options =>

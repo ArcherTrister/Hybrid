@@ -13,10 +13,10 @@ using Microsoft.AspNetCore.Routing;
 
 using System.ComponentModel;
 
-namespace Hybrid.AspNetCore.Routing
+namespace Hybrid.Web.Startups
 {
     /// <summary>
-    /// 默认Endpoints模块
+    /// Endpoints模块
     /// </summary>
     [Description("Endpoints模块")]
     public class EndpointsModule : EndpointsModuleBase
@@ -30,5 +30,16 @@ namespace Hybrid.AspNetCore.Routing
             // 例如：endpoints.MapHub<ChatHub>();
             return endpoints;
         }
+
+        ///// <summary>
+        ///// 
+        ///// </summary>
+        ///// <param name="endpoints"></param>
+        ///// <returns></returns>
+        //protected override IEndpointRouteBuilder OtherEndpoints(IEndpointRouteBuilder endpoints)
+        //{
+        //    endpoints.MapControllerRoute("IdentityServer", "{area:exists}/{controller=IdentityServer}/{action=Index}/{id?}");
+        //    return base.OtherEndpoints(endpoints);
+        //}
     }
 }

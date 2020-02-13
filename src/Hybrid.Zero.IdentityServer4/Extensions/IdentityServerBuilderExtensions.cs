@@ -147,7 +147,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 options.ViewLocationExpanders.Add(new HybridIdentityServerViewLocationExpander());
             });
 
-            IMvcBuilder mvcBuilder = builder.Services.AddMvc()
+            builder.Services.AddMvc()
                 .AddMvcOptions(o =>
                 {
                     //o.Conventions.Add(new HybridApplicationModelConvention());
@@ -158,9 +158,6 @@ namespace Microsoft.Extensions.DependencyInjection
                     c.ApplicationParts.Add(new HybridControllerApplicationPart(typeFinder.GetTypeInfos(), typeof(TUser), typeof(TUserKey)));
                     c.FeatureProviders.Add(new HybridControllerFeatureProvider());
                 });
-#if DEBUG
-            mvcBuilder.AddRazorRuntimeCompilation();
-#endif
 
             return builder;
         }

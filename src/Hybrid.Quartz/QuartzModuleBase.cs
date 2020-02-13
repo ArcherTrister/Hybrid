@@ -201,13 +201,6 @@ namespace Hybrid.Quartz
             {
                 options.ViewLocationExpanders.Add(new HybridQuartzViewLocationExpander());
             });
-
-            //services.AddSignalR();
-
-            IMvcBuilder mvcBuilder = services.AddMvc();
-#if DEBUG
-            mvcBuilder.AddRazorRuntimeCompilation();
-#endif
         }
     }
 }
