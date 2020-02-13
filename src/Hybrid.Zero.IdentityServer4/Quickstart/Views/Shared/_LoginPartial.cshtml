@@ -2,8 +2,7 @@
 
 @inject Microsoft.Extensions.Options.IOptions<Hybrid.Core.Options.HybridOptions> options
 
-
-@if (User.Identity.IsAuthenticated && options.Value.Ids.IsEnabled)
+@if (User.Identity.IsAuthenticated)
 {
     <form asp-area="" asp-controller="Account" asp-action="Logout" method="post" id="logoutForm" class="navbar-right">
         <ul class="nav navbar-nav navbar-right">
@@ -12,15 +11,18 @@
             <li class="dropdown">
                 <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
                     <i class="" title="@User.Identity.Name"></i>
-                    <span>@Ls(Hybrid.Localization.LocalizationConsts.QuartzSourceName, "Hello") @User.Identity.Name!</span>
+                    <span>@L("Hello") @User.Identity.Name!</span>
                     <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu pull-right">
-                    <li>
-                        <a asp-area="Quartz" asp-controller="Dashboard" asp-action="Index" class="btn btn-link navbar-btn navbar-link">@L("QuartzManager")</a>
-                    </li>
+                    @if (options.Value.Quartz.IsEnabled)
+                    {
+                        <li>
+                            <a asp-area="Quartz" asp-controller="Dashboard" asp-action="Index" class="btn btn-link navbar-btn navbar-link">@L("QuartzCenter")</a>
+                        </li>
+                    }
                     <li style="text-align:center;">
-                        <button type="submit" class="btn btn-link navbar-btn navbar-link">@Ls(Hybrid.Localization.LocalizationConsts.QuartzSourceName, "LogOut")</button>
+                        <button type="submit" class="btn btn-link navbar-btn navbar-link">@L("LogOut")</button>
                     </li>
                 </ul>
             </li>
@@ -29,41 +31,28 @@
 }
 else
 {
-    if (options.Value.Ids.IsEnabled)
-    {
-        <form method="get" id="loginForm" class="navbar-right" onsubmit="return false;">
-            <ul class="nav navbar-nav navbar-right">
-                @await Component.InvokeAsync(typeof(TopBarLanguageSwitchViewComponent))
+    <form method="get" id="loginForm" class="navbar-right" onsubmit="return false;">
+        <ul class="nav navbar-nav navbar-right">
+            @await Component.InvokeAsync(typeof(TopBarLanguageSwitchViewComponent))
 
-                <li class="dropdown">
-                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
-                        <i class="" title="点击进行操作"></i>
-                        <span>@Ls(Hybrid.Localization.LocalizationConsts.QuartzSourceName, "Welcome")</span>
-                        <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu pull-right">
-                        <li>
-                            <a asp-area="Quartz" asp-controller="Dashboard" asp-action="Index" class="btn btn-link navbar-btn navbar-link">@L("QuartzManager")</a>
-                        </li>
-                        <li>
-                            <a asp-area="" asp-controller="Account" asp-action="Login" asp-route-returnurl="@Context.Request.Path" class="btn btn-link navbar-btn navbar-link">@Ls(Hybrid.Localization.LocalizationConsts.QuartzSourceName, "LogIn")</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </form>
-    }
-    else
-    {
-        <form method="get" id="noForm" class="navbar-right" onsubmit="return false;">
-            <ul class="nav navbar-nav navbar-right">
-                @await Component.InvokeAsync(typeof(TopBarLanguageSwitchViewComponent))
-
-                <li class="dropdown">
+            <li class="dropdown">
+                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
                     <i class="" title="点击进行操作"></i>
-                    <span>@Ls(Hybrid.Localization.LocalizationConsts.QuartzSourceName, "Welcome")</span>
-                </li>
-            </ul>
-        </form>
-    }
+                    <span>@L("Welcome")</span>
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu pull-right">
+                    @if (options.Value.Quartz.IsEnabled)
+                    {
+                        <li>
+                            <a asp-area="Quartz" asp-controller="Dashboard" asp-action="Index" class="btn btn-link navbar-btn navbar-link">@L("QuartzCenter")</a>
+                        </li>
+                    }
+                    <li>
+                        <a asp-area="" asp-controller="Account" asp-action="Login" asp-route-returnurl="@Context.Request.Path" class="btn btn-link navbar-btn navbar-link">@L("LogIn")</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </form>
 }
