@@ -63,8 +63,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Ids\Data\" />
-    <Folder Include="Areas\Ids\Models\" />
+    <Folder Include="Areas\" />
     <Folder Include="Ruqi\Entities\" />
     <Folder Include="Ruqi\EntityConfigurations\" />
   </ItemGroup>
