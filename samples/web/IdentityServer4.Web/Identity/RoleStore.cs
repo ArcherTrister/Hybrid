@@ -18,7 +18,7 @@ namespace Hybrid.Web.Identity
     /// <summary>
     /// 角色仓储
     /// </summary>
-    public class RoleStore : RoleStoreBase<Role, Guid, RoleClaim>
+    public class RoleStore : RoleStoreBase<Role, Guid, RoleClaim, Guid>
     {
         /// <summary>
         /// 初始化一个<see cref="RoleStoreBase{TRole,TRoleKey,TRoleClaim}"/>类型的新实例

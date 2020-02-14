@@ -29,25 +29,27 @@ namespace Hybrid.Zero.Identity
     /// <typeparam name="TRole">角色实体类型</typeparam>
     /// <typeparam name="TRoleKey">角色编号类型</typeparam>
     /// <typeparam name="TRoleClaim">角色声明类型</typeparam>
-    public abstract class RoleStoreBase<TRole, TRoleKey, TRoleClaim>
+    /// <typeparam name="TRoleClaimKey">角色声明编号类型</typeparam>
+    public abstract class RoleStoreBase<TRole, TRoleKey, TRoleClaim, TRoleClaimKey>
         : IQueryableRoleStore<TRole>,
           IRoleClaimStore<TRole>
         where TRole : RoleBase<TRoleKey>
-        where TRoleClaim : RoleClaimBase<TRoleKey>, new()
+        where TRoleClaim : RoleClaimBase<TRoleClaimKey, TRoleKey>, new()
         where TRoleKey : IEquatable<TRoleKey>
+        where TRoleClaimKey : IEquatable<TRoleClaimKey>
     {
+        private readonly IRepository<TRoleClaim, TRoleClaimKey> _roleClaimRepository;
         private readonly IRepository<TRole, TRoleKey> _roleRepository;
-        private readonly IRepository<TRoleClaim, Guid> _roleClaimRepository;
         private bool _disposed;
 
         /// <summary>
-        /// 初始化一个<see cref="RoleStoreBase{TRole,TRoleKey,TRoleClaim}"/>类型的新实例
+        /// 初始化一个<see cref="RoleStoreBase{TRole,TRoleKey,TRoleClaim, TRoleClaimKey}"/>类型的新实例
         /// </summary>
         /// <param name="roleRepository">角色仓储</param>
         /// <param name="roleClaimRepository">角色声明仓储</param>
         protected RoleStoreBase(
             IRepository<TRole, TRoleKey> roleRepository,
-            IRepository<TRoleClaim, Guid> roleClaimRepository)
+            IRepository<TRoleClaim, TRoleClaimKey> roleClaimRepository)
         {
             _roleRepository = roleRepository;
             _roleClaimRepository = roleClaimRepository;
@@ -61,7 +63,7 @@ namespace Hybrid.Zero.Identity
             _disposed = true;
         }
 
-        #endregion Implementation of IDisposable
+        #endregion
 
         #region Implementation of IQueryableRoleStore<TRole>
 
@@ -71,7 +73,48 @@ namespace Hybrid.Zero.Identity
         /// <value>An <see cref="T:System.Linq.IQueryable`1" /> collection of roles.</value>
         public IQueryable<TRole> Roles => _roleRepository.QueryAsNoTracking();
 
-        #endregion Implementation of IQueryableRoleStore<TRole>
+        #endregion
+
+        /// <summary>
+        /// Converts the provided <paramref name="id"/> to a strongly typed key object.
+        /// </summary>
+        /// <param name="id">The id to convert.</param>
+        /// <returns>An instance of <typeparamref name="TRoleKey"/> representing the provided <paramref name="id"/>.</returns>
+        public virtual TRoleKey ConvertIdFromString(string id)
+        {
+            if (id == null)
+            {
+                return default(TRoleKey);
+            }
+
+            return (TRoleKey)TypeDescriptor.GetConverter(typeof(TRoleKey)).ConvertFromInvariantString(id);
+        }
+
+        /// <summary>
+        /// Converts the provided <paramref name="id"/> to its string representation.
+        /// </summary>
+        /// <param name="id">The id to convert.</param>
+        /// <returns>An <see cref="string"/> representation of the provided <paramref name="id"/>.</returns>
+        public virtual string ConvertIdToString(TRoleKey id)
+        {
+            if (id.Equals(default(TRoleKey)))
+            {
+                return null;
+            }
+
+            return id.ToString();
+        }
+
+        /// <summary>
+        /// 如果已释放，则抛出异常
+        /// </summary>
+        protected void ThrowIfDisposed()
+        {
+            if (_disposed)
+            {
+                throw new ObjectDisposedException(GetType().Name);
+            }
+        }
 
         #region Implementation of IRoleStore<TRole>
 
@@ -95,6 +138,7 @@ namespace Hybrid.Zero.Identity
                     return new IdentityResult().Failed($"系统中已存在默认角色“{defaultRole}”，不能重复添加");
                 }
             }
+
             await _roleRepository.InsertAsync(role);
             return IdentityResult.Success;
         }
@@ -115,6 +159,7 @@ namespace Hybrid.Zero.Identity
             {
                 return new IdentityResult().Failed($"角色“{role.Name}”是系统角色，不能更新");
             }
+
             if (role.IsDefault)
             {
                 var defaultRole = _roleRepository.Query(m => m.IsDefault, false).Select(m => new { m.Id, m.Name }).FirstOrDefault();
@@ -123,6 +168,7 @@ namespace Hybrid.Zero.Identity
                     return new IdentityResult().Failed($"系统中已存在默认角色“{defaultRole.Name}”，不能重复添加");
                 }
             }
+
             await _roleRepository.UpdateAsync(role);
             return IdentityResult.Success;
         }
@@ -143,6 +189,7 @@ namespace Hybrid.Zero.Identity
             {
                 return new IdentityResult().Failed($"角色“{role.Name}”是系统角色，不能删除");
             }
+
             await _roleRepository.DeleteAsync(role);
             return IdentityResult.Success;
         }
@@ -254,7 +301,7 @@ namespace Hybrid.Zero.Identity
             return Task.FromResult(_roleRepository.Query().FirstOrDefault(m => m.NormalizedName == normalizedRoleName));
         }
 
-        #endregion Implementation of IRoleStore<TRole>
+        #endregion
 
         #region Implementation of IRoleClaimStore<TRole>
 
@@ -272,7 +319,8 @@ namespace Hybrid.Zero.Identity
             ThrowIfDisposed();
             Check.NotNull(role, nameof(role));
 
-            IList<Claim> list = _roleClaimRepository.QueryAsNoTracking(m => m.RoleId.Equals(role.Id)).Select(n => new Claim(n.ClaimType, n.ClaimValue)).ToList();
+            IList<Claim> list = _roleClaimRepository.QueryAsNoTracking(m => m.RoleId.Equals(role.Id))
+                .Select(n => new Claim(n.ClaimType, n.ClaimValue)).ToList();
             return Task.FromResult(list);
         }
 
@@ -311,45 +359,6 @@ namespace Hybrid.Zero.Identity
             return _roleClaimRepository.DeleteBatchAsync(m => m.RoleId.Equals(role.Id) && m.ClaimValue == claim.Type && m.ClaimValue == claim.Value);
         }
 
-        #endregion Implementation of IRoleClaimStore<TRole>
-
-        /// <summary>
-        /// Converts the provided <paramref name="id"/> to a strongly typed key object.
-        /// </summary>
-        /// <param name="id">The id to convert.</param>
-        /// <returns>An instance of <typeparamref name="TRoleKey"/> representing the provided <paramref name="id"/>.</returns>
-        public virtual TRoleKey ConvertIdFromString(string id)
-        {
-            if (id == null)
-            {
-                return default(TRoleKey);
-            }
-            return (TRoleKey)TypeDescriptor.GetConverter(typeof(TRoleKey)).ConvertFromInvariantString(id);
-        }
-
-        /// <summary>
-        /// Converts the provided <paramref name="id"/> to its string representation.
-        /// </summary>
-        /// <param name="id">The id to convert.</param>
-        /// <returns>An <see cref="string"/> representation of the provided <paramref name="id"/>.</returns>
-        public virtual string ConvertIdToString(TRoleKey id)
-        {
-            if (id.Equals(default(TRoleKey)))
-            {
-                return null;
-            }
-            return id.ToString();
-        }
-
-        /// <summary>
-        /// 如果已释放，则抛出异常
-        /// </summary>
-        protected void ThrowIfDisposed()
-        {
-            if (_disposed)
-            {
-                throw new ObjectDisposedException(GetType().Name);
-            }
-        }
+        #endregion
     }
 }

@@ -25,8 +25,10 @@ namespace Hybrid.Web.Security
     /// 权限安全管理器
     /// </summary>
     public class SecurityManager
-        : SecurityManagerBase<Function, FunctionInputDto, EntityInfo, EntityInfoInputDto,
-            Module, ModuleInputDto, Guid, ModuleFunction, ModuleRole, ModuleUser, EntityRole, EntityRoleInputDto, UserRole, Role, Guid, User, Guid>
+        : SecurityManagerBase<Function, FunctionInputDto, 
+            EntityInfo, EntityInfoInputDto,Module, ModuleInputDto, Guid, 
+            ModuleFunction, ModuleRole, ModuleUser, EntityRole, EntityRoleInputDto, 
+            UserRole, Guid, Role, Guid, User, Guid>
     {
         /// <summary>
         /// 初始化一个<see cref="SecurityManager"/>类型的新实例

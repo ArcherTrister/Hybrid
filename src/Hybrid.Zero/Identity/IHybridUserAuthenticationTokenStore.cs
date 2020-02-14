@@ -19,10 +19,8 @@ namespace Hybrid.Zero.Identity
     /// 自定义UserAuthenticationTokenStore
     /// </summary>
     /// <typeparam name="TUser"></typeparam>
-    /// <typeparam name="TUserKey"></typeparam>
-    public interface IHybridUserAuthenticationTokenStore<TUser, TUserKey> : IUserAuthenticationTokenStore<TUser>
-        where TUser : UserBase<TUserKey>
-        where TUserKey : IEquatable<TUserKey>
+    public interface IHybridUserAuthenticationTokenStore<TUser> : IUserAuthenticationTokenStore<TUser>
+        where TUser : class
     {
         /// <summary>
         /// 获取某个用户的所有指定登录提供者的权限标识

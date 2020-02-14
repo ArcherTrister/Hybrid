@@ -17,14 +17,16 @@ namespace Hybrid.Zero.Identity
     /// <summary>
     /// 用户角色映射基类
     /// </summary>
+    /// <typeparam name="TKey">用户角色映射编号类型</typeparam>
     /// <typeparam name="TUserKey">用户编号类型</typeparam>
     /// <typeparam name="TRoleKey">角色编号类型</typeparam>
-    public abstract class UserRoleBase<TUserKey, TRoleKey> : EntityBase<Guid>, ICreatedTime, ILockable, ISoftDelete
+    public abstract class UserRoleBase<TKey, TUserKey, TRoleKey> : EntityBase<TKey>, ICreatedTime, ILockable, ISoftDelete
+        where TKey : IEquatable<TKey>
         where TUserKey : IEquatable<TUserKey>
         where TRoleKey : IEquatable<TRoleKey>
     {
         /// <summary>
-        /// 初始化一个<see cref="UserRoleBase{TUserKey, TRoleKey}"/>类型的新实例
+        /// 初始化一个<see cref="UserRoleBase{TKey, TUserKey, TRoleKey}"/>类型的新实例
         /// </summary>
         protected UserRoleBase()
         {

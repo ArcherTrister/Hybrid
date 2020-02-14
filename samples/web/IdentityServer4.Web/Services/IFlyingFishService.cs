@@ -19,7 +19,7 @@ namespace IdentityServer4.Web.Services
 
         Task<AjaxResult> PushPhaseTwoAsync(RQBaseRequest request);
 
-        Task<AjaxResult<List<RQBankInfo>>> BankListAsync(RQBaseRequest request);
+        Task<AjaxResult<List<RQBankInfo>>> BankListAsync(RQBankListRequest request);
 
         Task<AjaxResult<RQCardListResponse>> CardListAsync(RQBaseRequest request);
 

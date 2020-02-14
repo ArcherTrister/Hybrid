@@ -45,12 +45,13 @@ namespace Hybrid.Zero.Security
     /// <typeparam name="TEntityRole">实体角色类型</typeparam>
     /// <typeparam name="TEntityRoleInputDto">实体角色输入DTO类型</typeparam>
     /// <typeparam name="TUserRole">用户角色类型</typeparam>
+    /// <typeparam name="TUserRoleKey">用户角色编号类型</typeparam>
     /// <typeparam name="TRole">角色类型</typeparam>
     /// <typeparam name="TRoleKey">角色编号类型</typeparam>
     /// <typeparam name="TUser">用户类型</typeparam>
     /// <typeparam name="TUserKey">用户编号类型</typeparam>
     public abstract class SecurityManagerBase<TFunction, TFunctionInputDto, TEntityInfo, TEntityInfoInputDto, TModule, TModuleInputDto, TModuleKey,
-            TModuleFunction, TModuleRole, TModuleUser, TEntityRole, TEntityRoleInputDto, TUserRole, TRole, TRoleKey, TUser, TUserKey>
+            TModuleFunction, TModuleRole, TModuleUser, TEntityRole, TEntityRoleInputDto, TUserRole, TUserRoleKey, TRole, TRoleKey, TUser, TUserKey>
         : IFunctionStore<TFunction, TFunctionInputDto>,
           IEntityInfoStore<TEntityInfo, TEntityInfoInputDto>,
           IModuleStore<TModule, TModuleInputDto, TModuleKey>,
@@ -70,7 +71,8 @@ namespace Hybrid.Zero.Security
         where TModuleKey : struct, IEquatable<TModuleKey>
         where TEntityRole : EntityRoleBase<TRoleKey>
         where TEntityRoleInputDto : EntityRoleInputDtoBase<TRoleKey>
-        where TUserRole : UserRoleBase<TUserKey, TRoleKey>
+        where TUserRole : UserRoleBase<TUserRoleKey, TUserKey, TRoleKey>
+        where TUserRoleKey : IEquatable<TUserRoleKey>
         where TRole : RoleBase<TRoleKey>
         where TUser : UserBase<TUserKey>
         where TRoleKey : IEquatable<TRoleKey>
@@ -86,7 +88,7 @@ namespace Hybrid.Zero.Security
         private readonly IRepository<TEntityRole, Guid> _entityRoleRepository;
         private readonly IRepository<TRole, TRoleKey> _roleRepository;
         private readonly IRepository<TUser, TUserKey> _userRepository;
-        private readonly IRepository<TUserRole, Guid> _userRoleRepository;
+        private readonly IRepository<TUserRole, TUserRoleKey> _userRoleRepository;
 
         /// <summary>
         /// 初始化一个 SecurityManager 类型的新实例
@@ -111,7 +113,7 @@ namespace Hybrid.Zero.Security
             IRepository<TModuleRole, Guid> moduleRoleRepository,
             IRepository<TModuleUser, Guid> moduleUserRepository,
             IRepository<TEntityRole, Guid> entityRoleRepository,
-            IRepository<TUserRole, Guid> userRoleRepository,
+            IRepository<TUserRole, TUserRoleKey> userRoleRepository,
             IRepository<TRole, TRoleKey> roleRepository,
             IRepository<TUser, TUserKey> userRepository
         )

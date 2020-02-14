@@ -18,7 +18,7 @@ namespace Hybrid.Web.Identity.Entity
     /// 实体类：角色声明信息
     /// </summary>
     [Description("角色声明信息")]
-    public class RoleClaim : RoleClaimBase<Guid>
+    public class RoleClaim : RoleClaimBase<Guid, Guid>
     {
         /// <summary>
         /// 获取或设置 所属角色信息

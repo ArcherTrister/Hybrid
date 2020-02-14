@@ -67,10 +67,10 @@ namespace IdentityServer4.Web.Controllers
         /// <summary>
         /// 银行列表
         /// </summary>
-        /// <param name="request"></param>
+        /// <param name="request">银行列表请求模型</param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<AjaxResult<List<RQBankInfo>>> BankList(RQBaseRequest request)
+        public async Task<AjaxResult<List<RQBankInfo>>> BankList(RQBankListRequest request)
         {
             return await _flyingFishService.BankListAsync(request);
         }

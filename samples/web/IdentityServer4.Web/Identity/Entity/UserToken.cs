@@ -18,7 +18,7 @@ namespace Hybrid.Web.Identity.Entity
     /// 实体类：用户的身份认证令牌
     /// </summary>
     [Description("用户的身份认证令牌")]
-    public class UserToken : UserTokenBase<Guid>
+    public class UserToken : UserTokenBase<Guid, Guid>
     {
         /// <summary>
         /// 获取或设置 所属用户信息

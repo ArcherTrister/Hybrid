@@ -113,8 +113,8 @@ namespace Hybrid.Zero.Identity.RealTime
         /// <returns></returns>
         private async Task<RefreshToken[]> GetRefreshTokens(TUser user)
         {
-            IHybridUserAuthenticationTokenStore<TUser, TUserKey> store =
-                _serviceProvider.GetService<IUserStore<TUser>>() as IHybridUserAuthenticationTokenStore<TUser, TUserKey>;
+            IHybridUserAuthenticationTokenStore<TUser> store =
+                _serviceProvider.GetService<IUserStore<TUser>>() as IHybridUserAuthenticationTokenStore<TUser>;
             if (store == null)
             {
                 return new RefreshToken[0];

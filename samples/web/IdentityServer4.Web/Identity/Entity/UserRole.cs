@@ -18,7 +18,7 @@ namespace Hybrid.Web.Identity.Entity
     /// 实体类：用户角色信息
     /// </summary>
     [Description("用户角色信息")]
-    public class UserRole : UserRoleBase<Guid, Guid>
+    public class UserRole : UserRoleBase<Guid, Guid, Guid>
     {
         /// <summary>
         /// 获取或设置 关联用户信息
