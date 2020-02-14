@@ -38,14 +38,15 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
 
         public IActionResult Index()
         {
-            if (_environment.IsDevelopment())
-            {
-                // only show in development
-                return View();
-            }
+            //if (_environment.IsDevelopment())
+            //{
+            //    // only show in development
+            //    return View();
+            //}
 
-            _logger.LogInformation("Homepage is disabled in production. Returning 404.");
-            return NotFound();
+            //_logger.LogInformation("Homepage is disabled in production. Returning 404.");
+            //return NotFound();
+            return View();
         }
 
         /// <summary>
@@ -70,11 +71,11 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
                     UiLocales = message.UiLocales
                 };
 
-                if (!_environment.IsDevelopment())
-                {
-                    // only show in development
-                    message.ErrorDescription = null;
-                }
+                //if (!_environment.IsDevelopment())
+                //{
+                //    // only show in development
+                //    message.ErrorDescription = null;
+                //}
             }
 
             return View(vm);

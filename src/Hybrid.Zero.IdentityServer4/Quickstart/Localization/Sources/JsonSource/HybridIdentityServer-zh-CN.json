@@ -1,6 +1,10 @@
 ﻿{
   "culture": "zh-CN",
   "texts": {
-
+    "LogIn": "登录",
+    "LogOut": "退出",
+    "Welcome": "欢迎使用本系统",
+    "Hello": "您好 ",
+    "QuartzCenter": "调度中心"
   }
 }

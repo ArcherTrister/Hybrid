@@ -1,6 +1,10 @@
 ﻿{
   "culture": "en-US",
   "texts": {
-
+    "LogIn": "Log In",
+    "LogOut": "Log Out",
+    "Welcome": "Welcome To Use This System",
+    "Hello": "Hello ",
+    "QuartzCenter": "Quartz Center"
   }
 }

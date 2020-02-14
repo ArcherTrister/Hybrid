@@ -10,7 +10,6 @@
     <RootNamespace>Hybrid.Quartz</RootNamespace>
     <AssemblyName>Hybrid.Quartz</AssemblyName>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
-    <EnableDefaultContentItems>false</EnableDefaultContentItems>
     <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
   </PropertyGroup>
 
