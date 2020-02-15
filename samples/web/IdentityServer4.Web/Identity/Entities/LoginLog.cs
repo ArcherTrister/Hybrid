@@ -13,7 +13,7 @@ using Hybrid.Domain.Entities;
 using System;
 using System.ComponentModel;
 
-namespace Hybrid.Web.Identity.Entity
+namespace Hybrid.Web.Identity.Entities
 {
     /// <summary>
     /// 实体类：用户登录日志

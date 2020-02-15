@@ -1,5 +1,5 @@
 ﻿using Hybrid.EventBuses;
-using Hybrid.Web.Identity.Entity;
+using Hybrid.Web.Identity.Entities;
 
 using Microsoft.AspNetCore.Http;
 

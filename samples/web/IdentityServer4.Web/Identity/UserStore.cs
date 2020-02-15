@@ -9,7 +9,7 @@
 
 using Hybrid.Domain.Repositories;
 using Hybrid.EventBuses;
-using Hybrid.Web.Identity.Entity;
+using Hybrid.Web.Identity.Entities;
 using Hybrid.Zero.Identity;
 
 using System;

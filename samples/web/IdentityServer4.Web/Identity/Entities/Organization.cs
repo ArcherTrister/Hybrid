@@ -13,7 +13,7 @@ using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace Hybrid.Web.Identity.Entity
+namespace Hybrid.Web.Identity.Entities
 {
     /// <summary>
     /// 实体类：组织机构

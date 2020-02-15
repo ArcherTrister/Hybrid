@@ -11,7 +11,7 @@ using Hybrid.Data;
 using Hybrid.Domain.Repositories;
 using Hybrid.EventBuses;
 using Hybrid.Extensions;
-using Hybrid.Web.Identity.Entity;
+using Hybrid.Web.Identity.Entities;
 using Hybrid.Zero.IdentityServer4;
 
 using IdentityModel.Client;

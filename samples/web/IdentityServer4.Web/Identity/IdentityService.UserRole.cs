@@ -1,7 +1,7 @@
 ﻿using Hybrid.Data;
 using Hybrid.Extensions;
 using Hybrid.Web.Identity.Dto;
-using Hybrid.Web.Identity.Entity;
+using Hybrid.Web.Identity.Entities;
 using Hybrid.Zero.Identity.Extensions;
 
 using Microsoft.AspNetCore.Identity;

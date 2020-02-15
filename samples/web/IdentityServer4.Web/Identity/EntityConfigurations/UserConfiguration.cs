@@ -7,7 +7,9 @@
 //  <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Data;
 using Hybrid.EntityFrameworkCore;
+using Hybrid.Web.Identity.Entities;
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
@@ -35,7 +37,7 @@ namespace Hybrid.Web.Identity.Entity.EntityConfiguration
                 UserName = "Admin",
                 NormalizedUserName = "ADMIN",
                 NickName = "SuperAdmin",
-                Gender = Data.GenderType.Male,
+                Gender = GenderType.Male,
                 Email = "Admin@example.com",
                 NormalizedEmail = "ADMIN@EXAMPLE.COM",
                 EmailConfirmed = true,

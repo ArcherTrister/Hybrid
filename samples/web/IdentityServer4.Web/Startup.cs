@@ -45,8 +45,7 @@ namespace Hybrid.Web
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            services.AddHttpClient("Identityserver4Client",
-            options =>
+            services.AddHttpClient("Identityserver4Client", options =>
             {
                 options.BaseAddress = new Uri(Configuration["Hybrid:Ids:Authority"]);
                 options.DefaultRequestHeaders.Accept.Add(
@@ -54,10 +53,10 @@ namespace Hybrid.Web
                 options.DefaultRequestHeaders.AcceptCharset.Add(new StringWithQualityHeaderValue("utf-8"));
             })
             .AddTransientHttpErrorPolicy(
-                p => p.WaitAndRetryAsync(3, _ => TimeSpan.FromMilliseconds(600)
+                    p => p.WaitAndRetryAsync(3, _ => TimeSpan.FromMilliseconds(600)
+                )
             )
-)
-.SetHandlerLifetime(TimeSpan.FromMinutes(5));
+            .SetHandlerLifetime(TimeSpan.FromMinutes(5));
 
             services.AddHttpClient("requestClient",
             options =>
@@ -68,10 +67,10 @@ namespace Hybrid.Web
                 options.DefaultRequestHeaders.AcceptCharset.Add(new StringWithQualityHeaderValue("utf-8"));
             })
             .AddTransientHttpErrorPolicy(
-                p => p.WaitAndRetryAsync(3, _ => TimeSpan.FromMilliseconds(600)
+                    p => p.WaitAndRetryAsync(3, _ => TimeSpan.FromMilliseconds(600)
+                )
             )
-)
-.SetHandlerLifetime(TimeSpan.FromMinutes(5));
+            .SetHandlerLifetime(TimeSpan.FromMinutes(5));
 
             //Add-Migration Init -Verbose -o Data/Migrations/Application
             services.AddHybrid<AspHybridModuleManager>();

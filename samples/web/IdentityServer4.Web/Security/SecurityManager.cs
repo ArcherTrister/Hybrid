@@ -11,7 +11,7 @@ using Hybrid.Core.EntityInfos;
 using Hybrid.Core.Functions;
 using Hybrid.Domain.Repositories;
 using Hybrid.EventBuses;
-using Hybrid.Web.Identity.Entity;
+using Hybrid.Web.Identity.Entities;
 using Hybrid.Web.Security.Dtos;
 using Hybrid.Web.Security.Entities;
 using Hybrid.Zero.Security;
@@ -25,9 +25,9 @@ namespace Hybrid.Web.Security
     /// 权限安全管理器
     /// </summary>
     public class SecurityManager
-        : SecurityManagerBase<Function, FunctionInputDto, 
-            EntityInfo, EntityInfoInputDto,Module, ModuleInputDto, Guid, 
-            ModuleFunction, ModuleRole, ModuleUser, EntityRole, EntityRoleInputDto, 
+        : SecurityManagerBase<Function, FunctionInputDto,
+            EntityInfo, EntityInfoInputDto, Module, ModuleInputDto, Guid,
+            ModuleFunction, ModuleRole, ModuleUser, EntityRole, EntityRoleInputDto,
             UserRole, Guid, Role, Guid, User, Guid>
     {
         /// <summary>

@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-// <copyright file="RoleInputDto.cs" company="cn.lxking">
+// <copyright file="UserInputDto.cs" company="cn.lxking">
 //     Copyright © 2019-2020 Hybrid. All rights reserved.
 // </copyright>
 // <site>https://www.lxking.cn</site>
@@ -8,7 +8,7 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.Mapping;
-using Hybrid.Web.Identity.Entity;
+using Hybrid.Web.Identity.Entities;
 using Hybrid.Zero.Identity.Dtos;
 
 using System;
@@ -16,9 +16,9 @@ using System;
 namespace Hybrid.Web.Identity.Dtos
 {
     /// <summary>
-    /// 输入DTO：角色信息
+    /// 输入DTO：用户信息
     /// </summary>
-    [MapTo(typeof(Role))]
-    public class RoleInputDto : RoleInputDtoBase<Guid>
+    [MapTo(typeof(User))]
+    public class UserInputDto : UserInputDtoBase<Guid>
     { }
 }

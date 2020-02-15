@@ -10,7 +10,7 @@
 using Hybrid.Core.Options;
 using Hybrid.Data;
 using Hybrid.Web.Identity;
-using Hybrid.Web.Identity.Entity;
+using Hybrid.Web.Identity.Entities;
 using Hybrid.Zero.IdentityServer4;
 
 using Microsoft.AspNetCore.Authentication;

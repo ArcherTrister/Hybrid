@@ -12,7 +12,7 @@ using Hybrid.Zero.Identity;
 using System;
 using System.ComponentModel;
 
-namespace Hybrid.Web.Identity.Entity
+namespace Hybrid.Web.Identity.Entities
 {
     /// <summary>
     /// 实体类：用户角色信息

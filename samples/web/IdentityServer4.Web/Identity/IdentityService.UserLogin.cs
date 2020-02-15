@@ -1,7 +1,7 @@
 ﻿using Hybrid.Data;
 using Hybrid.Exceptions;
 using Hybrid.Security.Claims;
-using Hybrid.Web.Identity.Entity;
+using Hybrid.Web.Identity.Entities;
 
 using System;
 using System.Linq;

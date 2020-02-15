@@ -8,7 +8,7 @@
 
 using Hybrid.Data;
 using Hybrid.Web.Identity.Dto;
-using Hybrid.Web.Identity.Entity;
+using Hybrid.Web.Identity.Entities;
 using Hybrid.Zero.Identity;
 
 using System;

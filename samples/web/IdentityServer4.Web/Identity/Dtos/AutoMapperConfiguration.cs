@@ -11,7 +11,7 @@ using AutoMapper.Configuration;
 
 using Hybrid.AutoMapper;
 using Hybrid.Dependency;
-using Hybrid.Web.Identity.Entity;
+using Hybrid.Web.Identity.Entities;
 
 using Microsoft.Extensions.DependencyInjection;
 

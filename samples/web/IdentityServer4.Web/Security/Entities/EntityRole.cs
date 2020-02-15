@@ -8,7 +8,7 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.Core.EntityInfos;
-using Hybrid.Web.Identity.Entity;
+using Hybrid.Web.Identity.Entities;
 using Hybrid.Zero.Security;
 
 using System;

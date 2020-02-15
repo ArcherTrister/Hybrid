@@ -13,7 +13,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 
-namespace Hybrid.Web.Identity.Entity
+namespace Hybrid.Web.Identity.Entities
 {
     /// <summary>
     /// 实体类：用户信息

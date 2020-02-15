@@ -7,7 +7,7 @@
 //  <last-date>2019-01-06 15:25</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Web.Identity.Entity;
+using Hybrid.Web.Identity.Entities;
 using Hybrid.Zero.Security;
 
 using System;

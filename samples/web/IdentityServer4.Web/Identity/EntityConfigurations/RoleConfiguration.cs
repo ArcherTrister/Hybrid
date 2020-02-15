@@ -8,6 +8,7 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.EntityFrameworkCore;
+using Hybrid.Web.Identity.Entities;
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;

@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="UserRoleOutputDto.cs" company="cn.lxking">
+//  <copyright file="RoleOutputDto.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -9,64 +9,60 @@
 
 using Hybrid.Domain.Entities;
 using Hybrid.Mapping;
-using Hybrid.Web.Identity.Entity;
+using Hybrid.Web.Identity.Entities;
 
 using System;
+using System.ComponentModel;
 
 namespace Hybrid.Web.Identity.Dtos
 {
     /// <summary>
-    /// 输出DTO：用户角色信息
+    /// 角色输出DTO
     /// </summary>
-    [MapFrom(typeof(UserRole))]
-    public class UserRoleOutputDto : IOutputDto, IDataAuthEnabled
+    [MapFrom(typeof(Role))]
+    public class RoleOutputDto : IOutputDto, IDataAuthEnabled
     {
-        /// <summary>
-        /// 初始化一个<see cref="UserRoleOutputDto"/>类型的新实例
-        /// </summary>
-        public UserRoleOutputDto(UserRole ur)
-        {
-            Id = ur.Id;
-            UserId = ur.UserId;
-            RoleId = ur.RoleId;
-            IsLocked = ur.IsLocked;
-            CreatedTime = ur.CreatedTime;
-        }
-
-        /// <summary>
-        /// 获取或设置 编号
-        /// </summary>
-        public Guid Id { get; set; }
-
-        /// <summary>
-        /// 获取或设置 用户编号
-        /// </summary>
-        public Guid UserId { get; set; }
-
         /// <summary>
         /// 获取或设置 角色编号
         /// </summary>
-        public Guid RoleId { get; set; }
+        [Description("编号")]
+        public int Id { get; set; }
+
+        /// <summary>
+        /// 获取或设置 角色名称
+        /// </summary>
+        [Description("角色名")]
+        public string Name { get; set; }
+
+        /// <summary>
+        /// 获取或设置 角色备注
+        /// </summary>
+        [Description("备注")]
+        public string Remark { get; set; }
+
+        /// <summary>
+        /// 获取或设置 是否管理
+        /// </summary>
+        [Description("是否管理")]
+        public bool IsAdmin { get; set; }
+
+        /// <summary>
+        /// 获取或设置 是否默认
+        /// </summary>
+        [Description("是否默认")]
+        public bool IsDefault { get; set; }
 
         /// <summary>
         /// 获取或设置 是否锁定
         /// </summary>
+        [Description("是否锁定")]
         public bool IsLocked { get; set; }
 
         /// <summary>
         /// 获取或设置 创建时间
         /// </summary>
+        [Description("创建时间")]
         public DateTime CreatedTime { get; set; }
-
-        /// <summary>
-        /// 获取或设置 用户名
-        /// </summary>
-        public string UserName { get; set; }
-
-        /// <summary>
-        /// 获取或设置 角色名
-        /// </summary>
-        public string RoleName { get; set; }
 
         #region Implementation of IDataAuthEnabled
 

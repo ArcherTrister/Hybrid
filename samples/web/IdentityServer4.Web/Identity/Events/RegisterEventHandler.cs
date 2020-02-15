@@ -1,6 +1,6 @@
 ﻿using Hybrid.EventBuses;
 using Hybrid.Net.Mail;
-using Hybrid.Web.Identity.Entity;
+using Hybrid.Web.Identity.Entities;
 
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.WebUtilities;
