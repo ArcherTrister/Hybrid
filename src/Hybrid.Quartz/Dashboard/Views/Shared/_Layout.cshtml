@@ -6,7 +6,7 @@
     {
         Title = "QuartzDashboard",
         Routers = new List<MenuItem>
-        {
+{
             new MenuItem("Quartz", "Scheduler", "Index") { Name = "Scheduler", Title = "Scheduler" },
             new MenuItem("Quartz", "Jobs", "Index") { Name = "Jobs", Title = "Jobs" },
             new MenuItem("Quartz", "Triggers", "Index") { Name = "Triggers", Title = "Triggers" },
@@ -97,7 +97,7 @@
                             </li>
                         }
                     </ul>
-                    <partial name="_LoginPartial" />
+                    <partial name="_QuartzLoginPartial" />
                 </div><!--/.nav-collapse -->
             </div>
             <script type="text/javascript">
@@ -116,7 +116,7 @@
 
     <main>
         <div class="container">
-            <partial name="_CookieConsentPartial" />
+            <partial name="_QuartzCookieConsentPartial" />
             @RenderBody()
         </div>
     </main>

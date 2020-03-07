@@ -16,13 +16,13 @@ using System.IO;
 namespace Hybrid.Core.Options
 {
     /// <summary>
-    /// 配置管理器
+    /// appsettings配置文件读取器
     /// </summary>
-    public static class AppSettingsManager
+    public static class AppSettingsReader
     {
         private static IConfiguration _configuration;
 
-        static AppSettingsManager()
+        static AppSettingsReader()
         {
             BuildConfiguration();
         }
@@ -30,7 +30,8 @@ namespace Hybrid.Core.Options
         private static void BuildConfiguration()
         {
             var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json", false).AddJsonFile("appsettings.Development.json", true);
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                .AddJsonFile("appsettings.Development.json", optional: true, reloadOnChange: true);
             _configuration = builder.Build();
         }
 
@@ -38,22 +39,38 @@ namespace Hybrid.Core.Options
         /// 读取指定节点信息
         /// </summary>
         /// <param name="key">节点名称，多节点以:分隔</param>
-        public static string Get(string key)
+        public static string GetString(string key)
         {
             return _configuration[key];
         }
 
         /// <summary>
-        /// 读取指定节点信息
+        /// 读取指定节点的简单数据类型的值
         /// </summary>
-        public static T Get<T>(string key)
+        /// <param name="key">节点名称，多节点以:分隔</param>
+        /// <param name="defaultValue">默认值，读取失败时使用</param>
+        public static T GetValue<T>(string key, T defaultValue = default)
         {
-            string json = Get(key);
-            if (string.IsNullOrEmpty(json))
+            string str = _configuration[key];
+            return str.CastTo<T>(defaultValue);
+        }
+
+        /// <summary>
+        /// 读取指定节点的复杂类型的值，并绑定到指定的空实例上
+        /// </summary>
+        /// <typeparam name="T">复杂类型</typeparam>
+        /// <param name="key">节点名称，多节点以:分隔</param>
+        /// <param name="instance">要绑定的空实例</param>
+        /// <returns></returns>
+        public static T GetInstance<T>(string key, T instance)
+        {
+            var config = _configuration.GetSection(key);
+            if (!config.Exists())
             {
                 return default(T);
             }
-            return json.FromJsonString<T>();
+            config.Bind(instance);
+            return instance;
         }
     }
 }

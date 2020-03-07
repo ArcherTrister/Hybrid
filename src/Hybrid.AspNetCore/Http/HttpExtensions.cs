@@ -21,7 +21,6 @@ namespace Hybrid.AspNetCore.Http
 #if NETSTANDARD
             request.EnableRewind();
 #endif
-            Stream original = request.Body;
             using (StreamReader reader = new StreamReader(request.Body))
             {
                 reader.BaseStream.Seek(0, SeekOrigin.Begin);
@@ -84,6 +83,5 @@ namespace Hybrid.AspNetCore.Http
 
             return false;
         }
-
     }
 }

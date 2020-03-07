@@ -2,6 +2,7 @@
 using System.Net.Http;
 using System.Security.Cryptography;
 using System.Threading.Tasks;
+using Hybrid.Core.Options;
 using Hybrid.Dependency;
 using Hybrid.Exceptions;
 using Hybrid.Extensions;
@@ -23,7 +24,6 @@ namespace Hybrid.AspNetCore.Http
         private readonly ILogger _logger;
         private readonly string _privateKey;
         private TransmissionEncryptor _encryptor;
-        private readonly IHttpEncryptConfiguration _httpEncrypt;
 
         /// <summary>
         /// 初始化一个<see cref="HostHttpCrypto"/>类型的新实例
@@ -31,10 +31,11 @@ namespace Hybrid.AspNetCore.Http
         public HostHttpCrypto(IServiceProvider provider)
         {
             _logger = provider.GetLogger(typeof(HostHttpCrypto));
-            _httpEncrypt = provider.GetRequiredService<IHttpEncryptConfiguration>();
-            if (_httpEncrypt?.IsEnabled == true)
+            HybridOptions options = provider.GetHybridOptions();
+            if (options?.HttpEncrypt?.IsEnabled == true)
             {
-                _privateKey = _httpEncrypt.HostPrivateKey;
+                HttpEncryptConfiguration httpEncrypt = options.HttpEncrypt;
+                _privateKey = httpEncrypt.HostPrivateKey;
                 if (string.IsNullOrEmpty(_privateKey))
                 {
                     throw new HybridException("配置文件中HttpEncrypt节点的HostPrivateKey不能为空");
@@ -82,7 +83,6 @@ namespace Hybrid.AspNetCore.Http
 
                 await request.WriteBodyAsync(data);
                 return request;
-
             }
             catch (Exception ex)
             {

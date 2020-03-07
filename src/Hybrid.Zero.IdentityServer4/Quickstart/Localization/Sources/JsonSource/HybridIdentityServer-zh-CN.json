@@ -5,6 +5,9 @@
     "LogOut": "退出",
     "Welcome": "欢迎使用本系统",
     "Hello": "您好 ",
-    "QuartzCenter": "调度中心"
+    "QuartzCenter": "调度中心",
+    //CookieConsent
+    "CookieConsent": "此处概述您的隐私和cookie使用策略。",
+    "Accept": "接受"
   }
 }

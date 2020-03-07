@@ -8,7 +8,7 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.AspNetCore.Mvc.Filters;
-using Hybrid.Core;
+using Hybrid.Authorization;
 using Hybrid.Core.Functions;
 using Hybrid.Exceptions;
 using Hybrid.Extensions;

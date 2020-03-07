@@ -5,6 +5,9 @@
     "LogOut": "Log Out",
     "Welcome": "Welcome To Use This System",
     "Hello": "Hello ",
-    "QuartzCenter": "Quartz Center"
+    "QuartzCenter": "Quartz Center",
+    //CookieConsent
+    "CookieConsent": "Use this space to summarize your privacy and cookie use policy.",
+    "Accept": "Accept"
   }
 }

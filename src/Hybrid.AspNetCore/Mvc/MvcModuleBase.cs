@@ -13,6 +13,7 @@ using Hybrid.AspNetCore.UI;
 using Hybrid.Core.Modules;
 
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -38,6 +39,15 @@ namespace Hybrid.AspNetCore.Mvc
         /// <returns></returns>
         public override IServiceCollection AddServices(IServiceCollection services)
         {
+            services.Configure<CookiePolicyOptions>(options =>
+            {
+                // This lambda determines whether user consent for non-essential
+                // cookies is needed for a given request.
+                options.CheckConsentNeeded = context => true;
+                // requires using Microsoft.AspNetCore.Http;
+                options.MinimumSameSitePolicy = SameSiteMode.None;
+            });
+
             services = AddCors(services);
 
             var builder = services.AddControllersWithViews(options =>
@@ -96,6 +106,7 @@ namespace Hybrid.AspNetCore.Mvc
         /// <param name="app">应用程序构建器</param>
         public override void UseModule(IApplicationBuilder app)
         {
+            app.UseCookiePolicy();
             app.UseRouting();
             UseCors(app);
             //app.UseMvcWithAreaRoute();
