@@ -59,6 +59,7 @@ namespace Hybrid.AspNetCore.Mvc.Filters
             {
                 operation.UserId = identity.GetUserId();
                 operation.UserName = identity.GetUserName();
+                operation.NickName = identity.GetNickName();
             }
 
             dict.AuditOperation = operation;
@@ -73,14 +74,13 @@ namespace Hybrid.AspNetCore.Mvc.Filters
                 return;
             }
             dict.AuditOperation.EndedTime = DateTime.Now;
-            //IUnitOfWork unitOfWork = provider.GetUnitOfWork<Function, Guid>();
-            ////回滚之前业务处理中的未提交事务，防止审计信息保存时误提交
-            //unitOfWork?.Rollback();
-            IUnitOfWorkManager unitOfWorkManager = provider.GetService<IUnitOfWorkManager>();
-            unitOfWorkManager?.Rollback();
+            IUnitOfWork unitOfWork = provider.GetUnitOfWork<Function, Guid>();
+            //回滚之前业务处理中的未提交事务，防止审计信息保存时误提交
+            unitOfWork?.Rollback();
+
             IAuditStore store = provider.GetService<IAuditStore>();
             store?.Save(dict.AuditOperation);
-            unitOfWorkManager?.Commit();
+            unitOfWork?.Commit();
         }
     }
 

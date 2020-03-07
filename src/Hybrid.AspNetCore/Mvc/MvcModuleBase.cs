@@ -58,8 +58,8 @@ namespace Hybrid.AspNetCore.Mvc
                 //options.OutputFormatters.Add(new XmlDataContractSerializerOutputFormatter());
                 //options.OutputFormatters.Insert(0, new XmlDataContractSerializerOutputFormatter());
                 //    //options.Conventions.Add(new DashedRoutingConvention());
-                options.Filters.Add(new OnlineUserAuthorizationFilter()); // 构建在线用户信息
-                options.Filters.Add(new FunctionAuthorizationFilter()); // 全局功能权限过滤器
+                //options.Filters.Add(new OnlineUserAuthorizationFilter()); // 构建在线用户信息
+                //options.Filters.Add(new FunctionAuthorizationFilter()); // 全局功能权限过滤器
                 options.Filters.Add(new OperateAuditFilter());
                 //options.Filters.Add(new MvcUnitOfWorkFilter());
                 //options.Filters.Add(new PageUnitOfWorkFilter());
@@ -92,6 +92,7 @@ namespace Hybrid.AspNetCore.Mvc
             });
 
             services.AddScoped<UnitOfWorkFilterImpl>();
+            services.AddHttpsRedirection(opts => opts.HttpsPort = 443);
             //services.AddScoped<OperateAuditFilter>();
             //services.AddScoped<MvcUnitOfWorkFilter>();
             //services.AddScoped<PageUnitOfWorkFilter>();

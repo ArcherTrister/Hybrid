@@ -43,6 +43,11 @@ namespace Hybrid.Audits
         public string UserName { get; set; }
 
         /// <summary>
+        /// 获取或设置 当前用户昵称
+        /// </summary>
+        public string NickName { get; set; }
+
+        /// <summary>
         /// 获取或设置 当前访问IP
         /// </summary>
         public string ClientIpAddress { get; set; }

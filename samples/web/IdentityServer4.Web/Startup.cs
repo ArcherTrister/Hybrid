@@ -189,7 +189,7 @@ namespace Hybrid.Web
 
             app.UseCookiePolicy()
                 //.UseMiddleware<NodeNoFoundHandlerMiddleware>()
-                .UseMiddleware<NodeExceptionHandlerMiddleware>()
+                .UseMiddleware<ExceptionHandlerMiddleware>()
                 .UseDefaultFiles()
                 .UseStaticFiles()
                 .UseHybrid();

@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <Import Project="..\..\build\packages.props" />
-  
+
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <PackageId>Hybrid.AspNetCore</PackageId>
@@ -23,9 +23,6 @@
 
   <ItemGroup>
     <Compile Remove="Extensions\OperationResultExtensions.cs" />
-    <Compile Remove="Mvc\Filters\AuditOperationAttribute.cs" />
-    <Compile Remove="Mvc\Models\AjaxResult.cs" />
-    <Compile Remove="UI\AjaxResponse.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -41,5 +38,4 @@
   <ItemGroup>
     <ProjectReference Include="..\Hybrid\Hybrid.csproj" />
   </ItemGroup>
-
 </Project>

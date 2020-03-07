@@ -11,9 +11,13 @@ using Hybrid.Data;
 using Microsoft.AspNetCore.Http;
 
 using System;
+using System.Linq;
 
 namespace Hybrid.AspNetCore.Extensions
 {
+    /// <summary>
+    /// HttpContext扩展方法
+    /// </summary>
     public static class HttpRequestExtensions
     {
         /// <summary>
@@ -28,8 +32,9 @@ namespace Hybrid.AspNetCore.Extensions
         public static bool IsAjaxRequest(this HttpRequest request)
         {
             Check.NotNull(request, nameof(request));
-            bool? flag = request.Headers?["X-Requested-With"].ToString()?.Equals("XMLHttpRequest", StringComparison.OrdinalIgnoreCase);
-            return flag.HasValue && flag.Value;
+
+            return string.Equals(request.Query["X-Requested-With"], "XMLHttpRequest", StringComparison.Ordinal)
+                || string.Equals(request.Headers["X-Requested-With"], "XMLHttpRequest", StringComparison.Ordinal);
         }
 
         /// <summary>

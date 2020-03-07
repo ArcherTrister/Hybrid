@@ -20,17 +20,15 @@ namespace Hybrid.AspNetCore.Middlewares
     /// <summary>
     /// Node前端技术404返回index.html中间件
     /// </summary>
-    public class NodeNoFoundHandlerMiddleware : IMiddleware
+    public class NoFoundHandlerMiddleware : IMiddleware
     {
         private readonly RequestDelegate _next;
 
         /// <summary>
-        /// 初始化一个<see cref="NodeNoFoundHandlerMiddleware"/>类型的新实例
+        /// 初始化一个<see cref="NoFoundHandlerMiddleware"/>类型的新实例
         /// </summary>
-        public NodeNoFoundHandlerMiddleware(RequestDelegate next)
+        public NoFoundHandlerMiddleware(RequestDelegate next)
         {
-            Check.NotNull(next, nameof(next));
-
             _next = next;
         }
 

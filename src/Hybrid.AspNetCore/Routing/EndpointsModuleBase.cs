@@ -52,7 +52,7 @@ namespace Hybrid.AspNetCore.Routing
         /// <param name="endpoints">终结点路由配置</param>
         protected virtual IEndpointRouteBuilder MvcEndpoints(IEndpointRouteBuilder endpoints)
         {
-            endpoints.MvcEndpointsWithAreaRoute();
+            endpoints.MapControllersWithAreaRoute();
 
             return endpoints;
         }
