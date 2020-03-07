@@ -6,7 +6,7 @@ using Hybrid.AspNetCore.Mvc.Filters;
 using Hybrid.AspNetCore.Mvc.Models;
 using Hybrid.AspNetCore.Services;
 using Hybrid.AspNetCore.UI;
-using Hybrid.Core.ModuleInfos;
+using Hybrid.Authorization.ModuleInfos;
 using Hybrid.Data;
 using Hybrid.Domain.Repositories;
 using Hybrid.EventBuses;

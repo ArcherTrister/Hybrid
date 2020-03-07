@@ -8,7 +8,7 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.Data;
-using Hybrid.Security;
+using Hybrid.Authorization;
 
 using System;
 using System.Linq.Expressions;

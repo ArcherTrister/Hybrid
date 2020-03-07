@@ -7,7 +7,7 @@
 //  <last-date>2018-05-10 20:50</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Core.Functions;
+using Hybrid.Authorization.Functions;
 using Hybrid.Data;
 using Hybrid.Security.Claims;
 
@@ -16,7 +16,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Security.Principal;
 
-namespace Hybrid.Security
+namespace Hybrid.Authorization
 {
     /// <summary>
     /// 功能权限检查基类
@@ -183,7 +183,7 @@ namespace Hybrid.Security
             return new AuthorizationResult(AuthorizationStatus.Forbidden);
         }
 
-        #endregion
+        #endregion NoApi
 
         #region Api
 
@@ -291,6 +291,6 @@ namespace Hybrid.Security
         //    return new AuthorizationResult(AuthorizationStatus.Forbidden, function.IsApi);
         //}
 
-        #endregion
+        #endregion Api
     }
 }

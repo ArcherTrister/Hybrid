@@ -8,7 +8,7 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.Audits.Configuration;
-using Hybrid.Core.Functions;
+using Hybrid.Authorization.Functions;
 
 using Newtonsoft.Json;
 

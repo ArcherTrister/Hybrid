@@ -7,7 +7,7 @@
 //  <last-date>2018-06-27 4:44</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Core.Functions;
+using Hybrid.Authorization.Functions;
 using Hybrid.Web.Identity.Entities;
 using Hybrid.Web.Security.Entities;
 using Hybrid.Zero.Security;

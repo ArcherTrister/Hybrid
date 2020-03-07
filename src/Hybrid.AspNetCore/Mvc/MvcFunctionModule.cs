@@ -7,8 +7,8 @@
 //  <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Core.Functions;
-using Hybrid.Core.ModuleInfos;
+using Hybrid.Authorization.Functions;
+using Hybrid.Authorization.ModuleInfos;
 using Hybrid.Core.Modules;
 using Hybrid.Dependency;
 

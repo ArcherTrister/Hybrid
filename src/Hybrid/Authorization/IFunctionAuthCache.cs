@@ -9,7 +9,7 @@
 
 using System;
 
-namespace Hybrid.Security
+namespace Hybrid.Authorization
 {
     /// <summary>
     /// 定义功能权限缓存的功能

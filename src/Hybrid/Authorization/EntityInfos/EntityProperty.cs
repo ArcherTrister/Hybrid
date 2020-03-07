@@ -9,7 +9,7 @@
 
 using System.Collections.Generic;
 
-namespace Hybrid.Core.EntityInfos
+namespace Hybrid.Authorization.EntityInfos
 {
     /// <summary>
     /// 实体属性信息

@@ -24,7 +24,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace Hybrid.Core.Functions
+namespace Hybrid.Authorization.Functions
 {
     /// <summary>
     /// 功能信息处理基类

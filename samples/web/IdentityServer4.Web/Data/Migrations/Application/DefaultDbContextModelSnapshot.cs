@@ -17,7 +17,7 @@ namespace IdentityServer4.Web.Data.Migrations.Application
                 .HasAnnotation("ProductVersion", "3.1.1")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
-            modelBuilder.Entity("Hybrid.Core.EntityInfos.EntityInfo", b =>
+            modelBuilder.Entity("Hybrid.Authorization.EntityInfos.EntityInfo", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -47,7 +47,7 @@ namespace IdentityServer4.Web.Data.Migrations.Application
                     b.ToTable("EntityInfo");
                 });
 
-            modelBuilder.Entity("Hybrid.Core.Functions.Function", b =>
+            modelBuilder.Entity("Hybrid.Authorization.Functions.Function", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -932,7 +932,7 @@ namespace IdentityServer4.Web.Data.Migrations.Application
 
             modelBuilder.Entity("Hybrid.Web.Security.Entities.EntityRole", b =>
                 {
-                    b.HasOne("Hybrid.Core.EntityInfos.EntityInfo", "EntityInfo")
+                    b.HasOne("Hybrid.Authorization.EntityInfos.EntityInfo", "EntityInfo")
                         .WithMany()
                         .HasForeignKey("EntityId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -947,7 +947,7 @@ namespace IdentityServer4.Web.Data.Migrations.Application
 
             modelBuilder.Entity("Hybrid.Web.Security.Entities.EntityUser", b =>
                 {
-                    b.HasOne("Hybrid.Core.EntityInfos.EntityInfo", "EntityInfo")
+                    b.HasOne("Hybrid.Authorization.EntityInfos.EntityInfo", "EntityInfo")
                         .WithMany()
                         .HasForeignKey("EntityId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -969,7 +969,7 @@ namespace IdentityServer4.Web.Data.Migrations.Application
 
             modelBuilder.Entity("Hybrid.Web.Security.Entities.ModuleFunction", b =>
                 {
-                    b.HasOne("Hybrid.Core.Functions.Function", "Function")
+                    b.HasOne("Hybrid.Authorization.Functions.Function", "Function")
                         .WithMany()
                         .HasForeignKey("FunctionId")
                         .OnDelete(DeleteBehavior.Cascade)

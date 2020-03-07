@@ -10,8 +10,8 @@
 using Hybrid.AspNetCore.Mvc.Controllers;
 using Hybrid.AspNetCore.Services;
 using Hybrid.AspNetCore.UI;
+using Hybrid.Authorization.ModuleInfos;
 using Hybrid.CodeGenerator;
-using Hybrid.Core.ModuleInfos;
 using Hybrid.Core.Modules;
 using Hybrid.Data;
 using Hybrid.Drawing;

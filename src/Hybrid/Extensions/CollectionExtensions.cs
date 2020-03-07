@@ -92,6 +92,41 @@ namespace Hybrid.Extensions
         {
             return collection == null || collection.Count == 0;
         }
+
+        /// <summary>
+        /// Adds an item to the collection if it's not already in the collection.
+        /// </summary>
+        /// <param name="source">Collection</param>
+        /// <param name="item">Item to check and add</param>
+        /// <typeparam name="T">Type of the items in the collection</typeparam>
+        /// <returns>Returns True if added, returns False if not.</returns>
+        public static bool AddIfNotContains<T>(this ICollection<T> source, T item)
+        {
+            if (source == null)
+            {
+                throw new ArgumentNullException("source");
+            }
+
+            if (source.Contains(item))
+            {
+                return false;
+            }
+
+            source.Add(item);
+            return true;
+        }
+
+        public static int FindIndexOrDefault<T>(this List<T> ts, Predicate<T> match) where T : class
+        {
+            try
+            {
+                return ts.FindIndex(match);
+            }
+            catch (Exception)
+            {
+                return -1;
+            }
+        }
     }
 
     ///// <summary>
@@ -105,29 +140,6 @@ namespace Hybrid.Extensions
     //    public static bool IsNullOrEmpty<T>(this ICollection<T> source)
     //    {
     //        return source == null || source.Count <= 0;
-    //    }
-
-    //    /// <summary>
-    //    /// Adds an item to the collection if it's not already in the collection.
-    //    /// </summary>
-    //    /// <param name="source">Collection</param>
-    //    /// <param name="item">Item to check and add</param>
-    //    /// <typeparam name="T">Type of the items in the collection</typeparam>
-    //    /// <returns>Returns True if added, returns False if not.</returns>
-    //    public static bool AddIfNotContains<T>(this ICollection<T> source, T item)
-    //    {
-    //        if (source == null)
-    //        {
-    //            throw new ArgumentNullException("source");
-    //        }
-
-    //        if (source.Contains(item))
-    //        {
-    //            return false;
-    //        }
-
-    //        source.Add(item);
-    //        return true;
     //    }
 
     //    /// <summary>
@@ -195,16 +207,5 @@ namespace Hybrid.Extensions
     //        return item;
     //    }
 
-    //    public static int FindIndexOrDefault<T>(this List<T> ts, Predicate<T> match) where T : class
-    //    {
-    //        try
-    //        {
-    //            return ts.FindIndex(match);
-    //        }
-    //        catch (Exception)
-    //        {
-    //            return -1;
-    //        }
-    //    }
     //}
 }

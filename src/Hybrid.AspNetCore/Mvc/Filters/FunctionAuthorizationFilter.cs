@@ -9,7 +9,8 @@
 
 using Hybrid.AspNetCore.Extensions;
 using Hybrid.AspNetCore.UI;
-using Hybrid.Core.Functions;
+using Hybrid.Authorization;
+using Hybrid.Authorization.Functions;
 using Hybrid.Data;
 using Hybrid.Security;
 

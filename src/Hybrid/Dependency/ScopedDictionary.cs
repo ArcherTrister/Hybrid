@@ -8,7 +8,7 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.Audits;
-using Hybrid.Core.Functions;
+using Hybrid.Authorization.Functions;
 
 using Microsoft.Extensions.DependencyInjection;
 

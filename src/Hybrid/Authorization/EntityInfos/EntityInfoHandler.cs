@@ -13,7 +13,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 using System;
 
-namespace Hybrid.Core.EntityInfos
+namespace Hybrid.Authorization.EntityInfos
 {
     /// <summary>
     /// 实体信息处理器

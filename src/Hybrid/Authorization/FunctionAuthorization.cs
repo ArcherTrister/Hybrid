@@ -7,7 +7,7 @@
 //  <last-date>2018-05-11 1:05</last-date>
 // -----------------------------------------------------------------------
 
-namespace Hybrid.Security
+namespace Hybrid.Authorization
 {
     /// <summary>
     /// 功能权限验证类

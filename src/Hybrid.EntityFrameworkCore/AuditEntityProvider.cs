@@ -8,8 +8,8 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.Audits;
-using Hybrid.Core.EntityInfos;
-using Hybrid.Core.Functions;
+using Hybrid.Authorization.EntityInfos;
+using Hybrid.Authorization.Functions;
 using Hybrid.Dependency;
 using Hybrid.Extensions;
 

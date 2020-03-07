@@ -7,11 +7,11 @@
 //  <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Core.EntityInfos;
-using Hybrid.Core.Functions;
-using Hybrid.Core.ModuleInfos;
+using Hybrid.Authorization;
+using Hybrid.Authorization.EntityInfos;
+using Hybrid.Authorization.Functions;
+using Hybrid.Authorization.ModuleInfos;
 using Hybrid.Core.Modules;
-using Hybrid.Security;
 using Hybrid.Zero.Security.Dtos;
 
 using Microsoft.Extensions.DependencyInjection;

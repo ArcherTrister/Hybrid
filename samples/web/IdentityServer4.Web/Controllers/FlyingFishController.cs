@@ -2,7 +2,7 @@
 using FlyingFish.Mobile.Ruqi.Dtos;
 using Hybrid.AspNetCore.Mvc.Controllers;
 using Hybrid.AspNetCore.UI;
-using Hybrid.Core.ModuleInfos;
+using Hybrid.Authorization.ModuleInfos;
 
 using IdentityServer4.Web.Services;
 
@@ -24,7 +24,7 @@ namespace IdentityServer4.Web.Controllers
         private readonly IFlyingFishService _flyingFishService;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="flyingFishService"></param>
         public FlyingFishController(IFlyingFishService flyingFishService)

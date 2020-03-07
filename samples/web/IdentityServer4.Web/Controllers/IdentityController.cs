@@ -13,7 +13,7 @@
 //using Hybrid.AspNetCore.UI;
 //using Hybrid.Collections;
 //using Hybrid.Core;
-//using Hybrid.Core.ModuleInfos;
+//using Hybrid.Authorization.ModuleInfos;
 //using Hybrid.Data;
 //using Hybrid.Domain.Uow;
 //using Hybrid.Extensions;

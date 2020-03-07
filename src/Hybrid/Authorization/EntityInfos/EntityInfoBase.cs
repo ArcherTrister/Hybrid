@@ -19,7 +19,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Reflection;
 
-namespace Hybrid.Core.EntityInfos
+namespace Hybrid.Authorization.EntityInfos
 {
     /// <summary>
     /// 实体信息基类

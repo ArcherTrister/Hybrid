@@ -7,6 +7,7 @@
 //  <last-date>2017-11-15 19:20</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Authorization;
 using Hybrid.Data;
 using Hybrid.Domain.Entities;
 using Hybrid.Domain.EntityFramework;
@@ -16,7 +17,6 @@ using Hybrid.Exceptions;
 using Hybrid.Extensions;
 using Hybrid.Filter;
 using Hybrid.Mapping;
-using Hybrid.Security;
 using Hybrid.Security.Claims;
 using Hybrid.Threading;
 

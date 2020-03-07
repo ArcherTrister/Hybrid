@@ -9,7 +9,7 @@
 
 using System.ComponentModel;
 
-namespace Hybrid.Core.EntityInfos
+namespace Hybrid.Authorization.EntityInfos
 {
     /// <summary>
     /// 实体类：实体信息类

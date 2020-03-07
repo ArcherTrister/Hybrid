@@ -9,7 +9,7 @@
 
 using System.ComponentModel;
 
-namespace Hybrid.Core.Functions
+namespace Hybrid.Authorization.Functions
 {
     /// <summary>
     /// 实体类：功能信息

@@ -13,7 +13,7 @@ using System;
 using System.ComponentModel;
 using System.Diagnostics;
 
-namespace Hybrid.Core.Functions
+namespace Hybrid.Authorization.Functions
 {
     /// <summary>
     /// 功能信息基类

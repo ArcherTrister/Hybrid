@@ -7,12 +7,12 @@
 //  <last-date>2018-06-23 11:38</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Core.Functions;
+using Hybrid.Authorization.Functions;
 using Hybrid.Domain.Entities;
 using System;
 using System.Diagnostics;
 
-namespace Hybrid.Core.ModuleInfos
+namespace Hybrid.Authorization.ModuleInfos
 {
     /// <summary>
     /// 从程序集中提取的模块信息载体，包含模块基本信息和模块依赖的功能信息集合

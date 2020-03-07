@@ -7,13 +7,13 @@
 //  <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Authorization;
+using Hybrid.Authorization.EntityInfos;
 using Hybrid.Caching;
-using Hybrid.Core.EntityInfos;
 using Hybrid.Dependency;
 using Hybrid.Domain.Repositories;
 using Hybrid.Extensions;
 using Hybrid.Filter;
-using Hybrid.Security;
 using Hybrid.Zero.Identity;
 
 using Microsoft.Extensions.Caching.Distributed;

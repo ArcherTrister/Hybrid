@@ -11,7 +11,7 @@ using Hybrid.Domain.Entities;
 
 using System;
 
-namespace Hybrid.Core.Functions
+namespace Hybrid.Authorization.Functions
 {
     /// <summary>
     /// 定义功能信息

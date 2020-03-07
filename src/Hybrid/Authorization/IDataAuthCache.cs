@@ -9,7 +9,7 @@
 
 using Hybrid.Filter;
 
-namespace Hybrid.Security
+namespace Hybrid.Authorization
 {
     /// <summary>
     /// 定义数据权限缓存的功能

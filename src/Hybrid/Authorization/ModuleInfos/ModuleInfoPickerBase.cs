@@ -7,7 +7,7 @@
 //  <last-date>2018-06-23 16:25</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Core.Functions;
+using Hybrid.Authorization.Functions;
 using Hybrid.Data;
 using Hybrid.Domain.Entities;
 using Hybrid.Extensions;
@@ -20,7 +20,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace Hybrid.Core.ModuleInfos
+namespace Hybrid.Authorization.ModuleInfos
 {
     /// <summary>
     /// 模块信息提取器基类

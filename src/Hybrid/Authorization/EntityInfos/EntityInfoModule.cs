@@ -14,7 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.ComponentModel;
 
-namespace Hybrid.Core.EntityInfos
+namespace Hybrid.Authorization.EntityInfos
 {
     /// <summary>
     /// 实体信息模块

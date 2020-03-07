@@ -14,7 +14,7 @@ using Hybrid.Exceptions;
 using Hybrid.Extensions;
 using Hybrid.Linq;
 using Hybrid.Properties;
-using Hybrid.Security;
+using Hybrid.Authorization;
 using Hybrid.Security.Claims;
 
 using System;

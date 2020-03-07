@@ -7,7 +7,7 @@
 //  <last-date>2018-12-19 18:07</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Core.Functions;
+using Hybrid.Authorization.Functions;
 using Hybrid.Domain.Entities;
 using Hybrid.Filter;
 

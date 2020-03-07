@@ -7,7 +7,7 @@
 //  <last-date>2018-07-08 3:03</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Core.EntityInfos;
+using Hybrid.Authorization.EntityInfos;
 using Hybrid.Mapping;
 
 using System;

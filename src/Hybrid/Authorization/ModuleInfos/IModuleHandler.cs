@@ -7,7 +7,7 @@
 //  <last-date>2018-06-23 2:31</last-date>
 // -----------------------------------------------------------------------
 
-namespace Hybrid.Core.ModuleInfos
+namespace Hybrid.Authorization.ModuleInfos
 {
     /// <summary>
     /// 定义模块信息处理器，负责在系统初始化时从程序集获取最新的模块信息，并同步到数据库中

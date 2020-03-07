@@ -297,6 +297,11 @@ namespace Hybrid.Extensions
             return sb.ToString();
         }
 
+        public static Assembly GetAssembly(this Type type)
+        {
+            return type.GetTypeInfo().Assembly;
+        }
+
         #region 私有方法
 
         private static readonly Dictionary<Type, string> _builtInTypeNames = new Dictionary<Type, string>

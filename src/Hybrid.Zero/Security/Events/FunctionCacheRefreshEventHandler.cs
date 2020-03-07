@@ -8,7 +8,7 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.AspNetCore.Extensions;
-using Hybrid.Core.Functions;
+using Hybrid.Authorization.Functions;
 using Hybrid.EventBuses;
 
 using Microsoft.Extensions.DependencyInjection;

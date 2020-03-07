@@ -9,7 +9,7 @@
 
 using System;
 
-namespace Hybrid.Core.Functions
+namespace Hybrid.Authorization.Functions
 {
     /// <summary>
     /// 标注当前Action不作为Function信息进行收集

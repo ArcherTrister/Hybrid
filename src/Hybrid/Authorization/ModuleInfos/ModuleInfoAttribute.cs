@@ -9,7 +9,7 @@
 
 using System;
 
-namespace Hybrid.Core.ModuleInfos
+namespace Hybrid.Authorization.ModuleInfos
 {
     /// <summary>
     /// 描述把当前功能(Controller或者Action)封装为一个模块(Module)节点，可以设置模块依赖的其他功能，模块的位置信息等

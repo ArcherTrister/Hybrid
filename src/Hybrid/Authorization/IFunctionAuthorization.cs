@@ -7,11 +7,11 @@
 //  <last-date>2018-05-10 19:56</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Core.Functions;
+using Hybrid.Authorization.Functions;
 
 using System.Security.Principal;
 
-namespace Hybrid.Security
+namespace Hybrid.Authorization
 {
     /// <summary>
     /// 定义功能权限验证

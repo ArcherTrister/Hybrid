@@ -7,8 +7,9 @@
 //  <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Core.EntityInfos;
-using Hybrid.Core.Functions;
+using Hybrid.Authorization;
+using Hybrid.Authorization.EntityInfos;
+using Hybrid.Authorization.Functions;
 using Hybrid.Data;
 using Hybrid.Domain.Repositories;
 using Hybrid.EventBuses;
@@ -16,7 +17,6 @@ using Hybrid.Exceptions;
 using Hybrid.Extensions;
 using Hybrid.Filter;
 using Hybrid.Mapping;
-using Hybrid.Security;
 using Hybrid.Zero.Identity;
 using Hybrid.Zero.Security.Dtos;
 using Hybrid.Zero.Security.Events;

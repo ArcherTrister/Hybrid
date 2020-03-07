@@ -11,7 +11,7 @@ using Hybrid.Domain.Entities;
 
 using System;
 
-namespace Hybrid.Core.EntityInfos
+namespace Hybrid.Authorization.EntityInfos
 {
     /// <summary>
     /// 定义数据实体信息

@@ -9,7 +9,7 @@
 
 using Hybrid.AspNetCore.Mvc.Filters;
 using Hybrid.Authorization;
-using Hybrid.Core.Functions;
+using Hybrid.Authorization.Functions;
 using Hybrid.Exceptions;
 using Hybrid.Extensions;
 using Hybrid.Reflection;

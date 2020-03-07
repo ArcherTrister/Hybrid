@@ -12,7 +12,7 @@ using Hybrid.Extensions;
 
 using System.Diagnostics;
 
-namespace Hybrid.Security
+namespace Hybrid.Authorization
 {
     /// <summary>
     /// 权限检查结果

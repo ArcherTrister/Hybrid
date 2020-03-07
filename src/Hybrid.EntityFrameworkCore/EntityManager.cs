@@ -7,8 +7,8 @@
 //  <last-date>2019-06-27 9:04</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Core.EntityInfos;
-using Hybrid.Core.Functions;
+using Hybrid.Authorization.EntityInfos;
+using Hybrid.Authorization.Functions;
 using Hybrid.Dependency;
 using Hybrid.EntityFrameworkCore.Defaults;
 using Hybrid.Exceptions;

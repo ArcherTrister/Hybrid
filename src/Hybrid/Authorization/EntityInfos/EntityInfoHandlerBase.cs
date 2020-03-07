@@ -21,7 +21,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Hybrid.Core.EntityInfos
+namespace Hybrid.Authorization.EntityInfos
 {
     /// <summary>
     /// 实体信息处理基类

@@ -12,7 +12,7 @@ using Hybrid.AspNetCore.Extensions;
 using Hybrid.AspNetCore.UI;
 using Hybrid.Audits;
 using Hybrid.Audits.Configuration;
-using Hybrid.Core.Functions;
+using Hybrid.Authorization.Functions;
 using Hybrid.Extensions;
 using Hybrid.Security.Claims;
 

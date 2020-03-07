@@ -9,7 +9,7 @@
 
 using System.ComponentModel;
 
-namespace Hybrid.Security
+namespace Hybrid.Authorization
 {
     /// <summary>
     /// 数据权限操作

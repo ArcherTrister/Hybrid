@@ -9,8 +9,9 @@
 
 using Hybrid.AspNetCore.Mvc;
 using Hybrid.AspNetCore.Mvc.Controllers;
-using Hybrid.Core.Functions;
-using Hybrid.Core.ModuleInfos;
+using Hybrid.Authorization;
+using Hybrid.Authorization.Functions;
+using Hybrid.Authorization.ModuleInfos;
 using Hybrid.Extensions;
 using Hybrid.Security;
 using Hybrid.Web.Security;

@@ -9,7 +9,7 @@
 
 using System.ComponentModel;
 
-namespace Hybrid.Core.Functions
+namespace Hybrid.Authorization.Functions
 {
     /// <summary>
     /// 功能访问类型

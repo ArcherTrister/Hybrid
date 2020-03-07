@@ -7,7 +7,7 @@
 //  <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Core.EntityInfos;
+using Hybrid.Authorization.EntityInfos;
 using Hybrid.Mapping;
 
 namespace Hybrid.Zero.Security.Dtos
