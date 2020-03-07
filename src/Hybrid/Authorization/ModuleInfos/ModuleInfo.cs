@@ -9,7 +9,7 @@
 
 using Hybrid.Core.Functions;
 using Hybrid.Domain.Entities;
-
+using System;
 using System.Diagnostics;
 
 namespace Hybrid.Core.ModuleInfos
@@ -69,9 +69,11 @@ namespace Hybrid.Core.ModuleInfos
             return $"{info.Position}.{info.Code}" == $"{Position}.{Code}";
         }
 
+        /// <summary>Serves as the default hash function.</summary>
+        /// <returns>A hash code for the current object.</returns>
         public override int GetHashCode()
         {
-            return base.GetHashCode();
+            return HashCode.Combine(Position, Code);
         }
 
         #endregion Overrides of Object

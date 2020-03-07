@@ -1,4 +1,5 @@
-﻿using Hybrid.Dependency;
+﻿using Hybrid.Core.Options;
+using Hybrid.Dependency;
 using Hybrid.Exceptions;
 using Hybrid.Http.Configuration;
 using Hybrid.Security;
@@ -22,7 +23,6 @@ namespace Hybrid.Http
         private readonly ILogger _logger;
         private readonly TransmissionEncryptor _encryptor;
         private readonly string _publicKey;
-        private readonly IHttpEncryptConfiguration _httpEncrypt;
 
         /// <summary>
         /// 初始化一个<see cref="ClientHttpCrypto"/>类型的新实例
@@ -30,16 +30,18 @@ namespace Hybrid.Http
         public ClientHttpCrypto(IServiceProvider provider)
         {
             _logger = provider.GetLogger(typeof(ClientHttpCrypto));
-            _httpEncrypt = provider.GetRequiredService<IHttpEncryptConfiguration>();
-            if (_httpEncrypt?.IsEnabled == true)
+            HybridOptions options = provider.GetHybridOptions();
+
+            if (options?.HttpEncrypt?.IsEnabled == true)
             {
-                string clientPublicKey = _httpEncrypt.ClientPublicKey;
+                HttpEncryptConfiguration httpEncrypt = options.HttpEncrypt;
+                string clientPublicKey = httpEncrypt.ClientPublicKey;
                 if (string.IsNullOrEmpty(clientPublicKey))
                 {
                     throw new HybridException("配置文件中HttpEncrypt节点的ClientPublicKey不能为空");
                 }
                 RsaHelper rsa = new RsaHelper();
-                _encryptor = new TransmissionEncryptor(rsa.PrivateKey, _httpEncrypt.ClientPublicKey);
+                _encryptor = new TransmissionEncryptor(rsa.PrivateKey, httpEncrypt.ClientPublicKey);
                 _publicKey = rsa.PublicKey;
             }
         }

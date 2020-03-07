@@ -24,6 +24,7 @@
   <ItemGroup>
     <Compile Remove="Core\Options\ConfigurationExtensions.cs" />
     <Compile Remove="Core\Options\HybridOptionsSetup.cs" />
+    <Compile Remove="Http\HttpClientExtensions.cs" />
     <Compile Remove="Net\Mail\DefaultEmailSender.cs" />
   </ItemGroup>
   

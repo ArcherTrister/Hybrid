@@ -31,7 +31,7 @@ namespace Hybrid.MailKit
         /// <returns></returns>
         public override IServiceCollection AddServices(IServiceCollection services)
         {
-            services.AddTransient<IEmailSender, MailKitEmailSender>();
+            services.AddSingleton<IEmailSender, MailKitEmailSender>();
             return services;
         }
     }
