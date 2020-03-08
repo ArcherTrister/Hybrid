@@ -10,17 +10,17 @@
 
 - Quartz UI
 
-![Quartz-Admin-Preview](docs/Images/Quartz-Admin-Preview1.PNG)
-![Quartz-Admin-Preview](docs/Images/Quartz-Admin-Preview2.PNG)
-![Quartz-Admin-Preview](docs/Images/Quartz-Admin-Preview3.PNG)
-![Quartz-Admin-Preview](docs/Images/Quartz-Admin-Preview4.PNG)
-![Quartz-Admin-Preview](docs/Images/Quartz-Admin-Preview5.PNG)
+![Quartz-Admin-Preview](docs/Images/Quartz-Admin-Preview1.png)
+![Quartz-Admin-Preview](docs/Images/Quartz-Admin-Preview2.png)
+![Quartz-Admin-Preview](docs/Images/Quartz-Admin-Preview3.png)
+![Quartz-Admin-Preview](docs/Images/Quartz-Admin-Preview4.png)
+![Quartz-Admin-Preview](docs/Images/Quartz-Admin-Preview5.png)
 
 - IdentityServer UI
 
-![IdentityServer-Admin-Preview](docs/Images/IdentityServer-Admin-Preview1.PNG)
-![IdentityServer-Admin-Preview](docs/Images/IdentityServer-Admin-Preview2.PNG)
-![IdentityServer-Admin-Preview](docs/Images/IdentityServer-Admin-Preview3.PNG)
+![IdentityServer-Admin-Preview](docs/Images/IdentityServer-Admin-Preview1.png)
+![IdentityServer-Admin-Preview](docs/Images/IdentityServer-Admin-Preview2.png)
+![IdentityServer-Admin-Preview](docs/Images/IdentityServer-Admin-Preview3.png)
 
 ## Plan
 
