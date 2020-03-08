@@ -1,3 +1,31 @@
+# Hybrid
+
+## Project Status
+
+[![NuGet Pre Release](https://img.shields.io/nuget/vpre/Hybrid.svg)](https://www.nuget.org/packages/Hybrid/)
+![.NET Core](https://github.com/ArcherTrister/Hybrid/workflows/.NET%20Core/badge.svg)
+[![Build Status](https://dev.azure.com/ArcherTrister/Hybrid/_apis/build/status/ArcherTrister.Hybrid?branchName=master)](https://dev.azure.com/ArcherTrister/Hybrid/_build/latest?definitionId=3&branchName=master)
+
+## Administration UI Preview
+
+- Quartz UI
+
+![Quartz-Admin-Preview](docs/Images/Quartz-Admin-Preview1.PNG)
+![Quartz-Admin-Preview](docs/Images/Quartz-Admin-Preview2.PNG)
+![Quartz-Admin-Preview](docs/Images/Quartz-Admin-Preview3.PNG)
+![Quartz-Admin-Preview](docs/Images/Quartz-Admin-Preview4.PNG)
+![Quartz-Admin-Preview](docs/Images/Quartz-Admin-Preview5.PNG)
+
+- IdentityServer UI
+
+![IdentityServer-Admin-Preview](docs/Images/IdentityServer-Admin-Preview1.PNG)
+![IdentityServer-Admin-Preview](docs/Images/IdentityServer-Admin-Preview2.PNG)
+![IdentityServer-Admin-Preview](docs/Images/IdentityServer-Admin-Preview3.PNG)
+
+## Plan
+
+- 设计一个Logo
+
 # 说明
 ### ①参考<a href="https://github.com/aspnetboilerplate/aspnetboilerplate" target="_blank">ABP</a>
 ### ②参考<a href="https://github.com/i66soft/osharp" target="_blank">Osharp</a>
@@ -6,13 +34,17 @@
 
 ## 特点
 ### 引入泛型控制器
-### Quartz仪表板(待集成)
-### IdentityServer管理后台(集成Demo)
+### Quartz仪表板
+### IdentityServer管理后台
 ### Identity管理后台(待集成)
 ### 阶梯算法
 
-> ClaimTypes
+> ClaimTypes【Hybrid】
+
 > Hybrid.AssemblyInfo
+
 > Hybrid.AspNetCore.AssemblyInfo
+
+
 
 

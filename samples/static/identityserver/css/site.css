@@ -1,6 +1,11 @@
-﻿body {
+﻿html {
+  font-size: 14px;
+}
+
+body {
   margin-top: 65px;
 }
+
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -24,6 +29,25 @@
   overflow: hidden;
   font-size: 80px;
 }
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.container {
+  max-width: 1140px;
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+
+.card-deck .card {
+  min-width: 220px;
+}
+
 /* 
 .navbar-header {
   position: relative;
