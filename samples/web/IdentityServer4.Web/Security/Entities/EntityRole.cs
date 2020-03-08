@@ -9,7 +9,7 @@
 
 using Hybrid.Authorization.EntityInfos;
 using Hybrid.Web.Identity.Entities;
-using Hybrid.Zero.Security;
+using Hybrid.Zero.Authorization;
 
 using System;
 using System.ComponentModel;

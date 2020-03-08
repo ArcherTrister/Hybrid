@@ -10,7 +10,7 @@
 using Hybrid.Data;
 using Hybrid.Exceptions;
 using Hybrid.Security.Claims;
-
+using Hybrid.Zero.Identity.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 

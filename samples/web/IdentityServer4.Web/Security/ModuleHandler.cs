@@ -9,7 +9,7 @@
 
 using Hybrid.Web.Security.Dtos;
 using Hybrid.Web.Security.Entities;
-using Hybrid.Zero.Security;
+using Hybrid.Zero.Authorization;
 
 using System;
 

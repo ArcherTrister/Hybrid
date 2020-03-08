@@ -14,8 +14,8 @@ using Hybrid.EventBuses;
 using Hybrid.Web.Identity.Entities;
 using Hybrid.Web.Security.Dtos;
 using Hybrid.Web.Security.Entities;
-using Hybrid.Zero.Security;
-using Hybrid.Zero.Security.Dtos;
+using Hybrid.Zero.Authorization;
+using Hybrid.Zero.Authorization.Dtos;
 
 using System;
 

@@ -8,7 +8,7 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.Zero.Identity;
-
+using Hybrid.Zero.Identity.Entities;
 using System;
 using System.ComponentModel;
 

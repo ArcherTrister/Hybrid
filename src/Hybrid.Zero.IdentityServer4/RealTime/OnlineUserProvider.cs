@@ -14,7 +14,7 @@ using Hybrid.Extensions;
 using Hybrid.RealTime;
 using Hybrid.Threading.Asyncs;
 using Hybrid.Zero.Identity;
-
+using Hybrid.Zero.Identity.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.DependencyInjection;

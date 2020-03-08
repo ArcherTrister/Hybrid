@@ -38,13 +38,6 @@ namespace Hybrid.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.Configure<CookiePolicyOptions>(options =>
-            {
-                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
-                options.CheckConsentNeeded = context => true;
-                options.MinimumSameSitePolicy = SameSiteMode.None;
-            });
-
             services.AddHttpClient("Identityserver4Client", options =>
             {
                 options.BaseAddress = new Uri(Configuration["Hybrid:Ids:Authority"]);
@@ -187,8 +180,8 @@ namespace Hybrid.Web
                 app.UseHsts();
             }
 
-            app.UseCookiePolicy()
-                //.UseMiddleware<NodeNoFoundHandlerMiddleware>()
+            app
+                //.UseMiddleware<NoFoundHandlerMiddleware>()
                 .UseMiddleware<ExceptionHandlerMiddleware>()
                 .UseDefaultFiles()
                 .UseStaticFiles()

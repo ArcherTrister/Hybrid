@@ -33,6 +33,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Quickstart\Content\css\flags.css" />
+    <None Remove="Quickstart\Content\img\flags.png" />
+    <None Remove="Quickstart\Content\img\icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Include="Quickstart\Localization\Sources\JsonSource\HybridIdentityServer-en-US.json" />
     <EmbeddedResource Include="Quickstart\Localization\Sources\JsonSource\HybridIdentityServer-zh-CN.json" />
   </ItemGroup>

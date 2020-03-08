@@ -27,7 +27,7 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
 
         public void PopulateValues(ViewLocationExpanderContext context)
         {
-            context.Values["CustomViewLocations"] = nameof(HybridIdentityServerViewLocationExpander);
+            context.Values["IdentityServerViewLocations"] = nameof(HybridIdentityServerViewLocationExpander);
         }
     }
 }

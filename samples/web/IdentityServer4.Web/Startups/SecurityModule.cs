@@ -13,9 +13,8 @@ using Hybrid.Authorization.Functions;
 using Hybrid.Web.Security;
 using Hybrid.Web.Security.Dtos;
 using Hybrid.Web.Security.Entities;
-using Hybrid.Zero.Security;
-using Hybrid.Zero.Security.Dtos;
-
+using Hybrid.Zero.Authorization;
+using Hybrid.Zero.Authorization.Dtos;
 using System;
 using System.ComponentModel;
 

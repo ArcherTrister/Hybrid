@@ -18,6 +18,7 @@ using Hybrid.Localization.Dictionaries;
 using Hybrid.Localization.Dictionaries.Json;
 using Hybrid.RealTime;
 using Hybrid.Zero.Identity;
+using Hybrid.Zero.Identity.Entities;
 using Hybrid.Zero.IdentityServer4.RealTime;
 using IdentityServer4.Configuration;
 

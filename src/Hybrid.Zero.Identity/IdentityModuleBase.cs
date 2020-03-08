@@ -11,6 +11,7 @@ using Hybrid.AspNetCore;
 using Hybrid.Core.Modules;
 using Hybrid.EventBuses;
 using Hybrid.RealTime;
+using Hybrid.Zero.Identity.Entities;
 using Hybrid.Zero.Identity.RealTime;
 
 using Microsoft.AspNetCore.Authentication.Cookies;

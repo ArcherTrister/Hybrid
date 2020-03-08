@@ -11,7 +11,7 @@ using Hybrid.Domain.Repositories;
 using Hybrid.EventBuses;
 using Hybrid.Web.Identity.Entities;
 using Hybrid.Zero.Identity;
-
+using Hybrid.Zero.Identity.Entities;
 using System;
 
 namespace Hybrid.Web.Identity

@@ -8,22 +8,22 @@
 
 @if (Model.Languages.Any() && !showBanner)
 {
-    <li class="dropdown">
-        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
+    <!-- dropdownMenuLanguageLink -->
+    <li class="dropdown mr-sm-3">
+        <a class="dropdown-toggle" href="javascript:void(0);" role="button" id="dropdownMenuLanguageLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="@Model.CurrentLanguage.Icon" title="@Model.CurrentLanguage.DisplayName"></i>
             <span>@Model.CurrentLanguage.DisplayName</span>
             <b class="caret"></b>
             <input type="hidden" id="locale" value="@Model.CurrentLanguage.Name" />
         </a>
-
-        <ul class="dropdown-menu pull-right">
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLanguageLink">
             @foreach (LanguageInfo language in Model.Languages)
             {
                 if (language.Name != Model.CurrentLanguage.Name)
                 {
-                    <li><a href="@(ApplicationPath)Localization/ChangeCulture?cultureName=@(language.Name)&returnUrl=@(Context.Request.Path + Context.Request.QueryString.Value)"><i class="@language.Icon"></i> @language.DisplayName</a></li>
+                    <a class="dropdown-item text-center" href="@(ApplicationPath)Localization/ChangeCulture?cultureName=@(language.Name)&returnUrl=@(Context.Request.Path + Context.Request.QueryString.Value)"><i class="@language.Icon"></i> @language.DisplayName</a>
                 }
             }
-        </ul>
+        </div>
     </li>
 }

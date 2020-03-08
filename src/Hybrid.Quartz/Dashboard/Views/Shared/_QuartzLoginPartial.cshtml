@@ -3,10 +3,9 @@
 
 @inject Microsoft.Extensions.Options.IOptions<Hybrid.Core.Options.HybridOptions> options
 
-
 @if (User.Identity.IsAuthenticated && options.Value.Ids.IsEnabled)
 {
-    <form asp-area="" asp-controller="Account" asp-action="Logout" method="post" id="logoutForm" class="navbar-right">
+    <form onsubmit="return false;" method="post" id="logoutForm" class="navbar-right">
         <ul class="nav navbar-nav navbar-right">
             @await Component.InvokeAsync(typeof(TopBarSchedulerSwitchViewComponent))
             @await Component.InvokeAsync(typeof(TopBarLanguageSwitchViewComponent))
@@ -22,7 +21,7 @@
                         <a asp-area="" asp-controller="IdentityServer" asp-action="Index" class="btn btn-link navbar-btn navbar-link">@L("AuthCenter")</a>
                     </li>
                     <li style="text-align:center;">
-                        <button type="submit" class="btn btn-link navbar-btn navbar-link">@L("LogOut")</button>
+                        <a asp-area="" asp-controller="Account" asp-action="Logout" class="dropdown-item text-center">@L("LogOut")</a>
                     </li>
                 </ul>
             </li>

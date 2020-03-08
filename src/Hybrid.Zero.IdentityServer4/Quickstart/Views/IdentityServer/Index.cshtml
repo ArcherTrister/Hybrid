@@ -1,39 +1,221 @@
-@{
-    var version = typeof(Hybrid.Zero.IdentityServer4.Quickstart.IdentityServerBaseController).Assembly.GetName().Version.ToString();
-}
-
-<div class="welcome-page">
-    <div class="row page-header">
-        <div class="col-sm-10">
-            <h1>
-                <img class="icon" src="~/icon.png">
-                Welcome to Hybrid IdentityServer
-                <small>(version @version)</small>
-            </h1>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-sm-8">
-            <p>
-                IdentityServer publishes a
-                <a href="~/.well-known/openid-configuration" target="_blank">discovery document</a>
-                where you can find metadata and links to all the endpoints, key material, etc.
-            </p>
-        </div>
-        <div class="col-sm-8">
-            <p>
-                Click <a href="~/grants">here</a> to manage your stored grants.
-            </p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-8">
-            <p>
-                Here are links to the
-                <a href="https://github.com/ArcherTrister/Hybrid" target="_blank">source code repository</a>,
-                and <a href="https://github.com/ArcherTrister/Hybrid/tree/master/samples" target="_blank">ready to use samples</a>.
-            </p>
-        </div>
-    </div>
+﻿<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="display-4">IdentityServer Admin</h1>
+    <p class="lead">
+        Quickly build an effective pricing table for your potential customers with this Bootstrap
+        example. It’s built with default Bootstrap components and utilities with little customization.
+    </p>
 </div>
+@if (User.Identity.IsAuthenticated)
+{
+    <!-- STS -->
+    <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Persisted Grants</h4>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                    <span title="Persisted Grants" aria-hidden="true">
+                        <svg class="icon svg-icon" aria-hidden="true">
+                            <use xlink:href="#icon-yuechi"></use>
+                        </svg>
+                    </span>
+                </h1>
+                <button type="button" class="btn btn-lg btn-block btn-primary">持久授权</button>
+            </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Discovery Document</h4>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                    <span title="Discovery Document" aria-hidden="true">
+                        <svg class="icon svg-icon" aria-hidden="true">
+                            <use xlink:href="#icon-document"></use>
+                        </svg>
+                    </span>
+                </h1>
+                <button type="button" class="btn btn-lg btn-block btn-outline-primary">发现文档</button>
+            </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">My profile</h4>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                    <span title="My profile" aria-hidden="true">
+                        <svg class="icon svg-icon" aria-hidden="true">
+                            <use xlink:href="#icon-profile"></use>
+                        </svg>
+                    </span>
+                </h1>
+                <button type="button" class="btn btn-lg btn-block btn-primary">我的个人资料</button>
+            </div>
+        </div>
+    </div>
+    <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">My Personal Data</h4>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                    <span title="My Personal Data" aria-hidden="true">
+                        <svg class="icon svg-icon" aria-hidden="true">
+                            <use xlink:href="#icon-personal-data"></use>
+                        </svg>
+                    </span>
+                </h1>
+                <button type="button" class="btn btn-lg btn-block btn-outline-primary">我的个人数据</button>
+            </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Two-factor Authentication</h4>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                    <span title="Two-factor Authentication" aria-hidden="true">
+                        <svg class="icon svg-icon" aria-hidden="true">
+                            <use xlink:href="#icon-phone"></use>
+                        </svg>
+                    </span>
+                </h1>
+                <button type="button" class="btn btn-lg btn-block btn-primary">双因素身份验证</button>
+            </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Change Password</h4>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                    <span title="Change Password" aria-hidden="true">
+                        <svg class="icon svg-icon" aria-hidden="true">
+                            <use xlink:href="#icon-keychange"></use>
+                        </svg>
+                    </span>
+                </h1>
+                <button type="button" class="btn btn-lg btn-block btn-outline-primary">更改密码</button>
+            </div>
+        </div>
+    </div>
+    <!-- Admin -->
+    <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Clients</h4>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                    <span title="Clients" aria-hidden="true">
+                        <svg class="icon svg-icon" aria-hidden="true">
+                            <use xlink:href="#icon-pc"></use>
+                        </svg>
+                    </span>
+                </h1>
+                <button type="button" class="btn btn-lg btn-block btn-primary">客户端</button>
+            </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Identity Resources</h4>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                    <span title="Identity Resources" aria-hidden="true">
+                        <svg class="icon svg-icon" aria-hidden="true">
+                            <use xlink:href="#icon-zhiwenrenzheng"></use>
+                        </svg>
+                    </span>
+                </h1>
+                <button type="button" class="btn btn-lg btn-block btn-outline-primary">身份资源</button>
+            </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Api Resources</h4>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                    <span title="Api Resources" aria-hidden="true">
+                        <svg class="icon svg-icon" aria-hidden="true">
+                            <use xlink:href="#icon-APIguanli"></use>
+                        </svg>
+                    </span>
+                </h1>
+                <button type="button" class="btn btn-lg btn-block btn-primary">Api 资源</button>
+            </div>
+        </div>
+    </div>
+    <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 box-shadow">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Users</h4>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title">
+                    <span title="Users" aria-hidden="true">
+                        <svg class="icon svg-icon" aria-hidden="true">
+                            <use xlink:href="#icon-yonghu"></use>
+                        </svg>
+                    </span>
+                </h1>
+                <a class="btn btn-lg btn-block btn-primary" href="/Account/Login">用户</a>
+            </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Roles</h4>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title">
+                    <span title="Roles" aria-hidden="true">
+                        <svg class="icon svg-icon" aria-hidden="true">
+                            <use xlink:href="#icon-mg-role"></use>
+                        </svg>
+                    </span>
+                </h1>
+                <a href="/.well-known/openid-configuration" class="btn btn-lg btn-block btn-outline-primary">角色</a>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <!-- login -->
+    <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 box-shadow">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Login</h4>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title">
+                    <span title="Login" aria-hidden="true">
+                        <svg class="icon svg-icon" aria-hidden="true">
+                            <use xlink:href="#icon-login"></use>
+                        </svg>
+                    </span>
+                </h1>
+                <a class="btn btn-lg btn-block btn-primary" asp-area="" asp-controller="Account" asp-action="Login" asp-route-returnurl="@Context.Request.Path">@L("LogIn")</a>
+            </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Discovery Document</h4>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title">
+                    <span title="Discovery Document" aria-hidden="true">
+                        <svg class="icon svg-icon" aria-hidden="true">
+                            <use xlink:href="#icon-document"></use>
+                        </svg>
+                    </span>
+                </h1>
+                <a href="/.well-known/openid-configuration" class="btn btn-lg btn-block btn-outline-primary">发现文档</a>
+            </div>
+        </div>
+    </div>
+}

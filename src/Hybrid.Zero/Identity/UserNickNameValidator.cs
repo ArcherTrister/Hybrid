@@ -7,6 +7,7 @@
 //  <last-date>2020-01-12 14:20:33</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Zero.Identity.Entities;
 using Hybrid.Zero.Identity.Extensions;
 
 using Microsoft.AspNetCore.Identity;

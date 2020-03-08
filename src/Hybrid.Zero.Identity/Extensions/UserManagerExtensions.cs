@@ -11,7 +11,7 @@ using Hybrid.Exceptions;
 using Hybrid.Extensions;
 using Hybrid.Identity.JwtBearer;
 using Hybrid.Json;
-
+using Hybrid.Zero.Identity.Entities;
 using Microsoft.AspNetCore.Identity;
 
 using System;

@@ -11,7 +11,7 @@ using Hybrid.AspNetCore.Mvc;
 using Hybrid.AspNetCore.Mvc.Controllers;
 using Hybrid.AspNetCore.Mvc.Filters;
 using Hybrid.Zero.Identity;
-
+using Hybrid.Zero.Identity.Entities;
 using IdentityModel;
 
 using IdentityServer4;

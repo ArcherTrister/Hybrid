@@ -16,6 +16,7 @@ using Hybrid.Exceptions;
 using Hybrid.Extensions;
 using Hybrid.Identity.JwtBearer;
 using Hybrid.Timing;
+using Hybrid.Zero.Identity.Entities;
 using Hybrid.Zero.Identity.Events;
 using Hybrid.Zero.Identity.Extensions;
 

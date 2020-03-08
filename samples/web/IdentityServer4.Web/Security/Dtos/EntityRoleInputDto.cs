@@ -7,7 +7,7 @@
 //  <last-date>2018-07-03 23:11</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Zero.Security.Dtos;
+using Hybrid.Zero.Authorization.Dtos;
 
 using System;
 

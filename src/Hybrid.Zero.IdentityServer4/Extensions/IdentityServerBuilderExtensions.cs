@@ -9,6 +9,7 @@
 
 using Hybrid.Dependency;
 using Hybrid.Zero.Identity;
+using Hybrid.Zero.Identity.Entities;
 using Hybrid.Zero.IdentityServer4.Identity;
 using Hybrid.Zero.IdentityServer4.Quickstart;
 

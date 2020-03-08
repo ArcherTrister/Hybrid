@@ -11,57 +11,88 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>IdentityServer4</title>
     <link rel="icon" type="image/x-icon" href="~/favicon.ico" />
     <link rel="shortcut icon" type="image/x-icon" href="~/favicon.ico" />
     <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/flags.css" />
 </head>
 <body>
-    <div class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="~/IdentityServer">
-                    <span class="navbar-brand">
-                        <img src="~/icon.png" class="icon-banner">
-                        IdentityServer4
-                    </span>
-                </a>
-            </div>
-            <div class="navbar-collapse collapse">
-                @*<ul class="nav navbar-nav navbar-left">
-                        <li>
-                            <a><span class="glyphicon glyphicon-log-in"></span>&nbsp;登录</a>
-                        </li>
-                        @if (!string.IsNullOrWhiteSpace(name))
-                        {
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">@name <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a asp-action="Logout" asp-controller="Account">Logout</a></li>
-                                </ul>
-                            </li>
-                        }
-                    </ul>*@
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a href="/">
+                <span class="navbar-brand">
+                    <!-- <img src="./img/icon.png" class="icon-banner"> -->
+                    IdentityServer
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <!-- <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li> -->
+                </ul>
                 <partial name="_IdsLoginPartial" />
             </div>
-        </div>
-    </div>
+        </nav>
+    </header>
 
     <div class="container body-content">
         <partial name="_IdsCookieConsentPartial" />
         @RenderBody()
     </div>
-
+    <!-- footer -->
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        @{
+            var version = typeof(Hybrid.Zero.IdentityServer4.Quickstart.IdentityServerBaseController).Assembly.GetName().Version.ToString();
+        }
+        <div class="row">
+            <div class="col-12 col-md">
+                <img class="mb-2" src="~/img/icon.png" alt="" width="24" height="24">
+                <small class="d-block mb-3 text-muted">&copy; 2019-2020</small>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Github</h5>
+                <ul class="list-unstyled text-small">
+                    <li>
+                        <a href="https://github.com/ArcherTrister/Hybrid" target="_blank">Source Code Repository</a>
+                    </li>
+                    <li><a href="https://github.com/ArcherTrister/Hybrid/tree/master/samples" target="_blank">Samples</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                @*<h5>Resources</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Resource</a></li>
+                        <li><a class="text-muted" href="#">Resource name</a></li>
+                        <li><a class="text-muted" href="#">Another resource</a></li>
+                        <li><a class="text-muted" href="#">Final resource</a></li>
+                    </ul>*@
+            </div>
+            <div class="col-6 col-md">
+                <h5>About</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Hybrid</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     <script src="~/lib/jquery/jquery.min.js"></script>
     <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/js/font_1678100_gk9mkdusr3.js"></script>
     @RenderSection("scripts", required: false)
 </body>
 </html>

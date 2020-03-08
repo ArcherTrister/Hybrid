@@ -14,6 +14,7 @@ using Hybrid.Extensions;
 using Hybrid.Identity.JwtBearer;
 using Hybrid.RealTime;
 using Hybrid.Threading.Asyncs;
+using Hybrid.Zero.Identity.Entities;
 using Hybrid.Zero.Identity.Extensions;
 
 using Microsoft.AspNetCore.Identity;

@@ -2,5 +2,7 @@
     var a = document.querySelector("a.PostLogoutRedirectUri");
     if (a) {
         window.location = a.href;
+    } else {
+        window.location = window.location.protocol+"//"+ window.location.host;
     }
 });

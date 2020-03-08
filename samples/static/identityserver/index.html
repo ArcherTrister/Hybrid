@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="//at.alicdn.com/t/font_1678100_mz3ykg18j9l.css" > -->
+  <link rel="stylesheet" href="./css/site.min.css">
+  <script src="./js/font_1678100_gk9mkdusr3.js"></script>
+  <title>IdentityServer</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a href="/">
+        <span class="navbar-brand">
+          <!-- <img src="./img/icon.png" class="icon-banner"> -->
+          IdentityServer
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <!-- <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li> -->
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+          <ul class="nav navbar-nav navbar-right">
+            <!-- dropdownMenuLanguageLink -->
+            <li class="dropdown mr-sm-3">
+              <a class="dropdown-toggle" href="javascript:void(0);" role="button" id="dropdownMenuLanguageLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="@Model.CurrentLanguage.Icon" title="@Model.CurrentLanguage.DisplayName"></i>
+                <span>中文</span>
+                <b class="caret"></b>
+                <input type="hidden" id="locale" value="@Model.CurrentLanguage.Name" />
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLanguageLink">
+                <a class="dropdown-item text-center" href="@(ApplicationPath)Localization/ChangeCulture?cultureName=@(language.Name)&returnUrl=@(Context.Request.Path + Context.Request.QueryString.Value)">
+                  <i class="@language.Icon"></i>中文
+                </a>
+                <a class="dropdown-item text-center" href="@(ApplicationPath)Localization/ChangeCulture?cultureName=@(language.Name)&returnUrl=@(Context.Request.Path + Context.Request.QueryString.Value)">
+                  <i class="@language.Icon"></i>英文
+                </a>
+              </div>
+            </li>
+            <!-- dropdownMenuFunctionLink -->
+            <li class="dropdown mr-sm-3">
+              <a class="dropdown-toggle" href="javascript:void(0);" role="button" id="dropdownMenuFunctionLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="" title="@User.Identity.Name"></i>
+                <span>Hello User!</span>
+                <b class="caret"></b>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuFunctionLink">
+                <a asp-area="Quartz" asp-controller="Dashboard" asp-action="Index"
+                class="dropdown-item text-center">QuartzCenter</a>
+                <a class="dropdown-item text-center" 
+                href="login.html">
+                  登录
+                </a>
+              </div>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </nav>
+  </header>
+  <!-- main -->
+  <main role="main">
+    <div class="container">
+      <!-- cookieConsent -->
+      <div id="cookieConsent" class="alert alert-info alert-dismissible show" role="alert">
+        Use this space to summarize your privacy and cookie use policy.
+        <button type="button" class="accept-policy close" data-dismiss="alert" aria-label="Close"
+          data-cookie-string="@cookieString">
+          <span aria-hidden="true">Accept</span>
+        </button>
+      </div>
+      <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4">Pricing</h1>
+        <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap
+          example. It’s built with default Bootstrap components and utilities with little customization.</p>
+      </div>
+      <!-- login -->
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Login</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title">
+              <span title="Login" aria-hidden="true">
+                <svg class="icon svg-icon" aria-hidden="true">
+                  <use xlink:href="#icon-login"></use>
+                </svg>
+              </span>
+            </h1>
+            <a class="btn btn-lg btn-block btn-primary" href="/Account/Login">登录</a>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Discovery Document</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title">
+              <span title="Discovery Document" aria-hidden="true">
+                <svg class="icon svg-icon" aria-hidden="true">
+                  <use xlink:href="#icon-document"></use>
+                </svg>
+              </span>
+            </h1>
+            <a href="/.well-known/openid-configuration" class="btn btn-lg btn-block btn-outline-primary">发现文档</a>
+          </div>
+        </div>
+      </div>
+      <!-- STS -->
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Persisted Grants</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">
+              <span title="Persisted Grants" aria-hidden="true">
+                <svg class="icon svg-icon" aria-hidden="true">
+                  <use xlink:href="#icon-yuechi"></use>
+                </svg>
+              </span>
+            </h1>
+            <button type="button" class="btn btn-lg btn-block btn-primary">持久授权</button>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Discovery Document</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">
+              <span title="Discovery Document" aria-hidden="true">
+                <svg class="icon svg-icon" aria-hidden="true">
+                  <use xlink:href="#icon-document"></use>
+                </svg>
+              </span>
+            </h1>
+            <button type="button" class="btn btn-lg btn-block btn-outline-primary">发现文档</button>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">My profile</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">
+              <span title="My profile" aria-hidden="true">
+                <svg class="icon svg-icon" aria-hidden="true">
+                  <use xlink:href="#icon-profile"></use>
+                </svg>
+              </span>
+            </h1>
+            <button type="button" class="btn btn-lg btn-block btn-primary">我的个人资料</button>
+          </div>
+        </div>
+      </div>
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">My Personal Data</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">
+              <span title="My Personal Data" aria-hidden="true">
+                <svg class="icon svg-icon" aria-hidden="true">
+                  <use xlink:href="#icon-personal-data"></use>
+                </svg>
+              </span>
+            </h1>
+            <button type="button" class="btn btn-lg btn-block btn-outline-primary">我的个人数据</button>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Two-factor Authentication</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">
+              <span title="Two-factor Authentication" aria-hidden="true">
+                <svg class="icon svg-icon" aria-hidden="true">
+                  <use xlink:href="#icon-phone"></use>
+                </svg>
+              </span>
+            </h1>
+            <button type="button" class="btn btn-lg btn-block btn-primary">双因素身份验证</button>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Change Password</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">
+              <span title="Change Password" aria-hidden="true">
+                <svg class="icon svg-icon" aria-hidden="true">
+                  <use xlink:href="#icon-keychange"></use>
+                </svg>
+              </span>
+            </h1>
+            <button type="button" class="btn btn-lg btn-block btn-outline-primary">更改密码</button>
+          </div>
+        </div>
+      </div>
+      <!-- Admin -->
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Clients</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">
+              <span title="Clients" aria-hidden="true">
+                <svg class="icon svg-icon" aria-hidden="true">
+                  <use xlink:href="#icon-pc"></use>
+                </svg>
+              </span>
+            </h1>
+            <button type="button" class="btn btn-lg btn-block btn-primary">客户端</button>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Identity Resources</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">
+              <span title="Identity Resources" aria-hidden="true">
+                <svg class="icon svg-icon" aria-hidden="true">
+                  <use xlink:href="#icon-zhiwenrenzheng"></use>
+                </svg>
+              </span>
+            </h1>
+            <button type="button" class="btn btn-lg btn-block btn-outline-primary">身份资源</button>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Api Resources</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">
+              <span title="Api Resources" aria-hidden="true">
+                <svg class="icon svg-icon" aria-hidden="true">
+                  <use xlink:href="#icon-APIguanli"></use>
+                </svg>
+              </span>
+            </h1>
+            <button type="button" class="btn btn-lg btn-block btn-primary">Api 资源</button>
+          </div>
+        </div>
+      </div>
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Users</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title">
+              <span title="Users" aria-hidden="true">
+                <svg class="icon svg-icon" aria-hidden="true">
+                  <use xlink:href="#icon-yonghu"></use>
+                </svg>
+              </span>
+            </h1>
+            <a class="btn btn-lg btn-block btn-primary" href="/Account/Login">用户</a>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Roles</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title">
+              <span title="Roles" aria-hidden="true">
+                <svg class="icon svg-icon" aria-hidden="true">
+                  <use xlink:href="#icon-mg-role"></use>
+                </svg>
+              </span>
+            </h1>
+            <a href="/.well-known/openid-configuration" class="btn btn-lg btn-block btn-outline-primary">角色</a>
+          </div>
+        </div>
+      </div>
+  </main>
+  <!-- footer -->
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md">
+        <img class="mb-2" src="/docs/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+        <small class="d-block mb-3 text-muted">&copy; 2019-2020</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Features</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Cool stuff</a></li>
+          <li><a class="text-muted" href="#">Random feature</a></li>
+          <li><a class="text-muted" href="#">Team feature</a></li>
+          <li><a class="text-muted" href="#">Stuff for developers</a></li>
+          <li><a class="text-muted" href="#">Another one</a></li>
+          <li><a class="text-muted" href="#">Last time</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Resource</a></li>
+          <li><a class="text-muted" href="#">Resource name</a></li>
+          <li><a class="text-muted" href="#">Another resource</a></li>
+          <li><a class="text-muted" href="#">Final resource</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>About</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Team</a></li>
+          <li><a class="text-muted" href="#">Locations</a></li>
+          <li><a class="text-muted" href="#">Privacy</a></li>
+          <li><a class="text-muted" href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
