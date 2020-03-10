@@ -99,10 +99,10 @@ namespace Hybrid.Authorization.Functions
         [DisplayName("是否锁定")]
         public bool IsLocked { get; set; }
 
-        ///// <summary>
-        ///// 获取或设置 是否Api
-        ///// </summary>
-        //[DisplayName("是否Api")]
-        //public bool IsApi { get; set; }
+        /// <summary>
+        /// 获取或设置 是否WebApi
+        /// </summary>
+        [DisplayName("是否WebApi")]
+        public bool IsWebApi { get; set; }
     }
 }

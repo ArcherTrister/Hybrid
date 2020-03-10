@@ -19,6 +19,7 @@
 - IdentityServer UI
 
 ![IdentityServer-Admin-Preview](docs/Images/IdentityServer-Admin-Preview1.png)
+![IdentityServer-Admin-Preview](docs/Images/IdentityServer-Admin-Preview4.png)
 ![IdentityServer-Admin-Preview](docs/Images/IdentityServer-Admin-Preview2.png)
 ![IdentityServer-Admin-Preview](docs/Images/IdentityServer-Admin-Preview3.png)
 

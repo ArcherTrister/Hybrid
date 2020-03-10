@@ -31,7 +31,7 @@ namespace Hybrid.AspNetCore.Extensions
         /// <exception cref="T:System.ArgumentNullException"><paramref name="request"/> 参数为 null（在 Visual Basic 中为 Nothing）。</exception>
         public static bool IsAjaxRequest(this HttpRequest request)
         {
-            Check.NotNull(request, nameof(request));
+            //Check.NotNull(request, nameof(request));
 
             return string.Equals(request.Query["X-Requested-With"], "XMLHttpRequest", StringComparison.Ordinal)
                 || string.Equals(request.Headers["X-Requested-With"], "XMLHttpRequest", StringComparison.Ordinal);
@@ -42,7 +42,7 @@ namespace Hybrid.AspNetCore.Extensions
         /// </summary>
         public static bool IsJsonContextType(this HttpRequest request)
         {
-            Check.NotNull(request, nameof(request));
+            //Check.NotNull(request, nameof(request));
             bool flag = request.Headers?["Content-Type"].ToString().IndexOf("application/json", StringComparison.OrdinalIgnoreCase) > -1
                 || request.Headers?["Content-Type"].ToString().IndexOf("text/json", StringComparison.OrdinalIgnoreCase) > -1;
             if (flag)

@@ -87,96 +87,18 @@
     </nav>
   </header>
   <div class="container">
-    <div class="row">
-      <form class="form-signin" asp-route="Login">
-        <div class="text-center mb-4">
-          <img class="mb-4" src="/docs/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-          <h1 class="h3 mb-3 font-weight-normal">Login</h1>
-        </div>
-        <input type="hidden" asp-for="ReturnUrl" />
-        <div class="form-group">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <div class="input-group-text">
-                <span title="Username" aria-hidden="true">
-                  <svg class="icon svg-icon" aria-hidden="true">
-                    <use xlink:href="#icon-iconuser"></use>
-                  </svg>
-                </span>
-              </div>
-            </div>
-            <input type="text" class="form-control" placeholder="Username" asp-for="Username" autofocus>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <div class="input-group-text">
-                <span title="Password" aria-hidden="true">
-                  <svg class="icon svg-icon" aria-hidden="true">
-                    <use xlink:href="#icon-lock_circle"></use>
-                  </svg>
-                </span>
-              </div>
-            </div>
-            <input type="password" class="form-control" placeholder="Password" asp-for="Password" autocomplete="off">
-          </div>
-        </div>
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1" asp-for="RememberLogin">
-          <label class="form-check-label" asp-for="RememberLogin"><strong>Remember me</strong></label>
-          <label class="form-check-label float-right"><a href="#">Forgot Password?</a></label>
-        </div>
-        <button class="btn btn-lg btn-primary btn-block" name="button" value="login">Login</button>
-        <button class="btn btn-lg btn-secondary btn-block" name="button" value="cancel">Cancel</button>
-      </form>
-    </div>
+    <div class="row justify-content-center" style="height: 400px">
+      <div class="align-self-center">
+        <p class="text-danger">
+          Sorry, an error has occured !
+        </p>
+        <p>
+          <a href="/" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-home"></span>
+            Take Me Home </a>
+        </p>
+      </div>
+  </div>
 
-    <div class="row">
-      <div class="form-signin login-three">
-        <span>使用第三方账号直接登录</span>
-        <div class="login-icon">
-          <a class="mr-sm-3" href="#" title="QQ" aria-hidden="true">
-            <svg class="icon svg-icon" aria-hidden="true">
-              <use xlink:href="#icon-oauth-QQ"></use>
-            </svg>
-          </a>
-          <a class="mr-sm-3" href="#" title="Wechat" aria-hidden="true">
-            <svg class="icon svg-icon" aria-hidden="true">
-              <use xlink:href="#icon-oauth-Wechat"></use>
-            </svg>
-          </a>
-          <a class="mr-sm-3" href="#" title="Alipay" aria-hidden="true">
-            <svg class="icon svg-icon" aria-hidden="true">
-              <use xlink:href="#icon-oauth-Alipay"></use>
-            </svg>
-          </a>
-          <a class="mr-sm-3" href="#" title="Baidu" aria-hidden="true">
-            <svg class="icon svg-icon" aria-hidden="true">
-              <use xlink:href="#icon-oauth-Baidu"></use>
-            </svg>
-          </a>
-          <a class="mr-sm-3" href="#" title="GitHub" aria-hidden="true">
-            <svg class="icon svg-icon" aria-hidden="true">
-              <use xlink:href="#icon-oauth-GitHub"></use>
-            </svg>
-          </a>
-          <a class="mr-sm-3" href="#" title="OAuth" aria-hidden="true">
-            <svg class="icon svg-icon" aria-hidden="true">
-              <use xlink:href="#icon-oauth-Default"></use>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="form-signin">
-        <div class="alert alert-warning">
-          <strong>Invalid login request</strong>
-          There are no login schemes configured for this client.
-        </div>
-      </div>
-    </div>
     <!-- footer -->
     <footer class="pt-4 my-md-5 pt-md-5 border-top">
       <div class="row">

@@ -23,6 +23,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Data\Migrations\Application\20200310060315_AddIsWebApi.cs" />
+    <Compile Remove="Data\Migrations\Application\20200310060315_AddIsWebApi.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\css\site.less" />
     <None Include="wwwroot\js\signin-redirect.js" />
     <None Include="wwwroot\js\signout-redirect.js" />

@@ -65,6 +65,9 @@ namespace Hybrid.AspNetCore.Mvc
                 : controllerType.HasAttribute<RoleLimitAttribute>()
                     ? FunctionAccessType.RoleLimit
                     : FunctionAccessType.Anonymous;
+
+            // Console.WriteLine(controllerType.Name + ": " + controllerType.BaseType.HasAttribute<ApiControllerAttribute>());
+
             Function function = new Function()
             {
                 Name = controllerType.GetDescription(),
@@ -75,7 +78,7 @@ namespace Hybrid.AspNetCore.Mvc
                                 .Replace("`1", string.Empty)
                                 .Replace("`2", string.Empty),
                 IsController = true,
-                //IsApi = controllerType.BaseType.HasAttribute<ApiControllerAttribute>(),
+                IsWebApi = controllerType.BaseType.HasAttribute<ApiControllerAttribute>(),
                 AccessType = accessType
             };
             return function;
@@ -104,7 +107,7 @@ namespace Hybrid.AspNetCore.Mvc
                 Action = method.Name,
                 AccessType = accessType,
                 IsController = false,
-                //IsApi = typeFunction.IsApi,
+                IsWebApi = typeFunction.IsWebApi,
                 IsAjax = method.HasAttribute<AjaxOnlyAttribute>()
             };
             return function;

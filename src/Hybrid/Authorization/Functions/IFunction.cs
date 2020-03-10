@@ -78,9 +78,9 @@ namespace Hybrid.Authorization.Functions
         /// </summary>
         bool IsCacheSliding { get; set; }
 
-        ///// <summary>
-        ///// 获取或设置 是否Api
-        ///// </summary>
-        //bool IsApi { get; set; }
+        /// <summary>
+        /// 获取或设置 是否WebApi
+        /// </summary>
+        bool IsWebApi { get; set; }
     }
 }

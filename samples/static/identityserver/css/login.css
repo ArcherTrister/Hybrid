@@ -1,0 +1,152 @@
+html,
+body {
+  height: 100%;
+}
+
+/* body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+} */
+
+.form-signin {
+  width: 100%;
+  max-width: 420px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.login-three {
+  line-height: 36px;
+  text-align: center;
+  position: relative;
+}
+
+.login-three span:before,
+.login-three span:after {
+  position: absolute;
+  background: #ccc;
+  content: "";
+  height: 1px;
+  top: 32%;
+  width: 6rem;
+}
+
+.login-three span:before {
+  left: 1rem;
+}
+
+.login-three span:after {
+  right: 1rem;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.login-three a:link,
+.login-three a:visited,
+.login-three a:hover,
+.login-three a:active {
+  text-decoration: none;
+}
+
+@media (max-width: 576px){
+.mr-sm-3 {
+margin-right: .5rem!important;
+}}
+/* 
+.form-group > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  line-height: 1.5;
+  color: #495057;
+  pointer-events: none;
+  cursor: text;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .1s ease-in-out;
+} */
+
+.form-group input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-group input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-group input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-group input::-moz-placeholder {
+  color: transparent;
+}
+
+.form-group input::placeholder {
+  color: transparent;
+}
+
+.form-group input:not(:placeholder-shown) {
+  padding-top: 1.25rem;
+  padding-bottom: .25rem;
+}
+
+/* .form-group input:not(:placeholder-shown) ~ label {
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  font-size: 12px;
+  color: #777;
+} */
+
+
+@supports (-ms-ime-align: auto) {
+  .form-group > label {
+    display: none;
+  }
+  .form-group input::-ms-input-placeholder {
+    color: #777;
+  }
+}
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .form-group > label {
+    display: none;
+  }
+  .form-group input:-ms-input-placeholder {
+    color: #777;
+  }
+} 
+
+
+/* .login-three {
+  color: #666666;
+  text-align: center;
+  line-height: 50px;
+  position:relative;
+}
+.login-three span::before, .login-three span::after {
+  position:absolute;
+  background:#ccc;
+  content:"";
+  height:1px;
+  top:50%;
+  width:100px;
+}
+.login-three span:before{left:10px;}
+.login-three span:after{right:10px;} */

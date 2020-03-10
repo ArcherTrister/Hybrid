@@ -16,7 +16,7 @@ namespace OSharp.AspNetCore.Mvc.ModelBinding
         /// <returns>An <see cref="T:Microsoft.AspNetCore.Mvc.ModelBinding.IModelBinder" />.</returns>
         public IModelBinder GetBinder(ModelBinderProviderContext context)
         {
-            Check.NotNull(context, nameof(context));
+            //Check.NotNull(context, nameof(context));
 
             if (context.Metadata.UnderlyingOrModelType == typeof(string))
             {

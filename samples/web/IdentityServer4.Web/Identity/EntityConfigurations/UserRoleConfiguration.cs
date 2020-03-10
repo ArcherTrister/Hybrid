@@ -30,7 +30,7 @@ namespace Hybrid.Web.Identity.Entity.EntityConfiguration
             builder.HasOne(ur => ur.User).WithMany(u => u.UserRoles).HasForeignKey(m => m.UserId);
             builder.HasData(new UserRole()
             {
-                Id = Guid.NewGuid(),
+                Id = Guid.Parse("66c1c6ab-5fa1-45f6-9704-509df0c03f28"),
                 UserId = Guid.Parse("8d86feea-83d5-4a0c-9733-305ac6cfe58d"),
                 RoleId = Guid.Parse("4f10b9ba-2391-4eb2-a378-aaf3012fb2d3"),
                 IsLocked = false,

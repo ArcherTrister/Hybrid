@@ -8,8 +8,6 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.AspNetCore.Mvc;
-using Hybrid.AspNetCore.Mvc.Controllers;
-using Hybrid.Zero.Identity;
 using Hybrid.Zero.Identity.Entities;
 using IdentityModel;
 
@@ -34,7 +32,7 @@ using System.Threading.Tasks;
 namespace Hybrid.Zero.IdentityServer4.Quickstart
 {
     [HybridDefaultUI(typeof(AccountController<,>))]
-    public abstract class AccountController : MvcController
+    public abstract class AccountController : IdentityServerBaseController
     {
     }
 

@@ -8,9 +8,7 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.AspNetCore.Mvc;
-using Hybrid.AspNetCore.Mvc.Controllers;
 using Hybrid.AspNetCore.Mvc.Filters;
-using Hybrid.Zero.Identity;
 using Hybrid.Zero.Identity.Entities;
 using IdentityModel;
 
@@ -37,7 +35,7 @@ using System.Threading.Tasks;
 namespace Hybrid.Zero.IdentityServer4.Quickstart
 {
     [HybridDefaultUI(typeof(ExternalController<,>))]
-    public abstract class ExternalController : MvcController
+    public abstract class ExternalController : IdentityServerBaseController
     {
     }
 
@@ -75,6 +73,7 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
         /// initiate roundtrip to external authentication provider
         /// </summary>
         [HttpGet]
+        [Route("Challenge")]
         public async Task<IActionResult> Challenge(string provider, string returnUrl)
         {
             if (string.IsNullOrEmpty(returnUrl)) returnUrl = "~/";
@@ -112,6 +111,7 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
         /// Post processing of external authentication
         /// </summary>
         [HttpGet]
+        [Route("Callback")]
         [UnitOfWork]
         public async Task<IActionResult> Callback()
         {

@@ -1,0 +1,100 @@
+﻿html,
+body {
+    height: 100%;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 420px;
+    padding: 15px;
+    margin: auto;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.login-three {
+    line-height: 36px;
+    text-align: center;
+    position: relative;
+}
+
+    .login-three span:before,
+    .login-three span:after {
+        position: absolute;
+        background: #ccc;
+        content: "";
+        height: 1px;
+        top: 32%;
+        width: 6rem;
+    }
+
+    .login-three span:before {
+        left: 1rem;
+    }
+
+    .login-three span:after {
+        right: 1rem;
+    }
+
+.icon {
+    font-size: 20px;
+    top: 0;
+}
+
+.login-three a:link,
+.login-three a:visited,
+.login-three a:hover,
+.login-three a:active {
+    text-decoration: none;
+}
+
+@media (max-width: 576px) {
+    .mr-sm-3 {
+        margin-right: .5rem !important;
+    }
+}
+
+.form-group input::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.form-group input:-ms-input-placeholder {
+    color: transparent;
+}
+
+.form-group input::-ms-input-placeholder {
+    color: transparent;
+}
+
+.form-group input::-moz-placeholder {
+    color: transparent;
+}
+
+.form-group input::placeholder {
+    color: transparent;
+}
+
+
+@supports (-ms-ime-align: auto) {
+    .form-group > label {
+        display: none;
+    }
+
+    .form-group input::-ms-input-placeholder {
+        color: #777;
+    }
+}
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .form-group > label {
+        display: none;
+    }
+
+    .form-group input:-ms-input-placeholder {
+        color: #777;
+    }
+}

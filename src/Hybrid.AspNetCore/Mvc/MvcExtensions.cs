@@ -112,6 +112,66 @@ namespace Hybrid.AspNetCore.Mvc
         }
 
         /// <summary>
+        /// 获取Area名
+        /// </summary>
+        public static string GetAreaName(this HttpContext context)
+        {
+            string area = null;
+            if (context.Request.RouteValues.TryGetValue("area", out object value))
+            {
+                area = (string)value;
+                if (area.IsNullOrWhiteSpace())
+                {
+                    area = null;
+                }
+            }
+            return area;
+        }
+
+        /// <summary>
+        /// 获取Controller名
+        /// </summary>
+        public static string GetControllerName(this HttpContext context)
+        {
+            return context.Request.RouteValues["controller"].ToString();
+        }
+
+        /// <summary>
+        /// 获取Action名
+        /// </summary>
+        public static string GetActionName(this HttpContext context)
+        {
+            return context.Request.RouteValues["action"].ToString();
+        }
+
+        /// <summary>
+        /// 获取正在执行的Action的相关功能信息
+        /// </summary>
+        public static IFunction GetExecuteFunction(this HttpContext context)
+        {
+            IServiceProvider provider = context.RequestServices;
+            ScopedDictionary dict = provider.GetService<ScopedDictionary>();
+            if (dict.Function != null)
+            {
+                return dict.Function;
+            }
+            string area = context.GetAreaName();
+            string controller = context.GetControllerName();
+            string action = context.GetActionName();
+            IFunctionHandler functionHandler = provider.GetService<IFunctionHandler>();
+            if (functionHandler == null)
+            {
+                throw new HybridException("获取正在执行的功能时 IFunctionHandler 无法解析");
+            }
+            IFunction function = functionHandler.GetFunction(area, controller, action);
+            if (function != null)
+            {
+                dict.Function = function;
+            }
+            return function;
+        }
+
+        /// <summary>
         /// 获取当前Controller中正在操作的Action的相关功能信息
         /// </summary>
         public static IFunction GetExecuteFunction(this ControllerBase controller)
