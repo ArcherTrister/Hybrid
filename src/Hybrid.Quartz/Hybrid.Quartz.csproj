@@ -52,7 +52,7 @@
     <Content Remove="Dashboard\Localization\Sources\JsonSource\HybridQuartz-en-US.json" />
     <Content Remove="Dashboard\Localization\Sources\JsonSource\HybridQuartz-zh-CN.json" />
   </ItemGroup>
-  
+
   <ItemGroup>
     <EmbeddedResource Include="Dashboard\Localization\Sources\JsonSource\HybridQuartz-en-US.json" />
     <EmbeddedResource Include="Dashboard\Localization\Sources\JsonSource\HybridQuartz-zh-CN.json" />

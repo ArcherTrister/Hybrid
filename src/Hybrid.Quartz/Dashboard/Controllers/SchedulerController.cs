@@ -19,6 +19,7 @@ namespace Hybrid.Quartz.Dashboard.Controllers
     /// </summary>
     public class SchedulerController : QuartzBaseController
     {
+        [HttpGet]
         public IActionResult Index()
         {
             return View();
@@ -32,6 +33,7 @@ namespace Hybrid.Quartz.Dashboard.Controllers
             return View(new SchedulerDto(scheduler, metaData));
         }
 
+        [HttpGet]
         public async virtual Task<IActionResult> ChangeScheduler(string schedulerName)
         {
             if (!await GlobalizationHelper.IsValidSchedulerName(schedulerName))

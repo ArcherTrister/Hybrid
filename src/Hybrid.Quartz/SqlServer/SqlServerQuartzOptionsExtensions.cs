@@ -25,22 +25,40 @@ namespace Microsoft.Extensions.DependencyInjection
             var properties = new NameValueCollection();
 
             properties.Set(StdSchedulerFactory.PropertySchedulerName, sqlServerQuartzOptions.SchedulerName);
-            properties.Set(StdSchedulerFactory.PropertyJobStoreType, "Quartz.Impl.AdoJobStore.JobStoreTX, Quartz");
-            properties.Set("quartz.jobStore.useProperties", "true");
-            properties.Set("quartz.jobStore.dataSource", "default");
-            properties.Set("quartz.dataSource.default.connectionString", sqlServerQuartzOptions.ConnectionStringOrCacheName);
-            properties.Set("quartz.dataSource.default.provider", "SqlServer");
 
+            // 数据连接字符串
+            properties.Set("quartz.dataSource.myDS.connectionString", sqlServerQuartzOptions.ConnectionStringOrCacheName);
+            // 数据库类型
+            properties.Set("quartz.dataSource.myDS.provider", "SqlServer");
+            // 设置存储类型
+            properties.Set(StdSchedulerFactory.PropertyJobStoreType, "Quartz.Impl.AdoJobStore.JobStoreTX, Quartz");
+            // 驱动类型
             properties.Set("quartz.jobStore.driverDelegateType", "Quartz.Impl.AdoJobStore.StdAdoDelegate, Quartz");
+            // 数据源名称
+            properties.Set("quartz.jobStore.dataSource", "myDS");
+            // JobDataMaps 中的值只能是字符串，具体可以看官方推荐这样设置的原因
+            properties.Set("quartz.jobStore.useProperties", "true");
+            properties.Set("quartz.jobStore.selectWithLockSQL", $"SELECT * FROM {sqlServerQuartzOptions.TablePrefix}LOCKS WITH(UPDLOCK) WHERE SCHED_NAME = @schedulerName AND LOCK_NAME = @lockName");
+
             properties.Set("quartz.jobStore.tablePrefix", sqlServerQuartzOptions.TablePrefix);
+            // 数据存储序列化方式
             properties.Set("quartz.serializer.type", sqlServerQuartzOptions.SerializerType.ToString());
+
+            if (sqlServerQuartzOptions.IsClustered)
+            {
+                //是否集群，集群模式下要设置为true
+                properties["quartz.jobStore.clustered"] = "true";
+                properties["quartz.scheduler.instanceName"] = "TestScheduler";
+                //集群模式下设置为auto，自动获取实例的Id，集群下一定要id不一样，不然不会自动恢复
+                properties["quartz.scheduler.instanceId"] = "AUTO";
+            }
 
             if (sqlServerQuartzOptions.IsUseHistoryPlugin)
             {
                 // 加载插件
                 // properties.Set("quartz.plugin.自定义名称.type","命名空间.类名,程序集名称");
                 properties.Set("quartz.plugin.DatabaseExecutionHistory.type", "Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin,Hybrid.Quartz");
-                properties.Set("quartz.plugin.DatabaseExecutionHistory.dataSource", "default");
+                properties.Set("quartz.plugin.DatabaseExecutionHistory.dataSource", "myDS");
                 properties.Set("quartz.plugin.DatabaseExecutionHistory.driverDelegateType", "Quartz.Impl.AdoJobStore.StdAdoDelegate, Quartz");
                 properties.Set("quartz.plugin.DatabaseExecutionHistory.storeType", "Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryStore, Hybrid.Quartz");
                 properties.Set("quartz.plugin.DatabaseExecutionHistory.tablePrefix", sqlServerQuartzOptions.TablePrefix);

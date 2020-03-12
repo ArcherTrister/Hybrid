@@ -90,6 +90,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer4.Quickstart.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer4.Quickstart.UI.AspNetIdentity", "test\IdentityServer4.Quickstart.UI.AspNetIdentity\IdentityServer4.Quickstart.UI.AspNetIdentity.csproj", "{770C6E39-EC8E-451A-B921-420AD17CD429}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobClient", "samples\client\JobClient\JobClient.csproj", "{3B838F77-8743-4BC6-B20B-B0702A68C563}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quartz", "test\quartznet\src\Quartz\Quartz.csproj", "{50E0B449-6059-4861-BC84-FBA300C83ADB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -212,6 +216,14 @@ Global
 		{770C6E39-EC8E-451A-B921-420AD17CD429}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{770C6E39-EC8E-451A-B921-420AD17CD429}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{770C6E39-EC8E-451A-B921-420AD17CD429}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B838F77-8743-4BC6-B20B-B0702A68C563}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B838F77-8743-4BC6-B20B-B0702A68C563}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B838F77-8743-4BC6-B20B-B0702A68C563}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B838F77-8743-4BC6-B20B-B0702A68C563}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50E0B449-6059-4861-BC84-FBA300C83ADB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50E0B449-6059-4861-BC84-FBA300C83ADB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50E0B449-6059-4861-BC84-FBA300C83ADB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50E0B449-6059-4861-BC84-FBA300C83ADB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -248,6 +260,8 @@ Global
 		{8888B72C-1985-49A2-9952-83BB3B5DCE30} = {FDC69CA5-A426-431B-AE34-787822004FB0}
 		{C36E9EC5-1957-4840-820D-9AD0A3A08B58} = {FDC69CA5-A426-431B-AE34-787822004FB0}
 		{770C6E39-EC8E-451A-B921-420AD17CD429} = {FDC69CA5-A426-431B-AE34-787822004FB0}
+		{3B838F77-8743-4BC6-B20B-B0702A68C563} = {D6FCB408-429A-4526-8EFD-FF47620749F0}
+		{50E0B449-6059-4861-BC84-FBA300C83ADB} = {FDC69CA5-A426-431B-AE34-787822004FB0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EB048828-DF83-45AB-943F-330B891075BB}

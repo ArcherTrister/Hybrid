@@ -36,6 +36,14 @@ namespace Microsoft.Extensions.DependencyInjection
             //properties.Remove(QuartzConsts.PropertyJobStoreTablePrefix);
             //properties.Remove(QuartzConsts.PropertyJobStoreUseProperties);
 
+            //if (inMemoryQuartzOptions.IsClustered)
+            //{
+            //    //是否集群，集群模式下要设置为true
+            //    properties["quartz.jobStore.clustered"] = "true";
+            //    //集群模式下设置为auto，自动获取实例的Id，集群下一定要id不一样，不然不会自动恢复
+            //    properties["quartz.scheduler.instanceId"] = "AUTO";
+            //}
+
             if (inMemoryQuartzOptions.IsUseHistoryPlugin)
             {
                 // 加载插件

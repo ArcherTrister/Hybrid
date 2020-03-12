@@ -50,6 +50,11 @@ namespace Hybrid.Core.Options
         /// </summary>
         public bool IsUseHistoryPlugin { get; set; }
 
+        /// <summary>
+        /// 是否使用集群模式
+        /// </summary>
+        public bool IsClustered { get; set; } = false;
+
         ///// <summary>
         ///// 是否使用仪表板
         ///// </summary>
