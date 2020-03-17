@@ -2,6 +2,7 @@
 using Hybrid.Configuration;
 using Hybrid.Core.Modules;
 using Hybrid.Core.Options;
+using Hybrid.Data;
 using Hybrid.EventBuses;
 using Hybrid.Exceptions;
 using Hybrid.Extensions;
@@ -54,6 +55,10 @@ namespace Hybrid.Quartz
             if (string.IsNullOrWhiteSpace(quartzOptions.TablePrefix))
             {
                 quartzOptions.TablePrefix = AdoConstants.DefaultTablePrefix;
+            }
+            if (string.IsNullOrWhiteSpace(quartzOptions.SchedulerName))
+            {
+                quartzOptions.SchedulerName = HybridConsts.DefaultSchedulerName;
             }
             services.AddSingleton(quartzOptions);
             if (quartzOptions.StorageType.Equals(QuartzStorageType.InMemory))

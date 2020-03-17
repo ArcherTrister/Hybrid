@@ -26,7 +26,17 @@ namespace Microsoft.Extensions.DependencyInjection
         private static NameValueCollection SetProperties(QuartzOptions inMemoryQuartzOptions)
         {
             var properties = new NameValueCollection();
-            properties.Set(StdSchedulerFactory.PropertySchedulerName, inMemoryQuartzOptions.SchedulerName);
+            // properties.Set(StdSchedulerFactory.PropertySchedulerName, inMemoryQuartzOptions.SchedulerName);
+            // 实例名称
+            properties.Set("quartz.scheduler.instanceName", inMemoryQuartzOptions.SchedulerName);
+            // 实例Id
+            // 线程池
+            properties.Set("quartz.threadPool.type", "Quartz.Simpl.SimpleThreadPool, Quartz");
+            // 设置线程池的最大线程数量
+            properties.Set("quartz.threadPool.threadCount", inMemoryQuartzOptions.ThreadCount.ToString());
+            // 设置作业中每个线程的优先级，可取 System.Threading.ThreadPriority 中的枚举
+            properties.Set("quartz.threadPool.threadPriority", inMemoryQuartzOptions.ThreadPriority.ToString());
+
             properties.Set(StdSchedulerFactory.PropertyJobStoreType, "Quartz.Simpl.RAMJobStore, Quartz");
             //properties.Set(QuartzConsts.PropertySerializerType, inMemoryQuartzOptions.SerializerType.ToString());
             //properties.Remove(QuartzConsts.PropertyDataSourceDatabaseConnectionString);

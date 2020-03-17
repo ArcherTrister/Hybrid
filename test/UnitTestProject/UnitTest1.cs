@@ -23,5 +23,11 @@ namespace UnitTestProject
             var B = A.GetProperties()[0];
             Console.WriteLine(nameof(ISoftDelete));
         }
+
+        [TestMethod]
+        public void TestThreadPriority()
+        {
+            Console.WriteLine(System.Threading.ThreadPriority.Normal);
+        }
     }
 }

@@ -27,7 +27,17 @@ namespace Microsoft.Extensions.DependencyInjection
         {
             var properties = new NameValueCollection();
 
-            properties.Set(StdSchedulerFactory.PropertySchedulerName, mySqlQuartzOptions.SchedulerName);
+            // properties.Set(StdSchedulerFactory.PropertySchedulerName, mySqlQuartzOptions.SchedulerName);
+            // 实例名称
+            properties.Set("quartz.scheduler.instanceName", mySqlQuartzOptions.SchedulerName);
+            // 实例Id
+            // 线程池
+            properties.Set("quartz.threadPool.type", "Quartz.Simpl.SimpleThreadPool, Quartz");
+            // 设置线程池的最大线程数量
+            properties.Set("quartz.threadPool.threadCount", mySqlQuartzOptions.ThreadCount.ToString());
+            // 设置作业中每个线程的优先级，可取 System.Threading.ThreadPriority 中的枚举
+            properties.Set("quartz.threadPool.threadPriority", mySqlQuartzOptions.ThreadPriority.ToString());
+
             properties.Set(StdSchedulerFactory.PropertyJobStoreType, "Quartz.Impl.AdoJobStore.JobStoreTX, Quartz");
 
             properties.Set("quartz.jobStore.useProperties", "true");

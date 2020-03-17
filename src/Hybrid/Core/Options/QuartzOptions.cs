@@ -7,7 +7,6 @@
 //  <last-date>2018-04-29 3:52</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Data;
 using System.ComponentModel.DataAnnotations;
 
 namespace Hybrid.Core.Options
@@ -18,14 +17,26 @@ namespace Hybrid.Core.Options
     public sealed class QuartzOptions
     {
         /// <summary>
-        /// 调度名称
+        /// 调度名称/实例名称
         /// </summary>
-        public string SchedulerName { get; set; } = HybridConsts.DefaultSchedulerName;
+        public string SchedulerName { get; set; }
+
+        /// <summary>
+        /// 线程数
+        /// </summary>
+        [Range(1, 100, ErrorMessage = "线程数设置错误，范围1-100")]
+        public int ThreadCount { get; set; } = 1;
+
+        /// <summary>
+        /// 作业中每个线程的优先级
+        /// </summary>
+        [Range(0, 4, ErrorMessage = "线程的优先级设置错误，范围0-4")]
+        public System.Threading.ThreadPriority ThreadPriority { get; set; } = System.Threading.ThreadPriority.Normal;
 
         /// <summary>
         /// 存储类型
         /// </summary>
-        [Range(0, 2, ErrorMessage = "存储类型设置错误")]
+        [Range(0, 2, ErrorMessage = "存储类型设置错误，范围0-2")]
         public QuartzStorageType StorageType { get; set; } = QuartzStorageType.InMemory;
 
         /// <summary>
@@ -42,7 +53,7 @@ namespace Hybrid.Core.Options
         /// <summary>
         /// 序列化类型
         /// </summary>
-        [Range(0, 1, ErrorMessage = "序列化类型设置错误")]
+        [Range(0, 1, ErrorMessage = "序列化类型设置错误，范围0-1")]
         public QuartzSerializerType SerializerType { get; set; } = QuartzSerializerType.Binary;
 
         /// <summary>
@@ -54,6 +65,11 @@ namespace Hybrid.Core.Options
         /// 是否使用集群模式
         /// </summary>
         public bool IsClustered { get; set; } = false;
+
+        /// <summary>
+        /// 是否使用集群模式
+        /// </summary>
+        public bool IsUseSelectWithLockSQL { get; set; } = false;
 
         ///// <summary>
         ///// 是否使用仪表板
