@@ -11,10 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\test\quartznet\src\Quartz\Quartz.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Update="quartz.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
