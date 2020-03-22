@@ -69,7 +69,7 @@ namespace Hybrid.Quartz
             {
                 services.UseSqlServer(quartzOptions);
             }
-            else if (quartzOptions.StorageType.Equals(QuartzStorageType.SqlServer))
+            else if (quartzOptions.StorageType.Equals(QuartzStorageType.MySql))
             {
                 services.UseMySql(quartzOptions);
             }
