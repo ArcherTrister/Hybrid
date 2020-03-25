@@ -50,13 +50,12 @@
 
   <ItemGroup>
     <!--<PackageReference Include="IdentityModel.AspNetCore" Version="1.0.0-rc.2" />-->
-    <!--<PackageReference Include="IdentityServer4" Version="3.1.2" />-->
+    <PackageReference Include="IdentityServer4" Version="3.1.2" />
     <PackageReference Include="Microsoft.Extensions.FileProviders.Composite" Version="3.1.2" />
     <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="3.1.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\sources\IdentityServer4\src\IdentityServer4\src\IdentityServer4.csproj" />
     <ProjectReference Include="..\Hybrid.Zero\Hybrid.Zero.csproj" />
   </ItemGroup>
 

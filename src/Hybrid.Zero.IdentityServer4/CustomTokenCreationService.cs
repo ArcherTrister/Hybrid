@@ -107,8 +107,8 @@ namespace Hybrid.Zero.IdentityServer4
         /// <returns>The JWT header</returns>
         protected virtual async Task<JwtHeader> CreateHeaderAsync(Token token)
         {
-            var credential = await Keys.GetSigningCredentialsAsync(token.AllowedSigningAlgorithms);
-
+            //var credential = await Keys.GetSigningCredentialsAsync(token.AllowedSigningAlgorithms);
+            var credential = await Keys.GetSigningCredentialsAsync();
             if (credential == null)
             {
                 throw new InvalidOperationException("No signing credential is configured. Can't create JWT token");
