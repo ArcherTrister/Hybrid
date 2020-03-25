@@ -18,6 +18,8 @@ namespace Hybrid.AspNetCore.Mvc.Controllers
     /// </summary>
     [ApiController]
     [Route("api/[area]/[controller]/[action]")]
+    [Produces("application/json")]
+    [Consumes("application/json")]
     public abstract class AreaApiController : ControllerBase
     {
         /// <summary>

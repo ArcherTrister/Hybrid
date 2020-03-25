@@ -31,5 +31,22 @@ namespace Conmon.Tests
         {
             Console.WriteLine(System.Threading.ThreadPriority.Normal);
         }
+
+        [TestMethod]
+        public void TestGuidGen()
+        {
+            for (int i = 0; i < 20; i++)
+            {
+                Console.WriteLine(Guid.NewGuid());
+            }
+        }
+
+        [TestMethod]
+        public void TestNull()
+        {
+            decimal? test = null;
+            test = 0.000m;
+            Assert.IsTrue((test??0)==0);
+        }
     }
 }

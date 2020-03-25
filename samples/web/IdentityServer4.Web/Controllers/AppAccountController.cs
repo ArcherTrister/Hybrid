@@ -149,7 +149,7 @@ namespace FlyingFish.Mobile.Controllers
                 Address = signInClient.BaseAddress + "connect/token",
                 ClientId = "mobileAppClient",
                 ClientSecret = "mobile app secrect",
-                Scope = "IdentityServerApi openid profile HybridCustom offline_access",
+                // Scope = "IdentityServerApi openid profile HybridCustom offline_access",
                 UserName = loginRequest.UserName,
                 Password = loginRequest.Password
             });

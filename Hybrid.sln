@@ -77,7 +77,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobClient", "samples\client
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sources", "sources", "{C6A30A12-1E1E-46EC-9557-B7672571BBF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conmon.Tests", "test\Conmon.Tests\Conmon.Tests.csproj", "{34CBAD41-A5CC-4B28-B928-D238CBB569D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Conmon.Tests", "test\Conmon.Tests\Conmon.Tests.csproj", "{34CBAD41-A5CC-4B28-B928-D238CBB569D3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "backup", "backup", "{05A6A921-B6C0-40D6-A61E-1212298E8825}"
 EndProject
@@ -86,6 +86,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer4", "sources\IdentityServer4\src\IdentityServer4\src\IdentityServer4.csproj", "{0BB5996D-B5C9-45F9-B5A2-58A6DDC545BC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityModel", "sources\IdentityModel\src\IdentityModel.csproj", "{AD5C21E7-6B16-4C6B-B374-13CD620CF743}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer4.Storage", "sources\IdentityServer4\src\Storage\src\IdentityServer4.Storage.csproj", "{20439E11-2918-4C98-8B76-BB8BED7F7F86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -193,6 +195,10 @@ Global
 		{AD5C21E7-6B16-4C6B-B374-13CD620CF743}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD5C21E7-6B16-4C6B-B374-13CD620CF743}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD5C21E7-6B16-4C6B-B374-13CD620CF743}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20439E11-2918-4C98-8B76-BB8BED7F7F86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20439E11-2918-4C98-8B76-BB8BED7F7F86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20439E11-2918-4C98-8B76-BB8BED7F7F86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20439E11-2918-4C98-8B76-BB8BED7F7F86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -225,6 +231,7 @@ Global
 		{2D8FA164-DBC6-47B7-BFFA-3DCC743274FE} = {C6A30A12-1E1E-46EC-9557-B7672571BBF3}
 		{0BB5996D-B5C9-45F9-B5A2-58A6DDC545BC} = {C6A30A12-1E1E-46EC-9557-B7672571BBF3}
 		{AD5C21E7-6B16-4C6B-B374-13CD620CF743} = {C6A30A12-1E1E-46EC-9557-B7672571BBF3}
+		{20439E11-2918-4C98-8B76-BB8BED7F7F86} = {C6A30A12-1E1E-46EC-9557-B7672571BBF3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EB048828-DF83-45AB-943F-330B891075BB}

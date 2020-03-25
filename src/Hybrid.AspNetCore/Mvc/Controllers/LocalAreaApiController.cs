@@ -21,6 +21,8 @@ namespace Hybrid.AspNetCore.Mvc.Controllers
     /// </summary>
     [ApiController]
     [Route("api/[area]/[controller]/[action]")]
+    [Produces("application/json")]
+    [Consumes("application/json")]
     [Authorize(AuthenticationSchemes = HybridConsts.LocalApi.AuthenticationScheme)]
     public abstract class LocalAreaApiController : ControllerBase
     {

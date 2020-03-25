@@ -54,13 +54,16 @@ namespace Hybrid.AspNetCore.Mvc
             {
                 //不支持的序列化返回406状态码
                 options.ReturnHttpNotAcceptable = true;
+                //options.RespectBrowserAcceptHeader = true;
                 //options.InputFormatters.Add(new XmlDataContractSerializerInputFormatter());
                 //options.OutputFormatters.Add(new XmlDataContractSerializerOutputFormatter());
                 //options.OutputFormatters.Insert(0, new XmlDataContractSerializerOutputFormatter());
                 //    //options.Conventions.Add(new DashedRoutingConvention());
+
                 options.Filters.Add(new OnlineUserAuthorizationFilter()); // 构建在线用户信息
                 options.Filters.Add(new FunctionAuthorizationFilter()); // 全局功能权限过滤器
                 options.Filters.Add(new OperateAuditFilter());
+                //options.Filters.Add(new WebApiResultFilter());
                 //options.Filters.Add(new MvcUnitOfWorkFilter());
                 //options.Filters.Add(new PageUnitOfWorkFilter());
             })
