@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Logging
+  commentId: N:Hybrid.Logging
+  id: Hybrid.Logging
+  children:
+  - Hybrid.Logging.LoggerExtensions
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Logging
+  nameWithType: Hybrid.Logging
+  fullName: Hybrid.Logging
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Logging.LoggerExtensions
+  commentId: T:Hybrid.Logging.LoggerExtensions
+  parent: Hybrid.Logging
+  name: LoggerExtensions
+  nameWithType: LoggerExtensions
+  fullName: Hybrid.Logging.LoggerExtensions
+- uid: Hybrid.Logging
+  commentId: N:Hybrid.Logging
+  name: Hybrid.Logging
+  nameWithType: Hybrid.Logging
+  fullName: Hybrid.Logging

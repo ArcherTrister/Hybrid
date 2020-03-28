@@ -1,0 +1,2209 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+  commentId: T:Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+  id: SchedulerStatus
+  parent: Hybrid.Quartz.Dashboard.Models.Dtos
+  children:
+  - Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Running
+  - Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Shutdown
+  - Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Standby
+  - Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Unknown
+  langs:
+  - csharp
+  - vb
+  name: SchedulerStatus
+  nameWithType: SchedulerStatus
+  fullName: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+  type: Enum
+  source:
+    remote:
+      path: src/Hybrid.Quartz/Dashboard/Models/Dtos/SchedulerStatus.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: SchedulerStatus
+    path: ../src/Hybrid.Quartz/Dashboard/Models/Dtos/SchedulerStatus.cs
+    startLine: 2
+  assemblies:
+  - Hybrid.Quartz
+  namespace: Hybrid.Quartz.Dashboard.Models.Dtos
+  syntax:
+    content: public enum SchedulerStatus
+    content.vb: Public Enum SchedulerStatus
+  extensionMethods:
+  - System.Enum.Hybrid.Extensions.EnumExtensions.ToDescription
+  - System.Object.Hybrid.Extensions.ObjectExtensions.CastTo(System.Type)
+  - System.Object.Hybrid.Extensions.ObjectExtensions.CastTo``1
+  - System.Object.Hybrid.Extensions.ObjectExtensions.CastTo``1({T})
+  - Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Hybrid.Extensions.ObjectExtensions.IsIn``1(Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus[])
+  - System.Object.Hybrid.Extensions.ObjectExtensions.ToDynamic
+  - Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Hybrid.Extensions.ParameterCheckExtensions.Required``1(System.Func{Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus,System.Boolean},System.String)
+  - Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Hybrid.Extensions.ParameterCheckExtensions.Required``2(System.Func{Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus,System.Boolean},System.String)
+  - System.Object.Hybrid.Json.JsonExtensions.ToJsonString(System.Boolean,System.Boolean)
+  - System.Object.Hybrid.Mapping.MapperExtensions.MapTo``1
+  - Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Hybrid.Mapping.MapperExtensions.MapTo``2({TTarget})
+  - System.Object.Hybrid.Reflection.LockExtensions.Locking(System.Action)
+  - Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Hybrid.Reflection.LockExtensions.Locking``1(System.Action{Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus})
+  - System.Object.Hybrid.Reflection.LockExtensions.Locking``1(System.Func{{TResult}})
+  - Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Hybrid.Reflection.LockExtensions.Locking``2(System.Func{Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus,{TResult}})
+  - Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2
+  - Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(System.Security.Principal.IPrincipal)
+  - Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(System.Security.Principal.IPrincipal)
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Unknown
+  commentId: F:Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Unknown
+  id: Unknown
+  parent: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: SchedulerStatus.Unknown
+  fullName: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Unknown
+  type: Field
+  source:
+    remote:
+      path: src/Hybrid.Quartz/Dashboard/Models/Dtos/SchedulerStatus.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Unknown
+    path: ../src/Hybrid.Quartz/Dashboard/Models/Dtos/SchedulerStatus.cs
+    startLine: 4
+  assemblies:
+  - Hybrid.Quartz
+  namespace: Hybrid.Quartz.Dashboard.Models.Dtos
+  syntax:
+    content: Unknown = 0
+    return:
+      type: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Running
+  commentId: F:Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Running
+  id: Running
+  parent: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+  langs:
+  - csharp
+  - vb
+  name: Running
+  nameWithType: SchedulerStatus.Running
+  fullName: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Running
+  type: Field
+  source:
+    remote:
+      path: src/Hybrid.Quartz/Dashboard/Models/Dtos/SchedulerStatus.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Running
+    path: ../src/Hybrid.Quartz/Dashboard/Models/Dtos/SchedulerStatus.cs
+    startLine: 5
+  assemblies:
+  - Hybrid.Quartz
+  namespace: Hybrid.Quartz.Dashboard.Models.Dtos
+  syntax:
+    content: Running = 1
+    return:
+      type: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Standby
+  commentId: F:Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Standby
+  id: Standby
+  parent: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+  langs:
+  - csharp
+  - vb
+  name: Standby
+  nameWithType: SchedulerStatus.Standby
+  fullName: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Standby
+  type: Field
+  source:
+    remote:
+      path: src/Hybrid.Quartz/Dashboard/Models/Dtos/SchedulerStatus.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Standby
+    path: ../src/Hybrid.Quartz/Dashboard/Models/Dtos/SchedulerStatus.cs
+    startLine: 6
+  assemblies:
+  - Hybrid.Quartz
+  namespace: Hybrid.Quartz.Dashboard.Models.Dtos
+  syntax:
+    content: Standby = 2
+    return:
+      type: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Shutdown
+  commentId: F:Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Shutdown
+  id: Shutdown
+  parent: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+  langs:
+  - csharp
+  - vb
+  name: Shutdown
+  nameWithType: SchedulerStatus.Shutdown
+  fullName: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Shutdown
+  type: Field
+  source:
+    remote:
+      path: src/Hybrid.Quartz/Dashboard/Models/Dtos/SchedulerStatus.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Shutdown
+    path: ../src/Hybrid.Quartz/Dashboard/Models/Dtos/SchedulerStatus.cs
+    startLine: 7
+  assemblies:
+  - Hybrid.Quartz
+  namespace: Hybrid.Quartz.Dashboard.Models.Dtos
+  syntax:
+    content: Shutdown = 3
+    return:
+      type: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Hybrid.Quartz.Dashboard.Models.Dtos
+  commentId: N:Hybrid.Quartz.Dashboard.Models.Dtos
+  name: Hybrid.Quartz.Dashboard.Models.Dtos
+  nameWithType: Hybrid.Quartz.Dashboard.Models.Dtos
+  fullName: Hybrid.Quartz.Dashboard.Models.Dtos
+- uid: System.Enum.Hybrid.Extensions.EnumExtensions.ToDescription
+  commentId: M:Hybrid.Extensions.EnumExtensions.ToDescription(System.Enum)
+  parent: Hybrid.Extensions.EnumExtensions
+  definition: Hybrid.Extensions.EnumExtensions.ToDescription(System.Enum)
+  name: ToDescription()
+  nameWithType: EnumExtensions.ToDescription()
+  fullName: Hybrid.Extensions.EnumExtensions.ToDescription()
+  spec.csharp:
+  - uid: Hybrid.Extensions.EnumExtensions.ToDescription
+    name: ToDescription
+    nameWithType: EnumExtensions.ToDescription
+    fullName: Hybrid.Extensions.EnumExtensions.ToDescription
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.EnumExtensions.ToDescription
+    name: ToDescription
+    nameWithType: EnumExtensions.ToDescription
+    fullName: Hybrid.Extensions.EnumExtensions.ToDescription
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Extensions.ObjectExtensions.CastTo(System.Type)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+  name: CastTo(Type)
+  nameWithType: ObjectExtensions.CastTo(Type)
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo(System.Type)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo(System.Type)
+    name: CastTo
+    nameWithType: ObjectExtensions.CastTo
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo(System.Type)
+    name: CastTo
+    nameWithType: ObjectExtensions.CastTo
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Extensions.ObjectExtensions.CastTo``1
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+  name: CastTo<T>()
+  nameWithType: ObjectExtensions.CastTo<T>()
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>()
+  nameWithType.vb: ObjectExtensions.CastTo(Of T)()
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)()
+  name.vb: CastTo(Of T)()
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1
+    name: CastTo<T>
+    nameWithType: ObjectExtensions.CastTo<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1
+    name: CastTo(Of T)
+    nameWithType: ObjectExtensions.CastTo(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Extensions.ObjectExtensions.CastTo``1({T})
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+  name: CastTo<T>(T)
+  nameWithType: ObjectExtensions.CastTo<T>(T)
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>(T)
+  nameWithType.vb: ObjectExtensions.CastTo(Of T)(T)
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)(T)
+  name.vb: CastTo(Of T)(T)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(``0)
+    name: CastTo<T>
+    nameWithType: ObjectExtensions.CastTo<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(``0)
+    name: CastTo(Of T)
+    nameWithType: ObjectExtensions.CastTo(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Hybrid.Extensions.ObjectExtensions.IsIn``1(Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus[])
+  commentId: M:Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+  name: IsIn<SchedulerStatus>(SchedulerStatus[])
+  nameWithType: ObjectExtensions.IsIn<SchedulerStatus>(SchedulerStatus[])
+  fullName: Hybrid.Extensions.ObjectExtensions.IsIn<Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus>(Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus[])
+  nameWithType.vb: ObjectExtensions.IsIn(Of SchedulerStatus)(SchedulerStatus())
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.IsIn(Of Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus)(Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus())
+  name.vb: IsIn(Of SchedulerStatus)(SchedulerStatus())
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0[])
+    name: IsIn<SchedulerStatus>
+    nameWithType: ObjectExtensions.IsIn<SchedulerStatus>
+    fullName: Hybrid.Extensions.ObjectExtensions.IsIn<Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+    name: SchedulerStatus
+    nameWithType: SchedulerStatus
+    fullName: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0[])
+    name: IsIn(Of SchedulerStatus)
+    nameWithType: ObjectExtensions.IsIn(Of SchedulerStatus)
+    fullName: Hybrid.Extensions.ObjectExtensions.IsIn(Of Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+    name: SchedulerStatus
+    nameWithType: SchedulerStatus
+    fullName: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Extensions.ObjectExtensions.ToDynamic
+  commentId: M:Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  name: ToDynamic()
+  nameWithType: ObjectExtensions.ToDynamic()
+  fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic()
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.ToDynamic
+    name: ToDynamic
+    nameWithType: ObjectExtensions.ToDynamic
+    fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.ToDynamic
+    name: ToDynamic
+    nameWithType: ObjectExtensions.ToDynamic
+    fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Hybrid.Extensions.ParameterCheckExtensions.Required``1(System.Func{Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus,System.Boolean},System.String)
+  commentId: M:Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+  parent: Hybrid.Extensions.ParameterCheckExtensions
+  definition: Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+  name: Required<SchedulerStatus>(Func<SchedulerStatus, Boolean>, String)
+  nameWithType: ParameterCheckExtensions.Required<SchedulerStatus>(Func<SchedulerStatus, Boolean>, String)
+  fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus>(System.Func<Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus, System.Boolean>, System.String)
+  nameWithType.vb: ParameterCheckExtensions.Required(Of SchedulerStatus)(Func(Of SchedulerStatus, Boolean), String)
+  fullName.vb: Hybrid.Extensions.ParameterCheckExtensions.Required(Of Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus)(System.Func(Of Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus, System.Boolean), System.String)
+  name.vb: Required(Of SchedulerStatus)(Func(Of SchedulerStatus, Boolean), String)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``1(System.Func{``0,System.Boolean},System.String)
+    name: Required<SchedulerStatus>
+    nameWithType: ParameterCheckExtensions.Required<SchedulerStatus>
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+    name: SchedulerStatus
+    nameWithType: SchedulerStatus
+    fullName: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``1(System.Func{``0,System.Boolean},System.String)
+    name: Required(Of SchedulerStatus)
+    nameWithType: ParameterCheckExtensions.Required(Of SchedulerStatus)
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required(Of Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+    name: SchedulerStatus
+    nameWithType: SchedulerStatus
+    fullName: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Hybrid.Extensions.ParameterCheckExtensions.Required``2(System.Func{Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus,System.Boolean},System.String)
+  commentId: M:Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+  parent: Hybrid.Extensions.ParameterCheckExtensions
+  definition: Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+  name: Required<SchedulerStatus, TException>(Func<SchedulerStatus, Boolean>, String)
+  nameWithType: ParameterCheckExtensions.Required<SchedulerStatus, TException>(Func<SchedulerStatus, Boolean>, String)
+  fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus, TException>(System.Func<Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus, System.Boolean>, System.String)
+  nameWithType.vb: ParameterCheckExtensions.Required(Of SchedulerStatus, TException)(Func(Of SchedulerStatus, Boolean), String)
+  fullName.vb: Hybrid.Extensions.ParameterCheckExtensions.Required(Of Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus, TException)(System.Func(Of Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus, System.Boolean), System.String)
+  name.vb: Required(Of SchedulerStatus, TException)(Func(Of SchedulerStatus, Boolean), String)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``2(System.Func{``0,System.Boolean},System.String)
+    name: Required<SchedulerStatus, TException>
+    nameWithType: ParameterCheckExtensions.Required<SchedulerStatus, TException>
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus, TException>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+    name: SchedulerStatus
+    nameWithType: SchedulerStatus
+    fullName: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``2(System.Func{``0,System.Boolean},System.String)
+    name: Required(Of SchedulerStatus, TException)
+    nameWithType: ParameterCheckExtensions.Required(Of SchedulerStatus, TException)
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required(Of Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus, TException)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+    name: SchedulerStatus
+    nameWithType: SchedulerStatus
+    fullName: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Json.JsonExtensions.ToJsonString(System.Boolean,System.Boolean)
+  commentId: M:Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+  parent: Hybrid.Json.JsonExtensions
+  definition: Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+  name: ToJsonString(Boolean, Boolean)
+  nameWithType: JsonExtensions.ToJsonString(Boolean, Boolean)
+  fullName: Hybrid.Json.JsonExtensions.ToJsonString(System.Boolean, System.Boolean)
+  spec.csharp:
+  - uid: Hybrid.Json.JsonExtensions.ToJsonString(System.Boolean,System.Boolean)
+    name: ToJsonString
+    nameWithType: JsonExtensions.ToJsonString
+    fullName: Hybrid.Json.JsonExtensions.ToJsonString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Json.JsonExtensions.ToJsonString(System.Boolean,System.Boolean)
+    name: ToJsonString
+    nameWithType: JsonExtensions.ToJsonString
+    fullName: Hybrid.Json.JsonExtensions.ToJsonString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Mapping.MapperExtensions.MapTo``1
+  commentId: M:Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+  parent: Hybrid.Mapping.MapperExtensions
+  definition: Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+  name: MapTo<TTarget>()
+  nameWithType: MapperExtensions.MapTo<TTarget>()
+  fullName: Hybrid.Mapping.MapperExtensions.MapTo<TTarget>()
+  nameWithType.vb: MapperExtensions.MapTo(Of TTarget)()
+  fullName.vb: Hybrid.Mapping.MapperExtensions.MapTo(Of TTarget)()
+  name.vb: MapTo(Of TTarget)()
+  spec.csharp:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``1
+    name: MapTo<TTarget>
+    nameWithType: MapperExtensions.MapTo<TTarget>
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo<TTarget>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``1
+    name: MapTo(Of TTarget)
+    nameWithType: MapperExtensions.MapTo(Of TTarget)
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo(Of TTarget)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Hybrid.Mapping.MapperExtensions.MapTo``2({TTarget})
+  commentId: M:Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+  parent: Hybrid.Mapping.MapperExtensions
+  definition: Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+  name: MapTo<SchedulerStatus, TTarget>(TTarget)
+  nameWithType: MapperExtensions.MapTo<SchedulerStatus, TTarget>(TTarget)
+  fullName: Hybrid.Mapping.MapperExtensions.MapTo<Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus, TTarget>(TTarget)
+  nameWithType.vb: MapperExtensions.MapTo(Of SchedulerStatus, TTarget)(TTarget)
+  fullName.vb: Hybrid.Mapping.MapperExtensions.MapTo(Of Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus, TTarget)(TTarget)
+  name.vb: MapTo(Of SchedulerStatus, TTarget)(TTarget)
+  spec.csharp:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``2(``1)
+    name: MapTo<SchedulerStatus, TTarget>
+    nameWithType: MapperExtensions.MapTo<SchedulerStatus, TTarget>
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo<Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus, TTarget>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TTarget
+    nameWithType: TTarget
+    fullName: TTarget
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``2(``1)
+    name: MapTo(Of SchedulerStatus, TTarget)
+    nameWithType: MapperExtensions.MapTo(Of SchedulerStatus, TTarget)
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo(Of Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus, TTarget)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TTarget
+    nameWithType: TTarget
+    fullName: TTarget
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Reflection.LockExtensions.Locking(System.Action)
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+  parent: Hybrid.Reflection.LockExtensions
+  definition: Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+  name: Locking(Action)
+  nameWithType: LockExtensions.Locking(Action)
+  fullName: Hybrid.Reflection.LockExtensions.Locking(System.Action)
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking(System.Action)
+    name: Locking
+    nameWithType: LockExtensions.Locking
+    fullName: Hybrid.Reflection.LockExtensions.Locking
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking(System.Action)
+    name: Locking
+    nameWithType: LockExtensions.Locking
+    fullName: Hybrid.Reflection.LockExtensions.Locking
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Hybrid.Reflection.LockExtensions.Locking``1(System.Action{Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+  parent: Hybrid.Reflection.LockExtensions
+  definition: Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+  name: Locking<SchedulerStatus>(Action<SchedulerStatus>)
+  nameWithType: LockExtensions.Locking<SchedulerStatus>(Action<SchedulerStatus>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus>(System.Action<Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus>)
+  nameWithType.vb: LockExtensions.Locking(Of SchedulerStatus)(Action(Of SchedulerStatus))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus)(System.Action(Of Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus))
+  name.vb: Locking(Of SchedulerStatus)(Action(Of SchedulerStatus))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Action{``0})
+    name: Locking<SchedulerStatus>
+    nameWithType: LockExtensions.Locking<SchedulerStatus>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+    name: SchedulerStatus
+    nameWithType: SchedulerStatus
+    fullName: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Action{``0})
+    name: Locking(Of SchedulerStatus)
+    nameWithType: LockExtensions.Locking(Of SchedulerStatus)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+    name: SchedulerStatus
+    nameWithType: SchedulerStatus
+    fullName: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Reflection.LockExtensions.Locking``1(System.Func{{TResult}})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+  parent: Hybrid.Reflection.LockExtensions
+  definition: Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+  name: Locking<TResult>(Func<TResult>)
+  nameWithType: LockExtensions.Locking<TResult>(Func<TResult>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<TResult>(System.Func<TResult>)
+  nameWithType.vb: LockExtensions.Locking(Of TResult)(Func(Of TResult))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of TResult)(System.Func(Of TResult))
+  name.vb: Locking(Of TResult)(Func(Of TResult))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Func{``0})
+    name: Locking<TResult>
+    nameWithType: LockExtensions.Locking<TResult>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Func{``0})
+    name: Locking(Of TResult)
+    nameWithType: LockExtensions.Locking(Of TResult)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Hybrid.Reflection.LockExtensions.Locking``2(System.Func{Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus,{TResult}})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+  parent: Hybrid.Reflection.LockExtensions
+  definition: Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+  name: Locking<SchedulerStatus, TResult>(Func<SchedulerStatus, TResult>)
+  nameWithType: LockExtensions.Locking<SchedulerStatus, TResult>(Func<SchedulerStatus, TResult>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus, TResult>(System.Func<Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus, TResult>)
+  nameWithType.vb: LockExtensions.Locking(Of SchedulerStatus, TResult)(Func(Of SchedulerStatus, TResult))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus, TResult)(System.Func(Of Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus, TResult))
+  name.vb: Locking(Of SchedulerStatus, TResult)(Func(Of SchedulerStatus, TResult))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``2(System.Func{``0,``1})
+    name: Locking<SchedulerStatus, TResult>
+    nameWithType: LockExtensions.Locking<SchedulerStatus, TResult>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus, TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+    name: SchedulerStatus
+    nameWithType: SchedulerStatus
+    fullName: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``2(System.Func{``0,``1})
+    name: Locking(Of SchedulerStatus, TResult)
+    nameWithType: LockExtensions.Locking(Of SchedulerStatus, TResult)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus, TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+    name: SchedulerStatus
+    nameWithType: SchedulerStatus
+    fullName: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+  parent: Hybrid.Domain.Entities.EntityExtensions
+  definition: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+  name: CheckICreatedTime<SchedulerStatus, TKey>()
+  nameWithType: EntityExtensions.CheckICreatedTime<SchedulerStatus, TKey>()
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime<Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus, TKey>()
+  nameWithType.vb: EntityExtensions.CheckICreatedTime(Of SchedulerStatus, TKey)()
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime(Of Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus, TKey)()
+  name.vb: CheckICreatedTime(Of SchedulerStatus, TKey)()
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2
+    name: CheckICreatedTime<SchedulerStatus, TKey>
+    nameWithType: EntityExtensions.CheckICreatedTime<SchedulerStatus, TKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime<Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus, TKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2
+    name: CheckICreatedTime(Of SchedulerStatus, TKey)
+    nameWithType: EntityExtensions.CheckICreatedTime(Of SchedulerStatus, TKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime(Of Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus, TKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(System.Security.Principal.IPrincipal)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+  parent: Hybrid.Domain.Entities.EntityExtensions
+  definition: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+  name: CheckICreationAudited<SchedulerStatus, TKey, TUserKey>(IPrincipal)
+  nameWithType: EntityExtensions.CheckICreationAudited<SchedulerStatus, TKey, TUserKey>(IPrincipal)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited<Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus, TKey, TUserKey>(System.Security.Principal.IPrincipal)
+  nameWithType.vb: EntityExtensions.CheckICreationAudited(Of SchedulerStatus, TKey, TUserKey)(IPrincipal)
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited(Of Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus, TKey, TUserKey)(System.Security.Principal.IPrincipal)
+  name.vb: CheckICreationAudited(Of SchedulerStatus, TKey, TUserKey)(IPrincipal)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(System.Security.Principal.IPrincipal)
+    name: CheckICreationAudited<SchedulerStatus, TKey, TUserKey>
+    nameWithType: EntityExtensions.CheckICreationAudited<SchedulerStatus, TKey, TUserKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited<Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus, TKey, TUserKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(System.Security.Principal.IPrincipal)
+    name: CheckICreationAudited(Of SchedulerStatus, TKey, TUserKey)
+    nameWithType: EntityExtensions.CheckICreationAudited(Of SchedulerStatus, TKey, TUserKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited(Of Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus, TKey, TUserKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus.Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(System.Security.Principal.IPrincipal)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+  parent: Hybrid.Domain.Entities.EntityExtensions
+  definition: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+  name: CheckIUpdateAudited<SchedulerStatus, TKey, TUserKey>(IPrincipal)
+  nameWithType: EntityExtensions.CheckIUpdateAudited<SchedulerStatus, TKey, TUserKey>(IPrincipal)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited<Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus, TKey, TUserKey>(System.Security.Principal.IPrincipal)
+  nameWithType.vb: EntityExtensions.CheckIUpdateAudited(Of SchedulerStatus, TKey, TUserKey)(IPrincipal)
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited(Of Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus, TKey, TUserKey)(System.Security.Principal.IPrincipal)
+  name.vb: CheckIUpdateAudited(Of SchedulerStatus, TKey, TUserKey)(IPrincipal)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(System.Security.Principal.IPrincipal)
+    name: CheckIUpdateAudited<SchedulerStatus, TKey, TUserKey>
+    nameWithType: EntityExtensions.CheckIUpdateAudited<SchedulerStatus, TKey, TUserKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited<Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus, TKey, TUserKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(System.Security.Principal.IPrincipal)
+    name: CheckIUpdateAudited(Of SchedulerStatus, TKey, TUserKey)
+    nameWithType: EntityExtensions.CheckIUpdateAudited(Of SchedulerStatus, TKey, TUserKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited(Of Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus, TKey, TUserKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.EnumExtensions.ToDescription(System.Enum)
+  commentId: M:Hybrid.Extensions.EnumExtensions.ToDescription(System.Enum)
+  isExternal: true
+  name: ToDescription(Enum)
+  nameWithType: EnumExtensions.ToDescription(Enum)
+  fullName: Hybrid.Extensions.EnumExtensions.ToDescription(System.Enum)
+  spec.csharp:
+  - uid: Hybrid.Extensions.EnumExtensions.ToDescription(System.Enum)
+    name: ToDescription
+    nameWithType: EnumExtensions.ToDescription
+    fullName: Hybrid.Extensions.EnumExtensions.ToDescription
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Enum
+    name: Enum
+    nameWithType: Enum
+    fullName: System.Enum
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.EnumExtensions.ToDescription(System.Enum)
+    name: ToDescription
+    nameWithType: EnumExtensions.ToDescription
+    fullName: Hybrid.Extensions.EnumExtensions.ToDescription
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Enum
+    name: Enum
+    nameWithType: Enum
+    fullName: System.Enum
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.EnumExtensions
+  commentId: T:Hybrid.Extensions.EnumExtensions
+  parent: Hybrid.Extensions
+  name: EnumExtensions
+  nameWithType: EnumExtensions
+  fullName: Hybrid.Extensions.EnumExtensions
+- uid: Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+  isExternal: true
+  name: CastTo(Object, Type)
+  nameWithType: ObjectExtensions.CastTo(Object, Type)
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo(System.Object, System.Type)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+    name: CastTo
+    nameWithType: ObjectExtensions.CastTo
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+    name: CastTo
+    nameWithType: ObjectExtensions.CastTo
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ObjectExtensions
+  commentId: T:Hybrid.Extensions.ObjectExtensions
+  parent: Hybrid.Extensions
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: Hybrid.Extensions.ObjectExtensions
+- uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+  isExternal: true
+  name: CastTo<T>(Object)
+  nameWithType: ObjectExtensions.CastTo<T>(Object)
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>(System.Object)
+  nameWithType.vb: ObjectExtensions.CastTo(Of T)(Object)
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)(System.Object)
+  name.vb: CastTo(Of T)(Object)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+    name: CastTo<T>
+    nameWithType: ObjectExtensions.CastTo<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+    name: CastTo(Of T)
+    nameWithType: ObjectExtensions.CastTo(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+  isExternal: true
+  name: CastTo<T>(Object, T)
+  nameWithType: ObjectExtensions.CastTo<T>(Object, T)
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>(System.Object, T)
+  nameWithType.vb: ObjectExtensions.CastTo(Of T)(Object, T)
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)(System.Object, T)
+  name.vb: CastTo(Of T)(Object, T)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+    name: CastTo<T>
+    nameWithType: ObjectExtensions.CastTo<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+    name: CastTo(Of T)
+    nameWithType: ObjectExtensions.CastTo(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+  commentId: M:Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+  name: IsIn<T>(T, T[])
+  nameWithType: ObjectExtensions.IsIn<T>(T, T[])
+  fullName: Hybrid.Extensions.ObjectExtensions.IsIn<T>(T, T[])
+  nameWithType.vb: ObjectExtensions.IsIn(Of T)(T, T())
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.IsIn(Of T)(T, T())
+  name.vb: IsIn(Of T)(T, T())
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+    name: IsIn<T>
+    nameWithType: ObjectExtensions.IsIn<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.IsIn<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+    name: IsIn(Of T)
+    nameWithType: ObjectExtensions.IsIn(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.IsIn(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  isExternal: true
+  name: ToDynamic(Object)
+  nameWithType: ObjectExtensions.ToDynamic(Object)
+  fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+    name: ToDynamic
+    nameWithType: ObjectExtensions.ToDynamic
+    fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+    name: ToDynamic
+    nameWithType: ObjectExtensions.ToDynamic
+    fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+  commentId: M:Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+  isExternal: true
+  name: Required<T>(T, Func<T, Boolean>, String)
+  nameWithType: ParameterCheckExtensions.Required<T>(T, Func<T, Boolean>, String)
+  fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<T>(T, System.Func<T, System.Boolean>, System.String)
+  nameWithType.vb: ParameterCheckExtensions.Required(Of T)(T, Func(Of T, Boolean), String)
+  fullName.vb: Hybrid.Extensions.ParameterCheckExtensions.Required(Of T)(T, System.Func(Of T, System.Boolean), System.String)
+  name.vb: Required(Of T)(T, Func(Of T, Boolean), String)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+    name: Required<T>
+    nameWithType: ParameterCheckExtensions.Required<T>
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+    name: Required(Of T)
+    nameWithType: ParameterCheckExtensions.Required(Of T)
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ParameterCheckExtensions
+  commentId: T:Hybrid.Extensions.ParameterCheckExtensions
+  parent: Hybrid.Extensions
+  name: ParameterCheckExtensions
+  nameWithType: ParameterCheckExtensions
+  fullName: Hybrid.Extensions.ParameterCheckExtensions
+- uid: Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+  commentId: M:Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+  isExternal: true
+  name: Required<T, TException>(T, Func<T, Boolean>, String)
+  nameWithType: ParameterCheckExtensions.Required<T, TException>(T, Func<T, Boolean>, String)
+  fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<T, TException>(T, System.Func<T, System.Boolean>, System.String)
+  nameWithType.vb: ParameterCheckExtensions.Required(Of T, TException)(T, Func(Of T, Boolean), String)
+  fullName.vb: Hybrid.Extensions.ParameterCheckExtensions.Required(Of T, TException)(T, System.Func(Of T, System.Boolean), System.String)
+  name.vb: Required(Of T, TException)(T, Func(Of T, Boolean), String)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+    name: Required<T, TException>
+    nameWithType: ParameterCheckExtensions.Required<T, TException>
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<T, TException>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+    name: Required(Of T, TException)
+    nameWithType: ParameterCheckExtensions.Required(Of T, TException)
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required(Of T, TException)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+  commentId: M:Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+  isExternal: true
+  name: ToJsonString(Object, Boolean, Boolean)
+  nameWithType: JsonExtensions.ToJsonString(Object, Boolean, Boolean)
+  fullName: Hybrid.Json.JsonExtensions.ToJsonString(System.Object, System.Boolean, System.Boolean)
+  spec.csharp:
+  - uid: Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+    name: ToJsonString
+    nameWithType: JsonExtensions.ToJsonString
+    fullName: Hybrid.Json.JsonExtensions.ToJsonString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+    name: ToJsonString
+    nameWithType: JsonExtensions.ToJsonString
+    fullName: Hybrid.Json.JsonExtensions.ToJsonString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Json.JsonExtensions
+  commentId: T:Hybrid.Json.JsonExtensions
+  parent: Hybrid.Json
+  name: JsonExtensions
+  nameWithType: JsonExtensions
+  fullName: Hybrid.Json.JsonExtensions
+- uid: Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+  commentId: M:Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+  isExternal: true
+  name: MapTo<TTarget>(Object)
+  nameWithType: MapperExtensions.MapTo<TTarget>(Object)
+  fullName: Hybrid.Mapping.MapperExtensions.MapTo<TTarget>(System.Object)
+  nameWithType.vb: MapperExtensions.MapTo(Of TTarget)(Object)
+  fullName.vb: Hybrid.Mapping.MapperExtensions.MapTo(Of TTarget)(System.Object)
+  name.vb: MapTo(Of TTarget)(Object)
+  spec.csharp:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+    name: MapTo<TTarget>
+    nameWithType: MapperExtensions.MapTo<TTarget>
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo<TTarget>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+    name: MapTo(Of TTarget)
+    nameWithType: MapperExtensions.MapTo(Of TTarget)
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo(Of TTarget)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Mapping.MapperExtensions
+  commentId: T:Hybrid.Mapping.MapperExtensions
+  parent: Hybrid.Mapping
+  name: MapperExtensions
+  nameWithType: MapperExtensions
+  fullName: Hybrid.Mapping.MapperExtensions
+- uid: Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+  commentId: M:Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+  name: MapTo<TSource, TTarget>(TSource, TTarget)
+  nameWithType: MapperExtensions.MapTo<TSource, TTarget>(TSource, TTarget)
+  fullName: Hybrid.Mapping.MapperExtensions.MapTo<TSource, TTarget>(TSource, TTarget)
+  nameWithType.vb: MapperExtensions.MapTo(Of TSource, TTarget)(TSource, TTarget)
+  fullName.vb: Hybrid.Mapping.MapperExtensions.MapTo(Of TSource, TTarget)(TSource, TTarget)
+  name.vb: MapTo(Of TSource, TTarget)(TSource, TTarget)
+  spec.csharp:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+    name: MapTo<TSource, TTarget>
+    nameWithType: MapperExtensions.MapTo<TSource, TTarget>
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo<TSource, TTarget>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TTarget
+    nameWithType: TTarget
+    fullName: TTarget
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+    name: MapTo(Of TSource, TTarget)
+    nameWithType: MapperExtensions.MapTo(Of TSource, TTarget)
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo(Of TSource, TTarget)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TTarget
+    nameWithType: TTarget
+    fullName: TTarget
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+  isExternal: true
+  name: Locking(Object, Action)
+  nameWithType: LockExtensions.Locking(Object, Action)
+  fullName: Hybrid.Reflection.LockExtensions.Locking(System.Object, System.Action)
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+    name: Locking
+    nameWithType: LockExtensions.Locking
+    fullName: Hybrid.Reflection.LockExtensions.Locking
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+    name: Locking
+    nameWithType: LockExtensions.Locking
+    fullName: Hybrid.Reflection.LockExtensions.Locking
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Reflection.LockExtensions
+  commentId: T:Hybrid.Reflection.LockExtensions
+  parent: Hybrid.Reflection
+  name: LockExtensions
+  nameWithType: LockExtensions
+  fullName: Hybrid.Reflection.LockExtensions
+- uid: Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+  isExternal: true
+  name: Locking<T>(T, Action<T>)
+  nameWithType: LockExtensions.Locking<T>(T, Action<T>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<T>(T, System.Action<T>)
+  nameWithType.vb: LockExtensions.Locking(Of T)(T, Action(Of T))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of T)(T, System.Action(Of T))
+  name.vb: Locking(Of T)(T, Action(Of T))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+    name: Locking<T>
+    nameWithType: LockExtensions.Locking<T>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+    name: Locking(Of T)
+    nameWithType: LockExtensions.Locking(Of T)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+  isExternal: true
+  name: Locking<TResult>(Object, Func<TResult>)
+  nameWithType: LockExtensions.Locking<TResult>(Object, Func<TResult>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<TResult>(System.Object, System.Func<TResult>)
+  nameWithType.vb: LockExtensions.Locking(Of TResult)(Object, Func(Of TResult))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of TResult)(System.Object, System.Func(Of TResult))
+  name.vb: Locking(Of TResult)(Object, Func(Of TResult))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+    name: Locking<TResult>
+    nameWithType: LockExtensions.Locking<TResult>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+    name: Locking(Of TResult)
+    nameWithType: LockExtensions.Locking(Of TResult)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+  isExternal: true
+  name: Locking<TSource, TResult>(TSource, Func<TSource, TResult>)
+  nameWithType: LockExtensions.Locking<TSource, TResult>(TSource, Func<TSource, TResult>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<TSource, TResult>(TSource, System.Func<TSource, TResult>)
+  nameWithType.vb: LockExtensions.Locking(Of TSource, TResult)(TSource, Func(Of TSource, TResult))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of TSource, TResult)(TSource, System.Func(Of TSource, TResult))
+  name.vb: Locking(Of TSource, TResult)(TSource, Func(Of TSource, TResult))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+    name: Locking<TSource, TResult>
+    nameWithType: LockExtensions.Locking<TSource, TResult>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<TSource, TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+    name: Locking(Of TSource, TResult)
+    nameWithType: LockExtensions.Locking(Of TSource, TResult)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of TSource, TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+  name: CheckICreatedTime<TEntity, TKey>(TEntity)
+  nameWithType: EntityExtensions.CheckICreatedTime<TEntity, TKey>(TEntity)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime<TEntity, TKey>(TEntity)
+  nameWithType.vb: EntityExtensions.CheckICreatedTime(Of TEntity, TKey)(TEntity)
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime(Of TEntity, TKey)(TEntity)
+  name.vb: CheckICreatedTime(Of TEntity, TKey)(TEntity)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+    name: CheckICreatedTime<TEntity, TKey>
+    nameWithType: EntityExtensions.CheckICreatedTime<TEntity, TKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime<TEntity, TKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+    name: CheckICreatedTime(Of TEntity, TKey)
+    nameWithType: EntityExtensions.CheckICreatedTime(Of TEntity, TKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime(Of TEntity, TKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Domain.Entities.EntityExtensions
+  commentId: T:Hybrid.Domain.Entities.EntityExtensions
+  parent: Hybrid.Domain.Entities
+  name: EntityExtensions
+  nameWithType: EntityExtensions
+  fullName: Hybrid.Domain.Entities.EntityExtensions
+- uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+  isExternal: true
+  name: CheckICreationAudited<TEntity, TKey, TUserKey>(TEntity, IPrincipal)
+  nameWithType: EntityExtensions.CheckICreationAudited<TEntity, TKey, TUserKey>(TEntity, IPrincipal)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited<TEntity, TKey, TUserKey>(TEntity, System.Security.Principal.IPrincipal)
+  nameWithType.vb: EntityExtensions.CheckICreationAudited(Of TEntity, TKey, TUserKey)(TEntity, IPrincipal)
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited(Of TEntity, TKey, TUserKey)(TEntity, System.Security.Principal.IPrincipal)
+  name.vb: CheckICreationAudited(Of TEntity, TKey, TUserKey)(TEntity, IPrincipal)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+    name: CheckICreationAudited<TEntity, TKey, TUserKey>
+    nameWithType: EntityExtensions.CheckICreationAudited<TEntity, TKey, TUserKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited<TEntity, TKey, TUserKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+    name: CheckICreationAudited(Of TEntity, TKey, TUserKey)
+    nameWithType: EntityExtensions.CheckICreationAudited(Of TEntity, TKey, TUserKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited(Of TEntity, TKey, TUserKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+  isExternal: true
+  name: CheckIUpdateAudited<TEntity, TKey, TUserKey>(TEntity, IPrincipal)
+  nameWithType: EntityExtensions.CheckIUpdateAudited<TEntity, TKey, TUserKey>(TEntity, IPrincipal)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited<TEntity, TKey, TUserKey>(TEntity, System.Security.Principal.IPrincipal)
+  nameWithType.vb: EntityExtensions.CheckIUpdateAudited(Of TEntity, TKey, TUserKey)(TEntity, IPrincipal)
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited(Of TEntity, TKey, TUserKey)(TEntity, System.Security.Principal.IPrincipal)
+  name.vb: CheckIUpdateAudited(Of TEntity, TKey, TUserKey)(TEntity, IPrincipal)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+    name: CheckIUpdateAudited<TEntity, TKey, TUserKey>
+    nameWithType: EntityExtensions.CheckIUpdateAudited<TEntity, TKey, TUserKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited<TEntity, TKey, TUserKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+    name: CheckIUpdateAudited(Of TEntity, TKey, TUserKey)
+    nameWithType: EntityExtensions.CheckIUpdateAudited(Of TEntity, TKey, TUserKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited(Of TEntity, TKey, TUserKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions
+  commentId: N:Hybrid.Extensions
+  name: Hybrid.Extensions
+  nameWithType: Hybrid.Extensions
+  fullName: Hybrid.Extensions
+- uid: Hybrid.Json
+  commentId: N:Hybrid.Json
+  name: Hybrid.Json
+  nameWithType: Hybrid.Json
+  fullName: Hybrid.Json
+- uid: Hybrid.Mapping
+  commentId: N:Hybrid.Mapping
+  name: Hybrid.Mapping
+  nameWithType: Hybrid.Mapping
+  fullName: Hybrid.Mapping
+- uid: Hybrid.Reflection
+  commentId: N:Hybrid.Reflection
+  name: Hybrid.Reflection
+  nameWithType: Hybrid.Reflection
+  fullName: Hybrid.Reflection
+- uid: Hybrid.Domain.Entities
+  commentId: N:Hybrid.Domain.Entities
+  name: Hybrid.Domain.Entities
+  nameWithType: Hybrid.Domain.Entities
+  fullName: Hybrid.Domain.Entities
+- uid: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+  commentId: T:Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+  parent: Hybrid.Quartz.Dashboard.Models.Dtos
+  name: SchedulerStatus
+  nameWithType: SchedulerStatus
+  fullName: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus

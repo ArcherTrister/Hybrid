@@ -1,0 +1,446 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Develop.CodeRamer
+  commentId: T:Hybrid.Develop.CodeRamer
+  id: CodeRamer
+  parent: Hybrid.Develop
+  children:
+  - Hybrid.Develop.CodeRamer.Initialize
+  - Hybrid.Develop.CodeRamer.Ram(System.String,System.Action)
+  langs:
+  - csharp
+  - vb
+  name: CodeRamer
+  nameWithType: CodeRamer
+  fullName: Hybrid.Develop.CodeRamer
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid/Develop/CodeRamer.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: CodeRamer
+    path: ../src/Hybrid/Develop/CodeRamer.cs
+    startLine: 18
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Develop
+  summary: "\n代码性能测试内存计算工具\n"
+  example: []
+  syntax:
+    content: public static class CodeRamer
+    content.vb: Public Module CodeRamer
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.Develop.CodeRamer.Initialize
+  commentId: M:Hybrid.Develop.CodeRamer.Initialize
+  id: Initialize
+  parent: Hybrid.Develop.CodeRamer
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: CodeRamer.Initialize()
+  fullName: Hybrid.Develop.CodeRamer.Initialize()
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Develop/CodeRamer.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Initialize
+    path: ../src/Hybrid/Develop/CodeRamer.cs
+    startLine: 23
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Develop
+  summary: "\n内存计算初始化，同时后续操作进行预热，以避免初次操作带来的性能影响\n"
+  example: []
+  syntax:
+    content: public static void Initialize()
+    content.vb: Public Shared Sub Initialize
+  overload: Hybrid.Develop.CodeRamer.Initialize*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Develop.CodeRamer.Ram(System.String,System.Action)
+  commentId: M:Hybrid.Develop.CodeRamer.Ram(System.String,System.Action)
+  id: Ram(System.String,System.Action)
+  parent: Hybrid.Develop.CodeRamer
+  langs:
+  - csharp
+  - vb
+  name: Ram(String, Action)
+  nameWithType: CodeRamer.Ram(String, Action)
+  fullName: Hybrid.Develop.CodeRamer.Ram(System.String, System.Action)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Develop/CodeRamer.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Ram
+    path: ../src/Hybrid/Develop/CodeRamer.cs
+    startLine: 35
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Develop
+  summary: "\n内存计算，传入操作标识名，重复次数，操作过程获取操作的性能数据\n"
+  example: []
+  syntax:
+    content: public static void Ram(string name, Action action)
+    parameters:
+    - id: name
+      type: System.String
+      description: '操作标识名 '
+    - id: action
+      type: System.Action
+      description: '操作过程的Action '
+    content.vb: Public Shared Sub Ram(name As String, action As Action)
+  overload: Hybrid.Develop.CodeRamer.Ram*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Hybrid.Develop
+  commentId: N:Hybrid.Develop
+  name: Hybrid.Develop
+  nameWithType: Hybrid.Develop
+  fullName: Hybrid.Develop
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hybrid.Develop.CodeRamer.Initialize*
+  commentId: Overload:Hybrid.Develop.CodeRamer.Initialize
+  name: Initialize
+  nameWithType: CodeRamer.Initialize
+  fullName: Hybrid.Develop.CodeRamer.Initialize
+- uid: Hybrid.Develop.CodeRamer.Ram*
+  commentId: Overload:Hybrid.Develop.CodeRamer.Ram
+  name: Ram
+  nameWithType: CodeRamer.Ram
+  fullName: Hybrid.Develop.CodeRamer.Ram
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action

@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Localization.Sources.Resource
+  commentId: N:Hybrid.Localization.Sources.Resource
+  id: Hybrid.Localization.Sources.Resource
+  children:
+  - Hybrid.Localization.Sources.Resource.ResourceFileLocalizationSource
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Localization.Sources.Resource
+  nameWithType: Hybrid.Localization.Sources.Resource
+  fullName: Hybrid.Localization.Sources.Resource
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Localization.Sources.Resource.ResourceFileLocalizationSource
+  commentId: T:Hybrid.Localization.Sources.Resource.ResourceFileLocalizationSource
+  name: ResourceFileLocalizationSource
+  nameWithType: ResourceFileLocalizationSource
+  fullName: Hybrid.Localization.Sources.Resource.ResourceFileLocalizationSource

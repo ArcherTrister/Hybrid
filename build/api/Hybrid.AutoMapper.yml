@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.AutoMapper
+  commentId: N:Hybrid.AutoMapper
+  id: Hybrid.AutoMapper
+  children:
+  - Hybrid.AutoMapper.AutoMapperMapper
+  - Hybrid.AutoMapper.AutoMapperModule
+  - Hybrid.AutoMapper.IAutoMapperConfiguration
+  - Hybrid.AutoMapper.MapTupleProfile
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.AutoMapper
+  nameWithType: Hybrid.AutoMapper
+  fullName: Hybrid.AutoMapper
+  type: Namespace
+  assemblies:
+  - Hybrid.AutoMapper
+references:
+- uid: Hybrid.AutoMapper.AutoMapperMapper
+  commentId: T:Hybrid.AutoMapper.AutoMapperMapper
+  name: AutoMapperMapper
+  nameWithType: AutoMapperMapper
+  fullName: Hybrid.AutoMapper.AutoMapperMapper
+- uid: Hybrid.AutoMapper.AutoMapperModule
+  commentId: T:Hybrid.AutoMapper.AutoMapperModule
+  name: AutoMapperModule
+  nameWithType: AutoMapperModule
+  fullName: Hybrid.AutoMapper.AutoMapperModule
+- uid: Hybrid.AutoMapper.IAutoMapperConfiguration
+  commentId: T:Hybrid.AutoMapper.IAutoMapperConfiguration
+  name: IAutoMapperConfiguration
+  nameWithType: IAutoMapperConfiguration
+  fullName: Hybrid.AutoMapper.IAutoMapperConfiguration
+- uid: Hybrid.AutoMapper.MapTupleProfile
+  commentId: T:Hybrid.AutoMapper.MapTupleProfile
+  name: MapTupleProfile
+  nameWithType: MapTupleProfile
+  fullName: Hybrid.AutoMapper.MapTupleProfile

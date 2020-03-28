@@ -101,6 +101,12 @@ namespace Hybrid.EntityFrameworkCore
                 {
                     continue;
                 }
+
+                if (property.PropertyInfo == null || property.PropertyInfo.HasAttribute<AuditIgnoreAttribute>())
+                {
+                    continue;
+                }
+
                 string name = property.Name;
                 if (property.IsPrimaryKey())
                 {
@@ -111,7 +117,7 @@ namespace Hybrid.EntityFrameworkCore
                 AuditPropertyEntry auditProperty = new AuditPropertyEntry()
                 {
                     FieldName = name,
-                    DisplayName = entityProperties.First(m => m.Name == name).Display,
+                    DisplayName = entityProperties.FirstOrDefault(m => m.Name == name)?.Display ?? name,
                     DataType = property.ClrType.ToString()
                 };
                 if (entry.State == EntityState.Added)

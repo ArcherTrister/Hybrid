@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Exceptions
+  commentId: N:Hybrid.Exceptions
+  id: Hybrid.Exceptions
+  children:
+  - Hybrid.Exceptions.ExceptionExtensions
+  - Hybrid.Exceptions.ExceptionMessage
+  - Hybrid.Exceptions.HybridException
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Exceptions
+  nameWithType: Hybrid.Exceptions
+  fullName: Hybrid.Exceptions
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Exceptions.ExceptionExtensions
+  commentId: T:Hybrid.Exceptions.ExceptionExtensions
+  parent: Hybrid.Exceptions
+  name: ExceptionExtensions
+  nameWithType: ExceptionExtensions
+  fullName: Hybrid.Exceptions.ExceptionExtensions
+- uid: Hybrid.Exceptions.ExceptionMessage
+  commentId: T:Hybrid.Exceptions.ExceptionMessage
+  name: ExceptionMessage
+  nameWithType: ExceptionMessage
+  fullName: Hybrid.Exceptions.ExceptionMessage
+- uid: Hybrid.Exceptions.HybridException
+  commentId: T:Hybrid.Exceptions.HybridException
+  name: HybridException
+  nameWithType: HybridException
+  fullName: Hybrid.Exceptions.HybridException
+- uid: Hybrid.Exceptions
+  commentId: N:Hybrid.Exceptions
+  name: Hybrid.Exceptions
+  nameWithType: Hybrid.Exceptions
+  fullName: Hybrid.Exceptions

@@ -1,0 +1,3225 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Drawing.BitmapExtensions
+  commentId: T:Hybrid.Drawing.BitmapExtensions
+  id: BitmapExtensions
+  parent: Hybrid.Drawing
+  children:
+  - Hybrid.Drawing.BitmapExtensions.AddBorder(System.Byte[0:,0:],System.Int32,System.Byte)
+  - Hybrid.Drawing.BitmapExtensions.Atomizing(System.Drawing.Bitmap)
+  - Hybrid.Drawing.BitmapExtensions.Binaryzation(System.Byte[0:,0:],System.Byte)
+  - Hybrid.Drawing.BitmapExtensions.Binaryzation(System.Drawing.Bitmap)
+  - Hybrid.Drawing.BitmapExtensions.Binaryzation(System.Drawing.Bitmap,System.Byte)
+  - Hybrid.Drawing.BitmapExtensions.Brightness(System.Drawing.Bitmap,System.Int32)
+  - Hybrid.Drawing.BitmapExtensions.ClearBorder(System.Byte[0:,0:],System.Int32)
+  - Hybrid.Drawing.BitmapExtensions.ClearBorder(System.Drawing.Bitmap,System.Int32)
+  - Hybrid.Drawing.BitmapExtensions.ClearGray(System.Byte[0:,0:],System.Byte,System.Byte)
+  - Hybrid.Drawing.BitmapExtensions.ClearNoise(System.Drawing.Bitmap,System.Byte,System.Int32)
+  - Hybrid.Drawing.BitmapExtensions.ClearNoiseArea(System.Byte[0:,0:],System.Byte,System.Int32)
+  - Hybrid.Drawing.BitmapExtensions.ClearNoiseRound(System.Byte[0:,0:],System.Byte,System.Int32)
+  - Hybrid.Drawing.BitmapExtensions.Clone(System.Byte[0:,0:],System.Int32,System.Int32,System.Int32,System.Int32)
+  - Hybrid.Drawing.BitmapExtensions.Contrast(System.Drawing.Bitmap,System.Int32)
+  - Hybrid.Drawing.BitmapExtensions.DeepFore(System.Byte[0:,0:],System.Byte)
+  - Hybrid.Drawing.BitmapExtensions.DeepFore(System.Drawing.Bitmap,System.Byte)
+  - Hybrid.Drawing.BitmapExtensions.DrawTo(System.Byte[0:,0:],System.Byte[0:,0:],System.Int32,System.Int32)
+  - Hybrid.Drawing.BitmapExtensions.Emboss(System.Drawing.Bitmap)
+  - Hybrid.Drawing.BitmapExtensions.FloodFill(System.Byte[0:,0:],System.Drawing.Point,System.Byte)
+  - Hybrid.Drawing.BitmapExtensions.FloodFill(System.Byte[0:,0:],System.Drawing.Point,System.Byte,System.Drawing.Point[]@)
+  - Hybrid.Drawing.BitmapExtensions.Gamma(System.Drawing.Bitmap,System.Single)
+  - Hybrid.Drawing.BitmapExtensions.GrayByLine(System.Drawing.Bitmap)
+  - Hybrid.Drawing.BitmapExtensions.GrayByPixels(System.Drawing.Bitmap)
+  - Hybrid.Drawing.BitmapExtensions.OtsuThreshold(System.Drawing.Bitmap)
+  - Hybrid.Drawing.BitmapExtensions.Plate(System.Drawing.Bitmap)
+  - Hybrid.Drawing.BitmapExtensions.Rotate(System.Drawing.Bitmap,System.Int32)
+  - Hybrid.Drawing.BitmapExtensions.Rotate(System.Drawing.Point,System.Drawing.Point,System.Int32)
+  - Hybrid.Drawing.BitmapExtensions.SetText(System.Drawing.Bitmap,System.String,System.Drawing.Font,System.Drawing.Color,System.Int32,System.Int32)
+  - Hybrid.Drawing.BitmapExtensions.ShadowX(System.Byte[0:,0:])
+  - Hybrid.Drawing.BitmapExtensions.ShadowY(System.Byte[0:,0:])
+  - Hybrid.Drawing.BitmapExtensions.Sharpen(System.Drawing.Bitmap)
+  - Hybrid.Drawing.BitmapExtensions.Soften(System.Drawing.Bitmap)
+  - Hybrid.Drawing.BitmapExtensions.SplitAverage(System.Drawing.Bitmap,System.Int32,System.Int32)
+  - Hybrid.Drawing.BitmapExtensions.SplitShadowY(System.Byte[0:,0:],System.Byte,System.Byte)
+  - Hybrid.Drawing.BitmapExtensions.Threshoding(System.Drawing.Bitmap,System.Byte)
+  - Hybrid.Drawing.BitmapExtensions.ToBitmap(System.Byte[0:,0:])
+  - Hybrid.Drawing.BitmapExtensions.ToBitmap(System.Drawing.Color[0:,0:])
+  - Hybrid.Drawing.BitmapExtensions.ToBytes(System.Drawing.Bitmap)
+  - Hybrid.Drawing.BitmapExtensions.ToCodeString(System.Byte[0:,0:],System.Byte,System.Boolean)
+  - Hybrid.Drawing.BitmapExtensions.ToCodeString(System.Drawing.Bitmap,System.Byte,System.Boolean)
+  - Hybrid.Drawing.BitmapExtensions.ToGrayArray2D(System.Drawing.Bitmap)
+  - Hybrid.Drawing.BitmapExtensions.ToGrayArray2D(System.Drawing.Color[0:,0:])
+  - Hybrid.Drawing.BitmapExtensions.ToPixelArray2D(System.Drawing.Bitmap)
+  - Hybrid.Drawing.BitmapExtensions.ToValid(System.Byte[0:,0:],System.Byte)
+  - Hybrid.Drawing.BitmapExtensions.ToValid(System.Drawing.Bitmap,System.Byte)
+  - Hybrid.Drawing.BitmapExtensions.ToValid(System.Drawing.Bitmap,System.Byte,System.Int32)
+  - Hybrid.Drawing.BitmapExtensions.Zoom(System.Drawing.Bitmap,System.Double,System.Drawing.Drawing2D.InterpolationMode)
+  - Hybrid.Drawing.BitmapExtensions.Zoom(System.Drawing.Bitmap,System.Int32,System.Int32,System.Drawing.Drawing2D.InterpolationMode)
+  langs:
+  - csharp
+  - vb
+  name: BitmapExtensions
+  nameWithType: BitmapExtensions
+  fullName: Hybrid.Drawing.BitmapExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: BitmapExtensions
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 26
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n图像扩展方法\n"
+  example: []
+  syntax:
+    content: public static class BitmapExtensions
+    content.vb: Public Module BitmapExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.Drawing.BitmapExtensions.ToPixelArray2D(System.Drawing.Bitmap)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.ToPixelArray2D(System.Drawing.Bitmap)
+  id: ToPixelArray2D(System.Drawing.Bitmap)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToPixelArray2D(Bitmap)
+  nameWithType: BitmapExtensions.ToPixelArray2D(Bitmap)
+  fullName: Hybrid.Drawing.BitmapExtensions.ToPixelArray2D(System.Drawing.Bitmap)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToPixelArray2D
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 33
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n将图像转换为 Color[,]颜色值二维数组\n"
+  example: []
+  syntax:
+    content: public static Color[, ] ToPixelArray2D(this Bitmap bmp)
+    parameters:
+    - id: bmp
+      type: System.Drawing.Bitmap
+    return:
+      type: System.Drawing.Color[,]
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToPixelArray2D(bmp As Bitmap) As Color(,)
+  overload: Hybrid.Drawing.BitmapExtensions.ToPixelArray2D*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Drawing.BitmapExtensions.ToGrayArray2D(System.Drawing.Bitmap)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.ToGrayArray2D(System.Drawing.Bitmap)
+  id: ToGrayArray2D(System.Drawing.Bitmap)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToGrayArray2D(Bitmap)
+  nameWithType: BitmapExtensions.ToGrayArray2D(Bitmap)
+  fullName: Hybrid.Drawing.BitmapExtensions.ToGrayArray2D(System.Drawing.Bitmap)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToGrayArray2D
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 58
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n将图像转换为 Byte[,]灰度值二维数组，后续所有操作都将以二维数组作为中间变量\n"
+  example: []
+  syntax:
+    content: public static byte[, ] ToGrayArray2D(this Bitmap bmp)
+    parameters:
+    - id: bmp
+      type: System.Drawing.Bitmap
+    return:
+      type: System.Byte[,]
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToGrayArray2D(bmp As Bitmap) As Byte(,)
+  overload: Hybrid.Drawing.BitmapExtensions.ToGrayArray2D*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Drawing.BitmapExtensions.ToGrayArray2D(System.Drawing.Color[0:,0:])
+  commentId: M:Hybrid.Drawing.BitmapExtensions.ToGrayArray2D(System.Drawing.Color[0:,0:])
+  id: ToGrayArray2D(System.Drawing.Color[0:,0:])
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToGrayArray2D(Color[,])
+  nameWithType: BitmapExtensions.ToGrayArray2D(Color[,])
+  fullName: Hybrid.Drawing.BitmapExtensions.ToGrayArray2D(System.Drawing.Color[,])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToGrayArray2D
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 84
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n将颜色数组二维数组转换为灰度值二维数组\n"
+  example: []
+  syntax:
+    content: public static byte[, ] ToGrayArray2D(this Color[, ] pixels)
+    parameters:
+    - id: pixels
+      type: System.Drawing.Color[,]
+    return:
+      type: System.Byte[,]
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToGrayArray2D(pixels As Color(,)) As Byte(,)
+  overload: Hybrid.Drawing.BitmapExtensions.ToGrayArray2D*
+  nameWithType.vb: BitmapExtensions.ToGrayArray2D(Color(,))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Drawing.BitmapExtensions.ToGrayArray2D(System.Drawing.Color(,))
+  name.vb: ToGrayArray2D(Color(,))
+- uid: Hybrid.Drawing.BitmapExtensions.ToBitmap(System.Drawing.Color[0:,0:])
+  commentId: M:Hybrid.Drawing.BitmapExtensions.ToBitmap(System.Drawing.Color[0:,0:])
+  id: ToBitmap(System.Drawing.Color[0:,0:])
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToBitmap(Color[,])
+  nameWithType: BitmapExtensions.ToBitmap(Color[,])
+  fullName: Hybrid.Drawing.BitmapExtensions.ToBitmap(System.Drawing.Color[,])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToBitmap
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 101
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n将二维颜色数组转换为图像\n"
+  example: []
+  syntax:
+    content: public static Bitmap ToBitmap(this Color[, ] pixels)
+    parameters:
+    - id: pixels
+      type: System.Drawing.Color[,]
+    return:
+      type: System.Drawing.Bitmap
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToBitmap(pixels As Color(,)) As Bitmap
+  overload: Hybrid.Drawing.BitmapExtensions.ToBitmap*
+  nameWithType.vb: BitmapExtensions.ToBitmap(Color(,))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Drawing.BitmapExtensions.ToBitmap(System.Drawing.Color(,))
+  name.vb: ToBitmap(Color(,))
+- uid: Hybrid.Drawing.BitmapExtensions.ToBitmap(System.Byte[0:,0:])
+  commentId: M:Hybrid.Drawing.BitmapExtensions.ToBitmap(System.Byte[0:,0:])
+  id: ToBitmap(System.Byte[0:,0:])
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToBitmap(Byte[,])
+  nameWithType: BitmapExtensions.ToBitmap(Byte[,])
+  fullName: Hybrid.Drawing.BitmapExtensions.ToBitmap(System.Byte[,])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToBitmap
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 130
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n将二维灰度数组转换为图像\n"
+  example: []
+  syntax:
+    content: public static Bitmap ToBitmap(this byte[, ] grayBytes)
+    parameters:
+    - id: grayBytes
+      type: System.Byte[,]
+    return:
+      type: System.Drawing.Bitmap
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToBitmap(grayBytes As Byte(,)) As Bitmap
+  overload: Hybrid.Drawing.BitmapExtensions.ToBitmap*
+  nameWithType.vb: BitmapExtensions.ToBitmap(Byte(,))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Drawing.BitmapExtensions.ToBitmap(System.Byte(,))
+  name.vb: ToBitmap(Byte(,))
+- uid: Hybrid.Drawing.BitmapExtensions.Binaryzation(System.Byte[0:,0:],System.Byte)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.Binaryzation(System.Byte[0:,0:],System.Byte)
+  id: Binaryzation(System.Byte[0:,0:],System.Byte)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: Binaryzation(Byte[,], Byte)
+  nameWithType: BitmapExtensions.Binaryzation(Byte[,], Byte)
+  fullName: Hybrid.Drawing.BitmapExtensions.Binaryzation(System.Byte[,], System.Byte)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Binaryzation
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 156
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n将二维灰度数组二值化\n"
+  example: []
+  syntax:
+    content: public static byte[, ] Binaryzation(this byte[, ] grayBytes, byte gray)
+    parameters:
+    - id: grayBytes
+      type: System.Byte[,]
+    - id: gray
+      type: System.Byte
+    return:
+      type: System.Byte[,]
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Binaryzation(grayBytes As Byte(,), gray As Byte) As Byte(,)
+  overload: Hybrid.Drawing.BitmapExtensions.Binaryzation*
+  nameWithType.vb: BitmapExtensions.Binaryzation(Byte(,), Byte)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Drawing.BitmapExtensions.Binaryzation(System.Byte(,), System.Byte)
+  name.vb: Binaryzation(Byte(,), Byte)
+- uid: Hybrid.Drawing.BitmapExtensions.DeepFore(System.Byte[0:,0:],System.Byte)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.DeepFore(System.Byte[0:,0:],System.Byte)
+  id: DeepFore(System.Byte[0:,0:],System.Byte)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: DeepFore(Byte[,], Byte)
+  nameWithType: BitmapExtensions.DeepFore(Byte[,], Byte)
+  fullName: Hybrid.Drawing.BitmapExtensions.DeepFore(System.Byte[,], System.Byte)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: DeepFore
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 172
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n将二维灰度数组前景色加黑\n"
+  example: []
+  syntax:
+    content: public static byte[, ] DeepFore(this byte[, ] grayBytes, byte gray = 200)
+    parameters:
+    - id: grayBytes
+      type: System.Byte[,]
+    - id: gray
+      type: System.Byte
+    return:
+      type: System.Byte[,]
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function DeepFore(grayBytes As Byte(,), gray As Byte = 200) As Byte(,)
+  overload: Hybrid.Drawing.BitmapExtensions.DeepFore*
+  nameWithType.vb: BitmapExtensions.DeepFore(Byte(,), Byte)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Drawing.BitmapExtensions.DeepFore(System.Byte(,), System.Byte)
+  name.vb: DeepFore(Byte(,), Byte)
+- uid: Hybrid.Drawing.BitmapExtensions.ClearNoiseRound(System.Byte[0:,0:],System.Byte,System.Int32)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.ClearNoiseRound(System.Byte[0:,0:],System.Byte,System.Int32)
+  id: ClearNoiseRound(System.Byte[0:,0:],System.Byte,System.Int32)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: ClearNoiseRound(Byte[,], Byte, Int32)
+  nameWithType: BitmapExtensions.ClearNoiseRound(Byte[,], Byte, Int32)
+  fullName: Hybrid.Drawing.BitmapExtensions.ClearNoiseRound(System.Byte[,], System.Byte, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ClearNoiseRound
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 191
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n去除噪音，周边有效点数的方式（适合杂点/细线）\n"
+  example: []
+  syntax:
+    content: public static byte[, ] ClearNoiseRound(this byte[, ] binBytes, byte gray, int maxNearPoints)
+    parameters:
+    - id: binBytes
+      type: System.Byte[,]
+    - id: gray
+      type: System.Byte
+    - id: maxNearPoints
+      type: System.Int32
+    return:
+      type: System.Byte[,]
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ClearNoiseRound(binBytes As Byte(,), gray As Byte, maxNearPoints As Integer) As Byte(,)
+  overload: Hybrid.Drawing.BitmapExtensions.ClearNoiseRound*
+  nameWithType.vb: BitmapExtensions.ClearNoiseRound(Byte(,), Byte, Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Drawing.BitmapExtensions.ClearNoiseRound(System.Byte(,), System.Byte, System.Int32)
+  name.vb: ClearNoiseRound(Byte(,), Byte, Int32)
+- uid: Hybrid.Drawing.BitmapExtensions.ClearNoiseArea(System.Byte[0:,0:],System.Byte,System.Int32)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.ClearNoiseArea(System.Byte[0:,0:],System.Byte,System.Int32)
+  id: ClearNoiseArea(System.Byte[0:,0:],System.Byte,System.Int32)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: ClearNoiseArea(Byte[,], Byte, Int32)
+  nameWithType: BitmapExtensions.ClearNoiseArea(Byte[,], Byte, Int32)
+  fullName: Hybrid.Drawing.BitmapExtensions.ClearNoiseArea(System.Byte[,], System.Byte, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ClearNoiseArea
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 227
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n去除噪音，连通域降噪方式，去除连通点数小于阈值的连通区域\n"
+  example: []
+  syntax:
+    content: public static byte[, ] ClearNoiseArea(this byte[, ] binBytes, byte gray, int minAreaPoints)
+    parameters:
+    - id: binBytes
+      type: System.Byte[,]
+    - id: gray
+      type: System.Byte
+    - id: minAreaPoints
+      type: System.Int32
+    return:
+      type: System.Byte[,]
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ClearNoiseArea(binBytes As Byte(,), gray As Byte, minAreaPoints As Integer) As Byte(,)
+  overload: Hybrid.Drawing.BitmapExtensions.ClearNoiseArea*
+  nameWithType.vb: BitmapExtensions.ClearNoiseArea(Byte(,), Byte, Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Drawing.BitmapExtensions.ClearNoiseArea(System.Byte(,), System.Byte, System.Int32)
+  name.vb: ClearNoiseArea(Byte(,), Byte, Int32)
+- uid: Hybrid.Drawing.BitmapExtensions.FloodFill(System.Byte[0:,0:],System.Drawing.Point,System.Byte)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.FloodFill(System.Byte[0:,0:],System.Drawing.Point,System.Byte)
+  id: FloodFill(System.Byte[0:,0:],System.Drawing.Point,System.Byte)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: FloodFill(Byte[,], Point, Byte)
+  nameWithType: BitmapExtensions.FloodFill(Byte[,], Point, Byte)
+  fullName: Hybrid.Drawing.BitmapExtensions.FloodFill(System.Byte[,], System.Drawing.Point, System.Byte)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: FloodFill
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 267
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n泛水填充算法，将相连通的区域使用指定灰度值填充\n"
+  example: []
+  syntax:
+    content: public static byte[, ] FloodFill(this byte[, ] binBytes, Point point, byte replacementGray)
+    parameters:
+    - id: binBytes
+      type: System.Byte[,]
+    - id: point
+      type: System.Drawing.Point
+    - id: replacementGray
+      type: System.Byte
+    return:
+      type: System.Byte[,]
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function FloodFill(binBytes As Byte(,), point As Point, replacementGray As Byte) As Byte(,)
+  overload: Hybrid.Drawing.BitmapExtensions.FloodFill*
+  nameWithType.vb: BitmapExtensions.FloodFill(Byte(,), Point, Byte)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Drawing.BitmapExtensions.FloodFill(System.Byte(,), System.Drawing.Point, System.Byte)
+  name.vb: FloodFill(Byte(,), Point, Byte)
+- uid: Hybrid.Drawing.BitmapExtensions.FloodFill(System.Byte[0:,0:],System.Drawing.Point,System.Byte,System.Drawing.Point[]@)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.FloodFill(System.Byte[0:,0:],System.Drawing.Point,System.Byte,System.Drawing.Point[]@)
+  id: FloodFill(System.Byte[0:,0:],System.Drawing.Point,System.Byte,System.Drawing.Point[]@)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: FloodFill(Byte[,], Point, Byte, out Point[])
+  nameWithType: BitmapExtensions.FloodFill(Byte[,], Point, Byte, out Point[])
+  fullName: Hybrid.Drawing.BitmapExtensions.FloodFill(System.Byte[,], System.Drawing.Point, System.Byte, out System.Drawing.Point[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: FloodFill
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 298
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n泛水填充算法，将相连通的区域使用指定灰度值填充\n"
+  example: []
+  syntax:
+    content: public static byte[, ] FloodFill(this byte[, ] binBytes, Point point, byte replacementGray, out Point[] points)
+    parameters:
+    - id: binBytes
+      type: System.Byte[,]
+    - id: point
+      type: System.Drawing.Point
+    - id: replacementGray
+      type: System.Byte
+    - id: points
+      type: System.Drawing.Point[]
+    return:
+      type: System.Byte[,]
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function FloodFill(binBytes As Byte(,), point As Point, replacementGray As Byte, ByRef points As Point()) As Byte(,)
+  overload: Hybrid.Drawing.BitmapExtensions.FloodFill*
+  nameWithType.vb: BitmapExtensions.FloodFill(Byte(,), Point, Byte, ByRef Point())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Drawing.BitmapExtensions.FloodFill(System.Byte(,), System.Drawing.Point, System.Byte, ByRef System.Drawing.Point())
+  name.vb: FloodFill(Byte(,), Point, Byte, ByRef Point())
+- uid: Hybrid.Drawing.BitmapExtensions.ClearBorder(System.Byte[0:,0:],System.Int32)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.ClearBorder(System.Byte[0:,0:],System.Int32)
+  id: ClearBorder(System.Byte[0:,0:],System.Int32)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: ClearBorder(Byte[,], Int32)
+  nameWithType: BitmapExtensions.ClearBorder(Byte[,], Int32)
+  fullName: Hybrid.Drawing.BitmapExtensions.ClearBorder(System.Byte[,], System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ClearBorder
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 332
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n去除图片边框\n"
+  example: []
+  syntax:
+    content: public static byte[, ] ClearBorder(this byte[, ] grayBytes, int border)
+    parameters:
+    - id: grayBytes
+      type: System.Byte[,]
+    - id: border
+      type: System.Int32
+    return:
+      type: System.Byte[,]
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ClearBorder(grayBytes As Byte(,), border As Integer) As Byte(,)
+  overload: Hybrid.Drawing.BitmapExtensions.ClearBorder*
+  nameWithType.vb: BitmapExtensions.ClearBorder(Byte(,), Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Drawing.BitmapExtensions.ClearBorder(System.Byte(,), System.Int32)
+  name.vb: ClearBorder(Byte(,), Int32)
+- uid: Hybrid.Drawing.BitmapExtensions.AddBorder(System.Byte[0:,0:],System.Int32,System.Byte)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.AddBorder(System.Byte[0:,0:],System.Int32,System.Byte)
+  id: AddBorder(System.Byte[0:,0:],System.Int32,System.Byte)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddBorder(Byte[,], Int32, Byte)
+  nameWithType: BitmapExtensions.AddBorder(Byte[,], Int32, Byte)
+  fullName: Hybrid.Drawing.BitmapExtensions.AddBorder(System.Byte[,], System.Int32, System.Byte)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: AddBorder
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 351
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n给图片添加边框，默认白色\n"
+  example: []
+  syntax:
+    content: public static byte[, ] AddBorder(this byte[, ] grayBytes, int border, byte gray = 255)
+    parameters:
+    - id: grayBytes
+      type: System.Byte[,]
+    - id: border
+      type: System.Int32
+    - id: gray
+      type: System.Byte
+    return:
+      type: System.Byte[,]
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddBorder(grayBytes As Byte(,), border As Integer, gray As Byte = 255) As Byte(,)
+  overload: Hybrid.Drawing.BitmapExtensions.AddBorder*
+  nameWithType.vb: BitmapExtensions.AddBorder(Byte(,), Int32, Byte)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Drawing.BitmapExtensions.AddBorder(System.Byte(,), System.Int32, System.Byte)
+  name.vb: AddBorder(Byte(,), Int32, Byte)
+- uid: Hybrid.Drawing.BitmapExtensions.ClearGray(System.Byte[0:,0:],System.Byte,System.Byte)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.ClearGray(System.Byte[0:,0:],System.Byte,System.Byte)
+  id: ClearGray(System.Byte[0:,0:],System.Byte,System.Byte)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: ClearGray(Byte[,], Byte, Byte)
+  nameWithType: BitmapExtensions.ClearGray(Byte[,], Byte, Byte)
+  fullName: Hybrid.Drawing.BitmapExtensions.ClearGray(System.Byte[,], System.Byte, System.Byte)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ClearGray
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 372
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n去除指定范围的灰度\n"
+  example: []
+  syntax:
+    content: public static byte[, ] ClearGray(this byte[, ] grayBytes, byte minGray, byte maxGray)
+    parameters:
+    - id: grayBytes
+      type: System.Byte[,]
+    - id: minGray
+      type: System.Byte
+    - id: maxGray
+      type: System.Byte
+    return:
+      type: System.Byte[,]
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ClearGray(grayBytes As Byte(,), minGray As Byte, maxGray As Byte) As Byte(,)
+  overload: Hybrid.Drawing.BitmapExtensions.ClearGray*
+  nameWithType.vb: BitmapExtensions.ClearGray(Byte(,), Byte, Byte)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Drawing.BitmapExtensions.ClearGray(System.Byte(,), System.Byte, System.Byte)
+  name.vb: ClearGray(Byte(,), Byte, Byte)
+- uid: Hybrid.Drawing.BitmapExtensions.ToValid(System.Byte[0:,0:],System.Byte)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.ToValid(System.Byte[0:,0:],System.Byte)
+  id: ToValid(System.Byte[0:,0:],System.Byte)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToValid(Byte[,], Byte)
+  nameWithType: BitmapExtensions.ToValid(Byte[,], Byte)
+  fullName: Hybrid.Drawing.BitmapExtensions.ToValid(System.Byte[,], System.Byte)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToValid
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 392
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n去除空白边界获取有效的图形\n"
+  example: []
+  syntax:
+    content: public static byte[, ] ToValid(this byte[, ] binBytes, byte gray = 200)
+    parameters:
+    - id: binBytes
+      type: System.Byte[,]
+    - id: gray
+      type: System.Byte
+    return:
+      type: System.Byte[,]
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToValid(binBytes As Byte(,), gray As Byte = 200) As Byte(,)
+  overload: Hybrid.Drawing.BitmapExtensions.ToValid*
+  nameWithType.vb: BitmapExtensions.ToValid(Byte(,), Byte)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Drawing.BitmapExtensions.ToValid(System.Byte(,), System.Byte)
+  name.vb: ToValid(Byte(,), Byte)
+- uid: Hybrid.Drawing.BitmapExtensions.Clone(System.Byte[0:,0:],System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.Clone(System.Byte[0:,0:],System.Int32,System.Int32,System.Int32,System.Int32)
+  id: Clone(System.Byte[0:,0:],System.Int32,System.Int32,System.Int32,System.Int32)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: Clone(Byte[,], Int32, Int32, Int32, Int32)
+  nameWithType: BitmapExtensions.Clone(Byte[,], Int32, Int32, Int32, Int32)
+  fullName: Hybrid.Drawing.BitmapExtensions.Clone(System.Byte[,], System.Int32, System.Int32, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Clone
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 421
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n从原矩阵中复制指定矩阵\n"
+  example: []
+  syntax:
+    content: public static byte[, ] Clone(this byte[, ] sourceBytes, int x1, int y1, int width, int height)
+    parameters:
+    - id: sourceBytes
+      type: System.Byte[,]
+    - id: x1
+      type: System.Int32
+    - id: y1
+      type: System.Int32
+    - id: width
+      type: System.Int32
+    - id: height
+      type: System.Int32
+    return:
+      type: System.Byte[,]
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Clone(sourceBytes As Byte(,), x1 As Integer, y1 As Integer, width As Integer, height As Integer) As Byte(,)
+  overload: Hybrid.Drawing.BitmapExtensions.Clone*
+  nameWithType.vb: BitmapExtensions.Clone(Byte(,), Int32, Int32, Int32, Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Drawing.BitmapExtensions.Clone(System.Byte(,), System.Int32, System.Int32, System.Int32, System.Int32)
+  name.vb: Clone(Byte(,), Int32, Int32, Int32, Int32)
+- uid: Hybrid.Drawing.BitmapExtensions.DrawTo(System.Byte[0:,0:],System.Byte[0:,0:],System.Int32,System.Int32)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.DrawTo(System.Byte[0:,0:],System.Byte[0:,0:],System.Int32,System.Int32)
+  id: DrawTo(System.Byte[0:,0:],System.Byte[0:,0:],System.Int32,System.Int32)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: DrawTo(Byte[,], Byte[,], Int32, Int32)
+  nameWithType: BitmapExtensions.DrawTo(Byte[,], Byte[,], Int32, Int32)
+  fullName: Hybrid.Drawing.BitmapExtensions.DrawTo(System.Byte[,], System.Byte[,], System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: DrawTo
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 446
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n将小图画到大图中\n"
+  example: []
+  syntax:
+    content: public static byte[, ] DrawTo(this byte[, ] smallBytes, byte[, ] bigBytes, int x1, int y1)
+    parameters:
+    - id: smallBytes
+      type: System.Byte[,]
+    - id: bigBytes
+      type: System.Byte[,]
+    - id: x1
+      type: System.Int32
+    - id: y1
+      type: System.Int32
+    return:
+      type: System.Byte[,]
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function DrawTo(smallBytes As Byte(,), bigBytes As Byte(,), x1 As Integer, y1 As Integer) As Byte(,)
+  overload: Hybrid.Drawing.BitmapExtensions.DrawTo*
+  nameWithType.vb: BitmapExtensions.DrawTo(Byte(,), Byte(,), Int32, Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Drawing.BitmapExtensions.DrawTo(System.Byte(,), System.Byte(,), System.Int32, System.Int32)
+  name.vb: DrawTo(Byte(,), Byte(,), Int32, Int32)
+- uid: Hybrid.Drawing.BitmapExtensions.ShadowY(System.Byte[0:,0:])
+  commentId: M:Hybrid.Drawing.BitmapExtensions.ShadowY(System.Byte[0:,0:])
+  id: ShadowY(System.Byte[0:,0:])
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: ShadowY(Byte[,])
+  nameWithType: BitmapExtensions.ShadowY(Byte[,])
+  fullName: Hybrid.Drawing.BitmapExtensions.ShadowY(System.Byte[,])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ShadowY
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 474
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n统计二维二值化数组的的竖直投影\n"
+  example: []
+  syntax:
+    content: public static int[] ShadowY(this byte[, ] binBytes)
+    parameters:
+    - id: binBytes
+      type: System.Byte[,]
+    return:
+      type: System.Int32[]
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ShadowY(binBytes As Byte(,)) As Integer()
+  overload: Hybrid.Drawing.BitmapExtensions.ShadowY*
+  nameWithType.vb: BitmapExtensions.ShadowY(Byte(,))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Drawing.BitmapExtensions.ShadowY(System.Byte(,))
+  name.vb: ShadowY(Byte(,))
+- uid: Hybrid.Drawing.BitmapExtensions.ShadowX(System.Byte[0:,0:])
+  commentId: M:Hybrid.Drawing.BitmapExtensions.ShadowX(System.Byte[0:,0:])
+  id: ShadowX(System.Byte[0:,0:])
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: ShadowX(Byte[,])
+  nameWithType: BitmapExtensions.ShadowX(Byte[,])
+  fullName: Hybrid.Drawing.BitmapExtensions.ShadowX(System.Byte[,])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ShadowX
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 494
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n统计二维二值化数组的横向投影\n"
+  example: []
+  syntax:
+    content: public static int[] ShadowX(this byte[, ] binBytes)
+    parameters:
+    - id: binBytes
+      type: System.Byte[,]
+    return:
+      type: System.Int32[]
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ShadowX(binBytes As Byte(,)) As Integer()
+  overload: Hybrid.Drawing.BitmapExtensions.ShadowX*
+  nameWithType.vb: BitmapExtensions.ShadowX(Byte(,))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Drawing.BitmapExtensions.ShadowX(System.Byte(,))
+  name.vb: ShadowX(Byte(,))
+- uid: Hybrid.Drawing.BitmapExtensions.SplitShadowY(System.Byte[0:,0:],System.Byte,System.Byte)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.SplitShadowY(System.Byte[0:,0:],System.Byte,System.Byte)
+  id: SplitShadowY(System.Byte[0:,0:],System.Byte,System.Byte)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: SplitShadowY(Byte[,], Byte, Byte)
+  nameWithType: BitmapExtensions.SplitShadowY(Byte[,], Byte, Byte)
+  fullName: Hybrid.Drawing.BitmapExtensions.SplitShadowY(System.Byte[,], System.Byte, System.Byte)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: SplitShadowY
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 518
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n根据二值化数组的竖直投影数据分割图片\n"
+  example: []
+  syntax:
+    content: public static List<byte[, ]> SplitShadowY(this byte[, ] binBytes, byte minFontWidth = 0, byte minLines = 0)
+    parameters:
+    - id: binBytes
+      type: System.Byte[,]
+      description: 二维二值化数组
+    - id: minFontWidth
+      type: System.Byte
+      description: 最小字符宽度，0则自动
+    - id: minLines
+      type: System.Byte
+      description: 最小有效投影行数
+    return:
+      type: System.Collections.Generic.List{System.Byte[0:,0:]}
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function SplitShadowY(binBytes As Byte(,), minFontWidth As Byte = 0, minLines As Byte = 0) As List(Of Byte(,))
+  overload: Hybrid.Drawing.BitmapExtensions.SplitShadowY*
+  nameWithType.vb: BitmapExtensions.SplitShadowY(Byte(,), Byte, Byte)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Drawing.BitmapExtensions.SplitShadowY(System.Byte(,), System.Byte, System.Byte)
+  name.vb: SplitShadowY(Byte(,), Byte, Byte)
+- uid: Hybrid.Drawing.BitmapExtensions.ToCodeString(System.Byte[0:,0:],System.Byte,System.Boolean)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.ToCodeString(System.Byte[0:,0:],System.Byte,System.Boolean)
+  id: ToCodeString(System.Byte[0:,0:],System.Byte,System.Boolean)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToCodeString(Byte[,], Byte, Boolean)
+  nameWithType: BitmapExtensions.ToCodeString(Byte[,], Byte, Boolean)
+  fullName: Hybrid.Drawing.BitmapExtensions.ToCodeString(System.Byte[,], System.Byte, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToCodeString
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 556
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n将二维二值化数组转换为特征码字符串\n"
+  example: []
+  syntax:
+    content: public static string ToCodeString(this byte[, ] binBytes, byte gray, bool breakLine = false)
+    parameters:
+    - id: binBytes
+      type: System.Byte[,]
+    - id: gray
+      type: System.Byte
+    - id: breakLine
+      type: System.Boolean
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToCodeString(binBytes As Byte(,), gray As Byte, breakLine As Boolean = False) As String
+  overload: Hybrid.Drawing.BitmapExtensions.ToCodeString*
+  nameWithType.vb: BitmapExtensions.ToCodeString(Byte(,), Byte, Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Drawing.BitmapExtensions.ToCodeString(System.Byte(,), System.Byte, System.Boolean)
+  name.vb: ToCodeString(Byte(,), Byte, Boolean)
+- uid: Hybrid.Drawing.BitmapExtensions.ToBytes(System.Drawing.Bitmap)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.ToBytes(System.Drawing.Bitmap)
+  id: ToBytes(System.Drawing.Bitmap)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToBytes(Bitmap)
+  nameWithType: BitmapExtensions.ToBytes(Bitmap)
+  fullName: Hybrid.Drawing.BitmapExtensions.ToBytes(System.Drawing.Bitmap)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToBytes
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 583
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n将Bitmap转换为Byte[]\n"
+  example: []
+  syntax:
+    content: public static byte[] ToBytes(this Bitmap bmp)
+    parameters:
+    - id: bmp
+      type: System.Drawing.Bitmap
+      description: 待处理的图像
+    return:
+      type: System.Byte[]
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToBytes(bmp As Bitmap) As Byte()
+  overload: Hybrid.Drawing.BitmapExtensions.ToBytes*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Drawing.BitmapExtensions.Rotate(System.Drawing.Bitmap,System.Int32)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.Rotate(System.Drawing.Bitmap,System.Int32)
+  id: Rotate(System.Drawing.Bitmap,System.Int32)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: Rotate(Bitmap, Int32)
+  nameWithType: BitmapExtensions.Rotate(Bitmap, Int32)
+  fullName: Hybrid.Drawing.BitmapExtensions.Rotate(System.Drawing.Bitmap, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Rotate
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 606
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n使图像绕中心点旋转一定角度\n"
+  example: []
+  syntax:
+    content: public static Bitmap Rotate(this Bitmap bmp, int angle)
+    parameters:
+    - id: bmp
+      type: System.Drawing.Bitmap
+      description: 待处理的图像
+    - id: angle
+      type: System.Int32
+      description: 旋转的角度，正值为逆时针方向
+    return:
+      type: System.Drawing.Bitmap
+      description: '旋转后的图像 '
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Rotate(bmp As Bitmap, angle As Integer) As Bitmap
+  overload: Hybrid.Drawing.BitmapExtensions.Rotate*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Drawing.BitmapExtensions.Rotate(System.Drawing.Point,System.Drawing.Point,System.Int32)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.Rotate(System.Drawing.Point,System.Drawing.Point,System.Int32)
+  id: Rotate(System.Drawing.Point,System.Drawing.Point,System.Int32)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: Rotate(Point, Point, Int32)
+  nameWithType: BitmapExtensions.Rotate(Point, Point, Int32)
+  fullName: Hybrid.Drawing.BitmapExtensions.Rotate(System.Drawing.Point, System.Drawing.Point, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Rotate
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 654
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n对一个坐标点按照一个中心进行旋转\n"
+  example: []
+  syntax:
+    content: public static Point Rotate(this Point center, Point point, int angle)
+    parameters:
+    - id: center
+      type: System.Drawing.Point
+    - id: point
+      type: System.Drawing.Point
+    - id: angle
+      type: System.Int32
+    return:
+      type: System.Drawing.Point
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Rotate(center As Point, point As Point, angle As Integer) As Point
+  overload: Hybrid.Drawing.BitmapExtensions.Rotate*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Drawing.BitmapExtensions.Zoom(System.Drawing.Bitmap,System.Int32,System.Int32,System.Drawing.Drawing2D.InterpolationMode)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.Zoom(System.Drawing.Bitmap,System.Int32,System.Int32,System.Drawing.Drawing2D.InterpolationMode)
+  id: Zoom(System.Drawing.Bitmap,System.Int32,System.Int32,System.Drawing.Drawing2D.InterpolationMode)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: Zoom(Bitmap, Int32, Int32, InterpolationMode)
+  nameWithType: BitmapExtensions.Zoom(Bitmap, Int32, Int32, InterpolationMode)
+  fullName: Hybrid.Drawing.BitmapExtensions.Zoom(System.Drawing.Bitmap, System.Int32, System.Int32, System.Drawing.Drawing2D.InterpolationMode)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Zoom
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 676
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n按指定宽度与高度缩放图像\n"
+  example: []
+  syntax:
+    content: public static Bitmap Zoom(this Bitmap bmp, int width, int height, InterpolationMode model = InterpolationMode.Default)
+    parameters:
+    - id: bmp
+      type: System.Drawing.Bitmap
+      description: 待处理的图像
+    - id: width
+      type: System.Int32
+      description: 缩放后的宽度
+    - id: height
+      type: System.Int32
+      description: 缩放后的高度
+    - id: model
+      type: System.Drawing.Drawing2D.InterpolationMode
+      description: 图像质量模式
+    return:
+      type: System.Drawing.Bitmap
+      description: '缩放后的图像 '
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Zoom(bmp As Bitmap, width As Integer, height As Integer, model As InterpolationMode = InterpolationMode.Default) As Bitmap
+  overload: Hybrid.Drawing.BitmapExtensions.Zoom*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Drawing.BitmapExtensions.Zoom(System.Drawing.Bitmap,System.Double,System.Drawing.Drawing2D.InterpolationMode)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.Zoom(System.Drawing.Bitmap,System.Double,System.Drawing.Drawing2D.InterpolationMode)
+  id: Zoom(System.Drawing.Bitmap,System.Double,System.Drawing.Drawing2D.InterpolationMode)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: Zoom(Bitmap, Double, InterpolationMode)
+  nameWithType: BitmapExtensions.Zoom(Bitmap, Double, InterpolationMode)
+  fullName: Hybrid.Drawing.BitmapExtensions.Zoom(System.Drawing.Bitmap, System.Double, System.Drawing.Drawing2D.InterpolationMode)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Zoom
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 694
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n按指定百分比缩放图像\n"
+  example: []
+  syntax:
+    content: public static Bitmap Zoom(this Bitmap bmp, double percent, InterpolationMode model = InterpolationMode.Default)
+    parameters:
+    - id: bmp
+      type: System.Drawing.Bitmap
+      description: 待处理的图像
+    - id: percent
+      type: System.Double
+      description: 缩放百分比（小数）
+    - id: model
+      type: System.Drawing.Drawing2D.InterpolationMode
+      description: 图像质量模式
+    return:
+      type: System.Drawing.Bitmap
+      description: '缩放后的图像 '
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Zoom(bmp As Bitmap, percent As Double, model As InterpolationMode = InterpolationMode.Default) As Bitmap
+  overload: Hybrid.Drawing.BitmapExtensions.Zoom*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Drawing.BitmapExtensions.GrayByPixels(System.Drawing.Bitmap)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.GrayByPixels(System.Drawing.Bitmap)
+  id: GrayByPixels(System.Drawing.Bitmap)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: GrayByPixels(Bitmap)
+  nameWithType: BitmapExtensions.GrayByPixels(Bitmap)
+  fullName: Hybrid.Drawing.BitmapExtensions.GrayByPixels(System.Drawing.Bitmap)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GrayByPixels
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 706
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n图像灰度化，逐点方式\n"
+  example: []
+  syntax:
+    content: public static Bitmap GrayByPixels(this Bitmap bmp)
+    parameters:
+    - id: bmp
+      type: System.Drawing.Bitmap
+      description: 待处理的图像
+    return:
+      type: System.Drawing.Bitmap
+      description: '灰度化后的图像 '
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GrayByPixels(bmp As Bitmap) As Bitmap
+  overload: Hybrid.Drawing.BitmapExtensions.GrayByPixels*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Drawing.BitmapExtensions.GrayByLine(System.Drawing.Bitmap)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.GrayByLine(System.Drawing.Bitmap)
+  id: GrayByLine(System.Drawing.Bitmap)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: GrayByLine(Bitmap)
+  nameWithType: BitmapExtensions.GrayByLine(Bitmap)
+  fullName: Hybrid.Drawing.BitmapExtensions.GrayByLine(System.Drawing.Bitmap)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GrayByLine
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 724
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n图像灰度化，逐行扫描方式\n"
+  example: []
+  syntax:
+    content: public static Bitmap GrayByLine(this Bitmap bmp)
+    parameters:
+    - id: bmp
+      type: System.Drawing.Bitmap
+    return:
+      type: System.Drawing.Bitmap
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GrayByLine(bmp As Bitmap) As Bitmap
+  overload: Hybrid.Drawing.BitmapExtensions.GrayByLine*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Drawing.BitmapExtensions.DeepFore(System.Drawing.Bitmap,System.Byte)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.DeepFore(System.Drawing.Bitmap,System.Byte)
+  id: DeepFore(System.Drawing.Bitmap,System.Byte)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: DeepFore(Bitmap, Byte)
+  nameWithType: BitmapExtensions.DeepFore(Bitmap, Byte)
+  fullName: Hybrid.Drawing.BitmapExtensions.DeepFore(System.Drawing.Bitmap, System.Byte)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: DeepFore
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 753
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n图像前景色加黑\n"
+  example: []
+  syntax:
+    content: public static Bitmap DeepFore(this Bitmap bmp, byte gray = 200)
+    parameters:
+    - id: bmp
+      type: System.Drawing.Bitmap
+      description: 待处理的图像
+    - id: gray
+      type: System.Byte
+      description: 指定灰度阈值，灰度小于该值，则设置为黑色
+    return:
+      type: System.Drawing.Bitmap
+      description: '深化后的图像 '
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function DeepFore(bmp As Bitmap, gray As Byte = 200) As Bitmap
+  overload: Hybrid.Drawing.BitmapExtensions.DeepFore*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Drawing.BitmapExtensions.ClearNoise(System.Drawing.Bitmap,System.Byte,System.Int32)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.ClearNoise(System.Drawing.Bitmap,System.Byte,System.Int32)
+  id: ClearNoise(System.Drawing.Bitmap,System.Byte,System.Int32)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: ClearNoise(Bitmap, Byte, Int32)
+  nameWithType: BitmapExtensions.ClearNoise(Bitmap, Byte, Int32)
+  fullName: Hybrid.Drawing.BitmapExtensions.ClearNoise(System.Drawing.Bitmap, System.Byte, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ClearNoise
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 777
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n去掉杂点，周边有效点数的方式(适合杂点/杂线粗为1)\n"
+  example: []
+  syntax:
+    content: public static Bitmap ClearNoise(this Bitmap bmp, byte gray, int maxNearPoints)
+    parameters:
+    - id: bmp
+      type: System.Drawing.Bitmap
+      description: 等处理图像
+    - id: gray
+      type: System.Byte
+      description: 临界灰度值，大于此值的点将视为无效点
+    - id: maxNearPoints
+      type: System.Int32
+      description: 周边最大有效点数，有效点数小于此值，当前点视为杂点，取值范围[0,4]
+    return:
+      type: System.Drawing.Bitmap
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ClearNoise(bmp As Bitmap, gray As Byte, maxNearPoints As Integer) As Bitmap
+  overload: Hybrid.Drawing.BitmapExtensions.ClearNoise*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Drawing.BitmapExtensions.Brightness(System.Drawing.Bitmap,System.Int32)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.Brightness(System.Drawing.Bitmap,System.Int32)
+  id: Brightness(System.Drawing.Bitmap,System.Int32)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: Brightness(Bitmap, Int32)
+  nameWithType: BitmapExtensions.Brightness(Bitmap, Int32)
+  fullName: Hybrid.Drawing.BitmapExtensions.Brightness(System.Drawing.Bitmap, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Brightness
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 816
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n调整图像亮度\n"
+  example: []
+  syntax:
+    content: public static Bitmap Brightness(this Bitmap bmp, int value)
+    parameters:
+    - id: bmp
+      type: System.Drawing.Bitmap
+      description: 待处理的图像
+    - id: value
+      type: System.Int32
+      description: 调整的亮度值，取值为[-255, 255]
+    return:
+      type: System.Drawing.Bitmap
+      description: '调整亮度后的图像 '
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Brightness(bmp As Bitmap, value As Integer) As Bitmap
+  overload: Hybrid.Drawing.BitmapExtensions.Brightness*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Drawing.BitmapExtensions.Contrast(System.Drawing.Bitmap,System.Int32)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.Contrast(System.Drawing.Bitmap,System.Int32)
+  id: Contrast(System.Drawing.Bitmap,System.Int32)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: Contrast(Bitmap, Int32)
+  nameWithType: BitmapExtensions.Contrast(Bitmap, Int32)
+  fullName: Hybrid.Drawing.BitmapExtensions.Contrast(System.Drawing.Bitmap, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Contrast
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 861
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n调整图像对比度\n"
+  example: []
+  syntax:
+    content: public static Bitmap Contrast(this Bitmap bmp, int value)
+    parameters:
+    - id: bmp
+      type: System.Drawing.Bitmap
+      description: 待处理的图像
+    - id: value
+      type: System.Int32
+      description: 调整的对比度，取值为[-100, 100]
+    return:
+      type: System.Drawing.Bitmap
+      description: '调整对比度后的图像 '
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Contrast(bmp As Bitmap, value As Integer) As Bitmap
+  overload: Hybrid.Drawing.BitmapExtensions.Contrast*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Drawing.BitmapExtensions.Gamma(System.Drawing.Bitmap,System.Single)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.Gamma(System.Drawing.Bitmap,System.Single)
+  id: Gamma(System.Drawing.Bitmap,System.Single)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: Gamma(Bitmap, Single)
+  nameWithType: BitmapExtensions.Gamma(Bitmap, Single)
+  fullName: Hybrid.Drawing.BitmapExtensions.Gamma(System.Drawing.Bitmap, System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Gamma
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 902
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\nGamma校正\n"
+  example: []
+  syntax:
+    content: public static Bitmap Gamma(this Bitmap bmp, float value)
+    parameters:
+    - id: bmp
+      type: System.Drawing.Bitmap
+      description: 待处理的图像
+    - id: value
+      type: System.Single
+      description: Gamma值
+    return:
+      type: System.Drawing.Bitmap
+      description: 'Gamma校正后的图像 '
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Gamma(bmp As Bitmap, value As Single) As Bitmap
+  overload: Hybrid.Drawing.BitmapExtensions.Gamma*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Drawing.BitmapExtensions.SetText(System.Drawing.Bitmap,System.String,System.Drawing.Font,System.Drawing.Color,System.Int32,System.Int32)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.SetText(System.Drawing.Bitmap,System.String,System.Drawing.Font,System.Drawing.Color,System.Int32,System.Int32)
+  id: SetText(System.Drawing.Bitmap,System.String,System.Drawing.Font,System.Drawing.Color,System.Int32,System.Int32)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: SetText(Bitmap, String, Font, Color, Int32, Int32)
+  nameWithType: BitmapExtensions.SetText(Bitmap, String, Font, Color, Int32, Int32)
+  fullName: Hybrid.Drawing.BitmapExtensions.SetText(System.Drawing.Bitmap, System.String, System.Drawing.Font, System.Drawing.Color, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: SetText
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 928
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n在图片上打印文字\n"
+  example: []
+  syntax:
+    content: public static Bitmap SetText(this Bitmap bmp, string text, Font font, Color color, int x, int y)
+    parameters:
+    - id: bmp
+      type: System.Drawing.Bitmap
+      description: 待处理的图像
+    - id: text
+      type: System.String
+      description: 要打印的文字
+    - id: font
+      type: System.Drawing.Font
+      description: 字体信息
+    - id: color
+      type: System.Drawing.Color
+      description: 文字颜色
+    - id: x
+      type: System.Int32
+      description: 文字位置横坐标
+    - id: y
+      type: System.Int32
+      description: 文字位置纵坐标
+    return:
+      type: System.Drawing.Bitmap
+      description: '打印文字后的图像 '
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function SetText(bmp As Bitmap, text As String, font As Font, color As Color, x As Integer, y As Integer) As Bitmap
+  overload: Hybrid.Drawing.BitmapExtensions.SetText*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Drawing.BitmapExtensions.ClearBorder(System.Drawing.Bitmap,System.Int32)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.ClearBorder(System.Drawing.Bitmap,System.Int32)
+  id: ClearBorder(System.Drawing.Bitmap,System.Int32)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: ClearBorder(Bitmap, Int32)
+  nameWithType: BitmapExtensions.ClearBorder(Bitmap, Int32)
+  fullName: Hybrid.Drawing.BitmapExtensions.ClearBorder(System.Drawing.Bitmap, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ClearBorder
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 946
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n去除图片边框\n"
+  example: []
+  syntax:
+    content: public static Bitmap ClearBorder(this Bitmap bmp, int border)
+    parameters:
+    - id: bmp
+      type: System.Drawing.Bitmap
+      description: 待处理的图像
+    - id: border
+      type: System.Int32
+      description: 边框宽度
+    return:
+      type: System.Drawing.Bitmap
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ClearBorder(bmp As Bitmap, border As Integer) As Bitmap
+  overload: Hybrid.Drawing.BitmapExtensions.ClearBorder*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Drawing.BitmapExtensions.Plate(System.Drawing.Bitmap)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.Plate(System.Drawing.Bitmap)
+  id: Plate(System.Drawing.Bitmap)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: Plate(Bitmap)
+  nameWithType: BitmapExtensions.Plate(Bitmap)
+  fullName: Hybrid.Drawing.BitmapExtensions.Plate(System.Drawing.Bitmap)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Plate
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 970
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n底片效果\n"
+  example: []
+  syntax:
+    content: public static Bitmap Plate(this Bitmap bmp)
+    parameters:
+    - id: bmp
+      type: System.Drawing.Bitmap
+      description: 待处理的图像
+    return:
+      type: System.Drawing.Bitmap
+      description: '底片效果的图像 '
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Plate(bmp As Bitmap) As Bitmap
+  overload: Hybrid.Drawing.BitmapExtensions.Plate*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Drawing.BitmapExtensions.Emboss(System.Drawing.Bitmap)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.Emboss(System.Drawing.Bitmap)
+  id: Emboss(System.Drawing.Bitmap)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: Emboss(Bitmap)
+  nameWithType: BitmapExtensions.Emboss(Bitmap)
+  fullName: Hybrid.Drawing.BitmapExtensions.Emboss(System.Drawing.Bitmap)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Emboss
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 993
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n浮雕效果\n"
+  example: []
+  syntax:
+    content: public static Bitmap Emboss(this Bitmap bmp)
+    parameters:
+    - id: bmp
+      type: System.Drawing.Bitmap
+      description: 待处理的图像
+    return:
+      type: System.Drawing.Bitmap
+      description: '浮雕效果的图像 '
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Emboss(bmp As Bitmap) As Bitmap
+  overload: Hybrid.Drawing.BitmapExtensions.Emboss*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Drawing.BitmapExtensions.Soften(System.Drawing.Bitmap)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.Soften(System.Drawing.Bitmap)
+  id: Soften(System.Drawing.Bitmap)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: Soften(Bitmap)
+  nameWithType: BitmapExtensions.Soften(Bitmap)
+  fullName: Hybrid.Drawing.BitmapExtensions.Soften(System.Drawing.Bitmap)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Soften
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 1023
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n柔化效果\n"
+  example: []
+  syntax:
+    content: public static Bitmap Soften(this Bitmap bmp)
+    parameters:
+    - id: bmp
+      type: System.Drawing.Bitmap
+      description: 待处理的图像
+    return:
+      type: System.Drawing.Bitmap
+      description: '柔化效果的图像 '
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Soften(bmp As Bitmap) As Bitmap
+  overload: Hybrid.Drawing.BitmapExtensions.Soften*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Drawing.BitmapExtensions.Sharpen(System.Drawing.Bitmap)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.Sharpen(System.Drawing.Bitmap)
+  id: Sharpen(System.Drawing.Bitmap)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: Sharpen(Bitmap)
+  nameWithType: BitmapExtensions.Sharpen(Bitmap)
+  fullName: Hybrid.Drawing.BitmapExtensions.Sharpen(System.Drawing.Bitmap)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Sharpen
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 1067
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n锐化效果\n"
+  example: []
+  syntax:
+    content: public static Bitmap Sharpen(this Bitmap bmp)
+    parameters:
+    - id: bmp
+      type: System.Drawing.Bitmap
+      description: 待处理的图像
+    return:
+      type: System.Drawing.Bitmap
+      description: '锐化效果的图像 '
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Sharpen(bmp As Bitmap) As Bitmap
+  overload: Hybrid.Drawing.BitmapExtensions.Sharpen*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Drawing.BitmapExtensions.Atomizing(System.Drawing.Bitmap)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.Atomizing(System.Drawing.Bitmap)
+  id: Atomizing(System.Drawing.Bitmap)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: Atomizing(Bitmap)
+  nameWithType: BitmapExtensions.Atomizing(Bitmap)
+  fullName: Hybrid.Drawing.BitmapExtensions.Atomizing(System.Drawing.Bitmap)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Atomizing
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 1111
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n雾化效果\n"
+  example: []
+  syntax:
+    content: public static Bitmap Atomizing(this Bitmap bmp)
+    parameters:
+    - id: bmp
+      type: System.Drawing.Bitmap
+      description: 待处理的图像
+    return:
+      type: System.Drawing.Bitmap
+      description: '雾化效果的图像 '
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Atomizing(bmp As Bitmap) As Bitmap
+  overload: Hybrid.Drawing.BitmapExtensions.Atomizing*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Drawing.BitmapExtensions.Binaryzation(System.Drawing.Bitmap)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.Binaryzation(System.Drawing.Bitmap)
+  id: Binaryzation(System.Drawing.Bitmap)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: Binaryzation(Bitmap)
+  nameWithType: BitmapExtensions.Binaryzation(Bitmap)
+  fullName: Hybrid.Drawing.BitmapExtensions.Binaryzation(System.Drawing.Bitmap)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Binaryzation
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 1142
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n二值化效果\n"
+  example: []
+  syntax:
+    content: public static Bitmap Binaryzation(this Bitmap bmp)
+    parameters:
+    - id: bmp
+      type: System.Drawing.Bitmap
+    return:
+      type: System.Drawing.Bitmap
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Binaryzation(bmp As Bitmap) As Bitmap
+  overload: Hybrid.Drawing.BitmapExtensions.Binaryzation*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Drawing.BitmapExtensions.Binaryzation(System.Drawing.Bitmap,System.Byte)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.Binaryzation(System.Drawing.Bitmap,System.Byte)
+  id: Binaryzation(System.Drawing.Bitmap,System.Byte)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: Binaryzation(Bitmap, Byte)
+  nameWithType: BitmapExtensions.Binaryzation(Bitmap, Byte)
+  fullName: Hybrid.Drawing.BitmapExtensions.Binaryzation(System.Drawing.Bitmap, System.Byte)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Binaryzation
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 1170
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n固定阈值的二值化\n"
+  example: []
+  syntax:
+    content: public static Bitmap Binaryzation(this Bitmap bmp, byte threshold)
+    parameters:
+    - id: bmp
+      type: System.Drawing.Bitmap
+      description: ''
+    - id: threshold
+      type: System.Byte
+      description: ''
+    return:
+      type: System.Drawing.Bitmap
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Binaryzation(bmp As Bitmap, threshold As Byte) As Bitmap
+  overload: Hybrid.Drawing.BitmapExtensions.Binaryzation*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Drawing.BitmapExtensions.OtsuThreshold(System.Drawing.Bitmap)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.OtsuThreshold(System.Drawing.Bitmap)
+  id: OtsuThreshold(System.Drawing.Bitmap)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: OtsuThreshold(Bitmap)
+  nameWithType: BitmapExtensions.OtsuThreshold(Bitmap)
+  fullName: Hybrid.Drawing.BitmapExtensions.OtsuThreshold(System.Drawing.Bitmap)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: OtsuThreshold
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 1212
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\nOTSU自动阈值法二值化\n"
+  example: []
+  syntax:
+    content: public static Bitmap OtsuThreshold(this Bitmap bmp)
+    parameters:
+    - id: bmp
+      type: System.Drawing.Bitmap
+    return:
+      type: System.Drawing.Bitmap
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function OtsuThreshold(bmp As Bitmap) As Bitmap
+  overload: Hybrid.Drawing.BitmapExtensions.OtsuThreshold*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Drawing.BitmapExtensions.Threshoding(System.Drawing.Bitmap,System.Byte)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.Threshoding(System.Drawing.Bitmap,System.Byte)
+  id: Threshoding(System.Drawing.Bitmap,System.Byte)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: Threshoding(Bitmap, Byte)
+  nameWithType: BitmapExtensions.Threshoding(Bitmap, Byte)
+  fullName: Hybrid.Drawing.BitmapExtensions.Threshoding(System.Drawing.Bitmap, System.Byte)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Threshoding
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 1272
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n固定阈值的二值化\n"
+  example: []
+  syntax:
+    content: public static Bitmap Threshoding(this Bitmap bmp, byte threshold)
+    parameters:
+    - id: bmp
+      type: System.Drawing.Bitmap
+      description: 待处理的图片
+    - id: threshold
+      type: System.Byte
+      description: 灰度阈值
+    return:
+      type: System.Drawing.Bitmap
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Threshoding(bmp As Bitmap, threshold As Byte) As Bitmap
+  overload: Hybrid.Drawing.BitmapExtensions.Threshoding*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Drawing.BitmapExtensions.ToValid(System.Drawing.Bitmap,System.Byte,System.Int32)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.ToValid(System.Drawing.Bitmap,System.Byte,System.Int32)
+  id: ToValid(System.Drawing.Bitmap,System.Byte,System.Int32)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToValid(Bitmap, Byte, Int32)
+  nameWithType: BitmapExtensions.ToValid(Bitmap, Byte, Int32)
+  fullName: Hybrid.Drawing.BitmapExtensions.ToValid(System.Drawing.Bitmap, System.Byte, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToValid
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 1310
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n获取有效图形并调整为可平均分割的大小\n"
+  example: []
+  syntax:
+    content: public static Bitmap ToValid(this Bitmap bmp, byte gray, int charCount)
+    parameters:
+    - id: bmp
+      type: System.Drawing.Bitmap
+      description: 待处理的图片
+    - id: gray
+      type: System.Byte
+      description: 灰度阈值
+    - id: charCount
+      type: System.Int32
+      description: 字符数量
+    return:
+      type: System.Drawing.Bitmap
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToValid(bmp As Bitmap, gray As Byte, charCount As Integer) As Bitmap
+  overload: Hybrid.Drawing.BitmapExtensions.ToValid*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Drawing.BitmapExtensions.ToValid(System.Drawing.Bitmap,System.Byte)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.ToValid(System.Drawing.Bitmap,System.Byte)
+  id: ToValid(System.Drawing.Bitmap,System.Byte)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToValid(Bitmap, Byte)
+  nameWithType: BitmapExtensions.ToValid(Bitmap, Byte)
+  fullName: Hybrid.Drawing.BitmapExtensions.ToValid(System.Drawing.Bitmap, System.Byte)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToValid
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 1369
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n去除空白边界获取有效的图形\n"
+  example: []
+  syntax:
+    content: public static Bitmap ToValid(this Bitmap bmp, byte gray)
+    parameters:
+    - id: bmp
+      type: System.Drawing.Bitmap
+      description: 待处理的图片
+    - id: gray
+      type: System.Byte
+      description: 灰度阈值
+    return:
+      type: System.Drawing.Bitmap
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToValid(bmp As Bitmap, gray As Byte) As Bitmap
+  overload: Hybrid.Drawing.BitmapExtensions.ToValid*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Drawing.BitmapExtensions.SplitAverage(System.Drawing.Bitmap,System.Int32,System.Int32)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.SplitAverage(System.Drawing.Bitmap,System.Int32,System.Int32)
+  id: SplitAverage(System.Drawing.Bitmap,System.Int32,System.Int32)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: SplitAverage(Bitmap, Int32, Int32)
+  nameWithType: BitmapExtensions.SplitAverage(Bitmap, Int32, Int32)
+  fullName: Hybrid.Drawing.BitmapExtensions.SplitAverage(System.Drawing.Bitmap, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: SplitAverage
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 1414
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n平均分割图片\n"
+  example: []
+  syntax:
+    content: public static Bitmap[] SplitAverage(this Bitmap bmp, int rowNum, int colNum)
+    parameters:
+    - id: bmp
+      type: System.Drawing.Bitmap
+      description: ''
+    - id: rowNum
+      type: System.Int32
+      description: 水平上分割数
+    - id: colNum
+      type: System.Int32
+      description: 垂直上分割数
+    return:
+      type: System.Drawing.Bitmap[]
+      description: 分割好的图片数组
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function SplitAverage(bmp As Bitmap, rowNum As Integer, colNum As Integer) As Bitmap()
+  overload: Hybrid.Drawing.BitmapExtensions.SplitAverage*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Drawing.BitmapExtensions.ToCodeString(System.Drawing.Bitmap,System.Byte,System.Boolean)
+  commentId: M:Hybrid.Drawing.BitmapExtensions.ToCodeString(System.Drawing.Bitmap,System.Byte,System.Boolean)
+  id: ToCodeString(System.Drawing.Bitmap,System.Byte,System.Boolean)
+  isExtensionMethod: true
+  parent: Hybrid.Drawing.BitmapExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToCodeString(Bitmap, Byte, Boolean)
+  nameWithType: BitmapExtensions.ToCodeString(Bitmap, Byte, Boolean)
+  fullName: Hybrid.Drawing.BitmapExtensions.ToCodeString(System.Drawing.Bitmap, System.Byte, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Drawing/BitmapExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToCodeString
+    path: ../src/Hybrid/Drawing/BitmapExtensions.cs
+    startLine: 1442
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Drawing
+  summary: "\n获取灰度图片的点阵描述字符串，1表示黑点，0表示空白\n"
+  example: []
+  syntax:
+    content: public static string ToCodeString(this Bitmap bmp, byte gray, bool lineBreak = false)
+    parameters:
+    - id: bmp
+      type: System.Drawing.Bitmap
+      description: 待处理的图片
+    - id: gray
+      type: System.Byte
+      description: 灰度临界值
+    - id: lineBreak
+      type: System.Boolean
+      description: 是否换行，默认false
+    return:
+      type: System.String
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToCodeString(bmp As Bitmap, gray As Byte, lineBreak As Boolean = False) As String
+  overload: Hybrid.Drawing.BitmapExtensions.ToCodeString*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Hybrid.Drawing
+  commentId: N:Hybrid.Drawing
+  name: Hybrid.Drawing
+  nameWithType: Hybrid.Drawing
+  fullName: Hybrid.Drawing
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hybrid.Drawing.BitmapExtensions.ToPixelArray2D*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.ToPixelArray2D
+  name: ToPixelArray2D
+  nameWithType: BitmapExtensions.ToPixelArray2D
+  fullName: Hybrid.Drawing.BitmapExtensions.ToPixelArray2D
+- uid: System.Drawing.Bitmap
+  commentId: T:System.Drawing.Bitmap
+  parent: System.Drawing
+  isExternal: true
+  name: Bitmap
+  nameWithType: Bitmap
+  fullName: System.Drawing.Bitmap
+- uid: System.Drawing.Color[,]
+  isExternal: true
+  name: Color[,]
+  nameWithType: Color[,]
+  fullName: System.Drawing.Color[,]
+  nameWithType.vb: Color(,)
+  fullName.vb: System.Drawing.Color(,)
+  name.vb: Color(,)
+  spec.csharp:
+  - uid: System.Drawing.Color
+    name: Color
+    nameWithType: Color
+    fullName: System.Drawing.Color
+    isExternal: true
+  - name: '[,]'
+    nameWithType: '[,]'
+    fullName: '[,]'
+  spec.vb:
+  - uid: System.Drawing.Color
+    name: Color
+    nameWithType: Color
+    fullName: System.Drawing.Color
+    isExternal: true
+  - name: (,)
+    nameWithType: (,)
+    fullName: (,)
+- uid: System.Drawing
+  commentId: N:System.Drawing
+  isExternal: true
+  name: System.Drawing
+  nameWithType: System.Drawing
+  fullName: System.Drawing
+- uid: Hybrid.Drawing.BitmapExtensions.ToGrayArray2D*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.ToGrayArray2D
+  name: ToGrayArray2D
+  nameWithType: BitmapExtensions.ToGrayArray2D
+  fullName: Hybrid.Drawing.BitmapExtensions.ToGrayArray2D
+- uid: System.Byte[,]
+  isExternal: true
+  name: Byte[,]
+  nameWithType: Byte[,]
+  fullName: System.Byte[,]
+  nameWithType.vb: Byte(,)
+  fullName.vb: System.Byte(,)
+  name.vb: Byte(,)
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[,]'
+    nameWithType: '[,]'
+    fullName: '[,]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: (,)
+    nameWithType: (,)
+    fullName: (,)
+- uid: Hybrid.Drawing.BitmapExtensions.ToBitmap*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.ToBitmap
+  name: ToBitmap
+  nameWithType: BitmapExtensions.ToBitmap
+  fullName: Hybrid.Drawing.BitmapExtensions.ToBitmap
+- uid: Hybrid.Drawing.BitmapExtensions.Binaryzation*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.Binaryzation
+  name: Binaryzation
+  nameWithType: BitmapExtensions.Binaryzation
+  fullName: Hybrid.Drawing.BitmapExtensions.Binaryzation
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: Hybrid.Drawing.BitmapExtensions.DeepFore*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.DeepFore
+  name: DeepFore
+  nameWithType: BitmapExtensions.DeepFore
+  fullName: Hybrid.Drawing.BitmapExtensions.DeepFore
+- uid: Hybrid.Drawing.BitmapExtensions.ClearNoiseRound*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.ClearNoiseRound
+  name: ClearNoiseRound
+  nameWithType: BitmapExtensions.ClearNoiseRound
+  fullName: Hybrid.Drawing.BitmapExtensions.ClearNoiseRound
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Hybrid.Drawing.BitmapExtensions.ClearNoiseArea*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.ClearNoiseArea
+  name: ClearNoiseArea
+  nameWithType: BitmapExtensions.ClearNoiseArea
+  fullName: Hybrid.Drawing.BitmapExtensions.ClearNoiseArea
+- uid: Hybrid.Drawing.BitmapExtensions.FloodFill*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.FloodFill
+  name: FloodFill
+  nameWithType: BitmapExtensions.FloodFill
+  fullName: Hybrid.Drawing.BitmapExtensions.FloodFill
+- uid: System.Drawing.Point
+  commentId: T:System.Drawing.Point
+  parent: System.Drawing
+  isExternal: true
+  name: Point
+  nameWithType: Point
+  fullName: System.Drawing.Point
+- uid: System.Drawing.Point[]
+  isExternal: true
+  name: Point[]
+  nameWithType: Point[]
+  fullName: System.Drawing.Point[]
+  nameWithType.vb: Point()
+  fullName.vb: System.Drawing.Point()
+  name.vb: Point()
+  spec.csharp:
+  - uid: System.Drawing.Point
+    name: Point
+    nameWithType: Point
+    fullName: System.Drawing.Point
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Drawing.Point
+    name: Point
+    nameWithType: Point
+    fullName: System.Drawing.Point
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Hybrid.Drawing.BitmapExtensions.ClearBorder*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.ClearBorder
+  name: ClearBorder
+  nameWithType: BitmapExtensions.ClearBorder
+  fullName: Hybrid.Drawing.BitmapExtensions.ClearBorder
+- uid: Hybrid.Drawing.BitmapExtensions.AddBorder*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.AddBorder
+  name: AddBorder
+  nameWithType: BitmapExtensions.AddBorder
+  fullName: Hybrid.Drawing.BitmapExtensions.AddBorder
+- uid: Hybrid.Drawing.BitmapExtensions.ClearGray*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.ClearGray
+  name: ClearGray
+  nameWithType: BitmapExtensions.ClearGray
+  fullName: Hybrid.Drawing.BitmapExtensions.ClearGray
+- uid: Hybrid.Drawing.BitmapExtensions.ToValid*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.ToValid
+  name: ToValid
+  nameWithType: BitmapExtensions.ToValid
+  fullName: Hybrid.Drawing.BitmapExtensions.ToValid
+- uid: Hybrid.Drawing.BitmapExtensions.Clone*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.Clone
+  name: Clone
+  nameWithType: BitmapExtensions.Clone
+  fullName: Hybrid.Drawing.BitmapExtensions.Clone
+- uid: Hybrid.Drawing.BitmapExtensions.DrawTo*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.DrawTo
+  name: DrawTo
+  nameWithType: BitmapExtensions.DrawTo
+  fullName: Hybrid.Drawing.BitmapExtensions.DrawTo
+- uid: Hybrid.Drawing.BitmapExtensions.ShadowY*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.ShadowY
+  name: ShadowY
+  nameWithType: BitmapExtensions.ShadowY
+  fullName: Hybrid.Drawing.BitmapExtensions.ShadowY
+- uid: System.Int32[]
+  isExternal: true
+  name: Int32[]
+  nameWithType: Int32[]
+  fullName: System.Int32[]
+  nameWithType.vb: Int32()
+  fullName.vb: System.Int32()
+  name.vb: Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Hybrid.Drawing.BitmapExtensions.ShadowX*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.ShadowX
+  name: ShadowX
+  nameWithType: BitmapExtensions.ShadowX
+  fullName: Hybrid.Drawing.BitmapExtensions.ShadowX
+- uid: Hybrid.Drawing.BitmapExtensions.SplitShadowY*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.SplitShadowY
+  name: SplitShadowY
+  nameWithType: BitmapExtensions.SplitShadowY
+  fullName: Hybrid.Drawing.BitmapExtensions.SplitShadowY
+- uid: System.Collections.Generic.List{System.Byte[0:,0:]}
+  commentId: T:System.Collections.Generic.List{System.Byte[0:,0:]}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Byte[,]>
+  nameWithType: List<Byte[,]>
+  fullName: System.Collections.Generic.List<System.Byte[,]>
+  nameWithType.vb: List(Of Byte(,))
+  fullName.vb: System.Collections.Generic.List(Of System.Byte(,))
+  name.vb: List(Of Byte(,))
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[,]'
+    nameWithType: '[,]'
+    fullName: '[,]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: (,)
+    nameWithType: (,)
+    fullName: (,)
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Hybrid.Drawing.BitmapExtensions.ToCodeString*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.ToCodeString
+  name: ToCodeString
+  nameWithType: BitmapExtensions.ToCodeString
+  fullName: Hybrid.Drawing.BitmapExtensions.ToCodeString
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Hybrid.Drawing.BitmapExtensions.ToBytes*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.ToBytes
+  name: ToBytes
+  nameWithType: BitmapExtensions.ToBytes
+  fullName: Hybrid.Drawing.BitmapExtensions.ToBytes
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Hybrid.Drawing.BitmapExtensions.Rotate*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.Rotate
+  name: Rotate
+  nameWithType: BitmapExtensions.Rotate
+  fullName: Hybrid.Drawing.BitmapExtensions.Rotate
+- uid: Hybrid.Drawing.BitmapExtensions.Zoom*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.Zoom
+  name: Zoom
+  nameWithType: BitmapExtensions.Zoom
+  fullName: Hybrid.Drawing.BitmapExtensions.Zoom
+- uid: System.Drawing.Drawing2D.InterpolationMode
+  commentId: T:System.Drawing.Drawing2D.InterpolationMode
+  parent: System.Drawing.Drawing2D
+  isExternal: true
+  name: InterpolationMode
+  nameWithType: InterpolationMode
+  fullName: System.Drawing.Drawing2D.InterpolationMode
+- uid: System.Drawing.Drawing2D
+  commentId: N:System.Drawing.Drawing2D
+  isExternal: true
+  name: System.Drawing.Drawing2D
+  nameWithType: System.Drawing.Drawing2D
+  fullName: System.Drawing.Drawing2D
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: Hybrid.Drawing.BitmapExtensions.GrayByPixels*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.GrayByPixels
+  name: GrayByPixels
+  nameWithType: BitmapExtensions.GrayByPixels
+  fullName: Hybrid.Drawing.BitmapExtensions.GrayByPixels
+- uid: Hybrid.Drawing.BitmapExtensions.GrayByLine*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.GrayByLine
+  name: GrayByLine
+  nameWithType: BitmapExtensions.GrayByLine
+  fullName: Hybrid.Drawing.BitmapExtensions.GrayByLine
+- uid: Hybrid.Drawing.BitmapExtensions.ClearNoise*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.ClearNoise
+  name: ClearNoise
+  nameWithType: BitmapExtensions.ClearNoise
+  fullName: Hybrid.Drawing.BitmapExtensions.ClearNoise
+- uid: Hybrid.Drawing.BitmapExtensions.Brightness*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.Brightness
+  name: Brightness
+  nameWithType: BitmapExtensions.Brightness
+  fullName: Hybrid.Drawing.BitmapExtensions.Brightness
+- uid: Hybrid.Drawing.BitmapExtensions.Contrast*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.Contrast
+  name: Contrast
+  nameWithType: BitmapExtensions.Contrast
+  fullName: Hybrid.Drawing.BitmapExtensions.Contrast
+- uid: Hybrid.Drawing.BitmapExtensions.Gamma*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.Gamma
+  name: Gamma
+  nameWithType: BitmapExtensions.Gamma
+  fullName: Hybrid.Drawing.BitmapExtensions.Gamma
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Hybrid.Drawing.BitmapExtensions.SetText*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.SetText
+  name: SetText
+  nameWithType: BitmapExtensions.SetText
+  fullName: Hybrid.Drawing.BitmapExtensions.SetText
+- uid: System.Drawing.Font
+  commentId: T:System.Drawing.Font
+  parent: System.Drawing
+  isExternal: true
+  name: Font
+  nameWithType: Font
+  fullName: System.Drawing.Font
+- uid: System.Drawing.Color
+  commentId: T:System.Drawing.Color
+  parent: System.Drawing
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: System.Drawing.Color
+- uid: Hybrid.Drawing.BitmapExtensions.Plate*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.Plate
+  name: Plate
+  nameWithType: BitmapExtensions.Plate
+  fullName: Hybrid.Drawing.BitmapExtensions.Plate
+- uid: Hybrid.Drawing.BitmapExtensions.Emboss*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.Emboss
+  name: Emboss
+  nameWithType: BitmapExtensions.Emboss
+  fullName: Hybrid.Drawing.BitmapExtensions.Emboss
+- uid: Hybrid.Drawing.BitmapExtensions.Soften*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.Soften
+  name: Soften
+  nameWithType: BitmapExtensions.Soften
+  fullName: Hybrid.Drawing.BitmapExtensions.Soften
+- uid: Hybrid.Drawing.BitmapExtensions.Sharpen*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.Sharpen
+  name: Sharpen
+  nameWithType: BitmapExtensions.Sharpen
+  fullName: Hybrid.Drawing.BitmapExtensions.Sharpen
+- uid: Hybrid.Drawing.BitmapExtensions.Atomizing*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.Atomizing
+  name: Atomizing
+  nameWithType: BitmapExtensions.Atomizing
+  fullName: Hybrid.Drawing.BitmapExtensions.Atomizing
+- uid: Hybrid.Drawing.BitmapExtensions.OtsuThreshold*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.OtsuThreshold
+  name: OtsuThreshold
+  nameWithType: BitmapExtensions.OtsuThreshold
+  fullName: Hybrid.Drawing.BitmapExtensions.OtsuThreshold
+- uid: Hybrid.Drawing.BitmapExtensions.Threshoding*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.Threshoding
+  name: Threshoding
+  nameWithType: BitmapExtensions.Threshoding
+  fullName: Hybrid.Drawing.BitmapExtensions.Threshoding
+- uid: Hybrid.Drawing.BitmapExtensions.SplitAverage*
+  commentId: Overload:Hybrid.Drawing.BitmapExtensions.SplitAverage
+  name: SplitAverage
+  nameWithType: BitmapExtensions.SplitAverage
+  fullName: Hybrid.Drawing.BitmapExtensions.SplitAverage
+- uid: System.Drawing.Bitmap[]
+  isExternal: true
+  name: Bitmap[]
+  nameWithType: Bitmap[]
+  fullName: System.Drawing.Bitmap[]
+  nameWithType.vb: Bitmap()
+  fullName.vb: System.Drawing.Bitmap()
+  name.vb: Bitmap()
+  spec.csharp:
+  - uid: System.Drawing.Bitmap
+    name: Bitmap
+    nameWithType: Bitmap
+    fullName: System.Drawing.Bitmap
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Drawing.Bitmap
+    name: Bitmap
+    nameWithType: Bitmap
+    fullName: System.Drawing.Bitmap
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()

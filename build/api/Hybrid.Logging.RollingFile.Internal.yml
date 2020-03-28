@@ -1,0 +1,41 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Logging.RollingFile.Internal
+  commentId: N:Hybrid.Logging.RollingFile.Internal
+  id: Hybrid.Logging.RollingFile.Internal
+  children:
+  - Hybrid.Logging.RollingFile.Internal.BatchingLoggerOptions
+  - Hybrid.Logging.RollingFile.Internal.BatchingLoggerProvider
+  - Hybrid.Logging.RollingFile.Internal.LogMessageEntry
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Logging.RollingFile.Internal
+  nameWithType: Hybrid.Logging.RollingFile.Internal
+  fullName: Hybrid.Logging.RollingFile.Internal
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Logging.RollingFile.Internal.BatchingLoggerOptions
+  commentId: T:Hybrid.Logging.RollingFile.Internal.BatchingLoggerOptions
+  parent: Hybrid.Logging.RollingFile.Internal
+  name: BatchingLoggerOptions
+  nameWithType: BatchingLoggerOptions
+  fullName: Hybrid.Logging.RollingFile.Internal.BatchingLoggerOptions
+- uid: Hybrid.Logging.RollingFile.Internal.BatchingLoggerProvider
+  commentId: T:Hybrid.Logging.RollingFile.Internal.BatchingLoggerProvider
+  parent: Hybrid.Logging.RollingFile.Internal
+  name: BatchingLoggerProvider
+  nameWithType: BatchingLoggerProvider
+  fullName: Hybrid.Logging.RollingFile.Internal.BatchingLoggerProvider
+- uid: Hybrid.Logging.RollingFile.Internal.LogMessageEntry
+  commentId: T:Hybrid.Logging.RollingFile.Internal.LogMessageEntry
+  name: LogMessageEntry
+  nameWithType: LogMessageEntry
+  fullName: Hybrid.Logging.RollingFile.Internal.LogMessageEntry
+- uid: Hybrid.Logging.RollingFile.Internal
+  commentId: N:Hybrid.Logging.RollingFile.Internal
+  name: Hybrid.Logging.RollingFile.Internal
+  nameWithType: Hybrid.Logging.RollingFile.Internal
+  fullName: Hybrid.Logging.RollingFile.Internal

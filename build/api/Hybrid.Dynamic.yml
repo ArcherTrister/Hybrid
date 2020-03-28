@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Dynamic
+  commentId: N:Hybrid.Dynamic
+  id: Hybrid.Dynamic
+  children:
+  - Hybrid.Dynamic.Exposed
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Dynamic
+  nameWithType: Hybrid.Dynamic
+  fullName: Hybrid.Dynamic
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Dynamic.Exposed
+  commentId: T:Hybrid.Dynamic.Exposed
+  name: Exposed
+  nameWithType: Exposed
+  fullName: Hybrid.Dynamic.Exposed

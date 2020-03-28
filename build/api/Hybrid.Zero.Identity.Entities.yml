@@ -1,0 +1,601 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Zero.Identity.Entities
+  commentId: N:Hybrid.Zero.Identity.Entities
+  id: Hybrid.Zero.Identity.Entities
+  children:
+  - Hybrid.Zero.Identity.Entities.RoleBase`1
+  - Hybrid.Zero.Identity.Entities.RoleClaimBase`2
+  - Hybrid.Zero.Identity.Entities.RoleStoreBase`4
+  - Hybrid.Zero.Identity.Entities.UserBase`1
+  - Hybrid.Zero.Identity.Entities.UserClaimBase`2
+  - Hybrid.Zero.Identity.Entities.UserLoginBase`2
+  - Hybrid.Zero.Identity.Entities.UserLoginInfoEx
+  - Hybrid.Zero.Identity.Entities.UserRoleBase`3
+  - Hybrid.Zero.Identity.Entities.UserStoreBase`12
+  - Hybrid.Zero.Identity.Entities.UserTokenBase`2
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Zero.Identity.Entities
+  nameWithType: Hybrid.Zero.Identity.Entities
+  fullName: Hybrid.Zero.Identity.Entities
+  type: Namespace
+  assemblies:
+  - Hybrid.Zero
+references:
+- uid: Hybrid.Zero.Identity.Entities.RoleBase`1
+  commentId: T:Hybrid.Zero.Identity.Entities.RoleBase`1
+  name: RoleBase<TKey>
+  nameWithType: RoleBase<TKey>
+  fullName: Hybrid.Zero.Identity.Entities.RoleBase<TKey>
+  nameWithType.vb: RoleBase(Of TKey)
+  fullName.vb: Hybrid.Zero.Identity.Entities.RoleBase(Of TKey)
+  name.vb: RoleBase(Of TKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Identity.Entities.RoleBase`1
+    name: RoleBase
+    nameWithType: RoleBase
+    fullName: Hybrid.Zero.Identity.Entities.RoleBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Identity.Entities.RoleBase`1
+    name: RoleBase
+    nameWithType: RoleBase
+    fullName: Hybrid.Zero.Identity.Entities.RoleBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Identity.Entities.RoleClaimBase`2
+  commentId: T:Hybrid.Zero.Identity.Entities.RoleClaimBase`2
+  name: RoleClaimBase<TKey, TRoleKey>
+  nameWithType: RoleClaimBase<TKey, TRoleKey>
+  fullName: Hybrid.Zero.Identity.Entities.RoleClaimBase<TKey, TRoleKey>
+  nameWithType.vb: RoleClaimBase(Of TKey, TRoleKey)
+  fullName.vb: Hybrid.Zero.Identity.Entities.RoleClaimBase(Of TKey, TRoleKey)
+  name.vb: RoleClaimBase(Of TKey, TRoleKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Identity.Entities.RoleClaimBase`2
+    name: RoleClaimBase
+    nameWithType: RoleClaimBase
+    fullName: Hybrid.Zero.Identity.Entities.RoleClaimBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Identity.Entities.RoleClaimBase`2
+    name: RoleClaimBase
+    nameWithType: RoleClaimBase
+    fullName: Hybrid.Zero.Identity.Entities.RoleClaimBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Identity.Entities.RoleStoreBase`4
+  commentId: T:Hybrid.Zero.Identity.Entities.RoleStoreBase`4
+  name: RoleStoreBase<TRole, TRoleKey, TRoleClaim, TRoleClaimKey>
+  nameWithType: RoleStoreBase<TRole, TRoleKey, TRoleClaim, TRoleClaimKey>
+  fullName: Hybrid.Zero.Identity.Entities.RoleStoreBase<TRole, TRoleKey, TRoleClaim, TRoleClaimKey>
+  nameWithType.vb: RoleStoreBase(Of TRole, TRoleKey, TRoleClaim, TRoleClaimKey)
+  fullName.vb: Hybrid.Zero.Identity.Entities.RoleStoreBase(Of TRole, TRoleKey, TRoleClaim, TRoleClaimKey)
+  name.vb: RoleStoreBase(Of TRole, TRoleKey, TRoleClaim, TRoleClaimKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Identity.Entities.RoleStoreBase`4
+    name: RoleStoreBase
+    nameWithType: RoleStoreBase
+    fullName: Hybrid.Zero.Identity.Entities.RoleStoreBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleClaim
+    nameWithType: TRoleClaim
+    fullName: TRoleClaim
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleClaimKey
+    nameWithType: TRoleClaimKey
+    fullName: TRoleClaimKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Identity.Entities.RoleStoreBase`4
+    name: RoleStoreBase
+    nameWithType: RoleStoreBase
+    fullName: Hybrid.Zero.Identity.Entities.RoleStoreBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleClaim
+    nameWithType: TRoleClaim
+    fullName: TRoleClaim
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleClaimKey
+    nameWithType: TRoleClaimKey
+    fullName: TRoleClaimKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Identity.Entities.UserBase`1
+  commentId: T:Hybrid.Zero.Identity.Entities.UserBase`1
+  name: UserBase<TKey>
+  nameWithType: UserBase<TKey>
+  fullName: Hybrid.Zero.Identity.Entities.UserBase<TKey>
+  nameWithType.vb: UserBase(Of TKey)
+  fullName.vb: Hybrid.Zero.Identity.Entities.UserBase(Of TKey)
+  name.vb: UserBase(Of TKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Identity.Entities.UserBase`1
+    name: UserBase
+    nameWithType: UserBase
+    fullName: Hybrid.Zero.Identity.Entities.UserBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Identity.Entities.UserBase`1
+    name: UserBase
+    nameWithType: UserBase
+    fullName: Hybrid.Zero.Identity.Entities.UserBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Identity.Entities.UserClaimBase`2
+  commentId: T:Hybrid.Zero.Identity.Entities.UserClaimBase`2
+  name: UserClaimBase<TKey, TUserKey>
+  nameWithType: UserClaimBase<TKey, TUserKey>
+  fullName: Hybrid.Zero.Identity.Entities.UserClaimBase<TKey, TUserKey>
+  nameWithType.vb: UserClaimBase(Of TKey, TUserKey)
+  fullName.vb: Hybrid.Zero.Identity.Entities.UserClaimBase(Of TKey, TUserKey)
+  name.vb: UserClaimBase(Of TKey, TUserKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Identity.Entities.UserClaimBase`2
+    name: UserClaimBase
+    nameWithType: UserClaimBase
+    fullName: Hybrid.Zero.Identity.Entities.UserClaimBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Identity.Entities.UserClaimBase`2
+    name: UserClaimBase
+    nameWithType: UserClaimBase
+    fullName: Hybrid.Zero.Identity.Entities.UserClaimBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Identity.Entities.UserLoginBase`2
+  commentId: T:Hybrid.Zero.Identity.Entities.UserLoginBase`2
+  name: UserLoginBase<TKey, TUserKey>
+  nameWithType: UserLoginBase<TKey, TUserKey>
+  fullName: Hybrid.Zero.Identity.Entities.UserLoginBase<TKey, TUserKey>
+  nameWithType.vb: UserLoginBase(Of TKey, TUserKey)
+  fullName.vb: Hybrid.Zero.Identity.Entities.UserLoginBase(Of TKey, TUserKey)
+  name.vb: UserLoginBase(Of TKey, TUserKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Identity.Entities.UserLoginBase`2
+    name: UserLoginBase
+    nameWithType: UserLoginBase
+    fullName: Hybrid.Zero.Identity.Entities.UserLoginBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Identity.Entities.UserLoginBase`2
+    name: UserLoginBase
+    nameWithType: UserLoginBase
+    fullName: Hybrid.Zero.Identity.Entities.UserLoginBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Identity.Entities.UserLoginInfoEx
+  commentId: T:Hybrid.Zero.Identity.Entities.UserLoginInfoEx
+  parent: Hybrid.Zero.Identity.Entities
+  name: UserLoginInfoEx
+  nameWithType: UserLoginInfoEx
+  fullName: Hybrid.Zero.Identity.Entities.UserLoginInfoEx
+- uid: Hybrid.Zero.Identity.Entities.UserRoleBase`3
+  commentId: T:Hybrid.Zero.Identity.Entities.UserRoleBase`3
+  name: UserRoleBase<TKey, TUserKey, TRoleKey>
+  nameWithType: UserRoleBase<TKey, TUserKey, TRoleKey>
+  fullName: Hybrid.Zero.Identity.Entities.UserRoleBase<TKey, TUserKey, TRoleKey>
+  nameWithType.vb: UserRoleBase(Of TKey, TUserKey, TRoleKey)
+  fullName.vb: Hybrid.Zero.Identity.Entities.UserRoleBase(Of TKey, TUserKey, TRoleKey)
+  name.vb: UserRoleBase(Of TKey, TUserKey, TRoleKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Identity.Entities.UserRoleBase`3
+    name: UserRoleBase
+    nameWithType: UserRoleBase
+    fullName: Hybrid.Zero.Identity.Entities.UserRoleBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Identity.Entities.UserRoleBase`3
+    name: UserRoleBase
+    nameWithType: UserRoleBase
+    fullName: Hybrid.Zero.Identity.Entities.UserRoleBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Identity.Entities.UserStoreBase`12
+  commentId: T:Hybrid.Zero.Identity.Entities.UserStoreBase`12
+  name: UserStoreBase<TUser, TUserKey, TUserClaim, TUserClaimKey, TUserLogin, TUserLoginKey, TUserToken, TUserTokenKey, TRole, TRoleKey, TUserRole, TUserRoleKey>
+  nameWithType: UserStoreBase<TUser, TUserKey, TUserClaim, TUserClaimKey, TUserLogin, TUserLoginKey, TUserToken, TUserTokenKey, TRole, TRoleKey, TUserRole, TUserRoleKey>
+  fullName: Hybrid.Zero.Identity.Entities.UserStoreBase<TUser, TUserKey, TUserClaim, TUserClaimKey, TUserLogin, TUserLoginKey, TUserToken, TUserTokenKey, TRole, TRoleKey, TUserRole, TUserRoleKey>
+  nameWithType.vb: UserStoreBase(Of TUser, TUserKey, TUserClaim, TUserClaimKey, TUserLogin, TUserLoginKey, TUserToken, TUserTokenKey, TRole, TRoleKey, TUserRole, TUserRoleKey)
+  fullName.vb: Hybrid.Zero.Identity.Entities.UserStoreBase(Of TUser, TUserKey, TUserClaim, TUserClaimKey, TUserLogin, TUserLoginKey, TUserToken, TUserTokenKey, TRole, TRoleKey, TUserRole, TUserRoleKey)
+  name.vb: UserStoreBase(Of TUser, TUserKey, TUserClaim, TUserClaimKey, TUserLogin, TUserLoginKey, TUserToken, TUserTokenKey, TRole, TRoleKey, TUserRole, TUserRoleKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Identity.Entities.UserStoreBase`12
+    name: UserStoreBase
+    nameWithType: UserStoreBase
+    fullName: Hybrid.Zero.Identity.Entities.UserStoreBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserClaim
+    nameWithType: TUserClaim
+    fullName: TUserClaim
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserClaimKey
+    nameWithType: TUserClaimKey
+    fullName: TUserClaimKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserLogin
+    nameWithType: TUserLogin
+    fullName: TUserLogin
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserLoginKey
+    nameWithType: TUserLoginKey
+    fullName: TUserLoginKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserToken
+    nameWithType: TUserToken
+    fullName: TUserToken
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserTokenKey
+    nameWithType: TUserTokenKey
+    fullName: TUserTokenKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserRole
+    nameWithType: TUserRole
+    fullName: TUserRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserRoleKey
+    nameWithType: TUserRoleKey
+    fullName: TUserRoleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Identity.Entities.UserStoreBase`12
+    name: UserStoreBase
+    nameWithType: UserStoreBase
+    fullName: Hybrid.Zero.Identity.Entities.UserStoreBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserClaim
+    nameWithType: TUserClaim
+    fullName: TUserClaim
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserClaimKey
+    nameWithType: TUserClaimKey
+    fullName: TUserClaimKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserLogin
+    nameWithType: TUserLogin
+    fullName: TUserLogin
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserLoginKey
+    nameWithType: TUserLoginKey
+    fullName: TUserLoginKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserToken
+    nameWithType: TUserToken
+    fullName: TUserToken
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserTokenKey
+    nameWithType: TUserTokenKey
+    fullName: TUserTokenKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserRole
+    nameWithType: TUserRole
+    fullName: TUserRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserRoleKey
+    nameWithType: TUserRoleKey
+    fullName: TUserRoleKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Identity.Entities.UserTokenBase`2
+  commentId: T:Hybrid.Zero.Identity.Entities.UserTokenBase`2
+  name: UserTokenBase<TKey, TUserKey>
+  nameWithType: UserTokenBase<TKey, TUserKey>
+  fullName: Hybrid.Zero.Identity.Entities.UserTokenBase<TKey, TUserKey>
+  nameWithType.vb: UserTokenBase(Of TKey, TUserKey)
+  fullName.vb: Hybrid.Zero.Identity.Entities.UserTokenBase(Of TKey, TUserKey)
+  name.vb: UserTokenBase(Of TKey, TUserKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Identity.Entities.UserTokenBase`2
+    name: UserTokenBase
+    nameWithType: UserTokenBase
+    fullName: Hybrid.Zero.Identity.Entities.UserTokenBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Identity.Entities.UserTokenBase`2
+    name: UserTokenBase
+    nameWithType: UserTokenBase
+    fullName: Hybrid.Zero.Identity.Entities.UserTokenBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Identity.Entities
+  commentId: N:Hybrid.Zero.Identity.Entities
+  name: Hybrid.Zero.Identity.Entities
+  nameWithType: Hybrid.Zero.Identity.Entities
+  fullName: Hybrid.Zero.Identity.Entities

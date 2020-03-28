@@ -1,0 +1,35 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Localization.Configuration
+  commentId: N:Hybrid.Localization.Configuration
+  id: Hybrid.Localization.Configuration
+  children:
+  - Hybrid.Localization.Configuration.ILocalizationConfiguration
+  - Hybrid.Localization.Configuration.ILocalizationSourceList
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Localization.Configuration
+  nameWithType: Hybrid.Localization.Configuration
+  fullName: Hybrid.Localization.Configuration
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Localization.Configuration.ILocalizationConfiguration
+  commentId: T:Hybrid.Localization.Configuration.ILocalizationConfiguration
+  parent: Hybrid.Localization.Configuration
+  name: ILocalizationConfiguration
+  nameWithType: ILocalizationConfiguration
+  fullName: Hybrid.Localization.Configuration.ILocalizationConfiguration
+- uid: Hybrid.Localization.Configuration.ILocalizationSourceList
+  commentId: T:Hybrid.Localization.Configuration.ILocalizationSourceList
+  parent: Hybrid.Localization.Configuration
+  name: ILocalizationSourceList
+  nameWithType: ILocalizationSourceList
+  fullName: Hybrid.Localization.Configuration.ILocalizationSourceList
+- uid: Hybrid.Localization.Configuration
+  commentId: N:Hybrid.Localization.Configuration
+  name: Hybrid.Localization.Configuration
+  nameWithType: Hybrid.Localization.Configuration
+  fullName: Hybrid.Localization.Configuration

@@ -1,0 +1,586 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions
+  commentId: T:Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions
+  id: IdentityServerBuilderExtensions
+  parent: Microsoft.Extensions.DependencyInjection
+  children:
+  - Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridCustomTokenValidator``1(Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder)
+  - Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridDefaultUI``2(Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder)
+  - Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridIdentity``2(Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder)
+  - Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridTokenCreationService``1(Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder)
+  langs:
+  - csharp
+  - vb
+  name: IdentityServerBuilderExtensions
+  nameWithType: IdentityServerBuilderExtensions
+  fullName: Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid.Zero.IdentityServer4/Extensions/IdentityServerBuilderExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IdentityServerBuilderExtensions
+    path: ../src/Hybrid.Zero.IdentityServer4/Extensions/IdentityServerBuilderExtensions.cs
+    startLine: 33
+  assemblies:
+  - Hybrid.Zero.IdentityServer4
+  namespace: Microsoft.Extensions.DependencyInjection
+  summary: "\nExtension methods to add ASP.NET Identity support to IdentityServer.\n"
+  example: []
+  syntax:
+    content: public static class IdentityServerBuilderExtensions
+    content.vb: Public Module IdentityServerBuilderExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridIdentity``2(Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder)
+  commentId: M:Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridIdentity``2(Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder)
+  id: AddHybridIdentity``2(Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder)
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddHybridIdentity<TUser, TUserKey>(IIdentityServerBuilder)
+  nameWithType: IdentityServerBuilderExtensions.AddHybridIdentity<TUser, TUserKey>(IIdentityServerBuilder)
+  fullName: Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridIdentity<TUser, TUserKey>(Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.Zero.IdentityServer4/Extensions/IdentityServerBuilderExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: AddHybridIdentity
+    path: ../src/Hybrid.Zero.IdentityServer4/Extensions/IdentityServerBuilderExtensions.cs
+    startLine: 45
+  assemblies:
+  - Hybrid.Zero.IdentityServer4
+  namespace: Microsoft.Extensions.DependencyInjection
+  summary: "\nConfigures IdentityServer to use the ASP.NET Identity implementations\nof IUserClaimsPrincipalFactory, IResourceOwnerPasswordValidator, and IProfileService.\nAlso configures some of ASP.NET Identity&apos;s options for use with IdentityServer (such as claim types to use\nand authenticaiton cookie settings).\n"
+  example: []
+  syntax:
+    content: >-
+      public static IIdentityServerBuilder AddHybridIdentity<TUser, TUserKey>(this IIdentityServerBuilder builder)
+          where TUser : UserBase<TUserKey> where TUserKey : IEquatable<TUserKey>
+    parameters:
+    - id: builder
+      type: Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder
+      description: The builder.
+    typeParameters:
+    - id: TUser
+      description: The type of the user.
+    - id: TUserKey
+      description: ''
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddHybridIdentity(Of TUser As UserBase(Of TUserKey), TUserKey As IEquatable(Of TUserKey))(builder As IIdentityServerBuilder) As IIdentityServerBuilder
+  overload: Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridIdentity*
+  nameWithType.vb: IdentityServerBuilderExtensions.AddHybridIdentity(Of TUser, TUserKey)(IIdentityServerBuilder)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridIdentity(Of TUser, TUserKey)(Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder)
+  name.vb: AddHybridIdentity(Of TUser, TUserKey)(IIdentityServerBuilder)
+- uid: Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridTokenCreationService``1(Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder)
+  commentId: M:Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridTokenCreationService``1(Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder)
+  id: AddHybridTokenCreationService``1(Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder)
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddHybridTokenCreationService<T>(IIdentityServerBuilder)
+  nameWithType: IdentityServerBuilderExtensions.AddHybridTokenCreationService<T>(IIdentityServerBuilder)
+  fullName: Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridTokenCreationService<T>(Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.Zero.IdentityServer4/Extensions/IdentityServerBuilderExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: AddHybridTokenCreationService
+    path: ../src/Hybrid.Zero.IdentityServer4/Extensions/IdentityServerBuilderExtensions.cs
+    startLine: 108
+  assemblies:
+  - Hybrid.Zero.IdentityServer4
+  namespace: Microsoft.Extensions.DependencyInjection
+  summary: "\nAdds the custom create token service.\n"
+  example: []
+  syntax:
+    content: >-
+      public static IIdentityServerBuilder AddHybridTokenCreationService<T>(this IIdentityServerBuilder builder)
+          where T : class, ITokenCreationService
+    parameters:
+    - id: builder
+      type: Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder
+      description: The builder.
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddHybridTokenCreationService(Of T As {Class, ITokenCreationService})(builder As IIdentityServerBuilder) As IIdentityServerBuilder
+  overload: Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridTokenCreationService*
+  nameWithType.vb: IdentityServerBuilderExtensions.AddHybridTokenCreationService(Of T)(IIdentityServerBuilder)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridTokenCreationService(Of T)(Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder)
+  name.vb: AddHybridTokenCreationService(Of T)(IIdentityServerBuilder)
+- uid: Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridCustomTokenValidator``1(Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder)
+  commentId: M:Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridCustomTokenValidator``1(Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder)
+  id: AddHybridCustomTokenValidator``1(Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder)
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddHybridCustomTokenValidator<T>(IIdentityServerBuilder)
+  nameWithType: IdentityServerBuilderExtensions.AddHybridCustomTokenValidator<T>(IIdentityServerBuilder)
+  fullName: Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridCustomTokenValidator<T>(Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.Zero.IdentityServer4/Extensions/IdentityServerBuilderExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: AddHybridCustomTokenValidator
+    path: ../src/Hybrid.Zero.IdentityServer4/Extensions/IdentityServerBuilderExtensions.cs
+    startLine: 122
+  assemblies:
+  - Hybrid.Zero.IdentityServer4
+  namespace: Microsoft.Extensions.DependencyInjection
+  summary: "\nAdds the custom token validator.\n"
+  example: []
+  syntax:
+    content: >-
+      public static IIdentityServerBuilder AddHybridCustomTokenValidator<T>(this IIdentityServerBuilder builder)
+          where T : class, ICustomTokenValidator
+    parameters:
+    - id: builder
+      type: Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder
+      description: The builder.
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddHybridCustomTokenValidator(Of T As {Class, ICustomTokenValidator})(builder As IIdentityServerBuilder) As IIdentityServerBuilder
+  overload: Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridCustomTokenValidator*
+  nameWithType.vb: IdentityServerBuilderExtensions.AddHybridCustomTokenValidator(Of T)(IIdentityServerBuilder)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridCustomTokenValidator(Of T)(Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder)
+  name.vb: AddHybridCustomTokenValidator(Of T)(IIdentityServerBuilder)
+- uid: Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridDefaultUI``2(Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder)
+  commentId: M:Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridDefaultUI``2(Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder)
+  id: AddHybridDefaultUI``2(Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder)
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddHybridDefaultUI<TUser, TUserKey>(IIdentityServerBuilder)
+  nameWithType: IdentityServerBuilderExtensions.AddHybridDefaultUI<TUser, TUserKey>(IIdentityServerBuilder)
+  fullName: Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridDefaultUI<TUser, TUserKey>(Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.Zero.IdentityServer4/Extensions/IdentityServerBuilderExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: AddHybridDefaultUI
+    path: ../src/Hybrid.Zero.IdentityServer4/Extensions/IdentityServerBuilderExtensions.cs
+    startLine: 130
+  assemblies:
+  - Hybrid.Zero.IdentityServer4
+  namespace: Microsoft.Extensions.DependencyInjection
+  syntax:
+    content: >-
+      public static IIdentityServerBuilder AddHybridDefaultUI<TUser, TUserKey>(this IIdentityServerBuilder builder)
+          where TUser : UserBase<TUserKey> where TUserKey : IEquatable<TUserKey>
+    parameters:
+    - id: builder
+      type: Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder
+    typeParameters:
+    - id: TUser
+    - id: TUserKey
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddHybridDefaultUI(Of TUser As UserBase(Of TUserKey), TUserKey As IEquatable(Of TUserKey))(builder As IIdentityServerBuilder) As IIdentityServerBuilder
+  overload: Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridDefaultUI*
+  nameWithType.vb: IdentityServerBuilderExtensions.AddHybridDefaultUI(Of TUser, TUserKey)(IIdentityServerBuilder)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridDefaultUI(Of TUser, TUserKey)(Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder)
+  name.vb: AddHybridDefaultUI(Of TUser, TUserKey)(IIdentityServerBuilder)
+references:
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridIdentity*
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridIdentity
+  name: AddHybridIdentity
+  nameWithType: IdentityServerBuilderExtensions.AddHybridIdentity
+  fullName: Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridIdentity
+- uid: Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder
+  commentId: T:Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  name: IIdentityServerBuilder
+  nameWithType: IIdentityServerBuilder
+  fullName: Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder
+- uid: Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridTokenCreationService*
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridTokenCreationService
+  name: AddHybridTokenCreationService
+  nameWithType: IdentityServerBuilderExtensions.AddHybridTokenCreationService
+  fullName: Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridTokenCreationService
+- uid: Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridCustomTokenValidator*
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridCustomTokenValidator
+  name: AddHybridCustomTokenValidator
+  nameWithType: IdentityServerBuilderExtensions.AddHybridCustomTokenValidator
+  fullName: Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridCustomTokenValidator
+- uid: Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridDefaultUI*
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridDefaultUI
+  name: AddHybridDefaultUI
+  nameWithType: IdentityServerBuilderExtensions.AddHybridDefaultUI
+  fullName: Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddHybridDefaultUI

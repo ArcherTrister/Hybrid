@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Zero.Systems.Services
+  commentId: N:Hybrid.Zero.Systems.Services
+  id: Hybrid.Zero.Systems.Services
+  children:
+  - Hybrid.Zero.Systems.Services.ISystemsService
+  - Hybrid.Zero.Systems.Services.SystemsService
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Zero.Systems.Services
+  nameWithType: Hybrid.Zero.Systems.Services
+  fullName: Hybrid.Zero.Systems.Services
+  type: Namespace
+  assemblies:
+  - Hybrid.Zero
+references:
+- uid: Hybrid.Zero.Systems.Services.ISystemsService
+  commentId: T:Hybrid.Zero.Systems.Services.ISystemsService
+  parent: Hybrid.Zero.Systems.Services
+  name: ISystemsService
+  nameWithType: ISystemsService
+  fullName: Hybrid.Zero.Systems.Services.ISystemsService
+- uid: Hybrid.Zero.Systems.Services.SystemsService
+  commentId: T:Hybrid.Zero.Systems.Services.SystemsService
+  name: SystemsService
+  nameWithType: SystemsService
+  fullName: Hybrid.Zero.Systems.Services.SystemsService
+- uid: Hybrid.Zero.Systems.Services
+  commentId: N:Hybrid.Zero.Systems.Services
+  name: Hybrid.Zero.Systems.Services
+  nameWithType: Hybrid.Zero.Systems.Services
+  fullName: Hybrid.Zero.Systems.Services

@@ -1,0 +1,915 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Filter.CollectionPropertySorter`1
+  commentId: T:Hybrid.Filter.CollectionPropertySorter`1
+  id: CollectionPropertySorter`1
+  parent: Hybrid.Filter
+  children:
+  - Hybrid.Filter.CollectionPropertySorter`1.OrderBy(System.Collections.Generic.IEnumerable{`0},System.String,System.ComponentModel.ListSortDirection)
+  - Hybrid.Filter.CollectionPropertySorter`1.OrderBy(System.Linq.IQueryable{`0},System.String,System.ComponentModel.ListSortDirection)
+  - Hybrid.Filter.CollectionPropertySorter`1.ThenBy(System.Linq.IOrderedEnumerable{`0},System.String,System.ComponentModel.ListSortDirection)
+  - Hybrid.Filter.CollectionPropertySorter`1.ThenBy(System.Linq.IOrderedQueryable{`0},System.String,System.ComponentModel.ListSortDirection)
+  langs:
+  - csharp
+  - vb
+  name: CollectionPropertySorter<T>
+  nameWithType: CollectionPropertySorter<T>
+  fullName: Hybrid.Filter.CollectionPropertySorter<T>
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid/Filter/CollectionPropertySorter.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: CollectionPropertySorter
+    path: ../src/Hybrid/Filter/CollectionPropertySorter.cs
+    startLine: 26
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Filter
+  summary: "\n集合类型字符串排序操作类\n"
+  example: []
+  syntax:
+    content: public static class CollectionPropertySorter<T>
+    typeParameters:
+    - id: T
+      description: 集合项类型
+    content.vb: Public Module CollectionPropertySorter(Of T)
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: CollectionPropertySorter(Of T)
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+  fullName.vb: Hybrid.Filter.CollectionPropertySorter(Of T)
+  name.vb: CollectionPropertySorter(Of T)
+- uid: Hybrid.Filter.CollectionPropertySorter`1.OrderBy(System.Collections.Generic.IEnumerable{`0},System.String,System.ComponentModel.ListSortDirection)
+  commentId: M:Hybrid.Filter.CollectionPropertySorter`1.OrderBy(System.Collections.Generic.IEnumerable{`0},System.String,System.ComponentModel.ListSortDirection)
+  id: OrderBy(System.Collections.Generic.IEnumerable{`0},System.String,System.ComponentModel.ListSortDirection)
+  parent: Hybrid.Filter.CollectionPropertySorter`1
+  langs:
+  - csharp
+  - vb
+  name: OrderBy(IEnumerable<T>, String, ListSortDirection)
+  nameWithType: CollectionPropertySorter<T>.OrderBy(IEnumerable<T>, String, ListSortDirection)
+  fullName: Hybrid.Filter.CollectionPropertySorter<T>.OrderBy(System.Collections.Generic.IEnumerable<T>, System.String, System.ComponentModel.ListSortDirection)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Filter/CollectionPropertySorter.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: OrderBy
+    path: ../src/Hybrid/Filter/CollectionPropertySorter.cs
+    startLine: 37
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Filter
+  summary: "\n按指定的属性名称对<xref href=\"System.Collections.Generic.IEnumerable%601\" data-throw-if-not-resolved=\"false\"></xref>序列进行排序\n"
+  example: []
+  syntax:
+    content: public static IOrderedEnumerable<T> OrderBy(IEnumerable<T> source, string propertyName, ListSortDirection sortDirection)
+    parameters:
+    - id: source
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>序列
+    - id: propertyName
+      type: System.String
+      description: 属性名称
+    - id: sortDirection
+      type: System.ComponentModel.ListSortDirection
+      description: 排序方向
+    return:
+      type: System.Linq.IOrderedEnumerable{{T}}
+    content.vb: Public Shared Function OrderBy(source As IEnumerable(Of T), propertyName As String, sortDirection As ListSortDirection) As IOrderedEnumerable(Of T)
+  overload: Hybrid.Filter.CollectionPropertySorter`1.OrderBy*
+  nameWithType.vb: CollectionPropertySorter(Of T).OrderBy(IEnumerable(Of T), String, ListSortDirection)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Filter.CollectionPropertySorter(Of T).OrderBy(System.Collections.Generic.IEnumerable(Of T), System.String, System.ComponentModel.ListSortDirection)
+  name.vb: OrderBy(IEnumerable(Of T), String, ListSortDirection)
+- uid: Hybrid.Filter.CollectionPropertySorter`1.ThenBy(System.Linq.IOrderedEnumerable{`0},System.String,System.ComponentModel.ListSortDirection)
+  commentId: M:Hybrid.Filter.CollectionPropertySorter`1.ThenBy(System.Linq.IOrderedEnumerable{`0},System.String,System.ComponentModel.ListSortDirection)
+  id: ThenBy(System.Linq.IOrderedEnumerable{`0},System.String,System.ComponentModel.ListSortDirection)
+  parent: Hybrid.Filter.CollectionPropertySorter`1
+  langs:
+  - csharp
+  - vb
+  name: ThenBy(IOrderedEnumerable<T>, String, ListSortDirection)
+  nameWithType: CollectionPropertySorter<T>.ThenBy(IOrderedEnumerable<T>, String, ListSortDirection)
+  fullName: Hybrid.Filter.CollectionPropertySorter<T>.ThenBy(System.Linq.IOrderedEnumerable<T>, System.String, System.ComponentModel.ListSortDirection)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Filter/CollectionPropertySorter.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ThenBy
+    path: ../src/Hybrid/Filter/CollectionPropertySorter.cs
+    startLine: 53
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Filter
+  summary: "\n按指定的属性名称对<xref href=\"System.Linq.IOrderedEnumerable%601\" data-throw-if-not-resolved=\"false\"></xref>进行继续排序\n"
+  example: []
+  syntax:
+    content: public static IOrderedEnumerable<T> ThenBy(IOrderedEnumerable<T> source, string propertyName, ListSortDirection sortDirection)
+    parameters:
+    - id: source
+      type: System.Linq.IOrderedEnumerable{{T}}
+      description: <xref href="System.Linq.IOrderedEnumerable%601" data-throw-if-not-resolved="false"></xref>序列
+    - id: propertyName
+      type: System.String
+      description: 属性名称
+    - id: sortDirection
+      type: System.ComponentModel.ListSortDirection
+      description: 排序方向
+    return:
+      type: System.Linq.IOrderedEnumerable{{T}}
+    content.vb: Public Shared Function ThenBy(source As IOrderedEnumerable(Of T), propertyName As String, sortDirection As ListSortDirection) As IOrderedEnumerable(Of T)
+  overload: Hybrid.Filter.CollectionPropertySorter`1.ThenBy*
+  nameWithType.vb: CollectionPropertySorter(Of T).ThenBy(IOrderedEnumerable(Of T), String, ListSortDirection)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Filter.CollectionPropertySorter(Of T).ThenBy(System.Linq.IOrderedEnumerable(Of T), System.String, System.ComponentModel.ListSortDirection)
+  name.vb: ThenBy(IOrderedEnumerable(Of T), String, ListSortDirection)
+- uid: Hybrid.Filter.CollectionPropertySorter`1.OrderBy(System.Linq.IQueryable{`0},System.String,System.ComponentModel.ListSortDirection)
+  commentId: M:Hybrid.Filter.CollectionPropertySorter`1.OrderBy(System.Linq.IQueryable{`0},System.String,System.ComponentModel.ListSortDirection)
+  id: OrderBy(System.Linq.IQueryable{`0},System.String,System.ComponentModel.ListSortDirection)
+  parent: Hybrid.Filter.CollectionPropertySorter`1
+  langs:
+  - csharp
+  - vb
+  name: OrderBy(IQueryable<T>, String, ListSortDirection)
+  nameWithType: CollectionPropertySorter<T>.OrderBy(IQueryable<T>, String, ListSortDirection)
+  fullName: Hybrid.Filter.CollectionPropertySorter<T>.OrderBy(System.Linq.IQueryable<T>, System.String, System.ComponentModel.ListSortDirection)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Filter/CollectionPropertySorter.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: OrderBy
+    path: ../src/Hybrid/Filter/CollectionPropertySorter.cs
+    startLine: 70
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Filter
+  summary: "\n按指定的属性名称对<xref href=\"System.Linq.IQueryable%601\" data-throw-if-not-resolved=\"false\"></xref>序列进行排序\n"
+  example: []
+  syntax:
+    content: public static IOrderedQueryable<T> OrderBy(IQueryable<T> source, string propertyName, ListSortDirection sortDirection)
+    parameters:
+    - id: source
+      type: System.Linq.IQueryable{{T}}
+      description: IQueryable{T}序列
+    - id: propertyName
+      type: System.String
+      description: 属性名称
+    - id: sortDirection
+      type: System.ComponentModel.ListSortDirection
+      description: 排序方向
+    return:
+      type: System.Linq.IOrderedQueryable{{T}}
+      description: ''
+    content.vb: Public Shared Function OrderBy(source As IQueryable(Of T), propertyName As String, sortDirection As ListSortDirection) As IOrderedQueryable(Of T)
+  overload: Hybrid.Filter.CollectionPropertySorter`1.OrderBy*
+  nameWithType.vb: CollectionPropertySorter(Of T).OrderBy(IQueryable(Of T), String, ListSortDirection)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Filter.CollectionPropertySorter(Of T).OrderBy(System.Linq.IQueryable(Of T), System.String, System.ComponentModel.ListSortDirection)
+  name.vb: OrderBy(IQueryable(Of T), String, ListSortDirection)
+- uid: Hybrid.Filter.CollectionPropertySorter`1.ThenBy(System.Linq.IOrderedQueryable{`0},System.String,System.ComponentModel.ListSortDirection)
+  commentId: M:Hybrid.Filter.CollectionPropertySorter`1.ThenBy(System.Linq.IOrderedQueryable{`0},System.String,System.ComponentModel.ListSortDirection)
+  id: ThenBy(System.Linq.IOrderedQueryable{`0},System.String,System.ComponentModel.ListSortDirection)
+  parent: Hybrid.Filter.CollectionPropertySorter`1
+  langs:
+  - csharp
+  - vb
+  name: ThenBy(IOrderedQueryable<T>, String, ListSortDirection)
+  nameWithType: CollectionPropertySorter<T>.ThenBy(IOrderedQueryable<T>, String, ListSortDirection)
+  fullName: Hybrid.Filter.CollectionPropertySorter<T>.ThenBy(System.Linq.IOrderedQueryable<T>, System.String, System.ComponentModel.ListSortDirection)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Filter/CollectionPropertySorter.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ThenBy
+    path: ../src/Hybrid/Filter/CollectionPropertySorter.cs
+    startLine: 86
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Filter
+  summary: "\n按指定的属性名称对<xref href=\"System.Linq.IOrderedQueryable%601\" data-throw-if-not-resolved=\"false\"></xref>序列进行排序\n"
+  example: []
+  syntax:
+    content: public static IOrderedQueryable<T> ThenBy(IOrderedQueryable<T> source, string propertyName, ListSortDirection sortDirection)
+    parameters:
+    - id: source
+      type: System.Linq.IOrderedQueryable{{T}}
+      description: IOrderedQueryable{T}序列
+    - id: propertyName
+      type: System.String
+      description: 属性名称
+    - id: sortDirection
+      type: System.ComponentModel.ListSortDirection
+      description: 排序方向
+    return:
+      type: System.Linq.IOrderedQueryable{{T}}
+      description: ''
+    content.vb: Public Shared Function ThenBy(source As IOrderedQueryable(Of T), propertyName As String, sortDirection As ListSortDirection) As IOrderedQueryable(Of T)
+  overload: Hybrid.Filter.CollectionPropertySorter`1.ThenBy*
+  nameWithType.vb: CollectionPropertySorter(Of T).ThenBy(IOrderedQueryable(Of T), String, ListSortDirection)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Filter.CollectionPropertySorter(Of T).ThenBy(System.Linq.IOrderedQueryable(Of T), System.String, System.ComponentModel.ListSortDirection)
+  name.vb: ThenBy(IOrderedQueryable(Of T), String, ListSortDirection)
+references:
+- uid: Hybrid.Filter
+  commentId: N:Hybrid.Filter
+  name: Hybrid.Filter
+  nameWithType: Hybrid.Filter
+  fullName: Hybrid.Filter
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Filter.CollectionPropertySorter`1.OrderBy*
+  commentId: Overload:Hybrid.Filter.CollectionPropertySorter`1.OrderBy
+  name: OrderBy
+  nameWithType: CollectionPropertySorter<T>.OrderBy
+  fullName: Hybrid.Filter.CollectionPropertySorter<T>.OrderBy
+  nameWithType.vb: CollectionPropertySorter(Of T).OrderBy
+  fullName.vb: Hybrid.Filter.CollectionPropertySorter(Of T).OrderBy
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.ComponentModel.ListSortDirection
+  commentId: T:System.ComponentModel.ListSortDirection
+  parent: System.ComponentModel
+  isExternal: true
+  name: ListSortDirection
+  nameWithType: ListSortDirection
+  fullName: System.ComponentModel.ListSortDirection
+- uid: System.Linq.IOrderedEnumerable{{T}}
+  commentId: T:System.Linq.IOrderedEnumerable{``0}
+  parent: System.Linq
+  definition: System.Linq.IOrderedEnumerable`1
+  name: IOrderedEnumerable<T>
+  nameWithType: IOrderedEnumerable<T>
+  fullName: System.Linq.IOrderedEnumerable<T>
+  nameWithType.vb: IOrderedEnumerable(Of T)
+  fullName.vb: System.Linq.IOrderedEnumerable(Of T)
+  name.vb: IOrderedEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Linq.IOrderedEnumerable`1
+    name: IOrderedEnumerable
+    nameWithType: IOrderedEnumerable
+    fullName: System.Linq.IOrderedEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.IOrderedEnumerable`1
+    name: IOrderedEnumerable
+    nameWithType: IOrderedEnumerable
+    fullName: System.Linq.IOrderedEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+- uid: System.Linq.IOrderedEnumerable`1
+  commentId: T:System.Linq.IOrderedEnumerable`1
+  isExternal: true
+  name: IOrderedEnumerable<TElement>
+  nameWithType: IOrderedEnumerable<TElement>
+  fullName: System.Linq.IOrderedEnumerable<TElement>
+  nameWithType.vb: IOrderedEnumerable(Of TElement)
+  fullName.vb: System.Linq.IOrderedEnumerable(Of TElement)
+  name.vb: IOrderedEnumerable(Of TElement)
+  spec.csharp:
+  - uid: System.Linq.IOrderedEnumerable`1
+    name: IOrderedEnumerable
+    nameWithType: IOrderedEnumerable
+    fullName: System.Linq.IOrderedEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TElement
+    nameWithType: TElement
+    fullName: TElement
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.IOrderedEnumerable`1
+    name: IOrderedEnumerable
+    nameWithType: IOrderedEnumerable
+    fullName: System.Linq.IOrderedEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TElement
+    nameWithType: TElement
+    fullName: TElement
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq
+  commentId: N:System.Linq
+  isExternal: true
+  name: System.Linq
+  nameWithType: System.Linq
+  fullName: System.Linq
+- uid: Hybrid.Filter.CollectionPropertySorter`1.ThenBy*
+  commentId: Overload:Hybrid.Filter.CollectionPropertySorter`1.ThenBy
+  name: ThenBy
+  nameWithType: CollectionPropertySorter<T>.ThenBy
+  fullName: Hybrid.Filter.CollectionPropertySorter<T>.ThenBy
+  nameWithType.vb: CollectionPropertySorter(Of T).ThenBy
+  fullName.vb: Hybrid.Filter.CollectionPropertySorter(Of T).ThenBy
+- uid: System.Linq.IQueryable`1
+  commentId: T:System.Linq.IQueryable`1
+  isExternal: true
+  name: IQueryable<T>
+  nameWithType: IQueryable<T>
+  fullName: System.Linq.IQueryable<T>
+  nameWithType.vb: IQueryable(Of T)
+  fullName.vb: System.Linq.IQueryable(Of T)
+  name.vb: IQueryable(Of T)
+  spec.csharp:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    nameWithType: IQueryable
+    fullName: System.Linq.IQueryable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    nameWithType: IQueryable
+    fullName: System.Linq.IQueryable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq.IQueryable{{T}}
+  commentId: T:System.Linq.IQueryable{``0}
+  parent: System.Linq
+  definition: System.Linq.IQueryable`1
+  name: IQueryable<T>
+  nameWithType: IQueryable<T>
+  fullName: System.Linq.IQueryable<T>
+  nameWithType.vb: IQueryable(Of T)
+  fullName.vb: System.Linq.IQueryable(Of T)
+  name.vb: IQueryable(Of T)
+  spec.csharp:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    nameWithType: IQueryable
+    fullName: System.Linq.IQueryable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    nameWithType: IQueryable
+    fullName: System.Linq.IQueryable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq.IOrderedQueryable{{T}}
+  commentId: T:System.Linq.IOrderedQueryable{``0}
+  parent: System.Linq
+  definition: System.Linq.IOrderedQueryable`1
+  name: IOrderedQueryable<T>
+  nameWithType: IOrderedQueryable<T>
+  fullName: System.Linq.IOrderedQueryable<T>
+  nameWithType.vb: IOrderedQueryable(Of T)
+  fullName.vb: System.Linq.IOrderedQueryable(Of T)
+  name.vb: IOrderedQueryable(Of T)
+  spec.csharp:
+  - uid: System.Linq.IOrderedQueryable`1
+    name: IOrderedQueryable
+    nameWithType: IOrderedQueryable
+    fullName: System.Linq.IOrderedQueryable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.IOrderedQueryable`1
+    name: IOrderedQueryable
+    nameWithType: IOrderedQueryable
+    fullName: System.Linq.IOrderedQueryable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq.IOrderedQueryable`1
+  commentId: T:System.Linq.IOrderedQueryable`1
+  isExternal: true
+  name: IOrderedQueryable<T>
+  nameWithType: IOrderedQueryable<T>
+  fullName: System.Linq.IOrderedQueryable<T>
+  nameWithType.vb: IOrderedQueryable(Of T)
+  fullName.vb: System.Linq.IOrderedQueryable(Of T)
+  name.vb: IOrderedQueryable(Of T)
+  spec.csharp:
+  - uid: System.Linq.IOrderedQueryable`1
+    name: IOrderedQueryable
+    nameWithType: IOrderedQueryable
+    fullName: System.Linq.IOrderedQueryable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.IOrderedQueryable`1
+    name: IOrderedQueryable
+    nameWithType: IOrderedQueryable
+    fullName: System.Linq.IOrderedQueryable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

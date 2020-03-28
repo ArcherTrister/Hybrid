@@ -1,0 +1,817 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.AspNetCore.UI.AjaxResultExtensions
+  commentId: T:Hybrid.AspNetCore.UI.AjaxResultExtensions
+  id: AjaxResultExtensions
+  parent: Hybrid.AspNetCore.UI
+  children:
+  - Hybrid.AspNetCore.UI.AjaxResultExtensions.IsError(Hybrid.Data.OperationResultType)
+  - Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResult(Hybrid.Data.OperationResult,System.Boolean)
+  - Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResult``1(Hybrid.Data.OperationResult,System.Func{``0,System.Object})
+  - Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResult``1(Hybrid.Data.OperationResult{``0},System.Func{``0,System.Object})
+  - Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResultType(Hybrid.Data.OperationResultType)
+  langs:
+  - csharp
+  - vb
+  name: AjaxResultExtensions
+  nameWithType: AjaxResultExtensions
+  fullName: Hybrid.AspNetCore.UI.AjaxResultExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/UI/AjaxResultExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: AjaxResultExtensions
+    path: ../src/Hybrid.AspNetCore/UI/AjaxResultExtensions.cs
+    startLine: 18
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.UI
+  summary: "\n<xref href=\"Hybrid.AspNetCore.UI.AjaxResult\" data-throw-if-not-resolved=\"false\"></xref>扩展方法\n"
+  example: []
+  syntax:
+    content: public static class AjaxResultExtensions
+    content.vb: Public Module AjaxResultExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResult``1(Hybrid.Data.OperationResult{``0},System.Func{``0,System.Object})
+  commentId: M:Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResult``1(Hybrid.Data.OperationResult{``0},System.Func{``0,System.Object})
+  id: ToAjaxResult``1(Hybrid.Data.OperationResult{``0},System.Func{``0,System.Object})
+  isExtensionMethod: true
+  parent: Hybrid.AspNetCore.UI.AjaxResultExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToAjaxResult<T>(OperationResult<T>, Func<T, Object>)
+  nameWithType: AjaxResultExtensions.ToAjaxResult<T>(OperationResult<T>, Func<T, Object>)
+  fullName: Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResult<T>(Hybrid.Data.OperationResult<T>, System.Func<T, System.Object>)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/UI/AjaxResultExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToAjaxResult
+    path: ../src/Hybrid.AspNetCore/UI/AjaxResultExtensions.cs
+    startLine: 23
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.UI
+  summary: "\n将业务操作结果转ajax操作结果，并处理强类型的 <xref href=\"Hybrid.Data.OperationResult%601\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public static AjaxResult ToAjaxResult<T>(this OperationResult<T> result, Func<T, object> dataFunc = null)
+    parameters:
+    - id: result
+      type: Hybrid.Data.OperationResult{{T}}
+    - id: dataFunc
+      type: System.Func{{T},System.Object}
+    typeParameters:
+    - id: T
+    return:
+      type: Hybrid.AspNetCore.UI.AjaxResult
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToAjaxResult(Of T)(result As OperationResult(Of T), dataFunc As Func(Of T, Object) = Nothing) As AjaxResult
+  overload: Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResult*
+  nameWithType.vb: AjaxResultExtensions.ToAjaxResult(Of T)(OperationResult(Of T), Func(Of T, Object))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResult(Of T)(Hybrid.Data.OperationResult(Of T), System.Func(Of T, System.Object))
+  name.vb: ToAjaxResult(Of T)(OperationResult(Of T), Func(Of T, Object))
+- uid: Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResult(Hybrid.Data.OperationResult,System.Boolean)
+  commentId: M:Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResult(Hybrid.Data.OperationResult,System.Boolean)
+  id: ToAjaxResult(Hybrid.Data.OperationResult,System.Boolean)
+  isExtensionMethod: true
+  parent: Hybrid.AspNetCore.UI.AjaxResultExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToAjaxResult(OperationResult, Boolean)
+  nameWithType: AjaxResultExtensions.ToAjaxResult(OperationResult, Boolean)
+  fullName: Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResult(Hybrid.Data.OperationResult, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/UI/AjaxResultExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToAjaxResult
+    path: ../src/Hybrid.AspNetCore/UI/AjaxResultExtensions.cs
+    startLine: 37
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.UI
+  summary: "\n将业务操作结果转ajax操作结果，可确定是否包含Data\n"
+  example: []
+  syntax:
+    content: public static AjaxResult ToAjaxResult(this OperationResult result, bool containsData = false)
+    parameters:
+    - id: result
+      type: Hybrid.Data.OperationResult
+      description: 业务操作结果
+    - id: containsData
+      type: System.Boolean
+      description: 是否包含Data，默认不包含
+    return:
+      type: Hybrid.AspNetCore.UI.AjaxResult
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToAjaxResult(result As OperationResult, containsData As Boolean = False) As AjaxResult
+  overload: Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResult*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResult``1(Hybrid.Data.OperationResult,System.Func{``0,System.Object})
+  commentId: M:Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResult``1(Hybrid.Data.OperationResult,System.Func{``0,System.Object})
+  id: ToAjaxResult``1(Hybrid.Data.OperationResult,System.Func{``0,System.Object})
+  isExtensionMethod: true
+  parent: Hybrid.AspNetCore.UI.AjaxResultExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToAjaxResult<T>(OperationResult, Func<T, Object>)
+  nameWithType: AjaxResultExtensions.ToAjaxResult<T>(OperationResult, Func<T, Object>)
+  fullName: Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResult<T>(Hybrid.Data.OperationResult, System.Func<T, System.Object>)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/UI/AjaxResultExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToAjaxResult
+    path: ../src/Hybrid.AspNetCore/UI/AjaxResultExtensions.cs
+    startLine: 47
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.UI
+  summary: "\n将业务操作结果转ajax操作结果，会将 object 类型的 <xref href=\"Hybrid.Data.OperationResult%601\" data-throw-if-not-resolved=\"false\"></xref> 转换为强类型 T，再通过 dataFunc 进行进一步处理\n"
+  example: []
+  syntax:
+    content: public static AjaxResult ToAjaxResult<T>(this OperationResult result, Func<T, object> dataFunc)
+    parameters:
+    - id: result
+      type: Hybrid.Data.OperationResult
+    - id: dataFunc
+      type: System.Func{{T},System.Object}
+    typeParameters:
+    - id: T
+    return:
+      type: Hybrid.AspNetCore.UI.AjaxResult
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToAjaxResult(Of T)(result As OperationResult, dataFunc As Func(Of T, Object)) As AjaxResult
+  overload: Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResult*
+  nameWithType.vb: AjaxResultExtensions.ToAjaxResult(Of T)(OperationResult, Func(Of T, Object))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResult(Of T)(Hybrid.Data.OperationResult, System.Func(Of T, System.Object))
+  name.vb: ToAjaxResult(Of T)(OperationResult, Func(Of T, Object))
+- uid: Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResultType(Hybrid.Data.OperationResultType)
+  commentId: M:Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResultType(Hybrid.Data.OperationResultType)
+  id: ToAjaxResultType(Hybrid.Data.OperationResultType)
+  isExtensionMethod: true
+  parent: Hybrid.AspNetCore.UI.AjaxResultExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToAjaxResultType(OperationResultType)
+  nameWithType: AjaxResultExtensions.ToAjaxResultType(OperationResultType)
+  fullName: Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResultType(Hybrid.Data.OperationResultType)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/UI/AjaxResultExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToAjaxResultType
+    path: ../src/Hybrid.AspNetCore/UI/AjaxResultExtensions.cs
+    startLine: 65
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.UI
+  summary: "\n把业务结果类型<xref href=\"Hybrid.Data.OperationResultType\" data-throw-if-not-resolved=\"false\"></xref>转换为Ajax结果类型<xref href=\"Hybrid.Data.AjaxResultType\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public static AjaxResultType ToAjaxResultType(this OperationResultType resultType)
+    parameters:
+    - id: resultType
+      type: Hybrid.Data.OperationResultType
+    return:
+      type: Hybrid.Data.AjaxResultType
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToAjaxResultType(resultType As OperationResultType) As AjaxResultType
+  overload: Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResultType*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.AspNetCore.UI.AjaxResultExtensions.IsError(Hybrid.Data.OperationResultType)
+  commentId: M:Hybrid.AspNetCore.UI.AjaxResultExtensions.IsError(Hybrid.Data.OperationResultType)
+  id: IsError(Hybrid.Data.OperationResultType)
+  isExtensionMethod: true
+  parent: Hybrid.AspNetCore.UI.AjaxResultExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsError(OperationResultType)
+  nameWithType: AjaxResultExtensions.IsError(OperationResultType)
+  fullName: Hybrid.AspNetCore.UI.AjaxResultExtensions.IsError(Hybrid.Data.OperationResultType)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/UI/AjaxResultExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsError
+    path: ../src/Hybrid.AspNetCore/UI/AjaxResultExtensions.cs
+    startLine: 83
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.UI
+  summary: "\n判断业务结果类型是否是Error结果\n"
+  example: []
+  syntax:
+    content: public static bool IsError(this OperationResultType resultType)
+    parameters:
+    - id: resultType
+      type: Hybrid.Data.OperationResultType
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsError(resultType As OperationResultType) As Boolean
+  overload: Hybrid.AspNetCore.UI.AjaxResultExtensions.IsError*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Hybrid.AspNetCore.UI.AjaxResult
+  commentId: T:Hybrid.AspNetCore.UI.AjaxResult
+  parent: Hybrid.AspNetCore.UI
+  name: AjaxResult
+  nameWithType: AjaxResult
+  fullName: Hybrid.AspNetCore.UI.AjaxResult
+- uid: Hybrid.AspNetCore.UI
+  commentId: N:Hybrid.AspNetCore.UI
+  name: Hybrid.AspNetCore.UI
+  nameWithType: Hybrid.AspNetCore.UI
+  fullName: Hybrid.AspNetCore.UI
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hybrid.Data.OperationResult`1
+  commentId: T:Hybrid.Data.OperationResult`1
+  parent: Hybrid.Data
+  name: OperationResult<TData>
+  nameWithType: OperationResult<TData>
+  fullName: Hybrid.Data.OperationResult<TData>
+  nameWithType.vb: OperationResult(Of TData)
+  fullName.vb: Hybrid.Data.OperationResult(Of TData)
+  name.vb: OperationResult(Of TData)
+  spec.csharp:
+  - uid: Hybrid.Data.OperationResult`1
+    name: OperationResult
+    nameWithType: OperationResult
+    fullName: Hybrid.Data.OperationResult
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TData
+    nameWithType: TData
+    fullName: TData
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Data.OperationResult`1
+    name: OperationResult
+    nameWithType: OperationResult
+    fullName: Hybrid.Data.OperationResult
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TData
+    nameWithType: TData
+    fullName: TData
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResult*
+  commentId: Overload:Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResult
+  name: ToAjaxResult
+  nameWithType: AjaxResultExtensions.ToAjaxResult
+  fullName: Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResult
+- uid: Hybrid.Data.OperationResult{{T}}
+  commentId: T:Hybrid.Data.OperationResult{``0}
+  parent: Hybrid.Data
+  definition: Hybrid.Data.OperationResult`1
+  name: OperationResult<T>
+  nameWithType: OperationResult<T>
+  fullName: Hybrid.Data.OperationResult<T>
+  nameWithType.vb: OperationResult(Of T)
+  fullName.vb: Hybrid.Data.OperationResult(Of T)
+  name.vb: OperationResult(Of T)
+  spec.csharp:
+  - uid: Hybrid.Data.OperationResult`1
+    name: OperationResult
+    nameWithType: OperationResult
+    fullName: Hybrid.Data.OperationResult
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Data.OperationResult`1
+    name: OperationResult
+    nameWithType: OperationResult
+    fullName: Hybrid.Data.OperationResult
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func{{T},System.Object}
+  commentId: T:System.Func{``0,System.Object}
+  parent: System
+  definition: System.Func`2
+  name: Func<T, Object>
+  nameWithType: Func<T, Object>
+  fullName: System.Func<T, System.Object>
+  nameWithType.vb: Func(Of T, Object)
+  fullName.vb: System.Func(Of T, System.Object)
+  name.vb: Func(Of T, Object)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Data
+  commentId: N:Hybrid.Data
+  name: Hybrid.Data
+  nameWithType: Hybrid.Data
+  fullName: Hybrid.Data
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Data.OperationResult
+  commentId: T:Hybrid.Data.OperationResult
+  parent: Hybrid.Data
+  name: OperationResult
+  nameWithType: OperationResult
+  fullName: Hybrid.Data.OperationResult
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Hybrid.Data.OperationResultType
+  commentId: T:Hybrid.Data.OperationResultType
+  parent: Hybrid.Data
+  name: OperationResultType
+  nameWithType: OperationResultType
+  fullName: Hybrid.Data.OperationResultType
+- uid: Hybrid.Data.AjaxResultType
+  commentId: T:Hybrid.Data.AjaxResultType
+  parent: Hybrid.Data
+  name: AjaxResultType
+  nameWithType: AjaxResultType
+  fullName: Hybrid.Data.AjaxResultType
+- uid: Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResultType*
+  commentId: Overload:Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResultType
+  name: ToAjaxResultType
+  nameWithType: AjaxResultExtensions.ToAjaxResultType
+  fullName: Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResultType
+- uid: Hybrid.AspNetCore.UI.AjaxResultExtensions.IsError*
+  commentId: Overload:Hybrid.AspNetCore.UI.AjaxResultExtensions.IsError
+  name: IsError
+  nameWithType: AjaxResultExtensions.IsError
+  fullName: Hybrid.AspNetCore.UI.AjaxResultExtensions.IsError

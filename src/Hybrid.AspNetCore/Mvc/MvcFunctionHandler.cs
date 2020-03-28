@@ -60,14 +60,11 @@ namespace Hybrid.AspNetCore.Mvc
             {
                 throw new HybridException($"类型“{controllerType.FullName}”不是MVC控制器类型");
             }
-            FunctionAccessType accessType = controllerType.HasAttribute<LoggedInAttribute>() || controllerType.HasAttribute<AuthorizeAttribute>()
+            FunctionAccessType accessType = controllerType.HasAttribute<LoggedInAttribute>()
                 ? FunctionAccessType.LoggedIn
                 : controllerType.HasAttribute<RoleLimitAttribute>()
                     ? FunctionAccessType.RoleLimit
                     : FunctionAccessType.Anonymous;
-
-            // Console.WriteLine(controllerType.Name + ": " + controllerType.BaseType.HasAttribute<ApiControllerAttribute>());
-
             Function function = new Function()
             {
                 Name = controllerType.GetDescription(),
@@ -92,7 +89,7 @@ namespace Hybrid.AspNetCore.Mvc
         /// <returns></returns>
         protected override Function GetFunction(Function typeFunction, MethodInfo method)
         {
-            FunctionAccessType accessType = method.HasAttribute<LoggedInAttribute>() || method.HasAttribute<AuthorizeAttribute>()
+            FunctionAccessType accessType = method.HasAttribute<LoggedInAttribute>()
                 ? FunctionAccessType.LoggedIn
                 : method.HasAttribute<AllowAnonymousAttribute>()
                     ? FunctionAccessType.Anonymous
@@ -122,8 +119,13 @@ namespace Hybrid.AspNetCore.Mvc
         /// <returns></returns>
         protected override bool IsIgnoreMethod(Function action, MethodInfo method, IEnumerable<Function> functions)
         {
-            bool flag = base.IsIgnoreMethod(action, method, functions);
-            return flag && method.HasAttribute<HttpPostAttribute>() || method.HasAttribute<NonActionAttribute>();
+            if (method.HasAttribute<NonActionAttribute>() || method.HasAttribute<NonFunctionAttribute>())
+            {
+                return true;
+            }
+
+            Function existing = GetFunction(functions, action.Area, action.Controller, action.Action, action.Name);
+            return existing != null && method.HasAttribute<HttpPostAttribute>();
         }
 
         /// <summary>

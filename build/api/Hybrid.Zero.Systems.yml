@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Zero.Systems
+  commentId: N:Hybrid.Zero.Systems
+  id: Hybrid.Zero.Systems
+  children:
+  - Hybrid.Zero.Systems.SystemSetting
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Zero.Systems
+  nameWithType: Hybrid.Zero.Systems
+  fullName: Hybrid.Zero.Systems
+  type: Namespace
+  assemblies:
+  - Hybrid.Zero
+references:
+- uid: Hybrid.Zero.Systems.SystemSetting
+  commentId: T:Hybrid.Zero.Systems.SystemSetting
+  name: SystemSetting
+  nameWithType: SystemSetting
+  fullName: Hybrid.Zero.Systems.SystemSetting

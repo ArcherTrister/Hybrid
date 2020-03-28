@@ -54,10 +54,5 @@ namespace Hybrid.Domain.Uow
         /// 提交所有工作单元的事务更改
         /// </summary>
         void Commit();
-
-        /// <summary>
-        /// 回滚所有工作单元的事务更改
-        /// </summary>
-        void Rollback();
     }
 }

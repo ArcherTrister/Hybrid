@@ -1,0 +1,4425 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Data.OperationResultType
+  commentId: T:Hybrid.Data.OperationResultType
+  id: OperationResultType
+  parent: Hybrid.Data
+  children:
+  - Hybrid.Data.OperationResultType.Error
+  - Hybrid.Data.OperationResultType.NoChanged
+  - Hybrid.Data.OperationResultType.QueryNull
+  - Hybrid.Data.OperationResultType.Success
+  - Hybrid.Data.OperationResultType.ValidError
+  langs:
+  - csharp
+  - vb
+  name: OperationResultType
+  nameWithType: OperationResultType
+  fullName: Hybrid.Data.OperationResultType
+  type: Enum
+  source:
+    remote:
+      path: src/Hybrid/Data/OperationResultType.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: OperationResultType
+    path: ../src/Hybrid/Data/OperationResultType.cs
+    startLine: 15
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n表示业务操作结果的枚举\n"
+  example: []
+  syntax:
+    content: public enum OperationResultType
+    content.vb: Public Enum OperationResultType
+  extensionMethods:
+  - Hybrid.Data.OperationResultType.OSharp.Entity.EntityExtensions.CheckICreatedTime``2
+  - Hybrid.Data.OperationResultType.OSharp.Entity.EntityExtensions.CheckICreationAudited``3(System.Security.Principal.IPrincipal)
+  - Hybrid.Data.OperationResultType.OSharp.Entity.EntityExtensions.CheckIUpdateAudited``3(System.Security.Principal.IPrincipal)
+  - System.Enum.OSharp.Extensions.EnumExtensions.ToDescription
+  - System.Object.OSharp.Extensions.ObjectExtensions.CastTo(System.Type)
+  - System.Object.OSharp.Extensions.ObjectExtensions.CastTo``1
+  - System.Object.OSharp.Extensions.ObjectExtensions.CastTo``1({T})
+  - Hybrid.Data.OperationResultType.OSharp.Extensions.ObjectExtensions.IsIn``1(Hybrid.Data.OperationResultType[])
+  - System.Object.OSharp.Extensions.ObjectExtensions.ToDynamic
+  - Hybrid.Data.OperationResultType.OSharp.Extensions.ParameterCheckExtensions.Required``1(System.Func{Hybrid.Data.OperationResultType,System.Boolean},System.String)
+  - Hybrid.Data.OperationResultType.OSharp.Extensions.ParameterCheckExtensions.Required``2(System.Func{Hybrid.Data.OperationResultType,System.Boolean},System.String)
+  - System.Object.OSharp.Json.JsonExtensions.ToJsonString(System.Boolean,System.Boolean)
+  - System.Object.OSharp.Mapping.MapperExtensions.MapTo``1
+  - Hybrid.Data.OperationResultType.OSharp.Mapping.MapperExtensions.MapTo``2({TTarget})
+  - System.Object.OSharp.Reflection.LockExtensions.Locking(System.Action)
+  - Hybrid.Data.OperationResultType.OSharp.Reflection.LockExtensions.Locking``1(System.Action{Hybrid.Data.OperationResultType})
+  - System.Object.OSharp.Reflection.LockExtensions.Locking``1(System.Func{{TResult}})
+  - Hybrid.Data.OperationResultType.OSharp.Reflection.LockExtensions.Locking``2(System.Func{Hybrid.Data.OperationResultType,{TResult}})
+  - System.Enum.Hybrid.Extensions.EnumExtensions.ToDescription
+  - System.Object.Hybrid.Extensions.ObjectExtensions.CastTo(System.Type)
+  - System.Object.Hybrid.Extensions.ObjectExtensions.CastTo``1
+  - System.Object.Hybrid.Extensions.ObjectExtensions.CastTo``1({T})
+  - Hybrid.Data.OperationResultType.Hybrid.Extensions.ObjectExtensions.IsIn``1(Hybrid.Data.OperationResultType[])
+  - System.Object.Hybrid.Extensions.ObjectExtensions.ToDynamic
+  - Hybrid.Data.OperationResultType.Hybrid.Extensions.ParameterCheckExtensions.Required``1(System.Func{Hybrid.Data.OperationResultType,System.Boolean},System.String)
+  - Hybrid.Data.OperationResultType.Hybrid.Extensions.ParameterCheckExtensions.Required``2(System.Func{Hybrid.Data.OperationResultType,System.Boolean},System.String)
+  - System.Object.Hybrid.Json.JsonExtensions.ToJsonString(System.Boolean,System.Boolean)
+  - System.Object.Hybrid.Mapping.MapperExtensions.MapTo``1
+  - Hybrid.Data.OperationResultType.Hybrid.Mapping.MapperExtensions.MapTo``2({TTarget})
+  - System.Object.Hybrid.Reflection.LockExtensions.Locking(System.Action)
+  - Hybrid.Data.OperationResultType.Hybrid.Reflection.LockExtensions.Locking``1(System.Action{Hybrid.Data.OperationResultType})
+  - System.Object.Hybrid.Reflection.LockExtensions.Locking``1(System.Func{{TResult}})
+  - Hybrid.Data.OperationResultType.Hybrid.Reflection.LockExtensions.Locking``2(System.Func{Hybrid.Data.OperationResultType,{TResult}})
+  - Hybrid.Data.OperationResultType.Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2
+  - Hybrid.Data.OperationResultType.Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(System.Security.Principal.IPrincipal)
+  - Hybrid.Data.OperationResultType.Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(System.Security.Principal.IPrincipal)
+  - Hybrid.Data.OperationResultType.Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResultType
+  - Hybrid.Data.OperationResultType.Hybrid.AspNetCore.UI.AjaxResultExtensions.IsError
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Hybrid.Data.OperationResultType.ValidError
+  commentId: F:Hybrid.Data.OperationResultType.ValidError
+  id: ValidError
+  parent: Hybrid.Data.OperationResultType
+  langs:
+  - csharp
+  - vb
+  name: ValidError
+  nameWithType: OperationResultType.ValidError
+  fullName: Hybrid.Data.OperationResultType.ValidError
+  type: Field
+  source:
+    remote:
+      path: src/Hybrid/Data/OperationResultType.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ValidError
+    path: ../src/Hybrid/Data/OperationResultType.cs
+    startLine: 20
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n输入信息验证失败\n"
+  example: []
+  syntax:
+    content: ValidError = 0
+    return:
+      type: Hybrid.Data.OperationResultType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hybrid.Data.OperationResultType.QueryNull
+  commentId: F:Hybrid.Data.OperationResultType.QueryNull
+  id: QueryNull
+  parent: Hybrid.Data.OperationResultType
+  langs:
+  - csharp
+  - vb
+  name: QueryNull
+  nameWithType: OperationResultType.QueryNull
+  fullName: Hybrid.Data.OperationResultType.QueryNull
+  type: Field
+  source:
+    remote:
+      path: src/Hybrid/Data/OperationResultType.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: QueryNull
+    path: ../src/Hybrid/Data/OperationResultType.cs
+    startLine: 26
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n指定参数的数据不存在\n"
+  example: []
+  syntax:
+    content: QueryNull = 1
+    return:
+      type: Hybrid.Data.OperationResultType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hybrid.Data.OperationResultType.NoChanged
+  commentId: F:Hybrid.Data.OperationResultType.NoChanged
+  id: NoChanged
+  parent: Hybrid.Data.OperationResultType
+  langs:
+  - csharp
+  - vb
+  name: NoChanged
+  nameWithType: OperationResultType.NoChanged
+  fullName: Hybrid.Data.OperationResultType.NoChanged
+  type: Field
+  source:
+    remote:
+      path: src/Hybrid/Data/OperationResultType.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: NoChanged
+    path: ../src/Hybrid/Data/OperationResultType.cs
+    startLine: 32
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n操作取消或操作没引发任何变化\n"
+  example: []
+  syntax:
+    content: NoChanged = 2
+    return:
+      type: Hybrid.Data.OperationResultType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hybrid.Data.OperationResultType.Success
+  commentId: F:Hybrid.Data.OperationResultType.Success
+  id: Success
+  parent: Hybrid.Data.OperationResultType
+  langs:
+  - csharp
+  - vb
+  name: Success
+  nameWithType: OperationResultType.Success
+  fullName: Hybrid.Data.OperationResultType.Success
+  type: Field
+  source:
+    remote:
+      path: src/Hybrid/Data/OperationResultType.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Success
+    path: ../src/Hybrid/Data/OperationResultType.cs
+    startLine: 38
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n操作成功\n"
+  example: []
+  syntax:
+    content: Success = 3
+    return:
+      type: Hybrid.Data.OperationResultType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hybrid.Data.OperationResultType.Error
+  commentId: F:Hybrid.Data.OperationResultType.Error
+  id: Error
+  parent: Hybrid.Data.OperationResultType
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: OperationResultType.Error
+  fullName: Hybrid.Data.OperationResultType.Error
+  type: Field
+  source:
+    remote:
+      path: src/Hybrid/Data/OperationResultType.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Error
+    path: ../src/Hybrid/Data/OperationResultType.cs
+    startLine: 44
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n操作引发错误\n"
+  example: []
+  syntax:
+    content: Error = 4
+    return:
+      type: Hybrid.Data.OperationResultType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Hybrid.Data
+  commentId: N:Hybrid.Data
+  name: Hybrid.Data
+  nameWithType: Hybrid.Data
+  fullName: Hybrid.Data
+- uid: Hybrid.Data.OperationResultType.OSharp.Entity.EntityExtensions.CheckICreatedTime``2
+  commentId: M:OSharp.Entity.EntityExtensions.CheckICreatedTime``2(``0)
+  parent: OSharp.Entity.EntityExtensions
+  definition: OSharp.Entity.EntityExtensions.CheckICreatedTime``2(``0)
+  name: CheckICreatedTime<OperationResultType, TKey>()
+  nameWithType: EntityExtensions.CheckICreatedTime<OperationResultType, TKey>()
+  fullName: OSharp.Entity.EntityExtensions.CheckICreatedTime<Hybrid.Data.OperationResultType, TKey>()
+  nameWithType.vb: EntityExtensions.CheckICreatedTime(Of OperationResultType, TKey)()
+  fullName.vb: OSharp.Entity.EntityExtensions.CheckICreatedTime(Of Hybrid.Data.OperationResultType, TKey)()
+  name.vb: CheckICreatedTime(Of OperationResultType, TKey)()
+  spec.csharp:
+  - uid: OSharp.Entity.EntityExtensions.CheckICreatedTime``2
+    name: CheckICreatedTime<OperationResultType, TKey>
+    nameWithType: EntityExtensions.CheckICreatedTime<OperationResultType, TKey>
+    fullName: OSharp.Entity.EntityExtensions.CheckICreatedTime<Hybrid.Data.OperationResultType, TKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Entity.EntityExtensions.CheckICreatedTime``2
+    name: CheckICreatedTime(Of OperationResultType, TKey)
+    nameWithType: EntityExtensions.CheckICreatedTime(Of OperationResultType, TKey)
+    fullName: OSharp.Entity.EntityExtensions.CheckICreatedTime(Of Hybrid.Data.OperationResultType, TKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Data.OperationResultType.OSharp.Entity.EntityExtensions.CheckICreationAudited``3(System.Security.Principal.IPrincipal)
+  commentId: M:OSharp.Entity.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+  parent: OSharp.Entity.EntityExtensions
+  definition: OSharp.Entity.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+  name: CheckICreationAudited<OperationResultType, TKey, TUserKey>(IPrincipal)
+  nameWithType: EntityExtensions.CheckICreationAudited<OperationResultType, TKey, TUserKey>(IPrincipal)
+  fullName: OSharp.Entity.EntityExtensions.CheckICreationAudited<Hybrid.Data.OperationResultType, TKey, TUserKey>(System.Security.Principal.IPrincipal)
+  nameWithType.vb: EntityExtensions.CheckICreationAudited(Of OperationResultType, TKey, TUserKey)(IPrincipal)
+  fullName.vb: OSharp.Entity.EntityExtensions.CheckICreationAudited(Of Hybrid.Data.OperationResultType, TKey, TUserKey)(System.Security.Principal.IPrincipal)
+  name.vb: CheckICreationAudited(Of OperationResultType, TKey, TUserKey)(IPrincipal)
+  spec.csharp:
+  - uid: OSharp.Entity.EntityExtensions.CheckICreationAudited``3(System.Security.Principal.IPrincipal)
+    name: CheckICreationAudited<OperationResultType, TKey, TUserKey>
+    nameWithType: EntityExtensions.CheckICreationAudited<OperationResultType, TKey, TUserKey>
+    fullName: OSharp.Entity.EntityExtensions.CheckICreationAudited<Hybrid.Data.OperationResultType, TKey, TUserKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Entity.EntityExtensions.CheckICreationAudited``3(System.Security.Principal.IPrincipal)
+    name: CheckICreationAudited(Of OperationResultType, TKey, TUserKey)
+    nameWithType: EntityExtensions.CheckICreationAudited(Of OperationResultType, TKey, TUserKey)
+    fullName: OSharp.Entity.EntityExtensions.CheckICreationAudited(Of Hybrid.Data.OperationResultType, TKey, TUserKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Data.OperationResultType.OSharp.Entity.EntityExtensions.CheckIUpdateAudited``3(System.Security.Principal.IPrincipal)
+  commentId: M:OSharp.Entity.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+  parent: OSharp.Entity.EntityExtensions
+  definition: OSharp.Entity.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+  name: CheckIUpdateAudited<OperationResultType, TKey, TUserKey>(IPrincipal)
+  nameWithType: EntityExtensions.CheckIUpdateAudited<OperationResultType, TKey, TUserKey>(IPrincipal)
+  fullName: OSharp.Entity.EntityExtensions.CheckIUpdateAudited<Hybrid.Data.OperationResultType, TKey, TUserKey>(System.Security.Principal.IPrincipal)
+  nameWithType.vb: EntityExtensions.CheckIUpdateAudited(Of OperationResultType, TKey, TUserKey)(IPrincipal)
+  fullName.vb: OSharp.Entity.EntityExtensions.CheckIUpdateAudited(Of Hybrid.Data.OperationResultType, TKey, TUserKey)(System.Security.Principal.IPrincipal)
+  name.vb: CheckIUpdateAudited(Of OperationResultType, TKey, TUserKey)(IPrincipal)
+  spec.csharp:
+  - uid: OSharp.Entity.EntityExtensions.CheckIUpdateAudited``3(System.Security.Principal.IPrincipal)
+    name: CheckIUpdateAudited<OperationResultType, TKey, TUserKey>
+    nameWithType: EntityExtensions.CheckIUpdateAudited<OperationResultType, TKey, TUserKey>
+    fullName: OSharp.Entity.EntityExtensions.CheckIUpdateAudited<Hybrid.Data.OperationResultType, TKey, TUserKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Entity.EntityExtensions.CheckIUpdateAudited``3(System.Security.Principal.IPrincipal)
+    name: CheckIUpdateAudited(Of OperationResultType, TKey, TUserKey)
+    nameWithType: EntityExtensions.CheckIUpdateAudited(Of OperationResultType, TKey, TUserKey)
+    fullName: OSharp.Entity.EntityExtensions.CheckIUpdateAudited(Of Hybrid.Data.OperationResultType, TKey, TUserKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Enum.OSharp.Extensions.EnumExtensions.ToDescription
+  commentId: M:OSharp.Extensions.EnumExtensions.ToDescription(System.Enum)
+  parent: OSharp.Extensions.EnumExtensions
+  definition: OSharp.Extensions.EnumExtensions.ToDescription(System.Enum)
+  name: ToDescription()
+  nameWithType: EnumExtensions.ToDescription()
+  fullName: OSharp.Extensions.EnumExtensions.ToDescription()
+  spec.csharp:
+  - uid: OSharp.Extensions.EnumExtensions.ToDescription
+    name: ToDescription
+    nameWithType: EnumExtensions.ToDescription
+    fullName: OSharp.Extensions.EnumExtensions.ToDescription
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Extensions.EnumExtensions.ToDescription
+    name: ToDescription
+    nameWithType: EnumExtensions.ToDescription
+    fullName: OSharp.Extensions.EnumExtensions.ToDescription
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.OSharp.Extensions.ObjectExtensions.CastTo(System.Type)
+  commentId: M:OSharp.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+  parent: OSharp.Extensions.ObjectExtensions
+  definition: OSharp.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+  name: CastTo(Type)
+  nameWithType: ObjectExtensions.CastTo(Type)
+  fullName: OSharp.Extensions.ObjectExtensions.CastTo(System.Type)
+  spec.csharp:
+  - uid: OSharp.Extensions.ObjectExtensions.CastTo(System.Type)
+    name: CastTo
+    nameWithType: ObjectExtensions.CastTo
+    fullName: OSharp.Extensions.ObjectExtensions.CastTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Extensions.ObjectExtensions.CastTo(System.Type)
+    name: CastTo
+    nameWithType: ObjectExtensions.CastTo
+    fullName: OSharp.Extensions.ObjectExtensions.CastTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.OSharp.Extensions.ObjectExtensions.CastTo``1
+  commentId: M:OSharp.Extensions.ObjectExtensions.CastTo``1(System.Object)
+  parent: OSharp.Extensions.ObjectExtensions
+  definition: OSharp.Extensions.ObjectExtensions.CastTo``1(System.Object)
+  name: CastTo<T>()
+  nameWithType: ObjectExtensions.CastTo<T>()
+  fullName: OSharp.Extensions.ObjectExtensions.CastTo<T>()
+  nameWithType.vb: ObjectExtensions.CastTo(Of T)()
+  fullName.vb: OSharp.Extensions.ObjectExtensions.CastTo(Of T)()
+  name.vb: CastTo(Of T)()
+  spec.csharp:
+  - uid: OSharp.Extensions.ObjectExtensions.CastTo``1
+    name: CastTo<T>
+    nameWithType: ObjectExtensions.CastTo<T>
+    fullName: OSharp.Extensions.ObjectExtensions.CastTo<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Extensions.ObjectExtensions.CastTo``1
+    name: CastTo(Of T)
+    nameWithType: ObjectExtensions.CastTo(Of T)
+    fullName: OSharp.Extensions.ObjectExtensions.CastTo(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.OSharp.Extensions.ObjectExtensions.CastTo``1({T})
+  commentId: M:OSharp.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+  parent: OSharp.Extensions.ObjectExtensions
+  definition: OSharp.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+  name: CastTo<T>(T)
+  nameWithType: ObjectExtensions.CastTo<T>(T)
+  fullName: OSharp.Extensions.ObjectExtensions.CastTo<T>(T)
+  nameWithType.vb: ObjectExtensions.CastTo(Of T)(T)
+  fullName.vb: OSharp.Extensions.ObjectExtensions.CastTo(Of T)(T)
+  name.vb: CastTo(Of T)(T)
+  spec.csharp:
+  - uid: OSharp.Extensions.ObjectExtensions.CastTo``1(``0)
+    name: CastTo<T>
+    nameWithType: ObjectExtensions.CastTo<T>
+    fullName: OSharp.Extensions.ObjectExtensions.CastTo<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Extensions.ObjectExtensions.CastTo``1(``0)
+    name: CastTo(Of T)
+    nameWithType: ObjectExtensions.CastTo(Of T)
+    fullName: OSharp.Extensions.ObjectExtensions.CastTo(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Data.OperationResultType.OSharp.Extensions.ObjectExtensions.IsIn``1(Hybrid.Data.OperationResultType[])
+  commentId: M:OSharp.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+  parent: OSharp.Extensions.ObjectExtensions
+  definition: OSharp.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+  name: IsIn<OperationResultType>(OperationResultType[])
+  nameWithType: ObjectExtensions.IsIn<OperationResultType>(OperationResultType[])
+  fullName: OSharp.Extensions.ObjectExtensions.IsIn<Hybrid.Data.OperationResultType>(Hybrid.Data.OperationResultType[])
+  nameWithType.vb: ObjectExtensions.IsIn(Of OperationResultType)(OperationResultType())
+  fullName.vb: OSharp.Extensions.ObjectExtensions.IsIn(Of Hybrid.Data.OperationResultType)(Hybrid.Data.OperationResultType())
+  name.vb: IsIn(Of OperationResultType)(OperationResultType())
+  spec.csharp:
+  - uid: OSharp.Extensions.ObjectExtensions.IsIn``1(``0[])
+    name: IsIn<OperationResultType>
+    nameWithType: ObjectExtensions.IsIn<OperationResultType>
+    fullName: OSharp.Extensions.ObjectExtensions.IsIn<Hybrid.Data.OperationResultType>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.Data.OperationResultType
+    name: OperationResultType
+    nameWithType: OperationResultType
+    fullName: Hybrid.Data.OperationResultType
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Extensions.ObjectExtensions.IsIn``1(``0[])
+    name: IsIn(Of OperationResultType)
+    nameWithType: ObjectExtensions.IsIn(Of OperationResultType)
+    fullName: OSharp.Extensions.ObjectExtensions.IsIn(Of Hybrid.Data.OperationResultType)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.Data.OperationResultType
+    name: OperationResultType
+    nameWithType: OperationResultType
+    fullName: Hybrid.Data.OperationResultType
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.OSharp.Extensions.ObjectExtensions.ToDynamic
+  commentId: M:OSharp.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  parent: OSharp.Extensions.ObjectExtensions
+  definition: OSharp.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  name: ToDynamic()
+  nameWithType: ObjectExtensions.ToDynamic()
+  fullName: OSharp.Extensions.ObjectExtensions.ToDynamic()
+  spec.csharp:
+  - uid: OSharp.Extensions.ObjectExtensions.ToDynamic
+    name: ToDynamic
+    nameWithType: ObjectExtensions.ToDynamic
+    fullName: OSharp.Extensions.ObjectExtensions.ToDynamic
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Extensions.ObjectExtensions.ToDynamic
+    name: ToDynamic
+    nameWithType: ObjectExtensions.ToDynamic
+    fullName: OSharp.Extensions.ObjectExtensions.ToDynamic
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Data.OperationResultType.OSharp.Extensions.ParameterCheckExtensions.Required``1(System.Func{Hybrid.Data.OperationResultType,System.Boolean},System.String)
+  commentId: M:OSharp.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+  parent: OSharp.Extensions.ParameterCheckExtensions
+  definition: OSharp.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+  name: Required<OperationResultType>(Func<OperationResultType, Boolean>, String)
+  nameWithType: ParameterCheckExtensions.Required<OperationResultType>(Func<OperationResultType, Boolean>, String)
+  fullName: OSharp.Extensions.ParameterCheckExtensions.Required<Hybrid.Data.OperationResultType>(System.Func<Hybrid.Data.OperationResultType, System.Boolean>, System.String)
+  nameWithType.vb: ParameterCheckExtensions.Required(Of OperationResultType)(Func(Of OperationResultType, Boolean), String)
+  fullName.vb: OSharp.Extensions.ParameterCheckExtensions.Required(Of Hybrid.Data.OperationResultType)(System.Func(Of Hybrid.Data.OperationResultType, System.Boolean), System.String)
+  name.vb: Required(Of OperationResultType)(Func(Of OperationResultType, Boolean), String)
+  spec.csharp:
+  - uid: OSharp.Extensions.ParameterCheckExtensions.Required``1(System.Func{``0,System.Boolean},System.String)
+    name: Required<OperationResultType>
+    nameWithType: ParameterCheckExtensions.Required<OperationResultType>
+    fullName: OSharp.Extensions.ParameterCheckExtensions.Required<Hybrid.Data.OperationResultType>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Data.OperationResultType
+    name: OperationResultType
+    nameWithType: OperationResultType
+    fullName: Hybrid.Data.OperationResultType
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Extensions.ParameterCheckExtensions.Required``1(System.Func{``0,System.Boolean},System.String)
+    name: Required(Of OperationResultType)
+    nameWithType: ParameterCheckExtensions.Required(Of OperationResultType)
+    fullName: OSharp.Extensions.ParameterCheckExtensions.Required(Of Hybrid.Data.OperationResultType)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Data.OperationResultType
+    name: OperationResultType
+    nameWithType: OperationResultType
+    fullName: Hybrid.Data.OperationResultType
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Data.OperationResultType.OSharp.Extensions.ParameterCheckExtensions.Required``2(System.Func{Hybrid.Data.OperationResultType,System.Boolean},System.String)
+  commentId: M:OSharp.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+  parent: OSharp.Extensions.ParameterCheckExtensions
+  definition: OSharp.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+  name: Required<OperationResultType, TException>(Func<OperationResultType, Boolean>, String)
+  nameWithType: ParameterCheckExtensions.Required<OperationResultType, TException>(Func<OperationResultType, Boolean>, String)
+  fullName: OSharp.Extensions.ParameterCheckExtensions.Required<Hybrid.Data.OperationResultType, TException>(System.Func<Hybrid.Data.OperationResultType, System.Boolean>, System.String)
+  nameWithType.vb: ParameterCheckExtensions.Required(Of OperationResultType, TException)(Func(Of OperationResultType, Boolean), String)
+  fullName.vb: OSharp.Extensions.ParameterCheckExtensions.Required(Of Hybrid.Data.OperationResultType, TException)(System.Func(Of Hybrid.Data.OperationResultType, System.Boolean), System.String)
+  name.vb: Required(Of OperationResultType, TException)(Func(Of OperationResultType, Boolean), String)
+  spec.csharp:
+  - uid: OSharp.Extensions.ParameterCheckExtensions.Required``2(System.Func{``0,System.Boolean},System.String)
+    name: Required<OperationResultType, TException>
+    nameWithType: ParameterCheckExtensions.Required<OperationResultType, TException>
+    fullName: OSharp.Extensions.ParameterCheckExtensions.Required<Hybrid.Data.OperationResultType, TException>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Data.OperationResultType
+    name: OperationResultType
+    nameWithType: OperationResultType
+    fullName: Hybrid.Data.OperationResultType
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Extensions.ParameterCheckExtensions.Required``2(System.Func{``0,System.Boolean},System.String)
+    name: Required(Of OperationResultType, TException)
+    nameWithType: ParameterCheckExtensions.Required(Of OperationResultType, TException)
+    fullName: OSharp.Extensions.ParameterCheckExtensions.Required(Of Hybrid.Data.OperationResultType, TException)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Data.OperationResultType
+    name: OperationResultType
+    nameWithType: OperationResultType
+    fullName: Hybrid.Data.OperationResultType
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.OSharp.Json.JsonExtensions.ToJsonString(System.Boolean,System.Boolean)
+  commentId: M:OSharp.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+  parent: OSharp.Json.JsonExtensions
+  definition: OSharp.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+  name: ToJsonString(Boolean, Boolean)
+  nameWithType: JsonExtensions.ToJsonString(Boolean, Boolean)
+  fullName: OSharp.Json.JsonExtensions.ToJsonString(System.Boolean, System.Boolean)
+  spec.csharp:
+  - uid: OSharp.Json.JsonExtensions.ToJsonString(System.Boolean,System.Boolean)
+    name: ToJsonString
+    nameWithType: JsonExtensions.ToJsonString
+    fullName: OSharp.Json.JsonExtensions.ToJsonString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Json.JsonExtensions.ToJsonString(System.Boolean,System.Boolean)
+    name: ToJsonString
+    nameWithType: JsonExtensions.ToJsonString
+    fullName: OSharp.Json.JsonExtensions.ToJsonString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.OSharp.Mapping.MapperExtensions.MapTo``1
+  commentId: M:OSharp.Mapping.MapperExtensions.MapTo``1(System.Object)
+  parent: OSharp.Mapping.MapperExtensions
+  definition: OSharp.Mapping.MapperExtensions.MapTo``1(System.Object)
+  name: MapTo<TTarget>()
+  nameWithType: MapperExtensions.MapTo<TTarget>()
+  fullName: OSharp.Mapping.MapperExtensions.MapTo<TTarget>()
+  nameWithType.vb: MapperExtensions.MapTo(Of TTarget)()
+  fullName.vb: OSharp.Mapping.MapperExtensions.MapTo(Of TTarget)()
+  name.vb: MapTo(Of TTarget)()
+  spec.csharp:
+  - uid: OSharp.Mapping.MapperExtensions.MapTo``1
+    name: MapTo<TTarget>
+    nameWithType: MapperExtensions.MapTo<TTarget>
+    fullName: OSharp.Mapping.MapperExtensions.MapTo<TTarget>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Mapping.MapperExtensions.MapTo``1
+    name: MapTo(Of TTarget)
+    nameWithType: MapperExtensions.MapTo(Of TTarget)
+    fullName: OSharp.Mapping.MapperExtensions.MapTo(Of TTarget)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Data.OperationResultType.OSharp.Mapping.MapperExtensions.MapTo``2({TTarget})
+  commentId: M:OSharp.Mapping.MapperExtensions.MapTo``2(``0,``1)
+  parent: OSharp.Mapping.MapperExtensions
+  definition: OSharp.Mapping.MapperExtensions.MapTo``2(``0,``1)
+  name: MapTo<OperationResultType, TTarget>(TTarget)
+  nameWithType: MapperExtensions.MapTo<OperationResultType, TTarget>(TTarget)
+  fullName: OSharp.Mapping.MapperExtensions.MapTo<Hybrid.Data.OperationResultType, TTarget>(TTarget)
+  nameWithType.vb: MapperExtensions.MapTo(Of OperationResultType, TTarget)(TTarget)
+  fullName.vb: OSharp.Mapping.MapperExtensions.MapTo(Of Hybrid.Data.OperationResultType, TTarget)(TTarget)
+  name.vb: MapTo(Of OperationResultType, TTarget)(TTarget)
+  spec.csharp:
+  - uid: OSharp.Mapping.MapperExtensions.MapTo``2(``1)
+    name: MapTo<OperationResultType, TTarget>
+    nameWithType: MapperExtensions.MapTo<OperationResultType, TTarget>
+    fullName: OSharp.Mapping.MapperExtensions.MapTo<Hybrid.Data.OperationResultType, TTarget>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TTarget
+    nameWithType: TTarget
+    fullName: TTarget
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Mapping.MapperExtensions.MapTo``2(``1)
+    name: MapTo(Of OperationResultType, TTarget)
+    nameWithType: MapperExtensions.MapTo(Of OperationResultType, TTarget)
+    fullName: OSharp.Mapping.MapperExtensions.MapTo(Of Hybrid.Data.OperationResultType, TTarget)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TTarget
+    nameWithType: TTarget
+    fullName: TTarget
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.OSharp.Reflection.LockExtensions.Locking(System.Action)
+  commentId: M:OSharp.Reflection.LockExtensions.Locking(System.Object,System.Action)
+  parent: OSharp.Reflection.LockExtensions
+  definition: OSharp.Reflection.LockExtensions.Locking(System.Object,System.Action)
+  name: Locking(Action)
+  nameWithType: LockExtensions.Locking(Action)
+  fullName: OSharp.Reflection.LockExtensions.Locking(System.Action)
+  spec.csharp:
+  - uid: OSharp.Reflection.LockExtensions.Locking(System.Action)
+    name: Locking
+    nameWithType: LockExtensions.Locking
+    fullName: OSharp.Reflection.LockExtensions.Locking
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Reflection.LockExtensions.Locking(System.Action)
+    name: Locking
+    nameWithType: LockExtensions.Locking
+    fullName: OSharp.Reflection.LockExtensions.Locking
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Data.OperationResultType.OSharp.Reflection.LockExtensions.Locking``1(System.Action{Hybrid.Data.OperationResultType})
+  commentId: M:OSharp.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+  parent: OSharp.Reflection.LockExtensions
+  definition: OSharp.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+  name: Locking<OperationResultType>(Action<OperationResultType>)
+  nameWithType: LockExtensions.Locking<OperationResultType>(Action<OperationResultType>)
+  fullName: OSharp.Reflection.LockExtensions.Locking<Hybrid.Data.OperationResultType>(System.Action<Hybrid.Data.OperationResultType>)
+  nameWithType.vb: LockExtensions.Locking(Of OperationResultType)(Action(Of OperationResultType))
+  fullName.vb: OSharp.Reflection.LockExtensions.Locking(Of Hybrid.Data.OperationResultType)(System.Action(Of Hybrid.Data.OperationResultType))
+  name.vb: Locking(Of OperationResultType)(Action(Of OperationResultType))
+  spec.csharp:
+  - uid: OSharp.Reflection.LockExtensions.Locking``1(System.Action{``0})
+    name: Locking<OperationResultType>
+    nameWithType: LockExtensions.Locking<OperationResultType>
+    fullName: OSharp.Reflection.LockExtensions.Locking<Hybrid.Data.OperationResultType>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Data.OperationResultType
+    name: OperationResultType
+    nameWithType: OperationResultType
+    fullName: Hybrid.Data.OperationResultType
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Reflection.LockExtensions.Locking``1(System.Action{``0})
+    name: Locking(Of OperationResultType)
+    nameWithType: LockExtensions.Locking(Of OperationResultType)
+    fullName: OSharp.Reflection.LockExtensions.Locking(Of Hybrid.Data.OperationResultType)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Data.OperationResultType
+    name: OperationResultType
+    nameWithType: OperationResultType
+    fullName: Hybrid.Data.OperationResultType
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.OSharp.Reflection.LockExtensions.Locking``1(System.Func{{TResult}})
+  commentId: M:OSharp.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+  parent: OSharp.Reflection.LockExtensions
+  definition: OSharp.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+  name: Locking<TResult>(Func<TResult>)
+  nameWithType: LockExtensions.Locking<TResult>(Func<TResult>)
+  fullName: OSharp.Reflection.LockExtensions.Locking<TResult>(System.Func<TResult>)
+  nameWithType.vb: LockExtensions.Locking(Of TResult)(Func(Of TResult))
+  fullName.vb: OSharp.Reflection.LockExtensions.Locking(Of TResult)(System.Func(Of TResult))
+  name.vb: Locking(Of TResult)(Func(Of TResult))
+  spec.csharp:
+  - uid: OSharp.Reflection.LockExtensions.Locking``1(System.Func{``0})
+    name: Locking<TResult>
+    nameWithType: LockExtensions.Locking<TResult>
+    fullName: OSharp.Reflection.LockExtensions.Locking<TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Reflection.LockExtensions.Locking``1(System.Func{``0})
+    name: Locking(Of TResult)
+    nameWithType: LockExtensions.Locking(Of TResult)
+    fullName: OSharp.Reflection.LockExtensions.Locking(Of TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Data.OperationResultType.OSharp.Reflection.LockExtensions.Locking``2(System.Func{Hybrid.Data.OperationResultType,{TResult}})
+  commentId: M:OSharp.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+  parent: OSharp.Reflection.LockExtensions
+  definition: OSharp.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+  name: Locking<OperationResultType, TResult>(Func<OperationResultType, TResult>)
+  nameWithType: LockExtensions.Locking<OperationResultType, TResult>(Func<OperationResultType, TResult>)
+  fullName: OSharp.Reflection.LockExtensions.Locking<Hybrid.Data.OperationResultType, TResult>(System.Func<Hybrid.Data.OperationResultType, TResult>)
+  nameWithType.vb: LockExtensions.Locking(Of OperationResultType, TResult)(Func(Of OperationResultType, TResult))
+  fullName.vb: OSharp.Reflection.LockExtensions.Locking(Of Hybrid.Data.OperationResultType, TResult)(System.Func(Of Hybrid.Data.OperationResultType, TResult))
+  name.vb: Locking(Of OperationResultType, TResult)(Func(Of OperationResultType, TResult))
+  spec.csharp:
+  - uid: OSharp.Reflection.LockExtensions.Locking``2(System.Func{``0,``1})
+    name: Locking<OperationResultType, TResult>
+    nameWithType: LockExtensions.Locking<OperationResultType, TResult>
+    fullName: OSharp.Reflection.LockExtensions.Locking<Hybrid.Data.OperationResultType, TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Data.OperationResultType
+    name: OperationResultType
+    nameWithType: OperationResultType
+    fullName: Hybrid.Data.OperationResultType
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Reflection.LockExtensions.Locking``2(System.Func{``0,``1})
+    name: Locking(Of OperationResultType, TResult)
+    nameWithType: LockExtensions.Locking(Of OperationResultType, TResult)
+    fullName: OSharp.Reflection.LockExtensions.Locking(Of Hybrid.Data.OperationResultType, TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Data.OperationResultType
+    name: OperationResultType
+    nameWithType: OperationResultType
+    fullName: Hybrid.Data.OperationResultType
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Enum.Hybrid.Extensions.EnumExtensions.ToDescription
+  commentId: M:Hybrid.Extensions.EnumExtensions.ToDescription(System.Enum)
+  parent: Hybrid.Extensions.EnumExtensions
+  definition: Hybrid.Extensions.EnumExtensions.ToDescription(System.Enum)
+  name: ToDescription()
+  nameWithType: EnumExtensions.ToDescription()
+  fullName: Hybrid.Extensions.EnumExtensions.ToDescription()
+  spec.csharp:
+  - uid: Hybrid.Extensions.EnumExtensions.ToDescription
+    name: ToDescription
+    nameWithType: EnumExtensions.ToDescription
+    fullName: Hybrid.Extensions.EnumExtensions.ToDescription
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.EnumExtensions.ToDescription
+    name: ToDescription
+    nameWithType: EnumExtensions.ToDescription
+    fullName: Hybrid.Extensions.EnumExtensions.ToDescription
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Extensions.ObjectExtensions.CastTo(System.Type)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+  name: CastTo(Type)
+  nameWithType: ObjectExtensions.CastTo(Type)
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo(System.Type)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo(System.Type)
+    name: CastTo
+    nameWithType: ObjectExtensions.CastTo
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo(System.Type)
+    name: CastTo
+    nameWithType: ObjectExtensions.CastTo
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Extensions.ObjectExtensions.CastTo``1
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+  name: CastTo<T>()
+  nameWithType: ObjectExtensions.CastTo<T>()
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>()
+  nameWithType.vb: ObjectExtensions.CastTo(Of T)()
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)()
+  name.vb: CastTo(Of T)()
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1
+    name: CastTo<T>
+    nameWithType: ObjectExtensions.CastTo<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1
+    name: CastTo(Of T)
+    nameWithType: ObjectExtensions.CastTo(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Extensions.ObjectExtensions.CastTo``1({T})
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+  name: CastTo<T>(T)
+  nameWithType: ObjectExtensions.CastTo<T>(T)
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>(T)
+  nameWithType.vb: ObjectExtensions.CastTo(Of T)(T)
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)(T)
+  name.vb: CastTo(Of T)(T)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(``0)
+    name: CastTo<T>
+    nameWithType: ObjectExtensions.CastTo<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(``0)
+    name: CastTo(Of T)
+    nameWithType: ObjectExtensions.CastTo(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Data.OperationResultType.Hybrid.Extensions.ObjectExtensions.IsIn``1(Hybrid.Data.OperationResultType[])
+  commentId: M:Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+  name: IsIn<OperationResultType>(OperationResultType[])
+  nameWithType: ObjectExtensions.IsIn<OperationResultType>(OperationResultType[])
+  fullName: Hybrid.Extensions.ObjectExtensions.IsIn<Hybrid.Data.OperationResultType>(Hybrid.Data.OperationResultType[])
+  nameWithType.vb: ObjectExtensions.IsIn(Of OperationResultType)(OperationResultType())
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.IsIn(Of Hybrid.Data.OperationResultType)(Hybrid.Data.OperationResultType())
+  name.vb: IsIn(Of OperationResultType)(OperationResultType())
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0[])
+    name: IsIn<OperationResultType>
+    nameWithType: ObjectExtensions.IsIn<OperationResultType>
+    fullName: Hybrid.Extensions.ObjectExtensions.IsIn<Hybrid.Data.OperationResultType>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.Data.OperationResultType
+    name: OperationResultType
+    nameWithType: OperationResultType
+    fullName: Hybrid.Data.OperationResultType
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0[])
+    name: IsIn(Of OperationResultType)
+    nameWithType: ObjectExtensions.IsIn(Of OperationResultType)
+    fullName: Hybrid.Extensions.ObjectExtensions.IsIn(Of Hybrid.Data.OperationResultType)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.Data.OperationResultType
+    name: OperationResultType
+    nameWithType: OperationResultType
+    fullName: Hybrid.Data.OperationResultType
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Extensions.ObjectExtensions.ToDynamic
+  commentId: M:Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  name: ToDynamic()
+  nameWithType: ObjectExtensions.ToDynamic()
+  fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic()
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.ToDynamic
+    name: ToDynamic
+    nameWithType: ObjectExtensions.ToDynamic
+    fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.ToDynamic
+    name: ToDynamic
+    nameWithType: ObjectExtensions.ToDynamic
+    fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Data.OperationResultType.Hybrid.Extensions.ParameterCheckExtensions.Required``1(System.Func{Hybrid.Data.OperationResultType,System.Boolean},System.String)
+  commentId: M:Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+  parent: Hybrid.Extensions.ParameterCheckExtensions
+  definition: Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+  name: Required<OperationResultType>(Func<OperationResultType, Boolean>, String)
+  nameWithType: ParameterCheckExtensions.Required<OperationResultType>(Func<OperationResultType, Boolean>, String)
+  fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<Hybrid.Data.OperationResultType>(System.Func<Hybrid.Data.OperationResultType, System.Boolean>, System.String)
+  nameWithType.vb: ParameterCheckExtensions.Required(Of OperationResultType)(Func(Of OperationResultType, Boolean), String)
+  fullName.vb: Hybrid.Extensions.ParameterCheckExtensions.Required(Of Hybrid.Data.OperationResultType)(System.Func(Of Hybrid.Data.OperationResultType, System.Boolean), System.String)
+  name.vb: Required(Of OperationResultType)(Func(Of OperationResultType, Boolean), String)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``1(System.Func{``0,System.Boolean},System.String)
+    name: Required<OperationResultType>
+    nameWithType: ParameterCheckExtensions.Required<OperationResultType>
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<Hybrid.Data.OperationResultType>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Data.OperationResultType
+    name: OperationResultType
+    nameWithType: OperationResultType
+    fullName: Hybrid.Data.OperationResultType
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``1(System.Func{``0,System.Boolean},System.String)
+    name: Required(Of OperationResultType)
+    nameWithType: ParameterCheckExtensions.Required(Of OperationResultType)
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required(Of Hybrid.Data.OperationResultType)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Data.OperationResultType
+    name: OperationResultType
+    nameWithType: OperationResultType
+    fullName: Hybrid.Data.OperationResultType
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Data.OperationResultType.Hybrid.Extensions.ParameterCheckExtensions.Required``2(System.Func{Hybrid.Data.OperationResultType,System.Boolean},System.String)
+  commentId: M:Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+  parent: Hybrid.Extensions.ParameterCheckExtensions
+  definition: Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+  name: Required<OperationResultType, TException>(Func<OperationResultType, Boolean>, String)
+  nameWithType: ParameterCheckExtensions.Required<OperationResultType, TException>(Func<OperationResultType, Boolean>, String)
+  fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<Hybrid.Data.OperationResultType, TException>(System.Func<Hybrid.Data.OperationResultType, System.Boolean>, System.String)
+  nameWithType.vb: ParameterCheckExtensions.Required(Of OperationResultType, TException)(Func(Of OperationResultType, Boolean), String)
+  fullName.vb: Hybrid.Extensions.ParameterCheckExtensions.Required(Of Hybrid.Data.OperationResultType, TException)(System.Func(Of Hybrid.Data.OperationResultType, System.Boolean), System.String)
+  name.vb: Required(Of OperationResultType, TException)(Func(Of OperationResultType, Boolean), String)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``2(System.Func{``0,System.Boolean},System.String)
+    name: Required<OperationResultType, TException>
+    nameWithType: ParameterCheckExtensions.Required<OperationResultType, TException>
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<Hybrid.Data.OperationResultType, TException>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Data.OperationResultType
+    name: OperationResultType
+    nameWithType: OperationResultType
+    fullName: Hybrid.Data.OperationResultType
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``2(System.Func{``0,System.Boolean},System.String)
+    name: Required(Of OperationResultType, TException)
+    nameWithType: ParameterCheckExtensions.Required(Of OperationResultType, TException)
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required(Of Hybrid.Data.OperationResultType, TException)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Data.OperationResultType
+    name: OperationResultType
+    nameWithType: OperationResultType
+    fullName: Hybrid.Data.OperationResultType
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Json.JsonExtensions.ToJsonString(System.Boolean,System.Boolean)
+  commentId: M:Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+  parent: Hybrid.Json.JsonExtensions
+  definition: Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+  name: ToJsonString(Boolean, Boolean)
+  nameWithType: JsonExtensions.ToJsonString(Boolean, Boolean)
+  fullName: Hybrid.Json.JsonExtensions.ToJsonString(System.Boolean, System.Boolean)
+  spec.csharp:
+  - uid: Hybrid.Json.JsonExtensions.ToJsonString(System.Boolean,System.Boolean)
+    name: ToJsonString
+    nameWithType: JsonExtensions.ToJsonString
+    fullName: Hybrid.Json.JsonExtensions.ToJsonString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Json.JsonExtensions.ToJsonString(System.Boolean,System.Boolean)
+    name: ToJsonString
+    nameWithType: JsonExtensions.ToJsonString
+    fullName: Hybrid.Json.JsonExtensions.ToJsonString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Mapping.MapperExtensions.MapTo``1
+  commentId: M:Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+  parent: Hybrid.Mapping.MapperExtensions
+  definition: Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+  name: MapTo<TTarget>()
+  nameWithType: MapperExtensions.MapTo<TTarget>()
+  fullName: Hybrid.Mapping.MapperExtensions.MapTo<TTarget>()
+  nameWithType.vb: MapperExtensions.MapTo(Of TTarget)()
+  fullName.vb: Hybrid.Mapping.MapperExtensions.MapTo(Of TTarget)()
+  name.vb: MapTo(Of TTarget)()
+  spec.csharp:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``1
+    name: MapTo<TTarget>
+    nameWithType: MapperExtensions.MapTo<TTarget>
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo<TTarget>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``1
+    name: MapTo(Of TTarget)
+    nameWithType: MapperExtensions.MapTo(Of TTarget)
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo(Of TTarget)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Data.OperationResultType.Hybrid.Mapping.MapperExtensions.MapTo``2({TTarget})
+  commentId: M:Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+  parent: Hybrid.Mapping.MapperExtensions
+  definition: Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+  name: MapTo<OperationResultType, TTarget>(TTarget)
+  nameWithType: MapperExtensions.MapTo<OperationResultType, TTarget>(TTarget)
+  fullName: Hybrid.Mapping.MapperExtensions.MapTo<Hybrid.Data.OperationResultType, TTarget>(TTarget)
+  nameWithType.vb: MapperExtensions.MapTo(Of OperationResultType, TTarget)(TTarget)
+  fullName.vb: Hybrid.Mapping.MapperExtensions.MapTo(Of Hybrid.Data.OperationResultType, TTarget)(TTarget)
+  name.vb: MapTo(Of OperationResultType, TTarget)(TTarget)
+  spec.csharp:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``2(``1)
+    name: MapTo<OperationResultType, TTarget>
+    nameWithType: MapperExtensions.MapTo<OperationResultType, TTarget>
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo<Hybrid.Data.OperationResultType, TTarget>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TTarget
+    nameWithType: TTarget
+    fullName: TTarget
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``2(``1)
+    name: MapTo(Of OperationResultType, TTarget)
+    nameWithType: MapperExtensions.MapTo(Of OperationResultType, TTarget)
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo(Of Hybrid.Data.OperationResultType, TTarget)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TTarget
+    nameWithType: TTarget
+    fullName: TTarget
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Reflection.LockExtensions.Locking(System.Action)
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+  parent: Hybrid.Reflection.LockExtensions
+  definition: Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+  name: Locking(Action)
+  nameWithType: LockExtensions.Locking(Action)
+  fullName: Hybrid.Reflection.LockExtensions.Locking(System.Action)
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking(System.Action)
+    name: Locking
+    nameWithType: LockExtensions.Locking
+    fullName: Hybrid.Reflection.LockExtensions.Locking
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking(System.Action)
+    name: Locking
+    nameWithType: LockExtensions.Locking
+    fullName: Hybrid.Reflection.LockExtensions.Locking
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Data.OperationResultType.Hybrid.Reflection.LockExtensions.Locking``1(System.Action{Hybrid.Data.OperationResultType})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+  parent: Hybrid.Reflection.LockExtensions
+  definition: Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+  name: Locking<OperationResultType>(Action<OperationResultType>)
+  nameWithType: LockExtensions.Locking<OperationResultType>(Action<OperationResultType>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<Hybrid.Data.OperationResultType>(System.Action<Hybrid.Data.OperationResultType>)
+  nameWithType.vb: LockExtensions.Locking(Of OperationResultType)(Action(Of OperationResultType))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of Hybrid.Data.OperationResultType)(System.Action(Of Hybrid.Data.OperationResultType))
+  name.vb: Locking(Of OperationResultType)(Action(Of OperationResultType))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Action{``0})
+    name: Locking<OperationResultType>
+    nameWithType: LockExtensions.Locking<OperationResultType>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<Hybrid.Data.OperationResultType>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Data.OperationResultType
+    name: OperationResultType
+    nameWithType: OperationResultType
+    fullName: Hybrid.Data.OperationResultType
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Action{``0})
+    name: Locking(Of OperationResultType)
+    nameWithType: LockExtensions.Locking(Of OperationResultType)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of Hybrid.Data.OperationResultType)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Data.OperationResultType
+    name: OperationResultType
+    nameWithType: OperationResultType
+    fullName: Hybrid.Data.OperationResultType
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Reflection.LockExtensions.Locking``1(System.Func{{TResult}})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+  parent: Hybrid.Reflection.LockExtensions
+  definition: Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+  name: Locking<TResult>(Func<TResult>)
+  nameWithType: LockExtensions.Locking<TResult>(Func<TResult>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<TResult>(System.Func<TResult>)
+  nameWithType.vb: LockExtensions.Locking(Of TResult)(Func(Of TResult))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of TResult)(System.Func(Of TResult))
+  name.vb: Locking(Of TResult)(Func(Of TResult))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Func{``0})
+    name: Locking<TResult>
+    nameWithType: LockExtensions.Locking<TResult>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Func{``0})
+    name: Locking(Of TResult)
+    nameWithType: LockExtensions.Locking(Of TResult)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Data.OperationResultType.Hybrid.Reflection.LockExtensions.Locking``2(System.Func{Hybrid.Data.OperationResultType,{TResult}})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+  parent: Hybrid.Reflection.LockExtensions
+  definition: Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+  name: Locking<OperationResultType, TResult>(Func<OperationResultType, TResult>)
+  nameWithType: LockExtensions.Locking<OperationResultType, TResult>(Func<OperationResultType, TResult>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<Hybrid.Data.OperationResultType, TResult>(System.Func<Hybrid.Data.OperationResultType, TResult>)
+  nameWithType.vb: LockExtensions.Locking(Of OperationResultType, TResult)(Func(Of OperationResultType, TResult))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of Hybrid.Data.OperationResultType, TResult)(System.Func(Of Hybrid.Data.OperationResultType, TResult))
+  name.vb: Locking(Of OperationResultType, TResult)(Func(Of OperationResultType, TResult))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``2(System.Func{``0,``1})
+    name: Locking<OperationResultType, TResult>
+    nameWithType: LockExtensions.Locking<OperationResultType, TResult>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<Hybrid.Data.OperationResultType, TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Data.OperationResultType
+    name: OperationResultType
+    nameWithType: OperationResultType
+    fullName: Hybrid.Data.OperationResultType
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``2(System.Func{``0,``1})
+    name: Locking(Of OperationResultType, TResult)
+    nameWithType: LockExtensions.Locking(Of OperationResultType, TResult)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of Hybrid.Data.OperationResultType, TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Data.OperationResultType
+    name: OperationResultType
+    nameWithType: OperationResultType
+    fullName: Hybrid.Data.OperationResultType
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Data.OperationResultType.Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+  parent: Hybrid.Domain.Entities.EntityExtensions
+  definition: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+  name: CheckICreatedTime<OperationResultType, TKey>()
+  nameWithType: EntityExtensions.CheckICreatedTime<OperationResultType, TKey>()
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime<Hybrid.Data.OperationResultType, TKey>()
+  nameWithType.vb: EntityExtensions.CheckICreatedTime(Of OperationResultType, TKey)()
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime(Of Hybrid.Data.OperationResultType, TKey)()
+  name.vb: CheckICreatedTime(Of OperationResultType, TKey)()
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2
+    name: CheckICreatedTime<OperationResultType, TKey>
+    nameWithType: EntityExtensions.CheckICreatedTime<OperationResultType, TKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime<Hybrid.Data.OperationResultType, TKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2
+    name: CheckICreatedTime(Of OperationResultType, TKey)
+    nameWithType: EntityExtensions.CheckICreatedTime(Of OperationResultType, TKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime(Of Hybrid.Data.OperationResultType, TKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Data.OperationResultType.Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(System.Security.Principal.IPrincipal)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+  parent: Hybrid.Domain.Entities.EntityExtensions
+  definition: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+  name: CheckICreationAudited<OperationResultType, TKey, TUserKey>(IPrincipal)
+  nameWithType: EntityExtensions.CheckICreationAudited<OperationResultType, TKey, TUserKey>(IPrincipal)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited<Hybrid.Data.OperationResultType, TKey, TUserKey>(System.Security.Principal.IPrincipal)
+  nameWithType.vb: EntityExtensions.CheckICreationAudited(Of OperationResultType, TKey, TUserKey)(IPrincipal)
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited(Of Hybrid.Data.OperationResultType, TKey, TUserKey)(System.Security.Principal.IPrincipal)
+  name.vb: CheckICreationAudited(Of OperationResultType, TKey, TUserKey)(IPrincipal)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(System.Security.Principal.IPrincipal)
+    name: CheckICreationAudited<OperationResultType, TKey, TUserKey>
+    nameWithType: EntityExtensions.CheckICreationAudited<OperationResultType, TKey, TUserKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited<Hybrid.Data.OperationResultType, TKey, TUserKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(System.Security.Principal.IPrincipal)
+    name: CheckICreationAudited(Of OperationResultType, TKey, TUserKey)
+    nameWithType: EntityExtensions.CheckICreationAudited(Of OperationResultType, TKey, TUserKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited(Of Hybrid.Data.OperationResultType, TKey, TUserKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Data.OperationResultType.Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(System.Security.Principal.IPrincipal)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+  parent: Hybrid.Domain.Entities.EntityExtensions
+  definition: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+  name: CheckIUpdateAudited<OperationResultType, TKey, TUserKey>(IPrincipal)
+  nameWithType: EntityExtensions.CheckIUpdateAudited<OperationResultType, TKey, TUserKey>(IPrincipal)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited<Hybrid.Data.OperationResultType, TKey, TUserKey>(System.Security.Principal.IPrincipal)
+  nameWithType.vb: EntityExtensions.CheckIUpdateAudited(Of OperationResultType, TKey, TUserKey)(IPrincipal)
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited(Of Hybrid.Data.OperationResultType, TKey, TUserKey)(System.Security.Principal.IPrincipal)
+  name.vb: CheckIUpdateAudited(Of OperationResultType, TKey, TUserKey)(IPrincipal)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(System.Security.Principal.IPrincipal)
+    name: CheckIUpdateAudited<OperationResultType, TKey, TUserKey>
+    nameWithType: EntityExtensions.CheckIUpdateAudited<OperationResultType, TKey, TUserKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited<Hybrid.Data.OperationResultType, TKey, TUserKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(System.Security.Principal.IPrincipal)
+    name: CheckIUpdateAudited(Of OperationResultType, TKey, TUserKey)
+    nameWithType: EntityExtensions.CheckIUpdateAudited(Of OperationResultType, TKey, TUserKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited(Of Hybrid.Data.OperationResultType, TKey, TUserKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Data.OperationResultType.Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResultType
+  commentId: M:Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResultType(Hybrid.Data.OperationResultType)
+  parent: Hybrid.AspNetCore.UI.AjaxResultExtensions
+  definition: Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResultType(Hybrid.Data.OperationResultType)
+  name: ToAjaxResultType()
+  nameWithType: AjaxResultExtensions.ToAjaxResultType()
+  fullName: Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResultType()
+  spec.csharp:
+  - uid: Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResultType
+    name: ToAjaxResultType
+    nameWithType: AjaxResultExtensions.ToAjaxResultType
+    fullName: Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResultType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResultType
+    name: ToAjaxResultType
+    nameWithType: AjaxResultExtensions.ToAjaxResultType
+    fullName: Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResultType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Data.OperationResultType.Hybrid.AspNetCore.UI.AjaxResultExtensions.IsError
+  commentId: M:Hybrid.AspNetCore.UI.AjaxResultExtensions.IsError(Hybrid.Data.OperationResultType)
+  parent: Hybrid.AspNetCore.UI.AjaxResultExtensions
+  definition: Hybrid.AspNetCore.UI.AjaxResultExtensions.IsError(Hybrid.Data.OperationResultType)
+  name: IsError()
+  nameWithType: AjaxResultExtensions.IsError()
+  fullName: Hybrid.AspNetCore.UI.AjaxResultExtensions.IsError()
+  spec.csharp:
+  - uid: Hybrid.AspNetCore.UI.AjaxResultExtensions.IsError
+    name: IsError
+    nameWithType: AjaxResultExtensions.IsError
+    fullName: Hybrid.AspNetCore.UI.AjaxResultExtensions.IsError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.AspNetCore.UI.AjaxResultExtensions.IsError
+    name: IsError
+    nameWithType: AjaxResultExtensions.IsError
+    fullName: Hybrid.AspNetCore.UI.AjaxResultExtensions.IsError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: OSharp.Entity.EntityExtensions.CheckICreatedTime``2(``0)
+  commentId: M:OSharp.Entity.EntityExtensions.CheckICreatedTime``2(``0)
+  name: CheckICreatedTime<TEntity, TKey>(TEntity)
+  nameWithType: EntityExtensions.CheckICreatedTime<TEntity, TKey>(TEntity)
+  fullName: OSharp.Entity.EntityExtensions.CheckICreatedTime<TEntity, TKey>(TEntity)
+  nameWithType.vb: EntityExtensions.CheckICreatedTime(Of TEntity, TKey)(TEntity)
+  fullName.vb: OSharp.Entity.EntityExtensions.CheckICreatedTime(Of TEntity, TKey)(TEntity)
+  name.vb: CheckICreatedTime(Of TEntity, TKey)(TEntity)
+  spec.csharp:
+  - uid: OSharp.Entity.EntityExtensions.CheckICreatedTime``2(``0)
+    name: CheckICreatedTime<TEntity, TKey>
+    nameWithType: EntityExtensions.CheckICreatedTime<TEntity, TKey>
+    fullName: OSharp.Entity.EntityExtensions.CheckICreatedTime<TEntity, TKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Entity.EntityExtensions.CheckICreatedTime``2(``0)
+    name: CheckICreatedTime(Of TEntity, TKey)
+    nameWithType: EntityExtensions.CheckICreatedTime(Of TEntity, TKey)
+    fullName: OSharp.Entity.EntityExtensions.CheckICreatedTime(Of TEntity, TKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: OSharp.Entity.EntityExtensions
+  commentId: T:OSharp.Entity.EntityExtensions
+  parent: OSharp.Entity
+  name: EntityExtensions
+  nameWithType: EntityExtensions
+  fullName: OSharp.Entity.EntityExtensions
+- uid: OSharp.Entity.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+  commentId: M:OSharp.Entity.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+  isExternal: true
+  name: CheckICreationAudited<TEntity, TKey, TUserKey>(TEntity, IPrincipal)
+  nameWithType: EntityExtensions.CheckICreationAudited<TEntity, TKey, TUserKey>(TEntity, IPrincipal)
+  fullName: OSharp.Entity.EntityExtensions.CheckICreationAudited<TEntity, TKey, TUserKey>(TEntity, System.Security.Principal.IPrincipal)
+  nameWithType.vb: EntityExtensions.CheckICreationAudited(Of TEntity, TKey, TUserKey)(TEntity, IPrincipal)
+  fullName.vb: OSharp.Entity.EntityExtensions.CheckICreationAudited(Of TEntity, TKey, TUserKey)(TEntity, System.Security.Principal.IPrincipal)
+  name.vb: CheckICreationAudited(Of TEntity, TKey, TUserKey)(TEntity, IPrincipal)
+  spec.csharp:
+  - uid: OSharp.Entity.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+    name: CheckICreationAudited<TEntity, TKey, TUserKey>
+    nameWithType: EntityExtensions.CheckICreationAudited<TEntity, TKey, TUserKey>
+    fullName: OSharp.Entity.EntityExtensions.CheckICreationAudited<TEntity, TKey, TUserKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Entity.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+    name: CheckICreationAudited(Of TEntity, TKey, TUserKey)
+    nameWithType: EntityExtensions.CheckICreationAudited(Of TEntity, TKey, TUserKey)
+    fullName: OSharp.Entity.EntityExtensions.CheckICreationAudited(Of TEntity, TKey, TUserKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: OSharp.Entity.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+  commentId: M:OSharp.Entity.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+  isExternal: true
+  name: CheckIUpdateAudited<TEntity, TKey, TUserKey>(TEntity, IPrincipal)
+  nameWithType: EntityExtensions.CheckIUpdateAudited<TEntity, TKey, TUserKey>(TEntity, IPrincipal)
+  fullName: OSharp.Entity.EntityExtensions.CheckIUpdateAudited<TEntity, TKey, TUserKey>(TEntity, System.Security.Principal.IPrincipal)
+  nameWithType.vb: EntityExtensions.CheckIUpdateAudited(Of TEntity, TKey, TUserKey)(TEntity, IPrincipal)
+  fullName.vb: OSharp.Entity.EntityExtensions.CheckIUpdateAudited(Of TEntity, TKey, TUserKey)(TEntity, System.Security.Principal.IPrincipal)
+  name.vb: CheckIUpdateAudited(Of TEntity, TKey, TUserKey)(TEntity, IPrincipal)
+  spec.csharp:
+  - uid: OSharp.Entity.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+    name: CheckIUpdateAudited<TEntity, TKey, TUserKey>
+    nameWithType: EntityExtensions.CheckIUpdateAudited<TEntity, TKey, TUserKey>
+    fullName: OSharp.Entity.EntityExtensions.CheckIUpdateAudited<TEntity, TKey, TUserKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Entity.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+    name: CheckIUpdateAudited(Of TEntity, TKey, TUserKey)
+    nameWithType: EntityExtensions.CheckIUpdateAudited(Of TEntity, TKey, TUserKey)
+    fullName: OSharp.Entity.EntityExtensions.CheckIUpdateAudited(Of TEntity, TKey, TUserKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: OSharp.Extensions.EnumExtensions.ToDescription(System.Enum)
+  commentId: M:OSharp.Extensions.EnumExtensions.ToDescription(System.Enum)
+  isExternal: true
+  name: ToDescription(Enum)
+  nameWithType: EnumExtensions.ToDescription(Enum)
+  fullName: OSharp.Extensions.EnumExtensions.ToDescription(System.Enum)
+  spec.csharp:
+  - uid: OSharp.Extensions.EnumExtensions.ToDescription(System.Enum)
+    name: ToDescription
+    nameWithType: EnumExtensions.ToDescription
+    fullName: OSharp.Extensions.EnumExtensions.ToDescription
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Enum
+    name: Enum
+    nameWithType: Enum
+    fullName: System.Enum
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Extensions.EnumExtensions.ToDescription(System.Enum)
+    name: ToDescription
+    nameWithType: EnumExtensions.ToDescription
+    fullName: OSharp.Extensions.EnumExtensions.ToDescription
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Enum
+    name: Enum
+    nameWithType: Enum
+    fullName: System.Enum
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: OSharp.Extensions.EnumExtensions
+  commentId: T:OSharp.Extensions.EnumExtensions
+  parent: OSharp.Extensions
+  name: EnumExtensions
+  nameWithType: EnumExtensions
+  fullName: OSharp.Extensions.EnumExtensions
+- uid: OSharp.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+  commentId: M:OSharp.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+  isExternal: true
+  name: CastTo(Object, Type)
+  nameWithType: ObjectExtensions.CastTo(Object, Type)
+  fullName: OSharp.Extensions.ObjectExtensions.CastTo(System.Object, System.Type)
+  spec.csharp:
+  - uid: OSharp.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+    name: CastTo
+    nameWithType: ObjectExtensions.CastTo
+    fullName: OSharp.Extensions.ObjectExtensions.CastTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+    name: CastTo
+    nameWithType: ObjectExtensions.CastTo
+    fullName: OSharp.Extensions.ObjectExtensions.CastTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: OSharp.Extensions.ObjectExtensions
+  commentId: T:OSharp.Extensions.ObjectExtensions
+  parent: OSharp.Extensions
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: OSharp.Extensions.ObjectExtensions
+- uid: OSharp.Extensions.ObjectExtensions.CastTo``1(System.Object)
+  commentId: M:OSharp.Extensions.ObjectExtensions.CastTo``1(System.Object)
+  isExternal: true
+  name: CastTo<T>(Object)
+  nameWithType: ObjectExtensions.CastTo<T>(Object)
+  fullName: OSharp.Extensions.ObjectExtensions.CastTo<T>(System.Object)
+  nameWithType.vb: ObjectExtensions.CastTo(Of T)(Object)
+  fullName.vb: OSharp.Extensions.ObjectExtensions.CastTo(Of T)(System.Object)
+  name.vb: CastTo(Of T)(Object)
+  spec.csharp:
+  - uid: OSharp.Extensions.ObjectExtensions.CastTo``1(System.Object)
+    name: CastTo<T>
+    nameWithType: ObjectExtensions.CastTo<T>
+    fullName: OSharp.Extensions.ObjectExtensions.CastTo<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Extensions.ObjectExtensions.CastTo``1(System.Object)
+    name: CastTo(Of T)
+    nameWithType: ObjectExtensions.CastTo(Of T)
+    fullName: OSharp.Extensions.ObjectExtensions.CastTo(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: OSharp.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+  commentId: M:OSharp.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+  isExternal: true
+  name: CastTo<T>(Object, T)
+  nameWithType: ObjectExtensions.CastTo<T>(Object, T)
+  fullName: OSharp.Extensions.ObjectExtensions.CastTo<T>(System.Object, T)
+  nameWithType.vb: ObjectExtensions.CastTo(Of T)(Object, T)
+  fullName.vb: OSharp.Extensions.ObjectExtensions.CastTo(Of T)(System.Object, T)
+  name.vb: CastTo(Of T)(Object, T)
+  spec.csharp:
+  - uid: OSharp.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+    name: CastTo<T>
+    nameWithType: ObjectExtensions.CastTo<T>
+    fullName: OSharp.Extensions.ObjectExtensions.CastTo<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+    name: CastTo(Of T)
+    nameWithType: ObjectExtensions.CastTo(Of T)
+    fullName: OSharp.Extensions.ObjectExtensions.CastTo(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: OSharp.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+  commentId: M:OSharp.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+  name: IsIn<T>(T, T[])
+  nameWithType: ObjectExtensions.IsIn<T>(T, T[])
+  fullName: OSharp.Extensions.ObjectExtensions.IsIn<T>(T, T[])
+  nameWithType.vb: ObjectExtensions.IsIn(Of T)(T, T())
+  fullName.vb: OSharp.Extensions.ObjectExtensions.IsIn(Of T)(T, T())
+  name.vb: IsIn(Of T)(T, T())
+  spec.csharp:
+  - uid: OSharp.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+    name: IsIn<T>
+    nameWithType: ObjectExtensions.IsIn<T>
+    fullName: OSharp.Extensions.ObjectExtensions.IsIn<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+    name: IsIn(Of T)
+    nameWithType: ObjectExtensions.IsIn(Of T)
+    fullName: OSharp.Extensions.ObjectExtensions.IsIn(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: OSharp.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  commentId: M:OSharp.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  isExternal: true
+  name: ToDynamic(Object)
+  nameWithType: ObjectExtensions.ToDynamic(Object)
+  fullName: OSharp.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  spec.csharp:
+  - uid: OSharp.Extensions.ObjectExtensions.ToDynamic(System.Object)
+    name: ToDynamic
+    nameWithType: ObjectExtensions.ToDynamic
+    fullName: OSharp.Extensions.ObjectExtensions.ToDynamic
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Extensions.ObjectExtensions.ToDynamic(System.Object)
+    name: ToDynamic
+    nameWithType: ObjectExtensions.ToDynamic
+    fullName: OSharp.Extensions.ObjectExtensions.ToDynamic
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: OSharp.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+  commentId: M:OSharp.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+  isExternal: true
+  name: Required<T>(T, Func<T, Boolean>, String)
+  nameWithType: ParameterCheckExtensions.Required<T>(T, Func<T, Boolean>, String)
+  fullName: OSharp.Extensions.ParameterCheckExtensions.Required<T>(T, System.Func<T, System.Boolean>, System.String)
+  nameWithType.vb: ParameterCheckExtensions.Required(Of T)(T, Func(Of T, Boolean), String)
+  fullName.vb: OSharp.Extensions.ParameterCheckExtensions.Required(Of T)(T, System.Func(Of T, System.Boolean), System.String)
+  name.vb: Required(Of T)(T, Func(Of T, Boolean), String)
+  spec.csharp:
+  - uid: OSharp.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+    name: Required<T>
+    nameWithType: ParameterCheckExtensions.Required<T>
+    fullName: OSharp.Extensions.ParameterCheckExtensions.Required<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+    name: Required(Of T)
+    nameWithType: ParameterCheckExtensions.Required(Of T)
+    fullName: OSharp.Extensions.ParameterCheckExtensions.Required(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: OSharp.Extensions.ParameterCheckExtensions
+  commentId: T:OSharp.Extensions.ParameterCheckExtensions
+  parent: OSharp.Extensions
+  name: ParameterCheckExtensions
+  nameWithType: ParameterCheckExtensions
+  fullName: OSharp.Extensions.ParameterCheckExtensions
+- uid: OSharp.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+  commentId: M:OSharp.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+  isExternal: true
+  name: Required<T, TException>(T, Func<T, Boolean>, String)
+  nameWithType: ParameterCheckExtensions.Required<T, TException>(T, Func<T, Boolean>, String)
+  fullName: OSharp.Extensions.ParameterCheckExtensions.Required<T, TException>(T, System.Func<T, System.Boolean>, System.String)
+  nameWithType.vb: ParameterCheckExtensions.Required(Of T, TException)(T, Func(Of T, Boolean), String)
+  fullName.vb: OSharp.Extensions.ParameterCheckExtensions.Required(Of T, TException)(T, System.Func(Of T, System.Boolean), System.String)
+  name.vb: Required(Of T, TException)(T, Func(Of T, Boolean), String)
+  spec.csharp:
+  - uid: OSharp.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+    name: Required<T, TException>
+    nameWithType: ParameterCheckExtensions.Required<T, TException>
+    fullName: OSharp.Extensions.ParameterCheckExtensions.Required<T, TException>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+    name: Required(Of T, TException)
+    nameWithType: ParameterCheckExtensions.Required(Of T, TException)
+    fullName: OSharp.Extensions.ParameterCheckExtensions.Required(Of T, TException)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: OSharp.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+  commentId: M:OSharp.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+  isExternal: true
+  name: ToJsonString(Object, Boolean, Boolean)
+  nameWithType: JsonExtensions.ToJsonString(Object, Boolean, Boolean)
+  fullName: OSharp.Json.JsonExtensions.ToJsonString(System.Object, System.Boolean, System.Boolean)
+  spec.csharp:
+  - uid: OSharp.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+    name: ToJsonString
+    nameWithType: JsonExtensions.ToJsonString
+    fullName: OSharp.Json.JsonExtensions.ToJsonString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+    name: ToJsonString
+    nameWithType: JsonExtensions.ToJsonString
+    fullName: OSharp.Json.JsonExtensions.ToJsonString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: OSharp.Json.JsonExtensions
+  commentId: T:OSharp.Json.JsonExtensions
+  parent: OSharp.Json
+  name: JsonExtensions
+  nameWithType: JsonExtensions
+  fullName: OSharp.Json.JsonExtensions
+- uid: OSharp.Mapping.MapperExtensions.MapTo``1(System.Object)
+  commentId: M:OSharp.Mapping.MapperExtensions.MapTo``1(System.Object)
+  isExternal: true
+  name: MapTo<TTarget>(Object)
+  nameWithType: MapperExtensions.MapTo<TTarget>(Object)
+  fullName: OSharp.Mapping.MapperExtensions.MapTo<TTarget>(System.Object)
+  nameWithType.vb: MapperExtensions.MapTo(Of TTarget)(Object)
+  fullName.vb: OSharp.Mapping.MapperExtensions.MapTo(Of TTarget)(System.Object)
+  name.vb: MapTo(Of TTarget)(Object)
+  spec.csharp:
+  - uid: OSharp.Mapping.MapperExtensions.MapTo``1(System.Object)
+    name: MapTo<TTarget>
+    nameWithType: MapperExtensions.MapTo<TTarget>
+    fullName: OSharp.Mapping.MapperExtensions.MapTo<TTarget>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Mapping.MapperExtensions.MapTo``1(System.Object)
+    name: MapTo(Of TTarget)
+    nameWithType: MapperExtensions.MapTo(Of TTarget)
+    fullName: OSharp.Mapping.MapperExtensions.MapTo(Of TTarget)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: OSharp.Mapping.MapperExtensions
+  commentId: T:OSharp.Mapping.MapperExtensions
+  parent: OSharp.Mapping
+  name: MapperExtensions
+  nameWithType: MapperExtensions
+  fullName: OSharp.Mapping.MapperExtensions
+- uid: OSharp.Mapping.MapperExtensions.MapTo``2(``0,``1)
+  commentId: M:OSharp.Mapping.MapperExtensions.MapTo``2(``0,``1)
+  name: MapTo<TSource, TTarget>(TSource, TTarget)
+  nameWithType: MapperExtensions.MapTo<TSource, TTarget>(TSource, TTarget)
+  fullName: OSharp.Mapping.MapperExtensions.MapTo<TSource, TTarget>(TSource, TTarget)
+  nameWithType.vb: MapperExtensions.MapTo(Of TSource, TTarget)(TSource, TTarget)
+  fullName.vb: OSharp.Mapping.MapperExtensions.MapTo(Of TSource, TTarget)(TSource, TTarget)
+  name.vb: MapTo(Of TSource, TTarget)(TSource, TTarget)
+  spec.csharp:
+  - uid: OSharp.Mapping.MapperExtensions.MapTo``2(``0,``1)
+    name: MapTo<TSource, TTarget>
+    nameWithType: MapperExtensions.MapTo<TSource, TTarget>
+    fullName: OSharp.Mapping.MapperExtensions.MapTo<TSource, TTarget>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TTarget
+    nameWithType: TTarget
+    fullName: TTarget
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Mapping.MapperExtensions.MapTo``2(``0,``1)
+    name: MapTo(Of TSource, TTarget)
+    nameWithType: MapperExtensions.MapTo(Of TSource, TTarget)
+    fullName: OSharp.Mapping.MapperExtensions.MapTo(Of TSource, TTarget)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TTarget
+    nameWithType: TTarget
+    fullName: TTarget
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: OSharp.Reflection.LockExtensions.Locking(System.Object,System.Action)
+  commentId: M:OSharp.Reflection.LockExtensions.Locking(System.Object,System.Action)
+  isExternal: true
+  name: Locking(Object, Action)
+  nameWithType: LockExtensions.Locking(Object, Action)
+  fullName: OSharp.Reflection.LockExtensions.Locking(System.Object, System.Action)
+  spec.csharp:
+  - uid: OSharp.Reflection.LockExtensions.Locking(System.Object,System.Action)
+    name: Locking
+    nameWithType: LockExtensions.Locking
+    fullName: OSharp.Reflection.LockExtensions.Locking
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Reflection.LockExtensions.Locking(System.Object,System.Action)
+    name: Locking
+    nameWithType: LockExtensions.Locking
+    fullName: OSharp.Reflection.LockExtensions.Locking
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: OSharp.Reflection.LockExtensions
+  commentId: T:OSharp.Reflection.LockExtensions
+  parent: OSharp.Reflection
+  name: LockExtensions
+  nameWithType: LockExtensions
+  fullName: OSharp.Reflection.LockExtensions
+- uid: OSharp.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+  commentId: M:OSharp.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+  isExternal: true
+  name: Locking<T>(T, Action<T>)
+  nameWithType: LockExtensions.Locking<T>(T, Action<T>)
+  fullName: OSharp.Reflection.LockExtensions.Locking<T>(T, System.Action<T>)
+  nameWithType.vb: LockExtensions.Locking(Of T)(T, Action(Of T))
+  fullName.vb: OSharp.Reflection.LockExtensions.Locking(Of T)(T, System.Action(Of T))
+  name.vb: Locking(Of T)(T, Action(Of T))
+  spec.csharp:
+  - uid: OSharp.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+    name: Locking<T>
+    nameWithType: LockExtensions.Locking<T>
+    fullName: OSharp.Reflection.LockExtensions.Locking<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+    name: Locking(Of T)
+    nameWithType: LockExtensions.Locking(Of T)
+    fullName: OSharp.Reflection.LockExtensions.Locking(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: OSharp.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+  commentId: M:OSharp.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+  isExternal: true
+  name: Locking<TResult>(Object, Func<TResult>)
+  nameWithType: LockExtensions.Locking<TResult>(Object, Func<TResult>)
+  fullName: OSharp.Reflection.LockExtensions.Locking<TResult>(System.Object, System.Func<TResult>)
+  nameWithType.vb: LockExtensions.Locking(Of TResult)(Object, Func(Of TResult))
+  fullName.vb: OSharp.Reflection.LockExtensions.Locking(Of TResult)(System.Object, System.Func(Of TResult))
+  name.vb: Locking(Of TResult)(Object, Func(Of TResult))
+  spec.csharp:
+  - uid: OSharp.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+    name: Locking<TResult>
+    nameWithType: LockExtensions.Locking<TResult>
+    fullName: OSharp.Reflection.LockExtensions.Locking<TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+    name: Locking(Of TResult)
+    nameWithType: LockExtensions.Locking(Of TResult)
+    fullName: OSharp.Reflection.LockExtensions.Locking(Of TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: OSharp.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+  commentId: M:OSharp.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+  isExternal: true
+  name: Locking<TSource, TResult>(TSource, Func<TSource, TResult>)
+  nameWithType: LockExtensions.Locking<TSource, TResult>(TSource, Func<TSource, TResult>)
+  fullName: OSharp.Reflection.LockExtensions.Locking<TSource, TResult>(TSource, System.Func<TSource, TResult>)
+  nameWithType.vb: LockExtensions.Locking(Of TSource, TResult)(TSource, Func(Of TSource, TResult))
+  fullName.vb: OSharp.Reflection.LockExtensions.Locking(Of TSource, TResult)(TSource, System.Func(Of TSource, TResult))
+  name.vb: Locking(Of TSource, TResult)(TSource, Func(Of TSource, TResult))
+  spec.csharp:
+  - uid: OSharp.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+    name: Locking<TSource, TResult>
+    nameWithType: LockExtensions.Locking<TSource, TResult>
+    fullName: OSharp.Reflection.LockExtensions.Locking<TSource, TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: OSharp.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+    name: Locking(Of TSource, TResult)
+    nameWithType: LockExtensions.Locking(Of TSource, TResult)
+    fullName: OSharp.Reflection.LockExtensions.Locking(Of TSource, TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.EnumExtensions.ToDescription(System.Enum)
+  commentId: M:Hybrid.Extensions.EnumExtensions.ToDescription(System.Enum)
+  isExternal: true
+  name: ToDescription(Enum)
+  nameWithType: EnumExtensions.ToDescription(Enum)
+  fullName: Hybrid.Extensions.EnumExtensions.ToDescription(System.Enum)
+  spec.csharp:
+  - uid: Hybrid.Extensions.EnumExtensions.ToDescription(System.Enum)
+    name: ToDescription
+    nameWithType: EnumExtensions.ToDescription
+    fullName: Hybrid.Extensions.EnumExtensions.ToDescription
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Enum
+    name: Enum
+    nameWithType: Enum
+    fullName: System.Enum
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.EnumExtensions.ToDescription(System.Enum)
+    name: ToDescription
+    nameWithType: EnumExtensions.ToDescription
+    fullName: Hybrid.Extensions.EnumExtensions.ToDescription
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Enum
+    name: Enum
+    nameWithType: Enum
+    fullName: System.Enum
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.EnumExtensions
+  commentId: T:Hybrid.Extensions.EnumExtensions
+  parent: Hybrid.Extensions
+  name: EnumExtensions
+  nameWithType: EnumExtensions
+  fullName: Hybrid.Extensions.EnumExtensions
+- uid: Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+  isExternal: true
+  name: CastTo(Object, Type)
+  nameWithType: ObjectExtensions.CastTo(Object, Type)
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo(System.Object, System.Type)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+    name: CastTo
+    nameWithType: ObjectExtensions.CastTo
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+    name: CastTo
+    nameWithType: ObjectExtensions.CastTo
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ObjectExtensions
+  commentId: T:Hybrid.Extensions.ObjectExtensions
+  parent: Hybrid.Extensions
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: Hybrid.Extensions.ObjectExtensions
+- uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+  isExternal: true
+  name: CastTo<T>(Object)
+  nameWithType: ObjectExtensions.CastTo<T>(Object)
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>(System.Object)
+  nameWithType.vb: ObjectExtensions.CastTo(Of T)(Object)
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)(System.Object)
+  name.vb: CastTo(Of T)(Object)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+    name: CastTo<T>
+    nameWithType: ObjectExtensions.CastTo<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+    name: CastTo(Of T)
+    nameWithType: ObjectExtensions.CastTo(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+  isExternal: true
+  name: CastTo<T>(Object, T)
+  nameWithType: ObjectExtensions.CastTo<T>(Object, T)
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>(System.Object, T)
+  nameWithType.vb: ObjectExtensions.CastTo(Of T)(Object, T)
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)(System.Object, T)
+  name.vb: CastTo(Of T)(Object, T)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+    name: CastTo<T>
+    nameWithType: ObjectExtensions.CastTo<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+    name: CastTo(Of T)
+    nameWithType: ObjectExtensions.CastTo(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+  commentId: M:Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+  name: IsIn<T>(T, T[])
+  nameWithType: ObjectExtensions.IsIn<T>(T, T[])
+  fullName: Hybrid.Extensions.ObjectExtensions.IsIn<T>(T, T[])
+  nameWithType.vb: ObjectExtensions.IsIn(Of T)(T, T())
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.IsIn(Of T)(T, T())
+  name.vb: IsIn(Of T)(T, T())
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+    name: IsIn<T>
+    nameWithType: ObjectExtensions.IsIn<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.IsIn<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+    name: IsIn(Of T)
+    nameWithType: ObjectExtensions.IsIn(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.IsIn(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  isExternal: true
+  name: ToDynamic(Object)
+  nameWithType: ObjectExtensions.ToDynamic(Object)
+  fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+    name: ToDynamic
+    nameWithType: ObjectExtensions.ToDynamic
+    fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+    name: ToDynamic
+    nameWithType: ObjectExtensions.ToDynamic
+    fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+  commentId: M:Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+  isExternal: true
+  name: Required<T>(T, Func<T, Boolean>, String)
+  nameWithType: ParameterCheckExtensions.Required<T>(T, Func<T, Boolean>, String)
+  fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<T>(T, System.Func<T, System.Boolean>, System.String)
+  nameWithType.vb: ParameterCheckExtensions.Required(Of T)(T, Func(Of T, Boolean), String)
+  fullName.vb: Hybrid.Extensions.ParameterCheckExtensions.Required(Of T)(T, System.Func(Of T, System.Boolean), System.String)
+  name.vb: Required(Of T)(T, Func(Of T, Boolean), String)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+    name: Required<T>
+    nameWithType: ParameterCheckExtensions.Required<T>
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+    name: Required(Of T)
+    nameWithType: ParameterCheckExtensions.Required(Of T)
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ParameterCheckExtensions
+  commentId: T:Hybrid.Extensions.ParameterCheckExtensions
+  parent: Hybrid.Extensions
+  name: ParameterCheckExtensions
+  nameWithType: ParameterCheckExtensions
+  fullName: Hybrid.Extensions.ParameterCheckExtensions
+- uid: Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+  commentId: M:Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+  isExternal: true
+  name: Required<T, TException>(T, Func<T, Boolean>, String)
+  nameWithType: ParameterCheckExtensions.Required<T, TException>(T, Func<T, Boolean>, String)
+  fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<T, TException>(T, System.Func<T, System.Boolean>, System.String)
+  nameWithType.vb: ParameterCheckExtensions.Required(Of T, TException)(T, Func(Of T, Boolean), String)
+  fullName.vb: Hybrid.Extensions.ParameterCheckExtensions.Required(Of T, TException)(T, System.Func(Of T, System.Boolean), System.String)
+  name.vb: Required(Of T, TException)(T, Func(Of T, Boolean), String)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+    name: Required<T, TException>
+    nameWithType: ParameterCheckExtensions.Required<T, TException>
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<T, TException>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+    name: Required(Of T, TException)
+    nameWithType: ParameterCheckExtensions.Required(Of T, TException)
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required(Of T, TException)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+  commentId: M:Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+  isExternal: true
+  name: ToJsonString(Object, Boolean, Boolean)
+  nameWithType: JsonExtensions.ToJsonString(Object, Boolean, Boolean)
+  fullName: Hybrid.Json.JsonExtensions.ToJsonString(System.Object, System.Boolean, System.Boolean)
+  spec.csharp:
+  - uid: Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+    name: ToJsonString
+    nameWithType: JsonExtensions.ToJsonString
+    fullName: Hybrid.Json.JsonExtensions.ToJsonString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+    name: ToJsonString
+    nameWithType: JsonExtensions.ToJsonString
+    fullName: Hybrid.Json.JsonExtensions.ToJsonString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Json.JsonExtensions
+  commentId: T:Hybrid.Json.JsonExtensions
+  parent: Hybrid.Json
+  name: JsonExtensions
+  nameWithType: JsonExtensions
+  fullName: Hybrid.Json.JsonExtensions
+- uid: Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+  commentId: M:Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+  isExternal: true
+  name: MapTo<TTarget>(Object)
+  nameWithType: MapperExtensions.MapTo<TTarget>(Object)
+  fullName: Hybrid.Mapping.MapperExtensions.MapTo<TTarget>(System.Object)
+  nameWithType.vb: MapperExtensions.MapTo(Of TTarget)(Object)
+  fullName.vb: Hybrid.Mapping.MapperExtensions.MapTo(Of TTarget)(System.Object)
+  name.vb: MapTo(Of TTarget)(Object)
+  spec.csharp:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+    name: MapTo<TTarget>
+    nameWithType: MapperExtensions.MapTo<TTarget>
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo<TTarget>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+    name: MapTo(Of TTarget)
+    nameWithType: MapperExtensions.MapTo(Of TTarget)
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo(Of TTarget)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Mapping.MapperExtensions
+  commentId: T:Hybrid.Mapping.MapperExtensions
+  parent: Hybrid.Mapping
+  name: MapperExtensions
+  nameWithType: MapperExtensions
+  fullName: Hybrid.Mapping.MapperExtensions
+- uid: Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+  commentId: M:Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+  name: MapTo<TSource, TTarget>(TSource, TTarget)
+  nameWithType: MapperExtensions.MapTo<TSource, TTarget>(TSource, TTarget)
+  fullName: Hybrid.Mapping.MapperExtensions.MapTo<TSource, TTarget>(TSource, TTarget)
+  nameWithType.vb: MapperExtensions.MapTo(Of TSource, TTarget)(TSource, TTarget)
+  fullName.vb: Hybrid.Mapping.MapperExtensions.MapTo(Of TSource, TTarget)(TSource, TTarget)
+  name.vb: MapTo(Of TSource, TTarget)(TSource, TTarget)
+  spec.csharp:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+    name: MapTo<TSource, TTarget>
+    nameWithType: MapperExtensions.MapTo<TSource, TTarget>
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo<TSource, TTarget>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TTarget
+    nameWithType: TTarget
+    fullName: TTarget
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+    name: MapTo(Of TSource, TTarget)
+    nameWithType: MapperExtensions.MapTo(Of TSource, TTarget)
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo(Of TSource, TTarget)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TTarget
+    nameWithType: TTarget
+    fullName: TTarget
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+  isExternal: true
+  name: Locking(Object, Action)
+  nameWithType: LockExtensions.Locking(Object, Action)
+  fullName: Hybrid.Reflection.LockExtensions.Locking(System.Object, System.Action)
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+    name: Locking
+    nameWithType: LockExtensions.Locking
+    fullName: Hybrid.Reflection.LockExtensions.Locking
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+    name: Locking
+    nameWithType: LockExtensions.Locking
+    fullName: Hybrid.Reflection.LockExtensions.Locking
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Reflection.LockExtensions
+  commentId: T:Hybrid.Reflection.LockExtensions
+  parent: Hybrid.Reflection
+  name: LockExtensions
+  nameWithType: LockExtensions
+  fullName: Hybrid.Reflection.LockExtensions
+- uid: Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+  isExternal: true
+  name: Locking<T>(T, Action<T>)
+  nameWithType: LockExtensions.Locking<T>(T, Action<T>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<T>(T, System.Action<T>)
+  nameWithType.vb: LockExtensions.Locking(Of T)(T, Action(Of T))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of T)(T, System.Action(Of T))
+  name.vb: Locking(Of T)(T, Action(Of T))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+    name: Locking<T>
+    nameWithType: LockExtensions.Locking<T>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+    name: Locking(Of T)
+    nameWithType: LockExtensions.Locking(Of T)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+  isExternal: true
+  name: Locking<TResult>(Object, Func<TResult>)
+  nameWithType: LockExtensions.Locking<TResult>(Object, Func<TResult>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<TResult>(System.Object, System.Func<TResult>)
+  nameWithType.vb: LockExtensions.Locking(Of TResult)(Object, Func(Of TResult))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of TResult)(System.Object, System.Func(Of TResult))
+  name.vb: Locking(Of TResult)(Object, Func(Of TResult))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+    name: Locking<TResult>
+    nameWithType: LockExtensions.Locking<TResult>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+    name: Locking(Of TResult)
+    nameWithType: LockExtensions.Locking(Of TResult)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+  isExternal: true
+  name: Locking<TSource, TResult>(TSource, Func<TSource, TResult>)
+  nameWithType: LockExtensions.Locking<TSource, TResult>(TSource, Func<TSource, TResult>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<TSource, TResult>(TSource, System.Func<TSource, TResult>)
+  nameWithType.vb: LockExtensions.Locking(Of TSource, TResult)(TSource, Func(Of TSource, TResult))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of TSource, TResult)(TSource, System.Func(Of TSource, TResult))
+  name.vb: Locking(Of TSource, TResult)(TSource, Func(Of TSource, TResult))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+    name: Locking<TSource, TResult>
+    nameWithType: LockExtensions.Locking<TSource, TResult>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<TSource, TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+    name: Locking(Of TSource, TResult)
+    nameWithType: LockExtensions.Locking(Of TSource, TResult)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of TSource, TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+  name: CheckICreatedTime<TEntity, TKey>(TEntity)
+  nameWithType: EntityExtensions.CheckICreatedTime<TEntity, TKey>(TEntity)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime<TEntity, TKey>(TEntity)
+  nameWithType.vb: EntityExtensions.CheckICreatedTime(Of TEntity, TKey)(TEntity)
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime(Of TEntity, TKey)(TEntity)
+  name.vb: CheckICreatedTime(Of TEntity, TKey)(TEntity)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+    name: CheckICreatedTime<TEntity, TKey>
+    nameWithType: EntityExtensions.CheckICreatedTime<TEntity, TKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime<TEntity, TKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+    name: CheckICreatedTime(Of TEntity, TKey)
+    nameWithType: EntityExtensions.CheckICreatedTime(Of TEntity, TKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime(Of TEntity, TKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Domain.Entities.EntityExtensions
+  commentId: T:Hybrid.Domain.Entities.EntityExtensions
+  parent: Hybrid.Domain.Entities
+  name: EntityExtensions
+  nameWithType: EntityExtensions
+  fullName: Hybrid.Domain.Entities.EntityExtensions
+- uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+  isExternal: true
+  name: CheckICreationAudited<TEntity, TKey, TUserKey>(TEntity, IPrincipal)
+  nameWithType: EntityExtensions.CheckICreationAudited<TEntity, TKey, TUserKey>(TEntity, IPrincipal)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited<TEntity, TKey, TUserKey>(TEntity, System.Security.Principal.IPrincipal)
+  nameWithType.vb: EntityExtensions.CheckICreationAudited(Of TEntity, TKey, TUserKey)(TEntity, IPrincipal)
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited(Of TEntity, TKey, TUserKey)(TEntity, System.Security.Principal.IPrincipal)
+  name.vb: CheckICreationAudited(Of TEntity, TKey, TUserKey)(TEntity, IPrincipal)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+    name: CheckICreationAudited<TEntity, TKey, TUserKey>
+    nameWithType: EntityExtensions.CheckICreationAudited<TEntity, TKey, TUserKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited<TEntity, TKey, TUserKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+    name: CheckICreationAudited(Of TEntity, TKey, TUserKey)
+    nameWithType: EntityExtensions.CheckICreationAudited(Of TEntity, TKey, TUserKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited(Of TEntity, TKey, TUserKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+  isExternal: true
+  name: CheckIUpdateAudited<TEntity, TKey, TUserKey>(TEntity, IPrincipal)
+  nameWithType: EntityExtensions.CheckIUpdateAudited<TEntity, TKey, TUserKey>(TEntity, IPrincipal)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited<TEntity, TKey, TUserKey>(TEntity, System.Security.Principal.IPrincipal)
+  nameWithType.vb: EntityExtensions.CheckIUpdateAudited(Of TEntity, TKey, TUserKey)(TEntity, IPrincipal)
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited(Of TEntity, TKey, TUserKey)(TEntity, System.Security.Principal.IPrincipal)
+  name.vb: CheckIUpdateAudited(Of TEntity, TKey, TUserKey)(TEntity, IPrincipal)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+    name: CheckIUpdateAudited<TEntity, TKey, TUserKey>
+    nameWithType: EntityExtensions.CheckIUpdateAudited<TEntity, TKey, TUserKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited<TEntity, TKey, TUserKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+    name: CheckIUpdateAudited(Of TEntity, TKey, TUserKey)
+    nameWithType: EntityExtensions.CheckIUpdateAudited(Of TEntity, TKey, TUserKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited(Of TEntity, TKey, TUserKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResultType(Hybrid.Data.OperationResultType)
+  commentId: M:Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResultType(Hybrid.Data.OperationResultType)
+  name: ToAjaxResultType(OperationResultType)
+  nameWithType: AjaxResultExtensions.ToAjaxResultType(OperationResultType)
+  fullName: Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResultType(Hybrid.Data.OperationResultType)
+  spec.csharp:
+  - uid: Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResultType(Hybrid.Data.OperationResultType)
+    name: ToAjaxResultType
+    nameWithType: AjaxResultExtensions.ToAjaxResultType
+    fullName: Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResultType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.Data.OperationResultType
+    name: OperationResultType
+    nameWithType: OperationResultType
+    fullName: Hybrid.Data.OperationResultType
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResultType(Hybrid.Data.OperationResultType)
+    name: ToAjaxResultType
+    nameWithType: AjaxResultExtensions.ToAjaxResultType
+    fullName: Hybrid.AspNetCore.UI.AjaxResultExtensions.ToAjaxResultType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.Data.OperationResultType
+    name: OperationResultType
+    nameWithType: OperationResultType
+    fullName: Hybrid.Data.OperationResultType
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.AspNetCore.UI.AjaxResultExtensions
+  commentId: T:Hybrid.AspNetCore.UI.AjaxResultExtensions
+  parent: Hybrid.AspNetCore.UI
+  name: AjaxResultExtensions
+  nameWithType: AjaxResultExtensions
+  fullName: Hybrid.AspNetCore.UI.AjaxResultExtensions
+- uid: Hybrid.AspNetCore.UI.AjaxResultExtensions.IsError(Hybrid.Data.OperationResultType)
+  commentId: M:Hybrid.AspNetCore.UI.AjaxResultExtensions.IsError(Hybrid.Data.OperationResultType)
+  name: IsError(OperationResultType)
+  nameWithType: AjaxResultExtensions.IsError(OperationResultType)
+  fullName: Hybrid.AspNetCore.UI.AjaxResultExtensions.IsError(Hybrid.Data.OperationResultType)
+  spec.csharp:
+  - uid: Hybrid.AspNetCore.UI.AjaxResultExtensions.IsError(Hybrid.Data.OperationResultType)
+    name: IsError
+    nameWithType: AjaxResultExtensions.IsError
+    fullName: Hybrid.AspNetCore.UI.AjaxResultExtensions.IsError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.Data.OperationResultType
+    name: OperationResultType
+    nameWithType: OperationResultType
+    fullName: Hybrid.Data.OperationResultType
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.AspNetCore.UI.AjaxResultExtensions.IsError(Hybrid.Data.OperationResultType)
+    name: IsError
+    nameWithType: AjaxResultExtensions.IsError
+    fullName: Hybrid.AspNetCore.UI.AjaxResultExtensions.IsError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.Data.OperationResultType
+    name: OperationResultType
+    nameWithType: OperationResultType
+    fullName: Hybrid.Data.OperationResultType
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: OSharp.Entity
+  commentId: N:OSharp.Entity
+  name: OSharp.Entity
+  nameWithType: OSharp.Entity
+  fullName: OSharp.Entity
+- uid: OSharp.Extensions
+  commentId: N:OSharp.Extensions
+  name: OSharp.Extensions
+  nameWithType: OSharp.Extensions
+  fullName: OSharp.Extensions
+- uid: OSharp.Json
+  commentId: N:OSharp.Json
+  name: OSharp.Json
+  nameWithType: OSharp.Json
+  fullName: OSharp.Json
+- uid: OSharp.Mapping
+  commentId: N:OSharp.Mapping
+  name: OSharp.Mapping
+  nameWithType: OSharp.Mapping
+  fullName: OSharp.Mapping
+- uid: OSharp.Reflection
+  commentId: N:OSharp.Reflection
+  name: OSharp.Reflection
+  nameWithType: OSharp.Reflection
+  fullName: OSharp.Reflection
+- uid: Hybrid.Extensions
+  commentId: N:Hybrid.Extensions
+  name: Hybrid.Extensions
+  nameWithType: Hybrid.Extensions
+  fullName: Hybrid.Extensions
+- uid: Hybrid.Json
+  commentId: N:Hybrid.Json
+  name: Hybrid.Json
+  nameWithType: Hybrid.Json
+  fullName: Hybrid.Json
+- uid: Hybrid.Mapping
+  commentId: N:Hybrid.Mapping
+  name: Hybrid.Mapping
+  nameWithType: Hybrid.Mapping
+  fullName: Hybrid.Mapping
+- uid: Hybrid.Reflection
+  commentId: N:Hybrid.Reflection
+  name: Hybrid.Reflection
+  nameWithType: Hybrid.Reflection
+  fullName: Hybrid.Reflection
+- uid: Hybrid.Domain.Entities
+  commentId: N:Hybrid.Domain.Entities
+  name: Hybrid.Domain.Entities
+  nameWithType: Hybrid.Domain.Entities
+  fullName: Hybrid.Domain.Entities
+- uid: Hybrid.AspNetCore.UI
+  commentId: N:Hybrid.AspNetCore.UI
+  name: Hybrid.AspNetCore.UI
+  nameWithType: Hybrid.AspNetCore.UI
+  fullName: Hybrid.AspNetCore.UI
+- uid: Hybrid.Data.OperationResultType
+  commentId: T:Hybrid.Data.OperationResultType
+  parent: Hybrid.Data
+  name: OperationResultType
+  nameWithType: OperationResultType
+  fullName: Hybrid.Data.OperationResultType

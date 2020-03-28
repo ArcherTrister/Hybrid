@@ -1,0 +1,71 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.AspNetCore
+  commentId: N:Hybrid.AspNetCore
+  id: Hybrid.AspNetCore
+  children:
+  - Hybrid.AspNetCore.AspHybridModule
+  - Hybrid.AspNetCore.AspHybridModuleManager
+  - Hybrid.AspNetCore.AspNetCoreModule
+  - Hybrid.AspNetCore.HttpContextCancellationTokenProvider
+  - Hybrid.AspNetCore.HttpContextServiceScopeFactory
+  - Hybrid.AspNetCore.HttpContextServiceScopeFactory.NonDisposedHttpContextServiceScope
+  - Hybrid.AspNetCore.IAspUseModule
+  - Hybrid.AspNetCore.RequestScopedServiceResolver
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.AspNetCore
+  nameWithType: Hybrid.AspNetCore
+  fullName: Hybrid.AspNetCore
+  type: Namespace
+  assemblies:
+  - Hybrid.AspNetCore
+references:
+- uid: Hybrid.AspNetCore.AspHybridModule
+  commentId: T:Hybrid.AspNetCore.AspHybridModule
+  parent: Hybrid.AspNetCore
+  name: AspHybridModule
+  nameWithType: AspHybridModule
+  fullName: Hybrid.AspNetCore.AspHybridModule
+- uid: Hybrid.AspNetCore.AspHybridModuleManager
+  commentId: T:Hybrid.AspNetCore.AspHybridModuleManager
+  name: AspHybridModuleManager
+  nameWithType: AspHybridModuleManager
+  fullName: Hybrid.AspNetCore.AspHybridModuleManager
+- uid: Hybrid.AspNetCore.AspNetCoreModule
+  commentId: T:Hybrid.AspNetCore.AspNetCoreModule
+  name: AspNetCoreModule
+  nameWithType: AspNetCoreModule
+  fullName: Hybrid.AspNetCore.AspNetCoreModule
+- uid: Hybrid.AspNetCore.HttpContextCancellationTokenProvider
+  commentId: T:Hybrid.AspNetCore.HttpContextCancellationTokenProvider
+  name: HttpContextCancellationTokenProvider
+  nameWithType: HttpContextCancellationTokenProvider
+  fullName: Hybrid.AspNetCore.HttpContextCancellationTokenProvider
+- uid: Hybrid.AspNetCore.HttpContextServiceScopeFactory
+  commentId: T:Hybrid.AspNetCore.HttpContextServiceScopeFactory
+  name: HttpContextServiceScopeFactory
+  nameWithType: HttpContextServiceScopeFactory
+  fullName: Hybrid.AspNetCore.HttpContextServiceScopeFactory
+- uid: Hybrid.AspNetCore.HttpContextServiceScopeFactory.NonDisposedHttpContextServiceScope
+  commentId: T:Hybrid.AspNetCore.HttpContextServiceScopeFactory.NonDisposedHttpContextServiceScope
+  name: HttpContextServiceScopeFactory.NonDisposedHttpContextServiceScope
+  nameWithType: HttpContextServiceScopeFactory.NonDisposedHttpContextServiceScope
+  fullName: Hybrid.AspNetCore.HttpContextServiceScopeFactory.NonDisposedHttpContextServiceScope
+- uid: Hybrid.AspNetCore.IAspUseModule
+  commentId: T:Hybrid.AspNetCore.IAspUseModule
+  parent: Hybrid.AspNetCore
+  name: IAspUseModule
+  nameWithType: IAspUseModule
+  fullName: Hybrid.AspNetCore.IAspUseModule
+- uid: Hybrid.AspNetCore.RequestScopedServiceResolver
+  commentId: T:Hybrid.AspNetCore.RequestScopedServiceResolver
+  name: RequestScopedServiceResolver
+  nameWithType: RequestScopedServiceResolver
+  fullName: Hybrid.AspNetCore.RequestScopedServiceResolver
+- uid: Hybrid.AspNetCore
+  commentId: N:Hybrid.AspNetCore
+  name: Hybrid.AspNetCore
+  nameWithType: Hybrid.AspNetCore
+  fullName: Hybrid.AspNetCore

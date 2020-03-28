@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Security.Claims
+  commentId: N:Hybrid.Security.Claims
+  id: Hybrid.Security.Claims
+  children:
+  - Hybrid.Security.Claims.HybridClaimTypes
+  - Hybrid.Security.Claims.IdentityExtensions
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Security.Claims
+  nameWithType: Hybrid.Security.Claims
+  fullName: Hybrid.Security.Claims
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Security.Claims.HybridClaimTypes
+  commentId: T:Hybrid.Security.Claims.HybridClaimTypes
+  name: HybridClaimTypes
+  nameWithType: HybridClaimTypes
+  fullName: Hybrid.Security.Claims.HybridClaimTypes
+- uid: Hybrid.Security.Claims.IdentityExtensions
+  commentId: T:Hybrid.Security.Claims.IdentityExtensions
+  name: IdentityExtensions
+  nameWithType: IdentityExtensions
+  fullName: Hybrid.Security.Claims.IdentityExtensions

@@ -1,0 +1,1541 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Extensions.TypeExtensions
+  commentId: T:Hybrid.Extensions.TypeExtensions
+  id: TypeExtensions
+  parent: Hybrid.Extensions
+  children:
+  - Hybrid.Extensions.TypeExtensions.DisplayName(System.Type,System.Boolean)
+  - Hybrid.Extensions.TypeExtensions.GetAssembly(System.Type)
+  - Hybrid.Extensions.TypeExtensions.GetAttribute``1(System.Reflection.MemberInfo,System.Boolean)
+  - Hybrid.Extensions.TypeExtensions.GetAttributes``1(System.Reflection.MemberInfo,System.Boolean)
+  - Hybrid.Extensions.TypeExtensions.GetDescription(System.Reflection.MemberInfo,System.Boolean)
+  - Hybrid.Extensions.TypeExtensions.GetDescription(System.Type,System.Boolean)
+  - Hybrid.Extensions.TypeExtensions.GetFullNameWithModule(System.Type)
+  - Hybrid.Extensions.TypeExtensions.GetNonNullableType(System.Type)
+  - Hybrid.Extensions.TypeExtensions.GetUnNullableType(System.Type)
+  - Hybrid.Extensions.TypeExtensions.HasAttribute``1(System.Reflection.MemberInfo,System.Boolean)
+  - Hybrid.Extensions.TypeExtensions.IsAsync(System.Reflection.MethodInfo)
+  - Hybrid.Extensions.TypeExtensions.IsBaseOn(System.Type,System.Type)
+  - Hybrid.Extensions.TypeExtensions.IsBaseOn``1(System.Type)
+  - Hybrid.Extensions.TypeExtensions.IsDeriveClassFrom(System.Type,System.Type,System.Boolean)
+  - Hybrid.Extensions.TypeExtensions.IsDeriveClassFrom``1(System.Type,System.Boolean)
+  - Hybrid.Extensions.TypeExtensions.IsEnumerable(System.Type)
+  - Hybrid.Extensions.TypeExtensions.IsGenericAssignableFrom(System.Type,System.Type)
+  - Hybrid.Extensions.TypeExtensions.IsNullableType(System.Type)
+  - Hybrid.Extensions.TypeExtensions.IsOverridden(System.Reflection.MethodInfo)
+  - Hybrid.Extensions.TypeExtensions.IsVirtual(System.Reflection.PropertyInfo)
+  - Hybrid.Extensions.TypeExtensions.ShortDisplayName(System.Type)
+  langs:
+  - csharp
+  - vb
+  name: TypeExtensions
+  nameWithType: TypeExtensions
+  fullName: Hybrid.Extensions.TypeExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid/Extensions/TypeExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: TypeExtensions
+    path: ../src/Hybrid/Extensions/TypeExtensions.cs
+    startLine: 28
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n类型<xref href=\"System.Type\" data-throw-if-not-resolved=\"false\"></xref>辅助扩展方法类\n"
+  example: []
+  syntax:
+    content: public static class TypeExtensions
+    content.vb: Public Module TypeExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.Extensions.TypeExtensions.IsDeriveClassFrom``1(System.Type,System.Boolean)
+  commentId: M:Hybrid.Extensions.TypeExtensions.IsDeriveClassFrom``1(System.Type,System.Boolean)
+  id: IsDeriveClassFrom``1(System.Type,System.Boolean)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsDeriveClassFrom<TBaseType>(Type, Boolean)
+  nameWithType: TypeExtensions.IsDeriveClassFrom<TBaseType>(Type, Boolean)
+  fullName: Hybrid.Extensions.TypeExtensions.IsDeriveClassFrom<TBaseType>(System.Type, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/TypeExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsDeriveClassFrom
+    path: ../src/Hybrid/Extensions/TypeExtensions.cs
+    startLine: 33
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n判断当前类型是否可由指定类型派生\n"
+  example: []
+  syntax:
+    content: public static bool IsDeriveClassFrom<TBaseType>(this Type type, bool canAbstract = false)
+    parameters:
+    - id: type
+      type: System.Type
+    - id: canAbstract
+      type: System.Boolean
+    typeParameters:
+    - id: TBaseType
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsDeriveClassFrom(Of TBaseType)(type As Type, canAbstract As Boolean = False) As Boolean
+  overload: Hybrid.Extensions.TypeExtensions.IsDeriveClassFrom*
+  nameWithType.vb: TypeExtensions.IsDeriveClassFrom(Of TBaseType)(Type, Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.TypeExtensions.IsDeriveClassFrom(Of TBaseType)(System.Type, System.Boolean)
+  name.vb: IsDeriveClassFrom(Of TBaseType)(Type, Boolean)
+- uid: Hybrid.Extensions.TypeExtensions.IsDeriveClassFrom(System.Type,System.Type,System.Boolean)
+  commentId: M:Hybrid.Extensions.TypeExtensions.IsDeriveClassFrom(System.Type,System.Type,System.Boolean)
+  id: IsDeriveClassFrom(System.Type,System.Type,System.Boolean)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsDeriveClassFrom(Type, Type, Boolean)
+  nameWithType: TypeExtensions.IsDeriveClassFrom(Type, Type, Boolean)
+  fullName: Hybrid.Extensions.TypeExtensions.IsDeriveClassFrom(System.Type, System.Type, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/TypeExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsDeriveClassFrom
+    path: ../src/Hybrid/Extensions/TypeExtensions.cs
+    startLine: 41
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n判断当前类型是否可由指定类型派生\n"
+  example: []
+  syntax:
+    content: public static bool IsDeriveClassFrom(this Type type, Type baseType, bool canAbstract = false)
+    parameters:
+    - id: type
+      type: System.Type
+    - id: baseType
+      type: System.Type
+    - id: canAbstract
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsDeriveClassFrom(type As Type, baseType As Type, canAbstract As Boolean = False) As Boolean
+  overload: Hybrid.Extensions.TypeExtensions.IsDeriveClassFrom*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.TypeExtensions.IsNullableType(System.Type)
+  commentId: M:Hybrid.Extensions.TypeExtensions.IsNullableType(System.Type)
+  id: IsNullableType(System.Type)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsNullableType(Type)
+  nameWithType: TypeExtensions.IsNullableType(Type)
+  fullName: Hybrid.Extensions.TypeExtensions.IsNullableType(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/TypeExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsNullableType
+    path: ../src/Hybrid/Extensions/TypeExtensions.cs
+    startLine: 54
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n判断类型是否为Nullable类型\n"
+  example: []
+  syntax:
+    content: public static bool IsNullableType(this Type type)
+    parameters:
+    - id: type
+      type: System.Type
+      description: '要处理的类型 '
+    return:
+      type: System.Boolean
+      description: '是返回True，不是返回False '
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsNullableType(type As Type) As Boolean
+  overload: Hybrid.Extensions.TypeExtensions.IsNullableType*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.TypeExtensions.GetNonNullableType(System.Type)
+  commentId: M:Hybrid.Extensions.TypeExtensions.GetNonNullableType(System.Type)
+  id: GetNonNullableType(System.Type)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetNonNullableType(Type)
+  nameWithType: TypeExtensions.GetNonNullableType(Type)
+  fullName: Hybrid.Extensions.TypeExtensions.GetNonNullableType(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/TypeExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetNonNullableType
+    path: ../src/Hybrid/Extensions/TypeExtensions.cs
+    startLine: 64
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n由类型的Nullable类型返回实际类型\n"
+  example: []
+  syntax:
+    content: public static Type GetNonNullableType(this Type type)
+    parameters:
+    - id: type
+      type: System.Type
+      description: '要处理的类型对象 '
+    return:
+      type: System.Type
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetNonNullableType(type As Type) As Type
+  overload: Hybrid.Extensions.TypeExtensions.GetNonNullableType*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.TypeExtensions.GetUnNullableType(System.Type)
+  commentId: M:Hybrid.Extensions.TypeExtensions.GetUnNullableType(System.Type)
+  id: GetUnNullableType(System.Type)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetUnNullableType(Type)
+  nameWithType: TypeExtensions.GetUnNullableType(Type)
+  fullName: Hybrid.Extensions.TypeExtensions.GetUnNullableType(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/TypeExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetUnNullableType
+    path: ../src/Hybrid/Extensions/TypeExtensions.cs
+    startLine: 74
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n通过类型转换器获取Nullable类型的基础类型\n"
+  example: []
+  syntax:
+    content: public static Type GetUnNullableType(this Type type)
+    parameters:
+    - id: type
+      type: System.Type
+      description: '要处理的类型对象 '
+    return:
+      type: System.Type
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetUnNullableType(type As Type) As Type
+  overload: Hybrid.Extensions.TypeExtensions.GetUnNullableType*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.TypeExtensions.GetDescription(System.Type,System.Boolean)
+  commentId: M:Hybrid.Extensions.TypeExtensions.GetDescription(System.Type,System.Boolean)
+  id: GetDescription(System.Type,System.Boolean)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetDescription(Type, Boolean)
+  nameWithType: TypeExtensions.GetDescription(Type, Boolean)
+  fullName: Hybrid.Extensions.TypeExtensions.GetDescription(System.Type, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/TypeExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetDescription
+    path: ../src/Hybrid/Extensions/TypeExtensions.cs
+    startLine: 90
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n获取类型的Description特性描述信息\n"
+  example: []
+  syntax:
+    content: public static string GetDescription(this Type type, bool inherit = true)
+    parameters:
+    - id: type
+      type: System.Type
+      description: 类型对象
+    - id: inherit
+      type: System.Boolean
+      description: 是否搜索类型的继承链以查找描述特性
+    return:
+      type: System.String
+      description: 返回Description特性描述信息，如不存在则返回类型的全名
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetDescription(type As Type, inherit As Boolean = True) As String
+  overload: Hybrid.Extensions.TypeExtensions.GetDescription*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.TypeExtensions.GetDescription(System.Reflection.MemberInfo,System.Boolean)
+  commentId: M:Hybrid.Extensions.TypeExtensions.GetDescription(System.Reflection.MemberInfo,System.Boolean)
+  id: GetDescription(System.Reflection.MemberInfo,System.Boolean)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetDescription(MemberInfo, Boolean)
+  nameWithType: TypeExtensions.GetDescription(MemberInfo, Boolean)
+  fullName: Hybrid.Extensions.TypeExtensions.GetDescription(System.Reflection.MemberInfo, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/TypeExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetDescription
+    path: ../src/Hybrid/Extensions/TypeExtensions.cs
+    startLine: 102
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n获取成员元数据的Description特性描述信息\n"
+  example: []
+  syntax:
+    content: public static string GetDescription(this MemberInfo member, bool inherit = true)
+    parameters:
+    - id: member
+      type: System.Reflection.MemberInfo
+      description: 成员元数据对象
+    - id: inherit
+      type: System.Boolean
+      description: 是否搜索成员的继承链以查找描述特性
+    return:
+      type: System.String
+      description: 返回Description特性描述信息，如不存在则返回成员的名称
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetDescription(member As MemberInfo, inherit As Boolean = True) As String
+  overload: Hybrid.Extensions.TypeExtensions.GetDescription*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.TypeExtensions.HasAttribute``1(System.Reflection.MemberInfo,System.Boolean)
+  commentId: M:Hybrid.Extensions.TypeExtensions.HasAttribute``1(System.Reflection.MemberInfo,System.Boolean)
+  id: HasAttribute``1(System.Reflection.MemberInfo,System.Boolean)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: HasAttribute<T>(MemberInfo, Boolean)
+  nameWithType: TypeExtensions.HasAttribute<T>(MemberInfo, Boolean)
+  fullName: Hybrid.Extensions.TypeExtensions.HasAttribute<T>(System.Reflection.MemberInfo, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/TypeExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: HasAttribute
+    path: ../src/Hybrid/Extensions/TypeExtensions.cs
+    startLine: 129
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n检查指定指定类型成员中是否存在指定的Attribute特性\n"
+  example: []
+  syntax:
+    content: >-
+      public static bool HasAttribute<T>(this MemberInfo memberInfo, bool inherit = true)
+
+          where T : Attribute
+    parameters:
+    - id: memberInfo
+      type: System.Reflection.MemberInfo
+      description: 要检查的类型成员
+    - id: inherit
+      type: System.Boolean
+      description: 是否从继承中查找
+    typeParameters:
+    - id: T
+      description: 要检查的Attribute特性类型
+    return:
+      type: System.Boolean
+      description: 是否存在
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function HasAttribute(Of T As Attribute)(memberInfo As MemberInfo, inherit As Boolean = True) As Boolean
+  overload: Hybrid.Extensions.TypeExtensions.HasAttribute*
+  nameWithType.vb: TypeExtensions.HasAttribute(Of T)(MemberInfo, Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.TypeExtensions.HasAttribute(Of T)(System.Reflection.MemberInfo, System.Boolean)
+  name.vb: HasAttribute(Of T)(MemberInfo, Boolean)
+- uid: Hybrid.Extensions.TypeExtensions.GetAttribute``1(System.Reflection.MemberInfo,System.Boolean)
+  commentId: M:Hybrid.Extensions.TypeExtensions.GetAttribute``1(System.Reflection.MemberInfo,System.Boolean)
+  id: GetAttribute``1(System.Reflection.MemberInfo,System.Boolean)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAttribute<T>(MemberInfo, Boolean)
+  nameWithType: TypeExtensions.GetAttribute<T>(MemberInfo, Boolean)
+  fullName: Hybrid.Extensions.TypeExtensions.GetAttribute<T>(System.Reflection.MemberInfo, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/TypeExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetAttribute
+    path: ../src/Hybrid/Extensions/TypeExtensions.cs
+    startLine: 141
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n从类型成员获取指定Attribute特性\n"
+  example: []
+  syntax:
+    content: >-
+      public static T GetAttribute<T>(this MemberInfo memberInfo, bool inherit = true)
+
+          where T : Attribute
+    parameters:
+    - id: memberInfo
+      type: System.Reflection.MemberInfo
+      description: 类型类型成员
+    - id: inherit
+      type: System.Boolean
+      description: 是否从继承中查找
+    typeParameters:
+    - id: T
+      description: Attribute特性类型
+    return:
+      type: '{T}'
+      description: 存在返回第一个，不存在返回null
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetAttribute(Of T As Attribute)(memberInfo As MemberInfo, inherit As Boolean = True) As T
+  overload: Hybrid.Extensions.TypeExtensions.GetAttribute*
+  nameWithType.vb: TypeExtensions.GetAttribute(Of T)(MemberInfo, Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.TypeExtensions.GetAttribute(Of T)(System.Reflection.MemberInfo, System.Boolean)
+  name.vb: GetAttribute(Of T)(MemberInfo, Boolean)
+- uid: Hybrid.Extensions.TypeExtensions.GetAttributes``1(System.Reflection.MemberInfo,System.Boolean)
+  commentId: M:Hybrid.Extensions.TypeExtensions.GetAttributes``1(System.Reflection.MemberInfo,System.Boolean)
+  id: GetAttributes``1(System.Reflection.MemberInfo,System.Boolean)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAttributes<T>(MemberInfo, Boolean)
+  nameWithType: TypeExtensions.GetAttributes<T>(MemberInfo, Boolean)
+  fullName: Hybrid.Extensions.TypeExtensions.GetAttributes<T>(System.Reflection.MemberInfo, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/TypeExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetAttributes
+    path: ../src/Hybrid/Extensions/TypeExtensions.cs
+    startLine: 154
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n从类型成员获取指定Attribute特性\n"
+  example: []
+  syntax:
+    content: >-
+      public static T[] GetAttributes<T>(this MemberInfo memberInfo, bool inherit = true)
+
+          where T : Attribute
+    parameters:
+    - id: memberInfo
+      type: System.Reflection.MemberInfo
+      description: 类型类型成员
+    - id: inherit
+      type: System.Boolean
+      description: 是否从继承中查找
+    typeParameters:
+    - id: T
+      description: Attribute特性类型
+    return:
+      type: '{T}[]'
+      description: 返回所有指定Attribute特性的数组
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetAttributes(Of T As Attribute)(memberInfo As MemberInfo, inherit As Boolean = True) As T()
+  overload: Hybrid.Extensions.TypeExtensions.GetAttributes*
+  nameWithType.vb: TypeExtensions.GetAttributes(Of T)(MemberInfo, Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.TypeExtensions.GetAttributes(Of T)(System.Reflection.MemberInfo, System.Boolean)
+  name.vb: GetAttributes(Of T)(MemberInfo, Boolean)
+- uid: Hybrid.Extensions.TypeExtensions.IsEnumerable(System.Type)
+  commentId: M:Hybrid.Extensions.TypeExtensions.IsEnumerable(System.Type)
+  id: IsEnumerable(System.Type)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsEnumerable(Type)
+  nameWithType: TypeExtensions.IsEnumerable(Type)
+  fullName: Hybrid.Extensions.TypeExtensions.IsEnumerable(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/TypeExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsEnumerable
+    path: ../src/Hybrid/Extensions/TypeExtensions.cs
+    startLine: 164
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n判断类型是否为集合类型\n"
+  example: []
+  syntax:
+    content: public static bool IsEnumerable(this Type type)
+    parameters:
+    - id: type
+      type: System.Type
+      description: 要处理的类型
+    return:
+      type: System.Boolean
+      description: 是返回True，不是返回False
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsEnumerable(type As Type) As Boolean
+  overload: Hybrid.Extensions.TypeExtensions.IsEnumerable*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.TypeExtensions.IsGenericAssignableFrom(System.Type,System.Type)
+  commentId: M:Hybrid.Extensions.TypeExtensions.IsGenericAssignableFrom(System.Type,System.Type)
+  id: IsGenericAssignableFrom(System.Type,System.Type)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsGenericAssignableFrom(Type, Type)
+  nameWithType: TypeExtensions.IsGenericAssignableFrom(Type, Type)
+  fullName: Hybrid.Extensions.TypeExtensions.IsGenericAssignableFrom(System.Type, System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/TypeExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsGenericAssignableFrom
+    path: ../src/Hybrid/Extensions/TypeExtensions.cs
+    startLine: 179
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n判断当前泛型类型是否可由指定类型的实例填充\n"
+  example: []
+  syntax:
+    content: public static bool IsGenericAssignableFrom(this Type genericType, Type type)
+    parameters:
+    - id: genericType
+      type: System.Type
+      description: 泛型类型
+    - id: type
+      type: System.Type
+      description: 指定类型
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsGenericAssignableFrom(genericType As Type, type As Type) As Boolean
+  overload: Hybrid.Extensions.TypeExtensions.IsGenericAssignableFrom*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.TypeExtensions.IsAsync(System.Reflection.MethodInfo)
+  commentId: M:Hybrid.Extensions.TypeExtensions.IsAsync(System.Reflection.MethodInfo)
+  id: IsAsync(System.Reflection.MethodInfo)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsAsync(MethodInfo)
+  nameWithType: TypeExtensions.IsAsync(MethodInfo)
+  fullName: Hybrid.Extensions.TypeExtensions.IsAsync(System.Reflection.MethodInfo)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/TypeExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsAsync
+    path: ../src/Hybrid/Extensions/TypeExtensions.cs
+    startLine: 216
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n方法是否是异步\n"
+  example: []
+  syntax:
+    content: public static bool IsAsync(this MethodInfo method)
+    parameters:
+    - id: method
+      type: System.Reflection.MethodInfo
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsAsync(method As MethodInfo) As Boolean
+  overload: Hybrid.Extensions.TypeExtensions.IsAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.TypeExtensions.IsBaseOn(System.Type,System.Type)
+  commentId: M:Hybrid.Extensions.TypeExtensions.IsBaseOn(System.Type,System.Type)
+  id: IsBaseOn(System.Type,System.Type)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsBaseOn(Type, Type)
+  nameWithType: TypeExtensions.IsBaseOn(Type, Type)
+  fullName: Hybrid.Extensions.TypeExtensions.IsBaseOn(System.Type, System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/TypeExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsBaseOn
+    path: ../src/Hybrid/Extensions/TypeExtensions.cs
+    startLine: 228
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n返回当前类型是否是指定基类的派生类\n"
+  example: []
+  syntax:
+    content: public static bool IsBaseOn(this Type type, Type baseType)
+    parameters:
+    - id: type
+      type: System.Type
+      description: 当前类型
+    - id: baseType
+      type: System.Type
+      description: 要判断的基类型
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsBaseOn(type As Type, baseType As Type) As Boolean
+  overload: Hybrid.Extensions.TypeExtensions.IsBaseOn*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.TypeExtensions.IsBaseOn``1(System.Type)
+  commentId: M:Hybrid.Extensions.TypeExtensions.IsBaseOn``1(System.Type)
+  id: IsBaseOn``1(System.Type)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsBaseOn<TBaseType>(Type)
+  nameWithType: TypeExtensions.IsBaseOn<TBaseType>(Type)
+  fullName: Hybrid.Extensions.TypeExtensions.IsBaseOn<TBaseType>(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/TypeExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsBaseOn
+    path: ../src/Hybrid/Extensions/TypeExtensions.cs
+    startLine: 243
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n返回当前类型是否是指定基类的派生类\n"
+  example: []
+  syntax:
+    content: public static bool IsBaseOn<TBaseType>(this Type type)
+    parameters:
+    - id: type
+      type: System.Type
+      description: 当前类型
+    typeParameters:
+    - id: TBaseType
+      description: 要判断的基类型
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsBaseOn(Of TBaseType)(type As Type) As Boolean
+  overload: Hybrid.Extensions.TypeExtensions.IsBaseOn*
+  nameWithType.vb: TypeExtensions.IsBaseOn(Of TBaseType)(Type)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.TypeExtensions.IsBaseOn(Of TBaseType)(System.Type)
+  name.vb: IsBaseOn(Of TBaseType)(Type)
+- uid: Hybrid.Extensions.TypeExtensions.IsOverridden(System.Reflection.MethodInfo)
+  commentId: M:Hybrid.Extensions.TypeExtensions.IsOverridden(System.Reflection.MethodInfo)
+  id: IsOverridden(System.Reflection.MethodInfo)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsOverridden(MethodInfo)
+  nameWithType: TypeExtensions.IsOverridden(MethodInfo)
+  fullName: Hybrid.Extensions.TypeExtensions.IsOverridden(System.Reflection.MethodInfo)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/TypeExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsOverridden
+    path: ../src/Hybrid/Extensions/TypeExtensions.cs
+    startLine: 254
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n返回当前方法信息是否是重写方法\n"
+  example: []
+  syntax:
+    content: public static bool IsOverridden(this MethodInfo method)
+    parameters:
+    - id: method
+      type: System.Reflection.MethodInfo
+      description: 要判断的方法信息
+    return:
+      type: System.Boolean
+      description: 是否是重写方法
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsOverridden(method As MethodInfo) As Boolean
+  overload: Hybrid.Extensions.TypeExtensions.IsOverridden*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.TypeExtensions.IsVirtual(System.Reflection.PropertyInfo)
+  commentId: M:Hybrid.Extensions.TypeExtensions.IsVirtual(System.Reflection.PropertyInfo)
+  id: IsVirtual(System.Reflection.PropertyInfo)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsVirtual(PropertyInfo)
+  nameWithType: TypeExtensions.IsVirtual(PropertyInfo)
+  fullName: Hybrid.Extensions.TypeExtensions.IsVirtual(System.Reflection.PropertyInfo)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/TypeExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsVirtual
+    path: ../src/Hybrid/Extensions/TypeExtensions.cs
+    startLine: 262
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n返回当前属性信息是否为virtual\n"
+  example: []
+  syntax:
+    content: public static bool IsVirtual(this PropertyInfo property)
+    parameters:
+    - id: property
+      type: System.Reflection.PropertyInfo
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsVirtual(property As PropertyInfo) As Boolean
+  overload: Hybrid.Extensions.TypeExtensions.IsVirtual*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.TypeExtensions.GetFullNameWithModule(System.Type)
+  commentId: M:Hybrid.Extensions.TypeExtensions.GetFullNameWithModule(System.Type)
+  id: GetFullNameWithModule(System.Type)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetFullNameWithModule(Type)
+  nameWithType: TypeExtensions.GetFullNameWithModule(Type)
+  fullName: Hybrid.Extensions.TypeExtensions.GetFullNameWithModule(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/TypeExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetFullNameWithModule
+    path: ../src/Hybrid/Extensions/TypeExtensions.cs
+    startLine: 276
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n获取类型的全名，附带所在类库\n"
+  example: []
+  syntax:
+    content: public static string GetFullNameWithModule(this Type type)
+    parameters:
+    - id: type
+      type: System.Type
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetFullNameWithModule(type As Type) As String
+  overload: Hybrid.Extensions.TypeExtensions.GetFullNameWithModule*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.TypeExtensions.ShortDisplayName(System.Type)
+  commentId: M:Hybrid.Extensions.TypeExtensions.ShortDisplayName(System.Type)
+  id: ShortDisplayName(System.Type)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: ShortDisplayName(Type)
+  nameWithType: TypeExtensions.ShortDisplayName(Type)
+  fullName: Hybrid.Extensions.TypeExtensions.ShortDisplayName(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/TypeExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ShortDisplayName
+    path: ../src/Hybrid/Extensions/TypeExtensions.cs
+    startLine: 284
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n获取类型的显示短名称\n"
+  example: []
+  syntax:
+    content: public static string ShortDisplayName(this Type type)
+    parameters:
+    - id: type
+      type: System.Type
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ShortDisplayName(type As Type) As String
+  overload: Hybrid.Extensions.TypeExtensions.ShortDisplayName*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.TypeExtensions.DisplayName(System.Type,System.Boolean)
+  commentId: M:Hybrid.Extensions.TypeExtensions.DisplayName(System.Type,System.Boolean)
+  id: DisplayName(System.Type,System.Boolean)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: DisplayName(Type, Boolean)
+  nameWithType: TypeExtensions.DisplayName(Type, Boolean)
+  fullName: Hybrid.Extensions.TypeExtensions.DisplayName(System.Type, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/TypeExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: DisplayName
+    path: ../src/Hybrid/Extensions/TypeExtensions.cs
+    startLine: 292
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n获取类型的显示名称\n"
+  example: []
+  syntax:
+    content: public static string DisplayName([NotNull] this Type type, bool fullName = true)
+    parameters:
+    - id: type
+      type: System.Type
+      attributes:
+      - type: JetBrains.Annotations.NotNullAttribute
+        ctor: JetBrains.Annotations.NotNullAttribute.#ctor
+        arguments: []
+    - id: fullName
+      type: System.Boolean
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function DisplayName(type As Type, fullName As Boolean = True) As String
+  overload: Hybrid.Extensions.TypeExtensions.DisplayName*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.TypeExtensions.GetAssembly(System.Type)
+  commentId: M:Hybrid.Extensions.TypeExtensions.GetAssembly(System.Type)
+  id: GetAssembly(System.Type)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAssembly(Type)
+  nameWithType: TypeExtensions.GetAssembly(Type)
+  fullName: Hybrid.Extensions.TypeExtensions.GetAssembly(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/TypeExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetAssembly
+    path: ../src/Hybrid/Extensions/TypeExtensions.cs
+    startLine: 299
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  syntax:
+    content: public static Assembly GetAssembly(this Type type)
+    parameters:
+    - id: type
+      type: System.Type
+    return:
+      type: System.Reflection.Assembly
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetAssembly(type As Type) As Assembly
+  overload: Hybrid.Extensions.TypeExtensions.GetAssembly*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Hybrid.Extensions
+  commentId: N:Hybrid.Extensions
+  name: Hybrid.Extensions
+  nameWithType: Hybrid.Extensions
+  fullName: Hybrid.Extensions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hybrid.Extensions.TypeExtensions.IsDeriveClassFrom*
+  commentId: Overload:Hybrid.Extensions.TypeExtensions.IsDeriveClassFrom
+  name: IsDeriveClassFrom
+  nameWithType: TypeExtensions.IsDeriveClassFrom
+  fullName: Hybrid.Extensions.TypeExtensions.IsDeriveClassFrom
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Hybrid.Extensions.TypeExtensions.IsNullableType*
+  commentId: Overload:Hybrid.Extensions.TypeExtensions.IsNullableType
+  name: IsNullableType
+  nameWithType: TypeExtensions.IsNullableType
+  fullName: Hybrid.Extensions.TypeExtensions.IsNullableType
+- uid: Hybrid.Extensions.TypeExtensions.GetNonNullableType*
+  commentId: Overload:Hybrid.Extensions.TypeExtensions.GetNonNullableType
+  name: GetNonNullableType
+  nameWithType: TypeExtensions.GetNonNullableType
+  fullName: Hybrid.Extensions.TypeExtensions.GetNonNullableType
+- uid: Hybrid.Extensions.TypeExtensions.GetUnNullableType*
+  commentId: Overload:Hybrid.Extensions.TypeExtensions.GetUnNullableType
+  name: GetUnNullableType
+  nameWithType: TypeExtensions.GetUnNullableType
+  fullName: Hybrid.Extensions.TypeExtensions.GetUnNullableType
+- uid: Hybrid.Extensions.TypeExtensions.GetDescription*
+  commentId: Overload:Hybrid.Extensions.TypeExtensions.GetDescription
+  name: GetDescription
+  nameWithType: TypeExtensions.GetDescription
+  fullName: Hybrid.Extensions.TypeExtensions.GetDescription
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Reflection.MemberInfo
+  commentId: T:System.Reflection.MemberInfo
+  parent: System.Reflection
+  isExternal: true
+  name: MemberInfo
+  nameWithType: MemberInfo
+  fullName: System.Reflection.MemberInfo
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+- uid: Hybrid.Extensions.TypeExtensions.HasAttribute*
+  commentId: Overload:Hybrid.Extensions.TypeExtensions.HasAttribute
+  name: HasAttribute
+  nameWithType: TypeExtensions.HasAttribute
+  fullName: Hybrid.Extensions.TypeExtensions.HasAttribute
+- uid: Hybrid.Extensions.TypeExtensions.GetAttribute*
+  commentId: Overload:Hybrid.Extensions.TypeExtensions.GetAttribute
+  name: GetAttribute
+  nameWithType: TypeExtensions.GetAttribute
+  fullName: Hybrid.Extensions.TypeExtensions.GetAttribute
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Hybrid.Extensions.TypeExtensions.GetAttributes*
+  commentId: Overload:Hybrid.Extensions.TypeExtensions.GetAttributes
+  name: GetAttributes
+  nameWithType: TypeExtensions.GetAttributes
+  fullName: Hybrid.Extensions.TypeExtensions.GetAttributes
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Hybrid.Extensions.TypeExtensions.IsEnumerable*
+  commentId: Overload:Hybrid.Extensions.TypeExtensions.IsEnumerable
+  name: IsEnumerable
+  nameWithType: TypeExtensions.IsEnumerable
+  fullName: Hybrid.Extensions.TypeExtensions.IsEnumerable
+- uid: Hybrid.Extensions.TypeExtensions.IsGenericAssignableFrom*
+  commentId: Overload:Hybrid.Extensions.TypeExtensions.IsGenericAssignableFrom
+  name: IsGenericAssignableFrom
+  nameWithType: TypeExtensions.IsGenericAssignableFrom
+  fullName: Hybrid.Extensions.TypeExtensions.IsGenericAssignableFrom
+- uid: Hybrid.Extensions.TypeExtensions.IsAsync*
+  commentId: Overload:Hybrid.Extensions.TypeExtensions.IsAsync
+  name: IsAsync
+  nameWithType: TypeExtensions.IsAsync
+  fullName: Hybrid.Extensions.TypeExtensions.IsAsync
+- uid: System.Reflection.MethodInfo
+  commentId: T:System.Reflection.MethodInfo
+  parent: System.Reflection
+  isExternal: true
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: Hybrid.Extensions.TypeExtensions.IsBaseOn*
+  commentId: Overload:Hybrid.Extensions.TypeExtensions.IsBaseOn
+  name: IsBaseOn
+  nameWithType: TypeExtensions.IsBaseOn
+  fullName: Hybrid.Extensions.TypeExtensions.IsBaseOn
+- uid: Hybrid.Extensions.TypeExtensions.IsOverridden*
+  commentId: Overload:Hybrid.Extensions.TypeExtensions.IsOverridden
+  name: IsOverridden
+  nameWithType: TypeExtensions.IsOverridden
+  fullName: Hybrid.Extensions.TypeExtensions.IsOverridden
+- uid: Hybrid.Extensions.TypeExtensions.IsVirtual*
+  commentId: Overload:Hybrid.Extensions.TypeExtensions.IsVirtual
+  name: IsVirtual
+  nameWithType: TypeExtensions.IsVirtual
+  fullName: Hybrid.Extensions.TypeExtensions.IsVirtual
+- uid: System.Reflection.PropertyInfo
+  commentId: T:System.Reflection.PropertyInfo
+  parent: System.Reflection
+  isExternal: true
+  name: PropertyInfo
+  nameWithType: PropertyInfo
+  fullName: System.Reflection.PropertyInfo
+- uid: Hybrid.Extensions.TypeExtensions.GetFullNameWithModule*
+  commentId: Overload:Hybrid.Extensions.TypeExtensions.GetFullNameWithModule
+  name: GetFullNameWithModule
+  nameWithType: TypeExtensions.GetFullNameWithModule
+  fullName: Hybrid.Extensions.TypeExtensions.GetFullNameWithModule
+- uid: Hybrid.Extensions.TypeExtensions.ShortDisplayName*
+  commentId: Overload:Hybrid.Extensions.TypeExtensions.ShortDisplayName
+  name: ShortDisplayName
+  nameWithType: TypeExtensions.ShortDisplayName
+  fullName: Hybrid.Extensions.TypeExtensions.ShortDisplayName
+- uid: Hybrid.Extensions.TypeExtensions.DisplayName*
+  commentId: Overload:Hybrid.Extensions.TypeExtensions.DisplayName
+  name: DisplayName
+  nameWithType: TypeExtensions.DisplayName
+  fullName: Hybrid.Extensions.TypeExtensions.DisplayName
+- uid: Hybrid.Extensions.TypeExtensions.GetAssembly*
+  commentId: Overload:Hybrid.Extensions.TypeExtensions.GetAssembly
+  name: GetAssembly
+  nameWithType: TypeExtensions.GetAssembly
+  fullName: Hybrid.Extensions.TypeExtensions.GetAssembly
+- uid: System.Reflection.Assembly
+  commentId: T:System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  name: Assembly
+  nameWithType: Assembly
+  fullName: System.Reflection.Assembly

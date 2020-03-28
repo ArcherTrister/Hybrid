@@ -1,0 +1,352 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Zero.Identity
+  commentId: N:Hybrid.Zero.Identity
+  id: Hybrid.Zero.Identity
+  children:
+  - Hybrid.Zero.Identity.AccessClaimsProvider`2
+  - Hybrid.Zero.Identity.IAccessClaimsProvider
+  - Hybrid.Zero.Identity.IdentityErrorDescriberZhHans
+  - Hybrid.Zero.Identity.IdentityModuleBase`8
+  - Hybrid.Zero.Identity.IHybridUserAuthenticationTokenStore`1
+  - Hybrid.Zero.Identity.JwtBearerService`2
+  - Hybrid.Zero.Identity.JwtHelper
+  - Hybrid.Zero.Identity.RequestClientType
+  - Hybrid.Zero.Identity.UserNickNameValidator`2
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Zero.Identity
+  nameWithType: Hybrid.Zero.Identity
+  fullName: Hybrid.Zero.Identity
+  type: Namespace
+  assemblies:
+  - Hybrid.Zero
+references:
+- uid: Hybrid.Zero.Identity.IdentityErrorDescriberZhHans
+  commentId: T:Hybrid.Zero.Identity.IdentityErrorDescriberZhHans
+  name: IdentityErrorDescriberZhHans
+  nameWithType: IdentityErrorDescriberZhHans
+  fullName: Hybrid.Zero.Identity.IdentityErrorDescriberZhHans
+- uid: Hybrid.Zero.Identity.IHybridUserAuthenticationTokenStore`1
+  commentId: T:Hybrid.Zero.Identity.IHybridUserAuthenticationTokenStore`1
+  name: IHybridUserAuthenticationTokenStore<TUser>
+  nameWithType: IHybridUserAuthenticationTokenStore<TUser>
+  fullName: Hybrid.Zero.Identity.IHybridUserAuthenticationTokenStore<TUser>
+  nameWithType.vb: IHybridUserAuthenticationTokenStore(Of TUser)
+  fullName.vb: Hybrid.Zero.Identity.IHybridUserAuthenticationTokenStore(Of TUser)
+  name.vb: IHybridUserAuthenticationTokenStore(Of TUser)
+  spec.csharp:
+  - uid: Hybrid.Zero.Identity.IHybridUserAuthenticationTokenStore`1
+    name: IHybridUserAuthenticationTokenStore
+    nameWithType: IHybridUserAuthenticationTokenStore
+    fullName: Hybrid.Zero.Identity.IHybridUserAuthenticationTokenStore
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Identity.IHybridUserAuthenticationTokenStore`1
+    name: IHybridUserAuthenticationTokenStore
+    nameWithType: IHybridUserAuthenticationTokenStore
+    fullName: Hybrid.Zero.Identity.IHybridUserAuthenticationTokenStore
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Identity.UserNickNameValidator`2
+  commentId: T:Hybrid.Zero.Identity.UserNickNameValidator`2
+  name: UserNickNameValidator<TUser, TUserKey>
+  nameWithType: UserNickNameValidator<TUser, TUserKey>
+  fullName: Hybrid.Zero.Identity.UserNickNameValidator<TUser, TUserKey>
+  nameWithType.vb: UserNickNameValidator(Of TUser, TUserKey)
+  fullName.vb: Hybrid.Zero.Identity.UserNickNameValidator(Of TUser, TUserKey)
+  name.vb: UserNickNameValidator(Of TUser, TUserKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Identity.UserNickNameValidator`2
+    name: UserNickNameValidator
+    nameWithType: UserNickNameValidator
+    fullName: Hybrid.Zero.Identity.UserNickNameValidator
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Identity.UserNickNameValidator`2
+    name: UserNickNameValidator
+    nameWithType: UserNickNameValidator
+    fullName: Hybrid.Zero.Identity.UserNickNameValidator
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Identity.IdentityModuleBase`8
+  commentId: T:Hybrid.Zero.Identity.IdentityModuleBase`8
+  name: IdentityModuleBase<TUserStore, TRoleStore, TUser, TUserKey, TUserClaim, TUserClaimKey, TRole, TRoleKey>
+  nameWithType: IdentityModuleBase<TUserStore, TRoleStore, TUser, TUserKey, TUserClaim, TUserClaimKey, TRole, TRoleKey>
+  fullName: Hybrid.Zero.Identity.IdentityModuleBase<TUserStore, TRoleStore, TUser, TUserKey, TUserClaim, TUserClaimKey, TRole, TRoleKey>
+  nameWithType.vb: IdentityModuleBase(Of TUserStore, TRoleStore, TUser, TUserKey, TUserClaim, TUserClaimKey, TRole, TRoleKey)
+  fullName.vb: Hybrid.Zero.Identity.IdentityModuleBase(Of TUserStore, TRoleStore, TUser, TUserKey, TUserClaim, TUserClaimKey, TRole, TRoleKey)
+  name.vb: IdentityModuleBase(Of TUserStore, TRoleStore, TUser, TUserKey, TUserClaim, TUserClaimKey, TRole, TRoleKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Identity.IdentityModuleBase`8
+    name: IdentityModuleBase
+    nameWithType: IdentityModuleBase
+    fullName: Hybrid.Zero.Identity.IdentityModuleBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TUserStore
+    nameWithType: TUserStore
+    fullName: TUserStore
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleStore
+    nameWithType: TRoleStore
+    fullName: TRoleStore
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserClaim
+    nameWithType: TUserClaim
+    fullName: TUserClaim
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserClaimKey
+    nameWithType: TUserClaimKey
+    fullName: TUserClaimKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Identity.IdentityModuleBase`8
+    name: IdentityModuleBase
+    nameWithType: IdentityModuleBase
+    fullName: Hybrid.Zero.Identity.IdentityModuleBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TUserStore
+    nameWithType: TUserStore
+    fullName: TUserStore
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleStore
+    nameWithType: TRoleStore
+    fullName: TRoleStore
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserClaim
+    nameWithType: TUserClaim
+    fullName: TUserClaim
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserClaimKey
+    nameWithType: TUserClaimKey
+    fullName: TUserClaimKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Identity.AccessClaimsProvider`2
+  commentId: T:Hybrid.Zero.Identity.AccessClaimsProvider`2
+  name: AccessClaimsProvider<TUser, TUserKey>
+  nameWithType: AccessClaimsProvider<TUser, TUserKey>
+  fullName: Hybrid.Zero.Identity.AccessClaimsProvider<TUser, TUserKey>
+  nameWithType.vb: AccessClaimsProvider(Of TUser, TUserKey)
+  fullName.vb: Hybrid.Zero.Identity.AccessClaimsProvider(Of TUser, TUserKey)
+  name.vb: AccessClaimsProvider(Of TUser, TUserKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Identity.AccessClaimsProvider`2
+    name: AccessClaimsProvider
+    nameWithType: AccessClaimsProvider
+    fullName: Hybrid.Zero.Identity.AccessClaimsProvider
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Identity.AccessClaimsProvider`2
+    name: AccessClaimsProvider
+    nameWithType: AccessClaimsProvider
+    fullName: Hybrid.Zero.Identity.AccessClaimsProvider
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Identity.IAccessClaimsProvider
+  commentId: T:Hybrid.Zero.Identity.IAccessClaimsProvider
+  parent: Hybrid.Zero.Identity
+  name: IAccessClaimsProvider
+  nameWithType: IAccessClaimsProvider
+  fullName: Hybrid.Zero.Identity.IAccessClaimsProvider
+- uid: Hybrid.Zero.Identity.JwtBearerService`2
+  commentId: T:Hybrid.Zero.Identity.JwtBearerService`2
+  name: JwtBearerService<TUser, TUserKey>
+  nameWithType: JwtBearerService<TUser, TUserKey>
+  fullName: Hybrid.Zero.Identity.JwtBearerService<TUser, TUserKey>
+  nameWithType.vb: JwtBearerService(Of TUser, TUserKey)
+  fullName.vb: Hybrid.Zero.Identity.JwtBearerService(Of TUser, TUserKey)
+  name.vb: JwtBearerService(Of TUser, TUserKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Identity.JwtBearerService`2
+    name: JwtBearerService
+    nameWithType: JwtBearerService
+    fullName: Hybrid.Zero.Identity.JwtBearerService
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Identity.JwtBearerService`2
+    name: JwtBearerService
+    nameWithType: JwtBearerService
+    fullName: Hybrid.Zero.Identity.JwtBearerService
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Identity.JwtHelper
+  commentId: T:Hybrid.Zero.Identity.JwtHelper
+  name: JwtHelper
+  nameWithType: JwtHelper
+  fullName: Hybrid.Zero.Identity.JwtHelper
+- uid: Hybrid.Zero.Identity.RequestClientType
+  commentId: T:Hybrid.Zero.Identity.RequestClientType
+  parent: Hybrid.Zero.Identity
+  name: RequestClientType
+  nameWithType: RequestClientType
+  fullName: Hybrid.Zero.Identity.RequestClientType
+- uid: Hybrid.Zero.Identity
+  commentId: N:Hybrid.Zero.Identity
+  name: Hybrid.Zero.Identity
+  nameWithType: Hybrid.Zero.Identity
+  fullName: Hybrid.Zero.Identity

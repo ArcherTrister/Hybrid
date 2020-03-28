@@ -1,0 +1,70 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.AspNetCore.Mvc.Filters
+  commentId: N:Hybrid.AspNetCore.Mvc.Filters
+  id: Hybrid.AspNetCore.Mvc.Filters
+  children:
+  - Hybrid.AspNetCore.Mvc.Filters.AjaxOnlyAttribute
+  - Hybrid.AspNetCore.Mvc.Filters.AuditActionFilter
+  - Hybrid.AspNetCore.Mvc.Filters.FunctionAuthorizationFilter
+  - Hybrid.AspNetCore.Mvc.Filters.OnlineUserAuthorizationFilter
+  - Hybrid.AspNetCore.Mvc.Filters.OperateAuditFilter
+  - Hybrid.AspNetCore.Mvc.Filters.PageUnitOfWorkFilter
+  - Hybrid.AspNetCore.Mvc.Filters.UnitOfWorkAttribute
+  - Hybrid.AspNetCore.Mvc.Filters.WebApiResultFilter
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.AspNetCore.Mvc.Filters
+  nameWithType: Hybrid.AspNetCore.Mvc.Filters
+  fullName: Hybrid.AspNetCore.Mvc.Filters
+  type: Namespace
+  assemblies:
+  - Hybrid.AspNetCore
+references:
+- uid: Hybrid.AspNetCore.Mvc.Filters.AjaxOnlyAttribute
+  commentId: T:Hybrid.AspNetCore.Mvc.Filters.AjaxOnlyAttribute
+  name: AjaxOnlyAttribute
+  nameWithType: AjaxOnlyAttribute
+  fullName: Hybrid.AspNetCore.Mvc.Filters.AjaxOnlyAttribute
+- uid: Hybrid.AspNetCore.Mvc.Filters.AuditActionFilter
+  commentId: T:Hybrid.AspNetCore.Mvc.Filters.AuditActionFilter
+  name: AuditActionFilter
+  nameWithType: AuditActionFilter
+  fullName: Hybrid.AspNetCore.Mvc.Filters.AuditActionFilter
+- uid: Hybrid.AspNetCore.Mvc.Filters.FunctionAuthorizationFilter
+  commentId: T:Hybrid.AspNetCore.Mvc.Filters.FunctionAuthorizationFilter
+  name: FunctionAuthorizationFilter
+  nameWithType: FunctionAuthorizationFilter
+  fullName: Hybrid.AspNetCore.Mvc.Filters.FunctionAuthorizationFilter
+- uid: Hybrid.AspNetCore.Mvc.Filters.OnlineUserAuthorizationFilter
+  commentId: T:Hybrid.AspNetCore.Mvc.Filters.OnlineUserAuthorizationFilter
+  name: OnlineUserAuthorizationFilter
+  nameWithType: OnlineUserAuthorizationFilter
+  fullName: Hybrid.AspNetCore.Mvc.Filters.OnlineUserAuthorizationFilter
+- uid: Hybrid.AspNetCore.Mvc.Filters.OperateAuditFilter
+  commentId: T:Hybrid.AspNetCore.Mvc.Filters.OperateAuditFilter
+  name: OperateAuditFilter
+  nameWithType: OperateAuditFilter
+  fullName: Hybrid.AspNetCore.Mvc.Filters.OperateAuditFilter
+- uid: Hybrid.AspNetCore.Mvc.Filters.PageUnitOfWorkFilter
+  commentId: T:Hybrid.AspNetCore.Mvc.Filters.PageUnitOfWorkFilter
+  name: PageUnitOfWorkFilter
+  nameWithType: PageUnitOfWorkFilter
+  fullName: Hybrid.AspNetCore.Mvc.Filters.PageUnitOfWorkFilter
+- uid: Hybrid.AspNetCore.Mvc.Filters.UnitOfWorkAttribute
+  commentId: T:Hybrid.AspNetCore.Mvc.Filters.UnitOfWorkAttribute
+  parent: Hybrid.AspNetCore.Mvc.Filters
+  name: UnitOfWorkAttribute
+  nameWithType: UnitOfWorkAttribute
+  fullName: Hybrid.AspNetCore.Mvc.Filters.UnitOfWorkAttribute
+- uid: Hybrid.AspNetCore.Mvc.Filters.WebApiResultFilter
+  commentId: T:Hybrid.AspNetCore.Mvc.Filters.WebApiResultFilter
+  name: WebApiResultFilter
+  nameWithType: WebApiResultFilter
+  fullName: Hybrid.AspNetCore.Mvc.Filters.WebApiResultFilter
+- uid: Hybrid.AspNetCore.Mvc.Filters
+  commentId: N:Hybrid.AspNetCore.Mvc.Filters
+  name: Hybrid.AspNetCore.Mvc.Filters
+  nameWithType: Hybrid.AspNetCore.Mvc.Filters
+  fullName: Hybrid.AspNetCore.Mvc.Filters

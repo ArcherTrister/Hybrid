@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Timing
+  commentId: N:Hybrid.Timing
+  id: Hybrid.Timing
+  children:
+  - Hybrid.Timing.DateTimeExtensions
+  - Hybrid.Timing.DateTimeRange
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Timing
+  nameWithType: Hybrid.Timing
+  fullName: Hybrid.Timing
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Timing.DateTimeExtensions
+  commentId: T:Hybrid.Timing.DateTimeExtensions
+  name: DateTimeExtensions
+  nameWithType: DateTimeExtensions
+  fullName: Hybrid.Timing.DateTimeExtensions
+- uid: Hybrid.Timing.DateTimeRange
+  commentId: T:Hybrid.Timing.DateTimeRange
+  parent: Hybrid.Timing
+  name: DateTimeRange
+  nameWithType: DateTimeRange
+  fullName: Hybrid.Timing.DateTimeRange
+- uid: Hybrid.Timing
+  commentId: N:Hybrid.Timing
+  name: Hybrid.Timing
+  nameWithType: Hybrid.Timing
+  fullName: Hybrid.Timing

@@ -1,0 +1,859 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Security.Claims.IdentityExtensions
+  commentId: T:Hybrid.Security.Claims.IdentityExtensions
+  id: IdentityExtensions
+  parent: Hybrid.Security.Claims
+  children:
+  - Hybrid.Security.Claims.IdentityExtensions.GetClaimValueFirstOrDefault(System.Security.Principal.IIdentity,System.String)
+  - Hybrid.Security.Claims.IdentityExtensions.GetClaimValues(System.Security.Principal.IIdentity,System.String)
+  - Hybrid.Security.Claims.IdentityExtensions.GetEmail(System.Security.Principal.IIdentity)
+  - Hybrid.Security.Claims.IdentityExtensions.GetNickName(System.Security.Principal.IIdentity)
+  - Hybrid.Security.Claims.IdentityExtensions.GetRoles(System.Security.Principal.IIdentity)
+  - Hybrid.Security.Claims.IdentityExtensions.GetUserId(System.Security.Principal.IIdentity)
+  - Hybrid.Security.Claims.IdentityExtensions.GetUserId``1(System.Security.Principal.IIdentity)
+  - Hybrid.Security.Claims.IdentityExtensions.GetUserName(System.Security.Principal.IIdentity)
+  - Hybrid.Security.Claims.IdentityExtensions.RemoveClaim(System.Security.Principal.IIdentity,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IdentityExtensions
+  nameWithType: IdentityExtensions
+  fullName: Hybrid.Security.Claims.IdentityExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid/Security/Claims/IdentityExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IdentityExtensions
+    path: ../src/Hybrid/Security/Claims/IdentityExtensions.cs
+    startLine: 22
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security.Claims
+  summary: "\n<xref href=\"System.Security.Claims.ClaimsIdentity\" data-throw-if-not-resolved=\"false\"></xref>扩展操作类\n"
+  example: []
+  syntax:
+    content: public static class IdentityExtensions
+    content.vb: Public Module IdentityExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.Security.Claims.IdentityExtensions.GetClaimValueFirstOrDefault(System.Security.Principal.IIdentity,System.String)
+  commentId: M:Hybrid.Security.Claims.IdentityExtensions.GetClaimValueFirstOrDefault(System.Security.Principal.IIdentity,System.String)
+  id: GetClaimValueFirstOrDefault(System.Security.Principal.IIdentity,System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Security.Claims.IdentityExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetClaimValueFirstOrDefault(IIdentity, String)
+  nameWithType: IdentityExtensions.GetClaimValueFirstOrDefault(IIdentity, String)
+  fullName: Hybrid.Security.Claims.IdentityExtensions.GetClaimValueFirstOrDefault(System.Security.Principal.IIdentity, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Security/Claims/IdentityExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetClaimValueFirstOrDefault
+    path: ../src/Hybrid/Security/Claims/IdentityExtensions.cs
+    startLine: 27
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security.Claims
+  summary: "\n获取指定类型的Claim值\n"
+  example: []
+  syntax:
+    content: public static string GetClaimValueFirstOrDefault(this IIdentity identity, string type)
+    parameters:
+    - id: identity
+      type: System.Security.Principal.IIdentity
+    - id: type
+      type: System.String
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetClaimValueFirstOrDefault(identity As IIdentity, type As String) As String
+  overload: Hybrid.Security.Claims.IdentityExtensions.GetClaimValueFirstOrDefault*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Security.Claims.IdentityExtensions.GetClaimValues(System.Security.Principal.IIdentity,System.String)
+  commentId: M:Hybrid.Security.Claims.IdentityExtensions.GetClaimValues(System.Security.Principal.IIdentity,System.String)
+  id: GetClaimValues(System.Security.Principal.IIdentity,System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Security.Claims.IdentityExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetClaimValues(IIdentity, String)
+  nameWithType: IdentityExtensions.GetClaimValues(IIdentity, String)
+  fullName: Hybrid.Security.Claims.IdentityExtensions.GetClaimValues(System.Security.Principal.IIdentity, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Security/Claims/IdentityExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetClaimValues
+    path: ../src/Hybrid/Security/Claims/IdentityExtensions.cs
+    startLine: 40
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security.Claims
+  summary: "\n获取指定类型的所有Claim值\n"
+  example: []
+  syntax:
+    content: public static string[] GetClaimValues(this IIdentity identity, string type)
+    parameters:
+    - id: identity
+      type: System.Security.Principal.IIdentity
+    - id: type
+      type: System.String
+    return:
+      type: System.String[]
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetClaimValues(identity As IIdentity, type As String) As String()
+  overload: Hybrid.Security.Claims.IdentityExtensions.GetClaimValues*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Security.Claims.IdentityExtensions.GetUserId``1(System.Security.Principal.IIdentity)
+  commentId: M:Hybrid.Security.Claims.IdentityExtensions.GetUserId``1(System.Security.Principal.IIdentity)
+  id: GetUserId``1(System.Security.Principal.IIdentity)
+  isExtensionMethod: true
+  parent: Hybrid.Security.Claims.IdentityExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetUserId<T>(IIdentity)
+  nameWithType: IdentityExtensions.GetUserId<T>(IIdentity)
+  fullName: Hybrid.Security.Claims.IdentityExtensions.GetUserId<T>(System.Security.Principal.IIdentity)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Security/Claims/IdentityExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetUserId
+    path: ../src/Hybrid/Security/Claims/IdentityExtensions.cs
+    startLine: 53
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security.Claims
+  summary: "\n获取用户ID\n"
+  example: []
+  syntax:
+    content: public static T GetUserId<T>(this IIdentity identity)
+    parameters:
+    - id: identity
+      type: System.Security.Principal.IIdentity
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetUserId(Of T)(identity As IIdentity) As T
+  overload: Hybrid.Security.Claims.IdentityExtensions.GetUserId*
+  nameWithType.vb: IdentityExtensions.GetUserId(Of T)(IIdentity)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Security.Claims.IdentityExtensions.GetUserId(Of T)(System.Security.Principal.IIdentity)
+  name.vb: GetUserId(Of T)(IIdentity)
+- uid: Hybrid.Security.Claims.IdentityExtensions.GetUserId(System.Security.Principal.IIdentity)
+  commentId: M:Hybrid.Security.Claims.IdentityExtensions.GetUserId(System.Security.Principal.IIdentity)
+  id: GetUserId(System.Security.Principal.IIdentity)
+  isExtensionMethod: true
+  parent: Hybrid.Security.Claims.IdentityExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetUserId(IIdentity)
+  nameWithType: IdentityExtensions.GetUserId(IIdentity)
+  fullName: Hybrid.Security.Claims.IdentityExtensions.GetUserId(System.Security.Principal.IIdentity)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Security/Claims/IdentityExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetUserId
+    path: ../src/Hybrid/Security/Claims/IdentityExtensions.cs
+    startLine: 71
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security.Claims
+  summary: "\n获取用户ID\n"
+  example: []
+  syntax:
+    content: public static string GetUserId(this IIdentity identity)
+    parameters:
+    - id: identity
+      type: System.Security.Principal.IIdentity
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetUserId(identity As IIdentity) As String
+  overload: Hybrid.Security.Claims.IdentityExtensions.GetUserId*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Security.Claims.IdentityExtensions.GetUserName(System.Security.Principal.IIdentity)
+  commentId: M:Hybrid.Security.Claims.IdentityExtensions.GetUserName(System.Security.Principal.IIdentity)
+  id: GetUserName(System.Security.Principal.IIdentity)
+  isExtensionMethod: true
+  parent: Hybrid.Security.Claims.IdentityExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetUserName(IIdentity)
+  nameWithType: IdentityExtensions.GetUserName(IIdentity)
+  fullName: Hybrid.Security.Claims.IdentityExtensions.GetUserName(System.Security.Principal.IIdentity)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Security/Claims/IdentityExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetUserName
+    path: ../src/Hybrid/Security/Claims/IdentityExtensions.cs
+    startLine: 84
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security.Claims
+  summary: "\n获取用户名\n"
+  example: []
+  syntax:
+    content: public static string GetUserName(this IIdentity identity)
+    parameters:
+    - id: identity
+      type: System.Security.Principal.IIdentity
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetUserName(identity As IIdentity) As String
+  overload: Hybrid.Security.Claims.IdentityExtensions.GetUserName*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Security.Claims.IdentityExtensions.GetEmail(System.Security.Principal.IIdentity)
+  commentId: M:Hybrid.Security.Claims.IdentityExtensions.GetEmail(System.Security.Principal.IIdentity)
+  id: GetEmail(System.Security.Principal.IIdentity)
+  isExtensionMethod: true
+  parent: Hybrid.Security.Claims.IdentityExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetEmail(IIdentity)
+  nameWithType: IdentityExtensions.GetEmail(IIdentity)
+  fullName: Hybrid.Security.Claims.IdentityExtensions.GetEmail(System.Security.Principal.IIdentity)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Security/Claims/IdentityExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetEmail
+    path: ../src/Hybrid/Security/Claims/IdentityExtensions.cs
+    startLine: 97
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security.Claims
+  summary: "\n获取Email\n"
+  example: []
+  syntax:
+    content: public static string GetEmail(this IIdentity identity)
+    parameters:
+    - id: identity
+      type: System.Security.Principal.IIdentity
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetEmail(identity As IIdentity) As String
+  overload: Hybrid.Security.Claims.IdentityExtensions.GetEmail*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Security.Claims.IdentityExtensions.GetNickName(System.Security.Principal.IIdentity)
+  commentId: M:Hybrid.Security.Claims.IdentityExtensions.GetNickName(System.Security.Principal.IIdentity)
+  id: GetNickName(System.Security.Principal.IIdentity)
+  isExtensionMethod: true
+  parent: Hybrid.Security.Claims.IdentityExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetNickName(IIdentity)
+  nameWithType: IdentityExtensions.GetNickName(IIdentity)
+  fullName: Hybrid.Security.Claims.IdentityExtensions.GetNickName(System.Security.Principal.IIdentity)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Security/Claims/IdentityExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetNickName
+    path: ../src/Hybrid/Security/Claims/IdentityExtensions.cs
+    startLine: 110
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security.Claims
+  summary: "\n获取昵称\n"
+  example: []
+  syntax:
+    content: public static string GetNickName(this IIdentity identity)
+    parameters:
+    - id: identity
+      type: System.Security.Principal.IIdentity
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetNickName(identity As IIdentity) As String
+  overload: Hybrid.Security.Claims.IdentityExtensions.GetNickName*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Security.Claims.IdentityExtensions.RemoveClaim(System.Security.Principal.IIdentity,System.String)
+  commentId: M:Hybrid.Security.Claims.IdentityExtensions.RemoveClaim(System.Security.Principal.IIdentity,System.String)
+  id: RemoveClaim(System.Security.Principal.IIdentity,System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Security.Claims.IdentityExtensions
+  langs:
+  - csharp
+  - vb
+  name: RemoveClaim(IIdentity, String)
+  nameWithType: IdentityExtensions.RemoveClaim(IIdentity, String)
+  fullName: Hybrid.Security.Claims.IdentityExtensions.RemoveClaim(System.Security.Principal.IIdentity, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Security/Claims/IdentityExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: RemoveClaim
+    path: ../src/Hybrid/Security/Claims/IdentityExtensions.cs
+    startLine: 123
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security.Claims
+  summary: "\n移除指定类型的声明\n"
+  example: []
+  syntax:
+    content: public static void RemoveClaim(this IIdentity identity, string claimType)
+    parameters:
+    - id: identity
+      type: System.Security.Principal.IIdentity
+    - id: claimType
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub RemoveClaim(identity As IIdentity, claimType As String)
+  overload: Hybrid.Security.Claims.IdentityExtensions.RemoveClaim*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Security.Claims.IdentityExtensions.GetRoles(System.Security.Principal.IIdentity)
+  commentId: M:Hybrid.Security.Claims.IdentityExtensions.GetRoles(System.Security.Principal.IIdentity)
+  id: GetRoles(System.Security.Principal.IIdentity)
+  isExtensionMethod: true
+  parent: Hybrid.Security.Claims.IdentityExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetRoles(IIdentity)
+  nameWithType: IdentityExtensions.GetRoles(IIdentity)
+  fullName: Hybrid.Security.Claims.IdentityExtensions.GetRoles(System.Security.Principal.IIdentity)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Security/Claims/IdentityExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetRoles
+    path: ../src/Hybrid/Security/Claims/IdentityExtensions.cs
+    startLine: 141
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security.Claims
+  summary: "\n获取所有角色\n"
+  example: []
+  syntax:
+    content: public static string[] GetRoles(this IIdentity identity)
+    parameters:
+    - id: identity
+      type: System.Security.Principal.IIdentity
+    return:
+      type: System.String[]
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetRoles(identity As IIdentity) As String()
+  overload: Hybrid.Security.Claims.IdentityExtensions.GetRoles*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: System.Security.Claims.ClaimsIdentity
+  commentId: T:System.Security.Claims.ClaimsIdentity
+  parent: System.Security.Claims
+  isExternal: true
+  name: ClaimsIdentity
+  nameWithType: ClaimsIdentity
+  fullName: System.Security.Claims.ClaimsIdentity
+- uid: Hybrid.Security.Claims
+  commentId: N:Hybrid.Security.Claims
+  name: Hybrid.Security.Claims
+  nameWithType: Hybrid.Security.Claims
+  fullName: Hybrid.Security.Claims
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Security.Claims
+  commentId: N:System.Security.Claims
+  isExternal: true
+  name: System.Security.Claims
+  nameWithType: System.Security.Claims
+  fullName: System.Security.Claims
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hybrid.Security.Claims.IdentityExtensions.GetClaimValueFirstOrDefault*
+  commentId: Overload:Hybrid.Security.Claims.IdentityExtensions.GetClaimValueFirstOrDefault
+  name: GetClaimValueFirstOrDefault
+  nameWithType: IdentityExtensions.GetClaimValueFirstOrDefault
+  fullName: Hybrid.Security.Claims.IdentityExtensions.GetClaimValueFirstOrDefault
+- uid: System.Security.Principal.IIdentity
+  commentId: T:System.Security.Principal.IIdentity
+  parent: System.Security.Principal
+  isExternal: true
+  name: IIdentity
+  nameWithType: IIdentity
+  fullName: System.Security.Principal.IIdentity
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Security.Principal
+  commentId: N:System.Security.Principal
+  isExternal: true
+  name: System.Security.Principal
+  nameWithType: System.Security.Principal
+  fullName: System.Security.Principal
+- uid: Hybrid.Security.Claims.IdentityExtensions.GetClaimValues*
+  commentId: Overload:Hybrid.Security.Claims.IdentityExtensions.GetClaimValues
+  name: GetClaimValues
+  nameWithType: IdentityExtensions.GetClaimValues
+  fullName: Hybrid.Security.Claims.IdentityExtensions.GetClaimValues
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Hybrid.Security.Claims.IdentityExtensions.GetUserId*
+  commentId: Overload:Hybrid.Security.Claims.IdentityExtensions.GetUserId
+  name: GetUserId
+  nameWithType: IdentityExtensions.GetUserId
+  fullName: Hybrid.Security.Claims.IdentityExtensions.GetUserId
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Hybrid.Security.Claims.IdentityExtensions.GetUserName*
+  commentId: Overload:Hybrid.Security.Claims.IdentityExtensions.GetUserName
+  name: GetUserName
+  nameWithType: IdentityExtensions.GetUserName
+  fullName: Hybrid.Security.Claims.IdentityExtensions.GetUserName
+- uid: Hybrid.Security.Claims.IdentityExtensions.GetEmail*
+  commentId: Overload:Hybrid.Security.Claims.IdentityExtensions.GetEmail
+  name: GetEmail
+  nameWithType: IdentityExtensions.GetEmail
+  fullName: Hybrid.Security.Claims.IdentityExtensions.GetEmail
+- uid: Hybrid.Security.Claims.IdentityExtensions.GetNickName*
+  commentId: Overload:Hybrid.Security.Claims.IdentityExtensions.GetNickName
+  name: GetNickName
+  nameWithType: IdentityExtensions.GetNickName
+  fullName: Hybrid.Security.Claims.IdentityExtensions.GetNickName
+- uid: Hybrid.Security.Claims.IdentityExtensions.RemoveClaim*
+  commentId: Overload:Hybrid.Security.Claims.IdentityExtensions.RemoveClaim
+  name: RemoveClaim
+  nameWithType: IdentityExtensions.RemoveClaim
+  fullName: Hybrid.Security.Claims.IdentityExtensions.RemoveClaim
+- uid: Hybrid.Security.Claims.IdentityExtensions.GetRoles*
+  commentId: Overload:Hybrid.Security.Claims.IdentityExtensions.GetRoles
+  name: GetRoles
+  nameWithType: IdentityExtensions.GetRoles
+  fullName: Hybrid.Security.Claims.IdentityExtensions.GetRoles

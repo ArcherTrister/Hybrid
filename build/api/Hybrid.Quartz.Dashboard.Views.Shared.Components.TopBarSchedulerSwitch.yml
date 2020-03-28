@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarSchedulerSwitch
+  commentId: N:Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarSchedulerSwitch
+  id: Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarSchedulerSwitch
+  children:
+  - Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarSchedulerSwitch.TopBarSchedulerSwitchViewComponent
+  - Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarSchedulerSwitch.TopBarSchedulerSwitchViewModel
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarSchedulerSwitch
+  nameWithType: Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarSchedulerSwitch
+  fullName: Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarSchedulerSwitch
+  type: Namespace
+  assemblies:
+  - Hybrid.Quartz
+references:
+- uid: Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarSchedulerSwitch.TopBarSchedulerSwitchViewComponent
+  commentId: T:Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarSchedulerSwitch.TopBarSchedulerSwitchViewComponent
+  name: TopBarSchedulerSwitchViewComponent
+  nameWithType: TopBarSchedulerSwitchViewComponent
+  fullName: Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarSchedulerSwitch.TopBarSchedulerSwitchViewComponent
+- uid: Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarSchedulerSwitch.TopBarSchedulerSwitchViewModel
+  commentId: T:Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarSchedulerSwitch.TopBarSchedulerSwitchViewModel
+  name: TopBarSchedulerSwitchViewModel
+  nameWithType: TopBarSchedulerSwitchViewModel
+  fullName: Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarSchedulerSwitch.TopBarSchedulerSwitchViewModel

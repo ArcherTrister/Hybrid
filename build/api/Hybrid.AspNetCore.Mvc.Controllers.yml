@@ -1,0 +1,58 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.AspNetCore.Mvc.Controllers
+  commentId: N:Hybrid.AspNetCore.Mvc.Controllers
+  id: Hybrid.AspNetCore.Mvc.Controllers
+  children:
+  - Hybrid.AspNetCore.Mvc.Controllers.ApiController
+  - Hybrid.AspNetCore.Mvc.Controllers.AreaApiController
+  - Hybrid.AspNetCore.Mvc.Controllers.LocalApiController
+  - Hybrid.AspNetCore.Mvc.Controllers.LocalAreaApiController
+  - Hybrid.AspNetCore.Mvc.Controllers.LocalizationController
+  - Hybrid.AspNetCore.Mvc.Controllers.MvcController
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.AspNetCore.Mvc.Controllers
+  nameWithType: Hybrid.AspNetCore.Mvc.Controllers
+  fullName: Hybrid.AspNetCore.Mvc.Controllers
+  type: Namespace
+  assemblies:
+  - Hybrid.AspNetCore
+references:
+- uid: Hybrid.AspNetCore.Mvc.Controllers.ApiController
+  commentId: T:Hybrid.AspNetCore.Mvc.Controllers.ApiController
+  name: ApiController
+  nameWithType: ApiController
+  fullName: Hybrid.AspNetCore.Mvc.Controllers.ApiController
+- uid: Hybrid.AspNetCore.Mvc.Controllers.AreaApiController
+  commentId: T:Hybrid.AspNetCore.Mvc.Controllers.AreaApiController
+  name: AreaApiController
+  nameWithType: AreaApiController
+  fullName: Hybrid.AspNetCore.Mvc.Controllers.AreaApiController
+- uid: Hybrid.AspNetCore.Mvc.Controllers.LocalApiController
+  commentId: T:Hybrid.AspNetCore.Mvc.Controllers.LocalApiController
+  name: LocalApiController
+  nameWithType: LocalApiController
+  fullName: Hybrid.AspNetCore.Mvc.Controllers.LocalApiController
+- uid: Hybrid.AspNetCore.Mvc.Controllers.LocalAreaApiController
+  commentId: T:Hybrid.AspNetCore.Mvc.Controllers.LocalAreaApiController
+  name: LocalAreaApiController
+  nameWithType: LocalAreaApiController
+  fullName: Hybrid.AspNetCore.Mvc.Controllers.LocalAreaApiController
+- uid: Hybrid.AspNetCore.Mvc.Controllers.LocalizationController
+  commentId: T:Hybrid.AspNetCore.Mvc.Controllers.LocalizationController
+  name: LocalizationController
+  nameWithType: LocalizationController
+  fullName: Hybrid.AspNetCore.Mvc.Controllers.LocalizationController
+- uid: Hybrid.AspNetCore.Mvc.Controllers.MvcController
+  commentId: T:Hybrid.AspNetCore.Mvc.Controllers.MvcController
+  parent: Hybrid.AspNetCore.Mvc.Controllers
+  name: MvcController
+  nameWithType: MvcController
+  fullName: Hybrid.AspNetCore.Mvc.Controllers.MvcController
+- uid: Hybrid.AspNetCore.Mvc.Controllers
+  commentId: N:Hybrid.AspNetCore.Mvc.Controllers
+  name: Hybrid.AspNetCore.Mvc.Controllers
+  nameWithType: Hybrid.AspNetCore.Mvc.Controllers
+  fullName: Hybrid.AspNetCore.Mvc.Controllers

@@ -1,0 +1,47 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Core.Systems
+  commentId: N:Hybrid.Core.Systems
+  id: Hybrid.Core.Systems
+  children:
+  - Hybrid.Core.Systems.IKeyValueStore
+  - Hybrid.Core.Systems.ISetting
+  - Hybrid.Core.Systems.KeyValue
+  - Hybrid.Core.Systems.SystemSettingKeys
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Core.Systems
+  nameWithType: Hybrid.Core.Systems
+  fullName: Hybrid.Core.Systems
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Core.Systems.IKeyValueStore
+  commentId: T:Hybrid.Core.Systems.IKeyValueStore
+  parent: Hybrid.Core.Systems
+  name: IKeyValueStore
+  nameWithType: IKeyValueStore
+  fullName: Hybrid.Core.Systems.IKeyValueStore
+- uid: Hybrid.Core.Systems.ISetting
+  commentId: T:Hybrid.Core.Systems.ISetting
+  parent: Hybrid.Core.Systems
+  name: ISetting
+  nameWithType: ISetting
+  fullName: Hybrid.Core.Systems.ISetting
+- uid: Hybrid.Core.Systems.KeyValue
+  commentId: T:Hybrid.Core.Systems.KeyValue
+  name: KeyValue
+  nameWithType: KeyValue
+  fullName: Hybrid.Core.Systems.KeyValue
+- uid: Hybrid.Core.Systems.SystemSettingKeys
+  commentId: T:Hybrid.Core.Systems.SystemSettingKeys
+  name: SystemSettingKeys
+  nameWithType: SystemSettingKeys
+  fullName: Hybrid.Core.Systems.SystemSettingKeys
+- uid: Hybrid.Core.Systems
+  commentId: N:Hybrid.Core.Systems
+  name: Hybrid.Core.Systems
+  nameWithType: Hybrid.Core.Systems
+  fullName: Hybrid.Core.Systems

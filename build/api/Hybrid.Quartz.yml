@@ -1,0 +1,59 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Quartz
+  commentId: N:Hybrid.Quartz
+  id: Hybrid.Quartz
+  children:
+  - Hybrid.Quartz.ISchedulerManager
+  - Hybrid.Quartz.JobFactory
+  - Hybrid.Quartz.JobTypeFinder
+  - Hybrid.Quartz.QuartzModule
+  - Hybrid.Quartz.QuartzModuleBase
+  - Hybrid.Quartz.SchedulerManager
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Quartz
+  nameWithType: Hybrid.Quartz
+  fullName: Hybrid.Quartz
+  type: Namespace
+  assemblies:
+  - Hybrid.Quartz
+references:
+- uid: Hybrid.Quartz.ISchedulerManager
+  commentId: T:Hybrid.Quartz.ISchedulerManager
+  parent: Hybrid.Quartz
+  name: ISchedulerManager
+  nameWithType: ISchedulerManager
+  fullName: Hybrid.Quartz.ISchedulerManager
+- uid: Hybrid.Quartz.JobFactory
+  commentId: T:Hybrid.Quartz.JobFactory
+  name: JobFactory
+  nameWithType: JobFactory
+  fullName: Hybrid.Quartz.JobFactory
+- uid: Hybrid.Quartz.JobTypeFinder
+  commentId: T:Hybrid.Quartz.JobTypeFinder
+  name: JobTypeFinder
+  nameWithType: JobTypeFinder
+  fullName: Hybrid.Quartz.JobTypeFinder
+- uid: Hybrid.Quartz.QuartzModule
+  commentId: T:Hybrid.Quartz.QuartzModule
+  name: QuartzModule
+  nameWithType: QuartzModule
+  fullName: Hybrid.Quartz.QuartzModule
+- uid: Hybrid.Quartz.QuartzModuleBase
+  commentId: T:Hybrid.Quartz.QuartzModuleBase
+  parent: Hybrid.Quartz
+  name: QuartzModuleBase
+  nameWithType: QuartzModuleBase
+  fullName: Hybrid.Quartz.QuartzModuleBase
+- uid: Hybrid.Quartz.SchedulerManager
+  commentId: T:Hybrid.Quartz.SchedulerManager
+  name: SchedulerManager
+  nameWithType: SchedulerManager
+  fullName: Hybrid.Quartz.SchedulerManager
+- uid: Hybrid.Quartz
+  commentId: N:Hybrid.Quartz
+  name: Hybrid.Quartz
+  nameWithType: Hybrid.Quartz
+  fullName: Hybrid.Quartz

@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.NLog
+  commentId: N:Hybrid.NLog
+  id: Hybrid.NLog
+  children:
+  - Hybrid.NLog.NLogLogger
+  - Hybrid.NLog.NLogLoggerProvider
+  - Hybrid.NLog.NLogModule
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.NLog
+  nameWithType: Hybrid.NLog
+  fullName: Hybrid.NLog
+  type: Namespace
+  assemblies:
+  - Hybrid.NLog
+references:
+- uid: Hybrid.NLog.NLogLogger
+  commentId: T:Hybrid.NLog.NLogLogger
+  name: NLogLogger
+  nameWithType: NLogLogger
+  fullName: Hybrid.NLog.NLogLogger
+- uid: Hybrid.NLog.NLogLoggerProvider
+  commentId: T:Hybrid.NLog.NLogLoggerProvider
+  name: NLogLoggerProvider
+  nameWithType: NLogLoggerProvider
+  fullName: Hybrid.NLog.NLogLoggerProvider
+- uid: Hybrid.NLog.NLogModule
+  commentId: T:Hybrid.NLog.NLogModule
+  name: NLogModule
+  nameWithType: NLogModule
+  fullName: Hybrid.NLog.NLogModule

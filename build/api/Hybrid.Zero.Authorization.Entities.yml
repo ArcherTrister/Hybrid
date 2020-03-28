@@ -1,0 +1,188 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Zero.Authorization.Entities
+  commentId: N:Hybrid.Zero.Authorization.Entities
+  id: Hybrid.Zero.Authorization.Entities
+  children:
+  - Hybrid.Zero.Authorization.Entities.ModuleBase`1
+  - Hybrid.Zero.Authorization.Entities.ModuleFunctionBase`1
+  - Hybrid.Zero.Authorization.Entities.ModuleRoleBase`2
+  - Hybrid.Zero.Authorization.Entities.ModuleUserBase`2
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Zero.Authorization.Entities
+  nameWithType: Hybrid.Zero.Authorization.Entities
+  fullName: Hybrid.Zero.Authorization.Entities
+  type: Namespace
+  assemblies:
+  - Hybrid.Zero
+references:
+- uid: Hybrid.Zero.Authorization.Entities.ModuleBase`1
+  commentId: T:Hybrid.Zero.Authorization.Entities.ModuleBase`1
+  name: ModuleBase<TModuleKey>
+  nameWithType: ModuleBase<TModuleKey>
+  fullName: Hybrid.Zero.Authorization.Entities.ModuleBase<TModuleKey>
+  nameWithType.vb: ModuleBase(Of TModuleKey)
+  fullName.vb: Hybrid.Zero.Authorization.Entities.ModuleBase(Of TModuleKey)
+  name.vb: ModuleBase(Of TModuleKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Authorization.Entities.ModuleBase`1
+    name: ModuleBase
+    nameWithType: ModuleBase
+    fullName: Hybrid.Zero.Authorization.Entities.ModuleBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Authorization.Entities.ModuleBase`1
+    name: ModuleBase
+    nameWithType: ModuleBase
+    fullName: Hybrid.Zero.Authorization.Entities.ModuleBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.Entities.ModuleFunctionBase`1
+  commentId: T:Hybrid.Zero.Authorization.Entities.ModuleFunctionBase`1
+  name: ModuleFunctionBase<TModuleKey>
+  nameWithType: ModuleFunctionBase<TModuleKey>
+  fullName: Hybrid.Zero.Authorization.Entities.ModuleFunctionBase<TModuleKey>
+  nameWithType.vb: ModuleFunctionBase(Of TModuleKey)
+  fullName.vb: Hybrid.Zero.Authorization.Entities.ModuleFunctionBase(Of TModuleKey)
+  name.vb: ModuleFunctionBase(Of TModuleKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Authorization.Entities.ModuleFunctionBase`1
+    name: ModuleFunctionBase
+    nameWithType: ModuleFunctionBase
+    fullName: Hybrid.Zero.Authorization.Entities.ModuleFunctionBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Authorization.Entities.ModuleFunctionBase`1
+    name: ModuleFunctionBase
+    nameWithType: ModuleFunctionBase
+    fullName: Hybrid.Zero.Authorization.Entities.ModuleFunctionBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.Entities.ModuleRoleBase`2
+  commentId: T:Hybrid.Zero.Authorization.Entities.ModuleRoleBase`2
+  name: ModuleRoleBase<TModuleKey, TRoleKey>
+  nameWithType: ModuleRoleBase<TModuleKey, TRoleKey>
+  fullName: Hybrid.Zero.Authorization.Entities.ModuleRoleBase<TModuleKey, TRoleKey>
+  nameWithType.vb: ModuleRoleBase(Of TModuleKey, TRoleKey)
+  fullName.vb: Hybrid.Zero.Authorization.Entities.ModuleRoleBase(Of TModuleKey, TRoleKey)
+  name.vb: ModuleRoleBase(Of TModuleKey, TRoleKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Authorization.Entities.ModuleRoleBase`2
+    name: ModuleRoleBase
+    nameWithType: ModuleRoleBase
+    fullName: Hybrid.Zero.Authorization.Entities.ModuleRoleBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Authorization.Entities.ModuleRoleBase`2
+    name: ModuleRoleBase
+    nameWithType: ModuleRoleBase
+    fullName: Hybrid.Zero.Authorization.Entities.ModuleRoleBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.Entities.ModuleUserBase`2
+  commentId: T:Hybrid.Zero.Authorization.Entities.ModuleUserBase`2
+  name: ModuleUserBase<TModuleKey, TUserKey>
+  nameWithType: ModuleUserBase<TModuleKey, TUserKey>
+  fullName: Hybrid.Zero.Authorization.Entities.ModuleUserBase<TModuleKey, TUserKey>
+  nameWithType.vb: ModuleUserBase(Of TModuleKey, TUserKey)
+  fullName.vb: Hybrid.Zero.Authorization.Entities.ModuleUserBase(Of TModuleKey, TUserKey)
+  name.vb: ModuleUserBase(Of TModuleKey, TUserKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Authorization.Entities.ModuleUserBase`2
+    name: ModuleUserBase
+    nameWithType: ModuleUserBase
+    fullName: Hybrid.Zero.Authorization.Entities.ModuleUserBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Authorization.Entities.ModuleUserBase`2
+    name: ModuleUserBase
+    nameWithType: ModuleUserBase
+    fullName: Hybrid.Zero.Authorization.Entities.ModuleUserBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: )
+    nameWithType: )
+    fullName: )

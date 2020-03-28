@@ -1,0 +1,115 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Domain.Entities.Auditing
+  commentId: N:Hybrid.Domain.Entities.Auditing
+  id: Hybrid.Domain.Entities.Auditing
+  children:
+  - Hybrid.Domain.Entities.Auditing.AuditEntity
+  - Hybrid.Domain.Entities.Auditing.AuditOperation
+  - Hybrid.Domain.Entities.Auditing.AuditProperty
+  - Hybrid.Domain.Entities.Auditing.ICreationAudited`1
+  - Hybrid.Domain.Entities.Auditing.IUpdateAudited`1
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Domain.Entities.Auditing
+  nameWithType: Hybrid.Domain.Entities.Auditing
+  fullName: Hybrid.Domain.Entities.Auditing
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Domain.Entities.Auditing.AuditEntity
+  commentId: T:Hybrid.Domain.Entities.Auditing.AuditEntity
+  parent: Hybrid.Domain.Entities.Auditing
+  name: AuditEntity
+  nameWithType: AuditEntity
+  fullName: Hybrid.Domain.Entities.Auditing.AuditEntity
+- uid: Hybrid.Domain.Entities.Auditing.AuditOperation
+  commentId: T:Hybrid.Domain.Entities.Auditing.AuditOperation
+  parent: Hybrid.Domain.Entities.Auditing
+  name: AuditOperation
+  nameWithType: AuditOperation
+  fullName: Hybrid.Domain.Entities.Auditing.AuditOperation
+- uid: Hybrid.Domain.Entities.Auditing.AuditProperty
+  commentId: T:Hybrid.Domain.Entities.Auditing.AuditProperty
+  name: AuditProperty
+  nameWithType: AuditProperty
+  fullName: Hybrid.Domain.Entities.Auditing.AuditProperty
+- uid: Hybrid.Domain.Entities.Auditing.ICreationAudited`1
+  commentId: T:Hybrid.Domain.Entities.Auditing.ICreationAudited`1
+  name: ICreationAudited<TUserKey>
+  nameWithType: ICreationAudited<TUserKey>
+  fullName: Hybrid.Domain.Entities.Auditing.ICreationAudited<TUserKey>
+  nameWithType.vb: ICreationAudited(Of TUserKey)
+  fullName.vb: Hybrid.Domain.Entities.Auditing.ICreationAudited(Of TUserKey)
+  name.vb: ICreationAudited(Of TUserKey)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.Auditing.ICreationAudited`1
+    name: ICreationAudited
+    nameWithType: ICreationAudited
+    fullName: Hybrid.Domain.Entities.Auditing.ICreationAudited
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.Auditing.ICreationAudited`1
+    name: ICreationAudited
+    nameWithType: ICreationAudited
+    fullName: Hybrid.Domain.Entities.Auditing.ICreationAudited
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Domain.Entities.Auditing.IUpdateAudited`1
+  commentId: T:Hybrid.Domain.Entities.Auditing.IUpdateAudited`1
+  name: IUpdateAudited<TUserKey>
+  nameWithType: IUpdateAudited<TUserKey>
+  fullName: Hybrid.Domain.Entities.Auditing.IUpdateAudited<TUserKey>
+  nameWithType.vb: IUpdateAudited(Of TUserKey)
+  fullName.vb: Hybrid.Domain.Entities.Auditing.IUpdateAudited(Of TUserKey)
+  name.vb: IUpdateAudited(Of TUserKey)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.Auditing.IUpdateAudited`1
+    name: IUpdateAudited
+    nameWithType: IUpdateAudited
+    fullName: Hybrid.Domain.Entities.Auditing.IUpdateAudited
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.Auditing.IUpdateAudited`1
+    name: IUpdateAudited
+    nameWithType: IUpdateAudited
+    fullName: Hybrid.Domain.Entities.Auditing.IUpdateAudited
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Domain.Entities.Auditing
+  commentId: N:Hybrid.Domain.Entities.Auditing
+  name: Hybrid.Domain.Entities.Auditing
+  nameWithType: Hybrid.Domain.Entities.Auditing
+  fullName: Hybrid.Domain.Entities.Auditing

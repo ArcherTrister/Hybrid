@@ -1,0 +1,64 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Quartz.Plugins.History
+  commentId: N:Hybrid.Quartz.Plugins.History
+  id: Hybrid.Quartz.Plugins.History
+  children:
+  - Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  - Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryStore
+  - Hybrid.Quartz.Plugins.History.ExecutionHistoryEntry
+  - Hybrid.Quartz.Plugins.History.Extensions
+  - Hybrid.Quartz.Plugins.History.IExecutionHistoryStore
+  - Hybrid.Quartz.Plugins.History.InMemoryExecutionHistoryPlugin
+  - Hybrid.Quartz.Plugins.History.InMemoryExecutionHistoryStore
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Quartz.Plugins.History
+  nameWithType: Hybrid.Quartz.Plugins.History
+  fullName: Hybrid.Quartz.Plugins.History
+  type: Namespace
+  assemblies:
+  - Hybrid.Quartz
+references:
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  commentId: T:Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  name: DatabaseExecutionHistoryPlugin
+  nameWithType: DatabaseExecutionHistoryPlugin
+  fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryStore
+  commentId: T:Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryStore
+  name: DatabaseExecutionHistoryStore
+  nameWithType: DatabaseExecutionHistoryStore
+  fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryStore
+- uid: Hybrid.Quartz.Plugins.History.ExecutionHistoryEntry
+  commentId: T:Hybrid.Quartz.Plugins.History.ExecutionHistoryEntry
+  name: ExecutionHistoryEntry
+  nameWithType: ExecutionHistoryEntry
+  fullName: Hybrid.Quartz.Plugins.History.ExecutionHistoryEntry
+- uid: Hybrid.Quartz.Plugins.History.Extensions
+  commentId: T:Hybrid.Quartz.Plugins.History.Extensions
+  name: Extensions
+  nameWithType: Extensions
+  fullName: Hybrid.Quartz.Plugins.History.Extensions
+- uid: Hybrid.Quartz.Plugins.History.IExecutionHistoryStore
+  commentId: T:Hybrid.Quartz.Plugins.History.IExecutionHistoryStore
+  parent: Hybrid.Quartz.Plugins.History
+  name: IExecutionHistoryStore
+  nameWithType: IExecutionHistoryStore
+  fullName: Hybrid.Quartz.Plugins.History.IExecutionHistoryStore
+- uid: Hybrid.Quartz.Plugins.History.InMemoryExecutionHistoryPlugin
+  commentId: T:Hybrid.Quartz.Plugins.History.InMemoryExecutionHistoryPlugin
+  name: InMemoryExecutionHistoryPlugin
+  nameWithType: InMemoryExecutionHistoryPlugin
+  fullName: Hybrid.Quartz.Plugins.History.InMemoryExecutionHistoryPlugin
+- uid: Hybrid.Quartz.Plugins.History.InMemoryExecutionHistoryStore
+  commentId: T:Hybrid.Quartz.Plugins.History.InMemoryExecutionHistoryStore
+  name: InMemoryExecutionHistoryStore
+  nameWithType: InMemoryExecutionHistoryStore
+  fullName: Hybrid.Quartz.Plugins.History.InMemoryExecutionHistoryStore
+- uid: Hybrid.Quartz.Plugins.History
+  commentId: N:Hybrid.Quartz.Plugins.History
+  name: Hybrid.Quartz.Plugins.History
+  nameWithType: Hybrid.Quartz.Plugins.History
+  fullName: Hybrid.Quartz.Plugins.History

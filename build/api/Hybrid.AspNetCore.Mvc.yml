@@ -1,0 +1,70 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.AspNetCore.Mvc
+  commentId: N:Hybrid.AspNetCore.Mvc
+  id: Hybrid.AspNetCore.Mvc
+  children:
+  - Hybrid.AspNetCore.Mvc.AreaInfoAttribute
+  - Hybrid.AspNetCore.Mvc.MvcControllerTypeFinder
+  - Hybrid.AspNetCore.Mvc.MvcExtensions
+  - Hybrid.AspNetCore.Mvc.MvcFunctionHandler
+  - Hybrid.AspNetCore.Mvc.MvcFunctionModule
+  - Hybrid.AspNetCore.Mvc.MvcMethodInfoFinder
+  - Hybrid.AspNetCore.Mvc.MvcModuleBase
+  - Hybrid.AspNetCore.Mvc.MvcModuleInfoPicker
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.AspNetCore.Mvc
+  nameWithType: Hybrid.AspNetCore.Mvc
+  fullName: Hybrid.AspNetCore.Mvc
+  type: Namespace
+  assemblies:
+  - Hybrid.AspNetCore
+references:
+- uid: Hybrid.AspNetCore.Mvc.AreaInfoAttribute
+  commentId: T:Hybrid.AspNetCore.Mvc.AreaInfoAttribute
+  name: AreaInfoAttribute
+  nameWithType: AreaInfoAttribute
+  fullName: Hybrid.AspNetCore.Mvc.AreaInfoAttribute
+- uid: Hybrid.AspNetCore.Mvc.MvcExtensions
+  commentId: T:Hybrid.AspNetCore.Mvc.MvcExtensions
+  parent: Hybrid.AspNetCore.Mvc
+  name: MvcExtensions
+  nameWithType: MvcExtensions
+  fullName: Hybrid.AspNetCore.Mvc.MvcExtensions
+- uid: Hybrid.AspNetCore.Mvc.MvcFunctionHandler
+  commentId: T:Hybrid.AspNetCore.Mvc.MvcFunctionHandler
+  name: MvcFunctionHandler
+  nameWithType: MvcFunctionHandler
+  fullName: Hybrid.AspNetCore.Mvc.MvcFunctionHandler
+- uid: Hybrid.AspNetCore.Mvc.MvcFunctionModule
+  commentId: T:Hybrid.AspNetCore.Mvc.MvcFunctionModule
+  name: MvcFunctionModule
+  nameWithType: MvcFunctionModule
+  fullName: Hybrid.AspNetCore.Mvc.MvcFunctionModule
+- uid: Hybrid.AspNetCore.Mvc.MvcControllerTypeFinder
+  commentId: T:Hybrid.AspNetCore.Mvc.MvcControllerTypeFinder
+  name: MvcControllerTypeFinder
+  nameWithType: MvcControllerTypeFinder
+  fullName: Hybrid.AspNetCore.Mvc.MvcControllerTypeFinder
+- uid: Hybrid.AspNetCore.Mvc.MvcMethodInfoFinder
+  commentId: T:Hybrid.AspNetCore.Mvc.MvcMethodInfoFinder
+  name: MvcMethodInfoFinder
+  nameWithType: MvcMethodInfoFinder
+  fullName: Hybrid.AspNetCore.Mvc.MvcMethodInfoFinder
+- uid: Hybrid.AspNetCore.Mvc.MvcModuleBase
+  commentId: T:Hybrid.AspNetCore.Mvc.MvcModuleBase
+  name: MvcModuleBase
+  nameWithType: MvcModuleBase
+  fullName: Hybrid.AspNetCore.Mvc.MvcModuleBase
+- uid: Hybrid.AspNetCore.Mvc.MvcModuleInfoPicker
+  commentId: T:Hybrid.AspNetCore.Mvc.MvcModuleInfoPicker
+  name: MvcModuleInfoPicker
+  nameWithType: MvcModuleInfoPicker
+  fullName: Hybrid.AspNetCore.Mvc.MvcModuleInfoPicker
+- uid: Hybrid.AspNetCore.Mvc
+  commentId: N:Hybrid.AspNetCore.Mvc
+  name: Hybrid.AspNetCore.Mvc
+  nameWithType: Hybrid.AspNetCore.Mvc
+  fullName: Hybrid.AspNetCore.Mvc

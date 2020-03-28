@@ -1,0 +1,278 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Zero.IdentityServer4.Quickstart
+  commentId: N:Hybrid.Zero.IdentityServer4.Quickstart
+  id: Hybrid.Zero.IdentityServer4.Quickstart
+  children:
+  - Hybrid.Zero.IdentityServer4.Quickstart.AccountController
+  - Hybrid.Zero.IdentityServer4.Quickstart.AccountController`2
+  - Hybrid.Zero.IdentityServer4.Quickstart.AccountOptions
+  - Hybrid.Zero.IdentityServer4.Quickstart.ConsentController
+  - Hybrid.Zero.IdentityServer4.Quickstart.ConsentInputModel
+  - Hybrid.Zero.IdentityServer4.Quickstart.ConsentOptions
+  - Hybrid.Zero.IdentityServer4.Quickstart.ConsentViewModel
+  - Hybrid.Zero.IdentityServer4.Quickstart.DiagnosticsController
+  - Hybrid.Zero.IdentityServer4.Quickstart.DiagnosticsViewModel
+  - Hybrid.Zero.IdentityServer4.Quickstart.Extensions
+  - Hybrid.Zero.IdentityServer4.Quickstart.ExternalController
+  - Hybrid.Zero.IdentityServer4.Quickstart.ExternalController`2
+  - Hybrid.Zero.IdentityServer4.Quickstart.ExternalProvider
+  - Hybrid.Zero.IdentityServer4.Quickstart.GrantsController
+  - Hybrid.Zero.IdentityServer4.Quickstart.GrantsViewModel
+  - Hybrid.Zero.IdentityServer4.Quickstart.GrantViewModel
+  - Hybrid.Zero.IdentityServer4.Quickstart.IdentityServerBaseController
+  - Hybrid.Zero.IdentityServer4.Quickstart.IdentityServerController
+  - Hybrid.Zero.IdentityServer4.Quickstart.LoggedOutViewModel
+  - Hybrid.Zero.IdentityServer4.Quickstart.LoginInputModel
+  - Hybrid.Zero.IdentityServer4.Quickstart.LoginViewModel
+  - Hybrid.Zero.IdentityServer4.Quickstart.LogoutInputModel
+  - Hybrid.Zero.IdentityServer4.Quickstart.LogoutViewModel
+  - Hybrid.Zero.IdentityServer4.Quickstart.ProcessConsentResult
+  - Hybrid.Zero.IdentityServer4.Quickstart.RedirectViewModel
+  - Hybrid.Zero.IdentityServer4.Quickstart.ScopeViewModel
+  - Hybrid.Zero.IdentityServer4.Quickstart.SecurityHeadersAttribute
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Zero.IdentityServer4.Quickstart
+  nameWithType: Hybrid.Zero.IdentityServer4.Quickstart
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart
+  type: Namespace
+  assemblies:
+  - Hybrid.Zero.IdentityServer4
+references:
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.AccountController
+  commentId: T:Hybrid.Zero.IdentityServer4.Quickstart.AccountController
+  parent: Hybrid.Zero.IdentityServer4.Quickstart
+  name: AccountController
+  nameWithType: AccountController
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.AccountController
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.AccountController`2
+  commentId: T:Hybrid.Zero.IdentityServer4.Quickstart.AccountController`2
+  name: AccountController<TUser, TUserKey>
+  nameWithType: AccountController<TUser, TUserKey>
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.AccountController<TUser, TUserKey>
+  nameWithType.vb: AccountController(Of TUser, TUserKey)
+  fullName.vb: Hybrid.Zero.IdentityServer4.Quickstart.AccountController(Of TUser, TUserKey)
+  name.vb: AccountController(Of TUser, TUserKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.AccountController`2
+    name: AccountController
+    nameWithType: AccountController
+    fullName: Hybrid.Zero.IdentityServer4.Quickstart.AccountController
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.AccountController`2
+    name: AccountController
+    nameWithType: AccountController
+    fullName: Hybrid.Zero.IdentityServer4.Quickstart.AccountController
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.AccountOptions
+  commentId: T:Hybrid.Zero.IdentityServer4.Quickstart.AccountOptions
+  name: AccountOptions
+  nameWithType: AccountOptions
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.AccountOptions
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.ExternalController
+  commentId: T:Hybrid.Zero.IdentityServer4.Quickstart.ExternalController
+  parent: Hybrid.Zero.IdentityServer4.Quickstart
+  name: ExternalController
+  nameWithType: ExternalController
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.ExternalController
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.ExternalController`2
+  commentId: T:Hybrid.Zero.IdentityServer4.Quickstart.ExternalController`2
+  name: ExternalController<TUser, TUserKey>
+  nameWithType: ExternalController<TUser, TUserKey>
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.ExternalController<TUser, TUserKey>
+  nameWithType.vb: ExternalController(Of TUser, TUserKey)
+  fullName.vb: Hybrid.Zero.IdentityServer4.Quickstart.ExternalController(Of TUser, TUserKey)
+  name.vb: ExternalController(Of TUser, TUserKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.ExternalController`2
+    name: ExternalController
+    nameWithType: ExternalController
+    fullName: Hybrid.Zero.IdentityServer4.Quickstart.ExternalController
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.ExternalController`2
+    name: ExternalController
+    nameWithType: ExternalController
+    fullName: Hybrid.Zero.IdentityServer4.Quickstart.ExternalController
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.ExternalProvider
+  commentId: T:Hybrid.Zero.IdentityServer4.Quickstart.ExternalProvider
+  name: ExternalProvider
+  nameWithType: ExternalProvider
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.ExternalProvider
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.LoggedOutViewModel
+  commentId: T:Hybrid.Zero.IdentityServer4.Quickstart.LoggedOutViewModel
+  name: LoggedOutViewModel
+  nameWithType: LoggedOutViewModel
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.LoggedOutViewModel
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.LoginInputModel
+  commentId: T:Hybrid.Zero.IdentityServer4.Quickstart.LoginInputModel
+  parent: Hybrid.Zero.IdentityServer4.Quickstart
+  name: LoginInputModel
+  nameWithType: LoginInputModel
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.LoginInputModel
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.LoginViewModel
+  commentId: T:Hybrid.Zero.IdentityServer4.Quickstart.LoginViewModel
+  name: LoginViewModel
+  nameWithType: LoginViewModel
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.LoginViewModel
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.LogoutInputModel
+  commentId: T:Hybrid.Zero.IdentityServer4.Quickstart.LogoutInputModel
+  parent: Hybrid.Zero.IdentityServer4.Quickstart
+  name: LogoutInputModel
+  nameWithType: LogoutInputModel
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.LogoutInputModel
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.LogoutViewModel
+  commentId: T:Hybrid.Zero.IdentityServer4.Quickstart.LogoutViewModel
+  name: LogoutViewModel
+  nameWithType: LogoutViewModel
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.LogoutViewModel
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.RedirectViewModel
+  commentId: T:Hybrid.Zero.IdentityServer4.Quickstart.RedirectViewModel
+  name: RedirectViewModel
+  nameWithType: RedirectViewModel
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.RedirectViewModel
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.ConsentController
+  commentId: T:Hybrid.Zero.IdentityServer4.Quickstart.ConsentController
+  name: ConsentController
+  nameWithType: ConsentController
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.ConsentController
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.ConsentInputModel
+  commentId: T:Hybrid.Zero.IdentityServer4.Quickstart.ConsentInputModel
+  parent: Hybrid.Zero.IdentityServer4.Quickstart
+  name: ConsentInputModel
+  nameWithType: ConsentInputModel
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.ConsentInputModel
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.ConsentOptions
+  commentId: T:Hybrid.Zero.IdentityServer4.Quickstart.ConsentOptions
+  name: ConsentOptions
+  nameWithType: ConsentOptions
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.ConsentOptions
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.ConsentViewModel
+  commentId: T:Hybrid.Zero.IdentityServer4.Quickstart.ConsentViewModel
+  parent: Hybrid.Zero.IdentityServer4.Quickstart
+  name: ConsentViewModel
+  nameWithType: ConsentViewModel
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.ConsentViewModel
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.ProcessConsentResult
+  commentId: T:Hybrid.Zero.IdentityServer4.Quickstart.ProcessConsentResult
+  name: ProcessConsentResult
+  nameWithType: ProcessConsentResult
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.ProcessConsentResult
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.ScopeViewModel
+  commentId: T:Hybrid.Zero.IdentityServer4.Quickstart.ScopeViewModel
+  parent: Hybrid.Zero.IdentityServer4.Quickstart
+  name: ScopeViewModel
+  nameWithType: ScopeViewModel
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.ScopeViewModel
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.DiagnosticsController
+  commentId: T:Hybrid.Zero.IdentityServer4.Quickstart.DiagnosticsController
+  name: DiagnosticsController
+  nameWithType: DiagnosticsController
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.DiagnosticsController
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.DiagnosticsViewModel
+  commentId: T:Hybrid.Zero.IdentityServer4.Quickstart.DiagnosticsViewModel
+  name: DiagnosticsViewModel
+  nameWithType: DiagnosticsViewModel
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.DiagnosticsViewModel
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.Extensions
+  commentId: T:Hybrid.Zero.IdentityServer4.Quickstart.Extensions
+  parent: Hybrid.Zero.IdentityServer4.Quickstart
+  name: Extensions
+  nameWithType: Extensions
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.Extensions
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.GrantsController
+  commentId: T:Hybrid.Zero.IdentityServer4.Quickstart.GrantsController
+  name: GrantsController
+  nameWithType: GrantsController
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.GrantsController
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.GrantsViewModel
+  commentId: T:Hybrid.Zero.IdentityServer4.Quickstart.GrantsViewModel
+  name: GrantsViewModel
+  nameWithType: GrantsViewModel
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.GrantsViewModel
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.GrantViewModel
+  commentId: T:Hybrid.Zero.IdentityServer4.Quickstart.GrantViewModel
+  name: GrantViewModel
+  nameWithType: GrantViewModel
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.GrantViewModel
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.IdentityServerBaseController
+  commentId: T:Hybrid.Zero.IdentityServer4.Quickstart.IdentityServerBaseController
+  parent: Hybrid.Zero.IdentityServer4.Quickstart
+  name: IdentityServerBaseController
+  nameWithType: IdentityServerBaseController
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.IdentityServerBaseController
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.IdentityServerController
+  commentId: T:Hybrid.Zero.IdentityServer4.Quickstart.IdentityServerController
+  name: IdentityServerController
+  nameWithType: IdentityServerController
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.IdentityServerController
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.SecurityHeadersAttribute
+  commentId: T:Hybrid.Zero.IdentityServer4.Quickstart.SecurityHeadersAttribute
+  name: SecurityHeadersAttribute
+  nameWithType: SecurityHeadersAttribute
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.SecurityHeadersAttribute
+- uid: Hybrid.Zero.IdentityServer4.Quickstart
+  commentId: N:Hybrid.Zero.IdentityServer4.Quickstart
+  name: Hybrid.Zero.IdentityServer4.Quickstart
+  nameWithType: Hybrid.Zero.IdentityServer4.Quickstart
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart

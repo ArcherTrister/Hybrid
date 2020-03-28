@@ -1,0 +1,60 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Caching
+  commentId: N:Hybrid.Caching
+  id: Hybrid.Caching
+  children:
+  - Hybrid.Caching.CacheService
+  - Hybrid.Caching.DistributedCacheExtensions
+  - Hybrid.Caching.ExpressionCacheKeyGenerator
+  - Hybrid.Caching.ICacheKeyGenerator
+  - Hybrid.Caching.ICacheService
+  - Hybrid.Caching.StringCacheKeyGenerator
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Caching
+  nameWithType: Hybrid.Caching
+  fullName: Hybrid.Caching
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Caching.CacheService
+  commentId: T:Hybrid.Caching.CacheService
+  name: CacheService
+  nameWithType: CacheService
+  fullName: Hybrid.Caching.CacheService
+- uid: Hybrid.Caching.DistributedCacheExtensions
+  commentId: T:Hybrid.Caching.DistributedCacheExtensions
+  parent: Hybrid.Caching
+  name: DistributedCacheExtensions
+  nameWithType: DistributedCacheExtensions
+  fullName: Hybrid.Caching.DistributedCacheExtensions
+- uid: Hybrid.Caching.ExpressionCacheKeyGenerator
+  commentId: T:Hybrid.Caching.ExpressionCacheKeyGenerator
+  name: ExpressionCacheKeyGenerator
+  nameWithType: ExpressionCacheKeyGenerator
+  fullName: Hybrid.Caching.ExpressionCacheKeyGenerator
+- uid: Hybrid.Caching.ICacheKeyGenerator
+  commentId: T:Hybrid.Caching.ICacheKeyGenerator
+  parent: Hybrid.Caching
+  name: ICacheKeyGenerator
+  nameWithType: ICacheKeyGenerator
+  fullName: Hybrid.Caching.ICacheKeyGenerator
+- uid: Hybrid.Caching.ICacheService
+  commentId: T:Hybrid.Caching.ICacheService
+  parent: Hybrid.Caching
+  name: ICacheService
+  nameWithType: ICacheService
+  fullName: Hybrid.Caching.ICacheService
+- uid: Hybrid.Caching.StringCacheKeyGenerator
+  commentId: T:Hybrid.Caching.StringCacheKeyGenerator
+  name: StringCacheKeyGenerator
+  nameWithType: StringCacheKeyGenerator
+  fullName: Hybrid.Caching.StringCacheKeyGenerator
+- uid: Hybrid.Caching
+  commentId: N:Hybrid.Caching
+  name: Hybrid.Caching
+  nameWithType: Hybrid.Caching
+  fullName: Hybrid.Caching

@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Zero.Identity.Extensions
+  commentId: N:Hybrid.Zero.Identity.Extensions
+  id: Hybrid.Zero.Identity.Extensions
+  children:
+  - Hybrid.Zero.Identity.Extensions.ExternalLoginInfoExtensions
+  - Hybrid.Zero.Identity.Extensions.IdentityExtensions
+  - Hybrid.Zero.Identity.Extensions.UserManagerExtensions
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Zero.Identity.Extensions
+  nameWithType: Hybrid.Zero.Identity.Extensions
+  fullName: Hybrid.Zero.Identity.Extensions
+  type: Namespace
+  assemblies:
+  - Hybrid.Zero
+references:
+- uid: Hybrid.Zero.Identity.Extensions.IdentityExtensions
+  commentId: T:Hybrid.Zero.Identity.Extensions.IdentityExtensions
+  name: IdentityExtensions
+  nameWithType: IdentityExtensions
+  fullName: Hybrid.Zero.Identity.Extensions.IdentityExtensions
+- uid: Hybrid.Zero.Identity.Extensions.ExternalLoginInfoExtensions
+  commentId: T:Hybrid.Zero.Identity.Extensions.ExternalLoginInfoExtensions
+  name: ExternalLoginInfoExtensions
+  nameWithType: ExternalLoginInfoExtensions
+  fullName: Hybrid.Zero.Identity.Extensions.ExternalLoginInfoExtensions
+- uid: Hybrid.Zero.Identity.Extensions.UserManagerExtensions
+  commentId: T:Hybrid.Zero.Identity.Extensions.UserManagerExtensions
+  name: UserManagerExtensions
+  nameWithType: UserManagerExtensions
+  fullName: Hybrid.Zero.Identity.Extensions.UserManagerExtensions

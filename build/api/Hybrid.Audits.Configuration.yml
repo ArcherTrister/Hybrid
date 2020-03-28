@@ -1,0 +1,35 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Audits.Configuration
+  commentId: N:Hybrid.Audits.Configuration
+  id: Hybrid.Audits.Configuration
+  children:
+  - Hybrid.Audits.Configuration.AuditingConfiguration
+  - Hybrid.Audits.Configuration.IAuditingConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Audits.Configuration
+  nameWithType: Hybrid.Audits.Configuration
+  fullName: Hybrid.Audits.Configuration
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Audits.Configuration.AuditingConfiguration
+  commentId: T:Hybrid.Audits.Configuration.AuditingConfiguration
+  parent: Hybrid.Audits.Configuration
+  name: AuditingConfiguration
+  nameWithType: AuditingConfiguration
+  fullName: Hybrid.Audits.Configuration.AuditingConfiguration
+- uid: Hybrid.Audits.Configuration.IAuditingConfiguration
+  commentId: T:Hybrid.Audits.Configuration.IAuditingConfiguration
+  parent: Hybrid.Audits.Configuration
+  name: IAuditingConfiguration
+  nameWithType: IAuditingConfiguration
+  fullName: Hybrid.Audits.Configuration.IAuditingConfiguration
+- uid: Hybrid.Audits.Configuration
+  commentId: N:Hybrid.Audits.Configuration
+  name: Hybrid.Audits.Configuration
+  nameWithType: Hybrid.Audits.Configuration
+  fullName: Hybrid.Audits.Configuration

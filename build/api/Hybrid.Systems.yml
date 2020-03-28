@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Systems
+  commentId: N:Hybrid.Systems
+  id: Hybrid.Systems
+  children:
+  - Hybrid.Systems.KeyValueStore
+  - Hybrid.Systems.SystemModule
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Systems
+  nameWithType: Hybrid.Systems
+  fullName: Hybrid.Systems
+  type: Namespace
+  assemblies:
+  - Hybrid.Zero
+references:
+- uid: Hybrid.Systems.KeyValueStore
+  commentId: T:Hybrid.Systems.KeyValueStore
+  name: KeyValueStore
+  nameWithType: KeyValueStore
+  fullName: Hybrid.Systems.KeyValueStore
+- uid: Hybrid.Systems.SystemModule
+  commentId: T:Hybrid.Systems.SystemModule
+  name: SystemModule
+  nameWithType: SystemModule
+  fullName: Hybrid.Systems.SystemModule

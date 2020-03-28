@@ -1,0 +1,4799 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  commentId: T:Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  id: BaseViewComponent
+  parent: Hybrid.AspNetCore.Mvc.Views
+  children:
+  - Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.#ctor
+  - Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L(System.String)
+  - Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L(System.String,System.Globalization.CultureInfo)
+  - Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L(System.String,System.Globalization.CultureInfo,System.Object[])
+  - Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L(System.String,System.Object[])
+  - Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalCultureInfo
+  - Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalizationManager
+  - Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalizationSource
+  - Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalizationSourceName
+  - Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalSchedulerName
+  - Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Logger
+  langs:
+  - csharp
+  - vb
+  name: BaseViewComponent
+  nameWithType: BaseViewComponent
+  fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/Mvc/Views/BaseViewComponent.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: BaseViewComponent
+    path: ../src/Hybrid.AspNetCore/Mvc/Views/BaseViewComponent.cs
+    startLine: 27
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.Mvc.Views
+  syntax:
+    content: 'public abstract class BaseViewComponent : ViewComponent'
+    content.vb: >-
+      Public MustInherit Class BaseViewComponent
+          Inherits ViewComponent
+  inheritance:
+  - System.Object
+  - Microsoft.AspNetCore.Mvc.ViewComponent
+  derivedClasses:
+  - Hybrid.Quartz.Dashboard.Views.QuartzViewComponent
+  - Hybrid.Zero.IdentityServer4.Quickstart.Views.IdentityServerViewComponent
+  inheritedMembers:
+  - Microsoft.AspNetCore.Mvc.ViewComponent.Content(System.String)
+  - Microsoft.AspNetCore.Mvc.ViewComponent.View
+  - Microsoft.AspNetCore.Mvc.ViewComponent.View(System.String)
+  - Microsoft.AspNetCore.Mvc.ViewComponent.View``1(System.String,{TModel})
+  - Microsoft.AspNetCore.Mvc.ViewComponent.View``1({TModel})
+  - Microsoft.AspNetCore.Mvc.ViewComponent.HttpContext
+  - Microsoft.AspNetCore.Mvc.ViewComponent.ModelState
+  - Microsoft.AspNetCore.Mvc.ViewComponent.Request
+  - Microsoft.AspNetCore.Mvc.ViewComponent.RouteData
+  - Microsoft.AspNetCore.Mvc.ViewComponent.TempData
+  - Microsoft.AspNetCore.Mvc.ViewComponent.Url
+  - Microsoft.AspNetCore.Mvc.ViewComponent.User
+  - Microsoft.AspNetCore.Mvc.ViewComponent.UserClaimsPrincipal
+  - Microsoft.AspNetCore.Mvc.ViewComponent.ViewBag
+  - Microsoft.AspNetCore.Mvc.ViewComponent.ViewComponentContext
+  - Microsoft.AspNetCore.Mvc.ViewComponent.ViewContext
+  - Microsoft.AspNetCore.Mvc.ViewComponent.ViewData
+  - Microsoft.AspNetCore.Mvc.ViewComponent.ViewEngine
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - System.Object.Hybrid.Extensions.ObjectExtensions.CastTo(System.Type)
+  - System.Object.Hybrid.Extensions.ObjectExtensions.CastTo``1
+  - System.Object.Hybrid.Extensions.ObjectExtensions.CastTo``1({T})
+  - Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Hybrid.Extensions.ObjectExtensions.IsIn``1(Hybrid.AspNetCore.Mvc.Views.BaseViewComponent[])
+  - System.Object.Hybrid.Extensions.ObjectExtensions.ToDynamic
+  - Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Hybrid.Extensions.ObjectExtensions.DeepClone``1
+  - Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Hybrid.Extensions.ParameterCheckExtensions.Required``1(System.Func{Hybrid.AspNetCore.Mvc.Views.BaseViewComponent,System.Boolean},System.String)
+  - Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Hybrid.Extensions.ParameterCheckExtensions.Required``2(System.Func{Hybrid.AspNetCore.Mvc.Views.BaseViewComponent,System.Boolean},System.String)
+  - Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(System.String)
+  - Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Hybrid.Extensions.TryCatchExtensions.TryCatch``1(System.Action{Hybrid.AspNetCore.Mvc.Views.BaseViewComponent},System.Action{System.Exception},System.Action{Hybrid.AspNetCore.Mvc.Views.BaseViewComponent})
+  - Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Hybrid.Extensions.TryCatchExtensions.TryCatch``1(System.Action{Hybrid.AspNetCore.Mvc.Views.BaseViewComponent},System.Action{System.Exception})
+  - Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Hybrid.Extensions.TryCatchExtensions.TryCatch``2(System.Func{Hybrid.AspNetCore.Mvc.Views.BaseViewComponent,{TResult}},System.Action{System.Exception},System.Action{Hybrid.AspNetCore.Mvc.Views.BaseViewComponent})
+  - Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Hybrid.Extensions.TryCatchExtensions.TryCatch``2(System.Func{Hybrid.AspNetCore.Mvc.Views.BaseViewComponent,{TResult}},System.Action{System.Exception})
+  - Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Hybrid.Extensions.TryCatchExtensions.TryFinally``1(System.Action{Hybrid.AspNetCore.Mvc.Views.BaseViewComponent},System.Action{Hybrid.AspNetCore.Mvc.Views.BaseViewComponent})
+  - System.Object.Hybrid.Json.JsonExtensions.ToJsonString(System.Boolean,System.Boolean)
+  - System.Object.Hybrid.Mapping.MapperExtensions.MapTo``1
+  - Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Hybrid.Mapping.MapperExtensions.MapTo``2({TTarget})
+  - System.Object.Hybrid.Reflection.LockExtensions.Locking(System.Action)
+  - Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Hybrid.Reflection.LockExtensions.Locking``1(System.Action{Hybrid.AspNetCore.Mvc.Views.BaseViewComponent})
+  - System.Object.Hybrid.Reflection.LockExtensions.Locking``1(System.Func{{TResult}})
+  - Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Hybrid.Reflection.LockExtensions.Locking``2(System.Func{Hybrid.AspNetCore.Mvc.Views.BaseViewComponent,{TResult}})
+  - Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2
+  - Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(System.Security.Principal.IPrincipal)
+  - Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(System.Security.Principal.IPrincipal)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalizationManager
+  commentId: P:Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalizationManager
+  id: LocalizationManager
+  parent: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  langs:
+  - csharp
+  - vb
+  name: LocalizationManager
+  nameWithType: BaseViewComponent.LocalizationManager
+  fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalizationManager
+  type: Property
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/Mvc/Views/BaseViewComponent.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: LocalizationManager
+    path: ../src/Hybrid.AspNetCore/Mvc/Views/BaseViewComponent.cs
+    startLine: 32
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.Mvc.Views
+  summary: "\nReference to the localization manager.\n"
+  example: []
+  syntax:
+    content: public ILocalizationManager LocalizationManager { get; set; }
+    parameters: []
+    return:
+      type: Hybrid.Localization.ILocalizationManager
+    content.vb: Public Property LocalizationManager As ILocalizationManager
+  overload: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalizationManager*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalizationSourceName
+  commentId: P:Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalizationSourceName
+  id: LocalizationSourceName
+  parent: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  langs:
+  - csharp
+  - vb
+  name: LocalizationSourceName
+  nameWithType: BaseViewComponent.LocalizationSourceName
+  fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalizationSourceName
+  type: Property
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/Mvc/Views/BaseViewComponent.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: LocalizationSourceName
+    path: ../src/Hybrid.AspNetCore/Mvc/Views/BaseViewComponent.cs
+    startLine: 38
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.Mvc.Views
+  summary: "\nGets/sets name of the localization source that is used in this application service.\nIt must be set in order to use <xref href=\"Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L(System.String)\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L(System.String%2cSystem.Globalization.CultureInfo)\" data-throw-if-not-resolved=\"false\"></xref> methods.\n"
+  example: []
+  syntax:
+    content: protected string LocalizationSourceName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Protected Property LocalizationSourceName As String
+  overload: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalizationSourceName*
+  modifiers.csharp:
+  - protected
+  - get
+  - set
+  modifiers.vb:
+  - Protected
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalizationSource
+  commentId: P:Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalizationSource
+  id: LocalizationSource
+  parent: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  langs:
+  - csharp
+  - vb
+  name: LocalizationSource
+  nameWithType: BaseViewComponent.LocalizationSource
+  fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalizationSource
+  type: Property
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/Mvc/Views/BaseViewComponent.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: LocalizationSource
+    path: ../src/Hybrid.AspNetCore/Mvc/Views/BaseViewComponent.cs
+    startLine: 44
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.Mvc.Views
+  summary: "\nGets localization source.\nIt&apos;s valid if <xref href=\"Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalizationSourceName\" data-throw-if-not-resolved=\"false\"></xref> is set.\n"
+  example: []
+  syntax:
+    content: protected ILocalizationSource LocalizationSource { get; }
+    parameters: []
+    return:
+      type: Hybrid.Localization.Sources.ILocalizationSource
+    content.vb: Protected ReadOnly Property LocalizationSource As ILocalizationSource
+  overload: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalizationSource*
+  modifiers.csharp:
+  - protected
+  - get
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalCultureInfo
+  commentId: P:Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalCultureInfo
+  id: LocalCultureInfo
+  parent: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  langs:
+  - csharp
+  - vb
+  name: LocalCultureInfo
+  nameWithType: BaseViewComponent.LocalCultureInfo
+  fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalCultureInfo
+  type: Property
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/Mvc/Views/BaseViewComponent.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: LocalCultureInfo
+    path: ../src/Hybrid.AspNetCore/Mvc/Views/BaseViewComponent.cs
+    startLine: 64
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.Mvc.Views
+  syntax:
+    content: protected CultureInfo LocalCultureInfo { get; }
+    parameters: []
+    return:
+      type: System.Globalization.CultureInfo
+    content.vb: Protected ReadOnly Property LocalCultureInfo As CultureInfo
+  overload: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalCultureInfo*
+  modifiers.csharp:
+  - protected
+  - get
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalSchedulerName
+  commentId: P:Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalSchedulerName
+  id: LocalSchedulerName
+  parent: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  langs:
+  - csharp
+  - vb
+  name: LocalSchedulerName
+  nameWithType: BaseViewComponent.LocalSchedulerName
+  fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalSchedulerName
+  type: Property
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/Mvc/Views/BaseViewComponent.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: LocalSchedulerName
+    path: ../src/Hybrid.AspNetCore/Mvc/Views/BaseViewComponent.cs
+    startLine: 78
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.Mvc.Views
+  syntax:
+    content: protected string LocalSchedulerName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Protected ReadOnly Property LocalSchedulerName As String
+  overload: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalSchedulerName*
+  modifiers.csharp:
+  - protected
+  - get
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Logger
+  commentId: P:Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Logger
+  id: Logger
+  parent: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  langs:
+  - csharp
+  - vb
+  name: Logger
+  nameWithType: BaseViewComponent.Logger
+  fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Logger
+  type: Property
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/Mvc/Views/BaseViewComponent.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Logger
+    path: ../src/Hybrid.AspNetCore/Mvc/Views/BaseViewComponent.cs
+    startLine: 94
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.Mvc.Views
+  summary: "\nReference to the logger to write logs.\n"
+  example: []
+  syntax:
+    content: public ILogger Logger { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Extensions.Logging.ILogger
+    content.vb: Public Property Logger As ILogger
+  overload: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Logger*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.#ctor
+  commentId: M:Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.#ctor
+  id: '#ctor'
+  parent: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  langs:
+  - csharp
+  - vb
+  name: BaseViewComponent()
+  nameWithType: BaseViewComponent.BaseViewComponent()
+  fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.BaseViewComponent()
+  type: Constructor
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/Mvc/Views/BaseViewComponent.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: .ctor
+    path: ../src/Hybrid.AspNetCore/Mvc/Views/BaseViewComponent.cs
+    startLine: 96
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.Mvc.Views
+  syntax:
+    content: protected BaseViewComponent()
+    content.vb: Protected Sub New
+  overload: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L(System.String)
+  commentId: M:Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L(System.String)
+  id: L(System.String)
+  parent: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  langs:
+  - csharp
+  - vb
+  name: L(String)
+  nameWithType: BaseViewComponent.L(String)
+  fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/Mvc/Views/BaseViewComponent.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: L
+    path: ../src/Hybrid.AspNetCore/Mvc/Views/BaseViewComponent.cs
+    startLine: 107
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.Mvc.Views
+  summary: "\nGets localized string for given key name and current language.\n"
+  example: []
+  syntax:
+    content: protected virtual string L(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: Key name
+    return:
+      type: System.String
+      description: Localized string
+    content.vb: Protected Overridable Function L(name As String) As String
+  overload: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L(System.String,System.Object[])
+  commentId: M:Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L(System.String,System.Object[])
+  id: L(System.String,System.Object[])
+  parent: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  langs:
+  - csharp
+  - vb
+  name: L(String, Object[])
+  nameWithType: BaseViewComponent.L(String, Object[])
+  fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L(System.String, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/Mvc/Views/BaseViewComponent.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: L
+    path: ../src/Hybrid.AspNetCore/Mvc/Views/BaseViewComponent.cs
+    startLine: 118
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.Mvc.Views
+  summary: "\nGets localized string for given key name and current language with formatting strings.\n"
+  example: []
+  syntax:
+    content: protected string L(string name, params object[] args)
+    parameters:
+    - id: name
+      type: System.String
+      description: Key name
+    - id: args
+      type: System.Object[]
+      description: Format arguments
+    return:
+      type: System.String
+      description: Localized string
+    content.vb: Protected Function L(name As String, ParamArray args As Object()) As String
+  overload: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L*
+  nameWithType.vb: BaseViewComponent.L(String, Object())
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L(System.String, System.Object())
+  name.vb: L(String, Object())
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L(System.String,System.Globalization.CultureInfo)
+  commentId: M:Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L(System.String,System.Globalization.CultureInfo)
+  id: L(System.String,System.Globalization.CultureInfo)
+  parent: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  langs:
+  - csharp
+  - vb
+  name: L(String, CultureInfo)
+  nameWithType: BaseViewComponent.L(String, CultureInfo)
+  fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L(System.String, System.Globalization.CultureInfo)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/Mvc/Views/BaseViewComponent.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: L
+    path: ../src/Hybrid.AspNetCore/Mvc/Views/BaseViewComponent.cs
+    startLine: 129
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.Mvc.Views
+  summary: "\nGets localized string for given key name and specified culture information.\n"
+  example: []
+  syntax:
+    content: protected virtual string L(string name, CultureInfo culture)
+    parameters:
+    - id: name
+      type: System.String
+      description: Key name
+    - id: culture
+      type: System.Globalization.CultureInfo
+      description: culture information
+    return:
+      type: System.String
+      description: Localized string
+    content.vb: Protected Overridable Function L(name As String, culture As CultureInfo) As String
+  overload: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L(System.String,System.Globalization.CultureInfo,System.Object[])
+  commentId: M:Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L(System.String,System.Globalization.CultureInfo,System.Object[])
+  id: L(System.String,System.Globalization.CultureInfo,System.Object[])
+  parent: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  langs:
+  - csharp
+  - vb
+  name: L(String, CultureInfo, Object[])
+  nameWithType: BaseViewComponent.L(String, CultureInfo, Object[])
+  fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L(System.String, System.Globalization.CultureInfo, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/Mvc/Views/BaseViewComponent.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: L
+    path: ../src/Hybrid.AspNetCore/Mvc/Views/BaseViewComponent.cs
+    startLine: 141
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.Mvc.Views
+  summary: "\nGets localized string for given key name and current language with formatting strings.\n"
+  example: []
+  syntax:
+    content: protected string L(string name, CultureInfo culture, params object[] args)
+    parameters:
+    - id: name
+      type: System.String
+      description: Key name
+    - id: culture
+      type: System.Globalization.CultureInfo
+      description: culture information
+    - id: args
+      type: System.Object[]
+      description: Format arguments
+    return:
+      type: System.String
+      description: Localized string
+    content.vb: Protected Function L(name As String, culture As CultureInfo, ParamArray args As Object()) As String
+  overload: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L*
+  nameWithType.vb: BaseViewComponent.L(String, CultureInfo, Object())
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L(System.String, System.Globalization.CultureInfo, System.Object())
+  name.vb: L(String, CultureInfo, Object())
+references:
+- uid: Hybrid.AspNetCore.Mvc.Views
+  commentId: N:Hybrid.AspNetCore.Mvc.Views
+  name: Hybrid.AspNetCore.Mvc.Views
+  nameWithType: Hybrid.AspNetCore.Mvc.Views
+  fullName: Hybrid.AspNetCore.Mvc.Views
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.AspNetCore.Mvc.ViewComponent
+  commentId: T:Microsoft.AspNetCore.Mvc.ViewComponent
+  parent: Microsoft.AspNetCore.Mvc
+  isExternal: true
+  name: ViewComponent
+  nameWithType: ViewComponent
+  fullName: Microsoft.AspNetCore.Mvc.ViewComponent
+- uid: Microsoft.AspNetCore.Mvc.ViewComponent.Content(System.String)
+  commentId: M:Microsoft.AspNetCore.Mvc.ViewComponent.Content(System.String)
+  parent: Microsoft.AspNetCore.Mvc.ViewComponent
+  isExternal: true
+  name: Content(String)
+  nameWithType: ViewComponent.Content(String)
+  fullName: Microsoft.AspNetCore.Mvc.ViewComponent.Content(System.String)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.ViewComponent.Content(System.String)
+    name: Content
+    nameWithType: ViewComponent.Content
+    fullName: Microsoft.AspNetCore.Mvc.ViewComponent.Content
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.ViewComponent.Content(System.String)
+    name: Content
+    nameWithType: ViewComponent.Content
+    fullName: Microsoft.AspNetCore.Mvc.ViewComponent.Content
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Mvc.ViewComponent.View
+  commentId: M:Microsoft.AspNetCore.Mvc.ViewComponent.View
+  parent: Microsoft.AspNetCore.Mvc.ViewComponent
+  isExternal: true
+  name: View()
+  nameWithType: ViewComponent.View()
+  fullName: Microsoft.AspNetCore.Mvc.ViewComponent.View()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.ViewComponent.View
+    name: View
+    nameWithType: ViewComponent.View
+    fullName: Microsoft.AspNetCore.Mvc.ViewComponent.View
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.ViewComponent.View
+    name: View
+    nameWithType: ViewComponent.View
+    fullName: Microsoft.AspNetCore.Mvc.ViewComponent.View
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Mvc.ViewComponent.View(System.String)
+  commentId: M:Microsoft.AspNetCore.Mvc.ViewComponent.View(System.String)
+  parent: Microsoft.AspNetCore.Mvc.ViewComponent
+  isExternal: true
+  name: View(String)
+  nameWithType: ViewComponent.View(String)
+  fullName: Microsoft.AspNetCore.Mvc.ViewComponent.View(System.String)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.ViewComponent.View(System.String)
+    name: View
+    nameWithType: ViewComponent.View
+    fullName: Microsoft.AspNetCore.Mvc.ViewComponent.View
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.ViewComponent.View(System.String)
+    name: View
+    nameWithType: ViewComponent.View
+    fullName: Microsoft.AspNetCore.Mvc.ViewComponent.View
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Mvc.ViewComponent.View``1(System.String,{TModel})
+  commentId: M:Microsoft.AspNetCore.Mvc.ViewComponent.View``1(System.String,``0)
+  parent: Microsoft.AspNetCore.Mvc.ViewComponent
+  definition: Microsoft.AspNetCore.Mvc.ViewComponent.View``1(System.String,``0)
+  name: View<TModel>(String, TModel)
+  nameWithType: ViewComponent.View<TModel>(String, TModel)
+  fullName: Microsoft.AspNetCore.Mvc.ViewComponent.View<TModel>(System.String, TModel)
+  nameWithType.vb: ViewComponent.View(Of TModel)(String, TModel)
+  fullName.vb: Microsoft.AspNetCore.Mvc.ViewComponent.View(Of TModel)(System.String, TModel)
+  name.vb: View(Of TModel)(String, TModel)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.ViewComponent.View``1(System.String,``0)
+    name: View<TModel>
+    nameWithType: ViewComponent.View<TModel>
+    fullName: Microsoft.AspNetCore.Mvc.ViewComponent.View<TModel>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModel
+    nameWithType: TModel
+    fullName: TModel
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.ViewComponent.View``1(System.String,``0)
+    name: View(Of TModel)
+    nameWithType: ViewComponent.View(Of TModel)
+    fullName: Microsoft.AspNetCore.Mvc.ViewComponent.View(Of TModel)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModel
+    nameWithType: TModel
+    fullName: TModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Mvc.ViewComponent.View``1({TModel})
+  commentId: M:Microsoft.AspNetCore.Mvc.ViewComponent.View``1(``0)
+  parent: Microsoft.AspNetCore.Mvc.ViewComponent
+  definition: Microsoft.AspNetCore.Mvc.ViewComponent.View``1(``0)
+  name: View<TModel>(TModel)
+  nameWithType: ViewComponent.View<TModel>(TModel)
+  fullName: Microsoft.AspNetCore.Mvc.ViewComponent.View<TModel>(TModel)
+  nameWithType.vb: ViewComponent.View(Of TModel)(TModel)
+  fullName.vb: Microsoft.AspNetCore.Mvc.ViewComponent.View(Of TModel)(TModel)
+  name.vb: View(Of TModel)(TModel)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.ViewComponent.View``1(``0)
+    name: View<TModel>
+    nameWithType: ViewComponent.View<TModel>
+    fullName: Microsoft.AspNetCore.Mvc.ViewComponent.View<TModel>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TModel
+    nameWithType: TModel
+    fullName: TModel
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.ViewComponent.View``1(``0)
+    name: View(Of TModel)
+    nameWithType: ViewComponent.View(Of TModel)
+    fullName: Microsoft.AspNetCore.Mvc.ViewComponent.View(Of TModel)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TModel
+    nameWithType: TModel
+    fullName: TModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Mvc.ViewComponent.HttpContext
+  commentId: P:Microsoft.AspNetCore.Mvc.ViewComponent.HttpContext
+  parent: Microsoft.AspNetCore.Mvc.ViewComponent
+  isExternal: true
+  name: HttpContext
+  nameWithType: ViewComponent.HttpContext
+  fullName: Microsoft.AspNetCore.Mvc.ViewComponent.HttpContext
+- uid: Microsoft.AspNetCore.Mvc.ViewComponent.ModelState
+  commentId: P:Microsoft.AspNetCore.Mvc.ViewComponent.ModelState
+  parent: Microsoft.AspNetCore.Mvc.ViewComponent
+  isExternal: true
+  name: ModelState
+  nameWithType: ViewComponent.ModelState
+  fullName: Microsoft.AspNetCore.Mvc.ViewComponent.ModelState
+- uid: Microsoft.AspNetCore.Mvc.ViewComponent.Request
+  commentId: P:Microsoft.AspNetCore.Mvc.ViewComponent.Request
+  parent: Microsoft.AspNetCore.Mvc.ViewComponent
+  isExternal: true
+  name: Request
+  nameWithType: ViewComponent.Request
+  fullName: Microsoft.AspNetCore.Mvc.ViewComponent.Request
+- uid: Microsoft.AspNetCore.Mvc.ViewComponent.RouteData
+  commentId: P:Microsoft.AspNetCore.Mvc.ViewComponent.RouteData
+  parent: Microsoft.AspNetCore.Mvc.ViewComponent
+  isExternal: true
+  name: RouteData
+  nameWithType: ViewComponent.RouteData
+  fullName: Microsoft.AspNetCore.Mvc.ViewComponent.RouteData
+- uid: Microsoft.AspNetCore.Mvc.ViewComponent.TempData
+  commentId: P:Microsoft.AspNetCore.Mvc.ViewComponent.TempData
+  parent: Microsoft.AspNetCore.Mvc.ViewComponent
+  isExternal: true
+  name: TempData
+  nameWithType: ViewComponent.TempData
+  fullName: Microsoft.AspNetCore.Mvc.ViewComponent.TempData
+- uid: Microsoft.AspNetCore.Mvc.ViewComponent.Url
+  commentId: P:Microsoft.AspNetCore.Mvc.ViewComponent.Url
+  parent: Microsoft.AspNetCore.Mvc.ViewComponent
+  isExternal: true
+  name: Url
+  nameWithType: ViewComponent.Url
+  fullName: Microsoft.AspNetCore.Mvc.ViewComponent.Url
+- uid: Microsoft.AspNetCore.Mvc.ViewComponent.User
+  commentId: P:Microsoft.AspNetCore.Mvc.ViewComponent.User
+  parent: Microsoft.AspNetCore.Mvc.ViewComponent
+  isExternal: true
+  name: User
+  nameWithType: ViewComponent.User
+  fullName: Microsoft.AspNetCore.Mvc.ViewComponent.User
+- uid: Microsoft.AspNetCore.Mvc.ViewComponent.UserClaimsPrincipal
+  commentId: P:Microsoft.AspNetCore.Mvc.ViewComponent.UserClaimsPrincipal
+  parent: Microsoft.AspNetCore.Mvc.ViewComponent
+  isExternal: true
+  name: UserClaimsPrincipal
+  nameWithType: ViewComponent.UserClaimsPrincipal
+  fullName: Microsoft.AspNetCore.Mvc.ViewComponent.UserClaimsPrincipal
+- uid: Microsoft.AspNetCore.Mvc.ViewComponent.ViewBag
+  commentId: P:Microsoft.AspNetCore.Mvc.ViewComponent.ViewBag
+  parent: Microsoft.AspNetCore.Mvc.ViewComponent
+  isExternal: true
+  name: ViewBag
+  nameWithType: ViewComponent.ViewBag
+  fullName: Microsoft.AspNetCore.Mvc.ViewComponent.ViewBag
+- uid: Microsoft.AspNetCore.Mvc.ViewComponent.ViewComponentContext
+  commentId: P:Microsoft.AspNetCore.Mvc.ViewComponent.ViewComponentContext
+  parent: Microsoft.AspNetCore.Mvc.ViewComponent
+  isExternal: true
+  name: ViewComponentContext
+  nameWithType: ViewComponent.ViewComponentContext
+  fullName: Microsoft.AspNetCore.Mvc.ViewComponent.ViewComponentContext
+- uid: Microsoft.AspNetCore.Mvc.ViewComponent.ViewContext
+  commentId: P:Microsoft.AspNetCore.Mvc.ViewComponent.ViewContext
+  parent: Microsoft.AspNetCore.Mvc.ViewComponent
+  isExternal: true
+  name: ViewContext
+  nameWithType: ViewComponent.ViewContext
+  fullName: Microsoft.AspNetCore.Mvc.ViewComponent.ViewContext
+- uid: Microsoft.AspNetCore.Mvc.ViewComponent.ViewData
+  commentId: P:Microsoft.AspNetCore.Mvc.ViewComponent.ViewData
+  parent: Microsoft.AspNetCore.Mvc.ViewComponent
+  isExternal: true
+  name: ViewData
+  nameWithType: ViewComponent.ViewData
+  fullName: Microsoft.AspNetCore.Mvc.ViewComponent.ViewData
+- uid: Microsoft.AspNetCore.Mvc.ViewComponent.ViewEngine
+  commentId: P:Microsoft.AspNetCore.Mvc.ViewComponent.ViewEngine
+  parent: Microsoft.AspNetCore.Mvc.ViewComponent
+  isExternal: true
+  name: ViewEngine
+  nameWithType: ViewComponent.ViewEngine
+  fullName: Microsoft.AspNetCore.Mvc.ViewComponent.ViewEngine
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Extensions.ObjectExtensions.CastTo(System.Type)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+  name: CastTo(Type)
+  nameWithType: ObjectExtensions.CastTo(Type)
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo(System.Type)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo(System.Type)
+    name: CastTo
+    nameWithType: ObjectExtensions.CastTo
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo(System.Type)
+    name: CastTo
+    nameWithType: ObjectExtensions.CastTo
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Extensions.ObjectExtensions.CastTo``1
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+  name: CastTo<T>()
+  nameWithType: ObjectExtensions.CastTo<T>()
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>()
+  nameWithType.vb: ObjectExtensions.CastTo(Of T)()
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)()
+  name.vb: CastTo(Of T)()
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1
+    name: CastTo<T>
+    nameWithType: ObjectExtensions.CastTo<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1
+    name: CastTo(Of T)
+    nameWithType: ObjectExtensions.CastTo(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Extensions.ObjectExtensions.CastTo``1({T})
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+  name: CastTo<T>(T)
+  nameWithType: ObjectExtensions.CastTo<T>(T)
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>(T)
+  nameWithType.vb: ObjectExtensions.CastTo(Of T)(T)
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)(T)
+  name.vb: CastTo(Of T)(T)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(``0)
+    name: CastTo<T>
+    nameWithType: ObjectExtensions.CastTo<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(``0)
+    name: CastTo(Of T)
+    nameWithType: ObjectExtensions.CastTo(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Hybrid.Extensions.ObjectExtensions.IsIn``1(Hybrid.AspNetCore.Mvc.Views.BaseViewComponent[])
+  commentId: M:Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+  name: IsIn<BaseViewComponent>(BaseViewComponent[])
+  nameWithType: ObjectExtensions.IsIn<BaseViewComponent>(BaseViewComponent[])
+  fullName: Hybrid.Extensions.ObjectExtensions.IsIn<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent>(Hybrid.AspNetCore.Mvc.Views.BaseViewComponent[])
+  nameWithType.vb: ObjectExtensions.IsIn(Of BaseViewComponent)(BaseViewComponent())
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.IsIn(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent)(Hybrid.AspNetCore.Mvc.Views.BaseViewComponent())
+  name.vb: IsIn(Of BaseViewComponent)(BaseViewComponent())
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0[])
+    name: IsIn<BaseViewComponent>
+    nameWithType: ObjectExtensions.IsIn<BaseViewComponent>
+    fullName: Hybrid.Extensions.ObjectExtensions.IsIn<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+    name: BaseViewComponent
+    nameWithType: BaseViewComponent
+    fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0[])
+    name: IsIn(Of BaseViewComponent)
+    nameWithType: ObjectExtensions.IsIn(Of BaseViewComponent)
+    fullName: Hybrid.Extensions.ObjectExtensions.IsIn(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+    name: BaseViewComponent
+    nameWithType: BaseViewComponent
+    fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Extensions.ObjectExtensions.ToDynamic
+  commentId: M:Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  name: ToDynamic()
+  nameWithType: ObjectExtensions.ToDynamic()
+  fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic()
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.ToDynamic
+    name: ToDynamic
+    nameWithType: ObjectExtensions.ToDynamic
+    fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.ToDynamic
+    name: ToDynamic
+    nameWithType: ObjectExtensions.ToDynamic
+    fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Hybrid.Extensions.ObjectExtensions.DeepClone``1
+  commentId: M:Hybrid.Extensions.ObjectExtensions.DeepClone``1(``0)
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.DeepClone``1(``0)
+  name: DeepClone<BaseViewComponent>()
+  nameWithType: ObjectExtensions.DeepClone<BaseViewComponent>()
+  fullName: Hybrid.Extensions.ObjectExtensions.DeepClone<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent>()
+  nameWithType.vb: ObjectExtensions.DeepClone(Of BaseViewComponent)()
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.DeepClone(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent)()
+  name.vb: DeepClone(Of BaseViewComponent)()
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.DeepClone``1
+    name: DeepClone<BaseViewComponent>
+    nameWithType: ObjectExtensions.DeepClone<BaseViewComponent>
+    fullName: Hybrid.Extensions.ObjectExtensions.DeepClone<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.DeepClone``1
+    name: DeepClone(Of BaseViewComponent)
+    nameWithType: ObjectExtensions.DeepClone(Of BaseViewComponent)
+    fullName: Hybrid.Extensions.ObjectExtensions.DeepClone(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Hybrid.Extensions.ParameterCheckExtensions.Required``1(System.Func{Hybrid.AspNetCore.Mvc.Views.BaseViewComponent,System.Boolean},System.String)
+  commentId: M:Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+  parent: Hybrid.Extensions.ParameterCheckExtensions
+  definition: Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+  name: Required<BaseViewComponent>(Func<BaseViewComponent, Boolean>, String)
+  nameWithType: ParameterCheckExtensions.Required<BaseViewComponent>(Func<BaseViewComponent, Boolean>, String)
+  fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent>(System.Func<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, System.Boolean>, System.String)
+  nameWithType.vb: ParameterCheckExtensions.Required(Of BaseViewComponent)(Func(Of BaseViewComponent, Boolean), String)
+  fullName.vb: Hybrid.Extensions.ParameterCheckExtensions.Required(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent)(System.Func(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, System.Boolean), System.String)
+  name.vb: Required(Of BaseViewComponent)(Func(Of BaseViewComponent, Boolean), String)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``1(System.Func{``0,System.Boolean},System.String)
+    name: Required<BaseViewComponent>
+    nameWithType: ParameterCheckExtensions.Required<BaseViewComponent>
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+    name: BaseViewComponent
+    nameWithType: BaseViewComponent
+    fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``1(System.Func{``0,System.Boolean},System.String)
+    name: Required(Of BaseViewComponent)
+    nameWithType: ParameterCheckExtensions.Required(Of BaseViewComponent)
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+    name: BaseViewComponent
+    nameWithType: BaseViewComponent
+    fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Hybrid.Extensions.ParameterCheckExtensions.Required``2(System.Func{Hybrid.AspNetCore.Mvc.Views.BaseViewComponent,System.Boolean},System.String)
+  commentId: M:Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+  parent: Hybrid.Extensions.ParameterCheckExtensions
+  definition: Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+  name: Required<BaseViewComponent, TException>(Func<BaseViewComponent, Boolean>, String)
+  nameWithType: ParameterCheckExtensions.Required<BaseViewComponent, TException>(Func<BaseViewComponent, Boolean>, String)
+  fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TException>(System.Func<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, System.Boolean>, System.String)
+  nameWithType.vb: ParameterCheckExtensions.Required(Of BaseViewComponent, TException)(Func(Of BaseViewComponent, Boolean), String)
+  fullName.vb: Hybrid.Extensions.ParameterCheckExtensions.Required(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TException)(System.Func(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, System.Boolean), System.String)
+  name.vb: Required(Of BaseViewComponent, TException)(Func(Of BaseViewComponent, Boolean), String)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``2(System.Func{``0,System.Boolean},System.String)
+    name: Required<BaseViewComponent, TException>
+    nameWithType: ParameterCheckExtensions.Required<BaseViewComponent, TException>
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TException>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+    name: BaseViewComponent
+    nameWithType: BaseViewComponent
+    fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``2(System.Func{``0,System.Boolean},System.String)
+    name: Required(Of BaseViewComponent, TException)
+    nameWithType: ParameterCheckExtensions.Required(Of BaseViewComponent, TException)
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TException)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+    name: BaseViewComponent
+    nameWithType: BaseViewComponent
+    fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(System.String)
+  commentId: M:Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(``0,System.String)
+  parent: Hybrid.Extensions.ParameterCheckExtensions
+  definition: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(``0,System.String)
+  name: CheckNotNull<BaseViewComponent>(String)
+  nameWithType: ParameterCheckExtensions.CheckNotNull<BaseViewComponent>(String)
+  fullName: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent>(System.String)
+  nameWithType.vb: ParameterCheckExtensions.CheckNotNull(Of BaseViewComponent)(String)
+  fullName.vb: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent)(System.String)
+  name.vb: CheckNotNull(Of BaseViewComponent)(String)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(System.String)
+    name: CheckNotNull<BaseViewComponent>
+    nameWithType: ParameterCheckExtensions.CheckNotNull<BaseViewComponent>
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(System.String)
+    name: CheckNotNull(Of BaseViewComponent)
+    nameWithType: ParameterCheckExtensions.CheckNotNull(Of BaseViewComponent)
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Hybrid.Extensions.TryCatchExtensions.TryCatch``1(System.Action{Hybrid.AspNetCore.Mvc.Views.BaseViewComponent},System.Action{System.Exception},System.Action{Hybrid.AspNetCore.Mvc.Views.BaseViewComponent})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception},System.Action{``0})
+  parent: Hybrid.Extensions.TryCatchExtensions
+  definition: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception},System.Action{``0})
+  name: TryCatch<BaseViewComponent>(Action<BaseViewComponent>, Action<Exception>, Action<BaseViewComponent>)
+  nameWithType: TryCatchExtensions.TryCatch<BaseViewComponent>(Action<BaseViewComponent>, Action<Exception>, Action<BaseViewComponent>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent>(System.Action<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent>, System.Action<System.Exception>, System.Action<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent>)
+  nameWithType.vb: TryCatchExtensions.TryCatch(Of BaseViewComponent)(Action(Of BaseViewComponent), Action(Of Exception), Action(Of BaseViewComponent))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent)(System.Action(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent), System.Action(Of System.Exception), System.Action(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent))
+  name.vb: TryCatch(Of BaseViewComponent)(Action(Of BaseViewComponent), Action(Of Exception), Action(Of BaseViewComponent))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(System.Action{``0},System.Action{System.Exception},System.Action{``0})
+    name: TryCatch<BaseViewComponent>
+    nameWithType: TryCatchExtensions.TryCatch<BaseViewComponent>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+    name: BaseViewComponent
+    nameWithType: BaseViewComponent
+    fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+    name: BaseViewComponent
+    nameWithType: BaseViewComponent
+    fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(System.Action{``0},System.Action{System.Exception},System.Action{``0})
+    name: TryCatch(Of BaseViewComponent)
+    nameWithType: TryCatchExtensions.TryCatch(Of BaseViewComponent)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+    name: BaseViewComponent
+    nameWithType: BaseViewComponent
+    fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+    name: BaseViewComponent
+    nameWithType: BaseViewComponent
+    fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Hybrid.Extensions.TryCatchExtensions.TryCatch``1(System.Action{Hybrid.AspNetCore.Mvc.Views.BaseViewComponent},System.Action{System.Exception})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception})
+  parent: Hybrid.Extensions.TryCatchExtensions
+  definition: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception})
+  name: TryCatch<BaseViewComponent>(Action<BaseViewComponent>, Action<Exception>)
+  nameWithType: TryCatchExtensions.TryCatch<BaseViewComponent>(Action<BaseViewComponent>, Action<Exception>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent>(System.Action<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent>, System.Action<System.Exception>)
+  nameWithType.vb: TryCatchExtensions.TryCatch(Of BaseViewComponent)(Action(Of BaseViewComponent), Action(Of Exception))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent)(System.Action(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent), System.Action(Of System.Exception))
+  name.vb: TryCatch(Of BaseViewComponent)(Action(Of BaseViewComponent), Action(Of Exception))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(System.Action{``0},System.Action{System.Exception})
+    name: TryCatch<BaseViewComponent>
+    nameWithType: TryCatchExtensions.TryCatch<BaseViewComponent>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+    name: BaseViewComponent
+    nameWithType: BaseViewComponent
+    fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(System.Action{``0},System.Action{System.Exception})
+    name: TryCatch(Of BaseViewComponent)
+    nameWithType: TryCatchExtensions.TryCatch(Of BaseViewComponent)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+    name: BaseViewComponent
+    nameWithType: BaseViewComponent
+    fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Hybrid.Extensions.TryCatchExtensions.TryCatch``2(System.Func{Hybrid.AspNetCore.Mvc.Views.BaseViewComponent,{TResult}},System.Action{System.Exception},System.Action{Hybrid.AspNetCore.Mvc.Views.BaseViewComponent})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception},System.Action{``0})
+  parent: Hybrid.Extensions.TryCatchExtensions
+  definition: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception},System.Action{``0})
+  name: TryCatch<BaseViewComponent, TResult>(Func<BaseViewComponent, TResult>, Action<Exception>, Action<BaseViewComponent>)
+  nameWithType: TryCatchExtensions.TryCatch<BaseViewComponent, TResult>(Func<BaseViewComponent, TResult>, Action<Exception>, Action<BaseViewComponent>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TResult>(System.Func<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TResult>, System.Action<System.Exception>, System.Action<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent>)
+  nameWithType.vb: TryCatchExtensions.TryCatch(Of BaseViewComponent, TResult)(Func(Of BaseViewComponent, TResult), Action(Of Exception), Action(Of BaseViewComponent))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TResult)(System.Func(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TResult), System.Action(Of System.Exception), System.Action(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent))
+  name.vb: TryCatch(Of BaseViewComponent, TResult)(Func(Of BaseViewComponent, TResult), Action(Of Exception), Action(Of BaseViewComponent))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(System.Func{``0,``1},System.Action{System.Exception},System.Action{``0})
+    name: TryCatch<BaseViewComponent, TResult>
+    nameWithType: TryCatchExtensions.TryCatch<BaseViewComponent, TResult>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+    name: BaseViewComponent
+    nameWithType: BaseViewComponent
+    fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+    name: BaseViewComponent
+    nameWithType: BaseViewComponent
+    fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(System.Func{``0,``1},System.Action{System.Exception},System.Action{``0})
+    name: TryCatch(Of BaseViewComponent, TResult)
+    nameWithType: TryCatchExtensions.TryCatch(Of BaseViewComponent, TResult)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+    name: BaseViewComponent
+    nameWithType: BaseViewComponent
+    fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+    name: BaseViewComponent
+    nameWithType: BaseViewComponent
+    fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Hybrid.Extensions.TryCatchExtensions.TryCatch``2(System.Func{Hybrid.AspNetCore.Mvc.Views.BaseViewComponent,{TResult}},System.Action{System.Exception})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception})
+  parent: Hybrid.Extensions.TryCatchExtensions
+  definition: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception})
+  name: TryCatch<BaseViewComponent, TResult>(Func<BaseViewComponent, TResult>, Action<Exception>)
+  nameWithType: TryCatchExtensions.TryCatch<BaseViewComponent, TResult>(Func<BaseViewComponent, TResult>, Action<Exception>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TResult>(System.Func<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TResult>, System.Action<System.Exception>)
+  nameWithType.vb: TryCatchExtensions.TryCatch(Of BaseViewComponent, TResult)(Func(Of BaseViewComponent, TResult), Action(Of Exception))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TResult)(System.Func(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TResult), System.Action(Of System.Exception))
+  name.vb: TryCatch(Of BaseViewComponent, TResult)(Func(Of BaseViewComponent, TResult), Action(Of Exception))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(System.Func{``0,``1},System.Action{System.Exception})
+    name: TryCatch<BaseViewComponent, TResult>
+    nameWithType: TryCatchExtensions.TryCatch<BaseViewComponent, TResult>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+    name: BaseViewComponent
+    nameWithType: BaseViewComponent
+    fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(System.Func{``0,``1},System.Action{System.Exception})
+    name: TryCatch(Of BaseViewComponent, TResult)
+    nameWithType: TryCatchExtensions.TryCatch(Of BaseViewComponent, TResult)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+    name: BaseViewComponent
+    nameWithType: BaseViewComponent
+    fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Hybrid.Extensions.TryCatchExtensions.TryFinally``1(System.Action{Hybrid.AspNetCore.Mvc.Views.BaseViewComponent},System.Action{Hybrid.AspNetCore.Mvc.Views.BaseViewComponent})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryFinally``1(``0,System.Action{``0},System.Action{``0})
+  parent: Hybrid.Extensions.TryCatchExtensions
+  definition: Hybrid.Extensions.TryCatchExtensions.TryFinally``1(``0,System.Action{``0},System.Action{``0})
+  name: TryFinally<BaseViewComponent>(Action<BaseViewComponent>, Action<BaseViewComponent>)
+  nameWithType: TryCatchExtensions.TryFinally<BaseViewComponent>(Action<BaseViewComponent>, Action<BaseViewComponent>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryFinally<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent>(System.Action<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent>, System.Action<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent>)
+  nameWithType.vb: TryCatchExtensions.TryFinally(Of BaseViewComponent)(Action(Of BaseViewComponent), Action(Of BaseViewComponent))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryFinally(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent)(System.Action(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent), System.Action(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent))
+  name.vb: TryFinally(Of BaseViewComponent)(Action(Of BaseViewComponent), Action(Of BaseViewComponent))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryFinally``1(System.Action{``0},System.Action{``0})
+    name: TryFinally<BaseViewComponent>
+    nameWithType: TryCatchExtensions.TryFinally<BaseViewComponent>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryFinally<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+    name: BaseViewComponent
+    nameWithType: BaseViewComponent
+    fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+    name: BaseViewComponent
+    nameWithType: BaseViewComponent
+    fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryFinally``1(System.Action{``0},System.Action{``0})
+    name: TryFinally(Of BaseViewComponent)
+    nameWithType: TryCatchExtensions.TryFinally(Of BaseViewComponent)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryFinally(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+    name: BaseViewComponent
+    nameWithType: BaseViewComponent
+    fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+    name: BaseViewComponent
+    nameWithType: BaseViewComponent
+    fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Json.JsonExtensions.ToJsonString(System.Boolean,System.Boolean)
+  commentId: M:Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+  parent: Hybrid.Json.JsonExtensions
+  definition: Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+  name: ToJsonString(Boolean, Boolean)
+  nameWithType: JsonExtensions.ToJsonString(Boolean, Boolean)
+  fullName: Hybrid.Json.JsonExtensions.ToJsonString(System.Boolean, System.Boolean)
+  spec.csharp:
+  - uid: Hybrid.Json.JsonExtensions.ToJsonString(System.Boolean,System.Boolean)
+    name: ToJsonString
+    nameWithType: JsonExtensions.ToJsonString
+    fullName: Hybrid.Json.JsonExtensions.ToJsonString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Json.JsonExtensions.ToJsonString(System.Boolean,System.Boolean)
+    name: ToJsonString
+    nameWithType: JsonExtensions.ToJsonString
+    fullName: Hybrid.Json.JsonExtensions.ToJsonString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Mapping.MapperExtensions.MapTo``1
+  commentId: M:Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+  parent: Hybrid.Mapping.MapperExtensions
+  definition: Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+  name: MapTo<TTarget>()
+  nameWithType: MapperExtensions.MapTo<TTarget>()
+  fullName: Hybrid.Mapping.MapperExtensions.MapTo<TTarget>()
+  nameWithType.vb: MapperExtensions.MapTo(Of TTarget)()
+  fullName.vb: Hybrid.Mapping.MapperExtensions.MapTo(Of TTarget)()
+  name.vb: MapTo(Of TTarget)()
+  spec.csharp:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``1
+    name: MapTo<TTarget>
+    nameWithType: MapperExtensions.MapTo<TTarget>
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo<TTarget>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``1
+    name: MapTo(Of TTarget)
+    nameWithType: MapperExtensions.MapTo(Of TTarget)
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo(Of TTarget)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Hybrid.Mapping.MapperExtensions.MapTo``2({TTarget})
+  commentId: M:Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+  parent: Hybrid.Mapping.MapperExtensions
+  definition: Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+  name: MapTo<BaseViewComponent, TTarget>(TTarget)
+  nameWithType: MapperExtensions.MapTo<BaseViewComponent, TTarget>(TTarget)
+  fullName: Hybrid.Mapping.MapperExtensions.MapTo<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TTarget>(TTarget)
+  nameWithType.vb: MapperExtensions.MapTo(Of BaseViewComponent, TTarget)(TTarget)
+  fullName.vb: Hybrid.Mapping.MapperExtensions.MapTo(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TTarget)(TTarget)
+  name.vb: MapTo(Of BaseViewComponent, TTarget)(TTarget)
+  spec.csharp:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``2(``1)
+    name: MapTo<BaseViewComponent, TTarget>
+    nameWithType: MapperExtensions.MapTo<BaseViewComponent, TTarget>
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TTarget>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TTarget
+    nameWithType: TTarget
+    fullName: TTarget
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``2(``1)
+    name: MapTo(Of BaseViewComponent, TTarget)
+    nameWithType: MapperExtensions.MapTo(Of BaseViewComponent, TTarget)
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TTarget)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TTarget
+    nameWithType: TTarget
+    fullName: TTarget
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Reflection.LockExtensions.Locking(System.Action)
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+  parent: Hybrid.Reflection.LockExtensions
+  definition: Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+  name: Locking(Action)
+  nameWithType: LockExtensions.Locking(Action)
+  fullName: Hybrid.Reflection.LockExtensions.Locking(System.Action)
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking(System.Action)
+    name: Locking
+    nameWithType: LockExtensions.Locking
+    fullName: Hybrid.Reflection.LockExtensions.Locking
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking(System.Action)
+    name: Locking
+    nameWithType: LockExtensions.Locking
+    fullName: Hybrid.Reflection.LockExtensions.Locking
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Hybrid.Reflection.LockExtensions.Locking``1(System.Action{Hybrid.AspNetCore.Mvc.Views.BaseViewComponent})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+  parent: Hybrid.Reflection.LockExtensions
+  definition: Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+  name: Locking<BaseViewComponent>(Action<BaseViewComponent>)
+  nameWithType: LockExtensions.Locking<BaseViewComponent>(Action<BaseViewComponent>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent>(System.Action<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent>)
+  nameWithType.vb: LockExtensions.Locking(Of BaseViewComponent)(Action(Of BaseViewComponent))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent)(System.Action(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent))
+  name.vb: Locking(Of BaseViewComponent)(Action(Of BaseViewComponent))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Action{``0})
+    name: Locking<BaseViewComponent>
+    nameWithType: LockExtensions.Locking<BaseViewComponent>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+    name: BaseViewComponent
+    nameWithType: BaseViewComponent
+    fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Action{``0})
+    name: Locking(Of BaseViewComponent)
+    nameWithType: LockExtensions.Locking(Of BaseViewComponent)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+    name: BaseViewComponent
+    nameWithType: BaseViewComponent
+    fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Reflection.LockExtensions.Locking``1(System.Func{{TResult}})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+  parent: Hybrid.Reflection.LockExtensions
+  definition: Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+  name: Locking<TResult>(Func<TResult>)
+  nameWithType: LockExtensions.Locking<TResult>(Func<TResult>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<TResult>(System.Func<TResult>)
+  nameWithType.vb: LockExtensions.Locking(Of TResult)(Func(Of TResult))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of TResult)(System.Func(Of TResult))
+  name.vb: Locking(Of TResult)(Func(Of TResult))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Func{``0})
+    name: Locking<TResult>
+    nameWithType: LockExtensions.Locking<TResult>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Func{``0})
+    name: Locking(Of TResult)
+    nameWithType: LockExtensions.Locking(Of TResult)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Hybrid.Reflection.LockExtensions.Locking``2(System.Func{Hybrid.AspNetCore.Mvc.Views.BaseViewComponent,{TResult}})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+  parent: Hybrid.Reflection.LockExtensions
+  definition: Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+  name: Locking<BaseViewComponent, TResult>(Func<BaseViewComponent, TResult>)
+  nameWithType: LockExtensions.Locking<BaseViewComponent, TResult>(Func<BaseViewComponent, TResult>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TResult>(System.Func<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TResult>)
+  nameWithType.vb: LockExtensions.Locking(Of BaseViewComponent, TResult)(Func(Of BaseViewComponent, TResult))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TResult)(System.Func(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TResult))
+  name.vb: Locking(Of BaseViewComponent, TResult)(Func(Of BaseViewComponent, TResult))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``2(System.Func{``0,``1})
+    name: Locking<BaseViewComponent, TResult>
+    nameWithType: LockExtensions.Locking<BaseViewComponent, TResult>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+    name: BaseViewComponent
+    nameWithType: BaseViewComponent
+    fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``2(System.Func{``0,``1})
+    name: Locking(Of BaseViewComponent, TResult)
+    nameWithType: LockExtensions.Locking(Of BaseViewComponent, TResult)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+    name: BaseViewComponent
+    nameWithType: BaseViewComponent
+    fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+  parent: Hybrid.Domain.Entities.EntityExtensions
+  definition: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+  name: CheckICreatedTime<BaseViewComponent, TKey>()
+  nameWithType: EntityExtensions.CheckICreatedTime<BaseViewComponent, TKey>()
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TKey>()
+  nameWithType.vb: EntityExtensions.CheckICreatedTime(Of BaseViewComponent, TKey)()
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TKey)()
+  name.vb: CheckICreatedTime(Of BaseViewComponent, TKey)()
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2
+    name: CheckICreatedTime<BaseViewComponent, TKey>
+    nameWithType: EntityExtensions.CheckICreatedTime<BaseViewComponent, TKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2
+    name: CheckICreatedTime(Of BaseViewComponent, TKey)
+    nameWithType: EntityExtensions.CheckICreatedTime(Of BaseViewComponent, TKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(System.Security.Principal.IPrincipal)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+  parent: Hybrid.Domain.Entities.EntityExtensions
+  definition: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+  name: CheckICreationAudited<BaseViewComponent, TKey, TUserKey>(IPrincipal)
+  nameWithType: EntityExtensions.CheckICreationAudited<BaseViewComponent, TKey, TUserKey>(IPrincipal)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TKey, TUserKey>(System.Security.Principal.IPrincipal)
+  nameWithType.vb: EntityExtensions.CheckICreationAudited(Of BaseViewComponent, TKey, TUserKey)(IPrincipal)
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TKey, TUserKey)(System.Security.Principal.IPrincipal)
+  name.vb: CheckICreationAudited(Of BaseViewComponent, TKey, TUserKey)(IPrincipal)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(System.Security.Principal.IPrincipal)
+    name: CheckICreationAudited<BaseViewComponent, TKey, TUserKey>
+    nameWithType: EntityExtensions.CheckICreationAudited<BaseViewComponent, TKey, TUserKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TKey, TUserKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(System.Security.Principal.IPrincipal)
+    name: CheckICreationAudited(Of BaseViewComponent, TKey, TUserKey)
+    nameWithType: EntityExtensions.CheckICreationAudited(Of BaseViewComponent, TKey, TUserKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TKey, TUserKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(System.Security.Principal.IPrincipal)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+  parent: Hybrid.Domain.Entities.EntityExtensions
+  definition: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+  name: CheckIUpdateAudited<BaseViewComponent, TKey, TUserKey>(IPrincipal)
+  nameWithType: EntityExtensions.CheckIUpdateAudited<BaseViewComponent, TKey, TUserKey>(IPrincipal)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TKey, TUserKey>(System.Security.Principal.IPrincipal)
+  nameWithType.vb: EntityExtensions.CheckIUpdateAudited(Of BaseViewComponent, TKey, TUserKey)(IPrincipal)
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TKey, TUserKey)(System.Security.Principal.IPrincipal)
+  name.vb: CheckIUpdateAudited(Of BaseViewComponent, TKey, TUserKey)(IPrincipal)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(System.Security.Principal.IPrincipal)
+    name: CheckIUpdateAudited<BaseViewComponent, TKey, TUserKey>
+    nameWithType: EntityExtensions.CheckIUpdateAudited<BaseViewComponent, TKey, TUserKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited<Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TKey, TUserKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(System.Security.Principal.IPrincipal)
+    name: CheckIUpdateAudited(Of BaseViewComponent, TKey, TUserKey)
+    nameWithType: EntityExtensions.CheckIUpdateAudited(Of BaseViewComponent, TKey, TUserKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited(Of Hybrid.AspNetCore.Mvc.Views.BaseViewComponent, TKey, TUserKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.AspNetCore.Mvc
+  commentId: N:Microsoft.AspNetCore.Mvc
+  isExternal: true
+  name: Microsoft.AspNetCore.Mvc
+  nameWithType: Microsoft.AspNetCore.Mvc
+  fullName: Microsoft.AspNetCore.Mvc
+- uid: Microsoft.AspNetCore.Mvc.ViewComponent.View``1(System.String,``0)
+  commentId: M:Microsoft.AspNetCore.Mvc.ViewComponent.View``1(System.String,``0)
+  isExternal: true
+  name: View<TModel>(String, TModel)
+  nameWithType: ViewComponent.View<TModel>(String, TModel)
+  fullName: Microsoft.AspNetCore.Mvc.ViewComponent.View<TModel>(System.String, TModel)
+  nameWithType.vb: ViewComponent.View(Of TModel)(String, TModel)
+  fullName.vb: Microsoft.AspNetCore.Mvc.ViewComponent.View(Of TModel)(System.String, TModel)
+  name.vb: View(Of TModel)(String, TModel)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.ViewComponent.View``1(System.String,``0)
+    name: View<TModel>
+    nameWithType: ViewComponent.View<TModel>
+    fullName: Microsoft.AspNetCore.Mvc.ViewComponent.View<TModel>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModel
+    nameWithType: TModel
+    fullName: TModel
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.ViewComponent.View``1(System.String,``0)
+    name: View(Of TModel)
+    nameWithType: ViewComponent.View(Of TModel)
+    fullName: Microsoft.AspNetCore.Mvc.ViewComponent.View(Of TModel)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModel
+    nameWithType: TModel
+    fullName: TModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Mvc.ViewComponent.View``1(``0)
+  commentId: M:Microsoft.AspNetCore.Mvc.ViewComponent.View``1(``0)
+  isExternal: true
+  name: View<TModel>(TModel)
+  nameWithType: ViewComponent.View<TModel>(TModel)
+  fullName: Microsoft.AspNetCore.Mvc.ViewComponent.View<TModel>(TModel)
+  nameWithType.vb: ViewComponent.View(Of TModel)(TModel)
+  fullName.vb: Microsoft.AspNetCore.Mvc.ViewComponent.View(Of TModel)(TModel)
+  name.vb: View(Of TModel)(TModel)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.ViewComponent.View``1(``0)
+    name: View<TModel>
+    nameWithType: ViewComponent.View<TModel>
+    fullName: Microsoft.AspNetCore.Mvc.ViewComponent.View<TModel>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TModel
+    nameWithType: TModel
+    fullName: TModel
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.ViewComponent.View``1(``0)
+    name: View(Of TModel)
+    nameWithType: ViewComponent.View(Of TModel)
+    fullName: Microsoft.AspNetCore.Mvc.ViewComponent.View(Of TModel)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TModel
+    nameWithType: TModel
+    fullName: TModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+  isExternal: true
+  name: CastTo(Object, Type)
+  nameWithType: ObjectExtensions.CastTo(Object, Type)
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo(System.Object, System.Type)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+    name: CastTo
+    nameWithType: ObjectExtensions.CastTo
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+    name: CastTo
+    nameWithType: ObjectExtensions.CastTo
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ObjectExtensions
+  commentId: T:Hybrid.Extensions.ObjectExtensions
+  parent: Hybrid.Extensions
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: Hybrid.Extensions.ObjectExtensions
+- uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+  isExternal: true
+  name: CastTo<T>(Object)
+  nameWithType: ObjectExtensions.CastTo<T>(Object)
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>(System.Object)
+  nameWithType.vb: ObjectExtensions.CastTo(Of T)(Object)
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)(System.Object)
+  name.vb: CastTo(Of T)(Object)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+    name: CastTo<T>
+    nameWithType: ObjectExtensions.CastTo<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+    name: CastTo(Of T)
+    nameWithType: ObjectExtensions.CastTo(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+  isExternal: true
+  name: CastTo<T>(Object, T)
+  nameWithType: ObjectExtensions.CastTo<T>(Object, T)
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>(System.Object, T)
+  nameWithType.vb: ObjectExtensions.CastTo(Of T)(Object, T)
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)(System.Object, T)
+  name.vb: CastTo(Of T)(Object, T)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+    name: CastTo<T>
+    nameWithType: ObjectExtensions.CastTo<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+    name: CastTo(Of T)
+    nameWithType: ObjectExtensions.CastTo(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+  commentId: M:Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+  name: IsIn<T>(T, T[])
+  nameWithType: ObjectExtensions.IsIn<T>(T, T[])
+  fullName: Hybrid.Extensions.ObjectExtensions.IsIn<T>(T, T[])
+  nameWithType.vb: ObjectExtensions.IsIn(Of T)(T, T())
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.IsIn(Of T)(T, T())
+  name.vb: IsIn(Of T)(T, T())
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+    name: IsIn<T>
+    nameWithType: ObjectExtensions.IsIn<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.IsIn<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+    name: IsIn(Of T)
+    nameWithType: ObjectExtensions.IsIn(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.IsIn(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  isExternal: true
+  name: ToDynamic(Object)
+  nameWithType: ObjectExtensions.ToDynamic(Object)
+  fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+    name: ToDynamic
+    nameWithType: ObjectExtensions.ToDynamic
+    fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+    name: ToDynamic
+    nameWithType: ObjectExtensions.ToDynamic
+    fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ObjectExtensions.DeepClone``1(``0)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.DeepClone``1(``0)
+  name: DeepClone<T>(T)
+  nameWithType: ObjectExtensions.DeepClone<T>(T)
+  fullName: Hybrid.Extensions.ObjectExtensions.DeepClone<T>(T)
+  nameWithType.vb: ObjectExtensions.DeepClone(Of T)(T)
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.DeepClone(Of T)(T)
+  name.vb: DeepClone(Of T)(T)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.DeepClone``1(``0)
+    name: DeepClone<T>
+    nameWithType: ObjectExtensions.DeepClone<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.DeepClone<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.DeepClone``1(``0)
+    name: DeepClone(Of T)
+    nameWithType: ObjectExtensions.DeepClone(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.DeepClone(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+  commentId: M:Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+  isExternal: true
+  name: Required<T>(T, Func<T, Boolean>, String)
+  nameWithType: ParameterCheckExtensions.Required<T>(T, Func<T, Boolean>, String)
+  fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<T>(T, System.Func<T, System.Boolean>, System.String)
+  nameWithType.vb: ParameterCheckExtensions.Required(Of T)(T, Func(Of T, Boolean), String)
+  fullName.vb: Hybrid.Extensions.ParameterCheckExtensions.Required(Of T)(T, System.Func(Of T, System.Boolean), System.String)
+  name.vb: Required(Of T)(T, Func(Of T, Boolean), String)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+    name: Required<T>
+    nameWithType: ParameterCheckExtensions.Required<T>
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+    name: Required(Of T)
+    nameWithType: ParameterCheckExtensions.Required(Of T)
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ParameterCheckExtensions
+  commentId: T:Hybrid.Extensions.ParameterCheckExtensions
+  parent: Hybrid.Extensions
+  name: ParameterCheckExtensions
+  nameWithType: ParameterCheckExtensions
+  fullName: Hybrid.Extensions.ParameterCheckExtensions
+- uid: Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+  commentId: M:Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+  isExternal: true
+  name: Required<T, TException>(T, Func<T, Boolean>, String)
+  nameWithType: ParameterCheckExtensions.Required<T, TException>(T, Func<T, Boolean>, String)
+  fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<T, TException>(T, System.Func<T, System.Boolean>, System.String)
+  nameWithType.vb: ParameterCheckExtensions.Required(Of T, TException)(T, Func(Of T, Boolean), String)
+  fullName.vb: Hybrid.Extensions.ParameterCheckExtensions.Required(Of T, TException)(T, System.Func(Of T, System.Boolean), System.String)
+  name.vb: Required(Of T, TException)(T, Func(Of T, Boolean), String)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+    name: Required<T, TException>
+    nameWithType: ParameterCheckExtensions.Required<T, TException>
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<T, TException>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+    name: Required(Of T, TException)
+    nameWithType: ParameterCheckExtensions.Required(Of T, TException)
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required(Of T, TException)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(``0,System.String)
+  commentId: M:Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(``0,System.String)
+  isExternal: true
+  name: CheckNotNull<T>(T, String)
+  nameWithType: ParameterCheckExtensions.CheckNotNull<T>(T, String)
+  fullName: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull<T>(T, System.String)
+  nameWithType.vb: ParameterCheckExtensions.CheckNotNull(Of T)(T, String)
+  fullName.vb: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull(Of T)(T, System.String)
+  name.vb: CheckNotNull(Of T)(T, String)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(``0,System.String)
+    name: CheckNotNull<T>
+    nameWithType: ParameterCheckExtensions.CheckNotNull<T>
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(``0,System.String)
+    name: CheckNotNull(Of T)
+    nameWithType: ParameterCheckExtensions.CheckNotNull(Of T)
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception},System.Action{``0})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception},System.Action{``0})
+  isExternal: true
+  name: TryCatch<T>(T, Action<T>, Action<Exception>, Action<T>)
+  nameWithType: TryCatchExtensions.TryCatch<T>(T, Action<T>, Action<Exception>, Action<T>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<T>(T, System.Action<T>, System.Action<System.Exception>, System.Action<T>)
+  nameWithType.vb: TryCatchExtensions.TryCatch(Of T)(T, Action(Of T), Action(Of Exception), Action(Of T))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of T)(T, System.Action(Of T), System.Action(Of System.Exception), System.Action(Of T))
+  name.vb: TryCatch(Of T)(T, Action(Of T), Action(Of Exception), Action(Of T))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception},System.Action{``0})
+    name: TryCatch<T>
+    nameWithType: TryCatchExtensions.TryCatch<T>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception},System.Action{``0})
+    name: TryCatch(Of T)
+    nameWithType: TryCatchExtensions.TryCatch(Of T)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.TryCatchExtensions
+  commentId: T:Hybrid.Extensions.TryCatchExtensions
+  parent: Hybrid.Extensions
+  name: TryCatchExtensions
+  nameWithType: TryCatchExtensions
+  fullName: Hybrid.Extensions.TryCatchExtensions
+- uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception})
+  isExternal: true
+  name: TryCatch<T>(T, Action<T>, Action<Exception>)
+  nameWithType: TryCatchExtensions.TryCatch<T>(T, Action<T>, Action<Exception>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<T>(T, System.Action<T>, System.Action<System.Exception>)
+  nameWithType.vb: TryCatchExtensions.TryCatch(Of T)(T, Action(Of T), Action(Of Exception))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of T)(T, System.Action(Of T), System.Action(Of System.Exception))
+  name.vb: TryCatch(Of T)(T, Action(Of T), Action(Of Exception))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception})
+    name: TryCatch<T>
+    nameWithType: TryCatchExtensions.TryCatch<T>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception})
+    name: TryCatch(Of T)
+    nameWithType: TryCatchExtensions.TryCatch(Of T)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception},System.Action{``0})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception},System.Action{``0})
+  isExternal: true
+  name: TryCatch<T, TResult>(T, Func<T, TResult>, Action<Exception>, Action<T>)
+  nameWithType: TryCatchExtensions.TryCatch<T, TResult>(T, Func<T, TResult>, Action<Exception>, Action<T>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<T, TResult>(T, System.Func<T, TResult>, System.Action<System.Exception>, System.Action<T>)
+  nameWithType.vb: TryCatchExtensions.TryCatch(Of T, TResult)(T, Func(Of T, TResult), Action(Of Exception), Action(Of T))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of T, TResult)(T, System.Func(Of T, TResult), System.Action(Of System.Exception), System.Action(Of T))
+  name.vb: TryCatch(Of T, TResult)(T, Func(Of T, TResult), Action(Of Exception), Action(Of T))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception},System.Action{``0})
+    name: TryCatch<T, TResult>
+    nameWithType: TryCatchExtensions.TryCatch<T, TResult>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<T, TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception},System.Action{``0})
+    name: TryCatch(Of T, TResult)
+    nameWithType: TryCatchExtensions.TryCatch(Of T, TResult)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of T, TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception})
+  isExternal: true
+  name: TryCatch<T, TResult>(T, Func<T, TResult>, Action<Exception>)
+  nameWithType: TryCatchExtensions.TryCatch<T, TResult>(T, Func<T, TResult>, Action<Exception>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<T, TResult>(T, System.Func<T, TResult>, System.Action<System.Exception>)
+  nameWithType.vb: TryCatchExtensions.TryCatch(Of T, TResult)(T, Func(Of T, TResult), Action(Of Exception))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of T, TResult)(T, System.Func(Of T, TResult), System.Action(Of System.Exception))
+  name.vb: TryCatch(Of T, TResult)(T, Func(Of T, TResult), Action(Of Exception))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception})
+    name: TryCatch<T, TResult>
+    nameWithType: TryCatchExtensions.TryCatch<T, TResult>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<T, TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception})
+    name: TryCatch(Of T, TResult)
+    nameWithType: TryCatchExtensions.TryCatch(Of T, TResult)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of T, TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.TryCatchExtensions.TryFinally``1(``0,System.Action{``0},System.Action{``0})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryFinally``1(``0,System.Action{``0},System.Action{``0})
+  isExternal: true
+  name: TryFinally<T>(T, Action<T>, Action<T>)
+  nameWithType: TryCatchExtensions.TryFinally<T>(T, Action<T>, Action<T>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryFinally<T>(T, System.Action<T>, System.Action<T>)
+  nameWithType.vb: TryCatchExtensions.TryFinally(Of T)(T, Action(Of T), Action(Of T))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryFinally(Of T)(T, System.Action(Of T), System.Action(Of T))
+  name.vb: TryFinally(Of T)(T, Action(Of T), Action(Of T))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryFinally``1(``0,System.Action{``0},System.Action{``0})
+    name: TryFinally<T>
+    nameWithType: TryCatchExtensions.TryFinally<T>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryFinally<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryFinally``1(``0,System.Action{``0},System.Action{``0})
+    name: TryFinally(Of T)
+    nameWithType: TryCatchExtensions.TryFinally(Of T)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryFinally(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+  commentId: M:Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+  isExternal: true
+  name: ToJsonString(Object, Boolean, Boolean)
+  nameWithType: JsonExtensions.ToJsonString(Object, Boolean, Boolean)
+  fullName: Hybrid.Json.JsonExtensions.ToJsonString(System.Object, System.Boolean, System.Boolean)
+  spec.csharp:
+  - uid: Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+    name: ToJsonString
+    nameWithType: JsonExtensions.ToJsonString
+    fullName: Hybrid.Json.JsonExtensions.ToJsonString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+    name: ToJsonString
+    nameWithType: JsonExtensions.ToJsonString
+    fullName: Hybrid.Json.JsonExtensions.ToJsonString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Json.JsonExtensions
+  commentId: T:Hybrid.Json.JsonExtensions
+  parent: Hybrid.Json
+  name: JsonExtensions
+  nameWithType: JsonExtensions
+  fullName: Hybrid.Json.JsonExtensions
+- uid: Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+  commentId: M:Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+  isExternal: true
+  name: MapTo<TTarget>(Object)
+  nameWithType: MapperExtensions.MapTo<TTarget>(Object)
+  fullName: Hybrid.Mapping.MapperExtensions.MapTo<TTarget>(System.Object)
+  nameWithType.vb: MapperExtensions.MapTo(Of TTarget)(Object)
+  fullName.vb: Hybrid.Mapping.MapperExtensions.MapTo(Of TTarget)(System.Object)
+  name.vb: MapTo(Of TTarget)(Object)
+  spec.csharp:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+    name: MapTo<TTarget>
+    nameWithType: MapperExtensions.MapTo<TTarget>
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo<TTarget>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+    name: MapTo(Of TTarget)
+    nameWithType: MapperExtensions.MapTo(Of TTarget)
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo(Of TTarget)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Mapping.MapperExtensions
+  commentId: T:Hybrid.Mapping.MapperExtensions
+  parent: Hybrid.Mapping
+  name: MapperExtensions
+  nameWithType: MapperExtensions
+  fullName: Hybrid.Mapping.MapperExtensions
+- uid: Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+  commentId: M:Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+  name: MapTo<TSource, TTarget>(TSource, TTarget)
+  nameWithType: MapperExtensions.MapTo<TSource, TTarget>(TSource, TTarget)
+  fullName: Hybrid.Mapping.MapperExtensions.MapTo<TSource, TTarget>(TSource, TTarget)
+  nameWithType.vb: MapperExtensions.MapTo(Of TSource, TTarget)(TSource, TTarget)
+  fullName.vb: Hybrid.Mapping.MapperExtensions.MapTo(Of TSource, TTarget)(TSource, TTarget)
+  name.vb: MapTo(Of TSource, TTarget)(TSource, TTarget)
+  spec.csharp:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+    name: MapTo<TSource, TTarget>
+    nameWithType: MapperExtensions.MapTo<TSource, TTarget>
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo<TSource, TTarget>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TTarget
+    nameWithType: TTarget
+    fullName: TTarget
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+    name: MapTo(Of TSource, TTarget)
+    nameWithType: MapperExtensions.MapTo(Of TSource, TTarget)
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo(Of TSource, TTarget)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TTarget
+    nameWithType: TTarget
+    fullName: TTarget
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+  isExternal: true
+  name: Locking(Object, Action)
+  nameWithType: LockExtensions.Locking(Object, Action)
+  fullName: Hybrid.Reflection.LockExtensions.Locking(System.Object, System.Action)
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+    name: Locking
+    nameWithType: LockExtensions.Locking
+    fullName: Hybrid.Reflection.LockExtensions.Locking
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+    name: Locking
+    nameWithType: LockExtensions.Locking
+    fullName: Hybrid.Reflection.LockExtensions.Locking
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Reflection.LockExtensions
+  commentId: T:Hybrid.Reflection.LockExtensions
+  parent: Hybrid.Reflection
+  name: LockExtensions
+  nameWithType: LockExtensions
+  fullName: Hybrid.Reflection.LockExtensions
+- uid: Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+  isExternal: true
+  name: Locking<T>(T, Action<T>)
+  nameWithType: LockExtensions.Locking<T>(T, Action<T>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<T>(T, System.Action<T>)
+  nameWithType.vb: LockExtensions.Locking(Of T)(T, Action(Of T))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of T)(T, System.Action(Of T))
+  name.vb: Locking(Of T)(T, Action(Of T))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+    name: Locking<T>
+    nameWithType: LockExtensions.Locking<T>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+    name: Locking(Of T)
+    nameWithType: LockExtensions.Locking(Of T)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+  isExternal: true
+  name: Locking<TResult>(Object, Func<TResult>)
+  nameWithType: LockExtensions.Locking<TResult>(Object, Func<TResult>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<TResult>(System.Object, System.Func<TResult>)
+  nameWithType.vb: LockExtensions.Locking(Of TResult)(Object, Func(Of TResult))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of TResult)(System.Object, System.Func(Of TResult))
+  name.vb: Locking(Of TResult)(Object, Func(Of TResult))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+    name: Locking<TResult>
+    nameWithType: LockExtensions.Locking<TResult>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+    name: Locking(Of TResult)
+    nameWithType: LockExtensions.Locking(Of TResult)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+  isExternal: true
+  name: Locking<TSource, TResult>(TSource, Func<TSource, TResult>)
+  nameWithType: LockExtensions.Locking<TSource, TResult>(TSource, Func<TSource, TResult>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<TSource, TResult>(TSource, System.Func<TSource, TResult>)
+  nameWithType.vb: LockExtensions.Locking(Of TSource, TResult)(TSource, Func(Of TSource, TResult))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of TSource, TResult)(TSource, System.Func(Of TSource, TResult))
+  name.vb: Locking(Of TSource, TResult)(TSource, Func(Of TSource, TResult))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+    name: Locking<TSource, TResult>
+    nameWithType: LockExtensions.Locking<TSource, TResult>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<TSource, TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+    name: Locking(Of TSource, TResult)
+    nameWithType: LockExtensions.Locking(Of TSource, TResult)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of TSource, TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+  name: CheckICreatedTime<TEntity, TKey>(TEntity)
+  nameWithType: EntityExtensions.CheckICreatedTime<TEntity, TKey>(TEntity)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime<TEntity, TKey>(TEntity)
+  nameWithType.vb: EntityExtensions.CheckICreatedTime(Of TEntity, TKey)(TEntity)
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime(Of TEntity, TKey)(TEntity)
+  name.vb: CheckICreatedTime(Of TEntity, TKey)(TEntity)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+    name: CheckICreatedTime<TEntity, TKey>
+    nameWithType: EntityExtensions.CheckICreatedTime<TEntity, TKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime<TEntity, TKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+    name: CheckICreatedTime(Of TEntity, TKey)
+    nameWithType: EntityExtensions.CheckICreatedTime(Of TEntity, TKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime(Of TEntity, TKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Domain.Entities.EntityExtensions
+  commentId: T:Hybrid.Domain.Entities.EntityExtensions
+  parent: Hybrid.Domain.Entities
+  name: EntityExtensions
+  nameWithType: EntityExtensions
+  fullName: Hybrid.Domain.Entities.EntityExtensions
+- uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+  isExternal: true
+  name: CheckICreationAudited<TEntity, TKey, TUserKey>(TEntity, IPrincipal)
+  nameWithType: EntityExtensions.CheckICreationAudited<TEntity, TKey, TUserKey>(TEntity, IPrincipal)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited<TEntity, TKey, TUserKey>(TEntity, System.Security.Principal.IPrincipal)
+  nameWithType.vb: EntityExtensions.CheckICreationAudited(Of TEntity, TKey, TUserKey)(TEntity, IPrincipal)
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited(Of TEntity, TKey, TUserKey)(TEntity, System.Security.Principal.IPrincipal)
+  name.vb: CheckICreationAudited(Of TEntity, TKey, TUserKey)(TEntity, IPrincipal)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+    name: CheckICreationAudited<TEntity, TKey, TUserKey>
+    nameWithType: EntityExtensions.CheckICreationAudited<TEntity, TKey, TUserKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited<TEntity, TKey, TUserKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+    name: CheckICreationAudited(Of TEntity, TKey, TUserKey)
+    nameWithType: EntityExtensions.CheckICreationAudited(Of TEntity, TKey, TUserKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited(Of TEntity, TKey, TUserKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+  isExternal: true
+  name: CheckIUpdateAudited<TEntity, TKey, TUserKey>(TEntity, IPrincipal)
+  nameWithType: EntityExtensions.CheckIUpdateAudited<TEntity, TKey, TUserKey>(TEntity, IPrincipal)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited<TEntity, TKey, TUserKey>(TEntity, System.Security.Principal.IPrincipal)
+  nameWithType.vb: EntityExtensions.CheckIUpdateAudited(Of TEntity, TKey, TUserKey)(TEntity, IPrincipal)
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited(Of TEntity, TKey, TUserKey)(TEntity, System.Security.Principal.IPrincipal)
+  name.vb: CheckIUpdateAudited(Of TEntity, TKey, TUserKey)(TEntity, IPrincipal)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+    name: CheckIUpdateAudited<TEntity, TKey, TUserKey>
+    nameWithType: EntityExtensions.CheckIUpdateAudited<TEntity, TKey, TUserKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited<TEntity, TKey, TUserKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+    name: CheckIUpdateAudited(Of TEntity, TKey, TUserKey)
+    nameWithType: EntityExtensions.CheckIUpdateAudited(Of TEntity, TKey, TUserKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited(Of TEntity, TKey, TUserKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions
+  commentId: N:Hybrid.Extensions
+  name: Hybrid.Extensions
+  nameWithType: Hybrid.Extensions
+  fullName: Hybrid.Extensions
+- uid: Hybrid.Json
+  commentId: N:Hybrid.Json
+  name: Hybrid.Json
+  nameWithType: Hybrid.Json
+  fullName: Hybrid.Json
+- uid: Hybrid.Mapping
+  commentId: N:Hybrid.Mapping
+  name: Hybrid.Mapping
+  nameWithType: Hybrid.Mapping
+  fullName: Hybrid.Mapping
+- uid: Hybrid.Reflection
+  commentId: N:Hybrid.Reflection
+  name: Hybrid.Reflection
+  nameWithType: Hybrid.Reflection
+  fullName: Hybrid.Reflection
+- uid: Hybrid.Domain.Entities
+  commentId: N:Hybrid.Domain.Entities
+  name: Hybrid.Domain.Entities
+  nameWithType: Hybrid.Domain.Entities
+  fullName: Hybrid.Domain.Entities
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalizationManager*
+  commentId: Overload:Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalizationManager
+  name: LocalizationManager
+  nameWithType: BaseViewComponent.LocalizationManager
+  fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalizationManager
+- uid: Hybrid.Localization.ILocalizationManager
+  commentId: T:Hybrid.Localization.ILocalizationManager
+  parent: Hybrid.Localization
+  name: ILocalizationManager
+  nameWithType: ILocalizationManager
+  fullName: Hybrid.Localization.ILocalizationManager
+- uid: Hybrid.Localization
+  commentId: N:Hybrid.Localization
+  name: Hybrid.Localization
+  nameWithType: Hybrid.Localization
+  fullName: Hybrid.Localization
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L(System.String)
+  commentId: M:Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L(System.String)
+  parent: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  isExternal: true
+  name: L(String)
+  nameWithType: BaseViewComponent.L(String)
+  fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L(System.String)
+  spec.csharp:
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L(System.String)
+    name: L
+    nameWithType: BaseViewComponent.L
+    fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L(System.String)
+    name: L
+    nameWithType: BaseViewComponent.L
+    fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L(System.String,System.Globalization.CultureInfo)
+  commentId: M:Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L(System.String,System.Globalization.CultureInfo)
+  parent: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  isExternal: true
+  name: L(String, CultureInfo)
+  nameWithType: BaseViewComponent.L(String, CultureInfo)
+  fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L(System.String, System.Globalization.CultureInfo)
+  spec.csharp:
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L(System.String,System.Globalization.CultureInfo)
+    name: L
+    nameWithType: BaseViewComponent.L
+    fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    nameWithType: CultureInfo
+    fullName: System.Globalization.CultureInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L(System.String,System.Globalization.CultureInfo)
+    name: L
+    nameWithType: BaseViewComponent.L
+    fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    nameWithType: CultureInfo
+    fullName: System.Globalization.CultureInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalizationSourceName*
+  commentId: Overload:Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalizationSourceName
+  name: LocalizationSourceName
+  nameWithType: BaseViewComponent.LocalizationSourceName
+  fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalizationSourceName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  commentId: T:Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  parent: Hybrid.AspNetCore.Mvc.Views
+  name: BaseViewComponent
+  nameWithType: BaseViewComponent
+  fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalizationSourceName
+  commentId: P:Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalizationSourceName
+  parent: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  name: LocalizationSourceName
+  nameWithType: BaseViewComponent.LocalizationSourceName
+  fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalizationSourceName
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalizationSource*
+  commentId: Overload:Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalizationSource
+  name: LocalizationSource
+  nameWithType: BaseViewComponent.LocalizationSource
+  fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalizationSource
+- uid: Hybrid.Localization.Sources.ILocalizationSource
+  commentId: T:Hybrid.Localization.Sources.ILocalizationSource
+  parent: Hybrid.Localization.Sources
+  name: ILocalizationSource
+  nameWithType: ILocalizationSource
+  fullName: Hybrid.Localization.Sources.ILocalizationSource
+- uid: Hybrid.Localization.Sources
+  commentId: N:Hybrid.Localization.Sources
+  name: Hybrid.Localization.Sources
+  nameWithType: Hybrid.Localization.Sources
+  fullName: Hybrid.Localization.Sources
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalCultureInfo*
+  commentId: Overload:Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalCultureInfo
+  name: LocalCultureInfo
+  nameWithType: BaseViewComponent.LocalCultureInfo
+  fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalCultureInfo
+- uid: System.Globalization.CultureInfo
+  commentId: T:System.Globalization.CultureInfo
+  parent: System.Globalization
+  isExternal: true
+  name: CultureInfo
+  nameWithType: CultureInfo
+  fullName: System.Globalization.CultureInfo
+- uid: System.Globalization
+  commentId: N:System.Globalization
+  isExternal: true
+  name: System.Globalization
+  nameWithType: System.Globalization
+  fullName: System.Globalization
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalSchedulerName*
+  commentId: Overload:Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalSchedulerName
+  name: LocalSchedulerName
+  nameWithType: BaseViewComponent.LocalSchedulerName
+  fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.LocalSchedulerName
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Logger*
+  commentId: Overload:Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Logger
+  name: Logger
+  nameWithType: BaseViewComponent.Logger
+  fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.Logger
+- uid: Microsoft.Extensions.Logging.ILogger
+  commentId: T:Microsoft.Extensions.Logging.ILogger
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Microsoft.Extensions.Logging.ILogger
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.#ctor*
+  commentId: Overload:Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.#ctor
+  name: BaseViewComponent
+  nameWithType: BaseViewComponent.BaseViewComponent
+  fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.BaseViewComponent
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L*
+  commentId: Overload:Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L
+  name: L
+  nameWithType: BaseViewComponent.L
+  fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent.L
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()

@@ -1,0 +1,688 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Extensions.OptionExtensions
+  commentId: T:Hybrid.Extensions.OptionExtensions
+  id: OptionExtensions
+  parent: Hybrid.Extensions
+  children:
+  - Hybrid.Extensions.OptionExtensions.ConfigureAndValidateByEnable``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,Microsoft.Extensions.Configuration.IConfiguration)
+  - Hybrid.Extensions.OptionExtensions.ConfigureAndValidateHybridOption``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+  - Hybrid.Extensions.OptionExtensions.ValidateDataAnnotationByEnabled``1(Microsoft.Extensions.Options.OptionsBuilder{``0},System.String)
+  - Hybrid.Extensions.OptionExtensions.ValidateDataAnnotationHybridOption``1(Microsoft.Extensions.Options.OptionsBuilder{``0})
+  langs:
+  - csharp
+  - vb
+  name: OptionExtensions
+  nameWithType: OptionExtensions
+  fullName: Hybrid.Extensions.OptionExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid/Extensions/OptionExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: OptionExtensions
+    path: ../src/Hybrid/Extensions/OptionExtensions.cs
+    startLine: 14
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  syntax:
+    content: public static class OptionExtensions
+    content.vb: Public Module OptionExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.Extensions.OptionExtensions.ValidateDataAnnotationByEnabled``1(Microsoft.Extensions.Options.OptionsBuilder{``0},System.String)
+  commentId: M:Hybrid.Extensions.OptionExtensions.ValidateDataAnnotationByEnabled``1(Microsoft.Extensions.Options.OptionsBuilder{``0},System.String)
+  id: ValidateDataAnnotationByEnabled``1(Microsoft.Extensions.Options.OptionsBuilder{``0},System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.OptionExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateDataAnnotationByEnabled<TOptions>(OptionsBuilder<TOptions>, String)
+  nameWithType: OptionExtensions.ValidateDataAnnotationByEnabled<TOptions>(OptionsBuilder<TOptions>, String)
+  fullName: Hybrid.Extensions.OptionExtensions.ValidateDataAnnotationByEnabled<TOptions>(Microsoft.Extensions.Options.OptionsBuilder<TOptions>, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/OptionExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ValidateDataAnnotationByEnabled
+    path: ../src/Hybrid/Extensions/OptionExtensions.cs
+    startLine: 54
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  syntax:
+    content: >-
+      public static OptionsBuilder<TOptions> ValidateDataAnnotationByEnabled<TOptions>(this OptionsBuilder<TOptions> builder, string sectionName)
+
+          where TOptions : class, IEnabled
+    parameters:
+    - id: builder
+      type: Microsoft.Extensions.Options.OptionsBuilder{{TOptions}}
+    - id: sectionName
+      type: System.String
+    typeParameters:
+    - id: TOptions
+    return:
+      type: Microsoft.Extensions.Options.OptionsBuilder{{TOptions}}
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ValidateDataAnnotationByEnabled(Of TOptions As {Class, IEnabled})(builder As OptionsBuilder(Of TOptions), sectionName As String) As OptionsBuilder(Of TOptions)
+  overload: Hybrid.Extensions.OptionExtensions.ValidateDataAnnotationByEnabled*
+  nameWithType.vb: OptionExtensions.ValidateDataAnnotationByEnabled(Of TOptions)(OptionsBuilder(Of TOptions), String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.OptionExtensions.ValidateDataAnnotationByEnabled(Of TOptions)(Microsoft.Extensions.Options.OptionsBuilder(Of TOptions), System.String)
+  name.vb: ValidateDataAnnotationByEnabled(Of TOptions)(OptionsBuilder(Of TOptions), String)
+- uid: Hybrid.Extensions.OptionExtensions.ConfigureAndValidateByEnable``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,Microsoft.Extensions.Configuration.IConfiguration)
+  commentId: M:Hybrid.Extensions.OptionExtensions.ConfigureAndValidateByEnable``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,Microsoft.Extensions.Configuration.IConfiguration)
+  id: ConfigureAndValidateByEnable``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,Microsoft.Extensions.Configuration.IConfiguration)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.OptionExtensions
+  langs:
+  - csharp
+  - vb
+  name: ConfigureAndValidateByEnable<TOptions>(IServiceCollection, String, IConfiguration)
+  nameWithType: OptionExtensions.ConfigureAndValidateByEnable<TOptions>(IServiceCollection, String, IConfiguration)
+  fullName: Hybrid.Extensions.OptionExtensions.ConfigureAndValidateByEnable<TOptions>(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.String, Microsoft.Extensions.Configuration.IConfiguration)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/OptionExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ConfigureAndValidateByEnable
+    path: ../src/Hybrid/Extensions/OptionExtensions.cs
+    startLine: 68
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  syntax:
+    content: >-
+      public static IServiceCollection ConfigureAndValidateByEnable<TOptions>(this IServiceCollection services, string sectionName, IConfiguration configuration)
+
+          where TOptions : class, IEnabled
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    - id: sectionName
+      type: System.String
+    - id: configuration
+      type: Microsoft.Extensions.Configuration.IConfiguration
+    typeParameters:
+    - id: TOptions
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ConfigureAndValidateByEnable(Of TOptions As {Class, IEnabled})(services As IServiceCollection, sectionName As String, configuration As IConfiguration) As IServiceCollection
+  overload: Hybrid.Extensions.OptionExtensions.ConfigureAndValidateByEnable*
+  nameWithType.vb: OptionExtensions.ConfigureAndValidateByEnable(Of TOptions)(IServiceCollection, String, IConfiguration)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.OptionExtensions.ConfigureAndValidateByEnable(Of TOptions)(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.String, Microsoft.Extensions.Configuration.IConfiguration)
+  name.vb: ConfigureAndValidateByEnable(Of TOptions)(IServiceCollection, String, IConfiguration)
+- uid: Hybrid.Extensions.OptionExtensions.ValidateDataAnnotationHybridOption``1(Microsoft.Extensions.Options.OptionsBuilder{``0})
+  commentId: M:Hybrid.Extensions.OptionExtensions.ValidateDataAnnotationHybridOption``1(Microsoft.Extensions.Options.OptionsBuilder{``0})
+  id: ValidateDataAnnotationHybridOption``1(Microsoft.Extensions.Options.OptionsBuilder{``0})
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.OptionExtensions
+  langs:
+  - csharp
+  - vb
+  name: ValidateDataAnnotationHybridOption<TOptions>(OptionsBuilder<TOptions>)
+  nameWithType: OptionExtensions.ValidateDataAnnotationHybridOption<TOptions>(OptionsBuilder<TOptions>)
+  fullName: Hybrid.Extensions.OptionExtensions.ValidateDataAnnotationHybridOption<TOptions>(Microsoft.Extensions.Options.OptionsBuilder<TOptions>)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/OptionExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ValidateDataAnnotationHybridOption
+    path: ../src/Hybrid/Extensions/OptionExtensions.cs
+    startLine: 84
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  syntax:
+    content: >-
+      public static OptionsBuilder<TOptions> ValidateDataAnnotationHybridOption<TOptions>(this OptionsBuilder<TOptions> builder)
+
+          where TOptions : HybridOptions
+    parameters:
+    - id: builder
+      type: Microsoft.Extensions.Options.OptionsBuilder{{TOptions}}
+    typeParameters:
+    - id: TOptions
+    return:
+      type: Microsoft.Extensions.Options.OptionsBuilder{{TOptions}}
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ValidateDataAnnotationHybridOption(Of TOptions As HybridOptions)(builder As OptionsBuilder(Of TOptions)) As OptionsBuilder(Of TOptions)
+  overload: Hybrid.Extensions.OptionExtensions.ValidateDataAnnotationHybridOption*
+  nameWithType.vb: OptionExtensions.ValidateDataAnnotationHybridOption(Of TOptions)(OptionsBuilder(Of TOptions))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.OptionExtensions.ValidateDataAnnotationHybridOption(Of TOptions)(Microsoft.Extensions.Options.OptionsBuilder(Of TOptions))
+  name.vb: ValidateDataAnnotationHybridOption(Of TOptions)(OptionsBuilder(Of TOptions))
+- uid: Hybrid.Extensions.OptionExtensions.ConfigureAndValidateHybridOption``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+  commentId: M:Hybrid.Extensions.OptionExtensions.ConfigureAndValidateHybridOption``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+  id: ConfigureAndValidateHybridOption``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.OptionExtensions
+  langs:
+  - csharp
+  - vb
+  name: ConfigureAndValidateHybridOption<TOptions>(IServiceCollection, IConfiguration)
+  nameWithType: OptionExtensions.ConfigureAndValidateHybridOption<TOptions>(IServiceCollection, IConfiguration)
+  fullName: Hybrid.Extensions.OptionExtensions.ConfigureAndValidateHybridOption<TOptions>(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/OptionExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ConfigureAndValidateHybridOption
+    path: ../src/Hybrid/Extensions/OptionExtensions.cs
+    startLine: 128
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  syntax:
+    content: >-
+      public static IServiceCollection ConfigureAndValidateHybridOption<TOptions>(this IServiceCollection services, IConfiguration configuration)
+
+          where TOptions : HybridOptions
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    - id: configuration
+      type: Microsoft.Extensions.Configuration.IConfiguration
+    typeParameters:
+    - id: TOptions
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ConfigureAndValidateHybridOption(Of TOptions As HybridOptions)(services As IServiceCollection, configuration As IConfiguration) As IServiceCollection
+  overload: Hybrid.Extensions.OptionExtensions.ConfigureAndValidateHybridOption*
+  nameWithType.vb: OptionExtensions.ConfigureAndValidateHybridOption(Of TOptions)(IServiceCollection, IConfiguration)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.OptionExtensions.ConfigureAndValidateHybridOption(Of TOptions)(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration)
+  name.vb: ConfigureAndValidateHybridOption(Of TOptions)(IServiceCollection, IConfiguration)
+references:
+- uid: Hybrid.Extensions
+  commentId: N:Hybrid.Extensions
+  name: Hybrid.Extensions
+  nameWithType: Hybrid.Extensions
+  fullName: Hybrid.Extensions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hybrid.Extensions.OptionExtensions.ValidateDataAnnotationByEnabled*
+  commentId: Overload:Hybrid.Extensions.OptionExtensions.ValidateDataAnnotationByEnabled
+  name: ValidateDataAnnotationByEnabled
+  nameWithType: OptionExtensions.ValidateDataAnnotationByEnabled
+  fullName: Hybrid.Extensions.OptionExtensions.ValidateDataAnnotationByEnabled
+- uid: Microsoft.Extensions.Options.OptionsBuilder{{TOptions}}
+  commentId: T:Microsoft.Extensions.Options.OptionsBuilder{``0}
+  parent: Microsoft.Extensions.Options
+  definition: Microsoft.Extensions.Options.OptionsBuilder`1
+  name: OptionsBuilder<TOptions>
+  nameWithType: OptionsBuilder<TOptions>
+  fullName: Microsoft.Extensions.Options.OptionsBuilder<TOptions>
+  nameWithType.vb: OptionsBuilder(Of TOptions)
+  fullName.vb: Microsoft.Extensions.Options.OptionsBuilder(Of TOptions)
+  name.vb: OptionsBuilder(Of TOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.OptionsBuilder`1
+    name: OptionsBuilder
+    nameWithType: OptionsBuilder
+    fullName: Microsoft.Extensions.Options.OptionsBuilder
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TOptions
+    nameWithType: TOptions
+    fullName: TOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.OptionsBuilder`1
+    name: OptionsBuilder
+    nameWithType: OptionsBuilder
+    fullName: Microsoft.Extensions.Options.OptionsBuilder
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TOptions
+    nameWithType: TOptions
+    fullName: TOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Extensions.Options.OptionsBuilder`1
+  commentId: T:Microsoft.Extensions.Options.OptionsBuilder`1
+  isExternal: true
+  name: OptionsBuilder<TOptions>
+  nameWithType: OptionsBuilder<TOptions>
+  fullName: Microsoft.Extensions.Options.OptionsBuilder<TOptions>
+  nameWithType.vb: OptionsBuilder(Of TOptions)
+  fullName.vb: Microsoft.Extensions.Options.OptionsBuilder(Of TOptions)
+  name.vb: OptionsBuilder(Of TOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.OptionsBuilder`1
+    name: OptionsBuilder
+    nameWithType: OptionsBuilder
+    fullName: Microsoft.Extensions.Options.OptionsBuilder
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TOptions
+    nameWithType: TOptions
+    fullName: TOptions
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.OptionsBuilder`1
+    name: OptionsBuilder
+    nameWithType: OptionsBuilder
+    fullName: Microsoft.Extensions.Options.OptionsBuilder
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TOptions
+    nameWithType: TOptions
+    fullName: TOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Extensions.Options
+  commentId: N:Microsoft.Extensions.Options
+  isExternal: true
+  name: Microsoft.Extensions.Options
+  nameWithType: Microsoft.Extensions.Options
+  fullName: Microsoft.Extensions.Options
+- uid: Hybrid.Extensions.OptionExtensions.ConfigureAndValidateByEnable*
+  commentId: Overload:Hybrid.Extensions.OptionExtensions.ConfigureAndValidateByEnable
+  name: ConfigureAndValidateByEnable
+  nameWithType: OptionExtensions.ConfigureAndValidateByEnable
+  fullName: Hybrid.Extensions.OptionExtensions.ConfigureAndValidateByEnable
+- uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+- uid: Microsoft.Extensions.Configuration.IConfiguration
+  commentId: T:Microsoft.Extensions.Configuration.IConfiguration
+  parent: Microsoft.Extensions.Configuration
+  isExternal: true
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: Microsoft.Extensions.Configuration.IConfiguration
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+- uid: Microsoft.Extensions.Configuration
+  commentId: N:Microsoft.Extensions.Configuration
+  isExternal: true
+  name: Microsoft.Extensions.Configuration
+  nameWithType: Microsoft.Extensions.Configuration
+  fullName: Microsoft.Extensions.Configuration
+- uid: Hybrid.Extensions.OptionExtensions.ValidateDataAnnotationHybridOption*
+  commentId: Overload:Hybrid.Extensions.OptionExtensions.ValidateDataAnnotationHybridOption
+  name: ValidateDataAnnotationHybridOption
+  nameWithType: OptionExtensions.ValidateDataAnnotationHybridOption
+  fullName: Hybrid.Extensions.OptionExtensions.ValidateDataAnnotationHybridOption
+- uid: Hybrid.Extensions.OptionExtensions.ConfigureAndValidateHybridOption*
+  commentId: Overload:Hybrid.Extensions.OptionExtensions.ConfigureAndValidateHybridOption
+  name: ConfigureAndValidateHybridOption
+  nameWithType: OptionExtensions.ConfigureAndValidateHybridOption
+  fullName: Hybrid.Extensions.OptionExtensions.ConfigureAndValidateHybridOption

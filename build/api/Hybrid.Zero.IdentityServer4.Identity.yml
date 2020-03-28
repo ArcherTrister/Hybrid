@@ -1,0 +1,120 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Zero.IdentityServer4.Identity
+  commentId: N:Hybrid.Zero.IdentityServer4.Identity
+  id: Hybrid.Zero.IdentityServer4.Identity
+  children:
+  - Hybrid.Zero.IdentityServer4.Identity.ProfileService`2
+  - Hybrid.Zero.IdentityServer4.Identity.ResourceOwnerPasswordValidator`2
+  - Hybrid.Zero.IdentityServer4.Identity.SecurityStampValidatorCallback
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Zero.IdentityServer4.Identity
+  nameWithType: Hybrid.Zero.IdentityServer4.Identity
+  fullName: Hybrid.Zero.IdentityServer4.Identity
+  type: Namespace
+  assemblies:
+  - Hybrid.Zero.IdentityServer4
+references:
+- uid: Hybrid.Zero.IdentityServer4.Identity.ProfileService`2
+  commentId: T:Hybrid.Zero.IdentityServer4.Identity.ProfileService`2
+  name: ProfileService<TUser, TUserKey>
+  nameWithType: ProfileService<TUser, TUserKey>
+  fullName: Hybrid.Zero.IdentityServer4.Identity.ProfileService<TUser, TUserKey>
+  nameWithType.vb: ProfileService(Of TUser, TUserKey)
+  fullName.vb: Hybrid.Zero.IdentityServer4.Identity.ProfileService(Of TUser, TUserKey)
+  name.vb: ProfileService(Of TUser, TUserKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.IdentityServer4.Identity.ProfileService`2
+    name: ProfileService
+    nameWithType: ProfileService
+    fullName: Hybrid.Zero.IdentityServer4.Identity.ProfileService
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.IdentityServer4.Identity.ProfileService`2
+    name: ProfileService
+    nameWithType: ProfileService
+    fullName: Hybrid.Zero.IdentityServer4.Identity.ProfileService
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.IdentityServer4.Identity.ResourceOwnerPasswordValidator`2
+  commentId: T:Hybrid.Zero.IdentityServer4.Identity.ResourceOwnerPasswordValidator`2
+  name: ResourceOwnerPasswordValidator<TUser, TUserKey>
+  nameWithType: ResourceOwnerPasswordValidator<TUser, TUserKey>
+  fullName: Hybrid.Zero.IdentityServer4.Identity.ResourceOwnerPasswordValidator<TUser, TUserKey>
+  nameWithType.vb: ResourceOwnerPasswordValidator(Of TUser, TUserKey)
+  fullName.vb: Hybrid.Zero.IdentityServer4.Identity.ResourceOwnerPasswordValidator(Of TUser, TUserKey)
+  name.vb: ResourceOwnerPasswordValidator(Of TUser, TUserKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.IdentityServer4.Identity.ResourceOwnerPasswordValidator`2
+    name: ResourceOwnerPasswordValidator
+    nameWithType: ResourceOwnerPasswordValidator
+    fullName: Hybrid.Zero.IdentityServer4.Identity.ResourceOwnerPasswordValidator
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.IdentityServer4.Identity.ResourceOwnerPasswordValidator`2
+    name: ResourceOwnerPasswordValidator
+    nameWithType: ResourceOwnerPasswordValidator
+    fullName: Hybrid.Zero.IdentityServer4.Identity.ResourceOwnerPasswordValidator
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.IdentityServer4.Identity.SecurityStampValidatorCallback
+  commentId: T:Hybrid.Zero.IdentityServer4.Identity.SecurityStampValidatorCallback
+  name: SecurityStampValidatorCallback
+  nameWithType: SecurityStampValidatorCallback
+  fullName: Hybrid.Zero.IdentityServer4.Identity.SecurityStampValidatorCallback

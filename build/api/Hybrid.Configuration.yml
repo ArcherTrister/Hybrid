@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Configuration
+  commentId: N:Hybrid.Configuration
+  id: Hybrid.Configuration
+  children:
+  - Hybrid.Configuration.DictionaryBasedConfig
+  - Hybrid.Configuration.IDictionaryBasedConfig
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Configuration
+  nameWithType: Hybrid.Configuration
+  fullName: Hybrid.Configuration
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Configuration.DictionaryBasedConfig
+  commentId: T:Hybrid.Configuration.DictionaryBasedConfig
+  name: DictionaryBasedConfig
+  nameWithType: DictionaryBasedConfig
+  fullName: Hybrid.Configuration.DictionaryBasedConfig
+- uid: Hybrid.Configuration.IDictionaryBasedConfig
+  commentId: T:Hybrid.Configuration.IDictionaryBasedConfig
+  parent: Hybrid.Configuration
+  name: IDictionaryBasedConfig
+  nameWithType: IDictionaryBasedConfig
+  fullName: Hybrid.Configuration.IDictionaryBasedConfig
+- uid: Hybrid.Configuration
+  commentId: N:Hybrid.Configuration
+  name: Hybrid.Configuration
+  nameWithType: Hybrid.Configuration
+  fullName: Hybrid.Configuration

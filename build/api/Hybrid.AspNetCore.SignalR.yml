@@ -1,0 +1,103 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.AspNetCore.SignalR
+  commentId: N:Hybrid.AspNetCore.SignalR
+  id: Hybrid.AspNetCore.SignalR
+  children:
+  - Hybrid.AspNetCore.SignalR.ConnectionUser
+  - Hybrid.AspNetCore.SignalR.ConnectionUserCache
+  - Hybrid.AspNetCore.SignalR.EmailBaseUserIdProvider
+  - Hybrid.AspNetCore.SignalR.HybridHub
+  - Hybrid.AspNetCore.SignalR.HybridHub`1
+  - Hybrid.AspNetCore.SignalR.IConnectionUserCache
+  - Hybrid.AspNetCore.SignalR.SignalRModuleBase
+  - Hybrid.AspNetCore.SignalR.UserNameUserIdProvider
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.AspNetCore.SignalR
+  nameWithType: Hybrid.AspNetCore.SignalR
+  fullName: Hybrid.AspNetCore.SignalR
+  type: Namespace
+  assemblies:
+  - Hybrid.AspNetCore
+references:
+- uid: Hybrid.AspNetCore.SignalR.ConnectionUser
+  commentId: T:Hybrid.AspNetCore.SignalR.ConnectionUser
+  parent: Hybrid.AspNetCore.SignalR
+  name: ConnectionUser
+  nameWithType: ConnectionUser
+  fullName: Hybrid.AspNetCore.SignalR.ConnectionUser
+- uid: Hybrid.AspNetCore.SignalR.ConnectionUserCache
+  commentId: T:Hybrid.AspNetCore.SignalR.ConnectionUserCache
+  name: ConnectionUserCache
+  nameWithType: ConnectionUserCache
+  fullName: Hybrid.AspNetCore.SignalR.ConnectionUserCache
+- uid: Hybrid.AspNetCore.SignalR.EmailBaseUserIdProvider
+  commentId: T:Hybrid.AspNetCore.SignalR.EmailBaseUserIdProvider
+  name: EmailBaseUserIdProvider
+  nameWithType: EmailBaseUserIdProvider
+  fullName: Hybrid.AspNetCore.SignalR.EmailBaseUserIdProvider
+- uid: Hybrid.AspNetCore.SignalR.HybridHub
+  commentId: T:Hybrid.AspNetCore.SignalR.HybridHub
+  parent: Hybrid.AspNetCore.SignalR
+  name: HybridHub
+  nameWithType: HybridHub
+  fullName: Hybrid.AspNetCore.SignalR.HybridHub
+- uid: Hybrid.AspNetCore.SignalR.HybridHub`1
+  commentId: T:Hybrid.AspNetCore.SignalR.HybridHub`1
+  name: HybridHub<T>
+  nameWithType: HybridHub<T>
+  fullName: Hybrid.AspNetCore.SignalR.HybridHub<T>
+  nameWithType.vb: HybridHub(Of T)
+  fullName.vb: Hybrid.AspNetCore.SignalR.HybridHub(Of T)
+  name.vb: HybridHub(Of T)
+  spec.csharp:
+  - uid: Hybrid.AspNetCore.SignalR.HybridHub`1
+    name: HybridHub
+    nameWithType: HybridHub
+    fullName: Hybrid.AspNetCore.SignalR.HybridHub
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.AspNetCore.SignalR.HybridHub`1
+    name: HybridHub
+    nameWithType: HybridHub
+    fullName: Hybrid.AspNetCore.SignalR.HybridHub
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.AspNetCore.SignalR.IConnectionUserCache
+  commentId: T:Hybrid.AspNetCore.SignalR.IConnectionUserCache
+  parent: Hybrid.AspNetCore.SignalR
+  name: IConnectionUserCache
+  nameWithType: IConnectionUserCache
+  fullName: Hybrid.AspNetCore.SignalR.IConnectionUserCache
+- uid: Hybrid.AspNetCore.SignalR.SignalRModuleBase
+  commentId: T:Hybrid.AspNetCore.SignalR.SignalRModuleBase
+  name: SignalRModuleBase
+  nameWithType: SignalRModuleBase
+  fullName: Hybrid.AspNetCore.SignalR.SignalRModuleBase
+- uid: Hybrid.AspNetCore.SignalR.UserNameUserIdProvider
+  commentId: T:Hybrid.AspNetCore.SignalR.UserNameUserIdProvider
+  name: UserNameUserIdProvider
+  nameWithType: UserNameUserIdProvider
+  fullName: Hybrid.AspNetCore.SignalR.UserNameUserIdProvider
+- uid: Hybrid.AspNetCore.SignalR
+  commentId: N:Hybrid.AspNetCore.SignalR
+  name: Hybrid.AspNetCore.SignalR
+  nameWithType: Hybrid.AspNetCore.SignalR
+  fullName: Hybrid.AspNetCore.SignalR

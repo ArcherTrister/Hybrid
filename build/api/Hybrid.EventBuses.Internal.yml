@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.EventBuses.Internal
+  commentId: N:Hybrid.EventBuses.Internal
+  id: Hybrid.EventBuses.Internal
+  children:
+  - Hybrid.EventBuses.Internal.EventHandlerDisposeWrapper
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.EventBuses.Internal
+  nameWithType: Hybrid.EventBuses.Internal
+  fullName: Hybrid.EventBuses.Internal
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.EventBuses.Internal.EventHandlerDisposeWrapper
+  commentId: T:Hybrid.EventBuses.Internal.EventHandlerDisposeWrapper
+  parent: Hybrid.EventBuses.Internal
+  name: EventHandlerDisposeWrapper
+  nameWithType: EventHandlerDisposeWrapper
+  fullName: Hybrid.EventBuses.Internal.EventHandlerDisposeWrapper
+- uid: Hybrid.EventBuses.Internal
+  commentId: N:Hybrid.EventBuses.Internal
+  name: Hybrid.EventBuses.Internal
+  nameWithType: Hybrid.EventBuses.Internal
+  fullName: Hybrid.EventBuses.Internal

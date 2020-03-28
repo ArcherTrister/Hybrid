@@ -2,7 +2,7 @@
 
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
-namespace OSharp.AspNetCore.Mvc.ModelBinding
+namespace Hybrid.AspNetCore.Mvc.ModelBinding
 {
     /// <summary>
     /// <see cref="StringTrimModelBinder"/>提供者，提供对字符串前后空白进行Trim操作的模型绑定能力

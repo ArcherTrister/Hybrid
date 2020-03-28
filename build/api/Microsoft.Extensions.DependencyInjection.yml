@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  id: Microsoft.Extensions.DependencyInjection
+  children:
+  - Microsoft.Extensions.DependencyInjection.FileLoggerFactoryExtensions
+  - Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions
+  - Microsoft.Extensions.DependencyInjection.ServiceExtensions
+  langs:
+  - csharp
+  - vb
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Microsoft.Extensions.DependencyInjection.ServiceExtensions
+  commentId: T:Microsoft.Extensions.DependencyInjection.ServiceExtensions
+  name: ServiceExtensions
+  nameWithType: ServiceExtensions
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceExtensions
+- uid: Microsoft.Extensions.DependencyInjection.FileLoggerFactoryExtensions
+  commentId: T:Microsoft.Extensions.DependencyInjection.FileLoggerFactoryExtensions
+  name: FileLoggerFactoryExtensions
+  nameWithType: FileLoggerFactoryExtensions
+  fullName: Microsoft.Extensions.DependencyInjection.FileLoggerFactoryExtensions
+- uid: Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions
+  commentId: T:Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions
+  name: IdentityServerBuilderExtensions
+  nameWithType: IdentityServerBuilderExtensions
+  fullName: Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions

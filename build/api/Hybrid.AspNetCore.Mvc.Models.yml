@@ -1,0 +1,103 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.AspNetCore.Mvc.Models
+  commentId: N:Hybrid.AspNetCore.Mvc.Models
+  id: Hybrid.AspNetCore.Mvc.Models
+  children:
+  - Hybrid.AspNetCore.Mvc.Models.AjaxResponse
+  - Hybrid.AspNetCore.Mvc.Models.AjaxResponse`1
+  - Hybrid.AspNetCore.Mvc.Models.AjaxResponseBase
+  - Hybrid.AspNetCore.Mvc.Models.ErrorInfo
+  - Hybrid.AspNetCore.Mvc.Models.ErrorInfos
+  - Hybrid.AspNetCore.Mvc.Models.HybridErrorViewModel
+  - Hybrid.AspNetCore.Mvc.Models.TopBarLanguageSwitchViewModel
+  - Hybrid.AspNetCore.Mvc.Models.ValidationErrorInfo
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.AspNetCore.Mvc.Models
+  nameWithType: Hybrid.AspNetCore.Mvc.Models
+  fullName: Hybrid.AspNetCore.Mvc.Models
+  type: Namespace
+  assemblies:
+  - Hybrid.AspNetCore
+references:
+- uid: Hybrid.AspNetCore.Mvc.Models.ErrorInfos
+  commentId: T:Hybrid.AspNetCore.Mvc.Models.ErrorInfos
+  parent: Hybrid.AspNetCore.Mvc.Models
+  name: ErrorInfos
+  nameWithType: ErrorInfos
+  fullName: Hybrid.AspNetCore.Mvc.Models.ErrorInfos
+- uid: Hybrid.AspNetCore.Mvc.Models.HybridErrorViewModel
+  commentId: T:Hybrid.AspNetCore.Mvc.Models.HybridErrorViewModel
+  name: HybridErrorViewModel
+  nameWithType: HybridErrorViewModel
+  fullName: Hybrid.AspNetCore.Mvc.Models.HybridErrorViewModel
+- uid: Hybrid.AspNetCore.Mvc.Models.TopBarLanguageSwitchViewModel
+  commentId: T:Hybrid.AspNetCore.Mvc.Models.TopBarLanguageSwitchViewModel
+  name: TopBarLanguageSwitchViewModel
+  nameWithType: TopBarLanguageSwitchViewModel
+  fullName: Hybrid.AspNetCore.Mvc.Models.TopBarLanguageSwitchViewModel
+- uid: Hybrid.AspNetCore.Mvc.Models.ValidationErrorInfo
+  commentId: T:Hybrid.AspNetCore.Mvc.Models.ValidationErrorInfo
+  name: ValidationErrorInfo
+  nameWithType: ValidationErrorInfo
+  fullName: Hybrid.AspNetCore.Mvc.Models.ValidationErrorInfo
+- uid: Hybrid.AspNetCore.Mvc.Models.AjaxResponse`1
+  commentId: T:Hybrid.AspNetCore.Mvc.Models.AjaxResponse`1
+  name: AjaxResponse<TResult>
+  nameWithType: AjaxResponse<TResult>
+  fullName: Hybrid.AspNetCore.Mvc.Models.AjaxResponse<TResult>
+  nameWithType.vb: AjaxResponse(Of TResult)
+  fullName.vb: Hybrid.AspNetCore.Mvc.Models.AjaxResponse(Of TResult)
+  name.vb: AjaxResponse(Of TResult)
+  spec.csharp:
+  - uid: Hybrid.AspNetCore.Mvc.Models.AjaxResponse`1
+    name: AjaxResponse
+    nameWithType: AjaxResponse
+    fullName: Hybrid.AspNetCore.Mvc.Models.AjaxResponse
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.AspNetCore.Mvc.Models.AjaxResponse`1
+    name: AjaxResponse
+    nameWithType: AjaxResponse
+    fullName: Hybrid.AspNetCore.Mvc.Models.AjaxResponse
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.AspNetCore.Mvc.Models.AjaxResponse
+  commentId: T:Hybrid.AspNetCore.Mvc.Models.AjaxResponse
+  name: AjaxResponse
+  nameWithType: AjaxResponse
+  fullName: Hybrid.AspNetCore.Mvc.Models.AjaxResponse
+- uid: Hybrid.AspNetCore.Mvc.Models.AjaxResponseBase
+  commentId: T:Hybrid.AspNetCore.Mvc.Models.AjaxResponseBase
+  parent: Hybrid.AspNetCore.Mvc.Models
+  name: AjaxResponseBase
+  nameWithType: AjaxResponseBase
+  fullName: Hybrid.AspNetCore.Mvc.Models.AjaxResponseBase
+- uid: Hybrid.AspNetCore.Mvc.Models.ErrorInfo
+  commentId: T:Hybrid.AspNetCore.Mvc.Models.ErrorInfo
+  parent: Hybrid.AspNetCore.Mvc.Models
+  name: ErrorInfo
+  nameWithType: ErrorInfo
+  fullName: Hybrid.AspNetCore.Mvc.Models.ErrorInfo
+- uid: Hybrid.AspNetCore.Mvc.Models
+  commentId: N:Hybrid.AspNetCore.Mvc.Models
+  name: Hybrid.AspNetCore.Mvc.Models
+  nameWithType: Hybrid.AspNetCore.Mvc.Models
+  fullName: Hybrid.AspNetCore.Mvc.Models

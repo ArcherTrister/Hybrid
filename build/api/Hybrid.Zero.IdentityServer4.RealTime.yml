@@ -1,0 +1,95 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Zero.IdentityServer4.RealTime
+  commentId: N:Hybrid.Zero.IdentityServer4.RealTime
+  id: Hybrid.Zero.IdentityServer4.RealTime
+  children:
+  - Hybrid.Zero.IdentityServer4.RealTime.OnlineUser
+  - Hybrid.Zero.IdentityServer4.RealTime.OnlineUserProvider`4
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Zero.IdentityServer4.RealTime
+  nameWithType: Hybrid.Zero.IdentityServer4.RealTime
+  fullName: Hybrid.Zero.IdentityServer4.RealTime
+  type: Namespace
+  assemblies:
+  - Hybrid.Zero.IdentityServer4
+references:
+- uid: Hybrid.Zero.IdentityServer4.RealTime.OnlineUser
+  commentId: T:Hybrid.Zero.IdentityServer4.RealTime.OnlineUser
+  name: OnlineUser
+  nameWithType: OnlineUser
+  fullName: Hybrid.Zero.IdentityServer4.RealTime.OnlineUser
+- uid: Hybrid.Zero.IdentityServer4.RealTime.OnlineUserProvider`4
+  commentId: T:Hybrid.Zero.IdentityServer4.RealTime.OnlineUserProvider`4
+  name: OnlineUserProvider<TUser, TUserKey, TRole, TRoleKey>
+  nameWithType: OnlineUserProvider<TUser, TUserKey, TRole, TRoleKey>
+  fullName: Hybrid.Zero.IdentityServer4.RealTime.OnlineUserProvider<TUser, TUserKey, TRole, TRoleKey>
+  nameWithType.vb: OnlineUserProvider(Of TUser, TUserKey, TRole, TRoleKey)
+  fullName.vb: Hybrid.Zero.IdentityServer4.RealTime.OnlineUserProvider(Of TUser, TUserKey, TRole, TRoleKey)
+  name.vb: OnlineUserProvider(Of TUser, TUserKey, TRole, TRoleKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.IdentityServer4.RealTime.OnlineUserProvider`4
+    name: OnlineUserProvider
+    nameWithType: OnlineUserProvider
+    fullName: Hybrid.Zero.IdentityServer4.RealTime.OnlineUserProvider
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.IdentityServer4.RealTime.OnlineUserProvider`4
+    name: OnlineUserProvider
+    nameWithType: OnlineUserProvider
+    fullName: Hybrid.Zero.IdentityServer4.RealTime.OnlineUserProvider
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: )
+    nameWithType: )
+    fullName: )

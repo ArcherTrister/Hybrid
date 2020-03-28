@@ -1,0 +1,114 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Domain.Repositories
+  commentId: N:Hybrid.Domain.Repositories
+  id: Hybrid.Domain.Repositories
+  children:
+  - Hybrid.Domain.Repositories.IRepository`2
+  - Hybrid.Domain.Repositories.ISqlExecutor`2
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Domain.Repositories
+  nameWithType: Hybrid.Domain.Repositories
+  fullName: Hybrid.Domain.Repositories
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Domain.Repositories.IRepository`2
+  commentId: T:Hybrid.Domain.Repositories.IRepository`2
+  name: IRepository<TEntity, TKey>
+  nameWithType: IRepository<TEntity, TKey>
+  fullName: Hybrid.Domain.Repositories.IRepository<TEntity, TKey>
+  nameWithType.vb: IRepository(Of TEntity, TKey)
+  fullName.vb: Hybrid.Domain.Repositories.IRepository(Of TEntity, TKey)
+  name.vb: IRepository(Of TEntity, TKey)
+  spec.csharp:
+  - uid: Hybrid.Domain.Repositories.IRepository`2
+    name: IRepository
+    nameWithType: IRepository
+    fullName: Hybrid.Domain.Repositories.IRepository
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Domain.Repositories.IRepository`2
+    name: IRepository
+    nameWithType: IRepository
+    fullName: Hybrid.Domain.Repositories.IRepository
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Domain.Repositories.ISqlExecutor`2
+  commentId: T:Hybrid.Domain.Repositories.ISqlExecutor`2
+  name: ISqlExecutor<TEntity, TKey>
+  nameWithType: ISqlExecutor<TEntity, TKey>
+  fullName: Hybrid.Domain.Repositories.ISqlExecutor<TEntity, TKey>
+  nameWithType.vb: ISqlExecutor(Of TEntity, TKey)
+  fullName.vb: Hybrid.Domain.Repositories.ISqlExecutor(Of TEntity, TKey)
+  name.vb: ISqlExecutor(Of TEntity, TKey)
+  spec.csharp:
+  - uid: Hybrid.Domain.Repositories.ISqlExecutor`2
+    name: ISqlExecutor
+    nameWithType: ISqlExecutor
+    fullName: Hybrid.Domain.Repositories.ISqlExecutor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Domain.Repositories.ISqlExecutor`2
+    name: ISqlExecutor
+    nameWithType: ISqlExecutor
+    fullName: Hybrid.Domain.Repositories.ISqlExecutor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )

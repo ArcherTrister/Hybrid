@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Maths
+  commentId: N:Hybrid.Maths
+  id: Hybrid.Maths
+  children:
+  - Hybrid.Maths.AnyRadixConvert
+  - Hybrid.Maths.MathHelper
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Maths
+  nameWithType: Hybrid.Maths
+  fullName: Hybrid.Maths
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Maths.AnyRadixConvert
+  commentId: T:Hybrid.Maths.AnyRadixConvert
+  name: AnyRadixConvert
+  nameWithType: AnyRadixConvert
+  fullName: Hybrid.Maths.AnyRadixConvert
+- uid: Hybrid.Maths.MathHelper
+  commentId: T:Hybrid.Maths.MathHelper
+  name: MathHelper
+  nameWithType: MathHelper
+  fullName: Hybrid.Maths.MathHelper

@@ -1,0 +1,91 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Authorization.ModuleInfos
+  commentId: N:Hybrid.Authorization.ModuleInfos
+  id: Hybrid.Authorization.ModuleInfos
+  children:
+  - Hybrid.Authorization.ModuleInfos.DependOnFunctionAttribute
+  - Hybrid.Authorization.ModuleInfos.IModuleHandler
+  - Hybrid.Authorization.ModuleInfos.IModuleInfoPicker
+  - Hybrid.Authorization.ModuleInfos.ModuleInfo
+  - Hybrid.Authorization.ModuleInfos.ModuleInfoAttribute
+  - Hybrid.Authorization.ModuleInfos.ModuleInfoPickerBase`1
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Authorization.ModuleInfos
+  nameWithType: Hybrid.Authorization.ModuleInfos
+  fullName: Hybrid.Authorization.ModuleInfos
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Authorization.ModuleInfos.DependOnFunctionAttribute
+  commentId: T:Hybrid.Authorization.ModuleInfos.DependOnFunctionAttribute
+  name: DependOnFunctionAttribute
+  nameWithType: DependOnFunctionAttribute
+  fullName: Hybrid.Authorization.ModuleInfos.DependOnFunctionAttribute
+- uid: Hybrid.Authorization.ModuleInfos.IModuleHandler
+  commentId: T:Hybrid.Authorization.ModuleInfos.IModuleHandler
+  parent: Hybrid.Authorization.ModuleInfos
+  name: IModuleHandler
+  nameWithType: IModuleHandler
+  fullName: Hybrid.Authorization.ModuleInfos.IModuleHandler
+- uid: Hybrid.Authorization.ModuleInfos.IModuleInfoPicker
+  commentId: T:Hybrid.Authorization.ModuleInfos.IModuleInfoPicker
+  parent: Hybrid.Authorization.ModuleInfos
+  name: IModuleInfoPicker
+  nameWithType: IModuleInfoPicker
+  fullName: Hybrid.Authorization.ModuleInfos.IModuleInfoPicker
+- uid: Hybrid.Authorization.ModuleInfos.ModuleInfo
+  commentId: T:Hybrid.Authorization.ModuleInfos.ModuleInfo
+  parent: Hybrid.Authorization.ModuleInfos
+  name: ModuleInfo
+  nameWithType: ModuleInfo
+  fullName: Hybrid.Authorization.ModuleInfos.ModuleInfo
+- uid: Hybrid.Authorization.ModuleInfos.ModuleInfoAttribute
+  commentId: T:Hybrid.Authorization.ModuleInfos.ModuleInfoAttribute
+  name: ModuleInfoAttribute
+  nameWithType: ModuleInfoAttribute
+  fullName: Hybrid.Authorization.ModuleInfos.ModuleInfoAttribute
+- uid: Hybrid.Authorization.ModuleInfos.ModuleInfoPickerBase`1
+  commentId: T:Hybrid.Authorization.ModuleInfos.ModuleInfoPickerBase`1
+  name: ModuleInfoPickerBase<TFunction>
+  nameWithType: ModuleInfoPickerBase<TFunction>
+  fullName: Hybrid.Authorization.ModuleInfos.ModuleInfoPickerBase<TFunction>
+  nameWithType.vb: ModuleInfoPickerBase(Of TFunction)
+  fullName.vb: Hybrid.Authorization.ModuleInfos.ModuleInfoPickerBase(Of TFunction)
+  name.vb: ModuleInfoPickerBase(Of TFunction)
+  spec.csharp:
+  - uid: Hybrid.Authorization.ModuleInfos.ModuleInfoPickerBase`1
+    name: ModuleInfoPickerBase
+    nameWithType: ModuleInfoPickerBase
+    fullName: Hybrid.Authorization.ModuleInfos.ModuleInfoPickerBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TFunction
+    nameWithType: TFunction
+    fullName: TFunction
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Authorization.ModuleInfos.ModuleInfoPickerBase`1
+    name: ModuleInfoPickerBase
+    nameWithType: ModuleInfoPickerBase
+    fullName: Hybrid.Authorization.ModuleInfos.ModuleInfoPickerBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TFunction
+    nameWithType: TFunction
+    fullName: TFunction
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Authorization.ModuleInfos
+  commentId: N:Hybrid.Authorization.ModuleInfos
+  name: Hybrid.Authorization.ModuleInfos
+  nameWithType: Hybrid.Authorization.ModuleInfos
+  fullName: Hybrid.Authorization.ModuleInfos

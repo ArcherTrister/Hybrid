@@ -1,0 +1,24 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": "src/**.csproj",
+		  "exclude": [
+            "**/obj/**",
+			"**/bin/**"
+          ],
+		  "src": "../" // <---- base directory
+        }
+      ],"dest": "api"
+    }
+  ],
+  "content": [
+    {
+      "files": [
+        "api/**.yml","api/index.md"
+      ]
+    }
+    // ...
+  ]
+}

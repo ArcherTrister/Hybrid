@@ -1,0 +1,843 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Linq.ExpressionExtensions
+  commentId: T:Hybrid.Linq.ExpressionExtensions
+  id: ExpressionExtensions
+  parent: Hybrid.Linq
+  children:
+  - Hybrid.Linq.ExpressionExtensions.And``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Boolean)
+  - Hybrid.Linq.ExpressionExtensions.Compose``1(System.Linq.Expressions.Expression{``0},System.Linq.Expressions.Expression{``0},System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+  - Hybrid.Linq.ExpressionExtensions.Or``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: ExpressionExtensions
+  nameWithType: ExpressionExtensions
+  fullName: Hybrid.Linq.ExpressionExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid/Linq/ExpressionExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ExpressionExtensions
+    path: ../src/Hybrid/Linq/ExpressionExtensions.cs
+    startLine: 20
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Linq
+  summary: "\nExpression表达式扩展操作类\n"
+  example: []
+  syntax:
+    content: public static class ExpressionExtensions
+    content.vb: Public Module ExpressionExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.Linq.ExpressionExtensions.Compose``1(System.Linq.Expressions.Expression{``0},System.Linq.Expressions.Expression{``0},System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+  commentId: M:Hybrid.Linq.ExpressionExtensions.Compose``1(System.Linq.Expressions.Expression{``0},System.Linq.Expressions.Expression{``0},System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+  id: Compose``1(System.Linq.Expressions.Expression{``0},System.Linq.Expressions.Expression{``0},System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})
+  isExtensionMethod: true
+  parent: Hybrid.Linq.ExpressionExtensions
+  langs:
+  - csharp
+  - vb
+  name: Compose<T>(Expression<T>, Expression<T>, Func<Expression, Expression, Expression>)
+  nameWithType: ExpressionExtensions.Compose<T>(Expression<T>, Expression<T>, Func<Expression, Expression, Expression>)
+  fullName: Hybrid.Linq.ExpressionExtensions.Compose<T>(System.Linq.Expressions.Expression<T>, System.Linq.Expressions.Expression<T>, System.Func<System.Linq.Expressions.Expression, System.Linq.Expressions.Expression, System.Linq.Expressions.Expression>)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Linq/ExpressionExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Compose
+    path: ../src/Hybrid/Linq/ExpressionExtensions.cs
+    startLine: 30
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Linq
+  summary: "\n以特定的条件运行组合两个Expression表达式\n"
+  example: []
+  syntax:
+    content: public static Expression<T> Compose<T>(this Expression<T> first, Expression<T> second, Func<Expression, Expression, Expression> merge)
+    parameters:
+    - id: first
+      type: System.Linq.Expressions.Expression{{T}}
+      description: 第一个Expression表达式
+    - id: second
+      type: System.Linq.Expressions.Expression{{T}}
+      description: 要组合的Expression表达式
+    - id: merge
+      type: System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression}
+      description: 组合条件运算方式
+    typeParameters:
+    - id: T
+      description: 表达式的主实体类型
+    return:
+      type: System.Linq.Expressions.Expression{{T}}
+      description: 组合后的表达式
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Compose(Of T)(first As Expression(Of T), second As Expression(Of T), merge As Func(Of Expression, Expression, Expression)) As Expression(Of T)
+  overload: Hybrid.Linq.ExpressionExtensions.Compose*
+  nameWithType.vb: ExpressionExtensions.Compose(Of T)(Expression(Of T), Expression(Of T), Func(Of Expression, Expression, Expression))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Linq.ExpressionExtensions.Compose(Of T)(System.Linq.Expressions.Expression(Of T), System.Linq.Expressions.Expression(Of T), System.Func(Of System.Linq.Expressions.Expression, System.Linq.Expressions.Expression, System.Linq.Expressions.Expression))
+  name.vb: Compose(Of T)(Expression(Of T), Expression(Of T), Func(Of Expression, Expression, Expression))
+- uid: Hybrid.Linq.ExpressionExtensions.And``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Boolean)
+  commentId: M:Hybrid.Linq.ExpressionExtensions.And``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Boolean)
+  id: And``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Boolean)
+  isExtensionMethod: true
+  parent: Hybrid.Linq.ExpressionExtensions
+  langs:
+  - csharp
+  - vb
+  name: And<T>(Expression<Func<T, Boolean>>, Expression<Func<T, Boolean>>, Boolean)
+  nameWithType: ExpressionExtensions.And<T>(Expression<Func<T, Boolean>>, Expression<Func<T, Boolean>>, Boolean)
+  fullName: Hybrid.Linq.ExpressionExtensions.And<T>(System.Linq.Expressions.Expression<System.Func<T, System.Boolean>>, System.Linq.Expressions.Expression<System.Func<T, System.Boolean>>, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Linq/ExpressionExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: And
+    path: ../src/Hybrid/Linq/ExpressionExtensions.cs
+    startLine: 49
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Linq
+  summary: "\n以 Expression.AndAlso 组合两个Expression表达式\n"
+  example: []
+  syntax:
+    content: public static Expression<Func<T, bool>> And<T>(this Expression<Func<T, bool>> first, Expression<Func<T, bool>> second, bool ifExp = true)
+    parameters:
+    - id: first
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: 第一个Expression表达式
+    - id: second
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: 要组合的Expression表达式
+    - id: ifExp
+      type: System.Boolean
+      description: 判断条件表达式，当此条件为true时，才执行组合
+    typeParameters:
+    - id: T
+      description: 表达式的主实体类型
+    return:
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: 组合后的表达式
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function And(Of T)(first As Expression(Of Func(Of T, Boolean)), second As Expression(Of Func(Of T, Boolean)), ifExp As Boolean = True) As Expression(Of Func(Of T, Boolean))
+  overload: Hybrid.Linq.ExpressionExtensions.And*
+  nameWithType.vb: ExpressionExtensions.And(Of T)(Expression(Of Func(Of T, Boolean)), Expression(Of Func(Of T, Boolean)), Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Linq.ExpressionExtensions.And(Of T)(System.Linq.Expressions.Expression(Of System.Func(Of T, System.Boolean)), System.Linq.Expressions.Expression(Of System.Func(Of T, System.Boolean)), System.Boolean)
+  name.vb: And(Of T)(Expression(Of Func(Of T, Boolean)), Expression(Of Func(Of T, Boolean)), Boolean)
+- uid: Hybrid.Linq.ExpressionExtensions.Or``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Boolean)
+  commentId: M:Hybrid.Linq.ExpressionExtensions.Or``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Boolean)
+  id: Or``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Boolean)
+  isExtensionMethod: true
+  parent: Hybrid.Linq.ExpressionExtensions
+  langs:
+  - csharp
+  - vb
+  name: Or<T>(Expression<Func<T, Boolean>>, Expression<Func<T, Boolean>>, Boolean)
+  nameWithType: ExpressionExtensions.Or<T>(Expression<Func<T, Boolean>>, Expression<Func<T, Boolean>>, Boolean)
+  fullName: Hybrid.Linq.ExpressionExtensions.Or<T>(System.Linq.Expressions.Expression<System.Func<T, System.Boolean>>, System.Linq.Expressions.Expression<System.Func<T, System.Boolean>>, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Linq/ExpressionExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Or
+    path: ../src/Hybrid/Linq/ExpressionExtensions.cs
+    startLine: 62
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Linq
+  summary: "\n以 Expression.OrElse 组合两个Expression表达式\n"
+  example: []
+  syntax:
+    content: public static Expression<Func<T, bool>> Or<T>(this Expression<Func<T, bool>> first, Expression<Func<T, bool>> second, bool ifExp = true)
+    parameters:
+    - id: first
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: 第一个Expression表达式
+    - id: second
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: 要组合的Expression表达式
+    - id: ifExp
+      type: System.Boolean
+      description: 判断条件表达式，当此条件为true时，才执行组合
+    typeParameters:
+    - id: T
+      description: 表达式的主实体类型
+    return:
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: 组合后的表达式
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Or(Of T)(first As Expression(Of Func(Of T, Boolean)), second As Expression(Of Func(Of T, Boolean)), ifExp As Boolean = True) As Expression(Of Func(Of T, Boolean))
+  overload: Hybrid.Linq.ExpressionExtensions.Or*
+  nameWithType.vb: ExpressionExtensions.Or(Of T)(Expression(Of Func(Of T, Boolean)), Expression(Of Func(Of T, Boolean)), Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Linq.ExpressionExtensions.Or(Of T)(System.Linq.Expressions.Expression(Of System.Func(Of T, System.Boolean)), System.Linq.Expressions.Expression(Of System.Func(Of T, System.Boolean)), System.Boolean)
+  name.vb: Or(Of T)(Expression(Of Func(Of T, Boolean)), Expression(Of Func(Of T, Boolean)), Boolean)
+references:
+- uid: Hybrid.Linq
+  commentId: N:Hybrid.Linq
+  name: Hybrid.Linq
+  nameWithType: Hybrid.Linq
+  fullName: Hybrid.Linq
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hybrid.Linq.ExpressionExtensions.Compose*
+  commentId: Overload:Hybrid.Linq.ExpressionExtensions.Compose
+  name: Compose
+  nameWithType: ExpressionExtensions.Compose
+  fullName: Hybrid.Linq.ExpressionExtensions.Compose
+- uid: System.Linq.Expressions.Expression{{T}}
+  commentId: T:System.Linq.Expressions.Expression{``0}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  name: Expression<T>
+  nameWithType: Expression<T>
+  fullName: System.Linq.Expressions.Expression<T>
+  nameWithType.vb: Expression(Of T)
+  fullName.vb: System.Linq.Expressions.Expression(Of T)
+  name.vb: Expression(Of T)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression}
+  commentId: T:System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression}
+  parent: System
+  definition: System.Func`3
+  name: Func<Expression, Expression, Expression>
+  nameWithType: Func<Expression, Expression, Expression>
+  fullName: System.Func<System.Linq.Expressions.Expression, System.Linq.Expressions.Expression, System.Linq.Expressions.Expression>
+  nameWithType.vb: Func(Of Expression, Expression, Expression)
+  fullName.vb: System.Func(Of System.Linq.Expressions.Expression, System.Linq.Expressions.Expression, System.Linq.Expressions.Expression)
+  name.vb: Func(Of Expression, Expression, Expression)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Linq.Expressions.Expression
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDelegate
+    nameWithType: TDelegate
+    fullName: TDelegate
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDelegate
+    nameWithType: TDelegate
+    fullName: TDelegate
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+- uid: System.Func`3
+  commentId: T:System.Func`3
+  isExternal: true
+  name: Func<T1, T2, TResult>
+  nameWithType: Func<T1, T2, TResult>
+  fullName: System.Func<T1, T2, TResult>
+  nameWithType.vb: Func(Of T1, T2, TResult)
+  fullName.vb: System.Func(Of T1, T2, TResult)
+  name.vb: Func(Of T1, T2, TResult)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Linq.ExpressionExtensions.And*
+  commentId: Overload:Hybrid.Linq.ExpressionExtensions.And
+  name: And
+  nameWithType: ExpressionExtensions.And
+  fullName: Hybrid.Linq.ExpressionExtensions.And
+- uid: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  name: Expression<Func<T, Boolean>>
+  nameWithType: Expression<Func<T, Boolean>>
+  fullName: System.Linq.Expressions.Expression<System.Func<T, System.Boolean>>
+  nameWithType.vb: Expression(Of Func(Of T, Boolean))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of T, System.Boolean))
+  name.vb: Expression(Of Func(Of T, Boolean))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Hybrid.Linq.ExpressionExtensions.Or*
+  commentId: Overload:Hybrid.Linq.ExpressionExtensions.Or
+  name: Or
+  nameWithType: ExpressionExtensions.Or
+  fullName: Hybrid.Linq.ExpressionExtensions.Or

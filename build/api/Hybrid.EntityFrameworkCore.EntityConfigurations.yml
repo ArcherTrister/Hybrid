@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.EntityFrameworkCore.EntityConfigurations
+  commentId: N:Hybrid.EntityFrameworkCore.EntityConfigurations
+  id: Hybrid.EntityFrameworkCore.EntityConfigurations
+  children:
+  - Hybrid.EntityFrameworkCore.EntityConfigurations.AuditEntityConfiguration
+  - Hybrid.EntityFrameworkCore.EntityConfigurations.AuditOperationConfiguration
+  - Hybrid.EntityFrameworkCore.EntityConfigurations.AuditPropertyConfiguration
+  - Hybrid.EntityFrameworkCore.EntityConfigurations.KeyValueConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.EntityFrameworkCore.EntityConfigurations
+  nameWithType: Hybrid.EntityFrameworkCore.EntityConfigurations
+  fullName: Hybrid.EntityFrameworkCore.EntityConfigurations
+  type: Namespace
+  assemblies:
+  - Hybrid.EntityFrameworkCore
+references:
+- uid: Hybrid.EntityFrameworkCore.EntityConfigurations.AuditEntityConfiguration
+  commentId: T:Hybrid.EntityFrameworkCore.EntityConfigurations.AuditEntityConfiguration
+  name: AuditEntityConfiguration
+  nameWithType: AuditEntityConfiguration
+  fullName: Hybrid.EntityFrameworkCore.EntityConfigurations.AuditEntityConfiguration
+- uid: Hybrid.EntityFrameworkCore.EntityConfigurations.AuditOperationConfiguration
+  commentId: T:Hybrid.EntityFrameworkCore.EntityConfigurations.AuditOperationConfiguration
+  name: AuditOperationConfiguration
+  nameWithType: AuditOperationConfiguration
+  fullName: Hybrid.EntityFrameworkCore.EntityConfigurations.AuditOperationConfiguration
+- uid: Hybrid.EntityFrameworkCore.EntityConfigurations.AuditPropertyConfiguration
+  commentId: T:Hybrid.EntityFrameworkCore.EntityConfigurations.AuditPropertyConfiguration
+  name: AuditPropertyConfiguration
+  nameWithType: AuditPropertyConfiguration
+  fullName: Hybrid.EntityFrameworkCore.EntityConfigurations.AuditPropertyConfiguration
+- uid: Hybrid.EntityFrameworkCore.EntityConfigurations.KeyValueConfiguration
+  commentId: T:Hybrid.EntityFrameworkCore.EntityConfigurations.KeyValueConfiguration
+  name: KeyValueConfiguration
+  nameWithType: KeyValueConfiguration
+  fullName: Hybrid.EntityFrameworkCore.EntityConfigurations.KeyValueConfiguration

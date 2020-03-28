@@ -1,0 +1,65 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Quartz.Dashboard.Views
+  commentId: N:Hybrid.Quartz.Dashboard.Views
+  id: Hybrid.Quartz.Dashboard.Views
+  children:
+  - Hybrid.Quartz.Dashboard.Views.QuartzRazorPage`1
+  - Hybrid.Quartz.Dashboard.Views.QuartzViewComponent
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Quartz.Dashboard.Views
+  nameWithType: Hybrid.Quartz.Dashboard.Views
+  fullName: Hybrid.Quartz.Dashboard.Views
+  type: Namespace
+  assemblies:
+  - Hybrid.Quartz
+references:
+- uid: Hybrid.Quartz.Dashboard.Views.QuartzRazorPage`1
+  commentId: T:Hybrid.Quartz.Dashboard.Views.QuartzRazorPage`1
+  name: QuartzRazorPage<TModel>
+  nameWithType: QuartzRazorPage<TModel>
+  fullName: Hybrid.Quartz.Dashboard.Views.QuartzRazorPage<TModel>
+  nameWithType.vb: QuartzRazorPage(Of TModel)
+  fullName.vb: Hybrid.Quartz.Dashboard.Views.QuartzRazorPage(Of TModel)
+  name.vb: QuartzRazorPage(Of TModel)
+  spec.csharp:
+  - uid: Hybrid.Quartz.Dashboard.Views.QuartzRazorPage`1
+    name: QuartzRazorPage
+    nameWithType: QuartzRazorPage
+    fullName: Hybrid.Quartz.Dashboard.Views.QuartzRazorPage
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TModel
+    nameWithType: TModel
+    fullName: TModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Quartz.Dashboard.Views.QuartzRazorPage`1
+    name: QuartzRazorPage
+    nameWithType: QuartzRazorPage
+    fullName: Hybrid.Quartz.Dashboard.Views.QuartzRazorPage
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TModel
+    nameWithType: TModel
+    fullName: TModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Quartz.Dashboard.Views.QuartzViewComponent
+  commentId: T:Hybrid.Quartz.Dashboard.Views.QuartzViewComponent
+  parent: Hybrid.Quartz.Dashboard.Views
+  name: QuartzViewComponent
+  nameWithType: QuartzViewComponent
+  fullName: Hybrid.Quartz.Dashboard.Views.QuartzViewComponent
+- uid: Hybrid.Quartz.Dashboard.Views
+  commentId: N:Hybrid.Quartz.Dashboard.Views
+  name: Hybrid.Quartz.Dashboard.Views
+  nameWithType: Hybrid.Quartz.Dashboard.Views
+  fullName: Hybrid.Quartz.Dashboard.Views

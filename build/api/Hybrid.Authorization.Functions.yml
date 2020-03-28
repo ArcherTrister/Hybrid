@@ -1,0 +1,106 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Authorization.Functions
+  commentId: N:Hybrid.Authorization.Functions
+  id: Hybrid.Authorization.Functions
+  children:
+  - Hybrid.Authorization.Functions.Function
+  - Hybrid.Authorization.Functions.FunctionAccessType
+  - Hybrid.Authorization.Functions.FunctionBase
+  - Hybrid.Authorization.Functions.FunctionHandlerBase`1
+  - Hybrid.Authorization.Functions.IFunction
+  - Hybrid.Authorization.Functions.IFunctionHandler
+  - Hybrid.Authorization.Functions.IFunctionTypeFinder
+  - Hybrid.Authorization.Functions.NonFunctionAttribute
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Authorization.Functions
+  nameWithType: Hybrid.Authorization.Functions
+  fullName: Hybrid.Authorization.Functions
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Authorization.Functions.Function
+  commentId: T:Hybrid.Authorization.Functions.Function
+  parent: Hybrid.Authorization.Functions
+  name: Function
+  nameWithType: Function
+  fullName: Hybrid.Authorization.Functions.Function
+- uid: Hybrid.Authorization.Functions.FunctionAccessType
+  commentId: T:Hybrid.Authorization.Functions.FunctionAccessType
+  parent: Hybrid.Authorization.Functions
+  name: FunctionAccessType
+  nameWithType: FunctionAccessType
+  fullName: Hybrid.Authorization.Functions.FunctionAccessType
+- uid: Hybrid.Authorization.Functions.FunctionBase
+  commentId: T:Hybrid.Authorization.Functions.FunctionBase
+  parent: Hybrid.Authorization.Functions
+  name: FunctionBase
+  nameWithType: FunctionBase
+  fullName: Hybrid.Authorization.Functions.FunctionBase
+- uid: Hybrid.Authorization.Functions.FunctionHandlerBase`1
+  commentId: T:Hybrid.Authorization.Functions.FunctionHandlerBase`1
+  name: FunctionHandlerBase<TFunction>
+  nameWithType: FunctionHandlerBase<TFunction>
+  fullName: Hybrid.Authorization.Functions.FunctionHandlerBase<TFunction>
+  nameWithType.vb: FunctionHandlerBase(Of TFunction)
+  fullName.vb: Hybrid.Authorization.Functions.FunctionHandlerBase(Of TFunction)
+  name.vb: FunctionHandlerBase(Of TFunction)
+  spec.csharp:
+  - uid: Hybrid.Authorization.Functions.FunctionHandlerBase`1
+    name: FunctionHandlerBase
+    nameWithType: FunctionHandlerBase
+    fullName: Hybrid.Authorization.Functions.FunctionHandlerBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TFunction
+    nameWithType: TFunction
+    fullName: TFunction
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Authorization.Functions.FunctionHandlerBase`1
+    name: FunctionHandlerBase
+    nameWithType: FunctionHandlerBase
+    fullName: Hybrid.Authorization.Functions.FunctionHandlerBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TFunction
+    nameWithType: TFunction
+    fullName: TFunction
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Authorization.Functions.IFunction
+  commentId: T:Hybrid.Authorization.Functions.IFunction
+  parent: Hybrid.Authorization.Functions
+  name: IFunction
+  nameWithType: IFunction
+  fullName: Hybrid.Authorization.Functions.IFunction
+- uid: Hybrid.Authorization.Functions.IFunctionHandler
+  commentId: T:Hybrid.Authorization.Functions.IFunctionHandler
+  parent: Hybrid.Authorization.Functions
+  name: IFunctionHandler
+  nameWithType: IFunctionHandler
+  fullName: Hybrid.Authorization.Functions.IFunctionHandler
+- uid: Hybrid.Authorization.Functions.IFunctionTypeFinder
+  commentId: T:Hybrid.Authorization.Functions.IFunctionTypeFinder
+  parent: Hybrid.Authorization.Functions
+  name: IFunctionTypeFinder
+  nameWithType: IFunctionTypeFinder
+  fullName: Hybrid.Authorization.Functions.IFunctionTypeFinder
+- uid: Hybrid.Authorization.Functions.NonFunctionAttribute
+  commentId: T:Hybrid.Authorization.Functions.NonFunctionAttribute
+  name: NonFunctionAttribute
+  nameWithType: NonFunctionAttribute
+  fullName: Hybrid.Authorization.Functions.NonFunctionAttribute
+- uid: Hybrid.Authorization.Functions
+  commentId: N:Hybrid.Authorization.Functions
+  name: Hybrid.Authorization.Functions
+  nameWithType: Hybrid.Authorization.Functions
+  fullName: Hybrid.Authorization.Functions

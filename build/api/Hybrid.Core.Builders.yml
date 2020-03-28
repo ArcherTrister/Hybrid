@@ -1,0 +1,41 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Core.Builders
+  commentId: N:Hybrid.Core.Builders
+  id: Hybrid.Core.Builders
+  children:
+  - Hybrid.Core.Builders.HybridBuilder
+  - Hybrid.Core.Builders.HybridBuilderExtensions
+  - Hybrid.Core.Builders.IHybridBuilder
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Core.Builders
+  nameWithType: Hybrid.Core.Builders
+  fullName: Hybrid.Core.Builders
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Core.Builders.HybridBuilder
+  commentId: T:Hybrid.Core.Builders.HybridBuilder
+  name: HybridBuilder
+  nameWithType: HybridBuilder
+  fullName: Hybrid.Core.Builders.HybridBuilder
+- uid: Hybrid.Core.Builders.HybridBuilderExtensions
+  commentId: T:Hybrid.Core.Builders.HybridBuilderExtensions
+  parent: Hybrid.Core.Builders
+  name: HybridBuilderExtensions
+  nameWithType: HybridBuilderExtensions
+  fullName: Hybrid.Core.Builders.HybridBuilderExtensions
+- uid: Hybrid.Core.Builders.IHybridBuilder
+  commentId: T:Hybrid.Core.Builders.IHybridBuilder
+  parent: Hybrid.Core.Builders
+  name: IHybridBuilder
+  nameWithType: IHybridBuilder
+  fullName: Hybrid.Core.Builders.IHybridBuilder
+- uid: Hybrid.Core.Builders
+  commentId: N:Hybrid.Core.Builders
+  name: Hybrid.Core.Builders
+  nameWithType: Hybrid.Core.Builders
+  fullName: Hybrid.Core.Builders

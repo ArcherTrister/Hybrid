@@ -1,0 +1,83 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.EntityFrameworkCore.Extensions
+  commentId: N:Hybrid.EntityFrameworkCore.Extensions
+  id: Hybrid.EntityFrameworkCore.Extensions
+  children:
+  - Hybrid.EntityFrameworkCore.Extensions.ObjectDocumentation
+  - Hybrid.EntityFrameworkCore.Extensions.ReflectionUtil
+  - Hybrid.EntityFrameworkCore.Extensions.SchemaDescriptionUpdater`1
+  - Hybrid.EntityFrameworkCore.Extensions.XmlAnnotationReader
+  - Hybrid.EntityFrameworkCore.Extensions.XmlResourceType
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.EntityFrameworkCore.Extensions
+  nameWithType: Hybrid.EntityFrameworkCore.Extensions
+  fullName: Hybrid.EntityFrameworkCore.Extensions
+  type: Namespace
+  assemblies:
+  - Hybrid.EntityFrameworkCore.SqlServer
+references:
+- uid: Hybrid.EntityFrameworkCore.Extensions.SchemaDescriptionUpdater`1
+  commentId: T:Hybrid.EntityFrameworkCore.Extensions.SchemaDescriptionUpdater`1
+  name: SchemaDescriptionUpdater<TContext>
+  nameWithType: SchemaDescriptionUpdater<TContext>
+  fullName: Hybrid.EntityFrameworkCore.Extensions.SchemaDescriptionUpdater<TContext>
+  nameWithType.vb: SchemaDescriptionUpdater(Of TContext)
+  fullName.vb: Hybrid.EntityFrameworkCore.Extensions.SchemaDescriptionUpdater(Of TContext)
+  name.vb: SchemaDescriptionUpdater(Of TContext)
+  spec.csharp:
+  - uid: Hybrid.EntityFrameworkCore.Extensions.SchemaDescriptionUpdater`1
+    name: SchemaDescriptionUpdater
+    nameWithType: SchemaDescriptionUpdater
+    fullName: Hybrid.EntityFrameworkCore.Extensions.SchemaDescriptionUpdater
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TContext
+    nameWithType: TContext
+    fullName: TContext
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.EntityFrameworkCore.Extensions.SchemaDescriptionUpdater`1
+    name: SchemaDescriptionUpdater
+    nameWithType: SchemaDescriptionUpdater
+    fullName: Hybrid.EntityFrameworkCore.Extensions.SchemaDescriptionUpdater
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TContext
+    nameWithType: TContext
+    fullName: TContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.EntityFrameworkCore.Extensions.ReflectionUtil
+  commentId: T:Hybrid.EntityFrameworkCore.Extensions.ReflectionUtil
+  name: ReflectionUtil
+  nameWithType: ReflectionUtil
+  fullName: Hybrid.EntityFrameworkCore.Extensions.ReflectionUtil
+- uid: Hybrid.EntityFrameworkCore.Extensions.XmlAnnotationReader
+  commentId: T:Hybrid.EntityFrameworkCore.Extensions.XmlAnnotationReader
+  name: XmlAnnotationReader
+  nameWithType: XmlAnnotationReader
+  fullName: Hybrid.EntityFrameworkCore.Extensions.XmlAnnotationReader
+- uid: Hybrid.EntityFrameworkCore.Extensions.ObjectDocumentation
+  commentId: T:Hybrid.EntityFrameworkCore.Extensions.ObjectDocumentation
+  name: ObjectDocumentation
+  nameWithType: ObjectDocumentation
+  fullName: Hybrid.EntityFrameworkCore.Extensions.ObjectDocumentation
+- uid: Hybrid.EntityFrameworkCore.Extensions.XmlResourceType
+  commentId: T:Hybrid.EntityFrameworkCore.Extensions.XmlResourceType
+  parent: Hybrid.EntityFrameworkCore.Extensions
+  name: XmlResourceType
+  nameWithType: XmlResourceType
+  fullName: Hybrid.EntityFrameworkCore.Extensions.XmlResourceType
+- uid: Hybrid.EntityFrameworkCore.Extensions
+  commentId: N:Hybrid.EntityFrameworkCore.Extensions
+  name: Hybrid.EntityFrameworkCore.Extensions
+  nameWithType: Hybrid.EntityFrameworkCore.Extensions
+  fullName: Hybrid.EntityFrameworkCore.Extensions

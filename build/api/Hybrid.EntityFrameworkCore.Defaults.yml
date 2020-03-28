@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.EntityFrameworkCore.Defaults
+  commentId: N:Hybrid.EntityFrameworkCore.Defaults
+  id: Hybrid.EntityFrameworkCore.Defaults
+  children:
+  - Hybrid.EntityFrameworkCore.Defaults.DefaultDbContext
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.EntityFrameworkCore.Defaults
+  nameWithType: Hybrid.EntityFrameworkCore.Defaults
+  fullName: Hybrid.EntityFrameworkCore.Defaults
+  type: Namespace
+  assemblies:
+  - Hybrid.EntityFrameworkCore
+references:
+- uid: Hybrid.EntityFrameworkCore.Defaults.DefaultDbContext
+  commentId: T:Hybrid.EntityFrameworkCore.Defaults.DefaultDbContext
+  name: DefaultDbContext
+  nameWithType: DefaultDbContext
+  fullName: Hybrid.EntityFrameworkCore.Defaults.DefaultDbContext

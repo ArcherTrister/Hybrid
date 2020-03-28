@@ -1,0 +1,625 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Security.HashHelper
+  commentId: T:Hybrid.Security.HashHelper
+  id: HashHelper
+  parent: Hybrid.Security
+  children:
+  - Hybrid.Security.HashHelper.GetMd5(System.Byte[])
+  - Hybrid.Security.HashHelper.GetMd5(System.String,System.Text.Encoding)
+  - Hybrid.Security.HashHelper.GetSha1(System.String,System.Text.Encoding)
+  - Hybrid.Security.HashHelper.GetSha256(System.String,System.Text.Encoding)
+  - Hybrid.Security.HashHelper.GetSha512(System.String,System.Text.Encoding)
+  langs:
+  - csharp
+  - vb
+  name: HashHelper
+  nameWithType: HashHelper
+  fullName: Hybrid.Security.HashHelper
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid/Security/HashHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: HashHelper
+    path: ../src/Hybrid/Security/HashHelper.cs
+    startLine: 18
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security
+  summary: "\n字符串Hash操作类\n"
+  example: []
+  syntax:
+    content: public static class HashHelper
+    content.vb: Public Module HashHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.Security.HashHelper.GetMd5(System.String,System.Text.Encoding)
+  commentId: M:Hybrid.Security.HashHelper.GetMd5(System.String,System.Text.Encoding)
+  id: GetMd5(System.String,System.Text.Encoding)
+  parent: Hybrid.Security.HashHelper
+  langs:
+  - csharp
+  - vb
+  name: GetMd5(String, Encoding)
+  nameWithType: HashHelper.GetMd5(String, Encoding)
+  fullName: Hybrid.Security.HashHelper.GetMd5(System.String, System.Text.Encoding)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Security/HashHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetMd5
+    path: ../src/Hybrid/Security/HashHelper.cs
+    startLine: 23
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security
+  summary: "\n获取字符串的MD5哈希值，默认编码为<xref href=\"System.Text.Encoding.UTF8\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public static string GetMd5(string value, Encoding encoding = null)
+    parameters:
+    - id: value
+      type: System.String
+    - id: encoding
+      type: System.Text.Encoding
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetMd5(value As String, encoding As Encoding = Nothing) As String
+  overload: Hybrid.Security.HashHelper.GetMd5*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Security.HashHelper.GetMd5(System.Byte[])
+  commentId: M:Hybrid.Security.HashHelper.GetMd5(System.Byte[])
+  id: GetMd5(System.Byte[])
+  parent: Hybrid.Security.HashHelper
+  langs:
+  - csharp
+  - vb
+  name: GetMd5(Byte[])
+  nameWithType: HashHelper.GetMd5(Byte[])
+  fullName: Hybrid.Security.HashHelper.GetMd5(System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Security/HashHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetMd5
+    path: ../src/Hybrid/Security/HashHelper.cs
+    startLine: 37
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security
+  summary: "\n获取字节数组的MD5哈希值\n"
+  example: []
+  syntax:
+    content: public static string GetMd5(byte[] bytes)
+    parameters:
+    - id: bytes
+      type: System.Byte[]
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetMd5(bytes As Byte()) As String
+  overload: Hybrid.Security.HashHelper.GetMd5*
+  nameWithType.vb: HashHelper.GetMd5(Byte())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Security.HashHelper.GetMd5(System.Byte())
+  name.vb: GetMd5(Byte())
+- uid: Hybrid.Security.HashHelper.GetSha1(System.String,System.Text.Encoding)
+  commentId: M:Hybrid.Security.HashHelper.GetSha1(System.String,System.Text.Encoding)
+  id: GetSha1(System.String,System.Text.Encoding)
+  parent: Hybrid.Security.HashHelper
+  langs:
+  - csharp
+  - vb
+  name: GetSha1(String, Encoding)
+  nameWithType: HashHelper.GetSha1(String, Encoding)
+  fullName: Hybrid.Security.HashHelper.GetSha1(System.String, System.Text.Encoding)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Security/HashHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetSha1
+    path: ../src/Hybrid/Security/HashHelper.cs
+    startLine: 53
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security
+  summary: "\n获取字符串的SHA1哈希值，默认编码为<xref href=\"System.Text.Encoding.UTF8\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public static string GetSha1(string value, Encoding encoding = null)
+    parameters:
+    - id: value
+      type: System.String
+    - id: encoding
+      type: System.Text.Encoding
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetSha1(value As String, encoding As Encoding = Nothing) As String
+  overload: Hybrid.Security.HashHelper.GetSha1*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Security.HashHelper.GetSha256(System.String,System.Text.Encoding)
+  commentId: M:Hybrid.Security.HashHelper.GetSha256(System.String,System.Text.Encoding)
+  id: GetSha256(System.String,System.Text.Encoding)
+  parent: Hybrid.Security.HashHelper
+  langs:
+  - csharp
+  - vb
+  name: GetSha256(String, Encoding)
+  nameWithType: HashHelper.GetSha256(String, Encoding)
+  fullName: Hybrid.Security.HashHelper.GetSha256(System.String, System.Text.Encoding)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Security/HashHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetSha256
+    path: ../src/Hybrid/Security/HashHelper.cs
+    startLine: 74
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security
+  summary: "\n获取字符串的Sha256哈希值，默认编码为<xref href=\"System.Text.Encoding.UTF8\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public static string GetSha256(string value, Encoding encoding = null)
+    parameters:
+    - id: value
+      type: System.String
+    - id: encoding
+      type: System.Text.Encoding
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetSha256(value As String, encoding As Encoding = Nothing) As String
+  overload: Hybrid.Security.HashHelper.GetSha256*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Security.HashHelper.GetSha512(System.String,System.Text.Encoding)
+  commentId: M:Hybrid.Security.HashHelper.GetSha512(System.String,System.Text.Encoding)
+  id: GetSha512(System.String,System.Text.Encoding)
+  parent: Hybrid.Security.HashHelper
+  langs:
+  - csharp
+  - vb
+  name: GetSha512(String, Encoding)
+  nameWithType: HashHelper.GetSha512(String, Encoding)
+  fullName: Hybrid.Security.HashHelper.GetSha512(System.String, System.Text.Encoding)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Security/HashHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetSha512
+    path: ../src/Hybrid/Security/HashHelper.cs
+    startLine: 95
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security
+  summary: "\n获取字符串的Sha512哈希值，默认编码为<xref href=\"System.Text.Encoding.UTF8\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public static string GetSha512(string value, Encoding encoding = null)
+    parameters:
+    - id: value
+      type: System.String
+    - id: encoding
+      type: System.Text.Encoding
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetSha512(value As String, encoding As Encoding = Nothing) As String
+  overload: Hybrid.Security.HashHelper.GetSha512*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Hybrid.Security
+  commentId: N:Hybrid.Security
+  name: Hybrid.Security
+  nameWithType: Hybrid.Security
+  fullName: Hybrid.Security
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Text.Encoding.UTF8
+  commentId: P:System.Text.Encoding.UTF8
+  isExternal: true
+- uid: Hybrid.Security.HashHelper.GetMd5*
+  commentId: Overload:Hybrid.Security.HashHelper.GetMd5
+  name: GetMd5
+  nameWithType: HashHelper.GetMd5
+  fullName: Hybrid.Security.HashHelper.GetMd5
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Text.Encoding
+  commentId: T:System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  name: Encoding
+  nameWithType: Encoding
+  fullName: System.Text.Encoding
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Hybrid.Security.HashHelper.GetSha1*
+  commentId: Overload:Hybrid.Security.HashHelper.GetSha1
+  name: GetSha1
+  nameWithType: HashHelper.GetSha1
+  fullName: Hybrid.Security.HashHelper.GetSha1
+- uid: Hybrid.Security.HashHelper.GetSha256*
+  commentId: Overload:Hybrid.Security.HashHelper.GetSha256
+  name: GetSha256
+  nameWithType: HashHelper.GetSha256
+  fullName: Hybrid.Security.HashHelper.GetSha256
+- uid: Hybrid.Security.HashHelper.GetSha512*
+  commentId: Overload:Hybrid.Security.HashHelper.GetSha512
+  name: GetSha512
+  nameWithType: HashHelper.GetSha512
+  fullName: Hybrid.Security.HashHelper.GetSha512

@@ -1,0 +1,47 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Identity.JwtBearer
+  commentId: N:Hybrid.Identity.JwtBearer
+  id: Hybrid.Identity.JwtBearer
+  children:
+  - Hybrid.Identity.JwtBearer.GrantType
+  - Hybrid.Identity.JwtBearer.IJwtBearerService
+  - Hybrid.Identity.JwtBearer.JsonWebToken
+  - Hybrid.Identity.JwtBearer.RefreshToken
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Identity.JwtBearer
+  nameWithType: Hybrid.Identity.JwtBearer
+  fullName: Hybrid.Identity.JwtBearer
+  type: Namespace
+  assemblies:
+  - Hybrid.Zero.Identity
+references:
+- uid: Hybrid.Identity.JwtBearer.GrantType
+  commentId: T:Hybrid.Identity.JwtBearer.GrantType
+  name: GrantType
+  nameWithType: GrantType
+  fullName: Hybrid.Identity.JwtBearer.GrantType
+- uid: Hybrid.Identity.JwtBearer.IJwtBearerService
+  commentId: T:Hybrid.Identity.JwtBearer.IJwtBearerService
+  parent: Hybrid.Identity.JwtBearer
+  name: IJwtBearerService
+  nameWithType: IJwtBearerService
+  fullName: Hybrid.Identity.JwtBearer.IJwtBearerService
+- uid: Hybrid.Identity.JwtBearer.JsonWebToken
+  commentId: T:Hybrid.Identity.JwtBearer.JsonWebToken
+  name: JsonWebToken
+  nameWithType: JsonWebToken
+  fullName: Hybrid.Identity.JwtBearer.JsonWebToken
+- uid: Hybrid.Identity.JwtBearer.RefreshToken
+  commentId: T:Hybrid.Identity.JwtBearer.RefreshToken
+  parent: Hybrid.Identity.JwtBearer
+  name: RefreshToken
+  nameWithType: RefreshToken
+  fullName: Hybrid.Identity.JwtBearer.RefreshToken
+- uid: Hybrid.Identity.JwtBearer
+  commentId: N:Hybrid.Identity.JwtBearer
+  name: Hybrid.Identity.JwtBearer
+  nameWithType: Hybrid.Identity.JwtBearer
+  fullName: Hybrid.Identity.JwtBearer

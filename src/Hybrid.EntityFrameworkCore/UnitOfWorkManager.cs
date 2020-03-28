@@ -8,6 +8,7 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.Core.Options;
+using Hybrid.Data;
 using Hybrid.Dependency;
 using Hybrid.Domain.Entities;
 using Hybrid.Domain.Uow;
@@ -24,7 +25,7 @@ namespace Hybrid.EntityFrameworkCore
     /// 工作单元管理器
     /// </summary>
     [Dependency(ServiceLifetime.Scoped, TryAdd = true)]
-    public class UnitOfWorkManager : IUnitOfWorkManager
+    public class UnitOfWorkManager : Disposable, IUnitOfWorkManager
     {
         private readonly ScopedDictionary _scopedDictionary;
 
@@ -139,21 +140,16 @@ namespace Hybrid.EntityFrameworkCore
             }
         }
 
-        /// <summary>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</summary>
-        public void Dispose()
+        protected override void Dispose(bool disposing)
         {
-            foreach (IUnitOfWork unitOfWork in _scopedDictionary.GetConnUnitOfWorks())
+            if (!Disposed)
             {
-                unitOfWork.Dispose();
+                foreach (IUnitOfWork unitOfWork in _scopedDictionary.GetConnUnitOfWorks())
+                {
+                    unitOfWork.Dispose();
+                }
             }
-        }
-
-        public void Rollback()
-        {
-            foreach (IUnitOfWork unitOfWork in _scopedDictionary.GetConnUnitOfWorks())
-            {
-                unitOfWork.Rollback();
-            }
+            base.Dispose(disposing);
         }
     }
 }

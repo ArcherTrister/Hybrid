@@ -1,0 +1,679 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Helpers.ComparisonHelper`1
+  commentId: T:Hybrid.Helpers.ComparisonHelper`1
+  id: ComparisonHelper`1
+  parent: Hybrid.Helpers
+  children:
+  - Hybrid.Helpers.ComparisonHelper`1.CreateComparer``1(System.Func{`0,``0})
+  - Hybrid.Helpers.ComparisonHelper`1.CreateComparer``1(System.Func{`0,``0},System.Collections.Generic.IComparer{``0})
+  langs:
+  - csharp
+  - vb
+  name: ComparisonHelper<T>
+  nameWithType: ComparisonHelper<T>
+  fullName: Hybrid.Helpers.ComparisonHelper<T>
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid/Helpers/ComparisonHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ComparisonHelper
+    path: ../src/Hybrid/Helpers/ComparisonHelper.cs
+    startLine: 20
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Helpers
+  summary: "\n比较器辅助类，用于快速创建<xref href=\"System.Collections.Generic.IComparer%601\" data-throw-if-not-resolved=\"false\"></xref>接口的实例\n"
+  example:
+  - "\nvar comparer1 = Comparison[Person].CreateComparer(p => p.ID); var comparer2 = Comparison[Person].CreateComparer(p => p.Name); var comparer3 = Comparison[Person].CreateComparer(p => p.Birthday.Year)\n"
+  syntax:
+    content: public static class ComparisonHelper<T>
+    typeParameters:
+    - id: T
+      description: 要比较的类型
+    content.vb: Public Module ComparisonHelper(Of T)
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: ComparisonHelper(Of T)
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+  fullName.vb: Hybrid.Helpers.ComparisonHelper(Of T)
+  name.vb: ComparisonHelper(Of T)
+- uid: Hybrid.Helpers.ComparisonHelper`1.CreateComparer``1(System.Func{`0,``0})
+  commentId: M:Hybrid.Helpers.ComparisonHelper`1.CreateComparer``1(System.Func{`0,``0})
+  id: CreateComparer``1(System.Func{`0,``0})
+  parent: Hybrid.Helpers.ComparisonHelper`1
+  langs:
+  - csharp
+  - vb
+  name: CreateComparer<TV>(Func<T, TV>)
+  nameWithType: ComparisonHelper<T>.CreateComparer<TV>(Func<T, TV>)
+  fullName: Hybrid.Helpers.ComparisonHelper<T>.CreateComparer<TV>(System.Func<T, TV>)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Helpers/ComparisonHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: CreateComparer
+    path: ../src/Hybrid/Helpers/ComparisonHelper.cs
+    startLine: 25
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Helpers
+  summary: "\n创建指定对比委托<code data-dev-comment-type=\"paramref\" class=\"paramref\">keySelector</code>的实例\n"
+  example: []
+  syntax:
+    content: public static IComparer<T> CreateComparer<TV>(Func<T, TV> keySelector)
+    parameters:
+    - id: keySelector
+      type: System.Func{{T},{TV}}
+    typeParameters:
+    - id: TV
+    return:
+      type: System.Collections.Generic.IComparer{{T}}
+    content.vb: Public Shared Function CreateComparer(Of TV)(keySelector As Func(Of T, TV)) As IComparer(Of T)
+  overload: Hybrid.Helpers.ComparisonHelper`1.CreateComparer*
+  nameWithType.vb: ComparisonHelper(Of T).CreateComparer(Of TV)(Func(Of T, TV))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Helpers.ComparisonHelper(Of T).CreateComparer(Of TV)(System.Func(Of T, TV))
+  name.vb: CreateComparer(Of TV)(Func(Of T, TV))
+- uid: Hybrid.Helpers.ComparisonHelper`1.CreateComparer``1(System.Func{`0,``0},System.Collections.Generic.IComparer{``0})
+  commentId: M:Hybrid.Helpers.ComparisonHelper`1.CreateComparer``1(System.Func{`0,``0},System.Collections.Generic.IComparer{``0})
+  id: CreateComparer``1(System.Func{`0,``0},System.Collections.Generic.IComparer{``0})
+  parent: Hybrid.Helpers.ComparisonHelper`1
+  langs:
+  - csharp
+  - vb
+  name: CreateComparer<TV>(Func<T, TV>, IComparer<TV>)
+  nameWithType: ComparisonHelper<T>.CreateComparer<TV>(Func<T, TV>, IComparer<TV>)
+  fullName: Hybrid.Helpers.ComparisonHelper<T>.CreateComparer<TV>(System.Func<T, TV>, System.Collections.Generic.IComparer<TV>)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Helpers/ComparisonHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: CreateComparer
+    path: ../src/Hybrid/Helpers/ComparisonHelper.cs
+    startLine: 33
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Helpers
+  summary: "\n创建指定对比委托<code data-dev-comment-type=\"paramref\" class=\"paramref\">keySelector</code>与结果二次比较器<code data-dev-comment-type=\"paramref\" class=\"paramref\">comparer</code>的实例\n"
+  example: []
+  syntax:
+    content: public static IComparer<T> CreateComparer<TV>(Func<T, TV> keySelector, IComparer<TV> comparer)
+    parameters:
+    - id: keySelector
+      type: System.Func{{T},{TV}}
+    - id: comparer
+      type: System.Collections.Generic.IComparer{{TV}}
+    typeParameters:
+    - id: TV
+    return:
+      type: System.Collections.Generic.IComparer{{T}}
+    content.vb: Public Shared Function CreateComparer(Of TV)(keySelector As Func(Of T, TV), comparer As IComparer(Of TV)) As IComparer(Of T)
+  overload: Hybrid.Helpers.ComparisonHelper`1.CreateComparer*
+  nameWithType.vb: ComparisonHelper(Of T).CreateComparer(Of TV)(Func(Of T, TV), IComparer(Of TV))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Helpers.ComparisonHelper(Of T).CreateComparer(Of TV)(System.Func(Of T, TV), System.Collections.Generic.IComparer(Of TV))
+  name.vb: CreateComparer(Of TV)(Func(Of T, TV), IComparer(Of TV))
+references:
+- uid: System.Collections.Generic.IComparer`1
+  commentId: T:System.Collections.Generic.IComparer`1
+  isExternal: true
+  name: IComparer<T>
+  nameWithType: IComparer<T>
+  fullName: System.Collections.Generic.IComparer<T>
+  nameWithType.vb: IComparer(Of T)
+  fullName.vb: System.Collections.Generic.IComparer(Of T)
+  name.vb: IComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    nameWithType: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    nameWithType: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Helpers
+  commentId: N:Hybrid.Helpers
+  name: Hybrid.Helpers
+  nameWithType: Hybrid.Helpers
+  fullName: Hybrid.Helpers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hybrid.Helpers.ComparisonHelper`1.CreateComparer*
+  commentId: Overload:Hybrid.Helpers.ComparisonHelper`1.CreateComparer
+  name: CreateComparer
+  nameWithType: ComparisonHelper<T>.CreateComparer
+  fullName: Hybrid.Helpers.ComparisonHelper<T>.CreateComparer
+  nameWithType.vb: ComparisonHelper(Of T).CreateComparer
+  fullName.vb: Hybrid.Helpers.ComparisonHelper(Of T).CreateComparer
+- uid: System.Func{{T},{TV}}
+  commentId: T:System.Func{`0,``0}
+  parent: System
+  definition: System.Func`2
+  name: Func<T, TV>
+  nameWithType: Func<T, TV>
+  fullName: System.Func<T, TV>
+  nameWithType.vb: Func(Of T, TV)
+  fullName.vb: System.Func(Of T, TV)
+  name.vb: Func(Of T, TV)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TV
+    nameWithType: TV
+    fullName: TV
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TV
+    nameWithType: TV
+    fullName: TV
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IComparer{{T}}
+  commentId: T:System.Collections.Generic.IComparer{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IComparer`1
+  name: IComparer<T>
+  nameWithType: IComparer<T>
+  fullName: System.Collections.Generic.IComparer<T>
+  nameWithType.vb: IComparer(Of T)
+  fullName.vb: System.Collections.Generic.IComparer(Of T)
+  name.vb: IComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    nameWithType: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    nameWithType: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.IComparer{{TV}}
+  commentId: T:System.Collections.Generic.IComparer{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IComparer`1
+  name: IComparer<TV>
+  nameWithType: IComparer<TV>
+  fullName: System.Collections.Generic.IComparer<TV>
+  nameWithType.vb: IComparer(Of TV)
+  fullName.vb: System.Collections.Generic.IComparer(Of TV)
+  name.vb: IComparer(Of TV)
+  spec.csharp:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    nameWithType: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TV
+    nameWithType: TV
+    fullName: TV
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    nameWithType: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TV
+    nameWithType: TV
+    fullName: TV
+  - name: )
+    nameWithType: )
+    fullName: )

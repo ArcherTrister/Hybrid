@@ -1,0 +1,75 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Core.Modules
+  commentId: N:Hybrid.Core.Modules
+  id: Hybrid.Core.Modules
+  children:
+  - Hybrid.Core.Modules.DependsOnModulesAttribute
+  - Hybrid.Core.Modules.HybridCoreModule
+  - Hybrid.Core.Modules.HybridModule
+  - Hybrid.Core.Modules.HybridModuleManager
+  - Hybrid.Core.Modules.HybridModuleTypeFinder
+  - Hybrid.Core.Modules.IHybridModuleManager
+  - Hybrid.Core.Modules.IHybridModuleTypeFinder
+  - Hybrid.Core.Modules.ModuleLevel
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Core.Modules
+  nameWithType: Hybrid.Core.Modules
+  fullName: Hybrid.Core.Modules
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Core.Modules.DependsOnModulesAttribute
+  commentId: T:Hybrid.Core.Modules.DependsOnModulesAttribute
+  parent: Hybrid.Core.Modules
+  name: DependsOnModulesAttribute
+  nameWithType: DependsOnModulesAttribute
+  fullName: Hybrid.Core.Modules.DependsOnModulesAttribute
+- uid: Hybrid.Core.Modules.HybridCoreModule
+  commentId: T:Hybrid.Core.Modules.HybridCoreModule
+  name: HybridCoreModule
+  nameWithType: HybridCoreModule
+  fullName: Hybrid.Core.Modules.HybridCoreModule
+- uid: Hybrid.Core.Modules.HybridModule
+  commentId: T:Hybrid.Core.Modules.HybridModule
+  parent: Hybrid.Core.Modules
+  name: HybridModule
+  nameWithType: HybridModule
+  fullName: Hybrid.Core.Modules.HybridModule
+- uid: Hybrid.Core.Modules.HybridModuleManager
+  commentId: T:Hybrid.Core.Modules.HybridModuleManager
+  parent: Hybrid.Core.Modules
+  name: HybridModuleManager
+  nameWithType: HybridModuleManager
+  fullName: Hybrid.Core.Modules.HybridModuleManager
+- uid: Hybrid.Core.Modules.HybridModuleTypeFinder
+  commentId: T:Hybrid.Core.Modules.HybridModuleTypeFinder
+  name: HybridModuleTypeFinder
+  nameWithType: HybridModuleTypeFinder
+  fullName: Hybrid.Core.Modules.HybridModuleTypeFinder
+- uid: Hybrid.Core.Modules.IHybridModuleManager
+  commentId: T:Hybrid.Core.Modules.IHybridModuleManager
+  parent: Hybrid.Core.Modules
+  name: IHybridModuleManager
+  nameWithType: IHybridModuleManager
+  fullName: Hybrid.Core.Modules.IHybridModuleManager
+- uid: Hybrid.Core.Modules.IHybridModuleTypeFinder
+  commentId: T:Hybrid.Core.Modules.IHybridModuleTypeFinder
+  parent: Hybrid.Core.Modules
+  name: IHybridModuleTypeFinder
+  nameWithType: IHybridModuleTypeFinder
+  fullName: Hybrid.Core.Modules.IHybridModuleTypeFinder
+- uid: Hybrid.Core.Modules.ModuleLevel
+  commentId: T:Hybrid.Core.Modules.ModuleLevel
+  parent: Hybrid.Core.Modules
+  name: ModuleLevel
+  nameWithType: ModuleLevel
+  fullName: Hybrid.Core.Modules.ModuleLevel
+- uid: Hybrid.Core.Modules
+  commentId: N:Hybrid.Core.Modules
+  name: Hybrid.Core.Modules
+  nameWithType: Hybrid.Core.Modules
+  fullName: Hybrid.Core.Modules

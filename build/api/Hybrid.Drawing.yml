@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Drawing
+  commentId: N:Hybrid.Drawing
+  id: Hybrid.Drawing
+  children:
+  - Hybrid.Drawing.BitmapExtensions
+  - Hybrid.Drawing.ValidateCoder
+  - Hybrid.Drawing.ValidateCodeType
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Drawing
+  nameWithType: Hybrid.Drawing
+  fullName: Hybrid.Drawing
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Drawing.BitmapExtensions
+  commentId: T:Hybrid.Drawing.BitmapExtensions
+  name: BitmapExtensions
+  nameWithType: BitmapExtensions
+  fullName: Hybrid.Drawing.BitmapExtensions
+- uid: Hybrid.Drawing.ValidateCoder
+  commentId: T:Hybrid.Drawing.ValidateCoder
+  name: ValidateCoder
+  nameWithType: ValidateCoder
+  fullName: Hybrid.Drawing.ValidateCoder
+- uid: Hybrid.Drawing.ValidateCodeType
+  commentId: T:Hybrid.Drawing.ValidateCodeType
+  parent: Hybrid.Drawing
+  name: ValidateCodeType
+  nameWithType: ValidateCodeType
+  fullName: Hybrid.Drawing.ValidateCodeType
+- uid: Hybrid.Drawing
+  commentId: N:Hybrid.Drawing
+  name: Hybrid.Drawing
+  nameWithType: Hybrid.Drawing
+  fullName: Hybrid.Drawing

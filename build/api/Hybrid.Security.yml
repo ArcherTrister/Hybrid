@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Security
+  commentId: N:Hybrid.Security
+  id: Hybrid.Security
+  children:
+  - Hybrid.Security.AesHelper
+  - Hybrid.Security.Crypto
+  - Hybrid.Security.HashHelper
+  - Hybrid.Security.RsaHelper
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Security
+  nameWithType: Hybrid.Security
+  fullName: Hybrid.Security
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Security.AesHelper
+  commentId: T:Hybrid.Security.AesHelper
+  name: AesHelper
+  nameWithType: AesHelper
+  fullName: Hybrid.Security.AesHelper
+- uid: Hybrid.Security.Crypto
+  commentId: T:Hybrid.Security.Crypto
+  name: Crypto
+  nameWithType: Crypto
+  fullName: Hybrid.Security.Crypto
+- uid: Hybrid.Security.HashHelper
+  commentId: T:Hybrid.Security.HashHelper
+  name: HashHelper
+  nameWithType: HashHelper
+  fullName: Hybrid.Security.HashHelper
+- uid: Hybrid.Security.RsaHelper
+  commentId: T:Hybrid.Security.RsaHelper
+  name: RsaHelper
+  nameWithType: RsaHelper
+  fullName: Hybrid.Security.RsaHelper

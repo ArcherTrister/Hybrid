@@ -1,0 +1,121 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Zero.Authorization.Dtos
+  commentId: N:Hybrid.Zero.Authorization.Dtos
+  id: Hybrid.Zero.Authorization.Dtos
+  children:
+  - Hybrid.Zero.Authorization.Dtos.EntityInfoInputDto
+  - Hybrid.Zero.Authorization.Dtos.EntityInfoInputDtoBase
+  - Hybrid.Zero.Authorization.Dtos.EntityRoleInputDtoBase`1
+  - Hybrid.Zero.Authorization.Dtos.FunctionInputDto
+  - Hybrid.Zero.Authorization.Dtos.FunctionInputDtoBase
+  - Hybrid.Zero.Authorization.Dtos.ModuleInputDtoBase`1
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Zero.Authorization.Dtos
+  nameWithType: Hybrid.Zero.Authorization.Dtos
+  fullName: Hybrid.Zero.Authorization.Dtos
+  type: Namespace
+  assemblies:
+  - Hybrid.Zero
+references:
+- uid: Hybrid.Zero.Authorization.Dtos.EntityInfoInputDto
+  commentId: T:Hybrid.Zero.Authorization.Dtos.EntityInfoInputDto
+  name: EntityInfoInputDto
+  nameWithType: EntityInfoInputDto
+  fullName: Hybrid.Zero.Authorization.Dtos.EntityInfoInputDto
+- uid: Hybrid.Zero.Authorization.Dtos.EntityInfoInputDtoBase
+  commentId: T:Hybrid.Zero.Authorization.Dtos.EntityInfoInputDtoBase
+  parent: Hybrid.Zero.Authorization.Dtos
+  name: EntityInfoInputDtoBase
+  nameWithType: EntityInfoInputDtoBase
+  fullName: Hybrid.Zero.Authorization.Dtos.EntityInfoInputDtoBase
+- uid: Hybrid.Zero.Authorization.Dtos.EntityRoleInputDtoBase`1
+  commentId: T:Hybrid.Zero.Authorization.Dtos.EntityRoleInputDtoBase`1
+  name: EntityRoleInputDtoBase<TRoleKey>
+  nameWithType: EntityRoleInputDtoBase<TRoleKey>
+  fullName: Hybrid.Zero.Authorization.Dtos.EntityRoleInputDtoBase<TRoleKey>
+  nameWithType.vb: EntityRoleInputDtoBase(Of TRoleKey)
+  fullName.vb: Hybrid.Zero.Authorization.Dtos.EntityRoleInputDtoBase(Of TRoleKey)
+  name.vb: EntityRoleInputDtoBase(Of TRoleKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Authorization.Dtos.EntityRoleInputDtoBase`1
+    name: EntityRoleInputDtoBase
+    nameWithType: EntityRoleInputDtoBase
+    fullName: Hybrid.Zero.Authorization.Dtos.EntityRoleInputDtoBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Authorization.Dtos.EntityRoleInputDtoBase`1
+    name: EntityRoleInputDtoBase
+    nameWithType: EntityRoleInputDtoBase
+    fullName: Hybrid.Zero.Authorization.Dtos.EntityRoleInputDtoBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.Dtos.FunctionInputDto
+  commentId: T:Hybrid.Zero.Authorization.Dtos.FunctionInputDto
+  name: FunctionInputDto
+  nameWithType: FunctionInputDto
+  fullName: Hybrid.Zero.Authorization.Dtos.FunctionInputDto
+- uid: Hybrid.Zero.Authorization.Dtos.FunctionInputDtoBase
+  commentId: T:Hybrid.Zero.Authorization.Dtos.FunctionInputDtoBase
+  parent: Hybrid.Zero.Authorization.Dtos
+  name: FunctionInputDtoBase
+  nameWithType: FunctionInputDtoBase
+  fullName: Hybrid.Zero.Authorization.Dtos.FunctionInputDtoBase
+- uid: Hybrid.Zero.Authorization.Dtos.ModuleInputDtoBase`1
+  commentId: T:Hybrid.Zero.Authorization.Dtos.ModuleInputDtoBase`1
+  name: ModuleInputDtoBase<TModuleKey>
+  nameWithType: ModuleInputDtoBase<TModuleKey>
+  fullName: Hybrid.Zero.Authorization.Dtos.ModuleInputDtoBase<TModuleKey>
+  nameWithType.vb: ModuleInputDtoBase(Of TModuleKey)
+  fullName.vb: Hybrid.Zero.Authorization.Dtos.ModuleInputDtoBase(Of TModuleKey)
+  name.vb: ModuleInputDtoBase(Of TModuleKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Authorization.Dtos.ModuleInputDtoBase`1
+    name: ModuleInputDtoBase
+    nameWithType: ModuleInputDtoBase
+    fullName: Hybrid.Zero.Authorization.Dtos.ModuleInputDtoBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Authorization.Dtos.ModuleInputDtoBase`1
+    name: ModuleInputDtoBase
+    nameWithType: ModuleInputDtoBase
+    fullName: Hybrid.Zero.Authorization.Dtos.ModuleInputDtoBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.Dtos
+  commentId: N:Hybrid.Zero.Authorization.Dtos
+  name: Hybrid.Zero.Authorization.Dtos
+  nameWithType: Hybrid.Zero.Authorization.Dtos
+  fullName: Hybrid.Zero.Authorization.Dtos

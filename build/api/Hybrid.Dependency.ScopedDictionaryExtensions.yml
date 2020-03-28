@@ -1,0 +1,702 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Dependency.ScopedDictionaryExtensions
+  commentId: T:Hybrid.Dependency.ScopedDictionaryExtensions
+  id: ScopedDictionaryExtensions
+  parent: Hybrid.Dependency
+  children:
+  - Hybrid.Dependency.ScopedDictionaryExtensions.GetConnUnitOfWork(Hybrid.Dependency.ScopedDictionary,System.String)
+  - Hybrid.Dependency.ScopedDictionaryExtensions.GetConnUnitOfWorks(Hybrid.Dependency.ScopedDictionary)
+  - Hybrid.Dependency.ScopedDictionaryExtensions.GetEntityUnitOfWork(Hybrid.Dependency.ScopedDictionary,System.Type)
+  - Hybrid.Dependency.ScopedDictionaryExtensions.GetEntityUnitOfWorks(Hybrid.Dependency.ScopedDictionary)
+  - Hybrid.Dependency.ScopedDictionaryExtensions.SetConnUnitOfWork(Hybrid.Dependency.ScopedDictionary,System.String,Hybrid.Domain.Uow.IUnitOfWork)
+  - Hybrid.Dependency.ScopedDictionaryExtensions.SetEntityUnitOfWork(Hybrid.Dependency.ScopedDictionary,System.Type,Hybrid.Domain.Uow.IUnitOfWork)
+  langs:
+  - csharp
+  - vb
+  name: ScopedDictionaryExtensions
+  nameWithType: ScopedDictionaryExtensions
+  fullName: Hybrid.Dependency.ScopedDictionaryExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid/Dependency/ScopedDictionaryExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ScopedDictionaryExtensions
+    path: ../src/Hybrid/Dependency/ScopedDictionaryExtensions.cs
+    startLine: 19
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Dependency
+  summary: "\nScoped生命周期字典扩展方法\n"
+  example: []
+  syntax:
+    content: public static class ScopedDictionaryExtensions
+    content.vb: Public Module ScopedDictionaryExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.Dependency.ScopedDictionaryExtensions.GetConnUnitOfWork(Hybrid.Dependency.ScopedDictionary,System.String)
+  commentId: M:Hybrid.Dependency.ScopedDictionaryExtensions.GetConnUnitOfWork(Hybrid.Dependency.ScopedDictionary,System.String)
+  id: GetConnUnitOfWork(Hybrid.Dependency.ScopedDictionary,System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Dependency.ScopedDictionaryExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetConnUnitOfWork(ScopedDictionary, String)
+  nameWithType: ScopedDictionaryExtensions.GetConnUnitOfWork(ScopedDictionary, String)
+  fullName: Hybrid.Dependency.ScopedDictionaryExtensions.GetConnUnitOfWork(Hybrid.Dependency.ScopedDictionary, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Dependency/ScopedDictionaryExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetConnUnitOfWork
+    path: ../src/Hybrid/Dependency/ScopedDictionaryExtensions.cs
+    startLine: 24
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Dependency
+  summary: "\n获取连接串的UnitOfWork\n"
+  example: []
+  syntax:
+    content: public static IUnitOfWork GetConnUnitOfWork(this ScopedDictionary dict, string connString)
+    parameters:
+    - id: dict
+      type: Hybrid.Dependency.ScopedDictionary
+    - id: connString
+      type: System.String
+    return:
+      type: Hybrid.Domain.Uow.IUnitOfWork
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetConnUnitOfWork(dict As ScopedDictionary, connString As String) As IUnitOfWork
+  overload: Hybrid.Dependency.ScopedDictionaryExtensions.GetConnUnitOfWork*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Dependency.ScopedDictionaryExtensions.GetConnUnitOfWorks(Hybrid.Dependency.ScopedDictionary)
+  commentId: M:Hybrid.Dependency.ScopedDictionaryExtensions.GetConnUnitOfWorks(Hybrid.Dependency.ScopedDictionary)
+  id: GetConnUnitOfWorks(Hybrid.Dependency.ScopedDictionary)
+  isExtensionMethod: true
+  parent: Hybrid.Dependency.ScopedDictionaryExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetConnUnitOfWorks(ScopedDictionary)
+  nameWithType: ScopedDictionaryExtensions.GetConnUnitOfWorks(ScopedDictionary)
+  fullName: Hybrid.Dependency.ScopedDictionaryExtensions.GetConnUnitOfWorks(Hybrid.Dependency.ScopedDictionary)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Dependency/ScopedDictionaryExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetConnUnitOfWorks
+    path: ../src/Hybrid/Dependency/ScopedDictionaryExtensions.cs
+    startLine: 33
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Dependency
+  summary: "\n获取所有连接串的UnitOfWork\n"
+  example: []
+  syntax:
+    content: public static IUnitOfWork[] GetConnUnitOfWorks(this ScopedDictionary dict)
+    parameters:
+    - id: dict
+      type: Hybrid.Dependency.ScopedDictionary
+    return:
+      type: Hybrid.Domain.Uow.IUnitOfWork[]
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetConnUnitOfWorks(dict As ScopedDictionary) As IUnitOfWork()
+  overload: Hybrid.Dependency.ScopedDictionaryExtensions.GetConnUnitOfWorks*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Dependency.ScopedDictionaryExtensions.SetConnUnitOfWork(Hybrid.Dependency.ScopedDictionary,System.String,Hybrid.Domain.Uow.IUnitOfWork)
+  commentId: M:Hybrid.Dependency.ScopedDictionaryExtensions.SetConnUnitOfWork(Hybrid.Dependency.ScopedDictionary,System.String,Hybrid.Domain.Uow.IUnitOfWork)
+  id: SetConnUnitOfWork(Hybrid.Dependency.ScopedDictionary,System.String,Hybrid.Domain.Uow.IUnitOfWork)
+  isExtensionMethod: true
+  parent: Hybrid.Dependency.ScopedDictionaryExtensions
+  langs:
+  - csharp
+  - vb
+  name: SetConnUnitOfWork(ScopedDictionary, String, IUnitOfWork)
+  nameWithType: ScopedDictionaryExtensions.SetConnUnitOfWork(ScopedDictionary, String, IUnitOfWork)
+  fullName: Hybrid.Dependency.ScopedDictionaryExtensions.SetConnUnitOfWork(Hybrid.Dependency.ScopedDictionary, System.String, Hybrid.Domain.Uow.IUnitOfWork)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Dependency/ScopedDictionaryExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: SetConnUnitOfWork
+    path: ../src/Hybrid/Dependency/ScopedDictionaryExtensions.cs
+    startLine: 41
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Dependency
+  summary: "\n设置连接串的UnitOfWork\n"
+  example: []
+  syntax:
+    content: public static void SetConnUnitOfWork(this ScopedDictionary dict, string connString, IUnitOfWork unitOfWork)
+    parameters:
+    - id: dict
+      type: Hybrid.Dependency.ScopedDictionary
+    - id: connString
+      type: System.String
+    - id: unitOfWork
+      type: Hybrid.Domain.Uow.IUnitOfWork
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub SetConnUnitOfWork(dict As ScopedDictionary, connString As String, unitOfWork As IUnitOfWork)
+  overload: Hybrid.Dependency.ScopedDictionaryExtensions.SetConnUnitOfWork*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Dependency.ScopedDictionaryExtensions.GetEntityUnitOfWork(Hybrid.Dependency.ScopedDictionary,System.Type)
+  commentId: M:Hybrid.Dependency.ScopedDictionaryExtensions.GetEntityUnitOfWork(Hybrid.Dependency.ScopedDictionary,System.Type)
+  id: GetEntityUnitOfWork(Hybrid.Dependency.ScopedDictionary,System.Type)
+  isExtensionMethod: true
+  parent: Hybrid.Dependency.ScopedDictionaryExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetEntityUnitOfWork(ScopedDictionary, Type)
+  nameWithType: ScopedDictionaryExtensions.GetEntityUnitOfWork(ScopedDictionary, Type)
+  fullName: Hybrid.Dependency.ScopedDictionaryExtensions.GetEntityUnitOfWork(Hybrid.Dependency.ScopedDictionary, System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Dependency/ScopedDictionaryExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetEntityUnitOfWork
+    path: ../src/Hybrid/Dependency/ScopedDictionaryExtensions.cs
+    startLine: 50
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Dependency
+  summary: "\n获取指定实体类的UnitOfWork\n"
+  example: []
+  syntax:
+    content: public static IUnitOfWork GetEntityUnitOfWork(this ScopedDictionary dict, Type entityType)
+    parameters:
+    - id: dict
+      type: Hybrid.Dependency.ScopedDictionary
+    - id: entityType
+      type: System.Type
+    return:
+      type: Hybrid.Domain.Uow.IUnitOfWork
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetEntityUnitOfWork(dict As ScopedDictionary, entityType As Type) As IUnitOfWork
+  overload: Hybrid.Dependency.ScopedDictionaryExtensions.GetEntityUnitOfWork*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Dependency.ScopedDictionaryExtensions.GetEntityUnitOfWorks(Hybrid.Dependency.ScopedDictionary)
+  commentId: M:Hybrid.Dependency.ScopedDictionaryExtensions.GetEntityUnitOfWorks(Hybrid.Dependency.ScopedDictionary)
+  id: GetEntityUnitOfWorks(Hybrid.Dependency.ScopedDictionary)
+  isExtensionMethod: true
+  parent: Hybrid.Dependency.ScopedDictionaryExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetEntityUnitOfWorks(ScopedDictionary)
+  nameWithType: ScopedDictionaryExtensions.GetEntityUnitOfWorks(ScopedDictionary)
+  fullName: Hybrid.Dependency.ScopedDictionaryExtensions.GetEntityUnitOfWorks(Hybrid.Dependency.ScopedDictionary)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Dependency/ScopedDictionaryExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetEntityUnitOfWorks
+    path: ../src/Hybrid/Dependency/ScopedDictionaryExtensions.cs
+    startLine: 59
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Dependency
+  summary: "\n获取所有实体类的UnitOfWork\n"
+  example: []
+  syntax:
+    content: public static IUnitOfWork[] GetEntityUnitOfWorks(this ScopedDictionary dict)
+    parameters:
+    - id: dict
+      type: Hybrid.Dependency.ScopedDictionary
+    return:
+      type: Hybrid.Domain.Uow.IUnitOfWork[]
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetEntityUnitOfWorks(dict As ScopedDictionary) As IUnitOfWork()
+  overload: Hybrid.Dependency.ScopedDictionaryExtensions.GetEntityUnitOfWorks*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Dependency.ScopedDictionaryExtensions.SetEntityUnitOfWork(Hybrid.Dependency.ScopedDictionary,System.Type,Hybrid.Domain.Uow.IUnitOfWork)
+  commentId: M:Hybrid.Dependency.ScopedDictionaryExtensions.SetEntityUnitOfWork(Hybrid.Dependency.ScopedDictionary,System.Type,Hybrid.Domain.Uow.IUnitOfWork)
+  id: SetEntityUnitOfWork(Hybrid.Dependency.ScopedDictionary,System.Type,Hybrid.Domain.Uow.IUnitOfWork)
+  isExtensionMethod: true
+  parent: Hybrid.Dependency.ScopedDictionaryExtensions
+  langs:
+  - csharp
+  - vb
+  name: SetEntityUnitOfWork(ScopedDictionary, Type, IUnitOfWork)
+  nameWithType: ScopedDictionaryExtensions.SetEntityUnitOfWork(ScopedDictionary, Type, IUnitOfWork)
+  fullName: Hybrid.Dependency.ScopedDictionaryExtensions.SetEntityUnitOfWork(Hybrid.Dependency.ScopedDictionary, System.Type, Hybrid.Domain.Uow.IUnitOfWork)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Dependency/ScopedDictionaryExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: SetEntityUnitOfWork
+    path: ../src/Hybrid/Dependency/ScopedDictionaryExtensions.cs
+    startLine: 67
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Dependency
+  summary: "\n设置指定实体类的UnitOfWork\n"
+  example: []
+  syntax:
+    content: public static void SetEntityUnitOfWork(this ScopedDictionary dict, Type entityType, IUnitOfWork unitOfWork)
+    parameters:
+    - id: dict
+      type: Hybrid.Dependency.ScopedDictionary
+    - id: entityType
+      type: System.Type
+    - id: unitOfWork
+      type: Hybrid.Domain.Uow.IUnitOfWork
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub SetEntityUnitOfWork(dict As ScopedDictionary, entityType As Type, unitOfWork As IUnitOfWork)
+  overload: Hybrid.Dependency.ScopedDictionaryExtensions.SetEntityUnitOfWork*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Hybrid.Dependency
+  commentId: N:Hybrid.Dependency
+  name: Hybrid.Dependency
+  nameWithType: Hybrid.Dependency
+  fullName: Hybrid.Dependency
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hybrid.Dependency.ScopedDictionaryExtensions.GetConnUnitOfWork*
+  commentId: Overload:Hybrid.Dependency.ScopedDictionaryExtensions.GetConnUnitOfWork
+  name: GetConnUnitOfWork
+  nameWithType: ScopedDictionaryExtensions.GetConnUnitOfWork
+  fullName: Hybrid.Dependency.ScopedDictionaryExtensions.GetConnUnitOfWork
+- uid: Hybrid.Dependency.ScopedDictionary
+  commentId: T:Hybrid.Dependency.ScopedDictionary
+  parent: Hybrid.Dependency
+  name: ScopedDictionary
+  nameWithType: ScopedDictionary
+  fullName: Hybrid.Dependency.ScopedDictionary
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Hybrid.Domain.Uow.IUnitOfWork
+  commentId: T:Hybrid.Domain.Uow.IUnitOfWork
+  parent: Hybrid.Domain.Uow
+  name: IUnitOfWork
+  nameWithType: IUnitOfWork
+  fullName: Hybrid.Domain.Uow.IUnitOfWork
+- uid: Hybrid.Domain.Uow
+  commentId: N:Hybrid.Domain.Uow
+  name: Hybrid.Domain.Uow
+  nameWithType: Hybrid.Domain.Uow
+  fullName: Hybrid.Domain.Uow
+- uid: Hybrid.Dependency.ScopedDictionaryExtensions.GetConnUnitOfWorks*
+  commentId: Overload:Hybrid.Dependency.ScopedDictionaryExtensions.GetConnUnitOfWorks
+  name: GetConnUnitOfWorks
+  nameWithType: ScopedDictionaryExtensions.GetConnUnitOfWorks
+  fullName: Hybrid.Dependency.ScopedDictionaryExtensions.GetConnUnitOfWorks
+- uid: Hybrid.Domain.Uow.IUnitOfWork[]
+  isExternal: true
+  name: IUnitOfWork[]
+  nameWithType: IUnitOfWork[]
+  fullName: Hybrid.Domain.Uow.IUnitOfWork[]
+  nameWithType.vb: IUnitOfWork()
+  fullName.vb: Hybrid.Domain.Uow.IUnitOfWork()
+  name.vb: IUnitOfWork()
+  spec.csharp:
+  - uid: Hybrid.Domain.Uow.IUnitOfWork
+    name: IUnitOfWork
+    nameWithType: IUnitOfWork
+    fullName: Hybrid.Domain.Uow.IUnitOfWork
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Hybrid.Domain.Uow.IUnitOfWork
+    name: IUnitOfWork
+    nameWithType: IUnitOfWork
+    fullName: Hybrid.Domain.Uow.IUnitOfWork
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Hybrid.Dependency.ScopedDictionaryExtensions.SetConnUnitOfWork*
+  commentId: Overload:Hybrid.Dependency.ScopedDictionaryExtensions.SetConnUnitOfWork
+  name: SetConnUnitOfWork
+  nameWithType: ScopedDictionaryExtensions.SetConnUnitOfWork
+  fullName: Hybrid.Dependency.ScopedDictionaryExtensions.SetConnUnitOfWork
+- uid: Hybrid.Dependency.ScopedDictionaryExtensions.GetEntityUnitOfWork*
+  commentId: Overload:Hybrid.Dependency.ScopedDictionaryExtensions.GetEntityUnitOfWork
+  name: GetEntityUnitOfWork
+  nameWithType: ScopedDictionaryExtensions.GetEntityUnitOfWork
+  fullName: Hybrid.Dependency.ScopedDictionaryExtensions.GetEntityUnitOfWork
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Hybrid.Dependency.ScopedDictionaryExtensions.GetEntityUnitOfWorks*
+  commentId: Overload:Hybrid.Dependency.ScopedDictionaryExtensions.GetEntityUnitOfWorks
+  name: GetEntityUnitOfWorks
+  nameWithType: ScopedDictionaryExtensions.GetEntityUnitOfWorks
+  fullName: Hybrid.Dependency.ScopedDictionaryExtensions.GetEntityUnitOfWorks
+- uid: Hybrid.Dependency.ScopedDictionaryExtensions.SetEntityUnitOfWork*
+  commentId: Overload:Hybrid.Dependency.ScopedDictionaryExtensions.SetEntityUnitOfWork
+  name: SetEntityUnitOfWork
+  nameWithType: ScopedDictionaryExtensions.SetEntityUnitOfWork
+  fullName: Hybrid.Dependency.ScopedDictionaryExtensions.SetEntityUnitOfWork

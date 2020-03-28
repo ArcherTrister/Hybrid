@@ -1,0 +1,570 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Localization.LocalizationHelper
+  commentId: T:Hybrid.Localization.LocalizationHelper
+  id: LocalizationHelper
+  parent: Hybrid.Localization
+  children:
+  - Hybrid.Localization.LocalizationHelper.GetSource(System.String)
+  - Hybrid.Localization.LocalizationHelper.GetString(System.String,System.String)
+  - Hybrid.Localization.LocalizationHelper.GetString(System.String,System.String,System.Globalization.CultureInfo)
+  - Hybrid.Localization.LocalizationHelper.Manager
+  langs:
+  - csharp
+  - vb
+  name: LocalizationHelper
+  nameWithType: LocalizationHelper
+  fullName: Hybrid.Localization.LocalizationHelper
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid/Localization/LocalizationHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: LocalizationHelper
+    path: ../src/Hybrid/Localization/LocalizationHelper.cs
+    startLine: 14
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Localization
+  summary: "\nThis static class is used to simplify getting localized strings.\n"
+  example: []
+  syntax:
+    content: public static class LocalizationHelper
+    content.vb: Public Module LocalizationHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.Localization.LocalizationHelper.Manager
+  commentId: P:Hybrid.Localization.LocalizationHelper.Manager
+  id: Manager
+  parent: Hybrid.Localization.LocalizationHelper
+  langs:
+  - csharp
+  - vb
+  name: Manager
+  nameWithType: LocalizationHelper.Manager
+  fullName: Hybrid.Localization.LocalizationHelper.Manager
+  type: Property
+  source:
+    remote:
+      path: src/Hybrid/Localization/LocalizationHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Manager
+    path: ../src/Hybrid/Localization/LocalizationHelper.cs
+    startLine: 21
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Localization
+  summary: "\nGets a reference to the localization manager.\nInject and use <xref href=\"Hybrid.Localization.ILocalizationManager\" data-throw-if-not-resolved=\"false\"></xref>\nwherever it&apos;s possible, instead of this shortcut.\n"
+  example: []
+  syntax:
+    content: public static ILocalizationManager Manager { get; }
+    parameters: []
+    return:
+      type: Hybrid.Localization.ILocalizationManager
+    content.vb: Public Shared ReadOnly Property Manager As ILocalizationManager
+  overload: Hybrid.Localization.LocalizationHelper.Manager*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Hybrid.Localization.LocalizationHelper.GetSource(System.String)
+  commentId: M:Hybrid.Localization.LocalizationHelper.GetSource(System.String)
+  id: GetSource(System.String)
+  parent: Hybrid.Localization.LocalizationHelper
+  langs:
+  - csharp
+  - vb
+  name: GetSource(String)
+  nameWithType: LocalizationHelper.GetSource(String)
+  fullName: Hybrid.Localization.LocalizationHelper.GetSource(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Localization/LocalizationHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetSource
+    path: ../src/Hybrid/Localization/LocalizationHelper.cs
+    startLine: 43
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Localization
+  summary: "\nGets a pre-registered localization source.\n"
+  example: []
+  syntax:
+    content: public static ILocalizationSource GetSource(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: Hybrid.Localization.Sources.ILocalizationSource
+    content.vb: Public Shared Function GetSource(name As String) As ILocalizationSource
+  overload: Hybrid.Localization.LocalizationHelper.GetSource*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Localization.LocalizationHelper.GetString(System.String,System.String)
+  commentId: M:Hybrid.Localization.LocalizationHelper.GetString(System.String,System.String)
+  id: GetString(System.String,System.String)
+  parent: Hybrid.Localization.LocalizationHelper
+  langs:
+  - csharp
+  - vb
+  name: GetString(String, String)
+  nameWithType: LocalizationHelper.GetString(String, String)
+  fullName: Hybrid.Localization.LocalizationHelper.GetString(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Localization/LocalizationHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetString
+    path: ../src/Hybrid/Localization/LocalizationHelper.cs
+    startLine: 54
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Localization
+  summary: "\nGets a localized string in current language.\n"
+  example: []
+  syntax:
+    content: public static string GetString(string sourceName, string name)
+    parameters:
+    - id: sourceName
+      type: System.String
+      description: Name of the localization source
+    - id: name
+      type: System.String
+      description: Key name to get localized string
+    return:
+      type: System.String
+      description: Localized string
+    content.vb: Public Shared Function GetString(sourceName As String, name As String) As String
+  overload: Hybrid.Localization.LocalizationHelper.GetString*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Localization.LocalizationHelper.GetString(System.String,System.String,System.Globalization.CultureInfo)
+  commentId: M:Hybrid.Localization.LocalizationHelper.GetString(System.String,System.String,System.Globalization.CultureInfo)
+  id: GetString(System.String,System.String,System.Globalization.CultureInfo)
+  parent: Hybrid.Localization.LocalizationHelper
+  langs:
+  - csharp
+  - vb
+  name: GetString(String, String, CultureInfo)
+  nameWithType: LocalizationHelper.GetString(String, String, CultureInfo)
+  fullName: Hybrid.Localization.LocalizationHelper.GetString(System.String, System.String, System.Globalization.CultureInfo)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Localization/LocalizationHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetString
+    path: ../src/Hybrid/Localization/LocalizationHelper.cs
+    startLine: 66
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Localization
+  summary: "\nGets a localized string in specified language.\n"
+  example: []
+  syntax:
+    content: public static string GetString(string sourceName, string name, CultureInfo culture)
+    parameters:
+    - id: sourceName
+      type: System.String
+      description: Name of the localization source
+    - id: name
+      type: System.String
+      description: Key name to get localized string
+    - id: culture
+      type: System.Globalization.CultureInfo
+      description: culture
+    return:
+      type: System.String
+      description: Localized string
+    content.vb: Public Shared Function GetString(sourceName As String, name As String, culture As CultureInfo) As String
+  overload: Hybrid.Localization.LocalizationHelper.GetString*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Hybrid.Localization
+  commentId: N:Hybrid.Localization
+  name: Hybrid.Localization
+  nameWithType: Hybrid.Localization
+  fullName: Hybrid.Localization
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hybrid.Localization.ILocalizationManager
+  commentId: T:Hybrid.Localization.ILocalizationManager
+  parent: Hybrid.Localization
+  name: ILocalizationManager
+  nameWithType: ILocalizationManager
+  fullName: Hybrid.Localization.ILocalizationManager
+- uid: Hybrid.Localization.LocalizationHelper.Manager*
+  commentId: Overload:Hybrid.Localization.LocalizationHelper.Manager
+  name: Manager
+  nameWithType: LocalizationHelper.Manager
+  fullName: Hybrid.Localization.LocalizationHelper.Manager
+- uid: Hybrid.Localization.LocalizationHelper.GetSource*
+  commentId: Overload:Hybrid.Localization.LocalizationHelper.GetSource
+  name: GetSource
+  nameWithType: LocalizationHelper.GetSource
+  fullName: Hybrid.Localization.LocalizationHelper.GetSource
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Hybrid.Localization.Sources.ILocalizationSource
+  commentId: T:Hybrid.Localization.Sources.ILocalizationSource
+  parent: Hybrid.Localization.Sources
+  name: ILocalizationSource
+  nameWithType: ILocalizationSource
+  fullName: Hybrid.Localization.Sources.ILocalizationSource
+- uid: Hybrid.Localization.Sources
+  commentId: N:Hybrid.Localization.Sources
+  name: Hybrid.Localization.Sources
+  nameWithType: Hybrid.Localization.Sources
+  fullName: Hybrid.Localization.Sources
+- uid: Hybrid.Localization.LocalizationHelper.GetString*
+  commentId: Overload:Hybrid.Localization.LocalizationHelper.GetString
+  name: GetString
+  nameWithType: LocalizationHelper.GetString
+  fullName: Hybrid.Localization.LocalizationHelper.GetString
+- uid: System.Globalization.CultureInfo
+  commentId: T:System.Globalization.CultureInfo
+  parent: System.Globalization
+  isExternal: true
+  name: CultureInfo
+  nameWithType: CultureInfo
+  fullName: System.Globalization.CultureInfo
+- uid: System.Globalization
+  commentId: N:System.Globalization
+  isExternal: true
+  name: System.Globalization
+  nameWithType: System.Globalization
+  fullName: System.Globalization

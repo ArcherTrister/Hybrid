@@ -1,0 +1,1266 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Zero.Authorization
+  commentId: N:Hybrid.Zero.Authorization
+  id: Hybrid.Zero.Authorization
+  children:
+  - Hybrid.Zero.Authorization.DataAuthCacheBase`4
+  - Hybrid.Zero.Authorization.EntityRoleBase`1
+  - Hybrid.Zero.Authorization.EntityUserBase`1
+  - Hybrid.Zero.Authorization.FunctionAuthCacheBase`10
+  - Hybrid.Zero.Authorization.IEntityInfoStore`2
+  - Hybrid.Zero.Authorization.IEntityRoleStore`3
+  - Hybrid.Zero.Authorization.IFunctionStore`2
+  - Hybrid.Zero.Authorization.IModuleFunctionStore`2
+  - Hybrid.Zero.Authorization.IModuleRoleStore`3
+  - Hybrid.Zero.Authorization.IModuleStore`3
+  - Hybrid.Zero.Authorization.IModuleUserStore`3
+  - Hybrid.Zero.Authorization.ModuleHandlerBase`4
+  - Hybrid.Zero.Authorization.SecurityManagerBase`18
+  - Hybrid.Zero.Authorization.SecurityModuleBase`19
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Zero.Authorization
+  nameWithType: Hybrid.Zero.Authorization
+  fullName: Hybrid.Zero.Authorization
+  type: Namespace
+  assemblies:
+  - Hybrid.Zero
+references:
+- uid: Hybrid.Zero.Authorization.DataAuthCacheBase`4
+  commentId: T:Hybrid.Zero.Authorization.DataAuthCacheBase`4
+  name: DataAuthCacheBase<TEntityRole, TRole, TEntityInfo, TRoleKey>
+  nameWithType: DataAuthCacheBase<TEntityRole, TRole, TEntityInfo, TRoleKey>
+  fullName: Hybrid.Zero.Authorization.DataAuthCacheBase<TEntityRole, TRole, TEntityInfo, TRoleKey>
+  nameWithType.vb: DataAuthCacheBase(Of TEntityRole, TRole, TEntityInfo, TRoleKey)
+  fullName.vb: Hybrid.Zero.Authorization.DataAuthCacheBase(Of TEntityRole, TRole, TEntityInfo, TRoleKey)
+  name.vb: DataAuthCacheBase(Of TEntityRole, TRole, TEntityInfo, TRoleKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Authorization.DataAuthCacheBase`4
+    name: DataAuthCacheBase
+    nameWithType: DataAuthCacheBase
+    fullName: Hybrid.Zero.Authorization.DataAuthCacheBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntityRole
+    nameWithType: TEntityRole
+    fullName: TEntityRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntityInfo
+    nameWithType: TEntityInfo
+    fullName: TEntityInfo
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Authorization.DataAuthCacheBase`4
+    name: DataAuthCacheBase
+    nameWithType: DataAuthCacheBase
+    fullName: Hybrid.Zero.Authorization.DataAuthCacheBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntityRole
+    nameWithType: TEntityRole
+    fullName: TEntityRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntityInfo
+    nameWithType: TEntityInfo
+    fullName: TEntityInfo
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.EntityRoleBase`1
+  commentId: T:Hybrid.Zero.Authorization.EntityRoleBase`1
+  name: EntityRoleBase<TRoleKey>
+  nameWithType: EntityRoleBase<TRoleKey>
+  fullName: Hybrid.Zero.Authorization.EntityRoleBase<TRoleKey>
+  nameWithType.vb: EntityRoleBase(Of TRoleKey)
+  fullName.vb: Hybrid.Zero.Authorization.EntityRoleBase(Of TRoleKey)
+  name.vb: EntityRoleBase(Of TRoleKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Authorization.EntityRoleBase`1
+    name: EntityRoleBase
+    nameWithType: EntityRoleBase
+    fullName: Hybrid.Zero.Authorization.EntityRoleBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Authorization.EntityRoleBase`1
+    name: EntityRoleBase
+    nameWithType: EntityRoleBase
+    fullName: Hybrid.Zero.Authorization.EntityRoleBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.EntityUserBase`1
+  commentId: T:Hybrid.Zero.Authorization.EntityUserBase`1
+  name: EntityUserBase<TUserKey>
+  nameWithType: EntityUserBase<TUserKey>
+  fullName: Hybrid.Zero.Authorization.EntityUserBase<TUserKey>
+  nameWithType.vb: EntityUserBase(Of TUserKey)
+  fullName.vb: Hybrid.Zero.Authorization.EntityUserBase(Of TUserKey)
+  name.vb: EntityUserBase(Of TUserKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Authorization.EntityUserBase`1
+    name: EntityUserBase
+    nameWithType: EntityUserBase
+    fullName: Hybrid.Zero.Authorization.EntityUserBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Authorization.EntityUserBase`1
+    name: EntityUserBase
+    nameWithType: EntityUserBase
+    fullName: Hybrid.Zero.Authorization.EntityUserBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.FunctionAuthCacheBase`10
+  commentId: T:Hybrid.Zero.Authorization.FunctionAuthCacheBase`10
+  name: FunctionAuthCacheBase<TModuleFunction, TModuleRole, TModuleUser, TFunction, TModule, TModuleKey, TRole, TRoleKey, TUser, TUserKey>
+  nameWithType: FunctionAuthCacheBase<TModuleFunction, TModuleRole, TModuleUser, TFunction, TModule, TModuleKey, TRole, TRoleKey, TUser, TUserKey>
+  fullName: Hybrid.Zero.Authorization.FunctionAuthCacheBase<TModuleFunction, TModuleRole, TModuleUser, TFunction, TModule, TModuleKey, TRole, TRoleKey, TUser, TUserKey>
+  nameWithType.vb: FunctionAuthCacheBase(Of TModuleFunction, TModuleRole, TModuleUser, TFunction, TModule, TModuleKey, TRole, TRoleKey, TUser, TUserKey)
+  fullName.vb: Hybrid.Zero.Authorization.FunctionAuthCacheBase(Of TModuleFunction, TModuleRole, TModuleUser, TFunction, TModule, TModuleKey, TRole, TRoleKey, TUser, TUserKey)
+  name.vb: FunctionAuthCacheBase(Of TModuleFunction, TModuleRole, TModuleUser, TFunction, TModule, TModuleKey, TRole, TRoleKey, TUser, TUserKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Authorization.FunctionAuthCacheBase`10
+    name: FunctionAuthCacheBase
+    nameWithType: FunctionAuthCacheBase
+    fullName: Hybrid.Zero.Authorization.FunctionAuthCacheBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TModuleFunction
+    nameWithType: TModuleFunction
+    fullName: TModuleFunction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleRole
+    nameWithType: TModuleRole
+    fullName: TModuleRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TFunction
+    nameWithType: TFunction
+    fullName: TFunction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModule
+    nameWithType: TModule
+    fullName: TModule
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Authorization.FunctionAuthCacheBase`10
+    name: FunctionAuthCacheBase
+    nameWithType: FunctionAuthCacheBase
+    fullName: Hybrid.Zero.Authorization.FunctionAuthCacheBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TModuleFunction
+    nameWithType: TModuleFunction
+    fullName: TModuleFunction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleRole
+    nameWithType: TModuleRole
+    fullName: TModuleRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TFunction
+    nameWithType: TFunction
+    fullName: TFunction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModule
+    nameWithType: TModule
+    fullName: TModule
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.IEntityInfoStore`2
+  commentId: T:Hybrid.Zero.Authorization.IEntityInfoStore`2
+  name: IEntityInfoStore<TEntityInfo, TEntityInfoInputDto>
+  nameWithType: IEntityInfoStore<TEntityInfo, TEntityInfoInputDto>
+  fullName: Hybrid.Zero.Authorization.IEntityInfoStore<TEntityInfo, TEntityInfoInputDto>
+  nameWithType.vb: IEntityInfoStore(Of TEntityInfo, TEntityInfoInputDto)
+  fullName.vb: Hybrid.Zero.Authorization.IEntityInfoStore(Of TEntityInfo, TEntityInfoInputDto)
+  name.vb: IEntityInfoStore(Of TEntityInfo, TEntityInfoInputDto)
+  spec.csharp:
+  - uid: Hybrid.Zero.Authorization.IEntityInfoStore`2
+    name: IEntityInfoStore
+    nameWithType: IEntityInfoStore
+    fullName: Hybrid.Zero.Authorization.IEntityInfoStore
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntityInfo
+    nameWithType: TEntityInfo
+    fullName: TEntityInfo
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntityInfoInputDto
+    nameWithType: TEntityInfoInputDto
+    fullName: TEntityInfoInputDto
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Authorization.IEntityInfoStore`2
+    name: IEntityInfoStore
+    nameWithType: IEntityInfoStore
+    fullName: Hybrid.Zero.Authorization.IEntityInfoStore
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntityInfo
+    nameWithType: TEntityInfo
+    fullName: TEntityInfo
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntityInfoInputDto
+    nameWithType: TEntityInfoInputDto
+    fullName: TEntityInfoInputDto
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.IEntityRoleStore`3
+  commentId: T:Hybrid.Zero.Authorization.IEntityRoleStore`3
+  name: IEntityRoleStore<TEntityRole, TEntityRoleInputDto, TRoleKey>
+  nameWithType: IEntityRoleStore<TEntityRole, TEntityRoleInputDto, TRoleKey>
+  fullName: Hybrid.Zero.Authorization.IEntityRoleStore<TEntityRole, TEntityRoleInputDto, TRoleKey>
+  nameWithType.vb: IEntityRoleStore(Of TEntityRole, TEntityRoleInputDto, TRoleKey)
+  fullName.vb: Hybrid.Zero.Authorization.IEntityRoleStore(Of TEntityRole, TEntityRoleInputDto, TRoleKey)
+  name.vb: IEntityRoleStore(Of TEntityRole, TEntityRoleInputDto, TRoleKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Authorization.IEntityRoleStore`3
+    name: IEntityRoleStore
+    nameWithType: IEntityRoleStore
+    fullName: Hybrid.Zero.Authorization.IEntityRoleStore
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntityRole
+    nameWithType: TEntityRole
+    fullName: TEntityRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntityRoleInputDto
+    nameWithType: TEntityRoleInputDto
+    fullName: TEntityRoleInputDto
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Authorization.IEntityRoleStore`3
+    name: IEntityRoleStore
+    nameWithType: IEntityRoleStore
+    fullName: Hybrid.Zero.Authorization.IEntityRoleStore
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntityRole
+    nameWithType: TEntityRole
+    fullName: TEntityRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntityRoleInputDto
+    nameWithType: TEntityRoleInputDto
+    fullName: TEntityRoleInputDto
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.IFunctionStore`2
+  commentId: T:Hybrid.Zero.Authorization.IFunctionStore`2
+  name: IFunctionStore<TFunction, TFunctionInputDto>
+  nameWithType: IFunctionStore<TFunction, TFunctionInputDto>
+  fullName: Hybrid.Zero.Authorization.IFunctionStore<TFunction, TFunctionInputDto>
+  nameWithType.vb: IFunctionStore(Of TFunction, TFunctionInputDto)
+  fullName.vb: Hybrid.Zero.Authorization.IFunctionStore(Of TFunction, TFunctionInputDto)
+  name.vb: IFunctionStore(Of TFunction, TFunctionInputDto)
+  spec.csharp:
+  - uid: Hybrid.Zero.Authorization.IFunctionStore`2
+    name: IFunctionStore
+    nameWithType: IFunctionStore
+    fullName: Hybrid.Zero.Authorization.IFunctionStore
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TFunction
+    nameWithType: TFunction
+    fullName: TFunction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TFunctionInputDto
+    nameWithType: TFunctionInputDto
+    fullName: TFunctionInputDto
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Authorization.IFunctionStore`2
+    name: IFunctionStore
+    nameWithType: IFunctionStore
+    fullName: Hybrid.Zero.Authorization.IFunctionStore
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TFunction
+    nameWithType: TFunction
+    fullName: TFunction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TFunctionInputDto
+    nameWithType: TFunctionInputDto
+    fullName: TFunctionInputDto
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.IModuleFunctionStore`2
+  commentId: T:Hybrid.Zero.Authorization.IModuleFunctionStore`2
+  name: IModuleFunctionStore<TModuleFunction, TModuleKey>
+  nameWithType: IModuleFunctionStore<TModuleFunction, TModuleKey>
+  fullName: Hybrid.Zero.Authorization.IModuleFunctionStore<TModuleFunction, TModuleKey>
+  nameWithType.vb: IModuleFunctionStore(Of TModuleFunction, TModuleKey)
+  fullName.vb: Hybrid.Zero.Authorization.IModuleFunctionStore(Of TModuleFunction, TModuleKey)
+  name.vb: IModuleFunctionStore(Of TModuleFunction, TModuleKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Authorization.IModuleFunctionStore`2
+    name: IModuleFunctionStore
+    nameWithType: IModuleFunctionStore
+    fullName: Hybrid.Zero.Authorization.IModuleFunctionStore
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TModuleFunction
+    nameWithType: TModuleFunction
+    fullName: TModuleFunction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Authorization.IModuleFunctionStore`2
+    name: IModuleFunctionStore
+    nameWithType: IModuleFunctionStore
+    fullName: Hybrid.Zero.Authorization.IModuleFunctionStore
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TModuleFunction
+    nameWithType: TModuleFunction
+    fullName: TModuleFunction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.IModuleRoleStore`3
+  commentId: T:Hybrid.Zero.Authorization.IModuleRoleStore`3
+  name: IModuleRoleStore<TModuleRole, TRoleKey, TModuleKey>
+  nameWithType: IModuleRoleStore<TModuleRole, TRoleKey, TModuleKey>
+  fullName: Hybrid.Zero.Authorization.IModuleRoleStore<TModuleRole, TRoleKey, TModuleKey>
+  nameWithType.vb: IModuleRoleStore(Of TModuleRole, TRoleKey, TModuleKey)
+  fullName.vb: Hybrid.Zero.Authorization.IModuleRoleStore(Of TModuleRole, TRoleKey, TModuleKey)
+  name.vb: IModuleRoleStore(Of TModuleRole, TRoleKey, TModuleKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Authorization.IModuleRoleStore`3
+    name: IModuleRoleStore
+    nameWithType: IModuleRoleStore
+    fullName: Hybrid.Zero.Authorization.IModuleRoleStore
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TModuleRole
+    nameWithType: TModuleRole
+    fullName: TModuleRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Authorization.IModuleRoleStore`3
+    name: IModuleRoleStore
+    nameWithType: IModuleRoleStore
+    fullName: Hybrid.Zero.Authorization.IModuleRoleStore
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TModuleRole
+    nameWithType: TModuleRole
+    fullName: TModuleRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.IModuleStore`3
+  commentId: T:Hybrid.Zero.Authorization.IModuleStore`3
+  name: IModuleStore<TModule, TModuleInputDto, TModuleKey>
+  nameWithType: IModuleStore<TModule, TModuleInputDto, TModuleKey>
+  fullName: Hybrid.Zero.Authorization.IModuleStore<TModule, TModuleInputDto, TModuleKey>
+  nameWithType.vb: IModuleStore(Of TModule, TModuleInputDto, TModuleKey)
+  fullName.vb: Hybrid.Zero.Authorization.IModuleStore(Of TModule, TModuleInputDto, TModuleKey)
+  name.vb: IModuleStore(Of TModule, TModuleInputDto, TModuleKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Authorization.IModuleStore`3
+    name: IModuleStore
+    nameWithType: IModuleStore
+    fullName: Hybrid.Zero.Authorization.IModuleStore
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TModule
+    nameWithType: TModule
+    fullName: TModule
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleInputDto
+    nameWithType: TModuleInputDto
+    fullName: TModuleInputDto
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Authorization.IModuleStore`3
+    name: IModuleStore
+    nameWithType: IModuleStore
+    fullName: Hybrid.Zero.Authorization.IModuleStore
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TModule
+    nameWithType: TModule
+    fullName: TModule
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleInputDto
+    nameWithType: TModuleInputDto
+    fullName: TModuleInputDto
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.IModuleUserStore`3
+  commentId: T:Hybrid.Zero.Authorization.IModuleUserStore`3
+  name: IModuleUserStore<TModuleUser, TUserKey, TModuleKey>
+  nameWithType: IModuleUserStore<TModuleUser, TUserKey, TModuleKey>
+  fullName: Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>
+  nameWithType.vb: IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey)
+  fullName.vb: Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey)
+  name.vb: IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Authorization.IModuleUserStore`3
+    name: IModuleUserStore
+    nameWithType: IModuleUserStore
+    fullName: Hybrid.Zero.Authorization.IModuleUserStore
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Authorization.IModuleUserStore`3
+    name: IModuleUserStore
+    nameWithType: IModuleUserStore
+    fullName: Hybrid.Zero.Authorization.IModuleUserStore
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.ModuleHandlerBase`4
+  commentId: T:Hybrid.Zero.Authorization.ModuleHandlerBase`4
+  name: ModuleHandlerBase<TModule, TModuleInputDto, TModuleKey, TModuleFunction>
+  nameWithType: ModuleHandlerBase<TModule, TModuleInputDto, TModuleKey, TModuleFunction>
+  fullName: Hybrid.Zero.Authorization.ModuleHandlerBase<TModule, TModuleInputDto, TModuleKey, TModuleFunction>
+  nameWithType.vb: ModuleHandlerBase(Of TModule, TModuleInputDto, TModuleKey, TModuleFunction)
+  fullName.vb: Hybrid.Zero.Authorization.ModuleHandlerBase(Of TModule, TModuleInputDto, TModuleKey, TModuleFunction)
+  name.vb: ModuleHandlerBase(Of TModule, TModuleInputDto, TModuleKey, TModuleFunction)
+  spec.csharp:
+  - uid: Hybrid.Zero.Authorization.ModuleHandlerBase`4
+    name: ModuleHandlerBase
+    nameWithType: ModuleHandlerBase
+    fullName: Hybrid.Zero.Authorization.ModuleHandlerBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TModule
+    nameWithType: TModule
+    fullName: TModule
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleInputDto
+    nameWithType: TModuleInputDto
+    fullName: TModuleInputDto
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleFunction
+    nameWithType: TModuleFunction
+    fullName: TModuleFunction
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Authorization.ModuleHandlerBase`4
+    name: ModuleHandlerBase
+    nameWithType: ModuleHandlerBase
+    fullName: Hybrid.Zero.Authorization.ModuleHandlerBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TModule
+    nameWithType: TModule
+    fullName: TModule
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleInputDto
+    nameWithType: TModuleInputDto
+    fullName: TModuleInputDto
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleFunction
+    nameWithType: TModuleFunction
+    fullName: TModuleFunction
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.SecurityManagerBase`18
+  commentId: T:Hybrid.Zero.Authorization.SecurityManagerBase`18
+  name: SecurityManagerBase<TFunction, TFunctionInputDto, TEntityInfo, TEntityInfoInputDto, TModule, TModuleInputDto, TModuleKey, TModuleFunction, TModuleRole, TModuleUser, TEntityRole, TEntityRoleInputDto, TUserRole, TUserRoleKey, TRole, TRoleKey, TUser, TUserKey>
+  nameWithType: SecurityManagerBase<TFunction, TFunctionInputDto, TEntityInfo, TEntityInfoInputDto, TModule, TModuleInputDto, TModuleKey, TModuleFunction, TModuleRole, TModuleUser, TEntityRole, TEntityRoleInputDto, TUserRole, TUserRoleKey, TRole, TRoleKey, TUser, TUserKey>
+  fullName: Hybrid.Zero.Authorization.SecurityManagerBase<TFunction, TFunctionInputDto, TEntityInfo, TEntityInfoInputDto, TModule, TModuleInputDto, TModuleKey, TModuleFunction, TModuleRole, TModuleUser, TEntityRole, TEntityRoleInputDto, TUserRole, TUserRoleKey, TRole, TRoleKey, TUser, TUserKey>
+  nameWithType.vb: SecurityManagerBase(Of TFunction, TFunctionInputDto, TEntityInfo, TEntityInfoInputDto, TModule, TModuleInputDto, TModuleKey, TModuleFunction, TModuleRole, TModuleUser, TEntityRole, TEntityRoleInputDto, TUserRole, TUserRoleKey, TRole, TRoleKey, TUser, TUserKey)
+  fullName.vb: Hybrid.Zero.Authorization.SecurityManagerBase(Of TFunction, TFunctionInputDto, TEntityInfo, TEntityInfoInputDto, TModule, TModuleInputDto, TModuleKey, TModuleFunction, TModuleRole, TModuleUser, TEntityRole, TEntityRoleInputDto, TUserRole, TUserRoleKey, TRole, TRoleKey, TUser, TUserKey)
+  name.vb: SecurityManagerBase(Of TFunction, TFunctionInputDto, TEntityInfo, TEntityInfoInputDto, TModule, TModuleInputDto, TModuleKey, TModuleFunction, TModuleRole, TModuleUser, TEntityRole, TEntityRoleInputDto, TUserRole, TUserRoleKey, TRole, TRoleKey, TUser, TUserKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Authorization.SecurityManagerBase`18
+    name: SecurityManagerBase
+    nameWithType: SecurityManagerBase
+    fullName: Hybrid.Zero.Authorization.SecurityManagerBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TFunction
+    nameWithType: TFunction
+    fullName: TFunction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TFunctionInputDto
+    nameWithType: TFunctionInputDto
+    fullName: TFunctionInputDto
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntityInfo
+    nameWithType: TEntityInfo
+    fullName: TEntityInfo
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntityInfoInputDto
+    nameWithType: TEntityInfoInputDto
+    fullName: TEntityInfoInputDto
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModule
+    nameWithType: TModule
+    fullName: TModule
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleInputDto
+    nameWithType: TModuleInputDto
+    fullName: TModuleInputDto
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleFunction
+    nameWithType: TModuleFunction
+    fullName: TModuleFunction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleRole
+    nameWithType: TModuleRole
+    fullName: TModuleRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntityRole
+    nameWithType: TEntityRole
+    fullName: TEntityRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntityRoleInputDto
+    nameWithType: TEntityRoleInputDto
+    fullName: TEntityRoleInputDto
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserRole
+    nameWithType: TUserRole
+    fullName: TUserRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserRoleKey
+    nameWithType: TUserRoleKey
+    fullName: TUserRoleKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Authorization.SecurityManagerBase`18
+    name: SecurityManagerBase
+    nameWithType: SecurityManagerBase
+    fullName: Hybrid.Zero.Authorization.SecurityManagerBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TFunction
+    nameWithType: TFunction
+    fullName: TFunction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TFunctionInputDto
+    nameWithType: TFunctionInputDto
+    fullName: TFunctionInputDto
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntityInfo
+    nameWithType: TEntityInfo
+    fullName: TEntityInfo
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntityInfoInputDto
+    nameWithType: TEntityInfoInputDto
+    fullName: TEntityInfoInputDto
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModule
+    nameWithType: TModule
+    fullName: TModule
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleInputDto
+    nameWithType: TModuleInputDto
+    fullName: TModuleInputDto
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleFunction
+    nameWithType: TModuleFunction
+    fullName: TModuleFunction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleRole
+    nameWithType: TModuleRole
+    fullName: TModuleRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntityRole
+    nameWithType: TEntityRole
+    fullName: TEntityRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntityRoleInputDto
+    nameWithType: TEntityRoleInputDto
+    fullName: TEntityRoleInputDto
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserRole
+    nameWithType: TUserRole
+    fullName: TUserRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserRoleKey
+    nameWithType: TUserRoleKey
+    fullName: TUserRoleKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.SecurityModuleBase`19
+  commentId: T:Hybrid.Zero.Authorization.SecurityModuleBase`19
+  name: SecurityModuleBase<TSecurityManager, TFunctionAuthorization, TFunctionAuthCache, TDataAuthCache, TModuleHandler, TFunction, TFunctionInputDto, TEntityInfo, TEntityInfoInputDto, TModule, TModuleInputDto, TModuleKey, TModuleFunction, TModuleRole, TModuleUser, TEntityRole, TEntityRoleInputDto, TRoleKey, TUserKey>
+  nameWithType: SecurityModuleBase<TSecurityManager, TFunctionAuthorization, TFunctionAuthCache, TDataAuthCache, TModuleHandler, TFunction, TFunctionInputDto, TEntityInfo, TEntityInfoInputDto, TModule, TModuleInputDto, TModuleKey, TModuleFunction, TModuleRole, TModuleUser, TEntityRole, TEntityRoleInputDto, TRoleKey, TUserKey>
+  fullName: Hybrid.Zero.Authorization.SecurityModuleBase<TSecurityManager, TFunctionAuthorization, TFunctionAuthCache, TDataAuthCache, TModuleHandler, TFunction, TFunctionInputDto, TEntityInfo, TEntityInfoInputDto, TModule, TModuleInputDto, TModuleKey, TModuleFunction, TModuleRole, TModuleUser, TEntityRole, TEntityRoleInputDto, TRoleKey, TUserKey>
+  nameWithType.vb: SecurityModuleBase(Of TSecurityManager, TFunctionAuthorization, TFunctionAuthCache, TDataAuthCache, TModuleHandler, TFunction, TFunctionInputDto, TEntityInfo, TEntityInfoInputDto, TModule, TModuleInputDto, TModuleKey, TModuleFunction, TModuleRole, TModuleUser, TEntityRole, TEntityRoleInputDto, TRoleKey, TUserKey)
+  fullName.vb: Hybrid.Zero.Authorization.SecurityModuleBase(Of TSecurityManager, TFunctionAuthorization, TFunctionAuthCache, TDataAuthCache, TModuleHandler, TFunction, TFunctionInputDto, TEntityInfo, TEntityInfoInputDto, TModule, TModuleInputDto, TModuleKey, TModuleFunction, TModuleRole, TModuleUser, TEntityRole, TEntityRoleInputDto, TRoleKey, TUserKey)
+  name.vb: SecurityModuleBase(Of TSecurityManager, TFunctionAuthorization, TFunctionAuthCache, TDataAuthCache, TModuleHandler, TFunction, TFunctionInputDto, TEntityInfo, TEntityInfoInputDto, TModule, TModuleInputDto, TModuleKey, TModuleFunction, TModuleRole, TModuleUser, TEntityRole, TEntityRoleInputDto, TRoleKey, TUserKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Authorization.SecurityModuleBase`19
+    name: SecurityModuleBase
+    nameWithType: SecurityModuleBase
+    fullName: Hybrid.Zero.Authorization.SecurityModuleBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TSecurityManager
+    nameWithType: TSecurityManager
+    fullName: TSecurityManager
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TFunctionAuthorization
+    nameWithType: TFunctionAuthorization
+    fullName: TFunctionAuthorization
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TFunctionAuthCache
+    nameWithType: TFunctionAuthCache
+    fullName: TFunctionAuthCache
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TDataAuthCache
+    nameWithType: TDataAuthCache
+    fullName: TDataAuthCache
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleHandler
+    nameWithType: TModuleHandler
+    fullName: TModuleHandler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TFunction
+    nameWithType: TFunction
+    fullName: TFunction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TFunctionInputDto
+    nameWithType: TFunctionInputDto
+    fullName: TFunctionInputDto
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntityInfo
+    nameWithType: TEntityInfo
+    fullName: TEntityInfo
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntityInfoInputDto
+    nameWithType: TEntityInfoInputDto
+    fullName: TEntityInfoInputDto
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModule
+    nameWithType: TModule
+    fullName: TModule
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleInputDto
+    nameWithType: TModuleInputDto
+    fullName: TModuleInputDto
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleFunction
+    nameWithType: TModuleFunction
+    fullName: TModuleFunction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleRole
+    nameWithType: TModuleRole
+    fullName: TModuleRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntityRole
+    nameWithType: TEntityRole
+    fullName: TEntityRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntityRoleInputDto
+    nameWithType: TEntityRoleInputDto
+    fullName: TEntityRoleInputDto
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Authorization.SecurityModuleBase`19
+    name: SecurityModuleBase
+    nameWithType: SecurityModuleBase
+    fullName: Hybrid.Zero.Authorization.SecurityModuleBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TSecurityManager
+    nameWithType: TSecurityManager
+    fullName: TSecurityManager
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TFunctionAuthorization
+    nameWithType: TFunctionAuthorization
+    fullName: TFunctionAuthorization
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TFunctionAuthCache
+    nameWithType: TFunctionAuthCache
+    fullName: TFunctionAuthCache
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TDataAuthCache
+    nameWithType: TDataAuthCache
+    fullName: TDataAuthCache
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleHandler
+    nameWithType: TModuleHandler
+    fullName: TModuleHandler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TFunction
+    nameWithType: TFunction
+    fullName: TFunction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TFunctionInputDto
+    nameWithType: TFunctionInputDto
+    fullName: TFunctionInputDto
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntityInfo
+    nameWithType: TEntityInfo
+    fullName: TEntityInfo
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntityInfoInputDto
+    nameWithType: TEntityInfoInputDto
+    fullName: TEntityInfoInputDto
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModule
+    nameWithType: TModule
+    fullName: TModule
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleInputDto
+    nameWithType: TModuleInputDto
+    fullName: TModuleInputDto
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleFunction
+    nameWithType: TModuleFunction
+    fullName: TModuleFunction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleRole
+    nameWithType: TModuleRole
+    fullName: TModuleRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntityRole
+    nameWithType: TEntityRole
+    fullName: TEntityRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntityRoleInputDto
+    nameWithType: TEntityRoleInputDto
+    fullName: TEntityRoleInputDto
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: )
+    nameWithType: )
+    fullName: )

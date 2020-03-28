@@ -1,0 +1,467 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Exceptions.ExceptionExtensions
+  commentId: T:Hybrid.Exceptions.ExceptionExtensions
+  id: ExceptionExtensions
+  parent: Hybrid.Exceptions
+  children:
+  - Hybrid.Exceptions.ExceptionExtensions.FormatMessage(System.Exception,System.Boolean)
+  - Hybrid.Exceptions.ExceptionExtensions.ReThrow(System.Exception)
+  langs:
+  - csharp
+  - vb
+  name: ExceptionExtensions
+  nameWithType: ExceptionExtensions
+  fullName: Hybrid.Exceptions.ExceptionExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid/Exceptions/ExceptionExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ExceptionExtensions
+    path: ../src/Hybrid/Exceptions/ExceptionExtensions.cs
+    startLine: 17
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Exceptions
+  summary: "\n异常操作扩展\n"
+  example: []
+  syntax:
+    content: public static class ExceptionExtensions
+    content.vb: Public Module ExceptionExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.Exceptions.ExceptionExtensions.FormatMessage(System.Exception,System.Boolean)
+  commentId: M:Hybrid.Exceptions.ExceptionExtensions.FormatMessage(System.Exception,System.Boolean)
+  id: FormatMessage(System.Exception,System.Boolean)
+  isExtensionMethod: true
+  parent: Hybrid.Exceptions.ExceptionExtensions
+  langs:
+  - csharp
+  - vb
+  name: FormatMessage(Exception, Boolean)
+  nameWithType: ExceptionExtensions.FormatMessage(Exception, Boolean)
+  fullName: Hybrid.Exceptions.ExceptionExtensions.FormatMessage(System.Exception, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Exceptions/ExceptionExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: FormatMessage
+    path: ../src/Hybrid/Exceptions/ExceptionExtensions.cs
+    startLine: 25
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Exceptions
+  summary: "\n格式化异常消息\n"
+  example: []
+  syntax:
+    content: public static string FormatMessage(this Exception e, bool isHideStackTrace = false)
+    parameters:
+    - id: e
+      type: System.Exception
+      description: 异常对象
+    - id: isHideStackTrace
+      type: System.Boolean
+      description: 是否隐藏异常规模信息
+    return:
+      type: System.String
+      description: 格式化后的异常信息字符串
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function FormatMessage(e As Exception, isHideStackTrace As Boolean = False) As String
+  overload: Hybrid.Exceptions.ExceptionExtensions.FormatMessage*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Exceptions.ExceptionExtensions.ReThrow(System.Exception)
+  commentId: M:Hybrid.Exceptions.ExceptionExtensions.ReThrow(System.Exception)
+  id: ReThrow(System.Exception)
+  isExtensionMethod: true
+  parent: Hybrid.Exceptions.ExceptionExtensions
+  langs:
+  - csharp
+  - vb
+  name: ReThrow(Exception)
+  nameWithType: ExceptionExtensions.ReThrow(Exception)
+  fullName: Hybrid.Exceptions.ExceptionExtensions.ReThrow(System.Exception)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Exceptions/ExceptionExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ReThrow
+    path: ../src/Hybrid/Exceptions/ExceptionExtensions.cs
+    startLine: 57
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Exceptions
+  summary: "\n将异常重新抛出\n"
+  example: []
+  syntax:
+    content: public static void ReThrow(this Exception exception)
+    parameters:
+    - id: exception
+      type: System.Exception
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub ReThrow(exception As Exception)
+  overload: Hybrid.Exceptions.ExceptionExtensions.ReThrow*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Hybrid.Exceptions
+  commentId: N:Hybrid.Exceptions
+  name: Hybrid.Exceptions
+  nameWithType: Hybrid.Exceptions
+  fullName: Hybrid.Exceptions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hybrid.Exceptions.ExceptionExtensions.FormatMessage*
+  commentId: Overload:Hybrid.Exceptions.ExceptionExtensions.FormatMessage
+  name: FormatMessage
+  nameWithType: ExceptionExtensions.FormatMessage
+  fullName: Hybrid.Exceptions.ExceptionExtensions.FormatMessage
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Hybrid.Exceptions.ExceptionExtensions.ReThrow*
+  commentId: Overload:Hybrid.Exceptions.ExceptionExtensions.ReThrow
+  name: ReThrow
+  nameWithType: ExceptionExtensions.ReThrow
+  fullName: Hybrid.Exceptions.ExceptionExtensions.ReThrow

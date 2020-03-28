@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Data.Annotations
+  commentId: N:Hybrid.Data.Annotations
+  id: Hybrid.Data.Annotations
+  children:
+  - Hybrid.Data.Annotations.PasswordAttribute
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Data.Annotations
+  nameWithType: Hybrid.Data.Annotations
+  fullName: Hybrid.Data.Annotations
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Data.Annotations.PasswordAttribute
+  commentId: T:Hybrid.Data.Annotations.PasswordAttribute
+  name: PasswordAttribute
+  nameWithType: PasswordAttribute
+  fullName: Hybrid.Data.Annotations.PasswordAttribute

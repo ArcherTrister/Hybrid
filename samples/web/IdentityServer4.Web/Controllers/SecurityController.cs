@@ -14,8 +14,8 @@ using Hybrid.Authorization.Functions;
 using Hybrid.Authorization.ModuleInfos;
 using Hybrid.Extensions;
 using Hybrid.Security;
-using Hybrid.Web.Security;
-using Hybrid.Web.Security.Entities;
+using Hybrid.Web.Authorization;
+using Hybrid.Web.Authorization.Entities;
 
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;

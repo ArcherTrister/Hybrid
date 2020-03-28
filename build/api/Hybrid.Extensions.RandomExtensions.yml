@@ -1,0 +1,1447 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Extensions.RandomExtensions
+  commentId: T:Hybrid.Extensions.RandomExtensions
+  id: RandomExtensions
+  parent: Hybrid.Extensions
+  children:
+  - Hybrid.Extensions.RandomExtensions.NextBoolean(System.Random)
+  - Hybrid.Extensions.RandomExtensions.NextBytes(System.Random,System.Int32)
+  - Hybrid.Extensions.RandomExtensions.NextDateTime(System.Random)
+  - Hybrid.Extensions.RandomExtensions.NextDateTime(System.Random,System.DateTime,System.DateTime)
+  - Hybrid.Extensions.RandomExtensions.NextEnum``1(System.Random)
+  - Hybrid.Extensions.RandomExtensions.NextIdentityCardId(System.Random,System.String[])
+  - Hybrid.Extensions.RandomExtensions.NextItem``1(System.Random,``0[])
+  - Hybrid.Extensions.RandomExtensions.NextItems(System.Random,System.Int32,System.Int32,System.Int32,System.Int32[])
+  - Hybrid.Extensions.RandomExtensions.NextItems``1(System.Random,``0[],System.Int32,``0[])
+  - Hybrid.Extensions.RandomExtensions.NextLetterAndNumberString(System.Random,System.Int32)
+  - Hybrid.Extensions.RandomExtensions.NextLetterString(System.Random,System.Int32)
+  - Hybrid.Extensions.RandomExtensions.NextNationName(System.Random)
+  - Hybrid.Extensions.RandomExtensions.NextNumberString(System.Random,System.Int32)
+  - Hybrid.Extensions.RandomExtensions.NextPhoneNumber(System.Random,System.String[])
+  - Hybrid.Extensions.RandomExtensions.NextSurName(System.Random)
+  langs:
+  - csharp
+  - vb
+  name: RandomExtensions
+  nameWithType: RandomExtensions
+  fullName: Hybrid.Extensions.RandomExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid/Extensions/RandomExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: RandomExtensions
+    path: ../src/Hybrid/Extensions/RandomExtensions.cs
+    startLine: 18
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n随机数<xref href=\"System.Random\" data-throw-if-not-resolved=\"false\"></xref>类型的扩展辅助操作类\n"
+  example: []
+  syntax:
+    content: public static class RandomExtensions
+    content.vb: Public Module RandomExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.Extensions.RandomExtensions.NextBoolean(System.Random)
+  commentId: M:Hybrid.Extensions.RandomExtensions.NextBoolean(System.Random)
+  id: NextBoolean(System.Random)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.RandomExtensions
+  langs:
+  - csharp
+  - vb
+  name: NextBoolean(Random)
+  nameWithType: RandomExtensions.NextBoolean(Random)
+  fullName: Hybrid.Extensions.RandomExtensions.NextBoolean(System.Random)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/RandomExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: NextBoolean
+    path: ../src/Hybrid/Extensions/RandomExtensions.cs
+    startLine: 31
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n返回随机布尔值\n"
+  example: []
+  syntax:
+    content: public static bool NextBoolean(this Random random)
+    parameters:
+    - id: random
+      type: System.Random
+      description: ''
+    return:
+      type: System.Boolean
+      description: 随机布尔值
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function NextBoolean(random As Random) As Boolean
+  overload: Hybrid.Extensions.RandomExtensions.NextBoolean*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.RandomExtensions.NextEnum``1(System.Random)
+  commentId: M:Hybrid.Extensions.RandomExtensions.NextEnum``1(System.Random)
+  id: NextEnum``1(System.Random)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.RandomExtensions
+  langs:
+  - csharp
+  - vb
+  name: NextEnum<T>(Random)
+  nameWithType: RandomExtensions.NextEnum<T>(Random)
+  fullName: Hybrid.Extensions.RandomExtensions.NextEnum<T>(System.Random)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/RandomExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: NextEnum
+    path: ../src/Hybrid/Extensions/RandomExtensions.cs
+    startLine: 41
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n返回指定枚举类型的随机枚举值\n"
+  example: []
+  syntax:
+    content: >-
+      public static T NextEnum<T>(this Random random)
+
+          where T : struct
+    parameters:
+    - id: random
+      type: System.Random
+      description: ''
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+      description: 指定枚举类型的随机枚举值
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function NextEnum(Of T As Structure)(random As Random) As T
+  overload: Hybrid.Extensions.RandomExtensions.NextEnum*
+  nameWithType.vb: RandomExtensions.NextEnum(Of T)(Random)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.RandomExtensions.NextEnum(Of T)(System.Random)
+  name.vb: NextEnum(Of T)(Random)
+- uid: Hybrid.Extensions.RandomExtensions.NextBytes(System.Random,System.Int32)
+  commentId: M:Hybrid.Extensions.RandomExtensions.NextBytes(System.Random,System.Int32)
+  id: NextBytes(System.Random,System.Int32)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.RandomExtensions
+  langs:
+  - csharp
+  - vb
+  name: NextBytes(Random, Int32)
+  nameWithType: RandomExtensions.NextBytes(Random, Int32)
+  fullName: Hybrid.Extensions.RandomExtensions.NextBytes(System.Random, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/RandomExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: NextBytes
+    path: ../src/Hybrid/Extensions/RandomExtensions.cs
+    startLine: 59
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n返回随机数填充的指定长度的数组\n"
+  example: []
+  syntax:
+    content: public static byte[] NextBytes(this Random random, int length)
+    parameters:
+    - id: random
+      type: System.Random
+      description: ''
+    - id: length
+      type: System.Int32
+      description: 数组长度
+    return:
+      type: System.Byte[]
+      description: 随机数填充的指定长度的数组
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function NextBytes(random As Random, length As Integer) As Byte()
+  overload: Hybrid.Extensions.RandomExtensions.NextBytes*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.RandomExtensions.NextItem``1(System.Random,``0[])
+  commentId: M:Hybrid.Extensions.RandomExtensions.NextItem``1(System.Random,``0[])
+  id: NextItem``1(System.Random,``0[])
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.RandomExtensions
+  langs:
+  - csharp
+  - vb
+  name: NextItem<T>(Random, T[])
+  nameWithType: RandomExtensions.NextItem<T>(Random, T[])
+  fullName: Hybrid.Extensions.RandomExtensions.NextItem<T>(System.Random, T[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/RandomExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: NextItem
+    path: ../src/Hybrid/Extensions/RandomExtensions.cs
+    startLine: 77
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n返回数组中的随机元素\n"
+  example: []
+  syntax:
+    content: public static T NextItem<T>(this Random random, T[] items)
+    parameters:
+    - id: random
+      type: System.Random
+      description: ''
+    - id: items
+      type: '{T}[]'
+      description: 元素数组
+    typeParameters:
+    - id: T
+      description: 元素类型
+    return:
+      type: '{T}'
+      description: 元素数组中的某个随机项
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function NextItem(Of T)(random As Random, items As T()) As T
+  overload: Hybrid.Extensions.RandomExtensions.NextItem*
+  nameWithType.vb: RandomExtensions.NextItem(Of T)(Random, T())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.RandomExtensions.NextItem(Of T)(System.Random, T())
+  name.vb: NextItem(Of T)(Random, T())
+- uid: Hybrid.Extensions.RandomExtensions.NextDateTime(System.Random,System.DateTime,System.DateTime)
+  commentId: M:Hybrid.Extensions.RandomExtensions.NextDateTime(System.Random,System.DateTime,System.DateTime)
+  id: NextDateTime(System.Random,System.DateTime,System.DateTime)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.RandomExtensions
+  langs:
+  - csharp
+  - vb
+  name: NextDateTime(Random, DateTime, DateTime)
+  nameWithType: RandomExtensions.NextDateTime(Random, DateTime, DateTime)
+  fullName: Hybrid.Extensions.RandomExtensions.NextDateTime(System.Random, System.DateTime, System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/RandomExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: NextDateTime
+    path: ../src/Hybrid/Extensions/RandomExtensions.cs
+    startLine: 89
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n返回指定时间段内的随机时间值\n"
+  example: []
+  syntax:
+    content: public static DateTime NextDateTime(this Random random, DateTime minValue, DateTime maxValue)
+    parameters:
+    - id: random
+      type: System.Random
+      description: ''
+    - id: minValue
+      type: System.DateTime
+      description: 时间范围的最小值
+    - id: maxValue
+      type: System.DateTime
+      description: 时间范围的最大值
+    return:
+      type: System.DateTime
+      description: 指定时间段内的随机时间值
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function NextDateTime(random As Random, minValue As Date, maxValue As Date) As Date
+  overload: Hybrid.Extensions.RandomExtensions.NextDateTime*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.RandomExtensions.NextDateTime(System.Random)
+  commentId: M:Hybrid.Extensions.RandomExtensions.NextDateTime(System.Random)
+  id: NextDateTime(System.Random)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.RandomExtensions
+  langs:
+  - csharp
+  - vb
+  name: NextDateTime(Random)
+  nameWithType: RandomExtensions.NextDateTime(Random)
+  fullName: Hybrid.Extensions.RandomExtensions.NextDateTime(System.Random)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/RandomExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: NextDateTime
+    path: ../src/Hybrid/Extensions/RandomExtensions.cs
+    startLine: 100
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n返回随机时间值\n"
+  example: []
+  syntax:
+    content: public static DateTime NextDateTime(this Random random)
+    parameters:
+    - id: random
+      type: System.Random
+      description: ''
+    return:
+      type: System.DateTime
+      description: 随机时间值
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function NextDateTime(random As Random) As Date
+  overload: Hybrid.Extensions.RandomExtensions.NextDateTime*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.RandomExtensions.NextNumberString(System.Random,System.Int32)
+  commentId: M:Hybrid.Extensions.RandomExtensions.NextNumberString(System.Random,System.Int32)
+  id: NextNumberString(System.Random,System.Int32)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.RandomExtensions
+  langs:
+  - csharp
+  - vb
+  name: NextNumberString(Random, Int32)
+  nameWithType: RandomExtensions.NextNumberString(Random, Int32)
+  fullName: Hybrid.Extensions.RandomExtensions.NextNumberString(System.Random, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/RandomExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: NextNumberString
+    path: ../src/Hybrid/Extensions/RandomExtensions.cs
+    startLine: 111
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n获取指定的长度的随机数字字符串\n"
+  example: []
+  syntax:
+    content: public static string NextNumberString(this Random random, int length)
+    parameters:
+    - id: random
+      type: System.Random
+      description: ''
+    - id: length
+      type: System.Int32
+      description: 要获取随机数长度
+    return:
+      type: System.String
+      description: 指定长度的随机数字符串
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function NextNumberString(random As Random, length As Integer) As String
+  overload: Hybrid.Extensions.RandomExtensions.NextNumberString*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.RandomExtensions.NextLetterString(System.Random,System.Int32)
+  commentId: M:Hybrid.Extensions.RandomExtensions.NextLetterString(System.Random,System.Int32)
+  id: NextLetterString(System.Random,System.Int32)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.RandomExtensions
+  langs:
+  - csharp
+  - vb
+  name: NextLetterString(Random, Int32)
+  nameWithType: RandomExtensions.NextLetterString(Random, Int32)
+  fullName: Hybrid.Extensions.RandomExtensions.NextLetterString(System.Random, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/RandomExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: NextLetterString
+    path: ../src/Hybrid/Extensions/RandomExtensions.cs
+    startLine: 134
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n获取指定的长度的随机字母字符串\n"
+  example: []
+  syntax:
+    content: public static string NextLetterString(this Random random, int length)
+    parameters:
+    - id: random
+      type: System.Random
+      description: ''
+    - id: length
+      type: System.Int32
+      description: 要获取随机数长度
+    return:
+      type: System.String
+      description: 指定长度的随机字母组成字符串
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function NextLetterString(random As Random, length As Integer) As String
+  overload: Hybrid.Extensions.RandomExtensions.NextLetterString*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.RandomExtensions.NextLetterAndNumberString(System.Random,System.Int32)
+  commentId: M:Hybrid.Extensions.RandomExtensions.NextLetterAndNumberString(System.Random,System.Int32)
+  id: NextLetterAndNumberString(System.Random,System.Int32)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.RandomExtensions
+  langs:
+  - csharp
+  - vb
+  name: NextLetterAndNumberString(Random, Int32)
+  nameWithType: RandomExtensions.NextLetterAndNumberString(Random, Int32)
+  fullName: Hybrid.Extensions.RandomExtensions.NextLetterAndNumberString(System.Random, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/RandomExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: NextLetterAndNumberString
+    path: ../src/Hybrid/Extensions/RandomExtensions.cs
+    startLine: 158
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n获取指定的长度的随机字母和数字字符串\n"
+  example: []
+  syntax:
+    content: public static string NextLetterAndNumberString(this Random random, int length)
+    parameters:
+    - id: random
+      type: System.Random
+      description: ''
+    - id: length
+      type: System.Int32
+      description: 要获取随机数长度
+    return:
+      type: System.String
+      description: 指定长度的随机字母和数字组成字符串
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function NextLetterAndNumberString(random As Random, length As Integer) As String
+  overload: Hybrid.Extensions.RandomExtensions.NextLetterAndNumberString*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.RandomExtensions.NextSurName(System.Random)
+  commentId: M:Hybrid.Extensions.RandomExtensions.NextSurName(System.Random)
+  id: NextSurName(System.Random)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.RandomExtensions
+  langs:
+  - csharp
+  - vb
+  name: NextSurName(Random)
+  nameWithType: RandomExtensions.NextSurName(Random)
+  fullName: Hybrid.Extensions.RandomExtensions.NextSurName(System.Random)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/RandomExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: NextSurName
+    path: ../src/Hybrid/Extensions/RandomExtensions.cs
+    startLine: 180
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n获取随机的姓名\n"
+  example: []
+  syntax:
+    content: public static string NextSurName(this Random random)
+    parameters:
+    - id: random
+      type: System.Random
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function NextSurName(random As Random) As String
+  overload: Hybrid.Extensions.RandomExtensions.NextSurName*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.RandomExtensions.NextNationName(System.Random)
+  commentId: M:Hybrid.Extensions.RandomExtensions.NextNationName(System.Random)
+  id: NextNationName(System.Random)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.RandomExtensions
+  langs:
+  - csharp
+  - vb
+  name: NextNationName(Random)
+  nameWithType: RandomExtensions.NextNationName(Random)
+  fullName: Hybrid.Extensions.RandomExtensions.NextNationName(System.Random)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/RandomExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: NextNationName
+    path: ../src/Hybrid/Extensions/RandomExtensions.cs
+    startLine: 195
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n获取随机的民族\n"
+  example: []
+  syntax:
+    content: public static string NextNationName(this Random random)
+    parameters:
+    - id: random
+      type: System.Random
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function NextNationName(random As Random) As String
+  overload: Hybrid.Extensions.RandomExtensions.NextNationName*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.RandomExtensions.NextPhoneNumber(System.Random,System.String[])
+  commentId: M:Hybrid.Extensions.RandomExtensions.NextPhoneNumber(System.Random,System.String[])
+  id: NextPhoneNumber(System.Random,System.String[])
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.RandomExtensions
+  langs:
+  - csharp
+  - vb
+  name: NextPhoneNumber(Random, String[])
+  nameWithType: RandomExtensions.NextPhoneNumber(Random, String[])
+  fullName: Hybrid.Extensions.RandomExtensions.NextPhoneNumber(System.Random, System.String[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/RandomExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: NextPhoneNumber
+    path: ../src/Hybrid/Extensions/RandomExtensions.cs
+    startLine: 206
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n获取随机手机号\n"
+  example: []
+  syntax:
+    content: public static string NextPhoneNumber(this Random random, params string[] sections)
+    parameters:
+    - id: random
+      type: System.Random
+      description: ''
+    - id: sections
+      type: System.String[]
+      description: 指定手机号段，号段字符串必须是7位数值
+    return:
+      type: System.String
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function NextPhoneNumber(random As Random, ParamArray sections As String()) As String
+  overload: Hybrid.Extensions.RandomExtensions.NextPhoneNumber*
+  nameWithType.vb: RandomExtensions.NextPhoneNumber(Random, String())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.RandomExtensions.NextPhoneNumber(System.Random, System.String())
+  name.vb: NextPhoneNumber(Random, String())
+- uid: Hybrid.Extensions.RandomExtensions.NextIdentityCardId(System.Random,System.String[])
+  commentId: M:Hybrid.Extensions.RandomExtensions.NextIdentityCardId(System.Random,System.String[])
+  id: NextIdentityCardId(System.Random,System.String[])
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.RandomExtensions
+  langs:
+  - csharp
+  - vb
+  name: NextIdentityCardId(Random, String[])
+  nameWithType: RandomExtensions.NextIdentityCardId(Random, String[])
+  fullName: Hybrid.Extensions.RandomExtensions.NextIdentityCardId(System.Random, System.String[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/RandomExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: NextIdentityCardId
+    path: ../src/Hybrid/Extensions/RandomExtensions.cs
+    startLine: 231
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n获取随机身份证号\n"
+  example: []
+  syntax:
+    content: public static string NextIdentityCardId(this Random random, params string[] areaCodes)
+    parameters:
+    - id: random
+      type: System.Random
+      description: ''
+    - id: areaCodes
+      type: System.String[]
+      description: 指定的地区码
+    return:
+      type: System.String
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function NextIdentityCardId(random As Random, ParamArray areaCodes As String()) As String
+  overload: Hybrid.Extensions.RandomExtensions.NextIdentityCardId*
+  nameWithType.vb: RandomExtensions.NextIdentityCardId(Random, String())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.RandomExtensions.NextIdentityCardId(System.Random, System.String())
+  name.vb: NextIdentityCardId(Random, String())
+- uid: Hybrid.Extensions.RandomExtensions.NextItems``1(System.Random,``0[],System.Int32,``0[])
+  commentId: M:Hybrid.Extensions.RandomExtensions.NextItems``1(System.Random,``0[],System.Int32,``0[])
+  id: NextItems``1(System.Random,``0[],System.Int32,``0[])
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.RandomExtensions
+  langs:
+  - csharp
+  - vb
+  name: NextItems<T>(Random, T[], Int32, T[])
+  nameWithType: RandomExtensions.NextItems<T>(Random, T[], Int32, T[])
+  fullName: Hybrid.Extensions.RandomExtensions.NextItems<T>(System.Random, T[], System.Int32, T[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/RandomExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: NextItems
+    path: ../src/Hybrid/Extensions/RandomExtensions.cs
+    startLine: 270
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n从指定源集合中获取排除指定元素的指定个数的随机项集合\n"
+  example: []
+  syntax:
+    content: public static List<T> NextItems<T>(this Random random, T[] source, int count, params T[] excepts)
+    parameters:
+    - id: random
+      type: System.Random
+      description: ''
+    - id: source
+      type: '{T}[]'
+      description: 源集合
+    - id: count
+      type: System.Int32
+      description: 要获取的子集合的项数量
+    - id: excepts
+      type: '{T}[]'
+      description: 要排除的项集合
+    typeParameters:
+    - id: T
+      description: 项类型
+    return:
+      type: System.Collections.Generic.List{{T}}
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function NextItems(Of T)(random As Random, source As T(), count As Integer, ParamArray excepts As T()) As List(Of T)
+  overload: Hybrid.Extensions.RandomExtensions.NextItems*
+  nameWithType.vb: RandomExtensions.NextItems(Of T)(Random, T(), Int32, T())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.RandomExtensions.NextItems(Of T)(System.Random, T(), System.Int32, T())
+  name.vb: NextItems(Of T)(Random, T(), Int32, T())
+- uid: Hybrid.Extensions.RandomExtensions.NextItems(System.Random,System.Int32,System.Int32,System.Int32,System.Int32[])
+  commentId: M:Hybrid.Extensions.RandomExtensions.NextItems(System.Random,System.Int32,System.Int32,System.Int32,System.Int32[])
+  id: NextItems(System.Random,System.Int32,System.Int32,System.Int32,System.Int32[])
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.RandomExtensions
+  langs:
+  - csharp
+  - vb
+  name: NextItems(Random, Int32, Int32, Int32, Int32[])
+  nameWithType: RandomExtensions.NextItems(Random, Int32, Int32, Int32, Int32[])
+  fullName: Hybrid.Extensions.RandomExtensions.NextItems(System.Random, System.Int32, System.Int32, System.Int32, System.Int32[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/RandomExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: NextItems
+    path: ../src/Hybrid/Extensions/RandomExtensions.cs
+    startLine: 298
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n从指定数值范围中获取排除指定数值外的指定个数随机数值集合\n"
+  example: []
+  syntax:
+    content: public static List<int> NextItems(this Random random, int min, int max, int count, params int[] excepts)
+    parameters:
+    - id: random
+      type: System.Random
+      description: ''
+    - id: min
+      type: System.Int32
+      description: 数值范围小值
+    - id: max
+      type: System.Int32
+      description: 数值范围大值
+    - id: count
+      type: System.Int32
+      description: 要获取的子集合元素数量
+    - id: excepts
+      type: System.Int32[]
+      description: 要排除的数值
+    return:
+      type: System.Collections.Generic.List{System.Int32}
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function NextItems(random As Random, min As Integer, max As Integer, count As Integer, ParamArray excepts As Integer()) As List(Of Integer)
+  overload: Hybrid.Extensions.RandomExtensions.NextItems*
+  nameWithType.vb: RandomExtensions.NextItems(Random, Int32, Int32, Int32, Int32())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.RandomExtensions.NextItems(System.Random, System.Int32, System.Int32, System.Int32, System.Int32())
+  name.vb: NextItems(Random, Int32, Int32, Int32, Int32())
+references:
+- uid: System.Random
+  commentId: T:System.Random
+  parent: System
+  isExternal: true
+  name: Random
+  nameWithType: Random
+  fullName: System.Random
+- uid: Hybrid.Extensions
+  commentId: N:Hybrid.Extensions
+  name: Hybrid.Extensions
+  nameWithType: Hybrid.Extensions
+  fullName: Hybrid.Extensions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hybrid.Extensions.RandomExtensions.NextBoolean*
+  commentId: Overload:Hybrid.Extensions.RandomExtensions.NextBoolean
+  name: NextBoolean
+  nameWithType: RandomExtensions.NextBoolean
+  fullName: Hybrid.Extensions.RandomExtensions.NextBoolean
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Hybrid.Extensions.RandomExtensions.NextEnum*
+  commentId: Overload:Hybrid.Extensions.RandomExtensions.NextEnum
+  name: NextEnum
+  nameWithType: RandomExtensions.NextEnum
+  fullName: Hybrid.Extensions.RandomExtensions.NextEnum
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Hybrid.Extensions.RandomExtensions.NextBytes*
+  commentId: Overload:Hybrid.Extensions.RandomExtensions.NextBytes
+  name: NextBytes
+  nameWithType: RandomExtensions.NextBytes
+  fullName: Hybrid.Extensions.RandomExtensions.NextBytes
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Hybrid.Extensions.RandomExtensions.NextItem*
+  commentId: Overload:Hybrid.Extensions.RandomExtensions.NextItem
+  name: NextItem
+  nameWithType: RandomExtensions.NextItem
+  fullName: Hybrid.Extensions.RandomExtensions.NextItem
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Hybrid.Extensions.RandomExtensions.NextDateTime*
+  commentId: Overload:Hybrid.Extensions.RandomExtensions.NextDateTime
+  name: NextDateTime
+  nameWithType: RandomExtensions.NextDateTime
+  fullName: Hybrid.Extensions.RandomExtensions.NextDateTime
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: Hybrid.Extensions.RandomExtensions.NextNumberString*
+  commentId: Overload:Hybrid.Extensions.RandomExtensions.NextNumberString
+  name: NextNumberString
+  nameWithType: RandomExtensions.NextNumberString
+  fullName: Hybrid.Extensions.RandomExtensions.NextNumberString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Hybrid.Extensions.RandomExtensions.NextLetterString*
+  commentId: Overload:Hybrid.Extensions.RandomExtensions.NextLetterString
+  name: NextLetterString
+  nameWithType: RandomExtensions.NextLetterString
+  fullName: Hybrid.Extensions.RandomExtensions.NextLetterString
+- uid: Hybrid.Extensions.RandomExtensions.NextLetterAndNumberString*
+  commentId: Overload:Hybrid.Extensions.RandomExtensions.NextLetterAndNumberString
+  name: NextLetterAndNumberString
+  nameWithType: RandomExtensions.NextLetterAndNumberString
+  fullName: Hybrid.Extensions.RandomExtensions.NextLetterAndNumberString
+- uid: Hybrid.Extensions.RandomExtensions.NextSurName*
+  commentId: Overload:Hybrid.Extensions.RandomExtensions.NextSurName
+  name: NextSurName
+  nameWithType: RandomExtensions.NextSurName
+  fullName: Hybrid.Extensions.RandomExtensions.NextSurName
+- uid: Hybrid.Extensions.RandomExtensions.NextNationName*
+  commentId: Overload:Hybrid.Extensions.RandomExtensions.NextNationName
+  name: NextNationName
+  nameWithType: RandomExtensions.NextNationName
+  fullName: Hybrid.Extensions.RandomExtensions.NextNationName
+- uid: Hybrid.Extensions.RandomExtensions.NextPhoneNumber*
+  commentId: Overload:Hybrid.Extensions.RandomExtensions.NextPhoneNumber
+  name: NextPhoneNumber
+  nameWithType: RandomExtensions.NextPhoneNumber
+  fullName: Hybrid.Extensions.RandomExtensions.NextPhoneNumber
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Hybrid.Extensions.RandomExtensions.NextIdentityCardId*
+  commentId: Overload:Hybrid.Extensions.RandomExtensions.NextIdentityCardId
+  name: NextIdentityCardId
+  nameWithType: RandomExtensions.NextIdentityCardId
+  fullName: Hybrid.Extensions.RandomExtensions.NextIdentityCardId
+- uid: Hybrid.Extensions.RandomExtensions.NextItems*
+  commentId: Overload:Hybrid.Extensions.RandomExtensions.NextItems
+  name: NextItems
+  nameWithType: RandomExtensions.NextItems
+  fullName: Hybrid.Extensions.RandomExtensions.NextItems
+- uid: System.Collections.Generic.List{{T}}
+  commentId: T:System.Collections.Generic.List{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Int32[]
+  isExternal: true
+  name: Int32[]
+  nameWithType: Int32[]
+  fullName: System.Int32[]
+  nameWithType.vb: Int32()
+  fullName.vb: System.Int32()
+  name.vb: Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Collections.Generic.List{System.Int32}
+  commentId: T:System.Collections.Generic.List{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Int32>
+  nameWithType: List<Int32>
+  fullName: System.Collections.Generic.List<System.Int32>
+  nameWithType.vb: List(Of Int32)
+  fullName.vb: System.Collections.Generic.List(Of System.Int32)
+  name.vb: List(Of Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

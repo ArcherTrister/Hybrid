@@ -1,0 +1,5215 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Extensions.StringExtensions
+  commentId: T:Hybrid.Extensions.StringExtensions
+  id: StringExtensions
+  parent: Hybrid.Extensions
+  children:
+  - Hybrid.Extensions.StringExtensions.AddHashFragment(System.String,System.String)
+  - Hybrid.Extensions.StringExtensions.AddUrlQuery(System.String,System.String[])
+  - Hybrid.Extensions.StringExtensions.CleanUrlPath(System.String)
+  - Hybrid.Extensions.StringExtensions.EnsureEndsWith(System.String,System.Char)
+  - Hybrid.Extensions.StringExtensions.EnsureEndsWith(System.String,System.Char,System.Boolean,System.Globalization.CultureInfo)
+  - Hybrid.Extensions.StringExtensions.EnsureEndsWith(System.String,System.Char,System.StringComparison)
+  - Hybrid.Extensions.StringExtensions.EnsureLeadingSlash(System.String)
+  - Hybrid.Extensions.StringExtensions.EnsureStartsWith(System.String,System.Char)
+  - Hybrid.Extensions.StringExtensions.EnsureStartsWith(System.String,System.Char,System.Boolean,System.Globalization.CultureInfo)
+  - Hybrid.Extensions.StringExtensions.EnsureStartsWith(System.String,System.Char,System.StringComparison)
+  - Hybrid.Extensions.StringExtensions.EnsureTrailingSlash(System.String)
+  - Hybrid.Extensions.StringExtensions.FormatWith(System.String,System.Object[])
+  - Hybrid.Extensions.StringExtensions.FromBase64String(System.String,System.Text.Encoding)
+  - Hybrid.Extensions.StringExtensions.FromHexString(System.String,System.Text.Encoding)
+  - Hybrid.Extensions.StringExtensions.FromJsonString(System.String,System.Type)
+  - Hybrid.Extensions.StringExtensions.FromJsonString``1(System.String)
+  - Hybrid.Extensions.StringExtensions.FromUnicodeString(System.String)
+  - Hybrid.Extensions.StringExtensions.GetSimilarityWith(System.String,System.String,System.Boolean)
+  - Hybrid.Extensions.StringExtensions.GetUrlQuery(System.String,System.String)
+  - Hybrid.Extensions.StringExtensions.IsEmail(System.String)
+  - Hybrid.Extensions.StringExtensions.IsIdentityCardId(System.String)
+  - Hybrid.Extensions.StringExtensions.IsImageFile(System.String)
+  - Hybrid.Extensions.StringExtensions.IsIpAddress(System.String)
+  - Hybrid.Extensions.StringExtensions.IsMatch(System.String,System.String,System.Boolean)
+  - Hybrid.Extensions.StringExtensions.IsMatchNumber(System.String)
+  - Hybrid.Extensions.StringExtensions.IsMatchNumber(System.String,System.Int32)
+  - Hybrid.Extensions.StringExtensions.IsMissing(System.String)
+  - Hybrid.Extensions.StringExtensions.IsMobileNumber(System.String,System.Boolean)
+  - Hybrid.Extensions.StringExtensions.IsNullOrEmpty(System.String)
+  - Hybrid.Extensions.StringExtensions.IsNullOrWhiteSpace(System.String)
+  - Hybrid.Extensions.StringExtensions.IsNumeric(System.String)
+  - Hybrid.Extensions.StringExtensions.IsPresent(System.String)
+  - Hybrid.Extensions.StringExtensions.IsUnicode(System.String)
+  - Hybrid.Extensions.StringExtensions.IsUrl(System.String)
+  - Hybrid.Extensions.StringExtensions.Left(System.String,System.Int32)
+  - Hybrid.Extensions.StringExtensions.LevenshteinDistance(System.String,System.String,System.Double@,System.Boolean)
+  - Hybrid.Extensions.StringExtensions.LowerFirstChar(System.String)
+  - Hybrid.Extensions.StringExtensions.Match(System.String,System.String)
+  - Hybrid.Extensions.StringExtensions.Matches(System.String,System.String)
+  - Hybrid.Extensions.StringExtensions.MatchFirstNumber(System.String)
+  - Hybrid.Extensions.StringExtensions.MatchLastNumber(System.String)
+  - Hybrid.Extensions.StringExtensions.MatchNumbers(System.String)
+  - Hybrid.Extensions.StringExtensions.NormalizeLineEndings(System.String)
+  - Hybrid.Extensions.StringExtensions.NthIndexOf(System.String,System.Char,System.Int32)
+  - Hybrid.Extensions.StringExtensions.RemoveLeadingSlash(System.String)
+  - Hybrid.Extensions.StringExtensions.RemovePostFix(System.String,System.String[])
+  - Hybrid.Extensions.StringExtensions.RemovePreFix(System.String,System.String[])
+  - Hybrid.Extensions.StringExtensions.RemoveTrailingSlash(System.String)
+  - Hybrid.Extensions.StringExtensions.ReverseString(System.String)
+  - Hybrid.Extensions.StringExtensions.Right(System.String,System.Int32)
+  - Hybrid.Extensions.StringExtensions.Split(System.String,System.String)
+  - Hybrid.Extensions.StringExtensions.Split(System.String,System.String,System.Boolean)
+  - Hybrid.Extensions.StringExtensions.Split(System.String,System.String,System.StringSplitOptions)
+  - Hybrid.Extensions.StringExtensions.SplitToLines(System.String)
+  - Hybrid.Extensions.StringExtensions.SplitToLines(System.String,System.StringSplitOptions)
+  - Hybrid.Extensions.StringExtensions.Substring(System.String,System.String,System.String[])
+  - Hybrid.Extensions.StringExtensions.Substring2(System.String,System.String,System.String)
+  - Hybrid.Extensions.StringExtensions.Substring2(System.String,System.String,System.String,System.Boolean)
+  - Hybrid.Extensions.StringExtensions.TextLength(System.String)
+  - Hybrid.Extensions.StringExtensions.ToBase64String(System.Byte[])
+  - Hybrid.Extensions.StringExtensions.ToBase64String(System.String,System.Text.Encoding)
+  - Hybrid.Extensions.StringExtensions.ToBytes(System.String,System.Text.Encoding)
+  - Hybrid.Extensions.StringExtensions.ToCamelCase(System.String,System.Boolean)
+  - Hybrid.Extensions.StringExtensions.ToCamelCase(System.String,System.Globalization.CultureInfo)
+  - Hybrid.Extensions.StringExtensions.ToEnum``1(System.String)
+  - Hybrid.Extensions.StringExtensions.ToEnum``1(System.String,System.Boolean)
+  - Hybrid.Extensions.StringExtensions.ToHexBytes(System.String)
+  - Hybrid.Extensions.StringExtensions.ToHexString(System.Byte[])
+  - Hybrid.Extensions.StringExtensions.ToHexString(System.String,System.Text.Encoding)
+  - Hybrid.Extensions.StringExtensions.ToHtmlDecode(System.String)
+  - Hybrid.Extensions.StringExtensions.ToHtmlEncode(System.String)
+  - Hybrid.Extensions.StringExtensions.ToInt64(System.String,System.Globalization.NumberStyles,System.Int64)
+  - Hybrid.Extensions.StringExtensions.ToMd5(System.String)
+  - Hybrid.Extensions.StringExtensions.ToMd5Hash(System.String)
+  - Hybrid.Extensions.StringExtensions.ToPascalCase(System.String,System.Boolean)
+  - Hybrid.Extensions.StringExtensions.ToPascalCase(System.String,System.Globalization.CultureInfo)
+  - Hybrid.Extensions.StringExtensions.ToPlural(System.String)
+  - Hybrid.Extensions.StringExtensions.ToSentenceCase(System.String,System.Boolean)
+  - Hybrid.Extensions.StringExtensions.ToSentenceCase(System.String,System.Globalization.CultureInfo)
+  - Hybrid.Extensions.StringExtensions.ToSingular(System.String)
+  - Hybrid.Extensions.StringExtensions.ToString2(System.Byte[],System.Text.Encoding)
+  - Hybrid.Extensions.StringExtensions.ToUnicodeString(System.String)
+  - Hybrid.Extensions.StringExtensions.ToUrlDecode(System.String)
+  - Hybrid.Extensions.StringExtensions.ToUrlEncode(System.String)
+  - Hybrid.Extensions.StringExtensions.Truncate(System.String,System.Int32)
+  - Hybrid.Extensions.StringExtensions.TruncateWithPostfix(System.String,System.Int32)
+  - Hybrid.Extensions.StringExtensions.TruncateWithPostfix(System.String,System.Int32,System.String)
+  - Hybrid.Extensions.StringExtensions.UpperFirstChar(System.String)
+  - Hybrid.Extensions.StringExtensions.UpperToLowerAndSplit(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: StringExtensions
+  nameWithType: StringExtensions
+  fullName: Hybrid.Extensions.StringExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: StringExtensions
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 29
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n字符串<xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref>类型的扩展辅助操作类\n"
+  example: []
+  syntax:
+    content: public static class StringExtensions
+    content.vb: Public Module StringExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.Extensions.StringExtensions.IsMatch(System.String,System.String,System.Boolean)
+  commentId: M:Hybrid.Extensions.StringExtensions.IsMatch(System.String,System.String,System.Boolean)
+  id: IsMatch(System.String,System.String,System.Boolean)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsMatch(String, String, Boolean)
+  nameWithType: StringExtensions.IsMatch(String, String, Boolean)
+  fullName: Hybrid.Extensions.StringExtensions.IsMatch(System.String, System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsMatch
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 40
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n指示所指定的正则表达式在指定的输入字符串中是否找到了匹配项\n"
+  example: []
+  syntax:
+    content: public static bool IsMatch(this string value, string pattern, bool isContains = true)
+    parameters:
+    - id: value
+      type: System.String
+      description: 要搜索匹配项的字符串
+    - id: pattern
+      type: System.String
+      description: 要匹配的正则表达式模式
+    - id: isContains
+      type: System.Boolean
+      description: 是否包含，否则全匹配
+    return:
+      type: System.Boolean
+      description: 如果正则表达式找到匹配项，则为 true；否则，为 false
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsMatch(value As String, pattern As String, isContains As Boolean = True) As Boolean
+  overload: Hybrid.Extensions.StringExtensions.IsMatch*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.Match(System.String,System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.Match(System.String,System.String)
+  id: Match(System.String,System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: Match(String, String)
+  nameWithType: StringExtensions.Match(String, String)
+  fullName: Hybrid.Extensions.StringExtensions.Match(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Match
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 57
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n在指定的输入字符串中搜索指定的正则表达式的第一个匹配项\n"
+  example: []
+  syntax:
+    content: public static string Match(this string value, string pattern)
+    parameters:
+    - id: value
+      type: System.String
+      description: 要搜索匹配项的字符串
+    - id: pattern
+      type: System.String
+      description: 要匹配的正则表达式模式
+    return:
+      type: System.String
+      description: 一个对象，包含有关匹配项的信息
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Match(value As String, pattern As String) As String
+  overload: Hybrid.Extensions.StringExtensions.Match*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.Matches(System.String,System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.Matches(System.String,System.String)
+  id: Matches(System.String,System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: Matches(String, String)
+  nameWithType: StringExtensions.Matches(String, String)
+  fullName: Hybrid.Extensions.StringExtensions.Matches(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Matches
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 72
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n在指定的输入字符串中搜索指定的正则表达式的所有匹配项的字符串集合\n"
+  example: []
+  syntax:
+    content: public static IEnumerable<string> Matches(this string value, string pattern)
+    parameters:
+    - id: value
+      type: System.String
+      description: '要搜索匹配项的字符串 '
+    - id: pattern
+      type: System.String
+      description: '要匹配的正则表达式模式 '
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: '一个集合，包含有关匹配项的字符串值 '
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Matches(value As String, pattern As String) As IEnumerable(Of String)
+  overload: Hybrid.Extensions.StringExtensions.Matches*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.MatchFirstNumber(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.MatchFirstNumber(System.String)
+  id: MatchFirstNumber(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: MatchFirstNumber(String)
+  nameWithType: StringExtensions.MatchFirstNumber(String)
+  fullName: Hybrid.Extensions.StringExtensions.MatchFirstNumber(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: MatchFirstNumber
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 85
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n在指定的输入字符串中匹配第一个数字字符串\n"
+  example: []
+  syntax:
+    content: public static string MatchFirstNumber(this string value)
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function MatchFirstNumber(value As String) As String
+  overload: Hybrid.Extensions.StringExtensions.MatchFirstNumber*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.MatchLastNumber(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.MatchLastNumber(System.String)
+  id: MatchLastNumber(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: MatchLastNumber(String)
+  nameWithType: StringExtensions.MatchLastNumber(String)
+  fullName: Hybrid.Extensions.StringExtensions.MatchLastNumber(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: MatchLastNumber
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 98
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n在指定字符串中匹配最后一个数字字符串\n"
+  example: []
+  syntax:
+    content: public static string MatchLastNumber(this string value)
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function MatchLastNumber(value As String) As String
+  overload: Hybrid.Extensions.StringExtensions.MatchLastNumber*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.MatchNumbers(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.MatchNumbers(System.String)
+  id: MatchNumbers(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: MatchNumbers(String)
+  nameWithType: StringExtensions.MatchNumbers(String)
+  fullName: Hybrid.Extensions.StringExtensions.MatchNumbers(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: MatchNumbers
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 111
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n在指定字符串中匹配所有数字字符串\n"
+  example: []
+  syntax:
+    content: public static IEnumerable<string> MatchNumbers(this string value)
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function MatchNumbers(value As String) As IEnumerable(Of String)
+  overload: Hybrid.Extensions.StringExtensions.MatchNumbers*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.IsMatchNumber(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.IsMatchNumber(System.String)
+  id: IsMatchNumber(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsMatchNumber(String)
+  nameWithType: StringExtensions.IsMatchNumber(String)
+  fullName: Hybrid.Extensions.StringExtensions.IsMatchNumber(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsMatchNumber
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 119
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n检测指定字符串中是否包含数字\n"
+  example: []
+  syntax:
+    content: public static bool IsMatchNumber(this string value)
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsMatchNumber(value As String) As Boolean
+  overload: Hybrid.Extensions.StringExtensions.IsMatchNumber*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.IsMatchNumber(System.String,System.Int32)
+  commentId: M:Hybrid.Extensions.StringExtensions.IsMatchNumber(System.String,System.Int32)
+  id: IsMatchNumber(System.String,System.Int32)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsMatchNumber(String, Int32)
+  nameWithType: StringExtensions.IsMatchNumber(String, Int32)
+  fullName: Hybrid.Extensions.StringExtensions.IsMatchNumber(System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsMatchNumber
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 127
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n检测指定字符串是否全部为数字并且长度等于指定长度\n"
+  example: []
+  syntax:
+    content: public static bool IsMatchNumber(this string value, int length)
+    parameters:
+    - id: value
+      type: System.String
+    - id: length
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsMatchNumber(value As String, length As Integer) As Boolean
+  overload: Hybrid.Extensions.StringExtensions.IsMatchNumber*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.Substring(System.String,System.String,System.String[])
+  commentId: M:Hybrid.Extensions.StringExtensions.Substring(System.String,System.String,System.String[])
+  id: Substring(System.String,System.String,System.String[])
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: Substring(String, String, String[])
+  nameWithType: StringExtensions.Substring(String, String, String[])
+  fullName: Hybrid.Extensions.StringExtensions.Substring(System.String, System.String, System.String[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Substring
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 140
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n截取指定字符串之间的字符串\n"
+  example: []
+  syntax:
+    content: public static string Substring(this string source, string startString, params string[] endStrings)
+    parameters:
+    - id: source
+      type: System.String
+      description: ''
+    - id: startString
+      type: System.String
+      description: 起始字符串
+    - id: endStrings
+      type: System.String[]
+      description: 结束字符串，可多个
+    return:
+      type: System.String
+      description: 返回的中间字符串
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Substring(source As String, startString As String, ParamArray endStrings As String()) As String
+  overload: Hybrid.Extensions.StringExtensions.Substring*
+  nameWithType.vb: StringExtensions.Substring(String, String, String())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.StringExtensions.Substring(System.String, System.String, System.String())
+  name.vb: Substring(String, String, String())
+- uid: Hybrid.Extensions.StringExtensions.Substring2(System.String,System.String,System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.Substring2(System.String,System.String,System.String)
+  id: Substring2(System.String,System.String,System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: Substring2(String, String, String)
+  nameWithType: StringExtensions.Substring2(String, String, String)
+  fullName: Hybrid.Extensions.StringExtensions.Substring2(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Substring2
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 184
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n用正则表达式截取字符串\n"
+  example: []
+  syntax:
+    content: public static string Substring2(this string source, string startString, string endString)
+    parameters:
+    - id: source
+      type: System.String
+    - id: startString
+      type: System.String
+    - id: endString
+      type: System.String
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Substring2(source As String, startString As String, endString As String) As String
+  overload: Hybrid.Extensions.StringExtensions.Substring2*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.Substring2(System.String,System.String,System.String,System.Boolean)
+  commentId: M:Hybrid.Extensions.StringExtensions.Substring2(System.String,System.String,System.String,System.Boolean)
+  id: Substring2(System.String,System.String,System.String,System.Boolean)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: Substring2(String, String, String, Boolean)
+  nameWithType: StringExtensions.Substring2(String, String, String, Boolean)
+  fullName: Hybrid.Extensions.StringExtensions.Substring2(System.String, System.String, System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Substring2
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 192
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n用正则表达式截取字符串\n"
+  example: []
+  syntax:
+    content: public static string Substring2(this string source, string startString, string endString, bool containsEmpty)
+    parameters:
+    - id: source
+      type: System.String
+    - id: startString
+      type: System.String
+    - id: endString
+      type: System.String
+    - id: containsEmpty
+      type: System.Boolean
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Substring2(source As String, startString As String, endString As String, containsEmpty As Boolean) As String
+  overload: Hybrid.Extensions.StringExtensions.Substring2*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.IsEmail(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.IsEmail(System.String)
+  id: IsEmail(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsEmail(String)
+  nameWithType: StringExtensions.IsEmail(String)
+  fullName: Hybrid.Extensions.StringExtensions.IsEmail(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsEmail
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 206
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n是否电子邮件\n"
+  example: []
+  syntax:
+    content: public static bool IsEmail(this string value)
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsEmail(value As String) As Boolean
+  overload: Hybrid.Extensions.StringExtensions.IsEmail*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.IsIpAddress(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.IsIpAddress(System.String)
+  id: IsIpAddress(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsIpAddress(String)
+  nameWithType: StringExtensions.IsIpAddress(String)
+  fullName: Hybrid.Extensions.StringExtensions.IsIpAddress(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsIpAddress
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 215
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n是否是IP地址\n"
+  example: []
+  syntax:
+    content: public static bool IsIpAddress(this string value)
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsIpAddress(value As String) As Boolean
+  overload: Hybrid.Extensions.StringExtensions.IsIpAddress*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.IsNumeric(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.IsNumeric(System.String)
+  id: IsNumeric(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsNumeric(String)
+  nameWithType: StringExtensions.IsNumeric(String)
+  fullName: Hybrid.Extensions.StringExtensions.IsNumeric(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsNumeric
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 224
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n是否是整数\n"
+  example: []
+  syntax:
+    content: public static bool IsNumeric(this string value)
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsNumeric(value As String) As Boolean
+  overload: Hybrid.Extensions.StringExtensions.IsNumeric*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.IsUnicode(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.IsUnicode(System.String)
+  id: IsUnicode(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsUnicode(String)
+  nameWithType: StringExtensions.IsUnicode(String)
+  fullName: Hybrid.Extensions.StringExtensions.IsUnicode(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsUnicode
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 233
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n是否是Unicode字符串\n"
+  example: []
+  syntax:
+    content: public static bool IsUnicode(this string value)
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsUnicode(value As String) As Boolean
+  overload: Hybrid.Extensions.StringExtensions.IsUnicode*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.IsUrl(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.IsUrl(System.String)
+  id: IsUrl(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsUrl(String)
+  nameWithType: StringExtensions.IsUrl(String)
+  fullName: Hybrid.Extensions.StringExtensions.IsUrl(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsUrl
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 242
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n是否Url字符串\n"
+  example: []
+  syntax:
+    content: public static bool IsUrl(this string value)
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsUrl(value As String) As Boolean
+  overload: Hybrid.Extensions.StringExtensions.IsUrl*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.IsIdentityCardId(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.IsIdentityCardId(System.String)
+  id: IsIdentityCardId(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsIdentityCardId(String)
+  nameWithType: StringExtensions.IsIdentityCardId(String)
+  fullName: Hybrid.Extensions.StringExtensions.IsIdentityCardId(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsIdentityCardId
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 265
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n是否身份证号，验证如下3种情况：\n1.身份证号码为15位数字；\n2.身份证号码为18位数字；\n3.身份证号码为17位数字+1个字母\n"
+  example: []
+  syntax:
+    content: public static bool IsIdentityCardId(this string value)
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsIdentityCardId(value As String) As Boolean
+  overload: Hybrid.Extensions.StringExtensions.IsIdentityCardId*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.IsMobileNumber(System.String,System.Boolean)
+  commentId: M:Hybrid.Extensions.StringExtensions.IsMobileNumber(System.String,System.Boolean)
+  id: IsMobileNumber(System.String,System.Boolean)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsMobileNumber(String, Boolean)
+  nameWithType: StringExtensions.IsMobileNumber(String, Boolean)
+  fullName: Hybrid.Extensions.StringExtensions.IsMobileNumber(System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsMobileNumber
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 314
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n是否手机号码\n"
+  example: []
+  syntax:
+    content: public static bool IsMobileNumber(this string value, bool isRestrict = false)
+    parameters:
+    - id: value
+      type: System.String
+      description: ''
+    - id: isRestrict
+      type: System.Boolean
+      description: 是否按严格格式验证
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsMobileNumber(value As String, isRestrict As Boolean = False) As Boolean
+  overload: Hybrid.Extensions.StringExtensions.IsMobileNumber*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.IsNullOrEmpty(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.IsNullOrEmpty(System.String)
+  id: IsNullOrEmpty(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsNullOrEmpty(String)
+  nameWithType: StringExtensions.IsNullOrEmpty(String)
+  fullName: Hybrid.Extensions.StringExtensions.IsNullOrEmpty(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsNullOrEmpty
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 327
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n指示指定的字符串是 null 或者 System.String.Empty 字符串\n"
+  example: []
+  syntax:
+    content: public static bool IsNullOrEmpty(this string value)
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsNullOrEmpty(value As String) As Boolean
+  overload: Hybrid.Extensions.StringExtensions.IsNullOrEmpty*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.IsNullOrWhiteSpace(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.IsNullOrWhiteSpace(System.String)
+  id: IsNullOrWhiteSpace(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsNullOrWhiteSpace(String)
+  nameWithType: StringExtensions.IsNullOrWhiteSpace(String)
+  fullName: Hybrid.Extensions.StringExtensions.IsNullOrWhiteSpace(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsNullOrWhiteSpace
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 336
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n指示指定的字符串是 null、空或者仅由空白字符组成。\n"
+  example: []
+  syntax:
+    content: public static bool IsNullOrWhiteSpace(this string value)
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsNullOrWhiteSpace(value As String) As Boolean
+  overload: Hybrid.Extensions.StringExtensions.IsNullOrWhiteSpace*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.IsMissing(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.IsMissing(System.String)
+  id: IsMissing(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsMissing(String)
+  nameWithType: StringExtensions.IsMissing(String)
+  fullName: Hybrid.Extensions.StringExtensions.IsMissing(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsMissing
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 345
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n指示指定的字符串是 null、空或者仅由空白字符组成。\n"
+  example: []
+  syntax:
+    content: public static bool IsMissing(this string value)
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsMissing(value As String) As Boolean
+  overload: Hybrid.Extensions.StringExtensions.IsMissing*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.FormatWith(System.String,System.Object[])
+  commentId: M:Hybrid.Extensions.StringExtensions.FormatWith(System.String,System.Object[])
+  id: FormatWith(System.String,System.Object[])
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: FormatWith(String, Object[])
+  nameWithType: StringExtensions.FormatWith(String, Object[])
+  fullName: Hybrid.Extensions.StringExtensions.FormatWith(System.String, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: FormatWith
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 357
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n为指定格式的字符串填充相应对象来生成字符串\n"
+  example: []
+  syntax:
+    content: public static string FormatWith(this string format, params object[] args)
+    parameters:
+    - id: format
+      type: System.String
+      description: 字符串格式，占位符以{n}表示
+    - id: args
+      type: System.Object[]
+      description: 用于填充占位符的参数
+    return:
+      type: System.String
+      description: 格式化后的字符串
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function FormatWith(format As String, ParamArray args As Object()) As String
+  overload: Hybrid.Extensions.StringExtensions.FormatWith*
+  nameWithType.vb: StringExtensions.FormatWith(String, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.StringExtensions.FormatWith(System.String, System.Object())
+  name.vb: FormatWith(String, Object())
+- uid: Hybrid.Extensions.StringExtensions.ReverseString(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.ReverseString(System.String)
+  id: ReverseString(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ReverseString(String)
+  nameWithType: StringExtensions.ReverseString(String)
+  fullName: Hybrid.Extensions.StringExtensions.ReverseString(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ReverseString
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 368
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n将字符串反转\n"
+  example: []
+  syntax:
+    content: public static string ReverseString(this string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: 要反转的字符串
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ReverseString(value As String) As String
+  overload: Hybrid.Extensions.StringExtensions.ReverseString*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.ToSingular(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.ToSingular(System.String)
+  id: ToSingular(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToSingular(String)
+  nameWithType: StringExtensions.ToSingular(String)
+  fullName: Hybrid.Extensions.StringExtensions.ToSingular(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToSingular
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 379
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n单词变成单数形式\n"
+  example: []
+  syntax:
+    content: public static string ToSingular(this string word)
+    parameters:
+    - id: word
+      type: System.String
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToSingular(word As String) As String
+  overload: Hybrid.Extensions.StringExtensions.ToSingular*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.ToPlural(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.ToPlural(System.String)
+  id: ToPlural(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToPlural(String)
+  nameWithType: StringExtensions.ToPlural(String)
+  fullName: Hybrid.Extensions.StringExtensions.ToPlural(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToPlural
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 411
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n单词变成复数形式\n"
+  example: []
+  syntax:
+    content: public static string ToPlural(this string word)
+    parameters:
+    - id: word
+      type: System.String
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToPlural(word As String) As String
+  overload: Hybrid.Extensions.StringExtensions.ToPlural*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.IsImageFile(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.IsImageFile(System.String)
+  id: IsImageFile(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsImageFile(String)
+  nameWithType: StringExtensions.IsImageFile(String)
+  fullName: Hybrid.Extensions.StringExtensions.IsImageFile(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsImageFile
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 441
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n判断指定路径是否图片文件\n"
+  example: []
+  syntax:
+    content: public static bool IsImageFile(this string filename)
+    parameters:
+    - id: filename
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsImageFile(filename As String) As Boolean
+  overload: Hybrid.Extensions.StringExtensions.IsImageFile*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.Split(System.String,System.String,System.Boolean)
+  commentId: M:Hybrid.Extensions.StringExtensions.Split(System.String,System.String,System.Boolean)
+  id: Split(System.String,System.String,System.Boolean)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: Split(String, String, Boolean)
+  nameWithType: StringExtensions.Split(String, String, Boolean)
+  fullName: Hybrid.Extensions.StringExtensions.Split(System.String, System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Split
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 473
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n以指定字符串作为分隔符将指定字符串分隔成数组\n"
+  example: []
+  syntax:
+    content: public static string[] Split(this string value, string strSplit, bool removeEmptyEntries = false)
+    parameters:
+    - id: value
+      type: System.String
+      description: 要分割的字符串
+    - id: strSplit
+      type: System.String
+      description: 字符串类型的分隔符
+    - id: removeEmptyEntries
+      type: System.Boolean
+      description: 是否移除数据中元素为空字符串的项
+    return:
+      type: System.String[]
+      description: 分割后的数据
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Split(value As String, strSplit As String, removeEmptyEntries As Boolean = False) As String()
+  overload: Hybrid.Extensions.StringExtensions.Split*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.ToMd5Hash(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.ToMd5Hash(System.String)
+  id: ToMd5Hash(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToMd5Hash(String)
+  nameWithType: StringExtensions.ToMd5Hash(String)
+  fullName: Hybrid.Extensions.StringExtensions.ToMd5Hash(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToMd5Hash
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 481
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n获取字符串的MD5 Hash值\n"
+  example: []
+  syntax:
+    content: public static string ToMd5Hash(this string value)
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToMd5Hash(value As String) As String
+  overload: Hybrid.Extensions.StringExtensions.ToMd5Hash*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.TextLength(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.TextLength(System.String)
+  id: TextLength(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: TextLength(String)
+  nameWithType: StringExtensions.TextLength(String)
+  fullName: Hybrid.Extensions.StringExtensions.TextLength(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: TextLength
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 491
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n支持汉字的字符串长度，汉字长度计为2\n"
+  example: []
+  syntax:
+    content: public static int TextLength(this string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: 参数字符串
+    return:
+      type: System.Int32
+      description: 当前字符串的长度，汉字长度为2
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function TextLength(value As String) As Integer
+  overload: Hybrid.Extensions.StringExtensions.TextLength*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.FromJsonString``1(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.FromJsonString``1(System.String)
+  id: FromJsonString``1(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: FromJsonString<T>(String)
+  nameWithType: StringExtensions.FromJsonString<T>(String)
+  fullName: Hybrid.Extensions.StringExtensions.FromJsonString<T>(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: FromJsonString
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 516
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n将JSON字符串还原为对象\n"
+  example: []
+  syntax:
+    content: public static T FromJsonString<T>(this string json)
+    parameters:
+    - id: json
+      type: System.String
+      description: 'JSON字符串 '
+    typeParameters:
+    - id: T
+      description: 要转换的目标类型
+    return:
+      type: '{T}'
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function FromJsonString(Of T)(json As String) As T
+  overload: Hybrid.Extensions.StringExtensions.FromJsonString*
+  nameWithType.vb: StringExtensions.FromJsonString(Of T)(String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.StringExtensions.FromJsonString(Of T)(System.String)
+  name.vb: FromJsonString(Of T)(String)
+- uid: Hybrid.Extensions.StringExtensions.FromJsonString(System.String,System.Type)
+  commentId: M:Hybrid.Extensions.StringExtensions.FromJsonString(System.String,System.Type)
+  id: FromJsonString(System.String,System.Type)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: FromJsonString(String, Type)
+  nameWithType: StringExtensions.FromJsonString(String, Type)
+  fullName: Hybrid.Extensions.StringExtensions.FromJsonString(System.String, System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: FromJsonString
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 527
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n将JSON字符串还原为对象\n"
+  example: []
+  syntax:
+    content: public static object FromJsonString(this string json, Type type)
+    parameters:
+    - id: json
+      type: System.String
+      description: 'JSON字符串 '
+    - id: type
+      type: System.Type
+      description: 数据类型
+    return:
+      type: System.Object
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function FromJsonString(json As String, type As Type) As Object
+  overload: Hybrid.Extensions.StringExtensions.FromJsonString*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.AddUrlQuery(System.String,System.String[])
+  commentId: M:Hybrid.Extensions.StringExtensions.AddUrlQuery(System.String,System.String[])
+  id: AddUrlQuery(System.String,System.String[])
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddUrlQuery(String, String[])
+  nameWithType: StringExtensions.AddUrlQuery(String, String[])
+  fullName: Hybrid.Extensions.StringExtensions.AddUrlQuery(System.String, System.String[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: AddUrlQuery
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 538
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n给URL添加查询参数\n"
+  example: []
+  syntax:
+    content: public static string AddUrlQuery(this string url, params string[] queries)
+    parameters:
+    - id: url
+      type: System.String
+      description: URL字符串
+    - id: queries
+      type: System.String[]
+      description: 要添加的参数，形如：&quot;id=1,cid=2&quot;
+    return:
+      type: System.String
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddUrlQuery(url As String, ParamArray queries As String()) As String
+  overload: Hybrid.Extensions.StringExtensions.AddUrlQuery*
+  nameWithType.vb: StringExtensions.AddUrlQuery(String, String())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.StringExtensions.AddUrlQuery(System.String, System.String())
+  name.vb: AddUrlQuery(String, String())
+- uid: Hybrid.Extensions.StringExtensions.GetUrlQuery(System.String,System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.GetUrlQuery(System.String,System.String)
+  id: GetUrlQuery(System.String,System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetUrlQuery(String, String)
+  nameWithType: StringExtensions.GetUrlQuery(String, String)
+  fullName: Hybrid.Extensions.StringExtensions.GetUrlQuery(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetUrlQuery
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 559
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n获取URL中指定参数的值，不存在返回空字符串\n"
+  example: []
+  syntax:
+    content: public static string GetUrlQuery(this string url, string key)
+    parameters:
+    - id: url
+      type: System.String
+    - id: key
+      type: System.String
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetUrlQuery(url As String, key As String) As String
+  overload: Hybrid.Extensions.StringExtensions.GetUrlQuery*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.AddHashFragment(System.String,System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.AddHashFragment(System.String,System.String)
+  id: AddHashFragment(System.String,System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddHashFragment(String, String)
+  nameWithType: StringExtensions.AddHashFragment(String, String)
+  fullName: Hybrid.Extensions.StringExtensions.AddHashFragment(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: AddHashFragment
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 585
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n给URL添加 # 参数\n"
+  example: []
+  syntax:
+    content: public static string AddHashFragment(this string url, string query)
+    parameters:
+    - id: url
+      type: System.String
+      description: URL字符串
+    - id: query
+      type: System.String
+      description: 要添加的参数
+    return:
+      type: System.String
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddHashFragment(url As String, query As String) As String
+  overload: Hybrid.Extensions.StringExtensions.AddHashFragment*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.ToBytes(System.String,System.Text.Encoding)
+  commentId: M:Hybrid.Extensions.StringExtensions.ToBytes(System.String,System.Text.Encoding)
+  id: ToBytes(System.String,System.Text.Encoding)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToBytes(String, Encoding)
+  nameWithType: StringExtensions.ToBytes(String, Encoding)
+  fullName: Hybrid.Extensions.StringExtensions.ToBytes(System.String, System.Text.Encoding)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToBytes
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 598
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n将字符串转换为<xref href=\"System.Byte\" data-throw-if-not-resolved=\"false\"></xref>[]数组，默认编码为<xref href=\"System.Text.Encoding.UTF8\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public static byte[] ToBytes(this string value, Encoding encoding = null)
+    parameters:
+    - id: value
+      type: System.String
+    - id: encoding
+      type: System.Text.Encoding
+    return:
+      type: System.Byte[]
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToBytes(value As String, encoding As Encoding = Nothing) As Byte()
+  overload: Hybrid.Extensions.StringExtensions.ToBytes*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.ToString2(System.Byte[],System.Text.Encoding)
+  commentId: M:Hybrid.Extensions.StringExtensions.ToString2(System.Byte[],System.Text.Encoding)
+  id: ToString2(System.Byte[],System.Text.Encoding)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToString2(Byte[], Encoding)
+  nameWithType: StringExtensions.ToString2(Byte[], Encoding)
+  fullName: Hybrid.Extensions.StringExtensions.ToString2(System.Byte[], System.Text.Encoding)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToString2
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 610
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n将<xref href=\"System.Byte\" data-throw-if-not-resolved=\"false\"></xref>[]数组转换为字符串，默认编码为<xref href=\"System.Text.Encoding.UTF8\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public static string ToString2(this byte[] bytes, Encoding encoding = null)
+    parameters:
+    - id: bytes
+      type: System.Byte[]
+    - id: encoding
+      type: System.Text.Encoding
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToString2(bytes As Byte(), encoding As Encoding = Nothing) As String
+  overload: Hybrid.Extensions.StringExtensions.ToString2*
+  nameWithType.vb: StringExtensions.ToString2(Byte(), Encoding)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.StringExtensions.ToString2(System.Byte(), System.Text.Encoding)
+  name.vb: ToString2(Byte(), Encoding)
+- uid: Hybrid.Extensions.StringExtensions.ToBase64String(System.Byte[])
+  commentId: M:Hybrid.Extensions.StringExtensions.ToBase64String(System.Byte[])
+  id: ToBase64String(System.Byte[])
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToBase64String(Byte[])
+  nameWithType: StringExtensions.ToBase64String(Byte[])
+  fullName: Hybrid.Extensions.StringExtensions.ToBase64String(System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToBase64String
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 622
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n将<xref href=\"System.Byte\" data-throw-if-not-resolved=\"false\"></xref>[]数组转换为Base64字符串\n"
+  example: []
+  syntax:
+    content: public static string ToBase64String(this byte[] bytes)
+    parameters:
+    - id: bytes
+      type: System.Byte[]
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToBase64String(bytes As Byte()) As String
+  overload: Hybrid.Extensions.StringExtensions.ToBase64String*
+  nameWithType.vb: StringExtensions.ToBase64String(Byte())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.StringExtensions.ToBase64String(System.Byte())
+  name.vb: ToBase64String(Byte())
+- uid: Hybrid.Extensions.StringExtensions.ToBase64String(System.String,System.Text.Encoding)
+  commentId: M:Hybrid.Extensions.StringExtensions.ToBase64String(System.String,System.Text.Encoding)
+  id: ToBase64String(System.String,System.Text.Encoding)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToBase64String(String, Encoding)
+  nameWithType: StringExtensions.ToBase64String(String, Encoding)
+  fullName: Hybrid.Extensions.StringExtensions.ToBase64String(System.String, System.Text.Encoding)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToBase64String
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 633
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n将字符串转换为Base64字符串，默认编码为<xref href=\"System.Text.Encoding.UTF8\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public static string ToBase64String(this string source, Encoding encoding = null)
+    parameters:
+    - id: source
+      type: System.String
+      description: 正常的字符串
+    - id: encoding
+      type: System.Text.Encoding
+      description: 编码
+    return:
+      type: System.String
+      description: Base64字符串
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToBase64String(source As String, encoding As Encoding = Nothing) As String
+  overload: Hybrid.Extensions.StringExtensions.ToBase64String*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.FromBase64String(System.String,System.Text.Encoding)
+  commentId: M:Hybrid.Extensions.StringExtensions.FromBase64String(System.String,System.Text.Encoding)
+  id: FromBase64String(System.String,System.Text.Encoding)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: FromBase64String(String, Encoding)
+  nameWithType: StringExtensions.FromBase64String(String, Encoding)
+  fullName: Hybrid.Extensions.StringExtensions.FromBase64String(System.String, System.Text.Encoding)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: FromBase64String
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 648
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n将Base64字符串转换为正常字符串，默认编码为<xref href=\"System.Text.Encoding.UTF8\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public static string FromBase64String(this string base64String, Encoding encoding = null)
+    parameters:
+    - id: base64String
+      type: System.String
+      description: Base64字符串
+    - id: encoding
+      type: System.Text.Encoding
+      description: 编码
+    return:
+      type: System.String
+      description: 正常字符串
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function FromBase64String(base64String As String, encoding As Encoding = Nothing) As String
+  overload: Hybrid.Extensions.StringExtensions.FromBase64String*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.ToUrlDecode(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.ToUrlDecode(System.String)
+  id: ToUrlDecode(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToUrlDecode(String)
+  nameWithType: StringExtensions.ToUrlDecode(String)
+  fullName: Hybrid.Extensions.StringExtensions.ToUrlDecode(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToUrlDecode
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 663
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n将字符串进行UrlDecode解码\n"
+  example: []
+  syntax:
+    content: public static string ToUrlDecode(this string source)
+    parameters:
+    - id: source
+      type: System.String
+      description: 待UrlDecode解码的字符串
+    return:
+      type: System.String
+      description: UrlDecode解码后的字符串
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToUrlDecode(source As String) As String
+  overload: Hybrid.Extensions.StringExtensions.ToUrlDecode*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.ToUrlEncode(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.ToUrlEncode(System.String)
+  id: ToUrlEncode(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToUrlEncode(String)
+  nameWithType: StringExtensions.ToUrlEncode(String)
+  fullName: Hybrid.Extensions.StringExtensions.ToUrlEncode(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToUrlEncode
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 673
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n将字符串进行UrlEncode编码\n"
+  example: []
+  syntax:
+    content: public static string ToUrlEncode(this string source)
+    parameters:
+    - id: source
+      type: System.String
+      description: 待UrlEncode编码的字符串
+    return:
+      type: System.String
+      description: UrlEncode编码后的字符串
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToUrlEncode(source As String) As String
+  overload: Hybrid.Extensions.StringExtensions.ToUrlEncode*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.ToHtmlDecode(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.ToHtmlDecode(System.String)
+  id: ToHtmlDecode(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToHtmlDecode(String)
+  nameWithType: StringExtensions.ToHtmlDecode(String)
+  fullName: Hybrid.Extensions.StringExtensions.ToHtmlDecode(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToHtmlDecode
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 683
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n将字符串进行HtmlDecode解码\n"
+  example: []
+  syntax:
+    content: public static string ToHtmlDecode(this string source)
+    parameters:
+    - id: source
+      type: System.String
+      description: 待HtmlDecode解码的字符串
+    return:
+      type: System.String
+      description: HtmlDecode解码后的字符串
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToHtmlDecode(source As String) As String
+  overload: Hybrid.Extensions.StringExtensions.ToHtmlDecode*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.ToHtmlEncode(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.ToHtmlEncode(System.String)
+  id: ToHtmlEncode(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToHtmlEncode(String)
+  nameWithType: StringExtensions.ToHtmlEncode(String)
+  fullName: Hybrid.Extensions.StringExtensions.ToHtmlEncode(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToHtmlEncode
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 693
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n将字符串进行HtmlEncode编码\n"
+  example: []
+  syntax:
+    content: public static string ToHtmlEncode(this string source)
+    parameters:
+    - id: source
+      type: System.String
+      description: 待HtmlEncode编码的字符串
+    return:
+      type: System.String
+      description: HtmlEncode编码后的字符串
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToHtmlEncode(source As String) As String
+  overload: Hybrid.Extensions.StringExtensions.ToHtmlEncode*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.ToHexString(System.String,System.Text.Encoding)
+  commentId: M:Hybrid.Extensions.StringExtensions.ToHexString(System.String,System.Text.Encoding)
+  id: ToHexString(System.String,System.Text.Encoding)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToHexString(String, Encoding)
+  nameWithType: StringExtensions.ToHexString(String, Encoding)
+  fullName: Hybrid.Extensions.StringExtensions.ToHexString(System.String, System.Text.Encoding)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToHexString
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 701
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n将字符串转换为十六进制字符串，默认编码为<xref href=\"System.Text.Encoding.UTF8\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public static string ToHexString(this string source, Encoding encoding = null)
+    parameters:
+    - id: source
+      type: System.String
+    - id: encoding
+      type: System.Text.Encoding
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToHexString(source As String, encoding As Encoding = Nothing) As String
+  overload: Hybrid.Extensions.StringExtensions.ToHexString*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.FromHexString(System.String,System.Text.Encoding)
+  commentId: M:Hybrid.Extensions.StringExtensions.FromHexString(System.String,System.Text.Encoding)
+  id: FromHexString(System.String,System.Text.Encoding)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: FromHexString(String, Encoding)
+  nameWithType: StringExtensions.FromHexString(String, Encoding)
+  fullName: Hybrid.Extensions.StringExtensions.FromHexString(System.String, System.Text.Encoding)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: FromHexString
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 714
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n将十六进制字符串转换为常规字符串，默认编码为<xref href=\"System.Text.Encoding.UTF8\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public static string FromHexString(this string hexString, Encoding encoding = null)
+    parameters:
+    - id: hexString
+      type: System.String
+    - id: encoding
+      type: System.Text.Encoding
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function FromHexString(hexString As String, encoding As Encoding = Nothing) As String
+  overload: Hybrid.Extensions.StringExtensions.FromHexString*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.ToHexString(System.Byte[])
+  commentId: M:Hybrid.Extensions.StringExtensions.ToHexString(System.Byte[])
+  id: ToHexString(System.Byte[])
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToHexString(Byte[])
+  nameWithType: StringExtensions.ToHexString(Byte[])
+  fullName: Hybrid.Extensions.StringExtensions.ToHexString(System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToHexString
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 729
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n将byte[]编码为十六进制字符串\n"
+  example: []
+  syntax:
+    content: public static string ToHexString(this byte[] bytes)
+    parameters:
+    - id: bytes
+      type: System.Byte[]
+      description: byte[]数组
+    return:
+      type: System.String
+      description: 十六进制字符串
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToHexString(bytes As Byte()) As String
+  overload: Hybrid.Extensions.StringExtensions.ToHexString*
+  nameWithType.vb: StringExtensions.ToHexString(Byte())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.StringExtensions.ToHexString(System.Byte())
+  name.vb: ToHexString(Byte())
+- uid: Hybrid.Extensions.StringExtensions.ToHexBytes(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.ToHexBytes(System.String)
+  id: ToHexBytes(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToHexBytes(String)
+  nameWithType: StringExtensions.ToHexBytes(String)
+  fullName: Hybrid.Extensions.StringExtensions.ToHexBytes(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToHexBytes
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 739
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n将十六进制字符串转换为byte[]\n"
+  example: []
+  syntax:
+    content: public static byte[] ToHexBytes(this string hexString)
+    parameters:
+    - id: hexString
+      type: System.String
+      description: 十六进制字符串
+    return:
+      type: System.Byte[]
+      description: byte[]数组
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToHexBytes(hexString As String) As Byte()
+  overload: Hybrid.Extensions.StringExtensions.ToHexBytes*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.ToUnicodeString(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.ToUnicodeString(System.String)
+  id: ToUnicodeString(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToUnicodeString(String)
+  nameWithType: StringExtensions.ToUnicodeString(String)
+  fullName: Hybrid.Extensions.StringExtensions.ToUnicodeString(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToUnicodeString
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 755
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n将字符串进行Unicode编码，变成形如“\\u7f16\\u7801”的形式\n"
+  example: []
+  syntax:
+    content: public static string ToUnicodeString(this string source)
+    parameters:
+    - id: source
+      type: System.String
+      description: 要进行编号的字符串
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToUnicodeString(source As String) As String
+  overload: Hybrid.Extensions.StringExtensions.ToUnicodeString*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.FromUnicodeString(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.FromUnicodeString(System.String)
+  id: FromUnicodeString(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: FromUnicodeString(String)
+  nameWithType: StringExtensions.FromUnicodeString(String)
+  fullName: Hybrid.Extensions.StringExtensions.FromUnicodeString(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: FromUnicodeString
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 764
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n将形如“\\u7f16\\u7801”的Unicode字符串解码\n"
+  example: []
+  syntax:
+    content: public static string FromUnicodeString(this string source)
+    parameters:
+    - id: source
+      type: System.String
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function FromUnicodeString(source As String) As String
+  overload: Hybrid.Extensions.StringExtensions.FromUnicodeString*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.UpperToLowerAndSplit(System.String,System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.UpperToLowerAndSplit(System.String,System.String)
+  id: UpperToLowerAndSplit(System.String,System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: UpperToLowerAndSplit(String, String)
+  nameWithType: StringExtensions.UpperToLowerAndSplit(String, String)
+  fullName: Hybrid.Extensions.StringExtensions.UpperToLowerAndSplit(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: UpperToLowerAndSplit
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 785
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n将驼峰字符串按单词拆分并转换成小写，再以特定字符串分隔\n"
+  example: []
+  syntax:
+    content: public static string UpperToLowerAndSplit(this string str, string splitStr = "-")
+    parameters:
+    - id: str
+      type: System.String
+      description: 待转换的字符串
+    - id: splitStr
+      type: System.String
+      description: 分隔符字符
+    return:
+      type: System.String
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function UpperToLowerAndSplit(str As String, splitStr As String = "-") As String
+  overload: Hybrid.Extensions.StringExtensions.UpperToLowerAndSplit*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.LowerFirstChar(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.LowerFirstChar(System.String)
+  id: LowerFirstChar(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: LowerFirstChar(String)
+  nameWithType: StringExtensions.LowerFirstChar(String)
+  fullName: Hybrid.Extensions.StringExtensions.LowerFirstChar(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: LowerFirstChar
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 820
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n将驼峰字符串的第一个字符小写\n"
+  example: []
+  syntax:
+    content: public static string LowerFirstChar(this string str)
+    parameters:
+    - id: str
+      type: System.String
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function LowerFirstChar(str As String) As String
+  overload: Hybrid.Extensions.StringExtensions.LowerFirstChar*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.UpperFirstChar(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.UpperFirstChar(System.String)
+  id: UpperFirstChar(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: UpperFirstChar(String)
+  nameWithType: StringExtensions.UpperFirstChar(String)
+  fullName: Hybrid.Extensions.StringExtensions.UpperFirstChar(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: UpperFirstChar
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 836
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n将小驼峰字符串的第一个字符大写\n"
+  example: []
+  syntax:
+    content: public static string UpperFirstChar(this string str)
+    parameters:
+    - id: str
+      type: System.String
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function UpperFirstChar(str As String) As String
+  overload: Hybrid.Extensions.StringExtensions.UpperFirstChar*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.LevenshteinDistance(System.String,System.String,System.Double@,System.Boolean)
+  commentId: M:Hybrid.Extensions.StringExtensions.LevenshteinDistance(System.String,System.String,System.Double@,System.Boolean)
+  id: LevenshteinDistance(System.String,System.String,System.Double@,System.Boolean)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: LevenshteinDistance(String, String, out Double, Boolean)
+  nameWithType: StringExtensions.LevenshteinDistance(String, String, out Double, Boolean)
+  fullName: Hybrid.Extensions.StringExtensions.LevenshteinDistance(System.String, System.String, out System.Double, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: LevenshteinDistance
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 857
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n计算当前字符串与指定字符串的编辑距离(相似度)\n"
+  example: []
+  syntax:
+    content: public static int LevenshteinDistance(this string source, string target, out double similarity, bool ignoreCase = false)
+    parameters:
+    - id: source
+      type: System.String
+      description: 源字符串
+    - id: target
+      type: System.String
+      description: 目标字符串
+    - id: similarity
+      type: System.Double
+      description: 输出相似度
+    - id: ignoreCase
+      type: System.Boolean
+      description: 是否忽略大小写
+    return:
+      type: System.Int32
+      description: 编辑距离
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function LevenshteinDistance(source As String, target As String, ByRef similarity As Double, ignoreCase As Boolean = False) As Integer
+  overload: Hybrid.Extensions.StringExtensions.LevenshteinDistance*
+  nameWithType.vb: StringExtensions.LevenshteinDistance(String, String, ByRef Double, Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.StringExtensions.LevenshteinDistance(System.String, System.String, ByRef System.Double, System.Boolean)
+  name.vb: LevenshteinDistance(String, String, ByRef Double, Boolean)
+- uid: Hybrid.Extensions.StringExtensions.GetSimilarityWith(System.String,System.String,System.Boolean)
+  commentId: M:Hybrid.Extensions.StringExtensions.GetSimilarityWith(System.String,System.String,System.Boolean)
+  id: GetSimilarityWith(System.String,System.String,System.Boolean)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetSimilarityWith(String, String, Boolean)
+  nameWithType: StringExtensions.GetSimilarityWith(String, String, Boolean)
+  fullName: Hybrid.Extensions.StringExtensions.GetSimilarityWith(System.String, System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetSimilarityWith
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 926
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n计算两个字符串的相似度，应用公式：相似度=kq*q/(kq*q+kr*r+ks*s)(kq>0,kr>=0,ka>=0)\n其中，q是字符串1和字符串2中都存在的单词的总数，s是字符串1中存在，字符串2中不存在的单词总数，r是字符串2中存在，字符串1中不存在的单词总数. kq,kr和ka分别是q,r,s的权重，根据实际的计算情况，我们设kq=2，kr=ks=1.\n"
+  example: []
+  syntax:
+    content: public static double GetSimilarityWith(this string source, string target, bool ignoreCase = false)
+    parameters:
+    - id: source
+      type: System.String
+      description: 源字符串
+    - id: target
+      type: System.String
+      description: 目标字符串
+    - id: ignoreCase
+      type: System.Boolean
+      description: 是否忽略大小写
+    return:
+      type: System.Double
+      description: 字符串相似度
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetSimilarityWith(source As String, target As String, ignoreCase As Boolean = False) As Double
+  overload: Hybrid.Extensions.StringExtensions.GetSimilarityWith*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.IsPresent(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.IsPresent(System.String)
+  id: IsPresent(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsPresent(String)
+  nameWithType: StringExtensions.IsPresent(String)
+  fullName: Hybrid.Extensions.StringExtensions.IsPresent(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsPresent
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 946
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  syntax:
+    content: public static bool IsPresent(this string value)
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsPresent(value As String) As Boolean
+  overload: Hybrid.Extensions.StringExtensions.IsPresent*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.EnsureLeadingSlash(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.EnsureLeadingSlash(System.String)
+  id: EnsureLeadingSlash(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: EnsureLeadingSlash(String)
+  nameWithType: StringExtensions.EnsureLeadingSlash(String)
+  fullName: Hybrid.Extensions.StringExtensions.EnsureLeadingSlash(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: EnsureLeadingSlash
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 952
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  syntax:
+    content: public static string EnsureLeadingSlash(this string url)
+    parameters:
+    - id: url
+      type: System.String
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function EnsureLeadingSlash(url As String) As String
+  overload: Hybrid.Extensions.StringExtensions.EnsureLeadingSlash*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.EnsureTrailingSlash(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.EnsureTrailingSlash(System.String)
+  id: EnsureTrailingSlash(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: EnsureTrailingSlash(String)
+  nameWithType: StringExtensions.EnsureTrailingSlash(String)
+  fullName: Hybrid.Extensions.StringExtensions.EnsureTrailingSlash(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: EnsureTrailingSlash
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 963
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  syntax:
+    content: public static string EnsureTrailingSlash(this string url)
+    parameters:
+    - id: url
+      type: System.String
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function EnsureTrailingSlash(url As String) As String
+  overload: Hybrid.Extensions.StringExtensions.EnsureTrailingSlash*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.RemoveLeadingSlash(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.RemoveLeadingSlash(System.String)
+  id: RemoveLeadingSlash(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: RemoveLeadingSlash(String)
+  nameWithType: StringExtensions.RemoveLeadingSlash(String)
+  fullName: Hybrid.Extensions.StringExtensions.RemoveLeadingSlash(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: RemoveLeadingSlash
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 974
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  syntax:
+    content: public static string RemoveLeadingSlash(this string url)
+    parameters:
+    - id: url
+      type: System.String
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function RemoveLeadingSlash(url As String) As String
+  overload: Hybrid.Extensions.StringExtensions.RemoveLeadingSlash*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.RemoveTrailingSlash(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.RemoveTrailingSlash(System.String)
+  id: RemoveTrailingSlash(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: RemoveTrailingSlash(String)
+  nameWithType: StringExtensions.RemoveTrailingSlash(String)
+  fullName: Hybrid.Extensions.StringExtensions.RemoveTrailingSlash(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: RemoveTrailingSlash
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 985
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  syntax:
+    content: public static string RemoveTrailingSlash(this string url)
+    parameters:
+    - id: url
+      type: System.String
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function RemoveTrailingSlash(url As String) As String
+  overload: Hybrid.Extensions.StringExtensions.RemoveTrailingSlash*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.CleanUrlPath(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.CleanUrlPath(System.String)
+  id: CleanUrlPath(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: CleanUrlPath(String)
+  nameWithType: StringExtensions.CleanUrlPath(String)
+  fullName: Hybrid.Extensions.StringExtensions.CleanUrlPath(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: CleanUrlPath
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 996
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  syntax:
+    content: public static string CleanUrlPath(this string url)
+    parameters:
+    - id: url
+      type: System.String
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function CleanUrlPath(url As String) As String
+  overload: Hybrid.Extensions.StringExtensions.CleanUrlPath*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.EnsureEndsWith(System.String,System.Char)
+  commentId: M:Hybrid.Extensions.StringExtensions.EnsureEndsWith(System.String,System.Char)
+  id: EnsureEndsWith(System.String,System.Char)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: EnsureEndsWith(String, Char)
+  nameWithType: StringExtensions.EnsureEndsWith(String, Char)
+  fullName: Hybrid.Extensions.StringExtensions.EnsureEndsWith(System.String, System.Char)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: EnsureEndsWith
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 1012
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nAdds a char to end of given string if it does not ends with the char.\n"
+  example: []
+  syntax:
+    content: public static string EnsureEndsWith(this string str, char c)
+    parameters:
+    - id: str
+      type: System.String
+    - id: c
+      type: System.Char
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function EnsureEndsWith(str As String, c As Char) As String
+  overload: Hybrid.Extensions.StringExtensions.EnsureEndsWith*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.EnsureEndsWith(System.String,System.Char,System.StringComparison)
+  commentId: M:Hybrid.Extensions.StringExtensions.EnsureEndsWith(System.String,System.Char,System.StringComparison)
+  id: EnsureEndsWith(System.String,System.Char,System.StringComparison)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: EnsureEndsWith(String, Char, StringComparison)
+  nameWithType: StringExtensions.EnsureEndsWith(String, Char, StringComparison)
+  fullName: Hybrid.Extensions.StringExtensions.EnsureEndsWith(System.String, System.Char, System.StringComparison)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: EnsureEndsWith
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 1020
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nAdds a char to end of given string if it does not ends with the char.\n"
+  example: []
+  syntax:
+    content: public static string EnsureEndsWith(this string str, char c, StringComparison comparisonType)
+    parameters:
+    - id: str
+      type: System.String
+    - id: c
+      type: System.Char
+    - id: comparisonType
+      type: System.StringComparison
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function EnsureEndsWith(str As String, c As Char, comparisonType As StringComparison) As String
+  overload: Hybrid.Extensions.StringExtensions.EnsureEndsWith*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.EnsureEndsWith(System.String,System.Char,System.Boolean,System.Globalization.CultureInfo)
+  commentId: M:Hybrid.Extensions.StringExtensions.EnsureEndsWith(System.String,System.Char,System.Boolean,System.Globalization.CultureInfo)
+  id: EnsureEndsWith(System.String,System.Char,System.Boolean,System.Globalization.CultureInfo)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: EnsureEndsWith(String, Char, Boolean, CultureInfo)
+  nameWithType: StringExtensions.EnsureEndsWith(String, Char, Boolean, CultureInfo)
+  fullName: Hybrid.Extensions.StringExtensions.EnsureEndsWith(System.String, System.Char, System.Boolean, System.Globalization.CultureInfo)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: EnsureEndsWith
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 1038
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nAdds a char to end of given string if it does not ends with the char.\n"
+  example: []
+  syntax:
+    content: public static string EnsureEndsWith(this string str, char c, bool ignoreCase, CultureInfo culture)
+    parameters:
+    - id: str
+      type: System.String
+    - id: c
+      type: System.Char
+    - id: ignoreCase
+      type: System.Boolean
+    - id: culture
+      type: System.Globalization.CultureInfo
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function EnsureEndsWith(str As String, c As Char, ignoreCase As Boolean, culture As CultureInfo) As String
+  overload: Hybrid.Extensions.StringExtensions.EnsureEndsWith*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.EnsureStartsWith(System.String,System.Char)
+  commentId: M:Hybrid.Extensions.StringExtensions.EnsureStartsWith(System.String,System.Char)
+  id: EnsureStartsWith(System.String,System.Char)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: EnsureStartsWith(String, Char)
+  nameWithType: StringExtensions.EnsureStartsWith(String, Char)
+  fullName: Hybrid.Extensions.StringExtensions.EnsureStartsWith(System.String, System.Char)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: EnsureStartsWith
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 1056
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nAdds a char to beginning of given string if it does not starts with the char.\n"
+  example: []
+  syntax:
+    content: public static string EnsureStartsWith(this string str, char c)
+    parameters:
+    - id: str
+      type: System.String
+    - id: c
+      type: System.Char
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function EnsureStartsWith(str As String, c As Char) As String
+  overload: Hybrid.Extensions.StringExtensions.EnsureStartsWith*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.EnsureStartsWith(System.String,System.Char,System.StringComparison)
+  commentId: M:Hybrid.Extensions.StringExtensions.EnsureStartsWith(System.String,System.Char,System.StringComparison)
+  id: EnsureStartsWith(System.String,System.Char,System.StringComparison)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: EnsureStartsWith(String, Char, StringComparison)
+  nameWithType: StringExtensions.EnsureStartsWith(String, Char, StringComparison)
+  fullName: Hybrid.Extensions.StringExtensions.EnsureStartsWith(System.String, System.Char, System.StringComparison)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: EnsureStartsWith
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 1064
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nAdds a char to beginning of given string if it does not starts with the char.\n"
+  example: []
+  syntax:
+    content: public static string EnsureStartsWith(this string str, char c, StringComparison comparisonType)
+    parameters:
+    - id: str
+      type: System.String
+    - id: c
+      type: System.Char
+    - id: comparisonType
+      type: System.StringComparison
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function EnsureStartsWith(str As String, c As Char, comparisonType As StringComparison) As String
+  overload: Hybrid.Extensions.StringExtensions.EnsureStartsWith*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.EnsureStartsWith(System.String,System.Char,System.Boolean,System.Globalization.CultureInfo)
+  commentId: M:Hybrid.Extensions.StringExtensions.EnsureStartsWith(System.String,System.Char,System.Boolean,System.Globalization.CultureInfo)
+  id: EnsureStartsWith(System.String,System.Char,System.Boolean,System.Globalization.CultureInfo)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: EnsureStartsWith(String, Char, Boolean, CultureInfo)
+  nameWithType: StringExtensions.EnsureStartsWith(String, Char, Boolean, CultureInfo)
+  fullName: Hybrid.Extensions.StringExtensions.EnsureStartsWith(System.String, System.Char, System.Boolean, System.Globalization.CultureInfo)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: EnsureStartsWith
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 1082
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nAdds a char to beginning of given string if it does not starts with the char.\n"
+  example: []
+  syntax:
+    content: public static string EnsureStartsWith(this string str, char c, bool ignoreCase, CultureInfo culture)
+    parameters:
+    - id: str
+      type: System.String
+    - id: c
+      type: System.Char
+    - id: ignoreCase
+      type: System.Boolean
+    - id: culture
+      type: System.Globalization.CultureInfo
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function EnsureStartsWith(str As String, c As Char, ignoreCase As Boolean, culture As CultureInfo) As String
+  overload: Hybrid.Extensions.StringExtensions.EnsureStartsWith*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.Left(System.String,System.Int32)
+  commentId: M:Hybrid.Extensions.StringExtensions.Left(System.String,System.Int32)
+  id: Left(System.String,System.Int32)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: Left(String, Int32)
+  nameWithType: StringExtensions.Left(String, Int32)
+  fullName: Hybrid.Extensions.StringExtensions.Left(System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Left
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 1102
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nGets a substring of a string from beginning of the string.\n"
+  example: []
+  syntax:
+    content: public static string Left(this string str, int len)
+    parameters:
+    - id: str
+      type: System.String
+    - id: len
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Left(str As String, len As Integer) As String
+  overload: Hybrid.Extensions.StringExtensions.Left*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">str</code> is null
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">len</code> is bigger that string&apos;s length
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.NormalizeLineEndings(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.NormalizeLineEndings(System.String)
+  id: NormalizeLineEndings(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: NormalizeLineEndings(String)
+  nameWithType: StringExtensions.NormalizeLineEndings(String)
+  fullName: Hybrid.Extensions.StringExtensions.NormalizeLineEndings(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: NormalizeLineEndings
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 1120
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nConverts line endings in the string to <xref href=\"System.Environment.NewLine\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static string NormalizeLineEndings(this string str)
+    parameters:
+    - id: str
+      type: System.String
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function NormalizeLineEndings(str As String) As String
+  overload: Hybrid.Extensions.StringExtensions.NormalizeLineEndings*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.NthIndexOf(System.String,System.Char,System.Int32)
+  commentId: M:Hybrid.Extensions.StringExtensions.NthIndexOf(System.String,System.Char,System.Int32)
+  id: NthIndexOf(System.String,System.Char,System.Int32)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: NthIndexOf(String, Char, Int32)
+  nameWithType: StringExtensions.NthIndexOf(String, Char, Int32)
+  fullName: Hybrid.Extensions.StringExtensions.NthIndexOf(System.String, System.Char, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: NthIndexOf
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 1131
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nGets index of nth occurence of a char in a string.\n"
+  example: []
+  syntax:
+    content: public static int NthIndexOf(this string str, char c, int n)
+    parameters:
+    - id: str
+      type: System.String
+      description: source string to be searched
+    - id: c
+      type: System.Char
+      description: Char to search in <code data-dev-comment-type="paramref" class="paramref">str</code>
+    - id: n
+      type: System.Int32
+      description: Count of the occurence
+    return:
+      type: System.Int32
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function NthIndexOf(str As String, c As Char, n As Integer) As Integer
+  overload: Hybrid.Extensions.StringExtensions.NthIndexOf*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.RemovePostFix(System.String,System.String[])
+  commentId: M:Hybrid.Extensions.StringExtensions.RemovePostFix(System.String,System.String[])
+  id: RemovePostFix(System.String,System.String[])
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: RemovePostFix(String, String[])
+  nameWithType: StringExtensions.RemovePostFix(String, String[])
+  fullName: Hybrid.Extensions.StringExtensions.RemovePostFix(System.String, System.String[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: RemovePostFix
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 1162
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nRemoves first occurrence of the given postfixes from end of the given string.\nOrdering is important. If one of the postFixes is matched, others will not be tested.\n"
+  example: []
+  syntax:
+    content: public static string RemovePostFix(this string str, params string[] postFixes)
+    parameters:
+    - id: str
+      type: System.String
+      description: The string.
+    - id: postFixes
+      type: System.String[]
+      description: one or more postfix.
+    return:
+      type: System.String
+      description: Modified string or the same string if it has not any of given postfixes
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function RemovePostFix(str As String, ParamArray postFixes As String()) As String
+  overload: Hybrid.Extensions.StringExtensions.RemovePostFix*
+  nameWithType.vb: StringExtensions.RemovePostFix(String, String())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.StringExtensions.RemovePostFix(System.String, System.String())
+  name.vb: RemovePostFix(String, String())
+- uid: Hybrid.Extensions.StringExtensions.RemovePreFix(System.String,System.String[])
+  commentId: M:Hybrid.Extensions.StringExtensions.RemovePreFix(System.String,System.String[])
+  id: RemovePreFix(System.String,System.String[])
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: RemovePreFix(String, String[])
+  nameWithType: StringExtensions.RemovePreFix(String, String[])
+  fullName: Hybrid.Extensions.StringExtensions.RemovePreFix(System.String, System.String[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: RemovePreFix
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 1197
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nRemoves first occurrence of the given prefixes from beginning of the given string.\nOrdering is important. If one of the preFixes is matched, others will not be tested.\n"
+  example: []
+  syntax:
+    content: public static string RemovePreFix(this string str, params string[] preFixes)
+    parameters:
+    - id: str
+      type: System.String
+      description: The string.
+    - id: preFixes
+      type: System.String[]
+      description: one or more prefix.
+    return:
+      type: System.String
+      description: Modified string or the same string if it has not any of given prefixes
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function RemovePreFix(str As String, ParamArray preFixes As String()) As String
+  overload: Hybrid.Extensions.StringExtensions.RemovePreFix*
+  nameWithType.vb: StringExtensions.RemovePreFix(String, String())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.StringExtensions.RemovePreFix(System.String, System.String())
+  name.vb: RemovePreFix(String, String())
+- uid: Hybrid.Extensions.StringExtensions.Right(System.String,System.Int32)
+  commentId: M:Hybrid.Extensions.StringExtensions.Right(System.String,System.Int32)
+  id: Right(System.String,System.Int32)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: Right(String, Int32)
+  nameWithType: StringExtensions.Right(String, Int32)
+  fullName: Hybrid.Extensions.StringExtensions.Right(System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Right
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 1230
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nGets a substring of a string from end of the string.\n"
+  example: []
+  syntax:
+    content: public static string Right(this string str, int len)
+    parameters:
+    - id: str
+      type: System.String
+    - id: len
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Right(str As String, len As Integer) As String
+  overload: Hybrid.Extensions.StringExtensions.Right*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">str</code> is null
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">len</code> is bigger that string&apos;s length
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.Split(System.String,System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.Split(System.String,System.String)
+  id: Split(System.String,System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: Split(String, String)
+  nameWithType: StringExtensions.Split(String, String)
+  fullName: Hybrid.Extensions.StringExtensions.Split(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Split
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 1248
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nUses string.Split method to split given string by given separator.\n"
+  example: []
+  syntax:
+    content: public static string[] Split(this string str, string separator)
+    parameters:
+    - id: str
+      type: System.String
+    - id: separator
+      type: System.String
+    return:
+      type: System.String[]
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Split(str As String, separator As String) As String()
+  overload: Hybrid.Extensions.StringExtensions.Split*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.Split(System.String,System.String,System.StringSplitOptions)
+  commentId: M:Hybrid.Extensions.StringExtensions.Split(System.String,System.String,System.StringSplitOptions)
+  id: Split(System.String,System.String,System.StringSplitOptions)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: Split(String, String, StringSplitOptions)
+  nameWithType: StringExtensions.Split(String, String, StringSplitOptions)
+  fullName: Hybrid.Extensions.StringExtensions.Split(System.String, System.String, System.StringSplitOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Split
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 1256
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nUses string.Split method to split given string by given separator.\n"
+  example: []
+  syntax:
+    content: public static string[] Split(this string str, string separator, StringSplitOptions options)
+    parameters:
+    - id: str
+      type: System.String
+    - id: separator
+      type: System.String
+    - id: options
+      type: System.StringSplitOptions
+    return:
+      type: System.String[]
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Split(str As String, separator As String, options As StringSplitOptions) As String()
+  overload: Hybrid.Extensions.StringExtensions.Split*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.SplitToLines(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.SplitToLines(System.String)
+  id: SplitToLines(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: SplitToLines(String)
+  nameWithType: StringExtensions.SplitToLines(String)
+  fullName: Hybrid.Extensions.StringExtensions.SplitToLines(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: SplitToLines
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 1264
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nUses string.Split method to split given string by <xref href=\"System.Environment.NewLine\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static string[] SplitToLines(this string str)
+    parameters:
+    - id: str
+      type: System.String
+    return:
+      type: System.String[]
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function SplitToLines(str As String) As String()
+  overload: Hybrid.Extensions.StringExtensions.SplitToLines*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.SplitToLines(System.String,System.StringSplitOptions)
+  commentId: M:Hybrid.Extensions.StringExtensions.SplitToLines(System.String,System.StringSplitOptions)
+  id: SplitToLines(System.String,System.StringSplitOptions)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: SplitToLines(String, StringSplitOptions)
+  nameWithType: StringExtensions.SplitToLines(String, StringSplitOptions)
+  fullName: Hybrid.Extensions.StringExtensions.SplitToLines(System.String, System.StringSplitOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: SplitToLines
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 1272
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nUses string.Split method to split given string by <xref href=\"System.Environment.NewLine\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static string[] SplitToLines(this string str, StringSplitOptions options)
+    parameters:
+    - id: str
+      type: System.String
+    - id: options
+      type: System.StringSplitOptions
+    return:
+      type: System.String[]
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function SplitToLines(str As String, options As StringSplitOptions) As String()
+  overload: Hybrid.Extensions.StringExtensions.SplitToLines*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.ToCamelCase(System.String,System.Boolean)
+  commentId: M:Hybrid.Extensions.StringExtensions.ToCamelCase(System.String,System.Boolean)
+  id: ToCamelCase(System.String,System.Boolean)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToCamelCase(String, Boolean)
+  nameWithType: StringExtensions.ToCamelCase(String, Boolean)
+  fullName: Hybrid.Extensions.StringExtensions.ToCamelCase(System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToCamelCase
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 1283
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nConverts PascalCase string to camelCase string.\n"
+  example: []
+  syntax:
+    content: public static string ToCamelCase(this string str, bool invariantCulture = true)
+    parameters:
+    - id: str
+      type: System.String
+      description: String to convert
+    - id: invariantCulture
+      type: System.Boolean
+      description: Invariant culture
+    return:
+      type: System.String
+      description: camelCase of the string
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToCamelCase(str As String, invariantCulture As Boolean = True) As String
+  overload: Hybrid.Extensions.StringExtensions.ToCamelCase*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.ToCamelCase(System.String,System.Globalization.CultureInfo)
+  commentId: M:Hybrid.Extensions.StringExtensions.ToCamelCase(System.String,System.Globalization.CultureInfo)
+  id: ToCamelCase(System.String,System.Globalization.CultureInfo)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToCamelCase(String, CultureInfo)
+  nameWithType: StringExtensions.ToCamelCase(String, CultureInfo)
+  fullName: Hybrid.Extensions.StringExtensions.ToCamelCase(System.String, System.Globalization.CultureInfo)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToCamelCase
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 1304
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nConverts PascalCase string to camelCase string in specified culture.\n"
+  example: []
+  syntax:
+    content: public static string ToCamelCase(this string str, CultureInfo culture)
+    parameters:
+    - id: str
+      type: System.String
+      description: String to convert
+    - id: culture
+      type: System.Globalization.CultureInfo
+      description: An object that supplies culture-specific casing rules
+    return:
+      type: System.String
+      description: camelCase of the string
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToCamelCase(str As String, culture As CultureInfo) As String
+  overload: Hybrid.Extensions.StringExtensions.ToCamelCase*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.ToSentenceCase(System.String,System.Boolean)
+  commentId: M:Hybrid.Extensions.StringExtensions.ToSentenceCase(System.String,System.Boolean)
+  id: ToSentenceCase(System.String,System.Boolean)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToSentenceCase(String, Boolean)
+  nameWithType: StringExtensions.ToSentenceCase(String, Boolean)
+  fullName: Hybrid.Extensions.StringExtensions.ToSentenceCase(System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToSentenceCase
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 1325
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nConverts given PascalCase/camelCase string to sentence (by splitting words by space).\nExample: &quot;ThisIsSampleSentence&quot; is converted to &quot;This is a sample sentence&quot;.\n"
+  example: []
+  syntax:
+    content: public static string ToSentenceCase(this string str, bool invariantCulture = false)
+    parameters:
+    - id: str
+      type: System.String
+      description: String to convert.
+    - id: invariantCulture
+      type: System.Boolean
+      description: Invariant culture
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToSentenceCase(str As String, invariantCulture As Boolean = False) As String
+  overload: Hybrid.Extensions.StringExtensions.ToSentenceCase*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.ToSentenceCase(System.String,System.Globalization.CultureInfo)
+  commentId: M:Hybrid.Extensions.StringExtensions.ToSentenceCase(System.String,System.Globalization.CultureInfo)
+  id: ToSentenceCase(System.String,System.Globalization.CultureInfo)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToSentenceCase(String, CultureInfo)
+  nameWithType: StringExtensions.ToSentenceCase(String, CultureInfo)
+  fullName: Hybrid.Extensions.StringExtensions.ToSentenceCase(System.String, System.Globalization.CultureInfo)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToSentenceCase
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 1345
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nConverts given PascalCase/camelCase string to sentence (by splitting words by space).\nExample: &quot;ThisIsSampleSentence&quot; is converted to &quot;This is a sample sentence&quot;.\n"
+  example: []
+  syntax:
+    content: public static string ToSentenceCase(this string str, CultureInfo culture)
+    parameters:
+    - id: str
+      type: System.String
+      description: String to convert.
+    - id: culture
+      type: System.Globalization.CultureInfo
+      description: An object that supplies culture-specific casing rules.
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToSentenceCase(str As String, culture As CultureInfo) As String
+  overload: Hybrid.Extensions.StringExtensions.ToSentenceCase*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.ToEnum``1(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.ToEnum``1(System.String)
+  id: ToEnum``1(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToEnum<T>(String)
+  nameWithType: StringExtensions.ToEnum<T>(String)
+  fullName: Hybrid.Extensions.StringExtensions.ToEnum<T>(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToEnum
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 1361
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nConverts string to enum value.\n"
+  example: []
+  syntax:
+    content: >-
+      public static T ToEnum<T>(this string value)
+
+          where T : struct
+    parameters:
+    - id: value
+      type: System.String
+      description: String value to convert
+    typeParameters:
+    - id: T
+      description: Type of enum
+    return:
+      type: '{T}'
+      description: Returns enum object
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToEnum(Of T As Structure)(value As String) As T
+  overload: Hybrid.Extensions.StringExtensions.ToEnum*
+  nameWithType.vb: StringExtensions.ToEnum(Of T)(String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.StringExtensions.ToEnum(Of T)(System.String)
+  name.vb: ToEnum(Of T)(String)
+- uid: Hybrid.Extensions.StringExtensions.ToEnum``1(System.String,System.Boolean)
+  commentId: M:Hybrid.Extensions.StringExtensions.ToEnum``1(System.String,System.Boolean)
+  id: ToEnum``1(System.String,System.Boolean)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToEnum<T>(String, Boolean)
+  nameWithType: StringExtensions.ToEnum<T>(String, Boolean)
+  fullName: Hybrid.Extensions.StringExtensions.ToEnum<T>(System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToEnum
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 1379
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nConverts string to enum value.\n"
+  example: []
+  syntax:
+    content: >-
+      public static T ToEnum<T>(this string value, bool ignoreCase)
+
+          where T : struct
+    parameters:
+    - id: value
+      type: System.String
+      description: String value to convert
+    - id: ignoreCase
+      type: System.Boolean
+      description: Ignore case
+    typeParameters:
+    - id: T
+      description: Type of enum
+    return:
+      type: '{T}'
+      description: Returns enum object
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToEnum(Of T As Structure)(value As String, ignoreCase As Boolean) As T
+  overload: Hybrid.Extensions.StringExtensions.ToEnum*
+  nameWithType.vb: StringExtensions.ToEnum(Of T)(String, Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.StringExtensions.ToEnum(Of T)(System.String, System.Boolean)
+  name.vb: ToEnum(Of T)(String, Boolean)
+- uid: Hybrid.Extensions.StringExtensions.ToMd5(System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.ToMd5(System.String)
+  id: ToMd5(System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToMd5(String)
+  nameWithType: StringExtensions.ToMd5(String)
+  fullName: Hybrid.Extensions.StringExtensions.ToMd5(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToMd5
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 1390
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  syntax:
+    content: public static string ToMd5(this string str)
+    parameters:
+    - id: str
+      type: System.String
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToMd5(str As String) As String
+  overload: Hybrid.Extensions.StringExtensions.ToMd5*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.ToPascalCase(System.String,System.Boolean)
+  commentId: M:Hybrid.Extensions.StringExtensions.ToPascalCase(System.String,System.Boolean)
+  id: ToPascalCase(System.String,System.Boolean)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToPascalCase(String, Boolean)
+  nameWithType: StringExtensions.ToPascalCase(String, Boolean)
+  fullName: Hybrid.Extensions.StringExtensions.ToPascalCase(System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToPascalCase
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 1413
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nConverts camelCase string to PascalCase string.\n"
+  example: []
+  syntax:
+    content: public static string ToPascalCase(this string str, bool invariantCulture = true)
+    parameters:
+    - id: str
+      type: System.String
+      description: String to convert
+    - id: invariantCulture
+      type: System.Boolean
+      description: Invariant culture
+    return:
+      type: System.String
+      description: PascalCase of the string
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToPascalCase(str As String, invariantCulture As Boolean = True) As String
+  overload: Hybrid.Extensions.StringExtensions.ToPascalCase*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.ToPascalCase(System.String,System.Globalization.CultureInfo)
+  commentId: M:Hybrid.Extensions.StringExtensions.ToPascalCase(System.String,System.Globalization.CultureInfo)
+  id: ToPascalCase(System.String,System.Globalization.CultureInfo)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToPascalCase(String, CultureInfo)
+  nameWithType: StringExtensions.ToPascalCase(String, CultureInfo)
+  fullName: Hybrid.Extensions.StringExtensions.ToPascalCase(System.String, System.Globalization.CultureInfo)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToPascalCase
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 1434
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nConverts camelCase string to PascalCase string in specified culture.\n"
+  example: []
+  syntax:
+    content: public static string ToPascalCase(this string str, CultureInfo culture)
+    parameters:
+    - id: str
+      type: System.String
+      description: String to convert
+    - id: culture
+      type: System.Globalization.CultureInfo
+      description: An object that supplies culture-specific casing rules
+    return:
+      type: System.String
+      description: PascalCase of the string
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToPascalCase(str As String, culture As CultureInfo) As String
+  overload: Hybrid.Extensions.StringExtensions.ToPascalCase*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.Truncate(System.String,System.Int32)
+  commentId: M:Hybrid.Extensions.StringExtensions.Truncate(System.String,System.Int32)
+  id: Truncate(System.String,System.Int32)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: Truncate(String, Int32)
+  nameWithType: StringExtensions.Truncate(String, Int32)
+  fullName: Hybrid.Extensions.StringExtensions.Truncate(System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Truncate
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 1453
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nGets a substring of a string from beginning of the string if it exceeds maximum length.\n"
+  example: []
+  syntax:
+    content: public static string Truncate(this string str, int maxLength)
+    parameters:
+    - id: str
+      type: System.String
+    - id: maxLength
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Truncate(str As String, maxLength As Integer) As String
+  overload: Hybrid.Extensions.StringExtensions.Truncate*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">str</code> is null
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.TruncateWithPostfix(System.String,System.Int32)
+  commentId: M:Hybrid.Extensions.StringExtensions.TruncateWithPostfix(System.String,System.Int32)
+  id: TruncateWithPostfix(System.String,System.Int32)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: TruncateWithPostfix(String, Int32)
+  nameWithType: StringExtensions.TruncateWithPostfix(String, Int32)
+  fullName: Hybrid.Extensions.StringExtensions.TruncateWithPostfix(System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: TruncateWithPostfix
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 1474
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nGets a substring of a string from beginning of the string if it exceeds maximum length.\nIt adds a &quot;...&quot; postfix to end of the string if it&apos;s truncated.\nReturning string can not be longer than maxLength.\n"
+  example: []
+  syntax:
+    content: public static string TruncateWithPostfix(this string str, int maxLength)
+    parameters:
+    - id: str
+      type: System.String
+    - id: maxLength
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function TruncateWithPostfix(str As String, maxLength As Integer) As String
+  overload: Hybrid.Extensions.StringExtensions.TruncateWithPostfix*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">str</code> is null
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.TruncateWithPostfix(System.String,System.Int32,System.String)
+  commentId: M:Hybrid.Extensions.StringExtensions.TruncateWithPostfix(System.String,System.Int32,System.String)
+  id: TruncateWithPostfix(System.String,System.Int32,System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: TruncateWithPostfix(String, Int32, String)
+  nameWithType: StringExtensions.TruncateWithPostfix(String, Int32, String)
+  fullName: Hybrid.Extensions.StringExtensions.TruncateWithPostfix(System.String, System.Int32, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: TruncateWithPostfix
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 1485
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nGets a substring of a string from beginning of the string if it exceeds maximum length.\nIt adds given <code data-dev-comment-type=\"paramref\" class=\"paramref\">postfix</code> to end of the string if it&apos;s truncated.\nReturning string can not be longer than maxLength.\n"
+  example: []
+  syntax:
+    content: public static string TruncateWithPostfix(this string str, int maxLength, string postfix)
+    parameters:
+    - id: str
+      type: System.String
+    - id: maxLength
+      type: System.Int32
+    - id: postfix
+      type: System.String
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function TruncateWithPostfix(str As String, maxLength As Integer, postfix As String) As String
+  overload: Hybrid.Extensions.StringExtensions.TruncateWithPostfix*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code data-dev-comment-type="paramref" class="paramref">str</code> is null
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringExtensions.ToInt64(System.String,System.Globalization.NumberStyles,System.Int64)
+  commentId: M:Hybrid.Extensions.StringExtensions.ToInt64(System.String,System.Globalization.NumberStyles,System.Int64)
+  id: ToInt64(System.String,System.Globalization.NumberStyles,System.Int64)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToInt64(String, NumberStyles, Int64)
+  nameWithType: StringExtensions.ToInt64(String, NumberStyles, Int64)
+  fullName: Hybrid.Extensions.StringExtensions.ToInt64(System.String, System.Globalization.NumberStyles, System.Int64)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToInt64
+    path: ../src/Hybrid/Extensions/StringExtensions.cs
+    startLine: 1517
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public static long ToInt64(this string me, NumberStyles style, long defaultValue)
+    parameters:
+    - id: me
+      type: System.String
+      description: ''
+    - id: style
+      type: System.Globalization.NumberStyles
+      description: ''
+    - id: defaultValue
+      type: System.Int64
+      description: ''
+    return:
+      type: System.Int64
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToInt64(me As String, style As NumberStyles, defaultValue As Long) As Long
+  overload: Hybrid.Extensions.StringExtensions.ToInt64*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Hybrid.Extensions
+  commentId: N:Hybrid.Extensions
+  name: Hybrid.Extensions
+  nameWithType: Hybrid.Extensions
+  fullName: Hybrid.Extensions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hybrid.Extensions.StringExtensions.IsMatch*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.IsMatch
+  name: IsMatch
+  nameWithType: StringExtensions.IsMatch
+  fullName: Hybrid.Extensions.StringExtensions.IsMatch
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Hybrid.Extensions.StringExtensions.Match*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.Match
+  name: Match
+  nameWithType: StringExtensions.Match
+  fullName: Hybrid.Extensions.StringExtensions.Match
+- uid: Hybrid.Extensions.StringExtensions.Matches*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.Matches
+  name: Matches
+  nameWithType: StringExtensions.Matches
+  fullName: Hybrid.Extensions.StringExtensions.Matches
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<String>
+  nameWithType: IEnumerable<String>
+  fullName: System.Collections.Generic.IEnumerable<System.String>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Hybrid.Extensions.StringExtensions.MatchFirstNumber*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.MatchFirstNumber
+  name: MatchFirstNumber
+  nameWithType: StringExtensions.MatchFirstNumber
+  fullName: Hybrid.Extensions.StringExtensions.MatchFirstNumber
+- uid: Hybrid.Extensions.StringExtensions.MatchLastNumber*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.MatchLastNumber
+  name: MatchLastNumber
+  nameWithType: StringExtensions.MatchLastNumber
+  fullName: Hybrid.Extensions.StringExtensions.MatchLastNumber
+- uid: Hybrid.Extensions.StringExtensions.MatchNumbers*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.MatchNumbers
+  name: MatchNumbers
+  nameWithType: StringExtensions.MatchNumbers
+  fullName: Hybrid.Extensions.StringExtensions.MatchNumbers
+- uid: Hybrid.Extensions.StringExtensions.IsMatchNumber*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.IsMatchNumber
+  name: IsMatchNumber
+  nameWithType: StringExtensions.IsMatchNumber
+  fullName: Hybrid.Extensions.StringExtensions.IsMatchNumber
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Hybrid.Extensions.StringExtensions.Substring*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.Substring
+  name: Substring
+  nameWithType: StringExtensions.Substring
+  fullName: Hybrid.Extensions.StringExtensions.Substring
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Hybrid.Extensions.StringExtensions.Substring2*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.Substring2
+  name: Substring2
+  nameWithType: StringExtensions.Substring2
+  fullName: Hybrid.Extensions.StringExtensions.Substring2
+- uid: Hybrid.Extensions.StringExtensions.IsEmail*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.IsEmail
+  name: IsEmail
+  nameWithType: StringExtensions.IsEmail
+  fullName: Hybrid.Extensions.StringExtensions.IsEmail
+- uid: Hybrid.Extensions.StringExtensions.IsIpAddress*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.IsIpAddress
+  name: IsIpAddress
+  nameWithType: StringExtensions.IsIpAddress
+  fullName: Hybrid.Extensions.StringExtensions.IsIpAddress
+- uid: Hybrid.Extensions.StringExtensions.IsNumeric*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.IsNumeric
+  name: IsNumeric
+  nameWithType: StringExtensions.IsNumeric
+  fullName: Hybrid.Extensions.StringExtensions.IsNumeric
+- uid: Hybrid.Extensions.StringExtensions.IsUnicode*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.IsUnicode
+  name: IsUnicode
+  nameWithType: StringExtensions.IsUnicode
+  fullName: Hybrid.Extensions.StringExtensions.IsUnicode
+- uid: Hybrid.Extensions.StringExtensions.IsUrl*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.IsUrl
+  name: IsUrl
+  nameWithType: StringExtensions.IsUrl
+  fullName: Hybrid.Extensions.StringExtensions.IsUrl
+- uid: Hybrid.Extensions.StringExtensions.IsIdentityCardId*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.IsIdentityCardId
+  name: IsIdentityCardId
+  nameWithType: StringExtensions.IsIdentityCardId
+  fullName: Hybrid.Extensions.StringExtensions.IsIdentityCardId
+- uid: Hybrid.Extensions.StringExtensions.IsMobileNumber*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.IsMobileNumber
+  name: IsMobileNumber
+  nameWithType: StringExtensions.IsMobileNumber
+  fullName: Hybrid.Extensions.StringExtensions.IsMobileNumber
+- uid: Hybrid.Extensions.StringExtensions.IsNullOrEmpty*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.IsNullOrEmpty
+  name: IsNullOrEmpty
+  nameWithType: StringExtensions.IsNullOrEmpty
+  fullName: Hybrid.Extensions.StringExtensions.IsNullOrEmpty
+- uid: Hybrid.Extensions.StringExtensions.IsNullOrWhiteSpace*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.IsNullOrWhiteSpace
+  name: IsNullOrWhiteSpace
+  nameWithType: StringExtensions.IsNullOrWhiteSpace
+  fullName: Hybrid.Extensions.StringExtensions.IsNullOrWhiteSpace
+- uid: Hybrid.Extensions.StringExtensions.IsMissing*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.IsMissing
+  name: IsMissing
+  nameWithType: StringExtensions.IsMissing
+  fullName: Hybrid.Extensions.StringExtensions.IsMissing
+- uid: Hybrid.Extensions.StringExtensions.FormatWith*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.FormatWith
+  name: FormatWith
+  nameWithType: StringExtensions.FormatWith
+  fullName: Hybrid.Extensions.StringExtensions.FormatWith
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Hybrid.Extensions.StringExtensions.ReverseString*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.ReverseString
+  name: ReverseString
+  nameWithType: StringExtensions.ReverseString
+  fullName: Hybrid.Extensions.StringExtensions.ReverseString
+- uid: Hybrid.Extensions.StringExtensions.ToSingular*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.ToSingular
+  name: ToSingular
+  nameWithType: StringExtensions.ToSingular
+  fullName: Hybrid.Extensions.StringExtensions.ToSingular
+- uid: Hybrid.Extensions.StringExtensions.ToPlural*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.ToPlural
+  name: ToPlural
+  nameWithType: StringExtensions.ToPlural
+  fullName: Hybrid.Extensions.StringExtensions.ToPlural
+- uid: Hybrid.Extensions.StringExtensions.IsImageFile*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.IsImageFile
+  name: IsImageFile
+  nameWithType: StringExtensions.IsImageFile
+  fullName: Hybrid.Extensions.StringExtensions.IsImageFile
+- uid: Hybrid.Extensions.StringExtensions.Split*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.Split
+  name: Split
+  nameWithType: StringExtensions.Split
+  fullName: Hybrid.Extensions.StringExtensions.Split
+- uid: Hybrid.Extensions.StringExtensions.ToMd5Hash*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.ToMd5Hash
+  name: ToMd5Hash
+  nameWithType: StringExtensions.ToMd5Hash
+  fullName: Hybrid.Extensions.StringExtensions.ToMd5Hash
+- uid: Hybrid.Extensions.StringExtensions.TextLength*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.TextLength
+  name: TextLength
+  nameWithType: StringExtensions.TextLength
+  fullName: Hybrid.Extensions.StringExtensions.TextLength
+- uid: Hybrid.Extensions.StringExtensions.FromJsonString*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.FromJsonString
+  name: FromJsonString
+  nameWithType: StringExtensions.FromJsonString
+  fullName: Hybrid.Extensions.StringExtensions.FromJsonString
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Hybrid.Extensions.StringExtensions.AddUrlQuery*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.AddUrlQuery
+  name: AddUrlQuery
+  nameWithType: StringExtensions.AddUrlQuery
+  fullName: Hybrid.Extensions.StringExtensions.AddUrlQuery
+- uid: Hybrid.Extensions.StringExtensions.GetUrlQuery*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.GetUrlQuery
+  name: GetUrlQuery
+  nameWithType: StringExtensions.GetUrlQuery
+  fullName: Hybrid.Extensions.StringExtensions.GetUrlQuery
+- uid: Hybrid.Extensions.StringExtensions.AddHashFragment*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.AddHashFragment
+  name: AddHashFragment
+  nameWithType: StringExtensions.AddHashFragment
+  fullName: Hybrid.Extensions.StringExtensions.AddHashFragment
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: System.Text.Encoding.UTF8
+  commentId: P:System.Text.Encoding.UTF8
+  isExternal: true
+- uid: Hybrid.Extensions.StringExtensions.ToBytes*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.ToBytes
+  name: ToBytes
+  nameWithType: StringExtensions.ToBytes
+  fullName: Hybrid.Extensions.StringExtensions.ToBytes
+- uid: System.Text.Encoding
+  commentId: T:System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  name: Encoding
+  nameWithType: Encoding
+  fullName: System.Text.Encoding
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+- uid: Hybrid.Extensions.StringExtensions.ToString2*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.ToString2
+  name: ToString2
+  nameWithType: StringExtensions.ToString2
+  fullName: Hybrid.Extensions.StringExtensions.ToString2
+- uid: Hybrid.Extensions.StringExtensions.ToBase64String*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.ToBase64String
+  name: ToBase64String
+  nameWithType: StringExtensions.ToBase64String
+  fullName: Hybrid.Extensions.StringExtensions.ToBase64String
+- uid: Hybrid.Extensions.StringExtensions.FromBase64String*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.FromBase64String
+  name: FromBase64String
+  nameWithType: StringExtensions.FromBase64String
+  fullName: Hybrid.Extensions.StringExtensions.FromBase64String
+- uid: Hybrid.Extensions.StringExtensions.ToUrlDecode*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.ToUrlDecode
+  name: ToUrlDecode
+  nameWithType: StringExtensions.ToUrlDecode
+  fullName: Hybrid.Extensions.StringExtensions.ToUrlDecode
+- uid: Hybrid.Extensions.StringExtensions.ToUrlEncode*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.ToUrlEncode
+  name: ToUrlEncode
+  nameWithType: StringExtensions.ToUrlEncode
+  fullName: Hybrid.Extensions.StringExtensions.ToUrlEncode
+- uid: Hybrid.Extensions.StringExtensions.ToHtmlDecode*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.ToHtmlDecode
+  name: ToHtmlDecode
+  nameWithType: StringExtensions.ToHtmlDecode
+  fullName: Hybrid.Extensions.StringExtensions.ToHtmlDecode
+- uid: Hybrid.Extensions.StringExtensions.ToHtmlEncode*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.ToHtmlEncode
+  name: ToHtmlEncode
+  nameWithType: StringExtensions.ToHtmlEncode
+  fullName: Hybrid.Extensions.StringExtensions.ToHtmlEncode
+- uid: Hybrid.Extensions.StringExtensions.ToHexString*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.ToHexString
+  name: ToHexString
+  nameWithType: StringExtensions.ToHexString
+  fullName: Hybrid.Extensions.StringExtensions.ToHexString
+- uid: Hybrid.Extensions.StringExtensions.FromHexString*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.FromHexString
+  name: FromHexString
+  nameWithType: StringExtensions.FromHexString
+  fullName: Hybrid.Extensions.StringExtensions.FromHexString
+- uid: Hybrid.Extensions.StringExtensions.ToHexBytes*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.ToHexBytes
+  name: ToHexBytes
+  nameWithType: StringExtensions.ToHexBytes
+  fullName: Hybrid.Extensions.StringExtensions.ToHexBytes
+- uid: Hybrid.Extensions.StringExtensions.ToUnicodeString*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.ToUnicodeString
+  name: ToUnicodeString
+  nameWithType: StringExtensions.ToUnicodeString
+  fullName: Hybrid.Extensions.StringExtensions.ToUnicodeString
+- uid: Hybrid.Extensions.StringExtensions.FromUnicodeString*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.FromUnicodeString
+  name: FromUnicodeString
+  nameWithType: StringExtensions.FromUnicodeString
+  fullName: Hybrid.Extensions.StringExtensions.FromUnicodeString
+- uid: Hybrid.Extensions.StringExtensions.UpperToLowerAndSplit*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.UpperToLowerAndSplit
+  name: UpperToLowerAndSplit
+  nameWithType: StringExtensions.UpperToLowerAndSplit
+  fullName: Hybrid.Extensions.StringExtensions.UpperToLowerAndSplit
+- uid: Hybrid.Extensions.StringExtensions.LowerFirstChar*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.LowerFirstChar
+  name: LowerFirstChar
+  nameWithType: StringExtensions.LowerFirstChar
+  fullName: Hybrid.Extensions.StringExtensions.LowerFirstChar
+- uid: Hybrid.Extensions.StringExtensions.UpperFirstChar*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.UpperFirstChar
+  name: UpperFirstChar
+  nameWithType: StringExtensions.UpperFirstChar
+  fullName: Hybrid.Extensions.StringExtensions.UpperFirstChar
+- uid: Hybrid.Extensions.StringExtensions.LevenshteinDistance*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.LevenshteinDistance
+  name: LevenshteinDistance
+  nameWithType: StringExtensions.LevenshteinDistance
+  fullName: Hybrid.Extensions.StringExtensions.LevenshteinDistance
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: Hybrid.Extensions.StringExtensions.GetSimilarityWith*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.GetSimilarityWith
+  name: GetSimilarityWith
+  nameWithType: StringExtensions.GetSimilarityWith
+  fullName: Hybrid.Extensions.StringExtensions.GetSimilarityWith
+- uid: Hybrid.Extensions.StringExtensions.IsPresent*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.IsPresent
+  name: IsPresent
+  nameWithType: StringExtensions.IsPresent
+  fullName: Hybrid.Extensions.StringExtensions.IsPresent
+- uid: Hybrid.Extensions.StringExtensions.EnsureLeadingSlash*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.EnsureLeadingSlash
+  name: EnsureLeadingSlash
+  nameWithType: StringExtensions.EnsureLeadingSlash
+  fullName: Hybrid.Extensions.StringExtensions.EnsureLeadingSlash
+- uid: Hybrid.Extensions.StringExtensions.EnsureTrailingSlash*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.EnsureTrailingSlash
+  name: EnsureTrailingSlash
+  nameWithType: StringExtensions.EnsureTrailingSlash
+  fullName: Hybrid.Extensions.StringExtensions.EnsureTrailingSlash
+- uid: Hybrid.Extensions.StringExtensions.RemoveLeadingSlash*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.RemoveLeadingSlash
+  name: RemoveLeadingSlash
+  nameWithType: StringExtensions.RemoveLeadingSlash
+  fullName: Hybrid.Extensions.StringExtensions.RemoveLeadingSlash
+- uid: Hybrid.Extensions.StringExtensions.RemoveTrailingSlash*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.RemoveTrailingSlash
+  name: RemoveTrailingSlash
+  nameWithType: StringExtensions.RemoveTrailingSlash
+  fullName: Hybrid.Extensions.StringExtensions.RemoveTrailingSlash
+- uid: Hybrid.Extensions.StringExtensions.CleanUrlPath*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.CleanUrlPath
+  name: CleanUrlPath
+  nameWithType: StringExtensions.CleanUrlPath
+  fullName: Hybrid.Extensions.StringExtensions.CleanUrlPath
+- uid: Hybrid.Extensions.StringExtensions.EnsureEndsWith*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.EnsureEndsWith
+  name: EnsureEndsWith
+  nameWithType: StringExtensions.EnsureEndsWith
+  fullName: Hybrid.Extensions.StringExtensions.EnsureEndsWith
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  name: Char
+  nameWithType: Char
+  fullName: System.Char
+- uid: System.StringComparison
+  commentId: T:System.StringComparison
+  parent: System
+  isExternal: true
+  name: StringComparison
+  nameWithType: StringComparison
+  fullName: System.StringComparison
+- uid: System.Globalization.CultureInfo
+  commentId: T:System.Globalization.CultureInfo
+  parent: System.Globalization
+  isExternal: true
+  name: CultureInfo
+  nameWithType: CultureInfo
+  fullName: System.Globalization.CultureInfo
+- uid: System.Globalization
+  commentId: N:System.Globalization
+  isExternal: true
+  name: System.Globalization
+  nameWithType: System.Globalization
+  fullName: System.Globalization
+- uid: Hybrid.Extensions.StringExtensions.EnsureStartsWith*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.EnsureStartsWith
+  name: EnsureStartsWith
+  nameWithType: StringExtensions.EnsureStartsWith
+  fullName: Hybrid.Extensions.StringExtensions.EnsureStartsWith
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+- uid: Hybrid.Extensions.StringExtensions.Left*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.Left
+  name: Left
+  nameWithType: StringExtensions.Left
+  fullName: Hybrid.Extensions.StringExtensions.Left
+- uid: System.Environment.NewLine
+  commentId: P:System.Environment.NewLine
+  isExternal: true
+- uid: Hybrid.Extensions.StringExtensions.NormalizeLineEndings*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.NormalizeLineEndings
+  name: NormalizeLineEndings
+  nameWithType: StringExtensions.NormalizeLineEndings
+  fullName: Hybrid.Extensions.StringExtensions.NormalizeLineEndings
+- uid: Hybrid.Extensions.StringExtensions.NthIndexOf*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.NthIndexOf
+  name: NthIndexOf
+  nameWithType: StringExtensions.NthIndexOf
+  fullName: Hybrid.Extensions.StringExtensions.NthIndexOf
+- uid: Hybrid.Extensions.StringExtensions.RemovePostFix*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.RemovePostFix
+  name: RemovePostFix
+  nameWithType: StringExtensions.RemovePostFix
+  fullName: Hybrid.Extensions.StringExtensions.RemovePostFix
+- uid: Hybrid.Extensions.StringExtensions.RemovePreFix*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.RemovePreFix
+  name: RemovePreFix
+  nameWithType: StringExtensions.RemovePreFix
+  fullName: Hybrid.Extensions.StringExtensions.RemovePreFix
+- uid: Hybrid.Extensions.StringExtensions.Right*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.Right
+  name: Right
+  nameWithType: StringExtensions.Right
+  fullName: Hybrid.Extensions.StringExtensions.Right
+- uid: System.StringSplitOptions
+  commentId: T:System.StringSplitOptions
+  parent: System
+  isExternal: true
+  name: StringSplitOptions
+  nameWithType: StringSplitOptions
+  fullName: System.StringSplitOptions
+- uid: Hybrid.Extensions.StringExtensions.SplitToLines*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.SplitToLines
+  name: SplitToLines
+  nameWithType: StringExtensions.SplitToLines
+  fullName: Hybrid.Extensions.StringExtensions.SplitToLines
+- uid: Hybrid.Extensions.StringExtensions.ToCamelCase*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.ToCamelCase
+  name: ToCamelCase
+  nameWithType: StringExtensions.ToCamelCase
+  fullName: Hybrid.Extensions.StringExtensions.ToCamelCase
+- uid: Hybrid.Extensions.StringExtensions.ToSentenceCase*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.ToSentenceCase
+  name: ToSentenceCase
+  nameWithType: StringExtensions.ToSentenceCase
+  fullName: Hybrid.Extensions.StringExtensions.ToSentenceCase
+- uid: Hybrid.Extensions.StringExtensions.ToEnum*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.ToEnum
+  name: ToEnum
+  nameWithType: StringExtensions.ToEnum
+  fullName: Hybrid.Extensions.StringExtensions.ToEnum
+- uid: Hybrid.Extensions.StringExtensions.ToMd5*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.ToMd5
+  name: ToMd5
+  nameWithType: StringExtensions.ToMd5
+  fullName: Hybrid.Extensions.StringExtensions.ToMd5
+- uid: Hybrid.Extensions.StringExtensions.ToPascalCase*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.ToPascalCase
+  name: ToPascalCase
+  nameWithType: StringExtensions.ToPascalCase
+  fullName: Hybrid.Extensions.StringExtensions.ToPascalCase
+- uid: Hybrid.Extensions.StringExtensions.Truncate*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.Truncate
+  name: Truncate
+  nameWithType: StringExtensions.Truncate
+  fullName: Hybrid.Extensions.StringExtensions.Truncate
+- uid: Hybrid.Extensions.StringExtensions.TruncateWithPostfix*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.TruncateWithPostfix
+  name: TruncateWithPostfix
+  nameWithType: StringExtensions.TruncateWithPostfix
+  fullName: Hybrid.Extensions.StringExtensions.TruncateWithPostfix
+- uid: Hybrid.Extensions.StringExtensions.ToInt64*
+  commentId: Overload:Hybrid.Extensions.StringExtensions.ToInt64
+  name: ToInt64
+  nameWithType: StringExtensions.ToInt64
+  fullName: Hybrid.Extensions.StringExtensions.ToInt64
+- uid: System.Globalization.NumberStyles
+  commentId: T:System.Globalization.NumberStyles
+  parent: System.Globalization
+  isExternal: true
+  name: NumberStyles
+  nameWithType: NumberStyles
+  fullName: System.Globalization.NumberStyles
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64

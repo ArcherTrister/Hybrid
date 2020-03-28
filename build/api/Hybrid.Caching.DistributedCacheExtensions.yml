@@ -1,0 +1,3795 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Caching.DistributedCacheExtensions
+  commentId: T:Hybrid.Caching.DistributedCacheExtensions
+  id: DistributedCacheExtensions
+  parent: Hybrid.Caching
+  children:
+  - Hybrid.Caching.DistributedCacheExtensions.Get``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String)
+  - Hybrid.Caching.DistributedCacheExtensions.Get``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Func{``0},Hybrid.Authorization.Functions.IFunction)
+  - Hybrid.Caching.DistributedCacheExtensions.Get``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Func{``0},Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  - Hybrid.Caching.DistributedCacheExtensions.Get``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Func{``0},System.Int32)
+  - Hybrid.Caching.DistributedCacheExtensions.GetAsync``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String)
+  - Hybrid.Caching.DistributedCacheExtensions.GetAsync``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Func{System.Threading.Tasks.Task{``0}},Hybrid.Authorization.Functions.IFunction)
+  - Hybrid.Caching.DistributedCacheExtensions.GetAsync``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Func{System.Threading.Tasks.Task{``0}},Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  - Hybrid.Caching.DistributedCacheExtensions.GetAsync``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Func{System.Threading.Tasks.Task{``0}},System.Int32)
+  - Hybrid.Caching.DistributedCacheExtensions.Set(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Object,Hybrid.Authorization.Functions.IFunction)
+  - Hybrid.Caching.DistributedCacheExtensions.Set(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Object,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  - Hybrid.Caching.DistributedCacheExtensions.Set(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Object,System.Int32)
+  - Hybrid.Caching.DistributedCacheExtensions.SetAsync(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Object,Hybrid.Authorization.Functions.IFunction)
+  - Hybrid.Caching.DistributedCacheExtensions.SetAsync(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Object,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  - Hybrid.Caching.DistributedCacheExtensions.SetAsync(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Object,System.Int32)
+  - Hybrid.Caching.DistributedCacheExtensions.ToCacheArray``1(System.Linq.IQueryable{``0},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  - Hybrid.Caching.DistributedCacheExtensions.ToCacheArray``1(System.Linq.IQueryable{``0},System.Int32,System.Object[])
+  - Hybrid.Caching.DistributedCacheExtensions.ToCacheArray``2(System.Linq.IQueryable{``0},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  - Hybrid.Caching.DistributedCacheExtensions.ToCacheArray``2(System.Linq.IQueryable{``0},System.Int32,System.Object[])
+  - Hybrid.Caching.DistributedCacheExtensions.ToCacheArray``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  - Hybrid.Caching.DistributedCacheExtensions.ToCacheArray``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.Object[])
+  - Hybrid.Caching.DistributedCacheExtensions.ToCacheArray``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  - Hybrid.Caching.DistributedCacheExtensions.ToCacheArray``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Int32,System.Object[])
+  - Hybrid.Caching.DistributedCacheExtensions.ToCacheArray``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,``1}},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  - Hybrid.Caching.DistributedCacheExtensions.ToCacheArray``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.Object[])
+  - Hybrid.Caching.DistributedCacheExtensions.ToCacheList``1(System.Linq.IQueryable{``0},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  - Hybrid.Caching.DistributedCacheExtensions.ToCacheList``1(System.Linq.IQueryable{``0},System.Int32,System.Object[])
+  - Hybrid.Caching.DistributedCacheExtensions.ToCacheList``2(System.Linq.IQueryable{``0},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  - Hybrid.Caching.DistributedCacheExtensions.ToCacheList``2(System.Linq.IQueryable{``0},System.Int32,System.Object[])
+  - Hybrid.Caching.DistributedCacheExtensions.ToCacheList``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  - Hybrid.Caching.DistributedCacheExtensions.ToCacheList``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.Object[])
+  - Hybrid.Caching.DistributedCacheExtensions.ToCacheList``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  - Hybrid.Caching.DistributedCacheExtensions.ToCacheList``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Int32,System.Object[])
+  - Hybrid.Caching.DistributedCacheExtensions.ToCacheList``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,``1}},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  - Hybrid.Caching.DistributedCacheExtensions.ToCacheList``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.Object[])
+  - Hybrid.Caching.DistributedCacheExtensions.ToCacheOptions(Hybrid.Authorization.Functions.IFunction)
+  - Hybrid.Caching.DistributedCacheExtensions.ToPageCache``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},Hybrid.Filter.PageCondition,Hybrid.Authorization.Functions.IFunction,System.Object[])
+  - Hybrid.Caching.DistributedCacheExtensions.ToPageCache``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},Hybrid.Filter.PageCondition,System.Int32,System.Object[])
+  - Hybrid.Caching.DistributedCacheExtensions.ToPageCache``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},Hybrid.Filter.PageCondition,System.Linq.Expressions.Expression{System.Func{``0,``1}},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  - Hybrid.Caching.DistributedCacheExtensions.ToPageCache``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},Hybrid.Filter.PageCondition,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.Object[])
+  langs:
+  - csharp
+  - vb
+  name: DistributedCacheExtensions
+  nameWithType: DistributedCacheExtensions
+  fullName: Hybrid.Caching.DistributedCacheExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: DistributedCacheExtensions
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 32
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n<xref href=\"Microsoft.Extensions.Caching.Distributed.IDistributedCache\" data-throw-if-not-resolved=\"false\"></xref>扩展方法\n"
+  example: []
+  syntax:
+    content: public static class DistributedCacheExtensions
+    content.vb: Public Module DistributedCacheExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.Caching.DistributedCacheExtensions.Set(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Object,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.Set(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Object,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  id: Set(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Object,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: Set(IDistributedCache, String, Object, DistributedCacheEntryOptions)
+  nameWithType: DistributedCacheExtensions.Set(IDistributedCache, String, Object, DistributedCacheEntryOptions)
+  fullName: Hybrid.Caching.DistributedCacheExtensions.Set(Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.String, System.Object, Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Set
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 37
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n将对象存入缓存中\n"
+  example: []
+  syntax:
+    content: public static void Set(this IDistributedCache cache, string key, object value, DistributedCacheEntryOptions options = null)
+    parameters:
+    - id: cache
+      type: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    - id: key
+      type: System.String
+    - id: value
+      type: System.Object
+    - id: options
+      type: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Set(cache As IDistributedCache, key As String, value As Object, options As DistributedCacheEntryOptions = Nothing)
+  overload: Hybrid.Caching.DistributedCacheExtensions.Set*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Caching.DistributedCacheExtensions.SetAsync(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Object,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.SetAsync(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Object,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  id: SetAsync(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Object,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: SetAsync(IDistributedCache, String, Object, DistributedCacheEntryOptions)
+  nameWithType: DistributedCacheExtensions.SetAsync(IDistributedCache, String, Object, DistributedCacheEntryOptions)
+  fullName: Hybrid.Caching.DistributedCacheExtensions.SetAsync(Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.String, System.Object, Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: SetAsync
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 56
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n异步将对象存入缓存中\n"
+  example: []
+  syntax:
+    content: public static Task SetAsync(this IDistributedCache cache, string key, object value, DistributedCacheEntryOptions options = null)
+    parameters:
+    - id: cache
+      type: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    - id: key
+      type: System.String
+    - id: value
+      type: System.Object
+    - id: options
+      type: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function SetAsync(cache As IDistributedCache, key As String, value As Object, options As DistributedCacheEntryOptions = Nothing) As Task
+  overload: Hybrid.Caching.DistributedCacheExtensions.SetAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Caching.DistributedCacheExtensions.Set(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Object,System.Int32)
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.Set(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Object,System.Int32)
+  id: Set(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Object,System.Int32)
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: Set(IDistributedCache, String, Object, Int32)
+  nameWithType: DistributedCacheExtensions.Set(IDistributedCache, String, Object, Int32)
+  fullName: Hybrid.Caching.DistributedCacheExtensions.Set(Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.String, System.Object, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Set
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 75
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n将对象存入缓存中，使用指定时长\n"
+  example: []
+  syntax:
+    content: public static void Set(this IDistributedCache cache, string key, object value, int cacheSeconds)
+    parameters:
+    - id: cache
+      type: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    - id: key
+      type: System.String
+    - id: value
+      type: System.Object
+    - id: cacheSeconds
+      type: System.Int32
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Set(cache As IDistributedCache, key As String, value As Object, cacheSeconds As Integer)
+  overload: Hybrid.Caching.DistributedCacheExtensions.Set*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Caching.DistributedCacheExtensions.SetAsync(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Object,System.Int32)
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.SetAsync(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Object,System.Int32)
+  id: SetAsync(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Object,System.Int32)
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: SetAsync(IDistributedCache, String, Object, Int32)
+  nameWithType: DistributedCacheExtensions.SetAsync(IDistributedCache, String, Object, Int32)
+  fullName: Hybrid.Caching.DistributedCacheExtensions.SetAsync(Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.String, System.Object, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: SetAsync
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 89
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n异步将对象存入缓存中，使用指定时长\n"
+  example: []
+  syntax:
+    content: public static Task SetAsync(this IDistributedCache cache, string key, object value, int cacheSeconds)
+    parameters:
+    - id: cache
+      type: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    - id: key
+      type: System.String
+    - id: value
+      type: System.Object
+    - id: cacheSeconds
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function SetAsync(cache As IDistributedCache, key As String, value As Object, cacheSeconds As Integer) As Task
+  overload: Hybrid.Caching.DistributedCacheExtensions.SetAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Caching.DistributedCacheExtensions.Set(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Object,Hybrid.Authorization.Functions.IFunction)
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.Set(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Object,Hybrid.Authorization.Functions.IFunction)
+  id: Set(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Object,Hybrid.Authorization.Functions.IFunction)
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: Set(IDistributedCache, String, Object, IFunction)
+  nameWithType: DistributedCacheExtensions.Set(IDistributedCache, String, Object, IFunction)
+  fullName: Hybrid.Caching.DistributedCacheExtensions.Set(Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.String, System.Object, Hybrid.Authorization.Functions.IFunction)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Set
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 103
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n将对象存入缓存中，使用功能配置\n"
+  example: []
+  syntax:
+    content: public static void Set(this IDistributedCache cache, string key, object value, IFunction function)
+    parameters:
+    - id: cache
+      type: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    - id: key
+      type: System.String
+    - id: value
+      type: System.Object
+    - id: function
+      type: Hybrid.Authorization.Functions.IFunction
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Set(cache As IDistributedCache, key As String, value As Object, function As IFunction)
+  overload: Hybrid.Caching.DistributedCacheExtensions.Set*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Caching.DistributedCacheExtensions.SetAsync(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Object,Hybrid.Authorization.Functions.IFunction)
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.SetAsync(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Object,Hybrid.Authorization.Functions.IFunction)
+  id: SetAsync(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Object,Hybrid.Authorization.Functions.IFunction)
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: SetAsync(IDistributedCache, String, Object, IFunction)
+  nameWithType: DistributedCacheExtensions.SetAsync(IDistributedCache, String, Object, IFunction)
+  fullName: Hybrid.Caching.DistributedCacheExtensions.SetAsync(Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.String, System.Object, Hybrid.Authorization.Functions.IFunction)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: SetAsync
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 120
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n异步将对象存入缓存中，使用功能配置\n"
+  example: []
+  syntax:
+    content: public static Task SetAsync(this IDistributedCache cache, string key, object value, IFunction function)
+    parameters:
+    - id: cache
+      type: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    - id: key
+      type: System.String
+    - id: value
+      type: System.Object
+    - id: function
+      type: Hybrid.Authorization.Functions.IFunction
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function SetAsync(cache As IDistributedCache, key As String, value As Object, function As IFunction) As Task
+  overload: Hybrid.Caching.DistributedCacheExtensions.SetAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Caching.DistributedCacheExtensions.Get``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String)
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.Get``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String)
+  id: Get``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: Get<TResult>(IDistributedCache, String)
+  nameWithType: DistributedCacheExtensions.Get<TResult>(IDistributedCache, String)
+  fullName: Hybrid.Caching.DistributedCacheExtensions.Get<TResult>(Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Get
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 137
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n获取指定键的缓存项\n"
+  example: []
+  syntax:
+    content: public static TResult Get<TResult>(this IDistributedCache cache, string key)
+    parameters:
+    - id: cache
+      type: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    - id: key
+      type: System.String
+    typeParameters:
+    - id: TResult
+    return:
+      type: '{TResult}'
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Get(Of TResult)(cache As IDistributedCache, key As String) As TResult
+  overload: Hybrid.Caching.DistributedCacheExtensions.Get*
+  nameWithType.vb: DistributedCacheExtensions.Get(Of TResult)(IDistributedCache, String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Caching.DistributedCacheExtensions.Get(Of TResult)(Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.String)
+  name.vb: Get(Of TResult)(IDistributedCache, String)
+- uid: Hybrid.Caching.DistributedCacheExtensions.GetAsync``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String)
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.GetAsync``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String)
+  id: GetAsync``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAsync<TResult>(IDistributedCache, String)
+  nameWithType: DistributedCacheExtensions.GetAsync<TResult>(IDistributedCache, String)
+  fullName: Hybrid.Caching.DistributedCacheExtensions.GetAsync<TResult>(Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetAsync
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 150
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n异步获取指定键的缓存项\n"
+  example: []
+  syntax:
+    content: public static Task<TResult> GetAsync<TResult>(this IDistributedCache cache, string key)
+    parameters:
+    - id: cache
+      type: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    - id: key
+      type: System.String
+    typeParameters:
+    - id: TResult
+    return:
+      type: System.Threading.Tasks.Task{{TResult}}
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetAsync(Of TResult)(cache As IDistributedCache, key As String) As Task(Of TResult)
+  overload: Hybrid.Caching.DistributedCacheExtensions.GetAsync*
+  nameWithType.vb: DistributedCacheExtensions.GetAsync(Of TResult)(IDistributedCache, String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Caching.DistributedCacheExtensions.GetAsync(Of TResult)(Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.String)
+  name.vb: GetAsync(Of TResult)(IDistributedCache, String)
+- uid: Hybrid.Caching.DistributedCacheExtensions.Get``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Func{``0},Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.Get``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Func{``0},Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  id: Get``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Func{``0},Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: Get<TResult>(IDistributedCache, String, Func<TResult>, DistributedCacheEntryOptions)
+  nameWithType: DistributedCacheExtensions.Get<TResult>(IDistributedCache, String, Func<TResult>, DistributedCacheEntryOptions)
+  fullName: Hybrid.Caching.DistributedCacheExtensions.Get<TResult>(Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.String, System.Func<TResult>, Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Get
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 163
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n获取指定键的缓存项，不存在则从指定委托获取，并回存到缓存中再返回\n"
+  example: []
+  syntax:
+    content: public static TResult Get<TResult>(this IDistributedCache cache, string key, Func<TResult> getFunc, DistributedCacheEntryOptions options = null)
+    parameters:
+    - id: cache
+      type: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    - id: key
+      type: System.String
+    - id: getFunc
+      type: System.Func{{TResult}}
+    - id: options
+      type: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+    typeParameters:
+    - id: TResult
+    return:
+      type: '{TResult}'
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Get(Of TResult)(cache As IDistributedCache, key As String, getFunc As Func(Of TResult), options As DistributedCacheEntryOptions = Nothing) As TResult
+  overload: Hybrid.Caching.DistributedCacheExtensions.Get*
+  nameWithType.vb: DistributedCacheExtensions.Get(Of TResult)(IDistributedCache, String, Func(Of TResult), DistributedCacheEntryOptions)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Caching.DistributedCacheExtensions.Get(Of TResult)(Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.String, System.Func(Of TResult), Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  name.vb: Get(Of TResult)(IDistributedCache, String, Func(Of TResult), DistributedCacheEntryOptions)
+- uid: Hybrid.Caching.DistributedCacheExtensions.GetAsync``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Func{System.Threading.Tasks.Task{``0}},Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.GetAsync``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Func{System.Threading.Tasks.Task{``0}},Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  id: GetAsync``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Func{System.Threading.Tasks.Task{``0}},Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAsync<TResult>(IDistributedCache, String, Func<Task<TResult>>, DistributedCacheEntryOptions)
+  nameWithType: DistributedCacheExtensions.GetAsync<TResult>(IDistributedCache, String, Func<Task<TResult>>, DistributedCacheEntryOptions)
+  fullName: Hybrid.Caching.DistributedCacheExtensions.GetAsync<TResult>(Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.String, System.Func<System.Threading.Tasks.Task<TResult>>, Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetAsync
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 182
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n异步获取指定键的缓存项，不存在则从指定委托获取，并回存到缓存中再返回\n"
+  example: []
+  syntax:
+    content: public static Task<TResult> GetAsync<TResult>(this IDistributedCache cache, string key, Func<Task<TResult>> getAsyncFunc, DistributedCacheEntryOptions options = null)
+    parameters:
+    - id: cache
+      type: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    - id: key
+      type: System.String
+    - id: getAsyncFunc
+      type: System.Func{System.Threading.Tasks.Task{{TResult}}}
+    - id: options
+      type: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+    typeParameters:
+    - id: TResult
+    return:
+      type: System.Threading.Tasks.Task{{TResult}}
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetAsync(Of TResult)(cache As IDistributedCache, key As String, getAsyncFunc As Func(Of Task(Of TResult)), options As DistributedCacheEntryOptions = Nothing) As Task(Of TResult)
+  overload: Hybrid.Caching.DistributedCacheExtensions.GetAsync*
+  nameWithType.vb: DistributedCacheExtensions.GetAsync(Of TResult)(IDistributedCache, String, Func(Of Task(Of TResult)), DistributedCacheEntryOptions)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Caching.DistributedCacheExtensions.GetAsync(Of TResult)(Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.String, System.Func(Of System.Threading.Tasks.Task(Of TResult)), Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions)
+  name.vb: GetAsync(Of TResult)(IDistributedCache, String, Func(Of Task(Of TResult)), DistributedCacheEntryOptions)
+- uid: Hybrid.Caching.DistributedCacheExtensions.Get``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Func{``0},System.Int32)
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.Get``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Func{``0},System.Int32)
+  id: Get``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Func{``0},System.Int32)
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: Get<TResult>(IDistributedCache, String, Func<TResult>, Int32)
+  nameWithType: DistributedCacheExtensions.Get<TResult>(IDistributedCache, String, Func<TResult>, Int32)
+  fullName: Hybrid.Caching.DistributedCacheExtensions.Get<TResult>(Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.String, System.Func<TResult>, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Get
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 201
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n获取指定键的缓存项，不存在则从指定委托获取，并回存到缓存中再返回\n"
+  example: []
+  syntax:
+    content: public static TResult Get<TResult>(this IDistributedCache cache, string key, Func<TResult> getFunc, int cacheSeconds)
+    parameters:
+    - id: cache
+      type: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    - id: key
+      type: System.String
+    - id: getFunc
+      type: System.Func{{TResult}}
+    - id: cacheSeconds
+      type: System.Int32
+    typeParameters:
+    - id: TResult
+    return:
+      type: '{TResult}'
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Get(Of TResult)(cache As IDistributedCache, key As String, getFunc As Func(Of TResult), cacheSeconds As Integer) As TResult
+  overload: Hybrid.Caching.DistributedCacheExtensions.Get*
+  nameWithType.vb: DistributedCacheExtensions.Get(Of TResult)(IDistributedCache, String, Func(Of TResult), Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Caching.DistributedCacheExtensions.Get(Of TResult)(Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.String, System.Func(Of TResult), System.Int32)
+  name.vb: Get(Of TResult)(IDistributedCache, String, Func(Of TResult), Int32)
+- uid: Hybrid.Caching.DistributedCacheExtensions.GetAsync``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Func{System.Threading.Tasks.Task{``0}},System.Int32)
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.GetAsync``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Func{System.Threading.Tasks.Task{``0}},System.Int32)
+  id: GetAsync``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Func{System.Threading.Tasks.Task{``0}},System.Int32)
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAsync<TResult>(IDistributedCache, String, Func<Task<TResult>>, Int32)
+  nameWithType: DistributedCacheExtensions.GetAsync<TResult>(IDistributedCache, String, Func<Task<TResult>>, Int32)
+  fullName: Hybrid.Caching.DistributedCacheExtensions.GetAsync<TResult>(Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.String, System.Func<System.Threading.Tasks.Task<TResult>>, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetAsync
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 213
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n异步获取指定键的缓存项，不存在则从指定委托获取，并回存到缓存中再返回\n"
+  example: []
+  syntax:
+    content: public static Task<TResult> GetAsync<TResult>(this IDistributedCache cache, string key, Func<Task<TResult>> getAsyncFunc, int cacheSeconds)
+    parameters:
+    - id: cache
+      type: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    - id: key
+      type: System.String
+    - id: getAsyncFunc
+      type: System.Func{System.Threading.Tasks.Task{{TResult}}}
+    - id: cacheSeconds
+      type: System.Int32
+    typeParameters:
+    - id: TResult
+    return:
+      type: System.Threading.Tasks.Task{{TResult}}
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetAsync(Of TResult)(cache As IDistributedCache, key As String, getAsyncFunc As Func(Of Task(Of TResult)), cacheSeconds As Integer) As Task(Of TResult)
+  overload: Hybrid.Caching.DistributedCacheExtensions.GetAsync*
+  nameWithType.vb: DistributedCacheExtensions.GetAsync(Of TResult)(IDistributedCache, String, Func(Of Task(Of TResult)), Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Caching.DistributedCacheExtensions.GetAsync(Of TResult)(Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.String, System.Func(Of System.Threading.Tasks.Task(Of TResult)), System.Int32)
+  name.vb: GetAsync(Of TResult)(IDistributedCache, String, Func(Of Task(Of TResult)), Int32)
+- uid: Hybrid.Caching.DistributedCacheExtensions.Get``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Func{``0},Hybrid.Authorization.Functions.IFunction)
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.Get``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Func{``0},Hybrid.Authorization.Functions.IFunction)
+  id: Get``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Func{``0},Hybrid.Authorization.Functions.IFunction)
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: Get<TResult>(IDistributedCache, String, Func<TResult>, IFunction)
+  nameWithType: DistributedCacheExtensions.Get<TResult>(IDistributedCache, String, Func<TResult>, IFunction)
+  fullName: Hybrid.Caching.DistributedCacheExtensions.Get<TResult>(Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.String, System.Func<TResult>, Hybrid.Authorization.Functions.IFunction)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Get
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 225
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n获取指定键的缓存项，不存在则从指定委托获取，并回存到缓存中再返回\n"
+  example: []
+  syntax:
+    content: public static TResult Get<TResult>(this IDistributedCache cache, string key, Func<TResult> getFunc, IFunction function)
+    parameters:
+    - id: cache
+      type: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    - id: key
+      type: System.String
+    - id: getFunc
+      type: System.Func{{TResult}}
+    - id: function
+      type: Hybrid.Authorization.Functions.IFunction
+    typeParameters:
+    - id: TResult
+    return:
+      type: '{TResult}'
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Get(Of TResult)(cache As IDistributedCache, key As String, getFunc As Func(Of TResult), function As IFunction) As TResult
+  overload: Hybrid.Caching.DistributedCacheExtensions.Get*
+  nameWithType.vb: DistributedCacheExtensions.Get(Of TResult)(IDistributedCache, String, Func(Of TResult), IFunction)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Caching.DistributedCacheExtensions.Get(Of TResult)(Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.String, System.Func(Of TResult), Hybrid.Authorization.Functions.IFunction)
+  name.vb: Get(Of TResult)(IDistributedCache, String, Func(Of TResult), IFunction)
+- uid: Hybrid.Caching.DistributedCacheExtensions.GetAsync``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Func{System.Threading.Tasks.Task{``0}},Hybrid.Authorization.Functions.IFunction)
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.GetAsync``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Func{System.Threading.Tasks.Task{``0}},Hybrid.Authorization.Functions.IFunction)
+  id: GetAsync``1(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Func{System.Threading.Tasks.Task{``0}},Hybrid.Authorization.Functions.IFunction)
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAsync<TResult>(IDistributedCache, String, Func<Task<TResult>>, IFunction)
+  nameWithType: DistributedCacheExtensions.GetAsync<TResult>(IDistributedCache, String, Func<Task<TResult>>, IFunction)
+  fullName: Hybrid.Caching.DistributedCacheExtensions.GetAsync<TResult>(Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.String, System.Func<System.Threading.Tasks.Task<TResult>>, Hybrid.Authorization.Functions.IFunction)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetAsync
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 238
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n获取指定键的缓存项，不存在则从指定委托获取，并回存到缓存中再返回\n"
+  example: []
+  syntax:
+    content: public static Task<TResult> GetAsync<TResult>(this IDistributedCache cache, string key, Func<Task<TResult>> getAsyncFunc, IFunction function)
+    parameters:
+    - id: cache
+      type: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    - id: key
+      type: System.String
+    - id: getAsyncFunc
+      type: System.Func{System.Threading.Tasks.Task{{TResult}}}
+    - id: function
+      type: Hybrid.Authorization.Functions.IFunction
+    typeParameters:
+    - id: TResult
+    return:
+      type: System.Threading.Tasks.Task{{TResult}}
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetAsync(Of TResult)(cache As IDistributedCache, key As String, getAsyncFunc As Func(Of Task(Of TResult)), function As IFunction) As Task(Of TResult)
+  overload: Hybrid.Caching.DistributedCacheExtensions.GetAsync*
+  nameWithType.vb: DistributedCacheExtensions.GetAsync(Of TResult)(IDistributedCache, String, Func(Of Task(Of TResult)), IFunction)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Caching.DistributedCacheExtensions.GetAsync(Of TResult)(Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.String, System.Func(Of System.Threading.Tasks.Task(Of TResult)), Hybrid.Authorization.Functions.IFunction)
+  name.vb: GetAsync(Of TResult)(IDistributedCache, String, Func(Of Task(Of TResult)), IFunction)
+- uid: Hybrid.Caching.DistributedCacheExtensions.ToPageCache``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},Hybrid.Filter.PageCondition,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.Object[])
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.ToPageCache``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},Hybrid.Filter.PageCondition,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.Object[])
+  id: ToPageCache``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},Hybrid.Filter.PageCondition,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.Object[])
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToPageCache<TEntity, TResult>(IQueryable<TEntity>, Expression<Func<TEntity, Boolean>>, PageCondition, Expression<Func<TEntity, TResult>>, Int32, Object[])
+  nameWithType: DistributedCacheExtensions.ToPageCache<TEntity, TResult>(IQueryable<TEntity>, Expression<Func<TEntity, Boolean>>, PageCondition, Expression<Func<TEntity, TResult>>, Int32, Object[])
+  fullName: Hybrid.Caching.DistributedCacheExtensions.ToPageCache<TEntity, TResult>(System.Linq.IQueryable<TEntity>, System.Linq.Expressions.Expression<System.Func<TEntity, System.Boolean>>, Hybrid.Filter.PageCondition, System.Linq.Expressions.Expression<System.Func<TEntity, TResult>>, System.Int32, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToPageCache
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 251
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n查询分页数据结果，如缓存存在，直接返回，否则从数据源查找分页结果，并存入缓存中再返回\n"
+  example: []
+  syntax:
+    content: public static PageResult<TResult> ToPageCache<TEntity, TResult>(this IQueryable<TEntity> source, Expression<Func<TEntity, bool>> predicate, PageCondition pageCondition, Expression<Func<TEntity, TResult>> selector, int cacheSeconds = 60, params object[] keyParams)
+    parameters:
+    - id: source
+      type: System.Linq.IQueryable{{TEntity}}
+    - id: predicate
+      type: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}}
+    - id: pageCondition
+      type: Hybrid.Filter.PageCondition
+    - id: selector
+      type: System.Linq.Expressions.Expression{System.Func{{TEntity},{TResult}}}
+    - id: cacheSeconds
+      type: System.Int32
+    - id: keyParams
+      type: System.Object[]
+    typeParameters:
+    - id: TEntity
+    - id: TResult
+    return:
+      type: Hybrid.Filter.PageResult{{TResult}}
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToPageCache(Of TEntity, TResult)(source As IQueryable(Of TEntity), predicate As Expression(Of Func(Of TEntity, Boolean)), pageCondition As PageCondition, selector As Expression(Of Func(Of TEntity, TResult)), cacheSeconds As Integer = 60, ParamArray keyParams As Object()) As PageResult(Of TResult)
+  overload: Hybrid.Caching.DistributedCacheExtensions.ToPageCache*
+  nameWithType.vb: DistributedCacheExtensions.ToPageCache(Of TEntity, TResult)(IQueryable(Of TEntity), Expression(Of Func(Of TEntity, Boolean)), PageCondition, Expression(Of Func(Of TEntity, TResult)), Int32, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Caching.DistributedCacheExtensions.ToPageCache(Of TEntity, TResult)(System.Linq.IQueryable(Of TEntity), System.Linq.Expressions.Expression(Of System.Func(Of TEntity, System.Boolean)), Hybrid.Filter.PageCondition, System.Linq.Expressions.Expression(Of System.Func(Of TEntity, TResult)), System.Int32, System.Object())
+  name.vb: ToPageCache(Of TEntity, TResult)(IQueryable(Of TEntity), Expression(Of Func(Of TEntity, Boolean)), PageCondition, Expression(Of Func(Of TEntity, TResult)), Int32, Object())
+- uid: Hybrid.Caching.DistributedCacheExtensions.ToPageCache``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},Hybrid.Filter.PageCondition,System.Linq.Expressions.Expression{System.Func{``0,``1}},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.ToPageCache``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},Hybrid.Filter.PageCondition,System.Linq.Expressions.Expression{System.Func{``0,``1}},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  id: ToPageCache``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},Hybrid.Filter.PageCondition,System.Linq.Expressions.Expression{System.Func{``0,``1}},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToPageCache<TEntity, TResult>(IQueryable<TEntity>, Expression<Func<TEntity, Boolean>>, PageCondition, Expression<Func<TEntity, TResult>>, IFunction, Object[])
+  nameWithType: DistributedCacheExtensions.ToPageCache<TEntity, TResult>(IQueryable<TEntity>, Expression<Func<TEntity, Boolean>>, PageCondition, Expression<Func<TEntity, TResult>>, IFunction, Object[])
+  fullName: Hybrid.Caching.DistributedCacheExtensions.ToPageCache<TEntity, TResult>(System.Linq.IQueryable<TEntity>, System.Linq.Expressions.Expression<System.Func<TEntity, System.Boolean>>, Hybrid.Filter.PageCondition, System.Linq.Expressions.Expression<System.Func<TEntity, TResult>>, Hybrid.Authorization.Functions.IFunction, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToPageCache
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 266
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n查询分页数据结果，如缓存存在，直接返回，否则从数据源查找分页结果，并存入缓存中再返回\n"
+  example: []
+  syntax:
+    content: public static PageResult<TResult> ToPageCache<TEntity, TResult>(this IQueryable<TEntity> source, Expression<Func<TEntity, bool>> predicate, PageCondition pageCondition, Expression<Func<TEntity, TResult>> selector, IFunction function, params object[] keyParams)
+    parameters:
+    - id: source
+      type: System.Linq.IQueryable{{TEntity}}
+    - id: predicate
+      type: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}}
+    - id: pageCondition
+      type: Hybrid.Filter.PageCondition
+    - id: selector
+      type: System.Linq.Expressions.Expression{System.Func{{TEntity},{TResult}}}
+    - id: function
+      type: Hybrid.Authorization.Functions.IFunction
+    - id: keyParams
+      type: System.Object[]
+    typeParameters:
+    - id: TEntity
+    - id: TResult
+    return:
+      type: Hybrid.Filter.PageResult{{TResult}}
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToPageCache(Of TEntity, TResult)(source As IQueryable(Of TEntity), predicate As Expression(Of Func(Of TEntity, Boolean)), pageCondition As PageCondition, selector As Expression(Of Func(Of TEntity, TResult)), function As IFunction, ParamArray keyParams As Object()) As PageResult(Of TResult)
+  overload: Hybrid.Caching.DistributedCacheExtensions.ToPageCache*
+  nameWithType.vb: DistributedCacheExtensions.ToPageCache(Of TEntity, TResult)(IQueryable(Of TEntity), Expression(Of Func(Of TEntity, Boolean)), PageCondition, Expression(Of Func(Of TEntity, TResult)), IFunction, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Caching.DistributedCacheExtensions.ToPageCache(Of TEntity, TResult)(System.Linq.IQueryable(Of TEntity), System.Linq.Expressions.Expression(Of System.Func(Of TEntity, System.Boolean)), Hybrid.Filter.PageCondition, System.Linq.Expressions.Expression(Of System.Func(Of TEntity, TResult)), Hybrid.Authorization.Functions.IFunction, System.Object())
+  name.vb: ToPageCache(Of TEntity, TResult)(IQueryable(Of TEntity), Expression(Of Func(Of TEntity, Boolean)), PageCondition, Expression(Of Func(Of TEntity, TResult)), IFunction, Object())
+- uid: Hybrid.Caching.DistributedCacheExtensions.ToCacheList``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.Object[])
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.ToCacheList``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.Object[])
+  id: ToCacheList``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.Object[])
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToCacheList<TSource, TResult>(IQueryable<TSource>, Expression<Func<TSource, Boolean>>, Expression<Func<TSource, TResult>>, Int32, Object[])
+  nameWithType: DistributedCacheExtensions.ToCacheList<TSource, TResult>(IQueryable<TSource>, Expression<Func<TSource, Boolean>>, Expression<Func<TSource, TResult>>, Int32, Object[])
+  fullName: Hybrid.Caching.DistributedCacheExtensions.ToCacheList<TSource, TResult>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, System.Boolean>>, System.Linq.Expressions.Expression<System.Func<TSource, TResult>>, System.Int32, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToCacheList
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 289
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n将结果转换为缓存的列表，如缓存存在，直接返回，否则从数据源查询，并存入缓存中再返回\n"
+  example: []
+  syntax:
+    content: public static List<TResult> ToCacheList<TSource, TResult>(this IQueryable<TSource> source, Expression<Func<TSource, bool>> predicate, Expression<Func<TSource, TResult>> selector, int cacheSeconds = 60, params object[] keyParams)
+    parameters:
+    - id: source
+      type: System.Linq.IQueryable{{TSource}}
+      description: 数据源
+    - id: predicate
+      type: System.Linq.Expressions.Expression{System.Func{{TSource},System.Boolean}}
+      description: 数据查询表达式
+    - id: selector
+      type: System.Linq.Expressions.Expression{System.Func{{TSource},{TResult}}}
+      description: 数据筛选表达式
+    - id: cacheSeconds
+      type: System.Int32
+      description: 缓存时间：秒
+    - id: keyParams
+      type: System.Object[]
+      description: 缓存键参数
+    typeParameters:
+    - id: TSource
+      description: 数据源的项数据类型
+    - id: TResult
+      description: 结果集的项数据类型
+    return:
+      type: System.Collections.Generic.List{{TResult}}
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToCacheList(Of TSource, TResult)(source As IQueryable(Of TSource), predicate As Expression(Of Func(Of TSource, Boolean)), selector As Expression(Of Func(Of TSource, TResult)), cacheSeconds As Integer = 60, ParamArray keyParams As Object()) As List(Of TResult)
+  overload: Hybrid.Caching.DistributedCacheExtensions.ToCacheList*
+  nameWithType.vb: DistributedCacheExtensions.ToCacheList(Of TSource, TResult)(IQueryable(Of TSource), Expression(Of Func(Of TSource, Boolean)), Expression(Of Func(Of TSource, TResult)), Int32, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Caching.DistributedCacheExtensions.ToCacheList(Of TSource, TResult)(System.Linq.IQueryable(Of TSource), System.Linq.Expressions.Expression(Of System.Func(Of TSource, System.Boolean)), System.Linq.Expressions.Expression(Of System.Func(Of TSource, TResult)), System.Int32, System.Object())
+  name.vb: ToCacheList(Of TSource, TResult)(IQueryable(Of TSource), Expression(Of Func(Of TSource, Boolean)), Expression(Of Func(Of TSource, TResult)), Int32, Object())
+- uid: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.Object[])
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.ToCacheArray``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.Object[])
+  id: ToCacheArray``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.Object[])
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToCacheArray<TSource, TResult>(IQueryable<TSource>, Expression<Func<TSource, Boolean>>, Expression<Func<TSource, TResult>>, Int32, Object[])
+  nameWithType: DistributedCacheExtensions.ToCacheArray<TSource, TResult>(IQueryable<TSource>, Expression<Func<TSource, Boolean>>, Expression<Func<TSource, TResult>>, Int32, Object[])
+  fullName: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray<TSource, TResult>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, System.Boolean>>, System.Linq.Expressions.Expression<System.Func<TSource, TResult>>, System.Int32, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToCacheArray
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 309
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n将结果转换为缓存的数组，如缓存存在，直接返回，否则从数据源查询，并存入缓存中再返回\n"
+  example: []
+  syntax:
+    content: public static TResult[] ToCacheArray<TSource, TResult>(this IQueryable<TSource> source, Expression<Func<TSource, bool>> predicate, Expression<Func<TSource, TResult>> selector, int cacheSeconds = 60, params object[] keyParams)
+    parameters:
+    - id: source
+      type: System.Linq.IQueryable{{TSource}}
+      description: 数据源
+    - id: predicate
+      type: System.Linq.Expressions.Expression{System.Func{{TSource},System.Boolean}}
+      description: 数据查询表达式
+    - id: selector
+      type: System.Linq.Expressions.Expression{System.Func{{TSource},{TResult}}}
+      description: 数据筛选表达式
+    - id: cacheSeconds
+      type: System.Int32
+      description: 缓存时间：秒
+    - id: keyParams
+      type: System.Object[]
+      description: 缓存键参数
+    typeParameters:
+    - id: TSource
+      description: 数据源的项数据类型
+    - id: TResult
+      description: 结果集的项数据类型
+    return:
+      type: '{TResult}[]'
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToCacheArray(Of TSource, TResult)(source As IQueryable(Of TSource), predicate As Expression(Of Func(Of TSource, Boolean)), selector As Expression(Of Func(Of TSource, TResult)), cacheSeconds As Integer = 60, ParamArray keyParams As Object()) As TResult()
+  overload: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray*
+  nameWithType.vb: DistributedCacheExtensions.ToCacheArray(Of TSource, TResult)(IQueryable(Of TSource), Expression(Of Func(Of TSource, Boolean)), Expression(Of Func(Of TSource, TResult)), Int32, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray(Of TSource, TResult)(System.Linq.IQueryable(Of TSource), System.Linq.Expressions.Expression(Of System.Func(Of TSource, System.Boolean)), System.Linq.Expressions.Expression(Of System.Func(Of TSource, TResult)), System.Int32, System.Object())
+  name.vb: ToCacheArray(Of TSource, TResult)(IQueryable(Of TSource), Expression(Of Func(Of TSource, Boolean)), Expression(Of Func(Of TSource, TResult)), Int32, Object())
+- uid: Hybrid.Caching.DistributedCacheExtensions.ToCacheList``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,``1}},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.ToCacheList``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,``1}},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  id: ToCacheList``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,``1}},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToCacheList<TSource, TResult>(IQueryable<TSource>, Expression<Func<TSource, Boolean>>, Expression<Func<TSource, TResult>>, IFunction, Object[])
+  nameWithType: DistributedCacheExtensions.ToCacheList<TSource, TResult>(IQueryable<TSource>, Expression<Func<TSource, Boolean>>, Expression<Func<TSource, TResult>>, IFunction, Object[])
+  fullName: Hybrid.Caching.DistributedCacheExtensions.ToCacheList<TSource, TResult>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, System.Boolean>>, System.Linq.Expressions.Expression<System.Func<TSource, TResult>>, Hybrid.Authorization.Functions.IFunction, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToCacheList
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 329
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n将结果转换为缓存的列表，如缓存存在，直接返回，否则从数据源查询，并存入缓存中再返回\n"
+  example: []
+  syntax:
+    content: public static List<TResult> ToCacheList<TSource, TResult>(this IQueryable<TSource> source, Expression<Func<TSource, bool>> predicate, Expression<Func<TSource, TResult>> selector, IFunction function, params object[] keyParams)
+    parameters:
+    - id: source
+      type: System.Linq.IQueryable{{TSource}}
+      description: 数据源
+    - id: predicate
+      type: System.Linq.Expressions.Expression{System.Func{{TSource},System.Boolean}}
+      description: 数据查询表达式
+    - id: selector
+      type: System.Linq.Expressions.Expression{System.Func{{TSource},{TResult}}}
+      description: 数据筛选表达式
+    - id: function
+      type: Hybrid.Authorization.Functions.IFunction
+      description: 缓存策略相关功能
+    - id: keyParams
+      type: System.Object[]
+      description: 缓存键参数
+    typeParameters:
+    - id: TSource
+      description: 数据源的项数据类型
+    - id: TResult
+      description: 结果集的项数据类型
+    return:
+      type: System.Collections.Generic.List{{TResult}}
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToCacheList(Of TSource, TResult)(source As IQueryable(Of TSource), predicate As Expression(Of Func(Of TSource, Boolean)), selector As Expression(Of Func(Of TSource, TResult)), function As IFunction, ParamArray keyParams As Object()) As List(Of TResult)
+  overload: Hybrid.Caching.DistributedCacheExtensions.ToCacheList*
+  nameWithType.vb: DistributedCacheExtensions.ToCacheList(Of TSource, TResult)(IQueryable(Of TSource), Expression(Of Func(Of TSource, Boolean)), Expression(Of Func(Of TSource, TResult)), IFunction, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Caching.DistributedCacheExtensions.ToCacheList(Of TSource, TResult)(System.Linq.IQueryable(Of TSource), System.Linq.Expressions.Expression(Of System.Func(Of TSource, System.Boolean)), System.Linq.Expressions.Expression(Of System.Func(Of TSource, TResult)), Hybrid.Authorization.Functions.IFunction, System.Object())
+  name.vb: ToCacheList(Of TSource, TResult)(IQueryable(Of TSource), Expression(Of Func(Of TSource, Boolean)), Expression(Of Func(Of TSource, TResult)), IFunction, Object())
+- uid: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,``1}},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.ToCacheArray``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,``1}},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  id: ToCacheArray``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,``1}},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToCacheArray<TSource, TResult>(IQueryable<TSource>, Expression<Func<TSource, Boolean>>, Expression<Func<TSource, TResult>>, IFunction, Object[])
+  nameWithType: DistributedCacheExtensions.ToCacheArray<TSource, TResult>(IQueryable<TSource>, Expression<Func<TSource, Boolean>>, Expression<Func<TSource, TResult>>, IFunction, Object[])
+  fullName: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray<TSource, TResult>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, System.Boolean>>, System.Linq.Expressions.Expression<System.Func<TSource, TResult>>, Hybrid.Authorization.Functions.IFunction, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToCacheArray
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 349
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n将结果转换为缓存的数组，如缓存存在，直接返回，否则从数据源查询，并存入缓存中再返回\n"
+  example: []
+  syntax:
+    content: public static TResult[] ToCacheArray<TSource, TResult>(this IQueryable<TSource> source, Expression<Func<TSource, bool>> predicate, Expression<Func<TSource, TResult>> selector, IFunction function, params object[] keyParams)
+    parameters:
+    - id: source
+      type: System.Linq.IQueryable{{TSource}}
+      description: 数据源
+    - id: predicate
+      type: System.Linq.Expressions.Expression{System.Func{{TSource},System.Boolean}}
+      description: 数据查询表达式
+    - id: selector
+      type: System.Linq.Expressions.Expression{System.Func{{TSource},{TResult}}}
+      description: 数据筛选表达式
+    - id: function
+      type: Hybrid.Authorization.Functions.IFunction
+      description: 缓存策略相关功能
+    - id: keyParams
+      type: System.Object[]
+      description: 缓存键参数
+    typeParameters:
+    - id: TSource
+      description: 数据源的项数据类型
+    - id: TResult
+      description: 结果集的项数据类型
+    return:
+      type: '{TResult}[]'
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToCacheArray(Of TSource, TResult)(source As IQueryable(Of TSource), predicate As Expression(Of Func(Of TSource, Boolean)), selector As Expression(Of Func(Of TSource, TResult)), function As IFunction, ParamArray keyParams As Object()) As TResult()
+  overload: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray*
+  nameWithType.vb: DistributedCacheExtensions.ToCacheArray(Of TSource, TResult)(IQueryable(Of TSource), Expression(Of Func(Of TSource, Boolean)), Expression(Of Func(Of TSource, TResult)), IFunction, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray(Of TSource, TResult)(System.Linq.IQueryable(Of TSource), System.Linq.Expressions.Expression(Of System.Func(Of TSource, System.Boolean)), System.Linq.Expressions.Expression(Of System.Func(Of TSource, TResult)), Hybrid.Authorization.Functions.IFunction, System.Object())
+  name.vb: ToCacheArray(Of TSource, TResult)(IQueryable(Of TSource), Expression(Of Func(Of TSource, Boolean)), Expression(Of Func(Of TSource, TResult)), IFunction, Object())
+- uid: Hybrid.Caching.DistributedCacheExtensions.ToCacheList``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.Object[])
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.ToCacheList``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.Object[])
+  id: ToCacheList``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.Object[])
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToCacheList<TSource, TResult>(IQueryable<TSource>, Expression<Func<TSource, TResult>>, Int32, Object[])
+  nameWithType: DistributedCacheExtensions.ToCacheList<TSource, TResult>(IQueryable<TSource>, Expression<Func<TSource, TResult>>, Int32, Object[])
+  fullName: Hybrid.Caching.DistributedCacheExtensions.ToCacheList<TSource, TResult>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, TResult>>, System.Int32, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToCacheList
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 368
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n将结果转换为缓存的列表，如缓存存在，直接返回，否则从数据源查询，并存入缓存中再返回\n"
+  example: []
+  syntax:
+    content: public static List<TResult> ToCacheList<TSource, TResult>(this IQueryable<TSource> source, Expression<Func<TSource, TResult>> selector, int cacheSeconds = 60, params object[] keyParams)
+    parameters:
+    - id: source
+      type: System.Linq.IQueryable{{TSource}}
+      description: 查询数据源
+    - id: selector
+      type: System.Linq.Expressions.Expression{System.Func{{TSource},{TResult}}}
+      description: 数据筛选表达式
+    - id: cacheSeconds
+      type: System.Int32
+      description: 缓存的秒数
+    - id: keyParams
+      type: System.Object[]
+      description: 缓存键参数
+    typeParameters:
+    - id: TSource
+      description: 源数据类型
+    - id: TResult
+      description: 结果集的项数据类型
+    return:
+      type: System.Collections.Generic.List{{TResult}}
+      description: 查询结果
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToCacheList(Of TSource, TResult)(source As IQueryable(Of TSource), selector As Expression(Of Func(Of TSource, TResult)), cacheSeconds As Integer = 60, ParamArray keyParams As Object()) As List(Of TResult)
+  overload: Hybrid.Caching.DistributedCacheExtensions.ToCacheList*
+  nameWithType.vb: DistributedCacheExtensions.ToCacheList(Of TSource, TResult)(IQueryable(Of TSource), Expression(Of Func(Of TSource, TResult)), Int32, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Caching.DistributedCacheExtensions.ToCacheList(Of TSource, TResult)(System.Linq.IQueryable(Of TSource), System.Linq.Expressions.Expression(Of System.Func(Of TSource, TResult)), System.Int32, System.Object())
+  name.vb: ToCacheList(Of TSource, TResult)(IQueryable(Of TSource), Expression(Of Func(Of TSource, TResult)), Int32, Object())
+- uid: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.Object[])
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.ToCacheArray``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.Object[])
+  id: ToCacheArray``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.Object[])
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToCacheArray<TSource, TResult>(IQueryable<TSource>, Expression<Func<TSource, TResult>>, Int32, Object[])
+  nameWithType: DistributedCacheExtensions.ToCacheArray<TSource, TResult>(IQueryable<TSource>, Expression<Func<TSource, TResult>>, Int32, Object[])
+  fullName: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray<TSource, TResult>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, TResult>>, System.Int32, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToCacheArray
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 388
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n将结果转换为缓存的数组，如缓存存在，直接返回，否则从数据源查询，并存入缓存中再返回\n"
+  example: []
+  syntax:
+    content: public static TResult[] ToCacheArray<TSource, TResult>(this IQueryable<TSource> source, Expression<Func<TSource, TResult>> selector, int cacheSeconds = 60, params object[] keyParams)
+    parameters:
+    - id: source
+      type: System.Linq.IQueryable{{TSource}}
+      description: 查询数据源
+    - id: selector
+      type: System.Linq.Expressions.Expression{System.Func{{TSource},{TResult}}}
+      description: 数据筛选表达式
+    - id: cacheSeconds
+      type: System.Int32
+      description: 缓存的秒数
+    - id: keyParams
+      type: System.Object[]
+      description: 缓存键参数
+    typeParameters:
+    - id: TSource
+      description: 源数据类型
+    - id: TResult
+      description: 结果集的项数据类型
+    return:
+      type: '{TResult}[]'
+      description: 查询结果
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToCacheArray(Of TSource, TResult)(source As IQueryable(Of TSource), selector As Expression(Of Func(Of TSource, TResult)), cacheSeconds As Integer = 60, ParamArray keyParams As Object()) As TResult()
+  overload: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray*
+  nameWithType.vb: DistributedCacheExtensions.ToCacheArray(Of TSource, TResult)(IQueryable(Of TSource), Expression(Of Func(Of TSource, TResult)), Int32, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray(Of TSource, TResult)(System.Linq.IQueryable(Of TSource), System.Linq.Expressions.Expression(Of System.Func(Of TSource, TResult)), System.Int32, System.Object())
+  name.vb: ToCacheArray(Of TSource, TResult)(IQueryable(Of TSource), Expression(Of Func(Of TSource, TResult)), Int32, Object())
+- uid: Hybrid.Caching.DistributedCacheExtensions.ToCacheList``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.ToCacheList``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  id: ToCacheList``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToCacheList<TSource, TResult>(IQueryable<TSource>, Expression<Func<TSource, TResult>>, IFunction, Object[])
+  nameWithType: DistributedCacheExtensions.ToCacheList<TSource, TResult>(IQueryable<TSource>, Expression<Func<TSource, TResult>>, IFunction, Object[])
+  fullName: Hybrid.Caching.DistributedCacheExtensions.ToCacheList<TSource, TResult>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, TResult>>, Hybrid.Authorization.Functions.IFunction, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToCacheList
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 408
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n将结果转换为缓存的列表，如缓存存在，直接返回，否则从数据源查询，并按指定缓存策略存入缓存中再返回\n"
+  example: []
+  syntax:
+    content: public static List<TResult> ToCacheList<TSource, TResult>(this IQueryable<TSource> source, Expression<Func<TSource, TResult>> selector, IFunction function, params object[] keyParams)
+    parameters:
+    - id: source
+      type: System.Linq.IQueryable{{TSource}}
+      description: 查询数据源
+    - id: selector
+      type: System.Linq.Expressions.Expression{System.Func{{TSource},{TResult}}}
+      description: 数据筛选表达式
+    - id: function
+      type: Hybrid.Authorization.Functions.IFunction
+      description: 缓存策略相关功能
+    - id: keyParams
+      type: System.Object[]
+      description: 缓存键参数
+    typeParameters:
+    - id: TSource
+      description: 源数据类型
+    - id: TResult
+      description: 结果集的项数据类型
+    return:
+      type: System.Collections.Generic.List{{TResult}}
+      description: 查询结果
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToCacheList(Of TSource, TResult)(source As IQueryable(Of TSource), selector As Expression(Of Func(Of TSource, TResult)), function As IFunction, ParamArray keyParams As Object()) As List(Of TResult)
+  overload: Hybrid.Caching.DistributedCacheExtensions.ToCacheList*
+  nameWithType.vb: DistributedCacheExtensions.ToCacheList(Of TSource, TResult)(IQueryable(Of TSource), Expression(Of Func(Of TSource, TResult)), IFunction, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Caching.DistributedCacheExtensions.ToCacheList(Of TSource, TResult)(System.Linq.IQueryable(Of TSource), System.Linq.Expressions.Expression(Of System.Func(Of TSource, TResult)), Hybrid.Authorization.Functions.IFunction, System.Object())
+  name.vb: ToCacheList(Of TSource, TResult)(IQueryable(Of TSource), Expression(Of Func(Of TSource, TResult)), IFunction, Object())
+- uid: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.ToCacheArray``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  id: ToCacheArray``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToCacheArray<TSource, TResult>(IQueryable<TSource>, Expression<Func<TSource, TResult>>, IFunction, Object[])
+  nameWithType: DistributedCacheExtensions.ToCacheArray<TSource, TResult>(IQueryable<TSource>, Expression<Func<TSource, TResult>>, IFunction, Object[])
+  fullName: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray<TSource, TResult>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, TResult>>, Hybrid.Authorization.Functions.IFunction, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToCacheArray
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 428
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n将结果转换为缓存的列表，如缓存存在，直接返回，否则从数据源查询，并按指定缓存策略存入缓存中再返回\n"
+  example: []
+  syntax:
+    content: public static TResult[] ToCacheArray<TSource, TResult>(this IQueryable<TSource> source, Expression<Func<TSource, TResult>> selector, IFunction function, params object[] keyParams)
+    parameters:
+    - id: source
+      type: System.Linq.IQueryable{{TSource}}
+      description: 查询数据源
+    - id: selector
+      type: System.Linq.Expressions.Expression{System.Func{{TSource},{TResult}}}
+      description: 数据筛选表达式
+    - id: function
+      type: Hybrid.Authorization.Functions.IFunction
+      description: 缓存策略相关功能
+    - id: keyParams
+      type: System.Object[]
+      description: 缓存键参数
+    typeParameters:
+    - id: TSource
+      description: 源数据类型
+    - id: TResult
+      description: 结果集的项数据类型
+    return:
+      type: '{TResult}[]'
+      description: 查询结果
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToCacheArray(Of TSource, TResult)(source As IQueryable(Of TSource), selector As Expression(Of Func(Of TSource, TResult)), function As IFunction, ParamArray keyParams As Object()) As TResult()
+  overload: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray*
+  nameWithType.vb: DistributedCacheExtensions.ToCacheArray(Of TSource, TResult)(IQueryable(Of TSource), Expression(Of Func(Of TSource, TResult)), IFunction, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray(Of TSource, TResult)(System.Linq.IQueryable(Of TSource), System.Linq.Expressions.Expression(Of System.Func(Of TSource, TResult)), Hybrid.Authorization.Functions.IFunction, System.Object())
+  name.vb: ToCacheArray(Of TSource, TResult)(IQueryable(Of TSource), Expression(Of Func(Of TSource, TResult)), IFunction, Object())
+- uid: Hybrid.Caching.DistributedCacheExtensions.ToCacheList``1(System.Linq.IQueryable{``0},System.Int32,System.Object[])
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.ToCacheList``1(System.Linq.IQueryable{``0},System.Int32,System.Object[])
+  id: ToCacheList``1(System.Linq.IQueryable{``0},System.Int32,System.Object[])
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToCacheList<TSource>(IQueryable<TSource>, Int32, Object[])
+  nameWithType: DistributedCacheExtensions.ToCacheList<TSource>(IQueryable<TSource>, Int32, Object[])
+  fullName: Hybrid.Caching.DistributedCacheExtensions.ToCacheList<TSource>(System.Linq.IQueryable<TSource>, System.Int32, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToCacheList
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 446
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n将结果转换为缓存的列表，如缓存存在，直接返回，否则从数据源查询，并存入缓存中再返回\n"
+  example: []
+  syntax:
+    content: public static List<TSource> ToCacheList<TSource>(this IQueryable<TSource> source, int cacheSeconds = 60, params object[] keyParams)
+    parameters:
+    - id: source
+      type: System.Linq.IQueryable{{TSource}}
+      description: 查询数据源
+    - id: cacheSeconds
+      type: System.Int32
+      description: 缓存的秒数
+    - id: keyParams
+      type: System.Object[]
+      description: 缓存键参数
+    typeParameters:
+    - id: TSource
+      description: 源数据类型
+    return:
+      type: System.Collections.Generic.List{{TSource}}
+      description: 查询结果
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToCacheList(Of TSource)(source As IQueryable(Of TSource), cacheSeconds As Integer = 60, ParamArray keyParams As Object()) As List(Of TSource)
+  overload: Hybrid.Caching.DistributedCacheExtensions.ToCacheList*
+  nameWithType.vb: DistributedCacheExtensions.ToCacheList(Of TSource)(IQueryable(Of TSource), Int32, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Caching.DistributedCacheExtensions.ToCacheList(Of TSource)(System.Linq.IQueryable(Of TSource), System.Int32, System.Object())
+  name.vb: ToCacheList(Of TSource)(IQueryable(Of TSource), Int32, Object())
+- uid: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray``1(System.Linq.IQueryable{``0},System.Int32,System.Object[])
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.ToCacheArray``1(System.Linq.IQueryable{``0},System.Int32,System.Object[])
+  id: ToCacheArray``1(System.Linq.IQueryable{``0},System.Int32,System.Object[])
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToCacheArray<TSource>(IQueryable<TSource>, Int32, Object[])
+  nameWithType: DistributedCacheExtensions.ToCacheArray<TSource>(IQueryable<TSource>, Int32, Object[])
+  fullName: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray<TSource>(System.Linq.IQueryable<TSource>, System.Int32, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToCacheArray
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 461
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n将结果转换为缓存的数组，如缓存存在，直接返回，否则从数据源查询，并存入缓存中再返回\n"
+  example: []
+  syntax:
+    content: public static TSource[] ToCacheArray<TSource>(this IQueryable<TSource> source, int cacheSeconds = 60, params object[] keyParams)
+    parameters:
+    - id: source
+      type: System.Linq.IQueryable{{TSource}}
+      description: 查询数据源
+    - id: cacheSeconds
+      type: System.Int32
+      description: 缓存的秒数
+    - id: keyParams
+      type: System.Object[]
+      description: 缓存键参数
+    typeParameters:
+    - id: TSource
+      description: 源数据类型
+    return:
+      type: '{TSource}[]'
+      description: 查询结果
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToCacheArray(Of TSource)(source As IQueryable(Of TSource), cacheSeconds As Integer = 60, ParamArray keyParams As Object()) As TSource()
+  overload: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray*
+  nameWithType.vb: DistributedCacheExtensions.ToCacheArray(Of TSource)(IQueryable(Of TSource), Int32, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray(Of TSource)(System.Linq.IQueryable(Of TSource), System.Int32, System.Object())
+  name.vb: ToCacheArray(Of TSource)(IQueryable(Of TSource), Int32, Object())
+- uid: Hybrid.Caching.DistributedCacheExtensions.ToCacheList``1(System.Linq.IQueryable{``0},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.ToCacheList``1(System.Linq.IQueryable{``0},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  id: ToCacheList``1(System.Linq.IQueryable{``0},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToCacheList<TSource>(IQueryable<TSource>, IFunction, Object[])
+  nameWithType: DistributedCacheExtensions.ToCacheList<TSource>(IQueryable<TSource>, IFunction, Object[])
+  fullName: Hybrid.Caching.DistributedCacheExtensions.ToCacheList<TSource>(System.Linq.IQueryable<TSource>, Hybrid.Authorization.Functions.IFunction, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToCacheList
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 476
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n将结果转换为缓存的列表，如缓存存在，直接返回，否则从数据源查询，并按指定缓存策略存入缓存中再返回\n"
+  example: []
+  syntax:
+    content: public static List<TSource> ToCacheList<TSource>(this IQueryable<TSource> source, IFunction function, params object[] keyParams)
+    parameters:
+    - id: source
+      type: System.Linq.IQueryable{{TSource}}
+      description: 查询数据源
+    - id: function
+      type: Hybrid.Authorization.Functions.IFunction
+      description: 缓存策略相关功能
+    - id: keyParams
+      type: System.Object[]
+      description: 缓存键参数
+    typeParameters:
+    - id: TSource
+      description: 源数据类型
+    return:
+      type: System.Collections.Generic.List{{TSource}}
+      description: 查询结果
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToCacheList(Of TSource)(source As IQueryable(Of TSource), function As IFunction, ParamArray keyParams As Object()) As List(Of TSource)
+  overload: Hybrid.Caching.DistributedCacheExtensions.ToCacheList*
+  nameWithType.vb: DistributedCacheExtensions.ToCacheList(Of TSource)(IQueryable(Of TSource), IFunction, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Caching.DistributedCacheExtensions.ToCacheList(Of TSource)(System.Linq.IQueryable(Of TSource), Hybrid.Authorization.Functions.IFunction, System.Object())
+  name.vb: ToCacheList(Of TSource)(IQueryable(Of TSource), IFunction, Object())
+- uid: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray``1(System.Linq.IQueryable{``0},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.ToCacheArray``1(System.Linq.IQueryable{``0},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  id: ToCacheArray``1(System.Linq.IQueryable{``0},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToCacheArray<TSource>(IQueryable<TSource>, IFunction, Object[])
+  nameWithType: DistributedCacheExtensions.ToCacheArray<TSource>(IQueryable<TSource>, IFunction, Object[])
+  fullName: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray<TSource>(System.Linq.IQueryable<TSource>, Hybrid.Authorization.Functions.IFunction, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToCacheArray
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 495
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n将结果转换为缓存的列表，如缓存存在，直接返回，否则从数据源查询，并按指定缓存策略存入缓存中再返回\n"
+  example: []
+  syntax:
+    content: public static TSource[] ToCacheArray<TSource>(this IQueryable<TSource> source, IFunction function, params object[] keyParams)
+    parameters:
+    - id: source
+      type: System.Linq.IQueryable{{TSource}}
+      description: 查询数据源
+    - id: function
+      type: Hybrid.Authorization.Functions.IFunction
+      description: 缓存策略相关功能
+    - id: keyParams
+      type: System.Object[]
+      description: 缓存键参数
+    typeParameters:
+    - id: TSource
+      description: 源数据类型
+    return:
+      type: '{TSource}[]'
+      description: 查询结果
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToCacheArray(Of TSource)(source As IQueryable(Of TSource), function As IFunction, ParamArray keyParams As Object()) As TSource()
+  overload: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray*
+  nameWithType.vb: DistributedCacheExtensions.ToCacheArray(Of TSource)(IQueryable(Of TSource), IFunction, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray(Of TSource)(System.Linq.IQueryable(Of TSource), Hybrid.Authorization.Functions.IFunction, System.Object())
+  name.vb: ToCacheArray(Of TSource)(IQueryable(Of TSource), IFunction, Object())
+- uid: Hybrid.Caching.DistributedCacheExtensions.ToPageCache``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},Hybrid.Filter.PageCondition,System.Int32,System.Object[])
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.ToPageCache``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},Hybrid.Filter.PageCondition,System.Int32,System.Object[])
+  id: ToPageCache``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},Hybrid.Filter.PageCondition,System.Int32,System.Object[])
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToPageCache<TEntity, TOutputDto>(IQueryable<TEntity>, Expression<Func<TEntity, Boolean>>, PageCondition, Int32, Object[])
+  nameWithType: DistributedCacheExtensions.ToPageCache<TEntity, TOutputDto>(IQueryable<TEntity>, Expression<Func<TEntity, Boolean>>, PageCondition, Int32, Object[])
+  fullName: Hybrid.Caching.DistributedCacheExtensions.ToPageCache<TEntity, TOutputDto>(System.Linq.IQueryable<TEntity>, System.Linq.Expressions.Expression<System.Func<TEntity, System.Boolean>>, Hybrid.Filter.PageCondition, System.Int32, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToPageCache
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 519
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n查询分页数据结果，如缓存存在，直接返回，否则从数据源查找分页结果，并存入缓存中再返回\n"
+  example: []
+  syntax:
+    content: >-
+      public static PageResult<TOutputDto> ToPageCache<TEntity, TOutputDto>(this IQueryable<TEntity> source, Expression<Func<TEntity, bool>> predicate, PageCondition pageCondition, int cacheSeconds = 60, params object[] keyParams)
+
+          where TOutputDto : IOutputDto
+    parameters:
+    - id: source
+      type: System.Linq.IQueryable{{TEntity}}
+      description: 要查询的数据集
+    - id: predicate
+      type: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}}
+      description: 查询条件谓语表达式
+    - id: pageCondition
+      type: Hybrid.Filter.PageCondition
+      description: 分页查询条件
+    - id: cacheSeconds
+      type: System.Int32
+      description: 缓存的秒数
+    - id: keyParams
+      type: System.Object[]
+      description: 缓存键参数
+    typeParameters:
+    - id: TEntity
+      description: 实体类型
+    - id: TOutputDto
+      description: 分页数据类型
+    return:
+      type: Hybrid.Filter.PageResult{{TOutputDto}}
+      description: 查询的分页结果
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToPageCache(Of TEntity, TOutputDto As IOutputDto)(source As IQueryable(Of TEntity), predicate As Expression(Of Func(Of TEntity, Boolean)), pageCondition As PageCondition, cacheSeconds As Integer = 60, ParamArray keyParams As Object()) As PageResult(Of TOutputDto)
+  overload: Hybrid.Caching.DistributedCacheExtensions.ToPageCache*
+  nameWithType.vb: DistributedCacheExtensions.ToPageCache(Of TEntity, TOutputDto)(IQueryable(Of TEntity), Expression(Of Func(Of TEntity, Boolean)), PageCondition, Int32, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Caching.DistributedCacheExtensions.ToPageCache(Of TEntity, TOutputDto)(System.Linq.IQueryable(Of TEntity), System.Linq.Expressions.Expression(Of System.Func(Of TEntity, System.Boolean)), Hybrid.Filter.PageCondition, System.Int32, System.Object())
+  name.vb: ToPageCache(Of TEntity, TOutputDto)(IQueryable(Of TEntity), Expression(Of Func(Of TEntity, Boolean)), PageCondition, Int32, Object())
+- uid: Hybrid.Caching.DistributedCacheExtensions.ToPageCache``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},Hybrid.Filter.PageCondition,Hybrid.Authorization.Functions.IFunction,System.Object[])
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.ToPageCache``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},Hybrid.Filter.PageCondition,Hybrid.Authorization.Functions.IFunction,System.Object[])
+  id: ToPageCache``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},Hybrid.Filter.PageCondition,Hybrid.Authorization.Functions.IFunction,System.Object[])
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToPageCache<TEntity, TOutputDto>(IQueryable<TEntity>, Expression<Func<TEntity, Boolean>>, PageCondition, IFunction, Object[])
+  nameWithType: DistributedCacheExtensions.ToPageCache<TEntity, TOutputDto>(IQueryable<TEntity>, Expression<Func<TEntity, Boolean>>, PageCondition, IFunction, Object[])
+  fullName: Hybrid.Caching.DistributedCacheExtensions.ToPageCache<TEntity, TOutputDto>(System.Linq.IQueryable<TEntity>, System.Linq.Expressions.Expression<System.Func<TEntity, System.Boolean>>, Hybrid.Filter.PageCondition, Hybrid.Authorization.Functions.IFunction, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToPageCache
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 541
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n查询分页数据结果，如缓存存在，直接返回，否则从数据源查找分页结果，并存入缓存中再返回\n"
+  example: []
+  syntax:
+    content: >-
+      public static PageResult<TOutputDto> ToPageCache<TEntity, TOutputDto>(this IQueryable<TEntity> source, Expression<Func<TEntity, bool>> predicate, PageCondition pageCondition, IFunction function, params object[] keyParams)
+
+          where TOutputDto : IOutputDto
+    parameters:
+    - id: source
+      type: System.Linq.IQueryable{{TEntity}}
+      description: 要查询的数据集
+    - id: predicate
+      type: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}}
+      description: 查询条件谓语表达式
+    - id: pageCondition
+      type: Hybrid.Filter.PageCondition
+      description: 分页查询条件
+    - id: function
+      type: Hybrid.Authorization.Functions.IFunction
+      description: 缓存策略相关功能
+    - id: keyParams
+      type: System.Object[]
+      description: 缓存键参数
+    typeParameters:
+    - id: TEntity
+      description: 实体类型
+    - id: TOutputDto
+      description: 分页数据类型
+    return:
+      type: Hybrid.Filter.PageResult{{TOutputDto}}
+      description: 查询的分页结果
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToPageCache(Of TEntity, TOutputDto As IOutputDto)(source As IQueryable(Of TEntity), predicate As Expression(Of Func(Of TEntity, Boolean)), pageCondition As PageCondition, function As IFunction, ParamArray keyParams As Object()) As PageResult(Of TOutputDto)
+  overload: Hybrid.Caching.DistributedCacheExtensions.ToPageCache*
+  nameWithType.vb: DistributedCacheExtensions.ToPageCache(Of TEntity, TOutputDto)(IQueryable(Of TEntity), Expression(Of Func(Of TEntity, Boolean)), PageCondition, IFunction, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Caching.DistributedCacheExtensions.ToPageCache(Of TEntity, TOutputDto)(System.Linq.IQueryable(Of TEntity), System.Linq.Expressions.Expression(Of System.Func(Of TEntity, System.Boolean)), Hybrid.Filter.PageCondition, Hybrid.Authorization.Functions.IFunction, System.Object())
+  name.vb: ToPageCache(Of TEntity, TOutputDto)(IQueryable(Of TEntity), Expression(Of Func(Of TEntity, Boolean)), PageCondition, IFunction, Object())
+- uid: Hybrid.Caching.DistributedCacheExtensions.ToCacheList``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Int32,System.Object[])
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.ToCacheList``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Int32,System.Object[])
+  id: ToCacheList``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Int32,System.Object[])
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToCacheList<TSource, TOutputDto>(IQueryable<TSource>, Expression<Func<TSource, Boolean>>, Int32, Object[])
+  nameWithType: DistributedCacheExtensions.ToCacheList<TSource, TOutputDto>(IQueryable<TSource>, Expression<Func<TSource, Boolean>>, Int32, Object[])
+  fullName: Hybrid.Caching.DistributedCacheExtensions.ToCacheList<TSource, TOutputDto>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, System.Boolean>>, System.Int32, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToCacheList
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 562
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n将结果转换为缓存的列表，如缓存存在，直接返回，否则从数据源查询，并存入缓存中再返回\n"
+  example: []
+  syntax:
+    content: public static List<TOutputDto> ToCacheList<TSource, TOutputDto>(this IQueryable<TSource> source, Expression<Func<TSource, bool>> predicate, int cacheSeconds = 60, params object[] keyParams)
+    parameters:
+    - id: source
+      type: System.Linq.IQueryable{{TSource}}
+      description: 数据源
+    - id: predicate
+      type: System.Linq.Expressions.Expression{System.Func{{TSource},System.Boolean}}
+      description: 数据查询表达式
+    - id: cacheSeconds
+      type: System.Int32
+      description: 缓存时间：秒
+    - id: keyParams
+      type: System.Object[]
+      description: 缓存键参数
+    typeParameters:
+    - id: TSource
+      description: 数据源的项数据类型
+    - id: TOutputDto
+      description: 结果集的项数据类型
+    return:
+      type: System.Collections.Generic.List{{TOutputDto}}
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToCacheList(Of TSource, TOutputDto)(source As IQueryable(Of TSource), predicate As Expression(Of Func(Of TSource, Boolean)), cacheSeconds As Integer = 60, ParamArray keyParams As Object()) As List(Of TOutputDto)
+  overload: Hybrid.Caching.DistributedCacheExtensions.ToCacheList*
+  nameWithType.vb: DistributedCacheExtensions.ToCacheList(Of TSource, TOutputDto)(IQueryable(Of TSource), Expression(Of Func(Of TSource, Boolean)), Int32, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Caching.DistributedCacheExtensions.ToCacheList(Of TSource, TOutputDto)(System.Linq.IQueryable(Of TSource), System.Linq.Expressions.Expression(Of System.Func(Of TSource, System.Boolean)), System.Int32, System.Object())
+  name.vb: ToCacheList(Of TSource, TOutputDto)(IQueryable(Of TSource), Expression(Of Func(Of TSource, Boolean)), Int32, Object())
+- uid: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Int32,System.Object[])
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.ToCacheArray``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Int32,System.Object[])
+  id: ToCacheArray``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Int32,System.Object[])
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToCacheArray<TSource, TOutputDto>(IQueryable<TSource>, Expression<Func<TSource, Boolean>>, Int32, Object[])
+  nameWithType: DistributedCacheExtensions.ToCacheArray<TSource, TOutputDto>(IQueryable<TSource>, Expression<Func<TSource, Boolean>>, Int32, Object[])
+  fullName: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray<TSource, TOutputDto>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, System.Boolean>>, System.Int32, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToCacheArray
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 580
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n将结果转换为缓存的数组，如缓存存在，直接返回，否则从数据源查询，并存入缓存中再返回\n"
+  example: []
+  syntax:
+    content: public static TOutputDto[] ToCacheArray<TSource, TOutputDto>(this IQueryable<TSource> source, Expression<Func<TSource, bool>> predicate, int cacheSeconds = 60, params object[] keyParams)
+    parameters:
+    - id: source
+      type: System.Linq.IQueryable{{TSource}}
+      description: 数据源
+    - id: predicate
+      type: System.Linq.Expressions.Expression{System.Func{{TSource},System.Boolean}}
+      description: 数据查询表达式
+    - id: cacheSeconds
+      type: System.Int32
+      description: 缓存时间：秒
+    - id: keyParams
+      type: System.Object[]
+      description: 缓存键参数
+    typeParameters:
+    - id: TSource
+      description: 数据源的项数据类型
+    - id: TOutputDto
+      description: 结果集的项数据类型
+    return:
+      type: '{TOutputDto}[]'
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToCacheArray(Of TSource, TOutputDto)(source As IQueryable(Of TSource), predicate As Expression(Of Func(Of TSource, Boolean)), cacheSeconds As Integer = 60, ParamArray keyParams As Object()) As TOutputDto()
+  overload: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray*
+  nameWithType.vb: DistributedCacheExtensions.ToCacheArray(Of TSource, TOutputDto)(IQueryable(Of TSource), Expression(Of Func(Of TSource, Boolean)), Int32, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray(Of TSource, TOutputDto)(System.Linq.IQueryable(Of TSource), System.Linq.Expressions.Expression(Of System.Func(Of TSource, System.Boolean)), System.Int32, System.Object())
+  name.vb: ToCacheArray(Of TSource, TOutputDto)(IQueryable(Of TSource), Expression(Of Func(Of TSource, Boolean)), Int32, Object())
+- uid: Hybrid.Caching.DistributedCacheExtensions.ToCacheList``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.ToCacheList``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  id: ToCacheList``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToCacheList<TSource, TOutputDto>(IQueryable<TSource>, Expression<Func<TSource, Boolean>>, IFunction, Object[])
+  nameWithType: DistributedCacheExtensions.ToCacheList<TSource, TOutputDto>(IQueryable<TSource>, Expression<Func<TSource, Boolean>>, IFunction, Object[])
+  fullName: Hybrid.Caching.DistributedCacheExtensions.ToCacheList<TSource, TOutputDto>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, System.Boolean>>, Hybrid.Authorization.Functions.IFunction, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToCacheList
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 598
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n将结果转换为缓存的列表，如缓存存在，直接返回，否则从数据源查询，并存入缓存中再返回\n"
+  example: []
+  syntax:
+    content: public static List<TOutputDto> ToCacheList<TSource, TOutputDto>(this IQueryable<TSource> source, Expression<Func<TSource, bool>> predicate, IFunction function, params object[] keyParams)
+    parameters:
+    - id: source
+      type: System.Linq.IQueryable{{TSource}}
+      description: 数据源
+    - id: predicate
+      type: System.Linq.Expressions.Expression{System.Func{{TSource},System.Boolean}}
+      description: 数据查询表达式
+    - id: function
+      type: Hybrid.Authorization.Functions.IFunction
+      description: 缓存策略相关功能
+    - id: keyParams
+      type: System.Object[]
+      description: 缓存键参数
+    typeParameters:
+    - id: TSource
+      description: 数据源的项数据类型
+    - id: TOutputDto
+      description: 结果集的项数据类型
+    return:
+      type: System.Collections.Generic.List{{TOutputDto}}
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToCacheList(Of TSource, TOutputDto)(source As IQueryable(Of TSource), predicate As Expression(Of Func(Of TSource, Boolean)), function As IFunction, ParamArray keyParams As Object()) As List(Of TOutputDto)
+  overload: Hybrid.Caching.DistributedCacheExtensions.ToCacheList*
+  nameWithType.vb: DistributedCacheExtensions.ToCacheList(Of TSource, TOutputDto)(IQueryable(Of TSource), Expression(Of Func(Of TSource, Boolean)), IFunction, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Caching.DistributedCacheExtensions.ToCacheList(Of TSource, TOutputDto)(System.Linq.IQueryable(Of TSource), System.Linq.Expressions.Expression(Of System.Func(Of TSource, System.Boolean)), Hybrid.Authorization.Functions.IFunction, System.Object())
+  name.vb: ToCacheList(Of TSource, TOutputDto)(IQueryable(Of TSource), Expression(Of Func(Of TSource, Boolean)), IFunction, Object())
+- uid: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.ToCacheArray``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  id: ToCacheArray``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToCacheArray<TSource, TOutputDto>(IQueryable<TSource>, Expression<Func<TSource, Boolean>>, IFunction, Object[])
+  nameWithType: DistributedCacheExtensions.ToCacheArray<TSource, TOutputDto>(IQueryable<TSource>, Expression<Func<TSource, Boolean>>, IFunction, Object[])
+  fullName: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray<TSource, TOutputDto>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, System.Boolean>>, Hybrid.Authorization.Functions.IFunction, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToCacheArray
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 616
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n将结果转换为缓存的数组，如缓存存在，直接返回，否则从数据源查询，并存入缓存中再返回\n"
+  example: []
+  syntax:
+    content: public static TOutputDto[] ToCacheArray<TSource, TOutputDto>(this IQueryable<TSource> source, Expression<Func<TSource, bool>> predicate, IFunction function, params object[] keyParams)
+    parameters:
+    - id: source
+      type: System.Linq.IQueryable{{TSource}}
+      description: 数据源
+    - id: predicate
+      type: System.Linq.Expressions.Expression{System.Func{{TSource},System.Boolean}}
+      description: 数据查询表达式
+    - id: function
+      type: Hybrid.Authorization.Functions.IFunction
+      description: 缓存策略相关功能
+    - id: keyParams
+      type: System.Object[]
+      description: 缓存键参数
+    typeParameters:
+    - id: TSource
+      description: 数据源的项数据类型
+    - id: TOutputDto
+      description: 结果集的项数据类型
+    return:
+      type: '{TOutputDto}[]'
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToCacheArray(Of TSource, TOutputDto)(source As IQueryable(Of TSource), predicate As Expression(Of Func(Of TSource, Boolean)), function As IFunction, ParamArray keyParams As Object()) As TOutputDto()
+  overload: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray*
+  nameWithType.vb: DistributedCacheExtensions.ToCacheArray(Of TSource, TOutputDto)(IQueryable(Of TSource), Expression(Of Func(Of TSource, Boolean)), IFunction, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray(Of TSource, TOutputDto)(System.Linq.IQueryable(Of TSource), System.Linq.Expressions.Expression(Of System.Func(Of TSource, System.Boolean)), Hybrid.Authorization.Functions.IFunction, System.Object())
+  name.vb: ToCacheArray(Of TSource, TOutputDto)(IQueryable(Of TSource), Expression(Of Func(Of TSource, Boolean)), IFunction, Object())
+- uid: Hybrid.Caching.DistributedCacheExtensions.ToCacheList``2(System.Linq.IQueryable{``0},System.Int32,System.Object[])
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.ToCacheList``2(System.Linq.IQueryable{``0},System.Int32,System.Object[])
+  id: ToCacheList``2(System.Linq.IQueryable{``0},System.Int32,System.Object[])
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToCacheList<TSource, TOutputDto>(IQueryable<TSource>, Int32, Object[])
+  nameWithType: DistributedCacheExtensions.ToCacheList<TSource, TOutputDto>(IQueryable<TSource>, Int32, Object[])
+  fullName: Hybrid.Caching.DistributedCacheExtensions.ToCacheList<TSource, TOutputDto>(System.Linq.IQueryable<TSource>, System.Int32, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToCacheList
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 633
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n将结果转换为缓存的列表，如缓存存在，直接返回，否则从数据源查询，并存入缓存中再返回\n"
+  example: []
+  syntax:
+    content: public static List<TOutputDto> ToCacheList<TSource, TOutputDto>(this IQueryable<TSource> source, int cacheSeconds = 60, params object[] keyParams)
+    parameters:
+    - id: source
+      type: System.Linq.IQueryable{{TSource}}
+      description: 查询数据源
+    - id: cacheSeconds
+      type: System.Int32
+      description: 缓存的秒数
+    - id: keyParams
+      type: System.Object[]
+      description: 缓存键参数
+    typeParameters:
+    - id: TSource
+      description: 源数据类型
+    - id: TOutputDto
+      description: 结果集的项数据类型
+    return:
+      type: System.Collections.Generic.List{{TOutputDto}}
+      description: 查询结果
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToCacheList(Of TSource, TOutputDto)(source As IQueryable(Of TSource), cacheSeconds As Integer = 60, ParamArray keyParams As Object()) As List(Of TOutputDto)
+  overload: Hybrid.Caching.DistributedCacheExtensions.ToCacheList*
+  nameWithType.vb: DistributedCacheExtensions.ToCacheList(Of TSource, TOutputDto)(IQueryable(Of TSource), Int32, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Caching.DistributedCacheExtensions.ToCacheList(Of TSource, TOutputDto)(System.Linq.IQueryable(Of TSource), System.Int32, System.Object())
+  name.vb: ToCacheList(Of TSource, TOutputDto)(IQueryable(Of TSource), Int32, Object())
+- uid: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray``2(System.Linq.IQueryable{``0},System.Int32,System.Object[])
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.ToCacheArray``2(System.Linq.IQueryable{``0},System.Int32,System.Object[])
+  id: ToCacheArray``2(System.Linq.IQueryable{``0},System.Int32,System.Object[])
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToCacheArray<TSource, TOutputDto>(IQueryable<TSource>, Int32, Object[])
+  nameWithType: DistributedCacheExtensions.ToCacheArray<TSource, TOutputDto>(IQueryable<TSource>, Int32, Object[])
+  fullName: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray<TSource, TOutputDto>(System.Linq.IQueryable<TSource>, System.Int32, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToCacheArray
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 651
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n将结果转换为缓存的数组，如缓存存在，直接返回，否则从数据源查询，并存入缓存中再返回\n"
+  example: []
+  syntax:
+    content: public static TOutputDto[] ToCacheArray<TSource, TOutputDto>(this IQueryable<TSource> source, int cacheSeconds = 60, params object[] keyParams)
+    parameters:
+    - id: source
+      type: System.Linq.IQueryable{{TSource}}
+      description: 查询数据源
+    - id: cacheSeconds
+      type: System.Int32
+      description: 缓存的秒数
+    - id: keyParams
+      type: System.Object[]
+      description: 缓存键参数
+    typeParameters:
+    - id: TSource
+      description: 源数据类型
+    - id: TOutputDto
+      description: 结果集的项数据类型
+    return:
+      type: '{TOutputDto}[]'
+      description: 查询结果
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToCacheArray(Of TSource, TOutputDto)(source As IQueryable(Of TSource), cacheSeconds As Integer = 60, ParamArray keyParams As Object()) As TOutputDto()
+  overload: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray*
+  nameWithType.vb: DistributedCacheExtensions.ToCacheArray(Of TSource, TOutputDto)(IQueryable(Of TSource), Int32, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray(Of TSource, TOutputDto)(System.Linq.IQueryable(Of TSource), System.Int32, System.Object())
+  name.vb: ToCacheArray(Of TSource, TOutputDto)(IQueryable(Of TSource), Int32, Object())
+- uid: Hybrid.Caching.DistributedCacheExtensions.ToCacheList``2(System.Linq.IQueryable{``0},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.ToCacheList``2(System.Linq.IQueryable{``0},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  id: ToCacheList``2(System.Linq.IQueryable{``0},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToCacheList<TSource, TOutputDto>(IQueryable<TSource>, IFunction, Object[])
+  nameWithType: DistributedCacheExtensions.ToCacheList<TSource, TOutputDto>(IQueryable<TSource>, IFunction, Object[])
+  fullName: Hybrid.Caching.DistributedCacheExtensions.ToCacheList<TSource, TOutputDto>(System.Linq.IQueryable<TSource>, Hybrid.Authorization.Functions.IFunction, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToCacheList
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 669
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n将结果转换为缓存的列表，如缓存存在，直接返回，否则从数据源查询，并按指定缓存策略存入缓存中再返回\n"
+  example: []
+  syntax:
+    content: public static List<TOutputDto> ToCacheList<TSource, TOutputDto>(this IQueryable<TSource> source, IFunction function, params object[] keyParams)
+    parameters:
+    - id: source
+      type: System.Linq.IQueryable{{TSource}}
+      description: 查询数据源
+    - id: function
+      type: Hybrid.Authorization.Functions.IFunction
+      description: 缓存策略相关功能
+    - id: keyParams
+      type: System.Object[]
+      description: 缓存键参数
+    typeParameters:
+    - id: TSource
+      description: 源数据类型
+    - id: TOutputDto
+      description: 结果集的项数据类型
+    return:
+      type: System.Collections.Generic.List{{TOutputDto}}
+      description: 查询结果
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToCacheList(Of TSource, TOutputDto)(source As IQueryable(Of TSource), function As IFunction, ParamArray keyParams As Object()) As List(Of TOutputDto)
+  overload: Hybrid.Caching.DistributedCacheExtensions.ToCacheList*
+  nameWithType.vb: DistributedCacheExtensions.ToCacheList(Of TSource, TOutputDto)(IQueryable(Of TSource), IFunction, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Caching.DistributedCacheExtensions.ToCacheList(Of TSource, TOutputDto)(System.Linq.IQueryable(Of TSource), Hybrid.Authorization.Functions.IFunction, System.Object())
+  name.vb: ToCacheList(Of TSource, TOutputDto)(IQueryable(Of TSource), IFunction, Object())
+- uid: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray``2(System.Linq.IQueryable{``0},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.ToCacheArray``2(System.Linq.IQueryable{``0},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  id: ToCacheArray``2(System.Linq.IQueryable{``0},Hybrid.Authorization.Functions.IFunction,System.Object[])
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToCacheArray<TSource, TOutputDto>(IQueryable<TSource>, IFunction, Object[])
+  nameWithType: DistributedCacheExtensions.ToCacheArray<TSource, TOutputDto>(IQueryable<TSource>, IFunction, Object[])
+  fullName: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray<TSource, TOutputDto>(System.Linq.IQueryable<TSource>, Hybrid.Authorization.Functions.IFunction, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToCacheArray
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 687
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n将结果转换为缓存的列表，如缓存存在，直接返回，否则从数据源查询，并按指定缓存策略存入缓存中再返回\n"
+  example: []
+  syntax:
+    content: public static TOutputDto[] ToCacheArray<TSource, TOutputDto>(this IQueryable<TSource> source, IFunction function, params object[] keyParams)
+    parameters:
+    - id: source
+      type: System.Linq.IQueryable{{TSource}}
+      description: 查询数据源
+    - id: function
+      type: Hybrid.Authorization.Functions.IFunction
+      description: 缓存策略相关功能
+    - id: keyParams
+      type: System.Object[]
+      description: 缓存键参数
+    typeParameters:
+    - id: TSource
+      description: 源数据类型
+    - id: TOutputDto
+      description: 结果集的项数据类型
+    return:
+      type: '{TOutputDto}[]'
+      description: 查询结果
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToCacheArray(Of TSource, TOutputDto)(source As IQueryable(Of TSource), function As IFunction, ParamArray keyParams As Object()) As TOutputDto()
+  overload: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray*
+  nameWithType.vb: DistributedCacheExtensions.ToCacheArray(Of TSource, TOutputDto)(IQueryable(Of TSource), IFunction, Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray(Of TSource, TOutputDto)(System.Linq.IQueryable(Of TSource), Hybrid.Authorization.Functions.IFunction, System.Object())
+  name.vb: ToCacheArray(Of TSource, TOutputDto)(IQueryable(Of TSource), IFunction, Object())
+- uid: Hybrid.Caching.DistributedCacheExtensions.ToCacheOptions(Hybrid.Authorization.Functions.IFunction)
+  commentId: M:Hybrid.Caching.DistributedCacheExtensions.ToCacheOptions(Hybrid.Authorization.Functions.IFunction)
+  id: ToCacheOptions(Hybrid.Authorization.Functions.IFunction)
+  isExtensionMethod: true
+  parent: Hybrid.Caching.DistributedCacheExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToCacheOptions(IFunction)
+  nameWithType: DistributedCacheExtensions.ToCacheOptions(IFunction)
+  fullName: Hybrid.Caching.DistributedCacheExtensions.ToCacheOptions(Hybrid.Authorization.Functions.IFunction)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Caching/DistributedCacheExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToCacheOptions
+    path: ../src/Hybrid/Caching/DistributedCacheExtensions.cs
+    startLine: 701
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Caching
+  summary: "\n将<xref href=\"Hybrid.Authorization.Functions.IFunction\" data-throw-if-not-resolved=\"false\"></xref>的缓存配置转换为<xref href=\"Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public static DistributedCacheEntryOptions ToCacheOptions(this IFunction function)
+    parameters:
+    - id: function
+      type: Hybrid.Authorization.Functions.IFunction
+    return:
+      type: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToCacheOptions(function As IFunction) As DistributedCacheEntryOptions
+  overload: Hybrid.Caching.DistributedCacheExtensions.ToCacheOptions*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+  commentId: T:Microsoft.Extensions.Caching.Distributed.IDistributedCache
+  parent: Microsoft.Extensions.Caching.Distributed
+  isExternal: true
+  name: IDistributedCache
+  nameWithType: IDistributedCache
+  fullName: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+- uid: Hybrid.Caching
+  commentId: N:Hybrid.Caching
+  name: Hybrid.Caching
+  nameWithType: Hybrid.Caching
+  fullName: Hybrid.Caching
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Extensions.Caching.Distributed
+  commentId: N:Microsoft.Extensions.Caching.Distributed
+  isExternal: true
+  name: Microsoft.Extensions.Caching.Distributed
+  nameWithType: Microsoft.Extensions.Caching.Distributed
+  fullName: Microsoft.Extensions.Caching.Distributed
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hybrid.Caching.DistributedCacheExtensions.Set*
+  commentId: Overload:Hybrid.Caching.DistributedCacheExtensions.Set
+  name: Set
+  nameWithType: DistributedCacheExtensions.Set
+  fullName: Hybrid.Caching.DistributedCacheExtensions.Set
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+  commentId: T:Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+  parent: Microsoft.Extensions.Caching.Distributed
+  isExternal: true
+  name: DistributedCacheEntryOptions
+  nameWithType: DistributedCacheEntryOptions
+  fullName: Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions
+- uid: Hybrid.Caching.DistributedCacheExtensions.SetAsync*
+  commentId: Overload:Hybrid.Caching.DistributedCacheExtensions.SetAsync
+  name: SetAsync
+  nameWithType: DistributedCacheExtensions.SetAsync
+  fullName: Hybrid.Caching.DistributedCacheExtensions.SetAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Hybrid.Authorization.Functions.IFunction
+  commentId: T:Hybrid.Authorization.Functions.IFunction
+  parent: Hybrid.Authorization.Functions
+  name: IFunction
+  nameWithType: IFunction
+  fullName: Hybrid.Authorization.Functions.IFunction
+- uid: Hybrid.Authorization.Functions
+  commentId: N:Hybrid.Authorization.Functions
+  name: Hybrid.Authorization.Functions
+  nameWithType: Hybrid.Authorization.Functions
+  fullName: Hybrid.Authorization.Functions
+- uid: Hybrid.Caching.DistributedCacheExtensions.Get*
+  commentId: Overload:Hybrid.Caching.DistributedCacheExtensions.Get
+  name: Get
+  nameWithType: DistributedCacheExtensions.Get
+  fullName: Hybrid.Caching.DistributedCacheExtensions.Get
+- uid: '{TResult}'
+  commentId: '!:TResult'
+  definition: TResult
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult
+- uid: TResult
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult
+- uid: Hybrid.Caching.DistributedCacheExtensions.GetAsync*
+  commentId: Overload:Hybrid.Caching.DistributedCacheExtensions.GetAsync
+  name: GetAsync
+  nameWithType: DistributedCacheExtensions.GetAsync
+  fullName: Hybrid.Caching.DistributedCacheExtensions.GetAsync
+- uid: System.Threading.Tasks.Task{{TResult}}
+  commentId: T:System.Threading.Tasks.Task{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func{{TResult}}
+  commentId: T:System.Func{``0}
+  parent: System
+  definition: System.Func`1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func{System.Threading.Tasks.Task{{TResult}}}
+  commentId: T:System.Func{System.Threading.Tasks.Task{``0}}
+  parent: System
+  definition: System.Func`1
+  name: Func<Task<TResult>>
+  nameWithType: Func<Task<TResult>>
+  fullName: System.Func<System.Threading.Tasks.Task<TResult>>
+  nameWithType.vb: Func(Of Task(Of TResult))
+  fullName.vb: System.Func(Of System.Threading.Tasks.Task(Of TResult))
+  name.vb: Func(Of Task(Of TResult))
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Caching.DistributedCacheExtensions.ToPageCache*
+  commentId: Overload:Hybrid.Caching.DistributedCacheExtensions.ToPageCache
+  name: ToPageCache
+  nameWithType: DistributedCacheExtensions.ToPageCache
+  fullName: Hybrid.Caching.DistributedCacheExtensions.ToPageCache
+- uid: System.Linq.IQueryable{{TEntity}}
+  commentId: T:System.Linq.IQueryable{``0}
+  parent: System.Linq
+  definition: System.Linq.IQueryable`1
+  name: IQueryable<TEntity>
+  nameWithType: IQueryable<TEntity>
+  fullName: System.Linq.IQueryable<TEntity>
+  nameWithType.vb: IQueryable(Of TEntity)
+  fullName.vb: System.Linq.IQueryable(Of TEntity)
+  name.vb: IQueryable(Of TEntity)
+  spec.csharp:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    nameWithType: IQueryable
+    fullName: System.Linq.IQueryable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    nameWithType: IQueryable
+    fullName: System.Linq.IQueryable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  name: Expression<Func<TEntity, Boolean>>
+  nameWithType: Expression<Func<TEntity, Boolean>>
+  fullName: System.Linq.Expressions.Expression<System.Func<TEntity, System.Boolean>>
+  nameWithType.vb: Expression(Of Func(Of TEntity, Boolean))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of TEntity, System.Boolean))
+  name.vb: Expression(Of Func(Of TEntity, Boolean))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Filter.PageCondition
+  commentId: T:Hybrid.Filter.PageCondition
+  parent: Hybrid.Filter
+  name: PageCondition
+  nameWithType: PageCondition
+  fullName: Hybrid.Filter.PageCondition
+- uid: System.Linq.Expressions.Expression{System.Func{{TEntity},{TResult}}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{``0,``1}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  name: Expression<Func<TEntity, TResult>>
+  nameWithType: Expression<Func<TEntity, TResult>>
+  fullName: System.Linq.Expressions.Expression<System.Func<TEntity, TResult>>
+  nameWithType.vb: Expression(Of Func(Of TEntity, TResult))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of TEntity, TResult))
+  name.vb: Expression(Of Func(Of TEntity, TResult))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Hybrid.Filter.PageResult{{TResult}}
+  commentId: T:Hybrid.Filter.PageResult{``1}
+  parent: Hybrid.Filter
+  definition: Hybrid.Filter.PageResult`1
+  name: PageResult<TResult>
+  nameWithType: PageResult<TResult>
+  fullName: Hybrid.Filter.PageResult<TResult>
+  nameWithType.vb: PageResult(Of TResult)
+  fullName.vb: Hybrid.Filter.PageResult(Of TResult)
+  name.vb: PageResult(Of TResult)
+  spec.csharp:
+  - uid: Hybrid.Filter.PageResult`1
+    name: PageResult
+    nameWithType: PageResult
+    fullName: Hybrid.Filter.PageResult
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Filter.PageResult`1
+    name: PageResult
+    nameWithType: PageResult
+    fullName: Hybrid.Filter.PageResult
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq.IQueryable`1
+  commentId: T:System.Linq.IQueryable`1
+  isExternal: true
+  name: IQueryable<T>
+  nameWithType: IQueryable<T>
+  fullName: System.Linq.IQueryable<T>
+  nameWithType.vb: IQueryable(Of T)
+  fullName.vb: System.Linq.IQueryable(Of T)
+  name.vb: IQueryable(Of T)
+  spec.csharp:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    nameWithType: IQueryable
+    fullName: System.Linq.IQueryable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    nameWithType: IQueryable
+    fullName: System.Linq.IQueryable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq
+  commentId: N:System.Linq
+  isExternal: true
+  name: System.Linq
+  nameWithType: System.Linq
+  fullName: System.Linq
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDelegate
+    nameWithType: TDelegate
+    fullName: TDelegate
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDelegate
+    nameWithType: TDelegate
+    fullName: TDelegate
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+- uid: Hybrid.Filter
+  commentId: N:Hybrid.Filter
+  name: Hybrid.Filter
+  nameWithType: Hybrid.Filter
+  fullName: Hybrid.Filter
+- uid: Hybrid.Filter.PageResult`1
+  commentId: T:Hybrid.Filter.PageResult`1
+  name: PageResult<T>
+  nameWithType: PageResult<T>
+  fullName: Hybrid.Filter.PageResult<T>
+  nameWithType.vb: PageResult(Of T)
+  fullName.vb: Hybrid.Filter.PageResult(Of T)
+  name.vb: PageResult(Of T)
+  spec.csharp:
+  - uid: Hybrid.Filter.PageResult`1
+    name: PageResult
+    nameWithType: PageResult
+    fullName: Hybrid.Filter.PageResult
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Filter.PageResult`1
+    name: PageResult
+    nameWithType: PageResult
+    fullName: Hybrid.Filter.PageResult
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Caching.DistributedCacheExtensions.ToCacheList*
+  commentId: Overload:Hybrid.Caching.DistributedCacheExtensions.ToCacheList
+  name: ToCacheList
+  nameWithType: DistributedCacheExtensions.ToCacheList
+  fullName: Hybrid.Caching.DistributedCacheExtensions.ToCacheList
+- uid: System.Linq.IQueryable{{TSource}}
+  commentId: T:System.Linq.IQueryable{``0}
+  parent: System.Linq
+  definition: System.Linq.IQueryable`1
+  name: IQueryable<TSource>
+  nameWithType: IQueryable<TSource>
+  fullName: System.Linq.IQueryable<TSource>
+  nameWithType.vb: IQueryable(Of TSource)
+  fullName.vb: System.Linq.IQueryable(Of TSource)
+  name.vb: IQueryable(Of TSource)
+  spec.csharp:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    nameWithType: IQueryable
+    fullName: System.Linq.IQueryable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    nameWithType: IQueryable
+    fullName: System.Linq.IQueryable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq.Expressions.Expression{System.Func{{TSource},System.Boolean}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  name: Expression<Func<TSource, Boolean>>
+  nameWithType: Expression<Func<TSource, Boolean>>
+  fullName: System.Linq.Expressions.Expression<System.Func<TSource, System.Boolean>>
+  nameWithType.vb: Expression(Of Func(Of TSource, Boolean))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of TSource, System.Boolean))
+  name.vb: Expression(Of Func(Of TSource, Boolean))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq.Expressions.Expression{System.Func{{TSource},{TResult}}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{``0,``1}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  name: Expression<Func<TSource, TResult>>
+  nameWithType: Expression<Func<TSource, TResult>>
+  fullName: System.Linq.Expressions.Expression<System.Func<TSource, TResult>>
+  nameWithType.vb: Expression(Of Func(Of TSource, TResult))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of TSource, TResult))
+  name.vb: Expression(Of Func(Of TSource, TResult))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List{{TResult}}
+  commentId: T:System.Collections.Generic.List{``1}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<TResult>
+  nameWithType: List<TResult>
+  fullName: System.Collections.Generic.List<TResult>
+  nameWithType.vb: List(Of TResult)
+  fullName.vb: System.Collections.Generic.List(Of TResult)
+  name.vb: List(Of TResult)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray*
+  commentId: Overload:Hybrid.Caching.DistributedCacheExtensions.ToCacheArray
+  name: ToCacheArray
+  nameWithType: DistributedCacheExtensions.ToCacheArray
+  fullName: Hybrid.Caching.DistributedCacheExtensions.ToCacheArray
+- uid: '{TResult}[]'
+  isExternal: true
+  name: TResult[]
+  nameWithType: TResult[]
+  fullName: TResult[]
+  nameWithType.vb: TResult()
+  fullName.vb: TResult()
+  name.vb: TResult()
+  spec.csharp:
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Collections.Generic.List{{TSource}}
+  commentId: T:System.Collections.Generic.List{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<TSource>
+  nameWithType: List<TSource>
+  fullName: System.Collections.Generic.List<TSource>
+  nameWithType.vb: List(Of TSource)
+  fullName.vb: System.Collections.Generic.List(Of TSource)
+  name.vb: List(Of TSource)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{TSource}[]'
+  isExternal: true
+  name: TSource[]
+  nameWithType: TSource[]
+  fullName: TSource[]
+  nameWithType.vb: TSource()
+  fullName.vb: TSource()
+  name.vb: TSource()
+  spec.csharp:
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Hybrid.Filter.PageResult{{TOutputDto}}
+  commentId: T:Hybrid.Filter.PageResult{``1}
+  parent: Hybrid.Filter
+  definition: Hybrid.Filter.PageResult`1
+  name: PageResult<TOutputDto>
+  nameWithType: PageResult<TOutputDto>
+  fullName: Hybrid.Filter.PageResult<TOutputDto>
+  nameWithType.vb: PageResult(Of TOutputDto)
+  fullName.vb: Hybrid.Filter.PageResult(Of TOutputDto)
+  name.vb: PageResult(Of TOutputDto)
+  spec.csharp:
+  - uid: Hybrid.Filter.PageResult`1
+    name: PageResult
+    nameWithType: PageResult
+    fullName: Hybrid.Filter.PageResult
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TOutputDto
+    nameWithType: TOutputDto
+    fullName: TOutputDto
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Filter.PageResult`1
+    name: PageResult
+    nameWithType: PageResult
+    fullName: Hybrid.Filter.PageResult
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TOutputDto
+    nameWithType: TOutputDto
+    fullName: TOutputDto
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List{{TOutputDto}}
+  commentId: T:System.Collections.Generic.List{``1}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<TOutputDto>
+  nameWithType: List<TOutputDto>
+  fullName: System.Collections.Generic.List<TOutputDto>
+  nameWithType.vb: List(Of TOutputDto)
+  fullName.vb: System.Collections.Generic.List(Of TOutputDto)
+  name.vb: List(Of TOutputDto)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TOutputDto
+    nameWithType: TOutputDto
+    fullName: TOutputDto
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TOutputDto
+    nameWithType: TOutputDto
+    fullName: TOutputDto
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{TOutputDto}[]'
+  isExternal: true
+  name: TOutputDto[]
+  nameWithType: TOutputDto[]
+  fullName: TOutputDto[]
+  nameWithType.vb: TOutputDto()
+  fullName.vb: TOutputDto()
+  name.vb: TOutputDto()
+  spec.csharp:
+  - name: TOutputDto
+    nameWithType: TOutputDto
+    fullName: TOutputDto
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: TOutputDto
+    nameWithType: TOutputDto
+    fullName: TOutputDto
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Hybrid.Caching.DistributedCacheExtensions.ToCacheOptions*
+  commentId: Overload:Hybrid.Caching.DistributedCacheExtensions.ToCacheOptions
+  name: ToCacheOptions
+  nameWithType: DistributedCacheExtensions.ToCacheOptions
+  fullName: Hybrid.Caching.DistributedCacheExtensions.ToCacheOptions

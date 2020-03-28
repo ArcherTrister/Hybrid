@@ -1,0 +1,1036 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Security.Claims.HybridClaimTypes
+  commentId: T:Hybrid.Security.Claims.HybridClaimTypes
+  id: HybridClaimTypes
+  parent: Hybrid.Security.Claims
+  children:
+  - Hybrid.Security.Claims.HybridClaimTypes.Actor
+  - Hybrid.Security.Claims.HybridClaimTypes.AvatarUrl
+  - Hybrid.Security.Claims.HybridClaimTypes.ClientId
+  - Hybrid.Security.Claims.HybridClaimTypes.Email
+  - Hybrid.Security.Claims.HybridClaimTypes.EmailVerified
+  - Hybrid.Security.Claims.HybridClaimTypes.Gender
+  - Hybrid.Security.Claims.HybridClaimTypes.IdCard
+  - Hybrid.Security.Claims.HybridClaimTypes.IdCardVerified
+  - Hybrid.Security.Claims.HybridClaimTypes.NickName
+  - Hybrid.Security.Claims.HybridClaimTypes.PhoneNumber
+  - Hybrid.Security.Claims.HybridClaimTypes.PhoneNumberVerified
+  - Hybrid.Security.Claims.HybridClaimTypes.PostalCode
+  - Hybrid.Security.Claims.HybridClaimTypes.Role
+  - Hybrid.Security.Claims.HybridClaimTypes.Subject
+  - Hybrid.Security.Claims.HybridClaimTypes.TenantId
+  - Hybrid.Security.Claims.HybridClaimTypes.TrueName
+  - Hybrid.Security.Claims.HybridClaimTypes.UserId
+  - Hybrid.Security.Claims.HybridClaimTypes.UserIdTypeName
+  - Hybrid.Security.Claims.HybridClaimTypes.UserName
+  langs:
+  - csharp
+  - vb
+  name: HybridClaimTypes
+  nameWithType: HybridClaimTypes
+  fullName: Hybrid.Security.Claims.HybridClaimTypes
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid/Security/Claims/HybridClaimTypes.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: HybridClaimTypes
+    path: ../src/Hybrid/Security/Claims/HybridClaimTypes.cs
+    startLine: 15
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security.Claims
+  summary: "\n自定义ClaimType\n<!-- JwtClaimTypes -->\n"
+  example: []
+  syntax:
+    content: public static class HybridClaimTypes
+    content.vb: Public Module HybridClaimTypes
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.Security.Claims.HybridClaimTypes.TenantId
+  commentId: F:Hybrid.Security.Claims.HybridClaimTypes.TenantId
+  id: TenantId
+  parent: Hybrid.Security.Claims.HybridClaimTypes
+  langs:
+  - csharp
+  - vb
+  name: TenantId
+  nameWithType: HybridClaimTypes.TenantId
+  fullName: Hybrid.Security.Claims.HybridClaimTypes.TenantId
+  type: Field
+  source:
+    remote:
+      path: src/Hybrid/Security/Claims/HybridClaimTypes.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: TenantId
+    path: ../src/Hybrid/Security/Claims/HybridClaimTypes.cs
+    startLine: 21
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security.Claims
+  summary: "\n租户Id\nDefault: TenantId\n"
+  example: []
+  syntax:
+    content: public const string TenantId = "tenantId"
+    return:
+      type: System.String
+    content.vb: Public Const TenantId As String = "tenantId"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hybrid.Security.Claims.HybridClaimTypes.UserId
+  commentId: F:Hybrid.Security.Claims.HybridClaimTypes.UserId
+  id: UserId
+  parent: Hybrid.Security.Claims.HybridClaimTypes
+  langs:
+  - csharp
+  - vb
+  name: UserId
+  nameWithType: HybridClaimTypes.UserId
+  fullName: Hybrid.Security.Claims.HybridClaimTypes.UserId
+  type: Field
+  source:
+    remote:
+      path: src/Hybrid/Security/Claims/HybridClaimTypes.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: UserId
+    path: ../src/Hybrid/Security/Claims/HybridClaimTypes.cs
+    startLine: 27
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security.Claims
+  summary: "\n用户Id\nDefault: id\n"
+  example: []
+  syntax:
+    content: public const string UserId = "id"
+    return:
+      type: System.String
+    content.vb: Public Const UserId As String = "id"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hybrid.Security.Claims.HybridClaimTypes.Subject
+  commentId: F:Hybrid.Security.Claims.HybridClaimTypes.Subject
+  id: Subject
+  parent: Hybrid.Security.Claims.HybridClaimTypes
+  langs:
+  - csharp
+  - vb
+  name: Subject
+  nameWithType: HybridClaimTypes.Subject
+  fullName: Hybrid.Security.Claims.HybridClaimTypes.Subject
+  type: Field
+  source:
+    remote:
+      path: src/Hybrid/Security/Claims/HybridClaimTypes.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Subject
+    path: ../src/Hybrid/Security/Claims/HybridClaimTypes.cs
+    startLine: 32
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security.Claims
+  summary: "\n用户Id\n"
+  example: []
+  syntax:
+    content: public const string Subject = "sub"
+    return:
+      type: System.String
+    content.vb: Public Const Subject As String = "sub"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hybrid.Security.Claims.HybridClaimTypes.UserName
+  commentId: F:Hybrid.Security.Claims.HybridClaimTypes.UserName
+  id: UserName
+  parent: Hybrid.Security.Claims.HybridClaimTypes
+  langs:
+  - csharp
+  - vb
+  name: UserName
+  nameWithType: HybridClaimTypes.UserName
+  fullName: Hybrid.Security.Claims.HybridClaimTypes.UserName
+  type: Field
+  source:
+    remote:
+      path: src/Hybrid/Security/Claims/HybridClaimTypes.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: UserName
+    path: ../src/Hybrid/Security/Claims/HybridClaimTypes.cs
+    startLine: 40
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security.Claims
+  summary: "\n用户名\nDefault: UserName\n"
+  example: []
+  syntax:
+    content: public const string UserName = "name"
+    return:
+      type: System.String
+    content.vb: Public Const UserName As String = "name"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hybrid.Security.Claims.HybridClaimTypes.Role
+  commentId: F:Hybrid.Security.Claims.HybridClaimTypes.Role
+  id: Role
+  parent: Hybrid.Security.Claims.HybridClaimTypes
+  langs:
+  - csharp
+  - vb
+  name: Role
+  nameWithType: HybridClaimTypes.Role
+  fullName: Hybrid.Security.Claims.HybridClaimTypes.Role
+  type: Field
+  source:
+    remote:
+      path: src/Hybrid/Security/Claims/HybridClaimTypes.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Role
+    path: ../src/Hybrid/Security/Claims/HybridClaimTypes.cs
+    startLine: 46
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security.Claims
+  summary: "\n角色\nDefault: Role\n"
+  example: []
+  syntax:
+    content: public const string Role = "role"
+    return:
+      type: System.String
+    content.vb: Public Const Role As String = "role"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hybrid.Security.Claims.HybridClaimTypes.Email
+  commentId: F:Hybrid.Security.Claims.HybridClaimTypes.Email
+  id: Email
+  parent: Hybrid.Security.Claims.HybridClaimTypes
+  langs:
+  - csharp
+  - vb
+  name: Email
+  nameWithType: HybridClaimTypes.Email
+  fullName: Hybrid.Security.Claims.HybridClaimTypes.Email
+  type: Field
+  source:
+    remote:
+      path: src/Hybrid/Security/Claims/HybridClaimTypes.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Email
+    path: ../src/Hybrid/Security/Claims/HybridClaimTypes.cs
+    startLine: 52
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security.Claims
+  summary: "\n电子邮件地址\nDefault: Email\n"
+  example: []
+  syntax:
+    content: public const string Email = "email"
+    return:
+      type: System.String
+    content.vb: Public Const Email As String = "email"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hybrid.Security.Claims.HybridClaimTypes.PhoneNumber
+  commentId: F:Hybrid.Security.Claims.HybridClaimTypes.PhoneNumber
+  id: PhoneNumber
+  parent: Hybrid.Security.Claims.HybridClaimTypes
+  langs:
+  - csharp
+  - vb
+  name: PhoneNumber
+  nameWithType: HybridClaimTypes.PhoneNumber
+  fullName: Hybrid.Security.Claims.HybridClaimTypes.PhoneNumber
+  type: Field
+  source:
+    remote:
+      path: src/Hybrid/Security/Claims/HybridClaimTypes.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: PhoneNumber
+    path: ../src/Hybrid/Security/Claims/HybridClaimTypes.cs
+    startLine: 58
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security.Claims
+  summary: "\n移动电话号码\nDefault: PhoneNumber\n"
+  example: []
+  syntax:
+    content: public const string PhoneNumber = "phone_number"
+    return:
+      type: System.String
+    content.vb: Public Const PhoneNumber As String = "phone_number"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hybrid.Security.Claims.HybridClaimTypes.Gender
+  commentId: F:Hybrid.Security.Claims.HybridClaimTypes.Gender
+  id: Gender
+  parent: Hybrid.Security.Claims.HybridClaimTypes
+  langs:
+  - csharp
+  - vb
+  name: Gender
+  nameWithType: HybridClaimTypes.Gender
+  fullName: Hybrid.Security.Claims.HybridClaimTypes.Gender
+  type: Field
+  source:
+    remote:
+      path: src/Hybrid/Security/Claims/HybridClaimTypes.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Gender
+    path: ../src/Hybrid/Security/Claims/HybridClaimTypes.cs
+    startLine: 64
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security.Claims
+  summary: "\n性别\nDefault: Gender\n"
+  example: []
+  syntax:
+    content: public const string Gender = "gender"
+    return:
+      type: System.String
+    content.vb: Public Const Gender As String = "gender"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hybrid.Security.Claims.HybridClaimTypes.PostalCode
+  commentId: F:Hybrid.Security.Claims.HybridClaimTypes.PostalCode
+  id: PostalCode
+  parent: Hybrid.Security.Claims.HybridClaimTypes
+  langs:
+  - csharp
+  - vb
+  name: PostalCode
+  nameWithType: HybridClaimTypes.PostalCode
+  fullName: Hybrid.Security.Claims.HybridClaimTypes.PostalCode
+  type: Field
+  source:
+    remote:
+      path: src/Hybrid/Security/Claims/HybridClaimTypes.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: PostalCode
+    path: ../src/Hybrid/Security/Claims/HybridClaimTypes.cs
+    startLine: 70
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security.Claims
+  summary: "\n邮政编码\nDefault: PostalCode\n"
+  example: []
+  syntax:
+    content: public const string PostalCode = "postal_code"
+    return:
+      type: System.String
+    content.vb: Public Const PostalCode As String = "postal_code"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hybrid.Security.Claims.HybridClaimTypes.NickName
+  commentId: F:Hybrid.Security.Claims.HybridClaimTypes.NickName
+  id: NickName
+  parent: Hybrid.Security.Claims.HybridClaimTypes
+  langs:
+  - csharp
+  - vb
+  name: NickName
+  nameWithType: HybridClaimTypes.NickName
+  fullName: Hybrid.Security.Claims.HybridClaimTypes.NickName
+  type: Field
+  source:
+    remote:
+      path: src/Hybrid/Security/Claims/HybridClaimTypes.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: NickName
+    path: ../src/Hybrid/Security/Claims/HybridClaimTypes.cs
+    startLine: 76
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security.Claims
+  summary: "\n昵称\nDefault: NickName\n"
+  example: []
+  syntax:
+    content: public const string NickName = "nick_name"
+    return:
+      type: System.String
+    content.vb: Public Const NickName As String = "nick_name"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hybrid.Security.Claims.HybridClaimTypes.AvatarUrl
+  commentId: F:Hybrid.Security.Claims.HybridClaimTypes.AvatarUrl
+  id: AvatarUrl
+  parent: Hybrid.Security.Claims.HybridClaimTypes
+  langs:
+  - csharp
+  - vb
+  name: AvatarUrl
+  nameWithType: HybridClaimTypes.AvatarUrl
+  fullName: Hybrid.Security.Claims.HybridClaimTypes.AvatarUrl
+  type: Field
+  source:
+    remote:
+      path: src/Hybrid/Security/Claims/HybridClaimTypes.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: AvatarUrl
+    path: ../src/Hybrid/Security/Claims/HybridClaimTypes.cs
+    startLine: 82
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security.Claims
+  summary: "\n头像Url\nDefault: AvatarUrl\n"
+  example: []
+  syntax:
+    content: public const string AvatarUrl = "AvatarUrl"
+    return:
+      type: System.String
+    content.vb: Public Const AvatarUrl As String = "AvatarUrl"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hybrid.Security.Claims.HybridClaimTypes.PhoneNumberVerified
+  commentId: F:Hybrid.Security.Claims.HybridClaimTypes.PhoneNumberVerified
+  id: PhoneNumberVerified
+  parent: Hybrid.Security.Claims.HybridClaimTypes
+  langs:
+  - csharp
+  - vb
+  name: PhoneNumberVerified
+  nameWithType: HybridClaimTypes.PhoneNumberVerified
+  fullName: Hybrid.Security.Claims.HybridClaimTypes.PhoneNumberVerified
+  type: Field
+  source:
+    remote:
+      path: src/Hybrid/Security/Claims/HybridClaimTypes.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: PhoneNumberVerified
+    path: ../src/Hybrid/Security/Claims/HybridClaimTypes.cs
+    startLine: 87
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security.Claims
+  summary: "\n手机验证\n"
+  example: []
+  syntax:
+    content: public const string PhoneNumberVerified = "phone_number_verified"
+    return:
+      type: System.String
+    content.vb: Public Const PhoneNumberVerified As String = "phone_number_verified"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hybrid.Security.Claims.HybridClaimTypes.EmailVerified
+  commentId: F:Hybrid.Security.Claims.HybridClaimTypes.EmailVerified
+  id: EmailVerified
+  parent: Hybrid.Security.Claims.HybridClaimTypes
+  langs:
+  - csharp
+  - vb
+  name: EmailVerified
+  nameWithType: HybridClaimTypes.EmailVerified
+  fullName: Hybrid.Security.Claims.HybridClaimTypes.EmailVerified
+  type: Field
+  source:
+    remote:
+      path: src/Hybrid/Security/Claims/HybridClaimTypes.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: EmailVerified
+    path: ../src/Hybrid/Security/Claims/HybridClaimTypes.cs
+    startLine: 92
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security.Claims
+  summary: "\n邮箱验证\n"
+  example: []
+  syntax:
+    content: public const string EmailVerified = "email_verified"
+    return:
+      type: System.String
+    content.vb: Public Const EmailVerified As String = "email_verified"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hybrid.Security.Claims.HybridClaimTypes.ClientId
+  commentId: F:Hybrid.Security.Claims.HybridClaimTypes.ClientId
+  id: ClientId
+  parent: Hybrid.Security.Claims.HybridClaimTypes
+  langs:
+  - csharp
+  - vb
+  name: ClientId
+  nameWithType: HybridClaimTypes.ClientId
+  fullName: Hybrid.Security.Claims.HybridClaimTypes.ClientId
+  type: Field
+  source:
+    remote:
+      path: src/Hybrid/Security/Claims/HybridClaimTypes.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ClientId
+    path: ../src/Hybrid/Security/Claims/HybridClaimTypes.cs
+    startLine: 97
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security.Claims
+  summary: "\n客户端Id\n"
+  example: []
+  syntax:
+    content: public const string ClientId = "client_id"
+    return:
+      type: System.String
+    content.vb: Public Const ClientId As String = "client_id"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hybrid.Security.Claims.HybridClaimTypes.UserIdTypeName
+  commentId: F:Hybrid.Security.Claims.HybridClaimTypes.UserIdTypeName
+  id: UserIdTypeName
+  parent: Hybrid.Security.Claims.HybridClaimTypes
+  langs:
+  - csharp
+  - vb
+  name: UserIdTypeName
+  nameWithType: HybridClaimTypes.UserIdTypeName
+  fullName: Hybrid.Security.Claims.HybridClaimTypes.UserIdTypeName
+  type: Field
+  source:
+    remote:
+      path: src/Hybrid/Security/Claims/HybridClaimTypes.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: UserIdTypeName
+    path: ../src/Hybrid/Security/Claims/HybridClaimTypes.cs
+    startLine: 102
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security.Claims
+  summary: "\n设置用户主键类型，用以在Repository进行审计时注入正确用户主键类型\n"
+  example: []
+  syntax:
+    content: public const string UserIdTypeName = "UserIdTypeName"
+    return:
+      type: System.String
+    content.vb: Public Const UserIdTypeName As String = "UserIdTypeName"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hybrid.Security.Claims.HybridClaimTypes.Actor
+  commentId: F:Hybrid.Security.Claims.HybridClaimTypes.Actor
+  id: Actor
+  parent: Hybrid.Security.Claims.HybridClaimTypes
+  langs:
+  - csharp
+  - vb
+  name: Actor
+  nameWithType: HybridClaimTypes.Actor
+  fullName: Hybrid.Security.Claims.HybridClaimTypes.Actor
+  type: Field
+  source:
+    remote:
+      path: src/Hybrid/Security/Claims/HybridClaimTypes.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Actor
+    path: ../src/Hybrid/Security/Claims/HybridClaimTypes.cs
+    startLine: 108
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security.Claims
+  summary: "\n参与者\nDefault: Actor\n"
+  example: []
+  syntax:
+    content: public const string Actor = "act"
+    return:
+      type: System.String
+    content.vb: Public Const Actor As String = "act"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hybrid.Security.Claims.HybridClaimTypes.TrueName
+  commentId: F:Hybrid.Security.Claims.HybridClaimTypes.TrueName
+  id: TrueName
+  parent: Hybrid.Security.Claims.HybridClaimTypes
+  langs:
+  - csharp
+  - vb
+  name: TrueName
+  nameWithType: HybridClaimTypes.TrueName
+  fullName: Hybrid.Security.Claims.HybridClaimTypes.TrueName
+  type: Field
+  source:
+    remote:
+      path: src/Hybrid/Security/Claims/HybridClaimTypes.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: TrueName
+    path: ../src/Hybrid/Security/Claims/HybridClaimTypes.cs
+    startLine: 114
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security.Claims
+  summary: "\n真实姓名\nDefault: TrueName\n"
+  example: []
+  syntax:
+    content: public const string TrueName = "TrueName"
+    return:
+      type: System.String
+    content.vb: Public Const TrueName As String = "TrueName"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hybrid.Security.Claims.HybridClaimTypes.IdCard
+  commentId: F:Hybrid.Security.Claims.HybridClaimTypes.IdCard
+  id: IdCard
+  parent: Hybrid.Security.Claims.HybridClaimTypes
+  langs:
+  - csharp
+  - vb
+  name: IdCard
+  nameWithType: HybridClaimTypes.IdCard
+  fullName: Hybrid.Security.Claims.HybridClaimTypes.IdCard
+  type: Field
+  source:
+    remote:
+      path: src/Hybrid/Security/Claims/HybridClaimTypes.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IdCard
+    path: ../src/Hybrid/Security/Claims/HybridClaimTypes.cs
+    startLine: 120
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security.Claims
+  summary: "\n身份证\nDefault: IdCard\n"
+  example: []
+  syntax:
+    content: public const string IdCard = "IdCard"
+    return:
+      type: System.String
+    content.vb: Public Const IdCard As String = "IdCard"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Hybrid.Security.Claims.HybridClaimTypes.IdCardVerified
+  commentId: F:Hybrid.Security.Claims.HybridClaimTypes.IdCardVerified
+  id: IdCardVerified
+  parent: Hybrid.Security.Claims.HybridClaimTypes
+  langs:
+  - csharp
+  - vb
+  name: IdCardVerified
+  nameWithType: HybridClaimTypes.IdCardVerified
+  fullName: Hybrid.Security.Claims.HybridClaimTypes.IdCardVerified
+  type: Field
+  source:
+    remote:
+      path: src/Hybrid/Security/Claims/HybridClaimTypes.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IdCardVerified
+    path: ../src/Hybrid/Security/Claims/HybridClaimTypes.cs
+    startLine: 126
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Security.Claims
+  summary: "\n身份证验证\nDefault: IdCardVerified\n"
+  example: []
+  syntax:
+    content: public const string IdCardVerified = "IdCardVerified"
+    return:
+      type: System.String
+    content.vb: Public Const IdCardVerified As String = "IdCardVerified"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Hybrid.Security.Claims
+  commentId: N:Hybrid.Security.Claims
+  name: Hybrid.Security.Claims
+  nameWithType: Hybrid.Security.Claims
+  fullName: Hybrid.Security.Claims
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

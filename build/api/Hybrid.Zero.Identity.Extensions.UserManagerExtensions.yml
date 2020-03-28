@@ -1,0 +1,940 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Zero.Identity.Extensions.UserManagerExtensions
+  commentId: T:Hybrid.Zero.Identity.Extensions.UserManagerExtensions
+  id: UserManagerExtensions
+  parent: Hybrid.Zero.Identity.Extensions
+  children:
+  - Hybrid.Zero.Identity.Extensions.UserManagerExtensions.GetRefreshToken``2(Microsoft.AspNetCore.Identity.UserManager{``0},``0,System.String)
+  - Hybrid.Zero.Identity.Extensions.UserManagerExtensions.GetRefreshToken``2(Microsoft.AspNetCore.Identity.UserManager{``0},System.String,System.String)
+  - Hybrid.Zero.Identity.Extensions.UserManagerExtensions.RemoveRefreshToken``2(Microsoft.AspNetCore.Identity.UserManager{``0},``0,System.String)
+  - Hybrid.Zero.Identity.Extensions.UserManagerExtensions.RemoveRefreshToken``2(Microsoft.AspNetCore.Identity.UserManager{``0},System.String,System.String)
+  - Hybrid.Zero.Identity.Extensions.UserManagerExtensions.SetRefreshToken``2(Microsoft.AspNetCore.Identity.UserManager{``0},``0,Hybrid.Identity.JwtBearer.RefreshToken)
+  - Hybrid.Zero.Identity.Extensions.UserManagerExtensions.SetRefreshToken``2(Microsoft.AspNetCore.Identity.UserManager{``0},System.String,Hybrid.Identity.JwtBearer.RefreshToken)
+  langs:
+  - csharp
+  - vb
+  name: UserManagerExtensions
+  nameWithType: UserManagerExtensions
+  fullName: Hybrid.Zero.Identity.Extensions.UserManagerExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid.Zero.Identity/Extensions/UserManagerExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: UserManagerExtensions
+    path: ../src/Hybrid.Zero.Identity/Extensions/UserManagerExtensions.cs
+    startLine: 24
+  assemblies:
+  - Hybrid.Zero.Identity
+  namespace: Hybrid.Zero.Identity.Extensions
+  summary: "\n<xref href=\"Microsoft.AspNetCore.Identity.UserManager%601\" data-throw-if-not-resolved=\"false\"></xref>扩展\n"
+  example: []
+  syntax:
+    content: public static class UserManagerExtensions
+    content.vb: Public Module UserManagerExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.Zero.Identity.Extensions.UserManagerExtensions.GetRefreshToken``2(Microsoft.AspNetCore.Identity.UserManager{``0},System.String,System.String)
+  commentId: M:Hybrid.Zero.Identity.Extensions.UserManagerExtensions.GetRefreshToken``2(Microsoft.AspNetCore.Identity.UserManager{``0},System.String,System.String)
+  id: GetRefreshToken``2(Microsoft.AspNetCore.Identity.UserManager{``0},System.String,System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Zero.Identity.Extensions.UserManagerExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetRefreshToken<TUser, TUserKey>(UserManager<TUser>, String, String)
+  nameWithType: UserManagerExtensions.GetRefreshToken<TUser, TUserKey>(UserManager<TUser>, String, String)
+  fullName: Hybrid.Zero.Identity.Extensions.UserManagerExtensions.GetRefreshToken<TUser, TUserKey>(Microsoft.AspNetCore.Identity.UserManager<TUser>, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.Zero.Identity/Extensions/UserManagerExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetRefreshToken
+    path: ../src/Hybrid.Zero.Identity/Extensions/UserManagerExtensions.cs
+    startLine: 29
+  assemblies:
+  - Hybrid.Zero.Identity
+  namespace: Hybrid.Zero.Identity.Extensions
+  summary: "\n获取RefreshToken\n"
+  example: []
+  syntax:
+    content: >-
+      public static Task<RefreshToken> GetRefreshToken<TUser, TUserKey>(this UserManager<TUser> userManager, string userId, string clientId)
+          where TUser : UserBase<TUserKey> where TUserKey : IEquatable<TUserKey>
+    parameters:
+    - id: userManager
+      type: Microsoft.AspNetCore.Identity.UserManager{{TUser}}
+    - id: userId
+      type: System.String
+    - id: clientId
+      type: System.String
+    typeParameters:
+    - id: TUser
+    - id: TUserKey
+    return:
+      type: System.Threading.Tasks.Task{Hybrid.Identity.JwtBearer.RefreshToken}
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetRefreshToken(Of TUser As UserBase(Of TUserKey), TUserKey As IEquatable(Of TUserKey))(userManager As UserManager(Of TUser), userId As String, clientId As String) As Task(Of RefreshToken)
+  overload: Hybrid.Zero.Identity.Extensions.UserManagerExtensions.GetRefreshToken*
+  nameWithType.vb: UserManagerExtensions.GetRefreshToken(Of TUser, TUserKey)(UserManager(Of TUser), String, String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Zero.Identity.Extensions.UserManagerExtensions.GetRefreshToken(Of TUser, TUserKey)(Microsoft.AspNetCore.Identity.UserManager(Of TUser), System.String, System.String)
+  name.vb: GetRefreshToken(Of TUser, TUserKey)(UserManager(Of TUser), String, String)
+- uid: Hybrid.Zero.Identity.Extensions.UserManagerExtensions.GetRefreshToken``2(Microsoft.AspNetCore.Identity.UserManager{``0},``0,System.String)
+  commentId: M:Hybrid.Zero.Identity.Extensions.UserManagerExtensions.GetRefreshToken``2(Microsoft.AspNetCore.Identity.UserManager{``0},``0,System.String)
+  id: GetRefreshToken``2(Microsoft.AspNetCore.Identity.UserManager{``0},``0,System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Zero.Identity.Extensions.UserManagerExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetRefreshToken<TUser, TUserKey>(UserManager<TUser>, TUser, String)
+  nameWithType: UserManagerExtensions.GetRefreshToken<TUser, TUserKey>(UserManager<TUser>, TUser, String)
+  fullName: Hybrid.Zero.Identity.Extensions.UserManagerExtensions.GetRefreshToken<TUser, TUserKey>(Microsoft.AspNetCore.Identity.UserManager<TUser>, TUser, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.Zero.Identity/Extensions/UserManagerExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetRefreshToken
+    path: ../src/Hybrid.Zero.Identity/Extensions/UserManagerExtensions.cs
+    startLine: 44
+  assemblies:
+  - Hybrid.Zero.Identity
+  namespace: Hybrid.Zero.Identity.Extensions
+  summary: "\n获取RefreshToken\n"
+  example: []
+  syntax:
+    content: >-
+      public static Task<RefreshToken> GetRefreshToken<TUser, TUserKey>(this UserManager<TUser> userManager, TUser user, string clientId)
+          where TUser : UserBase<TUserKey> where TUserKey : IEquatable<TUserKey>
+    parameters:
+    - id: userManager
+      type: Microsoft.AspNetCore.Identity.UserManager{{TUser}}
+    - id: user
+      type: '{TUser}'
+    - id: clientId
+      type: System.String
+    typeParameters:
+    - id: TUser
+    - id: TUserKey
+    return:
+      type: System.Threading.Tasks.Task{Hybrid.Identity.JwtBearer.RefreshToken}
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetRefreshToken(Of TUser As UserBase(Of TUserKey), TUserKey As IEquatable(Of TUserKey))(userManager As UserManager(Of TUser), user As TUser, clientId As String) As Task(Of RefreshToken)
+  overload: Hybrid.Zero.Identity.Extensions.UserManagerExtensions.GetRefreshToken*
+  nameWithType.vb: UserManagerExtensions.GetRefreshToken(Of TUser, TUserKey)(UserManager(Of TUser), TUser, String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Zero.Identity.Extensions.UserManagerExtensions.GetRefreshToken(Of TUser, TUserKey)(Microsoft.AspNetCore.Identity.UserManager(Of TUser), TUser, System.String)
+  name.vb: GetRefreshToken(Of TUser, TUserKey)(UserManager(Of TUser), TUser, String)
+- uid: Hybrid.Zero.Identity.Extensions.UserManagerExtensions.SetRefreshToken``2(Microsoft.AspNetCore.Identity.UserManager{``0},System.String,Hybrid.Identity.JwtBearer.RefreshToken)
+  commentId: M:Hybrid.Zero.Identity.Extensions.UserManagerExtensions.SetRefreshToken``2(Microsoft.AspNetCore.Identity.UserManager{``0},System.String,Hybrid.Identity.JwtBearer.RefreshToken)
+  id: SetRefreshToken``2(Microsoft.AspNetCore.Identity.UserManager{``0},System.String,Hybrid.Identity.JwtBearer.RefreshToken)
+  isExtensionMethod: true
+  parent: Hybrid.Zero.Identity.Extensions.UserManagerExtensions
+  langs:
+  - csharp
+  - vb
+  name: SetRefreshToken<TUser, TUserKey>(UserManager<TUser>, String, RefreshToken)
+  nameWithType: UserManagerExtensions.SetRefreshToken<TUser, TUserKey>(UserManager<TUser>, String, RefreshToken)
+  fullName: Hybrid.Zero.Identity.Extensions.UserManagerExtensions.SetRefreshToken<TUser, TUserKey>(Microsoft.AspNetCore.Identity.UserManager<TUser>, System.String, Hybrid.Identity.JwtBearer.RefreshToken)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.Zero.Identity/Extensions/UserManagerExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: SetRefreshToken
+    path: ../src/Hybrid.Zero.Identity/Extensions/UserManagerExtensions.cs
+    startLine: 61
+  assemblies:
+  - Hybrid.Zero.Identity
+  namespace: Hybrid.Zero.Identity.Extensions
+  summary: "\n设置RefreshToken\n"
+  example: []
+  syntax:
+    content: >-
+      public static Task<IdentityResult> SetRefreshToken<TUser, TUserKey>(this UserManager<TUser> userManager, string userId, RefreshToken token)
+          where TUser : UserBase<TUserKey> where TUserKey : IEquatable<TUserKey>
+    parameters:
+    - id: userManager
+      type: Microsoft.AspNetCore.Identity.UserManager{{TUser}}
+    - id: userId
+      type: System.String
+    - id: token
+      type: Hybrid.Identity.JwtBearer.RefreshToken
+    typeParameters:
+    - id: TUser
+    - id: TUserKey
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Identity.IdentityResult}
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function SetRefreshToken(Of TUser As UserBase(Of TUserKey), TUserKey As IEquatable(Of TUserKey))(userManager As UserManager(Of TUser), userId As String, token As RefreshToken) As Task(Of IdentityResult)
+  overload: Hybrid.Zero.Identity.Extensions.UserManagerExtensions.SetRefreshToken*
+  nameWithType.vb: UserManagerExtensions.SetRefreshToken(Of TUser, TUserKey)(UserManager(Of TUser), String, RefreshToken)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Zero.Identity.Extensions.UserManagerExtensions.SetRefreshToken(Of TUser, TUserKey)(Microsoft.AspNetCore.Identity.UserManager(Of TUser), System.String, Hybrid.Identity.JwtBearer.RefreshToken)
+  name.vb: SetRefreshToken(Of TUser, TUserKey)(UserManager(Of TUser), String, RefreshToken)
+- uid: Hybrid.Zero.Identity.Extensions.UserManagerExtensions.SetRefreshToken``2(Microsoft.AspNetCore.Identity.UserManager{``0},``0,Hybrid.Identity.JwtBearer.RefreshToken)
+  commentId: M:Hybrid.Zero.Identity.Extensions.UserManagerExtensions.SetRefreshToken``2(Microsoft.AspNetCore.Identity.UserManager{``0},``0,Hybrid.Identity.JwtBearer.RefreshToken)
+  id: SetRefreshToken``2(Microsoft.AspNetCore.Identity.UserManager{``0},``0,Hybrid.Identity.JwtBearer.RefreshToken)
+  isExtensionMethod: true
+  parent: Hybrid.Zero.Identity.Extensions.UserManagerExtensions
+  langs:
+  - csharp
+  - vb
+  name: SetRefreshToken<TUser, TUserKey>(UserManager<TUser>, TUser, RefreshToken)
+  nameWithType: UserManagerExtensions.SetRefreshToken<TUser, TUserKey>(UserManager<TUser>, TUser, RefreshToken)
+  fullName: Hybrid.Zero.Identity.Extensions.UserManagerExtensions.SetRefreshToken<TUser, TUserKey>(Microsoft.AspNetCore.Identity.UserManager<TUser>, TUser, Hybrid.Identity.JwtBearer.RefreshToken)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.Zero.Identity/Extensions/UserManagerExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: SetRefreshToken
+    path: ../src/Hybrid.Zero.Identity/Extensions/UserManagerExtensions.cs
+    startLine: 76
+  assemblies:
+  - Hybrid.Zero.Identity
+  namespace: Hybrid.Zero.Identity.Extensions
+  summary: "\n设置RefreshToken\n"
+  example: []
+  syntax:
+    content: >-
+      public static Task<IdentityResult> SetRefreshToken<TUser, TUserKey>(this UserManager<TUser> userManager, TUser user, RefreshToken token)
+          where TUser : UserBase<TUserKey> where TUserKey : IEquatable<TUserKey>
+    parameters:
+    - id: userManager
+      type: Microsoft.AspNetCore.Identity.UserManager{{TUser}}
+    - id: user
+      type: '{TUser}'
+    - id: token
+      type: Hybrid.Identity.JwtBearer.RefreshToken
+    typeParameters:
+    - id: TUser
+    - id: TUserKey
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Identity.IdentityResult}
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function SetRefreshToken(Of TUser As UserBase(Of TUserKey), TUserKey As IEquatable(Of TUserKey))(userManager As UserManager(Of TUser), user As TUser, token As RefreshToken) As Task(Of IdentityResult)
+  overload: Hybrid.Zero.Identity.Extensions.UserManagerExtensions.SetRefreshToken*
+  nameWithType.vb: UserManagerExtensions.SetRefreshToken(Of TUser, TUserKey)(UserManager(Of TUser), TUser, RefreshToken)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Zero.Identity.Extensions.UserManagerExtensions.SetRefreshToken(Of TUser, TUserKey)(Microsoft.AspNetCore.Identity.UserManager(Of TUser), TUser, Hybrid.Identity.JwtBearer.RefreshToken)
+  name.vb: SetRefreshToken(Of TUser, TUserKey)(UserManager(Of TUser), TUser, RefreshToken)
+- uid: Hybrid.Zero.Identity.Extensions.UserManagerExtensions.RemoveRefreshToken``2(Microsoft.AspNetCore.Identity.UserManager{``0},System.String,System.String)
+  commentId: M:Hybrid.Zero.Identity.Extensions.UserManagerExtensions.RemoveRefreshToken``2(Microsoft.AspNetCore.Identity.UserManager{``0},System.String,System.String)
+  id: RemoveRefreshToken``2(Microsoft.AspNetCore.Identity.UserManager{``0},System.String,System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Zero.Identity.Extensions.UserManagerExtensions
+  langs:
+  - csharp
+  - vb
+  name: RemoveRefreshToken<TUser, TUserKey>(UserManager<TUser>, String, String)
+  nameWithType: UserManagerExtensions.RemoveRefreshToken<TUser, TUserKey>(UserManager<TUser>, String, String)
+  fullName: Hybrid.Zero.Identity.Extensions.UserManagerExtensions.RemoveRefreshToken<TUser, TUserKey>(Microsoft.AspNetCore.Identity.UserManager<TUser>, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.Zero.Identity/Extensions/UserManagerExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: RemoveRefreshToken
+    path: ../src/Hybrid.Zero.Identity/Extensions/UserManagerExtensions.cs
+    startLine: 89
+  assemblies:
+  - Hybrid.Zero.Identity
+  namespace: Hybrid.Zero.Identity.Extensions
+  summary: "\n移除RefreshToken\n"
+  example: []
+  syntax:
+    content: >-
+      public static Task<IdentityResult> RemoveRefreshToken<TUser, TUserKey>(this UserManager<TUser> userManager, string userId, string clientId)
+          where TUser : UserBase<TUserKey> where TUserKey : IEquatable<TUserKey>
+    parameters:
+    - id: userManager
+      type: Microsoft.AspNetCore.Identity.UserManager{{TUser}}
+    - id: userId
+      type: System.String
+    - id: clientId
+      type: System.String
+    typeParameters:
+    - id: TUser
+    - id: TUserKey
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Identity.IdentityResult}
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function RemoveRefreshToken(Of TUser As UserBase(Of TUserKey), TUserKey As IEquatable(Of TUserKey))(userManager As UserManager(Of TUser), userId As String, clientId As String) As Task(Of IdentityResult)
+  overload: Hybrid.Zero.Identity.Extensions.UserManagerExtensions.RemoveRefreshToken*
+  nameWithType.vb: UserManagerExtensions.RemoveRefreshToken(Of TUser, TUserKey)(UserManager(Of TUser), String, String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Zero.Identity.Extensions.UserManagerExtensions.RemoveRefreshToken(Of TUser, TUserKey)(Microsoft.AspNetCore.Identity.UserManager(Of TUser), System.String, System.String)
+  name.vb: RemoveRefreshToken(Of TUser, TUserKey)(UserManager(Of TUser), String, String)
+- uid: Hybrid.Zero.Identity.Extensions.UserManagerExtensions.RemoveRefreshToken``2(Microsoft.AspNetCore.Identity.UserManager{``0},``0,System.String)
+  commentId: M:Hybrid.Zero.Identity.Extensions.UserManagerExtensions.RemoveRefreshToken``2(Microsoft.AspNetCore.Identity.UserManager{``0},``0,System.String)
+  id: RemoveRefreshToken``2(Microsoft.AspNetCore.Identity.UserManager{``0},``0,System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Zero.Identity.Extensions.UserManagerExtensions
+  langs:
+  - csharp
+  - vb
+  name: RemoveRefreshToken<TUser, TUserKey>(UserManager<TUser>, TUser, String)
+  nameWithType: UserManagerExtensions.RemoveRefreshToken<TUser, TUserKey>(UserManager<TUser>, TUser, String)
+  fullName: Hybrid.Zero.Identity.Extensions.UserManagerExtensions.RemoveRefreshToken<TUser, TUserKey>(Microsoft.AspNetCore.Identity.UserManager<TUser>, TUser, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.Zero.Identity/Extensions/UserManagerExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: RemoveRefreshToken
+    path: ../src/Hybrid.Zero.Identity/Extensions/UserManagerExtensions.cs
+    startLine: 104
+  assemblies:
+  - Hybrid.Zero.Identity
+  namespace: Hybrid.Zero.Identity.Extensions
+  summary: "\n移除RefreshToken\n"
+  example: []
+  syntax:
+    content: >-
+      public static Task<IdentityResult> RemoveRefreshToken<TUser, TUserKey>(this UserManager<TUser> userManager, TUser user, string clientId)
+          where TUser : UserBase<TUserKey> where TUserKey : IEquatable<TUserKey>
+    parameters:
+    - id: userManager
+      type: Microsoft.AspNetCore.Identity.UserManager{{TUser}}
+    - id: user
+      type: '{TUser}'
+    - id: clientId
+      type: System.String
+    typeParameters:
+    - id: TUser
+    - id: TUserKey
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Identity.IdentityResult}
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function RemoveRefreshToken(Of TUser As UserBase(Of TUserKey), TUserKey As IEquatable(Of TUserKey))(userManager As UserManager(Of TUser), user As TUser, clientId As String) As Task(Of IdentityResult)
+  overload: Hybrid.Zero.Identity.Extensions.UserManagerExtensions.RemoveRefreshToken*
+  nameWithType.vb: UserManagerExtensions.RemoveRefreshToken(Of TUser, TUserKey)(UserManager(Of TUser), TUser, String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Zero.Identity.Extensions.UserManagerExtensions.RemoveRefreshToken(Of TUser, TUserKey)(Microsoft.AspNetCore.Identity.UserManager(Of TUser), TUser, System.String)
+  name.vb: RemoveRefreshToken(Of TUser, TUserKey)(UserManager(Of TUser), TUser, String)
+references:
+- uid: Microsoft.AspNetCore.Identity.UserManager`1
+  commentId: T:Microsoft.AspNetCore.Identity.UserManager`1
+  isExternal: true
+  name: UserManager<TUser>
+  nameWithType: UserManager<TUser>
+  fullName: Microsoft.AspNetCore.Identity.UserManager<TUser>
+  nameWithType.vb: UserManager(Of TUser)
+  fullName.vb: Microsoft.AspNetCore.Identity.UserManager(Of TUser)
+  name.vb: UserManager(Of TUser)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.UserManager`1
+    name: UserManager
+    nameWithType: UserManager
+    fullName: Microsoft.AspNetCore.Identity.UserManager
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.UserManager`1
+    name: UserManager
+    nameWithType: UserManager
+    fullName: Microsoft.AspNetCore.Identity.UserManager
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Identity.Extensions
+  commentId: N:Hybrid.Zero.Identity.Extensions
+  name: Hybrid.Zero.Identity.Extensions
+  nameWithType: Hybrid.Zero.Identity.Extensions
+  fullName: Hybrid.Zero.Identity.Extensions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hybrid.Zero.Identity.Extensions.UserManagerExtensions.GetRefreshToken*
+  commentId: Overload:Hybrid.Zero.Identity.Extensions.UserManagerExtensions.GetRefreshToken
+  name: GetRefreshToken
+  nameWithType: UserManagerExtensions.GetRefreshToken
+  fullName: Hybrid.Zero.Identity.Extensions.UserManagerExtensions.GetRefreshToken
+- uid: Microsoft.AspNetCore.Identity.UserManager{{TUser}}
+  commentId: T:Microsoft.AspNetCore.Identity.UserManager{`0}
+  parent: Microsoft.AspNetCore.Identity
+  definition: Microsoft.AspNetCore.Identity.UserManager`1
+  name: UserManager<TUser>
+  nameWithType: UserManager<TUser>
+  fullName: Microsoft.AspNetCore.Identity.UserManager<TUser>
+  nameWithType.vb: UserManager(Of TUser)
+  fullName.vb: Microsoft.AspNetCore.Identity.UserManager(Of TUser)
+  name.vb: UserManager(Of TUser)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.UserManager`1
+    name: UserManager
+    nameWithType: UserManager
+    fullName: Microsoft.AspNetCore.Identity.UserManager
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.UserManager`1
+    name: UserManager
+    nameWithType: UserManager
+    fullName: Microsoft.AspNetCore.Identity.UserManager
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Threading.Tasks.Task{Hybrid.Identity.JwtBearer.RefreshToken}
+  commentId: T:System.Threading.Tasks.Task{Hybrid.Identity.JwtBearer.RefreshToken}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<RefreshToken>
+  nameWithType: Task<RefreshToken>
+  fullName: System.Threading.Tasks.Task<Hybrid.Identity.JwtBearer.RefreshToken>
+  nameWithType.vb: Task(Of RefreshToken)
+  fullName.vb: System.Threading.Tasks.Task(Of Hybrid.Identity.JwtBearer.RefreshToken)
+  name.vb: Task(Of RefreshToken)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Identity.JwtBearer.RefreshToken
+    name: RefreshToken
+    nameWithType: RefreshToken
+    fullName: Hybrid.Identity.JwtBearer.RefreshToken
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Identity.JwtBearer.RefreshToken
+    name: RefreshToken
+    nameWithType: RefreshToken
+    fullName: Hybrid.Identity.JwtBearer.RefreshToken
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity
+  commentId: N:Microsoft.AspNetCore.Identity
+  isExternal: true
+  name: Microsoft.AspNetCore.Identity
+  nameWithType: Microsoft.AspNetCore.Identity
+  fullName: Microsoft.AspNetCore.Identity
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: '{TUser}'
+  commentId: '!:TUser'
+  definition: TUser
+  name: TUser
+  nameWithType: TUser
+  fullName: TUser
+- uid: TUser
+  name: TUser
+  nameWithType: TUser
+  fullName: TUser
+- uid: Hybrid.Zero.Identity.Extensions.UserManagerExtensions.SetRefreshToken*
+  commentId: Overload:Hybrid.Zero.Identity.Extensions.UserManagerExtensions.SetRefreshToken
+  name: SetRefreshToken
+  nameWithType: UserManagerExtensions.SetRefreshToken
+  fullName: Hybrid.Zero.Identity.Extensions.UserManagerExtensions.SetRefreshToken
+- uid: Hybrid.Identity.JwtBearer.RefreshToken
+  commentId: T:Hybrid.Identity.JwtBearer.RefreshToken
+  parent: Hybrid.Identity.JwtBearer
+  name: RefreshToken
+  nameWithType: RefreshToken
+  fullName: Hybrid.Identity.JwtBearer.RefreshToken
+- uid: System.Threading.Tasks.Task{Microsoft.AspNetCore.Identity.IdentityResult}
+  commentId: T:System.Threading.Tasks.Task{Microsoft.AspNetCore.Identity.IdentityResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<IdentityResult>
+  nameWithType: Task<IdentityResult>
+  fullName: System.Threading.Tasks.Task<Microsoft.AspNetCore.Identity.IdentityResult>
+  nameWithType.vb: Task(Of IdentityResult)
+  fullName.vb: System.Threading.Tasks.Task(Of Microsoft.AspNetCore.Identity.IdentityResult)
+  name.vb: Task(Of IdentityResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.AspNetCore.Identity.IdentityResult
+    name: IdentityResult
+    nameWithType: IdentityResult
+    fullName: Microsoft.AspNetCore.Identity.IdentityResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.AspNetCore.Identity.IdentityResult
+    name: IdentityResult
+    nameWithType: IdentityResult
+    fullName: Microsoft.AspNetCore.Identity.IdentityResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Identity.JwtBearer
+  commentId: N:Hybrid.Identity.JwtBearer
+  name: Hybrid.Identity.JwtBearer
+  nameWithType: Hybrid.Identity.JwtBearer
+  fullName: Hybrid.Identity.JwtBearer
+- uid: Hybrid.Zero.Identity.Extensions.UserManagerExtensions.RemoveRefreshToken*
+  commentId: Overload:Hybrid.Zero.Identity.Extensions.UserManagerExtensions.RemoveRefreshToken
+  name: RemoveRefreshToken
+  nameWithType: UserManagerExtensions.RemoveRefreshToken
+  fullName: Hybrid.Zero.Identity.Extensions.UserManagerExtensions.RemoveRefreshToken

@@ -1,0 +1,251 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Filter
+  commentId: N:Hybrid.Filter
+  id: Hybrid.Filter
+  children:
+  - Hybrid.Filter.CheckExistsType
+  - Hybrid.Filter.CollectionPropertySorter`1
+  - Hybrid.Filter.FilterExtensions
+  - Hybrid.Filter.FilterGroup
+  - Hybrid.Filter.FilterHelper
+  - Hybrid.Filter.FilterOperate
+  - Hybrid.Filter.FilterRule
+  - Hybrid.Filter.FilterService
+  - Hybrid.Filter.IFilterService
+  - Hybrid.Filter.OperateCodeAttribute
+  - Hybrid.Filter.PageCondition
+  - Hybrid.Filter.PageData`1
+  - Hybrid.Filter.PageRequest
+  - Hybrid.Filter.PageResult`1
+  - Hybrid.Filter.SortCondition
+  - Hybrid.Filter.SortCondition`1
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Filter
+  nameWithType: Hybrid.Filter
+  fullName: Hybrid.Filter
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Filter.CheckExistsType
+  commentId: T:Hybrid.Filter.CheckExistsType
+  parent: Hybrid.Filter
+  name: CheckExistsType
+  nameWithType: CheckExistsType
+  fullName: Hybrid.Filter.CheckExistsType
+- uid: Hybrid.Filter.CollectionPropertySorter`1
+  commentId: T:Hybrid.Filter.CollectionPropertySorter`1
+  name: CollectionPropertySorter<T>
+  nameWithType: CollectionPropertySorter<T>
+  fullName: Hybrid.Filter.CollectionPropertySorter<T>
+  nameWithType.vb: CollectionPropertySorter(Of T)
+  fullName.vb: Hybrid.Filter.CollectionPropertySorter(Of T)
+  name.vb: CollectionPropertySorter(Of T)
+  spec.csharp:
+  - uid: Hybrid.Filter.CollectionPropertySorter`1
+    name: CollectionPropertySorter
+    nameWithType: CollectionPropertySorter
+    fullName: Hybrid.Filter.CollectionPropertySorter
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Filter.CollectionPropertySorter`1
+    name: CollectionPropertySorter
+    nameWithType: CollectionPropertySorter
+    fullName: Hybrid.Filter.CollectionPropertySorter
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Filter.FilterExtensions
+  commentId: T:Hybrid.Filter.FilterExtensions
+  parent: Hybrid.Filter
+  name: FilterExtensions
+  nameWithType: FilterExtensions
+  fullName: Hybrid.Filter.FilterExtensions
+- uid: Hybrid.Filter.FilterGroup
+  commentId: T:Hybrid.Filter.FilterGroup
+  parent: Hybrid.Filter
+  name: FilterGroup
+  nameWithType: FilterGroup
+  fullName: Hybrid.Filter.FilterGroup
+- uid: Hybrid.Filter.FilterHelper
+  commentId: T:Hybrid.Filter.FilterHelper
+  parent: Hybrid.Filter
+  name: FilterHelper
+  nameWithType: FilterHelper
+  fullName: Hybrid.Filter.FilterHelper
+- uid: Hybrid.Filter.FilterOperate
+  commentId: T:Hybrid.Filter.FilterOperate
+  parent: Hybrid.Filter
+  name: FilterOperate
+  nameWithType: FilterOperate
+  fullName: Hybrid.Filter.FilterOperate
+- uid: Hybrid.Filter.FilterRule
+  commentId: T:Hybrid.Filter.FilterRule
+  parent: Hybrid.Filter
+  name: FilterRule
+  nameWithType: FilterRule
+  fullName: Hybrid.Filter.FilterRule
+- uid: Hybrid.Filter.FilterService
+  commentId: T:Hybrid.Filter.FilterService
+  name: FilterService
+  nameWithType: FilterService
+  fullName: Hybrid.Filter.FilterService
+- uid: Hybrid.Filter.IFilterService
+  commentId: T:Hybrid.Filter.IFilterService
+  parent: Hybrid.Filter
+  name: IFilterService
+  nameWithType: IFilterService
+  fullName: Hybrid.Filter.IFilterService
+- uid: Hybrid.Filter.OperateCodeAttribute
+  commentId: T:Hybrid.Filter.OperateCodeAttribute
+  parent: Hybrid.Filter
+  name: OperateCodeAttribute
+  nameWithType: OperateCodeAttribute
+  fullName: Hybrid.Filter.OperateCodeAttribute
+- uid: Hybrid.Filter.PageCondition
+  commentId: T:Hybrid.Filter.PageCondition
+  parent: Hybrid.Filter
+  name: PageCondition
+  nameWithType: PageCondition
+  fullName: Hybrid.Filter.PageCondition
+- uid: Hybrid.Filter.PageData`1
+  commentId: T:Hybrid.Filter.PageData`1
+  name: PageData<T>
+  nameWithType: PageData<T>
+  fullName: Hybrid.Filter.PageData<T>
+  nameWithType.vb: PageData(Of T)
+  fullName.vb: Hybrid.Filter.PageData(Of T)
+  name.vb: PageData(Of T)
+  spec.csharp:
+  - uid: Hybrid.Filter.PageData`1
+    name: PageData
+    nameWithType: PageData
+    fullName: Hybrid.Filter.PageData
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Filter.PageData`1
+    name: PageData
+    nameWithType: PageData
+    fullName: Hybrid.Filter.PageData
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Filter.PageRequest
+  commentId: T:Hybrid.Filter.PageRequest
+  name: PageRequest
+  nameWithType: PageRequest
+  fullName: Hybrid.Filter.PageRequest
+- uid: Hybrid.Filter.PageResult`1
+  commentId: T:Hybrid.Filter.PageResult`1
+  name: PageResult<T>
+  nameWithType: PageResult<T>
+  fullName: Hybrid.Filter.PageResult<T>
+  nameWithType.vb: PageResult(Of T)
+  fullName.vb: Hybrid.Filter.PageResult(Of T)
+  name.vb: PageResult(Of T)
+  spec.csharp:
+  - uid: Hybrid.Filter.PageResult`1
+    name: PageResult
+    nameWithType: PageResult
+    fullName: Hybrid.Filter.PageResult
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Filter.PageResult`1
+    name: PageResult
+    nameWithType: PageResult
+    fullName: Hybrid.Filter.PageResult
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Filter.SortCondition
+  commentId: T:Hybrid.Filter.SortCondition
+  parent: Hybrid.Filter
+  name: SortCondition
+  nameWithType: SortCondition
+  fullName: Hybrid.Filter.SortCondition
+- uid: Hybrid.Filter.SortCondition`1
+  commentId: T:Hybrid.Filter.SortCondition`1
+  name: SortCondition<T>
+  nameWithType: SortCondition<T>
+  fullName: Hybrid.Filter.SortCondition<T>
+  nameWithType.vb: SortCondition(Of T)
+  fullName.vb: Hybrid.Filter.SortCondition(Of T)
+  name.vb: SortCondition(Of T)
+  spec.csharp:
+  - uid: Hybrid.Filter.SortCondition`1
+    name: SortCondition
+    nameWithType: SortCondition
+    fullName: Hybrid.Filter.SortCondition
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Filter.SortCondition`1
+    name: SortCondition
+    nameWithType: SortCondition
+    fullName: Hybrid.Filter.SortCondition
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Filter
+  commentId: N:Hybrid.Filter
+  name: Hybrid.Filter
+  nameWithType: Hybrid.Filter
+  fullName: Hybrid.Filter

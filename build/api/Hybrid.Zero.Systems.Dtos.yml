@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Zero.Systems.Dtos
+  commentId: N:Hybrid.Zero.Systems.Dtos
+  id: Hybrid.Zero.Systems.Dtos
+  children:
+  - Hybrid.Zero.Systems.Dtos.GenerateCodeInputDto
+  - Hybrid.Zero.Systems.Dtos.KeyValueOutputDto
+  - Hybrid.Zero.Systems.Dtos.ModuleOutputDto
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Zero.Systems.Dtos
+  nameWithType: Hybrid.Zero.Systems.Dtos
+  fullName: Hybrid.Zero.Systems.Dtos
+  type: Namespace
+  assemblies:
+  - Hybrid.Zero
+references:
+- uid: Hybrid.Zero.Systems.Dtos.GenerateCodeInputDto
+  commentId: T:Hybrid.Zero.Systems.Dtos.GenerateCodeInputDto
+  name: GenerateCodeInputDto
+  nameWithType: GenerateCodeInputDto
+  fullName: Hybrid.Zero.Systems.Dtos.GenerateCodeInputDto
+- uid: Hybrid.Zero.Systems.Dtos.KeyValueOutputDto
+  commentId: T:Hybrid.Zero.Systems.Dtos.KeyValueOutputDto
+  name: KeyValueOutputDto
+  nameWithType: KeyValueOutputDto
+  fullName: Hybrid.Zero.Systems.Dtos.KeyValueOutputDto
+- uid: Hybrid.Zero.Systems.Dtos.ModuleOutputDto
+  commentId: T:Hybrid.Zero.Systems.Dtos.ModuleOutputDto
+  name: ModuleOutputDto
+  nameWithType: ModuleOutputDto
+  fullName: Hybrid.Zero.Systems.Dtos.ModuleOutputDto

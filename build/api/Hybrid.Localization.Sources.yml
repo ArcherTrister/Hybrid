@@ -1,0 +1,48 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Localization.Sources
+  commentId: N:Hybrid.Localization.Sources
+  id: Hybrid.Localization.Sources
+  children:
+  - Hybrid.Localization.Sources.ILocalizationSource
+  - Hybrid.Localization.Sources.LocalizationSourceExtensionInfo
+  - Hybrid.Localization.Sources.LocalizationSourceExtensions
+  - Hybrid.Localization.Sources.NullLocalizationSource
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Localization.Sources
+  nameWithType: Hybrid.Localization.Sources
+  fullName: Hybrid.Localization.Sources
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Localization.Sources.ILocalizationSource
+  commentId: T:Hybrid.Localization.Sources.ILocalizationSource
+  parent: Hybrid.Localization.Sources
+  name: ILocalizationSource
+  nameWithType: ILocalizationSource
+  fullName: Hybrid.Localization.Sources.ILocalizationSource
+- uid: Hybrid.Localization.Sources.LocalizationSourceExtensionInfo
+  commentId: T:Hybrid.Localization.Sources.LocalizationSourceExtensionInfo
+  name: LocalizationSourceExtensionInfo
+  nameWithType: LocalizationSourceExtensionInfo
+  fullName: Hybrid.Localization.Sources.LocalizationSourceExtensionInfo
+- uid: Hybrid.Localization.Sources.LocalizationSourceExtensions
+  commentId: T:Hybrid.Localization.Sources.LocalizationSourceExtensions
+  parent: Hybrid.Localization.Sources
+  name: LocalizationSourceExtensions
+  nameWithType: LocalizationSourceExtensions
+  fullName: Hybrid.Localization.Sources.LocalizationSourceExtensions
+- uid: Hybrid.Localization.Sources.NullLocalizationSource
+  commentId: T:Hybrid.Localization.Sources.NullLocalizationSource
+  parent: Hybrid.Localization.Sources
+  name: NullLocalizationSource
+  nameWithType: NullLocalizationSource
+  fullName: Hybrid.Localization.Sources.NullLocalizationSource
+- uid: Hybrid.Localization.Sources
+  commentId: N:Hybrid.Localization.Sources
+  name: Hybrid.Localization.Sources
+  nameWithType: Hybrid.Localization.Sources
+  fullName: Hybrid.Localization.Sources

@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Aspects
+  commentId: N:Hybrid.Aspects
+  id: Hybrid.Aspects
+  children:
+  - Hybrid.Aspects.DisposeAction
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Aspects
+  nameWithType: Hybrid.Aspects
+  fullName: Hybrid.Aspects
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Aspects.DisposeAction
+  commentId: T:Hybrid.Aspects.DisposeAction
+  parent: Hybrid.Aspects
+  name: DisposeAction
+  nameWithType: DisposeAction
+  fullName: Hybrid.Aspects.DisposeAction
+- uid: Hybrid.Aspects
+  commentId: N:Hybrid.Aspects
+  name: Hybrid.Aspects
+  nameWithType: Hybrid.Aspects
+  fullName: Hybrid.Aspects

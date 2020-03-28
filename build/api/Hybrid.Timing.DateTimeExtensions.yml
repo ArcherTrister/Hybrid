@@ -1,0 +1,573 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Timing.DateTimeExtensions
+  commentId: T:Hybrid.Timing.DateTimeExtensions
+  id: DateTimeExtensions
+  parent: Hybrid.Timing
+  children:
+  - Hybrid.Timing.DateTimeExtensions.IsWeekday(System.DateTime)
+  - Hybrid.Timing.DateTimeExtensions.IsWeekend(System.DateTime)
+  - Hybrid.Timing.DateTimeExtensions.ToJsGetTime(System.DateTime,System.Boolean)
+  - Hybrid.Timing.DateTimeExtensions.ToUniqueString(System.DateTime,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: DateTimeExtensions
+  nameWithType: DateTimeExtensions
+  fullName: Hybrid.Timing.DateTimeExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid/Timing/DateTimeExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: DateTimeExtensions
+    path: ../src/Hybrid/Timing/DateTimeExtensions.cs
+    startLine: 17
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Timing
+  summary: "\n时间扩展操作类\n"
+  example: []
+  syntax:
+    content: public static class DateTimeExtensions
+    content.vb: Public Module DateTimeExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.Timing.DateTimeExtensions.IsWeekend(System.DateTime)
+  commentId: M:Hybrid.Timing.DateTimeExtensions.IsWeekend(System.DateTime)
+  id: IsWeekend(System.DateTime)
+  isExtensionMethod: true
+  parent: Hybrid.Timing.DateTimeExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsWeekend(DateTime)
+  nameWithType: DateTimeExtensions.IsWeekend(DateTime)
+  fullName: Hybrid.Timing.DateTimeExtensions.IsWeekend(System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Timing/DateTimeExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsWeekend
+    path: ../src/Hybrid/Timing/DateTimeExtensions.cs
+    startLine: 24
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Timing
+  summary: "\n当前时间是否周末\n"
+  example: []
+  syntax:
+    content: public static bool IsWeekend(this DateTime dateTime)
+    parameters:
+    - id: dateTime
+      type: System.DateTime
+      description: 时间点
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsWeekend(dateTime As Date) As Boolean
+  overload: Hybrid.Timing.DateTimeExtensions.IsWeekend*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Timing.DateTimeExtensions.IsWeekday(System.DateTime)
+  commentId: M:Hybrid.Timing.DateTimeExtensions.IsWeekday(System.DateTime)
+  id: IsWeekday(System.DateTime)
+  isExtensionMethod: true
+  parent: Hybrid.Timing.DateTimeExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsWeekday(DateTime)
+  nameWithType: DateTimeExtensions.IsWeekday(DateTime)
+  fullName: Hybrid.Timing.DateTimeExtensions.IsWeekday(System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Timing/DateTimeExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsWeekday
+    path: ../src/Hybrid/Timing/DateTimeExtensions.cs
+    startLine: 35
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Timing
+  summary: "\n当前时间是否工作日\n"
+  example: []
+  syntax:
+    content: public static bool IsWeekday(this DateTime dateTime)
+    parameters:
+    - id: dateTime
+      type: System.DateTime
+      description: 时间点
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsWeekday(dateTime As Date) As Boolean
+  overload: Hybrid.Timing.DateTimeExtensions.IsWeekday*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Timing.DateTimeExtensions.ToUniqueString(System.DateTime,System.Boolean)
+  commentId: M:Hybrid.Timing.DateTimeExtensions.ToUniqueString(System.DateTime,System.Boolean)
+  id: ToUniqueString(System.DateTime,System.Boolean)
+  isExtensionMethod: true
+  parent: Hybrid.Timing.DateTimeExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToUniqueString(DateTime, Boolean)
+  nameWithType: DateTimeExtensions.ToUniqueString(DateTime, Boolean)
+  fullName: Hybrid.Timing.DateTimeExtensions.ToUniqueString(System.DateTime, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Timing/DateTimeExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToUniqueString
+    path: ../src/Hybrid/Timing/DateTimeExtensions.cs
+    startLine: 47
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Timing
+  summary: "\n获取时间相对唯一字符串\n"
+  example: []
+  syntax:
+    content: public static string ToUniqueString(this DateTime dateTime, bool milsec = false)
+    parameters:
+    - id: dateTime
+      type: System.DateTime
+      description: ''
+    - id: milsec
+      type: System.Boolean
+      description: 是否使用毫秒
+    return:
+      type: System.String
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToUniqueString(dateTime As Date, milsec As Boolean = False) As String
+  overload: Hybrid.Timing.DateTimeExtensions.ToUniqueString*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Timing.DateTimeExtensions.ToJsGetTime(System.DateTime,System.Boolean)
+  commentId: M:Hybrid.Timing.DateTimeExtensions.ToJsGetTime(System.DateTime,System.Boolean)
+  id: ToJsGetTime(System.DateTime,System.Boolean)
+  isExtensionMethod: true
+  parent: Hybrid.Timing.DateTimeExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToJsGetTime(DateTime, Boolean)
+  nameWithType: DateTimeExtensions.ToJsGetTime(DateTime, Boolean)
+  fullName: Hybrid.Timing.DateTimeExtensions.ToJsGetTime(System.DateTime, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Timing/DateTimeExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToJsGetTime
+    path: ../src/Hybrid/Timing/DateTimeExtensions.cs
+    startLine: 57
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Timing
+  summary: "\n将时间转换为JS时间格式(Date.getTime())\n"
+  example: []
+  syntax:
+    content: public static string ToJsGetTime(this DateTime dateTime, bool milsec = true)
+    parameters:
+    - id: dateTime
+      type: System.DateTime
+    - id: milsec
+      type: System.Boolean
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToJsGetTime(dateTime As Date, milsec As Boolean = True) As String
+  overload: Hybrid.Timing.DateTimeExtensions.ToJsGetTime*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Hybrid.Timing
+  commentId: N:Hybrid.Timing
+  name: Hybrid.Timing
+  nameWithType: Hybrid.Timing
+  fullName: Hybrid.Timing
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hybrid.Timing.DateTimeExtensions.IsWeekend*
+  commentId: Overload:Hybrid.Timing.DateTimeExtensions.IsWeekend
+  name: IsWeekend
+  nameWithType: DateTimeExtensions.IsWeekend
+  fullName: Hybrid.Timing.DateTimeExtensions.IsWeekend
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Hybrid.Timing.DateTimeExtensions.IsWeekday*
+  commentId: Overload:Hybrid.Timing.DateTimeExtensions.IsWeekday
+  name: IsWeekday
+  nameWithType: DateTimeExtensions.IsWeekday
+  fullName: Hybrid.Timing.DateTimeExtensions.IsWeekday
+- uid: Hybrid.Timing.DateTimeExtensions.ToUniqueString*
+  commentId: Overload:Hybrid.Timing.DateTimeExtensions.ToUniqueString
+  name: ToUniqueString
+  nameWithType: DateTimeExtensions.ToUniqueString
+  fullName: Hybrid.Timing.DateTimeExtensions.ToUniqueString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Hybrid.Timing.DateTimeExtensions.ToJsGetTime*
+  commentId: Overload:Hybrid.Timing.DateTimeExtensions.ToJsGetTime
+  name: ToJsGetTime
+  nameWithType: DateTimeExtensions.ToJsGetTime
+  fullName: Hybrid.Timing.DateTimeExtensions.ToJsGetTime

@@ -1,0 +1,66 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Http
+  commentId: N:Hybrid.Http
+  id: Hybrid.Http
+  children:
+  - Hybrid.Http.ClientHttpCrypto
+  - Hybrid.Http.ClientHttpCryptoHandler
+  - Hybrid.Http.HttpExtensions
+  - Hybrid.Http.HttpHeaderNames
+  - Hybrid.Http.IClientHttpCrypto
+  - Hybrid.Http.JsonContent
+  - Hybrid.Http.TransmissionEncryptor
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Http
+  nameWithType: Hybrid.Http
+  fullName: Hybrid.Http
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Http.ClientHttpCrypto
+  commentId: T:Hybrid.Http.ClientHttpCrypto
+  name: ClientHttpCrypto
+  nameWithType: ClientHttpCrypto
+  fullName: Hybrid.Http.ClientHttpCrypto
+- uid: Hybrid.Http.ClientHttpCryptoHandler
+  commentId: T:Hybrid.Http.ClientHttpCryptoHandler
+  name: ClientHttpCryptoHandler
+  nameWithType: ClientHttpCryptoHandler
+  fullName: Hybrid.Http.ClientHttpCryptoHandler
+- uid: Hybrid.Http.HttpExtensions
+  commentId: T:Hybrid.Http.HttpExtensions
+  parent: Hybrid.Http
+  name: HttpExtensions
+  nameWithType: HttpExtensions
+  fullName: Hybrid.Http.HttpExtensions
+- uid: Hybrid.Http.HttpHeaderNames
+  commentId: T:Hybrid.Http.HttpHeaderNames
+  name: HttpHeaderNames
+  nameWithType: HttpHeaderNames
+  fullName: Hybrid.Http.HttpHeaderNames
+- uid: Hybrid.Http.IClientHttpCrypto
+  commentId: T:Hybrid.Http.IClientHttpCrypto
+  parent: Hybrid.Http
+  name: IClientHttpCrypto
+  nameWithType: IClientHttpCrypto
+  fullName: Hybrid.Http.IClientHttpCrypto
+- uid: Hybrid.Http.JsonContent
+  commentId: T:Hybrid.Http.JsonContent
+  parent: Hybrid.Http
+  name: JsonContent
+  nameWithType: JsonContent
+  fullName: Hybrid.Http.JsonContent
+- uid: Hybrid.Http.TransmissionEncryptor
+  commentId: T:Hybrid.Http.TransmissionEncryptor
+  name: TransmissionEncryptor
+  nameWithType: TransmissionEncryptor
+  fullName: Hybrid.Http.TransmissionEncryptor
+- uid: Hybrid.Http
+  commentId: N:Hybrid.Http
+  name: Hybrid.Http
+  nameWithType: Hybrid.Http
+  fullName: Hybrid.Http

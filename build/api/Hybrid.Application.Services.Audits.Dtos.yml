@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Application.Services.Audits.Dtos
+  commentId: N:Hybrid.Application.Services.Audits.Dtos
+  id: Hybrid.Application.Services.Audits.Dtos
+  children:
+  - Hybrid.Application.Services.Audits.Dtos.AuditEntityOutputDto
+  - Hybrid.Application.Services.Audits.Dtos.AuditOperationOutputDto
+  - Hybrid.Application.Services.Audits.Dtos.AuditPropertyOutputDto
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Application.Services.Audits.Dtos
+  nameWithType: Hybrid.Application.Services.Audits.Dtos
+  fullName: Hybrid.Application.Services.Audits.Dtos
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Application.Services.Audits.Dtos.AuditEntityOutputDto
+  commentId: T:Hybrid.Application.Services.Audits.Dtos.AuditEntityOutputDto
+  name: AuditEntityOutputDto
+  nameWithType: AuditEntityOutputDto
+  fullName: Hybrid.Application.Services.Audits.Dtos.AuditEntityOutputDto
+- uid: Hybrid.Application.Services.Audits.Dtos.AuditOperationOutputDto
+  commentId: T:Hybrid.Application.Services.Audits.Dtos.AuditOperationOutputDto
+  name: AuditOperationOutputDto
+  nameWithType: AuditOperationOutputDto
+  fullName: Hybrid.Application.Services.Audits.Dtos.AuditOperationOutputDto
+- uid: Hybrid.Application.Services.Audits.Dtos.AuditPropertyOutputDto
+  commentId: T:Hybrid.Application.Services.Audits.Dtos.AuditPropertyOutputDto
+  name: AuditPropertyOutputDto
+  nameWithType: AuditPropertyOutputDto
+  fullName: Hybrid.Application.Services.Audits.Dtos.AuditPropertyOutputDto

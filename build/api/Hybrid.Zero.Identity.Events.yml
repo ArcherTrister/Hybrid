@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Zero.Identity.Events
+  commentId: N:Hybrid.Zero.Identity.Events
+  id: Hybrid.Zero.Identity.Events
+  children:
+  - Hybrid.Zero.Identity.Events.OnlineUserCacheRemoveEventData
+  - Hybrid.Zero.Identity.Events.OnlineUserCacheRemoveEventHandler
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Zero.Identity.Events
+  nameWithType: Hybrid.Zero.Identity.Events
+  fullName: Hybrid.Zero.Identity.Events
+  type: Namespace
+  assemblies:
+  - Hybrid.Zero
+references:
+- uid: Hybrid.Zero.Identity.Events.OnlineUserCacheRemoveEventData
+  commentId: T:Hybrid.Zero.Identity.Events.OnlineUserCacheRemoveEventData
+  parent: Hybrid.Zero.Identity.Events
+  name: OnlineUserCacheRemoveEventData
+  nameWithType: OnlineUserCacheRemoveEventData
+  fullName: Hybrid.Zero.Identity.Events.OnlineUserCacheRemoveEventData
+- uid: Hybrid.Zero.Identity.Events.OnlineUserCacheRemoveEventHandler
+  commentId: T:Hybrid.Zero.Identity.Events.OnlineUserCacheRemoveEventHandler
+  name: OnlineUserCacheRemoveEventHandler
+  nameWithType: OnlineUserCacheRemoveEventHandler
+  fullName: Hybrid.Zero.Identity.Events.OnlineUserCacheRemoveEventHandler
+- uid: Hybrid.Zero.Identity.Events
+  commentId: N:Hybrid.Zero.Identity.Events
+  name: Hybrid.Zero.Identity.Events
+  nameWithType: Hybrid.Zero.Identity.Events
+  fullName: Hybrid.Zero.Identity.Events

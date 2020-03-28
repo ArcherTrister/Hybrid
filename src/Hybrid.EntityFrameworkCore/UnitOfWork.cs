@@ -8,6 +8,7 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.Core.Options;
+using Hybrid.Data;
 using Hybrid.Dependency;
 using Hybrid.Domain.Entities;
 using Hybrid.Domain.EntityFramework;
@@ -31,14 +32,13 @@ namespace Hybrid.EntityFrameworkCore
     /// <summary>
     /// 业务单元操作
     /// </summary>
-    public class UnitOfWork : IUnitOfWork
+    public class UnitOfWork : Disposable, IUnitOfWork
     {
         private readonly IServiceProvider _serviceProvider;
         private readonly List<DbContextBase> _dbContexts = new List<DbContextBase>();
         private DbTransaction _transaction;
         private DbConnection _connection;
         private HybridDbContextOptions _dbContextOptions;
-        private bool _disposed;
 
         /// <summary>
         /// 初始化一个<see cref="UnitOfWork"/>类型的新实例
@@ -243,20 +243,18 @@ namespace Hybrid.EntityFrameworkCore
             }
         }
 
-        /// <summary>释放对象.</summary>
-        public void Dispose()
+        protected override void Dispose(bool disposing)
         {
-            if (_disposed)
+            if (!Disposed)
             {
-                return;
-            }
-            _transaction?.Dispose();
-            foreach (DbContextBase context in _dbContexts)
-            {
-                context.Dispose();
+                _transaction?.Dispose();
+                foreach (DbContextBase context in _dbContexts)
+                {
+                    context.Dispose();
+                }
             }
 
-            _disposed = true;
+            base.Dispose(disposing);
         }
     }
 }

@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Quartz.SqlServer
+  commentId: N:Hybrid.Quartz.SqlServer
+  id: Hybrid.Quartz.SqlServer
+  children:
+  - Hybrid.Quartz.SqlServer.SqlServerObjectsInstaller
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Quartz.SqlServer
+  nameWithType: Hybrid.Quartz.SqlServer
+  fullName: Hybrid.Quartz.SqlServer
+  type: Namespace
+  assemblies:
+  - Hybrid.Quartz
+references:
+- uid: Hybrid.Quartz.SqlServer.SqlServerObjectsInstaller
+  commentId: T:Hybrid.Quartz.SqlServer.SqlServerObjectsInstaller
+  name: SqlServerObjectsInstaller
+  nameWithType: SqlServerObjectsInstaller
+  fullName: Hybrid.Quartz.SqlServer.SqlServerObjectsInstaller

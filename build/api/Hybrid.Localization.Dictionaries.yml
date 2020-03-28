@@ -1,0 +1,75 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Localization.Dictionaries
+  commentId: N:Hybrid.Localization.Dictionaries
+  id: Hybrid.Localization.Dictionaries
+  children:
+  - Hybrid.Localization.Dictionaries.DictionaryBasedLocalizationSource
+  - Hybrid.Localization.Dictionaries.IDictionaryBasedLocalizationSource
+  - Hybrid.Localization.Dictionaries.ILocalizationDictionary
+  - Hybrid.Localization.Dictionaries.ILocalizationDictionaryProvider
+  - Hybrid.Localization.Dictionaries.LocalizationDictionary
+  - Hybrid.Localization.Dictionaries.LocalizationDictionaryProviderBase
+  - Hybrid.Localization.Dictionaries.LocalizationFile
+  - Hybrid.Localization.Dictionaries.LocalizationFileType
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Localization.Dictionaries
+  nameWithType: Hybrid.Localization.Dictionaries
+  fullName: Hybrid.Localization.Dictionaries
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Localization.Dictionaries.DictionaryBasedLocalizationSource
+  commentId: T:Hybrid.Localization.Dictionaries.DictionaryBasedLocalizationSource
+  name: DictionaryBasedLocalizationSource
+  nameWithType: DictionaryBasedLocalizationSource
+  fullName: Hybrid.Localization.Dictionaries.DictionaryBasedLocalizationSource
+- uid: Hybrid.Localization.Dictionaries.IDictionaryBasedLocalizationSource
+  commentId: T:Hybrid.Localization.Dictionaries.IDictionaryBasedLocalizationSource
+  parent: Hybrid.Localization.Dictionaries
+  name: IDictionaryBasedLocalizationSource
+  nameWithType: IDictionaryBasedLocalizationSource
+  fullName: Hybrid.Localization.Dictionaries.IDictionaryBasedLocalizationSource
+- uid: Hybrid.Localization.Dictionaries.ILocalizationDictionary
+  commentId: T:Hybrid.Localization.Dictionaries.ILocalizationDictionary
+  parent: Hybrid.Localization.Dictionaries
+  name: ILocalizationDictionary
+  nameWithType: ILocalizationDictionary
+  fullName: Hybrid.Localization.Dictionaries.ILocalizationDictionary
+- uid: Hybrid.Localization.Dictionaries.ILocalizationDictionaryProvider
+  commentId: T:Hybrid.Localization.Dictionaries.ILocalizationDictionaryProvider
+  parent: Hybrid.Localization.Dictionaries
+  name: ILocalizationDictionaryProvider
+  nameWithType: ILocalizationDictionaryProvider
+  fullName: Hybrid.Localization.Dictionaries.ILocalizationDictionaryProvider
+- uid: Hybrid.Localization.Dictionaries.LocalizationDictionary
+  commentId: T:Hybrid.Localization.Dictionaries.LocalizationDictionary
+  parent: Hybrid.Localization.Dictionaries
+  name: LocalizationDictionary
+  nameWithType: LocalizationDictionary
+  fullName: Hybrid.Localization.Dictionaries.LocalizationDictionary
+- uid: Hybrid.Localization.Dictionaries.LocalizationDictionaryProviderBase
+  commentId: T:Hybrid.Localization.Dictionaries.LocalizationDictionaryProviderBase
+  parent: Hybrid.Localization.Dictionaries
+  name: LocalizationDictionaryProviderBase
+  nameWithType: LocalizationDictionaryProviderBase
+  fullName: Hybrid.Localization.Dictionaries.LocalizationDictionaryProviderBase
+- uid: Hybrid.Localization.Dictionaries.LocalizationFile
+  commentId: T:Hybrid.Localization.Dictionaries.LocalizationFile
+  name: LocalizationFile
+  nameWithType: LocalizationFile
+  fullName: Hybrid.Localization.Dictionaries.LocalizationFile
+- uid: Hybrid.Localization.Dictionaries.LocalizationFileType
+  commentId: T:Hybrid.Localization.Dictionaries.LocalizationFileType
+  parent: Hybrid.Localization.Dictionaries
+  name: LocalizationFileType
+  nameWithType: LocalizationFileType
+  fullName: Hybrid.Localization.Dictionaries.LocalizationFileType
+- uid: Hybrid.Localization.Dictionaries
+  commentId: N:Hybrid.Localization.Dictionaries
+  name: Hybrid.Localization.Dictionaries
+  nameWithType: Hybrid.Localization.Dictionaries
+  fullName: Hybrid.Localization.Dictionaries

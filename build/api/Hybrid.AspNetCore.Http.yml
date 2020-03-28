@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.AspNetCore.Http
+  commentId: N:Hybrid.AspNetCore.Http
+  id: Hybrid.AspNetCore.Http
+  children:
+  - Hybrid.AspNetCore.Http.HostHttpCrypto
+  - Hybrid.AspNetCore.Http.HttpExtensions
+  - Hybrid.AspNetCore.Http.IHostHttpCrypto
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.AspNetCore.Http
+  nameWithType: Hybrid.AspNetCore.Http
+  fullName: Hybrid.AspNetCore.Http
+  type: Namespace
+  assemblies:
+  - Hybrid.AspNetCore
+references:
+- uid: Hybrid.AspNetCore.Http.HostHttpCrypto
+  commentId: T:Hybrid.AspNetCore.Http.HostHttpCrypto
+  name: HostHttpCrypto
+  nameWithType: HostHttpCrypto
+  fullName: Hybrid.AspNetCore.Http.HostHttpCrypto
+- uid: Hybrid.AspNetCore.Http.HttpExtensions
+  commentId: T:Hybrid.AspNetCore.Http.HttpExtensions
+  name: HttpExtensions
+  nameWithType: HttpExtensions
+  fullName: Hybrid.AspNetCore.Http.HttpExtensions
+- uid: Hybrid.AspNetCore.Http.IHostHttpCrypto
+  commentId: T:Hybrid.AspNetCore.Http.IHostHttpCrypto
+  parent: Hybrid.AspNetCore.Http
+  name: IHostHttpCrypto
+  nameWithType: IHostHttpCrypto
+  fullName: Hybrid.AspNetCore.Http.IHostHttpCrypto
+- uid: Hybrid.AspNetCore.Http
+  commentId: N:Hybrid.AspNetCore.Http
+  name: Hybrid.AspNetCore.Http
+  nameWithType: Hybrid.AspNetCore.Http
+  fullName: Hybrid.AspNetCore.Http

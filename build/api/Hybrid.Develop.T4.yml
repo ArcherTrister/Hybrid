@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Develop.T4
+  commentId: N:Hybrid.Develop.T4
+  id: Hybrid.Develop.T4
+  children:
+  - Hybrid.Develop.T4.T4ModelInfo
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Develop.T4
+  nameWithType: Hybrid.Develop.T4
+  fullName: Hybrid.Develop.T4
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Develop.T4.T4ModelInfo
+  commentId: T:Hybrid.Develop.T4.T4ModelInfo
+  name: T4ModelInfo
+  nameWithType: T4ModelInfo
+  fullName: Hybrid.Develop.T4.T4ModelInfo

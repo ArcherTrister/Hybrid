@@ -1,0 +1,929 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Dependency.ServiceCollectionExtensions
+  commentId: T:Hybrid.Dependency.ServiceCollectionExtensions
+  id: ServiceCollectionExtensions
+  parent: Hybrid.Dependency
+  children:
+  - Hybrid.Dependency.ServiceCollectionExtensions.GetOrAdd(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.ServiceDescriptor)
+  - Hybrid.Dependency.ServiceCollectionExtensions.GetOrAddSingletonInstance``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{``0})
+  - Hybrid.Dependency.ServiceCollectionExtensions.GetOrAddTypeFinder``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{Hybrid.Reflection.IAllAssemblyFinder,``0})
+  - Hybrid.Dependency.ServiceCollectionExtensions.GetSingletonInstance``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  - Hybrid.Dependency.ServiceCollectionExtensions.GetSingletonInstanceOrNull``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  - Hybrid.Dependency.ServiceCollectionExtensions.GetValue``1(Hybrid.Dependency.ScopedDictionary,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+  fullName: Hybrid.Dependency.ServiceCollectionExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid/Dependency/ServiceCollectionExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ServiceCollectionExtensions
+    path: ../src/Hybrid/Dependency/ServiceCollectionExtensions.cs
+    startLine: 21
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Dependency
+  summary: "\n<xref href=\"Microsoft.Extensions.DependencyInjection.IServiceCollection\" data-throw-if-not-resolved=\"false\"></xref>扩展方法\n"
+  example: []
+  syntax:
+    content: public static class ServiceCollectionExtensions
+    content.vb: Public Module ServiceCollectionExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.Dependency.ServiceCollectionExtensions.GetOrAdd(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.ServiceDescriptor)
+  commentId: M:Hybrid.Dependency.ServiceCollectionExtensions.GetOrAdd(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.ServiceDescriptor)
+  id: GetOrAdd(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.ServiceDescriptor)
+  isExtensionMethod: true
+  parent: Hybrid.Dependency.ServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetOrAdd(IServiceCollection, ServiceDescriptor)
+  nameWithType: ServiceCollectionExtensions.GetOrAdd(IServiceCollection, ServiceDescriptor)
+  fullName: Hybrid.Dependency.ServiceCollectionExtensions.GetOrAdd(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.DependencyInjection.ServiceDescriptor)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Dependency/ServiceCollectionExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetOrAdd
+    path: ../src/Hybrid/Dependency/ServiceCollectionExtensions.cs
+    startLine: 26
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Dependency
+  summary: "\n如果指定服务不存在，添加指定服务\n"
+  example: []
+  syntax:
+    content: public static ServiceDescriptor GetOrAdd(this IServiceCollection services, ServiceDescriptor toAdDescriptor)
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    - id: toAdDescriptor
+      type: Microsoft.Extensions.DependencyInjection.ServiceDescriptor
+    return:
+      type: Microsoft.Extensions.DependencyInjection.ServiceDescriptor
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetOrAdd(services As IServiceCollection, toAdDescriptor As ServiceDescriptor) As ServiceDescriptor
+  overload: Hybrid.Dependency.ServiceCollectionExtensions.GetOrAdd*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Dependency.ServiceCollectionExtensions.GetOrAddTypeFinder``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{Hybrid.Reflection.IAllAssemblyFinder,``0})
+  commentId: M:Hybrid.Dependency.ServiceCollectionExtensions.GetOrAddTypeFinder``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{Hybrid.Reflection.IAllAssemblyFinder,``0})
+  id: GetOrAddTypeFinder``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{Hybrid.Reflection.IAllAssemblyFinder,``0})
+  isExtensionMethod: true
+  parent: Hybrid.Dependency.ServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetOrAddTypeFinder<TTypeFinder>(IServiceCollection, Func<IAllAssemblyFinder, TTypeFinder>)
+  nameWithType: ServiceCollectionExtensions.GetOrAddTypeFinder<TTypeFinder>(IServiceCollection, Func<IAllAssemblyFinder, TTypeFinder>)
+  fullName: Hybrid.Dependency.ServiceCollectionExtensions.GetOrAddTypeFinder<TTypeFinder>(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Func<Hybrid.Reflection.IAllAssemblyFinder, TTypeFinder>)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Dependency/ServiceCollectionExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetOrAddTypeFinder
+    path: ../src/Hybrid/Dependency/ServiceCollectionExtensions.cs
+    startLine: 41
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Dependency
+  summary: "\n获取或添加指定类型查找器\n"
+  example: []
+  syntax:
+    content: >-
+      public static TTypeFinder GetOrAddTypeFinder<TTypeFinder>(this IServiceCollection services, Func<IAllAssemblyFinder, TTypeFinder> factory)
+
+          where TTypeFinder : class
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    - id: factory
+      type: System.Func{Hybrid.Reflection.IAllAssemblyFinder,{TTypeFinder}}
+    typeParameters:
+    - id: TTypeFinder
+    return:
+      type: '{TTypeFinder}'
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetOrAddTypeFinder(Of TTypeFinder As Class)(services As IServiceCollection, factory As Func(Of IAllAssemblyFinder, TTypeFinder)) As TTypeFinder
+  overload: Hybrid.Dependency.ServiceCollectionExtensions.GetOrAddTypeFinder*
+  nameWithType.vb: ServiceCollectionExtensions.GetOrAddTypeFinder(Of TTypeFinder)(IServiceCollection, Func(Of IAllAssemblyFinder, TTypeFinder))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Dependency.ServiceCollectionExtensions.GetOrAddTypeFinder(Of TTypeFinder)(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Func(Of Hybrid.Reflection.IAllAssemblyFinder, TTypeFinder))
+  name.vb: GetOrAddTypeFinder(Of TTypeFinder)(IServiceCollection, Func(Of IAllAssemblyFinder, TTypeFinder))
+- uid: Hybrid.Dependency.ServiceCollectionExtensions.GetOrAddSingletonInstance``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{``0})
+  commentId: M:Hybrid.Dependency.ServiceCollectionExtensions.GetOrAddSingletonInstance``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{``0})
+  id: GetOrAddSingletonInstance``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{``0})
+  isExtensionMethod: true
+  parent: Hybrid.Dependency.ServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetOrAddSingletonInstance<TServiceType>(IServiceCollection, Func<TServiceType>)
+  nameWithType: ServiceCollectionExtensions.GetOrAddSingletonInstance<TServiceType>(IServiceCollection, Func<TServiceType>)
+  fullName: Hybrid.Dependency.ServiceCollectionExtensions.GetOrAddSingletonInstance<TServiceType>(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Func<TServiceType>)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Dependency/ServiceCollectionExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetOrAddSingletonInstance
+    path: ../src/Hybrid/Dependency/ServiceCollectionExtensions.cs
+    startLine: 55
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Dependency
+  summary: "\n如果指定服务不存在，创建实例并添加\n"
+  example: []
+  syntax:
+    content: >-
+      public static TServiceType GetOrAddSingletonInstance<TServiceType>(this IServiceCollection services, Func<TServiceType> factory)
+
+          where TServiceType : class
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    - id: factory
+      type: System.Func{{TServiceType}}
+    typeParameters:
+    - id: TServiceType
+    return:
+      type: '{TServiceType}'
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetOrAddSingletonInstance(Of TServiceType As Class)(services As IServiceCollection, factory As Func(Of TServiceType)) As TServiceType
+  overload: Hybrid.Dependency.ServiceCollectionExtensions.GetOrAddSingletonInstance*
+  nameWithType.vb: ServiceCollectionExtensions.GetOrAddSingletonInstance(Of TServiceType)(IServiceCollection, Func(Of TServiceType))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Dependency.ServiceCollectionExtensions.GetOrAddSingletonInstance(Of TServiceType)(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Func(Of TServiceType))
+  name.vb: GetOrAddSingletonInstance(Of TServiceType)(IServiceCollection, Func(Of TServiceType))
+- uid: Hybrid.Dependency.ServiceCollectionExtensions.GetSingletonInstanceOrNull``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  commentId: M:Hybrid.Dependency.ServiceCollectionExtensions.GetSingletonInstanceOrNull``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  id: GetSingletonInstanceOrNull``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  isExtensionMethod: true
+  parent: Hybrid.Dependency.ServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetSingletonInstanceOrNull<T>(IServiceCollection)
+  nameWithType: ServiceCollectionExtensions.GetSingletonInstanceOrNull<T>(IServiceCollection)
+  fullName: Hybrid.Dependency.ServiceCollectionExtensions.GetSingletonInstanceOrNull<T>(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Dependency/ServiceCollectionExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetSingletonInstanceOrNull
+    path: ../src/Hybrid/Dependency/ServiceCollectionExtensions.cs
+    startLine: 69
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Dependency
+  summary: "\n获取单例注册服务对象\n"
+  example: []
+  syntax:
+    content: public static T GetSingletonInstanceOrNull<T>(this IServiceCollection services)
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetSingletonInstanceOrNull(Of T)(services As IServiceCollection) As T
+  overload: Hybrid.Dependency.ServiceCollectionExtensions.GetSingletonInstanceOrNull*
+  nameWithType.vb: ServiceCollectionExtensions.GetSingletonInstanceOrNull(Of T)(IServiceCollection)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Dependency.ServiceCollectionExtensions.GetSingletonInstanceOrNull(Of T)(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name.vb: GetSingletonInstanceOrNull(Of T)(IServiceCollection)
+- uid: Hybrid.Dependency.ServiceCollectionExtensions.GetSingletonInstance``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  commentId: M:Hybrid.Dependency.ServiceCollectionExtensions.GetSingletonInstance``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  id: GetSingletonInstance``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  isExtensionMethod: true
+  parent: Hybrid.Dependency.ServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetSingletonInstance<T>(IServiceCollection)
+  nameWithType: ServiceCollectionExtensions.GetSingletonInstance<T>(IServiceCollection)
+  fullName: Hybrid.Dependency.ServiceCollectionExtensions.GetSingletonInstance<T>(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Dependency/ServiceCollectionExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetSingletonInstance
+    path: ../src/Hybrid/Dependency/ServiceCollectionExtensions.cs
+    startLine: 89
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Dependency
+  summary: "\n获取单例注册服务对象\n"
+  example: []
+  syntax:
+    content: public static T GetSingletonInstance<T>(this IServiceCollection services)
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetSingletonInstance(Of T)(services As IServiceCollection) As T
+  overload: Hybrid.Dependency.ServiceCollectionExtensions.GetSingletonInstance*
+  nameWithType.vb: ServiceCollectionExtensions.GetSingletonInstance(Of T)(IServiceCollection)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Dependency.ServiceCollectionExtensions.GetSingletonInstance(Of T)(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name.vb: GetSingletonInstance(Of T)(IServiceCollection)
+- uid: Hybrid.Dependency.ServiceCollectionExtensions.GetValue``1(Hybrid.Dependency.ScopedDictionary,System.String)
+  commentId: M:Hybrid.Dependency.ServiceCollectionExtensions.GetValue``1(Hybrid.Dependency.ScopedDictionary,System.String)
+  id: GetValue``1(Hybrid.Dependency.ScopedDictionary,System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Dependency.ServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetValue<T>(ScopedDictionary, String)
+  nameWithType: ServiceCollectionExtensions.GetValue<T>(ScopedDictionary, String)
+  fullName: Hybrid.Dependency.ServiceCollectionExtensions.GetValue<T>(Hybrid.Dependency.ScopedDictionary, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Dependency/ServiceCollectionExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetValue
+    path: ../src/Hybrid/Dependency/ServiceCollectionExtensions.cs
+    startLine: 103
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Dependency
+  summary: "\n从Scoped字典中获取指定类型的值\n"
+  example: []
+  syntax:
+    content: >-
+      public static T GetValue<T>(this ScopedDictionary dict, string key)
+
+          where T : class
+    parameters:
+    - id: dict
+      type: Hybrid.Dependency.ScopedDictionary
+    - id: key
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetValue(Of T As Class)(dict As ScopedDictionary, key As String) As T
+  overload: Hybrid.Dependency.ServiceCollectionExtensions.GetValue*
+  nameWithType.vb: ServiceCollectionExtensions.GetValue(Of T)(ScopedDictionary, String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Dependency.ServiceCollectionExtensions.GetValue(Of T)(Hybrid.Dependency.ScopedDictionary, System.String)
+  name.vb: GetValue(Of T)(ScopedDictionary, String)
+references:
+- uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+- uid: Hybrid.Dependency
+  commentId: N:Hybrid.Dependency
+  name: Hybrid.Dependency
+  nameWithType: Hybrid.Dependency
+  fullName: Hybrid.Dependency
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hybrid.Dependency.ServiceCollectionExtensions.GetOrAdd*
+  commentId: Overload:Hybrid.Dependency.ServiceCollectionExtensions.GetOrAdd
+  name: GetOrAdd
+  nameWithType: ServiceCollectionExtensions.GetOrAdd
+  fullName: Hybrid.Dependency.ServiceCollectionExtensions.GetOrAdd
+- uid: Microsoft.Extensions.DependencyInjection.ServiceDescriptor
+  commentId: T:Microsoft.Extensions.DependencyInjection.ServiceDescriptor
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  name: ServiceDescriptor
+  nameWithType: ServiceDescriptor
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceDescriptor
+- uid: Hybrid.Dependency.ServiceCollectionExtensions.GetOrAddTypeFinder*
+  commentId: Overload:Hybrid.Dependency.ServiceCollectionExtensions.GetOrAddTypeFinder
+  name: GetOrAddTypeFinder
+  nameWithType: ServiceCollectionExtensions.GetOrAddTypeFinder
+  fullName: Hybrid.Dependency.ServiceCollectionExtensions.GetOrAddTypeFinder
+- uid: System.Func{Hybrid.Reflection.IAllAssemblyFinder,{TTypeFinder}}
+  commentId: T:System.Func{Hybrid.Reflection.IAllAssemblyFinder,``0}
+  parent: System
+  definition: System.Func`2
+  name: Func<IAllAssemblyFinder, TTypeFinder>
+  nameWithType: Func<IAllAssemblyFinder, TTypeFinder>
+  fullName: System.Func<Hybrid.Reflection.IAllAssemblyFinder, TTypeFinder>
+  nameWithType.vb: Func(Of IAllAssemblyFinder, TTypeFinder)
+  fullName.vb: System.Func(Of Hybrid.Reflection.IAllAssemblyFinder, TTypeFinder)
+  name.vb: Func(Of IAllAssemblyFinder, TTypeFinder)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Reflection.IAllAssemblyFinder
+    name: IAllAssemblyFinder
+    nameWithType: IAllAssemblyFinder
+    fullName: Hybrid.Reflection.IAllAssemblyFinder
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TTypeFinder
+    nameWithType: TTypeFinder
+    fullName: TTypeFinder
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Reflection.IAllAssemblyFinder
+    name: IAllAssemblyFinder
+    nameWithType: IAllAssemblyFinder
+    fullName: Hybrid.Reflection.IAllAssemblyFinder
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TTypeFinder
+    nameWithType: TTypeFinder
+    fullName: TTypeFinder
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{TTypeFinder}'
+  commentId: '!:TTypeFinder'
+  definition: TTypeFinder
+  name: TTypeFinder
+  nameWithType: TTypeFinder
+  fullName: TTypeFinder
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TTypeFinder
+  commentId: '!:TTypeFinder'
+  name: TTypeFinder
+  nameWithType: TTypeFinder
+  fullName: TTypeFinder
+- uid: Hybrid.Dependency.ServiceCollectionExtensions.GetOrAddSingletonInstance*
+  commentId: Overload:Hybrid.Dependency.ServiceCollectionExtensions.GetOrAddSingletonInstance
+  name: GetOrAddSingletonInstance
+  nameWithType: ServiceCollectionExtensions.GetOrAddSingletonInstance
+  fullName: Hybrid.Dependency.ServiceCollectionExtensions.GetOrAddSingletonInstance
+- uid: System.Func{{TServiceType}}
+  commentId: T:System.Func{``0}
+  parent: System
+  definition: System.Func`1
+  name: Func<TServiceType>
+  nameWithType: Func<TServiceType>
+  fullName: System.Func<TServiceType>
+  nameWithType.vb: Func(Of TServiceType)
+  fullName.vb: System.Func(Of TServiceType)
+  name.vb: Func(Of TServiceType)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TServiceType
+    nameWithType: TServiceType
+    fullName: TServiceType
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TServiceType
+    nameWithType: TServiceType
+    fullName: TServiceType
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{TServiceType}'
+  commentId: '!:TServiceType'
+  definition: TServiceType
+  name: TServiceType
+  nameWithType: TServiceType
+  fullName: TServiceType
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TServiceType
+  commentId: '!:TServiceType'
+  name: TServiceType
+  nameWithType: TServiceType
+  fullName: TServiceType
+- uid: Hybrid.Dependency.ServiceCollectionExtensions.GetSingletonInstanceOrNull*
+  commentId: Overload:Hybrid.Dependency.ServiceCollectionExtensions.GetSingletonInstanceOrNull
+  name: GetSingletonInstanceOrNull
+  nameWithType: ServiceCollectionExtensions.GetSingletonInstanceOrNull
+  fullName: Hybrid.Dependency.ServiceCollectionExtensions.GetSingletonInstanceOrNull
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Hybrid.Dependency.ServiceCollectionExtensions.GetSingletonInstance*
+  commentId: Overload:Hybrid.Dependency.ServiceCollectionExtensions.GetSingletonInstance
+  name: GetSingletonInstance
+  nameWithType: ServiceCollectionExtensions.GetSingletonInstance
+  fullName: Hybrid.Dependency.ServiceCollectionExtensions.GetSingletonInstance
+- uid: Hybrid.Dependency.ServiceCollectionExtensions.GetValue*
+  commentId: Overload:Hybrid.Dependency.ServiceCollectionExtensions.GetValue
+  name: GetValue
+  nameWithType: ServiceCollectionExtensions.GetValue
+  fullName: Hybrid.Dependency.ServiceCollectionExtensions.GetValue
+- uid: Hybrid.Dependency.ScopedDictionary
+  commentId: T:Hybrid.Dependency.ScopedDictionary
+  parent: Hybrid.Dependency
+  name: ScopedDictionary
+  nameWithType: ScopedDictionary
+  fullName: Hybrid.Dependency.ScopedDictionary
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

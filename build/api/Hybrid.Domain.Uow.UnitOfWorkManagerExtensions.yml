@@ -1,0 +1,749 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions
+  commentId: T:Hybrid.Domain.Uow.UnitOfWorkManagerExtensions
+  id: UnitOfWorkManagerExtensions
+  parent: Hybrid.Domain.Uow
+  children:
+  - Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetDbContext(Hybrid.Domain.Uow.IUnitOfWorkManager,System.Type)
+  - Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetDbContext``2(Hybrid.Domain.Uow.IUnitOfWorkManager)
+  - Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetDbContextResolveOptions(Hybrid.Domain.Uow.IUnitOfWorkManager,System.Type)
+  - Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetDbContextResolveOptions``2(Hybrid.Domain.Uow.IUnitOfWorkManager)
+  - Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetSqlExecutor``2(Hybrid.Domain.Uow.IUnitOfWorkManager)
+  langs:
+  - csharp
+  - vb
+  name: UnitOfWorkManagerExtensions
+  nameWithType: UnitOfWorkManagerExtensions
+  fullName: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid/Domain/Uow/UnitOfWorkManagerExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: UnitOfWorkManagerExtensions
+    path: ../src/Hybrid/Domain/Uow/UnitOfWorkManagerExtensions.cs
+    startLine: 26
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Domain.Uow
+  summary: "\n<xref href=\"Hybrid.Domain.Uow.IUnitOfWorkManager\" data-throw-if-not-resolved=\"false\"></xref>扩展方法\n"
+  example: []
+  syntax:
+    content: public static class UnitOfWorkManagerExtensions
+    content.vb: Public Module UnitOfWorkManagerExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetDbContext``2(Hybrid.Domain.Uow.IUnitOfWorkManager)
+  commentId: M:Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetDbContext``2(Hybrid.Domain.Uow.IUnitOfWorkManager)
+  id: GetDbContext``2(Hybrid.Domain.Uow.IUnitOfWorkManager)
+  isExtensionMethod: true
+  parent: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetDbContext<TEntity, TKey>(IUnitOfWorkManager)
+  nameWithType: UnitOfWorkManagerExtensions.GetDbContext<TEntity, TKey>(IUnitOfWorkManager)
+  fullName: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetDbContext<TEntity, TKey>(Hybrid.Domain.Uow.IUnitOfWorkManager)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Domain/Uow/UnitOfWorkManagerExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetDbContext
+    path: ../src/Hybrid/Domain/Uow/UnitOfWorkManagerExtensions.cs
+    startLine: 31
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Domain.Uow
+  summary: "\n获取指定实体所在的上下文对象\n"
+  example: []
+  syntax:
+    content: >-
+      public static IDbContext GetDbContext<TEntity, TKey>(this IUnitOfWorkManager unitOfWorkManager)
+
+          where TEntity : IEntity<TKey>
+    parameters:
+    - id: unitOfWorkManager
+      type: Hybrid.Domain.Uow.IUnitOfWorkManager
+    typeParameters:
+    - id: TEntity
+    - id: TKey
+    return:
+      type: Hybrid.Domain.EntityFramework.IDbContext
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetDbContext(Of TEntity As IEntity(Of TKey), TKey)(unitOfWorkManager As IUnitOfWorkManager) As IDbContext
+  overload: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetDbContext*
+  nameWithType.vb: UnitOfWorkManagerExtensions.GetDbContext(Of TEntity, TKey)(IUnitOfWorkManager)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetDbContext(Of TEntity, TKey)(Hybrid.Domain.Uow.IUnitOfWorkManager)
+  name.vb: GetDbContext(Of TEntity, TKey)(IUnitOfWorkManager)
+- uid: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetDbContext(Hybrid.Domain.Uow.IUnitOfWorkManager,System.Type)
+  commentId: M:Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetDbContext(Hybrid.Domain.Uow.IUnitOfWorkManager,System.Type)
+  id: GetDbContext(Hybrid.Domain.Uow.IUnitOfWorkManager,System.Type)
+  isExtensionMethod: true
+  parent: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetDbContext(IUnitOfWorkManager, Type)
+  nameWithType: UnitOfWorkManagerExtensions.GetDbContext(IUnitOfWorkManager, Type)
+  fullName: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetDbContext(Hybrid.Domain.Uow.IUnitOfWorkManager, System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Domain/Uow/UnitOfWorkManagerExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetDbContext
+    path: ../src/Hybrid/Domain/Uow/UnitOfWorkManagerExtensions.cs
+    startLine: 40
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Domain.Uow
+  summary: "\n获取指定实体类型所在的上下文对象\n"
+  example: []
+  syntax:
+    content: public static IDbContext GetDbContext(this IUnitOfWorkManager unitOfWorkManager, Type entityType)
+    parameters:
+    - id: unitOfWorkManager
+      type: Hybrid.Domain.Uow.IUnitOfWorkManager
+    - id: entityType
+      type: System.Type
+    return:
+      type: Hybrid.Domain.EntityFramework.IDbContext
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetDbContext(unitOfWorkManager As IUnitOfWorkManager, entityType As Type) As IDbContext
+  overload: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetDbContext*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetDbContextResolveOptions``2(Hybrid.Domain.Uow.IUnitOfWorkManager)
+  commentId: M:Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetDbContextResolveOptions``2(Hybrid.Domain.Uow.IUnitOfWorkManager)
+  id: GetDbContextResolveOptions``2(Hybrid.Domain.Uow.IUnitOfWorkManager)
+  isExtensionMethod: true
+  parent: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetDbContextResolveOptions<TEntity, TKey>(IUnitOfWorkManager)
+  nameWithType: UnitOfWorkManagerExtensions.GetDbContextResolveOptions<TEntity, TKey>(IUnitOfWorkManager)
+  fullName: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetDbContextResolveOptions<TEntity, TKey>(Hybrid.Domain.Uow.IUnitOfWorkManager)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Domain/Uow/UnitOfWorkManagerExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetDbContextResolveOptions
+    path: ../src/Hybrid/Domain/Uow/UnitOfWorkManagerExtensions.cs
+    startLine: 53
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Domain.Uow
+  summary: "\n获取指定实体类型的数据上下文选项\n"
+  example: []
+  syntax:
+    content: >-
+      public static HybridDbContextOptions GetDbContextResolveOptions<TEntity, TKey>(this IUnitOfWorkManager unitOfWorkManager)
+
+          where TEntity : IEntity<TKey>
+    parameters:
+    - id: unitOfWorkManager
+      type: Hybrid.Domain.Uow.IUnitOfWorkManager
+    typeParameters:
+    - id: TEntity
+    - id: TKey
+    return:
+      type: Hybrid.Core.Options.HybridDbContextOptions
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetDbContextResolveOptions(Of TEntity As IEntity(Of TKey), TKey)(unitOfWorkManager As IUnitOfWorkManager) As HybridDbContextOptions
+  overload: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetDbContextResolveOptions*
+  nameWithType.vb: UnitOfWorkManagerExtensions.GetDbContextResolveOptions(Of TEntity, TKey)(IUnitOfWorkManager)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetDbContextResolveOptions(Of TEntity, TKey)(Hybrid.Domain.Uow.IUnitOfWorkManager)
+  name.vb: GetDbContextResolveOptions(Of TEntity, TKey)(IUnitOfWorkManager)
+- uid: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetDbContextResolveOptions(Hybrid.Domain.Uow.IUnitOfWorkManager,System.Type)
+  commentId: M:Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetDbContextResolveOptions(Hybrid.Domain.Uow.IUnitOfWorkManager,System.Type)
+  id: GetDbContextResolveOptions(Hybrid.Domain.Uow.IUnitOfWorkManager,System.Type)
+  isExtensionMethod: true
+  parent: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetDbContextResolveOptions(IUnitOfWorkManager, Type)
+  nameWithType: UnitOfWorkManagerExtensions.GetDbContextResolveOptions(IUnitOfWorkManager, Type)
+  fullName: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetDbContextResolveOptions(Hybrid.Domain.Uow.IUnitOfWorkManager, System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Domain/Uow/UnitOfWorkManagerExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetDbContextResolveOptions
+    path: ../src/Hybrid/Domain/Uow/UnitOfWorkManagerExtensions.cs
+    startLine: 62
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Domain.Uow
+  summary: "\n获取指定实体类型的数据上下文选项\n"
+  example: []
+  syntax:
+    content: public static HybridDbContextOptions GetDbContextResolveOptions(this IUnitOfWorkManager unitOfWorkManager, Type entityType)
+    parameters:
+    - id: unitOfWorkManager
+      type: Hybrid.Domain.Uow.IUnitOfWorkManager
+    - id: entityType
+      type: System.Type
+    return:
+      type: Hybrid.Core.Options.HybridDbContextOptions
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetDbContextResolveOptions(unitOfWorkManager As IUnitOfWorkManager, entityType As Type) As HybridDbContextOptions
+  overload: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetDbContextResolveOptions*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetSqlExecutor``2(Hybrid.Domain.Uow.IUnitOfWorkManager)
+  commentId: M:Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetSqlExecutor``2(Hybrid.Domain.Uow.IUnitOfWorkManager)
+  id: GetSqlExecutor``2(Hybrid.Domain.Uow.IUnitOfWorkManager)
+  isExtensionMethod: true
+  parent: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetSqlExecutor<TEntity, TKey>(IUnitOfWorkManager)
+  nameWithType: UnitOfWorkManagerExtensions.GetSqlExecutor<TEntity, TKey>(IUnitOfWorkManager)
+  fullName: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetSqlExecutor<TEntity, TKey>(Hybrid.Domain.Uow.IUnitOfWorkManager)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Domain/Uow/UnitOfWorkManagerExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetSqlExecutor
+    path: ../src/Hybrid/Domain/Uow/UnitOfWorkManagerExtensions.cs
+    startLine: 76
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Domain.Uow
+  summary: "\n获取指定实体类型的Sql执行器\n"
+  example: []
+  syntax:
+    content: >-
+      public static ISqlExecutor<TEntity, TKey> GetSqlExecutor<TEntity, TKey>(this IUnitOfWorkManager unitOfWorkManager)
+
+          where TEntity : IEntity<TKey>
+    parameters:
+    - id: unitOfWorkManager
+      type: Hybrid.Domain.Uow.IUnitOfWorkManager
+    typeParameters:
+    - id: TEntity
+    - id: TKey
+    return:
+      type: Hybrid.Domain.Repositories.ISqlExecutor{{TEntity},{TKey}}
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetSqlExecutor(Of TEntity As IEntity(Of TKey), TKey)(unitOfWorkManager As IUnitOfWorkManager) As ISqlExecutor(Of TEntity, TKey)
+  overload: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetSqlExecutor*
+  nameWithType.vb: UnitOfWorkManagerExtensions.GetSqlExecutor(Of TEntity, TKey)(IUnitOfWorkManager)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetSqlExecutor(Of TEntity, TKey)(Hybrid.Domain.Uow.IUnitOfWorkManager)
+  name.vb: GetSqlExecutor(Of TEntity, TKey)(IUnitOfWorkManager)
+references:
+- uid: Hybrid.Domain.Uow.IUnitOfWorkManager
+  commentId: T:Hybrid.Domain.Uow.IUnitOfWorkManager
+  parent: Hybrid.Domain.Uow
+  name: IUnitOfWorkManager
+  nameWithType: IUnitOfWorkManager
+  fullName: Hybrid.Domain.Uow.IUnitOfWorkManager
+- uid: Hybrid.Domain.Uow
+  commentId: N:Hybrid.Domain.Uow
+  name: Hybrid.Domain.Uow
+  nameWithType: Hybrid.Domain.Uow
+  fullName: Hybrid.Domain.Uow
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetDbContext*
+  commentId: Overload:Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetDbContext
+  name: GetDbContext
+  nameWithType: UnitOfWorkManagerExtensions.GetDbContext
+  fullName: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetDbContext
+- uid: Hybrid.Domain.EntityFramework.IDbContext
+  commentId: T:Hybrid.Domain.EntityFramework.IDbContext
+  parent: Hybrid.Domain.EntityFramework
+  name: IDbContext
+  nameWithType: IDbContext
+  fullName: Hybrid.Domain.EntityFramework.IDbContext
+- uid: Hybrid.Domain.EntityFramework
+  commentId: N:Hybrid.Domain.EntityFramework
+  name: Hybrid.Domain.EntityFramework
+  nameWithType: Hybrid.Domain.EntityFramework
+  fullName: Hybrid.Domain.EntityFramework
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetDbContextResolveOptions*
+  commentId: Overload:Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetDbContextResolveOptions
+  name: GetDbContextResolveOptions
+  nameWithType: UnitOfWorkManagerExtensions.GetDbContextResolveOptions
+  fullName: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetDbContextResolveOptions
+- uid: Hybrid.Core.Options.HybridDbContextOptions
+  commentId: T:Hybrid.Core.Options.HybridDbContextOptions
+  parent: Hybrid.Core.Options
+  name: HybridDbContextOptions
+  nameWithType: HybridDbContextOptions
+  fullName: Hybrid.Core.Options.HybridDbContextOptions
+- uid: Hybrid.Core.Options
+  commentId: N:Hybrid.Core.Options
+  name: Hybrid.Core.Options
+  nameWithType: Hybrid.Core.Options
+  fullName: Hybrid.Core.Options
+- uid: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetSqlExecutor*
+  commentId: Overload:Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetSqlExecutor
+  name: GetSqlExecutor
+  nameWithType: UnitOfWorkManagerExtensions.GetSqlExecutor
+  fullName: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions.GetSqlExecutor
+- uid: Hybrid.Domain.Repositories.ISqlExecutor{{TEntity},{TKey}}
+  commentId: T:Hybrid.Domain.Repositories.ISqlExecutor{``0,``1}
+  parent: Hybrid.Domain.Repositories
+  definition: Hybrid.Domain.Repositories.ISqlExecutor`2
+  name: ISqlExecutor<TEntity, TKey>
+  nameWithType: ISqlExecutor<TEntity, TKey>
+  fullName: Hybrid.Domain.Repositories.ISqlExecutor<TEntity, TKey>
+  nameWithType.vb: ISqlExecutor(Of TEntity, TKey)
+  fullName.vb: Hybrid.Domain.Repositories.ISqlExecutor(Of TEntity, TKey)
+  name.vb: ISqlExecutor(Of TEntity, TKey)
+  spec.csharp:
+  - uid: Hybrid.Domain.Repositories.ISqlExecutor`2
+    name: ISqlExecutor
+    nameWithType: ISqlExecutor
+    fullName: Hybrid.Domain.Repositories.ISqlExecutor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Domain.Repositories.ISqlExecutor`2
+    name: ISqlExecutor
+    nameWithType: ISqlExecutor
+    fullName: Hybrid.Domain.Repositories.ISqlExecutor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Domain.Repositories.ISqlExecutor`2
+  commentId: T:Hybrid.Domain.Repositories.ISqlExecutor`2
+  name: ISqlExecutor<TEntity, TKey>
+  nameWithType: ISqlExecutor<TEntity, TKey>
+  fullName: Hybrid.Domain.Repositories.ISqlExecutor<TEntity, TKey>
+  nameWithType.vb: ISqlExecutor(Of TEntity, TKey)
+  fullName.vb: Hybrid.Domain.Repositories.ISqlExecutor(Of TEntity, TKey)
+  name.vb: ISqlExecutor(Of TEntity, TKey)
+  spec.csharp:
+  - uid: Hybrid.Domain.Repositories.ISqlExecutor`2
+    name: ISqlExecutor
+    nameWithType: ISqlExecutor
+    fullName: Hybrid.Domain.Repositories.ISqlExecutor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Domain.Repositories.ISqlExecutor`2
+    name: ISqlExecutor
+    nameWithType: ISqlExecutor
+    fullName: Hybrid.Domain.Repositories.ISqlExecutor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Domain.Repositories
+  commentId: N:Hybrid.Domain.Repositories
+  name: Hybrid.Domain.Repositories
+  nameWithType: Hybrid.Domain.Repositories
+  fullName: Hybrid.Domain.Repositories

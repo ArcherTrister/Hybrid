@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarLanguageSwitch
+  commentId: N:Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarLanguageSwitch
+  id: Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarLanguageSwitch
+  children:
+  - Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarLanguageSwitch.TopBarLanguageSwitchViewComponent
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarLanguageSwitch
+  nameWithType: Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarLanguageSwitch
+  fullName: Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarLanguageSwitch
+  type: Namespace
+  assemblies:
+  - Hybrid.Quartz
+references:
+- uid: Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarLanguageSwitch.TopBarLanguageSwitchViewComponent
+  commentId: T:Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarLanguageSwitch.TopBarLanguageSwitchViewComponent
+  name: TopBarLanguageSwitchViewComponent
+  nameWithType: TopBarLanguageSwitchViewComponent
+  fullName: Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarLanguageSwitch.TopBarLanguageSwitchViewComponent

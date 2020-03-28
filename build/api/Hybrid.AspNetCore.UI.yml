@@ -1,0 +1,72 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.AspNetCore.UI
+  commentId: N:Hybrid.AspNetCore.UI
+  id: Hybrid.AspNetCore.UI
+  children:
+  - Hybrid.AspNetCore.UI.AjaxResult
+  - Hybrid.AspNetCore.UI.AjaxResult`1
+  - Hybrid.AspNetCore.UI.AjaxResultExtensions
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.AspNetCore.UI
+  nameWithType: Hybrid.AspNetCore.UI
+  fullName: Hybrid.AspNetCore.UI
+  type: Namespace
+  assemblies:
+  - Hybrid.AspNetCore
+references:
+- uid: Hybrid.AspNetCore.UI.AjaxResult`1
+  commentId: T:Hybrid.AspNetCore.UI.AjaxResult`1
+  name: AjaxResult<TResult>
+  nameWithType: AjaxResult<TResult>
+  fullName: Hybrid.AspNetCore.UI.AjaxResult<TResult>
+  nameWithType.vb: AjaxResult(Of TResult)
+  fullName.vb: Hybrid.AspNetCore.UI.AjaxResult(Of TResult)
+  name.vb: AjaxResult(Of TResult)
+  spec.csharp:
+  - uid: Hybrid.AspNetCore.UI.AjaxResult`1
+    name: AjaxResult
+    nameWithType: AjaxResult
+    fullName: Hybrid.AspNetCore.UI.AjaxResult
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.AspNetCore.UI.AjaxResult`1
+    name: AjaxResult
+    nameWithType: AjaxResult
+    fullName: Hybrid.AspNetCore.UI.AjaxResult
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.AspNetCore.UI.AjaxResult
+  commentId: T:Hybrid.AspNetCore.UI.AjaxResult
+  parent: Hybrid.AspNetCore.UI
+  name: AjaxResult
+  nameWithType: AjaxResult
+  fullName: Hybrid.AspNetCore.UI.AjaxResult
+- uid: Hybrid.AspNetCore.UI.AjaxResultExtensions
+  commentId: T:Hybrid.AspNetCore.UI.AjaxResultExtensions
+  parent: Hybrid.AspNetCore.UI
+  name: AjaxResultExtensions
+  nameWithType: AjaxResultExtensions
+  fullName: Hybrid.AspNetCore.UI.AjaxResultExtensions
+- uid: Hybrid.AspNetCore.UI
+  commentId: N:Hybrid.AspNetCore.UI
+  name: Hybrid.AspNetCore.UI
+  nameWithType: Hybrid.AspNetCore.UI
+  fullName: Hybrid.AspNetCore.UI

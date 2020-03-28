@@ -1,0 +1,77 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.EntityFrameworkCore.SqlServer
+  commentId: N:Hybrid.EntityFrameworkCore.SqlServer
+  id: Hybrid.EntityFrameworkCore.SqlServer
+  children:
+  - Hybrid.EntityFrameworkCore.SqlServer.DbContextOptionsBuilderDriveHandler
+  - Hybrid.EntityFrameworkCore.SqlServer.SqlServerDapperSqlExecutor`2
+  - Hybrid.EntityFrameworkCore.SqlServer.SqlServerEntityFrameworkCoreModule
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.EntityFrameworkCore.SqlServer
+  nameWithType: Hybrid.EntityFrameworkCore.SqlServer
+  fullName: Hybrid.EntityFrameworkCore.SqlServer
+  type: Namespace
+  assemblies:
+  - Hybrid.EntityFrameworkCore.SqlServer
+references:
+- uid: Hybrid.EntityFrameworkCore.SqlServer.DbContextOptionsBuilderDriveHandler
+  commentId: T:Hybrid.EntityFrameworkCore.SqlServer.DbContextOptionsBuilderDriveHandler
+  name: DbContextOptionsBuilderDriveHandler
+  nameWithType: DbContextOptionsBuilderDriveHandler
+  fullName: Hybrid.EntityFrameworkCore.SqlServer.DbContextOptionsBuilderDriveHandler
+- uid: Hybrid.EntityFrameworkCore.SqlServer.SqlServerDapperSqlExecutor`2
+  commentId: T:Hybrid.EntityFrameworkCore.SqlServer.SqlServerDapperSqlExecutor`2
+  name: SqlServerDapperSqlExecutor<TEntity, TKey>
+  nameWithType: SqlServerDapperSqlExecutor<TEntity, TKey>
+  fullName: Hybrid.EntityFrameworkCore.SqlServer.SqlServerDapperSqlExecutor<TEntity, TKey>
+  nameWithType.vb: SqlServerDapperSqlExecutor(Of TEntity, TKey)
+  fullName.vb: Hybrid.EntityFrameworkCore.SqlServer.SqlServerDapperSqlExecutor(Of TEntity, TKey)
+  name.vb: SqlServerDapperSqlExecutor(Of TEntity, TKey)
+  spec.csharp:
+  - uid: Hybrid.EntityFrameworkCore.SqlServer.SqlServerDapperSqlExecutor`2
+    name: SqlServerDapperSqlExecutor
+    nameWithType: SqlServerDapperSqlExecutor
+    fullName: Hybrid.EntityFrameworkCore.SqlServer.SqlServerDapperSqlExecutor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.EntityFrameworkCore.SqlServer.SqlServerDapperSqlExecutor`2
+    name: SqlServerDapperSqlExecutor
+    nameWithType: SqlServerDapperSqlExecutor
+    fullName: Hybrid.EntityFrameworkCore.SqlServer.SqlServerDapperSqlExecutor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.EntityFrameworkCore.SqlServer.SqlServerEntityFrameworkCoreModule
+  commentId: T:Hybrid.EntityFrameworkCore.SqlServer.SqlServerEntityFrameworkCoreModule
+  name: SqlServerEntityFrameworkCoreModule
+  nameWithType: SqlServerEntityFrameworkCoreModule
+  fullName: Hybrid.EntityFrameworkCore.SqlServer.SqlServerEntityFrameworkCoreModule

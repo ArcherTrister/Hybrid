@@ -1,0 +1,2054 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Extensions.EnumerableExtensions
+  commentId: T:Hybrid.Extensions.EnumerableExtensions
+  id: EnumerableExtensions
+  parent: Hybrid.Extensions
+  children:
+  - Hybrid.Extensions.EnumerableExtensions.DistinctBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  - Hybrid.Extensions.EnumerableExtensions.ExpandAndToString``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String},System.String)
+  - Hybrid.Extensions.EnumerableExtensions.ExpandAndToString``1(System.Collections.Generic.IEnumerable{``0},System.String)
+  - Hybrid.Extensions.EnumerableExtensions.IsEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  - Hybrid.Extensions.EnumerableExtensions.JoinAsString(System.Collections.Generic.IEnumerable{System.String},System.String)
+  - Hybrid.Extensions.EnumerableExtensions.JoinAsString``1(System.Collections.Generic.IEnumerable{``0},System.String)
+  - Hybrid.Extensions.EnumerableExtensions.OrderBy``1(System.Collections.Generic.IEnumerable{``0},Hybrid.Filter.SortCondition)
+  - Hybrid.Extensions.EnumerableExtensions.OrderBy``1(System.Collections.Generic.IEnumerable{``0},Hybrid.Filter.SortCondition{``0})
+  - Hybrid.Extensions.EnumerableExtensions.OrderBy``1(System.Collections.Generic.IEnumerable{``0},System.String,System.ComponentModel.ListSortDirection)
+  - Hybrid.Extensions.EnumerableExtensions.OrderByPrefixes``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String},System.String[])
+  - Hybrid.Extensions.EnumerableExtensions.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  - Hybrid.Extensions.EnumerableExtensions.ThenBy``1(System.Linq.IOrderedEnumerable{``0},Hybrid.Filter.SortCondition)
+  - Hybrid.Extensions.EnumerableExtensions.ThenBy``1(System.Linq.IOrderedEnumerable{``0},System.String,System.ComponentModel.ListSortDirection)
+  - Hybrid.Extensions.EnumerableExtensions.WhereIf``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Func{``0,System.Boolean})
+  - Hybrid.Extensions.EnumerableExtensions.WhereIf``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Func{``0,System.Int32,System.Boolean})
+  - Hybrid.Extensions.EnumerableExtensions.WhereIf``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: EnumerableExtensions
+  nameWithType: EnumerableExtensions
+  fullName: Hybrid.Extensions.EnumerableExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid/Extensions/EnumerableExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: EnumerableExtensions
+    path: ../src/Hybrid/Extensions/EnumerableExtensions.cs
+    startLine: 22
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nEnumerable集合扩展方法\n"
+  example: []
+  syntax:
+    content: public static class EnumerableExtensions
+    content.vb: Public Module EnumerableExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.Extensions.EnumerableExtensions.JoinAsString(System.Collections.Generic.IEnumerable{System.String},System.String)
+  commentId: M:Hybrid.Extensions.EnumerableExtensions.JoinAsString(System.Collections.Generic.IEnumerable{System.String},System.String)
+  id: JoinAsString(System.Collections.Generic.IEnumerable{System.String},System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.EnumerableExtensions
+  langs:
+  - csharp
+  - vb
+  name: JoinAsString(IEnumerable<String>, String)
+  nameWithType: EnumerableExtensions.JoinAsString(IEnumerable<String>, String)
+  fullName: Hybrid.Extensions.EnumerableExtensions.JoinAsString(System.Collections.Generic.IEnumerable<System.String>, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/EnumerableExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: JoinAsString
+    path: ../src/Hybrid/Extensions/EnumerableExtensions.cs
+    startLine: 31
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nConcatenates the members of a constructed <xref href=\"System.Collections.Generic.IEnumerable%601\" data-throw-if-not-resolved=\"false\"></xref> collection of type System.String, using the specified separator between each member.\nThis is a shortcut for string.Join(...)\n"
+  example: []
+  syntax:
+    content: public static string JoinAsString(this IEnumerable<string> source, string separator)
+    parameters:
+    - id: source
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: A collection that contains the strings to concatenate.
+    - id: separator
+      type: System.String
+      description: The string to use as a separator. separator is included in the returned string only if values has more than one element.
+    return:
+      type: System.String
+      description: A string that consists of the members of values delimited by the separator string. If values has no members, the method returns System.String.Empty.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function JoinAsString(source As IEnumerable(Of String), separator As String) As String
+  overload: Hybrid.Extensions.EnumerableExtensions.JoinAsString*
+  nameWithType.vb: EnumerableExtensions.JoinAsString(IEnumerable(Of String), String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.EnumerableExtensions.JoinAsString(System.Collections.Generic.IEnumerable(Of System.String), System.String)
+  name.vb: JoinAsString(IEnumerable(Of String), String)
+- uid: Hybrid.Extensions.EnumerableExtensions.JoinAsString``1(System.Collections.Generic.IEnumerable{``0},System.String)
+  commentId: M:Hybrid.Extensions.EnumerableExtensions.JoinAsString``1(System.Collections.Generic.IEnumerable{``0},System.String)
+  id: JoinAsString``1(System.Collections.Generic.IEnumerable{``0},System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.EnumerableExtensions
+  langs:
+  - csharp
+  - vb
+  name: JoinAsString<T>(IEnumerable<T>, String)
+  nameWithType: EnumerableExtensions.JoinAsString<T>(IEnumerable<T>, String)
+  fullName: Hybrid.Extensions.EnumerableExtensions.JoinAsString<T>(System.Collections.Generic.IEnumerable<T>, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/EnumerableExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: JoinAsString
+    path: ../src/Hybrid/Extensions/EnumerableExtensions.cs
+    startLine: 44
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nConcatenates the members of a collection, using the specified separator between each member.\nThis is a shortcut for string.Join(...)\n"
+  example: []
+  syntax:
+    content: public static string JoinAsString<T>(this IEnumerable<T> source, string separator)
+    parameters:
+    - id: source
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: A collection that contains the objects to concatenate.
+    - id: separator
+      type: System.String
+      description: The string to use as a separator. separator is included in the returned string only if values has more than one element.
+    typeParameters:
+    - id: T
+      description: The type of the members of values.
+    return:
+      type: System.String
+      description: A string that consists of the members of values delimited by the separator string. If values has no members, the method returns System.String.Empty.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function JoinAsString(Of T)(source As IEnumerable(Of T), separator As String) As String
+  overload: Hybrid.Extensions.EnumerableExtensions.JoinAsString*
+  nameWithType.vb: EnumerableExtensions.JoinAsString(Of T)(IEnumerable(Of T), String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.EnumerableExtensions.JoinAsString(Of T)(System.Collections.Generic.IEnumerable(Of T), System.String)
+  name.vb: JoinAsString(Of T)(IEnumerable(Of T), String)
+- uid: Hybrid.Extensions.EnumerableExtensions.WhereIf``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Func{``0,System.Boolean})
+  commentId: M:Hybrid.Extensions.EnumerableExtensions.WhereIf``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Func{``0,System.Boolean})
+  id: WhereIf``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Func{``0,System.Boolean})
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.EnumerableExtensions
+  langs:
+  - csharp
+  - vb
+  name: WhereIf<T>(IEnumerable<T>, Boolean, Func<T, Boolean>)
+  nameWithType: EnumerableExtensions.WhereIf<T>(IEnumerable<T>, Boolean, Func<T, Boolean>)
+  fullName: Hybrid.Extensions.EnumerableExtensions.WhereIf<T>(System.Collections.Generic.IEnumerable<T>, System.Boolean, System.Func<T, System.Boolean>)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/EnumerableExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: WhereIf
+    path: ../src/Hybrid/Extensions/EnumerableExtensions.cs
+    startLine: 56
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nFilters a <xref href=\"System.Collections.Generic.IEnumerable%601\" data-throw-if-not-resolved=\"false\"></xref> by given predicate if given condition is true.\n"
+  example: []
+  syntax:
+    content: public static IEnumerable<T> WhereIf<T>(this IEnumerable<T> source, bool condition, Func<T, bool> predicate)
+    parameters:
+    - id: source
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: Enumerable to apply filtering
+    - id: condition
+      type: System.Boolean
+      description: A boolean value
+    - id: predicate
+      type: System.Func{{T},System.Boolean}
+      description: Predicate to filter the enumerable
+    typeParameters:
+    - id: T
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: Filtered or not filtered enumerable based on <code data-dev-comment-type="paramref" class="paramref">condition</code>
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function WhereIf(Of T)(source As IEnumerable(Of T), condition As Boolean, predicate As Func(Of T, Boolean)) As IEnumerable(Of T)
+  overload: Hybrid.Extensions.EnumerableExtensions.WhereIf*
+  nameWithType.vb: EnumerableExtensions.WhereIf(Of T)(IEnumerable(Of T), Boolean, Func(Of T, Boolean))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.EnumerableExtensions.WhereIf(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Boolean, System.Func(Of T, System.Boolean))
+  name.vb: WhereIf(Of T)(IEnumerable(Of T), Boolean, Func(Of T, Boolean))
+- uid: Hybrid.Extensions.EnumerableExtensions.WhereIf``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Func{``0,System.Int32,System.Boolean})
+  commentId: M:Hybrid.Extensions.EnumerableExtensions.WhereIf``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Func{``0,System.Int32,System.Boolean})
+  id: WhereIf``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Func{``0,System.Int32,System.Boolean})
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.EnumerableExtensions
+  langs:
+  - csharp
+  - vb
+  name: WhereIf<T>(IEnumerable<T>, Boolean, Func<T, Int32, Boolean>)
+  nameWithType: EnumerableExtensions.WhereIf<T>(IEnumerable<T>, Boolean, Func<T, Int32, Boolean>)
+  fullName: Hybrid.Extensions.EnumerableExtensions.WhereIf<T>(System.Collections.Generic.IEnumerable<T>, System.Boolean, System.Func<T, System.Int32, System.Boolean>)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/EnumerableExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: WhereIf
+    path: ../src/Hybrid/Extensions/EnumerableExtensions.cs
+    startLine: 70
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nFilters a <xref href=\"System.Collections.Generic.IEnumerable%601\" data-throw-if-not-resolved=\"false\"></xref> by given predicate if given condition is true.\n"
+  example: []
+  syntax:
+    content: public static IEnumerable<T> WhereIf<T>(this IEnumerable<T> source, bool condition, Func<T, int, bool> predicate)
+    parameters:
+    - id: source
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: Enumerable to apply filtering
+    - id: condition
+      type: System.Boolean
+      description: A boolean value
+    - id: predicate
+      type: System.Func{{T},System.Int32,System.Boolean}
+      description: Predicate to filter the enumerable
+    typeParameters:
+    - id: T
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: Filtered or not filtered enumerable based on <code data-dev-comment-type="paramref" class="paramref">condition</code>
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function WhereIf(Of T)(source As IEnumerable(Of T), condition As Boolean, predicate As Func(Of T, Integer, Boolean)) As IEnumerable(Of T)
+  overload: Hybrid.Extensions.EnumerableExtensions.WhereIf*
+  nameWithType.vb: EnumerableExtensions.WhereIf(Of T)(IEnumerable(Of T), Boolean, Func(Of T, Int32, Boolean))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.EnumerableExtensions.WhereIf(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Boolean, System.Func(Of T, System.Int32, System.Boolean))
+  name.vb: WhereIf(Of T)(IEnumerable(Of T), Boolean, Func(Of T, Int32, Boolean))
+- uid: Hybrid.Extensions.EnumerableExtensions.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Hybrid.Extensions.EnumerableExtensions.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  id: Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.EnumerableExtensions
+  langs:
+  - csharp
+  - vb
+  name: Shuffle<TSource>(IEnumerable<TSource>)
+  nameWithType: EnumerableExtensions.Shuffle<TSource>(IEnumerable<TSource>)
+  fullName: Hybrid.Extensions.EnumerableExtensions.Shuffle<TSource>(System.Collections.Generic.IEnumerable<TSource>)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/EnumerableExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Shuffle
+    path: ../src/Hybrid/Extensions/EnumerableExtensions.cs
+    startLine: 80
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n打乱一个集合的项顺序\n"
+  example: []
+  syntax:
+    content: public static IEnumerable<TSource> Shuffle<TSource>(this IEnumerable<TSource> source)
+    parameters:
+    - id: source
+      type: System.Collections.Generic.IEnumerable{{TSource}}
+    typeParameters:
+    - id: TSource
+    return:
+      type: System.Collections.Generic.IEnumerable{{TSource}}
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Shuffle(Of TSource)(source As IEnumerable(Of TSource)) As IEnumerable(Of TSource)
+  overload: Hybrid.Extensions.EnumerableExtensions.Shuffle*
+  nameWithType.vb: EnumerableExtensions.Shuffle(Of TSource)(IEnumerable(Of TSource))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.EnumerableExtensions.Shuffle(Of TSource)(System.Collections.Generic.IEnumerable(Of TSource))
+  name.vb: Shuffle(Of TSource)(IEnumerable(Of TSource))
+- uid: Hybrid.Extensions.EnumerableExtensions.ExpandAndToString``1(System.Collections.Generic.IEnumerable{``0},System.String)
+  commentId: M:Hybrid.Extensions.EnumerableExtensions.ExpandAndToString``1(System.Collections.Generic.IEnumerable{``0},System.String)
+  id: ExpandAndToString``1(System.Collections.Generic.IEnumerable{``0},System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.EnumerableExtensions
+  langs:
+  - csharp
+  - vb
+  name: ExpandAndToString<T>(IEnumerable<T>, String)
+  nameWithType: EnumerableExtensions.ExpandAndToString<T>(IEnumerable<T>, String)
+  fullName: Hybrid.Extensions.EnumerableExtensions.ExpandAndToString<T>(System.Collections.Generic.IEnumerable<T>, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/EnumerableExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ExpandAndToString
+    path: ../src/Hybrid/Extensions/EnumerableExtensions.cs
+    startLine: 95
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n将集合展开并分别转换成字符串，再以指定的分隔符衔接，拼成一个字符串返回。默认分隔符为逗号\n"
+  example: []
+  syntax:
+    content: public static string ExpandAndToString<T>(this IEnumerable<T> collection, string separator = ",")
+    parameters:
+    - id: collection
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: '要处理的集合 '
+    - id: separator
+      type: System.String
+      description: '分隔符，默认为逗号 '
+    typeParameters:
+    - id: T
+    return:
+      type: System.String
+      description: '拼接后的字符串 '
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ExpandAndToString(Of T)(collection As IEnumerable(Of T), separator As String = ",") As String
+  overload: Hybrid.Extensions.EnumerableExtensions.ExpandAndToString*
+  nameWithType.vb: EnumerableExtensions.ExpandAndToString(Of T)(IEnumerable(Of T), String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.EnumerableExtensions.ExpandAndToString(Of T)(System.Collections.Generic.IEnumerable(Of T), System.String)
+  name.vb: ExpandAndToString(Of T)(IEnumerable(Of T), String)
+- uid: Hybrid.Extensions.EnumerableExtensions.ExpandAndToString``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String},System.String)
+  commentId: M:Hybrid.Extensions.EnumerableExtensions.ExpandAndToString``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String},System.String)
+  id: ExpandAndToString``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String},System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.EnumerableExtensions
+  langs:
+  - csharp
+  - vb
+  name: ExpandAndToString<T>(IEnumerable<T>, Func<T, String>, String)
+  nameWithType: EnumerableExtensions.ExpandAndToString<T>(IEnumerable<T>, Func<T, String>, String)
+  fullName: Hybrid.Extensions.EnumerableExtensions.ExpandAndToString<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.String>, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/EnumerableExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ExpandAndToString
+    path: ../src/Hybrid/Extensions/EnumerableExtensions.cs
+    startLine: 108
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n循环集合的每一项，调用委托生成字符串，返回合并后的字符串。默认分隔符为逗号\n"
+  example: []
+  syntax:
+    content: public static string ExpandAndToString<T>(this IEnumerable<T> collection, Func<T, string> itemFormatFunc, string separator = ",")
+    parameters:
+    - id: collection
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: 待处理的集合
+    - id: itemFormatFunc
+      type: System.Func{{T},System.String}
+      description: 单个集合项的转换委托
+    - id: separator
+      type: System.String
+      description: 分隔符，默认为逗号
+    typeParameters:
+    - id: T
+      description: 泛型类型
+    return:
+      type: System.String
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ExpandAndToString(Of T)(collection As IEnumerable(Of T), itemFormatFunc As Func(Of T, String), separator As String = ",") As String
+  overload: Hybrid.Extensions.EnumerableExtensions.ExpandAndToString*
+  nameWithType.vb: EnumerableExtensions.ExpandAndToString(Of T)(IEnumerable(Of T), Func(Of T, String), String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.EnumerableExtensions.ExpandAndToString(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.String), System.String)
+  name.vb: ExpandAndToString(Of T)(IEnumerable(Of T), Func(Of T, String), String)
+- uid: Hybrid.Extensions.EnumerableExtensions.IsEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Hybrid.Extensions.EnumerableExtensions.IsEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  id: IsEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.EnumerableExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsEmpty<T>(IEnumerable<T>)
+  nameWithType: EnumerableExtensions.IsEmpty<T>(IEnumerable<T>)
+  fullName: Hybrid.Extensions.EnumerableExtensions.IsEmpty<T>(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/EnumerableExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsEmpty
+    path: ../src/Hybrid/Extensions/EnumerableExtensions.cs
+    startLine: 140
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n集合是否为空\n"
+  example: []
+  syntax:
+    content: public static bool IsEmpty<T>(this IEnumerable<T> collection)
+    parameters:
+    - id: collection
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: '要处理的集合 '
+    typeParameters:
+    - id: T
+      description: '动态类型 '
+    return:
+      type: System.Boolean
+      description: '为空返回True，不为空返回False '
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsEmpty(Of T)(collection As IEnumerable(Of T)) As Boolean
+  overload: Hybrid.Extensions.EnumerableExtensions.IsEmpty*
+  nameWithType.vb: EnumerableExtensions.IsEmpty(Of T)(IEnumerable(Of T))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.EnumerableExtensions.IsEmpty(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: IsEmpty(Of T)(IEnumerable(Of T))
+- uid: Hybrid.Extensions.EnumerableExtensions.WhereIf``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},System.Boolean)
+  commentId: M:Hybrid.Extensions.EnumerableExtensions.WhereIf``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},System.Boolean)
+  id: WhereIf``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},System.Boolean)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.EnumerableExtensions
+  langs:
+  - csharp
+  - vb
+  name: WhereIf<T>(IEnumerable<T>, Func<T, Boolean>, Boolean)
+  nameWithType: EnumerableExtensions.WhereIf<T>(IEnumerable<T>, Func<T, Boolean>, Boolean)
+  fullName: Hybrid.Extensions.EnumerableExtensions.WhereIf<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Boolean>, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/EnumerableExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: WhereIf
+    path: ../src/Hybrid/Extensions/EnumerableExtensions.cs
+    startLine: 154
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n根据第三方条件是否为真来决定是否执行指定条件的查询\n"
+  example: []
+  syntax:
+    content: public static IEnumerable<T> WhereIf<T>(this IEnumerable<T> source, Func<T, bool> predicate, bool condition)
+    parameters:
+    - id: source
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: '要查询的源 '
+    - id: predicate
+      type: System.Func{{T},System.Boolean}
+      description: '查询条件 '
+    - id: condition
+      type: System.Boolean
+      description: '第三方条件 '
+    typeParameters:
+    - id: T
+      description: '动态类型 '
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: '查询的结果 '
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function WhereIf(Of T)(source As IEnumerable(Of T), predicate As Func(Of T, Boolean), condition As Boolean) As IEnumerable(Of T)
+  overload: Hybrid.Extensions.EnumerableExtensions.WhereIf*
+  nameWithType.vb: EnumerableExtensions.WhereIf(Of T)(IEnumerable(Of T), Func(Of T, Boolean), Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.EnumerableExtensions.WhereIf(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Boolean), System.Boolean)
+  name.vb: WhereIf(Of T)(IEnumerable(Of T), Func(Of T, Boolean), Boolean)
+- uid: Hybrid.Extensions.EnumerableExtensions.DistinctBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  commentId: M:Hybrid.Extensions.EnumerableExtensions.DistinctBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  id: DistinctBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.EnumerableExtensions
+  langs:
+  - csharp
+  - vb
+  name: DistinctBy<T, TKey>(IEnumerable<T>, Func<T, TKey>)
+  nameWithType: EnumerableExtensions.DistinctBy<T, TKey>(IEnumerable<T>, Func<T, TKey>)
+  fullName: Hybrid.Extensions.EnumerableExtensions.DistinctBy<T, TKey>(System.Collections.Generic.IEnumerable<T>, System.Func<T, TKey>)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/EnumerableExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: DistinctBy
+    path: ../src/Hybrid/Extensions/EnumerableExtensions.cs
+    startLine: 170
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n根据指定条件返回集合中不重复的元素\n"
+  example: []
+  syntax:
+    content: public static IEnumerable<T> DistinctBy<T, TKey>(this IEnumerable<T> source, Func<T, TKey> keySelector)
+    parameters:
+    - id: source
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: 要操作的源
+    - id: keySelector
+      type: System.Func{{T},{TKey}}
+      description: 重复数据筛选条件
+    typeParameters:
+    - id: T
+      description: 动态类型
+    - id: TKey
+      description: 动态筛选条件类型
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: 不重复元素的集合
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function DistinctBy(Of T, TKey)(source As IEnumerable(Of T), keySelector As Func(Of T, TKey)) As IEnumerable(Of T)
+  overload: Hybrid.Extensions.EnumerableExtensions.DistinctBy*
+  nameWithType.vb: EnumerableExtensions.DistinctBy(Of T, TKey)(IEnumerable(Of T), Func(Of T, TKey))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.EnumerableExtensions.DistinctBy(Of T, TKey)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, TKey))
+  name.vb: DistinctBy(Of T, TKey)(IEnumerable(Of T), Func(Of T, TKey))
+- uid: Hybrid.Extensions.EnumerableExtensions.OrderBy``1(System.Collections.Generic.IEnumerable{``0},System.String,System.ComponentModel.ListSortDirection)
+  commentId: M:Hybrid.Extensions.EnumerableExtensions.OrderBy``1(System.Collections.Generic.IEnumerable{``0},System.String,System.ComponentModel.ListSortDirection)
+  id: OrderBy``1(System.Collections.Generic.IEnumerable{``0},System.String,System.ComponentModel.ListSortDirection)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.EnumerableExtensions
+  langs:
+  - csharp
+  - vb
+  name: OrderBy<T>(IEnumerable<T>, String, ListSortDirection)
+  nameWithType: EnumerableExtensions.OrderBy<T>(IEnumerable<T>, String, ListSortDirection)
+  fullName: Hybrid.Extensions.EnumerableExtensions.OrderBy<T>(System.Collections.Generic.IEnumerable<T>, System.String, System.ComponentModel.ListSortDirection)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/EnumerableExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: OrderBy
+    path: ../src/Hybrid/Extensions/EnumerableExtensions.cs
+    startLine: 186
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n把<xref href=\"System.Collections.Generic.IEnumerable%601\" data-throw-if-not-resolved=\"false\"></xref>集合按指定字段与排序方式进行排序\n"
+  example: []
+  syntax:
+    content: public static IOrderedEnumerable<T> OrderBy<T>(this IEnumerable<T> source, string propertyName, ListSortDirection sortDirection = ListSortDirection.Ascending)
+    parameters:
+    - id: source
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: 要排序的数据集
+    - id: propertyName
+      type: System.String
+      description: 排序属性名
+    - id: sortDirection
+      type: System.ComponentModel.ListSortDirection
+      description: 排序方向
+    typeParameters:
+    - id: T
+      description: 集合项类型
+    return:
+      type: System.Linq.IOrderedEnumerable{{T}}
+      description: 排序后的数据集
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function OrderBy(Of T)(source As IEnumerable(Of T), propertyName As String, sortDirection As ListSortDirection = ListSortDirection.Ascending) As IOrderedEnumerable(Of T)
+  overload: Hybrid.Extensions.EnumerableExtensions.OrderBy*
+  nameWithType.vb: EnumerableExtensions.OrderBy(Of T)(IEnumerable(Of T), String, ListSortDirection)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.EnumerableExtensions.OrderBy(Of T)(System.Collections.Generic.IEnumerable(Of T), System.String, System.ComponentModel.ListSortDirection)
+  name.vb: OrderBy(Of T)(IEnumerable(Of T), String, ListSortDirection)
+- uid: Hybrid.Extensions.EnumerableExtensions.OrderBy``1(System.Collections.Generic.IEnumerable{``0},Hybrid.Filter.SortCondition)
+  commentId: M:Hybrid.Extensions.EnumerableExtensions.OrderBy``1(System.Collections.Generic.IEnumerable{``0},Hybrid.Filter.SortCondition)
+  id: OrderBy``1(System.Collections.Generic.IEnumerable{``0},Hybrid.Filter.SortCondition)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.EnumerableExtensions
+  langs:
+  - csharp
+  - vb
+  name: OrderBy<T>(IEnumerable<T>, SortCondition)
+  nameWithType: EnumerableExtensions.OrderBy<T>(IEnumerable<T>, SortCondition)
+  fullName: Hybrid.Extensions.EnumerableExtensions.OrderBy<T>(System.Collections.Generic.IEnumerable<T>, Hybrid.Filter.SortCondition)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/EnumerableExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: OrderBy
+    path: ../src/Hybrid/Extensions/EnumerableExtensions.cs
+    startLine: 201
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n把<xref href=\"System.Collections.Generic.IEnumerable%601\" data-throw-if-not-resolved=\"false\"></xref>集合按指定字段排序条件进行排序\n"
+  example: []
+  syntax:
+    content: public static IOrderedEnumerable<T> OrderBy<T>(this IEnumerable<T> source, SortCondition sortCondition)
+    parameters:
+    - id: source
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: 要排序的数据集
+    - id: sortCondition
+      type: Hybrid.Filter.SortCondition
+      description: 列表字段排序条件
+    typeParameters:
+    - id: T
+      description: 动态类型
+    return:
+      type: System.Linq.IOrderedEnumerable{{T}}
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function OrderBy(Of T)(source As IEnumerable(Of T), sortCondition As SortCondition) As IOrderedEnumerable(Of T)
+  overload: Hybrid.Extensions.EnumerableExtensions.OrderBy*
+  nameWithType.vb: EnumerableExtensions.OrderBy(Of T)(IEnumerable(Of T), SortCondition)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.EnumerableExtensions.OrderBy(Of T)(System.Collections.Generic.IEnumerable(Of T), Hybrid.Filter.SortCondition)
+  name.vb: OrderBy(Of T)(IEnumerable(Of T), SortCondition)
+- uid: Hybrid.Extensions.EnumerableExtensions.OrderBy``1(System.Collections.Generic.IEnumerable{``0},Hybrid.Filter.SortCondition{``0})
+  commentId: M:Hybrid.Extensions.EnumerableExtensions.OrderBy``1(System.Collections.Generic.IEnumerable{``0},Hybrid.Filter.SortCondition{``0})
+  id: OrderBy``1(System.Collections.Generic.IEnumerable{``0},Hybrid.Filter.SortCondition{``0})
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.EnumerableExtensions
+  langs:
+  - csharp
+  - vb
+  name: OrderBy<T>(IEnumerable<T>, SortCondition<T>)
+  nameWithType: EnumerableExtensions.OrderBy<T>(IEnumerable<T>, SortCondition<T>)
+  fullName: Hybrid.Extensions.EnumerableExtensions.OrderBy<T>(System.Collections.Generic.IEnumerable<T>, Hybrid.Filter.SortCondition<T>)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/EnumerableExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: OrderBy
+    path: ../src/Hybrid/Extensions/EnumerableExtensions.cs
+    startLine: 214
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n把<xref href=\"System.Collections.Generic.IEnumerable%601\" data-throw-if-not-resolved=\"false\"></xref>集合按指定字段排序条件进行排序\n"
+  example: []
+  syntax:
+    content: public static IOrderedEnumerable<T> OrderBy<T>(this IEnumerable<T> source, SortCondition<T> sortCondition)
+    parameters:
+    - id: source
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: 要排序的数据集
+    - id: sortCondition
+      type: Hybrid.Filter.SortCondition{{T}}
+      description: 列表字段排序条件
+    typeParameters:
+    - id: T
+      description: 动态类型
+    return:
+      type: System.Linq.IOrderedEnumerable{{T}}
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function OrderBy(Of T)(source As IEnumerable(Of T), sortCondition As SortCondition(Of T)) As IOrderedEnumerable(Of T)
+  overload: Hybrid.Extensions.EnumerableExtensions.OrderBy*
+  nameWithType.vb: EnumerableExtensions.OrderBy(Of T)(IEnumerable(Of T), SortCondition(Of T))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.EnumerableExtensions.OrderBy(Of T)(System.Collections.Generic.IEnumerable(Of T), Hybrid.Filter.SortCondition(Of T))
+  name.vb: OrderBy(Of T)(IEnumerable(Of T), SortCondition(Of T))
+- uid: Hybrid.Extensions.EnumerableExtensions.ThenBy``1(System.Linq.IOrderedEnumerable{``0},System.String,System.ComponentModel.ListSortDirection)
+  commentId: M:Hybrid.Extensions.EnumerableExtensions.ThenBy``1(System.Linq.IOrderedEnumerable{``0},System.String,System.ComponentModel.ListSortDirection)
+  id: ThenBy``1(System.Linq.IOrderedEnumerable{``0},System.String,System.ComponentModel.ListSortDirection)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.EnumerableExtensions
+  langs:
+  - csharp
+  - vb
+  name: ThenBy<T>(IOrderedEnumerable<T>, String, ListSortDirection)
+  nameWithType: EnumerableExtensions.ThenBy<T>(IOrderedEnumerable<T>, String, ListSortDirection)
+  fullName: Hybrid.Extensions.EnumerableExtensions.ThenBy<T>(System.Linq.IOrderedEnumerable<T>, System.String, System.ComponentModel.ListSortDirection)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/EnumerableExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ThenBy
+    path: ../src/Hybrid/Extensions/EnumerableExtensions.cs
+    startLine: 228
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n把<xref href=\"System.Linq.IOrderedQueryable%601\" data-throw-if-not-resolved=\"false\"></xref>集合继续按指定字段排序方式进行排序\n"
+  example: []
+  syntax:
+    content: public static IOrderedEnumerable<T> ThenBy<T>(this IOrderedEnumerable<T> source, string propertyName, ListSortDirection sortDirection = ListSortDirection.Ascending)
+    parameters:
+    - id: source
+      type: System.Linq.IOrderedEnumerable{{T}}
+      description: 要排序的数据集
+    - id: propertyName
+      type: System.String
+      description: 排序属性名
+    - id: sortDirection
+      type: System.ComponentModel.ListSortDirection
+      description: 排序方向
+    typeParameters:
+    - id: T
+      description: 动态类型
+    return:
+      type: System.Linq.IOrderedEnumerable{{T}}
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ThenBy(Of T)(source As IOrderedEnumerable(Of T), propertyName As String, sortDirection As ListSortDirection = ListSortDirection.Ascending) As IOrderedEnumerable(Of T)
+  overload: Hybrid.Extensions.EnumerableExtensions.ThenBy*
+  nameWithType.vb: EnumerableExtensions.ThenBy(Of T)(IOrderedEnumerable(Of T), String, ListSortDirection)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.EnumerableExtensions.ThenBy(Of T)(System.Linq.IOrderedEnumerable(Of T), System.String, System.ComponentModel.ListSortDirection)
+  name.vb: ThenBy(Of T)(IOrderedEnumerable(Of T), String, ListSortDirection)
+- uid: Hybrid.Extensions.EnumerableExtensions.ThenBy``1(System.Linq.IOrderedEnumerable{``0},Hybrid.Filter.SortCondition)
+  commentId: M:Hybrid.Extensions.EnumerableExtensions.ThenBy``1(System.Linq.IOrderedEnumerable{``0},Hybrid.Filter.SortCondition)
+  id: ThenBy``1(System.Linq.IOrderedEnumerable{``0},Hybrid.Filter.SortCondition)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.EnumerableExtensions
+  langs:
+  - csharp
+  - vb
+  name: ThenBy<T>(IOrderedEnumerable<T>, SortCondition)
+  nameWithType: EnumerableExtensions.ThenBy<T>(IOrderedEnumerable<T>, SortCondition)
+  fullName: Hybrid.Extensions.EnumerableExtensions.ThenBy<T>(System.Linq.IOrderedEnumerable<T>, Hybrid.Filter.SortCondition)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/EnumerableExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ThenBy
+    path: ../src/Hybrid/Extensions/EnumerableExtensions.cs
+    startLine: 244
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n把<xref href=\"System.Linq.IOrderedEnumerable%601\" data-throw-if-not-resolved=\"false\"></xref>集合继续指定字段排序方式进行排序\n"
+  example: []
+  syntax:
+    content: public static IOrderedEnumerable<T> ThenBy<T>(this IOrderedEnumerable<T> source, SortCondition sortCondition)
+    parameters:
+    - id: source
+      type: System.Linq.IOrderedEnumerable{{T}}
+      description: 要排序的数据集
+    - id: sortCondition
+      type: Hybrid.Filter.SortCondition
+      description: 列表字段排序条件
+    typeParameters:
+    - id: T
+      description: 动态类型
+    return:
+      type: System.Linq.IOrderedEnumerable{{T}}
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ThenBy(Of T)(source As IOrderedEnumerable(Of T), sortCondition As SortCondition) As IOrderedEnumerable(Of T)
+  overload: Hybrid.Extensions.EnumerableExtensions.ThenBy*
+  nameWithType.vb: EnumerableExtensions.ThenBy(Of T)(IOrderedEnumerable(Of T), SortCondition)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.EnumerableExtensions.ThenBy(Of T)(System.Linq.IOrderedEnumerable(Of T), Hybrid.Filter.SortCondition)
+  name.vb: ThenBy(Of T)(IOrderedEnumerable(Of T), SortCondition)
+- uid: Hybrid.Extensions.EnumerableExtensions.OrderByPrefixes``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String},System.String[])
+  commentId: M:Hybrid.Extensions.EnumerableExtensions.OrderByPrefixes``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String},System.String[])
+  id: OrderByPrefixes``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String},System.String[])
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.EnumerableExtensions
+  langs:
+  - csharp
+  - vb
+  name: OrderByPrefixes<T>(IEnumerable<T>, Func<T, String>, String[])
+  nameWithType: EnumerableExtensions.OrderByPrefixes<T>(IEnumerable<T>, Func<T, String>, String[])
+  fullName: Hybrid.Extensions.EnumerableExtensions.OrderByPrefixes<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.String>, System.String[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/EnumerableExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: OrderByPrefixes
+    path: ../src/Hybrid/Extensions/EnumerableExtensions.cs
+    startLine: 254
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n将字符串集合按指定前缀排序\n"
+  example: []
+  syntax:
+    content: public static IEnumerable<T> OrderByPrefixes<T>(this IEnumerable<T> source, Func<T, string> keySelector, params string[] prefixes)
+    parameters:
+    - id: source
+      type: System.Collections.Generic.IEnumerable{{T}}
+    - id: keySelector
+      type: System.Func{{T},System.String}
+    - id: prefixes
+      type: System.String[]
+    typeParameters:
+    - id: T
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function OrderByPrefixes(Of T)(source As IEnumerable(Of T), keySelector As Func(Of T, String), ParamArray prefixes As String()) As IEnumerable(Of T)
+  overload: Hybrid.Extensions.EnumerableExtensions.OrderByPrefixes*
+  nameWithType.vb: EnumerableExtensions.OrderByPrefixes(Of T)(IEnumerable(Of T), Func(Of T, String), String())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.EnumerableExtensions.OrderByPrefixes(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.String), System.String())
+  name.vb: OrderByPrefixes(Of T)(IEnumerable(Of T), Func(Of T, String), String())
+references:
+- uid: Hybrid.Extensions
+  commentId: N:Hybrid.Extensions
+  name: Hybrid.Extensions
+  nameWithType: Hybrid.Extensions
+  fullName: Hybrid.Extensions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.EnumerableExtensions.JoinAsString*
+  commentId: Overload:Hybrid.Extensions.EnumerableExtensions.JoinAsString
+  name: JoinAsString
+  nameWithType: EnumerableExtensions.JoinAsString
+  fullName: Hybrid.Extensions.EnumerableExtensions.JoinAsString
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<String>
+  nameWithType: IEnumerable<String>
+  fullName: System.Collections.Generic.IEnumerable<System.String>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.EnumerableExtensions.WhereIf*
+  commentId: Overload:Hybrid.Extensions.EnumerableExtensions.WhereIf
+  name: WhereIf
+  nameWithType: EnumerableExtensions.WhereIf
+  fullName: Hybrid.Extensions.EnumerableExtensions.WhereIf
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Func{{T},System.Boolean}
+  commentId: T:System.Func{``0,System.Boolean}
+  parent: System
+  definition: System.Func`2
+  name: Func<T, Boolean>
+  nameWithType: Func<T, Boolean>
+  fullName: System.Func<T, System.Boolean>
+  nameWithType.vb: Func(Of T, Boolean)
+  fullName.vb: System.Func(Of T, System.Boolean)
+  name.vb: Func(Of T, Boolean)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func{{T},System.Int32,System.Boolean}
+  commentId: T:System.Func{``0,System.Int32,System.Boolean}
+  parent: System
+  definition: System.Func`3
+  name: Func<T, Int32, Boolean>
+  nameWithType: Func<T, Int32, Boolean>
+  fullName: System.Func<T, System.Int32, System.Boolean>
+  nameWithType.vb: Func(Of T, Int32, Boolean)
+  fullName.vb: System.Func(Of T, System.Int32, System.Boolean)
+  name.vb: Func(Of T, Int32, Boolean)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`3
+  commentId: T:System.Func`3
+  isExternal: true
+  name: Func<T1, T2, TResult>
+  nameWithType: Func<T1, T2, TResult>
+  fullName: System.Func<T1, T2, TResult>
+  nameWithType.vb: Func(Of T1, T2, TResult)
+  fullName.vb: System.Func(Of T1, T2, TResult)
+  name.vb: Func(Of T1, T2, TResult)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.EnumerableExtensions.Shuffle*
+  commentId: Overload:Hybrid.Extensions.EnumerableExtensions.Shuffle
+  name: Shuffle
+  nameWithType: EnumerableExtensions.Shuffle
+  fullName: Hybrid.Extensions.EnumerableExtensions.Shuffle
+- uid: System.Collections.Generic.IEnumerable{{TSource}}
+  commentId: T:System.Collections.Generic.IEnumerable{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<TSource>
+  nameWithType: IEnumerable<TSource>
+  fullName: System.Collections.Generic.IEnumerable<TSource>
+  nameWithType.vb: IEnumerable(Of TSource)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of TSource)
+  name.vb: IEnumerable(Of TSource)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.EnumerableExtensions.ExpandAndToString*
+  commentId: Overload:Hybrid.Extensions.EnumerableExtensions.ExpandAndToString
+  name: ExpandAndToString
+  nameWithType: EnumerableExtensions.ExpandAndToString
+  fullName: Hybrid.Extensions.EnumerableExtensions.ExpandAndToString
+- uid: System.Func{{T},System.String}
+  commentId: T:System.Func{``0,System.String}
+  parent: System
+  definition: System.Func`2
+  name: Func<T, String>
+  nameWithType: Func<T, String>
+  fullName: System.Func<T, System.String>
+  nameWithType.vb: Func(Of T, String)
+  fullName.vb: System.Func(Of T, System.String)
+  name.vb: Func(Of T, String)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.EnumerableExtensions.IsEmpty*
+  commentId: Overload:Hybrid.Extensions.EnumerableExtensions.IsEmpty
+  name: IsEmpty
+  nameWithType: EnumerableExtensions.IsEmpty
+  fullName: Hybrid.Extensions.EnumerableExtensions.IsEmpty
+- uid: Hybrid.Extensions.EnumerableExtensions.DistinctBy*
+  commentId: Overload:Hybrid.Extensions.EnumerableExtensions.DistinctBy
+  name: DistinctBy
+  nameWithType: EnumerableExtensions.DistinctBy
+  fullName: Hybrid.Extensions.EnumerableExtensions.DistinctBy
+- uid: System.Func{{T},{TKey}}
+  commentId: T:System.Func{``0,``1}
+  parent: System
+  definition: System.Func`2
+  name: Func<T, TKey>
+  nameWithType: Func<T, TKey>
+  fullName: System.Func<T, TKey>
+  nameWithType.vb: Func(Of T, TKey)
+  fullName.vb: System.Func(Of T, TKey)
+  name.vb: Func(Of T, TKey)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.EnumerableExtensions.OrderBy*
+  commentId: Overload:Hybrid.Extensions.EnumerableExtensions.OrderBy
+  name: OrderBy
+  nameWithType: EnumerableExtensions.OrderBy
+  fullName: Hybrid.Extensions.EnumerableExtensions.OrderBy
+- uid: System.ComponentModel.ListSortDirection
+  commentId: T:System.ComponentModel.ListSortDirection
+  parent: System.ComponentModel
+  isExternal: true
+  name: ListSortDirection
+  nameWithType: ListSortDirection
+  fullName: System.ComponentModel.ListSortDirection
+- uid: System.Linq.IOrderedEnumerable{{T}}
+  commentId: T:System.Linq.IOrderedEnumerable{``0}
+  parent: System.Linq
+  definition: System.Linq.IOrderedEnumerable`1
+  name: IOrderedEnumerable<T>
+  nameWithType: IOrderedEnumerable<T>
+  fullName: System.Linq.IOrderedEnumerable<T>
+  nameWithType.vb: IOrderedEnumerable(Of T)
+  fullName.vb: System.Linq.IOrderedEnumerable(Of T)
+  name.vb: IOrderedEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Linq.IOrderedEnumerable`1
+    name: IOrderedEnumerable
+    nameWithType: IOrderedEnumerable
+    fullName: System.Linq.IOrderedEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.IOrderedEnumerable`1
+    name: IOrderedEnumerable
+    nameWithType: IOrderedEnumerable
+    fullName: System.Linq.IOrderedEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+- uid: System.Linq.IOrderedEnumerable`1
+  commentId: T:System.Linq.IOrderedEnumerable`1
+  isExternal: true
+  name: IOrderedEnumerable<TElement>
+  nameWithType: IOrderedEnumerable<TElement>
+  fullName: System.Linq.IOrderedEnumerable<TElement>
+  nameWithType.vb: IOrderedEnumerable(Of TElement)
+  fullName.vb: System.Linq.IOrderedEnumerable(Of TElement)
+  name.vb: IOrderedEnumerable(Of TElement)
+  spec.csharp:
+  - uid: System.Linq.IOrderedEnumerable`1
+    name: IOrderedEnumerable
+    nameWithType: IOrderedEnumerable
+    fullName: System.Linq.IOrderedEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TElement
+    nameWithType: TElement
+    fullName: TElement
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.IOrderedEnumerable`1
+    name: IOrderedEnumerable
+    nameWithType: IOrderedEnumerable
+    fullName: System.Linq.IOrderedEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TElement
+    nameWithType: TElement
+    fullName: TElement
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq
+  commentId: N:System.Linq
+  isExternal: true
+  name: System.Linq
+  nameWithType: System.Linq
+  fullName: System.Linq
+- uid: Hybrid.Filter.SortCondition
+  commentId: T:Hybrid.Filter.SortCondition
+  parent: Hybrid.Filter
+  name: SortCondition
+  nameWithType: SortCondition
+  fullName: Hybrid.Filter.SortCondition
+- uid: Hybrid.Filter
+  commentId: N:Hybrid.Filter
+  name: Hybrid.Filter
+  nameWithType: Hybrid.Filter
+  fullName: Hybrid.Filter
+- uid: Hybrid.Filter.SortCondition{{T}}
+  commentId: T:Hybrid.Filter.SortCondition{``0}
+  parent: Hybrid.Filter
+  definition: Hybrid.Filter.SortCondition`1
+  name: SortCondition<T>
+  nameWithType: SortCondition<T>
+  fullName: Hybrid.Filter.SortCondition<T>
+  nameWithType.vb: SortCondition(Of T)
+  fullName.vb: Hybrid.Filter.SortCondition(Of T)
+  name.vb: SortCondition(Of T)
+  spec.csharp:
+  - uid: Hybrid.Filter.SortCondition`1
+    name: SortCondition
+    nameWithType: SortCondition
+    fullName: Hybrid.Filter.SortCondition
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Filter.SortCondition`1
+    name: SortCondition
+    nameWithType: SortCondition
+    fullName: Hybrid.Filter.SortCondition
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Filter.SortCondition`1
+  commentId: T:Hybrid.Filter.SortCondition`1
+  name: SortCondition<T>
+  nameWithType: SortCondition<T>
+  fullName: Hybrid.Filter.SortCondition<T>
+  nameWithType.vb: SortCondition(Of T)
+  fullName.vb: Hybrid.Filter.SortCondition(Of T)
+  name.vb: SortCondition(Of T)
+  spec.csharp:
+  - uid: Hybrid.Filter.SortCondition`1
+    name: SortCondition
+    nameWithType: SortCondition
+    fullName: Hybrid.Filter.SortCondition
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Filter.SortCondition`1
+    name: SortCondition
+    nameWithType: SortCondition
+    fullName: Hybrid.Filter.SortCondition
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq.IOrderedQueryable`1
+  commentId: T:System.Linq.IOrderedQueryable`1
+  isExternal: true
+  name: IOrderedQueryable<T>
+  nameWithType: IOrderedQueryable<T>
+  fullName: System.Linq.IOrderedQueryable<T>
+  nameWithType.vb: IOrderedQueryable(Of T)
+  fullName.vb: System.Linq.IOrderedQueryable(Of T)
+  name.vb: IOrderedQueryable(Of T)
+  spec.csharp:
+  - uid: System.Linq.IOrderedQueryable`1
+    name: IOrderedQueryable
+    nameWithType: IOrderedQueryable
+    fullName: System.Linq.IOrderedQueryable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.IOrderedQueryable`1
+    name: IOrderedQueryable
+    nameWithType: IOrderedQueryable
+    fullName: System.Linq.IOrderedQueryable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.EnumerableExtensions.ThenBy*
+  commentId: Overload:Hybrid.Extensions.EnumerableExtensions.ThenBy
+  name: ThenBy
+  nameWithType: EnumerableExtensions.ThenBy
+  fullName: Hybrid.Extensions.EnumerableExtensions.ThenBy
+- uid: Hybrid.Extensions.EnumerableExtensions.OrderByPrefixes*
+  commentId: Overload:Hybrid.Extensions.EnumerableExtensions.OrderByPrefixes
+  name: OrderByPrefixes
+  nameWithType: EnumerableExtensions.OrderByPrefixes
+  fullName: Hybrid.Extensions.EnumerableExtensions.OrderByPrefixes
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()

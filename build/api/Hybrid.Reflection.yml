@@ -1,0 +1,172 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Reflection
+  commentId: N:Hybrid.Reflection
+  id: Hybrid.Reflection
+  children:
+  - Hybrid.Reflection.AppDomainAllAssemblyFinder
+  - Hybrid.Reflection.AssemblyExtensions
+  - Hybrid.Reflection.AttributeTypeFinderBase`1
+  - Hybrid.Reflection.BaseTypeFinderBase`1
+  - Hybrid.Reflection.ComLibraryLoader
+  - Hybrid.Reflection.DirectoryAssemblyFinder
+  - Hybrid.Reflection.FastInvokeHandler
+  - Hybrid.Reflection.IAllAssemblyFinder
+  - Hybrid.Reflection.IAssemblyFinder
+  - Hybrid.Reflection.IComClassFactory
+  - Hybrid.Reflection.IMethodInfoFinder
+  - Hybrid.Reflection.ITypeFinder
+  - Hybrid.Reflection.LockExtensions
+  - Hybrid.Reflection.PublicInstanceMethodInfoFinder
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Reflection
+  nameWithType: Hybrid.Reflection
+  fullName: Hybrid.Reflection
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Reflection.AppDomainAllAssemblyFinder
+  commentId: T:Hybrid.Reflection.AppDomainAllAssemblyFinder
+  name: AppDomainAllAssemblyFinder
+  nameWithType: AppDomainAllAssemblyFinder
+  fullName: Hybrid.Reflection.AppDomainAllAssemblyFinder
+- uid: Hybrid.Reflection.AssemblyExtensions
+  commentId: T:Hybrid.Reflection.AssemblyExtensions
+  name: AssemblyExtensions
+  nameWithType: AssemblyExtensions
+  fullName: Hybrid.Reflection.AssemblyExtensions
+- uid: Hybrid.Reflection.AttributeTypeFinderBase`1
+  commentId: T:Hybrid.Reflection.AttributeTypeFinderBase`1
+  name: AttributeTypeFinderBase<TAttributeType>
+  nameWithType: AttributeTypeFinderBase<TAttributeType>
+  fullName: Hybrid.Reflection.AttributeTypeFinderBase<TAttributeType>
+  nameWithType.vb: AttributeTypeFinderBase(Of TAttributeType)
+  fullName.vb: Hybrid.Reflection.AttributeTypeFinderBase(Of TAttributeType)
+  name.vb: AttributeTypeFinderBase(Of TAttributeType)
+  spec.csharp:
+  - uid: Hybrid.Reflection.AttributeTypeFinderBase`1
+    name: AttributeTypeFinderBase
+    nameWithType: AttributeTypeFinderBase
+    fullName: Hybrid.Reflection.AttributeTypeFinderBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TAttributeType
+    nameWithType: TAttributeType
+    fullName: TAttributeType
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Reflection.AttributeTypeFinderBase`1
+    name: AttributeTypeFinderBase
+    nameWithType: AttributeTypeFinderBase
+    fullName: Hybrid.Reflection.AttributeTypeFinderBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TAttributeType
+    nameWithType: TAttributeType
+    fullName: TAttributeType
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Reflection.BaseTypeFinderBase`1
+  commentId: T:Hybrid.Reflection.BaseTypeFinderBase`1
+  name: BaseTypeFinderBase<TBaseType>
+  nameWithType: BaseTypeFinderBase<TBaseType>
+  fullName: Hybrid.Reflection.BaseTypeFinderBase<TBaseType>
+  nameWithType.vb: BaseTypeFinderBase(Of TBaseType)
+  fullName.vb: Hybrid.Reflection.BaseTypeFinderBase(Of TBaseType)
+  name.vb: BaseTypeFinderBase(Of TBaseType)
+  spec.csharp:
+  - uid: Hybrid.Reflection.BaseTypeFinderBase`1
+    name: BaseTypeFinderBase
+    nameWithType: BaseTypeFinderBase
+    fullName: Hybrid.Reflection.BaseTypeFinderBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TBaseType
+    nameWithType: TBaseType
+    fullName: TBaseType
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Reflection.BaseTypeFinderBase`1
+    name: BaseTypeFinderBase
+    nameWithType: BaseTypeFinderBase
+    fullName: Hybrid.Reflection.BaseTypeFinderBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TBaseType
+    nameWithType: TBaseType
+    fullName: TBaseType
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Reflection.ComLibraryLoader
+  commentId: T:Hybrid.Reflection.ComLibraryLoader
+  name: ComLibraryLoader
+  nameWithType: ComLibraryLoader
+  fullName: Hybrid.Reflection.ComLibraryLoader
+- uid: Hybrid.Reflection.DirectoryAssemblyFinder
+  commentId: T:Hybrid.Reflection.DirectoryAssemblyFinder
+  name: DirectoryAssemblyFinder
+  nameWithType: DirectoryAssemblyFinder
+  fullName: Hybrid.Reflection.DirectoryAssemblyFinder
+- uid: Hybrid.Reflection.FastInvokeHandler
+  commentId: T:Hybrid.Reflection.FastInvokeHandler
+  name: FastInvokeHandler
+  nameWithType: FastInvokeHandler
+  fullName: Hybrid.Reflection.FastInvokeHandler
+- uid: Hybrid.Reflection.IAllAssemblyFinder
+  commentId: T:Hybrid.Reflection.IAllAssemblyFinder
+  parent: Hybrid.Reflection
+  name: IAllAssemblyFinder
+  nameWithType: IAllAssemblyFinder
+  fullName: Hybrid.Reflection.IAllAssemblyFinder
+- uid: Hybrid.Reflection.IAssemblyFinder
+  commentId: T:Hybrid.Reflection.IAssemblyFinder
+  parent: Hybrid.Reflection
+  name: IAssemblyFinder
+  nameWithType: IAssemblyFinder
+  fullName: Hybrid.Reflection.IAssemblyFinder
+- uid: Hybrid.Reflection.IComClassFactory
+  commentId: T:Hybrid.Reflection.IComClassFactory
+  name: IComClassFactory
+  nameWithType: IComClassFactory
+  fullName: Hybrid.Reflection.IComClassFactory
+- uid: Hybrid.Reflection.IMethodInfoFinder
+  commentId: T:Hybrid.Reflection.IMethodInfoFinder
+  parent: Hybrid.Reflection
+  name: IMethodInfoFinder
+  nameWithType: IMethodInfoFinder
+  fullName: Hybrid.Reflection.IMethodInfoFinder
+- uid: Hybrid.Reflection.ITypeFinder
+  commentId: T:Hybrid.Reflection.ITypeFinder
+  parent: Hybrid.Reflection
+  name: ITypeFinder
+  nameWithType: ITypeFinder
+  fullName: Hybrid.Reflection.ITypeFinder
+- uid: Hybrid.Reflection.LockExtensions
+  commentId: T:Hybrid.Reflection.LockExtensions
+  parent: Hybrid.Reflection
+  name: LockExtensions
+  nameWithType: LockExtensions
+  fullName: Hybrid.Reflection.LockExtensions
+- uid: Hybrid.Reflection.PublicInstanceMethodInfoFinder
+  commentId: T:Hybrid.Reflection.PublicInstanceMethodInfoFinder
+  name: PublicInstanceMethodInfoFinder
+  nameWithType: PublicInstanceMethodInfoFinder
+  fullName: Hybrid.Reflection.PublicInstanceMethodInfoFinder
+- uid: Hybrid.Reflection
+  commentId: N:Hybrid.Reflection
+  name: Hybrid.Reflection
+  nameWithType: Hybrid.Reflection
+  fullName: Hybrid.Reflection

@@ -1,0 +1,35 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Http.Configuration
+  commentId: N:Hybrid.Http.Configuration
+  id: Hybrid.Http.Configuration
+  children:
+  - Hybrid.Http.Configuration.HttpEncryptConfiguration
+  - Hybrid.Http.Configuration.IHttpEncryptConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Http.Configuration
+  nameWithType: Hybrid.Http.Configuration
+  fullName: Hybrid.Http.Configuration
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Http.Configuration.HttpEncryptConfiguration
+  commentId: T:Hybrid.Http.Configuration.HttpEncryptConfiguration
+  parent: Hybrid.Http.Configuration
+  name: HttpEncryptConfiguration
+  nameWithType: HttpEncryptConfiguration
+  fullName: Hybrid.Http.Configuration.HttpEncryptConfiguration
+- uid: Hybrid.Http.Configuration.IHttpEncryptConfiguration
+  commentId: T:Hybrid.Http.Configuration.IHttpEncryptConfiguration
+  parent: Hybrid.Http.Configuration
+  name: IHttpEncryptConfiguration
+  nameWithType: IHttpEncryptConfiguration
+  fullName: Hybrid.Http.Configuration.IHttpEncryptConfiguration
+- uid: Hybrid.Http.Configuration
+  commentId: N:Hybrid.Http.Configuration
+  name: Hybrid.Http.Configuration
+  nameWithType: Hybrid.Http.Configuration
+  fullName: Hybrid.Http.Configuration

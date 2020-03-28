@@ -1,0 +1,58 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.AspNetCore.Extensions
+  commentId: N:Hybrid.AspNetCore.Extensions
+  id: Hybrid.AspNetCore.Extensions
+  children:
+  - Hybrid.AspNetCore.Extensions.ActionDescriptorExtensions
+  - Hybrid.AspNetCore.Extensions.HttpContextExtensions
+  - Hybrid.AspNetCore.Extensions.HttpRequestExtensions
+  - Hybrid.AspNetCore.Extensions.ModelStateExtensions
+  - Hybrid.AspNetCore.Extensions.ServiceCollectionExtensions
+  - Hybrid.AspNetCore.Extensions.ServiceProviderExtensions
+  - Hybrid.AspNetCore.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.AspNetCore.Extensions
+  nameWithType: Hybrid.AspNetCore.Extensions
+  fullName: Hybrid.AspNetCore.Extensions
+  type: Namespace
+  assemblies:
+  - Hybrid.AspNetCore
+references:
+- uid: Hybrid.AspNetCore.Extensions.ActionDescriptorExtensions
+  commentId: T:Hybrid.AspNetCore.Extensions.ActionDescriptorExtensions
+  name: ActionDescriptorExtensions
+  nameWithType: ActionDescriptorExtensions
+  fullName: Hybrid.AspNetCore.Extensions.ActionDescriptorExtensions
+- uid: Hybrid.AspNetCore.Extensions.HttpContextExtensions
+  commentId: T:Hybrid.AspNetCore.Extensions.HttpContextExtensions
+  name: HttpContextExtensions
+  nameWithType: HttpContextExtensions
+  fullName: Hybrid.AspNetCore.Extensions.HttpContextExtensions
+- uid: Hybrid.AspNetCore.Extensions.HttpRequestExtensions
+  commentId: T:Hybrid.AspNetCore.Extensions.HttpRequestExtensions
+  name: HttpRequestExtensions
+  nameWithType: HttpRequestExtensions
+  fullName: Hybrid.AspNetCore.Extensions.HttpRequestExtensions
+- uid: Hybrid.AspNetCore.Extensions.ModelStateExtensions
+  commentId: T:Hybrid.AspNetCore.Extensions.ModelStateExtensions
+  name: ModelStateExtensions
+  nameWithType: ModelStateExtensions
+  fullName: Hybrid.AspNetCore.Extensions.ModelStateExtensions
+- uid: Hybrid.AspNetCore.Extensions.ServiceCollectionExtensions
+  commentId: T:Hybrid.AspNetCore.Extensions.ServiceCollectionExtensions
+  name: ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+  fullName: Hybrid.AspNetCore.Extensions.ServiceCollectionExtensions
+- uid: Hybrid.AspNetCore.Extensions.ServiceProviderExtensions
+  commentId: T:Hybrid.AspNetCore.Extensions.ServiceProviderExtensions
+  name: ServiceProviderExtensions
+  nameWithType: ServiceProviderExtensions
+  fullName: Hybrid.AspNetCore.Extensions.ServiceProviderExtensions
+- uid: Hybrid.AspNetCore.Extensions.StringExtensions
+  commentId: T:Hybrid.AspNetCore.Extensions.StringExtensions
+  name: StringExtensions
+  nameWithType: StringExtensions
+  fullName: Hybrid.AspNetCore.Extensions.StringExtensions

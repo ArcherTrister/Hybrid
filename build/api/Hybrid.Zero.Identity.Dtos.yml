@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Zero.Identity.Dtos
+  commentId: N:Hybrid.Zero.Identity.Dtos
+  id: Hybrid.Zero.Identity.Dtos
+  children:
+  - Hybrid.Zero.Identity.Dtos.RoleInputDtoBase`1
+  - Hybrid.Zero.Identity.Dtos.UserInputDtoBase`1
+  - Hybrid.Zero.Identity.Dtos.UserRoleInputDtoBase`2
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Zero.Identity.Dtos
+  nameWithType: Hybrid.Zero.Identity.Dtos
+  fullName: Hybrid.Zero.Identity.Dtos
+  type: Namespace
+  assemblies:
+  - Hybrid.Zero
+references:
+- uid: Hybrid.Zero.Identity.Dtos.RoleInputDtoBase`1
+  commentId: T:Hybrid.Zero.Identity.Dtos.RoleInputDtoBase`1
+  name: RoleInputDtoBase<TRoleKey>
+  nameWithType: RoleInputDtoBase<TRoleKey>
+  fullName: Hybrid.Zero.Identity.Dtos.RoleInputDtoBase<TRoleKey>
+  nameWithType.vb: RoleInputDtoBase(Of TRoleKey)
+  fullName.vb: Hybrid.Zero.Identity.Dtos.RoleInputDtoBase(Of TRoleKey)
+  name.vb: RoleInputDtoBase(Of TRoleKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Identity.Dtos.RoleInputDtoBase`1
+    name: RoleInputDtoBase
+    nameWithType: RoleInputDtoBase
+    fullName: Hybrid.Zero.Identity.Dtos.RoleInputDtoBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Identity.Dtos.RoleInputDtoBase`1
+    name: RoleInputDtoBase
+    nameWithType: RoleInputDtoBase
+    fullName: Hybrid.Zero.Identity.Dtos.RoleInputDtoBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Identity.Dtos.UserInputDtoBase`1
+  commentId: T:Hybrid.Zero.Identity.Dtos.UserInputDtoBase`1
+  name: UserInputDtoBase<TUserKey>
+  nameWithType: UserInputDtoBase<TUserKey>
+  fullName: Hybrid.Zero.Identity.Dtos.UserInputDtoBase<TUserKey>
+  nameWithType.vb: UserInputDtoBase(Of TUserKey)
+  fullName.vb: Hybrid.Zero.Identity.Dtos.UserInputDtoBase(Of TUserKey)
+  name.vb: UserInputDtoBase(Of TUserKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Identity.Dtos.UserInputDtoBase`1
+    name: UserInputDtoBase
+    nameWithType: UserInputDtoBase
+    fullName: Hybrid.Zero.Identity.Dtos.UserInputDtoBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Identity.Dtos.UserInputDtoBase`1
+    name: UserInputDtoBase
+    nameWithType: UserInputDtoBase
+    fullName: Hybrid.Zero.Identity.Dtos.UserInputDtoBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Identity.Dtos.UserRoleInputDtoBase`2
+  commentId: T:Hybrid.Zero.Identity.Dtos.UserRoleInputDtoBase`2
+  name: UserRoleInputDtoBase<TUserKey, TRoleKey>
+  nameWithType: UserRoleInputDtoBase<TUserKey, TRoleKey>
+  fullName: Hybrid.Zero.Identity.Dtos.UserRoleInputDtoBase<TUserKey, TRoleKey>
+  nameWithType.vb: UserRoleInputDtoBase(Of TUserKey, TRoleKey)
+  fullName.vb: Hybrid.Zero.Identity.Dtos.UserRoleInputDtoBase(Of TUserKey, TRoleKey)
+  name.vb: UserRoleInputDtoBase(Of TUserKey, TRoleKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Identity.Dtos.UserRoleInputDtoBase`2
+    name: UserRoleInputDtoBase
+    nameWithType: UserRoleInputDtoBase
+    fullName: Hybrid.Zero.Identity.Dtos.UserRoleInputDtoBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Identity.Dtos.UserRoleInputDtoBase`2
+    name: UserRoleInputDtoBase
+    nameWithType: UserRoleInputDtoBase
+    fullName: Hybrid.Zero.Identity.Dtos.UserRoleInputDtoBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: )
+    nameWithType: )
+    fullName: )

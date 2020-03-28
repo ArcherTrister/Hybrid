@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.AspNetCore.Routing
+  commentId: N:Hybrid.AspNetCore.Routing
+  id: Hybrid.AspNetCore.Routing
+  children:
+  - Hybrid.AspNetCore.Routing.EndpointsModuleBase
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.AspNetCore.Routing
+  nameWithType: Hybrid.AspNetCore.Routing
+  fullName: Hybrid.AspNetCore.Routing
+  type: Namespace
+  assemblies:
+  - Hybrid.AspNetCore
+references:
+- uid: Hybrid.AspNetCore.Routing.EndpointsModuleBase
+  commentId: T:Hybrid.AspNetCore.Routing.EndpointsModuleBase
+  name: EndpointsModuleBase
+  nameWithType: EndpointsModuleBase
+  fullName: Hybrid.AspNetCore.Routing.EndpointsModuleBase

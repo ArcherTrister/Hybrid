@@ -1,0 +1,77 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.EntityFrameworkCore.Sqlite
+  commentId: N:Hybrid.EntityFrameworkCore.Sqlite
+  id: Hybrid.EntityFrameworkCore.Sqlite
+  children:
+  - Hybrid.EntityFrameworkCore.Sqlite.DbContextOptionsBuilderDriveHandler
+  - Hybrid.EntityFrameworkCore.Sqlite.SqliteDapperSqlExecutor`2
+  - Hybrid.EntityFrameworkCore.Sqlite.SqliteEntityFrameworkCoreModule
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.EntityFrameworkCore.Sqlite
+  nameWithType: Hybrid.EntityFrameworkCore.Sqlite
+  fullName: Hybrid.EntityFrameworkCore.Sqlite
+  type: Namespace
+  assemblies:
+  - Hybrid.EntityFrameworkCore.Sqlite
+references:
+- uid: Hybrid.EntityFrameworkCore.Sqlite.DbContextOptionsBuilderDriveHandler
+  commentId: T:Hybrid.EntityFrameworkCore.Sqlite.DbContextOptionsBuilderDriveHandler
+  name: DbContextOptionsBuilderDriveHandler
+  nameWithType: DbContextOptionsBuilderDriveHandler
+  fullName: Hybrid.EntityFrameworkCore.Sqlite.DbContextOptionsBuilderDriveHandler
+- uid: Hybrid.EntityFrameworkCore.Sqlite.SqliteDapperSqlExecutor`2
+  commentId: T:Hybrid.EntityFrameworkCore.Sqlite.SqliteDapperSqlExecutor`2
+  name: SqliteDapperSqlExecutor<TEntity, TKey>
+  nameWithType: SqliteDapperSqlExecutor<TEntity, TKey>
+  fullName: Hybrid.EntityFrameworkCore.Sqlite.SqliteDapperSqlExecutor<TEntity, TKey>
+  nameWithType.vb: SqliteDapperSqlExecutor(Of TEntity, TKey)
+  fullName.vb: Hybrid.EntityFrameworkCore.Sqlite.SqliteDapperSqlExecutor(Of TEntity, TKey)
+  name.vb: SqliteDapperSqlExecutor(Of TEntity, TKey)
+  spec.csharp:
+  - uid: Hybrid.EntityFrameworkCore.Sqlite.SqliteDapperSqlExecutor`2
+    name: SqliteDapperSqlExecutor
+    nameWithType: SqliteDapperSqlExecutor
+    fullName: Hybrid.EntityFrameworkCore.Sqlite.SqliteDapperSqlExecutor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.EntityFrameworkCore.Sqlite.SqliteDapperSqlExecutor`2
+    name: SqliteDapperSqlExecutor
+    nameWithType: SqliteDapperSqlExecutor
+    fullName: Hybrid.EntityFrameworkCore.Sqlite.SqliteDapperSqlExecutor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.EntityFrameworkCore.Sqlite.SqliteEntityFrameworkCoreModule
+  commentId: T:Hybrid.EntityFrameworkCore.Sqlite.SqliteEntityFrameworkCoreModule
+  name: SqliteEntityFrameworkCoreModule
+  nameWithType: SqliteEntityFrameworkCoreModule
+  fullName: Hybrid.EntityFrameworkCore.Sqlite.SqliteEntityFrameworkCoreModule

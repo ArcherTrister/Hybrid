@@ -22,11 +22,15 @@ namespace Hybrid.AspNetCore.Mvc.Filters
         {
             IServiceProvider provider = context.HttpContext.RequestServices;
             IUnitOfWorkManager unitOfWorkManager = provider.GetService<IUnitOfWorkManager>();
-            if (context.Exception != null && !context.ExceptionHandled)
-            {
-                unitOfWorkManager?.Rollback();
-            }
-            else
+            //if (context.Exception != null && !context.ExceptionHandled)
+            //{
+            //    unitOfWorkManager?.Rollback();
+            //}
+            //else
+            //{
+            //    unitOfWorkManager?.Commit();
+            //}
+            if (context.Exception == null && context.ExceptionHandled)
             {
                 unitOfWorkManager?.Commit();
             }

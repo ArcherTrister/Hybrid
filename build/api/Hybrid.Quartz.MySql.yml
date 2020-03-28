@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Quartz.MySql
+  commentId: N:Hybrid.Quartz.MySql
+  id: Hybrid.Quartz.MySql
+  children:
+  - Hybrid.Quartz.MySql.MySqlObjectsInstaller
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Quartz.MySql
+  nameWithType: Hybrid.Quartz.MySql
+  fullName: Hybrid.Quartz.MySql
+  type: Namespace
+  assemblies:
+  - Hybrid.Quartz
+references:
+- uid: Hybrid.Quartz.MySql.MySqlObjectsInstaller
+  commentId: T:Hybrid.Quartz.MySql.MySqlObjectsInstaller
+  name: MySqlObjectsInstaller
+  nameWithType: MySqlObjectsInstaller
+  fullName: Hybrid.Quartz.MySql.MySqlObjectsInstaller

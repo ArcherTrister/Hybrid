@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Linq
+  commentId: N:Hybrid.Linq
+  id: Hybrid.Linq
+  children:
+  - Hybrid.Linq.ExpressionExtensions
+  - Hybrid.Linq.LinqToXmlExtensions
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Linq
+  nameWithType: Hybrid.Linq
+  fullName: Hybrid.Linq
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Linq.ExpressionExtensions
+  commentId: T:Hybrid.Linq.ExpressionExtensions
+  name: ExpressionExtensions
+  nameWithType: ExpressionExtensions
+  fullName: Hybrid.Linq.ExpressionExtensions
+- uid: Hybrid.Linq.LinqToXmlExtensions
+  commentId: T:Hybrid.Linq.LinqToXmlExtensions
+  name: LinqToXmlExtensions
+  nameWithType: LinqToXmlExtensions
+  fullName: Hybrid.Linq.LinqToXmlExtensions

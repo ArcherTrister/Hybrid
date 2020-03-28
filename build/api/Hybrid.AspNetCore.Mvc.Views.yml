@@ -1,0 +1,65 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.AspNetCore.Mvc.Views
+  commentId: N:Hybrid.AspNetCore.Mvc.Views
+  id: Hybrid.AspNetCore.Mvc.Views
+  children:
+  - Hybrid.AspNetCore.Mvc.Views.BaseRazorPage`1
+  - Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.AspNetCore.Mvc.Views
+  nameWithType: Hybrid.AspNetCore.Mvc.Views
+  fullName: Hybrid.AspNetCore.Mvc.Views
+  type: Namespace
+  assemblies:
+  - Hybrid.AspNetCore
+references:
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseRazorPage`1
+  commentId: T:Hybrid.AspNetCore.Mvc.Views.BaseRazorPage`1
+  name: BaseRazorPage<TModel>
+  nameWithType: BaseRazorPage<TModel>
+  fullName: Hybrid.AspNetCore.Mvc.Views.BaseRazorPage<TModel>
+  nameWithType.vb: BaseRazorPage(Of TModel)
+  fullName.vb: Hybrid.AspNetCore.Mvc.Views.BaseRazorPage(Of TModel)
+  name.vb: BaseRazorPage(Of TModel)
+  spec.csharp:
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseRazorPage`1
+    name: BaseRazorPage
+    nameWithType: BaseRazorPage
+    fullName: Hybrid.AspNetCore.Mvc.Views.BaseRazorPage
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TModel
+    nameWithType: TModel
+    fullName: TModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseRazorPage`1
+    name: BaseRazorPage
+    nameWithType: BaseRazorPage
+    fullName: Hybrid.AspNetCore.Mvc.Views.BaseRazorPage
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TModel
+    nameWithType: TModel
+    fullName: TModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  commentId: T:Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+  parent: Hybrid.AspNetCore.Mvc.Views
+  name: BaseViewComponent
+  nameWithType: BaseViewComponent
+  fullName: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+- uid: Hybrid.AspNetCore.Mvc.Views
+  commentId: N:Hybrid.AspNetCore.Mvc.Views
+  name: Hybrid.AspNetCore.Mvc.Views
+  nameWithType: Hybrid.AspNetCore.Mvc.Views
+  fullName: Hybrid.AspNetCore.Mvc.Views

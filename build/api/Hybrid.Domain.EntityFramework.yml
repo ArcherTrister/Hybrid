@@ -1,0 +1,35 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Domain.EntityFramework
+  commentId: N:Hybrid.Domain.EntityFramework
+  id: Hybrid.Domain.EntityFramework
+  children:
+  - Hybrid.Domain.EntityFramework.DatabaseType
+  - Hybrid.Domain.EntityFramework.IDbContext
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Domain.EntityFramework
+  nameWithType: Hybrid.Domain.EntityFramework
+  fullName: Hybrid.Domain.EntityFramework
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Domain.EntityFramework.DatabaseType
+  commentId: T:Hybrid.Domain.EntityFramework.DatabaseType
+  parent: Hybrid.Domain.EntityFramework
+  name: DatabaseType
+  nameWithType: DatabaseType
+  fullName: Hybrid.Domain.EntityFramework.DatabaseType
+- uid: Hybrid.Domain.EntityFramework.IDbContext
+  commentId: T:Hybrid.Domain.EntityFramework.IDbContext
+  parent: Hybrid.Domain.EntityFramework
+  name: IDbContext
+  nameWithType: IDbContext
+  fullName: Hybrid.Domain.EntityFramework.IDbContext
+- uid: Hybrid.Domain.EntityFramework
+  commentId: N:Hybrid.Domain.EntityFramework
+  name: Hybrid.Domain.EntityFramework
+  nameWithType: Hybrid.Domain.EntityFramework
+  fullName: Hybrid.Domain.EntityFramework

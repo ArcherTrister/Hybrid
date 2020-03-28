@@ -1,0 +1,41 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Application.Services
+  commentId: N:Hybrid.Application.Services
+  id: Hybrid.Application.Services
+  children:
+  - Hybrid.Application.Services.ApplicationService
+  - Hybrid.Application.Services.IApplicationService
+  - Hybrid.Application.Services.IAvoidDuplicateCrossCuttingConcerns
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Application.Services
+  nameWithType: Hybrid.Application.Services
+  fullName: Hybrid.Application.Services
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Application.Services.ApplicationService
+  commentId: T:Hybrid.Application.Services.ApplicationService
+  name: ApplicationService
+  nameWithType: ApplicationService
+  fullName: Hybrid.Application.Services.ApplicationService
+- uid: Hybrid.Application.Services.IApplicationService
+  commentId: T:Hybrid.Application.Services.IApplicationService
+  parent: Hybrid.Application.Services
+  name: IApplicationService
+  nameWithType: IApplicationService
+  fullName: Hybrid.Application.Services.IApplicationService
+- uid: Hybrid.Application.Services.IAvoidDuplicateCrossCuttingConcerns
+  commentId: T:Hybrid.Application.Services.IAvoidDuplicateCrossCuttingConcerns
+  parent: Hybrid.Application.Services
+  name: IAvoidDuplicateCrossCuttingConcerns
+  nameWithType: IAvoidDuplicateCrossCuttingConcerns
+  fullName: Hybrid.Application.Services.IAvoidDuplicateCrossCuttingConcerns
+- uid: Hybrid.Application.Services
+  commentId: N:Hybrid.Application.Services
+  name: Hybrid.Application.Services
+  nameWithType: Hybrid.Application.Services
+  fullName: Hybrid.Application.Services

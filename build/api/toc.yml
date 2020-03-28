@@ -1,0 +1,1928 @@
+### YamlMime:TableOfContent
+- uid: Hybrid.Application.Services
+  name: Hybrid.Application.Services
+  items:
+  - uid: Hybrid.Application.Services.ApplicationService
+    name: ApplicationService
+  - uid: Hybrid.Application.Services.IApplicationService
+    name: IApplicationService
+  - uid: Hybrid.Application.Services.IAvoidDuplicateCrossCuttingConcerns
+    name: IAvoidDuplicateCrossCuttingConcerns
+- uid: Hybrid.Application.Services.Audits
+  name: Hybrid.Application.Services.Audits
+  items:
+  - uid: Hybrid.Application.Services.Audits.AuditService
+    name: AuditService
+  - uid: Hybrid.Application.Services.Audits.IAuditService
+    name: IAuditService
+- uid: Hybrid.Application.Services.Audits.Dtos
+  name: Hybrid.Application.Services.Audits.Dtos
+  items:
+  - uid: Hybrid.Application.Services.Audits.Dtos.AuditEntityOutputDto
+    name: AuditEntityOutputDto
+  - uid: Hybrid.Application.Services.Audits.Dtos.AuditOperationOutputDto
+    name: AuditOperationOutputDto
+  - uid: Hybrid.Application.Services.Audits.Dtos.AuditPropertyOutputDto
+    name: AuditPropertyOutputDto
+- uid: Hybrid.Application.Services.Dtos
+  name: Hybrid.Application.Services.Dtos
+  items:
+  - uid: Hybrid.Application.Services.Dtos.DataAuthEnabled
+    name: DataAuthEnabled
+  - uid: Hybrid.Application.Services.Dtos.IHasTotalCount
+    name: IHasTotalCount
+  - uid: Hybrid.Application.Services.Dtos.IListResult`1
+    name: IListResult<T>
+    name.vb: IListResult(Of T)
+  - uid: Hybrid.Application.Services.Dtos.InputDto`1
+    name: InputDto<TKey>
+    name.vb: InputDto(Of TKey)
+  - uid: Hybrid.Application.Services.Dtos.IPagedResult`1
+    name: IPagedResult<T>
+    name.vb: IPagedResult(Of T)
+  - uid: Hybrid.Application.Services.Dtos.ListResultDto`1
+    name: ListResultDto<T>
+    name.vb: ListResultDto(Of T)
+  - uid: Hybrid.Application.Services.Dtos.NameValue`1
+    name: NameValue<T>
+    name.vb: NameValue(Of T)
+  - uid: Hybrid.Application.Services.Dtos.NameValueDto`1
+    name: NameValueDto<T>
+    name.vb: NameValueDto(Of T)
+  - uid: Hybrid.Application.Services.Dtos.OutputDto
+    name: OutputDto
+  - uid: Hybrid.Application.Services.Dtos.PagedResultDto`1
+    name: PagedResultDto<T>
+    name.vb: PagedResultDto(Of T)
+- uid: Hybrid.Aspects
+  name: Hybrid.Aspects
+  items:
+  - uid: Hybrid.Aspects.DisposeAction
+    name: DisposeAction
+- uid: Hybrid.AspNetCore
+  name: Hybrid.AspNetCore
+  items:
+  - uid: Hybrid.AspNetCore.AspHybridModule
+    name: AspHybridModule
+  - uid: Hybrid.AspNetCore.AspHybridModuleManager
+    name: AspHybridModuleManager
+  - uid: Hybrid.AspNetCore.AspNetCoreModule
+    name: AspNetCoreModule
+  - uid: Hybrid.AspNetCore.HttpContextCancellationTokenProvider
+    name: HttpContextCancellationTokenProvider
+  - uid: Hybrid.AspNetCore.HttpContextServiceScopeFactory
+    name: HttpContextServiceScopeFactory
+  - uid: Hybrid.AspNetCore.HttpContextServiceScopeFactory.NonDisposedHttpContextServiceScope
+    name: HttpContextServiceScopeFactory.NonDisposedHttpContextServiceScope
+  - uid: Hybrid.AspNetCore.IAspUseModule
+    name: IAspUseModule
+  - uid: Hybrid.AspNetCore.RequestScopedServiceResolver
+    name: RequestScopedServiceResolver
+- uid: Hybrid.AspNetCore.Diagnostics
+  name: Hybrid.AspNetCore.Diagnostics
+  items:
+  - uid: Hybrid.AspNetCore.Diagnostics.HealthChecksModule
+    name: HealthChecksModule
+  - uid: Hybrid.AspNetCore.Diagnostics.HealthChecksModuleBase
+    name: HealthChecksModuleBase
+- uid: Hybrid.AspNetCore.Extensions
+  name: Hybrid.AspNetCore.Extensions
+  items:
+  - uid: Hybrid.AspNetCore.Extensions.ActionDescriptorExtensions
+    name: ActionDescriptorExtensions
+  - uid: Hybrid.AspNetCore.Extensions.HttpContextExtensions
+    name: HttpContextExtensions
+  - uid: Hybrid.AspNetCore.Extensions.HttpRequestExtensions
+    name: HttpRequestExtensions
+  - uid: Hybrid.AspNetCore.Extensions.ModelStateExtensions
+    name: ModelStateExtensions
+  - uid: Hybrid.AspNetCore.Extensions.ServiceCollectionExtensions
+    name: ServiceCollectionExtensions
+  - uid: Hybrid.AspNetCore.Extensions.ServiceProviderExtensions
+    name: ServiceProviderExtensions
+  - uid: Hybrid.AspNetCore.Extensions.StringExtensions
+    name: StringExtensions
+- uid: Hybrid.AspNetCore.Http
+  name: Hybrid.AspNetCore.Http
+  items:
+  - uid: Hybrid.AspNetCore.Http.HostHttpCrypto
+    name: HostHttpCrypto
+  - uid: Hybrid.AspNetCore.Http.HttpExtensions
+    name: HttpExtensions
+  - uid: Hybrid.AspNetCore.Http.IHostHttpCrypto
+    name: IHostHttpCrypto
+- uid: Hybrid.AspNetCore.Middlewares
+  name: Hybrid.AspNetCore.Middlewares
+  items:
+  - uid: Hybrid.AspNetCore.Middlewares.ExceptionHandlerMiddleware
+    name: ExceptionHandlerMiddleware
+  - uid: Hybrid.AspNetCore.Middlewares.HostHttpCryptoMiddleware
+    name: HostHttpCryptoMiddleware
+  - uid: Hybrid.AspNetCore.Middlewares.IMiddleware
+    name: IMiddleware
+  - uid: Hybrid.AspNetCore.Middlewares.NoFoundHandlerMiddleware
+    name: NoFoundHandlerMiddleware
+- uid: Hybrid.AspNetCore.Mvc
+  name: Hybrid.AspNetCore.Mvc
+  items:
+  - uid: Hybrid.AspNetCore.Mvc.AreaInfoAttribute
+    name: AreaInfoAttribute
+  - uid: Hybrid.AspNetCore.Mvc.MvcControllerTypeFinder
+    name: MvcControllerTypeFinder
+  - uid: Hybrid.AspNetCore.Mvc.MvcExtensions
+    name: MvcExtensions
+  - uid: Hybrid.AspNetCore.Mvc.MvcFunctionHandler
+    name: MvcFunctionHandler
+  - uid: Hybrid.AspNetCore.Mvc.MvcFunctionModule
+    name: MvcFunctionModule
+  - uid: Hybrid.AspNetCore.Mvc.MvcMethodInfoFinder
+    name: MvcMethodInfoFinder
+  - uid: Hybrid.AspNetCore.Mvc.MvcModuleBase
+    name: MvcModuleBase
+  - uid: Hybrid.AspNetCore.Mvc.MvcModuleInfoPicker
+    name: MvcModuleInfoPicker
+- uid: Hybrid.AspNetCore.Mvc.Controllers
+  name: Hybrid.AspNetCore.Mvc.Controllers
+  items:
+  - uid: Hybrid.AspNetCore.Mvc.Controllers.ApiController
+    name: ApiController
+  - uid: Hybrid.AspNetCore.Mvc.Controllers.AreaApiController
+    name: AreaApiController
+  - uid: Hybrid.AspNetCore.Mvc.Controllers.LocalApiController
+    name: LocalApiController
+  - uid: Hybrid.AspNetCore.Mvc.Controllers.LocalAreaApiController
+    name: LocalAreaApiController
+  - uid: Hybrid.AspNetCore.Mvc.Controllers.LocalizationController
+    name: LocalizationController
+  - uid: Hybrid.AspNetCore.Mvc.Controllers.MvcController
+    name: MvcController
+- uid: Hybrid.AspNetCore.Mvc.Conventions
+  name: Hybrid.AspNetCore.Mvc.Conventions
+  items:
+  - uid: Hybrid.AspNetCore.Mvc.Conventions.DashedRoutingConvention
+    name: DashedRoutingConvention
+- uid: Hybrid.AspNetCore.Mvc.Filters
+  name: Hybrid.AspNetCore.Mvc.Filters
+  items:
+  - uid: Hybrid.AspNetCore.Mvc.Filters.AjaxOnlyAttribute
+    name: AjaxOnlyAttribute
+  - uid: Hybrid.AspNetCore.Mvc.Filters.AuditActionFilter
+    name: AuditActionFilter
+  - uid: Hybrid.AspNetCore.Mvc.Filters.FunctionAuthorizationFilter
+    name: FunctionAuthorizationFilter
+  - uid: Hybrid.AspNetCore.Mvc.Filters.OnlineUserAuthorizationFilter
+    name: OnlineUserAuthorizationFilter
+  - uid: Hybrid.AspNetCore.Mvc.Filters.OperateAuditFilter
+    name: OperateAuditFilter
+  - uid: Hybrid.AspNetCore.Mvc.Filters.PageUnitOfWorkFilter
+    name: PageUnitOfWorkFilter
+  - uid: Hybrid.AspNetCore.Mvc.Filters.UnitOfWorkAttribute
+    name: UnitOfWorkAttribute
+  - uid: Hybrid.AspNetCore.Mvc.Filters.WebApiResultFilter
+    name: WebApiResultFilter
+- uid: Hybrid.AspNetCore.Mvc.ModelBinding
+  name: Hybrid.AspNetCore.Mvc.ModelBinding
+  items:
+  - uid: Hybrid.AspNetCore.Mvc.ModelBinding.StringTrimModelBinder
+    name: StringTrimModelBinder
+  - uid: Hybrid.AspNetCore.Mvc.ModelBinding.StringTrimModelBinderProvider
+    name: StringTrimModelBinderProvider
+- uid: Hybrid.AspNetCore.Mvc.Models
+  name: Hybrid.AspNetCore.Mvc.Models
+  items:
+  - uid: Hybrid.AspNetCore.Mvc.Models.AjaxResponse
+    name: AjaxResponse
+  - uid: Hybrid.AspNetCore.Mvc.Models.AjaxResponse`1
+    name: AjaxResponse<TResult>
+    name.vb: AjaxResponse(Of TResult)
+  - uid: Hybrid.AspNetCore.Mvc.Models.AjaxResponseBase
+    name: AjaxResponseBase
+  - uid: Hybrid.AspNetCore.Mvc.Models.ErrorInfo
+    name: ErrorInfo
+  - uid: Hybrid.AspNetCore.Mvc.Models.ErrorInfos
+    name: ErrorInfos
+  - uid: Hybrid.AspNetCore.Mvc.Models.HybridErrorViewModel
+    name: HybridErrorViewModel
+  - uid: Hybrid.AspNetCore.Mvc.Models.TopBarLanguageSwitchViewModel
+    name: TopBarLanguageSwitchViewModel
+  - uid: Hybrid.AspNetCore.Mvc.Models.ValidationErrorInfo
+    name: ValidationErrorInfo
+- uid: Hybrid.AspNetCore.Mvc.Views
+  name: Hybrid.AspNetCore.Mvc.Views
+  items:
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseRazorPage`1
+    name: BaseRazorPage<TModel>
+    name.vb: BaseRazorPage(Of TModel)
+  - uid: Hybrid.AspNetCore.Mvc.Views.BaseViewComponent
+    name: BaseViewComponent
+- uid: Hybrid.AspNetCore.Routing
+  name: Hybrid.AspNetCore.Routing
+  items:
+  - uid: Hybrid.AspNetCore.Routing.EndpointsModuleBase
+    name: EndpointsModuleBase
+- uid: Hybrid.AspNetCore.Services
+  name: Hybrid.AspNetCore.Services
+  items:
+  - uid: Hybrid.AspNetCore.Services.IVerifyCodeService
+    name: IVerifyCodeService
+  - uid: Hybrid.AspNetCore.Services.VerifyCodeService
+    name: VerifyCodeService
+- uid: Hybrid.AspNetCore.SignalR
+  name: Hybrid.AspNetCore.SignalR
+  items:
+  - uid: Hybrid.AspNetCore.SignalR.ConnectionUser
+    name: ConnectionUser
+  - uid: Hybrid.AspNetCore.SignalR.ConnectionUserCache
+    name: ConnectionUserCache
+  - uid: Hybrid.AspNetCore.SignalR.EmailBaseUserIdProvider
+    name: EmailBaseUserIdProvider
+  - uid: Hybrid.AspNetCore.SignalR.HybridHub
+    name: HybridHub
+  - uid: Hybrid.AspNetCore.SignalR.HybridHub`1
+    name: HybridHub<T>
+    name.vb: HybridHub(Of T)
+  - uid: Hybrid.AspNetCore.SignalR.IConnectionUserCache
+    name: IConnectionUserCache
+  - uid: Hybrid.AspNetCore.SignalR.SignalRModuleBase
+    name: SignalRModuleBase
+  - uid: Hybrid.AspNetCore.SignalR.UserNameUserIdProvider
+    name: UserNameUserIdProvider
+- uid: Hybrid.AspNetCore.UI
+  name: Hybrid.AspNetCore.UI
+  items:
+  - uid: Hybrid.AspNetCore.UI.AjaxResult
+    name: AjaxResult
+  - uid: Hybrid.AspNetCore.UI.AjaxResult`1
+    name: AjaxResult<TResult>
+    name.vb: AjaxResult(Of TResult)
+  - uid: Hybrid.AspNetCore.UI.AjaxResultExtensions
+    name: AjaxResultExtensions
+- uid: Hybrid.Audits
+  name: Hybrid.Audits
+  items:
+  - uid: Hybrid.Audits.AuditDatabaseStore
+    name: AuditDatabaseStore
+  - uid: Hybrid.Audits.AuditedAttribute
+    name: AuditedAttribute
+  - uid: Hybrid.Audits.AuditEntityEntry
+    name: AuditEntityEntry
+  - uid: Hybrid.Audits.AuditEntityEventData
+    name: AuditEntityEventData
+  - uid: Hybrid.Audits.AuditEntityEventHandler
+    name: AuditEntityEventHandler
+  - uid: Hybrid.Audits.AuditIgnoreAttribute
+    name: AuditIgnoreAttribute
+  - uid: Hybrid.Audits.AuditingContractResolver
+    name: AuditingContractResolver
+  - uid: Hybrid.Audits.AuditingHelper
+    name: AuditingHelper
+  - uid: Hybrid.Audits.AuditModule
+    name: AuditModule
+  - uid: Hybrid.Audits.AuditOperationEntry
+    name: AuditOperationEntry
+  - uid: Hybrid.Audits.AuditPropertyEntry
+    name: AuditPropertyEntry
+  - uid: Hybrid.Audits.DisableAuditingAttribute
+    name: DisableAuditingAttribute
+  - uid: Hybrid.Audits.IAuditStore
+    name: IAuditStore
+  - uid: Hybrid.Audits.OperateType
+    name: OperateType
+- uid: Hybrid.Audits.Configuration
+  name: Hybrid.Audits.Configuration
+  items:
+  - uid: Hybrid.Audits.Configuration.AuditingConfiguration
+    name: AuditingConfiguration
+  - uid: Hybrid.Audits.Configuration.IAuditingConfiguration
+    name: IAuditingConfiguration
+- uid: Hybrid.Authorization
+  name: Hybrid.Authorization
+  items:
+  - uid: Hybrid.Authorization.AuthorizationResult
+    name: AuthorizationResult
+  - uid: Hybrid.Authorization.AuthorizationStatus
+    name: AuthorizationStatus
+  - uid: Hybrid.Authorization.DataAuthCacheItem
+    name: DataAuthCacheItem
+  - uid: Hybrid.Authorization.DataAuthOperation
+    name: DataAuthOperation
+  - uid: Hybrid.Authorization.FunctionAuthorization
+    name: FunctionAuthorization
+  - uid: Hybrid.Authorization.FunctionAuthorizationBase
+    name: FunctionAuthorizationBase
+  - uid: Hybrid.Authorization.IDataAuthCache
+    name: IDataAuthCache
+  - uid: Hybrid.Authorization.IFunctionAuthCache
+    name: IFunctionAuthCache
+  - uid: Hybrid.Authorization.IFunctionAuthorization
+    name: IFunctionAuthorization
+  - uid: Hybrid.Authorization.LoggedInAttribute
+    name: LoggedInAttribute
+  - uid: Hybrid.Authorization.RoleLimitAttribute
+    name: RoleLimitAttribute
+- uid: Hybrid.Authorization.EntityInfos
+  name: Hybrid.Authorization.EntityInfos
+  items:
+  - uid: Hybrid.Authorization.EntityInfos.EntityInfo
+    name: EntityInfo
+  - uid: Hybrid.Authorization.EntityInfos.EntityInfoBase
+    name: EntityInfoBase
+  - uid: Hybrid.Authorization.EntityInfos.EntityInfoHandler
+    name: EntityInfoHandler
+  - uid: Hybrid.Authorization.EntityInfos.EntityInfoHandlerBase`2
+    name: EntityInfoHandlerBase<TEntityInfo, TEntityInfoHandler>
+    name.vb: EntityInfoHandlerBase(Of TEntityInfo, TEntityInfoHandler)
+  - uid: Hybrid.Authorization.EntityInfos.EntityInfoModule
+    name: EntityInfoModule
+  - uid: Hybrid.Authorization.EntityInfos.EntityProperty
+    name: EntityProperty
+  - uid: Hybrid.Authorization.EntityInfos.IEntityInfo
+    name: IEntityInfo
+  - uid: Hybrid.Authorization.EntityInfos.IEntityInfoHandler
+    name: IEntityInfoHandler
+- uid: Hybrid.Authorization.Functions
+  name: Hybrid.Authorization.Functions
+  items:
+  - uid: Hybrid.Authorization.Functions.Function
+    name: Function
+  - uid: Hybrid.Authorization.Functions.FunctionAccessType
+    name: FunctionAccessType
+  - uid: Hybrid.Authorization.Functions.FunctionBase
+    name: FunctionBase
+  - uid: Hybrid.Authorization.Functions.FunctionHandlerBase`1
+    name: FunctionHandlerBase<TFunction>
+    name.vb: FunctionHandlerBase(Of TFunction)
+  - uid: Hybrid.Authorization.Functions.IFunction
+    name: IFunction
+  - uid: Hybrid.Authorization.Functions.IFunctionHandler
+    name: IFunctionHandler
+  - uid: Hybrid.Authorization.Functions.IFunctionTypeFinder
+    name: IFunctionTypeFinder
+  - uid: Hybrid.Authorization.Functions.NonFunctionAttribute
+    name: NonFunctionAttribute
+- uid: Hybrid.Authorization.ModuleInfos
+  name: Hybrid.Authorization.ModuleInfos
+  items:
+  - uid: Hybrid.Authorization.ModuleInfos.DependOnFunctionAttribute
+    name: DependOnFunctionAttribute
+  - uid: Hybrid.Authorization.ModuleInfos.IModuleHandler
+    name: IModuleHandler
+  - uid: Hybrid.Authorization.ModuleInfos.IModuleInfoPicker
+    name: IModuleInfoPicker
+  - uid: Hybrid.Authorization.ModuleInfos.ModuleInfo
+    name: ModuleInfo
+  - uid: Hybrid.Authorization.ModuleInfos.ModuleInfoAttribute
+    name: ModuleInfoAttribute
+  - uid: Hybrid.Authorization.ModuleInfos.ModuleInfoPickerBase`1
+    name: ModuleInfoPickerBase<TFunction>
+    name.vb: ModuleInfoPickerBase(Of TFunction)
+- uid: Hybrid.AutoMapper
+  name: Hybrid.AutoMapper
+  items:
+  - uid: Hybrid.AutoMapper.AutoMapperMapper
+    name: AutoMapperMapper
+  - uid: Hybrid.AutoMapper.AutoMapperModule
+    name: AutoMapperModule
+  - uid: Hybrid.AutoMapper.IAutoMapperConfiguration
+    name: IAutoMapperConfiguration
+  - uid: Hybrid.AutoMapper.MapTupleProfile
+    name: MapTupleProfile
+- uid: Hybrid.Caching
+  name: Hybrid.Caching
+  items:
+  - uid: Hybrid.Caching.CacheService
+    name: CacheService
+  - uid: Hybrid.Caching.DistributedCacheExtensions
+    name: DistributedCacheExtensions
+  - uid: Hybrid.Caching.ExpressionCacheKeyGenerator
+    name: ExpressionCacheKeyGenerator
+  - uid: Hybrid.Caching.ICacheKeyGenerator
+    name: ICacheKeyGenerator
+  - uid: Hybrid.Caching.ICacheService
+    name: ICacheService
+  - uid: Hybrid.Caching.StringCacheKeyGenerator
+    name: StringCacheKeyGenerator
+- uid: Hybrid.CodeGenerator
+  name: Hybrid.CodeGenerator
+  items:
+  - uid: Hybrid.CodeGenerator.EnumMetadata
+    name: EnumMetadata
+  - uid: Hybrid.CodeGenerator.IgnoreGenPropertyAttribute
+    name: IgnoreGenPropertyAttribute
+  - uid: Hybrid.CodeGenerator.IgnoreGenTypeAttribute
+    name: IgnoreGenTypeAttribute
+  - uid: Hybrid.CodeGenerator.ITypeMetadataHandler
+    name: ITypeMetadataHandler
+  - uid: Hybrid.CodeGenerator.PropertyMetadata
+    name: PropertyMetadata
+  - uid: Hybrid.CodeGenerator.TypeMetadata
+    name: TypeMetadata
+  - uid: Hybrid.CodeGenerator.TypeMetadataHandler
+    name: TypeMetadataHandler
+- uid: Hybrid.Configuration
+  name: Hybrid.Configuration
+  items:
+  - uid: Hybrid.Configuration.DictionaryBasedConfig
+    name: DictionaryBasedConfig
+  - uid: Hybrid.Configuration.IDictionaryBasedConfig
+    name: IDictionaryBasedConfig
+- uid: Hybrid.Core.Builders
+  name: Hybrid.Core.Builders
+  items:
+  - uid: Hybrid.Core.Builders.HybridBuilder
+    name: HybridBuilder
+  - uid: Hybrid.Core.Builders.HybridBuilderExtensions
+    name: HybridBuilderExtensions
+  - uid: Hybrid.Core.Builders.IHybridBuilder
+    name: IHybridBuilder
+- uid: Hybrid.Core.Data
+  name: Hybrid.Core.Data
+  items:
+  - uid: Hybrid.Core.Data.IKeyValue
+    name: IKeyValue
+- uid: Hybrid.Core.Modules
+  name: Hybrid.Core.Modules
+  items:
+  - uid: Hybrid.Core.Modules.DependsOnModulesAttribute
+    name: DependsOnModulesAttribute
+  - uid: Hybrid.Core.Modules.HybridCoreModule
+    name: HybridCoreModule
+  - uid: Hybrid.Core.Modules.HybridModule
+    name: HybridModule
+  - uid: Hybrid.Core.Modules.HybridModuleManager
+    name: HybridModuleManager
+  - uid: Hybrid.Core.Modules.HybridModuleTypeFinder
+    name: HybridModuleTypeFinder
+  - uid: Hybrid.Core.Modules.IHybridModuleManager
+    name: IHybridModuleManager
+  - uid: Hybrid.Core.Modules.IHybridModuleTypeFinder
+    name: IHybridModuleTypeFinder
+  - uid: Hybrid.Core.Modules.ModuleLevel
+    name: ModuleLevel
+- uid: Hybrid.Core.Options
+  name: Hybrid.Core.Options
+  items:
+  - uid: Hybrid.Core.Options.AppSettingsReader
+    name: AppSettingsReader
+  - uid: Hybrid.Core.Options.HybridDbContextOptions
+    name: HybridDbContextOptions
+  - uid: Hybrid.Core.Options.HybridOptions
+    name: HybridOptions
+  - uid: Hybrid.Core.Options.IdsOptions
+    name: IdsOptions
+  - uid: Hybrid.Core.Options.JwtOptions
+    name: JwtOptions
+  - uid: Hybrid.Core.Options.OAuth2Options
+    name: OAuth2Options
+  - uid: Hybrid.Core.Options.QuartzOptions
+    name: QuartzOptions
+  - uid: Hybrid.Core.Options.QuartzSerializerType
+    name: QuartzSerializerType
+  - uid: Hybrid.Core.Options.QuartzStorageType
+    name: QuartzStorageType
+  - uid: Hybrid.Core.Options.RedisOptions
+    name: RedisOptions
+  - uid: Hybrid.Core.Options.SwaggerOptions
+    name: SwaggerOptions
+- uid: Hybrid.Core.Systems
+  name: Hybrid.Core.Systems
+  items:
+  - uid: Hybrid.Core.Systems.IKeyValueStore
+    name: IKeyValueStore
+  - uid: Hybrid.Core.Systems.ISetting
+    name: ISetting
+  - uid: Hybrid.Core.Systems.KeyValue
+    name: KeyValue
+  - uid: Hybrid.Core.Systems.SystemSettingKeys
+    name: SystemSettingKeys
+- uid: Hybrid.Core.Systems.Dtos
+  name: Hybrid.Core.Systems.Dtos
+  items:
+  - uid: Hybrid.Core.Systems.Dtos.SettingInputDto
+    name: SettingInputDto
+  - uid: Hybrid.Core.Systems.Dtos.SettingOutputDto
+    name: SettingOutputDto
+- uid: Hybrid.Data
+  name: Hybrid.Data
+  items:
+  - uid: Hybrid.Data.AjaxResultType
+    name: AjaxResultType
+  - uid: Hybrid.Data.Check
+    name: Check
+  - uid: Hybrid.Data.CombGuid
+    name: CombGuid
+  - uid: Hybrid.Data.Compression
+    name: Compression
+  - uid: Hybrid.Data.Disposable
+    name: Disposable
+  - uid: Hybrid.Data.GenderType
+    name: GenderType
+  - uid: Hybrid.Data.HybridConsts
+    name: HybridConsts
+  - uid: Hybrid.Data.HybridConsts.CustomController
+    name: HybridConsts.CustomController
+  - uid: Hybrid.Data.HybridConsts.LocalApi
+    name: HybridConsts.LocalApi
+  - uid: Hybrid.Data.HybridResult`2
+    name: HybridResult<TResultType, TData>
+    name.vb: HybridResult(Of TResultType, TData)
+  - uid: Hybrid.Data.HybridResult`1
+    name: HybridResult<TResultType>
+    name.vb: HybridResult(Of TResultType)
+  - uid: Hybrid.Data.IHybridResult`2
+    name: IHybridResult<TResultType, TData>
+    name.vb: IHybridResult(Of TResultType, TData)
+  - uid: Hybrid.Data.IHybridResult`1
+    name: IHybridResult<TResultType>
+    name.vb: IHybridResult(Of TResultType)
+  - uid: Hybrid.Data.OperationResult
+    name: OperationResult
+  - uid: Hybrid.Data.OperationResult`1
+    name: OperationResult<TData>
+    name.vb: OperationResult(Of TData)
+  - uid: Hybrid.Data.OperationResultType
+    name: OperationResultType
+  - uid: Hybrid.Data.OrdinalComparer
+    name: OrdinalComparer
+  - uid: Hybrid.Data.RegexPatterns
+    name: RegexPatterns
+  - uid: Hybrid.Data.SequentialGuid
+    name: SequentialGuid
+  - uid: Hybrid.Data.SequentialGuidType
+    name: SequentialGuidType
+  - uid: Hybrid.Data.SerializeHelper
+    name: SerializeHelper
+  - uid: Hybrid.Data.Singleton
+    name: Singleton
+  - uid: Hybrid.Data.Singleton`1
+    name: Singleton<T>
+    name.vb: Singleton(Of T)
+  - uid: Hybrid.Data.SingletonDictionary`2
+    name: SingletonDictionary<TKey, TValue>
+    name.vb: SingletonDictionary(Of TKey, TValue)
+  - uid: Hybrid.Data.SingletonList`1
+    name: SingletonList<T>
+    name.vb: SingletonList(Of T)
+- uid: Hybrid.Data.Annotations
+  name: Hybrid.Data.Annotations
+  items:
+  - uid: Hybrid.Data.Annotations.PasswordAttribute
+    name: PasswordAttribute
+- uid: Hybrid.Dependency
+  name: Hybrid.Dependency
+  items:
+  - uid: Hybrid.Dependency.DefaultServiceScopeFactory
+    name: DefaultServiceScopeFactory
+  - uid: Hybrid.Dependency.DependencyAttribute
+    name: DependencyAttribute
+  - uid: Hybrid.Dependency.DependencyModule
+    name: DependencyModule
+  - uid: Hybrid.Dependency.DependencyTypeFinder
+    name: DependencyTypeFinder
+  - uid: Hybrid.Dependency.IDependencyTypeFinder
+    name: IDependencyTypeFinder
+  - uid: Hybrid.Dependency.IgnoreDependencyAttribute
+    name: IgnoreDependencyAttribute
+  - uid: Hybrid.Dependency.IHybridServiceScopeFactory
+    name: IHybridServiceScopeFactory
+  - uid: Hybrid.Dependency.IScopeDependency
+    name: IScopeDependency
+  - uid: Hybrid.Dependency.IScopedServiceResolver
+    name: IScopedServiceResolver
+  - uid: Hybrid.Dependency.ISingletonDependency
+    name: ISingletonDependency
+  - uid: Hybrid.Dependency.ISingletonFactory
+    name: ISingletonFactory
+  - uid: Hybrid.Dependency.ITransientDependency
+    name: ITransientDependency
+  - uid: Hybrid.Dependency.MultipleDependencyAttribute
+    name: MultipleDependencyAttribute
+  - uid: Hybrid.Dependency.ScopedDictionary
+    name: ScopedDictionary
+  - uid: Hybrid.Dependency.ScopedDictionaryExtensions
+    name: ScopedDictionaryExtensions
+  - uid: Hybrid.Dependency.ServiceCollectionExtensions
+    name: ServiceCollectionExtensions
+  - uid: Hybrid.Dependency.ServiceLocator
+    name: ServiceLocator
+  - uid: Hybrid.Dependency.ServiceProviderExtensions
+    name: ServiceProviderExtensions
+  - uid: Hybrid.Dependency.SingletonFactory
+    name: SingletonFactory
+- uid: Hybrid.Develop
+  name: Hybrid.Develop
+  items:
+  - uid: Hybrid.Develop.CodeRamer
+    name: CodeRamer
+  - uid: Hybrid.Develop.CodeTimer
+    name: CodeTimer
+- uid: Hybrid.Develop.T4
+  name: Hybrid.Develop.T4
+  items:
+  - uid: Hybrid.Develop.T4.T4ModelInfo
+    name: T4ModelInfo
+- uid: Hybrid.Domain.Entities
+  name: Hybrid.Domain.Entities
+  items:
+  - uid: Hybrid.Domain.Entities.EntityBase`1
+    name: EntityBase<TKey>
+    name.vb: EntityBase(Of TKey)
+  - uid: Hybrid.Domain.Entities.EntityExtensions
+    name: EntityExtensions
+  - uid: Hybrid.Domain.Entities.EntityHashExtensions
+    name: EntityHashExtensions
+  - uid: Hybrid.Domain.Entities.EntityTypeFinder
+    name: EntityTypeFinder
+  - uid: Hybrid.Domain.Entities.ExpirableBase`1
+    name: ExpirableBase<TKey>
+    name.vb: ExpirableBase(Of TKey)
+  - uid: Hybrid.Domain.Entities.ICreatedTime
+    name: ICreatedTime
+  - uid: Hybrid.Domain.Entities.IDataAuthEnabled
+    name: IDataAuthEnabled
+  - uid: Hybrid.Domain.Entities.IEnabled
+    name: IEnabled
+  - uid: Hybrid.Domain.Entities.IEntity`1
+    name: IEntity<TKey>
+    name.vb: IEntity(Of TKey)
+  - uid: Hybrid.Domain.Entities.IEntityHash
+    name: IEntityHash
+  - uid: Hybrid.Domain.Entities.IEntityTypeFinder
+    name: IEntityTypeFinder
+  - uid: Hybrid.Domain.Entities.IExpirable
+    name: IExpirable
+  - uid: Hybrid.Domain.Entities.IInputDto`1
+    name: IInputDto<TKey>
+    name.vb: IInputDto(Of TKey)
+  - uid: Hybrid.Domain.Entities.IInputDtoTypeFinder
+    name: IInputDtoTypeFinder
+  - uid: Hybrid.Domain.Entities.ILockable
+    name: ILockable
+  - uid: Hybrid.Domain.Entities.InputDtoTypeFinder
+    name: InputDtoTypeFinder
+  - uid: Hybrid.Domain.Entities.InputDtoValidateExtensions
+    name: InputDtoValidateExtensions
+  - uid: Hybrid.Domain.Entities.IOutputDto
+    name: IOutputDto
+  - uid: Hybrid.Domain.Entities.IOutputDtoTypeFinder
+    name: IOutputDtoTypeFinder
+  - uid: Hybrid.Domain.Entities.ISoftDelete
+    name: ISoftDelete
+  - uid: Hybrid.Domain.Entities.OutputDtoTypeFinder
+    name: OutputDtoTypeFinder
+  - uid: Hybrid.Domain.Entities.TableNamePrefixAttribute
+    name: TableNamePrefixAttribute
+  - uid: Hybrid.Domain.Entities.UserFlagAttribute
+    name: UserFlagAttribute
+- uid: Hybrid.Domain.Entities.Auditing
+  name: Hybrid.Domain.Entities.Auditing
+  items:
+  - uid: Hybrid.Domain.Entities.Auditing.AuditEntity
+    name: AuditEntity
+  - uid: Hybrid.Domain.Entities.Auditing.AuditOperation
+    name: AuditOperation
+  - uid: Hybrid.Domain.Entities.Auditing.AuditProperty
+    name: AuditProperty
+  - uid: Hybrid.Domain.Entities.Auditing.ICreationAudited`1
+    name: ICreationAudited<TUserKey>
+    name.vb: ICreationAudited(Of TUserKey)
+  - uid: Hybrid.Domain.Entities.Auditing.IUpdateAudited`1
+    name: IUpdateAudited<TUserKey>
+    name.vb: IUpdateAudited(Of TUserKey)
+- uid: Hybrid.Domain.EntityFramework
+  name: Hybrid.Domain.EntityFramework
+  items:
+  - uid: Hybrid.Domain.EntityFramework.DatabaseType
+    name: DatabaseType
+  - uid: Hybrid.Domain.EntityFramework.IDbContext
+    name: IDbContext
+- uid: Hybrid.Domain.Repositories
+  name: Hybrid.Domain.Repositories
+  items:
+  - uid: Hybrid.Domain.Repositories.IRepository`2
+    name: IRepository<TEntity, TKey>
+    name.vb: IRepository(Of TEntity, TKey)
+  - uid: Hybrid.Domain.Repositories.ISqlExecutor`2
+    name: ISqlExecutor<TEntity, TKey>
+    name.vb: ISqlExecutor(Of TEntity, TKey)
+- uid: Hybrid.Domain.Uow
+  name: Hybrid.Domain.Uow
+  items:
+  - uid: Hybrid.Domain.Uow.IUnitOfWork
+    name: IUnitOfWork
+  - uid: Hybrid.Domain.Uow.IUnitOfWorkManager
+    name: IUnitOfWorkManager
+  - uid: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions
+    name: UnitOfWorkManagerExtensions
+- uid: Hybrid.Drawing
+  name: Hybrid.Drawing
+  items:
+  - uid: Hybrid.Drawing.BitmapExtensions
+    name: BitmapExtensions
+  - uid: Hybrid.Drawing.ValidateCoder
+    name: ValidateCoder
+  - uid: Hybrid.Drawing.ValidateCodeType
+    name: ValidateCodeType
+- uid: Hybrid.Dynamic
+  name: Hybrid.Dynamic
+  items:
+  - uid: Hybrid.Dynamic.Exposed
+    name: Exposed
+- uid: Hybrid.EntityFrameworkCore
+  name: Hybrid.EntityFrameworkCore
+  items:
+  - uid: Hybrid.EntityFrameworkCore.AuditEntityProvider
+    name: AuditEntityProvider
+  - uid: Hybrid.EntityFrameworkCore.DbContextBase
+    name: DbContextBase
+  - uid: Hybrid.EntityFrameworkCore.DbContextExtensions
+    name: DbContextExtensions
+  - uid: Hybrid.EntityFrameworkCore.DbContextModelCache
+    name: DbContextModelCache
+  - uid: Hybrid.EntityFrameworkCore.DesignTimeDbContextFactoryBase`1
+    name: DesignTimeDbContextFactoryBase<TDbContext>
+    name.vb: DesignTimeDbContextFactoryBase(Of TDbContext)
+  - uid: Hybrid.EntityFrameworkCore.EntityConfigurationTypeFinder
+    name: EntityConfigurationTypeFinder
+  - uid: Hybrid.EntityFrameworkCore.EntityFrameworkCoreModuleBase
+    name: EntityFrameworkCoreModuleBase
+  - uid: Hybrid.EntityFrameworkCore.EntityManager
+    name: EntityManager
+  - uid: Hybrid.EntityFrameworkCore.EntityTypeConfigurationBase`2
+    name: EntityTypeConfigurationBase<TEntity, TKey>
+    name.vb: EntityTypeConfigurationBase(Of TEntity, TKey)
+  - uid: Hybrid.EntityFrameworkCore.IAuditEntityProvider
+    name: IAuditEntityProvider
+  - uid: Hybrid.EntityFrameworkCore.IDbContextOptionsBuilderDriveHandler
+    name: IDbContextOptionsBuilderDriveHandler
+  - uid: Hybrid.EntityFrameworkCore.IEntityConfigurationTypeFinder
+    name: IEntityConfigurationTypeFinder
+  - uid: Hybrid.EntityFrameworkCore.IEntityManager
+    name: IEntityManager
+  - uid: Hybrid.EntityFrameworkCore.IEntityRegister
+    name: IEntityRegister
+  - uid: Hybrid.EntityFrameworkCore.MigrationModuleBase`1
+    name: MigrationModuleBase<TDbContext>
+    name.vb: MigrationModuleBase(Of TDbContext)
+  - uid: Hybrid.EntityFrameworkCore.Repository`2
+    name: Repository<TEntity, TKey>
+    name.vb: Repository(Of TEntity, TKey)
+  - uid: Hybrid.EntityFrameworkCore.RepositoryExtensions
+    name: RepositoryExtensions
+  - uid: Hybrid.EntityFrameworkCore.ServiceCollectionExtensions
+    name: ServiceCollectionExtensions
+  - uid: Hybrid.EntityFrameworkCore.SqlExecutorBase`2
+    name: SqlExecutorBase<TEntity, TKey>
+    name.vb: SqlExecutorBase(Of TEntity, TKey)
+  - uid: Hybrid.EntityFrameworkCore.UnitOfWork
+    name: UnitOfWork
+  - uid: Hybrid.EntityFrameworkCore.UnitOfWorkManager
+    name: UnitOfWorkManager
+- uid: Hybrid.EntityFrameworkCore.Defaults
+  name: Hybrid.EntityFrameworkCore.Defaults
+  items:
+  - uid: Hybrid.EntityFrameworkCore.Defaults.DefaultDbContext
+    name: DefaultDbContext
+- uid: Hybrid.EntityFrameworkCore.EntityConfigurations
+  name: Hybrid.EntityFrameworkCore.EntityConfigurations
+  items:
+  - uid: Hybrid.EntityFrameworkCore.EntityConfigurations.AuditEntityConfiguration
+    name: AuditEntityConfiguration
+  - uid: Hybrid.EntityFrameworkCore.EntityConfigurations.AuditOperationConfiguration
+    name: AuditOperationConfiguration
+  - uid: Hybrid.EntityFrameworkCore.EntityConfigurations.AuditPropertyConfiguration
+    name: AuditPropertyConfiguration
+  - uid: Hybrid.EntityFrameworkCore.EntityConfigurations.KeyValueConfiguration
+    name: KeyValueConfiguration
+- uid: Hybrid.EntityFrameworkCore.Extensions
+  name: Hybrid.EntityFrameworkCore.Extensions
+  items:
+  - uid: Hybrid.EntityFrameworkCore.Extensions.ObjectDocumentation
+    name: ObjectDocumentation
+  - uid: Hybrid.EntityFrameworkCore.Extensions.ReflectionUtil
+    name: ReflectionUtil
+  - uid: Hybrid.EntityFrameworkCore.Extensions.SchemaDescriptionUpdater`1
+    name: SchemaDescriptionUpdater<TContext>
+    name.vb: SchemaDescriptionUpdater(Of TContext)
+  - uid: Hybrid.EntityFrameworkCore.Extensions.XmlAnnotationReader
+    name: XmlAnnotationReader
+  - uid: Hybrid.EntityFrameworkCore.Extensions.XmlResourceType
+    name: XmlResourceType
+- uid: Hybrid.EntityFrameworkCore.MySql
+  name: Hybrid.EntityFrameworkCore.MySql
+  items:
+  - uid: Hybrid.EntityFrameworkCore.MySql.DbContextOptionsBuilderDriveHandler
+    name: DbContextOptionsBuilderDriveHandler
+  - uid: Hybrid.EntityFrameworkCore.MySql.MySqlDapperSqlExecutor`2
+    name: MySqlDapperSqlExecutor<TEntity, TKey>
+    name.vb: MySqlDapperSqlExecutor(Of TEntity, TKey)
+  - uid: Hybrid.EntityFrameworkCore.MySql.MySqlEntityFrameworkCoreModule
+    name: MySqlEntityFrameworkCoreModule
+- uid: Hybrid.EntityFrameworkCore.Sqlite
+  name: Hybrid.EntityFrameworkCore.Sqlite
+  items:
+  - uid: Hybrid.EntityFrameworkCore.Sqlite.DbContextOptionsBuilderDriveHandler
+    name: DbContextOptionsBuilderDriveHandler
+  - uid: Hybrid.EntityFrameworkCore.Sqlite.SqliteDapperSqlExecutor`2
+    name: SqliteDapperSqlExecutor<TEntity, TKey>
+    name.vb: SqliteDapperSqlExecutor(Of TEntity, TKey)
+  - uid: Hybrid.EntityFrameworkCore.Sqlite.SqliteEntityFrameworkCoreModule
+    name: SqliteEntityFrameworkCoreModule
+- uid: Hybrid.EntityFrameworkCore.SqlServer
+  name: Hybrid.EntityFrameworkCore.SqlServer
+  items:
+  - uid: Hybrid.EntityFrameworkCore.SqlServer.DbContextOptionsBuilderDriveHandler
+    name: DbContextOptionsBuilderDriveHandler
+  - uid: Hybrid.EntityFrameworkCore.SqlServer.SqlServerDapperSqlExecutor`2
+    name: SqlServerDapperSqlExecutor<TEntity, TKey>
+    name.vb: SqlServerDapperSqlExecutor(Of TEntity, TKey)
+  - uid: Hybrid.EntityFrameworkCore.SqlServer.SqlServerEntityFrameworkCoreModule
+    name: SqlServerEntityFrameworkCoreModule
+- uid: Hybrid.EventBuses
+  name: Hybrid.EventBuses
+  items:
+  - uid: Hybrid.EventBuses.EventBusBase
+    name: EventBusBase
+  - uid: Hybrid.EventBuses.EventBusModule
+    name: EventBusModule
+  - uid: Hybrid.EventBuses.EventDataBase
+    name: EventDataBase
+  - uid: Hybrid.EventBuses.EventHandlerBase`1
+    name: EventHandlerBase<TEventData>
+    name.vb: EventHandlerBase(Of TEventData)
+  - uid: Hybrid.EventBuses.EventHandlerTypeFinder
+    name: EventHandlerTypeFinder
+  - uid: Hybrid.EventBuses.IEventBus
+    name: IEventBus
+  - uid: Hybrid.EventBuses.IEventBusBuilder
+    name: IEventBusBuilder
+  - uid: Hybrid.EventBuses.IEventData
+    name: IEventData
+  - uid: Hybrid.EventBuses.IEventHandler
+    name: IEventHandler
+  - uid: Hybrid.EventBuses.IEventHandler`1
+    name: IEventHandler<TEventData>
+    name.vb: IEventHandler(Of TEventData)
+  - uid: Hybrid.EventBuses.IEventHandlerFactory
+    name: IEventHandlerFactory
+  - uid: Hybrid.EventBuses.IEventHandlerTypeFinder
+    name: IEventHandlerTypeFinder
+  - uid: Hybrid.EventBuses.IEventPublisher
+    name: IEventPublisher
+  - uid: Hybrid.EventBuses.IEventStore
+    name: IEventStore
+  - uid: Hybrid.EventBuses.IEventSubscriber
+    name: IEventSubscriber
+- uid: Hybrid.EventBuses.Internal
+  name: Hybrid.EventBuses.Internal
+  items:
+  - uid: Hybrid.EventBuses.Internal.EventHandlerDisposeWrapper
+    name: EventHandlerDisposeWrapper
+- uid: Hybrid.Exceptions
+  name: Hybrid.Exceptions
+  items:
+  - uid: Hybrid.Exceptions.ExceptionExtensions
+    name: ExceptionExtensions
+  - uid: Hybrid.Exceptions.ExceptionMessage
+    name: ExceptionMessage
+  - uid: Hybrid.Exceptions.HybridException
+    name: HybridException
+- uid: Hybrid.Extensions
+  name: Hybrid.Extensions
+  items:
+  - uid: Hybrid.Extensions.ArrayExtensions
+    name: ArrayExtensions
+  - uid: Hybrid.Extensions.AssemblyExtensions
+    name: AssemblyExtensions
+  - uid: Hybrid.Extensions.BooleanExtensions
+    name: BooleanExtensions
+  - uid: Hybrid.Extensions.CollectionExtensions
+    name: CollectionExtensions
+  - uid: Hybrid.Extensions.DateTimeExtensions
+    name: DateTimeExtensions
+  - uid: Hybrid.Extensions.DictionaryExtensions
+    name: DictionaryExtensions
+  - uid: Hybrid.Extensions.EnumerableExtensions
+    name: EnumerableExtensions
+  - uid: Hybrid.Extensions.EnumExtensions
+    name: EnumExtensions
+  - uid: Hybrid.Extensions.ObjectExtensions
+    name: ObjectExtensions
+  - uid: Hybrid.Extensions.OptionExtensions
+    name: OptionExtensions
+  - uid: Hybrid.Extensions.ParameterCheckExtensions
+    name: ParameterCheckExtensions
+  - uid: Hybrid.Extensions.QueryableExtensions
+    name: QueryableExtensions
+  - uid: Hybrid.Extensions.RandomExtensions
+    name: RandomExtensions
+  - uid: Hybrid.Extensions.ServiceProviderExtensions
+    name: ServiceProviderExtensions
+  - uid: Hybrid.Extensions.StreamExtensions
+    name: StreamExtensions
+  - uid: Hybrid.Extensions.StringBuilderExtensions
+    name: StringBuilderExtensions
+  - uid: Hybrid.Extensions.StringExtensions
+    name: StringExtensions
+  - uid: Hybrid.Extensions.TryCatchExtensions
+    name: TryCatchExtensions
+  - uid: Hybrid.Extensions.TypeExtensions
+    name: TypeExtensions
+  - uid: Hybrid.Extensions.XmlNodeExtensions
+    name: XmlNodeExtensions
+- uid: Hybrid.Filter
+  name: Hybrid.Filter
+  items:
+  - uid: Hybrid.Filter.CheckExistsType
+    name: CheckExistsType
+  - uid: Hybrid.Filter.CollectionPropertySorter`1
+    name: CollectionPropertySorter<T>
+    name.vb: CollectionPropertySorter(Of T)
+  - uid: Hybrid.Filter.FilterExtensions
+    name: FilterExtensions
+  - uid: Hybrid.Filter.FilterGroup
+    name: FilterGroup
+  - uid: Hybrid.Filter.FilterHelper
+    name: FilterHelper
+  - uid: Hybrid.Filter.FilterOperate
+    name: FilterOperate
+  - uid: Hybrid.Filter.FilterRule
+    name: FilterRule
+  - uid: Hybrid.Filter.FilterService
+    name: FilterService
+  - uid: Hybrid.Filter.IFilterService
+    name: IFilterService
+  - uid: Hybrid.Filter.OperateCodeAttribute
+    name: OperateCodeAttribute
+  - uid: Hybrid.Filter.PageCondition
+    name: PageCondition
+  - uid: Hybrid.Filter.PageData`1
+    name: PageData<T>
+    name.vb: PageData(Of T)
+  - uid: Hybrid.Filter.PageRequest
+    name: PageRequest
+  - uid: Hybrid.Filter.PageResult`1
+    name: PageResult<T>
+    name.vb: PageResult(Of T)
+  - uid: Hybrid.Filter.SortCondition
+    name: SortCondition
+  - uid: Hybrid.Filter.SortCondition`1
+    name: SortCondition<T>
+    name.vb: SortCondition(Of T)
+- uid: Hybrid.Finders
+  name: Hybrid.Finders
+  items:
+  - uid: Hybrid.Finders.FinderBase`1
+    name: FinderBase<TItem>
+    name.vb: FinderBase(Of TItem)
+  - uid: Hybrid.Finders.IFinder`1
+    name: IFinder<TItem>
+    name.vb: IFinder(Of TItem)
+- uid: Hybrid.Helpers
+  name: Hybrid.Helpers
+  items:
+  - uid: Hybrid.Helpers.AlgorithmHelper
+    name: AlgorithmHelper
+  - uid: Hybrid.Helpers.ComparisonHelper`1
+    name: ComparisonHelper<T>
+    name.vb: ComparisonHelper(Of T)
+  - uid: Hybrid.Helpers.EqualityHelper`1
+    name: EqualityHelper<T>
+    name.vb: EqualityHelper(Of T)
+- uid: Hybrid.Http
+  name: Hybrid.Http
+  items:
+  - uid: Hybrid.Http.ClientHttpCrypto
+    name: ClientHttpCrypto
+  - uid: Hybrid.Http.ClientHttpCryptoHandler
+    name: ClientHttpCryptoHandler
+  - uid: Hybrid.Http.HttpExtensions
+    name: HttpExtensions
+  - uid: Hybrid.Http.HttpHeaderNames
+    name: HttpHeaderNames
+  - uid: Hybrid.Http.IClientHttpCrypto
+    name: IClientHttpCrypto
+  - uid: Hybrid.Http.JsonContent
+    name: JsonContent
+  - uid: Hybrid.Http.TransmissionEncryptor
+    name: TransmissionEncryptor
+- uid: Hybrid.Http.Configuration
+  name: Hybrid.Http.Configuration
+  items:
+  - uid: Hybrid.Http.Configuration.HttpEncryptConfiguration
+    name: HttpEncryptConfiguration
+  - uid: Hybrid.Http.Configuration.IHttpEncryptConfiguration
+    name: IHttpEncryptConfiguration
+- uid: Hybrid.Identity.JwtBearer
+  name: Hybrid.Identity.JwtBearer
+  items:
+  - uid: Hybrid.Identity.JwtBearer.GrantType
+    name: GrantType
+  - uid: Hybrid.Identity.JwtBearer.IJwtBearerService
+    name: IJwtBearerService
+  - uid: Hybrid.Identity.JwtBearer.JsonWebToken
+    name: JsonWebToken
+  - uid: Hybrid.Identity.JwtBearer.RefreshToken
+    name: RefreshToken
+- uid: Hybrid.Identity.JwtBearer.Dtos
+  name: Hybrid.Identity.JwtBearer.Dtos
+  items:
+  - uid: Hybrid.Identity.JwtBearer.Dtos.TokenDto
+    name: TokenDto
+- uid: Hybrid.IO
+  name: Hybrid.IO
+  items:
+  - uid: Hybrid.IO.DirectoryHelper
+    name: DirectoryHelper
+  - uid: Hybrid.IO.FileHelper
+    name: FileHelper
+- uid: Hybrid.Json
+  name: Hybrid.Json
+  items:
+  - uid: Hybrid.Json.CamelCaseToUnderScoreCasePropertyNamesContractResolver
+    name: CamelCaseToUnderScoreCasePropertyNamesContractResolver
+  - uid: Hybrid.Json.JsonExtensions
+    name: JsonExtensions
+  - uid: Hybrid.Json.JsonHelper
+    name: JsonHelper
+  - uid: Hybrid.Json.UnderScoreCaseToCamelCasePropertyNamesContractResolver
+    name: UnderScoreCaseToCamelCasePropertyNamesContractResolver
+- uid: Hybrid.Linq
+  name: Hybrid.Linq
+  items:
+  - uid: Hybrid.Linq.ExpressionExtensions
+    name: ExpressionExtensions
+  - uid: Hybrid.Linq.LinqToXmlExtensions
+    name: LinqToXmlExtensions
+- uid: Hybrid.Localization
+  name: Hybrid.Localization
+  items:
+  - uid: Hybrid.Localization.CultureInfoHelper
+    name: CultureInfoHelper
+  - uid: Hybrid.Localization.DefaultLanguageProvider
+    name: DefaultLanguageProvider
+  - uid: Hybrid.Localization.FixedLocalizableString
+    name: FixedLocalizableString
+  - uid: Hybrid.Localization.GlobalizationHelper
+    name: GlobalizationHelper
+  - uid: Hybrid.Localization.HybridDisplayNameAttribute
+    name: HybridDisplayNameAttribute
+  - uid: Hybrid.Localization.ILanguageManager
+    name: ILanguageManager
+  - uid: Hybrid.Localization.ILanguageProvider
+    name: ILanguageProvider
+  - uid: Hybrid.Localization.ILocalizableString
+    name: ILocalizableString
+  - uid: Hybrid.Localization.ILocalizationContext
+    name: ILocalizationContext
+  - uid: Hybrid.Localization.ILocalizationManager
+    name: ILocalizationManager
+  - uid: Hybrid.Localization.LanguageIcon
+    name: LanguageIcon
+  - uid: Hybrid.Localization.LanguageInfo
+    name: LanguageInfo
+  - uid: Hybrid.Localization.LanguageInfoCompare
+    name: LanguageInfoCompare
+  - uid: Hybrid.Localization.LanguageManager
+    name: LanguageManager
+  - uid: Hybrid.Localization.LocalizableString
+    name: LocalizableString
+  - uid: Hybrid.Localization.LocalizableStringExtensions
+    name: LocalizableStringExtensions
+  - uid: Hybrid.Localization.LocalizableStringToStringJsonConverter
+    name: LocalizableStringToStringJsonConverter
+  - uid: Hybrid.Localization.LocalizationConsts
+    name: LocalizationConsts
+  - uid: Hybrid.Localization.LocalizationContext
+    name: LocalizationContext
+  - uid: Hybrid.Localization.LocalizationHelper
+    name: LocalizationHelper
+  - uid: Hybrid.Localization.LocalizationIocManager
+    name: LocalizationIocManager
+  - uid: Hybrid.Localization.LocalizationManagerExtensions
+    name: LocalizationManagerExtensions
+  - uid: Hybrid.Localization.LocalizationSourceHelper
+    name: LocalizationSourceHelper
+  - uid: Hybrid.Localization.LocalizedString
+    name: LocalizedString
+  - uid: Hybrid.Localization.NullLocalizationManager
+    name: NullLocalizationManager
+- uid: Hybrid.Localization.Configuration
+  name: Hybrid.Localization.Configuration
+  items:
+  - uid: Hybrid.Localization.Configuration.ILocalizationConfiguration
+    name: ILocalizationConfiguration
+  - uid: Hybrid.Localization.Configuration.ILocalizationSourceList
+    name: ILocalizationSourceList
+- uid: Hybrid.Localization.Dictionaries
+  name: Hybrid.Localization.Dictionaries
+  items:
+  - uid: Hybrid.Localization.Dictionaries.DictionaryBasedLocalizationSource
+    name: DictionaryBasedLocalizationSource
+  - uid: Hybrid.Localization.Dictionaries.IDictionaryBasedLocalizationSource
+    name: IDictionaryBasedLocalizationSource
+  - uid: Hybrid.Localization.Dictionaries.ILocalizationDictionary
+    name: ILocalizationDictionary
+  - uid: Hybrid.Localization.Dictionaries.ILocalizationDictionaryProvider
+    name: ILocalizationDictionaryProvider
+  - uid: Hybrid.Localization.Dictionaries.LocalizationDictionary
+    name: LocalizationDictionary
+  - uid: Hybrid.Localization.Dictionaries.LocalizationDictionaryProviderBase
+    name: LocalizationDictionaryProviderBase
+  - uid: Hybrid.Localization.Dictionaries.LocalizationFile
+    name: LocalizationFile
+  - uid: Hybrid.Localization.Dictionaries.LocalizationFileType
+    name: LocalizationFileType
+- uid: Hybrid.Localization.Dictionaries.Json
+  name: Hybrid.Localization.Dictionaries.Json
+  items:
+  - uid: Hybrid.Localization.Dictionaries.Json.JsonEmbeddedFileLocalizationDictionaryProvider
+    name: JsonEmbeddedFileLocalizationDictionaryProvider
+  - uid: Hybrid.Localization.Dictionaries.Json.JsonFileLocalizationDictionaryProvider
+    name: JsonFileLocalizationDictionaryProvider
+  - uid: Hybrid.Localization.Dictionaries.Json.JsonLocalizationDictionary
+    name: JsonLocalizationDictionary
+  - uid: Hybrid.Localization.Dictionaries.Json.JsonLocalizationFile
+    name: JsonLocalizationFile
+- uid: Hybrid.Localization.Dictionaries.Xml
+  name: Hybrid.Localization.Dictionaries.Xml
+  items:
+  - uid: Hybrid.Localization.Dictionaries.Xml.XmlEmbeddedFileLocalizationDictionaryProvider
+    name: XmlEmbeddedFileLocalizationDictionaryProvider
+  - uid: Hybrid.Localization.Dictionaries.Xml.XmlFileLocalizationDictionaryProvider
+    name: XmlFileLocalizationDictionaryProvider
+  - uid: Hybrid.Localization.Dictionaries.Xml.XmlLocalizationDictionary
+    name: XmlLocalizationDictionary
+- uid: Hybrid.Localization.Sources
+  name: Hybrid.Localization.Sources
+  items:
+  - uid: Hybrid.Localization.Sources.ILocalizationSource
+    name: ILocalizationSource
+  - uid: Hybrid.Localization.Sources.LocalizationSourceExtensionInfo
+    name: LocalizationSourceExtensionInfo
+  - uid: Hybrid.Localization.Sources.LocalizationSourceExtensions
+    name: LocalizationSourceExtensions
+  - uid: Hybrid.Localization.Sources.NullLocalizationSource
+    name: NullLocalizationSource
+- uid: Hybrid.Localization.Sources.Resource
+  name: Hybrid.Localization.Sources.Resource
+  items:
+  - uid: Hybrid.Localization.Sources.Resource.ResourceFileLocalizationSource
+    name: ResourceFileLocalizationSource
+- uid: Hybrid.Logging
+  name: Hybrid.Logging
+  items:
+  - uid: Hybrid.Logging.LoggerExtensions
+    name: LoggerExtensions
+- uid: Hybrid.Logging.RollingFile
+  name: Hybrid.Logging.RollingFile
+  items:
+  - uid: Hybrid.Logging.RollingFile.FileLoggerOptions
+    name: FileLoggerOptions
+  - uid: Hybrid.Logging.RollingFile.FileLoggerProvider
+    name: FileLoggerProvider
+- uid: Hybrid.Logging.RollingFile.Internal
+  name: Hybrid.Logging.RollingFile.Internal
+  items:
+  - uid: Hybrid.Logging.RollingFile.Internal.BatchingLoggerOptions
+    name: BatchingLoggerOptions
+  - uid: Hybrid.Logging.RollingFile.Internal.BatchingLoggerProvider
+    name: BatchingLoggerProvider
+  - uid: Hybrid.Logging.RollingFile.Internal.LogMessageEntry
+    name: LogMessageEntry
+- uid: Hybrid.MailKit
+  name: Hybrid.MailKit
+  items:
+  - uid: Hybrid.MailKit.EmailExtensions
+    name: EmailExtensions
+  - uid: Hybrid.MailKit.MailKitEmailSender
+    name: MailKitEmailSender
+  - uid: Hybrid.MailKit.MailKitModule
+    name: MailKitModule
+- uid: Hybrid.Mapping
+  name: Hybrid.Mapping
+  items:
+  - uid: Hybrid.Mapping.IMapFromAttributeTypeFinder
+    name: IMapFromAttributeTypeFinder
+  - uid: Hybrid.Mapping.IMapper
+    name: IMapper
+  - uid: Hybrid.Mapping.IMapToAttributeTypeFinder
+    name: IMapToAttributeTypeFinder
+  - uid: Hybrid.Mapping.IMapTuple
+    name: IMapTuple
+  - uid: Hybrid.Mapping.MapFromAttribute
+    name: MapFromAttribute
+  - uid: Hybrid.Mapping.MapFromAttributeTypeFinder
+    name: MapFromAttributeTypeFinder
+  - uid: Hybrid.Mapping.MapperExtensions
+    name: MapperExtensions
+  - uid: Hybrid.Mapping.MapToAttribute
+    name: MapToAttribute
+  - uid: Hybrid.Mapping.MapToAttributeTypeFinder
+    name: MapToAttributeTypeFinder
+- uid: Hybrid.Maths
+  name: Hybrid.Maths
+  items:
+  - uid: Hybrid.Maths.AnyRadixConvert
+    name: AnyRadixConvert
+  - uid: Hybrid.Maths.MathHelper
+    name: MathHelper
+- uid: Hybrid.Net
+  name: Hybrid.Net
+  items:
+  - uid: Hybrid.Net.IpLocation
+    name: IpLocation
+  - uid: Hybrid.Net.IpLocator
+    name: IpLocator
+  - uid: Hybrid.Net.NetHelper
+    name: NetHelper
+  - uid: Hybrid.Net.UserAgent
+    name: UserAgent
+- uid: Hybrid.Net.Mail
+  name: Hybrid.Net.Mail
+  items:
+  - uid: Hybrid.Net.Mail.EmailSenderBase
+    name: EmailSenderBase
+  - uid: Hybrid.Net.Mail.IEmailSender
+    name: IEmailSender
+- uid: Hybrid.Net.Mail.Configuration
+  name: Hybrid.Net.Mail.Configuration
+  items:
+  - uid: Hybrid.Net.Mail.Configuration.EmailSenderConfiguration
+    name: EmailSenderConfiguration
+  - uid: Hybrid.Net.Mail.Configuration.IEmailSenderConfiguration
+    name: IEmailSenderConfiguration
+- uid: Hybrid.Net.Mail.Smtp
+  name: Hybrid.Net.Mail.Smtp
+  items:
+  - uid: Hybrid.Net.Mail.Smtp.ISmtpEmailSender
+    name: ISmtpEmailSender
+  - uid: Hybrid.Net.Mail.Smtp.SmtpEmailSender
+    name: SmtpEmailSender
+- uid: Hybrid.NLog
+  name: Hybrid.NLog
+  items:
+  - uid: Hybrid.NLog.NLogLogger
+    name: NLogLogger
+  - uid: Hybrid.NLog.NLogLoggerProvider
+    name: NLogLoggerProvider
+  - uid: Hybrid.NLog.NLogModule
+    name: NLogModule
+- uid: Hybrid.Quartz
+  name: Hybrid.Quartz
+  items:
+  - uid: Hybrid.Quartz.ISchedulerManager
+    name: ISchedulerManager
+  - uid: Hybrid.Quartz.JobFactory
+    name: JobFactory
+  - uid: Hybrid.Quartz.JobTypeFinder
+    name: JobTypeFinder
+  - uid: Hybrid.Quartz.QuartzModule
+    name: QuartzModule
+  - uid: Hybrid.Quartz.QuartzModuleBase
+    name: QuartzModuleBase
+  - uid: Hybrid.Quartz.SchedulerManager
+    name: SchedulerManager
+- uid: Hybrid.Quartz.Dashboard
+  name: Hybrid.Quartz.Dashboard
+  items:
+  - uid: Hybrid.Quartz.Dashboard.GlobalizationHelper
+    name: GlobalizationHelper
+- uid: Hybrid.Quartz.Dashboard.Controllers
+  name: Hybrid.Quartz.Dashboard.Controllers
+  items:
+  - uid: Hybrid.Quartz.Dashboard.Controllers.CalendarsController
+    name: CalendarsController
+  - uid: Hybrid.Quartz.Dashboard.Controllers.CronTriggerController
+    name: CronTriggerController
+  - uid: Hybrid.Quartz.Dashboard.Controllers.DashboardController
+    name: DashboardController
+  - uid: Hybrid.Quartz.Dashboard.Controllers.HistoryController
+    name: HistoryController
+  - uid: Hybrid.Quartz.Dashboard.Controllers.JobsController
+    name: JobsController
+  - uid: Hybrid.Quartz.Dashboard.Controllers.LiveLogController
+    name: LiveLogController
+  - uid: Hybrid.Quartz.Dashboard.Controllers.QuartzBaseController
+    name: QuartzBaseController
+  - uid: Hybrid.Quartz.Dashboard.Controllers.QuartzController
+    name: QuartzController
+  - uid: Hybrid.Quartz.Dashboard.Controllers.RecurringController
+    name: RecurringController
+  - uid: Hybrid.Quartz.Dashboard.Controllers.SchedulerController
+    name: SchedulerController
+  - uid: Hybrid.Quartz.Dashboard.Controllers.TriggersController
+    name: TriggersController
+- uid: Hybrid.Quartz.Dashboard.Hubs.LiveLog
+  name: Hybrid.Quartz.Dashboard.Hubs.LiveLog
+  items:
+  - uid: Hybrid.Quartz.Dashboard.Hubs.LiveLog.LiveLogHub
+    name: LiveLogHub
+  - uid: Hybrid.Quartz.Dashboard.Hubs.LiveLog.LiveLogPlugin
+    name: LiveLogPlugin
+- uid: Hybrid.Quartz.Dashboard.Models
+  name: Hybrid.Quartz.Dashboard.Models
+  items:
+  - uid: Hybrid.Quartz.Dashboard.Models.Histogram
+    name: Histogram
+  - uid: Hybrid.Quartz.Dashboard.Models.Histogram.Bar
+    name: Histogram.Bar
+  - uid: Hybrid.Quartz.Dashboard.Models.LoginViewModel
+    name: LoginViewModel
+  - uid: Hybrid.Quartz.Dashboard.Models.MenuItem
+    name: MenuItem
+  - uid: Hybrid.Quartz.Dashboard.Models.NavBars
+    name: NavBars
+  - uid: Hybrid.Quartz.Dashboard.Models.Server
+    name: Server
+  - uid: Hybrid.Quartz.Dashboard.Models.SideBars
+    name: SideBars
+- uid: Hybrid.Quartz.Dashboard.Models.Dtos
+  name: Hybrid.Quartz.Dashboard.Models.Dtos
+  items:
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.CalendarDetailDto
+    name: CalendarDetailDto
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.CalendarDetailDto.AnnualCalendarDto
+    name: CalendarDetailDto.AnnualCalendarDto
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.CalendarDetailDto.CronCalendarDto
+    name: CalendarDetailDto.CronCalendarDto
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.CalendarDetailDto.DailyCalendarDto
+    name: CalendarDetailDto.DailyCalendarDto
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.CalendarDetailDto.HolidayCalendarDto
+    name: CalendarDetailDto.HolidayCalendarDto
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.CalendarDetailDto.MonthlyCalendarDto
+    name: CalendarDetailDto.MonthlyCalendarDto
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.CalendarDetailDto.WeeklyCalendarDto
+    name: CalendarDetailDto.WeeklyCalendarDto
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.CalendarDto
+    name: CalendarDto
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.CurrentlyExecutingJobDto
+    name: CurrentlyExecutingJobDto
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.GroupMatcherDto
+    name: GroupMatcherDto
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.JobDetailDto
+    name: JobDetailDto
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.JobHistoryEntryDto
+    name: JobHistoryEntryDto
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.JobHistoryViewModel
+    name: JobHistoryViewModel
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.KeyDto
+    name: KeyDto
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerDto
+    name: SchedulerDto
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerHeaderDto
+    name: SchedulerHeaderDto
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerJobStoreDto
+    name: SchedulerJobStoreDto
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatisticsDto
+    name: SchedulerStatisticsDto
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerStatus
+    name: SchedulerStatus
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.SchedulerThreadPoolDto
+    name: SchedulerThreadPoolDto
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.ServerDetailsDto
+    name: ServerDetailsDto
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.ServerHeaderDto
+    name: ServerHeaderDto
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.TimeZoneDto
+    name: TimeZoneDto
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.TriggerDetailDto
+    name: TriggerDetailDto
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.TriggerDetailDto.CalendarIntervalTriggerDetailDto
+    name: TriggerDetailDto.CalendarIntervalTriggerDetailDto
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.TriggerDetailDto.CronTriggerDetailDto
+    name: TriggerDetailDto.CronTriggerDetailDto
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.TriggerDetailDto.DailyTimeIntervalTriggerDetailDto
+    name: TriggerDetailDto.DailyTimeIntervalTriggerDetailDto
+  - uid: Hybrid.Quartz.Dashboard.Models.Dtos.TriggerDetailDto.SimpleTriggerDetailDto
+    name: TriggerDetailDto.SimpleTriggerDetailDto
+- uid: Hybrid.Quartz.Dashboard.Repositorys
+  name: Hybrid.Quartz.Dashboard.Repositorys
+  items:
+  - uid: Hybrid.Quartz.Dashboard.Repositorys.ServerRepository
+    name: ServerRepository
+- uid: Hybrid.Quartz.Dashboard.Views
+  name: Hybrid.Quartz.Dashboard.Views
+  items:
+  - uid: Hybrid.Quartz.Dashboard.Views.QuartzRazorPage`1
+    name: QuartzRazorPage<TModel>
+    name.vb: QuartzRazorPage(Of TModel)
+  - uid: Hybrid.Quartz.Dashboard.Views.QuartzViewComponent
+    name: QuartzViewComponent
+- uid: Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarLanguageSwitch
+  name: Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarLanguageSwitch
+  items:
+  - uid: Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarLanguageSwitch.TopBarLanguageSwitchViewComponent
+    name: TopBarLanguageSwitchViewComponent
+- uid: Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarSchedulerSwitch
+  name: Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarSchedulerSwitch
+  items:
+  - uid: Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarSchedulerSwitch.TopBarSchedulerSwitchViewComponent
+    name: TopBarSchedulerSwitchViewComponent
+  - uid: Hybrid.Quartz.Dashboard.Views.Shared.Components.TopBarSchedulerSwitch.TopBarSchedulerSwitchViewModel
+    name: TopBarSchedulerSwitchViewModel
+- uid: Hybrid.Quartz.MySql
+  name: Hybrid.Quartz.MySql
+  items:
+  - uid: Hybrid.Quartz.MySql.MySqlObjectsInstaller
+    name: MySqlObjectsInstaller
+- uid: Hybrid.Quartz.Plugins.History
+  name: Hybrid.Quartz.Plugins.History
+  items:
+  - uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+    name: DatabaseExecutionHistoryPlugin
+  - uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryStore
+    name: DatabaseExecutionHistoryStore
+  - uid: Hybrid.Quartz.Plugins.History.ExecutionHistoryEntry
+    name: ExecutionHistoryEntry
+  - uid: Hybrid.Quartz.Plugins.History.Extensions
+    name: Extensions
+  - uid: Hybrid.Quartz.Plugins.History.IExecutionHistoryStore
+    name: IExecutionHistoryStore
+  - uid: Hybrid.Quartz.Plugins.History.InMemoryExecutionHistoryPlugin
+    name: InMemoryExecutionHistoryPlugin
+  - uid: Hybrid.Quartz.Plugins.History.InMemoryExecutionHistoryStore
+    name: InMemoryExecutionHistoryStore
+- uid: Hybrid.Quartz.Plugins.LiveLog
+  name: Hybrid.Quartz.Plugins.LiveLog
+  items:
+  - uid: Hybrid.Quartz.Plugins.LiveLog.LiveLogHub
+    name: LiveLogHub
+  - uid: Hybrid.Quartz.Plugins.LiveLog.LiveLogPlugin
+    name: LiveLogPlugin
+- uid: Hybrid.Quartz.SqlServer
+  name: Hybrid.Quartz.SqlServer
+  items:
+  - uid: Hybrid.Quartz.SqlServer.SqlServerObjectsInstaller
+    name: SqlServerObjectsInstaller
+- uid: Hybrid.RealTime
+  name: Hybrid.RealTime
+  items:
+  - uid: Hybrid.RealTime.IOnlineUserCache
+    name: IOnlineUserCache
+  - uid: Hybrid.RealTime.IOnlineUserProvider
+    name: IOnlineUserProvider
+  - uid: Hybrid.RealTime.OnlineUserBase
+    name: OnlineUserBase
+- uid: Hybrid.Redis
+  name: Hybrid.Redis
+  items:
+  - uid: Hybrid.Redis.RedisModule
+    name: RedisModule
+  - uid: Hybrid.Redis.RedisModuleBase
+    name: RedisModuleBase
+- uid: Hybrid.Reflection
+  name: Hybrid.Reflection
+  items:
+  - uid: Hybrid.Reflection.AppDomainAllAssemblyFinder
+    name: AppDomainAllAssemblyFinder
+  - uid: Hybrid.Reflection.AssemblyExtensions
+    name: AssemblyExtensions
+  - uid: Hybrid.Reflection.AttributeTypeFinderBase`1
+    name: AttributeTypeFinderBase<TAttributeType>
+    name.vb: AttributeTypeFinderBase(Of TAttributeType)
+  - uid: Hybrid.Reflection.BaseTypeFinderBase`1
+    name: BaseTypeFinderBase<TBaseType>
+    name.vb: BaseTypeFinderBase(Of TBaseType)
+  - uid: Hybrid.Reflection.ComLibraryLoader
+    name: ComLibraryLoader
+  - uid: Hybrid.Reflection.DirectoryAssemblyFinder
+    name: DirectoryAssemblyFinder
+  - uid: Hybrid.Reflection.FastInvokeHandler
+    name: FastInvokeHandler
+  - uid: Hybrid.Reflection.IAllAssemblyFinder
+    name: IAllAssemblyFinder
+  - uid: Hybrid.Reflection.IAssemblyFinder
+    name: IAssemblyFinder
+  - uid: Hybrid.Reflection.IComClassFactory
+    name: IComClassFactory
+  - uid: Hybrid.Reflection.IMethodInfoFinder
+    name: IMethodInfoFinder
+  - uid: Hybrid.Reflection.ITypeFinder
+    name: ITypeFinder
+  - uid: Hybrid.Reflection.LockExtensions
+    name: LockExtensions
+  - uid: Hybrid.Reflection.PublicInstanceMethodInfoFinder
+    name: PublicInstanceMethodInfoFinder
+- uid: Hybrid.Security
+  name: Hybrid.Security
+  items:
+  - uid: Hybrid.Security.AesHelper
+    name: AesHelper
+  - uid: Hybrid.Security.Crypto
+    name: Crypto
+  - uid: Hybrid.Security.HashHelper
+    name: HashHelper
+  - uid: Hybrid.Security.RsaHelper
+    name: RsaHelper
+- uid: Hybrid.Security.Claims
+  name: Hybrid.Security.Claims
+  items:
+  - uid: Hybrid.Security.Claims.HybridClaimTypes
+    name: HybridClaimTypes
+  - uid: Hybrid.Security.Claims.IdentityExtensions
+    name: IdentityExtensions
+- uid: Hybrid.Systems
+  name: Hybrid.Systems
+  items:
+  - uid: Hybrid.Systems.KeyValueStore
+    name: KeyValueStore
+  - uid: Hybrid.Systems.SystemModule
+    name: SystemModule
+- uid: Hybrid.Threading
+  name: Hybrid.Threading
+  items:
+  - uid: Hybrid.Threading.AsyncHelper
+    name: AsyncHelper
+  - uid: Hybrid.Threading.ICancellationTokenProvider
+    name: ICancellationTokenProvider
+  - uid: Hybrid.Threading.NoneCancellationTokenProvider
+    name: NoneCancellationTokenProvider
+  - uid: Hybrid.Threading.ThreadExtensions
+    name: ThreadExtensions
+- uid: Hybrid.Threading.Asyncs
+  name: Hybrid.Threading.Asyncs
+  items:
+  - uid: Hybrid.Threading.Asyncs.AsyncAutoResetEvent
+    name: AsyncAutoResetEvent
+  - uid: Hybrid.Threading.Asyncs.AsyncBarrier
+    name: AsyncBarrier
+  - uid: Hybrid.Threading.Asyncs.AsyncBarrier.AsyncBarrier1
+    name: AsyncBarrier.AsyncBarrier1
+  - uid: Hybrid.Threading.Asyncs.AsyncCountdownEvent
+    name: AsyncCountdownEvent
+  - uid: Hybrid.Threading.Asyncs.AsyncLock
+    name: AsyncLock
+  - uid: Hybrid.Threading.Asyncs.AsyncLock.Releaser
+    name: AsyncLock.Releaser
+  - uid: Hybrid.Threading.Asyncs.AsyncManualResetEvent
+    name: AsyncManualResetEvent
+  - uid: Hybrid.Threading.Asyncs.AsyncReaderWriterLock
+    name: AsyncReaderWriterLock
+  - uid: Hybrid.Threading.Asyncs.AsyncReaderWriterLock.Releaser
+    name: AsyncReaderWriterLock.Releaser
+  - uid: Hybrid.Threading.Asyncs.AsyncSemaphore
+    name: AsyncSemaphore
+- uid: Hybrid.Timing
+  name: Hybrid.Timing
+  items:
+  - uid: Hybrid.Timing.DateTimeExtensions
+    name: DateTimeExtensions
+  - uid: Hybrid.Timing.DateTimeRange
+    name: DateTimeRange
+- uid: Hybrid.Utility.Reflection
+  name: Hybrid.Utility.Reflection
+  items:
+  - uid: Hybrid.Utility.Reflection.SyncLocker
+    name: SyncLocker
+- uid: Hybrid.Web
+  name: Hybrid.Web
+  items:
+  - uid: Hybrid.Web.UserAgentHelper
+    name: UserAgentHelper
+- uid: Hybrid.Zero.Authorization
+  name: Hybrid.Zero.Authorization
+  items:
+  - uid: Hybrid.Zero.Authorization.DataAuthCacheBase`4
+    name: DataAuthCacheBase<TEntityRole, TRole, TEntityInfo, TRoleKey>
+    name.vb: DataAuthCacheBase(Of TEntityRole, TRole, TEntityInfo, TRoleKey)
+  - uid: Hybrid.Zero.Authorization.EntityRoleBase`1
+    name: EntityRoleBase<TRoleKey>
+    name.vb: EntityRoleBase(Of TRoleKey)
+  - uid: Hybrid.Zero.Authorization.EntityUserBase`1
+    name: EntityUserBase<TUserKey>
+    name.vb: EntityUserBase(Of TUserKey)
+  - uid: Hybrid.Zero.Authorization.FunctionAuthCacheBase`10
+    name: FunctionAuthCacheBase<TModuleFunction, TModuleRole, TModuleUser, TFunction, TModule, TModuleKey, TRole, TRoleKey, TUser, TUserKey>
+    name.vb: FunctionAuthCacheBase(Of TModuleFunction, TModuleRole, TModuleUser, TFunction, TModule, TModuleKey, TRole, TRoleKey, TUser, TUserKey)
+  - uid: Hybrid.Zero.Authorization.IEntityInfoStore`2
+    name: IEntityInfoStore<TEntityInfo, TEntityInfoInputDto>
+    name.vb: IEntityInfoStore(Of TEntityInfo, TEntityInfoInputDto)
+  - uid: Hybrid.Zero.Authorization.IEntityRoleStore`3
+    name: IEntityRoleStore<TEntityRole, TEntityRoleInputDto, TRoleKey>
+    name.vb: IEntityRoleStore(Of TEntityRole, TEntityRoleInputDto, TRoleKey)
+  - uid: Hybrid.Zero.Authorization.IFunctionStore`2
+    name: IFunctionStore<TFunction, TFunctionInputDto>
+    name.vb: IFunctionStore(Of TFunction, TFunctionInputDto)
+  - uid: Hybrid.Zero.Authorization.IModuleFunctionStore`2
+    name: IModuleFunctionStore<TModuleFunction, TModuleKey>
+    name.vb: IModuleFunctionStore(Of TModuleFunction, TModuleKey)
+  - uid: Hybrid.Zero.Authorization.IModuleRoleStore`3
+    name: IModuleRoleStore<TModuleRole, TRoleKey, TModuleKey>
+    name.vb: IModuleRoleStore(Of TModuleRole, TRoleKey, TModuleKey)
+  - uid: Hybrid.Zero.Authorization.IModuleStore`3
+    name: IModuleStore<TModule, TModuleInputDto, TModuleKey>
+    name.vb: IModuleStore(Of TModule, TModuleInputDto, TModuleKey)
+  - uid: Hybrid.Zero.Authorization.IModuleUserStore`3
+    name: IModuleUserStore<TModuleUser, TUserKey, TModuleKey>
+    name.vb: IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey)
+  - uid: Hybrid.Zero.Authorization.ModuleHandlerBase`4
+    name: ModuleHandlerBase<TModule, TModuleInputDto, TModuleKey, TModuleFunction>
+    name.vb: ModuleHandlerBase(Of TModule, TModuleInputDto, TModuleKey, TModuleFunction)
+  - uid: Hybrid.Zero.Authorization.SecurityManagerBase`18
+    name: SecurityManagerBase<TFunction, TFunctionInputDto, TEntityInfo, TEntityInfoInputDto, TModule, TModuleInputDto, TModuleKey, TModuleFunction, TModuleRole, TModuleUser, TEntityRole, TEntityRoleInputDto, TUserRole, TUserRoleKey, TRole, TRoleKey, TUser, TUserKey>
+    name.vb: SecurityManagerBase(Of TFunction, TFunctionInputDto, TEntityInfo, TEntityInfoInputDto, TModule, TModuleInputDto, TModuleKey, TModuleFunction, TModuleRole, TModuleUser, TEntityRole, TEntityRoleInputDto, TUserRole, TUserRoleKey, TRole, TRoleKey, TUser, TUserKey)
+  - uid: Hybrid.Zero.Authorization.SecurityModuleBase`19
+    name: SecurityModuleBase<TSecurityManager, TFunctionAuthorization, TFunctionAuthCache, TDataAuthCache, TModuleHandler, TFunction, TFunctionInputDto, TEntityInfo, TEntityInfoInputDto, TModule, TModuleInputDto, TModuleKey, TModuleFunction, TModuleRole, TModuleUser, TEntityRole, TEntityRoleInputDto, TRoleKey, TUserKey>
+    name.vb: SecurityModuleBase(Of TSecurityManager, TFunctionAuthorization, TFunctionAuthCache, TDataAuthCache, TModuleHandler, TFunction, TFunctionInputDto, TEntityInfo, TEntityInfoInputDto, TModule, TModuleInputDto, TModuleKey, TModuleFunction, TModuleRole, TModuleUser, TEntityRole, TEntityRoleInputDto, TRoleKey, TUserKey)
+- uid: Hybrid.Zero.Authorization.Dtos
+  name: Hybrid.Zero.Authorization.Dtos
+  items:
+  - uid: Hybrid.Zero.Authorization.Dtos.EntityInfoInputDto
+    name: EntityInfoInputDto
+  - uid: Hybrid.Zero.Authorization.Dtos.EntityInfoInputDtoBase
+    name: EntityInfoInputDtoBase
+  - uid: Hybrid.Zero.Authorization.Dtos.EntityRoleInputDtoBase`1
+    name: EntityRoleInputDtoBase<TRoleKey>
+    name.vb: EntityRoleInputDtoBase(Of TRoleKey)
+  - uid: Hybrid.Zero.Authorization.Dtos.FunctionInputDto
+    name: FunctionInputDto
+  - uid: Hybrid.Zero.Authorization.Dtos.FunctionInputDtoBase
+    name: FunctionInputDtoBase
+  - uid: Hybrid.Zero.Authorization.Dtos.ModuleInputDtoBase`1
+    name: ModuleInputDtoBase<TModuleKey>
+    name.vb: ModuleInputDtoBase(Of TModuleKey)
+- uid: Hybrid.Zero.Authorization.Entities
+  name: Hybrid.Zero.Authorization.Entities
+  items:
+  - uid: Hybrid.Zero.Authorization.Entities.ModuleBase`1
+    name: ModuleBase<TModuleKey>
+    name.vb: ModuleBase(Of TModuleKey)
+  - uid: Hybrid.Zero.Authorization.Entities.ModuleFunctionBase`1
+    name: ModuleFunctionBase<TModuleKey>
+    name.vb: ModuleFunctionBase(Of TModuleKey)
+  - uid: Hybrid.Zero.Authorization.Entities.ModuleRoleBase`2
+    name: ModuleRoleBase<TModuleKey, TRoleKey>
+    name.vb: ModuleRoleBase(Of TModuleKey, TRoleKey)
+  - uid: Hybrid.Zero.Authorization.Entities.ModuleUserBase`2
+    name: ModuleUserBase<TModuleKey, TUserKey>
+    name.vb: ModuleUserBase(Of TModuleKey, TUserKey)
+- uid: Hybrid.Zero.Authorization.Events
+  name: Hybrid.Zero.Authorization.Events
+  items:
+  - uid: Hybrid.Zero.Authorization.Events.DataAuthCacheRefreshEventData
+    name: DataAuthCacheRefreshEventData
+  - uid: Hybrid.Zero.Authorization.Events.DataAuthCacheRefreshEventHandler
+    name: DataAuthCacheRefreshEventHandler
+  - uid: Hybrid.Zero.Authorization.Events.FunctionAuthCacheRefreshEventData
+    name: FunctionAuthCacheRefreshEventData
+  - uid: Hybrid.Zero.Authorization.Events.FunctionAuthCacheRefreshEventHandler
+    name: FunctionAuthCacheRefreshEventHandler
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData
+    name: FunctionCacheRefreshEventData
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+    name: FunctionCacheRefreshEventHandler
+- uid: Hybrid.Zero.Identity
+  name: Hybrid.Zero.Identity
+  items:
+  - uid: Hybrid.Zero.Identity.AccessClaimsProvider`2
+    name: AccessClaimsProvider<TUser, TUserKey>
+    name.vb: AccessClaimsProvider(Of TUser, TUserKey)
+  - uid: Hybrid.Zero.Identity.IAccessClaimsProvider
+    name: IAccessClaimsProvider
+  - uid: Hybrid.Zero.Identity.IdentityErrorDescriberZhHans
+    name: IdentityErrorDescriberZhHans
+  - uid: Hybrid.Zero.Identity.IdentityModuleBase`8
+    name: IdentityModuleBase<TUserStore, TRoleStore, TUser, TUserKey, TUserClaim, TUserClaimKey, TRole, TRoleKey>
+    name.vb: IdentityModuleBase(Of TUserStore, TRoleStore, TUser, TUserKey, TUserClaim, TUserClaimKey, TRole, TRoleKey)
+  - uid: Hybrid.Zero.Identity.IHybridUserAuthenticationTokenStore`1
+    name: IHybridUserAuthenticationTokenStore<TUser>
+    name.vb: IHybridUserAuthenticationTokenStore(Of TUser)
+  - uid: Hybrid.Zero.Identity.JwtBearerService`2
+    name: JwtBearerService<TUser, TUserKey>
+    name.vb: JwtBearerService(Of TUser, TUserKey)
+  - uid: Hybrid.Zero.Identity.JwtHelper
+    name: JwtHelper
+  - uid: Hybrid.Zero.Identity.RequestClientType
+    name: RequestClientType
+  - uid: Hybrid.Zero.Identity.UserNickNameValidator`2
+    name: UserNickNameValidator<TUser, TUserKey>
+    name.vb: UserNickNameValidator(Of TUser, TUserKey)
+- uid: Hybrid.Zero.Identity.Dtos
+  name: Hybrid.Zero.Identity.Dtos
+  items:
+  - uid: Hybrid.Zero.Identity.Dtos.RoleInputDtoBase`1
+    name: RoleInputDtoBase<TRoleKey>
+    name.vb: RoleInputDtoBase(Of TRoleKey)
+  - uid: Hybrid.Zero.Identity.Dtos.UserInputDtoBase`1
+    name: UserInputDtoBase<TUserKey>
+    name.vb: UserInputDtoBase(Of TUserKey)
+  - uid: Hybrid.Zero.Identity.Dtos.UserRoleInputDtoBase`2
+    name: UserRoleInputDtoBase<TUserKey, TRoleKey>
+    name.vb: UserRoleInputDtoBase(Of TUserKey, TRoleKey)
+- uid: Hybrid.Zero.Identity.Entities
+  name: Hybrid.Zero.Identity.Entities
+  items:
+  - uid: Hybrid.Zero.Identity.Entities.RoleBase`1
+    name: RoleBase<TKey>
+    name.vb: RoleBase(Of TKey)
+  - uid: Hybrid.Zero.Identity.Entities.RoleClaimBase`2
+    name: RoleClaimBase<TKey, TRoleKey>
+    name.vb: RoleClaimBase(Of TKey, TRoleKey)
+  - uid: Hybrid.Zero.Identity.Entities.RoleStoreBase`4
+    name: RoleStoreBase<TRole, TRoleKey, TRoleClaim, TRoleClaimKey>
+    name.vb: RoleStoreBase(Of TRole, TRoleKey, TRoleClaim, TRoleClaimKey)
+  - uid: Hybrid.Zero.Identity.Entities.UserBase`1
+    name: UserBase<TKey>
+    name.vb: UserBase(Of TKey)
+  - uid: Hybrid.Zero.Identity.Entities.UserClaimBase`2
+    name: UserClaimBase<TKey, TUserKey>
+    name.vb: UserClaimBase(Of TKey, TUserKey)
+  - uid: Hybrid.Zero.Identity.Entities.UserLoginBase`2
+    name: UserLoginBase<TKey, TUserKey>
+    name.vb: UserLoginBase(Of TKey, TUserKey)
+  - uid: Hybrid.Zero.Identity.Entities.UserLoginInfoEx
+    name: UserLoginInfoEx
+  - uid: Hybrid.Zero.Identity.Entities.UserRoleBase`3
+    name: UserRoleBase<TKey, TUserKey, TRoleKey>
+    name.vb: UserRoleBase(Of TKey, TUserKey, TRoleKey)
+  - uid: Hybrid.Zero.Identity.Entities.UserStoreBase`12
+    name: UserStoreBase<TUser, TUserKey, TUserClaim, TUserClaimKey, TUserLogin, TUserLoginKey, TUserToken, TUserTokenKey, TRole, TRoleKey, TUserRole, TUserRoleKey>
+    name.vb: UserStoreBase(Of TUser, TUserKey, TUserClaim, TUserClaimKey, TUserLogin, TUserLoginKey, TUserToken, TUserTokenKey, TRole, TRoleKey, TUserRole, TUserRoleKey)
+  - uid: Hybrid.Zero.Identity.Entities.UserTokenBase`2
+    name: UserTokenBase<TKey, TUserKey>
+    name.vb: UserTokenBase(Of TKey, TUserKey)
+- uid: Hybrid.Zero.Identity.Events
+  name: Hybrid.Zero.Identity.Events
+  items:
+  - uid: Hybrid.Zero.Identity.Events.OnlineUserCacheRemoveEventData
+    name: OnlineUserCacheRemoveEventData
+  - uid: Hybrid.Zero.Identity.Events.OnlineUserCacheRemoveEventHandler
+    name: OnlineUserCacheRemoveEventHandler
+- uid: Hybrid.Zero.Identity.Extensions
+  name: Hybrid.Zero.Identity.Extensions
+  items:
+  - uid: Hybrid.Zero.Identity.Extensions.ExternalLoginInfoExtensions
+    name: ExternalLoginInfoExtensions
+  - uid: Hybrid.Zero.Identity.Extensions.IdentityExtensions
+    name: IdentityExtensions
+  - uid: Hybrid.Zero.Identity.Extensions.UserManagerExtensions
+    name: UserManagerExtensions
+- uid: Hybrid.Zero.Identity.RealTime
+  name: Hybrid.Zero.Identity.RealTime
+  items:
+  - uid: Hybrid.Zero.Identity.RealTime.OnlineUser
+    name: OnlineUser
+  - uid: Hybrid.Zero.Identity.RealTime.OnlineUserProvider`6
+    name: OnlineUserProvider<TUser, TUserKey, TUserClaim, TUserClaimKey, TRole, TRoleKey>
+    name.vb: OnlineUserProvider(Of TUser, TUserKey, TUserClaim, TUserClaimKey, TRole, TRoleKey)
+- uid: Hybrid.Zero.IdentityServer4
+  name: Hybrid.Zero.IdentityServer4
+  items:
+  - uid: Hybrid.Zero.IdentityServer4.CustomTokenCreationService
+    name: CustomTokenCreationService
+  - uid: Hybrid.Zero.IdentityServer4.CustomTokenResponse
+    name: CustomTokenResponse
+  - uid: Hybrid.Zero.IdentityServer4.CustomTokenValidator
+    name: CustomTokenValidator
+  - uid: Hybrid.Zero.IdentityServer4.CustomUserInfoResponse
+    name: CustomUserInfoResponse
+  - uid: Hybrid.Zero.IdentityServer4.DefaultCorsPolicy
+    name: DefaultCorsPolicy
+  - uid: Hybrid.Zero.IdentityServer4.DefaultRedirectValidator
+    name: DefaultRedirectValidator
+  - uid: Hybrid.Zero.IdentityServer4.IdentityServer4ModuleBase`6
+    name: IdentityServer4ModuleBase<TUserStore, TRoleStore, TUser, TRole, TUserKey, TRoleKey>
+    name.vb: IdentityServer4ModuleBase(Of TUserStore, TRoleStore, TUser, TRole, TUserKey, TRoleKey)
+- uid: Hybrid.Zero.IdentityServer4.Extensions
+  name: Hybrid.Zero.IdentityServer4.Extensions
+  items:
+  - uid: Hybrid.Zero.IdentityServer4.Extensions.IdentityResourcesExtensions
+    name: IdentityResourcesExtensions
+  - uid: Hybrid.Zero.IdentityServer4.Extensions.IdentityResourcesExtensions.HybridCustomResource
+    name: IdentityResourcesExtensions.HybridCustomResource
+- uid: Hybrid.Zero.IdentityServer4.Identity
+  name: Hybrid.Zero.IdentityServer4.Identity
+  items:
+  - uid: Hybrid.Zero.IdentityServer4.Identity.ProfileService`2
+    name: ProfileService<TUser, TUserKey>
+    name.vb: ProfileService(Of TUser, TUserKey)
+  - uid: Hybrid.Zero.IdentityServer4.Identity.ResourceOwnerPasswordValidator`2
+    name: ResourceOwnerPasswordValidator<TUser, TUserKey>
+    name.vb: ResourceOwnerPasswordValidator(Of TUser, TUserKey)
+  - uid: Hybrid.Zero.IdentityServer4.Identity.SecurityStampValidatorCallback
+    name: SecurityStampValidatorCallback
+- uid: Hybrid.Zero.IdentityServer4.Quickstart
+  name: Hybrid.Zero.IdentityServer4.Quickstart
+  items:
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.AccountController
+    name: AccountController
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.AccountController`2
+    name: AccountController<TUser, TUserKey>
+    name.vb: AccountController(Of TUser, TUserKey)
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.AccountOptions
+    name: AccountOptions
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.ConsentController
+    name: ConsentController
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.ConsentInputModel
+    name: ConsentInputModel
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.ConsentOptions
+    name: ConsentOptions
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.ConsentViewModel
+    name: ConsentViewModel
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.DiagnosticsController
+    name: DiagnosticsController
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.DiagnosticsViewModel
+    name: DiagnosticsViewModel
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.Extensions
+    name: Extensions
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.ExternalController
+    name: ExternalController
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.ExternalController`2
+    name: ExternalController<TUser, TUserKey>
+    name.vb: ExternalController(Of TUser, TUserKey)
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.ExternalProvider
+    name: ExternalProvider
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.GrantsController
+    name: GrantsController
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.GrantsViewModel
+    name: GrantsViewModel
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.GrantViewModel
+    name: GrantViewModel
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.IdentityServerBaseController
+    name: IdentityServerBaseController
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.IdentityServerController
+    name: IdentityServerController
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.LoggedOutViewModel
+    name: LoggedOutViewModel
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.LoginInputModel
+    name: LoginInputModel
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.LoginViewModel
+    name: LoginViewModel
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.LogoutInputModel
+    name: LogoutInputModel
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.LogoutViewModel
+    name: LogoutViewModel
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.ProcessConsentResult
+    name: ProcessConsentResult
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.RedirectViewModel
+    name: RedirectViewModel
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.ScopeViewModel
+    name: ScopeViewModel
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.SecurityHeadersAttribute
+    name: SecurityHeadersAttribute
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.Device
+  name: Hybrid.Zero.IdentityServer4.Quickstart.Device
+  items:
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.Device.DeviceAuthorizationInputModel
+    name: DeviceAuthorizationInputModel
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.Device.DeviceAuthorizationViewModel
+    name: DeviceAuthorizationViewModel
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.Device.DeviceController
+    name: DeviceController
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.Views
+  name: Hybrid.Zero.IdentityServer4.Quickstart.Views
+  items:
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.Views.IdentityServerRazorPage`1
+    name: IdentityServerRazorPage<TModel>
+    name.vb: IdentityServerRazorPage(Of TModel)
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.Views.IdentityServerViewComponent
+    name: IdentityServerViewComponent
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.Views.Shared.Components.TopBarLanguageSwitch
+  name: Hybrid.Zero.IdentityServer4.Quickstart.Views.Shared.Components.TopBarLanguageSwitch
+  items:
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.Views.Shared.Components.TopBarLanguageSwitch.TopBarLanguageSwitchViewComponent
+    name: TopBarLanguageSwitchViewComponent
+- uid: Hybrid.Zero.IdentityServer4.RealTime
+  name: Hybrid.Zero.IdentityServer4.RealTime
+  items:
+  - uid: Hybrid.Zero.IdentityServer4.RealTime.OnlineUser
+    name: OnlineUser
+  - uid: Hybrid.Zero.IdentityServer4.RealTime.OnlineUserProvider`4
+    name: OnlineUserProvider<TUser, TUserKey, TRole, TRoleKey>
+    name.vb: OnlineUserProvider(Of TUser, TUserKey, TRole, TRoleKey)
+- uid: Hybrid.Zero.Systems
+  name: Hybrid.Zero.Systems
+  items:
+  - uid: Hybrid.Zero.Systems.SystemSetting
+    name: SystemSetting
+- uid: Hybrid.Zero.Systems.Dtos
+  name: Hybrid.Zero.Systems.Dtos
+  items:
+  - uid: Hybrid.Zero.Systems.Dtos.GenerateCodeInputDto
+    name: GenerateCodeInputDto
+  - uid: Hybrid.Zero.Systems.Dtos.KeyValueOutputDto
+    name: KeyValueOutputDto
+  - uid: Hybrid.Zero.Systems.Dtos.ModuleOutputDto
+    name: ModuleOutputDto
+- uid: Hybrid.Zero.Systems.Services
+  name: Hybrid.Zero.Systems.Services
+  items:
+  - uid: Hybrid.Zero.Systems.Services.ISystemsService
+    name: ISystemsService
+  - uid: Hybrid.Zero.Systems.Services.SystemsService
+    name: SystemsService
+- uid: Microsoft.AspNetCore.Builder
+  name: Microsoft.AspNetCore.Builder
+  items:
+  - uid: Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions
+    name: ApplicationBuilderExtensions
+- uid: Microsoft.Extensions.DependencyInjection
+  name: Microsoft.Extensions.DependencyInjection
+  items:
+  - uid: Microsoft.Extensions.DependencyInjection.FileLoggerFactoryExtensions
+    name: FileLoggerFactoryExtensions
+  - uid: Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions
+    name: IdentityServerBuilderExtensions
+  - uid: Microsoft.Extensions.DependencyInjection.ServiceExtensions
+    name: ServiceExtensions

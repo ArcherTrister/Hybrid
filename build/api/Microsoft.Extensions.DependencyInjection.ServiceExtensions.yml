@@ -1,0 +1,1076 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Extensions.DependencyInjection.ServiceExtensions
+  commentId: T:Microsoft.Extensions.DependencyInjection.ServiceExtensions
+  id: ServiceExtensions
+  parent: Microsoft.Extensions.DependencyInjection
+  children:
+  - Microsoft.Extensions.DependencyInjection.ServiceExtensions.AddHybrid``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Hybrid.Core.Builders.IHybridBuilder})
+  - Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  - Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetDbContext``2(System.IServiceProvider)
+  - Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetHybridOptions(System.IServiceProvider)
+  - Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetLogger(System.IServiceProvider,System.String)
+  - Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetLogger(System.IServiceProvider,System.Type)
+  - Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetLogger``1(System.IServiceProvider)
+  - Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetUnitOfWork``2(System.IServiceProvider)
+  - Microsoft.Extensions.DependencyInjection.ServiceExtensions.UseHybrid(System.IServiceProvider)
+  langs:
+  - csharp
+  - vb
+  name: ServiceExtensions
+  nameWithType: ServiceExtensions
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid/Core/ServiceExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ServiceExtensions
+    path: ../src/Hybrid/Core/ServiceExtensions.cs
+    startLine: 33
+  assemblies:
+  - Hybrid
+  namespace: Microsoft.Extensions.DependencyInjection
+  summary: "\n依赖注入服务集合扩展\n"
+  example: []
+  syntax:
+    content: public static class ServiceExtensions
+    content.vb: Public Module ServiceExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Microsoft.Extensions.DependencyInjection.ServiceExtensions.AddHybrid``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Hybrid.Core.Builders.IHybridBuilder})
+  commentId: M:Microsoft.Extensions.DependencyInjection.ServiceExtensions.AddHybrid``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Hybrid.Core.Builders.IHybridBuilder})
+  id: AddHybrid``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Hybrid.Core.Builders.IHybridBuilder})
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.ServiceExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddHybrid<THybridModuleManager>(IServiceCollection, Action<IHybridBuilder>)
+  nameWithType: ServiceExtensions.AddHybrid<THybridModuleManager>(IServiceCollection, Action<IHybridBuilder>)
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceExtensions.AddHybrid<THybridModuleManager>(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Hybrid.Core.Builders.IHybridBuilder>)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Core/ServiceExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: AddHybrid
+    path: ../src/Hybrid/Core/ServiceExtensions.cs
+    startLine: 38
+  assemblies:
+  - Hybrid
+  namespace: Microsoft.Extensions.DependencyInjection
+  summary: "\n将Hybrid服务，各个<xref href=\"Hybrid.Core.Modules.HybridModule\" data-throw-if-not-resolved=\"false\"></xref>模块的服务添加到服务容器中\n"
+  example: []
+  syntax:
+    content: >-
+      public static IServiceCollection AddHybrid<THybridModuleManager>(this IServiceCollection services, Action<IHybridBuilder> builderAction = null)
+
+          where THybridModuleManager : IHybridModuleManager, new()
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    - id: builderAction
+      type: System.Action{Hybrid.Core.Builders.IHybridBuilder}
+    typeParameters:
+    - id: THybridModuleManager
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddHybrid(Of THybridModuleManager As {IHybridModuleManager, New})(services As IServiceCollection, builderAction As Action(Of IHybridBuilder) = Nothing) As IServiceCollection
+  overload: Microsoft.Extensions.DependencyInjection.ServiceExtensions.AddHybrid*
+  nameWithType.vb: ServiceExtensions.AddHybrid(Of THybridModuleManager)(IServiceCollection, Action(Of IHybridBuilder))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Extensions.DependencyInjection.ServiceExtensions.AddHybrid(Of THybridModuleManager)(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action(Of Hybrid.Core.Builders.IHybridBuilder))
+  name.vb: AddHybrid(Of THybridModuleManager)(IServiceCollection, Action(Of IHybridBuilder))
+- uid: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  commentId: M:Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  id: GetConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.ServiceExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetConfiguration(IServiceCollection)
+  nameWithType: ServiceExtensions.GetConfiguration(IServiceCollection)
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Core/ServiceExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetConfiguration
+    path: ../src/Hybrid/Core/ServiceExtensions.cs
+    startLine: 69
+  assemblies:
+  - Hybrid
+  namespace: Microsoft.Extensions.DependencyInjection
+  summary: "\n获取<xref href=\"Microsoft.Extensions.Configuration.IConfiguration\" data-throw-if-not-resolved=\"false\"></xref>配置信息\n"
+  example: []
+  syntax:
+    content: public static IConfiguration GetConfiguration(this IServiceCollection services)
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    return:
+      type: Microsoft.Extensions.Configuration.IConfiguration
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetConfiguration(services As IServiceCollection) As IConfiguration
+  overload: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetConfiguration*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetHybridOptions(System.IServiceProvider)
+  commentId: M:Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetHybridOptions(System.IServiceProvider)
+  id: GetHybridOptions(System.IServiceProvider)
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.ServiceExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetHybridOptions(IServiceProvider)
+  nameWithType: ServiceExtensions.GetHybridOptions(IServiceProvider)
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetHybridOptions(System.IServiceProvider)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Core/ServiceExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetHybridOptions
+    path: ../src/Hybrid/Core/ServiceExtensions.cs
+    startLine: 77
+  assemblies:
+  - Hybrid
+  namespace: Microsoft.Extensions.DependencyInjection
+  summary: "\n从服务提供者中获取HybridOptions\n"
+  example: []
+  syntax:
+    content: public static HybridOptions GetHybridOptions(this IServiceProvider provider)
+    parameters:
+    - id: provider
+      type: System.IServiceProvider
+    return:
+      type: Hybrid.Core.Options.HybridOptions
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetHybridOptions(provider As IServiceProvider) As HybridOptions
+  overload: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetHybridOptions*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetLogger``1(System.IServiceProvider)
+  commentId: M:Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetLogger``1(System.IServiceProvider)
+  id: GetLogger``1(System.IServiceProvider)
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.ServiceExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetLogger<T>(IServiceProvider)
+  nameWithType: ServiceExtensions.GetLogger<T>(IServiceProvider)
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetLogger<T>(System.IServiceProvider)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Core/ServiceExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetLogger
+    path: ../src/Hybrid/Core/ServiceExtensions.cs
+    startLine: 87
+  assemblies:
+  - Hybrid
+  namespace: Microsoft.Extensions.DependencyInjection
+  summary: "\n获取指定类型的日志对象\n"
+  example: []
+  syntax:
+    content: public static ILogger<T> GetLogger<T>(this IServiceProvider provider)
+    parameters:
+    - id: provider
+      type: System.IServiceProvider
+    typeParameters:
+    - id: T
+      description: 非静态强类型
+    return:
+      type: Microsoft.Extensions.Logging.ILogger{{T}}
+      description: 日志对象
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetLogger(Of T)(provider As IServiceProvider) As ILogger(Of T)
+  overload: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetLogger*
+  nameWithType.vb: ServiceExtensions.GetLogger(Of T)(IServiceProvider)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetLogger(Of T)(System.IServiceProvider)
+  name.vb: GetLogger(Of T)(IServiceProvider)
+- uid: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetLogger(System.IServiceProvider,System.Type)
+  commentId: M:Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetLogger(System.IServiceProvider,System.Type)
+  id: GetLogger(System.IServiceProvider,System.Type)
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.ServiceExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetLogger(IServiceProvider, Type)
+  nameWithType: ServiceExtensions.GetLogger(IServiceProvider, Type)
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetLogger(System.IServiceProvider, System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Core/ServiceExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetLogger
+    path: ../src/Hybrid/Core/ServiceExtensions.cs
+    startLine: 99
+  assemblies:
+  - Hybrid
+  namespace: Microsoft.Extensions.DependencyInjection
+  summary: "\n获取指定类型的日志对象\n"
+  example: []
+  syntax:
+    content: public static ILogger GetLogger(this IServiceProvider provider, Type type)
+    parameters:
+    - id: provider
+      type: System.IServiceProvider
+      description: ''
+    - id: type
+      type: System.Type
+      description: 指定类型
+    return:
+      type: Microsoft.Extensions.Logging.ILogger
+      description: 日志对象
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetLogger(provider As IServiceProvider, type As Type) As ILogger
+  overload: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetLogger*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetLogger(System.IServiceProvider,System.String)
+  commentId: M:Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetLogger(System.IServiceProvider,System.String)
+  id: GetLogger(System.IServiceProvider,System.String)
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.ServiceExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetLogger(IServiceProvider, String)
+  nameWithType: ServiceExtensions.GetLogger(IServiceProvider, String)
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetLogger(System.IServiceProvider, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Core/ServiceExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetLogger
+    path: ../src/Hybrid/Core/ServiceExtensions.cs
+    startLine: 108
+  assemblies:
+  - Hybrid
+  namespace: Microsoft.Extensions.DependencyInjection
+  summary: "\n获取指定名称的日志对象\n"
+  example: []
+  syntax:
+    content: public static ILogger GetLogger(this IServiceProvider provider, string name)
+    parameters:
+    - id: provider
+      type: System.IServiceProvider
+    - id: name
+      type: System.String
+    return:
+      type: Microsoft.Extensions.Logging.ILogger
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetLogger(provider As IServiceProvider, name As String) As ILogger
+  overload: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetLogger*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetUnitOfWork``2(System.IServiceProvider)
+  commentId: M:Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetUnitOfWork``2(System.IServiceProvider)
+  id: GetUnitOfWork``2(System.IServiceProvider)
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.ServiceExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetUnitOfWork<TEntity, TKey>(IServiceProvider)
+  nameWithType: ServiceExtensions.GetUnitOfWork<TEntity, TKey>(IServiceProvider)
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetUnitOfWork<TEntity, TKey>(System.IServiceProvider)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Core/ServiceExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetUnitOfWork
+    path: ../src/Hybrid/Core/ServiceExtensions.cs
+    startLine: 117
+  assemblies:
+  - Hybrid
+  namespace: Microsoft.Extensions.DependencyInjection
+  summary: "\n获取指定实体类的上下文所在工作单元\n"
+  example: []
+  syntax:
+    content: >-
+      public static IUnitOfWork GetUnitOfWork<TEntity, TKey>(this IServiceProvider provider)
+
+          where TEntity : IEntity<TKey>
+    parameters:
+    - id: provider
+      type: System.IServiceProvider
+    typeParameters:
+    - id: TEntity
+    - id: TKey
+    return:
+      type: Hybrid.Domain.Uow.IUnitOfWork
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetUnitOfWork(Of TEntity As IEntity(Of TKey), TKey)(provider As IServiceProvider) As IUnitOfWork
+  overload: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetUnitOfWork*
+  nameWithType.vb: ServiceExtensions.GetUnitOfWork(Of TEntity, TKey)(IServiceProvider)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetUnitOfWork(Of TEntity, TKey)(System.IServiceProvider)
+  name.vb: GetUnitOfWork(Of TEntity, TKey)(IServiceProvider)
+- uid: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetDbContext``2(System.IServiceProvider)
+  commentId: M:Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetDbContext``2(System.IServiceProvider)
+  id: GetDbContext``2(System.IServiceProvider)
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.ServiceExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetDbContext<TEntity, TKey>(IServiceProvider)
+  nameWithType: ServiceExtensions.GetDbContext<TEntity, TKey>(IServiceProvider)
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetDbContext<TEntity, TKey>(System.IServiceProvider)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Core/ServiceExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetDbContext
+    path: ../src/Hybrid/Core/ServiceExtensions.cs
+    startLine: 126
+  assemblies:
+  - Hybrid
+  namespace: Microsoft.Extensions.DependencyInjection
+  summary: "\n获取指定实体类型的上下文对象\n"
+  example: []
+  syntax:
+    content: >-
+      public static IDbContext GetDbContext<TEntity, TKey>(this IServiceProvider provider)
+
+          where TEntity : IEntity<TKey>
+    parameters:
+    - id: provider
+      type: System.IServiceProvider
+    typeParameters:
+    - id: TEntity
+    - id: TKey
+    return:
+      type: Hybrid.Domain.EntityFramework.IDbContext
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetDbContext(Of TEntity As IEntity(Of TKey), TKey)(provider As IServiceProvider) As IDbContext
+  overload: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetDbContext*
+  nameWithType.vb: ServiceExtensions.GetDbContext(Of TEntity, TKey)(IServiceProvider)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetDbContext(Of TEntity, TKey)(System.IServiceProvider)
+  name.vb: GetDbContext(Of TEntity, TKey)(IServiceProvider)
+- uid: Microsoft.Extensions.DependencyInjection.ServiceExtensions.UseHybrid(System.IServiceProvider)
+  commentId: M:Microsoft.Extensions.DependencyInjection.ServiceExtensions.UseHybrid(System.IServiceProvider)
+  id: UseHybrid(System.IServiceProvider)
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.ServiceExtensions
+  langs:
+  - csharp
+  - vb
+  name: UseHybrid(IServiceProvider)
+  nameWithType: ServiceExtensions.UseHybrid(IServiceProvider)
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceExtensions.UseHybrid(System.IServiceProvider)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Core/ServiceExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: UseHybrid
+    path: ../src/Hybrid/Core/ServiceExtensions.cs
+    startLine: 135
+  assemblies:
+  - Hybrid
+  namespace: Microsoft.Extensions.DependencyInjection
+  summary: "\nHybrid框架初始化，适用于非AspNetCore环境\n"
+  example: []
+  syntax:
+    content: public static IServiceProvider UseHybrid(this IServiceProvider provider)
+    parameters:
+    - id: provider
+      type: System.IServiceProvider
+    return:
+      type: System.IServiceProvider
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function UseHybrid(provider As IServiceProvider) As IServiceProvider
+  overload: Microsoft.Extensions.DependencyInjection.ServiceExtensions.UseHybrid*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hybrid.Core.Modules.HybridModule
+  commentId: T:Hybrid.Core.Modules.HybridModule
+  parent: Hybrid.Core.Modules
+  name: HybridModule
+  nameWithType: HybridModule
+  fullName: Hybrid.Core.Modules.HybridModule
+- uid: Microsoft.Extensions.DependencyInjection.ServiceExtensions.AddHybrid*
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.ServiceExtensions.AddHybrid
+  name: AddHybrid
+  nameWithType: ServiceExtensions.AddHybrid
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceExtensions.AddHybrid
+- uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+- uid: System.Action{Hybrid.Core.Builders.IHybridBuilder}
+  commentId: T:System.Action{Hybrid.Core.Builders.IHybridBuilder}
+  parent: System
+  definition: System.Action`1
+  name: Action<IHybridBuilder>
+  nameWithType: Action<IHybridBuilder>
+  fullName: System.Action<Hybrid.Core.Builders.IHybridBuilder>
+  nameWithType.vb: Action(Of IHybridBuilder)
+  fullName.vb: System.Action(Of Hybrid.Core.Builders.IHybridBuilder)
+  name.vb: Action(Of IHybridBuilder)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Core.Builders.IHybridBuilder
+    name: IHybridBuilder
+    nameWithType: IHybridBuilder
+    fullName: Hybrid.Core.Builders.IHybridBuilder
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Core.Builders.IHybridBuilder
+    name: IHybridBuilder
+    nameWithType: IHybridBuilder
+    fullName: Hybrid.Core.Builders.IHybridBuilder
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Core.Modules
+  commentId: N:Hybrid.Core.Modules
+  name: Hybrid.Core.Modules
+  nameWithType: Hybrid.Core.Modules
+  fullName: Hybrid.Core.Modules
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Extensions.Configuration.IConfiguration
+  commentId: T:Microsoft.Extensions.Configuration.IConfiguration
+  parent: Microsoft.Extensions.Configuration
+  isExternal: true
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: Microsoft.Extensions.Configuration.IConfiguration
+- uid: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetConfiguration*
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetConfiguration
+  name: GetConfiguration
+  nameWithType: ServiceExtensions.GetConfiguration
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetConfiguration
+- uid: Microsoft.Extensions.Configuration
+  commentId: N:Microsoft.Extensions.Configuration
+  isExternal: true
+  name: Microsoft.Extensions.Configuration
+  nameWithType: Microsoft.Extensions.Configuration
+  fullName: Microsoft.Extensions.Configuration
+- uid: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetHybridOptions*
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetHybridOptions
+  name: GetHybridOptions
+  nameWithType: ServiceExtensions.GetHybridOptions
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetHybridOptions
+- uid: System.IServiceProvider
+  commentId: T:System.IServiceProvider
+  parent: System
+  isExternal: true
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: System.IServiceProvider
+- uid: Hybrid.Core.Options.HybridOptions
+  commentId: T:Hybrid.Core.Options.HybridOptions
+  parent: Hybrid.Core.Options
+  name: HybridOptions
+  nameWithType: HybridOptions
+  fullName: Hybrid.Core.Options.HybridOptions
+- uid: Hybrid.Core.Options
+  commentId: N:Hybrid.Core.Options
+  name: Hybrid.Core.Options
+  nameWithType: Hybrid.Core.Options
+  fullName: Hybrid.Core.Options
+- uid: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetLogger*
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetLogger
+  name: GetLogger
+  nameWithType: ServiceExtensions.GetLogger
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetLogger
+- uid: Microsoft.Extensions.Logging.ILogger{{T}}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{``0}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  name: ILogger<T>
+  nameWithType: ILogger<T>
+  fullName: Microsoft.Extensions.Logging.ILogger<T>
+  nameWithType.vb: ILogger(Of T)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of T)
+  name.vb: ILogger(Of T)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: Microsoft.Extensions.Logging.ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: Microsoft.Extensions.Logging.ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: Microsoft.Extensions.Logging.ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TCategoryName
+    nameWithType: TCategoryName
+    fullName: TCategoryName
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: Microsoft.Extensions.Logging.ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TCategoryName
+    nameWithType: TCategoryName
+    fullName: TCategoryName
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Microsoft.Extensions.Logging.ILogger
+  commentId: T:Microsoft.Extensions.Logging.ILogger
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Microsoft.Extensions.Logging.ILogger
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetUnitOfWork*
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetUnitOfWork
+  name: GetUnitOfWork
+  nameWithType: ServiceExtensions.GetUnitOfWork
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetUnitOfWork
+- uid: Hybrid.Domain.Uow.IUnitOfWork
+  commentId: T:Hybrid.Domain.Uow.IUnitOfWork
+  parent: Hybrid.Domain.Uow
+  name: IUnitOfWork
+  nameWithType: IUnitOfWork
+  fullName: Hybrid.Domain.Uow.IUnitOfWork
+- uid: Hybrid.Domain.Uow
+  commentId: N:Hybrid.Domain.Uow
+  name: Hybrid.Domain.Uow
+  nameWithType: Hybrid.Domain.Uow
+  fullName: Hybrid.Domain.Uow
+- uid: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetDbContext*
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetDbContext
+  name: GetDbContext
+  nameWithType: ServiceExtensions.GetDbContext
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceExtensions.GetDbContext
+- uid: Hybrid.Domain.EntityFramework.IDbContext
+  commentId: T:Hybrid.Domain.EntityFramework.IDbContext
+  parent: Hybrid.Domain.EntityFramework
+  name: IDbContext
+  nameWithType: IDbContext
+  fullName: Hybrid.Domain.EntityFramework.IDbContext
+- uid: Hybrid.Domain.EntityFramework
+  commentId: N:Hybrid.Domain.EntityFramework
+  name: Hybrid.Domain.EntityFramework
+  nameWithType: Hybrid.Domain.EntityFramework
+  fullName: Hybrid.Domain.EntityFramework
+- uid: Microsoft.Extensions.DependencyInjection.ServiceExtensions.UseHybrid*
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.ServiceExtensions.UseHybrid
+  name: UseHybrid
+  nameWithType: ServiceExtensions.UseHybrid
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceExtensions.UseHybrid

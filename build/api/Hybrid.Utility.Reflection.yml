@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Utility.Reflection
+  commentId: N:Hybrid.Utility.Reflection
+  id: Hybrid.Utility.Reflection
+  children:
+  - Hybrid.Utility.Reflection.SyncLocker
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Utility.Reflection
+  nameWithType: Hybrid.Utility.Reflection
+  fullName: Hybrid.Utility.Reflection
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Utility.Reflection.SyncLocker
+  commentId: T:Hybrid.Utility.Reflection.SyncLocker
+  name: SyncLocker
+  nameWithType: SyncLocker
+  fullName: Hybrid.Utility.Reflection.SyncLocker

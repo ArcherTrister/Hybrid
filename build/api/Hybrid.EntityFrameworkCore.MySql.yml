@@ -1,0 +1,77 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.EntityFrameworkCore.MySql
+  commentId: N:Hybrid.EntityFrameworkCore.MySql
+  id: Hybrid.EntityFrameworkCore.MySql
+  children:
+  - Hybrid.EntityFrameworkCore.MySql.DbContextOptionsBuilderDriveHandler
+  - Hybrid.EntityFrameworkCore.MySql.MySqlDapperSqlExecutor`2
+  - Hybrid.EntityFrameworkCore.MySql.MySqlEntityFrameworkCoreModule
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.EntityFrameworkCore.MySql
+  nameWithType: Hybrid.EntityFrameworkCore.MySql
+  fullName: Hybrid.EntityFrameworkCore.MySql
+  type: Namespace
+  assemblies:
+  - Hybrid.EntityFrameworkCore.MySql
+references:
+- uid: Hybrid.EntityFrameworkCore.MySql.DbContextOptionsBuilderDriveHandler
+  commentId: T:Hybrid.EntityFrameworkCore.MySql.DbContextOptionsBuilderDriveHandler
+  name: DbContextOptionsBuilderDriveHandler
+  nameWithType: DbContextOptionsBuilderDriveHandler
+  fullName: Hybrid.EntityFrameworkCore.MySql.DbContextOptionsBuilderDriveHandler
+- uid: Hybrid.EntityFrameworkCore.MySql.MySqlDapperSqlExecutor`2
+  commentId: T:Hybrid.EntityFrameworkCore.MySql.MySqlDapperSqlExecutor`2
+  name: MySqlDapperSqlExecutor<TEntity, TKey>
+  nameWithType: MySqlDapperSqlExecutor<TEntity, TKey>
+  fullName: Hybrid.EntityFrameworkCore.MySql.MySqlDapperSqlExecutor<TEntity, TKey>
+  nameWithType.vb: MySqlDapperSqlExecutor(Of TEntity, TKey)
+  fullName.vb: Hybrid.EntityFrameworkCore.MySql.MySqlDapperSqlExecutor(Of TEntity, TKey)
+  name.vb: MySqlDapperSqlExecutor(Of TEntity, TKey)
+  spec.csharp:
+  - uid: Hybrid.EntityFrameworkCore.MySql.MySqlDapperSqlExecutor`2
+    name: MySqlDapperSqlExecutor
+    nameWithType: MySqlDapperSqlExecutor
+    fullName: Hybrid.EntityFrameworkCore.MySql.MySqlDapperSqlExecutor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.EntityFrameworkCore.MySql.MySqlDapperSqlExecutor`2
+    name: MySqlDapperSqlExecutor
+    nameWithType: MySqlDapperSqlExecutor
+    fullName: Hybrid.EntityFrameworkCore.MySql.MySqlDapperSqlExecutor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.EntityFrameworkCore.MySql.MySqlEntityFrameworkCoreModule
+  commentId: T:Hybrid.EntityFrameworkCore.MySql.MySqlEntityFrameworkCoreModule
+  name: MySqlEntityFrameworkCoreModule
+  nameWithType: MySqlEntityFrameworkCoreModule
+  fullName: Hybrid.EntityFrameworkCore.MySql.MySqlEntityFrameworkCoreModule

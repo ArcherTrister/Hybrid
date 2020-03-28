@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Core.Data
+  commentId: N:Hybrid.Core.Data
+  id: Hybrid.Core.Data
+  children:
+  - Hybrid.Core.Data.IKeyValue
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Core.Data
+  nameWithType: Hybrid.Core.Data
+  fullName: Hybrid.Core.Data
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Core.Data.IKeyValue
+  commentId: T:Hybrid.Core.Data.IKeyValue
+  parent: Hybrid.Core.Data
+  name: IKeyValue
+  nameWithType: IKeyValue
+  fullName: Hybrid.Core.Data.IKeyValue
+- uid: Hybrid.Core.Data
+  commentId: N:Hybrid.Core.Data
+  name: Hybrid.Core.Data
+  nameWithType: Hybrid.Core.Data
+  fullName: Hybrid.Core.Data

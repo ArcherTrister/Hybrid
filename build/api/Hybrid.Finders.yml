@@ -1,0 +1,90 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Finders
+  commentId: N:Hybrid.Finders
+  id: Hybrid.Finders
+  children:
+  - Hybrid.Finders.FinderBase`1
+  - Hybrid.Finders.IFinder`1
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Finders
+  nameWithType: Hybrid.Finders
+  fullName: Hybrid.Finders
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Finders.FinderBase`1
+  commentId: T:Hybrid.Finders.FinderBase`1
+  name: FinderBase<TItem>
+  nameWithType: FinderBase<TItem>
+  fullName: Hybrid.Finders.FinderBase<TItem>
+  nameWithType.vb: FinderBase(Of TItem)
+  fullName.vb: Hybrid.Finders.FinderBase(Of TItem)
+  name.vb: FinderBase(Of TItem)
+  spec.csharp:
+  - uid: Hybrid.Finders.FinderBase`1
+    name: FinderBase
+    nameWithType: FinderBase
+    fullName: Hybrid.Finders.FinderBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TItem
+    nameWithType: TItem
+    fullName: TItem
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Finders.FinderBase`1
+    name: FinderBase
+    nameWithType: FinderBase
+    fullName: Hybrid.Finders.FinderBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TItem
+    nameWithType: TItem
+    fullName: TItem
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Finders.IFinder`1
+  commentId: T:Hybrid.Finders.IFinder`1
+  name: IFinder<TItem>
+  nameWithType: IFinder<TItem>
+  fullName: Hybrid.Finders.IFinder<TItem>
+  nameWithType.vb: IFinder(Of TItem)
+  fullName.vb: Hybrid.Finders.IFinder(Of TItem)
+  name.vb: IFinder(Of TItem)
+  spec.csharp:
+  - uid: Hybrid.Finders.IFinder`1
+    name: IFinder
+    nameWithType: IFinder
+    fullName: Hybrid.Finders.IFinder
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TItem
+    nameWithType: TItem
+    fullName: TItem
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Finders.IFinder`1
+    name: IFinder
+    nameWithType: IFinder
+    fullName: Hybrid.Finders.IFinder
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TItem
+    nameWithType: TItem
+    fullName: TItem
+  - name: )
+    nameWithType: )
+    fullName: )

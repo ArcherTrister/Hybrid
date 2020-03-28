@@ -1,0 +1,1522 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Data.Check
+  commentId: T:Hybrid.Data.Check
+  id: Check
+  parent: Hybrid.Data
+  children:
+  - Hybrid.Data.Check.Between``1(``0,System.String,``0,``0,System.Boolean,System.Boolean)
+  - Hybrid.Data.Check.DirectoryExists(System.String,System.String)
+  - Hybrid.Data.Check.FileExists(System.String,System.String)
+  - Hybrid.Data.Check.GreaterThan``1(``0,System.String,``0,System.Boolean)
+  - Hybrid.Data.Check.HasNoNulls``1(System.Collections.Generic.IReadOnlyList{``0},System.String)
+  - Hybrid.Data.Check.LessThan``1(``0,System.String,``0,System.Boolean)
+  - Hybrid.Data.Check.NotEmpty(System.Guid,System.String)
+  - Hybrid.Data.Check.NotNull``1(``0,System.String)
+  - Hybrid.Data.Check.NotNullOrEmpty(System.String,System.String)
+  - Hybrid.Data.Check.NotNullOrEmpty``1(System.Collections.Generic.IReadOnlyList{``0},System.String)
+  - Hybrid.Data.Check.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+  - Hybrid.Data.Check.Required``1(System.Boolean,System.String)
+  - Hybrid.Data.Check.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+  - Hybrid.Data.Check.Validate``1(Hybrid.Domain.Entities.IInputDto{``0},System.String)
+  - Hybrid.Data.Check.Validate``2(``0[],System.String)
+  langs:
+  - csharp
+  - vb
+  name: Check
+  nameWithType: Check
+  fullName: Hybrid.Data.Check
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid/Data/Check.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Check
+    path: ../src/Hybrid/Data/Check.cs
+    startLine: 24
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n参数合法性检查类\n"
+  example: []
+  syntax:
+    content: public static class Check
+    content.vb: Public Module Check
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.Data.Check.Required``1(System.Boolean,System.String)
+  commentId: M:Hybrid.Data.Check.Required``1(System.Boolean,System.String)
+  id: Required``1(System.Boolean,System.String)
+  parent: Hybrid.Data.Check
+  langs:
+  - csharp
+  - vb
+  name: Required<TException>(Boolean, String)
+  nameWithType: Check.Required<TException>(Boolean, String)
+  fullName: Hybrid.Data.Check.Required<TException>(System.Boolean, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Data/Check.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Required
+    path: ../src/Hybrid/Data/Check.cs
+    startLine: 33
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n验证指定值的断言<code data-dev-comment-type=\"paramref\" class=\"paramref\">assertion</code>是否为真，如果不为真，抛出指定消息<code data-dev-comment-type=\"paramref\" class=\"paramref\">message</code>的指定类型<code data-dev-comment-type=\"typeparamref\" class=\"typeparamref\">TException</code>异常\n"
+  example: []
+  syntax:
+    content: >-
+      public static void Required<TException>(bool assertion, string message)
+
+          where TException : Exception
+    parameters:
+    - id: assertion
+      type: System.Boolean
+      description: 要验证的断言。
+    - id: message
+      type: System.String
+      description: 异常消息。
+    typeParameters:
+    - id: TException
+      description: 异常类型
+    content.vb: Public Shared Sub Required(Of TException As Exception)(assertion As Boolean, message As String)
+  overload: Hybrid.Data.Check.Required*
+  nameWithType.vb: Check.Required(Of TException)(Boolean, String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Data.Check.Required(Of TException)(System.Boolean, System.String)
+  name.vb: Required(Of TException)(Boolean, String)
+- uid: Hybrid.Data.Check.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+  commentId: M:Hybrid.Data.Check.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+  id: Required``1(``0,System.Func{``0,System.Boolean},System.String)
+  parent: Hybrid.Data.Check
+  langs:
+  - csharp
+  - vb
+  name: Required<T>(T, Func<T, Boolean>, String)
+  nameWithType: Check.Required<T>(T, Func<T, Boolean>, String)
+  fullName: Hybrid.Data.Check.Required<T>(T, System.Func<T, System.Boolean>, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Data/Check.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Required
+    path: ../src/Hybrid/Data/Check.cs
+    startLine: 54
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n验证指定值的断言表达式是否为真，不为值抛出<xref href=\"System.Exception\" data-throw-if-not-resolved=\"false\"></xref>异常\n"
+  example: []
+  syntax:
+    content: public static void Required<T>(T value, Func<T, bool> assertionFunc, string message)
+    parameters:
+    - id: value
+      type: '{T}'
+      description: ''
+    - id: assertionFunc
+      type: System.Func{{T},System.Boolean}
+      description: 要验证的断言表达式
+    - id: message
+      type: System.String
+      description: 异常消息
+    typeParameters:
+    - id: T
+    content.vb: Public Shared Sub Required(Of T)(value As T, assertionFunc As Func(Of T, Boolean), message As String)
+  overload: Hybrid.Data.Check.Required*
+  nameWithType.vb: Check.Required(Of T)(T, Func(Of T, Boolean), String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Data.Check.Required(Of T)(T, System.Func(Of T, System.Boolean), System.String)
+  name.vb: Required(Of T)(T, Func(Of T, Boolean), String)
+- uid: Hybrid.Data.Check.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+  commentId: M:Hybrid.Data.Check.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+  id: Required``2(``0,System.Func{``0,System.Boolean},System.String)
+  parent: Hybrid.Data.Check
+  langs:
+  - csharp
+  - vb
+  name: Required<T, TException>(T, Func<T, Boolean>, String)
+  nameWithType: Check.Required<T, TException>(T, Func<T, Boolean>, String)
+  fullName: Hybrid.Data.Check.Required<T, TException>(T, System.Func<T, System.Boolean>, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Data/Check.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Required
+    path: ../src/Hybrid/Data/Check.cs
+    startLine: 71
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n验证指定值的断言表达式是否为真，不为真抛出<code data-dev-comment-type=\"typeparamref\" class=\"typeparamref\">TException</code>异常\n"
+  example: []
+  syntax:
+    content: >-
+      public static void Required<T, TException>(T value, Func<T, bool> assertionFunc, string message)
+
+          where TException : Exception
+    parameters:
+    - id: value
+      type: '{T}'
+      description: 要判断的值
+    - id: assertionFunc
+      type: System.Func{{T},System.Boolean}
+      description: 要验证的断言表达式
+    - id: message
+      type: System.String
+      description: 异常消息
+    typeParameters:
+    - id: T
+      description: 要判断的值的类型
+    - id: TException
+      description: 抛出的异常类型
+    content.vb: Public Shared Sub Required(Of T, TException As Exception)(value As T, assertionFunc As Func(Of T, Boolean), message As String)
+  overload: Hybrid.Data.Check.Required*
+  nameWithType.vb: Check.Required(Of T, TException)(T, Func(Of T, Boolean), String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Data.Check.Required(Of T, TException)(T, System.Func(Of T, System.Boolean), System.String)
+  name.vb: Required(Of T, TException)(T, Func(Of T, Boolean), String)
+- uid: Hybrid.Data.Check.NotNull``1(``0,System.String)
+  commentId: M:Hybrid.Data.Check.NotNull``1(``0,System.String)
+  id: NotNull``1(``0,System.String)
+  parent: Hybrid.Data.Check
+  langs:
+  - csharp
+  - vb
+  name: NotNull<T>(T, String)
+  nameWithType: Check.NotNull<T>(T, String)
+  fullName: Hybrid.Data.Check.NotNull<T>(T, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Data/Check.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: NotNull
+    path: ../src/Hybrid/Data/Check.cs
+    startLine: 86
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n检查参数不能为空引用，否则抛出<xref href=\"System.ArgumentNullException\" data-throw-if-not-resolved=\"false\"></xref>异常。\n"
+  example: []
+  syntax:
+    content: public static void NotNull<T>(T value, string paramName)
+    parameters:
+    - id: value
+      type: '{T}'
+      description: ''
+    - id: paramName
+      type: System.String
+      description: 参数名称
+    typeParameters:
+    - id: T
+    content.vb: Public Shared Sub NotNull(Of T)(value As T, paramName As String)
+  overload: Hybrid.Data.Check.NotNull*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+  nameWithType.vb: Check.NotNull(Of T)(T, String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Data.Check.NotNull(Of T)(T, System.String)
+  name.vb: NotNull(Of T)(T, String)
+- uid: Hybrid.Data.Check.NotNullOrEmpty(System.String,System.String)
+  commentId: M:Hybrid.Data.Check.NotNullOrEmpty(System.String,System.String)
+  id: NotNullOrEmpty(System.String,System.String)
+  parent: Hybrid.Data.Check
+  langs:
+  - csharp
+  - vb
+  name: NotNullOrEmpty(String, String)
+  nameWithType: Check.NotNullOrEmpty(String, String)
+  fullName: Hybrid.Data.Check.NotNullOrEmpty(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Data/Check.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: NotNullOrEmpty
+    path: ../src/Hybrid/Data/Check.cs
+    startLine: 98
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n检查字符串不能为空引用或空字符串，否则抛出<xref href=\"System.ArgumentNullException\" data-throw-if-not-resolved=\"false\"></xref>异常或<xref href=\"System.ArgumentException\" data-throw-if-not-resolved=\"false\"></xref>异常。\n"
+  example: []
+  syntax:
+    content: public static void NotNullOrEmpty(string value, string paramName)
+    parameters:
+    - id: value
+      type: System.String
+      description: ''
+    - id: paramName
+      type: System.String
+      description: 参数名称。
+    content.vb: Public Shared Sub NotNullOrEmpty(value As String, paramName As String)
+  overload: Hybrid.Data.Check.NotNullOrEmpty*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Data.Check.NotEmpty(System.Guid,System.String)
+  commentId: M:Hybrid.Data.Check.NotEmpty(System.Guid,System.String)
+  id: NotEmpty(System.Guid,System.String)
+  parent: Hybrid.Data.Check
+  langs:
+  - csharp
+  - vb
+  name: NotEmpty(Guid, String)
+  nameWithType: Check.NotEmpty(Guid, String)
+  fullName: Hybrid.Data.Check.NotEmpty(System.Guid, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Data/Check.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: NotEmpty
+    path: ../src/Hybrid/Data/Check.cs
+    startLine: 109
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n检查Guid值不能为Guid.Empty，否则抛出<xref href=\"System.ArgumentException\" data-throw-if-not-resolved=\"false\"></xref>异常。\n"
+  example: []
+  syntax:
+    content: public static void NotEmpty(Guid value, string paramName)
+    parameters:
+    - id: value
+      type: System.Guid
+      description: ''
+    - id: paramName
+      type: System.String
+      description: 参数名称。
+    content.vb: Public Shared Sub NotEmpty(value As Guid, paramName As String)
+  overload: Hybrid.Data.Check.NotEmpty*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Data.Check.NotNullOrEmpty``1(System.Collections.Generic.IReadOnlyList{``0},System.String)
+  commentId: M:Hybrid.Data.Check.NotNullOrEmpty``1(System.Collections.Generic.IReadOnlyList{``0},System.String)
+  id: NotNullOrEmpty``1(System.Collections.Generic.IReadOnlyList{``0},System.String)
+  parent: Hybrid.Data.Check
+  langs:
+  - csharp
+  - vb
+  name: NotNullOrEmpty<T>(IReadOnlyList<T>, String)
+  nameWithType: Check.NotNullOrEmpty<T>(IReadOnlyList<T>, String)
+  fullName: Hybrid.Data.Check.NotNullOrEmpty<T>(System.Collections.Generic.IReadOnlyList<T>, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Data/Check.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: NotNullOrEmpty
+    path: ../src/Hybrid/Data/Check.cs
+    startLine: 122
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n检查集合不能为空引用或空集合，否则抛出<xref href=\"System.ArgumentNullException\" data-throw-if-not-resolved=\"false\"></xref>异常或<xref href=\"System.ArgumentException\" data-throw-if-not-resolved=\"false\"></xref>异常。\n"
+  example: []
+  syntax:
+    content: public static void NotNullOrEmpty<T>(IReadOnlyList<T> list, string paramName)
+    parameters:
+    - id: list
+      type: System.Collections.Generic.IReadOnlyList{{T}}
+      description: ''
+    - id: paramName
+      type: System.String
+      description: 参数名称。
+    typeParameters:
+    - id: T
+      description: 集合项的类型。
+    content.vb: Public Shared Sub NotNullOrEmpty(Of T)(list As IReadOnlyList(Of T), paramName As String)
+  overload: Hybrid.Data.Check.NotNullOrEmpty*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+  nameWithType.vb: Check.NotNullOrEmpty(Of T)(IReadOnlyList(Of T), String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Data.Check.NotNullOrEmpty(Of T)(System.Collections.Generic.IReadOnlyList(Of T), System.String)
+  name.vb: NotNullOrEmpty(Of T)(IReadOnlyList(Of T), String)
+- uid: Hybrid.Data.Check.HasNoNulls``1(System.Collections.Generic.IReadOnlyList{``0},System.String)
+  commentId: M:Hybrid.Data.Check.HasNoNulls``1(System.Collections.Generic.IReadOnlyList{``0},System.String)
+  id: HasNoNulls``1(System.Collections.Generic.IReadOnlyList{``0},System.String)
+  parent: Hybrid.Data.Check
+  langs:
+  - csharp
+  - vb
+  name: HasNoNulls<T>(IReadOnlyList<T>, String)
+  nameWithType: Check.HasNoNulls<T>(IReadOnlyList<T>, String)
+  fullName: Hybrid.Data.Check.HasNoNulls<T>(System.Collections.Generic.IReadOnlyList<T>, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Data/Check.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: HasNoNulls
+    path: ../src/Hybrid/Data/Check.cs
+    startLine: 131
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n检查集合中没有包含值为null的项\n"
+  example: []
+  syntax:
+    content: public static void HasNoNulls<T>(IReadOnlyList<T> list, string paramName)
+    parameters:
+    - id: list
+      type: System.Collections.Generic.IReadOnlyList{{T}}
+    - id: paramName
+      type: System.String
+    typeParameters:
+    - id: T
+    content.vb: Public Shared Sub HasNoNulls(Of T)(list As IReadOnlyList(Of T), paramName As String)
+  overload: Hybrid.Data.Check.HasNoNulls*
+  nameWithType.vb: Check.HasNoNulls(Of T)(IReadOnlyList(Of T), String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Data.Check.HasNoNulls(Of T)(System.Collections.Generic.IReadOnlyList(Of T), System.String)
+  name.vb: HasNoNulls(Of T)(IReadOnlyList(Of T), String)
+- uid: Hybrid.Data.Check.LessThan``1(``0,System.String,``0,System.Boolean)
+  commentId: M:Hybrid.Data.Check.LessThan``1(``0,System.String,``0,System.Boolean)
+  id: LessThan``1(``0,System.String,``0,System.Boolean)
+  parent: Hybrid.Data.Check
+  langs:
+  - csharp
+  - vb
+  name: LessThan<T>(T, String, T, Boolean)
+  nameWithType: Check.LessThan<T>(T, String, T, Boolean)
+  fullName: Hybrid.Data.Check.LessThan<T>(T, System.String, T, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Data/Check.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: LessThan
+    path: ../src/Hybrid/Data/Check.cs
+    startLine: 146
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n检查参数必须小于[或可等于，参数<code data-dev-comment-type=\"paramref\" class=\"paramref\">canEqual</code>]指定值，否则抛出<xref href=\"System.ArgumentOutOfRangeException\" data-throw-if-not-resolved=\"false\"></xref>异常。\n"
+  example: []
+  syntax:
+    content: >-
+      public static void LessThan<T>(T value, string paramName, T target, bool canEqual = false)
+
+          where T : IComparable<T>
+    parameters:
+    - id: value
+      type: '{T}'
+      description: ''
+    - id: paramName
+      type: System.String
+      description: 参数名称。
+    - id: target
+      type: '{T}'
+      description: 要比较的值。
+    - id: canEqual
+      type: System.Boolean
+      description: 是否可等于。
+    typeParameters:
+    - id: T
+      description: 参数类型。
+    content.vb: Public Shared Sub LessThan(Of T As IComparable(Of T))(value As T, paramName As String, target As T, canEqual As Boolean = False)
+  overload: Hybrid.Data.Check.LessThan*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+  nameWithType.vb: Check.LessThan(Of T)(T, String, T, Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Data.Check.LessThan(Of T)(T, System.String, T, System.Boolean)
+  name.vb: LessThan(Of T)(T, String, T, Boolean)
+- uid: Hybrid.Data.Check.GreaterThan``1(``0,System.String,``0,System.Boolean)
+  commentId: M:Hybrid.Data.Check.GreaterThan``1(``0,System.String,``0,System.Boolean)
+  id: GreaterThan``1(``0,System.String,``0,System.Boolean)
+  parent: Hybrid.Data.Check
+  langs:
+  - csharp
+  - vb
+  name: GreaterThan<T>(T, String, T, Boolean)
+  nameWithType: Check.GreaterThan<T>(T, String, T, Boolean)
+  fullName: Hybrid.Data.Check.GreaterThan<T>(T, System.String, T, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Data/Check.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GreaterThan
+    path: ../src/Hybrid/Data/Check.cs
+    startLine: 162
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n检查参数必须大于[或可等于，参数<code data-dev-comment-type=\"paramref\" class=\"paramref\">canEqual</code>]指定值，否则抛出<xref href=\"System.ArgumentOutOfRangeException\" data-throw-if-not-resolved=\"false\"></xref>异常。\n"
+  example: []
+  syntax:
+    content: >-
+      public static void GreaterThan<T>(T value, string paramName, T target, bool canEqual = false)
+
+          where T : IComparable<T>
+    parameters:
+    - id: value
+      type: '{T}'
+      description: ''
+    - id: paramName
+      type: System.String
+      description: 参数名称。
+    - id: target
+      type: '{T}'
+      description: 要比较的值。
+    - id: canEqual
+      type: System.Boolean
+      description: 是否可等于。
+    typeParameters:
+    - id: T
+      description: 参数类型。
+    content.vb: Public Shared Sub GreaterThan(Of T As IComparable(Of T))(value As T, paramName As String, target As T, canEqual As Boolean = False)
+  overload: Hybrid.Data.Check.GreaterThan*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+  nameWithType.vb: Check.GreaterThan(Of T)(T, String, T, Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Data.Check.GreaterThan(Of T)(T, System.String, T, System.Boolean)
+  name.vb: GreaterThan(Of T)(T, String, T, Boolean)
+- uid: Hybrid.Data.Check.Between``1(``0,System.String,``0,``0,System.Boolean,System.Boolean)
+  commentId: M:Hybrid.Data.Check.Between``1(``0,System.String,``0,``0,System.Boolean,System.Boolean)
+  id: Between``1(``0,System.String,``0,``0,System.Boolean,System.Boolean)
+  parent: Hybrid.Data.Check
+  langs:
+  - csharp
+  - vb
+  name: Between<T>(T, String, T, T, Boolean, Boolean)
+  nameWithType: Check.Between<T>(T, String, T, T, Boolean, Boolean)
+  fullName: Hybrid.Data.Check.Between<T>(T, System.String, T, T, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Data/Check.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Between
+    path: ../src/Hybrid/Data/Check.cs
+    startLine: 180
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n检查参数必须在指定范围之间，否则抛出<xref href=\"System.ArgumentOutOfRangeException\" data-throw-if-not-resolved=\"false\"></xref>异常。\n"
+  example: []
+  syntax:
+    content: >-
+      public static void Between<T>(T value, string paramName, T start, T end, bool startEqual = false, bool endEqual = false)
+
+          where T : IComparable<T>
+    parameters:
+    - id: value
+      type: '{T}'
+      description: ''
+    - id: paramName
+      type: System.String
+      description: 参数名称。
+    - id: start
+      type: '{T}'
+      description: 比较范围的起始值。
+    - id: end
+      type: '{T}'
+      description: 比较范围的结束值。
+    - id: startEqual
+      type: System.Boolean
+      description: 是否可等于起始值
+    - id: endEqual
+      type: System.Boolean
+      description: 是否可等于结束值
+    typeParameters:
+    - id: T
+      description: 参数类型。
+    content.vb: Public Shared Sub Between(Of T As IComparable(Of T))(value As T, paramName As String, start As T, end As T, startEqual As Boolean = False, endEqual As Boolean = False)
+  overload: Hybrid.Data.Check.Between*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+  nameWithType.vb: Check.Between(Of T)(T, String, T, T, Boolean, Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Data.Check.Between(Of T)(T, System.String, T, T, System.Boolean, System.Boolean)
+  name.vb: Between(Of T)(T, String, T, T, Boolean, Boolean)
+- uid: Hybrid.Data.Check.DirectoryExists(System.String,System.String)
+  commentId: M:Hybrid.Data.Check.DirectoryExists(System.String,System.String)
+  id: DirectoryExists(System.String,System.String)
+  parent: Hybrid.Data.Check
+  langs:
+  - csharp
+  - vb
+  name: DirectoryExists(String, String)
+  nameWithType: Check.DirectoryExists(String, String)
+  fullName: Hybrid.Data.Check.DirectoryExists(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Data/Check.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: DirectoryExists
+    path: ../src/Hybrid/Data/Check.cs
+    startLine: 203
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n检查指定路径的文件夹必须存在，否则抛出<xref href=\"System.IO.DirectoryNotFoundException\" data-throw-if-not-resolved=\"false\"></xref>异常。\n"
+  example: []
+  syntax:
+    content: public static void DirectoryExists(string directory, string paramName = null)
+    parameters:
+    - id: directory
+      type: System.String
+      description: ''
+    - id: paramName
+      type: System.String
+      description: 参数名称。
+    content.vb: Public Shared Sub DirectoryExists(directory As String, paramName As String = Nothing)
+  overload: Hybrid.Data.Check.DirectoryExists*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+  - type: System.IO.DirectoryNotFoundException
+    commentId: T:System.IO.DirectoryNotFoundException
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Data.Check.FileExists(System.String,System.String)
+  commentId: M:Hybrid.Data.Check.FileExists(System.String,System.String)
+  id: FileExists(System.String,System.String)
+  parent: Hybrid.Data.Check
+  langs:
+  - csharp
+  - vb
+  name: FileExists(String, String)
+  nameWithType: Check.FileExists(String, String)
+  fullName: Hybrid.Data.Check.FileExists(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Data/Check.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: FileExists
+    path: ../src/Hybrid/Data/Check.cs
+    startLine: 216
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n检查指定路径的文件必须存在，否则抛出<xref href=\"System.IO.FileNotFoundException\" data-throw-if-not-resolved=\"false\"></xref>异常。\n"
+  example: []
+  syntax:
+    content: public static void FileExists(string filename, string paramName = null)
+    parameters:
+    - id: filename
+      type: System.String
+      description: ''
+    - id: paramName
+      type: System.String
+      description: 参数名称。
+    content.vb: Public Shared Sub FileExists(filename As String, paramName As String = Nothing)
+  overload: Hybrid.Data.Check.FileExists*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: 当文件路径为null时
+  - type: System.IO.FileNotFoundException
+    commentId: T:System.IO.FileNotFoundException
+    description: 当文件路径不存在时
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Data.Check.Validate``1(Hybrid.Domain.Entities.IInputDto{``0},System.String)
+  commentId: M:Hybrid.Data.Check.Validate``1(Hybrid.Domain.Entities.IInputDto{``0},System.String)
+  id: Validate``1(Hybrid.Domain.Entities.IInputDto{``0},System.String)
+  parent: Hybrid.Data.Check
+  langs:
+  - csharp
+  - vb
+  name: Validate<TKey>(IInputDto<TKey>, String)
+  nameWithType: Check.Validate<TKey>(IInputDto<TKey>, String)
+  fullName: Hybrid.Data.Check.Validate<TKey>(Hybrid.Domain.Entities.IInputDto<TKey>, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Data/Check.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Validate
+    path: ../src/Hybrid/Data/Check.cs
+    startLine: 225
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n检查<xref href=\"Hybrid.Domain.Entities.IInputDto%601\" data-throw-if-not-resolved=\"false\"></xref>各属性的合法性，否则抛出<xref href=\"System.ComponentModel.DataAnnotations.ValidationException\" data-throw-if-not-resolved=\"false\"></xref>异常\n"
+  example: []
+  syntax:
+    content: public static void Validate<TKey>(IInputDto<TKey> dto, string paramName)
+    parameters:
+    - id: dto
+      type: Hybrid.Domain.Entities.IInputDto{{TKey}}
+    - id: paramName
+      type: System.String
+    typeParameters:
+    - id: TKey
+    content.vb: Public Shared Sub Validate(Of TKey)(dto As IInputDto(Of TKey), paramName As String)
+  overload: Hybrid.Data.Check.Validate*
+  nameWithType.vb: Check.Validate(Of TKey)(IInputDto(Of TKey), String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Data.Check.Validate(Of TKey)(Hybrid.Domain.Entities.IInputDto(Of TKey), System.String)
+  name.vb: Validate(Of TKey)(IInputDto(Of TKey), String)
+- uid: Hybrid.Data.Check.Validate``2(``0[],System.String)
+  commentId: M:Hybrid.Data.Check.Validate``2(``0[],System.String)
+  id: Validate``2(``0[],System.String)
+  parent: Hybrid.Data.Check
+  langs:
+  - csharp
+  - vb
+  name: Validate<TInputDto, TKey>(TInputDto[], String)
+  nameWithType: Check.Validate<TInputDto, TKey>(TInputDto[], String)
+  fullName: Hybrid.Data.Check.Validate<TInputDto, TKey>(TInputDto[], System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Data/Check.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Validate
+    path: ../src/Hybrid/Data/Check.cs
+    startLine: 234
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n检查<xref href=\"Hybrid.Domain.Entities.IInputDto%601\" data-throw-if-not-resolved=\"false\"></xref>各属性的合法性，否则抛出<xref href=\"System.ComponentModel.DataAnnotations.ValidationException\" data-throw-if-not-resolved=\"false\"></xref>异常\n"
+  example: []
+  syntax:
+    content: >-
+      public static void Validate<TInputDto, TKey>(TInputDto[] dtos, string paramName)
+
+          where TInputDto : IInputDto<TKey>
+    parameters:
+    - id: dtos
+      type: '{TInputDto}[]'
+    - id: paramName
+      type: System.String
+    typeParameters:
+    - id: TInputDto
+    - id: TKey
+    content.vb: Public Shared Sub Validate(Of TInputDto As IInputDto(Of TKey), TKey)(dtos As TInputDto(), paramName As String)
+  overload: Hybrid.Data.Check.Validate*
+  nameWithType.vb: Check.Validate(Of TInputDto, TKey)(TInputDto(), String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Data.Check.Validate(Of TInputDto, TKey)(TInputDto(), System.String)
+  name.vb: Validate(Of TInputDto, TKey)(TInputDto(), String)
+references:
+- uid: Hybrid.Data
+  commentId: N:Hybrid.Data
+  name: Hybrid.Data
+  nameWithType: Hybrid.Data
+  fullName: Hybrid.Data
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hybrid.Data.Check.Required*
+  commentId: Overload:Hybrid.Data.Check.Required
+  name: Required
+  nameWithType: Check.Required
+  fullName: Hybrid.Data.Check.Required
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Func{{T},System.Boolean}
+  commentId: T:System.Func{``0,System.Boolean}
+  parent: System
+  definition: System.Func`2
+  name: Func<T, Boolean>
+  nameWithType: Func<T, Boolean>
+  fullName: System.Func<T, System.Boolean>
+  nameWithType.vb: Func(Of T, Boolean)
+  fullName.vb: System.Func(Of T, System.Boolean)
+  name.vb: Func(Of T, Boolean)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+- uid: Hybrid.Data.Check.NotNull*
+  commentId: Overload:Hybrid.Data.Check.NotNull
+  name: NotNull
+  nameWithType: Check.NotNull
+  fullName: Hybrid.Data.Check.NotNull
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+- uid: Hybrid.Data.Check.NotNullOrEmpty*
+  commentId: Overload:Hybrid.Data.Check.NotNullOrEmpty
+  name: NotNullOrEmpty
+  nameWithType: Check.NotNullOrEmpty
+  fullName: Hybrid.Data.Check.NotNullOrEmpty
+- uid: Hybrid.Data.Check.NotEmpty*
+  commentId: Overload:Hybrid.Data.Check.NotEmpty
+  name: NotEmpty
+  nameWithType: Check.NotEmpty
+  fullName: Hybrid.Data.Check.NotEmpty
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.Collections.Generic.IReadOnlyList{{T}}
+  commentId: T:System.Collections.Generic.IReadOnlyList{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Hybrid.Data.Check.HasNoNulls*
+  commentId: Overload:Hybrid.Data.Check.HasNoNulls
+  name: HasNoNulls
+  nameWithType: Check.HasNoNulls
+  fullName: Hybrid.Data.Check.HasNoNulls
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+- uid: Hybrid.Data.Check.LessThan*
+  commentId: Overload:Hybrid.Data.Check.LessThan
+  name: LessThan
+  nameWithType: Check.LessThan
+  fullName: Hybrid.Data.Check.LessThan
+- uid: Hybrid.Data.Check.GreaterThan*
+  commentId: Overload:Hybrid.Data.Check.GreaterThan
+  name: GreaterThan
+  nameWithType: Check.GreaterThan
+  fullName: Hybrid.Data.Check.GreaterThan
+- uid: Hybrid.Data.Check.Between*
+  commentId: Overload:Hybrid.Data.Check.Between
+  name: Between
+  nameWithType: Check.Between
+  fullName: Hybrid.Data.Check.Between
+- uid: System.IO.DirectoryNotFoundException
+  commentId: T:System.IO.DirectoryNotFoundException
+  isExternal: true
+- uid: Hybrid.Data.Check.DirectoryExists*
+  commentId: Overload:Hybrid.Data.Check.DirectoryExists
+  name: DirectoryExists
+  nameWithType: Check.DirectoryExists
+  fullName: Hybrid.Data.Check.DirectoryExists
+- uid: System.IO.FileNotFoundException
+  commentId: T:System.IO.FileNotFoundException
+  isExternal: true
+- uid: Hybrid.Data.Check.FileExists*
+  commentId: Overload:Hybrid.Data.Check.FileExists
+  name: FileExists
+  nameWithType: Check.FileExists
+  fullName: Hybrid.Data.Check.FileExists
+- uid: Hybrid.Domain.Entities.IInputDto`1
+  commentId: T:Hybrid.Domain.Entities.IInputDto`1
+  name: IInputDto<TKey>
+  nameWithType: IInputDto<TKey>
+  fullName: Hybrid.Domain.Entities.IInputDto<TKey>
+  nameWithType.vb: IInputDto(Of TKey)
+  fullName.vb: Hybrid.Domain.Entities.IInputDto(Of TKey)
+  name.vb: IInputDto(Of TKey)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.IInputDto`1
+    name: IInputDto
+    nameWithType: IInputDto
+    fullName: Hybrid.Domain.Entities.IInputDto
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.IInputDto`1
+    name: IInputDto
+    nameWithType: IInputDto
+    fullName: Hybrid.Domain.Entities.IInputDto
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ComponentModel.DataAnnotations.ValidationException
+  commentId: T:System.ComponentModel.DataAnnotations.ValidationException
+  isExternal: true
+- uid: Hybrid.Data.Check.Validate*
+  commentId: Overload:Hybrid.Data.Check.Validate
+  name: Validate
+  nameWithType: Check.Validate
+  fullName: Hybrid.Data.Check.Validate
+- uid: Hybrid.Domain.Entities.IInputDto{{TKey}}
+  commentId: T:Hybrid.Domain.Entities.IInputDto{`0}
+  parent: Hybrid.Domain.Entities
+  definition: Hybrid.Domain.Entities.IInputDto`1
+  name: IInputDto<TKey>
+  nameWithType: IInputDto<TKey>
+  fullName: Hybrid.Domain.Entities.IInputDto<TKey>
+  nameWithType.vb: IInputDto(Of TKey)
+  fullName.vb: Hybrid.Domain.Entities.IInputDto(Of TKey)
+  name.vb: IInputDto(Of TKey)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.IInputDto`1
+    name: IInputDto
+    nameWithType: IInputDto
+    fullName: Hybrid.Domain.Entities.IInputDto
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.IInputDto`1
+    name: IInputDto
+    nameWithType: IInputDto
+    fullName: Hybrid.Domain.Entities.IInputDto
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Domain.Entities
+  commentId: N:Hybrid.Domain.Entities
+  name: Hybrid.Domain.Entities
+  nameWithType: Hybrid.Domain.Entities
+  fullName: Hybrid.Domain.Entities
+- uid: '{TInputDto}[]'
+  isExternal: true
+  name: TInputDto[]
+  nameWithType: TInputDto[]
+  fullName: TInputDto[]
+  nameWithType.vb: TInputDto()
+  fullName.vb: TInputDto()
+  name.vb: TInputDto()
+  spec.csharp:
+  - name: TInputDto
+    nameWithType: TInputDto
+    fullName: TInputDto
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: TInputDto
+    nameWithType: TInputDto
+    fullName: TInputDto
+  - name: ()
+    nameWithType: ()
+    fullName: ()

@@ -1,0 +1,605 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Filter.FilterExtensions
+  commentId: T:Hybrid.Filter.FilterExtensions
+  id: FilterExtensions
+  parent: Hybrid.Filter
+  children:
+  - Hybrid.Filter.FilterExtensions.ToExpression``1(Hybrid.Filter.FilterGroup)
+  - Hybrid.Filter.FilterExtensions.ToExpression``1(Hybrid.Filter.FilterRule)
+  langs:
+  - csharp
+  - vb
+  name: FilterExtensions
+  nameWithType: FilterExtensions
+  fullName: Hybrid.Filter.FilterExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid/Filter/FilterExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: FilterExtensions
+    path: ../src/Hybrid/Filter/FilterExtensions.cs
+    startLine: 17
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Filter
+  summary: "\n数据过滤扩展方法\n"
+  example: []
+  syntax:
+    content: public static class FilterExtensions
+    content.vb: Public Module FilterExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.Filter.FilterExtensions.ToExpression``1(Hybrid.Filter.FilterGroup)
+  commentId: M:Hybrid.Filter.FilterExtensions.ToExpression``1(Hybrid.Filter.FilterGroup)
+  id: ToExpression``1(Hybrid.Filter.FilterGroup)
+  isExtensionMethod: true
+  parent: Hybrid.Filter.FilterExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToExpression<TEntity>(FilterGroup)
+  nameWithType: FilterExtensions.ToExpression<TEntity>(FilterGroup)
+  fullName: Hybrid.Filter.FilterExtensions.ToExpression<TEntity>(Hybrid.Filter.FilterGroup)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Filter/FilterExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToExpression
+    path: ../src/Hybrid/Filter/FilterExtensions.cs
+    startLine: 22
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Filter
+  summary: "\n将条件组转换为查询表达式\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("使用 IFilterService 服务代替，此类将在1.0版本中移除")]
+
+      public static Expression<Func<TEntity, bool>> ToExpression<TEntity>(this FilterGroup group)
+    parameters:
+    - id: group
+      type: Hybrid.Filter.FilterGroup
+    typeParameters:
+    - id: TEntity
+    return:
+      type: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}}
+    content.vb: >-
+      <Obsolete("使用 IFilterService 服务代替，此类将在1.0版本中移除")>
+
+      <ExtensionAttribute>
+
+      Public Shared Function ToExpression(Of TEntity)(group As FilterGroup) As Expression(Of Func(Of TEntity, Boolean))
+  overload: Hybrid.Filter.FilterExtensions.ToExpression*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 使用 IFilterService 服务代替，此类将在1.0版本中移除
+  nameWithType.vb: FilterExtensions.ToExpression(Of TEntity)(FilterGroup)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Filter.FilterExtensions.ToExpression(Of TEntity)(Hybrid.Filter.FilterGroup)
+  name.vb: ToExpression(Of TEntity)(FilterGroup)
+- uid: Hybrid.Filter.FilterExtensions.ToExpression``1(Hybrid.Filter.FilterRule)
+  commentId: M:Hybrid.Filter.FilterExtensions.ToExpression``1(Hybrid.Filter.FilterRule)
+  id: ToExpression``1(Hybrid.Filter.FilterRule)
+  isExtensionMethod: true
+  parent: Hybrid.Filter.FilterExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToExpression<TEntity>(FilterRule)
+  nameWithType: FilterExtensions.ToExpression<TEntity>(FilterRule)
+  fullName: Hybrid.Filter.FilterExtensions.ToExpression<TEntity>(Hybrid.Filter.FilterRule)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Filter/FilterExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToExpression
+    path: ../src/Hybrid/Filter/FilterExtensions.cs
+    startLine: 31
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Filter
+  summary: "\n将条件转换为查询表达式\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("使用 IFilterService 服务代替，此类将在1.0版本中移除")]
+
+      public static Expression<Func<TEntity, bool>> ToExpression<TEntity>(this FilterRule rule)
+    parameters:
+    - id: rule
+      type: Hybrid.Filter.FilterRule
+    typeParameters:
+    - id: TEntity
+    return:
+      type: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}}
+    content.vb: >-
+      <Obsolete("使用 IFilterService 服务代替，此类将在1.0版本中移除")>
+
+      <ExtensionAttribute>
+
+      Public Shared Function ToExpression(Of TEntity)(rule As FilterRule) As Expression(Of Func(Of TEntity, Boolean))
+  overload: Hybrid.Filter.FilterExtensions.ToExpression*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 使用 IFilterService 服务代替，此类将在1.0版本中移除
+  nameWithType.vb: FilterExtensions.ToExpression(Of TEntity)(FilterRule)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Filter.FilterExtensions.ToExpression(Of TEntity)(Hybrid.Filter.FilterRule)
+  name.vb: ToExpression(Of TEntity)(FilterRule)
+references:
+- uid: Hybrid.Filter
+  commentId: N:Hybrid.Filter
+  name: Hybrid.Filter
+  nameWithType: Hybrid.Filter
+  fullName: Hybrid.Filter
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hybrid.Filter.FilterExtensions.ToExpression*
+  commentId: Overload:Hybrid.Filter.FilterExtensions.ToExpression
+  name: ToExpression
+  nameWithType: FilterExtensions.ToExpression
+  fullName: Hybrid.Filter.FilterExtensions.ToExpression
+- uid: Hybrid.Filter.FilterGroup
+  commentId: T:Hybrid.Filter.FilterGroup
+  parent: Hybrid.Filter
+  name: FilterGroup
+  nameWithType: FilterGroup
+  fullName: Hybrid.Filter.FilterGroup
+- uid: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  name: Expression<Func<TEntity, Boolean>>
+  nameWithType: Expression<Func<TEntity, Boolean>>
+  fullName: System.Linq.Expressions.Expression<System.Func<TEntity, System.Boolean>>
+  nameWithType.vb: Expression(Of Func(Of TEntity, Boolean))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of TEntity, System.Boolean))
+  name.vb: Expression(Of Func(Of TEntity, Boolean))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDelegate
+    nameWithType: TDelegate
+    fullName: TDelegate
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDelegate
+    nameWithType: TDelegate
+    fullName: TDelegate
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+- uid: Hybrid.Filter.FilterRule
+  commentId: T:Hybrid.Filter.FilterRule
+  parent: Hybrid.Filter
+  name: FilterRule
+  nameWithType: FilterRule
+  fullName: Hybrid.Filter.FilterRule

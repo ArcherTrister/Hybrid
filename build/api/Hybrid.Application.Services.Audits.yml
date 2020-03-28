@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Application.Services.Audits
+  commentId: N:Hybrid.Application.Services.Audits
+  id: Hybrid.Application.Services.Audits
+  children:
+  - Hybrid.Application.Services.Audits.AuditService
+  - Hybrid.Application.Services.Audits.IAuditService
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Application.Services.Audits
+  nameWithType: Hybrid.Application.Services.Audits
+  fullName: Hybrid.Application.Services.Audits
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Application.Services.Audits.AuditService
+  commentId: T:Hybrid.Application.Services.Audits.AuditService
+  name: AuditService
+  nameWithType: AuditService
+  fullName: Hybrid.Application.Services.Audits.AuditService
+- uid: Hybrid.Application.Services.Audits.IAuditService
+  commentId: T:Hybrid.Application.Services.Audits.IAuditService
+  parent: Hybrid.Application.Services.Audits
+  name: IAuditService
+  nameWithType: IAuditService
+  fullName: Hybrid.Application.Services.Audits.IAuditService
+- uid: Hybrid.Application.Services.Audits
+  commentId: N:Hybrid.Application.Services.Audits
+  name: Hybrid.Application.Services.Audits
+  nameWithType: Hybrid.Application.Services.Audits
+  fullName: Hybrid.Application.Services.Audits

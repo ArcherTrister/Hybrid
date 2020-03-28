@@ -1,0 +1,65 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.CodeGenerator
+  commentId: N:Hybrid.CodeGenerator
+  id: Hybrid.CodeGenerator
+  children:
+  - Hybrid.CodeGenerator.EnumMetadata
+  - Hybrid.CodeGenerator.IgnoreGenPropertyAttribute
+  - Hybrid.CodeGenerator.IgnoreGenTypeAttribute
+  - Hybrid.CodeGenerator.ITypeMetadataHandler
+  - Hybrid.CodeGenerator.PropertyMetadata
+  - Hybrid.CodeGenerator.TypeMetadata
+  - Hybrid.CodeGenerator.TypeMetadataHandler
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.CodeGenerator
+  nameWithType: Hybrid.CodeGenerator
+  fullName: Hybrid.CodeGenerator
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.CodeGenerator.EnumMetadata
+  commentId: T:Hybrid.CodeGenerator.EnumMetadata
+  name: EnumMetadata
+  nameWithType: EnumMetadata
+  fullName: Hybrid.CodeGenerator.EnumMetadata
+- uid: Hybrid.CodeGenerator.IgnoreGenPropertyAttribute
+  commentId: T:Hybrid.CodeGenerator.IgnoreGenPropertyAttribute
+  name: IgnoreGenPropertyAttribute
+  nameWithType: IgnoreGenPropertyAttribute
+  fullName: Hybrid.CodeGenerator.IgnoreGenPropertyAttribute
+- uid: Hybrid.CodeGenerator.IgnoreGenTypeAttribute
+  commentId: T:Hybrid.CodeGenerator.IgnoreGenTypeAttribute
+  name: IgnoreGenTypeAttribute
+  nameWithType: IgnoreGenTypeAttribute
+  fullName: Hybrid.CodeGenerator.IgnoreGenTypeAttribute
+- uid: Hybrid.CodeGenerator.ITypeMetadataHandler
+  commentId: T:Hybrid.CodeGenerator.ITypeMetadataHandler
+  parent: Hybrid.CodeGenerator
+  name: ITypeMetadataHandler
+  nameWithType: ITypeMetadataHandler
+  fullName: Hybrid.CodeGenerator.ITypeMetadataHandler
+- uid: Hybrid.CodeGenerator.PropertyMetadata
+  commentId: T:Hybrid.CodeGenerator.PropertyMetadata
+  name: PropertyMetadata
+  nameWithType: PropertyMetadata
+  fullName: Hybrid.CodeGenerator.PropertyMetadata
+- uid: Hybrid.CodeGenerator.TypeMetadata
+  commentId: T:Hybrid.CodeGenerator.TypeMetadata
+  parent: Hybrid.CodeGenerator
+  name: TypeMetadata
+  nameWithType: TypeMetadata
+  fullName: Hybrid.CodeGenerator.TypeMetadata
+- uid: Hybrid.CodeGenerator.TypeMetadataHandler
+  commentId: T:Hybrid.CodeGenerator.TypeMetadataHandler
+  name: TypeMetadataHandler
+  nameWithType: TypeMetadataHandler
+  fullName: Hybrid.CodeGenerator.TypeMetadataHandler
+- uid: Hybrid.CodeGenerator
+  commentId: N:Hybrid.CodeGenerator
+  name: Hybrid.CodeGenerator
+  nameWithType: Hybrid.CodeGenerator
+  fullName: Hybrid.CodeGenerator

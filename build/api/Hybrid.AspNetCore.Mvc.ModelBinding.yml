@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.AspNetCore.Mvc.ModelBinding
+  commentId: N:Hybrid.AspNetCore.Mvc.ModelBinding
+  id: Hybrid.AspNetCore.Mvc.ModelBinding
+  children:
+  - Hybrid.AspNetCore.Mvc.ModelBinding.StringTrimModelBinder
+  - Hybrid.AspNetCore.Mvc.ModelBinding.StringTrimModelBinderProvider
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.AspNetCore.Mvc.ModelBinding
+  nameWithType: Hybrid.AspNetCore.Mvc.ModelBinding
+  fullName: Hybrid.AspNetCore.Mvc.ModelBinding
+  type: Namespace
+  assemblies:
+  - Hybrid.AspNetCore
+references:
+- uid: Hybrid.AspNetCore.Mvc.ModelBinding.StringTrimModelBinder
+  commentId: T:Hybrid.AspNetCore.Mvc.ModelBinding.StringTrimModelBinder
+  name: StringTrimModelBinder
+  nameWithType: StringTrimModelBinder
+  fullName: Hybrid.AspNetCore.Mvc.ModelBinding.StringTrimModelBinder
+- uid: Hybrid.AspNetCore.Mvc.ModelBinding.StringTrimModelBinderProvider
+  commentId: T:Hybrid.AspNetCore.Mvc.ModelBinding.StringTrimModelBinderProvider
+  name: StringTrimModelBinderProvider
+  nameWithType: StringTrimModelBinderProvider
+  fullName: Hybrid.AspNetCore.Mvc.ModelBinding.StringTrimModelBinderProvider

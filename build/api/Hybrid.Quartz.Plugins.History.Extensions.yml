@@ -1,0 +1,456 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Quartz.Plugins.History.Extensions
+  commentId: T:Hybrid.Quartz.Plugins.History.Extensions
+  id: Extensions
+  parent: Hybrid.Quartz.Plugins.History
+  children:
+  - Hybrid.Quartz.Plugins.History.Extensions.GetExecutionHistoryStore(Quartz.SchedulerContext)
+  - Hybrid.Quartz.Plugins.History.Extensions.SetExecutionHistoryStore(Quartz.SchedulerContext,Hybrid.Quartz.Plugins.History.IExecutionHistoryStore)
+  langs:
+  - csharp
+  - vb
+  name: Extensions
+  nameWithType: Extensions
+  fullName: Hybrid.Quartz.Plugins.History.Extensions
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid.Quartz/Plugins/History/Extensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Extensions
+    path: ../src/Hybrid.Quartz/Plugins/History/Extensions.cs
+    startLine: 4
+  assemblies:
+  - Hybrid.Quartz
+  namespace: Hybrid.Quartz.Plugins.History
+  syntax:
+    content: public static class Extensions
+    content.vb: Public Module Extensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.Quartz.Plugins.History.Extensions.SetExecutionHistoryStore(Quartz.SchedulerContext,Hybrid.Quartz.Plugins.History.IExecutionHistoryStore)
+  commentId: M:Hybrid.Quartz.Plugins.History.Extensions.SetExecutionHistoryStore(Quartz.SchedulerContext,Hybrid.Quartz.Plugins.History.IExecutionHistoryStore)
+  id: SetExecutionHistoryStore(Quartz.SchedulerContext,Hybrid.Quartz.Plugins.History.IExecutionHistoryStore)
+  isExtensionMethod: true
+  parent: Hybrid.Quartz.Plugins.History.Extensions
+  langs:
+  - csharp
+  - vb
+  name: SetExecutionHistoryStore(SchedulerContext, IExecutionHistoryStore)
+  nameWithType: Extensions.SetExecutionHistoryStore(SchedulerContext, IExecutionHistoryStore)
+  fullName: Hybrid.Quartz.Plugins.History.Extensions.SetExecutionHistoryStore(Quartz.SchedulerContext, Hybrid.Quartz.Plugins.History.IExecutionHistoryStore)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.Quartz/Plugins/History/Extensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: SetExecutionHistoryStore
+    path: ../src/Hybrid.Quartz/Plugins/History/Extensions.cs
+    startLine: 6
+  assemblies:
+  - Hybrid.Quartz
+  namespace: Hybrid.Quartz.Plugins.History
+  syntax:
+    content: public static void SetExecutionHistoryStore(this SchedulerContext context, IExecutionHistoryStore store)
+    parameters:
+    - id: context
+      type: Quartz.SchedulerContext
+    - id: store
+      type: Hybrid.Quartz.Plugins.History.IExecutionHistoryStore
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub SetExecutionHistoryStore(context As SchedulerContext, store As IExecutionHistoryStore)
+  overload: Hybrid.Quartz.Plugins.History.Extensions.SetExecutionHistoryStore*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Quartz.Plugins.History.Extensions.GetExecutionHistoryStore(Quartz.SchedulerContext)
+  commentId: M:Hybrid.Quartz.Plugins.History.Extensions.GetExecutionHistoryStore(Quartz.SchedulerContext)
+  id: GetExecutionHistoryStore(Quartz.SchedulerContext)
+  isExtensionMethod: true
+  parent: Hybrid.Quartz.Plugins.History.Extensions
+  langs:
+  - csharp
+  - vb
+  name: GetExecutionHistoryStore(SchedulerContext)
+  nameWithType: Extensions.GetExecutionHistoryStore(SchedulerContext)
+  fullName: Hybrid.Quartz.Plugins.History.Extensions.GetExecutionHistoryStore(Quartz.SchedulerContext)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.Quartz/Plugins/History/Extensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetExecutionHistoryStore
+    path: ../src/Hybrid.Quartz/Plugins/History/Extensions.cs
+    startLine: 11
+  assemblies:
+  - Hybrid.Quartz
+  namespace: Hybrid.Quartz.Plugins.History
+  syntax:
+    content: public static IExecutionHistoryStore GetExecutionHistoryStore(this SchedulerContext context)
+    parameters:
+    - id: context
+      type: Quartz.SchedulerContext
+    return:
+      type: Hybrid.Quartz.Plugins.History.IExecutionHistoryStore
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetExecutionHistoryStore(context As SchedulerContext) As IExecutionHistoryStore
+  overload: Hybrid.Quartz.Plugins.History.Extensions.GetExecutionHistoryStore*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Hybrid.Quartz.Plugins.History
+  commentId: N:Hybrid.Quartz.Plugins.History
+  name: Hybrid.Quartz.Plugins.History
+  nameWithType: Hybrid.Quartz.Plugins.History
+  fullName: Hybrid.Quartz.Plugins.History
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hybrid.Quartz.Plugins.History.Extensions.SetExecutionHistoryStore*
+  commentId: Overload:Hybrid.Quartz.Plugins.History.Extensions.SetExecutionHistoryStore
+  name: SetExecutionHistoryStore
+  nameWithType: Extensions.SetExecutionHistoryStore
+  fullName: Hybrid.Quartz.Plugins.History.Extensions.SetExecutionHistoryStore
+- uid: Quartz.SchedulerContext
+  commentId: T:Quartz.SchedulerContext
+  parent: Quartz
+  isExternal: true
+  name: SchedulerContext
+  nameWithType: SchedulerContext
+  fullName: Quartz.SchedulerContext
+- uid: Hybrid.Quartz.Plugins.History.IExecutionHistoryStore
+  commentId: T:Hybrid.Quartz.Plugins.History.IExecutionHistoryStore
+  parent: Hybrid.Quartz.Plugins.History
+  name: IExecutionHistoryStore
+  nameWithType: IExecutionHistoryStore
+  fullName: Hybrid.Quartz.Plugins.History.IExecutionHistoryStore
+- uid: Quartz
+  commentId: N:Quartz
+  isExternal: true
+  name: Quartz
+  nameWithType: Quartz
+  fullName: Quartz
+- uid: Hybrid.Quartz.Plugins.History.Extensions.GetExecutionHistoryStore*
+  commentId: Overload:Hybrid.Quartz.Plugins.History.Extensions.GetExecutionHistoryStore
+  name: GetExecutionHistoryStore
+  nameWithType: Extensions.GetExecutionHistoryStore
+  fullName: Hybrid.Quartz.Plugins.History.Extensions.GetExecutionHistoryStore

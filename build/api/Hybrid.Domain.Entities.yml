@@ -1,0 +1,297 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Domain.Entities
+  commentId: N:Hybrid.Domain.Entities
+  id: Hybrid.Domain.Entities
+  children:
+  - Hybrid.Domain.Entities.EntityBase`1
+  - Hybrid.Domain.Entities.EntityExtensions
+  - Hybrid.Domain.Entities.EntityHashExtensions
+  - Hybrid.Domain.Entities.EntityTypeFinder
+  - Hybrid.Domain.Entities.ExpirableBase`1
+  - Hybrid.Domain.Entities.ICreatedTime
+  - Hybrid.Domain.Entities.IDataAuthEnabled
+  - Hybrid.Domain.Entities.IEnabled
+  - Hybrid.Domain.Entities.IEntity`1
+  - Hybrid.Domain.Entities.IEntityHash
+  - Hybrid.Domain.Entities.IEntityTypeFinder
+  - Hybrid.Domain.Entities.IExpirable
+  - Hybrid.Domain.Entities.IInputDto`1
+  - Hybrid.Domain.Entities.IInputDtoTypeFinder
+  - Hybrid.Domain.Entities.ILockable
+  - Hybrid.Domain.Entities.InputDtoTypeFinder
+  - Hybrid.Domain.Entities.InputDtoValidateExtensions
+  - Hybrid.Domain.Entities.IOutputDto
+  - Hybrid.Domain.Entities.IOutputDtoTypeFinder
+  - Hybrid.Domain.Entities.ISoftDelete
+  - Hybrid.Domain.Entities.OutputDtoTypeFinder
+  - Hybrid.Domain.Entities.TableNamePrefixAttribute
+  - Hybrid.Domain.Entities.UserFlagAttribute
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Domain.Entities
+  nameWithType: Hybrid.Domain.Entities
+  fullName: Hybrid.Domain.Entities
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Domain.Entities.EntityBase`1
+  commentId: T:Hybrid.Domain.Entities.EntityBase`1
+  name: EntityBase<TKey>
+  nameWithType: EntityBase<TKey>
+  fullName: Hybrid.Domain.Entities.EntityBase<TKey>
+  nameWithType.vb: EntityBase(Of TKey)
+  fullName.vb: Hybrid.Domain.Entities.EntityBase(Of TKey)
+  name.vb: EntityBase(Of TKey)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityBase`1
+    name: EntityBase
+    nameWithType: EntityBase
+    fullName: Hybrid.Domain.Entities.EntityBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityBase`1
+    name: EntityBase
+    nameWithType: EntityBase
+    fullName: Hybrid.Domain.Entities.EntityBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Domain.Entities.EntityHashExtensions
+  commentId: T:Hybrid.Domain.Entities.EntityHashExtensions
+  parent: Hybrid.Domain.Entities
+  name: EntityHashExtensions
+  nameWithType: EntityHashExtensions
+  fullName: Hybrid.Domain.Entities.EntityHashExtensions
+- uid: Hybrid.Domain.Entities.EntityExtensions
+  commentId: T:Hybrid.Domain.Entities.EntityExtensions
+  parent: Hybrid.Domain.Entities
+  name: EntityExtensions
+  nameWithType: EntityExtensions
+  fullName: Hybrid.Domain.Entities.EntityExtensions
+- uid: Hybrid.Domain.Entities.EntityTypeFinder
+  commentId: T:Hybrid.Domain.Entities.EntityTypeFinder
+  name: EntityTypeFinder
+  nameWithType: EntityTypeFinder
+  fullName: Hybrid.Domain.Entities.EntityTypeFinder
+- uid: Hybrid.Domain.Entities.ExpirableBase`1
+  commentId: T:Hybrid.Domain.Entities.ExpirableBase`1
+  name: ExpirableBase<TKey>
+  nameWithType: ExpirableBase<TKey>
+  fullName: Hybrid.Domain.Entities.ExpirableBase<TKey>
+  nameWithType.vb: ExpirableBase(Of TKey)
+  fullName.vb: Hybrid.Domain.Entities.ExpirableBase(Of TKey)
+  name.vb: ExpirableBase(Of TKey)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.ExpirableBase`1
+    name: ExpirableBase
+    nameWithType: ExpirableBase
+    fullName: Hybrid.Domain.Entities.ExpirableBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.ExpirableBase`1
+    name: ExpirableBase
+    nameWithType: ExpirableBase
+    fullName: Hybrid.Domain.Entities.ExpirableBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Domain.Entities.ICreatedTime
+  commentId: T:Hybrid.Domain.Entities.ICreatedTime
+  parent: Hybrid.Domain.Entities
+  name: ICreatedTime
+  nameWithType: ICreatedTime
+  fullName: Hybrid.Domain.Entities.ICreatedTime
+- uid: Hybrid.Domain.Entities.IEnabled
+  commentId: T:Hybrid.Domain.Entities.IEnabled
+  parent: Hybrid.Domain.Entities
+  name: IEnabled
+  nameWithType: IEnabled
+  fullName: Hybrid.Domain.Entities.IEnabled
+- uid: Hybrid.Domain.Entities.IEntity`1
+  commentId: T:Hybrid.Domain.Entities.IEntity`1
+  name: IEntity<TKey>
+  nameWithType: IEntity<TKey>
+  fullName: Hybrid.Domain.Entities.IEntity<TKey>
+  nameWithType.vb: IEntity(Of TKey)
+  fullName.vb: Hybrid.Domain.Entities.IEntity(Of TKey)
+  name.vb: IEntity(Of TKey)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.IEntity`1
+    name: IEntity
+    nameWithType: IEntity
+    fullName: Hybrid.Domain.Entities.IEntity
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.IEntity`1
+    name: IEntity
+    nameWithType: IEntity
+    fullName: Hybrid.Domain.Entities.IEntity
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Domain.Entities.IInputDto`1
+  commentId: T:Hybrid.Domain.Entities.IInputDto`1
+  name: IInputDto<TKey>
+  nameWithType: IInputDto<TKey>
+  fullName: Hybrid.Domain.Entities.IInputDto<TKey>
+  nameWithType.vb: IInputDto(Of TKey)
+  fullName.vb: Hybrid.Domain.Entities.IInputDto(Of TKey)
+  name.vb: IInputDto(Of TKey)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.IInputDto`1
+    name: IInputDto
+    nameWithType: IInputDto
+    fullName: Hybrid.Domain.Entities.IInputDto
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.IInputDto`1
+    name: IInputDto
+    nameWithType: IInputDto
+    fullName: Hybrid.Domain.Entities.IInputDto
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Domain.Entities.IOutputDto
+  commentId: T:Hybrid.Domain.Entities.IOutputDto
+  parent: Hybrid.Domain.Entities
+  name: IOutputDto
+  nameWithType: IOutputDto
+  fullName: Hybrid.Domain.Entities.IOutputDto
+- uid: Hybrid.Domain.Entities.IDataAuthEnabled
+  commentId: T:Hybrid.Domain.Entities.IDataAuthEnabled
+  parent: Hybrid.Domain.Entities
+  name: IDataAuthEnabled
+  nameWithType: IDataAuthEnabled
+  fullName: Hybrid.Domain.Entities.IDataAuthEnabled
+- uid: Hybrid.Domain.Entities.IEntityHash
+  commentId: T:Hybrid.Domain.Entities.IEntityHash
+  parent: Hybrid.Domain.Entities
+  name: IEntityHash
+  nameWithType: IEntityHash
+  fullName: Hybrid.Domain.Entities.IEntityHash
+- uid: Hybrid.Domain.Entities.IEntityTypeFinder
+  commentId: T:Hybrid.Domain.Entities.IEntityTypeFinder
+  parent: Hybrid.Domain.Entities
+  name: IEntityTypeFinder
+  nameWithType: IEntityTypeFinder
+  fullName: Hybrid.Domain.Entities.IEntityTypeFinder
+- uid: Hybrid.Domain.Entities.IExpirable
+  commentId: T:Hybrid.Domain.Entities.IExpirable
+  parent: Hybrid.Domain.Entities
+  name: IExpirable
+  nameWithType: IExpirable
+  fullName: Hybrid.Domain.Entities.IExpirable
+- uid: Hybrid.Domain.Entities.IInputDtoTypeFinder
+  commentId: T:Hybrid.Domain.Entities.IInputDtoTypeFinder
+  parent: Hybrid.Domain.Entities
+  name: IInputDtoTypeFinder
+  nameWithType: IInputDtoTypeFinder
+  fullName: Hybrid.Domain.Entities.IInputDtoTypeFinder
+- uid: Hybrid.Domain.Entities.ILockable
+  commentId: T:Hybrid.Domain.Entities.ILockable
+  parent: Hybrid.Domain.Entities
+  name: ILockable
+  nameWithType: ILockable
+  fullName: Hybrid.Domain.Entities.ILockable
+- uid: Hybrid.Domain.Entities.InputDtoTypeFinder
+  commentId: T:Hybrid.Domain.Entities.InputDtoTypeFinder
+  name: InputDtoTypeFinder
+  nameWithType: InputDtoTypeFinder
+  fullName: Hybrid.Domain.Entities.InputDtoTypeFinder
+- uid: Hybrid.Domain.Entities.InputDtoValidateExtensions
+  commentId: T:Hybrid.Domain.Entities.InputDtoValidateExtensions
+  parent: Hybrid.Domain.Entities
+  name: InputDtoValidateExtensions
+  nameWithType: InputDtoValidateExtensions
+  fullName: Hybrid.Domain.Entities.InputDtoValidateExtensions
+- uid: Hybrid.Domain.Entities.IOutputDtoTypeFinder
+  commentId: T:Hybrid.Domain.Entities.IOutputDtoTypeFinder
+  parent: Hybrid.Domain.Entities
+  name: IOutputDtoTypeFinder
+  nameWithType: IOutputDtoTypeFinder
+  fullName: Hybrid.Domain.Entities.IOutputDtoTypeFinder
+- uid: Hybrid.Domain.Entities.ISoftDelete
+  commentId: T:Hybrid.Domain.Entities.ISoftDelete
+  parent: Hybrid.Domain.Entities
+  name: ISoftDelete
+  nameWithType: ISoftDelete
+  fullName: Hybrid.Domain.Entities.ISoftDelete
+- uid: Hybrid.Domain.Entities.OutputDtoTypeFinder
+  commentId: T:Hybrid.Domain.Entities.OutputDtoTypeFinder
+  name: OutputDtoTypeFinder
+  nameWithType: OutputDtoTypeFinder
+  fullName: Hybrid.Domain.Entities.OutputDtoTypeFinder
+- uid: Hybrid.Domain.Entities.TableNamePrefixAttribute
+  commentId: T:Hybrid.Domain.Entities.TableNamePrefixAttribute
+  name: TableNamePrefixAttribute
+  nameWithType: TableNamePrefixAttribute
+  fullName: Hybrid.Domain.Entities.TableNamePrefixAttribute
+- uid: Hybrid.Domain.Entities.UserFlagAttribute
+  commentId: T:Hybrid.Domain.Entities.UserFlagAttribute
+  name: UserFlagAttribute
+  nameWithType: UserFlagAttribute
+  fullName: Hybrid.Domain.Entities.UserFlagAttribute
+- uid: Hybrid.Domain.Entities
+  commentId: N:Hybrid.Domain.Entities
+  name: Hybrid.Domain.Entities
+  nameWithType: Hybrid.Domain.Entities
+  fullName: Hybrid.Domain.Entities

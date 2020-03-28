@@ -1,0 +1,936 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Extensions.ObjectExtensions
+  commentId: T:Hybrid.Extensions.ObjectExtensions
+  id: ObjectExtensions
+  parent: Hybrid.Extensions
+  children:
+  - Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+  - Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+  - Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+  - Hybrid.Extensions.ObjectExtensions.DeepClone``1(``0)
+  - Hybrid.Extensions.ObjectExtensions.IsBetween``1(System.IComparable{``0},``0,``0,System.Boolean,System.Boolean)
+  - Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+  - Hybrid.Extensions.ObjectExtensions.IsInRange``1(System.IComparable{``0},``0,``0,System.Boolean,System.Boolean)
+  - Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: Hybrid.Extensions.ObjectExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid/Extensions/ObjectExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ObjectExtensions
+    path: ../src/Hybrid/Extensions/ObjectExtensions.cs
+    startLine: 21
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n基类型<xref href=\"System.Object\" data-throw-if-not-resolved=\"false\"></xref>扩展辅助操作类\n"
+  example: []
+  syntax:
+    content: public static class ObjectExtensions
+    content.vb: Public Module ObjectExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+  id: CastTo(System.Object,System.Type)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.ObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: CastTo(Object, Type)
+  nameWithType: ObjectExtensions.CastTo(Object, Type)
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo(System.Object, System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/ObjectExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: CastTo
+    path: ../src/Hybrid/Extensions/ObjectExtensions.cs
+    startLine: 31
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n把对象类型转换为指定类型\n"
+  example: []
+  syntax:
+    content: public static object CastTo(this object value, Type conversionType)
+    parameters:
+    - id: value
+      type: System.Object
+      description: ''
+    - id: conversionType
+      type: System.Type
+      description: ''
+    return:
+      type: System.Object
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function CastTo(value As Object, conversionType As Type) As Object
+  overload: Hybrid.Extensions.ObjectExtensions.CastTo*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+  id: CastTo``1(System.Object)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.ObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: CastTo<T>(Object)
+  nameWithType: ObjectExtensions.CastTo<T>(Object)
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/ObjectExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: CastTo
+    path: ../src/Hybrid/Extensions/ObjectExtensions.cs
+    startLine: 58
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n把对象类型转化为指定类型\n"
+  example: []
+  syntax:
+    content: public static T CastTo<T>(this object value)
+    parameters:
+    - id: value
+      type: System.Object
+      description: '要转化的源对象 '
+    typeParameters:
+    - id: T
+      description: '动态类型 '
+    return:
+      type: '{T}'
+      description: '转化后的指定类型的对象，转化失败引发异常。 '
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function CastTo(Of T)(value As Object) As T
+  overload: Hybrid.Extensions.ObjectExtensions.CastTo*
+  nameWithType.vb: ObjectExtensions.CastTo(Of T)(Object)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)(System.Object)
+  name.vb: CastTo(Of T)(Object)
+- uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+  id: CastTo``1(System.Object,``0)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.ObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: CastTo<T>(Object, T)
+  nameWithType: ObjectExtensions.CastTo<T>(Object, T)
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>(System.Object, T)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/ObjectExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: CastTo
+    path: ../src/Hybrid/Extensions/ObjectExtensions.cs
+    startLine: 79
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n把对象类型转化为指定类型，转化失败时返回指定的默认值\n"
+  example: []
+  syntax:
+    content: public static T CastTo<T>(this object value, T defaultValue)
+    parameters:
+    - id: value
+      type: System.Object
+      description: '要转化的源对象 '
+    - id: defaultValue
+      type: '{T}'
+      description: '转化失败返回的指定默认值 '
+    typeParameters:
+    - id: T
+      description: '动态类型 '
+    return:
+      type: '{T}'
+      description: '转化后的指定类型对象，转化失败时返回指定的默认值 '
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function CastTo(Of T)(value As Object, defaultValue As T) As T
+  overload: Hybrid.Extensions.ObjectExtensions.CastTo*
+  nameWithType.vb: ObjectExtensions.CastTo(Of T)(Object, T)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)(System.Object, T)
+  name.vb: CastTo(Of T)(Object, T)
+- uid: Hybrid.Extensions.ObjectExtensions.IsBetween``1(System.IComparable{``0},``0,``0,System.Boolean,System.Boolean)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.IsBetween``1(System.IComparable{``0},``0,``0,System.Boolean,System.Boolean)
+  id: IsBetween``1(System.IComparable{``0},``0,``0,System.Boolean,System.Boolean)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.ObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsBetween<T>(IComparable<T>, T, T, Boolean, Boolean)
+  nameWithType: ObjectExtensions.IsBetween<T>(IComparable<T>, T, T, Boolean, Boolean)
+  fullName: Hybrid.Extensions.ObjectExtensions.IsBetween<T>(System.IComparable<T>, T, T, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/ObjectExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsBetween
+    path: ../src/Hybrid/Extensions/ObjectExtensions.cs
+    startLine: 101
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n判断当前值是否介于指定范围内\n"
+  example: []
+  syntax:
+    content: >-
+      public static bool IsBetween<T>(this IComparable<T> value, T start, T end, bool leftEqual = true, bool rightEqual = true)
+
+          where T : IComparable
+    parameters:
+    - id: value
+      type: System.IComparable{{T}}
+      description: '动态类型对象 '
+    - id: start
+      type: '{T}'
+      description: '范围起点 '
+    - id: end
+      type: '{T}'
+      description: '范围终点 '
+    - id: leftEqual
+      type: System.Boolean
+      description: '是否可等于上限（默认等于） '
+    - id: rightEqual
+      type: System.Boolean
+      description: '是否可等于下限（默认等于） '
+    typeParameters:
+    - id: T
+      description: '动态类型 '
+    return:
+      type: System.Boolean
+      description: '是否介于 '
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsBetween(Of T As IComparable)(value As IComparable(Of T), start As T, end As T, leftEqual As Boolean = True, rightEqual As Boolean = True) As Boolean
+  overload: Hybrid.Extensions.ObjectExtensions.IsBetween*
+  nameWithType.vb: ObjectExtensions.IsBetween(Of T)(IComparable(Of T), T, T, Boolean, Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.IsBetween(Of T)(System.IComparable(Of T), T, T, System.Boolean, System.Boolean)
+  name.vb: IsBetween(Of T)(IComparable(Of T), T, T, Boolean, Boolean)
+- uid: Hybrid.Extensions.ObjectExtensions.IsInRange``1(System.IComparable{``0},``0,``0,System.Boolean,System.Boolean)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.IsInRange``1(System.IComparable{``0},``0,``0,System.Boolean,System.Boolean)
+  id: IsInRange``1(System.IComparable{``0},``0,``0,System.Boolean,System.Boolean)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.ObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsInRange<T>(IComparable<T>, T, T, Boolean, Boolean)
+  nameWithType: ObjectExtensions.IsInRange<T>(IComparable<T>, T, T, Boolean, Boolean)
+  fullName: Hybrid.Extensions.ObjectExtensions.IsInRange<T>(System.IComparable<T>, T, T, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/ObjectExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsInRange
+    path: ../src/Hybrid/Extensions/ObjectExtensions.cs
+    startLine: 116
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n判断当前值是否介于指定范围内\n"
+  example: []
+  syntax:
+    content: >-
+      public static bool IsInRange<T>(this IComparable<T> value, T min, T max, bool minEqual = true, bool maxEqual = true)
+
+          where T : IComparable
+    parameters:
+    - id: value
+      type: System.IComparable{{T}}
+      description: '动态类型对象 '
+    - id: min
+      type: '{T}'
+      description: 范围小值
+    - id: max
+      type: '{T}'
+      description: 范围大值
+    - id: minEqual
+      type: System.Boolean
+      description: 是否可等于小值（默认等于）
+    - id: maxEqual
+      type: System.Boolean
+      description: 是否可等于大值（默认等于）
+    typeParameters:
+    - id: T
+      description: '动态类型 '
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsInRange(Of T As IComparable)(value As IComparable(Of T), min As T, max As T, minEqual As Boolean = True, maxEqual As Boolean = True) As Boolean
+  overload: Hybrid.Extensions.ObjectExtensions.IsInRange*
+  nameWithType.vb: ObjectExtensions.IsInRange(Of T)(IComparable(Of T), T, T, Boolean, Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.IsInRange(Of T)(System.IComparable(Of T), T, T, System.Boolean, System.Boolean)
+  name.vb: IsInRange(Of T)(IComparable(Of T), T, T, Boolean, Boolean)
+- uid: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+  commentId: M:Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+  id: IsIn``1(``0,``0[])
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.ObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsIn<T>(T, T[])
+  nameWithType: ObjectExtensions.IsIn<T>(T, T[])
+  fullName: Hybrid.Extensions.ObjectExtensions.IsIn<T>(T, T[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/ObjectExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsIn
+    path: ../src/Hybrid/Extensions/ObjectExtensions.cs
+    startLine: 125
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n是否存在于\n"
+  example: []
+  syntax:
+    content: public static bool IsIn<T>(this T value, params T[] source)
+    parameters:
+    - id: value
+      type: '{T}'
+    - id: source
+      type: '{T}[]'
+    typeParameters:
+    - id: T
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsIn(Of T)(value As T, ParamArray source As T()) As Boolean
+  overload: Hybrid.Extensions.ObjectExtensions.IsIn*
+  nameWithType.vb: ObjectExtensions.IsIn(Of T)(T, T())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.IsIn(Of T)(T, T())
+  name.vb: IsIn(Of T)(T, T())
+- uid: Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  id: ToDynamic(System.Object)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.ObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToDynamic(Object)
+  nameWithType: ObjectExtensions.ToDynamic(Object)
+  fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/ObjectExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToDynamic
+    path: ../src/Hybrid/Extensions/ObjectExtensions.cs
+    startLine: 133
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n将对象[主要是匿名对象]转换为dynamic\n"
+  example: []
+  syntax:
+    content: public static dynamic ToDynamic(this object value)
+    parameters:
+    - id: value
+      type: System.Object
+    return:
+      type: System.Object
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToDynamic(value As Object) As Object
+  overload: Hybrid.Extensions.ObjectExtensions.ToDynamic*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.ObjectExtensions.DeepClone``1(``0)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.DeepClone``1(``0)
+  id: DeepClone``1(``0)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.ObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: DeepClone<T>(T)
+  nameWithType: ObjectExtensions.DeepClone<T>(T)
+  fullName: Hybrid.Extensions.ObjectExtensions.DeepClone<T>(T)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/ObjectExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: DeepClone
+    path: ../src/Hybrid/Extensions/ObjectExtensions.cs
+    startLine: 157
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n对象深度拷贝，复制出一个数据一样，但地址不一样的新版本\n"
+  example: []
+  syntax:
+    content: >-
+      public static T DeepClone<T>(this T obj)
+
+          where T : class
+    parameters:
+    - id: obj
+      type: '{T}'
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function DeepClone(Of T As Class)(obj As T) As T
+  overload: Hybrid.Extensions.ObjectExtensions.DeepClone*
+  nameWithType.vb: ObjectExtensions.DeepClone(Of T)(T)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.DeepClone(Of T)(T)
+  name.vb: DeepClone(Of T)(T)
+references:
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Hybrid.Extensions
+  commentId: N:Hybrid.Extensions
+  name: Hybrid.Extensions
+  nameWithType: Hybrid.Extensions
+  fullName: Hybrid.Extensions
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hybrid.Extensions.ObjectExtensions.CastTo*
+  commentId: Overload:Hybrid.Extensions.ObjectExtensions.CastTo
+  name: CastTo
+  nameWithType: ObjectExtensions.CastTo
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Hybrid.Extensions.ObjectExtensions.IsBetween*
+  commentId: Overload:Hybrid.Extensions.ObjectExtensions.IsBetween
+  name: IsBetween
+  nameWithType: ObjectExtensions.IsBetween
+  fullName: Hybrid.Extensions.ObjectExtensions.IsBetween
+- uid: System.IComparable{{T}}
+  commentId: T:System.IComparable{``0}
+  parent: System
+  definition: System.IComparable`1
+  name: IComparable<T>
+  nameWithType: IComparable<T>
+  fullName: System.IComparable<T>
+  nameWithType.vb: IComparable(Of T)
+  fullName.vb: System.IComparable(Of T)
+  name.vb: IComparable(Of T)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: System.IComparable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: System.IComparable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.IComparable`1
+  commentId: T:System.IComparable`1
+  isExternal: true
+  name: IComparable<T>
+  nameWithType: IComparable<T>
+  fullName: System.IComparable<T>
+  nameWithType.vb: IComparable(Of T)
+  fullName.vb: System.IComparable(Of T)
+  name.vb: IComparable(Of T)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: System.IComparable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: System.IComparable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ObjectExtensions.IsInRange*
+  commentId: Overload:Hybrid.Extensions.ObjectExtensions.IsInRange
+  name: IsInRange
+  nameWithType: ObjectExtensions.IsInRange
+  fullName: Hybrid.Extensions.ObjectExtensions.IsInRange
+- uid: Hybrid.Extensions.ObjectExtensions.IsIn*
+  commentId: Overload:Hybrid.Extensions.ObjectExtensions.IsIn
+  name: IsIn
+  nameWithType: ObjectExtensions.IsIn
+  fullName: Hybrid.Extensions.ObjectExtensions.IsIn
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Hybrid.Extensions.ObjectExtensions.ToDynamic*
+  commentId: Overload:Hybrid.Extensions.ObjectExtensions.ToDynamic
+  name: ToDynamic
+  nameWithType: ObjectExtensions.ToDynamic
+  fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic
+- uid: Hybrid.Extensions.ObjectExtensions.DeepClone*
+  commentId: Overload:Hybrid.Extensions.ObjectExtensions.DeepClone
+  name: DeepClone
+  nameWithType: ObjectExtensions.DeepClone
+  fullName: Hybrid.Extensions.ObjectExtensions.DeepClone

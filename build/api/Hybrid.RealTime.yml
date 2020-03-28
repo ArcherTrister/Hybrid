@@ -1,0 +1,41 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.RealTime
+  commentId: N:Hybrid.RealTime
+  id: Hybrid.RealTime
+  children:
+  - Hybrid.RealTime.IOnlineUserCache
+  - Hybrid.RealTime.IOnlineUserProvider
+  - Hybrid.RealTime.OnlineUserBase
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.RealTime
+  nameWithType: Hybrid.RealTime
+  fullName: Hybrid.RealTime
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.RealTime.IOnlineUserCache
+  commentId: T:Hybrid.RealTime.IOnlineUserCache
+  name: IOnlineUserCache
+  nameWithType: IOnlineUserCache
+  fullName: Hybrid.RealTime.IOnlineUserCache
+- uid: Hybrid.RealTime.IOnlineUserProvider
+  commentId: T:Hybrid.RealTime.IOnlineUserProvider
+  parent: Hybrid.RealTime
+  name: IOnlineUserProvider
+  nameWithType: IOnlineUserProvider
+  fullName: Hybrid.RealTime.IOnlineUserProvider
+- uid: Hybrid.RealTime.OnlineUserBase
+  commentId: T:Hybrid.RealTime.OnlineUserBase
+  parent: Hybrid.RealTime
+  name: OnlineUserBase
+  nameWithType: OnlineUserBase
+  fullName: Hybrid.RealTime.OnlineUserBase
+- uid: Hybrid.RealTime
+  commentId: N:Hybrid.RealTime
+  name: Hybrid.RealTime
+  nameWithType: Hybrid.RealTime
+  fullName: Hybrid.RealTime

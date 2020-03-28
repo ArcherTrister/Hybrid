@@ -1,0 +1,65 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Quartz.Dashboard.Models
+  commentId: N:Hybrid.Quartz.Dashboard.Models
+  id: Hybrid.Quartz.Dashboard.Models
+  children:
+  - Hybrid.Quartz.Dashboard.Models.Histogram
+  - Hybrid.Quartz.Dashboard.Models.Histogram.Bar
+  - Hybrid.Quartz.Dashboard.Models.LoginViewModel
+  - Hybrid.Quartz.Dashboard.Models.MenuItem
+  - Hybrid.Quartz.Dashboard.Models.NavBars
+  - Hybrid.Quartz.Dashboard.Models.Server
+  - Hybrid.Quartz.Dashboard.Models.SideBars
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Quartz.Dashboard.Models
+  nameWithType: Hybrid.Quartz.Dashboard.Models
+  fullName: Hybrid.Quartz.Dashboard.Models
+  type: Namespace
+  assemblies:
+  - Hybrid.Quartz
+references:
+- uid: Hybrid.Quartz.Dashboard.Models.Histogram
+  commentId: T:Hybrid.Quartz.Dashboard.Models.Histogram
+  parent: Hybrid.Quartz.Dashboard.Models
+  name: Histogram
+  nameWithType: Histogram
+  fullName: Hybrid.Quartz.Dashboard.Models.Histogram
+- uid: Hybrid.Quartz.Dashboard.Models.Histogram.Bar
+  commentId: T:Hybrid.Quartz.Dashboard.Models.Histogram.Bar
+  name: Histogram.Bar
+  nameWithType: Histogram.Bar
+  fullName: Hybrid.Quartz.Dashboard.Models.Histogram.Bar
+- uid: Hybrid.Quartz.Dashboard.Models.LoginViewModel
+  commentId: T:Hybrid.Quartz.Dashboard.Models.LoginViewModel
+  name: LoginViewModel
+  nameWithType: LoginViewModel
+  fullName: Hybrid.Quartz.Dashboard.Models.LoginViewModel
+- uid: Hybrid.Quartz.Dashboard.Models.MenuItem
+  commentId: T:Hybrid.Quartz.Dashboard.Models.MenuItem
+  name: MenuItem
+  nameWithType: MenuItem
+  fullName: Hybrid.Quartz.Dashboard.Models.MenuItem
+- uid: Hybrid.Quartz.Dashboard.Models.NavBars
+  commentId: T:Hybrid.Quartz.Dashboard.Models.NavBars
+  name: NavBars
+  nameWithType: NavBars
+  fullName: Hybrid.Quartz.Dashboard.Models.NavBars
+- uid: Hybrid.Quartz.Dashboard.Models.Server
+  commentId: T:Hybrid.Quartz.Dashboard.Models.Server
+  parent: Hybrid.Quartz.Dashboard.Models
+  name: Server
+  nameWithType: Server
+  fullName: Hybrid.Quartz.Dashboard.Models.Server
+- uid: Hybrid.Quartz.Dashboard.Models.SideBars
+  commentId: T:Hybrid.Quartz.Dashboard.Models.SideBars
+  name: SideBars
+  nameWithType: SideBars
+  fullName: Hybrid.Quartz.Dashboard.Models.SideBars
+- uid: Hybrid.Quartz.Dashboard.Models
+  commentId: N:Hybrid.Quartz.Dashboard.Models
+  name: Hybrid.Quartz.Dashboard.Models
+  nameWithType: Hybrid.Quartz.Dashboard.Models
+  fullName: Hybrid.Quartz.Dashboard.Models

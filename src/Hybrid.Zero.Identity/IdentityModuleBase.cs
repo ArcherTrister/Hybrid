@@ -11,6 +11,7 @@ using Hybrid.AspNetCore;
 using Hybrid.Core.Modules;
 using Hybrid.EventBuses;
 using Hybrid.RealTime;
+using Hybrid.Security.Claims;
 using Hybrid.Zero.Identity.Entities;
 using Hybrid.Zero.Identity.RealTime;
 
@@ -31,12 +32,14 @@ namespace Hybrid.Zero.Identity
     /// 身份论证模块基类
     /// </summary>
     [DependsOnModules(typeof(EventBusModule), typeof(AspNetCoreModule))]
-    public abstract class IdentityModuleBase<TUserStore, TRoleStore, TUser, TRole, TUserKey, TRoleKey> : AspHybridModule
+    public abstract class IdentityModuleBase<TUserStore, TRoleStore, TUser, TUserKey, TUserClaim, TUserClaimKey, TRole, TRoleKey> : AspHybridModule
         where TUserStore : class, IUserStore<TUser>
         where TRoleStore : class, IRoleStore<TRole>
         where TUser : UserBase<TUserKey>
         where TRole : RoleBase<TRoleKey>
         where TUserKey : IEquatable<TUserKey>
+        where TUserClaim : UserClaimBase<TUserClaimKey, TUserKey>
+        where TUserClaimKey : IEquatable<TUserClaimKey>
         where TRoleKey : IEquatable<TRoleKey>
     {
         /// <summary>
@@ -55,7 +58,7 @@ namespace Hybrid.Zero.Identity
             services.AddScoped<IRoleStore<TRole>, TRoleStore>();
 
             //在线用户缓存
-            services.TryAddScoped<IOnlineUserProvider, OnlineUserProvider<TUser, TUserKey, TRole, TRoleKey>>();
+            services.TryAddScoped<IOnlineUserProvider, OnlineUserProvider<TUser, TUserKey, TUserClaim, TUserClaimKey, TRole, TRoleKey>>();
 
             // 替换 IPrincipal ，设置用户主键类型，用以在Repository进行审计时注入正确用户主键类型
             services.Replace(new ServiceDescriptor(typeof(IPrincipal),
@@ -68,7 +71,7 @@ namespace Hybrid.Zero.Identity
                         PropertyInfo property = typeof(TUser).GetProperty("Id");
                         if (property != null)
                         {
-                            identity.AddClaim(new Claim("userIdTypeName", property.PropertyType.FullName));
+                            identity.AddClaim(new Claim(HybridClaimTypes.UserIdTypeName, property.PropertyType.FullName));
                         }
                     }
 
@@ -100,7 +103,18 @@ namespace Hybrid.Zero.Identity
         /// <returns></returns>
         protected virtual Action<IdentityOptions> IdentityOptionsAction()
         {
-            return null;
+            return options =>
+            {
+                //登录
+                options.SignIn.RequireConfirmedEmail = false;
+                //密码
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = false;
+                //用户
+                options.User.RequireUniqueEmail = false;
+                //锁定
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(15);
+            };
         }
 
         /// <summary>
@@ -109,7 +123,14 @@ namespace Hybrid.Zero.Identity
         /// <returns></returns>
         protected virtual Action<CookieAuthenticationOptions> CookieOptionsAction()
         {
-            return null;
+            return options =>
+            {
+                options.Cookie.HttpOnly = true;
+                options.Cookie.Name = "hybrid.identity";
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(20);
+                options.SlidingExpiration = true;
+                options.LoginPath = "/#/identity/login";
+            };
         }
 
         /// <summary>
@@ -126,7 +147,7 @@ namespace Hybrid.Zero.Identity
         /// <returns></returns>
         protected virtual IdentityBuilder OnIdentityBuild(IdentityBuilder builder)
         {
-            return builder;
+            return builder.AddDefaultTokenProviders();
         }
     }
 }

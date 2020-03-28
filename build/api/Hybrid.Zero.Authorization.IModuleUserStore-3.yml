@@ -1,0 +1,4572 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Zero.Authorization.IModuleUserStore`3
+  commentId: T:Hybrid.Zero.Authorization.IModuleUserStore`3
+  id: IModuleUserStore`3
+  parent: Hybrid.Zero.Authorization
+  children:
+  - Hybrid.Zero.Authorization.IModuleUserStore`3.CheckModuleUserExists(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Guid)
+  - Hybrid.Zero.Authorization.IModuleUserStore`3.GetUserSelfModuleIds(`1)
+  - Hybrid.Zero.Authorization.IModuleUserStore`3.GetUserWithRoleModuleIds(`1)
+  - Hybrid.Zero.Authorization.IModuleUserStore`3.ModuleUsers
+  - Hybrid.Zero.Authorization.IModuleUserStore`3.SetUserModules(`1,`2[])
+  langs:
+  - csharp
+  - vb
+  name: IModuleUserStore<TModuleUser, TUserKey, TModuleKey>
+  nameWithType: IModuleUserStore<TModuleUser, TUserKey, TModuleKey>
+  fullName: Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>
+  type: Interface
+  source:
+    remote:
+      path: src/Hybrid.Zero/Authorization/IModuleUserStore.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IModuleUserStore
+    path: ../src/Hybrid.Zero/Authorization/IModuleUserStore.cs
+    startLine: 22
+  assemblies:
+  - Hybrid.Zero
+  namespace: Hybrid.Zero.Authorization
+  summary: "\n模块用户信息存储\n"
+  example: []
+  syntax:
+    content: public interface IModuleUserStore<TModuleUser, in TUserKey, TModuleKey>
+    typeParameters:
+    - id: TModuleUser
+    - id: TUserKey
+    - id: TModuleKey
+    content.vb: Public Interface IModuleUserStore(Of TModuleUser, In TUserKey, TModuleKey)
+  extensionMethods:
+  - System.Object.Hybrid.Extensions.ObjectExtensions.CastTo(System.Type)
+  - System.Object.Hybrid.Extensions.ObjectExtensions.CastTo``1
+  - System.Object.Hybrid.Extensions.ObjectExtensions.CastTo``1({T})
+  - Hybrid.Zero.Authorization.IModuleUserStore`3.Hybrid.Extensions.ObjectExtensions.IsIn``1(Hybrid.Zero.Authorization.IModuleUserStore{{TModuleUser},{TUserKey},{TModuleKey}}[])
+  - System.Object.Hybrid.Extensions.ObjectExtensions.ToDynamic
+  - Hybrid.Zero.Authorization.IModuleUserStore`3.Hybrid.Extensions.ObjectExtensions.DeepClone``1
+  - Hybrid.Zero.Authorization.IModuleUserStore`3.Hybrid.Extensions.ParameterCheckExtensions.Required``1(System.Func{Hybrid.Zero.Authorization.IModuleUserStore{{TModuleUser},{TUserKey},{TModuleKey}},System.Boolean},System.String)
+  - Hybrid.Zero.Authorization.IModuleUserStore`3.Hybrid.Extensions.ParameterCheckExtensions.Required``2(System.Func{Hybrid.Zero.Authorization.IModuleUserStore{{TModuleUser},{TUserKey},{TModuleKey}},System.Boolean},System.String)
+  - Hybrid.Zero.Authorization.IModuleUserStore`3.Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(System.String)
+  - Hybrid.Zero.Authorization.IModuleUserStore`3.Hybrid.Extensions.TryCatchExtensions.TryCatch``1(System.Action{Hybrid.Zero.Authorization.IModuleUserStore{{TModuleUser},{TUserKey},{TModuleKey}}},System.Action{System.Exception},System.Action{Hybrid.Zero.Authorization.IModuleUserStore{{TModuleUser},{TUserKey},{TModuleKey}}})
+  - Hybrid.Zero.Authorization.IModuleUserStore`3.Hybrid.Extensions.TryCatchExtensions.TryCatch``1(System.Action{Hybrid.Zero.Authorization.IModuleUserStore{{TModuleUser},{TUserKey},{TModuleKey}}},System.Action{System.Exception})
+  - Hybrid.Zero.Authorization.IModuleUserStore`3.Hybrid.Extensions.TryCatchExtensions.TryCatch``2(System.Func{Hybrid.Zero.Authorization.IModuleUserStore{{TModuleUser},{TUserKey},{TModuleKey}},{TResult}},System.Action{System.Exception},System.Action{Hybrid.Zero.Authorization.IModuleUserStore{{TModuleUser},{TUserKey},{TModuleKey}}})
+  - Hybrid.Zero.Authorization.IModuleUserStore`3.Hybrid.Extensions.TryCatchExtensions.TryCatch``2(System.Func{Hybrid.Zero.Authorization.IModuleUserStore{{TModuleUser},{TUserKey},{TModuleKey}},{TResult}},System.Action{System.Exception})
+  - Hybrid.Zero.Authorization.IModuleUserStore`3.Hybrid.Extensions.TryCatchExtensions.TryFinally``1(System.Action{Hybrid.Zero.Authorization.IModuleUserStore{{TModuleUser},{TUserKey},{TModuleKey}}},System.Action{Hybrid.Zero.Authorization.IModuleUserStore{{TModuleUser},{TUserKey},{TModuleKey}}})
+  - System.Object.Hybrid.Json.JsonExtensions.ToJsonString(System.Boolean,System.Boolean)
+  - System.Object.Hybrid.Mapping.MapperExtensions.MapTo``1
+  - Hybrid.Zero.Authorization.IModuleUserStore`3.Hybrid.Mapping.MapperExtensions.MapTo``2({TTarget})
+  - System.Object.Hybrid.Reflection.LockExtensions.Locking(System.Action)
+  - Hybrid.Zero.Authorization.IModuleUserStore`3.Hybrid.Reflection.LockExtensions.Locking``1(System.Action{Hybrid.Zero.Authorization.IModuleUserStore{{TModuleUser},{TUserKey},{TModuleKey}}})
+  - System.Object.Hybrid.Reflection.LockExtensions.Locking``1(System.Func{{TResult}})
+  - Hybrid.Zero.Authorization.IModuleUserStore`3.Hybrid.Reflection.LockExtensions.Locking``2(System.Func{Hybrid.Zero.Authorization.IModuleUserStore{{TModuleUser},{TUserKey},{TModuleKey}},{TResult}})
+  - Hybrid.Zero.Authorization.IModuleUserStore`3.Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2
+  - Hybrid.Zero.Authorization.IModuleUserStore`3.Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(System.Security.Principal.IPrincipal)
+  - Hybrid.Zero.Authorization.IModuleUserStore`3.Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(System.Security.Principal.IPrincipal)
+  nameWithType.vb: IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey)
+  name.vb: IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey)
+- uid: Hybrid.Zero.Authorization.IModuleUserStore`3.ModuleUsers
+  commentId: P:Hybrid.Zero.Authorization.IModuleUserStore`3.ModuleUsers
+  id: ModuleUsers
+  parent: Hybrid.Zero.Authorization.IModuleUserStore`3
+  langs:
+  - csharp
+  - vb
+  name: ModuleUsers
+  nameWithType: IModuleUserStore<TModuleUser, TUserKey, TModuleKey>.ModuleUsers
+  fullName: Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>.ModuleUsers
+  type: Property
+  source:
+    remote:
+      path: src/Hybrid.Zero/Authorization/IModuleUserStore.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ModuleUsers
+    path: ../src/Hybrid.Zero/Authorization/IModuleUserStore.cs
+    startLine: 30
+  assemblies:
+  - Hybrid.Zero
+  namespace: Hybrid.Zero.Authorization
+  summary: "\n获取 模块用户信息查询数据集\n"
+  example: []
+  syntax:
+    content: IQueryable<TModuleUser> ModuleUsers { get; }
+    parameters: []
+    return:
+      type: System.Linq.IQueryable{{TModuleUser}}
+    content.vb: ReadOnly Property ModuleUsers As IQueryable(Of TModuleUser)
+  overload: Hybrid.Zero.Authorization.IModuleUserStore`3.ModuleUsers*
+  nameWithType.vb: IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey).ModuleUsers
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  fullName.vb: Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey).ModuleUsers
+- uid: Hybrid.Zero.Authorization.IModuleUserStore`3.CheckModuleUserExists(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Guid)
+  commentId: M:Hybrid.Zero.Authorization.IModuleUserStore`3.CheckModuleUserExists(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Guid)
+  id: CheckModuleUserExists(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Guid)
+  parent: Hybrid.Zero.Authorization.IModuleUserStore`3
+  langs:
+  - csharp
+  - vb
+  name: CheckModuleUserExists(Expression<Func<TModuleUser, Boolean>>, Guid)
+  nameWithType: IModuleUserStore<TModuleUser, TUserKey, TModuleKey>.CheckModuleUserExists(Expression<Func<TModuleUser, Boolean>>, Guid)
+  fullName: Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>.CheckModuleUserExists(System.Linq.Expressions.Expression<System.Func<TModuleUser, System.Boolean>>, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.Zero/Authorization/IModuleUserStore.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: CheckModuleUserExists
+    path: ../src/Hybrid.Zero/Authorization/IModuleUserStore.cs
+    startLine: 38
+  assemblies:
+  - Hybrid.Zero
+  namespace: Hybrid.Zero.Authorization
+  summary: "\n检查模块用户信息是否存在\n"
+  example: []
+  syntax:
+    content: Task<bool> CheckModuleUserExists(Expression<Func<TModuleUser, bool>> predicate, Guid id = default(Guid))
+    parameters:
+    - id: predicate
+      type: System.Linq.Expressions.Expression{System.Func{{TModuleUser},System.Boolean}}
+      description: 检查谓语表达式
+    - id: id
+      type: System.Guid
+      description: 更新的模块用户信息编号
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: 模块用户信息是否存在
+    content.vb: Function CheckModuleUserExists(predicate As Expression(Of Func(Of TModuleUser, Boolean)), id As Guid = Nothing) As Task(Of Boolean)
+  overload: Hybrid.Zero.Authorization.IModuleUserStore`3.CheckModuleUserExists*
+  nameWithType.vb: IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey).CheckModuleUserExists(Expression(Of Func(Of TModuleUser, Boolean)), Guid)
+  fullName.vb: Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey).CheckModuleUserExists(System.Linq.Expressions.Expression(Of System.Func(Of TModuleUser, System.Boolean)), System.Guid)
+  name.vb: CheckModuleUserExists(Expression(Of Func(Of TModuleUser, Boolean)), Guid)
+- uid: Hybrid.Zero.Authorization.IModuleUserStore`3.SetUserModules(`1,`2[])
+  commentId: M:Hybrid.Zero.Authorization.IModuleUserStore`3.SetUserModules(`1,`2[])
+  id: SetUserModules(`1,`2[])
+  parent: Hybrid.Zero.Authorization.IModuleUserStore`3
+  langs:
+  - csharp
+  - vb
+  name: SetUserModules(TUserKey, TModuleKey[])
+  nameWithType: IModuleUserStore<TModuleUser, TUserKey, TModuleKey>.SetUserModules(TUserKey, TModuleKey[])
+  fullName: Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>.SetUserModules(TUserKey, TModuleKey[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.Zero/Authorization/IModuleUserStore.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: SetUserModules
+    path: ../src/Hybrid.Zero/Authorization/IModuleUserStore.cs
+    startLine: 46
+  assemblies:
+  - Hybrid.Zero
+  namespace: Hybrid.Zero.Authorization
+  summary: "\n设置用户的可访问模块\n"
+  example: []
+  syntax:
+    content: Task<OperationResult> SetUserModules(TUserKey userId, TModuleKey[] moduleIds)
+    parameters:
+    - id: userId
+      type: '{TUserKey}'
+      description: 用户编号
+    - id: moduleIds
+      type: '{TModuleKey}[]'
+      description: 要赋给用户的模块编号集合
+    return:
+      type: System.Threading.Tasks.Task{Hybrid.Data.OperationResult}
+      description: 业务操作结果
+    content.vb: Function SetUserModules(userId As TUserKey, moduleIds As TModuleKey()) As Task(Of OperationResult)
+  overload: Hybrid.Zero.Authorization.IModuleUserStore`3.SetUserModules*
+  nameWithType.vb: IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey).SetUserModules(TUserKey, TModuleKey())
+  fullName.vb: Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey).SetUserModules(TUserKey, TModuleKey())
+  name.vb: SetUserModules(TUserKey, TModuleKey())
+- uid: Hybrid.Zero.Authorization.IModuleUserStore`3.GetUserSelfModuleIds(`1)
+  commentId: M:Hybrid.Zero.Authorization.IModuleUserStore`3.GetUserSelfModuleIds(`1)
+  id: GetUserSelfModuleIds(`1)
+  parent: Hybrid.Zero.Authorization.IModuleUserStore`3
+  langs:
+  - csharp
+  - vb
+  name: GetUserSelfModuleIds(TUserKey)
+  nameWithType: IModuleUserStore<TModuleUser, TUserKey, TModuleKey>.GetUserSelfModuleIds(TUserKey)
+  fullName: Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>.GetUserSelfModuleIds(TUserKey)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.Zero/Authorization/IModuleUserStore.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetUserSelfModuleIds
+    path: ../src/Hybrid.Zero/Authorization/IModuleUserStore.cs
+    startLine: 53
+  assemblies:
+  - Hybrid.Zero
+  namespace: Hybrid.Zero.Authorization
+  summary: "\n获取用户自己的可访问模块编号\n"
+  example: []
+  syntax:
+    content: TModuleKey[] GetUserSelfModuleIds(TUserKey userId)
+    parameters:
+    - id: userId
+      type: '{TUserKey}'
+      description: 用户编号
+    return:
+      type: '{TModuleKey}[]'
+      description: 模块编号集合
+    content.vb: Function GetUserSelfModuleIds(userId As TUserKey) As TModuleKey()
+  overload: Hybrid.Zero.Authorization.IModuleUserStore`3.GetUserSelfModuleIds*
+  nameWithType.vb: IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey).GetUserSelfModuleIds(TUserKey)
+  fullName.vb: Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey).GetUserSelfModuleIds(TUserKey)
+- uid: Hybrid.Zero.Authorization.IModuleUserStore`3.GetUserWithRoleModuleIds(`1)
+  commentId: M:Hybrid.Zero.Authorization.IModuleUserStore`3.GetUserWithRoleModuleIds(`1)
+  id: GetUserWithRoleModuleIds(`1)
+  parent: Hybrid.Zero.Authorization.IModuleUserStore`3
+  langs:
+  - csharp
+  - vb
+  name: GetUserWithRoleModuleIds(TUserKey)
+  nameWithType: IModuleUserStore<TModuleUser, TUserKey, TModuleKey>.GetUserWithRoleModuleIds(TUserKey)
+  fullName: Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>.GetUserWithRoleModuleIds(TUserKey)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.Zero/Authorization/IModuleUserStore.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetUserWithRoleModuleIds
+    path: ../src/Hybrid.Zero/Authorization/IModuleUserStore.cs
+    startLine: 60
+  assemblies:
+  - Hybrid.Zero
+  namespace: Hybrid.Zero.Authorization
+  summary: "\n获取用户及其拥有角色可访问模块编号\n"
+  example: []
+  syntax:
+    content: TModuleKey[] GetUserWithRoleModuleIds(TUserKey userId)
+    parameters:
+    - id: userId
+      type: '{TUserKey}'
+      description: 用户编号
+    return:
+      type: '{TModuleKey}[]'
+      description: 模块编号集合
+    content.vb: Function GetUserWithRoleModuleIds(userId As TUserKey) As TModuleKey()
+  overload: Hybrid.Zero.Authorization.IModuleUserStore`3.GetUserWithRoleModuleIds*
+  nameWithType.vb: IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey).GetUserWithRoleModuleIds(TUserKey)
+  fullName.vb: Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey).GetUserWithRoleModuleIds(TUserKey)
+references:
+- uid: Hybrid.Zero.Authorization
+  commentId: N:Hybrid.Zero.Authorization
+  name: Hybrid.Zero.Authorization
+  nameWithType: Hybrid.Zero.Authorization
+  fullName: Hybrid.Zero.Authorization
+- uid: System.Object.Hybrid.Extensions.ObjectExtensions.CastTo(System.Type)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+  name: CastTo(Type)
+  nameWithType: ObjectExtensions.CastTo(Type)
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo(System.Type)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo(System.Type)
+    name: CastTo
+    nameWithType: ObjectExtensions.CastTo
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo(System.Type)
+    name: CastTo
+    nameWithType: ObjectExtensions.CastTo
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Extensions.ObjectExtensions.CastTo``1
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+  name: CastTo<T>()
+  nameWithType: ObjectExtensions.CastTo<T>()
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>()
+  nameWithType.vb: ObjectExtensions.CastTo(Of T)()
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)()
+  name.vb: CastTo(Of T)()
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1
+    name: CastTo<T>
+    nameWithType: ObjectExtensions.CastTo<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1
+    name: CastTo(Of T)
+    nameWithType: ObjectExtensions.CastTo(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Extensions.ObjectExtensions.CastTo``1({T})
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+  name: CastTo<T>(T)
+  nameWithType: ObjectExtensions.CastTo<T>(T)
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>(T)
+  nameWithType.vb: ObjectExtensions.CastTo(Of T)(T)
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)(T)
+  name.vb: CastTo(Of T)(T)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(``0)
+    name: CastTo<T>
+    nameWithType: ObjectExtensions.CastTo<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(``0)
+    name: CastTo(Of T)
+    nameWithType: ObjectExtensions.CastTo(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.IModuleUserStore`3.Hybrid.Extensions.ObjectExtensions.IsIn``1(Hybrid.Zero.Authorization.IModuleUserStore{{TModuleUser},{TUserKey},{TModuleKey}}[])
+  commentId: M:Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+  name: IsIn<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>(IModuleUserStore<TModuleUser, TUserKey, TModuleKey>[])
+  nameWithType: ObjectExtensions.IsIn<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>(IModuleUserStore<TModuleUser, TUserKey, TModuleKey>[])
+  fullName: Hybrid.Extensions.ObjectExtensions.IsIn<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>(Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>[])
+  nameWithType.vb: ObjectExtensions.IsIn(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))(IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey)())
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.IsIn(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))(Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey)())
+  name.vb: IsIn(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))(IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey)())
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0[])
+    name: IsIn<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>
+    nameWithType: ObjectExtensions.IsIn<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>
+    fullName: Hybrid.Extensions.ObjectExtensions.IsIn<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.Zero.Authorization.IModuleUserStore`3
+    name: IModuleUserStore
+    nameWithType: IModuleUserStore
+    fullName: Hybrid.Zero.Authorization.IModuleUserStore
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0[])
+    name: IsIn(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))
+    nameWithType: ObjectExtensions.IsIn(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))
+    fullName: Hybrid.Extensions.ObjectExtensions.IsIn(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.Zero.Authorization.IModuleUserStore`3
+    name: IModuleUserStore
+    nameWithType: IModuleUserStore
+    fullName: Hybrid.Zero.Authorization.IModuleUserStore
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Extensions.ObjectExtensions.ToDynamic
+  commentId: M:Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  name: ToDynamic()
+  nameWithType: ObjectExtensions.ToDynamic()
+  fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic()
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.ToDynamic
+    name: ToDynamic
+    nameWithType: ObjectExtensions.ToDynamic
+    fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.ToDynamic
+    name: ToDynamic
+    nameWithType: ObjectExtensions.ToDynamic
+    fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.IModuleUserStore`3.Hybrid.Extensions.ObjectExtensions.DeepClone``1
+  commentId: M:Hybrid.Extensions.ObjectExtensions.DeepClone``1(``0)
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.DeepClone``1(``0)
+  name: DeepClone<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>()
+  nameWithType: ObjectExtensions.DeepClone<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>()
+  fullName: Hybrid.Extensions.ObjectExtensions.DeepClone<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>()
+  nameWithType.vb: ObjectExtensions.DeepClone(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))()
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.DeepClone(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))()
+  name.vb: DeepClone(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))()
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.DeepClone``1
+    name: DeepClone<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>
+    nameWithType: ObjectExtensions.DeepClone<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>
+    fullName: Hybrid.Extensions.ObjectExtensions.DeepClone<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.DeepClone``1
+    name: DeepClone(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))
+    nameWithType: ObjectExtensions.DeepClone(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))
+    fullName: Hybrid.Extensions.ObjectExtensions.DeepClone(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.IModuleUserStore`3.Hybrid.Extensions.ParameterCheckExtensions.Required``1(System.Func{Hybrid.Zero.Authorization.IModuleUserStore{{TModuleUser},{TUserKey},{TModuleKey}},System.Boolean},System.String)
+  commentId: M:Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+  parent: Hybrid.Extensions.ParameterCheckExtensions
+  definition: Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+  name: Required<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>(Func<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, Boolean>, String)
+  nameWithType: ParameterCheckExtensions.Required<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>(Func<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, Boolean>, String)
+  fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>(System.Func<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, System.Boolean>, System.String)
+  nameWithType.vb: ParameterCheckExtensions.Required(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))(Func(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), Boolean), String)
+  fullName.vb: Hybrid.Extensions.ParameterCheckExtensions.Required(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))(System.Func(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), System.Boolean), System.String)
+  name.vb: Required(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))(Func(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), Boolean), String)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``1(System.Func{``0,System.Boolean},System.String)
+    name: Required<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>
+    nameWithType: ParameterCheckExtensions.Required<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Zero.Authorization.IModuleUserStore`3
+    name: IModuleUserStore
+    nameWithType: IModuleUserStore
+    fullName: Hybrid.Zero.Authorization.IModuleUserStore
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``1(System.Func{``0,System.Boolean},System.String)
+    name: Required(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))
+    nameWithType: ParameterCheckExtensions.Required(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Zero.Authorization.IModuleUserStore`3
+    name: IModuleUserStore
+    nameWithType: IModuleUserStore
+    fullName: Hybrid.Zero.Authorization.IModuleUserStore
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.IModuleUserStore`3.Hybrid.Extensions.ParameterCheckExtensions.Required``2(System.Func{Hybrid.Zero.Authorization.IModuleUserStore{{TModuleUser},{TUserKey},{TModuleKey}},System.Boolean},System.String)
+  commentId: M:Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+  parent: Hybrid.Extensions.ParameterCheckExtensions
+  definition: Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+  name: Required<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TException>(Func<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, Boolean>, String)
+  nameWithType: ParameterCheckExtensions.Required<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TException>(Func<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, Boolean>, String)
+  fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TException>(System.Func<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, System.Boolean>, System.String)
+  nameWithType.vb: ParameterCheckExtensions.Required(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TException)(Func(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), Boolean), String)
+  fullName.vb: Hybrid.Extensions.ParameterCheckExtensions.Required(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TException)(System.Func(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), System.Boolean), System.String)
+  name.vb: Required(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TException)(Func(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), Boolean), String)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``2(System.Func{``0,System.Boolean},System.String)
+    name: Required<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TException>
+    nameWithType: ParameterCheckExtensions.Required<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TException>
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TException>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Zero.Authorization.IModuleUserStore`3
+    name: IModuleUserStore
+    nameWithType: IModuleUserStore
+    fullName: Hybrid.Zero.Authorization.IModuleUserStore
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``2(System.Func{``0,System.Boolean},System.String)
+    name: Required(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TException)
+    nameWithType: ParameterCheckExtensions.Required(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TException)
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TException)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Zero.Authorization.IModuleUserStore`3
+    name: IModuleUserStore
+    nameWithType: IModuleUserStore
+    fullName: Hybrid.Zero.Authorization.IModuleUserStore
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.IModuleUserStore`3.Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(System.String)
+  commentId: M:Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(``0,System.String)
+  parent: Hybrid.Extensions.ParameterCheckExtensions
+  definition: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(``0,System.String)
+  name: CheckNotNull<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>(String)
+  nameWithType: ParameterCheckExtensions.CheckNotNull<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>(String)
+  fullName: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>(System.String)
+  nameWithType.vb: ParameterCheckExtensions.CheckNotNull(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))(String)
+  fullName.vb: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))(System.String)
+  name.vb: CheckNotNull(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))(String)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(System.String)
+    name: CheckNotNull<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>
+    nameWithType: ParameterCheckExtensions.CheckNotNull<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(System.String)
+    name: CheckNotNull(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))
+    nameWithType: ParameterCheckExtensions.CheckNotNull(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.IModuleUserStore`3.Hybrid.Extensions.TryCatchExtensions.TryCatch``1(System.Action{Hybrid.Zero.Authorization.IModuleUserStore{{TModuleUser},{TUserKey},{TModuleKey}}},System.Action{System.Exception},System.Action{Hybrid.Zero.Authorization.IModuleUserStore{{TModuleUser},{TUserKey},{TModuleKey}}})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception},System.Action{``0})
+  parent: Hybrid.Extensions.TryCatchExtensions
+  definition: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception},System.Action{``0})
+  name: TryCatch<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>(Action<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>, Action<Exception>, Action<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>)
+  nameWithType: TryCatchExtensions.TryCatch<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>(Action<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>, Action<Exception>, Action<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>(System.Action<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>, System.Action<System.Exception>, System.Action<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>)
+  nameWithType.vb: TryCatchExtensions.TryCatch(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))(Action(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey)), Action(Of Exception), Action(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey)))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))(System.Action(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey)), System.Action(Of System.Exception), System.Action(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey)))
+  name.vb: TryCatch(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))(Action(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey)), Action(Of Exception), Action(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey)))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(System.Action{``0},System.Action{System.Exception},System.Action{``0})
+    name: TryCatch<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>
+    nameWithType: TryCatchExtensions.TryCatch<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Zero.Authorization.IModuleUserStore`3
+    name: IModuleUserStore
+    nameWithType: IModuleUserStore
+    fullName: Hybrid.Zero.Authorization.IModuleUserStore
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Zero.Authorization.IModuleUserStore`3
+    name: IModuleUserStore
+    nameWithType: IModuleUserStore
+    fullName: Hybrid.Zero.Authorization.IModuleUserStore
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(System.Action{``0},System.Action{System.Exception},System.Action{``0})
+    name: TryCatch(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))
+    nameWithType: TryCatchExtensions.TryCatch(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Zero.Authorization.IModuleUserStore`3
+    name: IModuleUserStore
+    nameWithType: IModuleUserStore
+    fullName: Hybrid.Zero.Authorization.IModuleUserStore
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Zero.Authorization.IModuleUserStore`3
+    name: IModuleUserStore
+    nameWithType: IModuleUserStore
+    fullName: Hybrid.Zero.Authorization.IModuleUserStore
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.IModuleUserStore`3.Hybrid.Extensions.TryCatchExtensions.TryCatch``1(System.Action{Hybrid.Zero.Authorization.IModuleUserStore{{TModuleUser},{TUserKey},{TModuleKey}}},System.Action{System.Exception})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception})
+  parent: Hybrid.Extensions.TryCatchExtensions
+  definition: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception})
+  name: TryCatch<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>(Action<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>, Action<Exception>)
+  nameWithType: TryCatchExtensions.TryCatch<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>(Action<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>, Action<Exception>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>(System.Action<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>, System.Action<System.Exception>)
+  nameWithType.vb: TryCatchExtensions.TryCatch(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))(Action(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey)), Action(Of Exception))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))(System.Action(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey)), System.Action(Of System.Exception))
+  name.vb: TryCatch(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))(Action(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey)), Action(Of Exception))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(System.Action{``0},System.Action{System.Exception})
+    name: TryCatch<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>
+    nameWithType: TryCatchExtensions.TryCatch<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Zero.Authorization.IModuleUserStore`3
+    name: IModuleUserStore
+    nameWithType: IModuleUserStore
+    fullName: Hybrid.Zero.Authorization.IModuleUserStore
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(System.Action{``0},System.Action{System.Exception})
+    name: TryCatch(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))
+    nameWithType: TryCatchExtensions.TryCatch(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Zero.Authorization.IModuleUserStore`3
+    name: IModuleUserStore
+    nameWithType: IModuleUserStore
+    fullName: Hybrid.Zero.Authorization.IModuleUserStore
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.IModuleUserStore`3.Hybrid.Extensions.TryCatchExtensions.TryCatch``2(System.Func{Hybrid.Zero.Authorization.IModuleUserStore{{TModuleUser},{TUserKey},{TModuleKey}},{TResult}},System.Action{System.Exception},System.Action{Hybrid.Zero.Authorization.IModuleUserStore{{TModuleUser},{TUserKey},{TModuleKey}}})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception},System.Action{``0})
+  parent: Hybrid.Extensions.TryCatchExtensions
+  definition: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception},System.Action{``0})
+  name: TryCatch<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TResult>(Func<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TResult>, Action<Exception>, Action<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>)
+  nameWithType: TryCatchExtensions.TryCatch<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TResult>(Func<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TResult>, Action<Exception>, Action<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TResult>(System.Func<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TResult>, System.Action<System.Exception>, System.Action<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>)
+  nameWithType.vb: TryCatchExtensions.TryCatch(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TResult)(Func(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TResult), Action(Of Exception), Action(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey)))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TResult)(System.Func(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TResult), System.Action(Of System.Exception), System.Action(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey)))
+  name.vb: TryCatch(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TResult)(Func(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TResult), Action(Of Exception), Action(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey)))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(System.Func{``0,``1},System.Action{System.Exception},System.Action{``0})
+    name: TryCatch<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TResult>
+    nameWithType: TryCatchExtensions.TryCatch<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TResult>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Zero.Authorization.IModuleUserStore`3
+    name: IModuleUserStore
+    nameWithType: IModuleUserStore
+    fullName: Hybrid.Zero.Authorization.IModuleUserStore
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Zero.Authorization.IModuleUserStore`3
+    name: IModuleUserStore
+    nameWithType: IModuleUserStore
+    fullName: Hybrid.Zero.Authorization.IModuleUserStore
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(System.Func{``0,``1},System.Action{System.Exception},System.Action{``0})
+    name: TryCatch(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TResult)
+    nameWithType: TryCatchExtensions.TryCatch(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TResult)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Zero.Authorization.IModuleUserStore`3
+    name: IModuleUserStore
+    nameWithType: IModuleUserStore
+    fullName: Hybrid.Zero.Authorization.IModuleUserStore
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Zero.Authorization.IModuleUserStore`3
+    name: IModuleUserStore
+    nameWithType: IModuleUserStore
+    fullName: Hybrid.Zero.Authorization.IModuleUserStore
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.IModuleUserStore`3.Hybrid.Extensions.TryCatchExtensions.TryCatch``2(System.Func{Hybrid.Zero.Authorization.IModuleUserStore{{TModuleUser},{TUserKey},{TModuleKey}},{TResult}},System.Action{System.Exception})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception})
+  parent: Hybrid.Extensions.TryCatchExtensions
+  definition: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception})
+  name: TryCatch<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TResult>(Func<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TResult>, Action<Exception>)
+  nameWithType: TryCatchExtensions.TryCatch<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TResult>(Func<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TResult>, Action<Exception>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TResult>(System.Func<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TResult>, System.Action<System.Exception>)
+  nameWithType.vb: TryCatchExtensions.TryCatch(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TResult)(Func(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TResult), Action(Of Exception))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TResult)(System.Func(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TResult), System.Action(Of System.Exception))
+  name.vb: TryCatch(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TResult)(Func(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TResult), Action(Of Exception))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(System.Func{``0,``1},System.Action{System.Exception})
+    name: TryCatch<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TResult>
+    nameWithType: TryCatchExtensions.TryCatch<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TResult>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Zero.Authorization.IModuleUserStore`3
+    name: IModuleUserStore
+    nameWithType: IModuleUserStore
+    fullName: Hybrid.Zero.Authorization.IModuleUserStore
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(System.Func{``0,``1},System.Action{System.Exception})
+    name: TryCatch(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TResult)
+    nameWithType: TryCatchExtensions.TryCatch(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TResult)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Zero.Authorization.IModuleUserStore`3
+    name: IModuleUserStore
+    nameWithType: IModuleUserStore
+    fullName: Hybrid.Zero.Authorization.IModuleUserStore
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.IModuleUserStore`3.Hybrid.Extensions.TryCatchExtensions.TryFinally``1(System.Action{Hybrid.Zero.Authorization.IModuleUserStore{{TModuleUser},{TUserKey},{TModuleKey}}},System.Action{Hybrid.Zero.Authorization.IModuleUserStore{{TModuleUser},{TUserKey},{TModuleKey}}})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryFinally``1(``0,System.Action{``0},System.Action{``0})
+  parent: Hybrid.Extensions.TryCatchExtensions
+  definition: Hybrid.Extensions.TryCatchExtensions.TryFinally``1(``0,System.Action{``0},System.Action{``0})
+  name: TryFinally<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>(Action<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>, Action<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>)
+  nameWithType: TryCatchExtensions.TryFinally<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>(Action<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>, Action<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryFinally<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>(System.Action<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>, System.Action<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>)
+  nameWithType.vb: TryCatchExtensions.TryFinally(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))(Action(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey)), Action(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey)))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryFinally(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))(System.Action(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey)), System.Action(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey)))
+  name.vb: TryFinally(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))(Action(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey)), Action(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey)))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryFinally``1(System.Action{``0},System.Action{``0})
+    name: TryFinally<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>
+    nameWithType: TryCatchExtensions.TryFinally<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryFinally<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Zero.Authorization.IModuleUserStore`3
+    name: IModuleUserStore
+    nameWithType: IModuleUserStore
+    fullName: Hybrid.Zero.Authorization.IModuleUserStore
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Zero.Authorization.IModuleUserStore`3
+    name: IModuleUserStore
+    nameWithType: IModuleUserStore
+    fullName: Hybrid.Zero.Authorization.IModuleUserStore
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryFinally``1(System.Action{``0},System.Action{``0})
+    name: TryFinally(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))
+    nameWithType: TryCatchExtensions.TryFinally(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryFinally(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Zero.Authorization.IModuleUserStore`3
+    name: IModuleUserStore
+    nameWithType: IModuleUserStore
+    fullName: Hybrid.Zero.Authorization.IModuleUserStore
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Zero.Authorization.IModuleUserStore`3
+    name: IModuleUserStore
+    nameWithType: IModuleUserStore
+    fullName: Hybrid.Zero.Authorization.IModuleUserStore
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Json.JsonExtensions.ToJsonString(System.Boolean,System.Boolean)
+  commentId: M:Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+  parent: Hybrid.Json.JsonExtensions
+  definition: Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+  name: ToJsonString(Boolean, Boolean)
+  nameWithType: JsonExtensions.ToJsonString(Boolean, Boolean)
+  fullName: Hybrid.Json.JsonExtensions.ToJsonString(System.Boolean, System.Boolean)
+  spec.csharp:
+  - uid: Hybrid.Json.JsonExtensions.ToJsonString(System.Boolean,System.Boolean)
+    name: ToJsonString
+    nameWithType: JsonExtensions.ToJsonString
+    fullName: Hybrid.Json.JsonExtensions.ToJsonString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Json.JsonExtensions.ToJsonString(System.Boolean,System.Boolean)
+    name: ToJsonString
+    nameWithType: JsonExtensions.ToJsonString
+    fullName: Hybrid.Json.JsonExtensions.ToJsonString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Mapping.MapperExtensions.MapTo``1
+  commentId: M:Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+  parent: Hybrid.Mapping.MapperExtensions
+  definition: Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+  name: MapTo<TTarget>()
+  nameWithType: MapperExtensions.MapTo<TTarget>()
+  fullName: Hybrid.Mapping.MapperExtensions.MapTo<TTarget>()
+  nameWithType.vb: MapperExtensions.MapTo(Of TTarget)()
+  fullName.vb: Hybrid.Mapping.MapperExtensions.MapTo(Of TTarget)()
+  name.vb: MapTo(Of TTarget)()
+  spec.csharp:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``1
+    name: MapTo<TTarget>
+    nameWithType: MapperExtensions.MapTo<TTarget>
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo<TTarget>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``1
+    name: MapTo(Of TTarget)
+    nameWithType: MapperExtensions.MapTo(Of TTarget)
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo(Of TTarget)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.IModuleUserStore`3.Hybrid.Mapping.MapperExtensions.MapTo``2({TTarget})
+  commentId: M:Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+  parent: Hybrid.Mapping.MapperExtensions
+  definition: Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+  name: MapTo<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TTarget>(TTarget)
+  nameWithType: MapperExtensions.MapTo<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TTarget>(TTarget)
+  fullName: Hybrid.Mapping.MapperExtensions.MapTo<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TTarget>(TTarget)
+  nameWithType.vb: MapperExtensions.MapTo(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TTarget)(TTarget)
+  fullName.vb: Hybrid.Mapping.MapperExtensions.MapTo(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TTarget)(TTarget)
+  name.vb: MapTo(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TTarget)(TTarget)
+  spec.csharp:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``2(``1)
+    name: MapTo<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TTarget>
+    nameWithType: MapperExtensions.MapTo<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TTarget>
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TTarget>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TTarget
+    nameWithType: TTarget
+    fullName: TTarget
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``2(``1)
+    name: MapTo(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TTarget)
+    nameWithType: MapperExtensions.MapTo(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TTarget)
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TTarget)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TTarget
+    nameWithType: TTarget
+    fullName: TTarget
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Reflection.LockExtensions.Locking(System.Action)
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+  parent: Hybrid.Reflection.LockExtensions
+  definition: Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+  name: Locking(Action)
+  nameWithType: LockExtensions.Locking(Action)
+  fullName: Hybrid.Reflection.LockExtensions.Locking(System.Action)
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking(System.Action)
+    name: Locking
+    nameWithType: LockExtensions.Locking
+    fullName: Hybrid.Reflection.LockExtensions.Locking
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking(System.Action)
+    name: Locking
+    nameWithType: LockExtensions.Locking
+    fullName: Hybrid.Reflection.LockExtensions.Locking
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.IModuleUserStore`3.Hybrid.Reflection.LockExtensions.Locking``1(System.Action{Hybrid.Zero.Authorization.IModuleUserStore{{TModuleUser},{TUserKey},{TModuleKey}}})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+  parent: Hybrid.Reflection.LockExtensions
+  definition: Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+  name: Locking<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>(Action<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>)
+  nameWithType: LockExtensions.Locking<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>(Action<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>(System.Action<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>)
+  nameWithType.vb: LockExtensions.Locking(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))(Action(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey)))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))(System.Action(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey)))
+  name.vb: Locking(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))(Action(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey)))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Action{``0})
+    name: Locking<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>
+    nameWithType: LockExtensions.Locking<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Zero.Authorization.IModuleUserStore`3
+    name: IModuleUserStore
+    nameWithType: IModuleUserStore
+    fullName: Hybrid.Zero.Authorization.IModuleUserStore
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Action{``0})
+    name: Locking(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))
+    nameWithType: LockExtensions.Locking(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Zero.Authorization.IModuleUserStore`3
+    name: IModuleUserStore
+    nameWithType: IModuleUserStore
+    fullName: Hybrid.Zero.Authorization.IModuleUserStore
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Reflection.LockExtensions.Locking``1(System.Func{{TResult}})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+  parent: Hybrid.Reflection.LockExtensions
+  definition: Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+  name: Locking<TResult>(Func<TResult>)
+  nameWithType: LockExtensions.Locking<TResult>(Func<TResult>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<TResult>(System.Func<TResult>)
+  nameWithType.vb: LockExtensions.Locking(Of TResult)(Func(Of TResult))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of TResult)(System.Func(Of TResult))
+  name.vb: Locking(Of TResult)(Func(Of TResult))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Func{``0})
+    name: Locking<TResult>
+    nameWithType: LockExtensions.Locking<TResult>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Func{``0})
+    name: Locking(Of TResult)
+    nameWithType: LockExtensions.Locking(Of TResult)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.IModuleUserStore`3.Hybrid.Reflection.LockExtensions.Locking``2(System.Func{Hybrid.Zero.Authorization.IModuleUserStore{{TModuleUser},{TUserKey},{TModuleKey}},{TResult}})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+  parent: Hybrid.Reflection.LockExtensions
+  definition: Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+  name: Locking<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TResult>(Func<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TResult>)
+  nameWithType: LockExtensions.Locking<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TResult>(Func<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TResult>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TResult>(System.Func<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TResult>)
+  nameWithType.vb: LockExtensions.Locking(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TResult)(Func(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TResult))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TResult)(System.Func(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TResult))
+  name.vb: Locking(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TResult)(Func(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TResult))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``2(System.Func{``0,``1})
+    name: Locking<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TResult>
+    nameWithType: LockExtensions.Locking<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TResult>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Zero.Authorization.IModuleUserStore`3
+    name: IModuleUserStore
+    nameWithType: IModuleUserStore
+    fullName: Hybrid.Zero.Authorization.IModuleUserStore
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``2(System.Func{``0,``1})
+    name: Locking(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TResult)
+    nameWithType: LockExtensions.Locking(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TResult)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Zero.Authorization.IModuleUserStore`3
+    name: IModuleUserStore
+    nameWithType: IModuleUserStore
+    fullName: Hybrid.Zero.Authorization.IModuleUserStore
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.IModuleUserStore`3.Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+  parent: Hybrid.Domain.Entities.EntityExtensions
+  definition: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+  name: CheckICreatedTime<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TKey>()
+  nameWithType: EntityExtensions.CheckICreatedTime<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TKey>()
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TKey>()
+  nameWithType.vb: EntityExtensions.CheckICreatedTime(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TKey)()
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TKey)()
+  name.vb: CheckICreatedTime(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TKey)()
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2
+    name: CheckICreatedTime<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TKey>
+    nameWithType: EntityExtensions.CheckICreatedTime<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2
+    name: CheckICreatedTime(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TKey)
+    nameWithType: EntityExtensions.CheckICreatedTime(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.IModuleUserStore`3.Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(System.Security.Principal.IPrincipal)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+  parent: Hybrid.Domain.Entities.EntityExtensions
+  definition: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+  name: CheckICreationAudited<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TKey, TUserKey>(IPrincipal)
+  nameWithType: EntityExtensions.CheckICreationAudited<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TKey, TUserKey>(IPrincipal)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TKey, TUserKey>(System.Security.Principal.IPrincipal)
+  nameWithType.vb: EntityExtensions.CheckICreationAudited(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TKey, TUserKey)(IPrincipal)
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TKey, TUserKey)(System.Security.Principal.IPrincipal)
+  name.vb: CheckICreationAudited(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TKey, TUserKey)(IPrincipal)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(System.Security.Principal.IPrincipal)
+    name: CheckICreationAudited<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TKey, TUserKey>
+    nameWithType: EntityExtensions.CheckICreationAudited<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TKey, TUserKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TKey, TUserKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(System.Security.Principal.IPrincipal)
+    name: CheckICreationAudited(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TKey, TUserKey)
+    nameWithType: EntityExtensions.CheckICreationAudited(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TKey, TUserKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TKey, TUserKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.IModuleUserStore`3.Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(System.Security.Principal.IPrincipal)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+  parent: Hybrid.Domain.Entities.EntityExtensions
+  definition: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+  name: CheckIUpdateAudited<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TKey, TUserKey>(IPrincipal)
+  nameWithType: EntityExtensions.CheckIUpdateAudited<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TKey, TUserKey>(IPrincipal)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TKey, TUserKey>(System.Security.Principal.IPrincipal)
+  nameWithType.vb: EntityExtensions.CheckIUpdateAudited(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TKey, TUserKey)(IPrincipal)
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TKey, TUserKey)(System.Security.Principal.IPrincipal)
+  name.vb: CheckIUpdateAudited(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TKey, TUserKey)(IPrincipal)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(System.Security.Principal.IPrincipal)
+    name: CheckIUpdateAudited<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TKey, TUserKey>
+    nameWithType: EntityExtensions.CheckIUpdateAudited<IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TKey, TUserKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited<Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>, TKey, TUserKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(System.Security.Principal.IPrincipal)
+    name: CheckIUpdateAudited(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TKey, TUserKey)
+    nameWithType: EntityExtensions.CheckIUpdateAudited(Of IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TKey, TUserKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited(Of Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey), TKey, TUserKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+  isExternal: true
+  name: CastTo(Object, Type)
+  nameWithType: ObjectExtensions.CastTo(Object, Type)
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo(System.Object, System.Type)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+    name: CastTo
+    nameWithType: ObjectExtensions.CastTo
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+    name: CastTo
+    nameWithType: ObjectExtensions.CastTo
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ObjectExtensions
+  commentId: T:Hybrid.Extensions.ObjectExtensions
+  parent: Hybrid.Extensions
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: Hybrid.Extensions.ObjectExtensions
+- uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+  isExternal: true
+  name: CastTo<T>(Object)
+  nameWithType: ObjectExtensions.CastTo<T>(Object)
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>(System.Object)
+  nameWithType.vb: ObjectExtensions.CastTo(Of T)(Object)
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)(System.Object)
+  name.vb: CastTo(Of T)(Object)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+    name: CastTo<T>
+    nameWithType: ObjectExtensions.CastTo<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+    name: CastTo(Of T)
+    nameWithType: ObjectExtensions.CastTo(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+  isExternal: true
+  name: CastTo<T>(Object, T)
+  nameWithType: ObjectExtensions.CastTo<T>(Object, T)
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>(System.Object, T)
+  nameWithType.vb: ObjectExtensions.CastTo(Of T)(Object, T)
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)(System.Object, T)
+  name.vb: CastTo(Of T)(Object, T)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+    name: CastTo<T>
+    nameWithType: ObjectExtensions.CastTo<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+    name: CastTo(Of T)
+    nameWithType: ObjectExtensions.CastTo(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+  commentId: M:Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+  name: IsIn<T>(T, T[])
+  nameWithType: ObjectExtensions.IsIn<T>(T, T[])
+  fullName: Hybrid.Extensions.ObjectExtensions.IsIn<T>(T, T[])
+  nameWithType.vb: ObjectExtensions.IsIn(Of T)(T, T())
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.IsIn(Of T)(T, T())
+  name.vb: IsIn(Of T)(T, T())
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+    name: IsIn<T>
+    nameWithType: ObjectExtensions.IsIn<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.IsIn<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+    name: IsIn(Of T)
+    nameWithType: ObjectExtensions.IsIn(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.IsIn(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  isExternal: true
+  name: ToDynamic(Object)
+  nameWithType: ObjectExtensions.ToDynamic(Object)
+  fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+    name: ToDynamic
+    nameWithType: ObjectExtensions.ToDynamic
+    fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+    name: ToDynamic
+    nameWithType: ObjectExtensions.ToDynamic
+    fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ObjectExtensions.DeepClone``1(``0)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.DeepClone``1(``0)
+  name: DeepClone<T>(T)
+  nameWithType: ObjectExtensions.DeepClone<T>(T)
+  fullName: Hybrid.Extensions.ObjectExtensions.DeepClone<T>(T)
+  nameWithType.vb: ObjectExtensions.DeepClone(Of T)(T)
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.DeepClone(Of T)(T)
+  name.vb: DeepClone(Of T)(T)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.DeepClone``1(``0)
+    name: DeepClone<T>
+    nameWithType: ObjectExtensions.DeepClone<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.DeepClone<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.DeepClone``1(``0)
+    name: DeepClone(Of T)
+    nameWithType: ObjectExtensions.DeepClone(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.DeepClone(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+  commentId: M:Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+  isExternal: true
+  name: Required<T>(T, Func<T, Boolean>, String)
+  nameWithType: ParameterCheckExtensions.Required<T>(T, Func<T, Boolean>, String)
+  fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<T>(T, System.Func<T, System.Boolean>, System.String)
+  nameWithType.vb: ParameterCheckExtensions.Required(Of T)(T, Func(Of T, Boolean), String)
+  fullName.vb: Hybrid.Extensions.ParameterCheckExtensions.Required(Of T)(T, System.Func(Of T, System.Boolean), System.String)
+  name.vb: Required(Of T)(T, Func(Of T, Boolean), String)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+    name: Required<T>
+    nameWithType: ParameterCheckExtensions.Required<T>
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+    name: Required(Of T)
+    nameWithType: ParameterCheckExtensions.Required(Of T)
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ParameterCheckExtensions
+  commentId: T:Hybrid.Extensions.ParameterCheckExtensions
+  parent: Hybrid.Extensions
+  name: ParameterCheckExtensions
+  nameWithType: ParameterCheckExtensions
+  fullName: Hybrid.Extensions.ParameterCheckExtensions
+- uid: Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+  commentId: M:Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+  isExternal: true
+  name: Required<T, TException>(T, Func<T, Boolean>, String)
+  nameWithType: ParameterCheckExtensions.Required<T, TException>(T, Func<T, Boolean>, String)
+  fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<T, TException>(T, System.Func<T, System.Boolean>, System.String)
+  nameWithType.vb: ParameterCheckExtensions.Required(Of T, TException)(T, Func(Of T, Boolean), String)
+  fullName.vb: Hybrid.Extensions.ParameterCheckExtensions.Required(Of T, TException)(T, System.Func(Of T, System.Boolean), System.String)
+  name.vb: Required(Of T, TException)(T, Func(Of T, Boolean), String)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+    name: Required<T, TException>
+    nameWithType: ParameterCheckExtensions.Required<T, TException>
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<T, TException>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+    name: Required(Of T, TException)
+    nameWithType: ParameterCheckExtensions.Required(Of T, TException)
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required(Of T, TException)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(``0,System.String)
+  commentId: M:Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(``0,System.String)
+  isExternal: true
+  name: CheckNotNull<T>(T, String)
+  nameWithType: ParameterCheckExtensions.CheckNotNull<T>(T, String)
+  fullName: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull<T>(T, System.String)
+  nameWithType.vb: ParameterCheckExtensions.CheckNotNull(Of T)(T, String)
+  fullName.vb: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull(Of T)(T, System.String)
+  name.vb: CheckNotNull(Of T)(T, String)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(``0,System.String)
+    name: CheckNotNull<T>
+    nameWithType: ParameterCheckExtensions.CheckNotNull<T>
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(``0,System.String)
+    name: CheckNotNull(Of T)
+    nameWithType: ParameterCheckExtensions.CheckNotNull(Of T)
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception},System.Action{``0})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception},System.Action{``0})
+  isExternal: true
+  name: TryCatch<T>(T, Action<T>, Action<Exception>, Action<T>)
+  nameWithType: TryCatchExtensions.TryCatch<T>(T, Action<T>, Action<Exception>, Action<T>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<T>(T, System.Action<T>, System.Action<System.Exception>, System.Action<T>)
+  nameWithType.vb: TryCatchExtensions.TryCatch(Of T)(T, Action(Of T), Action(Of Exception), Action(Of T))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of T)(T, System.Action(Of T), System.Action(Of System.Exception), System.Action(Of T))
+  name.vb: TryCatch(Of T)(T, Action(Of T), Action(Of Exception), Action(Of T))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception},System.Action{``0})
+    name: TryCatch<T>
+    nameWithType: TryCatchExtensions.TryCatch<T>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception},System.Action{``0})
+    name: TryCatch(Of T)
+    nameWithType: TryCatchExtensions.TryCatch(Of T)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.TryCatchExtensions
+  commentId: T:Hybrid.Extensions.TryCatchExtensions
+  parent: Hybrid.Extensions
+  name: TryCatchExtensions
+  nameWithType: TryCatchExtensions
+  fullName: Hybrid.Extensions.TryCatchExtensions
+- uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception})
+  isExternal: true
+  name: TryCatch<T>(T, Action<T>, Action<Exception>)
+  nameWithType: TryCatchExtensions.TryCatch<T>(T, Action<T>, Action<Exception>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<T>(T, System.Action<T>, System.Action<System.Exception>)
+  nameWithType.vb: TryCatchExtensions.TryCatch(Of T)(T, Action(Of T), Action(Of Exception))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of T)(T, System.Action(Of T), System.Action(Of System.Exception))
+  name.vb: TryCatch(Of T)(T, Action(Of T), Action(Of Exception))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception})
+    name: TryCatch<T>
+    nameWithType: TryCatchExtensions.TryCatch<T>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception})
+    name: TryCatch(Of T)
+    nameWithType: TryCatchExtensions.TryCatch(Of T)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception},System.Action{``0})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception},System.Action{``0})
+  isExternal: true
+  name: TryCatch<T, TResult>(T, Func<T, TResult>, Action<Exception>, Action<T>)
+  nameWithType: TryCatchExtensions.TryCatch<T, TResult>(T, Func<T, TResult>, Action<Exception>, Action<T>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<T, TResult>(T, System.Func<T, TResult>, System.Action<System.Exception>, System.Action<T>)
+  nameWithType.vb: TryCatchExtensions.TryCatch(Of T, TResult)(T, Func(Of T, TResult), Action(Of Exception), Action(Of T))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of T, TResult)(T, System.Func(Of T, TResult), System.Action(Of System.Exception), System.Action(Of T))
+  name.vb: TryCatch(Of T, TResult)(T, Func(Of T, TResult), Action(Of Exception), Action(Of T))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception},System.Action{``0})
+    name: TryCatch<T, TResult>
+    nameWithType: TryCatchExtensions.TryCatch<T, TResult>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<T, TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception},System.Action{``0})
+    name: TryCatch(Of T, TResult)
+    nameWithType: TryCatchExtensions.TryCatch(Of T, TResult)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of T, TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception})
+  isExternal: true
+  name: TryCatch<T, TResult>(T, Func<T, TResult>, Action<Exception>)
+  nameWithType: TryCatchExtensions.TryCatch<T, TResult>(T, Func<T, TResult>, Action<Exception>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<T, TResult>(T, System.Func<T, TResult>, System.Action<System.Exception>)
+  nameWithType.vb: TryCatchExtensions.TryCatch(Of T, TResult)(T, Func(Of T, TResult), Action(Of Exception))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of T, TResult)(T, System.Func(Of T, TResult), System.Action(Of System.Exception))
+  name.vb: TryCatch(Of T, TResult)(T, Func(Of T, TResult), Action(Of Exception))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception})
+    name: TryCatch<T, TResult>
+    nameWithType: TryCatchExtensions.TryCatch<T, TResult>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<T, TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception})
+    name: TryCatch(Of T, TResult)
+    nameWithType: TryCatchExtensions.TryCatch(Of T, TResult)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of T, TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.TryCatchExtensions.TryFinally``1(``0,System.Action{``0},System.Action{``0})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryFinally``1(``0,System.Action{``0},System.Action{``0})
+  isExternal: true
+  name: TryFinally<T>(T, Action<T>, Action<T>)
+  nameWithType: TryCatchExtensions.TryFinally<T>(T, Action<T>, Action<T>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryFinally<T>(T, System.Action<T>, System.Action<T>)
+  nameWithType.vb: TryCatchExtensions.TryFinally(Of T)(T, Action(Of T), Action(Of T))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryFinally(Of T)(T, System.Action(Of T), System.Action(Of T))
+  name.vb: TryFinally(Of T)(T, Action(Of T), Action(Of T))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryFinally``1(``0,System.Action{``0},System.Action{``0})
+    name: TryFinally<T>
+    nameWithType: TryCatchExtensions.TryFinally<T>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryFinally<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryFinally``1(``0,System.Action{``0},System.Action{``0})
+    name: TryFinally(Of T)
+    nameWithType: TryCatchExtensions.TryFinally(Of T)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryFinally(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+  commentId: M:Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+  isExternal: true
+  name: ToJsonString(Object, Boolean, Boolean)
+  nameWithType: JsonExtensions.ToJsonString(Object, Boolean, Boolean)
+  fullName: Hybrid.Json.JsonExtensions.ToJsonString(System.Object, System.Boolean, System.Boolean)
+  spec.csharp:
+  - uid: Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+    name: ToJsonString
+    nameWithType: JsonExtensions.ToJsonString
+    fullName: Hybrid.Json.JsonExtensions.ToJsonString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+    name: ToJsonString
+    nameWithType: JsonExtensions.ToJsonString
+    fullName: Hybrid.Json.JsonExtensions.ToJsonString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Json.JsonExtensions
+  commentId: T:Hybrid.Json.JsonExtensions
+  parent: Hybrid.Json
+  name: JsonExtensions
+  nameWithType: JsonExtensions
+  fullName: Hybrid.Json.JsonExtensions
+- uid: Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+  commentId: M:Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+  isExternal: true
+  name: MapTo<TTarget>(Object)
+  nameWithType: MapperExtensions.MapTo<TTarget>(Object)
+  fullName: Hybrid.Mapping.MapperExtensions.MapTo<TTarget>(System.Object)
+  nameWithType.vb: MapperExtensions.MapTo(Of TTarget)(Object)
+  fullName.vb: Hybrid.Mapping.MapperExtensions.MapTo(Of TTarget)(System.Object)
+  name.vb: MapTo(Of TTarget)(Object)
+  spec.csharp:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+    name: MapTo<TTarget>
+    nameWithType: MapperExtensions.MapTo<TTarget>
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo<TTarget>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+    name: MapTo(Of TTarget)
+    nameWithType: MapperExtensions.MapTo(Of TTarget)
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo(Of TTarget)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Mapping.MapperExtensions
+  commentId: T:Hybrid.Mapping.MapperExtensions
+  parent: Hybrid.Mapping
+  name: MapperExtensions
+  nameWithType: MapperExtensions
+  fullName: Hybrid.Mapping.MapperExtensions
+- uid: Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+  commentId: M:Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+  name: MapTo<TSource, TTarget>(TSource, TTarget)
+  nameWithType: MapperExtensions.MapTo<TSource, TTarget>(TSource, TTarget)
+  fullName: Hybrid.Mapping.MapperExtensions.MapTo<TSource, TTarget>(TSource, TTarget)
+  nameWithType.vb: MapperExtensions.MapTo(Of TSource, TTarget)(TSource, TTarget)
+  fullName.vb: Hybrid.Mapping.MapperExtensions.MapTo(Of TSource, TTarget)(TSource, TTarget)
+  name.vb: MapTo(Of TSource, TTarget)(TSource, TTarget)
+  spec.csharp:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+    name: MapTo<TSource, TTarget>
+    nameWithType: MapperExtensions.MapTo<TSource, TTarget>
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo<TSource, TTarget>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TTarget
+    nameWithType: TTarget
+    fullName: TTarget
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+    name: MapTo(Of TSource, TTarget)
+    nameWithType: MapperExtensions.MapTo(Of TSource, TTarget)
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo(Of TSource, TTarget)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TTarget
+    nameWithType: TTarget
+    fullName: TTarget
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+  isExternal: true
+  name: Locking(Object, Action)
+  nameWithType: LockExtensions.Locking(Object, Action)
+  fullName: Hybrid.Reflection.LockExtensions.Locking(System.Object, System.Action)
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+    name: Locking
+    nameWithType: LockExtensions.Locking
+    fullName: Hybrid.Reflection.LockExtensions.Locking
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+    name: Locking
+    nameWithType: LockExtensions.Locking
+    fullName: Hybrid.Reflection.LockExtensions.Locking
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Reflection.LockExtensions
+  commentId: T:Hybrid.Reflection.LockExtensions
+  parent: Hybrid.Reflection
+  name: LockExtensions
+  nameWithType: LockExtensions
+  fullName: Hybrid.Reflection.LockExtensions
+- uid: Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+  isExternal: true
+  name: Locking<T>(T, Action<T>)
+  nameWithType: LockExtensions.Locking<T>(T, Action<T>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<T>(T, System.Action<T>)
+  nameWithType.vb: LockExtensions.Locking(Of T)(T, Action(Of T))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of T)(T, System.Action(Of T))
+  name.vb: Locking(Of T)(T, Action(Of T))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+    name: Locking<T>
+    nameWithType: LockExtensions.Locking<T>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+    name: Locking(Of T)
+    nameWithType: LockExtensions.Locking(Of T)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+  isExternal: true
+  name: Locking<TResult>(Object, Func<TResult>)
+  nameWithType: LockExtensions.Locking<TResult>(Object, Func<TResult>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<TResult>(System.Object, System.Func<TResult>)
+  nameWithType.vb: LockExtensions.Locking(Of TResult)(Object, Func(Of TResult))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of TResult)(System.Object, System.Func(Of TResult))
+  name.vb: Locking(Of TResult)(Object, Func(Of TResult))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+    name: Locking<TResult>
+    nameWithType: LockExtensions.Locking<TResult>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+    name: Locking(Of TResult)
+    nameWithType: LockExtensions.Locking(Of TResult)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+  isExternal: true
+  name: Locking<TSource, TResult>(TSource, Func<TSource, TResult>)
+  nameWithType: LockExtensions.Locking<TSource, TResult>(TSource, Func<TSource, TResult>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<TSource, TResult>(TSource, System.Func<TSource, TResult>)
+  nameWithType.vb: LockExtensions.Locking(Of TSource, TResult)(TSource, Func(Of TSource, TResult))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of TSource, TResult)(TSource, System.Func(Of TSource, TResult))
+  name.vb: Locking(Of TSource, TResult)(TSource, Func(Of TSource, TResult))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+    name: Locking<TSource, TResult>
+    nameWithType: LockExtensions.Locking<TSource, TResult>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<TSource, TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+    name: Locking(Of TSource, TResult)
+    nameWithType: LockExtensions.Locking(Of TSource, TResult)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of TSource, TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+  name: CheckICreatedTime<TEntity, TKey>(TEntity)
+  nameWithType: EntityExtensions.CheckICreatedTime<TEntity, TKey>(TEntity)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime<TEntity, TKey>(TEntity)
+  nameWithType.vb: EntityExtensions.CheckICreatedTime(Of TEntity, TKey)(TEntity)
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime(Of TEntity, TKey)(TEntity)
+  name.vb: CheckICreatedTime(Of TEntity, TKey)(TEntity)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+    name: CheckICreatedTime<TEntity, TKey>
+    nameWithType: EntityExtensions.CheckICreatedTime<TEntity, TKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime<TEntity, TKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+    name: CheckICreatedTime(Of TEntity, TKey)
+    nameWithType: EntityExtensions.CheckICreatedTime(Of TEntity, TKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime(Of TEntity, TKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Domain.Entities.EntityExtensions
+  commentId: T:Hybrid.Domain.Entities.EntityExtensions
+  parent: Hybrid.Domain.Entities
+  name: EntityExtensions
+  nameWithType: EntityExtensions
+  fullName: Hybrid.Domain.Entities.EntityExtensions
+- uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+  isExternal: true
+  name: CheckICreationAudited<TEntity, TKey, TUserKey>(TEntity, IPrincipal)
+  nameWithType: EntityExtensions.CheckICreationAudited<TEntity, TKey, TUserKey>(TEntity, IPrincipal)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited<TEntity, TKey, TUserKey>(TEntity, System.Security.Principal.IPrincipal)
+  nameWithType.vb: EntityExtensions.CheckICreationAudited(Of TEntity, TKey, TUserKey)(TEntity, IPrincipal)
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited(Of TEntity, TKey, TUserKey)(TEntity, System.Security.Principal.IPrincipal)
+  name.vb: CheckICreationAudited(Of TEntity, TKey, TUserKey)(TEntity, IPrincipal)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+    name: CheckICreationAudited<TEntity, TKey, TUserKey>
+    nameWithType: EntityExtensions.CheckICreationAudited<TEntity, TKey, TUserKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited<TEntity, TKey, TUserKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+    name: CheckICreationAudited(Of TEntity, TKey, TUserKey)
+    nameWithType: EntityExtensions.CheckICreationAudited(Of TEntity, TKey, TUserKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited(Of TEntity, TKey, TUserKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+  isExternal: true
+  name: CheckIUpdateAudited<TEntity, TKey, TUserKey>(TEntity, IPrincipal)
+  nameWithType: EntityExtensions.CheckIUpdateAudited<TEntity, TKey, TUserKey>(TEntity, IPrincipal)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited<TEntity, TKey, TUserKey>(TEntity, System.Security.Principal.IPrincipal)
+  nameWithType.vb: EntityExtensions.CheckIUpdateAudited(Of TEntity, TKey, TUserKey)(TEntity, IPrincipal)
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited(Of TEntity, TKey, TUserKey)(TEntity, System.Security.Principal.IPrincipal)
+  name.vb: CheckIUpdateAudited(Of TEntity, TKey, TUserKey)(TEntity, IPrincipal)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+    name: CheckIUpdateAudited<TEntity, TKey, TUserKey>
+    nameWithType: EntityExtensions.CheckIUpdateAudited<TEntity, TKey, TUserKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited<TEntity, TKey, TUserKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+    name: CheckIUpdateAudited(Of TEntity, TKey, TUserKey)
+    nameWithType: EntityExtensions.CheckIUpdateAudited(Of TEntity, TKey, TUserKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited(Of TEntity, TKey, TUserKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions
+  commentId: N:Hybrid.Extensions
+  name: Hybrid.Extensions
+  nameWithType: Hybrid.Extensions
+  fullName: Hybrid.Extensions
+- uid: Hybrid.Json
+  commentId: N:Hybrid.Json
+  name: Hybrid.Json
+  nameWithType: Hybrid.Json
+  fullName: Hybrid.Json
+- uid: Hybrid.Mapping
+  commentId: N:Hybrid.Mapping
+  name: Hybrid.Mapping
+  nameWithType: Hybrid.Mapping
+  fullName: Hybrid.Mapping
+- uid: Hybrid.Reflection
+  commentId: N:Hybrid.Reflection
+  name: Hybrid.Reflection
+  nameWithType: Hybrid.Reflection
+  fullName: Hybrid.Reflection
+- uid: Hybrid.Domain.Entities
+  commentId: N:Hybrid.Domain.Entities
+  name: Hybrid.Domain.Entities
+  nameWithType: Hybrid.Domain.Entities
+  fullName: Hybrid.Domain.Entities
+- uid: Hybrid.Zero.Authorization.IModuleUserStore`3.ModuleUsers*
+  commentId: Overload:Hybrid.Zero.Authorization.IModuleUserStore`3.ModuleUsers
+  name: ModuleUsers
+  nameWithType: IModuleUserStore<TModuleUser, TUserKey, TModuleKey>.ModuleUsers
+  fullName: Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>.ModuleUsers
+  nameWithType.vb: IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey).ModuleUsers
+  fullName.vb: Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey).ModuleUsers
+- uid: System.Linq.IQueryable{{TModuleUser}}
+  commentId: T:System.Linq.IQueryable{`0}
+  parent: System.Linq
+  definition: System.Linq.IQueryable`1
+  name: IQueryable<TModuleUser>
+  nameWithType: IQueryable<TModuleUser>
+  fullName: System.Linq.IQueryable<TModuleUser>
+  nameWithType.vb: IQueryable(Of TModuleUser)
+  fullName.vb: System.Linq.IQueryable(Of TModuleUser)
+  name.vb: IQueryable(Of TModuleUser)
+  spec.csharp:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    nameWithType: IQueryable
+    fullName: System.Linq.IQueryable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    nameWithType: IQueryable
+    fullName: System.Linq.IQueryable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq.IQueryable`1
+  commentId: T:System.Linq.IQueryable`1
+  isExternal: true
+  name: IQueryable<T>
+  nameWithType: IQueryable<T>
+  fullName: System.Linq.IQueryable<T>
+  nameWithType.vb: IQueryable(Of T)
+  fullName.vb: System.Linq.IQueryable(Of T)
+  name.vb: IQueryable(Of T)
+  spec.csharp:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    nameWithType: IQueryable
+    fullName: System.Linq.IQueryable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    nameWithType: IQueryable
+    fullName: System.Linq.IQueryable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq
+  commentId: N:System.Linq
+  isExternal: true
+  name: System.Linq
+  nameWithType: System.Linq
+  fullName: System.Linq
+- uid: Hybrid.Zero.Authorization.IModuleUserStore`3.CheckModuleUserExists*
+  commentId: Overload:Hybrid.Zero.Authorization.IModuleUserStore`3.CheckModuleUserExists
+  name: CheckModuleUserExists
+  nameWithType: IModuleUserStore<TModuleUser, TUserKey, TModuleKey>.CheckModuleUserExists
+  fullName: Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>.CheckModuleUserExists
+  nameWithType.vb: IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey).CheckModuleUserExists
+  fullName.vb: Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey).CheckModuleUserExists
+- uid: System.Linq.Expressions.Expression{System.Func{{TModuleUser},System.Boolean}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  name: Expression<Func<TModuleUser, Boolean>>
+  nameWithType: Expression<Func<TModuleUser, Boolean>>
+  fullName: System.Linq.Expressions.Expression<System.Func<TModuleUser, System.Boolean>>
+  nameWithType.vb: Expression(Of Func(Of TModuleUser, Boolean))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of TModuleUser, System.Boolean))
+  name.vb: Expression(Of Func(Of TModuleUser, Boolean))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TModuleUser
+    nameWithType: TModuleUser
+    fullName: TModuleUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDelegate
+    nameWithType: TDelegate
+    fullName: TDelegate
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDelegate
+    nameWithType: TDelegate
+    fullName: TDelegate
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Hybrid.Zero.Authorization.IModuleUserStore`3.SetUserModules*
+  commentId: Overload:Hybrid.Zero.Authorization.IModuleUserStore`3.SetUserModules
+  name: SetUserModules
+  nameWithType: IModuleUserStore<TModuleUser, TUserKey, TModuleKey>.SetUserModules
+  fullName: Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>.SetUserModules
+  nameWithType.vb: IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey).SetUserModules
+  fullName.vb: Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey).SetUserModules
+- uid: '{TUserKey}'
+  commentId: '!:TUserKey'
+  definition: TUserKey
+  name: TUserKey
+  nameWithType: TUserKey
+  fullName: TUserKey
+- uid: '{TModuleKey}[]'
+  isExternal: true
+  name: TModuleKey[]
+  nameWithType: TModuleKey[]
+  fullName: TModuleKey[]
+  nameWithType.vb: TModuleKey()
+  fullName.vb: TModuleKey()
+  name.vb: TModuleKey()
+  spec.csharp:
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: TModuleKey
+    nameWithType: TModuleKey
+    fullName: TModuleKey
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Threading.Tasks.Task{Hybrid.Data.OperationResult}
+  commentId: T:System.Threading.Tasks.Task{Hybrid.Data.OperationResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<OperationResult>
+  nameWithType: Task<OperationResult>
+  fullName: System.Threading.Tasks.Task<Hybrid.Data.OperationResult>
+  nameWithType.vb: Task(Of OperationResult)
+  fullName.vb: System.Threading.Tasks.Task(Of Hybrid.Data.OperationResult)
+  name.vb: Task(Of OperationResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Data.OperationResult
+    name: OperationResult
+    nameWithType: OperationResult
+    fullName: Hybrid.Data.OperationResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Data.OperationResult
+    name: OperationResult
+    nameWithType: OperationResult
+    fullName: Hybrid.Data.OperationResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TUserKey
+  name: TUserKey
+  nameWithType: TUserKey
+  fullName: TUserKey
+- uid: Hybrid.Zero.Authorization.IModuleUserStore`3.GetUserSelfModuleIds*
+  commentId: Overload:Hybrid.Zero.Authorization.IModuleUserStore`3.GetUserSelfModuleIds
+  name: GetUserSelfModuleIds
+  nameWithType: IModuleUserStore<TModuleUser, TUserKey, TModuleKey>.GetUserSelfModuleIds
+  fullName: Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>.GetUserSelfModuleIds
+  nameWithType.vb: IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey).GetUserSelfModuleIds
+  fullName.vb: Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey).GetUserSelfModuleIds
+- uid: Hybrid.Zero.Authorization.IModuleUserStore`3.GetUserWithRoleModuleIds*
+  commentId: Overload:Hybrid.Zero.Authorization.IModuleUserStore`3.GetUserWithRoleModuleIds
+  name: GetUserWithRoleModuleIds
+  nameWithType: IModuleUserStore<TModuleUser, TUserKey, TModuleKey>.GetUserWithRoleModuleIds
+  fullName: Hybrid.Zero.Authorization.IModuleUserStore<TModuleUser, TUserKey, TModuleKey>.GetUserWithRoleModuleIds
+  nameWithType.vb: IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey).GetUserWithRoleModuleIds
+  fullName.vb: Hybrid.Zero.Authorization.IModuleUserStore(Of TModuleUser, TUserKey, TModuleKey).GetUserWithRoleModuleIds

@@ -1,0 +1,591 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Audits.AuditingHelper
+  commentId: T:Hybrid.Audits.AuditingHelper
+  id: AuditingHelper
+  parent: Hybrid.Audits
+  children:
+  - Hybrid.Audits.AuditingHelper.Serialize(System.Object,System.Collections.Generic.List{System.Type})
+  - Hybrid.Audits.AuditingHelper.ShouldSaveAudit(Hybrid.Audits.Configuration.IAuditingConfiguration,System.Security.Claims.ClaimsPrincipal,Hybrid.Authorization.Functions.IFunction,System.Reflection.MethodInfo)
+  langs:
+  - csharp
+  - vb
+  name: AuditingHelper
+  nameWithType: AuditingHelper
+  fullName: Hybrid.Audits.AuditingHelper
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid/Audits/AuditingHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: AuditingHelper
+    path: ../src/Hybrid/Audits/AuditingHelper.cs
+    startLine: 21
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Audits
+  syntax:
+    content: public static class AuditingHelper
+    content.vb: Public Module AuditingHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.Audits.AuditingHelper.ShouldSaveAudit(Hybrid.Audits.Configuration.IAuditingConfiguration,System.Security.Claims.ClaimsPrincipal,Hybrid.Authorization.Functions.IFunction,System.Reflection.MethodInfo)
+  commentId: M:Hybrid.Audits.AuditingHelper.ShouldSaveAudit(Hybrid.Audits.Configuration.IAuditingConfiguration,System.Security.Claims.ClaimsPrincipal,Hybrid.Authorization.Functions.IFunction,System.Reflection.MethodInfo)
+  id: ShouldSaveAudit(Hybrid.Audits.Configuration.IAuditingConfiguration,System.Security.Claims.ClaimsPrincipal,Hybrid.Authorization.Functions.IFunction,System.Reflection.MethodInfo)
+  parent: Hybrid.Audits.AuditingHelper
+  langs:
+  - csharp
+  - vb
+  name: ShouldSaveAudit(IAuditingConfiguration, ClaimsPrincipal, IFunction, MethodInfo)
+  nameWithType: AuditingHelper.ShouldSaveAudit(IAuditingConfiguration, ClaimsPrincipal, IFunction, MethodInfo)
+  fullName: Hybrid.Audits.AuditingHelper.ShouldSaveAudit(Hybrid.Audits.Configuration.IAuditingConfiguration, System.Security.Claims.ClaimsPrincipal, Hybrid.Authorization.Functions.IFunction, System.Reflection.MethodInfo)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Audits/AuditingHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ShouldSaveAudit
+    path: ../src/Hybrid/Audits/AuditingHelper.cs
+    startLine: 23
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Audits
+  syntax:
+    content: public static bool ShouldSaveAudit(IAuditingConfiguration configuration, ClaimsPrincipal principal, IFunction function, MethodInfo methodInfo)
+    parameters:
+    - id: configuration
+      type: Hybrid.Audits.Configuration.IAuditingConfiguration
+    - id: principal
+      type: System.Security.Claims.ClaimsPrincipal
+    - id: function
+      type: Hybrid.Authorization.Functions.IFunction
+    - id: methodInfo
+      type: System.Reflection.MethodInfo
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function ShouldSaveAudit(configuration As IAuditingConfiguration, principal As ClaimsPrincipal, function As IFunction, methodInfo As MethodInfo) As Boolean
+  overload: Hybrid.Audits.AuditingHelper.ShouldSaveAudit*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Audits.AuditingHelper.Serialize(System.Object,System.Collections.Generic.List{System.Type})
+  commentId: M:Hybrid.Audits.AuditingHelper.Serialize(System.Object,System.Collections.Generic.List{System.Type})
+  id: Serialize(System.Object,System.Collections.Generic.List{System.Type})
+  parent: Hybrid.Audits.AuditingHelper
+  langs:
+  - csharp
+  - vb
+  name: Serialize(Object, List<Type>)
+  nameWithType: AuditingHelper.Serialize(Object, List<Type>)
+  fullName: Hybrid.Audits.AuditingHelper.Serialize(System.Object, System.Collections.Generic.List<System.Type>)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Audits/AuditingHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Serialize
+    path: ../src/Hybrid/Audits/AuditingHelper.cs
+    startLine: 71
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Audits
+  syntax:
+    content: public static string Serialize(object obj, List<Type> ignoredTypes)
+    parameters:
+    - id: obj
+      type: System.Object
+    - id: ignoredTypes
+      type: System.Collections.Generic.List{System.Type}
+    return:
+      type: System.String
+    content.vb: Public Shared Function Serialize(obj As Object, ignoredTypes As List(Of Type)) As String
+  overload: Hybrid.Audits.AuditingHelper.Serialize*
+  nameWithType.vb: AuditingHelper.Serialize(Object, List(Of Type))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Audits.AuditingHelper.Serialize(System.Object, System.Collections.Generic.List(Of System.Type))
+  name.vb: Serialize(Object, List(Of Type))
+references:
+- uid: Hybrid.Audits
+  commentId: N:Hybrid.Audits
+  name: Hybrid.Audits
+  nameWithType: Hybrid.Audits
+  fullName: Hybrid.Audits
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hybrid.Audits.AuditingHelper.ShouldSaveAudit*
+  commentId: Overload:Hybrid.Audits.AuditingHelper.ShouldSaveAudit
+  name: ShouldSaveAudit
+  nameWithType: AuditingHelper.ShouldSaveAudit
+  fullName: Hybrid.Audits.AuditingHelper.ShouldSaveAudit
+- uid: Hybrid.Audits.Configuration.IAuditingConfiguration
+  commentId: T:Hybrid.Audits.Configuration.IAuditingConfiguration
+  parent: Hybrid.Audits.Configuration
+  name: IAuditingConfiguration
+  nameWithType: IAuditingConfiguration
+  fullName: Hybrid.Audits.Configuration.IAuditingConfiguration
+- uid: System.Security.Claims.ClaimsPrincipal
+  commentId: T:System.Security.Claims.ClaimsPrincipal
+  parent: System.Security.Claims
+  isExternal: true
+  name: ClaimsPrincipal
+  nameWithType: ClaimsPrincipal
+  fullName: System.Security.Claims.ClaimsPrincipal
+- uid: Hybrid.Authorization.Functions.IFunction
+  commentId: T:Hybrid.Authorization.Functions.IFunction
+  parent: Hybrid.Authorization.Functions
+  name: IFunction
+  nameWithType: IFunction
+  fullName: Hybrid.Authorization.Functions.IFunction
+- uid: System.Reflection.MethodInfo
+  commentId: T:System.Reflection.MethodInfo
+  parent: System.Reflection
+  isExternal: true
+  name: MethodInfo
+  nameWithType: MethodInfo
+  fullName: System.Reflection.MethodInfo
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Hybrid.Audits.Configuration
+  commentId: N:Hybrid.Audits.Configuration
+  name: Hybrid.Audits.Configuration
+  nameWithType: Hybrid.Audits.Configuration
+  fullName: Hybrid.Audits.Configuration
+- uid: System.Security.Claims
+  commentId: N:System.Security.Claims
+  isExternal: true
+  name: System.Security.Claims
+  nameWithType: System.Security.Claims
+  fullName: System.Security.Claims
+- uid: Hybrid.Authorization.Functions
+  commentId: N:Hybrid.Authorization.Functions
+  name: Hybrid.Authorization.Functions
+  nameWithType: Hybrid.Authorization.Functions
+  fullName: Hybrid.Authorization.Functions
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+- uid: Hybrid.Audits.AuditingHelper.Serialize*
+  commentId: Overload:Hybrid.Audits.AuditingHelper.Serialize
+  name: Serialize
+  nameWithType: AuditingHelper.Serialize
+  fullName: Hybrid.Audits.AuditingHelper.Serialize
+- uid: System.Collections.Generic.List{System.Type}
+  commentId: T:System.Collections.Generic.List{System.Type}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Type>
+  nameWithType: List<Type>
+  fullName: System.Collections.Generic.List<System.Type>
+  nameWithType.vb: List(Of Type)
+  fullName.vb: System.Collections.Generic.List(Of System.Type)
+  name.vb: List(Of Type)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

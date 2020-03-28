@@ -1,0 +1,1187 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.AspNetCore.Mvc.MvcExtensions
+  commentId: T:Hybrid.AspNetCore.Mvc.MvcExtensions
+  id: MvcExtensions
+  parent: Hybrid.AspNetCore.Mvc
+  children:
+  - Hybrid.AspNetCore.Mvc.MvcExtensions.CheckFunctionAuth(Microsoft.AspNetCore.Mvc.Controller,System.String)
+  - Hybrid.AspNetCore.Mvc.MvcExtensions.CheckFunctionAuth(Microsoft.AspNetCore.Mvc.Controller,System.String,System.String,System.String)
+  - Hybrid.AspNetCore.Mvc.MvcExtensions.CheckFunctionAuth(Microsoft.AspNetCore.Mvc.ControllerBase,System.String)
+  - Hybrid.AspNetCore.Mvc.MvcExtensions.CheckFunctionAuth(Microsoft.AspNetCore.Mvc.ControllerBase,System.String,System.String,System.String)
+  - Hybrid.AspNetCore.Mvc.MvcExtensions.GetActionName(Microsoft.AspNetCore.Http.HttpContext)
+  - Hybrid.AspNetCore.Mvc.MvcExtensions.GetActionName(Microsoft.AspNetCore.Mvc.ActionContext)
+  - Hybrid.AspNetCore.Mvc.MvcExtensions.GetAreaName(Microsoft.AspNetCore.Http.HttpContext)
+  - Hybrid.AspNetCore.Mvc.MvcExtensions.GetAreaName(Microsoft.AspNetCore.Mvc.ActionContext)
+  - Hybrid.AspNetCore.Mvc.MvcExtensions.GetControllerName(Microsoft.AspNetCore.Http.HttpContext)
+  - Hybrid.AspNetCore.Mvc.MvcExtensions.GetControllerName(Microsoft.AspNetCore.Mvc.ActionContext)
+  - Hybrid.AspNetCore.Mvc.MvcExtensions.GetExecuteFunction(Microsoft.AspNetCore.Http.HttpContext)
+  - Hybrid.AspNetCore.Mvc.MvcExtensions.GetExecuteFunction(Microsoft.AspNetCore.Mvc.ActionContext)
+  - Hybrid.AspNetCore.Mvc.MvcExtensions.GetExecuteFunction(Microsoft.AspNetCore.Mvc.ControllerBase)
+  - Hybrid.AspNetCore.Mvc.MvcExtensions.GetFunction(Microsoft.AspNetCore.Mvc.ControllerBase,System.String)
+  - Hybrid.AspNetCore.Mvc.MvcExtensions.IsController(System.Reflection.TypeInfo)
+  - Hybrid.AspNetCore.Mvc.MvcExtensions.IsController(System.Type)
+  langs:
+  - csharp
+  - vb
+  name: MvcExtensions
+  nameWithType: MvcExtensions
+  fullName: Hybrid.AspNetCore.Mvc.MvcExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: MvcExtensions
+    path: ../src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+    startLine: 29
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.Mvc
+  summary: "\nMVC相关扩展方法\n"
+  example: []
+  syntax:
+    content: public static class MvcExtensions
+    content.vb: Public Module MvcExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.AspNetCore.Mvc.MvcExtensions.IsController(System.Type)
+  commentId: M:Hybrid.AspNetCore.Mvc.MvcExtensions.IsController(System.Type)
+  id: IsController(System.Type)
+  isExtensionMethod: true
+  parent: Hybrid.AspNetCore.Mvc.MvcExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsController(Type)
+  nameWithType: MvcExtensions.IsController(Type)
+  fullName: Hybrid.AspNetCore.Mvc.MvcExtensions.IsController(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsController
+    path: ../src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+    startLine: 34
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.Mvc
+  summary: "\n判断类型是否是Controller\n"
+  example: []
+  syntax:
+    content: public static bool IsController(this Type type)
+    parameters:
+    - id: type
+      type: System.Type
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsController(type As Type) As Boolean
+  overload: Hybrid.AspNetCore.Mvc.MvcExtensions.IsController*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.AspNetCore.Mvc.MvcExtensions.IsController(System.Reflection.TypeInfo)
+  commentId: M:Hybrid.AspNetCore.Mvc.MvcExtensions.IsController(System.Reflection.TypeInfo)
+  id: IsController(System.Reflection.TypeInfo)
+  isExtensionMethod: true
+  parent: Hybrid.AspNetCore.Mvc.MvcExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsController(TypeInfo)
+  nameWithType: MvcExtensions.IsController(TypeInfo)
+  fullName: Hybrid.AspNetCore.Mvc.MvcExtensions.IsController(System.Reflection.TypeInfo)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsController
+    path: ../src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+    startLine: 42
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.Mvc
+  summary: "\n判断类型是否是Controller\n"
+  example: []
+  syntax:
+    content: public static bool IsController(this TypeInfo typeInfo)
+    parameters:
+    - id: typeInfo
+      type: System.Reflection.TypeInfo
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsController(typeInfo As TypeInfo) As Boolean
+  overload: Hybrid.AspNetCore.Mvc.MvcExtensions.IsController*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.AspNetCore.Mvc.MvcExtensions.GetAreaName(Microsoft.AspNetCore.Mvc.ActionContext)
+  commentId: M:Hybrid.AspNetCore.Mvc.MvcExtensions.GetAreaName(Microsoft.AspNetCore.Mvc.ActionContext)
+  id: GetAreaName(Microsoft.AspNetCore.Mvc.ActionContext)
+  isExtensionMethod: true
+  parent: Hybrid.AspNetCore.Mvc.MvcExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAreaName(ActionContext)
+  nameWithType: MvcExtensions.GetAreaName(ActionContext)
+  fullName: Hybrid.AspNetCore.Mvc.MvcExtensions.GetAreaName(Microsoft.AspNetCore.Mvc.ActionContext)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetAreaName
+    path: ../src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+    startLine: 56
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.Mvc
+  summary: "\n获取Area名\n"
+  example: []
+  syntax:
+    content: public static string GetAreaName(this ActionContext context)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Mvc.ActionContext
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetAreaName(context As ActionContext) As String
+  overload: Hybrid.AspNetCore.Mvc.MvcExtensions.GetAreaName*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.AspNetCore.Mvc.MvcExtensions.GetControllerName(Microsoft.AspNetCore.Mvc.ActionContext)
+  commentId: M:Hybrid.AspNetCore.Mvc.MvcExtensions.GetControllerName(Microsoft.AspNetCore.Mvc.ActionContext)
+  id: GetControllerName(Microsoft.AspNetCore.Mvc.ActionContext)
+  isExtensionMethod: true
+  parent: Hybrid.AspNetCore.Mvc.MvcExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetControllerName(ActionContext)
+  nameWithType: MvcExtensions.GetControllerName(ActionContext)
+  fullName: Hybrid.AspNetCore.Mvc.MvcExtensions.GetControllerName(Microsoft.AspNetCore.Mvc.ActionContext)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetControllerName
+    path: ../src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+    startLine: 73
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.Mvc
+  summary: "\n获取Controller名\n"
+  example: []
+  syntax:
+    content: public static string GetControllerName(this ActionContext context)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Mvc.ActionContext
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetControllerName(context As ActionContext) As String
+  overload: Hybrid.AspNetCore.Mvc.MvcExtensions.GetControllerName*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.AspNetCore.Mvc.MvcExtensions.GetActionName(Microsoft.AspNetCore.Mvc.ActionContext)
+  commentId: M:Hybrid.AspNetCore.Mvc.MvcExtensions.GetActionName(Microsoft.AspNetCore.Mvc.ActionContext)
+  id: GetActionName(Microsoft.AspNetCore.Mvc.ActionContext)
+  isExtensionMethod: true
+  parent: Hybrid.AspNetCore.Mvc.MvcExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetActionName(ActionContext)
+  nameWithType: MvcExtensions.GetActionName(ActionContext)
+  fullName: Hybrid.AspNetCore.Mvc.MvcExtensions.GetActionName(Microsoft.AspNetCore.Mvc.ActionContext)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetActionName
+    path: ../src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+    startLine: 81
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.Mvc
+  summary: "\n获取Action名\n"
+  example: []
+  syntax:
+    content: public static string GetActionName(this ActionContext context)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Mvc.ActionContext
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetActionName(context As ActionContext) As String
+  overload: Hybrid.AspNetCore.Mvc.MvcExtensions.GetActionName*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.AspNetCore.Mvc.MvcExtensions.GetExecuteFunction(Microsoft.AspNetCore.Mvc.ActionContext)
+  commentId: M:Hybrid.AspNetCore.Mvc.MvcExtensions.GetExecuteFunction(Microsoft.AspNetCore.Mvc.ActionContext)
+  id: GetExecuteFunction(Microsoft.AspNetCore.Mvc.ActionContext)
+  isExtensionMethod: true
+  parent: Hybrid.AspNetCore.Mvc.MvcExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetExecuteFunction(ActionContext)
+  nameWithType: MvcExtensions.GetExecuteFunction(ActionContext)
+  fullName: Hybrid.AspNetCore.Mvc.MvcExtensions.GetExecuteFunction(Microsoft.AspNetCore.Mvc.ActionContext)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetExecuteFunction
+    path: ../src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+    startLine: 89
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.Mvc
+  summary: "\n获取正在执行的Action的相关功能信息\n"
+  example: []
+  syntax:
+    content: public static IFunction GetExecuteFunction(this ActionContext context)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Mvc.ActionContext
+    return:
+      type: Hybrid.Authorization.Functions.IFunction
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetExecuteFunction(context As ActionContext) As IFunction
+  overload: Hybrid.AspNetCore.Mvc.MvcExtensions.GetExecuteFunction*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.AspNetCore.Mvc.MvcExtensions.GetAreaName(Microsoft.AspNetCore.Http.HttpContext)
+  commentId: M:Hybrid.AspNetCore.Mvc.MvcExtensions.GetAreaName(Microsoft.AspNetCore.Http.HttpContext)
+  id: GetAreaName(Microsoft.AspNetCore.Http.HttpContext)
+  isExtensionMethod: true
+  parent: Hybrid.AspNetCore.Mvc.MvcExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAreaName(HttpContext)
+  nameWithType: MvcExtensions.GetAreaName(HttpContext)
+  fullName: Hybrid.AspNetCore.Mvc.MvcExtensions.GetAreaName(Microsoft.AspNetCore.Http.HttpContext)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetAreaName
+    path: ../src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+    startLine: 116
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.Mvc
+  summary: "\n获取Area名\n"
+  example: []
+  syntax:
+    content: public static string GetAreaName(this HttpContext context)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Http.HttpContext
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetAreaName(context As HttpContext) As String
+  overload: Hybrid.AspNetCore.Mvc.MvcExtensions.GetAreaName*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.AspNetCore.Mvc.MvcExtensions.GetControllerName(Microsoft.AspNetCore.Http.HttpContext)
+  commentId: M:Hybrid.AspNetCore.Mvc.MvcExtensions.GetControllerName(Microsoft.AspNetCore.Http.HttpContext)
+  id: GetControllerName(Microsoft.AspNetCore.Http.HttpContext)
+  isExtensionMethod: true
+  parent: Hybrid.AspNetCore.Mvc.MvcExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetControllerName(HttpContext)
+  nameWithType: MvcExtensions.GetControllerName(HttpContext)
+  fullName: Hybrid.AspNetCore.Mvc.MvcExtensions.GetControllerName(Microsoft.AspNetCore.Http.HttpContext)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetControllerName
+    path: ../src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+    startLine: 133
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.Mvc
+  summary: "\n获取Controller名\n"
+  example: []
+  syntax:
+    content: public static string GetControllerName(this HttpContext context)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Http.HttpContext
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetControllerName(context As HttpContext) As String
+  overload: Hybrid.AspNetCore.Mvc.MvcExtensions.GetControllerName*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.AspNetCore.Mvc.MvcExtensions.GetActionName(Microsoft.AspNetCore.Http.HttpContext)
+  commentId: M:Hybrid.AspNetCore.Mvc.MvcExtensions.GetActionName(Microsoft.AspNetCore.Http.HttpContext)
+  id: GetActionName(Microsoft.AspNetCore.Http.HttpContext)
+  isExtensionMethod: true
+  parent: Hybrid.AspNetCore.Mvc.MvcExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetActionName(HttpContext)
+  nameWithType: MvcExtensions.GetActionName(HttpContext)
+  fullName: Hybrid.AspNetCore.Mvc.MvcExtensions.GetActionName(Microsoft.AspNetCore.Http.HttpContext)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetActionName
+    path: ../src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+    startLine: 141
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.Mvc
+  summary: "\n获取Action名\n"
+  example: []
+  syntax:
+    content: public static string GetActionName(this HttpContext context)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Http.HttpContext
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetActionName(context As HttpContext) As String
+  overload: Hybrid.AspNetCore.Mvc.MvcExtensions.GetActionName*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.AspNetCore.Mvc.MvcExtensions.GetExecuteFunction(Microsoft.AspNetCore.Http.HttpContext)
+  commentId: M:Hybrid.AspNetCore.Mvc.MvcExtensions.GetExecuteFunction(Microsoft.AspNetCore.Http.HttpContext)
+  id: GetExecuteFunction(Microsoft.AspNetCore.Http.HttpContext)
+  isExtensionMethod: true
+  parent: Hybrid.AspNetCore.Mvc.MvcExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetExecuteFunction(HttpContext)
+  nameWithType: MvcExtensions.GetExecuteFunction(HttpContext)
+  fullName: Hybrid.AspNetCore.Mvc.MvcExtensions.GetExecuteFunction(Microsoft.AspNetCore.Http.HttpContext)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetExecuteFunction
+    path: ../src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+    startLine: 149
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.Mvc
+  summary: "\n获取正在执行的Action的相关功能信息\n"
+  example: []
+  syntax:
+    content: public static IFunction GetExecuteFunction(this HttpContext context)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Http.HttpContext
+    return:
+      type: Hybrid.Authorization.Functions.IFunction
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetExecuteFunction(context As HttpContext) As IFunction
+  overload: Hybrid.AspNetCore.Mvc.MvcExtensions.GetExecuteFunction*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.AspNetCore.Mvc.MvcExtensions.GetExecuteFunction(Microsoft.AspNetCore.Mvc.ControllerBase)
+  commentId: M:Hybrid.AspNetCore.Mvc.MvcExtensions.GetExecuteFunction(Microsoft.AspNetCore.Mvc.ControllerBase)
+  id: GetExecuteFunction(Microsoft.AspNetCore.Mvc.ControllerBase)
+  isExtensionMethod: true
+  parent: Hybrid.AspNetCore.Mvc.MvcExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetExecuteFunction(ControllerBase)
+  nameWithType: MvcExtensions.GetExecuteFunction(ControllerBase)
+  fullName: Hybrid.AspNetCore.Mvc.MvcExtensions.GetExecuteFunction(Microsoft.AspNetCore.Mvc.ControllerBase)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetExecuteFunction
+    path: ../src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+    startLine: 176
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.Mvc
+  summary: "\n获取当前Controller中正在操作的Action的相关功能信息\n"
+  example: []
+  syntax:
+    content: public static IFunction GetExecuteFunction(this ControllerBase controller)
+    parameters:
+    - id: controller
+      type: Microsoft.AspNetCore.Mvc.ControllerBase
+    return:
+      type: Hybrid.Authorization.Functions.IFunction
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetExecuteFunction(controller As ControllerBase) As IFunction
+  overload: Hybrid.AspNetCore.Mvc.MvcExtensions.GetExecuteFunction*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.AspNetCore.Mvc.MvcExtensions.GetFunction(Microsoft.AspNetCore.Mvc.ControllerBase,System.String)
+  commentId: M:Hybrid.AspNetCore.Mvc.MvcExtensions.GetFunction(Microsoft.AspNetCore.Mvc.ControllerBase,System.String)
+  id: GetFunction(Microsoft.AspNetCore.Mvc.ControllerBase,System.String)
+  isExtensionMethod: true
+  parent: Hybrid.AspNetCore.Mvc.MvcExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetFunction(ControllerBase, String)
+  nameWithType: MvcExtensions.GetFunction(ControllerBase, String)
+  fullName: Hybrid.AspNetCore.Mvc.MvcExtensions.GetFunction(Microsoft.AspNetCore.Mvc.ControllerBase, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetFunction
+    path: ../src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+    startLine: 184
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.Mvc
+  summary: "\n获取指定URL的功能信息\n"
+  example: []
+  syntax:
+    content: public static IFunction GetFunction(this ControllerBase controller, string url)
+    parameters:
+    - id: controller
+      type: Microsoft.AspNetCore.Mvc.ControllerBase
+    - id: url
+      type: System.String
+    return:
+      type: Hybrid.Authorization.Functions.IFunction
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetFunction(controller As ControllerBase, url As String) As IFunction
+  overload: Hybrid.AspNetCore.Mvc.MvcExtensions.GetFunction*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.AspNetCore.Mvc.MvcExtensions.CheckFunctionAuth(Microsoft.AspNetCore.Mvc.Controller,System.String)
+  commentId: M:Hybrid.AspNetCore.Mvc.MvcExtensions.CheckFunctionAuth(Microsoft.AspNetCore.Mvc.Controller,System.String)
+  id: CheckFunctionAuth(Microsoft.AspNetCore.Mvc.Controller,System.String)
+  isExtensionMethod: true
+  parent: Hybrid.AspNetCore.Mvc.MvcExtensions
+  langs:
+  - csharp
+  - vb
+  name: CheckFunctionAuth(Controller, String)
+  nameWithType: MvcExtensions.CheckFunctionAuth(Controller, String)
+  fullName: Hybrid.AspNetCore.Mvc.MvcExtensions.CheckFunctionAuth(Microsoft.AspNetCore.Mvc.Controller, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: CheckFunctionAuth
+    path: ../src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+    startLine: 215
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.Mvc
+  summary: "\n检测当前用户是否拥有指定URL的功能权限\n"
+  example: []
+  syntax:
+    content: public static bool CheckFunctionAuth(this Controller controller, string url)
+    parameters:
+    - id: controller
+      type: Microsoft.AspNetCore.Mvc.Controller
+    - id: url
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function CheckFunctionAuth(controller As Controller, url As String) As Boolean
+  overload: Hybrid.AspNetCore.Mvc.MvcExtensions.CheckFunctionAuth*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.AspNetCore.Mvc.MvcExtensions.CheckFunctionAuth(Microsoft.AspNetCore.Mvc.ControllerBase,System.String)
+  commentId: M:Hybrid.AspNetCore.Mvc.MvcExtensions.CheckFunctionAuth(Microsoft.AspNetCore.Mvc.ControllerBase,System.String)
+  id: CheckFunctionAuth(Microsoft.AspNetCore.Mvc.ControllerBase,System.String)
+  isExtensionMethod: true
+  parent: Hybrid.AspNetCore.Mvc.MvcExtensions
+  langs:
+  - csharp
+  - vb
+  name: CheckFunctionAuth(ControllerBase, String)
+  nameWithType: MvcExtensions.CheckFunctionAuth(ControllerBase, String)
+  fullName: Hybrid.AspNetCore.Mvc.MvcExtensions.CheckFunctionAuth(Microsoft.AspNetCore.Mvc.ControllerBase, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: CheckFunctionAuth
+    path: ../src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+    startLine: 229
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.Mvc
+  summary: "\n检测当前用户是否拥有指定URL的功能权限\n"
+  example: []
+  syntax:
+    content: public static bool CheckFunctionAuth(this ControllerBase controllerBase, string url)
+    parameters:
+    - id: controllerBase
+      type: Microsoft.AspNetCore.Mvc.ControllerBase
+    - id: url
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function CheckFunctionAuth(controllerBase As ControllerBase, url As String) As Boolean
+  overload: Hybrid.AspNetCore.Mvc.MvcExtensions.CheckFunctionAuth*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.AspNetCore.Mvc.MvcExtensions.CheckFunctionAuth(Microsoft.AspNetCore.Mvc.Controller,System.String,System.String,System.String)
+  commentId: M:Hybrid.AspNetCore.Mvc.MvcExtensions.CheckFunctionAuth(Microsoft.AspNetCore.Mvc.Controller,System.String,System.String,System.String)
+  id: CheckFunctionAuth(Microsoft.AspNetCore.Mvc.Controller,System.String,System.String,System.String)
+  isExtensionMethod: true
+  parent: Hybrid.AspNetCore.Mvc.MvcExtensions
+  langs:
+  - csharp
+  - vb
+  name: CheckFunctionAuth(Controller, String, String, String)
+  nameWithType: MvcExtensions.CheckFunctionAuth(Controller, String, String, String)
+  fullName: Hybrid.AspNetCore.Mvc.MvcExtensions.CheckFunctionAuth(Microsoft.AspNetCore.Mvc.Controller, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: CheckFunctionAuth
+    path: ../src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+    startLine: 243
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.Mvc
+  summary: "\n检测当前用户是否有指定功能的功能权限\n"
+  example: []
+  syntax:
+    content: public static bool CheckFunctionAuth(this Controller controller, string actionName, string controllerName, string areaName = null)
+    parameters:
+    - id: controller
+      type: Microsoft.AspNetCore.Mvc.Controller
+    - id: actionName
+      type: System.String
+    - id: controllerName
+      type: System.String
+    - id: areaName
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function CheckFunctionAuth(controller As Controller, actionName As String, controllerName As String, areaName As String = Nothing) As Boolean
+  overload: Hybrid.AspNetCore.Mvc.MvcExtensions.CheckFunctionAuth*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.AspNetCore.Mvc.MvcExtensions.CheckFunctionAuth(Microsoft.AspNetCore.Mvc.ControllerBase,System.String,System.String,System.String)
+  commentId: M:Hybrid.AspNetCore.Mvc.MvcExtensions.CheckFunctionAuth(Microsoft.AspNetCore.Mvc.ControllerBase,System.String,System.String,System.String)
+  id: CheckFunctionAuth(Microsoft.AspNetCore.Mvc.ControllerBase,System.String,System.String,System.String)
+  isExtensionMethod: true
+  parent: Hybrid.AspNetCore.Mvc.MvcExtensions
+  langs:
+  - csharp
+  - vb
+  name: CheckFunctionAuth(ControllerBase, String, String, String)
+  nameWithType: MvcExtensions.CheckFunctionAuth(ControllerBase, String, String, String)
+  fullName: Hybrid.AspNetCore.Mvc.MvcExtensions.CheckFunctionAuth(Microsoft.AspNetCore.Mvc.ControllerBase, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: CheckFunctionAuth
+    path: ../src/Hybrid.AspNetCore/Mvc/MvcExtensions.cs
+    startLine: 259
+  assemblies:
+  - Hybrid.AspNetCore
+  namespace: Hybrid.AspNetCore.Mvc
+  summary: "\n检测当前用户是否有指定功能的功能权限\n"
+  example: []
+  syntax:
+    content: public static bool CheckFunctionAuth(this ControllerBase controllerBase, string actionName, string controllerName, string areaName = null)
+    parameters:
+    - id: controllerBase
+      type: Microsoft.AspNetCore.Mvc.ControllerBase
+    - id: actionName
+      type: System.String
+    - id: controllerName
+      type: System.String
+    - id: areaName
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function CheckFunctionAuth(controllerBase As ControllerBase, actionName As String, controllerName As String, areaName As String = Nothing) As Boolean
+  overload: Hybrid.AspNetCore.Mvc.MvcExtensions.CheckFunctionAuth*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Hybrid.AspNetCore.Mvc
+  commentId: N:Hybrid.AspNetCore.Mvc
+  name: Hybrid.AspNetCore.Mvc
+  nameWithType: Hybrid.AspNetCore.Mvc
+  fullName: Hybrid.AspNetCore.Mvc
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hybrid.AspNetCore.Mvc.MvcExtensions.IsController*
+  commentId: Overload:Hybrid.AspNetCore.Mvc.MvcExtensions.IsController
+  name: IsController
+  nameWithType: MvcExtensions.IsController
+  fullName: Hybrid.AspNetCore.Mvc.MvcExtensions.IsController
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Reflection.TypeInfo
+  commentId: T:System.Reflection.TypeInfo
+  parent: System.Reflection
+  isExternal: true
+  name: TypeInfo
+  nameWithType: TypeInfo
+  fullName: System.Reflection.TypeInfo
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+- uid: Hybrid.AspNetCore.Mvc.MvcExtensions.GetAreaName*
+  commentId: Overload:Hybrid.AspNetCore.Mvc.MvcExtensions.GetAreaName
+  name: GetAreaName
+  nameWithType: MvcExtensions.GetAreaName
+  fullName: Hybrid.AspNetCore.Mvc.MvcExtensions.GetAreaName
+- uid: Microsoft.AspNetCore.Mvc.ActionContext
+  commentId: T:Microsoft.AspNetCore.Mvc.ActionContext
+  parent: Microsoft.AspNetCore.Mvc
+  isExternal: true
+  name: ActionContext
+  nameWithType: ActionContext
+  fullName: Microsoft.AspNetCore.Mvc.ActionContext
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.AspNetCore.Mvc
+  commentId: N:Microsoft.AspNetCore.Mvc
+  isExternal: true
+  name: Microsoft.AspNetCore.Mvc
+  nameWithType: Microsoft.AspNetCore.Mvc
+  fullName: Microsoft.AspNetCore.Mvc
+- uid: Hybrid.AspNetCore.Mvc.MvcExtensions.GetControllerName*
+  commentId: Overload:Hybrid.AspNetCore.Mvc.MvcExtensions.GetControllerName
+  name: GetControllerName
+  nameWithType: MvcExtensions.GetControllerName
+  fullName: Hybrid.AspNetCore.Mvc.MvcExtensions.GetControllerName
+- uid: Hybrid.AspNetCore.Mvc.MvcExtensions.GetActionName*
+  commentId: Overload:Hybrid.AspNetCore.Mvc.MvcExtensions.GetActionName
+  name: GetActionName
+  nameWithType: MvcExtensions.GetActionName
+  fullName: Hybrid.AspNetCore.Mvc.MvcExtensions.GetActionName
+- uid: Hybrid.AspNetCore.Mvc.MvcExtensions.GetExecuteFunction*
+  commentId: Overload:Hybrid.AspNetCore.Mvc.MvcExtensions.GetExecuteFunction
+  name: GetExecuteFunction
+  nameWithType: MvcExtensions.GetExecuteFunction
+  fullName: Hybrid.AspNetCore.Mvc.MvcExtensions.GetExecuteFunction
+- uid: Hybrid.Authorization.Functions.IFunction
+  commentId: T:Hybrid.Authorization.Functions.IFunction
+  parent: Hybrid.Authorization.Functions
+  name: IFunction
+  nameWithType: IFunction
+  fullName: Hybrid.Authorization.Functions.IFunction
+- uid: Hybrid.Authorization.Functions
+  commentId: N:Hybrid.Authorization.Functions
+  name: Hybrid.Authorization.Functions
+  nameWithType: Hybrid.Authorization.Functions
+  fullName: Hybrid.Authorization.Functions
+- uid: Microsoft.AspNetCore.Http.HttpContext
+  commentId: T:Microsoft.AspNetCore.Http.HttpContext
+  parent: Microsoft.AspNetCore.Http
+  isExternal: true
+  name: HttpContext
+  nameWithType: HttpContext
+  fullName: Microsoft.AspNetCore.Http.HttpContext
+- uid: Microsoft.AspNetCore.Http
+  commentId: N:Microsoft.AspNetCore.Http
+  isExternal: true
+  name: Microsoft.AspNetCore.Http
+  nameWithType: Microsoft.AspNetCore.Http
+  fullName: Microsoft.AspNetCore.Http
+- uid: Microsoft.AspNetCore.Mvc.ControllerBase
+  commentId: T:Microsoft.AspNetCore.Mvc.ControllerBase
+  parent: Microsoft.AspNetCore.Mvc
+  isExternal: true
+  name: ControllerBase
+  nameWithType: ControllerBase
+  fullName: Microsoft.AspNetCore.Mvc.ControllerBase
+- uid: Hybrid.AspNetCore.Mvc.MvcExtensions.GetFunction*
+  commentId: Overload:Hybrid.AspNetCore.Mvc.MvcExtensions.GetFunction
+  name: GetFunction
+  nameWithType: MvcExtensions.GetFunction
+  fullName: Hybrid.AspNetCore.Mvc.MvcExtensions.GetFunction
+- uid: Hybrid.AspNetCore.Mvc.MvcExtensions.CheckFunctionAuth*
+  commentId: Overload:Hybrid.AspNetCore.Mvc.MvcExtensions.CheckFunctionAuth
+  name: CheckFunctionAuth
+  nameWithType: MvcExtensions.CheckFunctionAuth
+  fullName: Hybrid.AspNetCore.Mvc.MvcExtensions.CheckFunctionAuth
+- uid: Microsoft.AspNetCore.Mvc.Controller
+  commentId: T:Microsoft.AspNetCore.Mvc.Controller
+  parent: Microsoft.AspNetCore.Mvc
+  isExternal: true
+  name: Controller
+  nameWithType: Controller
+  fullName: Microsoft.AspNetCore.Mvc.Controller

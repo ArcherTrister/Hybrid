@@ -1,0 +1,922 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Extensions.StringBuilderExtensions
+  commentId: T:Hybrid.Extensions.StringBuilderExtensions
+  id: StringBuilderExtensions
+  parent: Hybrid.Extensions
+  children:
+  - Hybrid.Extensions.StringBuilderExtensions.SubString(System.Text.StringBuilder,System.Int32,System.Int32)
+  - Hybrid.Extensions.StringBuilderExtensions.Trim(System.Text.StringBuilder)
+  - Hybrid.Extensions.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder)
+  - Hybrid.Extensions.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder,System.Char)
+  - Hybrid.Extensions.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder,System.Char[])
+  - Hybrid.Extensions.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder,System.String)
+  - Hybrid.Extensions.StringBuilderExtensions.TrimStart(System.Text.StringBuilder)
+  - Hybrid.Extensions.StringBuilderExtensions.TrimStart(System.Text.StringBuilder,System.Char)
+  - Hybrid.Extensions.StringBuilderExtensions.TrimStart(System.Text.StringBuilder,System.Char[])
+  - Hybrid.Extensions.StringBuilderExtensions.TrimStart(System.Text.StringBuilder,System.String)
+  langs:
+  - csharp
+  - vb
+  name: StringBuilderExtensions
+  nameWithType: StringBuilderExtensions
+  fullName: Hybrid.Extensions.StringBuilderExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringBuilderExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: StringBuilderExtensions
+    path: ../src/Hybrid/Extensions/StringBuilderExtensions.cs
+    startLine: 17
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nStringBuilder 扩展方法类\n"
+  example: []
+  syntax:
+    content: public static class StringBuilderExtensions
+    content.vb: Public Module StringBuilderExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.Extensions.StringBuilderExtensions.TrimStart(System.Text.StringBuilder)
+  commentId: M:Hybrid.Extensions.StringBuilderExtensions.TrimStart(System.Text.StringBuilder)
+  id: TrimStart(System.Text.StringBuilder)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: TrimStart(StringBuilder)
+  nameWithType: StringBuilderExtensions.TrimStart(StringBuilder)
+  fullName: Hybrid.Extensions.StringBuilderExtensions.TrimStart(System.Text.StringBuilder)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringBuilderExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: TrimStart
+    path: ../src/Hybrid/Extensions/StringBuilderExtensions.cs
+    startLine: 24
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n去除<xref href=\"System.Text.StringBuilder\" data-throw-if-not-resolved=\"false\"></xref>开头的空格\n"
+  example: []
+  syntax:
+    content: public static StringBuilder TrimStart(this StringBuilder sb)
+    parameters:
+    - id: sb
+      type: System.Text.StringBuilder
+      description: StringBuilder
+    return:
+      type: System.Text.StringBuilder
+      description: 返回修改后的StringBuilder，主要用于链式操作
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function TrimStart(sb As StringBuilder) As StringBuilder
+  overload: Hybrid.Extensions.StringBuilderExtensions.TrimStart*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringBuilderExtensions.TrimStart(System.Text.StringBuilder,System.Char)
+  commentId: M:Hybrid.Extensions.StringBuilderExtensions.TrimStart(System.Text.StringBuilder,System.Char)
+  id: TrimStart(System.Text.StringBuilder,System.Char)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: TrimStart(StringBuilder, Char)
+  nameWithType: StringBuilderExtensions.TrimStart(StringBuilder, Char)
+  fullName: Hybrid.Extensions.StringBuilderExtensions.TrimStart(System.Text.StringBuilder, System.Char)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringBuilderExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: TrimStart
+    path: ../src/Hybrid/Extensions/StringBuilderExtensions.cs
+    startLine: 35
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n去除<xref href=\"System.Text.StringBuilder\" data-throw-if-not-resolved=\"false\"></xref>开头的指定<xref href=\"System.Char\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public static StringBuilder TrimStart(this StringBuilder sb, char c)
+    parameters:
+    - id: sb
+      type: System.Text.StringBuilder
+      description: ''
+    - id: c
+      type: System.Char
+      description: 要去掉的<xref href="System.Char" data-throw-if-not-resolved="false"></xref>
+    return:
+      type: System.Text.StringBuilder
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function TrimStart(sb As StringBuilder, c As Char) As StringBuilder
+  overload: Hybrid.Extensions.StringBuilderExtensions.TrimStart*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringBuilderExtensions.TrimStart(System.Text.StringBuilder,System.Char[])
+  commentId: M:Hybrid.Extensions.StringBuilderExtensions.TrimStart(System.Text.StringBuilder,System.Char[])
+  id: TrimStart(System.Text.StringBuilder,System.Char[])
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: TrimStart(StringBuilder, Char[])
+  nameWithType: StringBuilderExtensions.TrimStart(StringBuilder, Char[])
+  fullName: Hybrid.Extensions.StringBuilderExtensions.TrimStart(System.Text.StringBuilder, System.Char[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringBuilderExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: TrimStart
+    path: ../src/Hybrid/Extensions/StringBuilderExtensions.cs
+    startLine: 53
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n去除<xref href=\"System.Text.StringBuilder\" data-throw-if-not-resolved=\"false\"></xref>开头的指定字符数组\n"
+  example: []
+  syntax:
+    content: public static StringBuilder TrimStart(this StringBuilder sb, char[] cs)
+    parameters:
+    - id: sb
+      type: System.Text.StringBuilder
+      description: ''
+    - id: cs
+      type: System.Char[]
+      description: 要去掉的字符数组
+    return:
+      type: System.Text.StringBuilder
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function TrimStart(sb As StringBuilder, cs As Char()) As StringBuilder
+  overload: Hybrid.Extensions.StringBuilderExtensions.TrimStart*
+  nameWithType.vb: StringBuilderExtensions.TrimStart(StringBuilder, Char())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.StringBuilderExtensions.TrimStart(System.Text.StringBuilder, System.Char())
+  name.vb: TrimStart(StringBuilder, Char())
+- uid: Hybrid.Extensions.StringBuilderExtensions.TrimStart(System.Text.StringBuilder,System.String)
+  commentId: M:Hybrid.Extensions.StringBuilderExtensions.TrimStart(System.Text.StringBuilder,System.String)
+  id: TrimStart(System.Text.StringBuilder,System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: TrimStart(StringBuilder, String)
+  nameWithType: StringBuilderExtensions.TrimStart(StringBuilder, String)
+  fullName: Hybrid.Extensions.StringBuilderExtensions.TrimStart(System.Text.StringBuilder, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringBuilderExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: TrimStart
+    path: ../src/Hybrid/Extensions/StringBuilderExtensions.cs
+    startLine: 65
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n去除<xref href=\"System.Text.StringBuilder\" data-throw-if-not-resolved=\"false\"></xref>开头的指定的<xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public static StringBuilder TrimStart(this StringBuilder sb, string str)
+    parameters:
+    - id: sb
+      type: System.Text.StringBuilder
+      description: ''
+    - id: str
+      type: System.String
+      description: 要去掉的<xref href="System.String" data-throw-if-not-resolved="false"></xref>
+    return:
+      type: System.Text.StringBuilder
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function TrimStart(sb As StringBuilder, str As String) As StringBuilder
+  overload: Hybrid.Extensions.StringBuilderExtensions.TrimStart*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder)
+  commentId: M:Hybrid.Extensions.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder)
+  id: TrimEnd(System.Text.StringBuilder)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: TrimEnd(StringBuilder)
+  nameWithType: StringBuilderExtensions.TrimEnd(StringBuilder)
+  fullName: Hybrid.Extensions.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringBuilderExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: TrimEnd
+    path: ../src/Hybrid/Extensions/StringBuilderExtensions.cs
+    startLine: 88
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n去除StringBuilder结尾的空格\n"
+  example: []
+  syntax:
+    content: public static StringBuilder TrimEnd(this StringBuilder sb)
+    parameters:
+    - id: sb
+      type: System.Text.StringBuilder
+      description: StringBuilder
+    return:
+      type: System.Text.StringBuilder
+      description: 返回修改后的StringBuilder，主要用于链式操作
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function TrimEnd(sb As StringBuilder) As StringBuilder
+  overload: Hybrid.Extensions.StringBuilderExtensions.TrimEnd*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder,System.Char)
+  commentId: M:Hybrid.Extensions.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder,System.Char)
+  id: TrimEnd(System.Text.StringBuilder,System.Char)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: TrimEnd(StringBuilder, Char)
+  nameWithType: StringBuilderExtensions.TrimEnd(StringBuilder, Char)
+  fullName: Hybrid.Extensions.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder, System.Char)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringBuilderExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: TrimEnd
+    path: ../src/Hybrid/Extensions/StringBuilderExtensions.cs
+    startLine: 99
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n去除<xref href=\"System.Text.StringBuilder\" data-throw-if-not-resolved=\"false\"></xref>结尾指定字符\n"
+  example: []
+  syntax:
+    content: public static StringBuilder TrimEnd(this StringBuilder sb, char c)
+    parameters:
+    - id: sb
+      type: System.Text.StringBuilder
+      description: ''
+    - id: c
+      type: System.Char
+      description: 要去掉的字符
+    return:
+      type: System.Text.StringBuilder
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function TrimEnd(sb As StringBuilder, c As Char) As StringBuilder
+  overload: Hybrid.Extensions.StringBuilderExtensions.TrimEnd*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder,System.Char[])
+  commentId: M:Hybrid.Extensions.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder,System.Char[])
+  id: TrimEnd(System.Text.StringBuilder,System.Char[])
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: TrimEnd(StringBuilder, Char[])
+  nameWithType: StringBuilderExtensions.TrimEnd(StringBuilder, Char[])
+  fullName: Hybrid.Extensions.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder, System.Char[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringBuilderExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: TrimEnd
+    path: ../src/Hybrid/Extensions/StringBuilderExtensions.cs
+    startLine: 117
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n去除<xref href=\"System.Text.StringBuilder\" data-throw-if-not-resolved=\"false\"></xref>结尾指定字符数组\n"
+  example: []
+  syntax:
+    content: public static StringBuilder TrimEnd(this StringBuilder sb, char[] chars)
+    parameters:
+    - id: sb
+      type: System.Text.StringBuilder
+      description: ''
+    - id: chars
+      type: System.Char[]
+      description: 要去除的字符数组
+    return:
+      type: System.Text.StringBuilder
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function TrimEnd(sb As StringBuilder, chars As Char()) As StringBuilder
+  overload: Hybrid.Extensions.StringBuilderExtensions.TrimEnd*
+  nameWithType.vb: StringBuilderExtensions.TrimEnd(StringBuilder, Char())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder, System.Char())
+  name.vb: TrimEnd(StringBuilder, Char())
+- uid: Hybrid.Extensions.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder,System.String)
+  commentId: M:Hybrid.Extensions.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder,System.String)
+  id: TrimEnd(System.Text.StringBuilder,System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: TrimEnd(StringBuilder, String)
+  nameWithType: StringBuilderExtensions.TrimEnd(StringBuilder, String)
+  fullName: Hybrid.Extensions.StringBuilderExtensions.TrimEnd(System.Text.StringBuilder, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringBuilderExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: TrimEnd
+    path: ../src/Hybrid/Extensions/StringBuilderExtensions.cs
+    startLine: 129
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n去除<xref href=\"System.Text.StringBuilder\" data-throw-if-not-resolved=\"false\"></xref>结尾指定字符串\n"
+  example: []
+  syntax:
+    content: public static StringBuilder TrimEnd(this StringBuilder sb, string str)
+    parameters:
+    - id: sb
+      type: System.Text.StringBuilder
+      description: ''
+    - id: str
+      type: System.String
+      description: 要去除的字符串
+    return:
+      type: System.Text.StringBuilder
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function TrimEnd(sb As StringBuilder, str As String) As StringBuilder
+  overload: Hybrid.Extensions.StringBuilderExtensions.TrimEnd*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringBuilderExtensions.Trim(System.Text.StringBuilder)
+  commentId: M:Hybrid.Extensions.StringBuilderExtensions.Trim(System.Text.StringBuilder)
+  id: Trim(System.Text.StringBuilder)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: Trim(StringBuilder)
+  nameWithType: StringBuilderExtensions.Trim(StringBuilder)
+  fullName: Hybrid.Extensions.StringBuilderExtensions.Trim(System.Text.StringBuilder)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringBuilderExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Trim
+    path: ../src/Hybrid/Extensions/StringBuilderExtensions.cs
+    startLine: 152
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n去除StringBuilder两端的空格\n"
+  example: []
+  syntax:
+    content: public static StringBuilder Trim(this StringBuilder sb)
+    parameters:
+    - id: sb
+      type: System.Text.StringBuilder
+      description: StringBuilder
+    return:
+      type: System.Text.StringBuilder
+      description: 返回修改后的StringBuilder，主要用于链式操作
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Trim(sb As StringBuilder) As StringBuilder
+  overload: Hybrid.Extensions.StringBuilderExtensions.Trim*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Extensions.StringBuilderExtensions.SubString(System.Text.StringBuilder,System.Int32,System.Int32)
+  commentId: M:Hybrid.Extensions.StringBuilderExtensions.SubString(System.Text.StringBuilder,System.Int32,System.Int32)
+  id: SubString(System.Text.StringBuilder,System.Int32,System.Int32)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.StringBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: SubString(StringBuilder, Int32, Int32)
+  nameWithType: StringBuilderExtensions.SubString(StringBuilder, Int32, Int32)
+  fullName: Hybrid.Extensions.StringBuilderExtensions.SubString(System.Text.StringBuilder, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/StringBuilderExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: SubString
+    path: ../src/Hybrid/Extensions/StringBuilderExtensions.cs
+    startLine: 168
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n返回<xref href=\"System.Text.StringBuilder\" data-throw-if-not-resolved=\"false\"></xref>从起始位置指定长度的字符串\n"
+  example: []
+  syntax:
+    content: public static string SubString(this StringBuilder sb, int start, int length)
+    parameters:
+    - id: sb
+      type: System.Text.StringBuilder
+      description: ''
+    - id: start
+      type: System.Int32
+      description: 起始位置
+    - id: length
+      type: System.Int32
+      description: 长度
+    return:
+      type: System.String
+      description: 字符串
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function SubString(sb As StringBuilder, start As Integer, length As Integer) As String
+  overload: Hybrid.Extensions.StringBuilderExtensions.SubString*
+  exceptions:
+  - type: System.OverflowException
+    commentId: T:System.OverflowException
+    description: 超出字符串索引长度异常
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Hybrid.Extensions
+  commentId: N:Hybrid.Extensions
+  name: Hybrid.Extensions
+  nameWithType: Hybrid.Extensions
+  fullName: Hybrid.Extensions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Text.StringBuilder
+  commentId: T:System.Text.StringBuilder
+  parent: System.Text
+  isExternal: true
+  name: StringBuilder
+  nameWithType: StringBuilder
+  fullName: System.Text.StringBuilder
+- uid: Hybrid.Extensions.StringBuilderExtensions.TrimStart*
+  commentId: Overload:Hybrid.Extensions.StringBuilderExtensions.TrimStart
+  name: TrimStart
+  nameWithType: StringBuilderExtensions.TrimStart
+  fullName: Hybrid.Extensions.StringBuilderExtensions.TrimStart
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  name: Char
+  nameWithType: Char
+  fullName: System.Char
+- uid: System.Char[]
+  isExternal: true
+  name: Char[]
+  nameWithType: Char[]
+  fullName: System.Char[]
+  nameWithType.vb: Char()
+  fullName.vb: System.Char()
+  name.vb: Char()
+  spec.csharp:
+  - uid: System.Char
+    name: Char
+    nameWithType: Char
+    fullName: System.Char
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Char
+    name: Char
+    nameWithType: Char
+    fullName: System.Char
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Hybrid.Extensions.StringBuilderExtensions.TrimEnd*
+  commentId: Overload:Hybrid.Extensions.StringBuilderExtensions.TrimEnd
+  name: TrimEnd
+  nameWithType: StringBuilderExtensions.TrimEnd
+  fullName: Hybrid.Extensions.StringBuilderExtensions.TrimEnd
+- uid: Hybrid.Extensions.StringBuilderExtensions.Trim*
+  commentId: Overload:Hybrid.Extensions.StringBuilderExtensions.Trim
+  name: Trim
+  nameWithType: StringBuilderExtensions.Trim
+  fullName: Hybrid.Extensions.StringBuilderExtensions.Trim
+- uid: System.OverflowException
+  commentId: T:System.OverflowException
+  isExternal: true
+- uid: Hybrid.Extensions.StringBuilderExtensions.SubString*
+  commentId: Overload:Hybrid.Extensions.StringBuilderExtensions.SubString
+  name: SubString
+  nameWithType: StringBuilderExtensions.SubString
+  fullName: Hybrid.Extensions.StringBuilderExtensions.SubString
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

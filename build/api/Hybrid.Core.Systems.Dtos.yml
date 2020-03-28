@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Core.Systems.Dtos
+  commentId: N:Hybrid.Core.Systems.Dtos
+  id: Hybrid.Core.Systems.Dtos
+  children:
+  - Hybrid.Core.Systems.Dtos.SettingInputDto
+  - Hybrid.Core.Systems.Dtos.SettingOutputDto
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Core.Systems.Dtos
+  nameWithType: Hybrid.Core.Systems.Dtos
+  fullName: Hybrid.Core.Systems.Dtos
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Core.Systems.Dtos.SettingInputDto
+  commentId: T:Hybrid.Core.Systems.Dtos.SettingInputDto
+  name: SettingInputDto
+  nameWithType: SettingInputDto
+  fullName: Hybrid.Core.Systems.Dtos.SettingInputDto
+- uid: Hybrid.Core.Systems.Dtos.SettingOutputDto
+  commentId: T:Hybrid.Core.Systems.Dtos.SettingOutputDto
+  name: SettingOutputDto
+  nameWithType: SettingOutputDto
+  fullName: Hybrid.Core.Systems.Dtos.SettingOutputDto

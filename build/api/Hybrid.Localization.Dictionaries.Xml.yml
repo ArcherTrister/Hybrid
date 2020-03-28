@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Localization.Dictionaries.Xml
+  commentId: N:Hybrid.Localization.Dictionaries.Xml
+  id: Hybrid.Localization.Dictionaries.Xml
+  children:
+  - Hybrid.Localization.Dictionaries.Xml.XmlEmbeddedFileLocalizationDictionaryProvider
+  - Hybrid.Localization.Dictionaries.Xml.XmlFileLocalizationDictionaryProvider
+  - Hybrid.Localization.Dictionaries.Xml.XmlLocalizationDictionary
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Localization.Dictionaries.Xml
+  nameWithType: Hybrid.Localization.Dictionaries.Xml
+  fullName: Hybrid.Localization.Dictionaries.Xml
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Localization.Dictionaries.Xml.XmlEmbeddedFileLocalizationDictionaryProvider
+  commentId: T:Hybrid.Localization.Dictionaries.Xml.XmlEmbeddedFileLocalizationDictionaryProvider
+  name: XmlEmbeddedFileLocalizationDictionaryProvider
+  nameWithType: XmlEmbeddedFileLocalizationDictionaryProvider
+  fullName: Hybrid.Localization.Dictionaries.Xml.XmlEmbeddedFileLocalizationDictionaryProvider
+- uid: Hybrid.Localization.Dictionaries.Xml.XmlFileLocalizationDictionaryProvider
+  commentId: T:Hybrid.Localization.Dictionaries.Xml.XmlFileLocalizationDictionaryProvider
+  name: XmlFileLocalizationDictionaryProvider
+  nameWithType: XmlFileLocalizationDictionaryProvider
+  fullName: Hybrid.Localization.Dictionaries.Xml.XmlFileLocalizationDictionaryProvider
+- uid: Hybrid.Localization.Dictionaries.Xml.XmlLocalizationDictionary
+  commentId: T:Hybrid.Localization.Dictionaries.Xml.XmlLocalizationDictionary
+  parent: Hybrid.Localization.Dictionaries.Xml
+  name: XmlLocalizationDictionary
+  nameWithType: XmlLocalizationDictionary
+  fullName: Hybrid.Localization.Dictionaries.Xml.XmlLocalizationDictionary
+- uid: Hybrid.Localization.Dictionaries.Xml
+  commentId: N:Hybrid.Localization.Dictionaries.Xml
+  name: Hybrid.Localization.Dictionaries.Xml
+  nameWithType: Hybrid.Localization.Dictionaries.Xml
+  fullName: Hybrid.Localization.Dictionaries.Xml

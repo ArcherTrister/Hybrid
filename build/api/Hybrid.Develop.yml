@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Develop
+  commentId: N:Hybrid.Develop
+  id: Hybrid.Develop
+  children:
+  - Hybrid.Develop.CodeRamer
+  - Hybrid.Develop.CodeTimer
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Develop
+  nameWithType: Hybrid.Develop
+  fullName: Hybrid.Develop
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Develop.CodeRamer
+  commentId: T:Hybrid.Develop.CodeRamer
+  name: CodeRamer
+  nameWithType: CodeRamer
+  fullName: Hybrid.Develop.CodeRamer
+- uid: Hybrid.Develop.CodeTimer
+  commentId: T:Hybrid.Develop.CodeTimer
+  name: CodeTimer
+  nameWithType: CodeTimer
+  fullName: Hybrid.Develop.CodeTimer

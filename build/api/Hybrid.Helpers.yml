@@ -1,0 +1,96 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Helpers
+  commentId: N:Hybrid.Helpers
+  id: Hybrid.Helpers
+  children:
+  - Hybrid.Helpers.AlgorithmHelper
+  - Hybrid.Helpers.ComparisonHelper`1
+  - Hybrid.Helpers.EqualityHelper`1
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Helpers
+  nameWithType: Hybrid.Helpers
+  fullName: Hybrid.Helpers
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Helpers.AlgorithmHelper
+  commentId: T:Hybrid.Helpers.AlgorithmHelper
+  name: AlgorithmHelper
+  nameWithType: AlgorithmHelper
+  fullName: Hybrid.Helpers.AlgorithmHelper
+- uid: Hybrid.Helpers.ComparisonHelper`1
+  commentId: T:Hybrid.Helpers.ComparisonHelper`1
+  name: ComparisonHelper<T>
+  nameWithType: ComparisonHelper<T>
+  fullName: Hybrid.Helpers.ComparisonHelper<T>
+  nameWithType.vb: ComparisonHelper(Of T)
+  fullName.vb: Hybrid.Helpers.ComparisonHelper(Of T)
+  name.vb: ComparisonHelper(Of T)
+  spec.csharp:
+  - uid: Hybrid.Helpers.ComparisonHelper`1
+    name: ComparisonHelper
+    nameWithType: ComparisonHelper
+    fullName: Hybrid.Helpers.ComparisonHelper
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Helpers.ComparisonHelper`1
+    name: ComparisonHelper
+    nameWithType: ComparisonHelper
+    fullName: Hybrid.Helpers.ComparisonHelper
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Helpers.EqualityHelper`1
+  commentId: T:Hybrid.Helpers.EqualityHelper`1
+  name: EqualityHelper<T>
+  nameWithType: EqualityHelper<T>
+  fullName: Hybrid.Helpers.EqualityHelper<T>
+  nameWithType.vb: EqualityHelper(Of T)
+  fullName.vb: Hybrid.Helpers.EqualityHelper(Of T)
+  name.vb: EqualityHelper(Of T)
+  spec.csharp:
+  - uid: Hybrid.Helpers.EqualityHelper`1
+    name: EqualityHelper
+    nameWithType: EqualityHelper
+    fullName: Hybrid.Helpers.EqualityHelper
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Helpers.EqualityHelper`1
+    name: EqualityHelper
+    nameWithType: EqualityHelper
+    fullName: Hybrid.Helpers.EqualityHelper
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

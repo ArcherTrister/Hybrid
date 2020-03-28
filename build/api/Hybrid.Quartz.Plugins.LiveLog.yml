@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Quartz.Plugins.LiveLog
+  commentId: N:Hybrid.Quartz.Plugins.LiveLog
+  id: Hybrid.Quartz.Plugins.LiveLog
+  children:
+  - Hybrid.Quartz.Plugins.LiveLog.LiveLogHub
+  - Hybrid.Quartz.Plugins.LiveLog.LiveLogPlugin
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Quartz.Plugins.LiveLog
+  nameWithType: Hybrid.Quartz.Plugins.LiveLog
+  fullName: Hybrid.Quartz.Plugins.LiveLog
+  type: Namespace
+  assemblies:
+  - Hybrid.Quartz
+references:
+- uid: Hybrid.Quartz.Plugins.LiveLog.LiveLogHub
+  commentId: T:Hybrid.Quartz.Plugins.LiveLog.LiveLogHub
+  name: LiveLogHub
+  nameWithType: LiveLogHub
+  fullName: Hybrid.Quartz.Plugins.LiveLog.LiveLogHub
+- uid: Hybrid.Quartz.Plugins.LiveLog.LiveLogPlugin
+  commentId: T:Hybrid.Quartz.Plugins.LiveLog.LiveLogPlugin
+  name: LiveLogPlugin
+  nameWithType: LiveLogPlugin
+  fullName: Hybrid.Quartz.Plugins.LiveLog.LiveLogPlugin

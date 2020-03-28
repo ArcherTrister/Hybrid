@@ -1,0 +1,299 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Application.Services.Dtos
+  commentId: N:Hybrid.Application.Services.Dtos
+  id: Hybrid.Application.Services.Dtos
+  children:
+  - Hybrid.Application.Services.Dtos.DataAuthEnabled
+  - Hybrid.Application.Services.Dtos.IHasTotalCount
+  - Hybrid.Application.Services.Dtos.IListResult`1
+  - Hybrid.Application.Services.Dtos.InputDto`1
+  - Hybrid.Application.Services.Dtos.IPagedResult`1
+  - Hybrid.Application.Services.Dtos.ListResultDto`1
+  - Hybrid.Application.Services.Dtos.NameValue`1
+  - Hybrid.Application.Services.Dtos.NameValueDto`1
+  - Hybrid.Application.Services.Dtos.OutputDto
+  - Hybrid.Application.Services.Dtos.PagedResultDto`1
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Application.Services.Dtos
+  nameWithType: Hybrid.Application.Services.Dtos
+  fullName: Hybrid.Application.Services.Dtos
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Application.Services.Dtos.InputDto`1
+  commentId: T:Hybrid.Application.Services.Dtos.InputDto`1
+  name: InputDto<TKey>
+  nameWithType: InputDto<TKey>
+  fullName: Hybrid.Application.Services.Dtos.InputDto<TKey>
+  nameWithType.vb: InputDto(Of TKey)
+  fullName.vb: Hybrid.Application.Services.Dtos.InputDto(Of TKey)
+  name.vb: InputDto(Of TKey)
+  spec.csharp:
+  - uid: Hybrid.Application.Services.Dtos.InputDto`1
+    name: InputDto
+    nameWithType: InputDto
+    fullName: Hybrid.Application.Services.Dtos.InputDto
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Application.Services.Dtos.InputDto`1
+    name: InputDto
+    nameWithType: InputDto
+    fullName: Hybrid.Application.Services.Dtos.InputDto
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Application.Services.Dtos.OutputDto
+  commentId: T:Hybrid.Application.Services.Dtos.OutputDto
+  name: OutputDto
+  nameWithType: OutputDto
+  fullName: Hybrid.Application.Services.Dtos.OutputDto
+- uid: Hybrid.Application.Services.Dtos.DataAuthEnabled
+  commentId: T:Hybrid.Application.Services.Dtos.DataAuthEnabled
+  name: DataAuthEnabled
+  nameWithType: DataAuthEnabled
+  fullName: Hybrid.Application.Services.Dtos.DataAuthEnabled
+- uid: Hybrid.Application.Services.Dtos.IHasTotalCount
+  commentId: T:Hybrid.Application.Services.Dtos.IHasTotalCount
+  parent: Hybrid.Application.Services.Dtos
+  name: IHasTotalCount
+  nameWithType: IHasTotalCount
+  fullName: Hybrid.Application.Services.Dtos.IHasTotalCount
+- uid: Hybrid.Application.Services.Dtos.IListResult`1
+  commentId: T:Hybrid.Application.Services.Dtos.IListResult`1
+  name: IListResult<T>
+  nameWithType: IListResult<T>
+  fullName: Hybrid.Application.Services.Dtos.IListResult<T>
+  nameWithType.vb: IListResult(Of T)
+  fullName.vb: Hybrid.Application.Services.Dtos.IListResult(Of T)
+  name.vb: IListResult(Of T)
+  spec.csharp:
+  - uid: Hybrid.Application.Services.Dtos.IListResult`1
+    name: IListResult
+    nameWithType: IListResult
+    fullName: Hybrid.Application.Services.Dtos.IListResult
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Application.Services.Dtos.IListResult`1
+    name: IListResult
+    nameWithType: IListResult
+    fullName: Hybrid.Application.Services.Dtos.IListResult
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Application.Services.Dtos.IPagedResult`1
+  commentId: T:Hybrid.Application.Services.Dtos.IPagedResult`1
+  name: IPagedResult<T>
+  nameWithType: IPagedResult<T>
+  fullName: Hybrid.Application.Services.Dtos.IPagedResult<T>
+  nameWithType.vb: IPagedResult(Of T)
+  fullName.vb: Hybrid.Application.Services.Dtos.IPagedResult(Of T)
+  name.vb: IPagedResult(Of T)
+  spec.csharp:
+  - uid: Hybrid.Application.Services.Dtos.IPagedResult`1
+    name: IPagedResult
+    nameWithType: IPagedResult
+    fullName: Hybrid.Application.Services.Dtos.IPagedResult
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Application.Services.Dtos.IPagedResult`1
+    name: IPagedResult
+    nameWithType: IPagedResult
+    fullName: Hybrid.Application.Services.Dtos.IPagedResult
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Application.Services.Dtos.ListResultDto`1
+  commentId: T:Hybrid.Application.Services.Dtos.ListResultDto`1
+  name: ListResultDto<T>
+  nameWithType: ListResultDto<T>
+  fullName: Hybrid.Application.Services.Dtos.ListResultDto<T>
+  nameWithType.vb: ListResultDto(Of T)
+  fullName.vb: Hybrid.Application.Services.Dtos.ListResultDto(Of T)
+  name.vb: ListResultDto(Of T)
+  spec.csharp:
+  - uid: Hybrid.Application.Services.Dtos.ListResultDto`1
+    name: ListResultDto
+    nameWithType: ListResultDto
+    fullName: Hybrid.Application.Services.Dtos.ListResultDto
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Application.Services.Dtos.ListResultDto`1
+    name: ListResultDto
+    nameWithType: ListResultDto
+    fullName: Hybrid.Application.Services.Dtos.ListResultDto
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Application.Services.Dtos.NameValue`1
+  commentId: T:Hybrid.Application.Services.Dtos.NameValue`1
+  name: NameValue<T>
+  nameWithType: NameValue<T>
+  fullName: Hybrid.Application.Services.Dtos.NameValue<T>
+  nameWithType.vb: NameValue(Of T)
+  fullName.vb: Hybrid.Application.Services.Dtos.NameValue(Of T)
+  name.vb: NameValue(Of T)
+  spec.csharp:
+  - uid: Hybrid.Application.Services.Dtos.NameValue`1
+    name: NameValue
+    nameWithType: NameValue
+    fullName: Hybrid.Application.Services.Dtos.NameValue
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Application.Services.Dtos.NameValue`1
+    name: NameValue
+    nameWithType: NameValue
+    fullName: Hybrid.Application.Services.Dtos.NameValue
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Application.Services.Dtos.NameValueDto`1
+  commentId: T:Hybrid.Application.Services.Dtos.NameValueDto`1
+  name: NameValueDto<T>
+  nameWithType: NameValueDto<T>
+  fullName: Hybrid.Application.Services.Dtos.NameValueDto<T>
+  nameWithType.vb: NameValueDto(Of T)
+  fullName.vb: Hybrid.Application.Services.Dtos.NameValueDto(Of T)
+  name.vb: NameValueDto(Of T)
+  spec.csharp:
+  - uid: Hybrid.Application.Services.Dtos.NameValueDto`1
+    name: NameValueDto
+    nameWithType: NameValueDto
+    fullName: Hybrid.Application.Services.Dtos.NameValueDto
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Application.Services.Dtos.NameValueDto`1
+    name: NameValueDto
+    nameWithType: NameValueDto
+    fullName: Hybrid.Application.Services.Dtos.NameValueDto
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Application.Services.Dtos.PagedResultDto`1
+  commentId: T:Hybrid.Application.Services.Dtos.PagedResultDto`1
+  name: PagedResultDto<T>
+  nameWithType: PagedResultDto<T>
+  fullName: Hybrid.Application.Services.Dtos.PagedResultDto<T>
+  nameWithType.vb: PagedResultDto(Of T)
+  fullName.vb: Hybrid.Application.Services.Dtos.PagedResultDto(Of T)
+  name.vb: PagedResultDto(Of T)
+  spec.csharp:
+  - uid: Hybrid.Application.Services.Dtos.PagedResultDto`1
+    name: PagedResultDto
+    nameWithType: PagedResultDto
+    fullName: Hybrid.Application.Services.Dtos.PagedResultDto
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Application.Services.Dtos.PagedResultDto`1
+    name: PagedResultDto
+    nameWithType: PagedResultDto
+    fullName: Hybrid.Application.Services.Dtos.PagedResultDto
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Application.Services.Dtos
+  commentId: N:Hybrid.Application.Services.Dtos
+  name: Hybrid.Application.Services.Dtos
+  nameWithType: Hybrid.Application.Services.Dtos
+  fullName: Hybrid.Application.Services.Dtos

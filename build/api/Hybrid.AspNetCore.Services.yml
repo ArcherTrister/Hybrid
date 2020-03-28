@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.AspNetCore.Services
+  commentId: N:Hybrid.AspNetCore.Services
+  id: Hybrid.AspNetCore.Services
+  children:
+  - Hybrid.AspNetCore.Services.IVerifyCodeService
+  - Hybrid.AspNetCore.Services.VerifyCodeService
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.AspNetCore.Services
+  nameWithType: Hybrid.AspNetCore.Services
+  fullName: Hybrid.AspNetCore.Services
+  type: Namespace
+  assemblies:
+  - Hybrid.AspNetCore
+references:
+- uid: Hybrid.AspNetCore.Services.IVerifyCodeService
+  commentId: T:Hybrid.AspNetCore.Services.IVerifyCodeService
+  parent: Hybrid.AspNetCore.Services
+  name: IVerifyCodeService
+  nameWithType: IVerifyCodeService
+  fullName: Hybrid.AspNetCore.Services.IVerifyCodeService
+- uid: Hybrid.AspNetCore.Services.VerifyCodeService
+  commentId: T:Hybrid.AspNetCore.Services.VerifyCodeService
+  name: VerifyCodeService
+  nameWithType: VerifyCodeService
+  fullName: Hybrid.AspNetCore.Services.VerifyCodeService
+- uid: Hybrid.AspNetCore.Services
+  commentId: N:Hybrid.AspNetCore.Services
+  name: Hybrid.AspNetCore.Services
+  nameWithType: Hybrid.AspNetCore.Services
+  fullName: Hybrid.AspNetCore.Services

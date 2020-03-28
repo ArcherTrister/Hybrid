@@ -1,0 +1,119 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Zero.Identity.RealTime
+  commentId: N:Hybrid.Zero.Identity.RealTime
+  id: Hybrid.Zero.Identity.RealTime
+  children:
+  - Hybrid.Zero.Identity.RealTime.OnlineUser
+  - Hybrid.Zero.Identity.RealTime.OnlineUserProvider`6
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Zero.Identity.RealTime
+  nameWithType: Hybrid.Zero.Identity.RealTime
+  fullName: Hybrid.Zero.Identity.RealTime
+  type: Namespace
+  assemblies:
+  - Hybrid.Zero.Identity
+references:
+- uid: Hybrid.Zero.Identity.RealTime.OnlineUser
+  commentId: T:Hybrid.Zero.Identity.RealTime.OnlineUser
+  name: OnlineUser
+  nameWithType: OnlineUser
+  fullName: Hybrid.Zero.Identity.RealTime.OnlineUser
+- uid: Hybrid.Zero.Identity.RealTime.OnlineUserProvider`6
+  commentId: T:Hybrid.Zero.Identity.RealTime.OnlineUserProvider`6
+  name: OnlineUserProvider<TUser, TUserKey, TUserClaim, TUserClaimKey, TRole, TRoleKey>
+  nameWithType: OnlineUserProvider<TUser, TUserKey, TUserClaim, TUserClaimKey, TRole, TRoleKey>
+  fullName: Hybrid.Zero.Identity.RealTime.OnlineUserProvider<TUser, TUserKey, TUserClaim, TUserClaimKey, TRole, TRoleKey>
+  nameWithType.vb: OnlineUserProvider(Of TUser, TUserKey, TUserClaim, TUserClaimKey, TRole, TRoleKey)
+  fullName.vb: Hybrid.Zero.Identity.RealTime.OnlineUserProvider(Of TUser, TUserKey, TUserClaim, TUserClaimKey, TRole, TRoleKey)
+  name.vb: OnlineUserProvider(Of TUser, TUserKey, TUserClaim, TUserClaimKey, TRole, TRoleKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.Identity.RealTime.OnlineUserProvider`6
+    name: OnlineUserProvider
+    nameWithType: OnlineUserProvider
+    fullName: Hybrid.Zero.Identity.RealTime.OnlineUserProvider
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserClaim
+    nameWithType: TUserClaim
+    fullName: TUserClaim
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserClaimKey
+    nameWithType: TUserClaimKey
+    fullName: TUserClaimKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.Identity.RealTime.OnlineUserProvider`6
+    name: OnlineUserProvider
+    nameWithType: OnlineUserProvider
+    fullName: Hybrid.Zero.Identity.RealTime.OnlineUserProvider
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserClaim
+    nameWithType: TUserClaim
+    fullName: TUserClaim
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserClaimKey
+    nameWithType: TUserClaimKey
+    fullName: TUserClaimKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -1,0 +1,1291 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Extensions.CollectionExtensions
+  commentId: T:Hybrid.Extensions.CollectionExtensions
+  id: CollectionExtensions
+  parent: Hybrid.Extensions
+  children:
+  - Hybrid.Extensions.CollectionExtensions.AddIf``1(System.Collections.Generic.ICollection{``0},``0,System.Boolean)
+  - Hybrid.Extensions.CollectionExtensions.AddIf``1(System.Collections.Generic.ICollection{``0},``0,System.Func{System.Boolean})
+  - Hybrid.Extensions.CollectionExtensions.AddIfNotContains``1(System.Collections.Generic.ICollection{``0},``0)
+  - Hybrid.Extensions.CollectionExtensions.AddIfNotExist``1(System.Collections.Generic.ICollection{``0},``0,System.Func{``0,System.Boolean})
+  - Hybrid.Extensions.CollectionExtensions.AddIfNotNull``1(System.Collections.Generic.ICollection{``0},``0)
+  - Hybrid.Extensions.CollectionExtensions.FindIndexOrDefault``1(System.Collections.Generic.List{``0},System.Predicate{``0})
+  - Hybrid.Extensions.CollectionExtensions.GetOrAdd``1(System.Collections.Generic.ICollection{``0},System.Func{``0,System.Boolean},System.Func{``0})
+  - Hybrid.Extensions.CollectionExtensions.IsNullOrEmpty``1(System.Collections.Generic.ICollection{``0})
+  langs:
+  - csharp
+  - vb
+  name: CollectionExtensions
+  nameWithType: CollectionExtensions
+  fullName: Hybrid.Extensions.CollectionExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid/Extensions/CollectionExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: CollectionExtensions
+    path: ../src/Hybrid/Extensions/CollectionExtensions.cs
+    startLine: 20
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n集合扩展方法\n"
+  example: []
+  syntax:
+    content: public static class CollectionExtensions
+    content.vb: Public Module CollectionExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.Extensions.CollectionExtensions.AddIf``1(System.Collections.Generic.ICollection{``0},``0,System.Boolean)
+  commentId: M:Hybrid.Extensions.CollectionExtensions.AddIf``1(System.Collections.Generic.ICollection{``0},``0,System.Boolean)
+  id: AddIf``1(System.Collections.Generic.ICollection{``0},``0,System.Boolean)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.CollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddIf<T>(ICollection<T>, T, Boolean)
+  nameWithType: CollectionExtensions.AddIf<T>(ICollection<T>, T, Boolean)
+  fullName: Hybrid.Extensions.CollectionExtensions.AddIf<T>(System.Collections.Generic.ICollection<T>, T, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/CollectionExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: AddIf
+    path: ../src/Hybrid/Extensions/CollectionExtensions.cs
+    startLine: 25
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n如果条件成立，添加项\n"
+  example: []
+  syntax:
+    content: public static void AddIf<T>(this ICollection<T> collection, T value, bool flag)
+    parameters:
+    - id: collection
+      type: System.Collections.Generic.ICollection{{T}}
+    - id: value
+      type: '{T}'
+    - id: flag
+      type: System.Boolean
+    typeParameters:
+    - id: T
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub AddIf(Of T)(collection As ICollection(Of T), value As T, flag As Boolean)
+  overload: Hybrid.Extensions.CollectionExtensions.AddIf*
+  nameWithType.vb: CollectionExtensions.AddIf(Of T)(ICollection(Of T), T, Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.CollectionExtensions.AddIf(Of T)(System.Collections.Generic.ICollection(Of T), T, System.Boolean)
+  name.vb: AddIf(Of T)(ICollection(Of T), T, Boolean)
+- uid: Hybrid.Extensions.CollectionExtensions.AddIf``1(System.Collections.Generic.ICollection{``0},``0,System.Func{System.Boolean})
+  commentId: M:Hybrid.Extensions.CollectionExtensions.AddIf``1(System.Collections.Generic.ICollection{``0},``0,System.Func{System.Boolean})
+  id: AddIf``1(System.Collections.Generic.ICollection{``0},``0,System.Func{System.Boolean})
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.CollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddIf<T>(ICollection<T>, T, Func<Boolean>)
+  nameWithType: CollectionExtensions.AddIf<T>(ICollection<T>, T, Func<Boolean>)
+  fullName: Hybrid.Extensions.CollectionExtensions.AddIf<T>(System.Collections.Generic.ICollection<T>, T, System.Func<System.Boolean>)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/CollectionExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: AddIf
+    path: ../src/Hybrid/Extensions/CollectionExtensions.cs
+    startLine: 37
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n如果条件成立，添加项\n"
+  example: []
+  syntax:
+    content: public static void AddIf<T>(this ICollection<T> collection, T value, Func<bool> func)
+    parameters:
+    - id: collection
+      type: System.Collections.Generic.ICollection{{T}}
+    - id: value
+      type: '{T}'
+    - id: func
+      type: System.Func{System.Boolean}
+    typeParameters:
+    - id: T
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub AddIf(Of T)(collection As ICollection(Of T), value As T, func As Func(Of Boolean))
+  overload: Hybrid.Extensions.CollectionExtensions.AddIf*
+  nameWithType.vb: CollectionExtensions.AddIf(Of T)(ICollection(Of T), T, Func(Of Boolean))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.CollectionExtensions.AddIf(Of T)(System.Collections.Generic.ICollection(Of T), T, System.Func(Of System.Boolean))
+  name.vb: AddIf(Of T)(ICollection(Of T), T, Func(Of Boolean))
+- uid: Hybrid.Extensions.CollectionExtensions.AddIfNotExist``1(System.Collections.Generic.ICollection{``0},``0,System.Func{``0,System.Boolean})
+  commentId: M:Hybrid.Extensions.CollectionExtensions.AddIfNotExist``1(System.Collections.Generic.ICollection{``0},``0,System.Func{``0,System.Boolean})
+  id: AddIfNotExist``1(System.Collections.Generic.ICollection{``0},``0,System.Func{``0,System.Boolean})
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.CollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddIfNotExist<T>(ICollection<T>, T, Func<T, Boolean>)
+  nameWithType: CollectionExtensions.AddIfNotExist<T>(ICollection<T>, T, Func<T, Boolean>)
+  fullName: Hybrid.Extensions.CollectionExtensions.AddIfNotExist<T>(System.Collections.Generic.ICollection<T>, T, System.Func<T, System.Boolean>)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/CollectionExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: AddIfNotExist
+    path: ../src/Hybrid/Extensions/CollectionExtensions.cs
+    startLine: 49
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n如果不存在，添加项\n"
+  example: []
+  syntax:
+    content: public static void AddIfNotExist<T>(this ICollection<T> collection, T value, Func<T, bool> existFunc = null)
+    parameters:
+    - id: collection
+      type: System.Collections.Generic.ICollection{{T}}
+    - id: value
+      type: '{T}'
+    - id: existFunc
+      type: System.Func{{T},System.Boolean}
+    typeParameters:
+    - id: T
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub AddIfNotExist(Of T)(collection As ICollection(Of T), value As T, existFunc As Func(Of T, Boolean) = Nothing)
+  overload: Hybrid.Extensions.CollectionExtensions.AddIfNotExist*
+  nameWithType.vb: CollectionExtensions.AddIfNotExist(Of T)(ICollection(Of T), T, Func(Of T, Boolean))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.CollectionExtensions.AddIfNotExist(Of T)(System.Collections.Generic.ICollection(Of T), T, System.Func(Of T, System.Boolean))
+  name.vb: AddIfNotExist(Of T)(ICollection(Of T), T, Func(Of T, Boolean))
+- uid: Hybrid.Extensions.CollectionExtensions.AddIfNotNull``1(System.Collections.Generic.ICollection{``0},``0)
+  commentId: M:Hybrid.Extensions.CollectionExtensions.AddIfNotNull``1(System.Collections.Generic.ICollection{``0},``0)
+  id: AddIfNotNull``1(System.Collections.Generic.ICollection{``0},``0)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.CollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddIfNotNull<T>(ICollection<T>, T)
+  nameWithType: CollectionExtensions.AddIfNotNull<T>(ICollection<T>, T)
+  fullName: Hybrid.Extensions.CollectionExtensions.AddIfNotNull<T>(System.Collections.Generic.ICollection<T>, T)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/CollectionExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: AddIfNotNull
+    path: ../src/Hybrid/Extensions/CollectionExtensions.cs
+    startLine: 62
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n如果不为空，添加项\n"
+  example: []
+  syntax:
+    content: >-
+      public static void AddIfNotNull<T>(this ICollection<T> collection, T value)
+
+          where T : class
+    parameters:
+    - id: collection
+      type: System.Collections.Generic.ICollection{{T}}
+    - id: value
+      type: '{T}'
+    typeParameters:
+    - id: T
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub AddIfNotNull(Of T As Class)(collection As ICollection(Of T), value As T)
+  overload: Hybrid.Extensions.CollectionExtensions.AddIfNotNull*
+  nameWithType.vb: CollectionExtensions.AddIfNotNull(Of T)(ICollection(Of T), T)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.CollectionExtensions.AddIfNotNull(Of T)(System.Collections.Generic.ICollection(Of T), T)
+  name.vb: AddIfNotNull(Of T)(ICollection(Of T), T)
+- uid: Hybrid.Extensions.CollectionExtensions.GetOrAdd``1(System.Collections.Generic.ICollection{``0},System.Func{``0,System.Boolean},System.Func{``0})
+  commentId: M:Hybrid.Extensions.CollectionExtensions.GetOrAdd``1(System.Collections.Generic.ICollection{``0},System.Func{``0,System.Boolean},System.Func{``0})
+  id: GetOrAdd``1(System.Collections.Generic.ICollection{``0},System.Func{``0,System.Boolean},System.Func{``0})
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.CollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetOrAdd<T>(ICollection<T>, Func<T, Boolean>, Func<T>)
+  nameWithType: CollectionExtensions.GetOrAdd<T>(ICollection<T>, Func<T, Boolean>, Func<T>)
+  fullName: Hybrid.Extensions.CollectionExtensions.GetOrAdd<T>(System.Collections.Generic.ICollection<T>, System.Func<T, System.Boolean>, System.Func<T>)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/CollectionExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetOrAdd
+    path: ../src/Hybrid/Extensions/CollectionExtensions.cs
+    startLine: 74
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n获取对象，不存在对使用委托添加对象\n"
+  example: []
+  syntax:
+    content: public static T GetOrAdd<T>(this ICollection<T> collection, Func<T, bool> selector, Func<T> factory)
+    parameters:
+    - id: collection
+      type: System.Collections.Generic.ICollection{{T}}
+    - id: selector
+      type: System.Func{{T},System.Boolean}
+    - id: factory
+      type: System.Func{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetOrAdd(Of T)(collection As ICollection(Of T), selector As Func(Of T, Boolean), factory As Func(Of T)) As T
+  overload: Hybrid.Extensions.CollectionExtensions.GetOrAdd*
+  nameWithType.vb: CollectionExtensions.GetOrAdd(Of T)(ICollection(Of T), Func(Of T, Boolean), Func(Of T))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.CollectionExtensions.GetOrAdd(Of T)(System.Collections.Generic.ICollection(Of T), System.Func(Of T, System.Boolean), System.Func(Of T))
+  name.vb: GetOrAdd(Of T)(ICollection(Of T), Func(Of T, Boolean), Func(Of T))
+- uid: Hybrid.Extensions.CollectionExtensions.IsNullOrEmpty``1(System.Collections.Generic.ICollection{``0})
+  commentId: M:Hybrid.Extensions.CollectionExtensions.IsNullOrEmpty``1(System.Collections.Generic.ICollection{``0})
+  id: IsNullOrEmpty``1(System.Collections.Generic.ICollection{``0})
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.CollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsNullOrEmpty<T>(ICollection<T>)
+  nameWithType: CollectionExtensions.IsNullOrEmpty<T>(ICollection<T>)
+  fullName: Hybrid.Extensions.CollectionExtensions.IsNullOrEmpty<T>(System.Collections.Generic.ICollection<T>)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/CollectionExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsNullOrEmpty
+    path: ../src/Hybrid/Extensions/CollectionExtensions.cs
+    startLine: 90
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\n判断集合是否为null或空集合\n"
+  example: []
+  syntax:
+    content: public static bool IsNullOrEmpty<T>(this ICollection<T> collection)
+    parameters:
+    - id: collection
+      type: System.Collections.Generic.ICollection{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsNullOrEmpty(Of T)(collection As ICollection(Of T)) As Boolean
+  overload: Hybrid.Extensions.CollectionExtensions.IsNullOrEmpty*
+  nameWithType.vb: CollectionExtensions.IsNullOrEmpty(Of T)(ICollection(Of T))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.CollectionExtensions.IsNullOrEmpty(Of T)(System.Collections.Generic.ICollection(Of T))
+  name.vb: IsNullOrEmpty(Of T)(ICollection(Of T))
+- uid: Hybrid.Extensions.CollectionExtensions.AddIfNotContains``1(System.Collections.Generic.ICollection{``0},``0)
+  commentId: M:Hybrid.Extensions.CollectionExtensions.AddIfNotContains``1(System.Collections.Generic.ICollection{``0},``0)
+  id: AddIfNotContains``1(System.Collections.Generic.ICollection{``0},``0)
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.CollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddIfNotContains<T>(ICollection<T>, T)
+  nameWithType: CollectionExtensions.AddIfNotContains<T>(ICollection<T>, T)
+  fullName: Hybrid.Extensions.CollectionExtensions.AddIfNotContains<T>(System.Collections.Generic.ICollection<T>, T)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/CollectionExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: AddIfNotContains
+    path: ../src/Hybrid/Extensions/CollectionExtensions.cs
+    startLine: 102
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  summary: "\nAdds an item to the collection if it&apos;s not already in the collection.\n"
+  example: []
+  syntax:
+    content: public static bool AddIfNotContains<T>(this ICollection<T> source, T item)
+    parameters:
+    - id: source
+      type: System.Collections.Generic.ICollection{{T}}
+      description: Collection
+    - id: item
+      type: '{T}'
+      description: Item to check and add
+    typeParameters:
+    - id: T
+      description: Type of the items in the collection
+    return:
+      type: System.Boolean
+      description: Returns True if added, returns False if not.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddIfNotContains(Of T)(source As ICollection(Of T), item As T) As Boolean
+  overload: Hybrid.Extensions.CollectionExtensions.AddIfNotContains*
+  nameWithType.vb: CollectionExtensions.AddIfNotContains(Of T)(ICollection(Of T), T)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.CollectionExtensions.AddIfNotContains(Of T)(System.Collections.Generic.ICollection(Of T), T)
+  name.vb: AddIfNotContains(Of T)(ICollection(Of T), T)
+- uid: Hybrid.Extensions.CollectionExtensions.FindIndexOrDefault``1(System.Collections.Generic.List{``0},System.Predicate{``0})
+  commentId: M:Hybrid.Extensions.CollectionExtensions.FindIndexOrDefault``1(System.Collections.Generic.List{``0},System.Predicate{``0})
+  id: FindIndexOrDefault``1(System.Collections.Generic.List{``0},System.Predicate{``0})
+  isExtensionMethod: true
+  parent: Hybrid.Extensions.CollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: FindIndexOrDefault<T>(List<T>, Predicate<T>)
+  nameWithType: CollectionExtensions.FindIndexOrDefault<T>(List<T>, Predicate<T>)
+  fullName: Hybrid.Extensions.CollectionExtensions.FindIndexOrDefault<T>(System.Collections.Generic.List<T>, System.Predicate<T>)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Extensions/CollectionExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: FindIndexOrDefault
+    path: ../src/Hybrid/Extensions/CollectionExtensions.cs
+    startLine: 118
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Extensions
+  syntax:
+    content: >-
+      public static int FindIndexOrDefault<T>(this List<T> ts, Predicate<T> match)
+
+          where T : class
+    parameters:
+    - id: ts
+      type: System.Collections.Generic.List{{T}}
+    - id: match
+      type: System.Predicate{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: System.Int32
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function FindIndexOrDefault(Of T As Class)(ts As List(Of T), match As Predicate(Of T)) As Integer
+  overload: Hybrid.Extensions.CollectionExtensions.FindIndexOrDefault*
+  nameWithType.vb: CollectionExtensions.FindIndexOrDefault(Of T)(List(Of T), Predicate(Of T))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Extensions.CollectionExtensions.FindIndexOrDefault(Of T)(System.Collections.Generic.List(Of T), System.Predicate(Of T))
+  name.vb: FindIndexOrDefault(Of T)(List(Of T), Predicate(Of T))
+references:
+- uid: Hybrid.Extensions
+  commentId: N:Hybrid.Extensions
+  name: Hybrid.Extensions
+  nameWithType: Hybrid.Extensions
+  fullName: Hybrid.Extensions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hybrid.Extensions.CollectionExtensions.AddIf*
+  commentId: Overload:Hybrid.Extensions.CollectionExtensions.AddIf
+  name: AddIf
+  nameWithType: CollectionExtensions.AddIf
+  fullName: Hybrid.Extensions.CollectionExtensions.AddIf
+- uid: System.Collections.Generic.ICollection{{T}}
+  commentId: T:System.Collections.Generic.ICollection{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Func{System.Boolean}
+  commentId: T:System.Func{System.Boolean}
+  parent: System
+  definition: System.Func`1
+  name: Func<Boolean>
+  nameWithType: Func<Boolean>
+  fullName: System.Func<System.Boolean>
+  nameWithType.vb: Func(Of Boolean)
+  fullName.vb: System.Func(Of System.Boolean)
+  name.vb: Func(Of Boolean)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.CollectionExtensions.AddIfNotExist*
+  commentId: Overload:Hybrid.Extensions.CollectionExtensions.AddIfNotExist
+  name: AddIfNotExist
+  nameWithType: CollectionExtensions.AddIfNotExist
+  fullName: Hybrid.Extensions.CollectionExtensions.AddIfNotExist
+- uid: System.Func{{T},System.Boolean}
+  commentId: T:System.Func{``0,System.Boolean}
+  parent: System
+  definition: System.Func`2
+  name: Func<T, Boolean>
+  nameWithType: Func<T, Boolean>
+  fullName: System.Func<T, System.Boolean>
+  nameWithType.vb: Func(Of T, Boolean)
+  fullName.vb: System.Func(Of T, System.Boolean)
+  name.vb: Func(Of T, Boolean)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.CollectionExtensions.AddIfNotNull*
+  commentId: Overload:Hybrid.Extensions.CollectionExtensions.AddIfNotNull
+  name: AddIfNotNull
+  nameWithType: CollectionExtensions.AddIfNotNull
+  fullName: Hybrid.Extensions.CollectionExtensions.AddIfNotNull
+- uid: Hybrid.Extensions.CollectionExtensions.GetOrAdd*
+  commentId: Overload:Hybrid.Extensions.CollectionExtensions.GetOrAdd
+  name: GetOrAdd
+  nameWithType: CollectionExtensions.GetOrAdd
+  fullName: Hybrid.Extensions.CollectionExtensions.GetOrAdd
+- uid: System.Func{{T}}
+  commentId: T:System.Func{``0}
+  parent: System
+  definition: System.Func`1
+  name: Func<T>
+  nameWithType: Func<T>
+  fullName: System.Func<T>
+  nameWithType.vb: Func(Of T)
+  fullName.vb: System.Func(Of T)
+  name.vb: Func(Of T)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.CollectionExtensions.IsNullOrEmpty*
+  commentId: Overload:Hybrid.Extensions.CollectionExtensions.IsNullOrEmpty
+  name: IsNullOrEmpty
+  nameWithType: CollectionExtensions.IsNullOrEmpty
+  fullName: Hybrid.Extensions.CollectionExtensions.IsNullOrEmpty
+- uid: Hybrid.Extensions.CollectionExtensions.AddIfNotContains*
+  commentId: Overload:Hybrid.Extensions.CollectionExtensions.AddIfNotContains
+  name: AddIfNotContains
+  nameWithType: CollectionExtensions.AddIfNotContains
+  fullName: Hybrid.Extensions.CollectionExtensions.AddIfNotContains
+- uid: Hybrid.Extensions.CollectionExtensions.FindIndexOrDefault*
+  commentId: Overload:Hybrid.Extensions.CollectionExtensions.FindIndexOrDefault
+  name: FindIndexOrDefault
+  nameWithType: CollectionExtensions.FindIndexOrDefault
+  fullName: Hybrid.Extensions.CollectionExtensions.FindIndexOrDefault
+- uid: System.Collections.Generic.List{{T}}
+  commentId: T:System.Collections.Generic.List{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Predicate{{T}}
+  commentId: T:System.Predicate{``0}
+  parent: System
+  definition: System.Predicate`1
+  name: Predicate<T>
+  nameWithType: Predicate<T>
+  fullName: System.Predicate<T>
+  nameWithType.vb: Predicate(Of T)
+  fullName.vb: System.Predicate(Of T)
+  name.vb: Predicate(Of T)
+  spec.csharp:
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Predicate`1
+  commentId: T:System.Predicate`1
+  isExternal: true
+  name: Predicate<T>
+  nameWithType: Predicate<T>
+  fullName: System.Predicate<T>
+  nameWithType.vb: Predicate(Of T)
+  fullName.vb: System.Predicate(Of T)
+  name.vb: Predicate(Of T)
+  spec.csharp:
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

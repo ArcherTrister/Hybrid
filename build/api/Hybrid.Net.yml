@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Net
+  commentId: N:Hybrid.Net
+  id: Hybrid.Net
+  children:
+  - Hybrid.Net.IpLocation
+  - Hybrid.Net.IpLocator
+  - Hybrid.Net.NetHelper
+  - Hybrid.Net.UserAgent
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Net
+  nameWithType: Hybrid.Net
+  fullName: Hybrid.Net
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Net.IpLocation
+  commentId: T:Hybrid.Net.IpLocation
+  parent: Hybrid.Net
+  name: IpLocation
+  nameWithType: IpLocation
+  fullName: Hybrid.Net.IpLocation
+- uid: Hybrid.Net.IpLocator
+  commentId: T:Hybrid.Net.IpLocator
+  name: IpLocator
+  nameWithType: IpLocator
+  fullName: Hybrid.Net.IpLocator
+- uid: Hybrid.Net.NetHelper
+  commentId: T:Hybrid.Net.NetHelper
+  name: NetHelper
+  nameWithType: NetHelper
+  fullName: Hybrid.Net.NetHelper
+- uid: Hybrid.Net.UserAgent
+  commentId: T:Hybrid.Net.UserAgent
+  name: UserAgent
+  nameWithType: UserAgent
+  fullName: Hybrid.Net.UserAgent
+- uid: Hybrid.Net
+  commentId: N:Hybrid.Net
+  name: Hybrid.Net
+  nameWithType: Hybrid.Net
+  fullName: Hybrid.Net

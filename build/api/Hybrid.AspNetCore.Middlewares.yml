@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.AspNetCore.Middlewares
+  commentId: N:Hybrid.AspNetCore.Middlewares
+  id: Hybrid.AspNetCore.Middlewares
+  children:
+  - Hybrid.AspNetCore.Middlewares.ExceptionHandlerMiddleware
+  - Hybrid.AspNetCore.Middlewares.HostHttpCryptoMiddleware
+  - Hybrid.AspNetCore.Middlewares.IMiddleware
+  - Hybrid.AspNetCore.Middlewares.NoFoundHandlerMiddleware
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.AspNetCore.Middlewares
+  nameWithType: Hybrid.AspNetCore.Middlewares
+  fullName: Hybrid.AspNetCore.Middlewares
+  type: Namespace
+  assemblies:
+  - Hybrid.AspNetCore
+references:
+- uid: Hybrid.AspNetCore.Middlewares.ExceptionHandlerMiddleware
+  commentId: T:Hybrid.AspNetCore.Middlewares.ExceptionHandlerMiddleware
+  name: ExceptionHandlerMiddleware
+  nameWithType: ExceptionHandlerMiddleware
+  fullName: Hybrid.AspNetCore.Middlewares.ExceptionHandlerMiddleware
+- uid: Hybrid.AspNetCore.Middlewares.HostHttpCryptoMiddleware
+  commentId: T:Hybrid.AspNetCore.Middlewares.HostHttpCryptoMiddleware
+  name: HostHttpCryptoMiddleware
+  nameWithType: HostHttpCryptoMiddleware
+  fullName: Hybrid.AspNetCore.Middlewares.HostHttpCryptoMiddleware
+- uid: Hybrid.AspNetCore.Middlewares.IMiddleware
+  commentId: T:Hybrid.AspNetCore.Middlewares.IMiddleware
+  parent: Hybrid.AspNetCore.Middlewares
+  name: IMiddleware
+  nameWithType: IMiddleware
+  fullName: Hybrid.AspNetCore.Middlewares.IMiddleware
+- uid: Hybrid.AspNetCore.Middlewares.NoFoundHandlerMiddleware
+  commentId: T:Hybrid.AspNetCore.Middlewares.NoFoundHandlerMiddleware
+  name: NoFoundHandlerMiddleware
+  nameWithType: NoFoundHandlerMiddleware
+  fullName: Hybrid.AspNetCore.Middlewares.NoFoundHandlerMiddleware
+- uid: Hybrid.AspNetCore.Middlewares
+  commentId: N:Hybrid.AspNetCore.Middlewares
+  name: Hybrid.AspNetCore.Middlewares
+  nameWithType: Hybrid.AspNetCore.Middlewares
+  fullName: Hybrid.AspNetCore.Middlewares

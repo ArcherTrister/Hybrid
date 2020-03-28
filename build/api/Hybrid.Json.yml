@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Json
+  commentId: N:Hybrid.Json
+  id: Hybrid.Json
+  children:
+  - Hybrid.Json.CamelCaseToUnderScoreCasePropertyNamesContractResolver
+  - Hybrid.Json.JsonExtensions
+  - Hybrid.Json.JsonHelper
+  - Hybrid.Json.UnderScoreCaseToCamelCasePropertyNamesContractResolver
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Json
+  nameWithType: Hybrid.Json
+  fullName: Hybrid.Json
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Json.CamelCaseToUnderScoreCasePropertyNamesContractResolver
+  commentId: T:Hybrid.Json.CamelCaseToUnderScoreCasePropertyNamesContractResolver
+  name: CamelCaseToUnderScoreCasePropertyNamesContractResolver
+  nameWithType: CamelCaseToUnderScoreCasePropertyNamesContractResolver
+  fullName: Hybrid.Json.CamelCaseToUnderScoreCasePropertyNamesContractResolver
+- uid: Hybrid.Json.JsonExtensions
+  commentId: T:Hybrid.Json.JsonExtensions
+  parent: Hybrid.Json
+  name: JsonExtensions
+  nameWithType: JsonExtensions
+  fullName: Hybrid.Json.JsonExtensions
+- uid: Hybrid.Json.JsonHelper
+  commentId: T:Hybrid.Json.JsonHelper
+  name: JsonHelper
+  nameWithType: JsonHelper
+  fullName: Hybrid.Json.JsonHelper
+- uid: Hybrid.Json.UnderScoreCaseToCamelCasePropertyNamesContractResolver
+  commentId: T:Hybrid.Json.UnderScoreCaseToCamelCasePropertyNamesContractResolver
+  name: UnderScoreCaseToCamelCasePropertyNamesContractResolver
+  nameWithType: UnderScoreCaseToCamelCasePropertyNamesContractResolver
+  fullName: Hybrid.Json.UnderScoreCaseToCamelCasePropertyNamesContractResolver
+- uid: Hybrid.Json
+  commentId: N:Hybrid.Json
+  name: Hybrid.Json
+  nameWithType: Hybrid.Json
+  fullName: Hybrid.Json

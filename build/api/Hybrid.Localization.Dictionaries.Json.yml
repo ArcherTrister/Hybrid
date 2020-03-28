@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Localization.Dictionaries.Json
+  commentId: N:Hybrid.Localization.Dictionaries.Json
+  id: Hybrid.Localization.Dictionaries.Json
+  children:
+  - Hybrid.Localization.Dictionaries.Json.JsonEmbeddedFileLocalizationDictionaryProvider
+  - Hybrid.Localization.Dictionaries.Json.JsonFileLocalizationDictionaryProvider
+  - Hybrid.Localization.Dictionaries.Json.JsonLocalizationDictionary
+  - Hybrid.Localization.Dictionaries.Json.JsonLocalizationFile
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Localization.Dictionaries.Json
+  nameWithType: Hybrid.Localization.Dictionaries.Json
+  fullName: Hybrid.Localization.Dictionaries.Json
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Localization.Dictionaries.Json.JsonEmbeddedFileLocalizationDictionaryProvider
+  commentId: T:Hybrid.Localization.Dictionaries.Json.JsonEmbeddedFileLocalizationDictionaryProvider
+  name: JsonEmbeddedFileLocalizationDictionaryProvider
+  nameWithType: JsonEmbeddedFileLocalizationDictionaryProvider
+  fullName: Hybrid.Localization.Dictionaries.Json.JsonEmbeddedFileLocalizationDictionaryProvider
+- uid: Hybrid.Localization.Dictionaries.Json.JsonFileLocalizationDictionaryProvider
+  commentId: T:Hybrid.Localization.Dictionaries.Json.JsonFileLocalizationDictionaryProvider
+  name: JsonFileLocalizationDictionaryProvider
+  nameWithType: JsonFileLocalizationDictionaryProvider
+  fullName: Hybrid.Localization.Dictionaries.Json.JsonFileLocalizationDictionaryProvider
+- uid: Hybrid.Localization.Dictionaries.Json.JsonLocalizationDictionary
+  commentId: T:Hybrid.Localization.Dictionaries.Json.JsonLocalizationDictionary
+  parent: Hybrid.Localization.Dictionaries.Json
+  name: JsonLocalizationDictionary
+  nameWithType: JsonLocalizationDictionary
+  fullName: Hybrid.Localization.Dictionaries.Json.JsonLocalizationDictionary
+- uid: Hybrid.Localization.Dictionaries.Json.JsonLocalizationFile
+  commentId: T:Hybrid.Localization.Dictionaries.Json.JsonLocalizationFile
+  name: JsonLocalizationFile
+  nameWithType: JsonLocalizationFile
+  fullName: Hybrid.Localization.Dictionaries.Json.JsonLocalizationFile
+- uid: Hybrid.Localization.Dictionaries.Json
+  commentId: N:Hybrid.Localization.Dictionaries.Json
+  name: Hybrid.Localization.Dictionaries.Json
+  nameWithType: Hybrid.Localization.Dictionaries.Json
+  fullName: Hybrid.Localization.Dictionaries.Json

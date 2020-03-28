@@ -1,0 +1,65 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.Views
+  commentId: N:Hybrid.Zero.IdentityServer4.Quickstart.Views
+  id: Hybrid.Zero.IdentityServer4.Quickstart.Views
+  children:
+  - Hybrid.Zero.IdentityServer4.Quickstart.Views.IdentityServerRazorPage`1
+  - Hybrid.Zero.IdentityServer4.Quickstart.Views.IdentityServerViewComponent
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Zero.IdentityServer4.Quickstart.Views
+  nameWithType: Hybrid.Zero.IdentityServer4.Quickstart.Views
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.Views
+  type: Namespace
+  assemblies:
+  - Hybrid.Zero.IdentityServer4
+references:
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.Views.IdentityServerRazorPage`1
+  commentId: T:Hybrid.Zero.IdentityServer4.Quickstart.Views.IdentityServerRazorPage`1
+  name: IdentityServerRazorPage<TModel>
+  nameWithType: IdentityServerRazorPage<TModel>
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.Views.IdentityServerRazorPage<TModel>
+  nameWithType.vb: IdentityServerRazorPage(Of TModel)
+  fullName.vb: Hybrid.Zero.IdentityServer4.Quickstart.Views.IdentityServerRazorPage(Of TModel)
+  name.vb: IdentityServerRazorPage(Of TModel)
+  spec.csharp:
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.Views.IdentityServerRazorPage`1
+    name: IdentityServerRazorPage
+    nameWithType: IdentityServerRazorPage
+    fullName: Hybrid.Zero.IdentityServer4.Quickstart.Views.IdentityServerRazorPage
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TModel
+    nameWithType: TModel
+    fullName: TModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.IdentityServer4.Quickstart.Views.IdentityServerRazorPage`1
+    name: IdentityServerRazorPage
+    nameWithType: IdentityServerRazorPage
+    fullName: Hybrid.Zero.IdentityServer4.Quickstart.Views.IdentityServerRazorPage
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TModel
+    nameWithType: TModel
+    fullName: TModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.Views.IdentityServerViewComponent
+  commentId: T:Hybrid.Zero.IdentityServer4.Quickstart.Views.IdentityServerViewComponent
+  parent: Hybrid.Zero.IdentityServer4.Quickstart.Views
+  name: IdentityServerViewComponent
+  nameWithType: IdentityServerViewComponent
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.Views.IdentityServerViewComponent
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.Views
+  commentId: N:Hybrid.Zero.IdentityServer4.Quickstart.Views
+  name: Hybrid.Zero.IdentityServer4.Quickstart.Views
+  nameWithType: Hybrid.Zero.IdentityServer4.Quickstart.Views
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.Views

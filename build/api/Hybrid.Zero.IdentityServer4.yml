@@ -1,0 +1,149 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Zero.IdentityServer4
+  commentId: N:Hybrid.Zero.IdentityServer4
+  id: Hybrid.Zero.IdentityServer4
+  children:
+  - Hybrid.Zero.IdentityServer4.CustomTokenCreationService
+  - Hybrid.Zero.IdentityServer4.CustomTokenResponse
+  - Hybrid.Zero.IdentityServer4.CustomTokenValidator
+  - Hybrid.Zero.IdentityServer4.CustomUserInfoResponse
+  - Hybrid.Zero.IdentityServer4.DefaultCorsPolicy
+  - Hybrid.Zero.IdentityServer4.DefaultRedirectValidator
+  - Hybrid.Zero.IdentityServer4.IdentityServer4ModuleBase`6
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Zero.IdentityServer4
+  nameWithType: Hybrid.Zero.IdentityServer4
+  fullName: Hybrid.Zero.IdentityServer4
+  type: Namespace
+  assemblies:
+  - Hybrid.Zero.IdentityServer4
+references:
+- uid: Hybrid.Zero.IdentityServer4.CustomTokenCreationService
+  commentId: T:Hybrid.Zero.IdentityServer4.CustomTokenCreationService
+  name: CustomTokenCreationService
+  nameWithType: CustomTokenCreationService
+  fullName: Hybrid.Zero.IdentityServer4.CustomTokenCreationService
+- uid: Hybrid.Zero.IdentityServer4.CustomTokenResponse
+  commentId: T:Hybrid.Zero.IdentityServer4.CustomTokenResponse
+  name: CustomTokenResponse
+  nameWithType: CustomTokenResponse
+  fullName: Hybrid.Zero.IdentityServer4.CustomTokenResponse
+- uid: Hybrid.Zero.IdentityServer4.CustomTokenValidator
+  commentId: T:Hybrid.Zero.IdentityServer4.CustomTokenValidator
+  name: CustomTokenValidator
+  nameWithType: CustomTokenValidator
+  fullName: Hybrid.Zero.IdentityServer4.CustomTokenValidator
+- uid: Hybrid.Zero.IdentityServer4.CustomUserInfoResponse
+  commentId: T:Hybrid.Zero.IdentityServer4.CustomUserInfoResponse
+  name: CustomUserInfoResponse
+  nameWithType: CustomUserInfoResponse
+  fullName: Hybrid.Zero.IdentityServer4.CustomUserInfoResponse
+- uid: Hybrid.Zero.IdentityServer4.DefaultCorsPolicy
+  commentId: T:Hybrid.Zero.IdentityServer4.DefaultCorsPolicy
+  name: DefaultCorsPolicy
+  nameWithType: DefaultCorsPolicy
+  fullName: Hybrid.Zero.IdentityServer4.DefaultCorsPolicy
+- uid: Hybrid.Zero.IdentityServer4.DefaultRedirectValidator
+  commentId: T:Hybrid.Zero.IdentityServer4.DefaultRedirectValidator
+  name: DefaultRedirectValidator
+  nameWithType: DefaultRedirectValidator
+  fullName: Hybrid.Zero.IdentityServer4.DefaultRedirectValidator
+- uid: Hybrid.Zero.IdentityServer4.IdentityServer4ModuleBase`6
+  commentId: T:Hybrid.Zero.IdentityServer4.IdentityServer4ModuleBase`6
+  name: IdentityServer4ModuleBase<TUserStore, TRoleStore, TUser, TRole, TUserKey, TRoleKey>
+  nameWithType: IdentityServer4ModuleBase<TUserStore, TRoleStore, TUser, TRole, TUserKey, TRoleKey>
+  fullName: Hybrid.Zero.IdentityServer4.IdentityServer4ModuleBase<TUserStore, TRoleStore, TUser, TRole, TUserKey, TRoleKey>
+  nameWithType.vb: IdentityServer4ModuleBase(Of TUserStore, TRoleStore, TUser, TRole, TUserKey, TRoleKey)
+  fullName.vb: Hybrid.Zero.IdentityServer4.IdentityServer4ModuleBase(Of TUserStore, TRoleStore, TUser, TRole, TUserKey, TRoleKey)
+  name.vb: IdentityServer4ModuleBase(Of TUserStore, TRoleStore, TUser, TRole, TUserKey, TRoleKey)
+  spec.csharp:
+  - uid: Hybrid.Zero.IdentityServer4.IdentityServer4ModuleBase`6
+    name: IdentityServer4ModuleBase
+    nameWithType: IdentityServer4ModuleBase
+    fullName: Hybrid.Zero.IdentityServer4.IdentityServer4ModuleBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TUserStore
+    nameWithType: TUserStore
+    fullName: TUserStore
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleStore
+    nameWithType: TRoleStore
+    fullName: TRoleStore
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Zero.IdentityServer4.IdentityServer4ModuleBase`6
+    name: IdentityServer4ModuleBase
+    nameWithType: IdentityServer4ModuleBase
+    fullName: Hybrid.Zero.IdentityServer4.IdentityServer4ModuleBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TUserStore
+    nameWithType: TUserStore
+    fullName: TUserStore
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleStore
+    nameWithType: TRoleStore
+    fullName: TRoleStore
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleKey
+    nameWithType: TRoleKey
+    fullName: TRoleKey
+  - name: )
+    nameWithType: )
+    fullName: )

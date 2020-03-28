@@ -1,0 +1,182 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.EventBuses
+  commentId: N:Hybrid.EventBuses
+  id: Hybrid.EventBuses
+  children:
+  - Hybrid.EventBuses.EventBusBase
+  - Hybrid.EventBuses.EventBusModule
+  - Hybrid.EventBuses.EventDataBase
+  - Hybrid.EventBuses.EventHandlerBase`1
+  - Hybrid.EventBuses.EventHandlerTypeFinder
+  - Hybrid.EventBuses.IEventBus
+  - Hybrid.EventBuses.IEventBusBuilder
+  - Hybrid.EventBuses.IEventData
+  - Hybrid.EventBuses.IEventHandler
+  - Hybrid.EventBuses.IEventHandler`1
+  - Hybrid.EventBuses.IEventHandlerFactory
+  - Hybrid.EventBuses.IEventHandlerTypeFinder
+  - Hybrid.EventBuses.IEventPublisher
+  - Hybrid.EventBuses.IEventStore
+  - Hybrid.EventBuses.IEventSubscriber
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.EventBuses
+  nameWithType: Hybrid.EventBuses
+  fullName: Hybrid.EventBuses
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.EventBuses.EventBusBase
+  commentId: T:Hybrid.EventBuses.EventBusBase
+  name: EventBusBase
+  nameWithType: EventBusBase
+  fullName: Hybrid.EventBuses.EventBusBase
+- uid: Hybrid.EventBuses.EventBusModule
+  commentId: T:Hybrid.EventBuses.EventBusModule
+  name: EventBusModule
+  nameWithType: EventBusModule
+  fullName: Hybrid.EventBuses.EventBusModule
+- uid: Hybrid.EventBuses.EventDataBase
+  commentId: T:Hybrid.EventBuses.EventDataBase
+  parent: Hybrid.EventBuses
+  name: EventDataBase
+  nameWithType: EventDataBase
+  fullName: Hybrid.EventBuses.EventDataBase
+- uid: Hybrid.EventBuses.EventHandlerBase`1
+  commentId: T:Hybrid.EventBuses.EventHandlerBase`1
+  name: EventHandlerBase<TEventData>
+  nameWithType: EventHandlerBase<TEventData>
+  fullName: Hybrid.EventBuses.EventHandlerBase<TEventData>
+  nameWithType.vb: EventHandlerBase(Of TEventData)
+  fullName.vb: Hybrid.EventBuses.EventHandlerBase(Of TEventData)
+  name.vb: EventHandlerBase(Of TEventData)
+  spec.csharp:
+  - uid: Hybrid.EventBuses.EventHandlerBase`1
+    name: EventHandlerBase
+    nameWithType: EventHandlerBase
+    fullName: Hybrid.EventBuses.EventHandlerBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEventData
+    nameWithType: TEventData
+    fullName: TEventData
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.EventBuses.EventHandlerBase`1
+    name: EventHandlerBase
+    nameWithType: EventHandlerBase
+    fullName: Hybrid.EventBuses.EventHandlerBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEventData
+    nameWithType: TEventData
+    fullName: TEventData
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.EventBuses.EventHandlerTypeFinder
+  commentId: T:Hybrid.EventBuses.EventHandlerTypeFinder
+  name: EventHandlerTypeFinder
+  nameWithType: EventHandlerTypeFinder
+  fullName: Hybrid.EventBuses.EventHandlerTypeFinder
+- uid: Hybrid.EventBuses.IEventBus
+  commentId: T:Hybrid.EventBuses.IEventBus
+  parent: Hybrid.EventBuses
+  name: IEventBus
+  nameWithType: IEventBus
+  fullName: Hybrid.EventBuses.IEventBus
+- uid: Hybrid.EventBuses.IEventBusBuilder
+  commentId: T:Hybrid.EventBuses.IEventBusBuilder
+  name: IEventBusBuilder
+  nameWithType: IEventBusBuilder
+  fullName: Hybrid.EventBuses.IEventBusBuilder
+- uid: Hybrid.EventBuses.IEventData
+  commentId: T:Hybrid.EventBuses.IEventData
+  parent: Hybrid.EventBuses
+  name: IEventData
+  nameWithType: IEventData
+  fullName: Hybrid.EventBuses.IEventData
+- uid: Hybrid.EventBuses.IEventHandler
+  commentId: T:Hybrid.EventBuses.IEventHandler
+  parent: Hybrid.EventBuses
+  name: IEventHandler
+  nameWithType: IEventHandler
+  fullName: Hybrid.EventBuses.IEventHandler
+- uid: Hybrid.EventBuses.IEventHandler`1
+  commentId: T:Hybrid.EventBuses.IEventHandler`1
+  name: IEventHandler<TEventData>
+  nameWithType: IEventHandler<TEventData>
+  fullName: Hybrid.EventBuses.IEventHandler<TEventData>
+  nameWithType.vb: IEventHandler(Of TEventData)
+  fullName.vb: Hybrid.EventBuses.IEventHandler(Of TEventData)
+  name.vb: IEventHandler(Of TEventData)
+  spec.csharp:
+  - uid: Hybrid.EventBuses.IEventHandler`1
+    name: IEventHandler
+    nameWithType: IEventHandler
+    fullName: Hybrid.EventBuses.IEventHandler
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEventData
+    nameWithType: TEventData
+    fullName: TEventData
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.EventBuses.IEventHandler`1
+    name: IEventHandler
+    nameWithType: IEventHandler
+    fullName: Hybrid.EventBuses.IEventHandler
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEventData
+    nameWithType: TEventData
+    fullName: TEventData
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.EventBuses.IEventHandlerFactory
+  commentId: T:Hybrid.EventBuses.IEventHandlerFactory
+  parent: Hybrid.EventBuses
+  name: IEventHandlerFactory
+  nameWithType: IEventHandlerFactory
+  fullName: Hybrid.EventBuses.IEventHandlerFactory
+- uid: Hybrid.EventBuses.IEventHandlerTypeFinder
+  commentId: T:Hybrid.EventBuses.IEventHandlerTypeFinder
+  parent: Hybrid.EventBuses
+  name: IEventHandlerTypeFinder
+  nameWithType: IEventHandlerTypeFinder
+  fullName: Hybrid.EventBuses.IEventHandlerTypeFinder
+- uid: Hybrid.EventBuses.IEventPublisher
+  commentId: T:Hybrid.EventBuses.IEventPublisher
+  parent: Hybrid.EventBuses
+  name: IEventPublisher
+  nameWithType: IEventPublisher
+  fullName: Hybrid.EventBuses.IEventPublisher
+- uid: Hybrid.EventBuses.IEventStore
+  commentId: T:Hybrid.EventBuses.IEventStore
+  parent: Hybrid.EventBuses
+  name: IEventStore
+  nameWithType: IEventStore
+  fullName: Hybrid.EventBuses.IEventStore
+- uid: Hybrid.EventBuses.IEventSubscriber
+  commentId: T:Hybrid.EventBuses.IEventSubscriber
+  parent: Hybrid.EventBuses
+  name: IEventSubscriber
+  nameWithType: IEventSubscriber
+  fullName: Hybrid.EventBuses.IEventSubscriber
+- uid: Hybrid.EventBuses
+  commentId: N:Hybrid.EventBuses
+  name: Hybrid.EventBuses
+  nameWithType: Hybrid.EventBuses
+  fullName: Hybrid.EventBuses

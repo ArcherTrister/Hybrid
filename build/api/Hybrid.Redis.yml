@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Redis
+  commentId: N:Hybrid.Redis
+  id: Hybrid.Redis
+  children:
+  - Hybrid.Redis.RedisModule
+  - Hybrid.Redis.RedisModuleBase
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Redis
+  nameWithType: Hybrid.Redis
+  fullName: Hybrid.Redis
+  type: Namespace
+  assemblies:
+  - Hybrid.Redis
+references:
+- uid: Hybrid.Redis.RedisModule
+  commentId: T:Hybrid.Redis.RedisModule
+  name: RedisModule
+  nameWithType: RedisModule
+  fullName: Hybrid.Redis.RedisModule
+- uid: Hybrid.Redis.RedisModuleBase
+  commentId: T:Hybrid.Redis.RedisModuleBase
+  parent: Hybrid.Redis
+  name: RedisModuleBase
+  nameWithType: RedisModuleBase
+  fullName: Hybrid.Redis.RedisModuleBase
+- uid: Hybrid.Redis
+  commentId: N:Hybrid.Redis
+  name: Hybrid.Redis
+  nameWithType: Hybrid.Redis
+  fullName: Hybrid.Redis

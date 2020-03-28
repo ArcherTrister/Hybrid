@@ -1,0 +1,652 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Data.Compression
+  commentId: T:Hybrid.Data.Compression
+  id: Compression
+  parent: Hybrid.Data
+  children:
+  - Hybrid.Data.Compression.Compress(System.Byte[])
+  - Hybrid.Data.Compression.Compress(System.String)
+  - Hybrid.Data.Compression.Decompress(System.Byte[])
+  - Hybrid.Data.Compression.Decompress(System.String)
+  - Hybrid.Data.Compression.UnZip(System.String,System.String)
+  - Hybrid.Data.Compression.Zip(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: Compression
+  nameWithType: Compression
+  fullName: Hybrid.Data.Compression
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid/Data/Compression.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Compression
+    path: ../src/Hybrid/Data/Compression.cs
+    startLine: 20
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n压缩操作类\n"
+  example: []
+  syntax:
+    content: public static class Compression
+    content.vb: Public Module Compression
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.Data.Compression.Compress(System.Byte[])
+  commentId: M:Hybrid.Data.Compression.Compress(System.Byte[])
+  id: Compress(System.Byte[])
+  parent: Hybrid.Data.Compression
+  langs:
+  - csharp
+  - vb
+  name: Compress(Byte[])
+  nameWithType: Compression.Compress(Byte[])
+  fullName: Hybrid.Data.Compression.Compress(System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Data/Compression.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Compress
+    path: ../src/Hybrid/Data/Compression.cs
+    startLine: 27
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n对byte数组进行压缩\n"
+  example: []
+  syntax:
+    content: public static byte[] Compress(byte[] data)
+    parameters:
+    - id: data
+      type: System.Byte[]
+      description: 待压缩的byte数组
+    return:
+      type: System.Byte[]
+      description: 压缩后的byte数组
+    content.vb: Public Shared Function Compress(data As Byte()) As Byte()
+  overload: Hybrid.Data.Compression.Compress*
+  nameWithType.vb: Compression.Compress(Byte())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Data.Compression.Compress(System.Byte())
+  name.vb: Compress(Byte())
+- uid: Hybrid.Data.Compression.Decompress(System.Byte[])
+  commentId: M:Hybrid.Data.Compression.Decompress(System.Byte[])
+  id: Decompress(System.Byte[])
+  parent: Hybrid.Data.Compression
+  langs:
+  - csharp
+  - vb
+  name: Decompress(Byte[])
+  nameWithType: Compression.Decompress(Byte[])
+  fullName: Hybrid.Data.Compression.Decompress(System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Data/Compression.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Decompress
+    path: ../src/Hybrid/Data/Compression.cs
+    startLine: 46
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n对byte[]数组进行解压\n"
+  example: []
+  syntax:
+    content: public static byte[] Decompress(byte[] data)
+    parameters:
+    - id: data
+      type: System.Byte[]
+      description: 待解压的byte数组
+    return:
+      type: System.Byte[]
+      description: 解压后的byte数组
+    content.vb: Public Shared Function Decompress(data As Byte()) As Byte()
+  overload: Hybrid.Data.Compression.Decompress*
+  nameWithType.vb: Compression.Decompress(Byte())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Data.Compression.Decompress(System.Byte())
+  name.vb: Decompress(Byte())
+- uid: Hybrid.Data.Compression.Compress(System.String)
+  commentId: M:Hybrid.Data.Compression.Compress(System.String)
+  id: Compress(System.String)
+  parent: Hybrid.Data.Compression
+  langs:
+  - csharp
+  - vb
+  name: Compress(String)
+  nameWithType: Compression.Compress(String)
+  fullName: Hybrid.Data.Compression.Compress(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Data/Compression.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Compress
+    path: ../src/Hybrid/Data/Compression.cs
+    startLine: 65
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n对字符串进行压缩\n"
+  example: []
+  syntax:
+    content: public static string Compress(string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: 待压缩的字符串
+    return:
+      type: System.String
+      description: 压缩后的字符串
+    content.vb: Public Shared Function Compress(value As String) As String
+  overload: Hybrid.Data.Compression.Compress*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Data.Compression.Decompress(System.String)
+  commentId: M:Hybrid.Data.Compression.Decompress(System.String)
+  id: Decompress(System.String)
+  parent: Hybrid.Data.Compression
+  langs:
+  - csharp
+  - vb
+  name: Decompress(String)
+  nameWithType: Compression.Decompress(String)
+  fullName: Hybrid.Data.Compression.Decompress(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Data/Compression.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Decompress
+    path: ../src/Hybrid/Data/Compression.cs
+    startLine: 81
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n对字符串进行解压\n"
+  example: []
+  syntax:
+    content: public static string Decompress(string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: 待解压的字符串
+    return:
+      type: System.String
+      description: 解压后的字符串
+    content.vb: Public Shared Function Decompress(value As String) As String
+  overload: Hybrid.Data.Compression.Decompress*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Data.Compression.Zip(System.String,System.String)
+  commentId: M:Hybrid.Data.Compression.Zip(System.String,System.String)
+  id: Zip(System.String,System.String)
+  parent: Hybrid.Data.Compression
+  langs:
+  - csharp
+  - vb
+  name: Zip(String, String)
+  nameWithType: Compression.Zip(String, String)
+  fullName: Hybrid.Data.Compression.Zip(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Data/Compression.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Zip
+    path: ../src/Hybrid/Data/Compression.cs
+    startLine: 95
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n将文件夹压缩成zip文件\n"
+  example: []
+  syntax:
+    content: public static void Zip(string sourceDir, string zipFile)
+    parameters:
+    - id: sourceDir
+      type: System.String
+    - id: zipFile
+      type: System.String
+    content.vb: Public Shared Sub Zip(sourceDir As String, zipFile As String)
+  overload: Hybrid.Data.Compression.Zip*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Data.Compression.UnZip(System.String,System.String)
+  commentId: M:Hybrid.Data.Compression.UnZip(System.String,System.String)
+  id: UnZip(System.String,System.String)
+  parent: Hybrid.Data.Compression
+  langs:
+  - csharp
+  - vb
+  name: UnZip(String, String)
+  nameWithType: Compression.UnZip(String, String)
+  fullName: Hybrid.Data.Compression.UnZip(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Data/Compression.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: UnZip
+    path: ../src/Hybrid/Data/Compression.cs
+    startLine: 103
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n将zip文件解压到指定文件夹\n"
+  example: []
+  syntax:
+    content: public static void UnZip(string zipFile, string targetDir)
+    parameters:
+    - id: zipFile
+      type: System.String
+    - id: targetDir
+      type: System.String
+    content.vb: Public Shared Sub UnZip(zipFile As String, targetDir As String)
+  overload: Hybrid.Data.Compression.UnZip*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Hybrid.Data
+  commentId: N:Hybrid.Data
+  name: Hybrid.Data
+  nameWithType: Hybrid.Data
+  fullName: Hybrid.Data
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hybrid.Data.Compression.Compress*
+  commentId: Overload:Hybrid.Data.Compression.Compress
+  name: Compress
+  nameWithType: Compression.Compress
+  fullName: Hybrid.Data.Compression.Compress
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Hybrid.Data.Compression.Decompress*
+  commentId: Overload:Hybrid.Data.Compression.Decompress
+  name: Decompress
+  nameWithType: Compression.Decompress
+  fullName: Hybrid.Data.Compression.Decompress
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Hybrid.Data.Compression.Zip*
+  commentId: Overload:Hybrid.Data.Compression.Zip
+  name: Zip
+  nameWithType: Compression.Zip
+  fullName: Hybrid.Data.Compression.Zip
+- uid: Hybrid.Data.Compression.UnZip*
+  commentId: Overload:Hybrid.Data.Compression.UnZip
+  name: UnZip
+  nameWithType: Compression.UnZip
+  fullName: Hybrid.Data.Compression.UnZip

@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Identity.JwtBearer.Dtos
+  commentId: N:Hybrid.Identity.JwtBearer.Dtos
+  id: Hybrid.Identity.JwtBearer.Dtos
+  children:
+  - Hybrid.Identity.JwtBearer.Dtos.TokenDto
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Identity.JwtBearer.Dtos
+  nameWithType: Hybrid.Identity.JwtBearer.Dtos
+  fullName: Hybrid.Identity.JwtBearer.Dtos
+  type: Namespace
+  assemblies:
+  - Hybrid.Zero.Identity
+references:
+- uid: Hybrid.Identity.JwtBearer.Dtos.TokenDto
+  commentId: T:Hybrid.Identity.JwtBearer.Dtos.TokenDto
+  name: TokenDto
+  nameWithType: TokenDto
+  fullName: Hybrid.Identity.JwtBearer.Dtos.TokenDto

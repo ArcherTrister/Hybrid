@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.AspNetCore.Mvc.Conventions
+  commentId: N:Hybrid.AspNetCore.Mvc.Conventions
+  id: Hybrid.AspNetCore.Mvc.Conventions
+  children:
+  - Hybrid.AspNetCore.Mvc.Conventions.DashedRoutingConvention
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.AspNetCore.Mvc.Conventions
+  nameWithType: Hybrid.AspNetCore.Mvc.Conventions
+  fullName: Hybrid.AspNetCore.Mvc.Conventions
+  type: Namespace
+  assemblies:
+  - Hybrid.AspNetCore
+references:
+- uid: Hybrid.AspNetCore.Mvc.Conventions.DashedRoutingConvention
+  commentId: T:Hybrid.AspNetCore.Mvc.Conventions.DashedRoutingConvention
+  name: DashedRoutingConvention
+  nameWithType: DashedRoutingConvention
+  fullName: Hybrid.AspNetCore.Mvc.Conventions.DashedRoutingConvention

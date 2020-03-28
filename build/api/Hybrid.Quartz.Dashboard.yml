@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Quartz.Dashboard
+  commentId: N:Hybrid.Quartz.Dashboard
+  id: Hybrid.Quartz.Dashboard
+  children:
+  - Hybrid.Quartz.Dashboard.GlobalizationHelper
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Quartz.Dashboard
+  nameWithType: Hybrid.Quartz.Dashboard
+  fullName: Hybrid.Quartz.Dashboard
+  type: Namespace
+  assemblies:
+  - Hybrid.Quartz
+references:
+- uid: Hybrid.Quartz.Dashboard.GlobalizationHelper
+  commentId: T:Hybrid.Quartz.Dashboard.GlobalizationHelper
+  name: GlobalizationHelper
+  nameWithType: GlobalizationHelper
+  fullName: Hybrid.Quartz.Dashboard.GlobalizationHelper

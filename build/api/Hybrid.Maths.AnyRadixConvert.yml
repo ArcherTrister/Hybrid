@@ -1,0 +1,611 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Maths.AnyRadixConvert
+  commentId: T:Hybrid.Maths.AnyRadixConvert
+  id: AnyRadixConvert
+  parent: Hybrid.Maths
+  children:
+  - Hybrid.Maths.AnyRadixConvert._10To16(System.Int32)
+  - Hybrid.Maths.AnyRadixConvert._16To10(System.String)
+  - Hybrid.Maths.AnyRadixConvert.H2X(System.UInt64,System.Int32)
+  - Hybrid.Maths.AnyRadixConvert.X2H(System.String,System.Int32)
+  - Hybrid.Maths.AnyRadixConvert.X2X(System.String,System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: AnyRadixConvert
+  nameWithType: AnyRadixConvert
+  fullName: Hybrid.Maths.AnyRadixConvert
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid/Maths/AnyRadixConvert.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: AnyRadixConvert
+    path: ../src/Hybrid/Maths/AnyRadixConvert.cs
+    startLine: 20
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Maths
+  summary: "\n任意[2,62]进制转换器\n"
+  example: []
+  syntax:
+    content: public static class AnyRadixConvert
+    content.vb: Public Module AnyRadixConvert
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.Maths.AnyRadixConvert.X2H(System.String,System.Int32)
+  commentId: M:Hybrid.Maths.AnyRadixConvert.X2H(System.String,System.Int32)
+  id: X2H(System.String,System.Int32)
+  parent: Hybrid.Maths.AnyRadixConvert
+  langs:
+  - csharp
+  - vb
+  name: X2H(String, Int32)
+  nameWithType: AnyRadixConvert.X2H(String, Int32)
+  fullName: Hybrid.Maths.AnyRadixConvert.X2H(System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Maths/AnyRadixConvert.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: X2H
+    path: ../src/Hybrid/Maths/AnyRadixConvert.cs
+    startLine: 30
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Maths
+  summary: "\n将指定基数的数字的字符串表示形式转换为等效的64位有符号整数\n"
+  example: []
+  syntax:
+    content: public static ulong X2H(string value, int fromRadix)
+    parameters:
+    - id: value
+      type: System.String
+      description: 指定基数的数字的字符串表示
+    - id: fromRadix
+      type: System.Int32
+      description: 字符串的基数，必须为[2,62]范围内
+    return:
+      type: System.UInt64
+      description: 等效于value的数值的64位有符号整数
+    content.vb: Public Shared Function X2H(value As String, fromRadix As Integer) As ULong
+  overload: Hybrid.Maths.AnyRadixConvert.X2H*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Maths.AnyRadixConvert.H2X(System.UInt64,System.Int32)
+  commentId: M:Hybrid.Maths.AnyRadixConvert.H2X(System.UInt64,System.Int32)
+  id: H2X(System.UInt64,System.Int32)
+  parent: Hybrid.Maths.AnyRadixConvert
+  langs:
+  - csharp
+  - vb
+  name: H2X(UInt64, Int32)
+  nameWithType: AnyRadixConvert.H2X(UInt64, Int32)
+  fullName: Hybrid.Maths.AnyRadixConvert.H2X(System.UInt64, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Maths/AnyRadixConvert.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: H2X
+    path: ../src/Hybrid/Maths/AnyRadixConvert.cs
+    startLine: 56
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Maths
+  summary: "\n将64位有符号整数形式的数值转换为指定基数的数值的字符串形式\n"
+  example: []
+  syntax:
+    content: public static string H2X(ulong value, int toRadix)
+    parameters:
+    - id: value
+      type: System.UInt64
+      description: 64位有符号整数形式的数值
+    - id: toRadix
+      type: System.Int32
+      description: 要转换的目标基数，必须为[2,62]范围内
+    return:
+      type: System.String
+      description: 指定基数的数值的字符串形式
+    content.vb: Public Shared Function H2X(value As ULong, toRadix As Integer) As String
+  overload: Hybrid.Maths.AnyRadixConvert.H2X*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Maths.AnyRadixConvert.X2X(System.String,System.Int32,System.Int32)
+  commentId: M:Hybrid.Maths.AnyRadixConvert.X2X(System.String,System.Int32,System.Int32)
+  id: X2X(System.String,System.Int32,System.Int32)
+  parent: Hybrid.Maths.AnyRadixConvert
+  langs:
+  - csharp
+  - vb
+  name: X2X(String, Int32, Int32)
+  nameWithType: AnyRadixConvert.X2X(String, Int32, Int32)
+  fullName: Hybrid.Maths.AnyRadixConvert.X2X(System.String, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Maths/AnyRadixConvert.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: X2X
+    path: ../src/Hybrid/Maths/AnyRadixConvert.cs
+    startLine: 81
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Maths
+  summary: "\n任意进制转换，将源进制表示的value转换为目标进制，进制的字母顺序为先大写后小写\n"
+  example: []
+  syntax:
+    content: public static string X2X(string value, int fromRadix, int toRadix)
+    parameters:
+    - id: value
+      type: System.String
+      description: 要转换的数据
+    - id: fromRadix
+      type: System.Int32
+      description: 源进制数，必须为[2,62]范围内
+    - id: toRadix
+      type: System.Int32
+      description: 目标进制数，必须为[2,62]范围内
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Shared Function X2X(value As String, fromRadix As Integer, toRadix As Integer) As String
+  overload: Hybrid.Maths.AnyRadixConvert.X2X*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Maths.AnyRadixConvert._10To16(System.Int32)
+  commentId: M:Hybrid.Maths.AnyRadixConvert._10To16(System.Int32)
+  id: _10To16(System.Int32)
+  parent: Hybrid.Maths.AnyRadixConvert
+  langs:
+  - csharp
+  - vb
+  name: _10To16(Int32)
+  nameWithType: AnyRadixConvert._10To16(Int32)
+  fullName: Hybrid.Maths.AnyRadixConvert._10To16(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Maths/AnyRadixConvert.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: _10To16
+    path: ../src/Hybrid/Maths/AnyRadixConvert.cs
+    startLine: 96
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Maths
+  summary: "\n10进制数字转换为16进制字符串\n"
+  example: []
+  syntax:
+    content: public static string _10To16(int value)
+    parameters:
+    - id: value
+      type: System.Int32
+      description: 10进制数
+    return:
+      type: System.String
+      description: 16进制数的字符串
+    content.vb: Public Shared Function _10To16(value As Integer) As String
+  overload: Hybrid.Maths.AnyRadixConvert._10To16*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Maths.AnyRadixConvert._16To10(System.String)
+  commentId: M:Hybrid.Maths.AnyRadixConvert._16To10(System.String)
+  id: _16To10(System.String)
+  parent: Hybrid.Maths.AnyRadixConvert
+  langs:
+  - csharp
+  - vb
+  name: _16To10(String)
+  nameWithType: AnyRadixConvert._16To10(String)
+  fullName: Hybrid.Maths.AnyRadixConvert._16To10(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Maths/AnyRadixConvert.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: _16To10
+    path: ../src/Hybrid/Maths/AnyRadixConvert.cs
+    startLine: 106
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Maths
+  summary: "\n16进制字符串转换为10进制数字\n"
+  example: []
+  syntax:
+    content: public static int _16To10(string value)
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function _16To10(value As String) As Integer
+  overload: Hybrid.Maths.AnyRadixConvert._16To10*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Hybrid.Maths
+  commentId: N:Hybrid.Maths
+  name: Hybrid.Maths
+  nameWithType: Hybrid.Maths
+  fullName: Hybrid.Maths
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hybrid.Maths.AnyRadixConvert.X2H*
+  commentId: Overload:Hybrid.Maths.AnyRadixConvert.X2H
+  name: X2H
+  nameWithType: AnyRadixConvert.X2H
+  fullName: Hybrid.Maths.AnyRadixConvert.X2H
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  name: UInt64
+  nameWithType: UInt64
+  fullName: System.UInt64
+- uid: Hybrid.Maths.AnyRadixConvert.H2X*
+  commentId: Overload:Hybrid.Maths.AnyRadixConvert.H2X
+  name: H2X
+  nameWithType: AnyRadixConvert.H2X
+  fullName: Hybrid.Maths.AnyRadixConvert.H2X
+- uid: Hybrid.Maths.AnyRadixConvert.X2X*
+  commentId: Overload:Hybrid.Maths.AnyRadixConvert.X2X
+  name: X2X
+  nameWithType: AnyRadixConvert.X2X
+  fullName: Hybrid.Maths.AnyRadixConvert.X2X
+- uid: Hybrid.Maths.AnyRadixConvert._10To16*
+  commentId: Overload:Hybrid.Maths.AnyRadixConvert._10To16
+  name: _10To16
+  nameWithType: AnyRadixConvert._10To16
+  fullName: Hybrid.Maths.AnyRadixConvert._10To16
+- uid: Hybrid.Maths.AnyRadixConvert._16To10*
+  commentId: Overload:Hybrid.Maths.AnyRadixConvert._16To10
+  name: _16To10
+  nameWithType: AnyRadixConvert._16To10
+  fullName: Hybrid.Maths.AnyRadixConvert._16To10

@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.Device
+  commentId: N:Hybrid.Zero.IdentityServer4.Quickstart.Device
+  id: Hybrid.Zero.IdentityServer4.Quickstart.Device
+  children:
+  - Hybrid.Zero.IdentityServer4.Quickstart.Device.DeviceAuthorizationInputModel
+  - Hybrid.Zero.IdentityServer4.Quickstart.Device.DeviceAuthorizationViewModel
+  - Hybrid.Zero.IdentityServer4.Quickstart.Device.DeviceController
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Zero.IdentityServer4.Quickstart.Device
+  nameWithType: Hybrid.Zero.IdentityServer4.Quickstart.Device
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.Device
+  type: Namespace
+  assemblies:
+  - Hybrid.Zero.IdentityServer4
+references:
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.Device.DeviceAuthorizationInputModel
+  commentId: T:Hybrid.Zero.IdentityServer4.Quickstart.Device.DeviceAuthorizationInputModel
+  parent: Hybrid.Zero.IdentityServer4.Quickstart.Device
+  name: DeviceAuthorizationInputModel
+  nameWithType: DeviceAuthorizationInputModel
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.Device.DeviceAuthorizationInputModel
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.Device.DeviceAuthorizationViewModel
+  commentId: T:Hybrid.Zero.IdentityServer4.Quickstart.Device.DeviceAuthorizationViewModel
+  name: DeviceAuthorizationViewModel
+  nameWithType: DeviceAuthorizationViewModel
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.Device.DeviceAuthorizationViewModel
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.Device.DeviceController
+  commentId: T:Hybrid.Zero.IdentityServer4.Quickstart.Device.DeviceController
+  name: DeviceController
+  nameWithType: DeviceController
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.Device.DeviceController
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.Device
+  commentId: N:Hybrid.Zero.IdentityServer4.Quickstart.Device
+  name: Hybrid.Zero.IdentityServer4.Quickstart.Device
+  nameWithType: Hybrid.Zero.IdentityServer4.Quickstart.Device
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.Device

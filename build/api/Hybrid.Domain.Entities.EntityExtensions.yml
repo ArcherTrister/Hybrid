@@ -1,0 +1,784 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Domain.Entities.EntityExtensions
+  commentId: T:Hybrid.Domain.Entities.EntityExtensions
+  id: EntityExtensions
+  parent: Hybrid.Domain.Entities
+  children:
+  - Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+  - Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+  - Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+  - Hybrid.Domain.Entities.EntityExtensions.IsEntityType(System.Type)
+  - Hybrid.Domain.Entities.EntityExtensions.IsExpired(Hybrid.Domain.Entities.IExpirable)
+  langs:
+  - csharp
+  - vb
+  name: EntityExtensions
+  nameWithType: EntityExtensions
+  fullName: Hybrid.Domain.Entities.EntityExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid/Domain/Entities/EntityInterfaceExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: EntityExtensions
+    path: ../src/Hybrid/Domain/Entities/EntityInterfaceExtensions.cs
+    startLine: 22
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Domain.Entities
+  summary: "\n实体接口扩展方法\n"
+  example: []
+  syntax:
+    content: public static class EntityExtensions
+    content.vb: Public Module EntityExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.Domain.Entities.EntityExtensions.IsEntityType(System.Type)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.IsEntityType(System.Type)
+  id: IsEntityType(System.Type)
+  isExtensionMethod: true
+  parent: Hybrid.Domain.Entities.EntityExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsEntityType(Type)
+  nameWithType: EntityExtensions.IsEntityType(Type)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.IsEntityType(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Domain/Entities/EntityInterfaceExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsEntityType
+    path: ../src/Hybrid/Domain/Entities/EntityInterfaceExtensions.cs
+    startLine: 29
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Domain.Entities
+  summary: "\n检测指定类型是否为<xref href=\"Hybrid.Domain.Entities.IEntity%601\" data-throw-if-not-resolved=\"false\"></xref>实体类型\n"
+  example: []
+  syntax:
+    content: public static bool IsEntityType(this Type type)
+    parameters:
+    - id: type
+      type: System.Type
+      description: 要判断的类型
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsEntityType(type As Type) As Boolean
+  overload: Hybrid.Domain.Entities.EntityExtensions.IsEntityType*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Domain.Entities.EntityExtensions.IsExpired(Hybrid.Domain.Entities.IExpirable)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.IsExpired(Hybrid.Domain.Entities.IExpirable)
+  id: IsExpired(Hybrid.Domain.Entities.IExpirable)
+  isExtensionMethod: true
+  parent: Hybrid.Domain.Entities.EntityExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsExpired(IExpirable)
+  nameWithType: EntityExtensions.IsExpired(IExpirable)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.IsExpired(Hybrid.Domain.Entities.IExpirable)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Domain/Entities/EntityInterfaceExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: IsExpired
+    path: ../src/Hybrid/Domain/Entities/EntityInterfaceExtensions.cs
+    startLine: 40
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Domain.Entities
+  summary: "\n判断指定实体是否已过期\n"
+  example: []
+  syntax:
+    content: public static bool IsExpired(this IExpirable entity)
+    parameters:
+    - id: entity
+      type: Hybrid.Domain.Entities.IExpirable
+      description: 要检测的实体
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsExpired(entity As IExpirable) As Boolean
+  overload: Hybrid.Domain.Entities.EntityExtensions.IsExpired*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+  id: CheckICreatedTime``2(``0)
+  isExtensionMethod: true
+  parent: Hybrid.Domain.Entities.EntityExtensions
+  langs:
+  - csharp
+  - vb
+  name: CheckICreatedTime<TEntity, TKey>(TEntity)
+  nameWithType: EntityExtensions.CheckICreatedTime<TEntity, TKey>(TEntity)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime<TEntity, TKey>(TEntity)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Domain/Entities/EntityInterfaceExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: CheckICreatedTime
+    path: ../src/Hybrid/Domain/Entities/EntityInterfaceExtensions.cs
+    startLine: 50
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Domain.Entities
+  summary: "\n检测并执行<xref href=\"Hybrid.Domain.Entities.ICreatedTime\" data-throw-if-not-resolved=\"false\"></xref>接口的逻辑\n"
+  example: []
+  syntax:
+    content: >-
+      public static TEntity CheckICreatedTime<TEntity, TKey>(this TEntity entity)
+
+          where TEntity : IEntity<TKey> where TKey : IEquatable<TKey>
+    parameters:
+    - id: entity
+      type: '{TEntity}'
+    typeParameters:
+    - id: TEntity
+    - id: TKey
+    return:
+      type: '{TEntity}'
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function CheckICreatedTime(Of TEntity As IEntity(Of TKey), TKey As IEquatable(Of TKey))(entity As TEntity) As TEntity
+  overload: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime*
+  nameWithType.vb: EntityExtensions.CheckICreatedTime(Of TEntity, TKey)(TEntity)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime(Of TEntity, TKey)(TEntity)
+  name.vb: CheckICreatedTime(Of TEntity, TKey)(TEntity)
+- uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+  id: CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+  isExtensionMethod: true
+  parent: Hybrid.Domain.Entities.EntityExtensions
+  langs:
+  - csharp
+  - vb
+  name: CheckICreationAudited<TEntity, TKey, TUserKey>(TEntity, IPrincipal)
+  nameWithType: EntityExtensions.CheckICreationAudited<TEntity, TKey, TUserKey>(TEntity, IPrincipal)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited<TEntity, TKey, TUserKey>(TEntity, System.Security.Principal.IPrincipal)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Domain/Entities/EntityInterfaceExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: CheckICreationAudited
+    path: ../src/Hybrid/Domain/Entities/EntityInterfaceExtensions.cs
+    startLine: 70
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Domain.Entities
+  summary: "\n检测并执行<xref href=\"Hybrid.Domain.Entities.Auditing.ICreationAudited%601\" data-throw-if-not-resolved=\"false\"></xref>接口的处理\n"
+  example: []
+  syntax:
+    content: >-
+      public static TEntity CheckICreationAudited<TEntity, TKey, TUserKey>(this TEntity entity, IPrincipal user)
+
+          where TEntity : IEntity<TKey> where TKey : IEquatable<TKey> where TUserKey : struct, IEquatable<TUserKey>
+    parameters:
+    - id: entity
+      type: '{TEntity}'
+    - id: user
+      type: System.Security.Principal.IPrincipal
+    typeParameters:
+    - id: TEntity
+    - id: TKey
+    - id: TUserKey
+    return:
+      type: '{TEntity}'
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function CheckICreationAudited(Of TEntity As IEntity(Of TKey), TKey As IEquatable(Of TKey), TUserKey As {Structure, IEquatable(Of TUserKey)})(entity As TEntity, user As IPrincipal) As TEntity
+  overload: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited*
+  nameWithType.vb: EntityExtensions.CheckICreationAudited(Of TEntity, TKey, TUserKey)(TEntity, IPrincipal)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited(Of TEntity, TKey, TUserKey)(TEntity, System.Security.Principal.IPrincipal)
+  name.vb: CheckICreationAudited(Of TEntity, TKey, TUserKey)(TEntity, IPrincipal)
+- uid: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+  id: CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+  isExtensionMethod: true
+  parent: Hybrid.Domain.Entities.EntityExtensions
+  langs:
+  - csharp
+  - vb
+  name: CheckIUpdateAudited<TEntity, TKey, TUserKey>(TEntity, IPrincipal)
+  nameWithType: EntityExtensions.CheckIUpdateAudited<TEntity, TKey, TUserKey>(TEntity, IPrincipal)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited<TEntity, TKey, TUserKey>(TEntity, System.Security.Principal.IPrincipal)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Domain/Entities/EntityInterfaceExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: CheckIUpdateAudited
+    path: ../src/Hybrid/Domain/Entities/EntityInterfaceExtensions.cs
+    startLine: 89
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Domain.Entities
+  summary: "\n检测并执行<xref href=\"Hybrid.Domain.Entities.Auditing.IUpdateAudited%601\" data-throw-if-not-resolved=\"false\"></xref>接口的处理\n"
+  example: []
+  syntax:
+    content: >-
+      public static TEntity CheckIUpdateAudited<TEntity, TKey, TUserKey>(this TEntity entity, IPrincipal user)
+
+          where TEntity : IEntity<TKey> where TKey : IEquatable<TKey> where TUserKey : struct, IEquatable<TUserKey>
+    parameters:
+    - id: entity
+      type: '{TEntity}'
+    - id: user
+      type: System.Security.Principal.IPrincipal
+    typeParameters:
+    - id: TEntity
+    - id: TKey
+    - id: TUserKey
+    return:
+      type: '{TEntity}'
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function CheckIUpdateAudited(Of TEntity As IEntity(Of TKey), TKey As IEquatable(Of TKey), TUserKey As {Structure, IEquatable(Of TUserKey)})(entity As TEntity, user As IPrincipal) As TEntity
+  overload: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited*
+  nameWithType.vb: EntityExtensions.CheckIUpdateAudited(Of TEntity, TKey, TUserKey)(TEntity, IPrincipal)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited(Of TEntity, TKey, TUserKey)(TEntity, System.Security.Principal.IPrincipal)
+  name.vb: CheckIUpdateAudited(Of TEntity, TKey, TUserKey)(TEntity, IPrincipal)
+references:
+- uid: Hybrid.Domain.Entities
+  commentId: N:Hybrid.Domain.Entities
+  name: Hybrid.Domain.Entities
+  nameWithType: Hybrid.Domain.Entities
+  fullName: Hybrid.Domain.Entities
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hybrid.Domain.Entities.IEntity`1
+  commentId: T:Hybrid.Domain.Entities.IEntity`1
+  name: IEntity<TKey>
+  nameWithType: IEntity<TKey>
+  fullName: Hybrid.Domain.Entities.IEntity<TKey>
+  nameWithType.vb: IEntity(Of TKey)
+  fullName.vb: Hybrid.Domain.Entities.IEntity(Of TKey)
+  name.vb: IEntity(Of TKey)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.IEntity`1
+    name: IEntity
+    nameWithType: IEntity
+    fullName: Hybrid.Domain.Entities.IEntity
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.IEntity`1
+    name: IEntity
+    nameWithType: IEntity
+    fullName: Hybrid.Domain.Entities.IEntity
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Domain.Entities.EntityExtensions.IsEntityType*
+  commentId: Overload:Hybrid.Domain.Entities.EntityExtensions.IsEntityType
+  name: IsEntityType
+  nameWithType: EntityExtensions.IsEntityType
+  fullName: Hybrid.Domain.Entities.EntityExtensions.IsEntityType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Hybrid.Domain.Entities.EntityExtensions.IsExpired*
+  commentId: Overload:Hybrid.Domain.Entities.EntityExtensions.IsExpired
+  name: IsExpired
+  nameWithType: EntityExtensions.IsExpired
+  fullName: Hybrid.Domain.Entities.EntityExtensions.IsExpired
+- uid: Hybrid.Domain.Entities.IExpirable
+  commentId: T:Hybrid.Domain.Entities.IExpirable
+  parent: Hybrid.Domain.Entities
+  name: IExpirable
+  nameWithType: IExpirable
+  fullName: Hybrid.Domain.Entities.IExpirable
+- uid: Hybrid.Domain.Entities.ICreatedTime
+  commentId: T:Hybrid.Domain.Entities.ICreatedTime
+  parent: Hybrid.Domain.Entities
+  name: ICreatedTime
+  nameWithType: ICreatedTime
+  fullName: Hybrid.Domain.Entities.ICreatedTime
+- uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime*
+  commentId: Overload:Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime
+  name: CheckICreatedTime
+  nameWithType: EntityExtensions.CheckICreatedTime
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime
+- uid: '{TEntity}'
+  commentId: '!:TEntity'
+  definition: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: Hybrid.Domain.Entities.Auditing.ICreationAudited`1
+  commentId: T:Hybrid.Domain.Entities.Auditing.ICreationAudited`1
+  name: ICreationAudited<TUserKey>
+  nameWithType: ICreationAudited<TUserKey>
+  fullName: Hybrid.Domain.Entities.Auditing.ICreationAudited<TUserKey>
+  nameWithType.vb: ICreationAudited(Of TUserKey)
+  fullName.vb: Hybrid.Domain.Entities.Auditing.ICreationAudited(Of TUserKey)
+  name.vb: ICreationAudited(Of TUserKey)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.Auditing.ICreationAudited`1
+    name: ICreationAudited
+    nameWithType: ICreationAudited
+    fullName: Hybrid.Domain.Entities.Auditing.ICreationAudited
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.Auditing.ICreationAudited`1
+    name: ICreationAudited
+    nameWithType: ICreationAudited
+    fullName: Hybrid.Domain.Entities.Auditing.ICreationAudited
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited*
+  commentId: Overload:Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited
+  name: CheckICreationAudited
+  nameWithType: EntityExtensions.CheckICreationAudited
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited
+- uid: System.Security.Principal.IPrincipal
+  commentId: T:System.Security.Principal.IPrincipal
+  parent: System.Security.Principal
+  isExternal: true
+  name: IPrincipal
+  nameWithType: IPrincipal
+  fullName: System.Security.Principal.IPrincipal
+- uid: System.Security.Principal
+  commentId: N:System.Security.Principal
+  isExternal: true
+  name: System.Security.Principal
+  nameWithType: System.Security.Principal
+  fullName: System.Security.Principal
+- uid: Hybrid.Domain.Entities.Auditing.IUpdateAudited`1
+  commentId: T:Hybrid.Domain.Entities.Auditing.IUpdateAudited`1
+  name: IUpdateAudited<TUserKey>
+  nameWithType: IUpdateAudited<TUserKey>
+  fullName: Hybrid.Domain.Entities.Auditing.IUpdateAudited<TUserKey>
+  nameWithType.vb: IUpdateAudited(Of TUserKey)
+  fullName.vb: Hybrid.Domain.Entities.Auditing.IUpdateAudited(Of TUserKey)
+  name.vb: IUpdateAudited(Of TUserKey)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.Auditing.IUpdateAudited`1
+    name: IUpdateAudited
+    nameWithType: IUpdateAudited
+    fullName: Hybrid.Domain.Entities.Auditing.IUpdateAudited
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.Auditing.IUpdateAudited`1
+    name: IUpdateAudited
+    nameWithType: IUpdateAudited
+    fullName: Hybrid.Domain.Entities.Auditing.IUpdateAudited
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TUserKey
+    nameWithType: TUserKey
+    fullName: TUserKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited*
+  commentId: Overload:Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited
+  name: CheckIUpdateAudited
+  nameWithType: EntityExtensions.CheckIUpdateAudited
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited

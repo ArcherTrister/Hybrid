@@ -1,0 +1,463 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Data
+  commentId: N:Hybrid.Data
+  id: Hybrid.Data
+  children:
+  - Hybrid.Data.AjaxResultType
+  - Hybrid.Data.Check
+  - Hybrid.Data.CombGuid
+  - Hybrid.Data.Compression
+  - Hybrid.Data.Disposable
+  - Hybrid.Data.GenderType
+  - Hybrid.Data.HybridConsts
+  - Hybrid.Data.HybridConsts.CustomController
+  - Hybrid.Data.HybridConsts.LocalApi
+  - Hybrid.Data.HybridResult`1
+  - Hybrid.Data.HybridResult`2
+  - Hybrid.Data.IHybridResult`1
+  - Hybrid.Data.IHybridResult`2
+  - Hybrid.Data.OperationResult
+  - Hybrid.Data.OperationResult`1
+  - Hybrid.Data.OperationResultType
+  - Hybrid.Data.OrdinalComparer
+  - Hybrid.Data.RegexPatterns
+  - Hybrid.Data.SequentialGuid
+  - Hybrid.Data.SequentialGuidType
+  - Hybrid.Data.SerializeHelper
+  - Hybrid.Data.Singleton
+  - Hybrid.Data.Singleton`1
+  - Hybrid.Data.SingletonDictionary`2
+  - Hybrid.Data.SingletonList`1
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Data
+  nameWithType: Hybrid.Data
+  fullName: Hybrid.Data
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Data.AjaxResultType
+  commentId: T:Hybrid.Data.AjaxResultType
+  parent: Hybrid.Data
+  name: AjaxResultType
+  nameWithType: AjaxResultType
+  fullName: Hybrid.Data.AjaxResultType
+- uid: Hybrid.Data.Check
+  commentId: T:Hybrid.Data.Check
+  name: Check
+  nameWithType: Check
+  fullName: Hybrid.Data.Check
+- uid: Hybrid.Data.CombGuid
+  commentId: T:Hybrid.Data.CombGuid
+  name: CombGuid
+  nameWithType: CombGuid
+  fullName: Hybrid.Data.CombGuid
+- uid: Hybrid.Data.Compression
+  commentId: T:Hybrid.Data.Compression
+  name: Compression
+  nameWithType: Compression
+  fullName: Hybrid.Data.Compression
+- uid: Hybrid.Data.Disposable
+  commentId: T:Hybrid.Data.Disposable
+  parent: Hybrid.Data
+  name: Disposable
+  nameWithType: Disposable
+  fullName: Hybrid.Data.Disposable
+- uid: Hybrid.Data.GenderType
+  commentId: T:Hybrid.Data.GenderType
+  parent: Hybrid.Data
+  name: GenderType
+  nameWithType: GenderType
+  fullName: Hybrid.Data.GenderType
+- uid: Hybrid.Data.HybridConsts
+  commentId: T:Hybrid.Data.HybridConsts
+  name: HybridConsts
+  nameWithType: HybridConsts
+  fullName: Hybrid.Data.HybridConsts
+- uid: Hybrid.Data.HybridConsts.LocalApi
+  commentId: T:Hybrid.Data.HybridConsts.LocalApi
+  name: HybridConsts.LocalApi
+  nameWithType: HybridConsts.LocalApi
+  fullName: Hybrid.Data.HybridConsts.LocalApi
+- uid: Hybrid.Data.HybridConsts.CustomController
+  commentId: T:Hybrid.Data.HybridConsts.CustomController
+  name: HybridConsts.CustomController
+  nameWithType: HybridConsts.CustomController
+  fullName: Hybrid.Data.HybridConsts.CustomController
+- uid: Hybrid.Data.HybridResult`1
+  commentId: T:Hybrid.Data.HybridResult`1
+  name: HybridResult<TResultType>
+  nameWithType: HybridResult<TResultType>
+  fullName: Hybrid.Data.HybridResult<TResultType>
+  nameWithType.vb: HybridResult(Of TResultType)
+  fullName.vb: Hybrid.Data.HybridResult(Of TResultType)
+  name.vb: HybridResult(Of TResultType)
+  spec.csharp:
+  - uid: Hybrid.Data.HybridResult`1
+    name: HybridResult
+    nameWithType: HybridResult
+    fullName: Hybrid.Data.HybridResult
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResultType
+    nameWithType: TResultType
+    fullName: TResultType
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Data.HybridResult`1
+    name: HybridResult
+    nameWithType: HybridResult
+    fullName: Hybrid.Data.HybridResult
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResultType
+    nameWithType: TResultType
+    fullName: TResultType
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Data.HybridResult`2
+  commentId: T:Hybrid.Data.HybridResult`2
+  name: HybridResult<TResultType, TData>
+  nameWithType: HybridResult<TResultType, TData>
+  fullName: Hybrid.Data.HybridResult<TResultType, TData>
+  nameWithType.vb: HybridResult(Of TResultType, TData)
+  fullName.vb: Hybrid.Data.HybridResult(Of TResultType, TData)
+  name.vb: HybridResult(Of TResultType, TData)
+  spec.csharp:
+  - uid: Hybrid.Data.HybridResult`2
+    name: HybridResult
+    nameWithType: HybridResult
+    fullName: Hybrid.Data.HybridResult
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResultType
+    nameWithType: TResultType
+    fullName: TResultType
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TData
+    nameWithType: TData
+    fullName: TData
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Data.HybridResult`2
+    name: HybridResult
+    nameWithType: HybridResult
+    fullName: Hybrid.Data.HybridResult
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResultType
+    nameWithType: TResultType
+    fullName: TResultType
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TData
+    nameWithType: TData
+    fullName: TData
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Data.IHybridResult`1
+  commentId: T:Hybrid.Data.IHybridResult`1
+  name: IHybridResult<TResultType>
+  nameWithType: IHybridResult<TResultType>
+  fullName: Hybrid.Data.IHybridResult<TResultType>
+  nameWithType.vb: IHybridResult(Of TResultType)
+  fullName.vb: Hybrid.Data.IHybridResult(Of TResultType)
+  name.vb: IHybridResult(Of TResultType)
+  spec.csharp:
+  - uid: Hybrid.Data.IHybridResult`1
+    name: IHybridResult
+    nameWithType: IHybridResult
+    fullName: Hybrid.Data.IHybridResult
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResultType
+    nameWithType: TResultType
+    fullName: TResultType
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Data.IHybridResult`1
+    name: IHybridResult
+    nameWithType: IHybridResult
+    fullName: Hybrid.Data.IHybridResult
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResultType
+    nameWithType: TResultType
+    fullName: TResultType
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Data.IHybridResult`2
+  commentId: T:Hybrid.Data.IHybridResult`2
+  name: IHybridResult<TResultType, TData>
+  nameWithType: IHybridResult<TResultType, TData>
+  fullName: Hybrid.Data.IHybridResult<TResultType, TData>
+  nameWithType.vb: IHybridResult(Of TResultType, TData)
+  fullName.vb: Hybrid.Data.IHybridResult(Of TResultType, TData)
+  name.vb: IHybridResult(Of TResultType, TData)
+  spec.csharp:
+  - uid: Hybrid.Data.IHybridResult`2
+    name: IHybridResult
+    nameWithType: IHybridResult
+    fullName: Hybrid.Data.IHybridResult
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResultType
+    nameWithType: TResultType
+    fullName: TResultType
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TData
+    nameWithType: TData
+    fullName: TData
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Data.IHybridResult`2
+    name: IHybridResult
+    nameWithType: IHybridResult
+    fullName: Hybrid.Data.IHybridResult
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResultType
+    nameWithType: TResultType
+    fullName: TResultType
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TData
+    nameWithType: TData
+    fullName: TData
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Data.OperationResult
+  commentId: T:Hybrid.Data.OperationResult
+  parent: Hybrid.Data
+  name: OperationResult
+  nameWithType: OperationResult
+  fullName: Hybrid.Data.OperationResult
+- uid: Hybrid.Data.OperationResult`1
+  commentId: T:Hybrid.Data.OperationResult`1
+  parent: Hybrid.Data
+  name: OperationResult<TData>
+  nameWithType: OperationResult<TData>
+  fullName: Hybrid.Data.OperationResult<TData>
+  nameWithType.vb: OperationResult(Of TData)
+  fullName.vb: Hybrid.Data.OperationResult(Of TData)
+  name.vb: OperationResult(Of TData)
+  spec.csharp:
+  - uid: Hybrid.Data.OperationResult`1
+    name: OperationResult
+    nameWithType: OperationResult
+    fullName: Hybrid.Data.OperationResult
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TData
+    nameWithType: TData
+    fullName: TData
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Data.OperationResult`1
+    name: OperationResult
+    nameWithType: OperationResult
+    fullName: Hybrid.Data.OperationResult
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TData
+    nameWithType: TData
+    fullName: TData
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Data.OperationResultType
+  commentId: T:Hybrid.Data.OperationResultType
+  parent: Hybrid.Data
+  name: OperationResultType
+  nameWithType: OperationResultType
+  fullName: Hybrid.Data.OperationResultType
+- uid: Hybrid.Data.OrdinalComparer
+  commentId: T:Hybrid.Data.OrdinalComparer
+  name: OrdinalComparer
+  nameWithType: OrdinalComparer
+  fullName: Hybrid.Data.OrdinalComparer
+- uid: Hybrid.Data.RegexPatterns
+  commentId: T:Hybrid.Data.RegexPatterns
+  name: RegexPatterns
+  nameWithType: RegexPatterns
+  fullName: Hybrid.Data.RegexPatterns
+- uid: Hybrid.Data.SequentialGuid
+  commentId: T:Hybrid.Data.SequentialGuid
+  name: SequentialGuid
+  nameWithType: SequentialGuid
+  fullName: Hybrid.Data.SequentialGuid
+- uid: Hybrid.Data.SequentialGuidType
+  commentId: T:Hybrid.Data.SequentialGuidType
+  parent: Hybrid.Data
+  name: SequentialGuidType
+  nameWithType: SequentialGuidType
+  fullName: Hybrid.Data.SequentialGuidType
+- uid: Hybrid.Data.SerializeHelper
+  commentId: T:Hybrid.Data.SerializeHelper
+  name: SerializeHelper
+  nameWithType: SerializeHelper
+  fullName: Hybrid.Data.SerializeHelper
+- uid: Hybrid.Data.Singleton`1
+  commentId: T:Hybrid.Data.Singleton`1
+  name: Singleton<T>
+  nameWithType: Singleton<T>
+  fullName: Hybrid.Data.Singleton<T>
+  nameWithType.vb: Singleton(Of T)
+  fullName.vb: Hybrid.Data.Singleton(Of T)
+  name.vb: Singleton(Of T)
+  spec.csharp:
+  - uid: Hybrid.Data.Singleton`1
+    name: Singleton
+    nameWithType: Singleton
+    fullName: Hybrid.Data.Singleton
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Data.Singleton`1
+    name: Singleton
+    nameWithType: Singleton
+    fullName: Hybrid.Data.Singleton
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Data.Singleton
+  commentId: T:Hybrid.Data.Singleton
+  parent: Hybrid.Data
+  name: Singleton
+  nameWithType: Singleton
+  fullName: Hybrid.Data.Singleton
+- uid: Hybrid.Data.SingletonDictionary`2
+  commentId: T:Hybrid.Data.SingletonDictionary`2
+  name: SingletonDictionary<TKey, TValue>
+  nameWithType: SingletonDictionary<TKey, TValue>
+  fullName: Hybrid.Data.SingletonDictionary<TKey, TValue>
+  nameWithType.vb: SingletonDictionary(Of TKey, TValue)
+  fullName.vb: Hybrid.Data.SingletonDictionary(Of TKey, TValue)
+  name.vb: SingletonDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: Hybrid.Data.SingletonDictionary`2
+    name: SingletonDictionary
+    nameWithType: SingletonDictionary
+    fullName: Hybrid.Data.SingletonDictionary
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Data.SingletonDictionary`2
+    name: SingletonDictionary
+    nameWithType: SingletonDictionary
+    fullName: Hybrid.Data.SingletonDictionary
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Data.SingletonList`1
+  commentId: T:Hybrid.Data.SingletonList`1
+  name: SingletonList<T>
+  nameWithType: SingletonList<T>
+  fullName: Hybrid.Data.SingletonList<T>
+  nameWithType.vb: SingletonList(Of T)
+  fullName.vb: Hybrid.Data.SingletonList(Of T)
+  name.vb: SingletonList(Of T)
+  spec.csharp:
+  - uid: Hybrid.Data.SingletonList`1
+    name: SingletonList
+    nameWithType: SingletonList
+    fullName: Hybrid.Data.SingletonList
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Data.SingletonList`1
+    name: SingletonList
+    nameWithType: SingletonList
+    fullName: Hybrid.Data.SingletonList
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Data
+  commentId: N:Hybrid.Data
+  name: Hybrid.Data
+  nameWithType: Hybrid.Data
+  fullName: Hybrid.Data

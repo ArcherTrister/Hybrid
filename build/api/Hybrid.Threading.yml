@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Threading
+  commentId: N:Hybrid.Threading
+  id: Hybrid.Threading
+  children:
+  - Hybrid.Threading.AsyncHelper
+  - Hybrid.Threading.ICancellationTokenProvider
+  - Hybrid.Threading.NoneCancellationTokenProvider
+  - Hybrid.Threading.ThreadExtensions
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Threading
+  nameWithType: Hybrid.Threading
+  fullName: Hybrid.Threading
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Threading.AsyncHelper
+  commentId: T:Hybrid.Threading.AsyncHelper
+  name: AsyncHelper
+  nameWithType: AsyncHelper
+  fullName: Hybrid.Threading.AsyncHelper
+- uid: Hybrid.Threading.ICancellationTokenProvider
+  commentId: T:Hybrid.Threading.ICancellationTokenProvider
+  parent: Hybrid.Threading
+  name: ICancellationTokenProvider
+  nameWithType: ICancellationTokenProvider
+  fullName: Hybrid.Threading.ICancellationTokenProvider
+- uid: Hybrid.Threading.NoneCancellationTokenProvider
+  commentId: T:Hybrid.Threading.NoneCancellationTokenProvider
+  name: NoneCancellationTokenProvider
+  nameWithType: NoneCancellationTokenProvider
+  fullName: Hybrid.Threading.NoneCancellationTokenProvider
+- uid: Hybrid.Threading.ThreadExtensions
+  commentId: T:Hybrid.Threading.ThreadExtensions
+  name: ThreadExtensions
+  nameWithType: ThreadExtensions
+  fullName: Hybrid.Threading.ThreadExtensions
+- uid: Hybrid.Threading
+  commentId: N:Hybrid.Threading
+  name: Hybrid.Threading
+  nameWithType: Hybrid.Threading
+  fullName: Hybrid.Threading

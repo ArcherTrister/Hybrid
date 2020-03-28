@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Net.Mail.Smtp
+  commentId: N:Hybrid.Net.Mail.Smtp
+  id: Hybrid.Net.Mail.Smtp
+  children:
+  - Hybrid.Net.Mail.Smtp.ISmtpEmailSender
+  - Hybrid.Net.Mail.Smtp.SmtpEmailSender
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Net.Mail.Smtp
+  nameWithType: Hybrid.Net.Mail.Smtp
+  fullName: Hybrid.Net.Mail.Smtp
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Net.Mail.Smtp.ISmtpEmailSender
+  commentId: T:Hybrid.Net.Mail.Smtp.ISmtpEmailSender
+  parent: Hybrid.Net.Mail.Smtp
+  name: ISmtpEmailSender
+  nameWithType: ISmtpEmailSender
+  fullName: Hybrid.Net.Mail.Smtp.ISmtpEmailSender
+- uid: Hybrid.Net.Mail.Smtp.SmtpEmailSender
+  commentId: T:Hybrid.Net.Mail.Smtp.SmtpEmailSender
+  name: SmtpEmailSender
+  nameWithType: SmtpEmailSender
+  fullName: Hybrid.Net.Mail.Smtp.SmtpEmailSender
+- uid: Hybrid.Net.Mail.Smtp
+  commentId: N:Hybrid.Net.Mail.Smtp
+  name: Hybrid.Net.Mail.Smtp
+  nameWithType: Hybrid.Net.Mail.Smtp
+  fullName: Hybrid.Net.Mail.Smtp

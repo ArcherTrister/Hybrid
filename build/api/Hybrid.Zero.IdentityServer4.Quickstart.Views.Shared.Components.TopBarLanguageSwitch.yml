@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.Views.Shared.Components.TopBarLanguageSwitch
+  commentId: N:Hybrid.Zero.IdentityServer4.Quickstart.Views.Shared.Components.TopBarLanguageSwitch
+  id: Hybrid.Zero.IdentityServer4.Quickstart.Views.Shared.Components.TopBarLanguageSwitch
+  children:
+  - Hybrid.Zero.IdentityServer4.Quickstart.Views.Shared.Components.TopBarLanguageSwitch.TopBarLanguageSwitchViewComponent
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Zero.IdentityServer4.Quickstart.Views.Shared.Components.TopBarLanguageSwitch
+  nameWithType: Hybrid.Zero.IdentityServer4.Quickstart.Views.Shared.Components.TopBarLanguageSwitch
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.Views.Shared.Components.TopBarLanguageSwitch
+  type: Namespace
+  assemblies:
+  - Hybrid.Zero.IdentityServer4
+references:
+- uid: Hybrid.Zero.IdentityServer4.Quickstart.Views.Shared.Components.TopBarLanguageSwitch.TopBarLanguageSwitchViewComponent
+  commentId: T:Hybrid.Zero.IdentityServer4.Quickstart.Views.Shared.Components.TopBarLanguageSwitch.TopBarLanguageSwitchViewComponent
+  name: TopBarLanguageSwitchViewComponent
+  nameWithType: TopBarLanguageSwitchViewComponent
+  fullName: Hybrid.Zero.IdentityServer4.Quickstart.Views.Shared.Components.TopBarLanguageSwitch.TopBarLanguageSwitchViewComponent

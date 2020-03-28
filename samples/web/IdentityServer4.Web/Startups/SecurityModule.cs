@@ -10,9 +10,9 @@
 using Hybrid.Authorization;
 using Hybrid.Authorization.EntityInfos;
 using Hybrid.Authorization.Functions;
-using Hybrid.Web.Security;
-using Hybrid.Web.Security.Dtos;
-using Hybrid.Web.Security.Entities;
+using Hybrid.Web.Authorization;
+using Hybrid.Web.Authorization.Dtos;
+using Hybrid.Web.Authorization.Entities;
 using Hybrid.Zero.Authorization;
 using Hybrid.Zero.Authorization.Dtos;
 using System;

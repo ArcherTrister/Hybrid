@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Quartz.Dashboard.Repositorys
+  commentId: N:Hybrid.Quartz.Dashboard.Repositorys
+  id: Hybrid.Quartz.Dashboard.Repositorys
+  children:
+  - Hybrid.Quartz.Dashboard.Repositorys.ServerRepository
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Quartz.Dashboard.Repositorys
+  nameWithType: Hybrid.Quartz.Dashboard.Repositorys
+  fullName: Hybrid.Quartz.Dashboard.Repositorys
+  type: Namespace
+  assemblies:
+  - Hybrid.Quartz
+references:
+- uid: Hybrid.Quartz.Dashboard.Repositorys.ServerRepository
+  commentId: T:Hybrid.Quartz.Dashboard.Repositorys.ServerRepository
+  name: ServerRepository
+  nameWithType: ServerRepository
+  fullName: Hybrid.Quartz.Dashboard.Repositorys.ServerRepository

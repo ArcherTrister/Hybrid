@@ -1,0 +1,4728 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  commentId: T:Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  id: DatabaseExecutionHistoryPlugin
+  parent: Hybrid.Quartz.Plugins.History
+  children:
+  - Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.DataSource
+  - Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.DriverDelegateType
+  - Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Initialize(System.String,Quartz.IScheduler,System.Threading.CancellationToken)
+  - Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.JobExecutionVetoed(Quartz.IJobExecutionContext,System.Threading.CancellationToken)
+  - Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.JobToBeExecuted(Quartz.IJobExecutionContext,System.Threading.CancellationToken)
+  - Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.JobWasExecuted(Quartz.IJobExecutionContext,Quartz.JobExecutionException,System.Threading.CancellationToken)
+  - Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Name
+  - Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Provider
+  - Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Shutdown(System.Threading.CancellationToken)
+  - Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Start(System.Threading.CancellationToken)
+  - Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.StoreType
+  - Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.TablePrefix
+  langs:
+  - csharp
+  - vb
+  name: DatabaseExecutionHistoryPlugin
+  nameWithType: DatabaseExecutionHistoryPlugin
+  fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid.Quartz/Plugins/History/DatabaseExecutionHistoryPlugin.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: DatabaseExecutionHistoryPlugin
+    path: ../src/Hybrid.Quartz/Plugins/History/DatabaseExecutionHistoryPlugin.cs
+    startLine: 14
+  assemblies:
+  - Hybrid.Quartz
+  namespace: Hybrid.Quartz.Plugins.History
+  summary: "\nLogs a history of all job and trigger executions.\n"
+  example: []
+  syntax:
+    content: 'public class DatabaseExecutionHistoryPlugin : ISchedulerPlugin, IJobListener'
+    content.vb: >-
+      Public Class DatabaseExecutionHistoryPlugin
+          Implements ISchedulerPlugin, IJobListener
+  inheritance:
+  - System.Object
+  implements:
+  - Quartz.Spi.ISchedulerPlugin
+  - Quartz.IJobListener
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - System.Object.Hybrid.Extensions.ObjectExtensions.CastTo(System.Type)
+  - System.Object.Hybrid.Extensions.ObjectExtensions.CastTo``1
+  - System.Object.Hybrid.Extensions.ObjectExtensions.CastTo``1({T})
+  - Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Hybrid.Extensions.ObjectExtensions.IsIn``1(Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin[])
+  - System.Object.Hybrid.Extensions.ObjectExtensions.ToDynamic
+  - Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Hybrid.Extensions.ObjectExtensions.DeepClone``1
+  - Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Hybrid.Extensions.ParameterCheckExtensions.Required``1(System.Func{Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin,System.Boolean},System.String)
+  - Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Hybrid.Extensions.ParameterCheckExtensions.Required``2(System.Func{Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin,System.Boolean},System.String)
+  - Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(System.String)
+  - Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Hybrid.Extensions.TryCatchExtensions.TryCatch``1(System.Action{Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin},System.Action{System.Exception},System.Action{Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin})
+  - Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Hybrid.Extensions.TryCatchExtensions.TryCatch``1(System.Action{Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin},System.Action{System.Exception})
+  - Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Hybrid.Extensions.TryCatchExtensions.TryCatch``2(System.Func{Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin,{TResult}},System.Action{System.Exception},System.Action{Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin})
+  - Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Hybrid.Extensions.TryCatchExtensions.TryCatch``2(System.Func{Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin,{TResult}},System.Action{System.Exception})
+  - Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Hybrid.Extensions.TryCatchExtensions.TryFinally``1(System.Action{Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin},System.Action{Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin})
+  - System.Object.Hybrid.Json.JsonExtensions.ToJsonString(System.Boolean,System.Boolean)
+  - System.Object.Hybrid.Mapping.MapperExtensions.MapTo``1
+  - Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Hybrid.Mapping.MapperExtensions.MapTo``2({TTarget})
+  - System.Object.Hybrid.Reflection.LockExtensions.Locking(System.Action)
+  - Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Hybrid.Reflection.LockExtensions.Locking``1(System.Action{Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin})
+  - System.Object.Hybrid.Reflection.LockExtensions.Locking``1(System.Func{{TResult}})
+  - Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Hybrid.Reflection.LockExtensions.Locking``2(System.Func{Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin,{TResult}})
+  - Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2
+  - Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(System.Security.Principal.IPrincipal)
+  - Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(System.Security.Principal.IPrincipal)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.StoreType
+  commentId: P:Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.StoreType
+  id: StoreType
+  parent: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  langs:
+  - csharp
+  - vb
+  name: StoreType
+  nameWithType: DatabaseExecutionHistoryPlugin.StoreType
+  fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.StoreType
+  type: Property
+  source:
+    remote:
+      path: src/Hybrid.Quartz/Plugins/History/DatabaseExecutionHistoryPlugin.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: StoreType
+    path: ../src/Hybrid.Quartz/Plugins/History/DatabaseExecutionHistoryPlugin.cs
+    startLine: 24
+  assemblies:
+  - Hybrid.Quartz
+  namespace: Hybrid.Quartz.Plugins.History
+  syntax:
+    content: public Type StoreType { get; set; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public Property StoreType As Type
+  overload: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.StoreType*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Name
+  commentId: P:Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Name
+  id: Name
+  parent: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: DatabaseExecutionHistoryPlugin.Name
+  fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Name
+  type: Property
+  source:
+    remote:
+      path: src/Hybrid.Quartz/Plugins/History/DatabaseExecutionHistoryPlugin.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Name
+    path: ../src/Hybrid.Quartz/Plugins/History/DatabaseExecutionHistoryPlugin.cs
+    startLine: 30
+  assemblies:
+  - Hybrid.Quartz
+  namespace: Hybrid.Quartz.Plugins.History
+  summary: "\nGet the name of the <xref href=\"Quartz.IJobListener\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public virtual string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Overridable ReadOnly Property Name As String
+  overload: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Name*
+  implements:
+  - Quartz.IJobListener.Name
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.TablePrefix
+  commentId: P:Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.TablePrefix
+  id: TablePrefix
+  parent: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  langs:
+  - csharp
+  - vb
+  name: TablePrefix
+  nameWithType: DatabaseExecutionHistoryPlugin.TablePrefix
+  fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.TablePrefix
+  type: Property
+  source:
+    remote:
+      path: src/Hybrid.Quartz/Plugins/History/DatabaseExecutionHistoryPlugin.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: TablePrefix
+    path: ../src/Hybrid.Quartz/Plugins/History/DatabaseExecutionHistoryPlugin.cs
+    startLine: 32
+  assemblies:
+  - Hybrid.Quartz
+  namespace: Hybrid.Quartz.Plugins.History
+  syntax:
+    content: public string TablePrefix { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TablePrefix As String
+  overload: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.TablePrefix*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.DataSource
+  commentId: P:Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.DataSource
+  id: DataSource
+  parent: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  langs:
+  - csharp
+  - vb
+  name: DataSource
+  nameWithType: DatabaseExecutionHistoryPlugin.DataSource
+  fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.DataSource
+  type: Property
+  source:
+    remote:
+      path: src/Hybrid.Quartz/Plugins/History/DatabaseExecutionHistoryPlugin.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: DataSource
+    path: ../src/Hybrid.Quartz/Plugins/History/DatabaseExecutionHistoryPlugin.cs
+    startLine: 33
+  assemblies:
+  - Hybrid.Quartz
+  namespace: Hybrid.Quartz.Plugins.History
+  syntax:
+    content: public string DataSource { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DataSource As String
+  overload: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.DataSource*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.DriverDelegateType
+  commentId: P:Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.DriverDelegateType
+  id: DriverDelegateType
+  parent: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  langs:
+  - csharp
+  - vb
+  name: DriverDelegateType
+  nameWithType: DatabaseExecutionHistoryPlugin.DriverDelegateType
+  fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.DriverDelegateType
+  type: Property
+  source:
+    remote:
+      path: src/Hybrid.Quartz/Plugins/History/DatabaseExecutionHistoryPlugin.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: DriverDelegateType
+    path: ../src/Hybrid.Quartz/Plugins/History/DatabaseExecutionHistoryPlugin.cs
+    startLine: 34
+  assemblies:
+  - Hybrid.Quartz
+  namespace: Hybrid.Quartz.Plugins.History
+  syntax:
+    content: public string DriverDelegateType { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DriverDelegateType As String
+  overload: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.DriverDelegateType*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Provider
+  commentId: P:Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Provider
+  id: Provider
+  parent: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  langs:
+  - csharp
+  - vb
+  name: Provider
+  nameWithType: DatabaseExecutionHistoryPlugin.Provider
+  fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Provider
+  type: Property
+  source:
+    remote:
+      path: src/Hybrid.Quartz/Plugins/History/DatabaseExecutionHistoryPlugin.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Provider
+    path: ../src/Hybrid.Quartz/Plugins/History/DatabaseExecutionHistoryPlugin.cs
+    startLine: 36
+  assemblies:
+  - Hybrid.Quartz
+  namespace: Hybrid.Quartz.Plugins.History
+  syntax:
+    content: public string Provider { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Provider As String
+  overload: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Provider*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Initialize(System.String,Quartz.IScheduler,System.Threading.CancellationToken)
+  commentId: M:Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Initialize(System.String,Quartz.IScheduler,System.Threading.CancellationToken)
+  id: Initialize(System.String,Quartz.IScheduler,System.Threading.CancellationToken)
+  parent: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  langs:
+  - csharp
+  - vb
+  name: Initialize(String, IScheduler, CancellationToken)
+  nameWithType: DatabaseExecutionHistoryPlugin.Initialize(String, IScheduler, CancellationToken)
+  fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Initialize(System.String, Quartz.IScheduler, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.Quartz/Plugins/History/DatabaseExecutionHistoryPlugin.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Initialize
+    path: ../src/Hybrid.Quartz/Plugins/History/DatabaseExecutionHistoryPlugin.cs
+    startLine: 42
+  assemblies:
+  - Hybrid.Quartz
+  namespace: Hybrid.Quartz.Plugins.History
+  summary: "\nCalled during creation of the <xref href=\"Quartz.IScheduler\" data-throw-if-not-resolved=\"false\"></xref> in order to give\nthe <xref href=\"Quartz.Spi.ISchedulerPlugin\" data-throw-if-not-resolved=\"false\"></xref> a chance to Initialize.\n"
+  example: []
+  syntax:
+    content: public virtual Task Initialize(string pluginName, IScheduler scheduler, CancellationToken cancellationToken = default(CancellationToken))
+    parameters:
+    - id: pluginName
+      type: System.String
+    - id: scheduler
+      type: Quartz.IScheduler
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overridable Function Initialize(pluginName As String, scheduler As IScheduler, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Initialize*
+  implements:
+  - Quartz.Spi.ISchedulerPlugin.Initialize(System.String,Quartz.IScheduler,System.Threading.CancellationToken)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Start(System.Threading.CancellationToken)
+  commentId: M:Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Start(System.Threading.CancellationToken)
+  id: Start(System.Threading.CancellationToken)
+  parent: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  langs:
+  - csharp
+  - vb
+  name: Start(CancellationToken)
+  nameWithType: DatabaseExecutionHistoryPlugin.Start(CancellationToken)
+  fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Start(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.Quartz/Plugins/History/DatabaseExecutionHistoryPlugin.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Start
+    path: ../src/Hybrid.Quartz/Plugins/History/DatabaseExecutionHistoryPlugin.cs
+    startLine: 58
+  assemblies:
+  - Hybrid.Quartz
+  namespace: Hybrid.Quartz.Plugins.History
+  summary: "\nCalled when the associated <xref href=\"Quartz.IScheduler\" data-throw-if-not-resolved=\"false\"></xref> is started, in order\nto let the plug-in know it can now make calls into the scheduler if it\nneeds to.\n"
+  example: []
+  syntax:
+    content: public virtual Task Start(CancellationToken cancellationToken = default(CancellationToken))
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overridable Function Start(cancellationToken As CancellationToken = Nothing) As Task
+  overload: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Start*
+  implements:
+  - Quartz.Spi.ISchedulerPlugin.Start(System.Threading.CancellationToken)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Shutdown(System.Threading.CancellationToken)
+  commentId: M:Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Shutdown(System.Threading.CancellationToken)
+  id: Shutdown(System.Threading.CancellationToken)
+  parent: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  langs:
+  - csharp
+  - vb
+  name: Shutdown(CancellationToken)
+  nameWithType: DatabaseExecutionHistoryPlugin.Shutdown(CancellationToken)
+  fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Shutdown(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.Quartz/Plugins/History/DatabaseExecutionHistoryPlugin.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Shutdown
+    path: ../src/Hybrid.Quartz/Plugins/History/DatabaseExecutionHistoryPlugin.cs
+    startLine: 84
+  assemblies:
+  - Hybrid.Quartz
+  namespace: Hybrid.Quartz.Plugins.History
+  summary: "\nCalled in order to inform the <xref href=\"Quartz.Spi.ISchedulerPlugin\" data-throw-if-not-resolved=\"false\"></xref> that it\nshould free up all of it&apos;s resources because the scheduler is shutting\ndown.\n"
+  example: []
+  syntax:
+    content: public virtual Task Shutdown(CancellationToken cancellationToken = default(CancellationToken))
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overridable Function Shutdown(cancellationToken As CancellationToken = Nothing) As Task
+  overload: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Shutdown*
+  implements:
+  - Quartz.Spi.ISchedulerPlugin.Shutdown(System.Threading.CancellationToken)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.JobToBeExecuted(Quartz.IJobExecutionContext,System.Threading.CancellationToken)
+  commentId: M:Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.JobToBeExecuted(Quartz.IJobExecutionContext,System.Threading.CancellationToken)
+  id: JobToBeExecuted(Quartz.IJobExecutionContext,System.Threading.CancellationToken)
+  parent: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  langs:
+  - csharp
+  - vb
+  name: JobToBeExecuted(IJobExecutionContext, CancellationToken)
+  nameWithType: DatabaseExecutionHistoryPlugin.JobToBeExecuted(IJobExecutionContext, CancellationToken)
+  fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.JobToBeExecuted(Quartz.IJobExecutionContext, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.Quartz/Plugins/History/DatabaseExecutionHistoryPlugin.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: JobToBeExecuted
+    path: ../src/Hybrid.Quartz/Plugins/History/DatabaseExecutionHistoryPlugin.cs
+    startLine: 99
+  assemblies:
+  - Hybrid.Quartz
+  namespace: Hybrid.Quartz.Plugins.History
+  summary: "\nCalled by the <xref href=\"Quartz.IScheduler\" data-throw-if-not-resolved=\"false\"></xref> when a <xref href=\"Quartz.IJobDetail\" data-throw-if-not-resolved=\"false\"></xref> is\nabout to be executed (an associated <xref href=\"Quartz.ITrigger\" data-throw-if-not-resolved=\"false\"></xref> has occurred).\n<p>\n    This method will not be invoked if the execution of the Job was vetoed by a\n<xref href=\"Quartz.ITriggerListener\" data-throw-if-not-resolved=\"false\"></xref>.\n</p>\n"
+  example: []
+  syntax:
+    content: public virtual Task JobToBeExecuted(IJobExecutionContext context, CancellationToken cancellationToken = default(CancellationToken))
+    parameters:
+    - id: context
+      type: Quartz.IJobExecutionContext
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overridable Function JobToBeExecuted(context As IJobExecutionContext, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.JobToBeExecuted*
+  seealso:
+  - linkId: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.JobExecutionVetoed(Quartz.IJobExecutionContext,System.Threading.CancellationToken)
+    commentId: M:Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.JobExecutionVetoed(Quartz.IJobExecutionContext,System.Threading.CancellationToken)
+  implements:
+  - Quartz.IJobListener.JobToBeExecuted(Quartz.IJobExecutionContext,System.Threading.CancellationToken)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.JobWasExecuted(Quartz.IJobExecutionContext,Quartz.JobExecutionException,System.Threading.CancellationToken)
+  commentId: M:Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.JobWasExecuted(Quartz.IJobExecutionContext,Quartz.JobExecutionException,System.Threading.CancellationToken)
+  id: JobWasExecuted(Quartz.IJobExecutionContext,Quartz.JobExecutionException,System.Threading.CancellationToken)
+  parent: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  langs:
+  - csharp
+  - vb
+  name: JobWasExecuted(IJobExecutionContext, JobExecutionException, CancellationToken)
+  nameWithType: DatabaseExecutionHistoryPlugin.JobWasExecuted(IJobExecutionContext, JobExecutionException, CancellationToken)
+  fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.JobWasExecuted(Quartz.IJobExecutionContext, Quartz.JobExecutionException, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.Quartz/Plugins/History/DatabaseExecutionHistoryPlugin.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: JobWasExecuted
+    path: ../src/Hybrid.Quartz/Plugins/History/DatabaseExecutionHistoryPlugin.cs
+    startLine: 109
+  assemblies:
+  - Hybrid.Quartz
+  namespace: Hybrid.Quartz.Plugins.History
+  summary: "\nCalled by the <xref href=\"Quartz.IScheduler\" data-throw-if-not-resolved=\"false\"></xref> after a <xref href=\"Quartz.IJobDetail\" data-throw-if-not-resolved=\"false\"></xref>\nhas been executed, and be for the associated <xref href=\"Quartz.ITrigger\" data-throw-if-not-resolved=\"false\"></xref>&apos;s\n<xref href=\"Quartz.Spi.IOperableTrigger.Triggered(Quartz.ICalendar)\" data-throw-if-not-resolved=\"false\"></xref> method has been called.\n"
+  example: []
+  syntax:
+    content: public virtual Task JobWasExecuted(IJobExecutionContext context, JobExecutionException jobException, CancellationToken cancellationToken = default(CancellationToken))
+    parameters:
+    - id: context
+      type: Quartz.IJobExecutionContext
+    - id: jobException
+      type: Quartz.JobExecutionException
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overridable Function JobWasExecuted(context As IJobExecutionContext, jobException As JobExecutionException, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.JobWasExecuted*
+  implements:
+  - Quartz.IJobListener.JobWasExecuted(Quartz.IJobExecutionContext,Quartz.JobExecutionException,System.Threading.CancellationToken)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.JobExecutionVetoed(Quartz.IJobExecutionContext,System.Threading.CancellationToken)
+  commentId: M:Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.JobExecutionVetoed(Quartz.IJobExecutionContext,System.Threading.CancellationToken)
+  id: JobExecutionVetoed(Quartz.IJobExecutionContext,System.Threading.CancellationToken)
+  parent: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  langs:
+  - csharp
+  - vb
+  name: JobExecutionVetoed(IJobExecutionContext, CancellationToken)
+  nameWithType: DatabaseExecutionHistoryPlugin.JobExecutionVetoed(IJobExecutionContext, CancellationToken)
+  fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.JobExecutionVetoed(Quartz.IJobExecutionContext, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.Quartz/Plugins/History/DatabaseExecutionHistoryPlugin.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: JobExecutionVetoed
+    path: ../src/Hybrid.Quartz/Plugins/History/DatabaseExecutionHistoryPlugin.cs
+    startLine: 124
+  assemblies:
+  - Hybrid.Quartz
+  namespace: Hybrid.Quartz.Plugins.History
+  summary: "\nCalled by the <xref href=\"Quartz.IScheduler\" data-throw-if-not-resolved=\"false\"></xref> when a <xref href=\"Quartz.IJobDetail\" data-throw-if-not-resolved=\"false\"></xref>\nwas about to be executed (an associated <xref href=\"Quartz.ITrigger\" data-throw-if-not-resolved=\"false\"></xref>\nhas occurred), but a <xref href=\"Quartz.ITriggerListener\" data-throw-if-not-resolved=\"false\"></xref> vetoed it&apos;s\nexecution.\n"
+  example: []
+  syntax:
+    content: public virtual Task JobExecutionVetoed(IJobExecutionContext context, CancellationToken cancellationToken = default(CancellationToken))
+    parameters:
+    - id: context
+      type: Quartz.IJobExecutionContext
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overridable Function JobExecutionVetoed(context As IJobExecutionContext, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.JobExecutionVetoed*
+  seealso:
+  - linkId: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.JobToBeExecuted(Quartz.IJobExecutionContext,System.Threading.CancellationToken)
+    commentId: M:Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.JobToBeExecuted(Quartz.IJobExecutionContext,System.Threading.CancellationToken)
+  implements:
+  - Quartz.IJobListener.JobExecutionVetoed(Quartz.IJobExecutionContext,System.Threading.CancellationToken)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+references:
+- uid: Hybrid.Quartz.Plugins.History
+  commentId: N:Hybrid.Quartz.Plugins.History
+  name: Hybrid.Quartz.Plugins.History
+  nameWithType: Hybrid.Quartz.Plugins.History
+  fullName: Hybrid.Quartz.Plugins.History
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Quartz.Spi.ISchedulerPlugin
+  commentId: T:Quartz.Spi.ISchedulerPlugin
+  parent: Quartz.Spi
+  isExternal: true
+  name: ISchedulerPlugin
+  nameWithType: ISchedulerPlugin
+  fullName: Quartz.Spi.ISchedulerPlugin
+- uid: Quartz.IJobListener
+  commentId: T:Quartz.IJobListener
+  parent: Quartz
+  isExternal: true
+  name: IJobListener
+  nameWithType: IJobListener
+  fullName: Quartz.IJobListener
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Extensions.ObjectExtensions.CastTo(System.Type)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+  name: CastTo(Type)
+  nameWithType: ObjectExtensions.CastTo(Type)
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo(System.Type)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo(System.Type)
+    name: CastTo
+    nameWithType: ObjectExtensions.CastTo
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo(System.Type)
+    name: CastTo
+    nameWithType: ObjectExtensions.CastTo
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Extensions.ObjectExtensions.CastTo``1
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+  name: CastTo<T>()
+  nameWithType: ObjectExtensions.CastTo<T>()
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>()
+  nameWithType.vb: ObjectExtensions.CastTo(Of T)()
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)()
+  name.vb: CastTo(Of T)()
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1
+    name: CastTo<T>
+    nameWithType: ObjectExtensions.CastTo<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1
+    name: CastTo(Of T)
+    nameWithType: ObjectExtensions.CastTo(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Extensions.ObjectExtensions.CastTo``1({T})
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+  name: CastTo<T>(T)
+  nameWithType: ObjectExtensions.CastTo<T>(T)
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>(T)
+  nameWithType.vb: ObjectExtensions.CastTo(Of T)(T)
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)(T)
+  name.vb: CastTo(Of T)(T)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(``0)
+    name: CastTo<T>
+    nameWithType: ObjectExtensions.CastTo<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(``0)
+    name: CastTo(Of T)
+    nameWithType: ObjectExtensions.CastTo(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Hybrid.Extensions.ObjectExtensions.IsIn``1(Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin[])
+  commentId: M:Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+  name: IsIn<DatabaseExecutionHistoryPlugin>(DatabaseExecutionHistoryPlugin[])
+  nameWithType: ObjectExtensions.IsIn<DatabaseExecutionHistoryPlugin>(DatabaseExecutionHistoryPlugin[])
+  fullName: Hybrid.Extensions.ObjectExtensions.IsIn<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin>(Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin[])
+  nameWithType.vb: ObjectExtensions.IsIn(Of DatabaseExecutionHistoryPlugin)(DatabaseExecutionHistoryPlugin())
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.IsIn(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin)(Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin())
+  name.vb: IsIn(Of DatabaseExecutionHistoryPlugin)(DatabaseExecutionHistoryPlugin())
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0[])
+    name: IsIn<DatabaseExecutionHistoryPlugin>
+    nameWithType: ObjectExtensions.IsIn<DatabaseExecutionHistoryPlugin>
+    fullName: Hybrid.Extensions.ObjectExtensions.IsIn<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+    name: DatabaseExecutionHistoryPlugin
+    nameWithType: DatabaseExecutionHistoryPlugin
+    fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0[])
+    name: IsIn(Of DatabaseExecutionHistoryPlugin)
+    nameWithType: ObjectExtensions.IsIn(Of DatabaseExecutionHistoryPlugin)
+    fullName: Hybrid.Extensions.ObjectExtensions.IsIn(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+    name: DatabaseExecutionHistoryPlugin
+    nameWithType: DatabaseExecutionHistoryPlugin
+    fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Extensions.ObjectExtensions.ToDynamic
+  commentId: M:Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  name: ToDynamic()
+  nameWithType: ObjectExtensions.ToDynamic()
+  fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic()
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.ToDynamic
+    name: ToDynamic
+    nameWithType: ObjectExtensions.ToDynamic
+    fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.ToDynamic
+    name: ToDynamic
+    nameWithType: ObjectExtensions.ToDynamic
+    fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Hybrid.Extensions.ObjectExtensions.DeepClone``1
+  commentId: M:Hybrid.Extensions.ObjectExtensions.DeepClone``1(``0)
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.DeepClone``1(``0)
+  name: DeepClone<DatabaseExecutionHistoryPlugin>()
+  nameWithType: ObjectExtensions.DeepClone<DatabaseExecutionHistoryPlugin>()
+  fullName: Hybrid.Extensions.ObjectExtensions.DeepClone<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin>()
+  nameWithType.vb: ObjectExtensions.DeepClone(Of DatabaseExecutionHistoryPlugin)()
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.DeepClone(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin)()
+  name.vb: DeepClone(Of DatabaseExecutionHistoryPlugin)()
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.DeepClone``1
+    name: DeepClone<DatabaseExecutionHistoryPlugin>
+    nameWithType: ObjectExtensions.DeepClone<DatabaseExecutionHistoryPlugin>
+    fullName: Hybrid.Extensions.ObjectExtensions.DeepClone<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.DeepClone``1
+    name: DeepClone(Of DatabaseExecutionHistoryPlugin)
+    nameWithType: ObjectExtensions.DeepClone(Of DatabaseExecutionHistoryPlugin)
+    fullName: Hybrid.Extensions.ObjectExtensions.DeepClone(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Hybrid.Extensions.ParameterCheckExtensions.Required``1(System.Func{Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin,System.Boolean},System.String)
+  commentId: M:Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+  parent: Hybrid.Extensions.ParameterCheckExtensions
+  definition: Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+  name: Required<DatabaseExecutionHistoryPlugin>(Func<DatabaseExecutionHistoryPlugin, Boolean>, String)
+  nameWithType: ParameterCheckExtensions.Required<DatabaseExecutionHistoryPlugin>(Func<DatabaseExecutionHistoryPlugin, Boolean>, String)
+  fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin>(System.Func<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, System.Boolean>, System.String)
+  nameWithType.vb: ParameterCheckExtensions.Required(Of DatabaseExecutionHistoryPlugin)(Func(Of DatabaseExecutionHistoryPlugin, Boolean), String)
+  fullName.vb: Hybrid.Extensions.ParameterCheckExtensions.Required(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin)(System.Func(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, System.Boolean), System.String)
+  name.vb: Required(Of DatabaseExecutionHistoryPlugin)(Func(Of DatabaseExecutionHistoryPlugin, Boolean), String)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``1(System.Func{``0,System.Boolean},System.String)
+    name: Required<DatabaseExecutionHistoryPlugin>
+    nameWithType: ParameterCheckExtensions.Required<DatabaseExecutionHistoryPlugin>
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+    name: DatabaseExecutionHistoryPlugin
+    nameWithType: DatabaseExecutionHistoryPlugin
+    fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``1(System.Func{``0,System.Boolean},System.String)
+    name: Required(Of DatabaseExecutionHistoryPlugin)
+    nameWithType: ParameterCheckExtensions.Required(Of DatabaseExecutionHistoryPlugin)
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+    name: DatabaseExecutionHistoryPlugin
+    nameWithType: DatabaseExecutionHistoryPlugin
+    fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Hybrid.Extensions.ParameterCheckExtensions.Required``2(System.Func{Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin,System.Boolean},System.String)
+  commentId: M:Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+  parent: Hybrid.Extensions.ParameterCheckExtensions
+  definition: Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+  name: Required<DatabaseExecutionHistoryPlugin, TException>(Func<DatabaseExecutionHistoryPlugin, Boolean>, String)
+  nameWithType: ParameterCheckExtensions.Required<DatabaseExecutionHistoryPlugin, TException>(Func<DatabaseExecutionHistoryPlugin, Boolean>, String)
+  fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TException>(System.Func<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, System.Boolean>, System.String)
+  nameWithType.vb: ParameterCheckExtensions.Required(Of DatabaseExecutionHistoryPlugin, TException)(Func(Of DatabaseExecutionHistoryPlugin, Boolean), String)
+  fullName.vb: Hybrid.Extensions.ParameterCheckExtensions.Required(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TException)(System.Func(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, System.Boolean), System.String)
+  name.vb: Required(Of DatabaseExecutionHistoryPlugin, TException)(Func(Of DatabaseExecutionHistoryPlugin, Boolean), String)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``2(System.Func{``0,System.Boolean},System.String)
+    name: Required<DatabaseExecutionHistoryPlugin, TException>
+    nameWithType: ParameterCheckExtensions.Required<DatabaseExecutionHistoryPlugin, TException>
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TException>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+    name: DatabaseExecutionHistoryPlugin
+    nameWithType: DatabaseExecutionHistoryPlugin
+    fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``2(System.Func{``0,System.Boolean},System.String)
+    name: Required(Of DatabaseExecutionHistoryPlugin, TException)
+    nameWithType: ParameterCheckExtensions.Required(Of DatabaseExecutionHistoryPlugin, TException)
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TException)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+    name: DatabaseExecutionHistoryPlugin
+    nameWithType: DatabaseExecutionHistoryPlugin
+    fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(System.String)
+  commentId: M:Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(``0,System.String)
+  parent: Hybrid.Extensions.ParameterCheckExtensions
+  definition: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(``0,System.String)
+  name: CheckNotNull<DatabaseExecutionHistoryPlugin>(String)
+  nameWithType: ParameterCheckExtensions.CheckNotNull<DatabaseExecutionHistoryPlugin>(String)
+  fullName: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin>(System.String)
+  nameWithType.vb: ParameterCheckExtensions.CheckNotNull(Of DatabaseExecutionHistoryPlugin)(String)
+  fullName.vb: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin)(System.String)
+  name.vb: CheckNotNull(Of DatabaseExecutionHistoryPlugin)(String)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(System.String)
+    name: CheckNotNull<DatabaseExecutionHistoryPlugin>
+    nameWithType: ParameterCheckExtensions.CheckNotNull<DatabaseExecutionHistoryPlugin>
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(System.String)
+    name: CheckNotNull(Of DatabaseExecutionHistoryPlugin)
+    nameWithType: ParameterCheckExtensions.CheckNotNull(Of DatabaseExecutionHistoryPlugin)
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Hybrid.Extensions.TryCatchExtensions.TryCatch``1(System.Action{Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin},System.Action{System.Exception},System.Action{Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception},System.Action{``0})
+  parent: Hybrid.Extensions.TryCatchExtensions
+  definition: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception},System.Action{``0})
+  name: TryCatch<DatabaseExecutionHistoryPlugin>(Action<DatabaseExecutionHistoryPlugin>, Action<Exception>, Action<DatabaseExecutionHistoryPlugin>)
+  nameWithType: TryCatchExtensions.TryCatch<DatabaseExecutionHistoryPlugin>(Action<DatabaseExecutionHistoryPlugin>, Action<Exception>, Action<DatabaseExecutionHistoryPlugin>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin>(System.Action<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin>, System.Action<System.Exception>, System.Action<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin>)
+  nameWithType.vb: TryCatchExtensions.TryCatch(Of DatabaseExecutionHistoryPlugin)(Action(Of DatabaseExecutionHistoryPlugin), Action(Of Exception), Action(Of DatabaseExecutionHistoryPlugin))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin)(System.Action(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin), System.Action(Of System.Exception), System.Action(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin))
+  name.vb: TryCatch(Of DatabaseExecutionHistoryPlugin)(Action(Of DatabaseExecutionHistoryPlugin), Action(Of Exception), Action(Of DatabaseExecutionHistoryPlugin))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(System.Action{``0},System.Action{System.Exception},System.Action{``0})
+    name: TryCatch<DatabaseExecutionHistoryPlugin>
+    nameWithType: TryCatchExtensions.TryCatch<DatabaseExecutionHistoryPlugin>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+    name: DatabaseExecutionHistoryPlugin
+    nameWithType: DatabaseExecutionHistoryPlugin
+    fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+    name: DatabaseExecutionHistoryPlugin
+    nameWithType: DatabaseExecutionHistoryPlugin
+    fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(System.Action{``0},System.Action{System.Exception},System.Action{``0})
+    name: TryCatch(Of DatabaseExecutionHistoryPlugin)
+    nameWithType: TryCatchExtensions.TryCatch(Of DatabaseExecutionHistoryPlugin)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+    name: DatabaseExecutionHistoryPlugin
+    nameWithType: DatabaseExecutionHistoryPlugin
+    fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+    name: DatabaseExecutionHistoryPlugin
+    nameWithType: DatabaseExecutionHistoryPlugin
+    fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Hybrid.Extensions.TryCatchExtensions.TryCatch``1(System.Action{Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin},System.Action{System.Exception})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception})
+  parent: Hybrid.Extensions.TryCatchExtensions
+  definition: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception})
+  name: TryCatch<DatabaseExecutionHistoryPlugin>(Action<DatabaseExecutionHistoryPlugin>, Action<Exception>)
+  nameWithType: TryCatchExtensions.TryCatch<DatabaseExecutionHistoryPlugin>(Action<DatabaseExecutionHistoryPlugin>, Action<Exception>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin>(System.Action<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin>, System.Action<System.Exception>)
+  nameWithType.vb: TryCatchExtensions.TryCatch(Of DatabaseExecutionHistoryPlugin)(Action(Of DatabaseExecutionHistoryPlugin), Action(Of Exception))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin)(System.Action(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin), System.Action(Of System.Exception))
+  name.vb: TryCatch(Of DatabaseExecutionHistoryPlugin)(Action(Of DatabaseExecutionHistoryPlugin), Action(Of Exception))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(System.Action{``0},System.Action{System.Exception})
+    name: TryCatch<DatabaseExecutionHistoryPlugin>
+    nameWithType: TryCatchExtensions.TryCatch<DatabaseExecutionHistoryPlugin>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+    name: DatabaseExecutionHistoryPlugin
+    nameWithType: DatabaseExecutionHistoryPlugin
+    fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(System.Action{``0},System.Action{System.Exception})
+    name: TryCatch(Of DatabaseExecutionHistoryPlugin)
+    nameWithType: TryCatchExtensions.TryCatch(Of DatabaseExecutionHistoryPlugin)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+    name: DatabaseExecutionHistoryPlugin
+    nameWithType: DatabaseExecutionHistoryPlugin
+    fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Hybrid.Extensions.TryCatchExtensions.TryCatch``2(System.Func{Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin,{TResult}},System.Action{System.Exception},System.Action{Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception},System.Action{``0})
+  parent: Hybrid.Extensions.TryCatchExtensions
+  definition: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception},System.Action{``0})
+  name: TryCatch<DatabaseExecutionHistoryPlugin, TResult>(Func<DatabaseExecutionHistoryPlugin, TResult>, Action<Exception>, Action<DatabaseExecutionHistoryPlugin>)
+  nameWithType: TryCatchExtensions.TryCatch<DatabaseExecutionHistoryPlugin, TResult>(Func<DatabaseExecutionHistoryPlugin, TResult>, Action<Exception>, Action<DatabaseExecutionHistoryPlugin>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TResult>(System.Func<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TResult>, System.Action<System.Exception>, System.Action<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin>)
+  nameWithType.vb: TryCatchExtensions.TryCatch(Of DatabaseExecutionHistoryPlugin, TResult)(Func(Of DatabaseExecutionHistoryPlugin, TResult), Action(Of Exception), Action(Of DatabaseExecutionHistoryPlugin))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TResult)(System.Func(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TResult), System.Action(Of System.Exception), System.Action(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin))
+  name.vb: TryCatch(Of DatabaseExecutionHistoryPlugin, TResult)(Func(Of DatabaseExecutionHistoryPlugin, TResult), Action(Of Exception), Action(Of DatabaseExecutionHistoryPlugin))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(System.Func{``0,``1},System.Action{System.Exception},System.Action{``0})
+    name: TryCatch<DatabaseExecutionHistoryPlugin, TResult>
+    nameWithType: TryCatchExtensions.TryCatch<DatabaseExecutionHistoryPlugin, TResult>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+    name: DatabaseExecutionHistoryPlugin
+    nameWithType: DatabaseExecutionHistoryPlugin
+    fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+    name: DatabaseExecutionHistoryPlugin
+    nameWithType: DatabaseExecutionHistoryPlugin
+    fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(System.Func{``0,``1},System.Action{System.Exception},System.Action{``0})
+    name: TryCatch(Of DatabaseExecutionHistoryPlugin, TResult)
+    nameWithType: TryCatchExtensions.TryCatch(Of DatabaseExecutionHistoryPlugin, TResult)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+    name: DatabaseExecutionHistoryPlugin
+    nameWithType: DatabaseExecutionHistoryPlugin
+    fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+    name: DatabaseExecutionHistoryPlugin
+    nameWithType: DatabaseExecutionHistoryPlugin
+    fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Hybrid.Extensions.TryCatchExtensions.TryCatch``2(System.Func{Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin,{TResult}},System.Action{System.Exception})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception})
+  parent: Hybrid.Extensions.TryCatchExtensions
+  definition: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception})
+  name: TryCatch<DatabaseExecutionHistoryPlugin, TResult>(Func<DatabaseExecutionHistoryPlugin, TResult>, Action<Exception>)
+  nameWithType: TryCatchExtensions.TryCatch<DatabaseExecutionHistoryPlugin, TResult>(Func<DatabaseExecutionHistoryPlugin, TResult>, Action<Exception>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TResult>(System.Func<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TResult>, System.Action<System.Exception>)
+  nameWithType.vb: TryCatchExtensions.TryCatch(Of DatabaseExecutionHistoryPlugin, TResult)(Func(Of DatabaseExecutionHistoryPlugin, TResult), Action(Of Exception))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TResult)(System.Func(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TResult), System.Action(Of System.Exception))
+  name.vb: TryCatch(Of DatabaseExecutionHistoryPlugin, TResult)(Func(Of DatabaseExecutionHistoryPlugin, TResult), Action(Of Exception))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(System.Func{``0,``1},System.Action{System.Exception})
+    name: TryCatch<DatabaseExecutionHistoryPlugin, TResult>
+    nameWithType: TryCatchExtensions.TryCatch<DatabaseExecutionHistoryPlugin, TResult>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+    name: DatabaseExecutionHistoryPlugin
+    nameWithType: DatabaseExecutionHistoryPlugin
+    fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(System.Func{``0,``1},System.Action{System.Exception})
+    name: TryCatch(Of DatabaseExecutionHistoryPlugin, TResult)
+    nameWithType: TryCatchExtensions.TryCatch(Of DatabaseExecutionHistoryPlugin, TResult)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+    name: DatabaseExecutionHistoryPlugin
+    nameWithType: DatabaseExecutionHistoryPlugin
+    fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Hybrid.Extensions.TryCatchExtensions.TryFinally``1(System.Action{Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin},System.Action{Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryFinally``1(``0,System.Action{``0},System.Action{``0})
+  parent: Hybrid.Extensions.TryCatchExtensions
+  definition: Hybrid.Extensions.TryCatchExtensions.TryFinally``1(``0,System.Action{``0},System.Action{``0})
+  name: TryFinally<DatabaseExecutionHistoryPlugin>(Action<DatabaseExecutionHistoryPlugin>, Action<DatabaseExecutionHistoryPlugin>)
+  nameWithType: TryCatchExtensions.TryFinally<DatabaseExecutionHistoryPlugin>(Action<DatabaseExecutionHistoryPlugin>, Action<DatabaseExecutionHistoryPlugin>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryFinally<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin>(System.Action<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin>, System.Action<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin>)
+  nameWithType.vb: TryCatchExtensions.TryFinally(Of DatabaseExecutionHistoryPlugin)(Action(Of DatabaseExecutionHistoryPlugin), Action(Of DatabaseExecutionHistoryPlugin))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryFinally(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin)(System.Action(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin), System.Action(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin))
+  name.vb: TryFinally(Of DatabaseExecutionHistoryPlugin)(Action(Of DatabaseExecutionHistoryPlugin), Action(Of DatabaseExecutionHistoryPlugin))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryFinally``1(System.Action{``0},System.Action{``0})
+    name: TryFinally<DatabaseExecutionHistoryPlugin>
+    nameWithType: TryCatchExtensions.TryFinally<DatabaseExecutionHistoryPlugin>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryFinally<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+    name: DatabaseExecutionHistoryPlugin
+    nameWithType: DatabaseExecutionHistoryPlugin
+    fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+    name: DatabaseExecutionHistoryPlugin
+    nameWithType: DatabaseExecutionHistoryPlugin
+    fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryFinally``1(System.Action{``0},System.Action{``0})
+    name: TryFinally(Of DatabaseExecutionHistoryPlugin)
+    nameWithType: TryCatchExtensions.TryFinally(Of DatabaseExecutionHistoryPlugin)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryFinally(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+    name: DatabaseExecutionHistoryPlugin
+    nameWithType: DatabaseExecutionHistoryPlugin
+    fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+    name: DatabaseExecutionHistoryPlugin
+    nameWithType: DatabaseExecutionHistoryPlugin
+    fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Json.JsonExtensions.ToJsonString(System.Boolean,System.Boolean)
+  commentId: M:Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+  parent: Hybrid.Json.JsonExtensions
+  definition: Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+  name: ToJsonString(Boolean, Boolean)
+  nameWithType: JsonExtensions.ToJsonString(Boolean, Boolean)
+  fullName: Hybrid.Json.JsonExtensions.ToJsonString(System.Boolean, System.Boolean)
+  spec.csharp:
+  - uid: Hybrid.Json.JsonExtensions.ToJsonString(System.Boolean,System.Boolean)
+    name: ToJsonString
+    nameWithType: JsonExtensions.ToJsonString
+    fullName: Hybrid.Json.JsonExtensions.ToJsonString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Json.JsonExtensions.ToJsonString(System.Boolean,System.Boolean)
+    name: ToJsonString
+    nameWithType: JsonExtensions.ToJsonString
+    fullName: Hybrid.Json.JsonExtensions.ToJsonString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Mapping.MapperExtensions.MapTo``1
+  commentId: M:Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+  parent: Hybrid.Mapping.MapperExtensions
+  definition: Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+  name: MapTo<TTarget>()
+  nameWithType: MapperExtensions.MapTo<TTarget>()
+  fullName: Hybrid.Mapping.MapperExtensions.MapTo<TTarget>()
+  nameWithType.vb: MapperExtensions.MapTo(Of TTarget)()
+  fullName.vb: Hybrid.Mapping.MapperExtensions.MapTo(Of TTarget)()
+  name.vb: MapTo(Of TTarget)()
+  spec.csharp:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``1
+    name: MapTo<TTarget>
+    nameWithType: MapperExtensions.MapTo<TTarget>
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo<TTarget>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``1
+    name: MapTo(Of TTarget)
+    nameWithType: MapperExtensions.MapTo(Of TTarget)
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo(Of TTarget)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Hybrid.Mapping.MapperExtensions.MapTo``2({TTarget})
+  commentId: M:Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+  parent: Hybrid.Mapping.MapperExtensions
+  definition: Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+  name: MapTo<DatabaseExecutionHistoryPlugin, TTarget>(TTarget)
+  nameWithType: MapperExtensions.MapTo<DatabaseExecutionHistoryPlugin, TTarget>(TTarget)
+  fullName: Hybrid.Mapping.MapperExtensions.MapTo<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TTarget>(TTarget)
+  nameWithType.vb: MapperExtensions.MapTo(Of DatabaseExecutionHistoryPlugin, TTarget)(TTarget)
+  fullName.vb: Hybrid.Mapping.MapperExtensions.MapTo(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TTarget)(TTarget)
+  name.vb: MapTo(Of DatabaseExecutionHistoryPlugin, TTarget)(TTarget)
+  spec.csharp:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``2(``1)
+    name: MapTo<DatabaseExecutionHistoryPlugin, TTarget>
+    nameWithType: MapperExtensions.MapTo<DatabaseExecutionHistoryPlugin, TTarget>
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TTarget>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TTarget
+    nameWithType: TTarget
+    fullName: TTarget
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``2(``1)
+    name: MapTo(Of DatabaseExecutionHistoryPlugin, TTarget)
+    nameWithType: MapperExtensions.MapTo(Of DatabaseExecutionHistoryPlugin, TTarget)
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TTarget)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TTarget
+    nameWithType: TTarget
+    fullName: TTarget
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Reflection.LockExtensions.Locking(System.Action)
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+  parent: Hybrid.Reflection.LockExtensions
+  definition: Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+  name: Locking(Action)
+  nameWithType: LockExtensions.Locking(Action)
+  fullName: Hybrid.Reflection.LockExtensions.Locking(System.Action)
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking(System.Action)
+    name: Locking
+    nameWithType: LockExtensions.Locking
+    fullName: Hybrid.Reflection.LockExtensions.Locking
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking(System.Action)
+    name: Locking
+    nameWithType: LockExtensions.Locking
+    fullName: Hybrid.Reflection.LockExtensions.Locking
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Hybrid.Reflection.LockExtensions.Locking``1(System.Action{Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+  parent: Hybrid.Reflection.LockExtensions
+  definition: Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+  name: Locking<DatabaseExecutionHistoryPlugin>(Action<DatabaseExecutionHistoryPlugin>)
+  nameWithType: LockExtensions.Locking<DatabaseExecutionHistoryPlugin>(Action<DatabaseExecutionHistoryPlugin>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin>(System.Action<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin>)
+  nameWithType.vb: LockExtensions.Locking(Of DatabaseExecutionHistoryPlugin)(Action(Of DatabaseExecutionHistoryPlugin))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin)(System.Action(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin))
+  name.vb: Locking(Of DatabaseExecutionHistoryPlugin)(Action(Of DatabaseExecutionHistoryPlugin))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Action{``0})
+    name: Locking<DatabaseExecutionHistoryPlugin>
+    nameWithType: LockExtensions.Locking<DatabaseExecutionHistoryPlugin>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+    name: DatabaseExecutionHistoryPlugin
+    nameWithType: DatabaseExecutionHistoryPlugin
+    fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Action{``0})
+    name: Locking(Of DatabaseExecutionHistoryPlugin)
+    nameWithType: LockExtensions.Locking(Of DatabaseExecutionHistoryPlugin)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+    name: DatabaseExecutionHistoryPlugin
+    nameWithType: DatabaseExecutionHistoryPlugin
+    fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Reflection.LockExtensions.Locking``1(System.Func{{TResult}})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+  parent: Hybrid.Reflection.LockExtensions
+  definition: Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+  name: Locking<TResult>(Func<TResult>)
+  nameWithType: LockExtensions.Locking<TResult>(Func<TResult>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<TResult>(System.Func<TResult>)
+  nameWithType.vb: LockExtensions.Locking(Of TResult)(Func(Of TResult))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of TResult)(System.Func(Of TResult))
+  name.vb: Locking(Of TResult)(Func(Of TResult))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Func{``0})
+    name: Locking<TResult>
+    nameWithType: LockExtensions.Locking<TResult>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Func{``0})
+    name: Locking(Of TResult)
+    nameWithType: LockExtensions.Locking(Of TResult)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Hybrid.Reflection.LockExtensions.Locking``2(System.Func{Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin,{TResult}})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+  parent: Hybrid.Reflection.LockExtensions
+  definition: Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+  name: Locking<DatabaseExecutionHistoryPlugin, TResult>(Func<DatabaseExecutionHistoryPlugin, TResult>)
+  nameWithType: LockExtensions.Locking<DatabaseExecutionHistoryPlugin, TResult>(Func<DatabaseExecutionHistoryPlugin, TResult>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TResult>(System.Func<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TResult>)
+  nameWithType.vb: LockExtensions.Locking(Of DatabaseExecutionHistoryPlugin, TResult)(Func(Of DatabaseExecutionHistoryPlugin, TResult))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TResult)(System.Func(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TResult))
+  name.vb: Locking(Of DatabaseExecutionHistoryPlugin, TResult)(Func(Of DatabaseExecutionHistoryPlugin, TResult))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``2(System.Func{``0,``1})
+    name: Locking<DatabaseExecutionHistoryPlugin, TResult>
+    nameWithType: LockExtensions.Locking<DatabaseExecutionHistoryPlugin, TResult>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+    name: DatabaseExecutionHistoryPlugin
+    nameWithType: DatabaseExecutionHistoryPlugin
+    fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``2(System.Func{``0,``1})
+    name: Locking(Of DatabaseExecutionHistoryPlugin, TResult)
+    nameWithType: LockExtensions.Locking(Of DatabaseExecutionHistoryPlugin, TResult)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+    name: DatabaseExecutionHistoryPlugin
+    nameWithType: DatabaseExecutionHistoryPlugin
+    fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+  parent: Hybrid.Domain.Entities.EntityExtensions
+  definition: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+  name: CheckICreatedTime<DatabaseExecutionHistoryPlugin, TKey>()
+  nameWithType: EntityExtensions.CheckICreatedTime<DatabaseExecutionHistoryPlugin, TKey>()
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TKey>()
+  nameWithType.vb: EntityExtensions.CheckICreatedTime(Of DatabaseExecutionHistoryPlugin, TKey)()
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TKey)()
+  name.vb: CheckICreatedTime(Of DatabaseExecutionHistoryPlugin, TKey)()
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2
+    name: CheckICreatedTime<DatabaseExecutionHistoryPlugin, TKey>
+    nameWithType: EntityExtensions.CheckICreatedTime<DatabaseExecutionHistoryPlugin, TKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2
+    name: CheckICreatedTime(Of DatabaseExecutionHistoryPlugin, TKey)
+    nameWithType: EntityExtensions.CheckICreatedTime(Of DatabaseExecutionHistoryPlugin, TKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(System.Security.Principal.IPrincipal)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+  parent: Hybrid.Domain.Entities.EntityExtensions
+  definition: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+  name: CheckICreationAudited<DatabaseExecutionHistoryPlugin, TKey, TUserKey>(IPrincipal)
+  nameWithType: EntityExtensions.CheckICreationAudited<DatabaseExecutionHistoryPlugin, TKey, TUserKey>(IPrincipal)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TKey, TUserKey>(System.Security.Principal.IPrincipal)
+  nameWithType.vb: EntityExtensions.CheckICreationAudited(Of DatabaseExecutionHistoryPlugin, TKey, TUserKey)(IPrincipal)
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TKey, TUserKey)(System.Security.Principal.IPrincipal)
+  name.vb: CheckICreationAudited(Of DatabaseExecutionHistoryPlugin, TKey, TUserKey)(IPrincipal)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(System.Security.Principal.IPrincipal)
+    name: CheckICreationAudited<DatabaseExecutionHistoryPlugin, TKey, TUserKey>
+    nameWithType: EntityExtensions.CheckICreationAudited<DatabaseExecutionHistoryPlugin, TKey, TUserKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TKey, TUserKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(System.Security.Principal.IPrincipal)
+    name: CheckICreationAudited(Of DatabaseExecutionHistoryPlugin, TKey, TUserKey)
+    nameWithType: EntityExtensions.CheckICreationAudited(Of DatabaseExecutionHistoryPlugin, TKey, TUserKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TKey, TUserKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(System.Security.Principal.IPrincipal)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+  parent: Hybrid.Domain.Entities.EntityExtensions
+  definition: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+  name: CheckIUpdateAudited<DatabaseExecutionHistoryPlugin, TKey, TUserKey>(IPrincipal)
+  nameWithType: EntityExtensions.CheckIUpdateAudited<DatabaseExecutionHistoryPlugin, TKey, TUserKey>(IPrincipal)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TKey, TUserKey>(System.Security.Principal.IPrincipal)
+  nameWithType.vb: EntityExtensions.CheckIUpdateAudited(Of DatabaseExecutionHistoryPlugin, TKey, TUserKey)(IPrincipal)
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TKey, TUserKey)(System.Security.Principal.IPrincipal)
+  name.vb: CheckIUpdateAudited(Of DatabaseExecutionHistoryPlugin, TKey, TUserKey)(IPrincipal)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(System.Security.Principal.IPrincipal)
+    name: CheckIUpdateAudited<DatabaseExecutionHistoryPlugin, TKey, TUserKey>
+    nameWithType: EntityExtensions.CheckIUpdateAudited<DatabaseExecutionHistoryPlugin, TKey, TUserKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited<Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TKey, TUserKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(System.Security.Principal.IPrincipal)
+    name: CheckIUpdateAudited(Of DatabaseExecutionHistoryPlugin, TKey, TUserKey)
+    nameWithType: EntityExtensions.CheckIUpdateAudited(Of DatabaseExecutionHistoryPlugin, TKey, TUserKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited(Of Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin, TKey, TUserKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Quartz.Spi
+  commentId: N:Quartz.Spi
+  isExternal: true
+  name: Quartz.Spi
+  nameWithType: Quartz.Spi
+  fullName: Quartz.Spi
+- uid: Quartz
+  commentId: N:Quartz
+  isExternal: true
+  name: Quartz
+  nameWithType: Quartz
+  fullName: Quartz
+- uid: Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+  isExternal: true
+  name: CastTo(Object, Type)
+  nameWithType: ObjectExtensions.CastTo(Object, Type)
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo(System.Object, System.Type)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+    name: CastTo
+    nameWithType: ObjectExtensions.CastTo
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+    name: CastTo
+    nameWithType: ObjectExtensions.CastTo
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ObjectExtensions
+  commentId: T:Hybrid.Extensions.ObjectExtensions
+  parent: Hybrid.Extensions
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: Hybrid.Extensions.ObjectExtensions
+- uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+  isExternal: true
+  name: CastTo<T>(Object)
+  nameWithType: ObjectExtensions.CastTo<T>(Object)
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>(System.Object)
+  nameWithType.vb: ObjectExtensions.CastTo(Of T)(Object)
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)(System.Object)
+  name.vb: CastTo(Of T)(Object)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+    name: CastTo<T>
+    nameWithType: ObjectExtensions.CastTo<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+    name: CastTo(Of T)
+    nameWithType: ObjectExtensions.CastTo(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+  isExternal: true
+  name: CastTo<T>(Object, T)
+  nameWithType: ObjectExtensions.CastTo<T>(Object, T)
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>(System.Object, T)
+  nameWithType.vb: ObjectExtensions.CastTo(Of T)(Object, T)
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)(System.Object, T)
+  name.vb: CastTo(Of T)(Object, T)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+    name: CastTo<T>
+    nameWithType: ObjectExtensions.CastTo<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+    name: CastTo(Of T)
+    nameWithType: ObjectExtensions.CastTo(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+  commentId: M:Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+  name: IsIn<T>(T, T[])
+  nameWithType: ObjectExtensions.IsIn<T>(T, T[])
+  fullName: Hybrid.Extensions.ObjectExtensions.IsIn<T>(T, T[])
+  nameWithType.vb: ObjectExtensions.IsIn(Of T)(T, T())
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.IsIn(Of T)(T, T())
+  name.vb: IsIn(Of T)(T, T())
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+    name: IsIn<T>
+    nameWithType: ObjectExtensions.IsIn<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.IsIn<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+    name: IsIn(Of T)
+    nameWithType: ObjectExtensions.IsIn(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.IsIn(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  isExternal: true
+  name: ToDynamic(Object)
+  nameWithType: ObjectExtensions.ToDynamic(Object)
+  fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+    name: ToDynamic
+    nameWithType: ObjectExtensions.ToDynamic
+    fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+    name: ToDynamic
+    nameWithType: ObjectExtensions.ToDynamic
+    fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ObjectExtensions.DeepClone``1(``0)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.DeepClone``1(``0)
+  name: DeepClone<T>(T)
+  nameWithType: ObjectExtensions.DeepClone<T>(T)
+  fullName: Hybrid.Extensions.ObjectExtensions.DeepClone<T>(T)
+  nameWithType.vb: ObjectExtensions.DeepClone(Of T)(T)
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.DeepClone(Of T)(T)
+  name.vb: DeepClone(Of T)(T)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.DeepClone``1(``0)
+    name: DeepClone<T>
+    nameWithType: ObjectExtensions.DeepClone<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.DeepClone<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.DeepClone``1(``0)
+    name: DeepClone(Of T)
+    nameWithType: ObjectExtensions.DeepClone(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.DeepClone(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+  commentId: M:Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+  isExternal: true
+  name: Required<T>(T, Func<T, Boolean>, String)
+  nameWithType: ParameterCheckExtensions.Required<T>(T, Func<T, Boolean>, String)
+  fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<T>(T, System.Func<T, System.Boolean>, System.String)
+  nameWithType.vb: ParameterCheckExtensions.Required(Of T)(T, Func(Of T, Boolean), String)
+  fullName.vb: Hybrid.Extensions.ParameterCheckExtensions.Required(Of T)(T, System.Func(Of T, System.Boolean), System.String)
+  name.vb: Required(Of T)(T, Func(Of T, Boolean), String)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+    name: Required<T>
+    nameWithType: ParameterCheckExtensions.Required<T>
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+    name: Required(Of T)
+    nameWithType: ParameterCheckExtensions.Required(Of T)
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ParameterCheckExtensions
+  commentId: T:Hybrid.Extensions.ParameterCheckExtensions
+  parent: Hybrid.Extensions
+  name: ParameterCheckExtensions
+  nameWithType: ParameterCheckExtensions
+  fullName: Hybrid.Extensions.ParameterCheckExtensions
+- uid: Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+  commentId: M:Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+  isExternal: true
+  name: Required<T, TException>(T, Func<T, Boolean>, String)
+  nameWithType: ParameterCheckExtensions.Required<T, TException>(T, Func<T, Boolean>, String)
+  fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<T, TException>(T, System.Func<T, System.Boolean>, System.String)
+  nameWithType.vb: ParameterCheckExtensions.Required(Of T, TException)(T, Func(Of T, Boolean), String)
+  fullName.vb: Hybrid.Extensions.ParameterCheckExtensions.Required(Of T, TException)(T, System.Func(Of T, System.Boolean), System.String)
+  name.vb: Required(Of T, TException)(T, Func(Of T, Boolean), String)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+    name: Required<T, TException>
+    nameWithType: ParameterCheckExtensions.Required<T, TException>
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<T, TException>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+    name: Required(Of T, TException)
+    nameWithType: ParameterCheckExtensions.Required(Of T, TException)
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required(Of T, TException)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(``0,System.String)
+  commentId: M:Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(``0,System.String)
+  isExternal: true
+  name: CheckNotNull<T>(T, String)
+  nameWithType: ParameterCheckExtensions.CheckNotNull<T>(T, String)
+  fullName: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull<T>(T, System.String)
+  nameWithType.vb: ParameterCheckExtensions.CheckNotNull(Of T)(T, String)
+  fullName.vb: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull(Of T)(T, System.String)
+  name.vb: CheckNotNull(Of T)(T, String)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(``0,System.String)
+    name: CheckNotNull<T>
+    nameWithType: ParameterCheckExtensions.CheckNotNull<T>
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(``0,System.String)
+    name: CheckNotNull(Of T)
+    nameWithType: ParameterCheckExtensions.CheckNotNull(Of T)
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception},System.Action{``0})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception},System.Action{``0})
+  isExternal: true
+  name: TryCatch<T>(T, Action<T>, Action<Exception>, Action<T>)
+  nameWithType: TryCatchExtensions.TryCatch<T>(T, Action<T>, Action<Exception>, Action<T>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<T>(T, System.Action<T>, System.Action<System.Exception>, System.Action<T>)
+  nameWithType.vb: TryCatchExtensions.TryCatch(Of T)(T, Action(Of T), Action(Of Exception), Action(Of T))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of T)(T, System.Action(Of T), System.Action(Of System.Exception), System.Action(Of T))
+  name.vb: TryCatch(Of T)(T, Action(Of T), Action(Of Exception), Action(Of T))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception},System.Action{``0})
+    name: TryCatch<T>
+    nameWithType: TryCatchExtensions.TryCatch<T>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception},System.Action{``0})
+    name: TryCatch(Of T)
+    nameWithType: TryCatchExtensions.TryCatch(Of T)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.TryCatchExtensions
+  commentId: T:Hybrid.Extensions.TryCatchExtensions
+  parent: Hybrid.Extensions
+  name: TryCatchExtensions
+  nameWithType: TryCatchExtensions
+  fullName: Hybrid.Extensions.TryCatchExtensions
+- uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception})
+  isExternal: true
+  name: TryCatch<T>(T, Action<T>, Action<Exception>)
+  nameWithType: TryCatchExtensions.TryCatch<T>(T, Action<T>, Action<Exception>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<T>(T, System.Action<T>, System.Action<System.Exception>)
+  nameWithType.vb: TryCatchExtensions.TryCatch(Of T)(T, Action(Of T), Action(Of Exception))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of T)(T, System.Action(Of T), System.Action(Of System.Exception))
+  name.vb: TryCatch(Of T)(T, Action(Of T), Action(Of Exception))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception})
+    name: TryCatch<T>
+    nameWithType: TryCatchExtensions.TryCatch<T>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception})
+    name: TryCatch(Of T)
+    nameWithType: TryCatchExtensions.TryCatch(Of T)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception},System.Action{``0})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception},System.Action{``0})
+  isExternal: true
+  name: TryCatch<T, TResult>(T, Func<T, TResult>, Action<Exception>, Action<T>)
+  nameWithType: TryCatchExtensions.TryCatch<T, TResult>(T, Func<T, TResult>, Action<Exception>, Action<T>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<T, TResult>(T, System.Func<T, TResult>, System.Action<System.Exception>, System.Action<T>)
+  nameWithType.vb: TryCatchExtensions.TryCatch(Of T, TResult)(T, Func(Of T, TResult), Action(Of Exception), Action(Of T))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of T, TResult)(T, System.Func(Of T, TResult), System.Action(Of System.Exception), System.Action(Of T))
+  name.vb: TryCatch(Of T, TResult)(T, Func(Of T, TResult), Action(Of Exception), Action(Of T))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception},System.Action{``0})
+    name: TryCatch<T, TResult>
+    nameWithType: TryCatchExtensions.TryCatch<T, TResult>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<T, TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception},System.Action{``0})
+    name: TryCatch(Of T, TResult)
+    nameWithType: TryCatchExtensions.TryCatch(Of T, TResult)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of T, TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception})
+  isExternal: true
+  name: TryCatch<T, TResult>(T, Func<T, TResult>, Action<Exception>)
+  nameWithType: TryCatchExtensions.TryCatch<T, TResult>(T, Func<T, TResult>, Action<Exception>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<T, TResult>(T, System.Func<T, TResult>, System.Action<System.Exception>)
+  nameWithType.vb: TryCatchExtensions.TryCatch(Of T, TResult)(T, Func(Of T, TResult), Action(Of Exception))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of T, TResult)(T, System.Func(Of T, TResult), System.Action(Of System.Exception))
+  name.vb: TryCatch(Of T, TResult)(T, Func(Of T, TResult), Action(Of Exception))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception})
+    name: TryCatch<T, TResult>
+    nameWithType: TryCatchExtensions.TryCatch<T, TResult>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<T, TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception})
+    name: TryCatch(Of T, TResult)
+    nameWithType: TryCatchExtensions.TryCatch(Of T, TResult)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of T, TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.TryCatchExtensions.TryFinally``1(``0,System.Action{``0},System.Action{``0})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryFinally``1(``0,System.Action{``0},System.Action{``0})
+  isExternal: true
+  name: TryFinally<T>(T, Action<T>, Action<T>)
+  nameWithType: TryCatchExtensions.TryFinally<T>(T, Action<T>, Action<T>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryFinally<T>(T, System.Action<T>, System.Action<T>)
+  nameWithType.vb: TryCatchExtensions.TryFinally(Of T)(T, Action(Of T), Action(Of T))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryFinally(Of T)(T, System.Action(Of T), System.Action(Of T))
+  name.vb: TryFinally(Of T)(T, Action(Of T), Action(Of T))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryFinally``1(``0,System.Action{``0},System.Action{``0})
+    name: TryFinally<T>
+    nameWithType: TryCatchExtensions.TryFinally<T>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryFinally<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryFinally``1(``0,System.Action{``0},System.Action{``0})
+    name: TryFinally(Of T)
+    nameWithType: TryCatchExtensions.TryFinally(Of T)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryFinally(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+  commentId: M:Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+  isExternal: true
+  name: ToJsonString(Object, Boolean, Boolean)
+  nameWithType: JsonExtensions.ToJsonString(Object, Boolean, Boolean)
+  fullName: Hybrid.Json.JsonExtensions.ToJsonString(System.Object, System.Boolean, System.Boolean)
+  spec.csharp:
+  - uid: Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+    name: ToJsonString
+    nameWithType: JsonExtensions.ToJsonString
+    fullName: Hybrid.Json.JsonExtensions.ToJsonString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+    name: ToJsonString
+    nameWithType: JsonExtensions.ToJsonString
+    fullName: Hybrid.Json.JsonExtensions.ToJsonString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Json.JsonExtensions
+  commentId: T:Hybrid.Json.JsonExtensions
+  parent: Hybrid.Json
+  name: JsonExtensions
+  nameWithType: JsonExtensions
+  fullName: Hybrid.Json.JsonExtensions
+- uid: Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+  commentId: M:Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+  isExternal: true
+  name: MapTo<TTarget>(Object)
+  nameWithType: MapperExtensions.MapTo<TTarget>(Object)
+  fullName: Hybrid.Mapping.MapperExtensions.MapTo<TTarget>(System.Object)
+  nameWithType.vb: MapperExtensions.MapTo(Of TTarget)(Object)
+  fullName.vb: Hybrid.Mapping.MapperExtensions.MapTo(Of TTarget)(System.Object)
+  name.vb: MapTo(Of TTarget)(Object)
+  spec.csharp:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+    name: MapTo<TTarget>
+    nameWithType: MapperExtensions.MapTo<TTarget>
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo<TTarget>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+    name: MapTo(Of TTarget)
+    nameWithType: MapperExtensions.MapTo(Of TTarget)
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo(Of TTarget)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Mapping.MapperExtensions
+  commentId: T:Hybrid.Mapping.MapperExtensions
+  parent: Hybrid.Mapping
+  name: MapperExtensions
+  nameWithType: MapperExtensions
+  fullName: Hybrid.Mapping.MapperExtensions
+- uid: Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+  commentId: M:Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+  name: MapTo<TSource, TTarget>(TSource, TTarget)
+  nameWithType: MapperExtensions.MapTo<TSource, TTarget>(TSource, TTarget)
+  fullName: Hybrid.Mapping.MapperExtensions.MapTo<TSource, TTarget>(TSource, TTarget)
+  nameWithType.vb: MapperExtensions.MapTo(Of TSource, TTarget)(TSource, TTarget)
+  fullName.vb: Hybrid.Mapping.MapperExtensions.MapTo(Of TSource, TTarget)(TSource, TTarget)
+  name.vb: MapTo(Of TSource, TTarget)(TSource, TTarget)
+  spec.csharp:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+    name: MapTo<TSource, TTarget>
+    nameWithType: MapperExtensions.MapTo<TSource, TTarget>
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo<TSource, TTarget>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TTarget
+    nameWithType: TTarget
+    fullName: TTarget
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+    name: MapTo(Of TSource, TTarget)
+    nameWithType: MapperExtensions.MapTo(Of TSource, TTarget)
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo(Of TSource, TTarget)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TTarget
+    nameWithType: TTarget
+    fullName: TTarget
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+  isExternal: true
+  name: Locking(Object, Action)
+  nameWithType: LockExtensions.Locking(Object, Action)
+  fullName: Hybrid.Reflection.LockExtensions.Locking(System.Object, System.Action)
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+    name: Locking
+    nameWithType: LockExtensions.Locking
+    fullName: Hybrid.Reflection.LockExtensions.Locking
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+    name: Locking
+    nameWithType: LockExtensions.Locking
+    fullName: Hybrid.Reflection.LockExtensions.Locking
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Reflection.LockExtensions
+  commentId: T:Hybrid.Reflection.LockExtensions
+  parent: Hybrid.Reflection
+  name: LockExtensions
+  nameWithType: LockExtensions
+  fullName: Hybrid.Reflection.LockExtensions
+- uid: Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+  isExternal: true
+  name: Locking<T>(T, Action<T>)
+  nameWithType: LockExtensions.Locking<T>(T, Action<T>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<T>(T, System.Action<T>)
+  nameWithType.vb: LockExtensions.Locking(Of T)(T, Action(Of T))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of T)(T, System.Action(Of T))
+  name.vb: Locking(Of T)(T, Action(Of T))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+    name: Locking<T>
+    nameWithType: LockExtensions.Locking<T>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+    name: Locking(Of T)
+    nameWithType: LockExtensions.Locking(Of T)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+  isExternal: true
+  name: Locking<TResult>(Object, Func<TResult>)
+  nameWithType: LockExtensions.Locking<TResult>(Object, Func<TResult>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<TResult>(System.Object, System.Func<TResult>)
+  nameWithType.vb: LockExtensions.Locking(Of TResult)(Object, Func(Of TResult))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of TResult)(System.Object, System.Func(Of TResult))
+  name.vb: Locking(Of TResult)(Object, Func(Of TResult))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+    name: Locking<TResult>
+    nameWithType: LockExtensions.Locking<TResult>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+    name: Locking(Of TResult)
+    nameWithType: LockExtensions.Locking(Of TResult)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+  isExternal: true
+  name: Locking<TSource, TResult>(TSource, Func<TSource, TResult>)
+  nameWithType: LockExtensions.Locking<TSource, TResult>(TSource, Func<TSource, TResult>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<TSource, TResult>(TSource, System.Func<TSource, TResult>)
+  nameWithType.vb: LockExtensions.Locking(Of TSource, TResult)(TSource, Func(Of TSource, TResult))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of TSource, TResult)(TSource, System.Func(Of TSource, TResult))
+  name.vb: Locking(Of TSource, TResult)(TSource, Func(Of TSource, TResult))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+    name: Locking<TSource, TResult>
+    nameWithType: LockExtensions.Locking<TSource, TResult>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<TSource, TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+    name: Locking(Of TSource, TResult)
+    nameWithType: LockExtensions.Locking(Of TSource, TResult)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of TSource, TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+  name: CheckICreatedTime<TEntity, TKey>(TEntity)
+  nameWithType: EntityExtensions.CheckICreatedTime<TEntity, TKey>(TEntity)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime<TEntity, TKey>(TEntity)
+  nameWithType.vb: EntityExtensions.CheckICreatedTime(Of TEntity, TKey)(TEntity)
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime(Of TEntity, TKey)(TEntity)
+  name.vb: CheckICreatedTime(Of TEntity, TKey)(TEntity)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+    name: CheckICreatedTime<TEntity, TKey>
+    nameWithType: EntityExtensions.CheckICreatedTime<TEntity, TKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime<TEntity, TKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+    name: CheckICreatedTime(Of TEntity, TKey)
+    nameWithType: EntityExtensions.CheckICreatedTime(Of TEntity, TKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime(Of TEntity, TKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Domain.Entities.EntityExtensions
+  commentId: T:Hybrid.Domain.Entities.EntityExtensions
+  parent: Hybrid.Domain.Entities
+  name: EntityExtensions
+  nameWithType: EntityExtensions
+  fullName: Hybrid.Domain.Entities.EntityExtensions
+- uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+  isExternal: true
+  name: CheckICreationAudited<TEntity, TKey, TUserKey>(TEntity, IPrincipal)
+  nameWithType: EntityExtensions.CheckICreationAudited<TEntity, TKey, TUserKey>(TEntity, IPrincipal)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited<TEntity, TKey, TUserKey>(TEntity, System.Security.Principal.IPrincipal)
+  nameWithType.vb: EntityExtensions.CheckICreationAudited(Of TEntity, TKey, TUserKey)(TEntity, IPrincipal)
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited(Of TEntity, TKey, TUserKey)(TEntity, System.Security.Principal.IPrincipal)
+  name.vb: CheckICreationAudited(Of TEntity, TKey, TUserKey)(TEntity, IPrincipal)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+    name: CheckICreationAudited<TEntity, TKey, TUserKey>
+    nameWithType: EntityExtensions.CheckICreationAudited<TEntity, TKey, TUserKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited<TEntity, TKey, TUserKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+    name: CheckICreationAudited(Of TEntity, TKey, TUserKey)
+    nameWithType: EntityExtensions.CheckICreationAudited(Of TEntity, TKey, TUserKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited(Of TEntity, TKey, TUserKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+  isExternal: true
+  name: CheckIUpdateAudited<TEntity, TKey, TUserKey>(TEntity, IPrincipal)
+  nameWithType: EntityExtensions.CheckIUpdateAudited<TEntity, TKey, TUserKey>(TEntity, IPrincipal)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited<TEntity, TKey, TUserKey>(TEntity, System.Security.Principal.IPrincipal)
+  nameWithType.vb: EntityExtensions.CheckIUpdateAudited(Of TEntity, TKey, TUserKey)(TEntity, IPrincipal)
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited(Of TEntity, TKey, TUserKey)(TEntity, System.Security.Principal.IPrincipal)
+  name.vb: CheckIUpdateAudited(Of TEntity, TKey, TUserKey)(TEntity, IPrincipal)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+    name: CheckIUpdateAudited<TEntity, TKey, TUserKey>
+    nameWithType: EntityExtensions.CheckIUpdateAudited<TEntity, TKey, TUserKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited<TEntity, TKey, TUserKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+    name: CheckIUpdateAudited(Of TEntity, TKey, TUserKey)
+    nameWithType: EntityExtensions.CheckIUpdateAudited(Of TEntity, TKey, TUserKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited(Of TEntity, TKey, TUserKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions
+  commentId: N:Hybrid.Extensions
+  name: Hybrid.Extensions
+  nameWithType: Hybrid.Extensions
+  fullName: Hybrid.Extensions
+- uid: Hybrid.Json
+  commentId: N:Hybrid.Json
+  name: Hybrid.Json
+  nameWithType: Hybrid.Json
+  fullName: Hybrid.Json
+- uid: Hybrid.Mapping
+  commentId: N:Hybrid.Mapping
+  name: Hybrid.Mapping
+  nameWithType: Hybrid.Mapping
+  fullName: Hybrid.Mapping
+- uid: Hybrid.Reflection
+  commentId: N:Hybrid.Reflection
+  name: Hybrid.Reflection
+  nameWithType: Hybrid.Reflection
+  fullName: Hybrid.Reflection
+- uid: Hybrid.Domain.Entities
+  commentId: N:Hybrid.Domain.Entities
+  name: Hybrid.Domain.Entities
+  nameWithType: Hybrid.Domain.Entities
+  fullName: Hybrid.Domain.Entities
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.StoreType*
+  commentId: Overload:Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.StoreType
+  name: StoreType
+  nameWithType: DatabaseExecutionHistoryPlugin.StoreType
+  fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.StoreType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Name*
+  commentId: Overload:Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Name
+  name: Name
+  nameWithType: DatabaseExecutionHistoryPlugin.Name
+  fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Name
+- uid: Quartz.IJobListener.Name
+  commentId: P:Quartz.IJobListener.Name
+  parent: Quartz.IJobListener
+  isExternal: true
+  name: Name
+  nameWithType: IJobListener.Name
+  fullName: Quartz.IJobListener.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.TablePrefix*
+  commentId: Overload:Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.TablePrefix
+  name: TablePrefix
+  nameWithType: DatabaseExecutionHistoryPlugin.TablePrefix
+  fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.TablePrefix
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.DataSource*
+  commentId: Overload:Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.DataSource
+  name: DataSource
+  nameWithType: DatabaseExecutionHistoryPlugin.DataSource
+  fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.DataSource
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.DriverDelegateType*
+  commentId: Overload:Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.DriverDelegateType
+  name: DriverDelegateType
+  nameWithType: DatabaseExecutionHistoryPlugin.DriverDelegateType
+  fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.DriverDelegateType
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Provider*
+  commentId: Overload:Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Provider
+  name: Provider
+  nameWithType: DatabaseExecutionHistoryPlugin.Provider
+  fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Provider
+- uid: Quartz.IScheduler
+  commentId: T:Quartz.IScheduler
+  parent: Quartz
+  isExternal: true
+  name: IScheduler
+  nameWithType: IScheduler
+  fullName: Quartz.IScheduler
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Initialize*
+  commentId: Overload:Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Initialize
+  name: Initialize
+  nameWithType: DatabaseExecutionHistoryPlugin.Initialize
+  fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Initialize
+- uid: Quartz.Spi.ISchedulerPlugin.Initialize(System.String,Quartz.IScheduler,System.Threading.CancellationToken)
+  commentId: M:Quartz.Spi.ISchedulerPlugin.Initialize(System.String,Quartz.IScheduler,System.Threading.CancellationToken)
+  parent: Quartz.Spi.ISchedulerPlugin
+  isExternal: true
+  name: Initialize(String, IScheduler, CancellationToken)
+  nameWithType: ISchedulerPlugin.Initialize(String, IScheduler, CancellationToken)
+  fullName: Quartz.Spi.ISchedulerPlugin.Initialize(System.String, Quartz.IScheduler, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Quartz.Spi.ISchedulerPlugin.Initialize(System.String,Quartz.IScheduler,System.Threading.CancellationToken)
+    name: Initialize
+    nameWithType: ISchedulerPlugin.Initialize
+    fullName: Quartz.Spi.ISchedulerPlugin.Initialize
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Quartz.IScheduler
+    name: IScheduler
+    nameWithType: IScheduler
+    fullName: Quartz.IScheduler
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Quartz.Spi.ISchedulerPlugin.Initialize(System.String,Quartz.IScheduler,System.Threading.CancellationToken)
+    name: Initialize
+    nameWithType: ISchedulerPlugin.Initialize
+    fullName: Quartz.Spi.ISchedulerPlugin.Initialize
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Quartz.IScheduler
+    name: IScheduler
+    nameWithType: IScheduler
+    fullName: Quartz.IScheduler
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Start*
+  commentId: Overload:Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Start
+  name: Start
+  nameWithType: DatabaseExecutionHistoryPlugin.Start
+  fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Start
+- uid: Quartz.Spi.ISchedulerPlugin.Start(System.Threading.CancellationToken)
+  commentId: M:Quartz.Spi.ISchedulerPlugin.Start(System.Threading.CancellationToken)
+  parent: Quartz.Spi.ISchedulerPlugin
+  isExternal: true
+  name: Start(CancellationToken)
+  nameWithType: ISchedulerPlugin.Start(CancellationToken)
+  fullName: Quartz.Spi.ISchedulerPlugin.Start(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Quartz.Spi.ISchedulerPlugin.Start(System.Threading.CancellationToken)
+    name: Start
+    nameWithType: ISchedulerPlugin.Start
+    fullName: Quartz.Spi.ISchedulerPlugin.Start
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Quartz.Spi.ISchedulerPlugin.Start(System.Threading.CancellationToken)
+    name: Start
+    nameWithType: ISchedulerPlugin.Start
+    fullName: Quartz.Spi.ISchedulerPlugin.Start
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Shutdown*
+  commentId: Overload:Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Shutdown
+  name: Shutdown
+  nameWithType: DatabaseExecutionHistoryPlugin.Shutdown
+  fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.Shutdown
+- uid: Quartz.Spi.ISchedulerPlugin.Shutdown(System.Threading.CancellationToken)
+  commentId: M:Quartz.Spi.ISchedulerPlugin.Shutdown(System.Threading.CancellationToken)
+  parent: Quartz.Spi.ISchedulerPlugin
+  isExternal: true
+  name: Shutdown(CancellationToken)
+  nameWithType: ISchedulerPlugin.Shutdown(CancellationToken)
+  fullName: Quartz.Spi.ISchedulerPlugin.Shutdown(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Quartz.Spi.ISchedulerPlugin.Shutdown(System.Threading.CancellationToken)
+    name: Shutdown
+    nameWithType: ISchedulerPlugin.Shutdown
+    fullName: Quartz.Spi.ISchedulerPlugin.Shutdown
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Quartz.Spi.ISchedulerPlugin.Shutdown(System.Threading.CancellationToken)
+    name: Shutdown
+    nameWithType: ISchedulerPlugin.Shutdown
+    fullName: Quartz.Spi.ISchedulerPlugin.Shutdown
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Quartz.IJobDetail
+  commentId: T:Quartz.IJobDetail
+  parent: Quartz
+  isExternal: true
+  name: IJobDetail
+  nameWithType: IJobDetail
+  fullName: Quartz.IJobDetail
+- uid: Quartz.ITrigger
+  commentId: T:Quartz.ITrigger
+  parent: Quartz
+  isExternal: true
+  name: ITrigger
+  nameWithType: ITrigger
+  fullName: Quartz.ITrigger
+- uid: Quartz.ITriggerListener
+  commentId: T:Quartz.ITriggerListener
+  parent: Quartz
+  isExternal: true
+  name: ITriggerListener
+  nameWithType: ITriggerListener
+  fullName: Quartz.ITriggerListener
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.JobExecutionVetoed(Quartz.IJobExecutionContext,System.Threading.CancellationToken)
+  commentId: M:Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.JobExecutionVetoed(Quartz.IJobExecutionContext,System.Threading.CancellationToken)
+  isExternal: true
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.JobToBeExecuted*
+  commentId: Overload:Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.JobToBeExecuted
+  name: JobToBeExecuted
+  nameWithType: DatabaseExecutionHistoryPlugin.JobToBeExecuted
+  fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.JobToBeExecuted
+- uid: Quartz.IJobListener.JobToBeExecuted(Quartz.IJobExecutionContext,System.Threading.CancellationToken)
+  commentId: M:Quartz.IJobListener.JobToBeExecuted(Quartz.IJobExecutionContext,System.Threading.CancellationToken)
+  parent: Quartz.IJobListener
+  isExternal: true
+  name: JobToBeExecuted(IJobExecutionContext, CancellationToken)
+  nameWithType: IJobListener.JobToBeExecuted(IJobExecutionContext, CancellationToken)
+  fullName: Quartz.IJobListener.JobToBeExecuted(Quartz.IJobExecutionContext, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Quartz.IJobListener.JobToBeExecuted(Quartz.IJobExecutionContext,System.Threading.CancellationToken)
+    name: JobToBeExecuted
+    nameWithType: IJobListener.JobToBeExecuted
+    fullName: Quartz.IJobListener.JobToBeExecuted
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Quartz.IJobExecutionContext
+    name: IJobExecutionContext
+    nameWithType: IJobExecutionContext
+    fullName: Quartz.IJobExecutionContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Quartz.IJobListener.JobToBeExecuted(Quartz.IJobExecutionContext,System.Threading.CancellationToken)
+    name: JobToBeExecuted
+    nameWithType: IJobListener.JobToBeExecuted
+    fullName: Quartz.IJobListener.JobToBeExecuted
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Quartz.IJobExecutionContext
+    name: IJobExecutionContext
+    nameWithType: IJobExecutionContext
+    fullName: Quartz.IJobExecutionContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Quartz.IJobExecutionContext
+  commentId: T:Quartz.IJobExecutionContext
+  parent: Quartz
+  isExternal: true
+  name: IJobExecutionContext
+  nameWithType: IJobExecutionContext
+  fullName: Quartz.IJobExecutionContext
+- uid: Quartz.Spi.IOperableTrigger.Triggered(Quartz.ICalendar)
+  commentId: M:Quartz.Spi.IOperableTrigger.Triggered(Quartz.ICalendar)
+  isExternal: true
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.JobWasExecuted*
+  commentId: Overload:Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.JobWasExecuted
+  name: JobWasExecuted
+  nameWithType: DatabaseExecutionHistoryPlugin.JobWasExecuted
+  fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.JobWasExecuted
+- uid: Quartz.IJobListener.JobWasExecuted(Quartz.IJobExecutionContext,Quartz.JobExecutionException,System.Threading.CancellationToken)
+  commentId: M:Quartz.IJobListener.JobWasExecuted(Quartz.IJobExecutionContext,Quartz.JobExecutionException,System.Threading.CancellationToken)
+  parent: Quartz.IJobListener
+  isExternal: true
+  name: JobWasExecuted(IJobExecutionContext, JobExecutionException, CancellationToken)
+  nameWithType: IJobListener.JobWasExecuted(IJobExecutionContext, JobExecutionException, CancellationToken)
+  fullName: Quartz.IJobListener.JobWasExecuted(Quartz.IJobExecutionContext, Quartz.JobExecutionException, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Quartz.IJobListener.JobWasExecuted(Quartz.IJobExecutionContext,Quartz.JobExecutionException,System.Threading.CancellationToken)
+    name: JobWasExecuted
+    nameWithType: IJobListener.JobWasExecuted
+    fullName: Quartz.IJobListener.JobWasExecuted
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Quartz.IJobExecutionContext
+    name: IJobExecutionContext
+    nameWithType: IJobExecutionContext
+    fullName: Quartz.IJobExecutionContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Quartz.JobExecutionException
+    name: JobExecutionException
+    nameWithType: JobExecutionException
+    fullName: Quartz.JobExecutionException
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Quartz.IJobListener.JobWasExecuted(Quartz.IJobExecutionContext,Quartz.JobExecutionException,System.Threading.CancellationToken)
+    name: JobWasExecuted
+    nameWithType: IJobListener.JobWasExecuted
+    fullName: Quartz.IJobListener.JobWasExecuted
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Quartz.IJobExecutionContext
+    name: IJobExecutionContext
+    nameWithType: IJobExecutionContext
+    fullName: Quartz.IJobExecutionContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Quartz.JobExecutionException
+    name: JobExecutionException
+    nameWithType: JobExecutionException
+    fullName: Quartz.JobExecutionException
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Quartz.JobExecutionException
+  commentId: T:Quartz.JobExecutionException
+  parent: Quartz
+  isExternal: true
+  name: JobExecutionException
+  nameWithType: JobExecutionException
+  fullName: Quartz.JobExecutionException
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.JobToBeExecuted(Quartz.IJobExecutionContext,System.Threading.CancellationToken)
+  commentId: M:Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.JobToBeExecuted(Quartz.IJobExecutionContext,System.Threading.CancellationToken)
+  isExternal: true
+- uid: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.JobExecutionVetoed*
+  commentId: Overload:Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.JobExecutionVetoed
+  name: JobExecutionVetoed
+  nameWithType: DatabaseExecutionHistoryPlugin.JobExecutionVetoed
+  fullName: Hybrid.Quartz.Plugins.History.DatabaseExecutionHistoryPlugin.JobExecutionVetoed
+- uid: Quartz.IJobListener.JobExecutionVetoed(Quartz.IJobExecutionContext,System.Threading.CancellationToken)
+  commentId: M:Quartz.IJobListener.JobExecutionVetoed(Quartz.IJobExecutionContext,System.Threading.CancellationToken)
+  parent: Quartz.IJobListener
+  isExternal: true
+  name: JobExecutionVetoed(IJobExecutionContext, CancellationToken)
+  nameWithType: IJobListener.JobExecutionVetoed(IJobExecutionContext, CancellationToken)
+  fullName: Quartz.IJobListener.JobExecutionVetoed(Quartz.IJobExecutionContext, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Quartz.IJobListener.JobExecutionVetoed(Quartz.IJobExecutionContext,System.Threading.CancellationToken)
+    name: JobExecutionVetoed
+    nameWithType: IJobListener.JobExecutionVetoed
+    fullName: Quartz.IJobListener.JobExecutionVetoed
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Quartz.IJobExecutionContext
+    name: IJobExecutionContext
+    nameWithType: IJobExecutionContext
+    fullName: Quartz.IJobExecutionContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Quartz.IJobListener.JobExecutionVetoed(Quartz.IJobExecutionContext,System.Threading.CancellationToken)
+    name: JobExecutionVetoed
+    nameWithType: IJobListener.JobExecutionVetoed
+    fullName: Quartz.IJobListener.JobExecutionVetoed
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Quartz.IJobExecutionContext
+    name: IJobExecutionContext
+    nameWithType: IJobExecutionContext
+    fullName: Quartz.IJobExecutionContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

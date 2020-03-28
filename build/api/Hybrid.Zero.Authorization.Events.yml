@@ -1,0 +1,60 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Zero.Authorization.Events
+  commentId: N:Hybrid.Zero.Authorization.Events
+  id: Hybrid.Zero.Authorization.Events
+  children:
+  - Hybrid.Zero.Authorization.Events.DataAuthCacheRefreshEventData
+  - Hybrid.Zero.Authorization.Events.DataAuthCacheRefreshEventHandler
+  - Hybrid.Zero.Authorization.Events.FunctionAuthCacheRefreshEventData
+  - Hybrid.Zero.Authorization.Events.FunctionAuthCacheRefreshEventHandler
+  - Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData
+  - Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Zero.Authorization.Events
+  nameWithType: Hybrid.Zero.Authorization.Events
+  fullName: Hybrid.Zero.Authorization.Events
+  type: Namespace
+  assemblies:
+  - Hybrid.Zero
+references:
+- uid: Hybrid.Zero.Authorization.Events.DataAuthCacheRefreshEventData
+  commentId: T:Hybrid.Zero.Authorization.Events.DataAuthCacheRefreshEventData
+  parent: Hybrid.Zero.Authorization.Events
+  name: DataAuthCacheRefreshEventData
+  nameWithType: DataAuthCacheRefreshEventData
+  fullName: Hybrid.Zero.Authorization.Events.DataAuthCacheRefreshEventData
+- uid: Hybrid.Zero.Authorization.Events.DataAuthCacheRefreshEventHandler
+  commentId: T:Hybrid.Zero.Authorization.Events.DataAuthCacheRefreshEventHandler
+  name: DataAuthCacheRefreshEventHandler
+  nameWithType: DataAuthCacheRefreshEventHandler
+  fullName: Hybrid.Zero.Authorization.Events.DataAuthCacheRefreshEventHandler
+- uid: Hybrid.Zero.Authorization.Events.FunctionAuthCacheRefreshEventData
+  commentId: T:Hybrid.Zero.Authorization.Events.FunctionAuthCacheRefreshEventData
+  parent: Hybrid.Zero.Authorization.Events
+  name: FunctionAuthCacheRefreshEventData
+  nameWithType: FunctionAuthCacheRefreshEventData
+  fullName: Hybrid.Zero.Authorization.Events.FunctionAuthCacheRefreshEventData
+- uid: Hybrid.Zero.Authorization.Events.FunctionAuthCacheRefreshEventHandler
+  commentId: T:Hybrid.Zero.Authorization.Events.FunctionAuthCacheRefreshEventHandler
+  name: FunctionAuthCacheRefreshEventHandler
+  nameWithType: FunctionAuthCacheRefreshEventHandler
+  fullName: Hybrid.Zero.Authorization.Events.FunctionAuthCacheRefreshEventHandler
+- uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData
+  commentId: T:Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData
+  parent: Hybrid.Zero.Authorization.Events
+  name: FunctionCacheRefreshEventData
+  nameWithType: FunctionCacheRefreshEventData
+  fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData
+- uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  commentId: T:Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  name: FunctionCacheRefreshEventHandler
+  nameWithType: FunctionCacheRefreshEventHandler
+  fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+- uid: Hybrid.Zero.Authorization.Events
+  commentId: N:Hybrid.Zero.Authorization.Events
+  name: Hybrid.Zero.Authorization.Events
+  nameWithType: Hybrid.Zero.Authorization.Events
+  fullName: Hybrid.Zero.Authorization.Events

@@ -1,0 +1,42 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Domain.Uow
+  commentId: N:Hybrid.Domain.Uow
+  id: Hybrid.Domain.Uow
+  children:
+  - Hybrid.Domain.Uow.IUnitOfWork
+  - Hybrid.Domain.Uow.IUnitOfWorkManager
+  - Hybrid.Domain.Uow.UnitOfWorkManagerExtensions
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Domain.Uow
+  nameWithType: Hybrid.Domain.Uow
+  fullName: Hybrid.Domain.Uow
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Domain.Uow.IUnitOfWork
+  commentId: T:Hybrid.Domain.Uow.IUnitOfWork
+  parent: Hybrid.Domain.Uow
+  name: IUnitOfWork
+  nameWithType: IUnitOfWork
+  fullName: Hybrid.Domain.Uow.IUnitOfWork
+- uid: Hybrid.Domain.Uow.IUnitOfWorkManager
+  commentId: T:Hybrid.Domain.Uow.IUnitOfWorkManager
+  parent: Hybrid.Domain.Uow
+  name: IUnitOfWorkManager
+  nameWithType: IUnitOfWorkManager
+  fullName: Hybrid.Domain.Uow.IUnitOfWorkManager
+- uid: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions
+  commentId: T:Hybrid.Domain.Uow.UnitOfWorkManagerExtensions
+  parent: Hybrid.Domain.Uow
+  name: UnitOfWorkManagerExtensions
+  nameWithType: UnitOfWorkManagerExtensions
+  fullName: Hybrid.Domain.Uow.UnitOfWorkManagerExtensions
+- uid: Hybrid.Domain.Uow
+  commentId: N:Hybrid.Domain.Uow
+  name: Hybrid.Domain.Uow
+  nameWithType: Hybrid.Domain.Uow
+  fullName: Hybrid.Domain.Uow

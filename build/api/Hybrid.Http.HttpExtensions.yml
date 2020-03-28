@@ -1,0 +1,1436 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Http.HttpExtensions
+  commentId: T:Hybrid.Http.HttpExtensions
+  id: HttpExtensions
+  parent: Hybrid.Http
+  children:
+  - Hybrid.Http.HttpExtensions.CreateNew(System.Net.Http.HttpRequestMessage,System.String)
+  - Hybrid.Http.HttpExtensions.CreateNew(System.Net.Http.HttpResponseMessage,System.String)
+  - Hybrid.Http.HttpExtensions.GetAsync``1(System.Net.Http.HttpClient,System.String)
+  - Hybrid.Http.HttpExtensions.GetHostUrl(System.Uri)
+  - Hybrid.Http.HttpExtensions.PatchAsync(System.Net.Http.HttpClient,System.String,System.Net.Http.HttpContent)
+  - Hybrid.Http.HttpExtensions.PatchAsync(System.Net.Http.HttpClient,System.Uri,System.Net.Http.HttpContent)
+  - Hybrid.Http.HttpExtensions.PostAsync(System.Net.Http.HttpClient,System.String,Hybrid.Http.JsonContent)
+  - Hybrid.Http.HttpExtensions.PostAsync(System.Net.Http.HttpClient,System.String,System.Object)
+  - Hybrid.Http.HttpExtensions.PostAsync``1(System.Net.Http.HttpClient,System.String,System.Object)
+  - Hybrid.Http.HttpExtensions.ReadAsGb2312StringAsync(System.Net.Http.HttpContent)
+  - Hybrid.Http.HttpExtensions.ReadAsStringAsync(System.Net.Http.HttpContent,System.Text.Encoding)
+  - Hybrid.Http.HttpExtensions.Set(System.Net.Http.Headers.HttpRequestHeaders,System.String,System.String)
+  - Hybrid.Http.HttpExtensions.TryGetCookie(System.Net.Http.Headers.HttpResponseHeaders,System.String,System.String@)
+  - Hybrid.Http.HttpExtensions.TryGetCookie(System.Net.Http.HttpResponseMessage,System.String,System.String@)
+  - Hybrid.Http.HttpExtensions.TryGetRefreshUrl(System.Net.Http.Headers.HttpResponseHeaders,System.String@)
+  - Hybrid.Http.HttpExtensions.TryGetRefreshUrl(System.Net.Http.HttpResponseMessage,System.String@)
+  langs:
+  - csharp
+  - vb
+  name: HttpExtensions
+  nameWithType: HttpExtensions
+  fullName: Hybrid.Http.HttpExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid/Http/HttpExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: HttpExtensions
+    path: ../src/Hybrid/Http/HttpExtensions.cs
+    startLine: 17
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Http
+  summary: "\nHTTP 扩展方法\n"
+  example: []
+  syntax:
+    content: public static class HttpExtensions
+    content.vb: Public Module HttpExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.Http.HttpExtensions.GetAsync``1(System.Net.Http.HttpClient,System.String)
+  commentId: M:Hybrid.Http.HttpExtensions.GetAsync``1(System.Net.Http.HttpClient,System.String)
+  id: GetAsync``1(System.Net.Http.HttpClient,System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Http.HttpExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAsync<TResult>(HttpClient, String)
+  nameWithType: HttpExtensions.GetAsync<TResult>(HttpClient, String)
+  fullName: Hybrid.Http.HttpExtensions.GetAsync<TResult>(System.Net.Http.HttpClient, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Http/HttpExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetAsync
+    path: ../src/Hybrid/Http/HttpExtensions.cs
+    startLine: 22
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Http
+  summary: "\n基于Json的Get请求\n"
+  example: []
+  syntax:
+    content: >-
+      public static Task<TResult> GetAsync<TResult>(this HttpClient client, string url)
+
+          where TResult : class
+    parameters:
+    - id: client
+      type: System.Net.Http.HttpClient
+    - id: url
+      type: System.String
+    typeParameters:
+    - id: TResult
+    return:
+      type: System.Threading.Tasks.Task{{TResult}}
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetAsync(Of TResult As Class)(client As HttpClient, url As String) As Task(Of TResult)
+  overload: Hybrid.Http.HttpExtensions.GetAsync*
+  nameWithType.vb: HttpExtensions.GetAsync(Of TResult)(HttpClient, String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Http.HttpExtensions.GetAsync(Of TResult)(System.Net.Http.HttpClient, System.String)
+  name.vb: GetAsync(Of TResult)(HttpClient, String)
+- uid: Hybrid.Http.HttpExtensions.PostAsync(System.Net.Http.HttpClient,System.String,Hybrid.Http.JsonContent)
+  commentId: M:Hybrid.Http.HttpExtensions.PostAsync(System.Net.Http.HttpClient,System.String,Hybrid.Http.JsonContent)
+  id: PostAsync(System.Net.Http.HttpClient,System.String,Hybrid.Http.JsonContent)
+  isExtensionMethod: true
+  parent: Hybrid.Http.HttpExtensions
+  langs:
+  - csharp
+  - vb
+  name: PostAsync(HttpClient, String, JsonContent)
+  nameWithType: HttpExtensions.PostAsync(HttpClient, String, JsonContent)
+  fullName: Hybrid.Http.HttpExtensions.PostAsync(System.Net.Http.HttpClient, System.String, Hybrid.Http.JsonContent)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Http/HttpExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: PostAsync
+    path: ../src/Hybrid/Http/HttpExtensions.cs
+    startLine: 36
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Http
+  summary: "\n基于Json的Post请求\n"
+  example: []
+  syntax:
+    content: public static Task<HttpResponseMessage> PostAsync(this HttpClient client, string url, JsonContent content)
+    parameters:
+    - id: client
+      type: System.Net.Http.HttpClient
+    - id: url
+      type: System.String
+    - id: content
+      type: Hybrid.Http.JsonContent
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function PostAsync(client As HttpClient, url As String, content As JsonContent) As Task(Of HttpResponseMessage)
+  overload: Hybrid.Http.HttpExtensions.PostAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Http.HttpExtensions.PostAsync(System.Net.Http.HttpClient,System.String,System.Object)
+  commentId: M:Hybrid.Http.HttpExtensions.PostAsync(System.Net.Http.HttpClient,System.String,System.Object)
+  id: PostAsync(System.Net.Http.HttpClient,System.String,System.Object)
+  isExtensionMethod: true
+  parent: Hybrid.Http.HttpExtensions
+  langs:
+  - csharp
+  - vb
+  name: PostAsync(HttpClient, String, Object)
+  nameWithType: HttpExtensions.PostAsync(HttpClient, String, Object)
+  fullName: Hybrid.Http.HttpExtensions.PostAsync(System.Net.Http.HttpClient, System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Http/HttpExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: PostAsync
+    path: ../src/Hybrid/Http/HttpExtensions.cs
+    startLine: 44
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Http
+  summary: "\n基于Json的Post请求\n"
+  example: []
+  syntax:
+    content: public static Task<HttpResponseMessage> PostAsync(this HttpClient client, string url, object data)
+    parameters:
+    - id: client
+      type: System.Net.Http.HttpClient
+    - id: url
+      type: System.String
+    - id: data
+      type: System.Object
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function PostAsync(client As HttpClient, url As String, data As Object) As Task(Of HttpResponseMessage)
+  overload: Hybrid.Http.HttpExtensions.PostAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Http.HttpExtensions.PostAsync``1(System.Net.Http.HttpClient,System.String,System.Object)
+  commentId: M:Hybrid.Http.HttpExtensions.PostAsync``1(System.Net.Http.HttpClient,System.String,System.Object)
+  id: PostAsync``1(System.Net.Http.HttpClient,System.String,System.Object)
+  isExtensionMethod: true
+  parent: Hybrid.Http.HttpExtensions
+  langs:
+  - csharp
+  - vb
+  name: PostAsync<TResult>(HttpClient, String, Object)
+  nameWithType: HttpExtensions.PostAsync<TResult>(HttpClient, String, Object)
+  fullName: Hybrid.Http.HttpExtensions.PostAsync<TResult>(System.Net.Http.HttpClient, System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Http/HttpExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: PostAsync
+    path: ../src/Hybrid/Http/HttpExtensions.cs
+    startLine: 52
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Http
+  summary: "\n基于Json的Post请求\n"
+  example: []
+  syntax:
+    content: >-
+      public static Task<TResult> PostAsync<TResult>(this HttpClient client, string url, object data)
+
+          where TResult : class
+    parameters:
+    - id: client
+      type: System.Net.Http.HttpClient
+    - id: url
+      type: System.String
+    - id: data
+      type: System.Object
+    typeParameters:
+    - id: TResult
+    return:
+      type: System.Threading.Tasks.Task{{TResult}}
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function PostAsync(Of TResult As Class)(client As HttpClient, url As String, data As Object) As Task(Of TResult)
+  overload: Hybrid.Http.HttpExtensions.PostAsync*
+  nameWithType.vb: HttpExtensions.PostAsync(Of TResult)(HttpClient, String, Object)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Http.HttpExtensions.PostAsync(Of TResult)(System.Net.Http.HttpClient, System.String, System.Object)
+  name.vb: PostAsync(Of TResult)(HttpClient, String, Object)
+- uid: Hybrid.Http.HttpExtensions.PatchAsync(System.Net.Http.HttpClient,System.String,System.Net.Http.HttpContent)
+  commentId: M:Hybrid.Http.HttpExtensions.PatchAsync(System.Net.Http.HttpClient,System.String,System.Net.Http.HttpContent)
+  id: PatchAsync(System.Net.Http.HttpClient,System.String,System.Net.Http.HttpContent)
+  isExtensionMethod: true
+  parent: Hybrid.Http.HttpExtensions
+  langs:
+  - csharp
+  - vb
+  name: PatchAsync(HttpClient, String, HttpContent)
+  nameWithType: HttpExtensions.PatchAsync(HttpClient, String, HttpContent)
+  fullName: Hybrid.Http.HttpExtensions.PatchAsync(System.Net.Http.HttpClient, System.String, System.Net.Http.HttpContent)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Http/HttpExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: PatchAsync
+    path: ../src/Hybrid/Http/HttpExtensions.cs
+    startLine: 71
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Http
+  summary: "\nPatch请求\n"
+  example: []
+  syntax:
+    content: public static Task<HttpResponseMessage> PatchAsync(this HttpClient client, string url, HttpContent content)
+    parameters:
+    - id: client
+      type: System.Net.Http.HttpClient
+    - id: url
+      type: System.String
+    - id: content
+      type: System.Net.Http.HttpContent
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function PatchAsync(client As HttpClient, url As String, content As HttpContent) As Task(Of HttpResponseMessage)
+  overload: Hybrid.Http.HttpExtensions.PatchAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Http.HttpExtensions.PatchAsync(System.Net.Http.HttpClient,System.Uri,System.Net.Http.HttpContent)
+  commentId: M:Hybrid.Http.HttpExtensions.PatchAsync(System.Net.Http.HttpClient,System.Uri,System.Net.Http.HttpContent)
+  id: PatchAsync(System.Net.Http.HttpClient,System.Uri,System.Net.Http.HttpContent)
+  isExtensionMethod: true
+  parent: Hybrid.Http.HttpExtensions
+  langs:
+  - csharp
+  - vb
+  name: PatchAsync(HttpClient, Uri, HttpContent)
+  nameWithType: HttpExtensions.PatchAsync(HttpClient, Uri, HttpContent)
+  fullName: Hybrid.Http.HttpExtensions.PatchAsync(System.Net.Http.HttpClient, System.Uri, System.Net.Http.HttpContent)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Http/HttpExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: PatchAsync
+    path: ../src/Hybrid/Http/HttpExtensions.cs
+    startLine: 79
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Http
+  summary: "\nPatch请求\n"
+  example: []
+  syntax:
+    content: public static Task<HttpResponseMessage> PatchAsync(this HttpClient client, Uri uri, HttpContent content)
+    parameters:
+    - id: client
+      type: System.Net.Http.HttpClient
+    - id: uri
+      type: System.Uri
+    - id: content
+      type: System.Net.Http.HttpContent
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function PatchAsync(client As HttpClient, uri As Uri, content As HttpContent) As Task(Of HttpResponseMessage)
+  overload: Hybrid.Http.HttpExtensions.PatchAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Http.HttpExtensions.CreateNew(System.Net.Http.HttpRequestMessage,System.String)
+  commentId: M:Hybrid.Http.HttpExtensions.CreateNew(System.Net.Http.HttpRequestMessage,System.String)
+  id: CreateNew(System.Net.Http.HttpRequestMessage,System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Http.HttpExtensions
+  langs:
+  - csharp
+  - vb
+  name: CreateNew(HttpRequestMessage, String)
+  nameWithType: HttpExtensions.CreateNew(HttpRequestMessage, String)
+  fullName: Hybrid.Http.HttpExtensions.CreateNew(System.Net.Http.HttpRequestMessage, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Http/HttpExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: CreateNew
+    path: ../src/Hybrid/Http/HttpExtensions.cs
+    startLine: 90
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Http
+  summary: "\n由旧的<xref href=\"System.Net.Http.HttpRequestMessage\" data-throw-if-not-resolved=\"false\"></xref>和新数据创建新的<xref href=\"System.Net.Http.HttpRequestMessage\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public static HttpRequestMessage CreateNew(this HttpRequestMessage request, string data)
+    parameters:
+    - id: request
+      type: System.Net.Http.HttpRequestMessage
+    - id: data
+      type: System.String
+    return:
+      type: System.Net.Http.HttpRequestMessage
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function CreateNew(request As HttpRequestMessage, data As String) As HttpRequestMessage
+  overload: Hybrid.Http.HttpExtensions.CreateNew*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Http.HttpExtensions.CreateNew(System.Net.Http.HttpResponseMessage,System.String)
+  commentId: M:Hybrid.Http.HttpExtensions.CreateNew(System.Net.Http.HttpResponseMessage,System.String)
+  id: CreateNew(System.Net.Http.HttpResponseMessage,System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Http.HttpExtensions
+  langs:
+  - csharp
+  - vb
+  name: CreateNew(HttpResponseMessage, String)
+  nameWithType: HttpExtensions.CreateNew(HttpResponseMessage, String)
+  fullName: Hybrid.Http.HttpExtensions.CreateNew(System.Net.Http.HttpResponseMessage, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Http/HttpExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: CreateNew
+    path: ../src/Hybrid/Http/HttpExtensions.cs
+    startLine: 104
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Http
+  summary: "\n由旧的<xref href=\"System.Net.Http.HttpResponseMessage\" data-throw-if-not-resolved=\"false\"></xref>和新数据创建新的<xref href=\"System.Net.Http.HttpResponseMessage\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public static HttpResponseMessage CreateNew(this HttpResponseMessage response, string data)
+    parameters:
+    - id: response
+      type: System.Net.Http.HttpResponseMessage
+    - id: data
+      type: System.String
+    return:
+      type: System.Net.Http.HttpResponseMessage
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function CreateNew(response As HttpResponseMessage, data As String) As HttpResponseMessage
+  overload: Hybrid.Http.HttpExtensions.CreateNew*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Http.HttpExtensions.Set(System.Net.Http.Headers.HttpRequestHeaders,System.String,System.String)
+  commentId: M:Hybrid.Http.HttpExtensions.Set(System.Net.Http.Headers.HttpRequestHeaders,System.String,System.String)
+  id: Set(System.Net.Http.Headers.HttpRequestHeaders,System.String,System.String)
+  isExtensionMethod: true
+  parent: Hybrid.Http.HttpExtensions
+  langs:
+  - csharp
+  - vb
+  name: Set(HttpRequestHeaders, String, String)
+  nameWithType: HttpExtensions.Set(HttpRequestHeaders, String, String)
+  fullName: Hybrid.Http.HttpExtensions.Set(System.Net.Http.Headers.HttpRequestHeaders, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Http/HttpExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Set
+    path: ../src/Hybrid/Http/HttpExtensions.cs
+    startLine: 118
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Http
+  summary: "\n设置HttpClient的Headers值，如存在，则先移除\n"
+  example: []
+  syntax:
+    content: public static void Set(this HttpRequestHeaders headers, string name, string value)
+    parameters:
+    - id: headers
+      type: System.Net.Http.Headers.HttpRequestHeaders
+    - id: name
+      type: System.String
+    - id: value
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Set(headers As HttpRequestHeaders, name As String, value As String)
+  overload: Hybrid.Http.HttpExtensions.Set*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Http.HttpExtensions.ReadAsStringAsync(System.Net.Http.HttpContent,System.Text.Encoding)
+  commentId: M:Hybrid.Http.HttpExtensions.ReadAsStringAsync(System.Net.Http.HttpContent,System.Text.Encoding)
+  id: ReadAsStringAsync(System.Net.Http.HttpContent,System.Text.Encoding)
+  isExtensionMethod: true
+  parent: Hybrid.Http.HttpExtensions
+  langs:
+  - csharp
+  - vb
+  name: ReadAsStringAsync(HttpContent, Encoding)
+  nameWithType: HttpExtensions.ReadAsStringAsync(HttpContent, Encoding)
+  fullName: Hybrid.Http.HttpExtensions.ReadAsStringAsync(System.Net.Http.HttpContent, System.Text.Encoding)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Http/HttpExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ReadAsStringAsync
+    path: ../src/Hybrid/Http/HttpExtensions.cs
+    startLine: 137
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Http
+  summary: "\n按指定编码读取<xref href=\"System.Net.Http.HttpContent\" data-throw-if-not-resolved=\"false\"></xref>为字符串\n"
+  example: []
+  syntax:
+    content: public static Task<string> ReadAsStringAsync(this HttpContent content, Encoding encoding)
+    parameters:
+    - id: content
+      type: System.Net.Http.HttpContent
+    - id: encoding
+      type: System.Text.Encoding
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ReadAsStringAsync(content As HttpContent, encoding As Encoding) As Task(Of String)
+  overload: Hybrid.Http.HttpExtensions.ReadAsStringAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Http.HttpExtensions.ReadAsGb2312StringAsync(System.Net.Http.HttpContent)
+  commentId: M:Hybrid.Http.HttpExtensions.ReadAsGb2312StringAsync(System.Net.Http.HttpContent)
+  id: ReadAsGb2312StringAsync(System.Net.Http.HttpContent)
+  isExtensionMethod: true
+  parent: Hybrid.Http.HttpExtensions
+  langs:
+  - csharp
+  - vb
+  name: ReadAsGb2312StringAsync(HttpContent)
+  nameWithType: HttpExtensions.ReadAsGb2312StringAsync(HttpContent)
+  fullName: Hybrid.Http.HttpExtensions.ReadAsGb2312StringAsync(System.Net.Http.HttpContent)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Http/HttpExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ReadAsGb2312StringAsync
+    path: ../src/Hybrid/Http/HttpExtensions.cs
+    startLine: 146
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Http
+  summary: "\n将<xref href=\"System.Net.Http.HttpContent\" data-throw-if-not-resolved=\"false\"></xref>读取为GB2312字符串\n"
+  example: []
+  syntax:
+    content: public static Task<string> ReadAsGb2312StringAsync(this HttpContent content)
+    parameters:
+    - id: content
+      type: System.Net.Http.HttpContent
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ReadAsGb2312StringAsync(content As HttpContent) As Task(Of String)
+  overload: Hybrid.Http.HttpExtensions.ReadAsGb2312StringAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Http.HttpExtensions.TryGetCookie(System.Net.Http.HttpResponseMessage,System.String,System.String@)
+  commentId: M:Hybrid.Http.HttpExtensions.TryGetCookie(System.Net.Http.HttpResponseMessage,System.String,System.String@)
+  id: TryGetCookie(System.Net.Http.HttpResponseMessage,System.String,System.String@)
+  isExtensionMethod: true
+  parent: Hybrid.Http.HttpExtensions
+  langs:
+  - csharp
+  - vb
+  name: TryGetCookie(HttpResponseMessage, String, out String)
+  nameWithType: HttpExtensions.TryGetCookie(HttpResponseMessage, String, out String)
+  fullName: Hybrid.Http.HttpExtensions.TryGetCookie(System.Net.Http.HttpResponseMessage, System.String, out System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Http/HttpExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: TryGetCookie
+    path: ../src/Hybrid/Http/HttpExtensions.cs
+    startLine: 155
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Http
+  summary: "\n尝试从<xref href=\"System.Net.Http.HttpResponseMessage\" data-throw-if-not-resolved=\"false\"></xref>中提取Cookie值\n"
+  example: []
+  syntax:
+    content: public static bool TryGetCookie(this HttpResponseMessage response, string name, out string value)
+    parameters:
+    - id: response
+      type: System.Net.Http.HttpResponseMessage
+    - id: name
+      type: System.String
+    - id: value
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function TryGetCookie(response As HttpResponseMessage, name As String, ByRef value As String) As Boolean
+  overload: Hybrid.Http.HttpExtensions.TryGetCookie*
+  nameWithType.vb: HttpExtensions.TryGetCookie(HttpResponseMessage, String, ByRef String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Http.HttpExtensions.TryGetCookie(System.Net.Http.HttpResponseMessage, System.String, ByRef System.String)
+  name.vb: TryGetCookie(HttpResponseMessage, String, ByRef String)
+- uid: Hybrid.Http.HttpExtensions.TryGetCookie(System.Net.Http.Headers.HttpResponseHeaders,System.String,System.String@)
+  commentId: M:Hybrid.Http.HttpExtensions.TryGetCookie(System.Net.Http.Headers.HttpResponseHeaders,System.String,System.String@)
+  id: TryGetCookie(System.Net.Http.Headers.HttpResponseHeaders,System.String,System.String@)
+  isExtensionMethod: true
+  parent: Hybrid.Http.HttpExtensions
+  langs:
+  - csharp
+  - vb
+  name: TryGetCookie(HttpResponseHeaders, String, out String)
+  nameWithType: HttpExtensions.TryGetCookie(HttpResponseHeaders, String, out String)
+  fullName: Hybrid.Http.HttpExtensions.TryGetCookie(System.Net.Http.Headers.HttpResponseHeaders, System.String, out System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Http/HttpExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: TryGetCookie
+    path: ../src/Hybrid/Http/HttpExtensions.cs
+    startLine: 163
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Http
+  summary: "\n尝试从<xref href=\"System.Net.Http.Headers.HttpResponseHeaders\" data-throw-if-not-resolved=\"false\"></xref>中提取Cookie值\n"
+  example: []
+  syntax:
+    content: public static bool TryGetCookie(this HttpResponseHeaders headers, string name, out string value)
+    parameters:
+    - id: headers
+      type: System.Net.Http.Headers.HttpResponseHeaders
+    - id: name
+      type: System.String
+    - id: value
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function TryGetCookie(headers As HttpResponseHeaders, name As String, ByRef value As String) As Boolean
+  overload: Hybrid.Http.HttpExtensions.TryGetCookie*
+  nameWithType.vb: HttpExtensions.TryGetCookie(HttpResponseHeaders, String, ByRef String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Http.HttpExtensions.TryGetCookie(System.Net.Http.Headers.HttpResponseHeaders, System.String, ByRef System.String)
+  name.vb: TryGetCookie(HttpResponseHeaders, String, ByRef String)
+- uid: Hybrid.Http.HttpExtensions.TryGetRefreshUrl(System.Net.Http.HttpResponseMessage,System.String@)
+  commentId: M:Hybrid.Http.HttpExtensions.TryGetRefreshUrl(System.Net.Http.HttpResponseMessage,System.String@)
+  id: TryGetRefreshUrl(System.Net.Http.HttpResponseMessage,System.String@)
+  isExtensionMethod: true
+  parent: Hybrid.Http.HttpExtensions
+  langs:
+  - csharp
+  - vb
+  name: TryGetRefreshUrl(HttpResponseMessage, out String)
+  nameWithType: HttpExtensions.TryGetRefreshUrl(HttpResponseMessage, out String)
+  fullName: Hybrid.Http.HttpExtensions.TryGetRefreshUrl(System.Net.Http.HttpResponseMessage, out System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Http/HttpExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: TryGetRefreshUrl
+    path: ../src/Hybrid/Http/HttpExtensions.cs
+    startLine: 178
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Http
+  summary: "\n尝试从<xref href=\"System.Net.Http.HttpResponseMessage\" data-throw-if-not-resolved=\"false\"></xref>中提取Refresh的URL\n"
+  example: []
+  syntax:
+    content: public static bool TryGetRefreshUrl(this HttpResponseMessage response, out string url)
+    parameters:
+    - id: response
+      type: System.Net.Http.HttpResponseMessage
+    - id: url
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function TryGetRefreshUrl(response As HttpResponseMessage, ByRef url As String) As Boolean
+  overload: Hybrid.Http.HttpExtensions.TryGetRefreshUrl*
+  nameWithType.vb: HttpExtensions.TryGetRefreshUrl(HttpResponseMessage, ByRef String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Http.HttpExtensions.TryGetRefreshUrl(System.Net.Http.HttpResponseMessage, ByRef System.String)
+  name.vb: TryGetRefreshUrl(HttpResponseMessage, ByRef String)
+- uid: Hybrid.Http.HttpExtensions.TryGetRefreshUrl(System.Net.Http.Headers.HttpResponseHeaders,System.String@)
+  commentId: M:Hybrid.Http.HttpExtensions.TryGetRefreshUrl(System.Net.Http.Headers.HttpResponseHeaders,System.String@)
+  id: TryGetRefreshUrl(System.Net.Http.Headers.HttpResponseHeaders,System.String@)
+  isExtensionMethod: true
+  parent: Hybrid.Http.HttpExtensions
+  langs:
+  - csharp
+  - vb
+  name: TryGetRefreshUrl(HttpResponseHeaders, out String)
+  nameWithType: HttpExtensions.TryGetRefreshUrl(HttpResponseHeaders, out String)
+  fullName: Hybrid.Http.HttpExtensions.TryGetRefreshUrl(System.Net.Http.Headers.HttpResponseHeaders, out System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Http/HttpExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: TryGetRefreshUrl
+    path: ../src/Hybrid/Http/HttpExtensions.cs
+    startLine: 186
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Http
+  summary: "\n尝试从<xref href=\"System.Net.Http.Headers.HttpResponseHeaders\" data-throw-if-not-resolved=\"false\"></xref>中提取Refresh的URL\n"
+  example: []
+  syntax:
+    content: public static bool TryGetRefreshUrl(this HttpResponseHeaders headers, out string url)
+    parameters:
+    - id: headers
+      type: System.Net.Http.Headers.HttpResponseHeaders
+    - id: url
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function TryGetRefreshUrl(headers As HttpResponseHeaders, ByRef url As String) As Boolean
+  overload: Hybrid.Http.HttpExtensions.TryGetRefreshUrl*
+  nameWithType.vb: HttpExtensions.TryGetRefreshUrl(HttpResponseHeaders, ByRef String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Http.HttpExtensions.TryGetRefreshUrl(System.Net.Http.Headers.HttpResponseHeaders, ByRef System.String)
+  name.vb: TryGetRefreshUrl(HttpResponseHeaders, ByRef String)
+- uid: Hybrid.Http.HttpExtensions.GetHostUrl(System.Uri)
+  commentId: M:Hybrid.Http.HttpExtensions.GetHostUrl(System.Uri)
+  id: GetHostUrl(System.Uri)
+  isExtensionMethod: true
+  parent: Hybrid.Http.HttpExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetHostUrl(Uri)
+  nameWithType: HttpExtensions.GetHostUrl(Uri)
+  fullName: Hybrid.Http.HttpExtensions.GetHostUrl(System.Uri)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Http/HttpExtensions.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: GetHostUrl
+    path: ../src/Hybrid/Http/HttpExtensions.cs
+    startLine: 200
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Http
+  summary: "\n从Uri中获取HostUrl，形如：https://www.baidu.com/\n"
+  example: []
+  syntax:
+    content: public static string GetHostUrl(this Uri uri)
+    parameters:
+    - id: uri
+      type: System.Uri
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetHostUrl(uri As Uri) As String
+  overload: Hybrid.Http.HttpExtensions.GetHostUrl*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Hybrid.Http
+  commentId: N:Hybrid.Http
+  name: Hybrid.Http
+  nameWithType: Hybrid.Http
+  fullName: Hybrid.Http
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hybrid.Http.HttpExtensions.GetAsync*
+  commentId: Overload:Hybrid.Http.HttpExtensions.GetAsync
+  name: GetAsync
+  nameWithType: HttpExtensions.GetAsync
+  fullName: Hybrid.Http.HttpExtensions.GetAsync
+- uid: System.Net.Http.HttpClient
+  commentId: T:System.Net.Http.HttpClient
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpClient
+  nameWithType: HttpClient
+  fullName: System.Net.Http.HttpClient
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Threading.Tasks.Task{{TResult}}
+  commentId: T:System.Threading.Tasks.Task{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Net.Http
+  commentId: N:System.Net.Http
+  isExternal: true
+  name: System.Net.Http
+  nameWithType: System.Net.Http
+  fullName: System.Net.Http
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Hybrid.Http.HttpExtensions.PostAsync*
+  commentId: Overload:Hybrid.Http.HttpExtensions.PostAsync
+  name: PostAsync
+  nameWithType: HttpExtensions.PostAsync
+  fullName: Hybrid.Http.HttpExtensions.PostAsync
+- uid: Hybrid.Http.JsonContent
+  commentId: T:Hybrid.Http.JsonContent
+  parent: Hybrid.Http
+  name: JsonContent
+  nameWithType: JsonContent
+  fullName: Hybrid.Http.JsonContent
+- uid: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+  commentId: T:System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<HttpResponseMessage>
+  nameWithType: Task<HttpResponseMessage>
+  fullName: System.Threading.Tasks.Task<System.Net.Http.HttpResponseMessage>
+  nameWithType.vb: Task(Of HttpResponseMessage)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Net.Http.HttpResponseMessage)
+  name.vb: Task(Of HttpResponseMessage)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Net.Http.HttpResponseMessage
+    name: HttpResponseMessage
+    nameWithType: HttpResponseMessage
+    fullName: System.Net.Http.HttpResponseMessage
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Net.Http.HttpResponseMessage
+    name: HttpResponseMessage
+    nameWithType: HttpResponseMessage
+    fullName: System.Net.Http.HttpResponseMessage
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Http.HttpExtensions.PatchAsync*
+  commentId: Overload:Hybrid.Http.HttpExtensions.PatchAsync
+  name: PatchAsync
+  nameWithType: HttpExtensions.PatchAsync
+  fullName: Hybrid.Http.HttpExtensions.PatchAsync
+- uid: System.Net.Http.HttpContent
+  commentId: T:System.Net.Http.HttpContent
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpContent
+  nameWithType: HttpContent
+  fullName: System.Net.Http.HttpContent
+- uid: System.Uri
+  commentId: T:System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  nameWithType: Uri
+  fullName: System.Uri
+- uid: System.Net.Http.HttpRequestMessage
+  commentId: T:System.Net.Http.HttpRequestMessage
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpRequestMessage
+  nameWithType: HttpRequestMessage
+  fullName: System.Net.Http.HttpRequestMessage
+- uid: Hybrid.Http.HttpExtensions.CreateNew*
+  commentId: Overload:Hybrid.Http.HttpExtensions.CreateNew
+  name: CreateNew
+  nameWithType: HttpExtensions.CreateNew
+  fullName: Hybrid.Http.HttpExtensions.CreateNew
+- uid: System.Net.Http.HttpResponseMessage
+  commentId: T:System.Net.Http.HttpResponseMessage
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpResponseMessage
+  nameWithType: HttpResponseMessage
+  fullName: System.Net.Http.HttpResponseMessage
+- uid: Hybrid.Http.HttpExtensions.Set*
+  commentId: Overload:Hybrid.Http.HttpExtensions.Set
+  name: Set
+  nameWithType: HttpExtensions.Set
+  fullName: Hybrid.Http.HttpExtensions.Set
+- uid: System.Net.Http.Headers.HttpRequestHeaders
+  commentId: T:System.Net.Http.Headers.HttpRequestHeaders
+  parent: System.Net.Http.Headers
+  isExternal: true
+  name: HttpRequestHeaders
+  nameWithType: HttpRequestHeaders
+  fullName: System.Net.Http.Headers.HttpRequestHeaders
+- uid: System.Net.Http.Headers
+  commentId: N:System.Net.Http.Headers
+  isExternal: true
+  name: System.Net.Http.Headers
+  nameWithType: System.Net.Http.Headers
+  fullName: System.Net.Http.Headers
+- uid: Hybrid.Http.HttpExtensions.ReadAsStringAsync*
+  commentId: Overload:Hybrid.Http.HttpExtensions.ReadAsStringAsync
+  name: ReadAsStringAsync
+  nameWithType: HttpExtensions.ReadAsStringAsync
+  fullName: Hybrid.Http.HttpExtensions.ReadAsStringAsync
+- uid: System.Text.Encoding
+  commentId: T:System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  name: Encoding
+  nameWithType: Encoding
+  fullName: System.Text.Encoding
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<String>
+  nameWithType: Task<String>
+  fullName: System.Threading.Tasks.Task<System.String>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of System.String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+- uid: Hybrid.Http.HttpExtensions.ReadAsGb2312StringAsync*
+  commentId: Overload:Hybrid.Http.HttpExtensions.ReadAsGb2312StringAsync
+  name: ReadAsGb2312StringAsync
+  nameWithType: HttpExtensions.ReadAsGb2312StringAsync
+  fullName: Hybrid.Http.HttpExtensions.ReadAsGb2312StringAsync
+- uid: Hybrid.Http.HttpExtensions.TryGetCookie*
+  commentId: Overload:Hybrid.Http.HttpExtensions.TryGetCookie
+  name: TryGetCookie
+  nameWithType: HttpExtensions.TryGetCookie
+  fullName: Hybrid.Http.HttpExtensions.TryGetCookie
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Net.Http.Headers.HttpResponseHeaders
+  commentId: T:System.Net.Http.Headers.HttpResponseHeaders
+  parent: System.Net.Http.Headers
+  isExternal: true
+  name: HttpResponseHeaders
+  nameWithType: HttpResponseHeaders
+  fullName: System.Net.Http.Headers.HttpResponseHeaders
+- uid: Hybrid.Http.HttpExtensions.TryGetRefreshUrl*
+  commentId: Overload:Hybrid.Http.HttpExtensions.TryGetRefreshUrl
+  name: TryGetRefreshUrl
+  nameWithType: HttpExtensions.TryGetRefreshUrl
+  fullName: Hybrid.Http.HttpExtensions.TryGetRefreshUrl
+- uid: Hybrid.Http.HttpExtensions.GetHostUrl*
+  commentId: Overload:Hybrid.Http.HttpExtensions.GetHostUrl
+  name: GetHostUrl
+  nameWithType: HttpExtensions.GetHostUrl
+  fullName: Hybrid.Http.HttpExtensions.GetHostUrl

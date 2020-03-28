@@ -1,0 +1,875 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Data.SerializeHelper
+  commentId: T:Hybrid.Data.SerializeHelper
+  id: SerializeHelper
+  parent: Hybrid.Data
+  children:
+  - Hybrid.Data.SerializeHelper.FromBinary``1(System.Byte[])
+  - Hybrid.Data.SerializeHelper.FromBinaryFile``1(System.String)
+  - Hybrid.Data.SerializeHelper.FromBytes``1(System.Byte[])
+  - Hybrid.Data.SerializeHelper.FromXml``1(System.String)
+  - Hybrid.Data.SerializeHelper.FromXmlFile``1(System.String)
+  - Hybrid.Data.SerializeHelper.ToBinary(System.Object)
+  - Hybrid.Data.SerializeHelper.ToBinaryFile(System.String,System.Object)
+  - Hybrid.Data.SerializeHelper.ToBytes(System.Object)
+  - Hybrid.Data.SerializeHelper.ToXml(System.Object)
+  - Hybrid.Data.SerializeHelper.ToXmlFile(System.String,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: SerializeHelper
+  nameWithType: SerializeHelper
+  fullName: Hybrid.Data.SerializeHelper
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid/Data/SerializeHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: SerializeHelper
+    path: ../src/Hybrid/Data/SerializeHelper.cs
+    startLine: 22
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n序列化辅助操作类\n"
+  example: []
+  syntax:
+    content: public static class SerializeHelper
+    content.vb: Public Module SerializeHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.Data.SerializeHelper.ToBytes(System.Object)
+  commentId: M:Hybrid.Data.SerializeHelper.ToBytes(System.Object)
+  id: ToBytes(System.Object)
+  parent: Hybrid.Data.SerializeHelper
+  langs:
+  - csharp
+  - vb
+  name: ToBytes(Object)
+  nameWithType: SerializeHelper.ToBytes(Object)
+  fullName: Hybrid.Data.SerializeHelper.ToBytes(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Data/SerializeHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToBytes
+    path: ../src/Hybrid/Data/SerializeHelper.cs
+    startLine: 31
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n将对象序列化为byte[]，此方法不需要源类型标记可<xref href=\"System.SerializableAttribute\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public static byte[] ToBytes(object value)
+    parameters:
+    - id: value
+      type: System.Object
+      description: ''
+    return:
+      type: System.Byte[]
+      description: ''
+    content.vb: Public Shared Function ToBytes(value As Object) As Byte()
+  overload: Hybrid.Data.SerializeHelper.ToBytes*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Data.SerializeHelper.FromBytes``1(System.Byte[])
+  commentId: M:Hybrid.Data.SerializeHelper.FromBytes``1(System.Byte[])
+  id: FromBytes``1(System.Byte[])
+  parent: Hybrid.Data.SerializeHelper
+  langs:
+  - csharp
+  - vb
+  name: FromBytes<T>(Byte[])
+  nameWithType: SerializeHelper.FromBytes<T>(Byte[])
+  fullName: Hybrid.Data.SerializeHelper.FromBytes<T>(System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Data/SerializeHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: FromBytes
+    path: ../src/Hybrid/Data/SerializeHelper.cs
+    startLine: 45
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n将byte[]反序列化为对象，此方法不需要源类型标记可<xref href=\"System.SerializableAttribute\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public static T FromBytes<T>(byte[] bytes)
+    parameters:
+    - id: bytes
+      type: System.Byte[]
+      description: ''
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: '{T}'
+      description: ''
+    content.vb: Public Shared Function FromBytes(Of T)(bytes As Byte()) As T
+  overload: Hybrid.Data.SerializeHelper.FromBytes*
+  nameWithType.vb: SerializeHelper.FromBytes(Of T)(Byte())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Data.SerializeHelper.FromBytes(Of T)(System.Byte())
+  name.vb: FromBytes(Of T)(Byte())
+- uid: Hybrid.Data.SerializeHelper.ToBinary(System.Object)
+  commentId: M:Hybrid.Data.SerializeHelper.ToBinary(System.Object)
+  id: ToBinary(System.Object)
+  parent: Hybrid.Data.SerializeHelper
+  langs:
+  - csharp
+  - vb
+  name: ToBinary(Object)
+  nameWithType: SerializeHelper.ToBinary(Object)
+  fullName: Hybrid.Data.SerializeHelper.ToBinary(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Data/SerializeHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToBinary
+    path: ../src/Hybrid/Data/SerializeHelper.cs
+    startLine: 56
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n将数据序列化为二进制数组\n"
+  example: []
+  syntax:
+    content: public static byte[] ToBinary(object data)
+    parameters:
+    - id: data
+      type: System.Object
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared Function ToBinary(data As Object) As Byte()
+  overload: Hybrid.Data.SerializeHelper.ToBinary*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Data.SerializeHelper.FromBinary``1(System.Byte[])
+  commentId: M:Hybrid.Data.SerializeHelper.FromBinary``1(System.Byte[])
+  id: FromBinary``1(System.Byte[])
+  parent: Hybrid.Data.SerializeHelper
+  langs:
+  - csharp
+  - vb
+  name: FromBinary<T>(Byte[])
+  nameWithType: SerializeHelper.FromBinary<T>(Byte[])
+  fullName: Hybrid.Data.SerializeHelper.FromBinary<T>(System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Data/SerializeHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: FromBinary
+    path: ../src/Hybrid/Data/SerializeHelper.cs
+    startLine: 71
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n将二进制数组反序列化为强类型数据\n"
+  example: []
+  syntax:
+    content: public static T FromBinary<T>(byte[] bytes)
+    parameters:
+    - id: bytes
+      type: System.Byte[]
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function FromBinary(Of T)(bytes As Byte()) As T
+  overload: Hybrid.Data.SerializeHelper.FromBinary*
+  nameWithType.vb: SerializeHelper.FromBinary(Of T)(Byte())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Data.SerializeHelper.FromBinary(Of T)(System.Byte())
+  name.vb: FromBinary(Of T)(Byte())
+- uid: Hybrid.Data.SerializeHelper.ToBinaryFile(System.String,System.Object)
+  commentId: M:Hybrid.Data.SerializeHelper.ToBinaryFile(System.String,System.Object)
+  id: ToBinaryFile(System.String,System.Object)
+  parent: Hybrid.Data.SerializeHelper
+  langs:
+  - csharp
+  - vb
+  name: ToBinaryFile(String, Object)
+  nameWithType: SerializeHelper.ToBinaryFile(String, Object)
+  fullName: Hybrid.Data.SerializeHelper.ToBinaryFile(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Data/SerializeHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToBinaryFile
+    path: ../src/Hybrid/Data/SerializeHelper.cs
+    startLine: 84
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n将数据序列化为二进制数组并写入文件中\n"
+  example: []
+  syntax:
+    content: public static void ToBinaryFile(string fileName, object data)
+    parameters:
+    - id: fileName
+      type: System.String
+    - id: data
+      type: System.Object
+    content.vb: Public Shared Sub ToBinaryFile(fileName As String, data As Object)
+  overload: Hybrid.Data.SerializeHelper.ToBinaryFile*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Data.SerializeHelper.FromBinaryFile``1(System.String)
+  commentId: M:Hybrid.Data.SerializeHelper.FromBinaryFile``1(System.String)
+  id: FromBinaryFile``1(System.String)
+  parent: Hybrid.Data.SerializeHelper
+  langs:
+  - csharp
+  - vb
+  name: FromBinaryFile<T>(String)
+  nameWithType: SerializeHelper.FromBinaryFile<T>(String)
+  fullName: Hybrid.Data.SerializeHelper.FromBinaryFile<T>(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Data/SerializeHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: FromBinaryFile
+    path: ../src/Hybrid/Data/SerializeHelper.cs
+    startLine: 98
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n将指定二进制数据文件还原为强类型数据\n"
+  example: []
+  syntax:
+    content: public static T FromBinaryFile<T>(string fileName)
+    parameters:
+    - id: fileName
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function FromBinaryFile(Of T)(fileName As String) As T
+  overload: Hybrid.Data.SerializeHelper.FromBinaryFile*
+  nameWithType.vb: SerializeHelper.FromBinaryFile(Of T)(String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Data.SerializeHelper.FromBinaryFile(Of T)(System.String)
+  name.vb: FromBinaryFile(Of T)(String)
+- uid: Hybrid.Data.SerializeHelper.ToXml(System.Object)
+  commentId: M:Hybrid.Data.SerializeHelper.ToXml(System.Object)
+  id: ToXml(System.Object)
+  parent: Hybrid.Data.SerializeHelper
+  langs:
+  - csharp
+  - vb
+  name: ToXml(Object)
+  nameWithType: SerializeHelper.ToXml(Object)
+  fullName: Hybrid.Data.SerializeHelper.ToXml(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Data/SerializeHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToXml
+    path: ../src/Hybrid/Data/SerializeHelper.cs
+    startLine: 115
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n将数据序列化为XML形式\n"
+  example: []
+  syntax:
+    content: public static string ToXml(object data)
+    parameters:
+    - id: data
+      type: System.Object
+    return:
+      type: System.String
+    content.vb: Public Shared Function ToXml(data As Object) As String
+  overload: Hybrid.Data.SerializeHelper.ToXml*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Data.SerializeHelper.FromXml``1(System.String)
+  commentId: M:Hybrid.Data.SerializeHelper.FromXml``1(System.String)
+  id: FromXml``1(System.String)
+  parent: Hybrid.Data.SerializeHelper
+  langs:
+  - csharp
+  - vb
+  name: FromXml<T>(String)
+  nameWithType: SerializeHelper.FromXml<T>(String)
+  fullName: Hybrid.Data.SerializeHelper.FromXml<T>(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Data/SerializeHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: FromXml
+    path: ../src/Hybrid/Data/SerializeHelper.cs
+    startLine: 130
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n将XML数据反序列化为强类型\n"
+  example: []
+  syntax:
+    content: public static T FromXml<T>(string xml)
+    parameters:
+    - id: xml
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function FromXml(Of T)(xml As String) As T
+  overload: Hybrid.Data.SerializeHelper.FromXml*
+  nameWithType.vb: SerializeHelper.FromXml(Of T)(String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Data.SerializeHelper.FromXml(Of T)(System.String)
+  name.vb: FromXml(Of T)(String)
+- uid: Hybrid.Data.SerializeHelper.ToXmlFile(System.String,System.Object)
+  commentId: M:Hybrid.Data.SerializeHelper.ToXmlFile(System.String,System.Object)
+  id: ToXmlFile(System.String,System.Object)
+  parent: Hybrid.Data.SerializeHelper
+  langs:
+  - csharp
+  - vb
+  name: ToXmlFile(String, Object)
+  nameWithType: SerializeHelper.ToXmlFile(String, Object)
+  fullName: Hybrid.Data.SerializeHelper.ToXmlFile(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Data/SerializeHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: ToXmlFile
+    path: ../src/Hybrid/Data/SerializeHelper.cs
+    startLine: 144
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n将数据序列化为XML并写入文件\n"
+  example: []
+  syntax:
+    content: public static void ToXmlFile(string fileName, object data)
+    parameters:
+    - id: fileName
+      type: System.String
+    - id: data
+      type: System.Object
+    content.vb: Public Shared Sub ToXmlFile(fileName As String, data As Object)
+  overload: Hybrid.Data.SerializeHelper.ToXmlFile*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Hybrid.Data.SerializeHelper.FromXmlFile``1(System.String)
+  commentId: M:Hybrid.Data.SerializeHelper.FromXmlFile``1(System.String)
+  id: FromXmlFile``1(System.String)
+  parent: Hybrid.Data.SerializeHelper
+  langs:
+  - csharp
+  - vb
+  name: FromXmlFile<T>(String)
+  nameWithType: SerializeHelper.FromXmlFile<T>(String)
+  fullName: Hybrid.Data.SerializeHelper.FromXmlFile<T>(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Data/SerializeHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: FromXmlFile
+    path: ../src/Hybrid/Data/SerializeHelper.cs
+    startLine: 158
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Data
+  summary: "\n将指定XML数据文件还原为强类型数据\n"
+  example: []
+  syntax:
+    content: public static T FromXmlFile<T>(string fileName)
+    parameters:
+    - id: fileName
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function FromXmlFile(Of T)(fileName As String) As T
+  overload: Hybrid.Data.SerializeHelper.FromXmlFile*
+  nameWithType.vb: SerializeHelper.FromXmlFile(Of T)(String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Data.SerializeHelper.FromXmlFile(Of T)(System.String)
+  name.vb: FromXmlFile(Of T)(String)
+references:
+- uid: Hybrid.Data
+  commentId: N:Hybrid.Data
+  name: Hybrid.Data
+  nameWithType: Hybrid.Data
+  fullName: Hybrid.Data
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.SerializableAttribute
+  commentId: T:System.SerializableAttribute
+  parent: System
+  isExternal: true
+  name: SerializableAttribute
+  nameWithType: SerializableAttribute
+  fullName: System.SerializableAttribute
+- uid: Hybrid.Data.SerializeHelper.ToBytes*
+  commentId: Overload:Hybrid.Data.SerializeHelper.ToBytes
+  name: ToBytes
+  nameWithType: SerializeHelper.ToBytes
+  fullName: Hybrid.Data.SerializeHelper.ToBytes
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Hybrid.Data.SerializeHelper.FromBytes*
+  commentId: Overload:Hybrid.Data.SerializeHelper.FromBytes
+  name: FromBytes
+  nameWithType: SerializeHelper.FromBytes
+  fullName: Hybrid.Data.SerializeHelper.FromBytes
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Hybrid.Data.SerializeHelper.ToBinary*
+  commentId: Overload:Hybrid.Data.SerializeHelper.ToBinary
+  name: ToBinary
+  nameWithType: SerializeHelper.ToBinary
+  fullName: Hybrid.Data.SerializeHelper.ToBinary
+- uid: Hybrid.Data.SerializeHelper.FromBinary*
+  commentId: Overload:Hybrid.Data.SerializeHelper.FromBinary
+  name: FromBinary
+  nameWithType: SerializeHelper.FromBinary
+  fullName: Hybrid.Data.SerializeHelper.FromBinary
+- uid: Hybrid.Data.SerializeHelper.ToBinaryFile*
+  commentId: Overload:Hybrid.Data.SerializeHelper.ToBinaryFile
+  name: ToBinaryFile
+  nameWithType: SerializeHelper.ToBinaryFile
+  fullName: Hybrid.Data.SerializeHelper.ToBinaryFile
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Hybrid.Data.SerializeHelper.FromBinaryFile*
+  commentId: Overload:Hybrid.Data.SerializeHelper.FromBinaryFile
+  name: FromBinaryFile
+  nameWithType: SerializeHelper.FromBinaryFile
+  fullName: Hybrid.Data.SerializeHelper.FromBinaryFile
+- uid: Hybrid.Data.SerializeHelper.ToXml*
+  commentId: Overload:Hybrid.Data.SerializeHelper.ToXml
+  name: ToXml
+  nameWithType: SerializeHelper.ToXml
+  fullName: Hybrid.Data.SerializeHelper.ToXml
+- uid: Hybrid.Data.SerializeHelper.FromXml*
+  commentId: Overload:Hybrid.Data.SerializeHelper.FromXml
+  name: FromXml
+  nameWithType: SerializeHelper.FromXml
+  fullName: Hybrid.Data.SerializeHelper.FromXml
+- uid: Hybrid.Data.SerializeHelper.ToXmlFile*
+  commentId: Overload:Hybrid.Data.SerializeHelper.ToXmlFile
+  name: ToXmlFile
+  nameWithType: SerializeHelper.ToXmlFile
+  fullName: Hybrid.Data.SerializeHelper.ToXmlFile
+- uid: Hybrid.Data.SerializeHelper.FromXmlFile*
+  commentId: Overload:Hybrid.Data.SerializeHelper.FromXmlFile
+  name: FromXmlFile
+  nameWithType: SerializeHelper.FromXmlFile
+  fullName: Hybrid.Data.SerializeHelper.FromXmlFile

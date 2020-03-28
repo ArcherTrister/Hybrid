@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Web
+  commentId: N:Hybrid.Web
+  id: Hybrid.Web
+  children:
+  - Hybrid.Web.UserAgentHelper
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Web
+  nameWithType: Hybrid.Web
+  fullName: Hybrid.Web
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Web.UserAgentHelper
+  commentId: T:Hybrid.Web.UserAgentHelper
+  name: UserAgentHelper
+  nameWithType: UserAgentHelper
+  fullName: Hybrid.Web.UserAgentHelper

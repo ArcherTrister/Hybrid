@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Logging.RollingFile
+  commentId: N:Hybrid.Logging.RollingFile
+  id: Hybrid.Logging.RollingFile
+  children:
+  - Hybrid.Logging.RollingFile.FileLoggerOptions
+  - Hybrid.Logging.RollingFile.FileLoggerProvider
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Logging.RollingFile
+  nameWithType: Hybrid.Logging.RollingFile
+  fullName: Hybrid.Logging.RollingFile
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Logging.RollingFile.FileLoggerOptions
+  commentId: T:Hybrid.Logging.RollingFile.FileLoggerOptions
+  name: FileLoggerOptions
+  nameWithType: FileLoggerOptions
+  fullName: Hybrid.Logging.RollingFile.FileLoggerOptions
+- uid: Hybrid.Logging.RollingFile.FileLoggerProvider
+  commentId: T:Hybrid.Logging.RollingFile.FileLoggerProvider
+  name: FileLoggerProvider
+  nameWithType: FileLoggerProvider
+  fullName: Hybrid.Logging.RollingFile.FileLoggerProvider

@@ -9,11 +9,13 @@
 
 using Hybrid.Audits;
 using Hybrid.Core.Options;
+using Hybrid.Domain.Entities;
 using Hybrid.Domain.EntityFramework;
 using Hybrid.Domain.Uow;
 using Hybrid.EventBuses;
-
+using Hybrid.Extensions;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
@@ -185,8 +187,31 @@ namespace Hybrid.EntityFrameworkCore
                 register.RegisterTo(modelBuilder);
                 _logger?.LogDebug($"将实体类“{register.EntityType}”注册到上下文“{contextType}”中");
             }
-
             _logger?.LogInformation($"上下文“{contextType}”注册了{registers.Length}个实体类");
+
+            //按预定前缀更改表名
+            var entityTypes = modelBuilder.Model.GetEntityTypes().ToList();
+            foreach (IMutableEntityType entityType in entityTypes)
+            {
+                string prefix = GetTableNamePrefix(entityType.ClrType);
+                if (prefix.IsNullOrEmpty())
+                {
+                    continue;
+                }
+
+                modelBuilder.Entity(entityType.ClrType).ToTable($"{prefix}_{entityType.GetTableName()}");
+            }
+        }
+
+        /// <summary>
+        /// 从实体类型获取表名前缀
+        /// </summary>
+        /// <param name="entityType">实体类型</param>
+        /// <returns></returns>
+        protected virtual string GetTableNamePrefix(Type entityType)
+        {
+            TableNamePrefixAttribute attribute = entityType.GetAttribute<TableNamePrefixAttribute>();
+            return attribute?.Prefix;
         }
 
         ///// <summary>

@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.IO
+  commentId: N:Hybrid.IO
+  id: Hybrid.IO
+  children:
+  - Hybrid.IO.DirectoryHelper
+  - Hybrid.IO.FileHelper
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.IO
+  nameWithType: Hybrid.IO
+  fullName: Hybrid.IO
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.IO.DirectoryHelper
+  commentId: T:Hybrid.IO.DirectoryHelper
+  name: DirectoryHelper
+  nameWithType: DirectoryHelper
+  fullName: Hybrid.IO.DirectoryHelper
+- uid: Hybrid.IO.FileHelper
+  commentId: T:Hybrid.IO.FileHelper
+  name: FileHelper
+  nameWithType: FileHelper
+  fullName: Hybrid.IO.FileHelper

@@ -1,0 +1,4424 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  commentId: T:Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  id: FunctionCacheRefreshEventHandler
+  parent: Hybrid.Zero.Authorization.Events
+  children:
+  - Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.#ctor(System.IServiceProvider)
+  - Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Handle(Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData)
+  langs:
+  - csharp
+  - vb
+  name: FunctionCacheRefreshEventHandler
+  nameWithType: FunctionCacheRefreshEventHandler
+  fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid.Zero/Authorization/Events/FunctionCacheRefreshEventHandler.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: FunctionCacheRefreshEventHandler
+    path: ../src/Hybrid.Zero/Authorization/Events/FunctionCacheRefreshEventHandler.cs
+    startLine: 22
+  assemblies:
+  - Hybrid.Zero
+  namespace: Hybrid.Zero.Authorization.Events
+  summary: "\n功能信息缓存刷新事件处理器\n"
+  example: []
+  syntax:
+    content: 'public class FunctionCacheRefreshEventHandler : EventHandlerBase<FunctionCacheRefreshEventData>, IEventHandler<FunctionCacheRefreshEventData>, IEventHandler'
+    content.vb: >-
+      Public Class FunctionCacheRefreshEventHandler
+          Inherits EventHandlerBase(Of FunctionCacheRefreshEventData)
+          Implements IEventHandler(Of FunctionCacheRefreshEventData), IEventHandler
+  inheritance:
+  - System.Object
+  - Hybrid.EventBuses.EventHandlerBase{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData}
+  implements:
+  - Hybrid.EventBuses.IEventHandler{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData}
+  - Hybrid.EventBuses.IEventHandler
+  inheritedMembers:
+  - Hybrid.EventBuses.EventHandlerBase{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData}.CanHandle(Hybrid.EventBuses.IEventData)
+  - Hybrid.EventBuses.EventHandlerBase{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData}.Handle(Hybrid.EventBuses.IEventData)
+  - Hybrid.EventBuses.EventHandlerBase{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData}.HandleAsync(Hybrid.EventBuses.IEventData,System.Threading.CancellationToken)
+  - Hybrid.EventBuses.EventHandlerBase{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData}.HandleAsync(Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData,System.Threading.CancellationToken)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - System.Object.Hybrid.Extensions.ObjectExtensions.CastTo(System.Type)
+  - System.Object.Hybrid.Extensions.ObjectExtensions.CastTo``1
+  - System.Object.Hybrid.Extensions.ObjectExtensions.CastTo``1({T})
+  - Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Hybrid.Extensions.ObjectExtensions.IsIn``1(Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler[])
+  - System.Object.Hybrid.Extensions.ObjectExtensions.ToDynamic
+  - Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Hybrid.Extensions.ObjectExtensions.DeepClone``1
+  - Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Hybrid.Extensions.ParameterCheckExtensions.Required``1(System.Func{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler,System.Boolean},System.String)
+  - Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Hybrid.Extensions.ParameterCheckExtensions.Required``2(System.Func{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler,System.Boolean},System.String)
+  - Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(System.String)
+  - Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Hybrid.Extensions.TryCatchExtensions.TryCatch``1(System.Action{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler},System.Action{System.Exception},System.Action{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler})
+  - Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Hybrid.Extensions.TryCatchExtensions.TryCatch``1(System.Action{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler},System.Action{System.Exception})
+  - Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Hybrid.Extensions.TryCatchExtensions.TryCatch``2(System.Func{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler,{TResult}},System.Action{System.Exception},System.Action{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler})
+  - Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Hybrid.Extensions.TryCatchExtensions.TryCatch``2(System.Func{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler,{TResult}},System.Action{System.Exception})
+  - Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Hybrid.Extensions.TryCatchExtensions.TryFinally``1(System.Action{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler},System.Action{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler})
+  - System.Object.Hybrid.Json.JsonExtensions.ToJsonString(System.Boolean,System.Boolean)
+  - System.Object.Hybrid.Mapping.MapperExtensions.MapTo``1
+  - Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Hybrid.Mapping.MapperExtensions.MapTo``2({TTarget})
+  - System.Object.Hybrid.Reflection.LockExtensions.Locking(System.Action)
+  - Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Hybrid.Reflection.LockExtensions.Locking``1(System.Action{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler})
+  - System.Object.Hybrid.Reflection.LockExtensions.Locking``1(System.Func{{TResult}})
+  - Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Hybrid.Reflection.LockExtensions.Locking``2(System.Func{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler,{TResult}})
+  - Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2
+  - Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(System.Security.Principal.IPrincipal)
+  - Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(System.Security.Principal.IPrincipal)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.#ctor(System.IServiceProvider)
+  commentId: M:Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.#ctor(System.IServiceProvider)
+  id: '#ctor(System.IServiceProvider)'
+  parent: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  langs:
+  - csharp
+  - vb
+  name: FunctionCacheRefreshEventHandler(IServiceProvider)
+  nameWithType: FunctionCacheRefreshEventHandler.FunctionCacheRefreshEventHandler(IServiceProvider)
+  fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.FunctionCacheRefreshEventHandler(System.IServiceProvider)
+  type: Constructor
+  source:
+    remote:
+      path: src/Hybrid.Zero/Authorization/Events/FunctionCacheRefreshEventHandler.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: .ctor
+    path: ../src/Hybrid.Zero/Authorization/Events/FunctionCacheRefreshEventHandler.cs
+    startLine: 29
+  assemblies:
+  - Hybrid.Zero
+  namespace: Hybrid.Zero.Authorization.Events
+  summary: "\n初始化一个<xref href=\"Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler\" data-throw-if-not-resolved=\"false\"></xref>类型的新实例\n"
+  example: []
+  syntax:
+    content: public FunctionCacheRefreshEventHandler(IServiceProvider provider)
+    parameters:
+    - id: provider
+      type: System.IServiceProvider
+    content.vb: Public Sub New(provider As IServiceProvider)
+  overload: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Handle(Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData)
+  commentId: M:Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Handle(Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData)
+  id: Handle(Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData)
+  parent: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  langs:
+  - csharp
+  - vb
+  name: Handle(FunctionCacheRefreshEventData)
+  nameWithType: FunctionCacheRefreshEventHandler.Handle(FunctionCacheRefreshEventData)
+  fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Handle(Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid.Zero/Authorization/Events/FunctionCacheRefreshEventHandler.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: Handle
+    path: ../src/Hybrid.Zero/Authorization/Events/FunctionCacheRefreshEventHandler.cs
+    startLine: 38
+  assemblies:
+  - Hybrid.Zero
+  namespace: Hybrid.Zero.Authorization.Events
+  summary: "\n事件处理\n"
+  example: []
+  syntax:
+    content: public override void Handle(FunctionCacheRefreshEventData eventData)
+    parameters:
+    - id: eventData
+      type: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData
+      description: 事件源数据
+    content.vb: Public Overrides Sub Handle(eventData As FunctionCacheRefreshEventData)
+  overridden: Hybrid.EventBuses.EventHandlerBase{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData}.Handle(Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData)
+  overload: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Handle*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Hybrid.Zero.Authorization.Events
+  commentId: N:Hybrid.Zero.Authorization.Events
+  name: Hybrid.Zero.Authorization.Events
+  nameWithType: Hybrid.Zero.Authorization.Events
+  fullName: Hybrid.Zero.Authorization.Events
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Hybrid.EventBuses.EventHandlerBase{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData}
+  commentId: T:Hybrid.EventBuses.EventHandlerBase{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData}
+  parent: Hybrid.EventBuses
+  definition: Hybrid.EventBuses.EventHandlerBase`1
+  name: EventHandlerBase<FunctionCacheRefreshEventData>
+  nameWithType: EventHandlerBase<FunctionCacheRefreshEventData>
+  fullName: Hybrid.EventBuses.EventHandlerBase<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData>
+  nameWithType.vb: EventHandlerBase(Of FunctionCacheRefreshEventData)
+  fullName.vb: Hybrid.EventBuses.EventHandlerBase(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData)
+  name.vb: EventHandlerBase(Of FunctionCacheRefreshEventData)
+  spec.csharp:
+  - uid: Hybrid.EventBuses.EventHandlerBase`1
+    name: EventHandlerBase
+    nameWithType: EventHandlerBase
+    fullName: Hybrid.EventBuses.EventHandlerBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData
+    name: FunctionCacheRefreshEventData
+    nameWithType: FunctionCacheRefreshEventData
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.EventBuses.EventHandlerBase`1
+    name: EventHandlerBase
+    nameWithType: EventHandlerBase
+    fullName: Hybrid.EventBuses.EventHandlerBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData
+    name: FunctionCacheRefreshEventData
+    nameWithType: FunctionCacheRefreshEventData
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.EventBuses.IEventHandler{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData}
+  commentId: T:Hybrid.EventBuses.IEventHandler{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData}
+  parent: Hybrid.EventBuses
+  definition: Hybrid.EventBuses.IEventHandler`1
+  name: IEventHandler<FunctionCacheRefreshEventData>
+  nameWithType: IEventHandler<FunctionCacheRefreshEventData>
+  fullName: Hybrid.EventBuses.IEventHandler<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData>
+  nameWithType.vb: IEventHandler(Of FunctionCacheRefreshEventData)
+  fullName.vb: Hybrid.EventBuses.IEventHandler(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData)
+  name.vb: IEventHandler(Of FunctionCacheRefreshEventData)
+  spec.csharp:
+  - uid: Hybrid.EventBuses.IEventHandler`1
+    name: IEventHandler
+    nameWithType: IEventHandler
+    fullName: Hybrid.EventBuses.IEventHandler
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData
+    name: FunctionCacheRefreshEventData
+    nameWithType: FunctionCacheRefreshEventData
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.EventBuses.IEventHandler`1
+    name: IEventHandler
+    nameWithType: IEventHandler
+    fullName: Hybrid.EventBuses.IEventHandler
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData
+    name: FunctionCacheRefreshEventData
+    nameWithType: FunctionCacheRefreshEventData
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.EventBuses.IEventHandler
+  commentId: T:Hybrid.EventBuses.IEventHandler
+  parent: Hybrid.EventBuses
+  name: IEventHandler
+  nameWithType: IEventHandler
+  fullName: Hybrid.EventBuses.IEventHandler
+- uid: Hybrid.EventBuses.EventHandlerBase{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData}.CanHandle(Hybrid.EventBuses.IEventData)
+  commentId: M:Hybrid.EventBuses.EventHandlerBase{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData}.CanHandle(Hybrid.EventBuses.IEventData)
+  parent: Hybrid.EventBuses.EventHandlerBase{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData}
+  definition: Hybrid.EventBuses.EventHandlerBase`1.CanHandle(Hybrid.EventBuses.IEventData)
+  name: CanHandle(IEventData)
+  nameWithType: EventHandlerBase<FunctionCacheRefreshEventData>.CanHandle(IEventData)
+  fullName: Hybrid.EventBuses.EventHandlerBase<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData>.CanHandle(Hybrid.EventBuses.IEventData)
+  nameWithType.vb: EventHandlerBase(Of FunctionCacheRefreshEventData).CanHandle(IEventData)
+  fullName.vb: Hybrid.EventBuses.EventHandlerBase(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData).CanHandle(Hybrid.EventBuses.IEventData)
+  spec.csharp:
+  - uid: Hybrid.EventBuses.EventHandlerBase`1.CanHandle(Hybrid.EventBuses.IEventData)
+    name: CanHandle
+    nameWithType: EventHandlerBase<FunctionCacheRefreshEventData>.CanHandle
+    fullName: Hybrid.EventBuses.EventHandlerBase<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData>.CanHandle
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.EventBuses.IEventData
+    name: IEventData
+    nameWithType: IEventData
+    fullName: Hybrid.EventBuses.IEventData
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.EventBuses.EventHandlerBase`1.CanHandle(Hybrid.EventBuses.IEventData)
+    name: CanHandle
+    nameWithType: EventHandlerBase(Of FunctionCacheRefreshEventData).CanHandle
+    fullName: Hybrid.EventBuses.EventHandlerBase(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData).CanHandle
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.EventBuses.IEventData
+    name: IEventData
+    nameWithType: IEventData
+    fullName: Hybrid.EventBuses.IEventData
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.EventBuses.EventHandlerBase{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData}.Handle(Hybrid.EventBuses.IEventData)
+  commentId: M:Hybrid.EventBuses.EventHandlerBase{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData}.Handle(Hybrid.EventBuses.IEventData)
+  parent: Hybrid.EventBuses.EventHandlerBase{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData}
+  definition: Hybrid.EventBuses.EventHandlerBase`1.Handle(Hybrid.EventBuses.IEventData)
+  name: Handle(IEventData)
+  nameWithType: EventHandlerBase<FunctionCacheRefreshEventData>.Handle(IEventData)
+  fullName: Hybrid.EventBuses.EventHandlerBase<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData>.Handle(Hybrid.EventBuses.IEventData)
+  nameWithType.vb: EventHandlerBase(Of FunctionCacheRefreshEventData).Handle(IEventData)
+  fullName.vb: Hybrid.EventBuses.EventHandlerBase(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData).Handle(Hybrid.EventBuses.IEventData)
+  spec.csharp:
+  - uid: Hybrid.EventBuses.EventHandlerBase`1.Handle(Hybrid.EventBuses.IEventData)
+    name: Handle
+    nameWithType: EventHandlerBase<FunctionCacheRefreshEventData>.Handle
+    fullName: Hybrid.EventBuses.EventHandlerBase<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData>.Handle
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.EventBuses.IEventData
+    name: IEventData
+    nameWithType: IEventData
+    fullName: Hybrid.EventBuses.IEventData
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.EventBuses.EventHandlerBase`1.Handle(Hybrid.EventBuses.IEventData)
+    name: Handle
+    nameWithType: EventHandlerBase(Of FunctionCacheRefreshEventData).Handle
+    fullName: Hybrid.EventBuses.EventHandlerBase(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData).Handle
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.EventBuses.IEventData
+    name: IEventData
+    nameWithType: IEventData
+    fullName: Hybrid.EventBuses.IEventData
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.EventBuses.EventHandlerBase{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData}.HandleAsync(Hybrid.EventBuses.IEventData,System.Threading.CancellationToken)
+  commentId: M:Hybrid.EventBuses.EventHandlerBase{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData}.HandleAsync(Hybrid.EventBuses.IEventData,System.Threading.CancellationToken)
+  parent: Hybrid.EventBuses.EventHandlerBase{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData}
+  definition: Hybrid.EventBuses.EventHandlerBase`1.HandleAsync(Hybrid.EventBuses.IEventData,System.Threading.CancellationToken)
+  name: HandleAsync(IEventData, CancellationToken)
+  nameWithType: EventHandlerBase<FunctionCacheRefreshEventData>.HandleAsync(IEventData, CancellationToken)
+  fullName: Hybrid.EventBuses.EventHandlerBase<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData>.HandleAsync(Hybrid.EventBuses.IEventData, System.Threading.CancellationToken)
+  nameWithType.vb: EventHandlerBase(Of FunctionCacheRefreshEventData).HandleAsync(IEventData, CancellationToken)
+  fullName.vb: Hybrid.EventBuses.EventHandlerBase(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData).HandleAsync(Hybrid.EventBuses.IEventData, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Hybrid.EventBuses.EventHandlerBase`1.HandleAsync(Hybrid.EventBuses.IEventData,System.Threading.CancellationToken)
+    name: HandleAsync
+    nameWithType: EventHandlerBase<FunctionCacheRefreshEventData>.HandleAsync
+    fullName: Hybrid.EventBuses.EventHandlerBase<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData>.HandleAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.EventBuses.IEventData
+    name: IEventData
+    nameWithType: IEventData
+    fullName: Hybrid.EventBuses.IEventData
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.EventBuses.EventHandlerBase`1.HandleAsync(Hybrid.EventBuses.IEventData,System.Threading.CancellationToken)
+    name: HandleAsync
+    nameWithType: EventHandlerBase(Of FunctionCacheRefreshEventData).HandleAsync
+    fullName: Hybrid.EventBuses.EventHandlerBase(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData).HandleAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.EventBuses.IEventData
+    name: IEventData
+    nameWithType: IEventData
+    fullName: Hybrid.EventBuses.IEventData
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.EventBuses.EventHandlerBase{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData}.HandleAsync(Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData,System.Threading.CancellationToken)
+  commentId: M:Hybrid.EventBuses.EventHandlerBase{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData}.HandleAsync(Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData,System.Threading.CancellationToken)
+  parent: Hybrid.EventBuses.EventHandlerBase{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData}
+  definition: Hybrid.EventBuses.EventHandlerBase`1.HandleAsync(`0,System.Threading.CancellationToken)
+  name: HandleAsync(FunctionCacheRefreshEventData, CancellationToken)
+  nameWithType: EventHandlerBase<FunctionCacheRefreshEventData>.HandleAsync(FunctionCacheRefreshEventData, CancellationToken)
+  fullName: Hybrid.EventBuses.EventHandlerBase<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData>.HandleAsync(Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData, System.Threading.CancellationToken)
+  nameWithType.vb: EventHandlerBase(Of FunctionCacheRefreshEventData).HandleAsync(FunctionCacheRefreshEventData, CancellationToken)
+  fullName.vb: Hybrid.EventBuses.EventHandlerBase(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData).HandleAsync(Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Hybrid.EventBuses.EventHandlerBase`1.HandleAsync(`0,System.Threading.CancellationToken)
+    name: HandleAsync
+    nameWithType: EventHandlerBase<FunctionCacheRefreshEventData>.HandleAsync
+    fullName: Hybrid.EventBuses.EventHandlerBase<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData>.HandleAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData
+    name: FunctionCacheRefreshEventData
+    nameWithType: FunctionCacheRefreshEventData
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.EventBuses.EventHandlerBase`1.HandleAsync(`0,System.Threading.CancellationToken)
+    name: HandleAsync
+    nameWithType: EventHandlerBase(Of FunctionCacheRefreshEventData).HandleAsync
+    fullName: Hybrid.EventBuses.EventHandlerBase(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData).HandleAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData
+    name: FunctionCacheRefreshEventData
+    nameWithType: FunctionCacheRefreshEventData
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Extensions.ObjectExtensions.CastTo(System.Type)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+  name: CastTo(Type)
+  nameWithType: ObjectExtensions.CastTo(Type)
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo(System.Type)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo(System.Type)
+    name: CastTo
+    nameWithType: ObjectExtensions.CastTo
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo(System.Type)
+    name: CastTo
+    nameWithType: ObjectExtensions.CastTo
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Extensions.ObjectExtensions.CastTo``1
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+  name: CastTo<T>()
+  nameWithType: ObjectExtensions.CastTo<T>()
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>()
+  nameWithType.vb: ObjectExtensions.CastTo(Of T)()
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)()
+  name.vb: CastTo(Of T)()
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1
+    name: CastTo<T>
+    nameWithType: ObjectExtensions.CastTo<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1
+    name: CastTo(Of T)
+    nameWithType: ObjectExtensions.CastTo(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Extensions.ObjectExtensions.CastTo``1({T})
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+  name: CastTo<T>(T)
+  nameWithType: ObjectExtensions.CastTo<T>(T)
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>(T)
+  nameWithType.vb: ObjectExtensions.CastTo(Of T)(T)
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)(T)
+  name.vb: CastTo(Of T)(T)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(``0)
+    name: CastTo<T>
+    nameWithType: ObjectExtensions.CastTo<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(``0)
+    name: CastTo(Of T)
+    nameWithType: ObjectExtensions.CastTo(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Hybrid.Extensions.ObjectExtensions.IsIn``1(Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler[])
+  commentId: M:Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+  name: IsIn<FunctionCacheRefreshEventHandler>(FunctionCacheRefreshEventHandler[])
+  nameWithType: ObjectExtensions.IsIn<FunctionCacheRefreshEventHandler>(FunctionCacheRefreshEventHandler[])
+  fullName: Hybrid.Extensions.ObjectExtensions.IsIn<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler>(Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler[])
+  nameWithType.vb: ObjectExtensions.IsIn(Of FunctionCacheRefreshEventHandler)(FunctionCacheRefreshEventHandler())
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.IsIn(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler)(Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler())
+  name.vb: IsIn(Of FunctionCacheRefreshEventHandler)(FunctionCacheRefreshEventHandler())
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0[])
+    name: IsIn<FunctionCacheRefreshEventHandler>
+    nameWithType: ObjectExtensions.IsIn<FunctionCacheRefreshEventHandler>
+    fullName: Hybrid.Extensions.ObjectExtensions.IsIn<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+    name: FunctionCacheRefreshEventHandler
+    nameWithType: FunctionCacheRefreshEventHandler
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0[])
+    name: IsIn(Of FunctionCacheRefreshEventHandler)
+    nameWithType: ObjectExtensions.IsIn(Of FunctionCacheRefreshEventHandler)
+    fullName: Hybrid.Extensions.ObjectExtensions.IsIn(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+    name: FunctionCacheRefreshEventHandler
+    nameWithType: FunctionCacheRefreshEventHandler
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Extensions.ObjectExtensions.ToDynamic
+  commentId: M:Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  name: ToDynamic()
+  nameWithType: ObjectExtensions.ToDynamic()
+  fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic()
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.ToDynamic
+    name: ToDynamic
+    nameWithType: ObjectExtensions.ToDynamic
+    fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.ToDynamic
+    name: ToDynamic
+    nameWithType: ObjectExtensions.ToDynamic
+    fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Hybrid.Extensions.ObjectExtensions.DeepClone``1
+  commentId: M:Hybrid.Extensions.ObjectExtensions.DeepClone``1(``0)
+  parent: Hybrid.Extensions.ObjectExtensions
+  definition: Hybrid.Extensions.ObjectExtensions.DeepClone``1(``0)
+  name: DeepClone<FunctionCacheRefreshEventHandler>()
+  nameWithType: ObjectExtensions.DeepClone<FunctionCacheRefreshEventHandler>()
+  fullName: Hybrid.Extensions.ObjectExtensions.DeepClone<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler>()
+  nameWithType.vb: ObjectExtensions.DeepClone(Of FunctionCacheRefreshEventHandler)()
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.DeepClone(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler)()
+  name.vb: DeepClone(Of FunctionCacheRefreshEventHandler)()
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.DeepClone``1
+    name: DeepClone<FunctionCacheRefreshEventHandler>
+    nameWithType: ObjectExtensions.DeepClone<FunctionCacheRefreshEventHandler>
+    fullName: Hybrid.Extensions.ObjectExtensions.DeepClone<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.DeepClone``1
+    name: DeepClone(Of FunctionCacheRefreshEventHandler)
+    nameWithType: ObjectExtensions.DeepClone(Of FunctionCacheRefreshEventHandler)
+    fullName: Hybrid.Extensions.ObjectExtensions.DeepClone(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Hybrid.Extensions.ParameterCheckExtensions.Required``1(System.Func{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler,System.Boolean},System.String)
+  commentId: M:Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+  parent: Hybrid.Extensions.ParameterCheckExtensions
+  definition: Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+  name: Required<FunctionCacheRefreshEventHandler>(Func<FunctionCacheRefreshEventHandler, Boolean>, String)
+  nameWithType: ParameterCheckExtensions.Required<FunctionCacheRefreshEventHandler>(Func<FunctionCacheRefreshEventHandler, Boolean>, String)
+  fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler>(System.Func<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, System.Boolean>, System.String)
+  nameWithType.vb: ParameterCheckExtensions.Required(Of FunctionCacheRefreshEventHandler)(Func(Of FunctionCacheRefreshEventHandler, Boolean), String)
+  fullName.vb: Hybrid.Extensions.ParameterCheckExtensions.Required(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler)(System.Func(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, System.Boolean), System.String)
+  name.vb: Required(Of FunctionCacheRefreshEventHandler)(Func(Of FunctionCacheRefreshEventHandler, Boolean), String)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``1(System.Func{``0,System.Boolean},System.String)
+    name: Required<FunctionCacheRefreshEventHandler>
+    nameWithType: ParameterCheckExtensions.Required<FunctionCacheRefreshEventHandler>
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+    name: FunctionCacheRefreshEventHandler
+    nameWithType: FunctionCacheRefreshEventHandler
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``1(System.Func{``0,System.Boolean},System.String)
+    name: Required(Of FunctionCacheRefreshEventHandler)
+    nameWithType: ParameterCheckExtensions.Required(Of FunctionCacheRefreshEventHandler)
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+    name: FunctionCacheRefreshEventHandler
+    nameWithType: FunctionCacheRefreshEventHandler
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Hybrid.Extensions.ParameterCheckExtensions.Required``2(System.Func{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler,System.Boolean},System.String)
+  commentId: M:Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+  parent: Hybrid.Extensions.ParameterCheckExtensions
+  definition: Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+  name: Required<FunctionCacheRefreshEventHandler, TException>(Func<FunctionCacheRefreshEventHandler, Boolean>, String)
+  nameWithType: ParameterCheckExtensions.Required<FunctionCacheRefreshEventHandler, TException>(Func<FunctionCacheRefreshEventHandler, Boolean>, String)
+  fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TException>(System.Func<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, System.Boolean>, System.String)
+  nameWithType.vb: ParameterCheckExtensions.Required(Of FunctionCacheRefreshEventHandler, TException)(Func(Of FunctionCacheRefreshEventHandler, Boolean), String)
+  fullName.vb: Hybrid.Extensions.ParameterCheckExtensions.Required(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TException)(System.Func(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, System.Boolean), System.String)
+  name.vb: Required(Of FunctionCacheRefreshEventHandler, TException)(Func(Of FunctionCacheRefreshEventHandler, Boolean), String)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``2(System.Func{``0,System.Boolean},System.String)
+    name: Required<FunctionCacheRefreshEventHandler, TException>
+    nameWithType: ParameterCheckExtensions.Required<FunctionCacheRefreshEventHandler, TException>
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TException>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+    name: FunctionCacheRefreshEventHandler
+    nameWithType: FunctionCacheRefreshEventHandler
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``2(System.Func{``0,System.Boolean},System.String)
+    name: Required(Of FunctionCacheRefreshEventHandler, TException)
+    nameWithType: ParameterCheckExtensions.Required(Of FunctionCacheRefreshEventHandler, TException)
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TException)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+    name: FunctionCacheRefreshEventHandler
+    nameWithType: FunctionCacheRefreshEventHandler
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(System.String)
+  commentId: M:Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(``0,System.String)
+  parent: Hybrid.Extensions.ParameterCheckExtensions
+  definition: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(``0,System.String)
+  name: CheckNotNull<FunctionCacheRefreshEventHandler>(String)
+  nameWithType: ParameterCheckExtensions.CheckNotNull<FunctionCacheRefreshEventHandler>(String)
+  fullName: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler>(System.String)
+  nameWithType.vb: ParameterCheckExtensions.CheckNotNull(Of FunctionCacheRefreshEventHandler)(String)
+  fullName.vb: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler)(System.String)
+  name.vb: CheckNotNull(Of FunctionCacheRefreshEventHandler)(String)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(System.String)
+    name: CheckNotNull<FunctionCacheRefreshEventHandler>
+    nameWithType: ParameterCheckExtensions.CheckNotNull<FunctionCacheRefreshEventHandler>
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(System.String)
+    name: CheckNotNull(Of FunctionCacheRefreshEventHandler)
+    nameWithType: ParameterCheckExtensions.CheckNotNull(Of FunctionCacheRefreshEventHandler)
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Hybrid.Extensions.TryCatchExtensions.TryCatch``1(System.Action{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler},System.Action{System.Exception},System.Action{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception},System.Action{``0})
+  parent: Hybrid.Extensions.TryCatchExtensions
+  definition: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception},System.Action{``0})
+  name: TryCatch<FunctionCacheRefreshEventHandler>(Action<FunctionCacheRefreshEventHandler>, Action<Exception>, Action<FunctionCacheRefreshEventHandler>)
+  nameWithType: TryCatchExtensions.TryCatch<FunctionCacheRefreshEventHandler>(Action<FunctionCacheRefreshEventHandler>, Action<Exception>, Action<FunctionCacheRefreshEventHandler>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler>(System.Action<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler>, System.Action<System.Exception>, System.Action<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler>)
+  nameWithType.vb: TryCatchExtensions.TryCatch(Of FunctionCacheRefreshEventHandler)(Action(Of FunctionCacheRefreshEventHandler), Action(Of Exception), Action(Of FunctionCacheRefreshEventHandler))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler)(System.Action(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler), System.Action(Of System.Exception), System.Action(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler))
+  name.vb: TryCatch(Of FunctionCacheRefreshEventHandler)(Action(Of FunctionCacheRefreshEventHandler), Action(Of Exception), Action(Of FunctionCacheRefreshEventHandler))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(System.Action{``0},System.Action{System.Exception},System.Action{``0})
+    name: TryCatch<FunctionCacheRefreshEventHandler>
+    nameWithType: TryCatchExtensions.TryCatch<FunctionCacheRefreshEventHandler>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+    name: FunctionCacheRefreshEventHandler
+    nameWithType: FunctionCacheRefreshEventHandler
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+    name: FunctionCacheRefreshEventHandler
+    nameWithType: FunctionCacheRefreshEventHandler
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(System.Action{``0},System.Action{System.Exception},System.Action{``0})
+    name: TryCatch(Of FunctionCacheRefreshEventHandler)
+    nameWithType: TryCatchExtensions.TryCatch(Of FunctionCacheRefreshEventHandler)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+    name: FunctionCacheRefreshEventHandler
+    nameWithType: FunctionCacheRefreshEventHandler
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+    name: FunctionCacheRefreshEventHandler
+    nameWithType: FunctionCacheRefreshEventHandler
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Hybrid.Extensions.TryCatchExtensions.TryCatch``1(System.Action{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler},System.Action{System.Exception})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception})
+  parent: Hybrid.Extensions.TryCatchExtensions
+  definition: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception})
+  name: TryCatch<FunctionCacheRefreshEventHandler>(Action<FunctionCacheRefreshEventHandler>, Action<Exception>)
+  nameWithType: TryCatchExtensions.TryCatch<FunctionCacheRefreshEventHandler>(Action<FunctionCacheRefreshEventHandler>, Action<Exception>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler>(System.Action<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler>, System.Action<System.Exception>)
+  nameWithType.vb: TryCatchExtensions.TryCatch(Of FunctionCacheRefreshEventHandler)(Action(Of FunctionCacheRefreshEventHandler), Action(Of Exception))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler)(System.Action(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler), System.Action(Of System.Exception))
+  name.vb: TryCatch(Of FunctionCacheRefreshEventHandler)(Action(Of FunctionCacheRefreshEventHandler), Action(Of Exception))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(System.Action{``0},System.Action{System.Exception})
+    name: TryCatch<FunctionCacheRefreshEventHandler>
+    nameWithType: TryCatchExtensions.TryCatch<FunctionCacheRefreshEventHandler>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+    name: FunctionCacheRefreshEventHandler
+    nameWithType: FunctionCacheRefreshEventHandler
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(System.Action{``0},System.Action{System.Exception})
+    name: TryCatch(Of FunctionCacheRefreshEventHandler)
+    nameWithType: TryCatchExtensions.TryCatch(Of FunctionCacheRefreshEventHandler)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+    name: FunctionCacheRefreshEventHandler
+    nameWithType: FunctionCacheRefreshEventHandler
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Hybrid.Extensions.TryCatchExtensions.TryCatch``2(System.Func{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler,{TResult}},System.Action{System.Exception},System.Action{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception},System.Action{``0})
+  parent: Hybrid.Extensions.TryCatchExtensions
+  definition: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception},System.Action{``0})
+  name: TryCatch<FunctionCacheRefreshEventHandler, TResult>(Func<FunctionCacheRefreshEventHandler, TResult>, Action<Exception>, Action<FunctionCacheRefreshEventHandler>)
+  nameWithType: TryCatchExtensions.TryCatch<FunctionCacheRefreshEventHandler, TResult>(Func<FunctionCacheRefreshEventHandler, TResult>, Action<Exception>, Action<FunctionCacheRefreshEventHandler>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TResult>(System.Func<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TResult>, System.Action<System.Exception>, System.Action<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler>)
+  nameWithType.vb: TryCatchExtensions.TryCatch(Of FunctionCacheRefreshEventHandler, TResult)(Func(Of FunctionCacheRefreshEventHandler, TResult), Action(Of Exception), Action(Of FunctionCacheRefreshEventHandler))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TResult)(System.Func(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TResult), System.Action(Of System.Exception), System.Action(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler))
+  name.vb: TryCatch(Of FunctionCacheRefreshEventHandler, TResult)(Func(Of FunctionCacheRefreshEventHandler, TResult), Action(Of Exception), Action(Of FunctionCacheRefreshEventHandler))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(System.Func{``0,``1},System.Action{System.Exception},System.Action{``0})
+    name: TryCatch<FunctionCacheRefreshEventHandler, TResult>
+    nameWithType: TryCatchExtensions.TryCatch<FunctionCacheRefreshEventHandler, TResult>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+    name: FunctionCacheRefreshEventHandler
+    nameWithType: FunctionCacheRefreshEventHandler
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+    name: FunctionCacheRefreshEventHandler
+    nameWithType: FunctionCacheRefreshEventHandler
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(System.Func{``0,``1},System.Action{System.Exception},System.Action{``0})
+    name: TryCatch(Of FunctionCacheRefreshEventHandler, TResult)
+    nameWithType: TryCatchExtensions.TryCatch(Of FunctionCacheRefreshEventHandler, TResult)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+    name: FunctionCacheRefreshEventHandler
+    nameWithType: FunctionCacheRefreshEventHandler
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+    name: FunctionCacheRefreshEventHandler
+    nameWithType: FunctionCacheRefreshEventHandler
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Hybrid.Extensions.TryCatchExtensions.TryCatch``2(System.Func{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler,{TResult}},System.Action{System.Exception})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception})
+  parent: Hybrid.Extensions.TryCatchExtensions
+  definition: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception})
+  name: TryCatch<FunctionCacheRefreshEventHandler, TResult>(Func<FunctionCacheRefreshEventHandler, TResult>, Action<Exception>)
+  nameWithType: TryCatchExtensions.TryCatch<FunctionCacheRefreshEventHandler, TResult>(Func<FunctionCacheRefreshEventHandler, TResult>, Action<Exception>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TResult>(System.Func<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TResult>, System.Action<System.Exception>)
+  nameWithType.vb: TryCatchExtensions.TryCatch(Of FunctionCacheRefreshEventHandler, TResult)(Func(Of FunctionCacheRefreshEventHandler, TResult), Action(Of Exception))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TResult)(System.Func(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TResult), System.Action(Of System.Exception))
+  name.vb: TryCatch(Of FunctionCacheRefreshEventHandler, TResult)(Func(Of FunctionCacheRefreshEventHandler, TResult), Action(Of Exception))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(System.Func{``0,``1},System.Action{System.Exception})
+    name: TryCatch<FunctionCacheRefreshEventHandler, TResult>
+    nameWithType: TryCatchExtensions.TryCatch<FunctionCacheRefreshEventHandler, TResult>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+    name: FunctionCacheRefreshEventHandler
+    nameWithType: FunctionCacheRefreshEventHandler
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(System.Func{``0,``1},System.Action{System.Exception})
+    name: TryCatch(Of FunctionCacheRefreshEventHandler, TResult)
+    nameWithType: TryCatchExtensions.TryCatch(Of FunctionCacheRefreshEventHandler, TResult)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+    name: FunctionCacheRefreshEventHandler
+    nameWithType: FunctionCacheRefreshEventHandler
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Hybrid.Extensions.TryCatchExtensions.TryFinally``1(System.Action{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler},System.Action{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryFinally``1(``0,System.Action{``0},System.Action{``0})
+  parent: Hybrid.Extensions.TryCatchExtensions
+  definition: Hybrid.Extensions.TryCatchExtensions.TryFinally``1(``0,System.Action{``0},System.Action{``0})
+  name: TryFinally<FunctionCacheRefreshEventHandler>(Action<FunctionCacheRefreshEventHandler>, Action<FunctionCacheRefreshEventHandler>)
+  nameWithType: TryCatchExtensions.TryFinally<FunctionCacheRefreshEventHandler>(Action<FunctionCacheRefreshEventHandler>, Action<FunctionCacheRefreshEventHandler>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryFinally<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler>(System.Action<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler>, System.Action<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler>)
+  nameWithType.vb: TryCatchExtensions.TryFinally(Of FunctionCacheRefreshEventHandler)(Action(Of FunctionCacheRefreshEventHandler), Action(Of FunctionCacheRefreshEventHandler))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryFinally(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler)(System.Action(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler), System.Action(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler))
+  name.vb: TryFinally(Of FunctionCacheRefreshEventHandler)(Action(Of FunctionCacheRefreshEventHandler), Action(Of FunctionCacheRefreshEventHandler))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryFinally``1(System.Action{``0},System.Action{``0})
+    name: TryFinally<FunctionCacheRefreshEventHandler>
+    nameWithType: TryCatchExtensions.TryFinally<FunctionCacheRefreshEventHandler>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryFinally<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+    name: FunctionCacheRefreshEventHandler
+    nameWithType: FunctionCacheRefreshEventHandler
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+    name: FunctionCacheRefreshEventHandler
+    nameWithType: FunctionCacheRefreshEventHandler
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryFinally``1(System.Action{``0},System.Action{``0})
+    name: TryFinally(Of FunctionCacheRefreshEventHandler)
+    nameWithType: TryCatchExtensions.TryFinally(Of FunctionCacheRefreshEventHandler)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryFinally(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+    name: FunctionCacheRefreshEventHandler
+    nameWithType: FunctionCacheRefreshEventHandler
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+    name: FunctionCacheRefreshEventHandler
+    nameWithType: FunctionCacheRefreshEventHandler
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Json.JsonExtensions.ToJsonString(System.Boolean,System.Boolean)
+  commentId: M:Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+  parent: Hybrid.Json.JsonExtensions
+  definition: Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+  name: ToJsonString(Boolean, Boolean)
+  nameWithType: JsonExtensions.ToJsonString(Boolean, Boolean)
+  fullName: Hybrid.Json.JsonExtensions.ToJsonString(System.Boolean, System.Boolean)
+  spec.csharp:
+  - uid: Hybrid.Json.JsonExtensions.ToJsonString(System.Boolean,System.Boolean)
+    name: ToJsonString
+    nameWithType: JsonExtensions.ToJsonString
+    fullName: Hybrid.Json.JsonExtensions.ToJsonString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Json.JsonExtensions.ToJsonString(System.Boolean,System.Boolean)
+    name: ToJsonString
+    nameWithType: JsonExtensions.ToJsonString
+    fullName: Hybrid.Json.JsonExtensions.ToJsonString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Mapping.MapperExtensions.MapTo``1
+  commentId: M:Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+  parent: Hybrid.Mapping.MapperExtensions
+  definition: Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+  name: MapTo<TTarget>()
+  nameWithType: MapperExtensions.MapTo<TTarget>()
+  fullName: Hybrid.Mapping.MapperExtensions.MapTo<TTarget>()
+  nameWithType.vb: MapperExtensions.MapTo(Of TTarget)()
+  fullName.vb: Hybrid.Mapping.MapperExtensions.MapTo(Of TTarget)()
+  name.vb: MapTo(Of TTarget)()
+  spec.csharp:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``1
+    name: MapTo<TTarget>
+    nameWithType: MapperExtensions.MapTo<TTarget>
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo<TTarget>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``1
+    name: MapTo(Of TTarget)
+    nameWithType: MapperExtensions.MapTo(Of TTarget)
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo(Of TTarget)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Hybrid.Mapping.MapperExtensions.MapTo``2({TTarget})
+  commentId: M:Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+  parent: Hybrid.Mapping.MapperExtensions
+  definition: Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+  name: MapTo<FunctionCacheRefreshEventHandler, TTarget>(TTarget)
+  nameWithType: MapperExtensions.MapTo<FunctionCacheRefreshEventHandler, TTarget>(TTarget)
+  fullName: Hybrid.Mapping.MapperExtensions.MapTo<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TTarget>(TTarget)
+  nameWithType.vb: MapperExtensions.MapTo(Of FunctionCacheRefreshEventHandler, TTarget)(TTarget)
+  fullName.vb: Hybrid.Mapping.MapperExtensions.MapTo(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TTarget)(TTarget)
+  name.vb: MapTo(Of FunctionCacheRefreshEventHandler, TTarget)(TTarget)
+  spec.csharp:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``2(``1)
+    name: MapTo<FunctionCacheRefreshEventHandler, TTarget>
+    nameWithType: MapperExtensions.MapTo<FunctionCacheRefreshEventHandler, TTarget>
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TTarget>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TTarget
+    nameWithType: TTarget
+    fullName: TTarget
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``2(``1)
+    name: MapTo(Of FunctionCacheRefreshEventHandler, TTarget)
+    nameWithType: MapperExtensions.MapTo(Of FunctionCacheRefreshEventHandler, TTarget)
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TTarget)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TTarget
+    nameWithType: TTarget
+    fullName: TTarget
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Reflection.LockExtensions.Locking(System.Action)
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+  parent: Hybrid.Reflection.LockExtensions
+  definition: Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+  name: Locking(Action)
+  nameWithType: LockExtensions.Locking(Action)
+  fullName: Hybrid.Reflection.LockExtensions.Locking(System.Action)
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking(System.Action)
+    name: Locking
+    nameWithType: LockExtensions.Locking
+    fullName: Hybrid.Reflection.LockExtensions.Locking
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking(System.Action)
+    name: Locking
+    nameWithType: LockExtensions.Locking
+    fullName: Hybrid.Reflection.LockExtensions.Locking
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Hybrid.Reflection.LockExtensions.Locking``1(System.Action{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+  parent: Hybrid.Reflection.LockExtensions
+  definition: Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+  name: Locking<FunctionCacheRefreshEventHandler>(Action<FunctionCacheRefreshEventHandler>)
+  nameWithType: LockExtensions.Locking<FunctionCacheRefreshEventHandler>(Action<FunctionCacheRefreshEventHandler>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler>(System.Action<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler>)
+  nameWithType.vb: LockExtensions.Locking(Of FunctionCacheRefreshEventHandler)(Action(Of FunctionCacheRefreshEventHandler))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler)(System.Action(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler))
+  name.vb: Locking(Of FunctionCacheRefreshEventHandler)(Action(Of FunctionCacheRefreshEventHandler))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Action{``0})
+    name: Locking<FunctionCacheRefreshEventHandler>
+    nameWithType: LockExtensions.Locking<FunctionCacheRefreshEventHandler>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+    name: FunctionCacheRefreshEventHandler
+    nameWithType: FunctionCacheRefreshEventHandler
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Action{``0})
+    name: Locking(Of FunctionCacheRefreshEventHandler)
+    nameWithType: LockExtensions.Locking(Of FunctionCacheRefreshEventHandler)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+    name: FunctionCacheRefreshEventHandler
+    nameWithType: FunctionCacheRefreshEventHandler
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Hybrid.Reflection.LockExtensions.Locking``1(System.Func{{TResult}})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+  parent: Hybrid.Reflection.LockExtensions
+  definition: Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+  name: Locking<TResult>(Func<TResult>)
+  nameWithType: LockExtensions.Locking<TResult>(Func<TResult>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<TResult>(System.Func<TResult>)
+  nameWithType.vb: LockExtensions.Locking(Of TResult)(Func(Of TResult))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of TResult)(System.Func(Of TResult))
+  name.vb: Locking(Of TResult)(Func(Of TResult))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Func{``0})
+    name: Locking<TResult>
+    nameWithType: LockExtensions.Locking<TResult>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Func{``0})
+    name: Locking(Of TResult)
+    nameWithType: LockExtensions.Locking(Of TResult)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Hybrid.Reflection.LockExtensions.Locking``2(System.Func{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler,{TResult}})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+  parent: Hybrid.Reflection.LockExtensions
+  definition: Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+  name: Locking<FunctionCacheRefreshEventHandler, TResult>(Func<FunctionCacheRefreshEventHandler, TResult>)
+  nameWithType: LockExtensions.Locking<FunctionCacheRefreshEventHandler, TResult>(Func<FunctionCacheRefreshEventHandler, TResult>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TResult>(System.Func<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TResult>)
+  nameWithType.vb: LockExtensions.Locking(Of FunctionCacheRefreshEventHandler, TResult)(Func(Of FunctionCacheRefreshEventHandler, TResult))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TResult)(System.Func(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TResult))
+  name.vb: Locking(Of FunctionCacheRefreshEventHandler, TResult)(Func(Of FunctionCacheRefreshEventHandler, TResult))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``2(System.Func{``0,``1})
+    name: Locking<FunctionCacheRefreshEventHandler, TResult>
+    nameWithType: LockExtensions.Locking<FunctionCacheRefreshEventHandler, TResult>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+    name: FunctionCacheRefreshEventHandler
+    nameWithType: FunctionCacheRefreshEventHandler
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``2(System.Func{``0,``1})
+    name: Locking(Of FunctionCacheRefreshEventHandler, TResult)
+    nameWithType: LockExtensions.Locking(Of FunctionCacheRefreshEventHandler, TResult)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+    name: FunctionCacheRefreshEventHandler
+    nameWithType: FunctionCacheRefreshEventHandler
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+  parent: Hybrid.Domain.Entities.EntityExtensions
+  definition: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+  name: CheckICreatedTime<FunctionCacheRefreshEventHandler, TKey>()
+  nameWithType: EntityExtensions.CheckICreatedTime<FunctionCacheRefreshEventHandler, TKey>()
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TKey>()
+  nameWithType.vb: EntityExtensions.CheckICreatedTime(Of FunctionCacheRefreshEventHandler, TKey)()
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TKey)()
+  name.vb: CheckICreatedTime(Of FunctionCacheRefreshEventHandler, TKey)()
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2
+    name: CheckICreatedTime<FunctionCacheRefreshEventHandler, TKey>
+    nameWithType: EntityExtensions.CheckICreatedTime<FunctionCacheRefreshEventHandler, TKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2
+    name: CheckICreatedTime(Of FunctionCacheRefreshEventHandler, TKey)
+    nameWithType: EntityExtensions.CheckICreatedTime(Of FunctionCacheRefreshEventHandler, TKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(System.Security.Principal.IPrincipal)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+  parent: Hybrid.Domain.Entities.EntityExtensions
+  definition: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+  name: CheckICreationAudited<FunctionCacheRefreshEventHandler, TKey, TUserKey>(IPrincipal)
+  nameWithType: EntityExtensions.CheckICreationAudited<FunctionCacheRefreshEventHandler, TKey, TUserKey>(IPrincipal)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TKey, TUserKey>(System.Security.Principal.IPrincipal)
+  nameWithType.vb: EntityExtensions.CheckICreationAudited(Of FunctionCacheRefreshEventHandler, TKey, TUserKey)(IPrincipal)
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TKey, TUserKey)(System.Security.Principal.IPrincipal)
+  name.vb: CheckICreationAudited(Of FunctionCacheRefreshEventHandler, TKey, TUserKey)(IPrincipal)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(System.Security.Principal.IPrincipal)
+    name: CheckICreationAudited<FunctionCacheRefreshEventHandler, TKey, TUserKey>
+    nameWithType: EntityExtensions.CheckICreationAudited<FunctionCacheRefreshEventHandler, TKey, TUserKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TKey, TUserKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(System.Security.Principal.IPrincipal)
+    name: CheckICreationAudited(Of FunctionCacheRefreshEventHandler, TKey, TUserKey)
+    nameWithType: EntityExtensions.CheckICreationAudited(Of FunctionCacheRefreshEventHandler, TKey, TUserKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TKey, TUserKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(System.Security.Principal.IPrincipal)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+  parent: Hybrid.Domain.Entities.EntityExtensions
+  definition: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+  name: CheckIUpdateAudited<FunctionCacheRefreshEventHandler, TKey, TUserKey>(IPrincipal)
+  nameWithType: EntityExtensions.CheckIUpdateAudited<FunctionCacheRefreshEventHandler, TKey, TUserKey>(IPrincipal)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TKey, TUserKey>(System.Security.Principal.IPrincipal)
+  nameWithType.vb: EntityExtensions.CheckIUpdateAudited(Of FunctionCacheRefreshEventHandler, TKey, TUserKey)(IPrincipal)
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TKey, TUserKey)(System.Security.Principal.IPrincipal)
+  name.vb: CheckIUpdateAudited(Of FunctionCacheRefreshEventHandler, TKey, TUserKey)(IPrincipal)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(System.Security.Principal.IPrincipal)
+    name: CheckIUpdateAudited<FunctionCacheRefreshEventHandler, TKey, TUserKey>
+    nameWithType: EntityExtensions.CheckIUpdateAudited<FunctionCacheRefreshEventHandler, TKey, TUserKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TKey, TUserKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(System.Security.Principal.IPrincipal)
+    name: CheckIUpdateAudited(Of FunctionCacheRefreshEventHandler, TKey, TUserKey)
+    nameWithType: EntityExtensions.CheckIUpdateAudited(Of FunctionCacheRefreshEventHandler, TKey, TUserKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler, TKey, TUserKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hybrid.EventBuses.EventHandlerBase`1
+  commentId: T:Hybrid.EventBuses.EventHandlerBase`1
+  name: EventHandlerBase<TEventData>
+  nameWithType: EventHandlerBase<TEventData>
+  fullName: Hybrid.EventBuses.EventHandlerBase<TEventData>
+  nameWithType.vb: EventHandlerBase(Of TEventData)
+  fullName.vb: Hybrid.EventBuses.EventHandlerBase(Of TEventData)
+  name.vb: EventHandlerBase(Of TEventData)
+  spec.csharp:
+  - uid: Hybrid.EventBuses.EventHandlerBase`1
+    name: EventHandlerBase
+    nameWithType: EventHandlerBase
+    fullName: Hybrid.EventBuses.EventHandlerBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEventData
+    nameWithType: TEventData
+    fullName: TEventData
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.EventBuses.EventHandlerBase`1
+    name: EventHandlerBase
+    nameWithType: EventHandlerBase
+    fullName: Hybrid.EventBuses.EventHandlerBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEventData
+    nameWithType: TEventData
+    fullName: TEventData
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.EventBuses
+  commentId: N:Hybrid.EventBuses
+  name: Hybrid.EventBuses
+  nameWithType: Hybrid.EventBuses
+  fullName: Hybrid.EventBuses
+- uid: Hybrid.EventBuses.IEventHandler`1
+  commentId: T:Hybrid.EventBuses.IEventHandler`1
+  name: IEventHandler<TEventData>
+  nameWithType: IEventHandler<TEventData>
+  fullName: Hybrid.EventBuses.IEventHandler<TEventData>
+  nameWithType.vb: IEventHandler(Of TEventData)
+  fullName.vb: Hybrid.EventBuses.IEventHandler(Of TEventData)
+  name.vb: IEventHandler(Of TEventData)
+  spec.csharp:
+  - uid: Hybrid.EventBuses.IEventHandler`1
+    name: IEventHandler
+    nameWithType: IEventHandler
+    fullName: Hybrid.EventBuses.IEventHandler
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEventData
+    nameWithType: TEventData
+    fullName: TEventData
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.EventBuses.IEventHandler`1
+    name: IEventHandler
+    nameWithType: IEventHandler
+    fullName: Hybrid.EventBuses.IEventHandler
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEventData
+    nameWithType: TEventData
+    fullName: TEventData
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.EventBuses.EventHandlerBase`1.CanHandle(Hybrid.EventBuses.IEventData)
+  commentId: M:Hybrid.EventBuses.EventHandlerBase`1.CanHandle(Hybrid.EventBuses.IEventData)
+  name: CanHandle(IEventData)
+  nameWithType: EventHandlerBase<TEventData>.CanHandle(IEventData)
+  fullName: Hybrid.EventBuses.EventHandlerBase<TEventData>.CanHandle(Hybrid.EventBuses.IEventData)
+  nameWithType.vb: EventHandlerBase(Of TEventData).CanHandle(IEventData)
+  fullName.vb: Hybrid.EventBuses.EventHandlerBase(Of TEventData).CanHandle(Hybrid.EventBuses.IEventData)
+  spec.csharp:
+  - uid: Hybrid.EventBuses.EventHandlerBase`1.CanHandle(Hybrid.EventBuses.IEventData)
+    name: CanHandle
+    nameWithType: EventHandlerBase<TEventData>.CanHandle
+    fullName: Hybrid.EventBuses.EventHandlerBase<TEventData>.CanHandle
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.EventBuses.IEventData
+    name: IEventData
+    nameWithType: IEventData
+    fullName: Hybrid.EventBuses.IEventData
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.EventBuses.EventHandlerBase`1.CanHandle(Hybrid.EventBuses.IEventData)
+    name: CanHandle
+    nameWithType: EventHandlerBase(Of TEventData).CanHandle
+    fullName: Hybrid.EventBuses.EventHandlerBase(Of TEventData).CanHandle
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.EventBuses.IEventData
+    name: IEventData
+    nameWithType: IEventData
+    fullName: Hybrid.EventBuses.IEventData
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.EventBuses.EventHandlerBase`1.Handle(Hybrid.EventBuses.IEventData)
+  commentId: M:Hybrid.EventBuses.EventHandlerBase`1.Handle(Hybrid.EventBuses.IEventData)
+  name: Handle(IEventData)
+  nameWithType: EventHandlerBase<TEventData>.Handle(IEventData)
+  fullName: Hybrid.EventBuses.EventHandlerBase<TEventData>.Handle(Hybrid.EventBuses.IEventData)
+  nameWithType.vb: EventHandlerBase(Of TEventData).Handle(IEventData)
+  fullName.vb: Hybrid.EventBuses.EventHandlerBase(Of TEventData).Handle(Hybrid.EventBuses.IEventData)
+  spec.csharp:
+  - uid: Hybrid.EventBuses.EventHandlerBase`1.Handle(Hybrid.EventBuses.IEventData)
+    name: Handle
+    nameWithType: EventHandlerBase<TEventData>.Handle
+    fullName: Hybrid.EventBuses.EventHandlerBase<TEventData>.Handle
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.EventBuses.IEventData
+    name: IEventData
+    nameWithType: IEventData
+    fullName: Hybrid.EventBuses.IEventData
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.EventBuses.EventHandlerBase`1.Handle(Hybrid.EventBuses.IEventData)
+    name: Handle
+    nameWithType: EventHandlerBase(Of TEventData).Handle
+    fullName: Hybrid.EventBuses.EventHandlerBase(Of TEventData).Handle
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.EventBuses.IEventData
+    name: IEventData
+    nameWithType: IEventData
+    fullName: Hybrid.EventBuses.IEventData
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.EventBuses.EventHandlerBase`1.HandleAsync(Hybrid.EventBuses.IEventData,System.Threading.CancellationToken)
+  commentId: M:Hybrid.EventBuses.EventHandlerBase`1.HandleAsync(Hybrid.EventBuses.IEventData,System.Threading.CancellationToken)
+  isExternal: true
+  name: HandleAsync(IEventData, CancellationToken)
+  nameWithType: EventHandlerBase<TEventData>.HandleAsync(IEventData, CancellationToken)
+  fullName: Hybrid.EventBuses.EventHandlerBase<TEventData>.HandleAsync(Hybrid.EventBuses.IEventData, System.Threading.CancellationToken)
+  nameWithType.vb: EventHandlerBase(Of TEventData).HandleAsync(IEventData, CancellationToken)
+  fullName.vb: Hybrid.EventBuses.EventHandlerBase(Of TEventData).HandleAsync(Hybrid.EventBuses.IEventData, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Hybrid.EventBuses.EventHandlerBase`1.HandleAsync(Hybrid.EventBuses.IEventData,System.Threading.CancellationToken)
+    name: HandleAsync
+    nameWithType: EventHandlerBase<TEventData>.HandleAsync
+    fullName: Hybrid.EventBuses.EventHandlerBase<TEventData>.HandleAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.EventBuses.IEventData
+    name: IEventData
+    nameWithType: IEventData
+    fullName: Hybrid.EventBuses.IEventData
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.EventBuses.EventHandlerBase`1.HandleAsync(Hybrid.EventBuses.IEventData,System.Threading.CancellationToken)
+    name: HandleAsync
+    nameWithType: EventHandlerBase(Of TEventData).HandleAsync
+    fullName: Hybrid.EventBuses.EventHandlerBase(Of TEventData).HandleAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.EventBuses.IEventData
+    name: IEventData
+    nameWithType: IEventData
+    fullName: Hybrid.EventBuses.IEventData
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.EventBuses.EventHandlerBase`1.HandleAsync(`0,System.Threading.CancellationToken)
+  commentId: M:Hybrid.EventBuses.EventHandlerBase`1.HandleAsync(`0,System.Threading.CancellationToken)
+  isExternal: true
+  name: HandleAsync(TEventData, CancellationToken)
+  nameWithType: EventHandlerBase<TEventData>.HandleAsync(TEventData, CancellationToken)
+  fullName: Hybrid.EventBuses.EventHandlerBase<TEventData>.HandleAsync(TEventData, System.Threading.CancellationToken)
+  nameWithType.vb: EventHandlerBase(Of TEventData).HandleAsync(TEventData, CancellationToken)
+  fullName.vb: Hybrid.EventBuses.EventHandlerBase(Of TEventData).HandleAsync(TEventData, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Hybrid.EventBuses.EventHandlerBase`1.HandleAsync(`0,System.Threading.CancellationToken)
+    name: HandleAsync
+    nameWithType: EventHandlerBase<TEventData>.HandleAsync
+    fullName: Hybrid.EventBuses.EventHandlerBase<TEventData>.HandleAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEventData
+    nameWithType: TEventData
+    fullName: TEventData
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.EventBuses.EventHandlerBase`1.HandleAsync(`0,System.Threading.CancellationToken)
+    name: HandleAsync
+    nameWithType: EventHandlerBase(Of TEventData).HandleAsync
+    fullName: Hybrid.EventBuses.EventHandlerBase(Of TEventData).HandleAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEventData
+    nameWithType: TEventData
+    fullName: TEventData
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+  isExternal: true
+  name: CastTo(Object, Type)
+  nameWithType: ObjectExtensions.CastTo(Object, Type)
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo(System.Object, System.Type)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+    name: CastTo
+    nameWithType: ObjectExtensions.CastTo
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo(System.Object,System.Type)
+    name: CastTo
+    nameWithType: ObjectExtensions.CastTo
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ObjectExtensions
+  commentId: T:Hybrid.Extensions.ObjectExtensions
+  parent: Hybrid.Extensions
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: Hybrid.Extensions.ObjectExtensions
+- uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+  isExternal: true
+  name: CastTo<T>(Object)
+  nameWithType: ObjectExtensions.CastTo<T>(Object)
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>(System.Object)
+  nameWithType.vb: ObjectExtensions.CastTo(Of T)(Object)
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)(System.Object)
+  name.vb: CastTo(Of T)(Object)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+    name: CastTo<T>
+    nameWithType: ObjectExtensions.CastTo<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object)
+    name: CastTo(Of T)
+    nameWithType: ObjectExtensions.CastTo(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+  isExternal: true
+  name: CastTo<T>(Object, T)
+  nameWithType: ObjectExtensions.CastTo<T>(Object, T)
+  fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>(System.Object, T)
+  nameWithType.vb: ObjectExtensions.CastTo(Of T)(Object, T)
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)(System.Object, T)
+  name.vb: CastTo(Of T)(Object, T)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+    name: CastTo<T>
+    nameWithType: ObjectExtensions.CastTo<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.CastTo``1(System.Object,``0)
+    name: CastTo(Of T)
+    nameWithType: ObjectExtensions.CastTo(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.CastTo(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+  commentId: M:Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+  name: IsIn<T>(T, T[])
+  nameWithType: ObjectExtensions.IsIn<T>(T, T[])
+  fullName: Hybrid.Extensions.ObjectExtensions.IsIn<T>(T, T[])
+  nameWithType.vb: ObjectExtensions.IsIn(Of T)(T, T())
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.IsIn(Of T)(T, T())
+  name.vb: IsIn(Of T)(T, T())
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+    name: IsIn<T>
+    nameWithType: ObjectExtensions.IsIn<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.IsIn<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.IsIn``1(``0,``0[])
+    name: IsIn(Of T)
+    nameWithType: ObjectExtensions.IsIn(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.IsIn(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  isExternal: true
+  name: ToDynamic(Object)
+  nameWithType: ObjectExtensions.ToDynamic(Object)
+  fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+    name: ToDynamic
+    nameWithType: ObjectExtensions.ToDynamic
+    fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.ToDynamic(System.Object)
+    name: ToDynamic
+    nameWithType: ObjectExtensions.ToDynamic
+    fullName: Hybrid.Extensions.ObjectExtensions.ToDynamic
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ObjectExtensions.DeepClone``1(``0)
+  commentId: M:Hybrid.Extensions.ObjectExtensions.DeepClone``1(``0)
+  name: DeepClone<T>(T)
+  nameWithType: ObjectExtensions.DeepClone<T>(T)
+  fullName: Hybrid.Extensions.ObjectExtensions.DeepClone<T>(T)
+  nameWithType.vb: ObjectExtensions.DeepClone(Of T)(T)
+  fullName.vb: Hybrid.Extensions.ObjectExtensions.DeepClone(Of T)(T)
+  name.vb: DeepClone(Of T)(T)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ObjectExtensions.DeepClone``1(``0)
+    name: DeepClone<T>
+    nameWithType: ObjectExtensions.DeepClone<T>
+    fullName: Hybrid.Extensions.ObjectExtensions.DeepClone<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ObjectExtensions.DeepClone``1(``0)
+    name: DeepClone(Of T)
+    nameWithType: ObjectExtensions.DeepClone(Of T)
+    fullName: Hybrid.Extensions.ObjectExtensions.DeepClone(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+  commentId: M:Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+  isExternal: true
+  name: Required<T>(T, Func<T, Boolean>, String)
+  nameWithType: ParameterCheckExtensions.Required<T>(T, Func<T, Boolean>, String)
+  fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<T>(T, System.Func<T, System.Boolean>, System.String)
+  nameWithType.vb: ParameterCheckExtensions.Required(Of T)(T, Func(Of T, Boolean), String)
+  fullName.vb: Hybrid.Extensions.ParameterCheckExtensions.Required(Of T)(T, System.Func(Of T, System.Boolean), System.String)
+  name.vb: Required(Of T)(T, Func(Of T, Boolean), String)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+    name: Required<T>
+    nameWithType: ParameterCheckExtensions.Required<T>
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``1(``0,System.Func{``0,System.Boolean},System.String)
+    name: Required(Of T)
+    nameWithType: ParameterCheckExtensions.Required(Of T)
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ParameterCheckExtensions
+  commentId: T:Hybrid.Extensions.ParameterCheckExtensions
+  parent: Hybrid.Extensions
+  name: ParameterCheckExtensions
+  nameWithType: ParameterCheckExtensions
+  fullName: Hybrid.Extensions.ParameterCheckExtensions
+- uid: Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+  commentId: M:Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+  isExternal: true
+  name: Required<T, TException>(T, Func<T, Boolean>, String)
+  nameWithType: ParameterCheckExtensions.Required<T, TException>(T, Func<T, Boolean>, String)
+  fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<T, TException>(T, System.Func<T, System.Boolean>, System.String)
+  nameWithType.vb: ParameterCheckExtensions.Required(Of T, TException)(T, Func(Of T, Boolean), String)
+  fullName.vb: Hybrid.Extensions.ParameterCheckExtensions.Required(Of T, TException)(T, System.Func(Of T, System.Boolean), System.String)
+  name.vb: Required(Of T, TException)(T, Func(Of T, Boolean), String)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+    name: Required<T, TException>
+    nameWithType: ParameterCheckExtensions.Required<T, TException>
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required<T, TException>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.Required``2(``0,System.Func{``0,System.Boolean},System.String)
+    name: Required(Of T, TException)
+    nameWithType: ParameterCheckExtensions.Required(Of T, TException)
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.Required(Of T, TException)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(``0,System.String)
+  commentId: M:Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(``0,System.String)
+  isExternal: true
+  name: CheckNotNull<T>(T, String)
+  nameWithType: ParameterCheckExtensions.CheckNotNull<T>(T, String)
+  fullName: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull<T>(T, System.String)
+  nameWithType.vb: ParameterCheckExtensions.CheckNotNull(Of T)(T, String)
+  fullName.vb: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull(Of T)(T, System.String)
+  name.vb: CheckNotNull(Of T)(T, String)
+  spec.csharp:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(``0,System.String)
+    name: CheckNotNull<T>
+    nameWithType: ParameterCheckExtensions.CheckNotNull<T>
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull``1(``0,System.String)
+    name: CheckNotNull(Of T)
+    nameWithType: ParameterCheckExtensions.CheckNotNull(Of T)
+    fullName: Hybrid.Extensions.ParameterCheckExtensions.CheckNotNull(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception},System.Action{``0})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception},System.Action{``0})
+  isExternal: true
+  name: TryCatch<T>(T, Action<T>, Action<Exception>, Action<T>)
+  nameWithType: TryCatchExtensions.TryCatch<T>(T, Action<T>, Action<Exception>, Action<T>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<T>(T, System.Action<T>, System.Action<System.Exception>, System.Action<T>)
+  nameWithType.vb: TryCatchExtensions.TryCatch(Of T)(T, Action(Of T), Action(Of Exception), Action(Of T))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of T)(T, System.Action(Of T), System.Action(Of System.Exception), System.Action(Of T))
+  name.vb: TryCatch(Of T)(T, Action(Of T), Action(Of Exception), Action(Of T))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception},System.Action{``0})
+    name: TryCatch<T>
+    nameWithType: TryCatchExtensions.TryCatch<T>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception},System.Action{``0})
+    name: TryCatch(Of T)
+    nameWithType: TryCatchExtensions.TryCatch(Of T)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.TryCatchExtensions
+  commentId: T:Hybrid.Extensions.TryCatchExtensions
+  parent: Hybrid.Extensions
+  name: TryCatchExtensions
+  nameWithType: TryCatchExtensions
+  fullName: Hybrid.Extensions.TryCatchExtensions
+- uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception})
+  isExternal: true
+  name: TryCatch<T>(T, Action<T>, Action<Exception>)
+  nameWithType: TryCatchExtensions.TryCatch<T>(T, Action<T>, Action<Exception>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<T>(T, System.Action<T>, System.Action<System.Exception>)
+  nameWithType.vb: TryCatchExtensions.TryCatch(Of T)(T, Action(Of T), Action(Of Exception))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of T)(T, System.Action(Of T), System.Action(Of System.Exception))
+  name.vb: TryCatch(Of T)(T, Action(Of T), Action(Of Exception))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception})
+    name: TryCatch<T>
+    nameWithType: TryCatchExtensions.TryCatch<T>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``1(``0,System.Action{``0},System.Action{System.Exception})
+    name: TryCatch(Of T)
+    nameWithType: TryCatchExtensions.TryCatch(Of T)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception},System.Action{``0})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception},System.Action{``0})
+  isExternal: true
+  name: TryCatch<T, TResult>(T, Func<T, TResult>, Action<Exception>, Action<T>)
+  nameWithType: TryCatchExtensions.TryCatch<T, TResult>(T, Func<T, TResult>, Action<Exception>, Action<T>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<T, TResult>(T, System.Func<T, TResult>, System.Action<System.Exception>, System.Action<T>)
+  nameWithType.vb: TryCatchExtensions.TryCatch(Of T, TResult)(T, Func(Of T, TResult), Action(Of Exception), Action(Of T))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of T, TResult)(T, System.Func(Of T, TResult), System.Action(Of System.Exception), System.Action(Of T))
+  name.vb: TryCatch(Of T, TResult)(T, Func(Of T, TResult), Action(Of Exception), Action(Of T))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception},System.Action{``0})
+    name: TryCatch<T, TResult>
+    nameWithType: TryCatchExtensions.TryCatch<T, TResult>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<T, TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception},System.Action{``0})
+    name: TryCatch(Of T, TResult)
+    nameWithType: TryCatchExtensions.TryCatch(Of T, TResult)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of T, TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception})
+  isExternal: true
+  name: TryCatch<T, TResult>(T, Func<T, TResult>, Action<Exception>)
+  nameWithType: TryCatchExtensions.TryCatch<T, TResult>(T, Func<T, TResult>, Action<Exception>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<T, TResult>(T, System.Func<T, TResult>, System.Action<System.Exception>)
+  nameWithType.vb: TryCatchExtensions.TryCatch(Of T, TResult)(T, Func(Of T, TResult), Action(Of Exception))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of T, TResult)(T, System.Func(Of T, TResult), System.Action(Of System.Exception))
+  name.vb: TryCatch(Of T, TResult)(T, Func(Of T, TResult), Action(Of Exception))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception})
+    name: TryCatch<T, TResult>
+    nameWithType: TryCatchExtensions.TryCatch<T, TResult>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch<T, TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryCatch``2(``0,System.Func{``0,``1},System.Action{System.Exception})
+    name: TryCatch(Of T, TResult)
+    nameWithType: TryCatchExtensions.TryCatch(Of T, TResult)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryCatch(Of T, TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions.TryCatchExtensions.TryFinally``1(``0,System.Action{``0},System.Action{``0})
+  commentId: M:Hybrid.Extensions.TryCatchExtensions.TryFinally``1(``0,System.Action{``0},System.Action{``0})
+  isExternal: true
+  name: TryFinally<T>(T, Action<T>, Action<T>)
+  nameWithType: TryCatchExtensions.TryFinally<T>(T, Action<T>, Action<T>)
+  fullName: Hybrid.Extensions.TryCatchExtensions.TryFinally<T>(T, System.Action<T>, System.Action<T>)
+  nameWithType.vb: TryCatchExtensions.TryFinally(Of T)(T, Action(Of T), Action(Of T))
+  fullName.vb: Hybrid.Extensions.TryCatchExtensions.TryFinally(Of T)(T, System.Action(Of T), System.Action(Of T))
+  name.vb: TryFinally(Of T)(T, Action(Of T), Action(Of T))
+  spec.csharp:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryFinally``1(``0,System.Action{``0},System.Action{``0})
+    name: TryFinally<T>
+    nameWithType: TryCatchExtensions.TryFinally<T>
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryFinally<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Extensions.TryCatchExtensions.TryFinally``1(``0,System.Action{``0},System.Action{``0})
+    name: TryFinally(Of T)
+    nameWithType: TryCatchExtensions.TryFinally(Of T)
+    fullName: Hybrid.Extensions.TryCatchExtensions.TryFinally(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+  commentId: M:Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+  isExternal: true
+  name: ToJsonString(Object, Boolean, Boolean)
+  nameWithType: JsonExtensions.ToJsonString(Object, Boolean, Boolean)
+  fullName: Hybrid.Json.JsonExtensions.ToJsonString(System.Object, System.Boolean, System.Boolean)
+  spec.csharp:
+  - uid: Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+    name: ToJsonString
+    nameWithType: JsonExtensions.ToJsonString
+    fullName: Hybrid.Json.JsonExtensions.ToJsonString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Json.JsonExtensions.ToJsonString(System.Object,System.Boolean,System.Boolean)
+    name: ToJsonString
+    nameWithType: JsonExtensions.ToJsonString
+    fullName: Hybrid.Json.JsonExtensions.ToJsonString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Json.JsonExtensions
+  commentId: T:Hybrid.Json.JsonExtensions
+  parent: Hybrid.Json
+  name: JsonExtensions
+  nameWithType: JsonExtensions
+  fullName: Hybrid.Json.JsonExtensions
+- uid: Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+  commentId: M:Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+  isExternal: true
+  name: MapTo<TTarget>(Object)
+  nameWithType: MapperExtensions.MapTo<TTarget>(Object)
+  fullName: Hybrid.Mapping.MapperExtensions.MapTo<TTarget>(System.Object)
+  nameWithType.vb: MapperExtensions.MapTo(Of TTarget)(Object)
+  fullName.vb: Hybrid.Mapping.MapperExtensions.MapTo(Of TTarget)(System.Object)
+  name.vb: MapTo(Of TTarget)(Object)
+  spec.csharp:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+    name: MapTo<TTarget>
+    nameWithType: MapperExtensions.MapTo<TTarget>
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo<TTarget>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``1(System.Object)
+    name: MapTo(Of TTarget)
+    nameWithType: MapperExtensions.MapTo(Of TTarget)
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo(Of TTarget)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Mapping.MapperExtensions
+  commentId: T:Hybrid.Mapping.MapperExtensions
+  parent: Hybrid.Mapping
+  name: MapperExtensions
+  nameWithType: MapperExtensions
+  fullName: Hybrid.Mapping.MapperExtensions
+- uid: Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+  commentId: M:Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+  name: MapTo<TSource, TTarget>(TSource, TTarget)
+  nameWithType: MapperExtensions.MapTo<TSource, TTarget>(TSource, TTarget)
+  fullName: Hybrid.Mapping.MapperExtensions.MapTo<TSource, TTarget>(TSource, TTarget)
+  nameWithType.vb: MapperExtensions.MapTo(Of TSource, TTarget)(TSource, TTarget)
+  fullName.vb: Hybrid.Mapping.MapperExtensions.MapTo(Of TSource, TTarget)(TSource, TTarget)
+  name.vb: MapTo(Of TSource, TTarget)(TSource, TTarget)
+  spec.csharp:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+    name: MapTo<TSource, TTarget>
+    nameWithType: MapperExtensions.MapTo<TSource, TTarget>
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo<TSource, TTarget>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TTarget
+    nameWithType: TTarget
+    fullName: TTarget
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Mapping.MapperExtensions.MapTo``2(``0,``1)
+    name: MapTo(Of TSource, TTarget)
+    nameWithType: MapperExtensions.MapTo(Of TSource, TTarget)
+    fullName: Hybrid.Mapping.MapperExtensions.MapTo(Of TSource, TTarget)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TTarget
+    nameWithType: TTarget
+    fullName: TTarget
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+  isExternal: true
+  name: Locking(Object, Action)
+  nameWithType: LockExtensions.Locking(Object, Action)
+  fullName: Hybrid.Reflection.LockExtensions.Locking(System.Object, System.Action)
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+    name: Locking
+    nameWithType: LockExtensions.Locking
+    fullName: Hybrid.Reflection.LockExtensions.Locking
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking(System.Object,System.Action)
+    name: Locking
+    nameWithType: LockExtensions.Locking
+    fullName: Hybrid.Reflection.LockExtensions.Locking
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Reflection.LockExtensions
+  commentId: T:Hybrid.Reflection.LockExtensions
+  parent: Hybrid.Reflection
+  name: LockExtensions
+  nameWithType: LockExtensions
+  fullName: Hybrid.Reflection.LockExtensions
+- uid: Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+  isExternal: true
+  name: Locking<T>(T, Action<T>)
+  nameWithType: LockExtensions.Locking<T>(T, Action<T>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<T>(T, System.Action<T>)
+  nameWithType.vb: LockExtensions.Locking(Of T)(T, Action(Of T))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of T)(T, System.Action(Of T))
+  name.vb: Locking(Of T)(T, Action(Of T))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+    name: Locking<T>
+    nameWithType: LockExtensions.Locking<T>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(``0,System.Action{``0})
+    name: Locking(Of T)
+    nameWithType: LockExtensions.Locking(Of T)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+  isExternal: true
+  name: Locking<TResult>(Object, Func<TResult>)
+  nameWithType: LockExtensions.Locking<TResult>(Object, Func<TResult>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<TResult>(System.Object, System.Func<TResult>)
+  nameWithType.vb: LockExtensions.Locking(Of TResult)(Object, Func(Of TResult))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of TResult)(System.Object, System.Func(Of TResult))
+  name.vb: Locking(Of TResult)(Object, Func(Of TResult))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+    name: Locking<TResult>
+    nameWithType: LockExtensions.Locking<TResult>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``1(System.Object,System.Func{``0})
+    name: Locking(Of TResult)
+    nameWithType: LockExtensions.Locking(Of TResult)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+  commentId: M:Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+  isExternal: true
+  name: Locking<TSource, TResult>(TSource, Func<TSource, TResult>)
+  nameWithType: LockExtensions.Locking<TSource, TResult>(TSource, Func<TSource, TResult>)
+  fullName: Hybrid.Reflection.LockExtensions.Locking<TSource, TResult>(TSource, System.Func<TSource, TResult>)
+  nameWithType.vb: LockExtensions.Locking(Of TSource, TResult)(TSource, Func(Of TSource, TResult))
+  fullName.vb: Hybrid.Reflection.LockExtensions.Locking(Of TSource, TResult)(TSource, System.Func(Of TSource, TResult))
+  name.vb: Locking(Of TSource, TResult)(TSource, Func(Of TSource, TResult))
+  spec.csharp:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+    name: Locking<TSource, TResult>
+    nameWithType: LockExtensions.Locking<TSource, TResult>
+    fullName: Hybrid.Reflection.LockExtensions.Locking<TSource, TResult>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Reflection.LockExtensions.Locking``2(``0,System.Func{``0,``1})
+    name: Locking(Of TSource, TResult)
+    nameWithType: LockExtensions.Locking(Of TSource, TResult)
+    fullName: Hybrid.Reflection.LockExtensions.Locking(Of TSource, TResult)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+  name: CheckICreatedTime<TEntity, TKey>(TEntity)
+  nameWithType: EntityExtensions.CheckICreatedTime<TEntity, TKey>(TEntity)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime<TEntity, TKey>(TEntity)
+  nameWithType.vb: EntityExtensions.CheckICreatedTime(Of TEntity, TKey)(TEntity)
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime(Of TEntity, TKey)(TEntity)
+  name.vb: CheckICreatedTime(Of TEntity, TKey)(TEntity)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+    name: CheckICreatedTime<TEntity, TKey>
+    nameWithType: EntityExtensions.CheckICreatedTime<TEntity, TKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime<TEntity, TKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime``2(``0)
+    name: CheckICreatedTime(Of TEntity, TKey)
+    nameWithType: EntityExtensions.CheckICreatedTime(Of TEntity, TKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreatedTime(Of TEntity, TKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Domain.Entities.EntityExtensions
+  commentId: T:Hybrid.Domain.Entities.EntityExtensions
+  parent: Hybrid.Domain.Entities
+  name: EntityExtensions
+  nameWithType: EntityExtensions
+  fullName: Hybrid.Domain.Entities.EntityExtensions
+- uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+  isExternal: true
+  name: CheckICreationAudited<TEntity, TKey, TUserKey>(TEntity, IPrincipal)
+  nameWithType: EntityExtensions.CheckICreationAudited<TEntity, TKey, TUserKey>(TEntity, IPrincipal)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited<TEntity, TKey, TUserKey>(TEntity, System.Security.Principal.IPrincipal)
+  nameWithType.vb: EntityExtensions.CheckICreationAudited(Of TEntity, TKey, TUserKey)(TEntity, IPrincipal)
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited(Of TEntity, TKey, TUserKey)(TEntity, System.Security.Principal.IPrincipal)
+  name.vb: CheckICreationAudited(Of TEntity, TKey, TUserKey)(TEntity, IPrincipal)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+    name: CheckICreationAudited<TEntity, TKey, TUserKey>
+    nameWithType: EntityExtensions.CheckICreationAudited<TEntity, TKey, TUserKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited<TEntity, TKey, TUserKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited``3(``0,System.Security.Principal.IPrincipal)
+    name: CheckICreationAudited(Of TEntity, TKey, TUserKey)
+    nameWithType: EntityExtensions.CheckICreationAudited(Of TEntity, TKey, TUserKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckICreationAudited(Of TEntity, TKey, TUserKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+  commentId: M:Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+  isExternal: true
+  name: CheckIUpdateAudited<TEntity, TKey, TUserKey>(TEntity, IPrincipal)
+  nameWithType: EntityExtensions.CheckIUpdateAudited<TEntity, TKey, TUserKey>(TEntity, IPrincipal)
+  fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited<TEntity, TKey, TUserKey>(TEntity, System.Security.Principal.IPrincipal)
+  nameWithType.vb: EntityExtensions.CheckIUpdateAudited(Of TEntity, TKey, TUserKey)(TEntity, IPrincipal)
+  fullName.vb: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited(Of TEntity, TKey, TUserKey)(TEntity, System.Security.Principal.IPrincipal)
+  name.vb: CheckIUpdateAudited(Of TEntity, TKey, TUserKey)(TEntity, IPrincipal)
+  spec.csharp:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+    name: CheckIUpdateAudited<TEntity, TKey, TUserKey>
+    nameWithType: EntityExtensions.CheckIUpdateAudited<TEntity, TKey, TUserKey>
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited<TEntity, TKey, TUserKey>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited``3(``0,System.Security.Principal.IPrincipal)
+    name: CheckIUpdateAudited(Of TEntity, TKey, TUserKey)
+    nameWithType: EntityExtensions.CheckIUpdateAudited(Of TEntity, TKey, TUserKey)
+    fullName: Hybrid.Domain.Entities.EntityExtensions.CheckIUpdateAudited(Of TEntity, TKey, TUserKey)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Principal.IPrincipal
+    name: IPrincipal
+    nameWithType: IPrincipal
+    fullName: System.Security.Principal.IPrincipal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Extensions
+  commentId: N:Hybrid.Extensions
+  name: Hybrid.Extensions
+  nameWithType: Hybrid.Extensions
+  fullName: Hybrid.Extensions
+- uid: Hybrid.Json
+  commentId: N:Hybrid.Json
+  name: Hybrid.Json
+  nameWithType: Hybrid.Json
+  fullName: Hybrid.Json
+- uid: Hybrid.Mapping
+  commentId: N:Hybrid.Mapping
+  name: Hybrid.Mapping
+  nameWithType: Hybrid.Mapping
+  fullName: Hybrid.Mapping
+- uid: Hybrid.Reflection
+  commentId: N:Hybrid.Reflection
+  name: Hybrid.Reflection
+  nameWithType: Hybrid.Reflection
+  fullName: Hybrid.Reflection
+- uid: Hybrid.Domain.Entities
+  commentId: N:Hybrid.Domain.Entities
+  name: Hybrid.Domain.Entities
+  nameWithType: Hybrid.Domain.Entities
+  fullName: Hybrid.Domain.Entities
+- uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  commentId: T:Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+  name: FunctionCacheRefreshEventHandler
+  nameWithType: FunctionCacheRefreshEventHandler
+  fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler
+- uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.#ctor*
+  commentId: Overload:Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.#ctor
+  name: FunctionCacheRefreshEventHandler
+  nameWithType: FunctionCacheRefreshEventHandler.FunctionCacheRefreshEventHandler
+  fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.FunctionCacheRefreshEventHandler
+- uid: System.IServiceProvider
+  commentId: T:System.IServiceProvider
+  parent: System
+  isExternal: true
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: System.IServiceProvider
+- uid: Hybrid.EventBuses.EventHandlerBase{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData}.Handle(Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData)
+  commentId: M:Hybrid.EventBuses.EventHandlerBase{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData}.Handle(Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData)
+  parent: Hybrid.EventBuses.EventHandlerBase{Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData}
+  definition: Hybrid.EventBuses.EventHandlerBase`1.Handle(`0)
+  name: Handle(FunctionCacheRefreshEventData)
+  nameWithType: EventHandlerBase<FunctionCacheRefreshEventData>.Handle(FunctionCacheRefreshEventData)
+  fullName: Hybrid.EventBuses.EventHandlerBase<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData>.Handle(Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData)
+  nameWithType.vb: EventHandlerBase(Of FunctionCacheRefreshEventData).Handle(FunctionCacheRefreshEventData)
+  fullName.vb: Hybrid.EventBuses.EventHandlerBase(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData).Handle(Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData)
+  spec.csharp:
+  - uid: Hybrid.EventBuses.EventHandlerBase`1.Handle(`0)
+    name: Handle
+    nameWithType: EventHandlerBase<FunctionCacheRefreshEventData>.Handle
+    fullName: Hybrid.EventBuses.EventHandlerBase<Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData>.Handle
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData
+    name: FunctionCacheRefreshEventData
+    nameWithType: FunctionCacheRefreshEventData
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.EventBuses.EventHandlerBase`1.Handle(`0)
+    name: Handle
+    nameWithType: EventHandlerBase(Of FunctionCacheRefreshEventData).Handle
+    fullName: Hybrid.EventBuses.EventHandlerBase(Of Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData).Handle
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData
+    name: FunctionCacheRefreshEventData
+    nameWithType: FunctionCacheRefreshEventData
+    fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Handle*
+  commentId: Overload:Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Handle
+  name: Handle
+  nameWithType: FunctionCacheRefreshEventHandler.Handle
+  fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventHandler.Handle
+- uid: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData
+  commentId: T:Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData
+  parent: Hybrid.Zero.Authorization.Events
+  name: FunctionCacheRefreshEventData
+  nameWithType: FunctionCacheRefreshEventData
+  fullName: Hybrid.Zero.Authorization.Events.FunctionCacheRefreshEventData
+- uid: Hybrid.EventBuses.EventHandlerBase`1.Handle(`0)
+  commentId: M:Hybrid.EventBuses.EventHandlerBase`1.Handle(`0)
+  name: Handle(TEventData)
+  nameWithType: EventHandlerBase<TEventData>.Handle(TEventData)
+  fullName: Hybrid.EventBuses.EventHandlerBase<TEventData>.Handle(TEventData)
+  nameWithType.vb: EventHandlerBase(Of TEventData).Handle(TEventData)
+  fullName.vb: Hybrid.EventBuses.EventHandlerBase(Of TEventData).Handle(TEventData)
+  spec.csharp:
+  - uid: Hybrid.EventBuses.EventHandlerBase`1.Handle(`0)
+    name: Handle
+    nameWithType: EventHandlerBase<TEventData>.Handle
+    fullName: Hybrid.EventBuses.EventHandlerBase<TEventData>.Handle
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEventData
+    nameWithType: TEventData
+    fullName: TEventData
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Hybrid.EventBuses.EventHandlerBase`1.Handle(`0)
+    name: Handle
+    nameWithType: EventHandlerBase(Of TEventData).Handle
+    fullName: Hybrid.EventBuses.EventHandlerBase(Of TEventData).Handle
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEventData
+    nameWithType: TEventData
+    fullName: TEventData
+  - name: )
+    nameWithType: )
+    fullName: )

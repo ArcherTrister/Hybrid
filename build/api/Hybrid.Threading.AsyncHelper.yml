@@ -1,0 +1,1180 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Threading.AsyncHelper
+  commentId: T:Hybrid.Threading.AsyncHelper
+  id: AsyncHelper
+  parent: Hybrid.Threading
+  children:
+  - Hybrid.Threading.AsyncHelper.AwaitTaskWithFinally(System.Threading.Tasks.Task,System.Action{System.Exception})
+  - Hybrid.Threading.AsyncHelper.AwaitTaskWithFinallyAndGetResult``1(System.Threading.Tasks.Task{``0},System.Action{System.Exception})
+  - Hybrid.Threading.AsyncHelper.AwaitTaskWithPostActionAndFinally(System.Threading.Tasks.Task,System.Func{System.Threading.Tasks.Task},System.Action{System.Exception})
+  - Hybrid.Threading.AsyncHelper.AwaitTaskWithPostActionAndFinallyAndGetResult``1(System.Threading.Tasks.Task{``0},System.Func{System.Threading.Tasks.Task},System.Action{System.Exception})
+  - Hybrid.Threading.AsyncHelper.AwaitTaskWithPreActionAndPostActionAndFinally(System.Func{System.Threading.Tasks.Task},System.Func{System.Threading.Tasks.Task},System.Func{System.Threading.Tasks.Task},System.Action{System.Exception})
+  - Hybrid.Threading.AsyncHelper.AwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult``1(System.Func{System.Threading.Tasks.Task{``0}},System.Func{System.Threading.Tasks.Task},System.Func{System.Threading.Tasks.Task},System.Action{System.Exception})
+  - Hybrid.Threading.AsyncHelper.CallAwaitTaskWithFinallyAndGetResult(System.Type,System.Object,System.Action{System.Exception})
+  - Hybrid.Threading.AsyncHelper.CallAwaitTaskWithPostActionAndFinallyAndGetResult(System.Type,System.Object,System.Func{System.Threading.Tasks.Task},System.Action{System.Exception})
+  - Hybrid.Threading.AsyncHelper.CallAwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult(System.Type,System.Func{System.Object},System.Func{System.Threading.Tasks.Task},System.Func{System.Threading.Tasks.Task},System.Action{System.Exception})
+  langs:
+  - csharp
+  - vb
+  name: AsyncHelper
+  nameWithType: AsyncHelper
+  fullName: Hybrid.Threading.AsyncHelper
+  type: Class
+  source:
+    remote:
+      path: src/Hybrid/Threading/AsyncHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: AsyncHelper
+    path: ../src/Hybrid/Threading/AsyncHelper.cs
+    startLine: 20
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Threading
+  summary: "\n异步辅助操作类\n"
+  example: []
+  syntax:
+    content: public static class AsyncHelper
+    content.vb: Public Module AsyncHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Hybrid.Threading.AsyncHelper.AwaitTaskWithFinally(System.Threading.Tasks.Task,System.Action{System.Exception})
+  commentId: M:Hybrid.Threading.AsyncHelper.AwaitTaskWithFinally(System.Threading.Tasks.Task,System.Action{System.Exception})
+  id: AwaitTaskWithFinally(System.Threading.Tasks.Task,System.Action{System.Exception})
+  parent: Hybrid.Threading.AsyncHelper
+  langs:
+  - csharp
+  - vb
+  name: AwaitTaskWithFinally(Task, Action<Exception>)
+  nameWithType: AsyncHelper.AwaitTaskWithFinally(Task, Action<Exception>)
+  fullName: Hybrid.Threading.AsyncHelper.AwaitTaskWithFinally(System.Threading.Tasks.Task, System.Action<System.Exception>)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Threading/AsyncHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: AwaitTaskWithFinally
+    path: ../src/Hybrid/Threading/AsyncHelper.cs
+    startLine: 25
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Threading
+  summary: "\n执行Task并处理Finally\n"
+  example: []
+  syntax:
+    content: public static Task AwaitTaskWithFinally(Task returnValueTask, Action<Exception> finalAction)
+    parameters:
+    - id: returnValueTask
+      type: System.Threading.Tasks.Task
+    - id: finalAction
+      type: System.Action{System.Exception}
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Shared Function AwaitTaskWithFinally(returnValueTask As Task, finalAction As Action(Of Exception)) As Task
+  overload: Hybrid.Threading.AsyncHelper.AwaitTaskWithFinally*
+  nameWithType.vb: AsyncHelper.AwaitTaskWithFinally(Task, Action(Of Exception))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Threading.AsyncHelper.AwaitTaskWithFinally(System.Threading.Tasks.Task, System.Action(Of System.Exception))
+  name.vb: AwaitTaskWithFinally(Task, Action(Of Exception))
+- uid: Hybrid.Threading.AsyncHelper.AwaitTaskWithPostActionAndFinally(System.Threading.Tasks.Task,System.Func{System.Threading.Tasks.Task},System.Action{System.Exception})
+  commentId: M:Hybrid.Threading.AsyncHelper.AwaitTaskWithPostActionAndFinally(System.Threading.Tasks.Task,System.Func{System.Threading.Tasks.Task},System.Action{System.Exception})
+  id: AwaitTaskWithPostActionAndFinally(System.Threading.Tasks.Task,System.Func{System.Threading.Tasks.Task},System.Action{System.Exception})
+  parent: Hybrid.Threading.AsyncHelper
+  langs:
+  - csharp
+  - vb
+  name: AwaitTaskWithPostActionAndFinally(Task, Func<Task>, Action<Exception>)
+  nameWithType: AsyncHelper.AwaitTaskWithPostActionAndFinally(Task, Func<Task>, Action<Exception>)
+  fullName: Hybrid.Threading.AsyncHelper.AwaitTaskWithPostActionAndFinally(System.Threading.Tasks.Task, System.Func<System.Threading.Tasks.Task>, System.Action<System.Exception>)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Threading/AsyncHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: AwaitTaskWithPostActionAndFinally
+    path: ../src/Hybrid/Threading/AsyncHelper.cs
+    startLine: 43
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Threading
+  syntax:
+    content: public static Task AwaitTaskWithPostActionAndFinally(Task returnValueTask, Func<Task> postAction, Action<Exception> finalAction)
+    parameters:
+    - id: returnValueTask
+      type: System.Threading.Tasks.Task
+    - id: postAction
+      type: System.Func{System.Threading.Tasks.Task}
+    - id: finalAction
+      type: System.Action{System.Exception}
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Shared Function AwaitTaskWithPostActionAndFinally(returnValueTask As Task, postAction As Func(Of Task), finalAction As Action(Of Exception)) As Task
+  overload: Hybrid.Threading.AsyncHelper.AwaitTaskWithPostActionAndFinally*
+  nameWithType.vb: AsyncHelper.AwaitTaskWithPostActionAndFinally(Task, Func(Of Task), Action(Of Exception))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Threading.AsyncHelper.AwaitTaskWithPostActionAndFinally(System.Threading.Tasks.Task, System.Func(Of System.Threading.Tasks.Task), System.Action(Of System.Exception))
+  name.vb: AwaitTaskWithPostActionAndFinally(Task, Func(Of Task), Action(Of Exception))
+- uid: Hybrid.Threading.AsyncHelper.AwaitTaskWithPreActionAndPostActionAndFinally(System.Func{System.Threading.Tasks.Task},System.Func{System.Threading.Tasks.Task},System.Func{System.Threading.Tasks.Task},System.Action{System.Exception})
+  commentId: M:Hybrid.Threading.AsyncHelper.AwaitTaskWithPreActionAndPostActionAndFinally(System.Func{System.Threading.Tasks.Task},System.Func{System.Threading.Tasks.Task},System.Func{System.Threading.Tasks.Task},System.Action{System.Exception})
+  id: AwaitTaskWithPreActionAndPostActionAndFinally(System.Func{System.Threading.Tasks.Task},System.Func{System.Threading.Tasks.Task},System.Func{System.Threading.Tasks.Task},System.Action{System.Exception})
+  parent: Hybrid.Threading.AsyncHelper
+  langs:
+  - csharp
+  - vb
+  name: AwaitTaskWithPreActionAndPostActionAndFinally(Func<Task>, Func<Task>, Func<Task>, Action<Exception>)
+  nameWithType: AsyncHelper.AwaitTaskWithPreActionAndPostActionAndFinally(Func<Task>, Func<Task>, Func<Task>, Action<Exception>)
+  fullName: Hybrid.Threading.AsyncHelper.AwaitTaskWithPreActionAndPostActionAndFinally(System.Func<System.Threading.Tasks.Task>, System.Func<System.Threading.Tasks.Task>, System.Func<System.Threading.Tasks.Task>, System.Action<System.Exception>)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Threading/AsyncHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: AwaitTaskWithPreActionAndPostActionAndFinally
+    path: ../src/Hybrid/Threading/AsyncHelper.cs
+    startLine: 63
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Threading
+  syntax:
+    content: public static Task AwaitTaskWithPreActionAndPostActionAndFinally(Func<Task> actualReturnValue, Func<Task> preAction = null, Func<Task> postAction = null, Action<Exception> finalAction = null)
+    parameters:
+    - id: actualReturnValue
+      type: System.Func{System.Threading.Tasks.Task}
+    - id: preAction
+      type: System.Func{System.Threading.Tasks.Task}
+    - id: postAction
+      type: System.Func{System.Threading.Tasks.Task}
+    - id: finalAction
+      type: System.Action{System.Exception}
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Shared Function AwaitTaskWithPreActionAndPostActionAndFinally(actualReturnValue As Func(Of Task), preAction As Func(Of Task) = Nothing, postAction As Func(Of Task) = Nothing, finalAction As Action(Of Exception) = Nothing) As Task
+  overload: Hybrid.Threading.AsyncHelper.AwaitTaskWithPreActionAndPostActionAndFinally*
+  nameWithType.vb: AsyncHelper.AwaitTaskWithPreActionAndPostActionAndFinally(Func(Of Task), Func(Of Task), Func(Of Task), Action(Of Exception))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Threading.AsyncHelper.AwaitTaskWithPreActionAndPostActionAndFinally(System.Func(Of System.Threading.Tasks.Task), System.Func(Of System.Threading.Tasks.Task), System.Func(Of System.Threading.Tasks.Task), System.Action(Of System.Exception))
+  name.vb: AwaitTaskWithPreActionAndPostActionAndFinally(Func(Of Task), Func(Of Task), Func(Of Task), Action(Of Exception))
+- uid: Hybrid.Threading.AsyncHelper.AwaitTaskWithFinallyAndGetResult``1(System.Threading.Tasks.Task{``0},System.Action{System.Exception})
+  commentId: M:Hybrid.Threading.AsyncHelper.AwaitTaskWithFinallyAndGetResult``1(System.Threading.Tasks.Task{``0},System.Action{System.Exception})
+  id: AwaitTaskWithFinallyAndGetResult``1(System.Threading.Tasks.Task{``0},System.Action{System.Exception})
+  parent: Hybrid.Threading.AsyncHelper
+  langs:
+  - csharp
+  - vb
+  name: AwaitTaskWithFinallyAndGetResult<T>(Task<T>, Action<Exception>)
+  nameWithType: AsyncHelper.AwaitTaskWithFinallyAndGetResult<T>(Task<T>, Action<Exception>)
+  fullName: Hybrid.Threading.AsyncHelper.AwaitTaskWithFinallyAndGetResult<T>(System.Threading.Tasks.Task<T>, System.Action<System.Exception>)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Threading/AsyncHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: AwaitTaskWithFinallyAndGetResult
+    path: ../src/Hybrid/Threading/AsyncHelper.cs
+    startLine: 95
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Threading
+  syntax:
+    content: public static Task<T> AwaitTaskWithFinallyAndGetResult<T>(Task<T> actualReturnValue, Action<Exception> finalAction)
+    parameters:
+    - id: actualReturnValue
+      type: System.Threading.Tasks.Task{{T}}
+    - id: finalAction
+      type: System.Action{System.Exception}
+    typeParameters:
+    - id: T
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+    content.vb: Public Shared Function AwaitTaskWithFinallyAndGetResult(Of T)(actualReturnValue As Task(Of T), finalAction As Action(Of Exception)) As Task(Of T)
+  overload: Hybrid.Threading.AsyncHelper.AwaitTaskWithFinallyAndGetResult*
+  nameWithType.vb: AsyncHelper.AwaitTaskWithFinallyAndGetResult(Of T)(Task(Of T), Action(Of Exception))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Threading.AsyncHelper.AwaitTaskWithFinallyAndGetResult(Of T)(System.Threading.Tasks.Task(Of T), System.Action(Of System.Exception))
+  name.vb: AwaitTaskWithFinallyAndGetResult(Of T)(Task(Of T), Action(Of Exception))
+- uid: Hybrid.Threading.AsyncHelper.CallAwaitTaskWithFinallyAndGetResult(System.Type,System.Object,System.Action{System.Exception})
+  commentId: M:Hybrid.Threading.AsyncHelper.CallAwaitTaskWithFinallyAndGetResult(System.Type,System.Object,System.Action{System.Exception})
+  id: CallAwaitTaskWithFinallyAndGetResult(System.Type,System.Object,System.Action{System.Exception})
+  parent: Hybrid.Threading.AsyncHelper
+  langs:
+  - csharp
+  - vb
+  name: CallAwaitTaskWithFinallyAndGetResult(Type, Object, Action<Exception>)
+  nameWithType: AsyncHelper.CallAwaitTaskWithFinallyAndGetResult(Type, Object, Action<Exception>)
+  fullName: Hybrid.Threading.AsyncHelper.CallAwaitTaskWithFinallyAndGetResult(System.Type, System.Object, System.Action<System.Exception>)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Threading/AsyncHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: CallAwaitTaskWithFinallyAndGetResult
+    path: ../src/Hybrid/Threading/AsyncHelper.cs
+    startLine: 114
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Threading
+  syntax:
+    content: public static object CallAwaitTaskWithFinallyAndGetResult(Type taskReturnType, object actualReturnValue, Action<Exception> finalAction)
+    parameters:
+    - id: taskReturnType
+      type: System.Type
+    - id: actualReturnValue
+      type: System.Object
+    - id: finalAction
+      type: System.Action{System.Exception}
+    return:
+      type: System.Object
+    content.vb: Public Shared Function CallAwaitTaskWithFinallyAndGetResult(taskReturnType As Type, actualReturnValue As Object, finalAction As Action(Of Exception)) As Object
+  overload: Hybrid.Threading.AsyncHelper.CallAwaitTaskWithFinallyAndGetResult*
+  nameWithType.vb: AsyncHelper.CallAwaitTaskWithFinallyAndGetResult(Type, Object, Action(Of Exception))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Threading.AsyncHelper.CallAwaitTaskWithFinallyAndGetResult(System.Type, System.Object, System.Action(Of System.Exception))
+  name.vb: CallAwaitTaskWithFinallyAndGetResult(Type, Object, Action(Of Exception))
+- uid: Hybrid.Threading.AsyncHelper.AwaitTaskWithPostActionAndFinallyAndGetResult``1(System.Threading.Tasks.Task{``0},System.Func{System.Threading.Tasks.Task},System.Action{System.Exception})
+  commentId: M:Hybrid.Threading.AsyncHelper.AwaitTaskWithPostActionAndFinallyAndGetResult``1(System.Threading.Tasks.Task{``0},System.Func{System.Threading.Tasks.Task},System.Action{System.Exception})
+  id: AwaitTaskWithPostActionAndFinallyAndGetResult``1(System.Threading.Tasks.Task{``0},System.Func{System.Threading.Tasks.Task},System.Action{System.Exception})
+  parent: Hybrid.Threading.AsyncHelper
+  langs:
+  - csharp
+  - vb
+  name: AwaitTaskWithPostActionAndFinallyAndGetResult<T>(Task<T>, Func<Task>, Action<Exception>)
+  nameWithType: AsyncHelper.AwaitTaskWithPostActionAndFinallyAndGetResult<T>(Task<T>, Func<Task>, Action<Exception>)
+  fullName: Hybrid.Threading.AsyncHelper.AwaitTaskWithPostActionAndFinallyAndGetResult<T>(System.Threading.Tasks.Task<T>, System.Func<System.Threading.Tasks.Task>, System.Action<System.Exception>)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Threading/AsyncHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: AwaitTaskWithPostActionAndFinallyAndGetResult
+    path: ../src/Hybrid/Threading/AsyncHelper.cs
+    startLine: 123
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Threading
+  syntax:
+    content: public static Task<T> AwaitTaskWithPostActionAndFinallyAndGetResult<T>(Task<T> actualReturnValue, Func<Task> postAction, Action<Exception> finalAction)
+    parameters:
+    - id: actualReturnValue
+      type: System.Threading.Tasks.Task{{T}}
+    - id: postAction
+      type: System.Func{System.Threading.Tasks.Task}
+    - id: finalAction
+      type: System.Action{System.Exception}
+    typeParameters:
+    - id: T
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+    content.vb: Public Shared Function AwaitTaskWithPostActionAndFinallyAndGetResult(Of T)(actualReturnValue As Task(Of T), postAction As Func(Of Task), finalAction As Action(Of Exception)) As Task(Of T)
+  overload: Hybrid.Threading.AsyncHelper.AwaitTaskWithPostActionAndFinallyAndGetResult*
+  nameWithType.vb: AsyncHelper.AwaitTaskWithPostActionAndFinallyAndGetResult(Of T)(Task(Of T), Func(Of Task), Action(Of Exception))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Threading.AsyncHelper.AwaitTaskWithPostActionAndFinallyAndGetResult(Of T)(System.Threading.Tasks.Task(Of T), System.Func(Of System.Threading.Tasks.Task), System.Action(Of System.Exception))
+  name.vb: AwaitTaskWithPostActionAndFinallyAndGetResult(Of T)(Task(Of T), Func(Of Task), Action(Of Exception))
+- uid: Hybrid.Threading.AsyncHelper.CallAwaitTaskWithPostActionAndFinallyAndGetResult(System.Type,System.Object,System.Func{System.Threading.Tasks.Task},System.Action{System.Exception})
+  commentId: M:Hybrid.Threading.AsyncHelper.CallAwaitTaskWithPostActionAndFinallyAndGetResult(System.Type,System.Object,System.Func{System.Threading.Tasks.Task},System.Action{System.Exception})
+  id: CallAwaitTaskWithPostActionAndFinallyAndGetResult(System.Type,System.Object,System.Func{System.Threading.Tasks.Task},System.Action{System.Exception})
+  parent: Hybrid.Threading.AsyncHelper
+  langs:
+  - csharp
+  - vb
+  name: CallAwaitTaskWithPostActionAndFinallyAndGetResult(Type, Object, Func<Task>, Action<Exception>)
+  nameWithType: AsyncHelper.CallAwaitTaskWithPostActionAndFinallyAndGetResult(Type, Object, Func<Task>, Action<Exception>)
+  fullName: Hybrid.Threading.AsyncHelper.CallAwaitTaskWithPostActionAndFinallyAndGetResult(System.Type, System.Object, System.Func<System.Threading.Tasks.Task>, System.Action<System.Exception>)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Threading/AsyncHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: CallAwaitTaskWithPostActionAndFinallyAndGetResult
+    path: ../src/Hybrid/Threading/AsyncHelper.cs
+    startLine: 146
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Threading
+  syntax:
+    content: public static object CallAwaitTaskWithPostActionAndFinallyAndGetResult(Type taskReturnType, object actualReturnValue, Func<Task> action, Action<Exception> finalAction)
+    parameters:
+    - id: taskReturnType
+      type: System.Type
+    - id: actualReturnValue
+      type: System.Object
+    - id: action
+      type: System.Func{System.Threading.Tasks.Task}
+    - id: finalAction
+      type: System.Action{System.Exception}
+    return:
+      type: System.Object
+    content.vb: Public Shared Function CallAwaitTaskWithPostActionAndFinallyAndGetResult(taskReturnType As Type, actualReturnValue As Object, action As Func(Of Task), finalAction As Action(Of Exception)) As Object
+  overload: Hybrid.Threading.AsyncHelper.CallAwaitTaskWithPostActionAndFinallyAndGetResult*
+  nameWithType.vb: AsyncHelper.CallAwaitTaskWithPostActionAndFinallyAndGetResult(Type, Object, Func(Of Task), Action(Of Exception))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Threading.AsyncHelper.CallAwaitTaskWithPostActionAndFinallyAndGetResult(System.Type, System.Object, System.Func(Of System.Threading.Tasks.Task), System.Action(Of System.Exception))
+  name.vb: CallAwaitTaskWithPostActionAndFinallyAndGetResult(Type, Object, Func(Of Task), Action(Of Exception))
+- uid: Hybrid.Threading.AsyncHelper.AwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult``1(System.Func{System.Threading.Tasks.Task{``0}},System.Func{System.Threading.Tasks.Task},System.Func{System.Threading.Tasks.Task},System.Action{System.Exception})
+  commentId: M:Hybrid.Threading.AsyncHelper.AwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult``1(System.Func{System.Threading.Tasks.Task{``0}},System.Func{System.Threading.Tasks.Task},System.Func{System.Threading.Tasks.Task},System.Action{System.Exception})
+  id: AwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult``1(System.Func{System.Threading.Tasks.Task{``0}},System.Func{System.Threading.Tasks.Task},System.Func{System.Threading.Tasks.Task},System.Action{System.Exception})
+  parent: Hybrid.Threading.AsyncHelper
+  langs:
+  - csharp
+  - vb
+  name: AwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult<T>(Func<Task<T>>, Func<Task>, Func<Task>, Action<Exception>)
+  nameWithType: AsyncHelper.AwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult<T>(Func<Task<T>>, Func<Task>, Func<Task>, Action<Exception>)
+  fullName: Hybrid.Threading.AsyncHelper.AwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult<T>(System.Func<System.Threading.Tasks.Task<T>>, System.Func<System.Threading.Tasks.Task>, System.Func<System.Threading.Tasks.Task>, System.Action<System.Exception>)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Threading/AsyncHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: AwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult
+    path: ../src/Hybrid/Threading/AsyncHelper.cs
+    startLine: 158
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Threading
+  syntax:
+    content: public static Task<T> AwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult<T>(Func<Task<T>> actualReturnValue, Func<Task> preAction = null, Func<Task> postAction = null, Action<Exception> finalAction = null)
+    parameters:
+    - id: actualReturnValue
+      type: System.Func{System.Threading.Tasks.Task{{T}}}
+    - id: preAction
+      type: System.Func{System.Threading.Tasks.Task}
+    - id: postAction
+      type: System.Func{System.Threading.Tasks.Task}
+    - id: finalAction
+      type: System.Action{System.Exception}
+    typeParameters:
+    - id: T
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+    content.vb: Public Shared Function AwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult(Of T)(actualReturnValue As Func(Of Task(Of T)), preAction As Func(Of Task) = Nothing, postAction As Func(Of Task) = Nothing, finalAction As Action(Of Exception) = Nothing) As Task(Of T)
+  overload: Hybrid.Threading.AsyncHelper.AwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult*
+  nameWithType.vb: AsyncHelper.AwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult(Of T)(Func(Of Task(Of T)), Func(Of Task), Func(Of Task), Action(Of Exception))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Threading.AsyncHelper.AwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult(Of T)(System.Func(Of System.Threading.Tasks.Task(Of T)), System.Func(Of System.Threading.Tasks.Task), System.Func(Of System.Threading.Tasks.Task), System.Action(Of System.Exception))
+  name.vb: AwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult(Of T)(Func(Of Task(Of T)), Func(Of Task), Func(Of Task), Action(Of Exception))
+- uid: Hybrid.Threading.AsyncHelper.CallAwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult(System.Type,System.Func{System.Object},System.Func{System.Threading.Tasks.Task},System.Func{System.Threading.Tasks.Task},System.Action{System.Exception})
+  commentId: M:Hybrid.Threading.AsyncHelper.CallAwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult(System.Type,System.Func{System.Object},System.Func{System.Threading.Tasks.Task},System.Func{System.Threading.Tasks.Task},System.Action{System.Exception})
+  id: CallAwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult(System.Type,System.Func{System.Object},System.Func{System.Threading.Tasks.Task},System.Func{System.Threading.Tasks.Task},System.Action{System.Exception})
+  parent: Hybrid.Threading.AsyncHelper
+  langs:
+  - csharp
+  - vb
+  name: CallAwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult(Type, Func<Object>, Func<Task>, Func<Task>, Action<Exception>)
+  nameWithType: AsyncHelper.CallAwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult(Type, Func<Object>, Func<Task>, Func<Task>, Action<Exception>)
+  fullName: Hybrid.Threading.AsyncHelper.CallAwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult(System.Type, System.Func<System.Object>, System.Func<System.Threading.Tasks.Task>, System.Func<System.Threading.Tasks.Task>, System.Action<System.Exception>)
+  type: Method
+  source:
+    remote:
+      path: src/Hybrid/Threading/AsyncHelper.cs
+      branch: dev
+      repo: https://github.com/ArcherTrister/Hybrid.git
+    id: CallAwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult
+    path: ../src/Hybrid/Threading/AsyncHelper.cs
+    startLine: 192
+  assemblies:
+  - Hybrid
+  namespace: Hybrid.Threading
+  syntax:
+    content: public static object CallAwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult(Type taskReturnType, Func<object> actualReturnValue, Func<Task> preAction = null, Func<Task> postAction = null, Action<Exception> finalAction = null)
+    parameters:
+    - id: taskReturnType
+      type: System.Type
+    - id: actualReturnValue
+      type: System.Func{System.Object}
+    - id: preAction
+      type: System.Func{System.Threading.Tasks.Task}
+    - id: postAction
+      type: System.Func{System.Threading.Tasks.Task}
+    - id: finalAction
+      type: System.Action{System.Exception}
+    return:
+      type: System.Object
+    content.vb: Public Shared Function CallAwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult(taskReturnType As Type, actualReturnValue As Func(Of Object), preAction As Func(Of Task) = Nothing, postAction As Func(Of Task) = Nothing, finalAction As Action(Of Exception) = Nothing) As Object
+  overload: Hybrid.Threading.AsyncHelper.CallAwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult*
+  nameWithType.vb: AsyncHelper.CallAwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult(Type, Func(Of Object), Func(Of Task), Func(Of Task), Action(Of Exception))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Hybrid.Threading.AsyncHelper.CallAwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult(System.Type, System.Func(Of System.Object), System.Func(Of System.Threading.Tasks.Task), System.Func(Of System.Threading.Tasks.Task), System.Action(Of System.Exception))
+  name.vb: CallAwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult(Type, Func(Of Object), Func(Of Task), Func(Of Task), Action(Of Exception))
+references:
+- uid: Hybrid.Threading
+  commentId: N:Hybrid.Threading
+  name: Hybrid.Threading
+  nameWithType: Hybrid.Threading
+  fullName: Hybrid.Threading
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hybrid.Threading.AsyncHelper.AwaitTaskWithFinally*
+  commentId: Overload:Hybrid.Threading.AsyncHelper.AwaitTaskWithFinally
+  name: AwaitTaskWithFinally
+  nameWithType: AsyncHelper.AwaitTaskWithFinally
+  fullName: Hybrid.Threading.AsyncHelper.AwaitTaskWithFinally
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Action{System.Exception}
+  commentId: T:System.Action{System.Exception}
+  parent: System
+  definition: System.Action`1
+  name: Action<Exception>
+  nameWithType: Action<Exception>
+  fullName: System.Action<System.Exception>
+  nameWithType.vb: Action(Of Exception)
+  fullName.vb: System.Action(Of System.Exception)
+  name.vb: Action(Of Exception)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Threading.AsyncHelper.AwaitTaskWithPostActionAndFinally*
+  commentId: Overload:Hybrid.Threading.AsyncHelper.AwaitTaskWithPostActionAndFinally
+  name: AwaitTaskWithPostActionAndFinally
+  nameWithType: AsyncHelper.AwaitTaskWithPostActionAndFinally
+  fullName: Hybrid.Threading.AsyncHelper.AwaitTaskWithPostActionAndFinally
+- uid: System.Func{System.Threading.Tasks.Task}
+  commentId: T:System.Func{System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`1
+  name: Func<Task>
+  nameWithType: Func<Task>
+  fullName: System.Func<System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of Task)
+  fullName.vb: System.Func(Of System.Threading.Tasks.Task)
+  name.vb: Func(Of Task)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Threading.AsyncHelper.AwaitTaskWithPreActionAndPostActionAndFinally*
+  commentId: Overload:Hybrid.Threading.AsyncHelper.AwaitTaskWithPreActionAndPostActionAndFinally
+  name: AwaitTaskWithPreActionAndPostActionAndFinally
+  nameWithType: AsyncHelper.AwaitTaskWithPreActionAndPostActionAndFinally
+  fullName: Hybrid.Threading.AsyncHelper.AwaitTaskWithPreActionAndPostActionAndFinally
+- uid: Hybrid.Threading.AsyncHelper.AwaitTaskWithFinallyAndGetResult*
+  commentId: Overload:Hybrid.Threading.AsyncHelper.AwaitTaskWithFinallyAndGetResult
+  name: AwaitTaskWithFinallyAndGetResult
+  nameWithType: AsyncHelper.AwaitTaskWithFinallyAndGetResult
+  fullName: Hybrid.Threading.AsyncHelper.AwaitTaskWithFinallyAndGetResult
+- uid: System.Threading.Tasks.Task{{T}}
+  commentId: T:System.Threading.Tasks.Task{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<T>
+  nameWithType: Task<T>
+  fullName: System.Threading.Tasks.Task<T>
+  nameWithType.vb: Task(Of T)
+  fullName.vb: System.Threading.Tasks.Task(Of T)
+  name.vb: Task(Of T)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Threading.AsyncHelper.CallAwaitTaskWithFinallyAndGetResult*
+  commentId: Overload:Hybrid.Threading.AsyncHelper.CallAwaitTaskWithFinallyAndGetResult
+  name: CallAwaitTaskWithFinallyAndGetResult
+  nameWithType: AsyncHelper.CallAwaitTaskWithFinallyAndGetResult
+  fullName: Hybrid.Threading.AsyncHelper.CallAwaitTaskWithFinallyAndGetResult
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Hybrid.Threading.AsyncHelper.AwaitTaskWithPostActionAndFinallyAndGetResult*
+  commentId: Overload:Hybrid.Threading.AsyncHelper.AwaitTaskWithPostActionAndFinallyAndGetResult
+  name: AwaitTaskWithPostActionAndFinallyAndGetResult
+  nameWithType: AsyncHelper.AwaitTaskWithPostActionAndFinallyAndGetResult
+  fullName: Hybrid.Threading.AsyncHelper.AwaitTaskWithPostActionAndFinallyAndGetResult
+- uid: Hybrid.Threading.AsyncHelper.CallAwaitTaskWithPostActionAndFinallyAndGetResult*
+  commentId: Overload:Hybrid.Threading.AsyncHelper.CallAwaitTaskWithPostActionAndFinallyAndGetResult
+  name: CallAwaitTaskWithPostActionAndFinallyAndGetResult
+  nameWithType: AsyncHelper.CallAwaitTaskWithPostActionAndFinallyAndGetResult
+  fullName: Hybrid.Threading.AsyncHelper.CallAwaitTaskWithPostActionAndFinallyAndGetResult
+- uid: Hybrid.Threading.AsyncHelper.AwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult*
+  commentId: Overload:Hybrid.Threading.AsyncHelper.AwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult
+  name: AwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult
+  nameWithType: AsyncHelper.AwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult
+  fullName: Hybrid.Threading.AsyncHelper.AwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult
+- uid: System.Func{System.Threading.Tasks.Task{{T}}}
+  commentId: T:System.Func{System.Threading.Tasks.Task{``0}}
+  parent: System
+  definition: System.Func`1
+  name: Func<Task<T>>
+  nameWithType: Func<Task<T>>
+  fullName: System.Func<System.Threading.Tasks.Task<T>>
+  nameWithType.vb: Func(Of Task(Of T))
+  fullName.vb: System.Func(Of System.Threading.Tasks.Task(Of T))
+  name.vb: Func(Of Task(Of T))
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Threading.AsyncHelper.CallAwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult*
+  commentId: Overload:Hybrid.Threading.AsyncHelper.CallAwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult
+  name: CallAwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult
+  nameWithType: AsyncHelper.CallAwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult
+  fullName: Hybrid.Threading.AsyncHelper.CallAwaitTaskWithPreActionAndPostActionAndFinallyAndGetResult
+- uid: System.Func{System.Object}
+  commentId: T:System.Func{System.Object}
+  parent: System
+  definition: System.Func`1
+  name: Func<Object>
+  nameWithType: Func<Object>
+  fullName: System.Func<System.Object>
+  nameWithType.vb: Func(Of Object)
+  fullName.vb: System.Func(Of System.Object)
+  name.vb: Func(Of Object)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -1,0 +1,76 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Threading.Asyncs
+  commentId: N:Hybrid.Threading.Asyncs
+  id: Hybrid.Threading.Asyncs
+  children:
+  - Hybrid.Threading.Asyncs.AsyncAutoResetEvent
+  - Hybrid.Threading.Asyncs.AsyncBarrier
+  - Hybrid.Threading.Asyncs.AsyncBarrier.AsyncBarrier1
+  - Hybrid.Threading.Asyncs.AsyncCountdownEvent
+  - Hybrid.Threading.Asyncs.AsyncLock
+  - Hybrid.Threading.Asyncs.AsyncLock.Releaser
+  - Hybrid.Threading.Asyncs.AsyncManualResetEvent
+  - Hybrid.Threading.Asyncs.AsyncReaderWriterLock
+  - Hybrid.Threading.Asyncs.AsyncReaderWriterLock.Releaser
+  - Hybrid.Threading.Asyncs.AsyncSemaphore
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Threading.Asyncs
+  nameWithType: Hybrid.Threading.Asyncs
+  fullName: Hybrid.Threading.Asyncs
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Threading.Asyncs.AsyncAutoResetEvent
+  commentId: T:Hybrid.Threading.Asyncs.AsyncAutoResetEvent
+  name: AsyncAutoResetEvent
+  nameWithType: AsyncAutoResetEvent
+  fullName: Hybrid.Threading.Asyncs.AsyncAutoResetEvent
+- uid: Hybrid.Threading.Asyncs.AsyncBarrier
+  commentId: T:Hybrid.Threading.Asyncs.AsyncBarrier
+  name: AsyncBarrier
+  nameWithType: AsyncBarrier
+  fullName: Hybrid.Threading.Asyncs.AsyncBarrier
+- uid: Hybrid.Threading.Asyncs.AsyncBarrier.AsyncBarrier1
+  commentId: T:Hybrid.Threading.Asyncs.AsyncBarrier.AsyncBarrier1
+  name: AsyncBarrier.AsyncBarrier1
+  nameWithType: AsyncBarrier.AsyncBarrier1
+  fullName: Hybrid.Threading.Asyncs.AsyncBarrier.AsyncBarrier1
+- uid: Hybrid.Threading.Asyncs.AsyncCountdownEvent
+  commentId: T:Hybrid.Threading.Asyncs.AsyncCountdownEvent
+  name: AsyncCountdownEvent
+  nameWithType: AsyncCountdownEvent
+  fullName: Hybrid.Threading.Asyncs.AsyncCountdownEvent
+- uid: Hybrid.Threading.Asyncs.AsyncLock
+  commentId: T:Hybrid.Threading.Asyncs.AsyncLock
+  name: AsyncLock
+  nameWithType: AsyncLock
+  fullName: Hybrid.Threading.Asyncs.AsyncLock
+- uid: Hybrid.Threading.Asyncs.AsyncLock.Releaser
+  commentId: T:Hybrid.Threading.Asyncs.AsyncLock.Releaser
+  name: AsyncLock.Releaser
+  nameWithType: AsyncLock.Releaser
+  fullName: Hybrid.Threading.Asyncs.AsyncLock.Releaser
+- uid: Hybrid.Threading.Asyncs.AsyncManualResetEvent
+  commentId: T:Hybrid.Threading.Asyncs.AsyncManualResetEvent
+  name: AsyncManualResetEvent
+  nameWithType: AsyncManualResetEvent
+  fullName: Hybrid.Threading.Asyncs.AsyncManualResetEvent
+- uid: Hybrid.Threading.Asyncs.AsyncReaderWriterLock
+  commentId: T:Hybrid.Threading.Asyncs.AsyncReaderWriterLock
+  name: AsyncReaderWriterLock
+  nameWithType: AsyncReaderWriterLock
+  fullName: Hybrid.Threading.Asyncs.AsyncReaderWriterLock
+- uid: Hybrid.Threading.Asyncs.AsyncReaderWriterLock.Releaser
+  commentId: T:Hybrid.Threading.Asyncs.AsyncReaderWriterLock.Releaser
+  name: AsyncReaderWriterLock.Releaser
+  nameWithType: AsyncReaderWriterLock.Releaser
+  fullName: Hybrid.Threading.Asyncs.AsyncReaderWriterLock.Releaser
+- uid: Hybrid.Threading.Asyncs.AsyncSemaphore
+  commentId: T:Hybrid.Threading.Asyncs.AsyncSemaphore
+  name: AsyncSemaphore
+  nameWithType: AsyncSemaphore
+  fullName: Hybrid.Threading.Asyncs.AsyncSemaphore

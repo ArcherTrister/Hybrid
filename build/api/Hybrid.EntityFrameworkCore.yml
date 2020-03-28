@@ -1,0 +1,347 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.EntityFrameworkCore
+  commentId: N:Hybrid.EntityFrameworkCore
+  id: Hybrid.EntityFrameworkCore
+  children:
+  - Hybrid.EntityFrameworkCore.AuditEntityProvider
+  - Hybrid.EntityFrameworkCore.DbContextBase
+  - Hybrid.EntityFrameworkCore.DbContextExtensions
+  - Hybrid.EntityFrameworkCore.DbContextModelCache
+  - Hybrid.EntityFrameworkCore.DesignTimeDbContextFactoryBase`1
+  - Hybrid.EntityFrameworkCore.EntityConfigurationTypeFinder
+  - Hybrid.EntityFrameworkCore.EntityFrameworkCoreModuleBase
+  - Hybrid.EntityFrameworkCore.EntityManager
+  - Hybrid.EntityFrameworkCore.EntityTypeConfigurationBase`2
+  - Hybrid.EntityFrameworkCore.IAuditEntityProvider
+  - Hybrid.EntityFrameworkCore.IDbContextOptionsBuilderDriveHandler
+  - Hybrid.EntityFrameworkCore.IEntityConfigurationTypeFinder
+  - Hybrid.EntityFrameworkCore.IEntityManager
+  - Hybrid.EntityFrameworkCore.IEntityRegister
+  - Hybrid.EntityFrameworkCore.MigrationModuleBase`1
+  - Hybrid.EntityFrameworkCore.Repository`2
+  - Hybrid.EntityFrameworkCore.RepositoryExtensions
+  - Hybrid.EntityFrameworkCore.ServiceCollectionExtensions
+  - Hybrid.EntityFrameworkCore.SqlExecutorBase`2
+  - Hybrid.EntityFrameworkCore.UnitOfWork
+  - Hybrid.EntityFrameworkCore.UnitOfWorkManager
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.EntityFrameworkCore
+  nameWithType: Hybrid.EntityFrameworkCore
+  fullName: Hybrid.EntityFrameworkCore
+  type: Namespace
+  assemblies:
+  - Hybrid.EntityFrameworkCore
+references:
+- uid: Hybrid.EntityFrameworkCore.AuditEntityProvider
+  commentId: T:Hybrid.EntityFrameworkCore.AuditEntityProvider
+  name: AuditEntityProvider
+  nameWithType: AuditEntityProvider
+  fullName: Hybrid.EntityFrameworkCore.AuditEntityProvider
+- uid: Hybrid.EntityFrameworkCore.DbContextBase
+  commentId: T:Hybrid.EntityFrameworkCore.DbContextBase
+  parent: Hybrid.EntityFrameworkCore
+  name: DbContextBase
+  nameWithType: DbContextBase
+  fullName: Hybrid.EntityFrameworkCore.DbContextBase
+- uid: Hybrid.EntityFrameworkCore.DbContextExtensions
+  commentId: T:Hybrid.EntityFrameworkCore.DbContextExtensions
+  parent: Hybrid.EntityFrameworkCore
+  name: DbContextExtensions
+  nameWithType: DbContextExtensions
+  fullName: Hybrid.EntityFrameworkCore.DbContextExtensions
+- uid: Hybrid.EntityFrameworkCore.DbContextModelCache
+  commentId: T:Hybrid.EntityFrameworkCore.DbContextModelCache
+  name: DbContextModelCache
+  nameWithType: DbContextModelCache
+  fullName: Hybrid.EntityFrameworkCore.DbContextModelCache
+- uid: Hybrid.EntityFrameworkCore.DesignTimeDbContextFactoryBase`1
+  commentId: T:Hybrid.EntityFrameworkCore.DesignTimeDbContextFactoryBase`1
+  name: DesignTimeDbContextFactoryBase<TDbContext>
+  nameWithType: DesignTimeDbContextFactoryBase<TDbContext>
+  fullName: Hybrid.EntityFrameworkCore.DesignTimeDbContextFactoryBase<TDbContext>
+  nameWithType.vb: DesignTimeDbContextFactoryBase(Of TDbContext)
+  fullName.vb: Hybrid.EntityFrameworkCore.DesignTimeDbContextFactoryBase(Of TDbContext)
+  name.vb: DesignTimeDbContextFactoryBase(Of TDbContext)
+  spec.csharp:
+  - uid: Hybrid.EntityFrameworkCore.DesignTimeDbContextFactoryBase`1
+    name: DesignTimeDbContextFactoryBase
+    nameWithType: DesignTimeDbContextFactoryBase
+    fullName: Hybrid.EntityFrameworkCore.DesignTimeDbContextFactoryBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.EntityFrameworkCore.DesignTimeDbContextFactoryBase`1
+    name: DesignTimeDbContextFactoryBase
+    nameWithType: DesignTimeDbContextFactoryBase
+    fullName: Hybrid.EntityFrameworkCore.DesignTimeDbContextFactoryBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.EntityFrameworkCore.EntityConfigurationTypeFinder
+  commentId: T:Hybrid.EntityFrameworkCore.EntityConfigurationTypeFinder
+  name: EntityConfigurationTypeFinder
+  nameWithType: EntityConfigurationTypeFinder
+  fullName: Hybrid.EntityFrameworkCore.EntityConfigurationTypeFinder
+- uid: Hybrid.EntityFrameworkCore.EntityFrameworkCoreModuleBase
+  commentId: T:Hybrid.EntityFrameworkCore.EntityFrameworkCoreModuleBase
+  parent: Hybrid.EntityFrameworkCore
+  name: EntityFrameworkCoreModuleBase
+  nameWithType: EntityFrameworkCoreModuleBase
+  fullName: Hybrid.EntityFrameworkCore.EntityFrameworkCoreModuleBase
+- uid: Hybrid.EntityFrameworkCore.EntityManager
+  commentId: T:Hybrid.EntityFrameworkCore.EntityManager
+  name: EntityManager
+  nameWithType: EntityManager
+  fullName: Hybrid.EntityFrameworkCore.EntityManager
+- uid: Hybrid.EntityFrameworkCore.EntityTypeConfigurationBase`2
+  commentId: T:Hybrid.EntityFrameworkCore.EntityTypeConfigurationBase`2
+  name: EntityTypeConfigurationBase<TEntity, TKey>
+  nameWithType: EntityTypeConfigurationBase<TEntity, TKey>
+  fullName: Hybrid.EntityFrameworkCore.EntityTypeConfigurationBase<TEntity, TKey>
+  nameWithType.vb: EntityTypeConfigurationBase(Of TEntity, TKey)
+  fullName.vb: Hybrid.EntityFrameworkCore.EntityTypeConfigurationBase(Of TEntity, TKey)
+  name.vb: EntityTypeConfigurationBase(Of TEntity, TKey)
+  spec.csharp:
+  - uid: Hybrid.EntityFrameworkCore.EntityTypeConfigurationBase`2
+    name: EntityTypeConfigurationBase
+    nameWithType: EntityTypeConfigurationBase
+    fullName: Hybrid.EntityFrameworkCore.EntityTypeConfigurationBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.EntityFrameworkCore.EntityTypeConfigurationBase`2
+    name: EntityTypeConfigurationBase
+    nameWithType: EntityTypeConfigurationBase
+    fullName: Hybrid.EntityFrameworkCore.EntityTypeConfigurationBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.EntityFrameworkCore.IAuditEntityProvider
+  commentId: T:Hybrid.EntityFrameworkCore.IAuditEntityProvider
+  parent: Hybrid.EntityFrameworkCore
+  name: IAuditEntityProvider
+  nameWithType: IAuditEntityProvider
+  fullName: Hybrid.EntityFrameworkCore.IAuditEntityProvider
+- uid: Hybrid.EntityFrameworkCore.IDbContextOptionsBuilderDriveHandler
+  commentId: T:Hybrid.EntityFrameworkCore.IDbContextOptionsBuilderDriveHandler
+  parent: Hybrid.EntityFrameworkCore
+  name: IDbContextOptionsBuilderDriveHandler
+  nameWithType: IDbContextOptionsBuilderDriveHandler
+  fullName: Hybrid.EntityFrameworkCore.IDbContextOptionsBuilderDriveHandler
+- uid: Hybrid.EntityFrameworkCore.IEntityConfigurationTypeFinder
+  commentId: T:Hybrid.EntityFrameworkCore.IEntityConfigurationTypeFinder
+  parent: Hybrid.EntityFrameworkCore
+  name: IEntityConfigurationTypeFinder
+  nameWithType: IEntityConfigurationTypeFinder
+  fullName: Hybrid.EntityFrameworkCore.IEntityConfigurationTypeFinder
+- uid: Hybrid.EntityFrameworkCore.IEntityManager
+  commentId: T:Hybrid.EntityFrameworkCore.IEntityManager
+  parent: Hybrid.EntityFrameworkCore
+  name: IEntityManager
+  nameWithType: IEntityManager
+  fullName: Hybrid.EntityFrameworkCore.IEntityManager
+- uid: Hybrid.EntityFrameworkCore.IEntityRegister
+  commentId: T:Hybrid.EntityFrameworkCore.IEntityRegister
+  parent: Hybrid.EntityFrameworkCore
+  name: IEntityRegister
+  nameWithType: IEntityRegister
+  fullName: Hybrid.EntityFrameworkCore.IEntityRegister
+- uid: Hybrid.EntityFrameworkCore.MigrationModuleBase`1
+  commentId: T:Hybrid.EntityFrameworkCore.MigrationModuleBase`1
+  name: MigrationModuleBase<TDbContext>
+  nameWithType: MigrationModuleBase<TDbContext>
+  fullName: Hybrid.EntityFrameworkCore.MigrationModuleBase<TDbContext>
+  nameWithType.vb: MigrationModuleBase(Of TDbContext)
+  fullName.vb: Hybrid.EntityFrameworkCore.MigrationModuleBase(Of TDbContext)
+  name.vb: MigrationModuleBase(Of TDbContext)
+  spec.csharp:
+  - uid: Hybrid.EntityFrameworkCore.MigrationModuleBase`1
+    name: MigrationModuleBase
+    nameWithType: MigrationModuleBase
+    fullName: Hybrid.EntityFrameworkCore.MigrationModuleBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.EntityFrameworkCore.MigrationModuleBase`1
+    name: MigrationModuleBase
+    nameWithType: MigrationModuleBase
+    fullName: Hybrid.EntityFrameworkCore.MigrationModuleBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.EntityFrameworkCore.Repository`2
+  commentId: T:Hybrid.EntityFrameworkCore.Repository`2
+  name: Repository<TEntity, TKey>
+  nameWithType: Repository<TEntity, TKey>
+  fullName: Hybrid.EntityFrameworkCore.Repository<TEntity, TKey>
+  nameWithType.vb: Repository(Of TEntity, TKey)
+  fullName.vb: Hybrid.EntityFrameworkCore.Repository(Of TEntity, TKey)
+  name.vb: Repository(Of TEntity, TKey)
+  spec.csharp:
+  - uid: Hybrid.EntityFrameworkCore.Repository`2
+    name: Repository
+    nameWithType: Repository
+    fullName: Hybrid.EntityFrameworkCore.Repository
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.EntityFrameworkCore.Repository`2
+    name: Repository
+    nameWithType: Repository
+    fullName: Hybrid.EntityFrameworkCore.Repository
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.EntityFrameworkCore.RepositoryExtensions
+  commentId: T:Hybrid.EntityFrameworkCore.RepositoryExtensions
+  parent: Hybrid.EntityFrameworkCore
+  name: RepositoryExtensions
+  nameWithType: RepositoryExtensions
+  fullName: Hybrid.EntityFrameworkCore.RepositoryExtensions
+- uid: Hybrid.EntityFrameworkCore.ServiceCollectionExtensions
+  commentId: T:Hybrid.EntityFrameworkCore.ServiceCollectionExtensions
+  name: ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+  fullName: Hybrid.EntityFrameworkCore.ServiceCollectionExtensions
+- uid: Hybrid.EntityFrameworkCore.SqlExecutorBase`2
+  commentId: T:Hybrid.EntityFrameworkCore.SqlExecutorBase`2
+  name: SqlExecutorBase<TEntity, TKey>
+  nameWithType: SqlExecutorBase<TEntity, TKey>
+  fullName: Hybrid.EntityFrameworkCore.SqlExecutorBase<TEntity, TKey>
+  nameWithType.vb: SqlExecutorBase(Of TEntity, TKey)
+  fullName.vb: Hybrid.EntityFrameworkCore.SqlExecutorBase(Of TEntity, TKey)
+  name.vb: SqlExecutorBase(Of TEntity, TKey)
+  spec.csharp:
+  - uid: Hybrid.EntityFrameworkCore.SqlExecutorBase`2
+    name: SqlExecutorBase
+    nameWithType: SqlExecutorBase
+    fullName: Hybrid.EntityFrameworkCore.SqlExecutorBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.EntityFrameworkCore.SqlExecutorBase`2
+    name: SqlExecutorBase
+    nameWithType: SqlExecutorBase
+    fullName: Hybrid.EntityFrameworkCore.SqlExecutorBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.EntityFrameworkCore.UnitOfWork
+  commentId: T:Hybrid.EntityFrameworkCore.UnitOfWork
+  name: UnitOfWork
+  nameWithType: UnitOfWork
+  fullName: Hybrid.EntityFrameworkCore.UnitOfWork
+- uid: Hybrid.EntityFrameworkCore.UnitOfWorkManager
+  commentId: T:Hybrid.EntityFrameworkCore.UnitOfWorkManager
+  name: UnitOfWorkManager
+  nameWithType: UnitOfWorkManager
+  fullName: Hybrid.EntityFrameworkCore.UnitOfWorkManager
+- uid: Hybrid.EntityFrameworkCore
+  commentId: N:Hybrid.EntityFrameworkCore
+  name: Hybrid.EntityFrameworkCore
+  nameWithType: Hybrid.EntityFrameworkCore
+  fullName: Hybrid.EntityFrameworkCore

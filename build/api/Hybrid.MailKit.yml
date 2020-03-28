@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.MailKit
+  commentId: N:Hybrid.MailKit
+  id: Hybrid.MailKit
+  children:
+  - Hybrid.MailKit.EmailExtensions
+  - Hybrid.MailKit.MailKitEmailSender
+  - Hybrid.MailKit.MailKitModule
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.MailKit
+  nameWithType: Hybrid.MailKit
+  fullName: Hybrid.MailKit
+  type: Namespace
+  assemblies:
+  - Hybrid.MailKit
+references:
+- uid: Hybrid.MailKit.EmailExtensions
+  commentId: T:Hybrid.MailKit.EmailExtensions
+  name: EmailExtensions
+  nameWithType: EmailExtensions
+  fullName: Hybrid.MailKit.EmailExtensions
+- uid: Hybrid.MailKit.MailKitEmailSender
+  commentId: T:Hybrid.MailKit.MailKitEmailSender
+  name: MailKitEmailSender
+  nameWithType: MailKitEmailSender
+  fullName: Hybrid.MailKit.MailKitEmailSender
+- uid: Hybrid.MailKit.MailKitModule
+  commentId: T:Hybrid.MailKit.MailKitModule
+  name: MailKitModule
+  nameWithType: MailKitModule
+  fullName: Hybrid.MailKit.MailKitModule

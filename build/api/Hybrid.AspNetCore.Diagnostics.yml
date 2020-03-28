@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.AspNetCore.Diagnostics
+  commentId: N:Hybrid.AspNetCore.Diagnostics
+  id: Hybrid.AspNetCore.Diagnostics
+  children:
+  - Hybrid.AspNetCore.Diagnostics.HealthChecksModule
+  - Hybrid.AspNetCore.Diagnostics.HealthChecksModuleBase
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.AspNetCore.Diagnostics
+  nameWithType: Hybrid.AspNetCore.Diagnostics
+  fullName: Hybrid.AspNetCore.Diagnostics
+  type: Namespace
+  assemblies:
+  - Hybrid.AspNetCore.Diagnostics
+references:
+- uid: Hybrid.AspNetCore.Diagnostics.HealthChecksModule
+  commentId: T:Hybrid.AspNetCore.Diagnostics.HealthChecksModule
+  name: HealthChecksModule
+  nameWithType: HealthChecksModule
+  fullName: Hybrid.AspNetCore.Diagnostics.HealthChecksModule
+- uid: Hybrid.AspNetCore.Diagnostics.HealthChecksModuleBase
+  commentId: T:Hybrid.AspNetCore.Diagnostics.HealthChecksModuleBase
+  parent: Hybrid.AspNetCore.Diagnostics
+  name: HealthChecksModuleBase
+  nameWithType: HealthChecksModuleBase
+  fullName: Hybrid.AspNetCore.Diagnostics.HealthChecksModuleBase
+- uid: Hybrid.AspNetCore.Diagnostics
+  commentId: N:Hybrid.AspNetCore.Diagnostics
+  name: Hybrid.AspNetCore.Diagnostics
+  nameWithType: Hybrid.AspNetCore.Diagnostics
+  fullName: Hybrid.AspNetCore.Diagnostics

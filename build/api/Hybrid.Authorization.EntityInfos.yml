@@ -1,0 +1,115 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Authorization.EntityInfos
+  commentId: N:Hybrid.Authorization.EntityInfos
+  id: Hybrid.Authorization.EntityInfos
+  children:
+  - Hybrid.Authorization.EntityInfos.EntityInfo
+  - Hybrid.Authorization.EntityInfos.EntityInfoBase
+  - Hybrid.Authorization.EntityInfos.EntityInfoHandler
+  - Hybrid.Authorization.EntityInfos.EntityInfoHandlerBase`2
+  - Hybrid.Authorization.EntityInfos.EntityInfoModule
+  - Hybrid.Authorization.EntityInfos.EntityProperty
+  - Hybrid.Authorization.EntityInfos.IEntityInfo
+  - Hybrid.Authorization.EntityInfos.IEntityInfoHandler
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Authorization.EntityInfos
+  nameWithType: Hybrid.Authorization.EntityInfos
+  fullName: Hybrid.Authorization.EntityInfos
+  type: Namespace
+  assemblies:
+  - Hybrid
+references:
+- uid: Hybrid.Authorization.EntityInfos.EntityInfo
+  commentId: T:Hybrid.Authorization.EntityInfos.EntityInfo
+  name: EntityInfo
+  nameWithType: EntityInfo
+  fullName: Hybrid.Authorization.EntityInfos.EntityInfo
+- uid: Hybrid.Authorization.EntityInfos.EntityInfoBase
+  commentId: T:Hybrid.Authorization.EntityInfos.EntityInfoBase
+  parent: Hybrid.Authorization.EntityInfos
+  name: EntityInfoBase
+  nameWithType: EntityInfoBase
+  fullName: Hybrid.Authorization.EntityInfos.EntityInfoBase
+- uid: Hybrid.Authorization.EntityInfos.EntityInfoHandler
+  commentId: T:Hybrid.Authorization.EntityInfos.EntityInfoHandler
+  name: EntityInfoHandler
+  nameWithType: EntityInfoHandler
+  fullName: Hybrid.Authorization.EntityInfos.EntityInfoHandler
+- uid: Hybrid.Authorization.EntityInfos.EntityInfoHandlerBase`2
+  commentId: T:Hybrid.Authorization.EntityInfos.EntityInfoHandlerBase`2
+  name: EntityInfoHandlerBase<TEntityInfo, TEntityInfoHandler>
+  nameWithType: EntityInfoHandlerBase<TEntityInfo, TEntityInfoHandler>
+  fullName: Hybrid.Authorization.EntityInfos.EntityInfoHandlerBase<TEntityInfo, TEntityInfoHandler>
+  nameWithType.vb: EntityInfoHandlerBase(Of TEntityInfo, TEntityInfoHandler)
+  fullName.vb: Hybrid.Authorization.EntityInfos.EntityInfoHandlerBase(Of TEntityInfo, TEntityInfoHandler)
+  name.vb: EntityInfoHandlerBase(Of TEntityInfo, TEntityInfoHandler)
+  spec.csharp:
+  - uid: Hybrid.Authorization.EntityInfos.EntityInfoHandlerBase`2
+    name: EntityInfoHandlerBase
+    nameWithType: EntityInfoHandlerBase
+    fullName: Hybrid.Authorization.EntityInfos.EntityInfoHandlerBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntityInfo
+    nameWithType: TEntityInfo
+    fullName: TEntityInfo
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntityInfoHandler
+    nameWithType: TEntityInfoHandler
+    fullName: TEntityInfoHandler
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Hybrid.Authorization.EntityInfos.EntityInfoHandlerBase`2
+    name: EntityInfoHandlerBase
+    nameWithType: EntityInfoHandlerBase
+    fullName: Hybrid.Authorization.EntityInfos.EntityInfoHandlerBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntityInfo
+    nameWithType: TEntityInfo
+    fullName: TEntityInfo
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntityInfoHandler
+    nameWithType: TEntityInfoHandler
+    fullName: TEntityInfoHandler
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Hybrid.Authorization.EntityInfos.EntityInfoModule
+  commentId: T:Hybrid.Authorization.EntityInfos.EntityInfoModule
+  name: EntityInfoModule
+  nameWithType: EntityInfoModule
+  fullName: Hybrid.Authorization.EntityInfos.EntityInfoModule
+- uid: Hybrid.Authorization.EntityInfos.EntityProperty
+  commentId: T:Hybrid.Authorization.EntityInfos.EntityProperty
+  name: EntityProperty
+  nameWithType: EntityProperty
+  fullName: Hybrid.Authorization.EntityInfos.EntityProperty
+- uid: Hybrid.Authorization.EntityInfos.IEntityInfo
+  commentId: T:Hybrid.Authorization.EntityInfos.IEntityInfo
+  parent: Hybrid.Authorization.EntityInfos
+  name: IEntityInfo
+  nameWithType: IEntityInfo
+  fullName: Hybrid.Authorization.EntityInfos.IEntityInfo
+- uid: Hybrid.Authorization.EntityInfos.IEntityInfoHandler
+  commentId: T:Hybrid.Authorization.EntityInfos.IEntityInfoHandler
+  parent: Hybrid.Authorization.EntityInfos
+  name: IEntityInfoHandler
+  nameWithType: IEntityInfoHandler
+  fullName: Hybrid.Authorization.EntityInfos.IEntityInfoHandler
+- uid: Hybrid.Authorization.EntityInfos
+  commentId: N:Hybrid.Authorization.EntityInfos
+  name: Hybrid.Authorization.EntityInfos
+  nameWithType: Hybrid.Authorization.EntityInfos
+  fullName: Hybrid.Authorization.EntityInfos

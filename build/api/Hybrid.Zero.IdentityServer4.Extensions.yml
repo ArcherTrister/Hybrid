@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Hybrid.Zero.IdentityServer4.Extensions
+  commentId: N:Hybrid.Zero.IdentityServer4.Extensions
+  id: Hybrid.Zero.IdentityServer4.Extensions
+  children:
+  - Hybrid.Zero.IdentityServer4.Extensions.IdentityResourcesExtensions
+  - Hybrid.Zero.IdentityServer4.Extensions.IdentityResourcesExtensions.HybridCustomResource
+  langs:
+  - csharp
+  - vb
+  name: Hybrid.Zero.IdentityServer4.Extensions
+  nameWithType: Hybrid.Zero.IdentityServer4.Extensions
+  fullName: Hybrid.Zero.IdentityServer4.Extensions
+  type: Namespace
+  assemblies:
+  - Hybrid.Zero.IdentityServer4
+references:
+- uid: Hybrid.Zero.IdentityServer4.Extensions.IdentityResourcesExtensions
+  commentId: T:Hybrid.Zero.IdentityServer4.Extensions.IdentityResourcesExtensions
+  name: IdentityResourcesExtensions
+  nameWithType: IdentityResourcesExtensions
+  fullName: Hybrid.Zero.IdentityServer4.Extensions.IdentityResourcesExtensions
+- uid: Hybrid.Zero.IdentityServer4.Extensions.IdentityResourcesExtensions.HybridCustomResource
+  commentId: T:Hybrid.Zero.IdentityServer4.Extensions.IdentityResourcesExtensions.HybridCustomResource
+  name: IdentityResourcesExtensions.HybridCustomResource
+  nameWithType: IdentityResourcesExtensions.HybridCustomResource
+  fullName: Hybrid.Zero.IdentityServer4.Extensions.IdentityResourcesExtensions.HybridCustomResource
