@@ -32,7 +32,7 @@ namespace Hybrid.Web.Startups
         }
 
         ///// <summary>
-        ///// 
+        /////
         ///// </summary>
         ///// <param name="endpoints"></param>
         ///// <returns></returns>

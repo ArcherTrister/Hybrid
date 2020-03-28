@@ -9,7 +9,6 @@
 
 using Hybrid.Authorization;
 using Hybrid.EventBuses;
-using Hybrid.Security;
 
 namespace Hybrid.Zero.Authorization.Events
 {

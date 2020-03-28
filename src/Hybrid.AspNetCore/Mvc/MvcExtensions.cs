@@ -7,11 +7,11 @@
 //  <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Authorization;
 using Hybrid.Authorization.Functions;
 using Hybrid.Dependency;
 using Hybrid.Exceptions;
 using Hybrid.Extensions;
-using Hybrid.Authorization;
 
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

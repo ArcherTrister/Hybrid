@@ -14,6 +14,7 @@ using Hybrid.Authorization.ModuleInfos;
 using Hybrid.Core.Modules;
 using Hybrid.Zero.Authorization.Dtos;
 using Hybrid.Zero.Authorization.Entities;
+
 using Microsoft.Extensions.DependencyInjection;
 
 using System;

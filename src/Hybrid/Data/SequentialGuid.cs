@@ -1,4 +1,5 @@
 ﻿using Hybrid.Domain.EntityFramework;
+
 using System;
 using System.Security.Cryptography;
 
@@ -47,10 +48,12 @@ namespace Hybrid.Data
                         Array.Reverse(guidBytes, 4, 2);
                     }
                     break;
+
                 case SequentialGuidType.SequentialAtEnd:
                     Buffer.BlockCopy(randomBytes, 0, guidBytes, 0, 10);
                     Buffer.BlockCopy(timestampBytes, 2, guidBytes, 10, 6);
                     break;
+
                 default:
                     throw new ArgumentOutOfRangeException(nameof(guidType), guidType, null);
             }
@@ -67,12 +70,15 @@ namespace Hybrid.Data
             {
                 case DatabaseType.SqlServer:
                     return Create(SequentialGuidType.SequentialAtEnd);
+
                 case DatabaseType.Sqlite:
                 case DatabaseType.MySql:
                 case DatabaseType.PostgreSql:
                     return Create(SequentialGuidType.SequentialAsString);
+
                 case DatabaseType.Oracle:
                     return Create(SequentialGuidType.SequentialAsBinary);
+
                 default:
                     throw new ArgumentOutOfRangeException(nameof(databaseType), databaseType, null);
             }

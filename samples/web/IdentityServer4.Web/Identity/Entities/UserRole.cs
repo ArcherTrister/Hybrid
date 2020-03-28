@@ -7,8 +7,8 @@
 //  <last-date>2018-06-27 4:44</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Zero.Identity;
 using Hybrid.Zero.Identity.Entities;
+
 using System;
 using System.ComponentModel;
 

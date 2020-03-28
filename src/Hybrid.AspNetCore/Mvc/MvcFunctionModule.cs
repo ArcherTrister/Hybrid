@@ -10,7 +10,6 @@
 using Hybrid.Authorization.Functions;
 using Hybrid.Authorization.ModuleInfos;
 using Hybrid.Core.Modules;
-using Hybrid.Dependency;
 
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;

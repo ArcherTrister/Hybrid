@@ -12,7 +12,6 @@ namespace Hybrid.Net.Mail.Configuration
         /// </summary>
         public EmailSenderConfiguration()
         {
-
         }
 
         /// <summary>

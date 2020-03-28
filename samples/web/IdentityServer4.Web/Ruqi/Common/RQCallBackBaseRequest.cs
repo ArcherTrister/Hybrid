@@ -3,7 +3,7 @@
 namespace FlyingFish.Mobile.Ruqi.Common
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public class RQCallBackBaseRequest
     {

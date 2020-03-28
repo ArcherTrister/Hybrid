@@ -8,6 +8,7 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.Zero.Identity;
+
 using System.ComponentModel.DataAnnotations;
 
 namespace Hybrid.Identity.JwtBearer.Dtos

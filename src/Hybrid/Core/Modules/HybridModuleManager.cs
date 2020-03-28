@@ -8,15 +8,16 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.Core.Builders;
-using Hybrid.Dependency;
 using Hybrid.Exceptions;
 using Hybrid.Extensions;
 using Hybrid.Localization;
+
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 
 namespace Hybrid.Core.Modules
@@ -108,7 +109,7 @@ namespace Hybrid.Core.Modules
         {
             ILogger logger = provider.GetLogger<HybridModuleManager>();
             logger.LogInformation("Hybrid框架初始化开始");
-            DateTime dtStart = DateTime.Now;
+            Stopwatch watch = Stopwatch.StartNew();
 
             foreach (HybridModule module in LoadedModules)
             {
@@ -119,8 +120,8 @@ namespace Hybrid.Core.Modules
             ILocalizationManager localizationManager = provider.GetRequiredService<ILocalizationManager>();
             localizationManager.Initialize();
 
-            TimeSpan ts = DateTime.Now.Subtract(dtStart);
-            logger.LogInformation($"Hybrid框架初始化完成，耗时：{ts:g}");
+            watch.Stop();
+            logger.LogInformation($"Hybrid框架初始化完成，耗时：{watch.Elapsed}");
         }
     }
 }

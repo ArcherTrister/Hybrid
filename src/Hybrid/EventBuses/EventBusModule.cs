@@ -8,7 +8,6 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.Core.Modules;
-using Hybrid.Dependency;
 
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;

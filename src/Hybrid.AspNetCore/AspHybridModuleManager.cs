@@ -10,6 +10,7 @@
 using Hybrid.Core.Modules;
 using Hybrid.Exceptions;
 using Hybrid.Localization;
+
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;

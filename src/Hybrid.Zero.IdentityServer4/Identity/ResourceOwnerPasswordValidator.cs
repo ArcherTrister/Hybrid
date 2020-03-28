@@ -7,8 +7,8 @@
 //  <last-date>2020-01-12 17:23:16</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Zero.Identity;
 using Hybrid.Zero.Identity.Entities;
+
 using IdentityServer4.Events;
 using IdentityServer4.Models;
 using IdentityServer4.Services;

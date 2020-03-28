@@ -1,6 +1,7 @@
 ﻿using Hybrid.Exceptions;
 using Hybrid.Net.Mail;
 using Hybrid.Net.Mail.Configuration;
+
 using MailKit.Security;
 
 using MimeKit;
@@ -25,7 +26,7 @@ namespace Hybrid.MailKit
         /// </summary>
         /// <param name="provider">provider</param>
         public MailKitEmailSender(IEmailSenderConfiguration configuration)
-    :       base(configuration)
+    : base(configuration)
         {
             _configuration = configuration;
         }

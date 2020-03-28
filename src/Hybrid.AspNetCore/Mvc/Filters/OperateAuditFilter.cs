@@ -8,15 +8,14 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.AspNetCore.Extensions;
-using Hybrid.AspNetCore.UI;
 using Hybrid.Audits;
 using Hybrid.Audits.Configuration;
+using Hybrid.Authorization;
 using Hybrid.Authorization.Functions;
 using Hybrid.Dependency;
 using Hybrid.Domain.Uow;
-using Hybrid.Authorization;
 using Hybrid.Security.Claims;
-using Microsoft.AspNetCore.Mvc;
+
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.DependencyInjection;
 

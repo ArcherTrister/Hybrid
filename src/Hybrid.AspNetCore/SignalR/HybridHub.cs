@@ -82,7 +82,6 @@ namespace Hybrid.AspNetCore.SignalR
         }
     }
 
-
     /// <summary>
     /// 支持强类型的OsharpHub基类
     /// </summary>
@@ -114,9 +113,7 @@ namespace Hybrid.AspNetCore.SignalR
                 this._clients = value;
             }
         }
-
     }
-
 
     internal class TypedHubClients<T> : IHubCallerClients<T>, IHubClients<T>
     {

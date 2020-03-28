@@ -12,10 +12,12 @@ using Hybrid.Audits.Configuration;
 using Hybrid.Localization.Configuration;
 using Hybrid.Net.Mail;
 using Hybrid.Net.Mail.Configuration;
+
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+
 using System;
 using System.ComponentModel;
 using System.Linq;
@@ -34,10 +36,9 @@ namespace Hybrid.Web.Controllers
             ILocalizationConfiguration LocalizationConfiguration = _serviceProvider.GetRequiredService<ILocalizationConfiguration>();
             IEmailSenderConfiguration EmailSenderConfiguration = _serviceProvider.GetRequiredService<IEmailSenderConfiguration>();
             IAuditingConfiguration AuditingConfiguration = _serviceProvider.GetRequiredService<IAuditingConfiguration>();
-
         }
 
-        IEmailSender EmailSender => _serviceProvider.GetRequiredService<IEmailSender>();
+        private IEmailSender EmailSender => _serviceProvider.GetRequiredService<IEmailSender>();
 
         //protected IEmailSender EmailSender => _serviceProvider.GetRequiredService<IEmailSender>();
         //protected ILocalizationConfiguration LocalizationConfiguration => _serviceProvider.GetRequiredService<ILocalizationConfiguration>();

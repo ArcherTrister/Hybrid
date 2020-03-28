@@ -48,6 +48,18 @@ namespace Hybrid.Audits
             return base.AddServices(services);
         }
 
+        ///// <summary>
+        ///// 将模块服务添加到依赖注入服务容器中
+        ///// </summary>
+        ///// <param name="services">依赖注入服务容器</param>
+        ///// <returns></returns>
+        //public override IServiceCollection AddServices(IServiceCollection services)
+        //{
+        //    services.AddEventHandler<AuditEntityEventHandler>();
+
+        //    return base.AddServices(services);
+        //}
+
         public override void UseModule(IServiceProvider provider)
         {
             IAuditingConfiguration auditingConfiguration = provider.GetRequiredService<IAuditingConfiguration>();

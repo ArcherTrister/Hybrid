@@ -3,7 +3,7 @@
     /// <summary>
     /// Http通信加密选项配置
     /// </summary>
-    public sealed class HttpEncryptConfiguration: IHttpEncryptConfiguration
+    public sealed class HttpEncryptConfiguration : IHttpEncryptConfiguration
     {
         /// <summary>
         /// 获取或设置 服务端私钥

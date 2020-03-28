@@ -8,8 +8,8 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.Web.Identity.Entities;
-using Hybrid.Zero.Authorization;
 using Hybrid.Zero.Authorization.Entities;
+
 using System;
 using System.ComponentModel;
 

@@ -9,7 +9,6 @@
 
 using System.Collections.Generic;
 
-
 namespace Hybrid.AspNetCore.SignalR
 {
     /// <summary>

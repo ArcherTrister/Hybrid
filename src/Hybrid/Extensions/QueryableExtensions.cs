@@ -13,7 +13,6 @@ using Hybrid.Exceptions;
 using Hybrid.Extensions;
 using Hybrid.Filter;
 using Hybrid.Mapping;
-using Hybrid.Security;
 
 using System;
 using System.Collections.Generic;

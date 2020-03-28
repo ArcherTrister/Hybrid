@@ -2,6 +2,7 @@
 using Hybrid.Http.Configuration;
 using Hybrid.Localization.Configuration;
 using Hybrid.Net.Mail.Configuration;
+
 using Microsoft.Extensions.DependencyInjection;
 
 using System;

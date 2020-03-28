@@ -8,7 +8,6 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.Data;
-using Hybrid.Dependency;
 using Hybrid.Domain.Entities;
 using Hybrid.Domain.Repositories;
 using Hybrid.Extensions;

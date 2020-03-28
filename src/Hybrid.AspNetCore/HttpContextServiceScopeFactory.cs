@@ -50,7 +50,7 @@ namespace Hybrid.AspNetCore
             return new NonDisposedHttpContextServiceScope(httpContext.RequestServices);
         }
 
-        #endregion
+        #endregion Implementation of IServiceScopeFactory
 
         /// <summary>
         /// 当前HttpRequest的<see cref="IServiceScope"/>的包装，保持HttpContext.RequestServices的可传递性，并且不释放

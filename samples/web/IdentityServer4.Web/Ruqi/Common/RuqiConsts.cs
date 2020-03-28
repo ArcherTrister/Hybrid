@@ -90,9 +90,7 @@
             /// </summary>
             public const string Repayment = "/ruqi-ruxin-loadflow/ruxin/repayExecute.htm";
 
-//拉取签约结果接口    test3-ruxin.ruqiapp.com/ruqi-ruxin-loadflow/ruxin/pullApprovalResults.htm
-
-
+            //拉取签约结果接口    test3-ruxin.ruqiapp.com/ruqi-ruxin-loadflow/ruxin/pullApprovalResults.htm
         }
     }
 }

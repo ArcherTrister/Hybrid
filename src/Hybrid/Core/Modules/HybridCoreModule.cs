@@ -11,7 +11,6 @@ using Hybrid.Audits.Configuration;
 using Hybrid.Caching;
 using Hybrid.Configuration;
 using Hybrid.Core.Options;
-using Hybrid.Data;
 using Hybrid.Dependency;
 using Hybrid.Domain.Entities;
 using Hybrid.Extensions;

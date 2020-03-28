@@ -357,7 +357,6 @@ namespace Hybrid.EntityFrameworkCore.Extensions
     //private DefaultDbContext CreateDbContext()
 
     //{
-
     //    var builder = new DbContextOptionsBuilder<DefaultDbContext>();
 
     //    var configuration = AppConfigurations.Get(WebContentDirectoryFinder.CalculateContentRootFolder());

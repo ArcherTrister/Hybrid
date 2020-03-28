@@ -4,7 +4,6 @@ namespace Hybrid.AspNetCore.Mvc.Models
     {
         public HybridErrorViewModel()
         {
-
         }
 
         public HybridErrorViewModel(string error)

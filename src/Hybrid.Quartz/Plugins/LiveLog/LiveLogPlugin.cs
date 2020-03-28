@@ -1,4 +1,5 @@
 ﻿using Hybrid.Quartz.Dashboard.Models.Dtos;
+
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.DependencyInjection;
 

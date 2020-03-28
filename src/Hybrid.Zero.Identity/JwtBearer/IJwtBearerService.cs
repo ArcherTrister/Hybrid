@@ -8,6 +8,7 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.Zero.Identity;
+
 using System.Threading.Tasks;
 
 namespace Hybrid.Identity.JwtBearer

@@ -12,7 +12,6 @@ using Hybrid.Domain.Entities;
 using Hybrid.Extensions;
 using Hybrid.Filter;
 using Hybrid.Mapping;
-using Hybrid.Security;
 using Hybrid.Web.Authorization.Entities;
 
 using System;

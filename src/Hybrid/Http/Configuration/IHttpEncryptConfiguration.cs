@@ -5,7 +5,7 @@ namespace Hybrid.Http.Configuration
     /// <summary>
     /// Http通信加密选项配置
     /// </summary>
-    public interface IHttpEncryptConfiguration: IEnabled
+    public interface IHttpEncryptConfiguration : IEnabled
     {
         /// <summary>
         /// 获取或设置 服务端私钥

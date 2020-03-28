@@ -20,7 +20,7 @@ namespace Hybrid.Web.Controllers
     [ApiController]
     public class ValuesController : LocalApiController
     {
-     private readonly   Hybrid.Core.Options.QuartzOptions QuartzOptions;
+        private readonly Hybrid.Core.Options.QuartzOptions QuartzOptions;
         private readonly Hybrid.Core.Options.IdsOptions IdsOptions;
 
         public ValuesController(

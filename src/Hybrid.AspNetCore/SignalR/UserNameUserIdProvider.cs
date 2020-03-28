@@ -11,7 +11,6 @@ using Hybrid.Security.Claims;
 
 using Microsoft.AspNetCore.SignalR;
 
-
 namespace Hybrid.AspNetCore.SignalR
 {
     /// <summary>

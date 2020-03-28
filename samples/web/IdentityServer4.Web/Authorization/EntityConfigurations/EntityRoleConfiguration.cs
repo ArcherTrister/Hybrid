@@ -9,8 +9,8 @@
 
 using Hybrid.Authorization.EntityInfos;
 using Hybrid.EntityFrameworkCore;
-using Hybrid.Web.Identity.Entities;
 using Hybrid.Web.Authorization.Entities;
+using Hybrid.Web.Identity.Entities;
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;

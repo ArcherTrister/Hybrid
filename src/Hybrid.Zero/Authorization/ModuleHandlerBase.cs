@@ -9,13 +9,13 @@
 
 using Hybrid.Authorization.ModuleInfos;
 using Hybrid.Data;
-using Hybrid.Dependency;
 using Hybrid.Domain.Entities;
 using Hybrid.Domain.Uow;
 using Hybrid.Exceptions;
 using Hybrid.Extensions;
 using Hybrid.Zero.Authorization.Dtos;
 using Hybrid.Zero.Authorization.Entities;
+
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 

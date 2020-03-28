@@ -11,9 +11,9 @@ using Hybrid.Authorization.EntityInfos;
 using Hybrid.Authorization.Functions;
 using Hybrid.Domain.Repositories;
 using Hybrid.EventBuses;
-using Hybrid.Web.Identity.Entities;
 using Hybrid.Web.Authorization.Dtos;
 using Hybrid.Web.Authorization.Entities;
+using Hybrid.Web.Identity.Entities;
 using Hybrid.Zero.Authorization;
 using Hybrid.Zero.Authorization.Dtos;
 

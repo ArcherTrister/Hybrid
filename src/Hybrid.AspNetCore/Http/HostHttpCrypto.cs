@@ -1,17 +1,18 @@
-﻿using System;
-using System.Net.Http;
-using System.Security.Cryptography;
-using System.Threading.Tasks;
-using Hybrid.Core.Options;
+﻿using Hybrid.Core.Options;
 using Hybrid.Dependency;
 using Hybrid.Exceptions;
 using Hybrid.Extensions;
 using Hybrid.Http;
 using Hybrid.Http.Configuration;
-using Hybrid.Security;
+
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+
+using System;
+using System.Net.Http;
+using System.Security.Cryptography;
+using System.Threading.Tasks;
 
 namespace Hybrid.AspNetCore.Http
 {

@@ -6,12 +6,9 @@
 //  <last-date>2017-09-01 20:39:00</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Data;
-
 using Microsoft.AspNetCore.Http;
 
 using System;
-using System.Linq;
 
 namespace Hybrid.AspNetCore.Extensions
 {

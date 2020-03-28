@@ -9,6 +9,7 @@
 
 using Hybrid.Authorization.Functions;
 using Hybrid.Domain.Entities;
+
 using System;
 using System.Diagnostics;
 

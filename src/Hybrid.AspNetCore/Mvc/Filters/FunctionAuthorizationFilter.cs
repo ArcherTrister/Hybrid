@@ -12,7 +12,6 @@ using Hybrid.AspNetCore.UI;
 using Hybrid.Authorization;
 using Hybrid.Authorization.Functions;
 using Hybrid.Data;
-using Hybrid.Security;
 
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;

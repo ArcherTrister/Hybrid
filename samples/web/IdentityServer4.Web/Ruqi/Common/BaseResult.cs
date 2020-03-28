@@ -14,7 +14,6 @@
         /// 成功为SUCCESS，失败为原因
         /// </summary>
         public string msg { get; set; } = "SUCCESS";
-
     }
 
     /// <summary>

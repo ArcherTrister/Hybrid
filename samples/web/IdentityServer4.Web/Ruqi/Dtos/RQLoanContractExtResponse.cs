@@ -1,5 +1,4 @@
-﻿
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace FlyingFish.Mobile.Ruqi.Dtos
 {
@@ -12,6 +11,7 @@ namespace FlyingFish.Mobile.Ruqi.Dtos
         /// 合同协议
         /// </summary>
         public List<RQContract> contract { get; set; } = new List<RQContract>();
+
         /// <summary>
         /// 附加协议
         /// </summary>

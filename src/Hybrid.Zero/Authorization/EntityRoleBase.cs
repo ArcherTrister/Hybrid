@@ -11,7 +11,6 @@ using Hybrid.Authorization;
 using Hybrid.Domain.Entities;
 using Hybrid.Extensions;
 using Hybrid.Filter;
-using Hybrid.Security;
 
 using System;
 using System.ComponentModel;

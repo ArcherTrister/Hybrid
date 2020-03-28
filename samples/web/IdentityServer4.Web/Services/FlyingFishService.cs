@@ -4,6 +4,7 @@ using FlyingFish.Mobile.Ruqi.Dtos;
 using Hybrid.AspNetCore.UI;
 using Hybrid.Data;
 using Hybrid.Dependency;
+
 using Newtonsoft.Json;
 
 using System;
@@ -12,6 +13,7 @@ using System.Net.Http;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+
 using XC.RSAUtil;
 
 namespace IdentityServer4.Web.Services

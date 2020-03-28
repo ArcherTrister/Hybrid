@@ -7,8 +7,6 @@
 //  <last-date>2020-01-12 17:15:37</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Dependency;
-using Hybrid.Zero.Identity;
 using Hybrid.Zero.Identity.Entities;
 using Hybrid.Zero.IdentityServer4.Identity;
 using Hybrid.Zero.IdentityServer4.Quickstart;

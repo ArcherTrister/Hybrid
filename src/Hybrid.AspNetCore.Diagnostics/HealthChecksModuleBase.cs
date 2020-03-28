@@ -109,7 +109,6 @@ namespace Hybrid.AspNetCore.Diagnostics
             builder.AddVirtualMemorySizeHealthCheck(virtualMemorySize); //最大虚拟内存
             builder.AddWorkingSetHealthCheck(workingSet); //最大工作内存
 
-
             //数据库
             foreach (var pair in options.DbContexts.OrderBy(m => m.Value.DatabaseType))
             {

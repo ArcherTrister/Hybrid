@@ -6,8 +6,6 @@
 //  <last-date>2017-09-01 20:39:00</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Dependency;
-
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 

@@ -171,6 +171,7 @@ namespace Hybrid.Zero.Identity.RealTime
             return $"Identity:OnlineUser:{userName}";
         }
     }
+
     //public class OnlineUserProvider<TUser, TUserKey, TRole, TRoleKey> : IOnlineUserProvider
     //    where TUser : UserBase<TUserKey>
     //    where TUserKey : IEquatable<TUserKey>

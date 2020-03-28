@@ -7,8 +7,6 @@
 //  <last-date>2018-12-30 22:24</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Reflection;
-
 using Microsoft.Extensions.DependencyInjection;
 
 using System;
@@ -34,20 +32,6 @@ namespace Hybrid.Dependency
 
             services.Add(toAdDescriptor);
             return toAdDescriptor;
-        }
-
-        /// <summary>
-        /// 获取或添加指定类型查找器
-        /// </summary>
-        public static TTypeFinder GetOrAddTypeFinder<TTypeFinder>(this IServiceCollection services, Func<IAllAssemblyFinder, TTypeFinder> factory)
-            where TTypeFinder : class
-        {
-            return services.GetOrAddSingletonInstance<TTypeFinder>(() =>
-            {
-                IAllAssemblyFinder allAssemblyFinder =
-                    services.GetOrAddSingletonInstance<IAllAssemblyFinder>(() => new AppDomainAllAssemblyFinder(true));
-                return factory(allAssemblyFinder);
-            });
         }
 
         /// <summary>
@@ -84,31 +68,17 @@ namespace Hybrid.Dependency
             return default;
         }
 
-        /// <summary>
-        /// 获取单例注册服务对象
-        /// </summary>
-        public static T GetSingletonInstance<T>(this IServiceCollection services)
-        {
-            var instance = services.GetSingletonInstanceOrNull<T>();
-            if (instance == null)
-            {
-                throw new InvalidOperationException($"无法找到已注册的单例服务：{typeof(T).AssemblyQualifiedName}");
-            }
+        ///// <summary>
+        ///// 从Scoped字典中获取指定类型的值
+        ///// </summary>
+        //public static T GetValue<T>(this ScopedDictionary dict, string key) where T : class
+        //{
+        //    if (dict.TryGetValue(key, out object obj))
+        //    {
+        //        return obj as T;
+        //    }
 
-            return instance;
-        }
-
-        /// <summary>
-        /// 从Scoped字典中获取指定类型的值
-        /// </summary>
-        public static T GetValue<T>(this ScopedDictionary dict, string key) where T : class
-        {
-            if (dict.TryGetValue(key, out object obj))
-            {
-                return obj as T;
-            }
-
-            return default(T);
-        }
+        //    return default(T);
+        //}
     }
 }

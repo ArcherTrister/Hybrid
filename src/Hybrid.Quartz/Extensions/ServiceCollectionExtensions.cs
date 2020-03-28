@@ -1,5 +1,4 @@
-﻿using Hybrid.Dependency;
-using Hybrid.Quartz;
+﻿using Hybrid.Quartz;
 
 using Microsoft.Extensions.DependencyInjection.Extensions;
 

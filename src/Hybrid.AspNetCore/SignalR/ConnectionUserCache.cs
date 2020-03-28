@@ -15,7 +15,6 @@ using Microsoft.Extensions.Caching.Distributed;
 using System.Linq;
 using System.Threading.Tasks;
 
-
 namespace Hybrid.AspNetCore.SignalR
 {
     /// <summary>

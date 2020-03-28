@@ -9,15 +9,16 @@
 
 using Hybrid.AspNetCore.Extensions;
 using Hybrid.Core.Modules;
+
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Hosting;
+
 using Newtonsoft.Json.Serialization;
 
 using System;
-
 
 namespace Hybrid.AspNetCore.SignalR
 {

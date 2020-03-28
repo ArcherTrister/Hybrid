@@ -10,7 +10,7 @@
 using Hybrid.Data;
 using Hybrid.Security.Claims;
 using Hybrid.Zero.IdentityServer4.Extensions;
-using IdentityModel;
+
 using IdentityServer4;
 using IdentityServer4.Models;
 

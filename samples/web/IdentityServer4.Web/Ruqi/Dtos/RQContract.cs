@@ -9,6 +9,7 @@
         /// 合同名称
         /// </summary>
         public string contractName { get; set; }
+
         /// <summary>
         /// 合同url
         /// </summary>

@@ -154,7 +154,7 @@ namespace Hybrid.Quartz.Plugins.History
             throw new NotImplementedException();
         }
 
-        private const string PropertySqlServerSelectHistoryEntryPage = 
+        private const string PropertySqlServerSelectHistoryEntryPage =
             "SELECT ENTRY_ID, SCHED_NAME, Scheduler_Instance_Id, Fire_Instance_Id, Scheduled_Fire_Time_Utc, Actual_Fire_Time_Utc, Finished_Time_Utc, Recovering,Vetoed, " +
             "TRIGGER_NAME, TRIGGER_GROUP, JOB_NAME, JOB_GROUP, FIRED_TIME, SCHED_TIME, RUN_TIME, ERROR, ERROR_MESSAGE FROM (SELECT *, ROW_NUMBER() OVER (ORDER BY {1}) AS RowNumber FROM {0}JOB_HISTORY ) as B " +
             "WHERE SCHED_NAME = @schedulerName AND RowNumber BETWEEN @page AND @endPage";
@@ -198,7 +198,8 @@ namespace Hybrid.Quartz.Plugins.History
                         // pageSize
                         Delegate.AddCommandParameter(dbCommand, "pageSize", pageSize);
                     }
-                    else {
+                    else
+                    {
                         // endPage
                         Delegate.AddCommandParameter(dbCommand, "endPage", page + pageSize);
                     }

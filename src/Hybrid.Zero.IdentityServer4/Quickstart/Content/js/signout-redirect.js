@@ -3,6 +3,6 @@
     if (a) {
         window.location = a.href;
     } else {
-        window.location = window.location.protocol+"//"+ window.location.host;
+        window.location = window.location.protocol + "//" + window.location.host;
     }
 });

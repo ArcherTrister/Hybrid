@@ -10,7 +10,6 @@
 using Hybrid.Authorization;
 using Hybrid.Data;
 using Hybrid.Filter;
-using Hybrid.Security;
 
 using System;
 using System.Linq;

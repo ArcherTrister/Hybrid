@@ -46,7 +46,7 @@ namespace Conmon.Tests
         {
             decimal? test = null;
             test = 0.000m;
-            Assert.IsTrue((test??0)==0);
+            Assert.IsTrue((test ?? 0) == 0);
         }
     }
 }

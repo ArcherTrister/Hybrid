@@ -47,7 +47,7 @@ namespace FlyingFish.Mobile.Ruqi.Dtos
         public string loanPeriod { get; set; }
 
         /// <summary>
-        /// 每期天数，按月还款传30 
+        /// 每期天数，按月还款传30
         /// </summary>
         public string loanPeriodDays { get; set; }
 

@@ -166,6 +166,7 @@ namespace Hybrid.Zero.IdentityServer4
         }
 
         private const string KeySeparator = ":";
+
         //private const string GrantType = "jwt_token";
         private const string GrantType = IdentityServerConstants.PersistedGrantTypes.ReferenceToken;
 

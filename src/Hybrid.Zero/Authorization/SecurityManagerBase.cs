@@ -17,17 +17,16 @@ using Hybrid.Exceptions;
 using Hybrid.Extensions;
 using Hybrid.Filter;
 using Hybrid.Mapping;
-using Hybrid.Zero.Identity;
 using Hybrid.Zero.Authorization.Dtos;
+using Hybrid.Zero.Authorization.Entities;
 using Hybrid.Zero.Authorization.Events;
+using Hybrid.Zero.Identity.Entities;
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using Hybrid.Zero.Identity.Entities;
-using Hybrid.Zero.Authorization.Entities;
 
 namespace Hybrid.Zero.Authorization
 {

@@ -64,7 +64,7 @@ namespace FlyingFish.Mobile.Ruqi.Dtos
         public int withdrawFlag { get; set; }
 
         /// <summary>
-        /// 1-支持还款账户于还款日进行自动划扣（如果机构支持主动还款，用户也可进行主动还款）。 
+        /// 1-支持还款账户于还款日进行自动划扣（如果机构支持主动还款，用户也可进行主动还款）。
         /// 2-不支持还款账户于还款日进行自动划扣(机构必须支持用户主动还款)。 放款后必传
         /// </summary>
         public int autopayFlag { get; set; }

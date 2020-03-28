@@ -1,6 +1,4 @@
-﻿using Hybrid.Data;
-
-using Microsoft.AspNetCore.Mvc.ModelBinding;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace Hybrid.AspNetCore.Mvc.ModelBinding
 {

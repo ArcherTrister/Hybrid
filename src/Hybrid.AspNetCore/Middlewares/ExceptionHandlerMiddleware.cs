@@ -8,9 +8,7 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.AspNetCore.Extensions;
-using Hybrid.AspNetCore.Mvc;
 using Hybrid.AspNetCore.UI;
-using Hybrid.Authorization.Functions;
 using Hybrid.Data;
 using Hybrid.Json;
 
@@ -137,15 +135,21 @@ namespace Hybrid.AspNetCore.Middlewares
             return context.Response.WriteAsync(new AjaxResult(content: msg, ajaxResultType: resultType, unAuthorizedRequest: statusCode.Equals(401)).ToJsonString());
         }
 
+        private const string errorHtml = "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">" +
+            "<link rel=\"stylesheet\" href=\"https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">" +
+            "<title>Error</title></head><body>" +
+            "<div class=\"row justify-content-center\" style=\"height: 400px\"><div class=\"align-self-center\"><p class=\"text-danger\">Sorry, an error has occured !</p><p><a href = \"/\" class=\"btn btn-primary btn-lg\">Take Me Home</a></p></div></div>" +
+            "<script src=\"https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js\" integrity=\"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\" crossorigin=\"anonymous\"></script>" +
+            "<script src=\"https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>" +
+            "<script src=\"https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>" +
+            "</body></html>";
+
         private static Task HandleMvcExceptionAsync(HttpContext context)
         {
             context.Response.Clear();
             context.Response.StatusCode = 200;
-            context.Response.ContentType = "text/plain; charset=utf-8";
-            return context.Response.WriteAsync($"<div class=\"row justify-content-center\" style=\"height: 400px\">" +
-                "<div class=\"align-self-center\"><p class=\"text-danger\">Sorry, an error has occured !</p>" +
-                "<p><a href = \"/\" class=\"btn btn-primary btn-lg\">Take Me Home</a></p>" +
-                "</div></div>");
+            context.Response.ContentType = "text/html; charset=utf-8";
+            return context.Response.WriteAsync(errorHtml);
         }
     }
 }

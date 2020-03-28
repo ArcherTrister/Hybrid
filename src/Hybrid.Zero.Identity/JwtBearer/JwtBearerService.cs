@@ -9,7 +9,6 @@
 
 using Hybrid.Core.Options;
 using Hybrid.Data;
-using Hybrid.Dependency;
 using Hybrid.Domain.Uow;
 using Hybrid.EventBuses;
 using Hybrid.Exceptions;

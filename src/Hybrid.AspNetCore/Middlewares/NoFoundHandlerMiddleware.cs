@@ -7,8 +7,6 @@
 //  <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Data;
-
 using Microsoft.AspNetCore.Http;
 
 using System;

@@ -9,6 +9,8 @@
 
 using Hybrid.Domain.Uow;
 
+using Microsoft.Extensions.DependencyInjection;
+
 using System;
 using System.Linq;
 
