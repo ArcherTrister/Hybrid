@@ -1,17 +1,18 @@
 // -----------------------------------------------------------------------
-//  <copyright file="TypeMetadataHandler.cs" company="cn.lxking">
-//      Copyright ? 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="TypeMetadataHandler.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2018 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-08-06 13:44</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Domain.Entities;
-using Hybrid.Extensions;
-
 using System;
 using System.Linq;
+
+using Hybrid.Entity;
+using Hybrid.Reflection;
+
 
 namespace Hybrid.CodeGenerator
 {

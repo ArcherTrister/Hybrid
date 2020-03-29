@@ -1,14 +1,14 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="StringBuilderExtensions.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="AbstractBuilder.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014 Hybrid. All rights reserved.
 //  </copyright>
-//  <site>https://www.lxking.cn</site>
-//  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2018-08-02 17:56</last-date>
+//  <last-editor>王明杰</last-editor>
+//  <last-date>2014:07:09 11:40</last-date>
 // -----------------------------------------------------------------------
 
 using System;
 using System.Text;
+
 
 namespace Hybrid.Extensions
 {
@@ -56,7 +56,6 @@ namespace Hybrid.Extensions
             cs.CheckNotNull("chars");
             return sb.TrimStart(new string(cs));
         }
-
         /// <summary>
         /// 去除<see cref="StringBuilder"/>开头的指定的<seealso cref="string"/>
         /// </summary>
@@ -73,7 +72,7 @@ namespace Hybrid.Extensions
             while (sb.SubString(0, str.Length).Equals(str))
             {
                 sb.Remove(0, str.Length);
-                if (str.Length > sb.Length)
+                if (str.Length>sb.Length)
                 {
                     break;
                 }
@@ -100,7 +99,7 @@ namespace Hybrid.Extensions
         public static StringBuilder TrimEnd(this StringBuilder sb, char c)
         {
             sb.CheckNotNull("sb");
-            if (sb.Length == 0)
+             if (sb.Length == 0)
                 return sb;
             while (c.Equals(sb[sb.Length - 1]))
             {
@@ -134,10 +133,10 @@ namespace Hybrid.Extensions
                 || sb.Length == 0
                 || str.Length > sb.Length)
                 return sb;
-            while (sb.SubString(sb.Length - str.Length, str.Length).Equals(str))
+            while (sb.SubString(sb.Length-str.Length, str.Length).Equals(str))
             {
-                sb.Remove(sb.Length - str.Length, str.Length);
-                if (sb.Length < str.Length)
+                sb.Remove(sb.Length-str.Length, str.Length);
+                if (sb.Length<str.Length)
                 {
                     break;
                 }

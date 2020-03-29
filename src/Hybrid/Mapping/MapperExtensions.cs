@@ -1,18 +1,19 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="MapperExtensions.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="MapperExtensions.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2017-09-01 12:49</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Extensions;
-using Hybrid.Properties;
-
 using System;
 using System.Linq;
 using System.Linq.Expressions;
+
+using Hybrid.Extensions;
+using Hybrid.Properties;
+
 
 namespace Hybrid.Mapping
 {

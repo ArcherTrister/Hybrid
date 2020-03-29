@@ -5,6 +5,7 @@ using Microsoft.Extensions.Logging;
 
 using System;
 using System.Globalization;
+using System.Text.RegularExpressions;
 
 namespace Hybrid.Localization
 {

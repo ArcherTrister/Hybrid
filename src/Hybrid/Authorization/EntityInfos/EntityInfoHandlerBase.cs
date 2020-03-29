@@ -1,25 +1,24 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="EntityInfoHandlerBase.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="EntityInfoHandlerBase.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2017-09-15 20:53</last-date>
+//  <last-date>2020-02-10 20:14</last-date>
 // -----------------------------------------------------------------------
-
-using Hybrid.Data;
-using Hybrid.Dependency;
-using Hybrid.Domain.Entities;
-using Hybrid.Domain.Repositories;
-using Hybrid.Extensions;
-using Hybrid.Helpers;
-
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
+
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+
+using Hybrid.Collections;
+using Hybrid.Data;
+using Hybrid.Entity;
+using Hybrid.Reflection;
+
 
 namespace Hybrid.Authorization.EntityInfos
 {
@@ -31,10 +30,10 @@ namespace Hybrid.Authorization.EntityInfos
     public abstract class EntityInfoHandlerBase<TEntityInfo, TEntityInfoHandler> : IEntityInfoHandler
         where TEntityInfo : class, IEntityInfo, new()
     {
-        private readonly IServiceProvider _serviceProvider;
+        private readonly List<TEntityInfo> _entityInfos = new List<TEntityInfo>();
         private readonly IEntityTypeFinder _entityTypeFinder;
         private readonly ILogger _logger;
-        private readonly List<TEntityInfo> _entityInfos = new List<TEntityInfo>();
+        private readonly IServiceProvider _serviceProvider;
 
         /// <summary>
         /// 初始化一个<see cref="EntityInfoHandlerBase{TEntityInfo,TEntityInfoProvider}"/>类型的新实例
@@ -42,7 +41,7 @@ namespace Hybrid.Authorization.EntityInfos
         protected EntityInfoHandlerBase(IServiceProvider serviceProvider)
         {
             _serviceProvider = serviceProvider;
-            _entityTypeFinder = serviceProvider.GetRequiredService<IEntityTypeFinder>();
+            _entityTypeFinder = serviceProvider.GetService<IEntityTypeFinder>();
             _logger = serviceProvider.GetLogger<TEntityInfoHandler>();
         }
 
@@ -59,6 +58,7 @@ namespace Hybrid.Authorization.EntityInfos
                 {
                     continue;
                 }
+
                 TEntityInfo entityInfo = new TEntityInfo();
                 entityInfo.FromType(entityType);
                 _entityInfos.Add(entityInfo);
@@ -84,16 +84,19 @@ namespace Hybrid.Authorization.EntityInfos
             {
                 RefreshCache();
             }
+
             string typeName = type.GetFullNameWithModule();
             IEntityInfo entityInfo = _entityInfos.FirstOrDefault(m => m.TypeName == typeName);
             if (entityInfo != null)
             {
                 return entityInfo;
             }
+
             if (type.BaseType == null)
             {
                 return null;
             }
+
             typeName = type.BaseType.GetFullNameWithModule();
             return _entityInfos.FirstOrDefault(m => m.TypeName == typeName);
         }
@@ -127,7 +130,7 @@ namespace Hybrid.Authorization.EntityInfos
         /// </summary>
         protected virtual void SyncToDatabase(IServiceProvider scopedProvider, List<TEntityInfo> entityInfos)
         {
-            IRepository<TEntityInfo, Guid> repository = scopedProvider.GetRequiredService<IRepository<TEntityInfo, Guid>>();
+            IRepository<TEntityInfo, Guid> repository = scopedProvider.GetService<IRepository<TEntityInfo, Guid>>();
             if (repository == null)
             {
                 _logger.LogWarning("初始化实体数据时，IRepository<,>的服务未找到，请初始化 EntityFrameworkCoreModule 模块");
@@ -164,22 +167,26 @@ namespace Hybrid.Authorization.EntityInfos
                 {
                     continue;
                 }
+
                 if (item.Name != entityInfo.Name)
                 {
                     item.Name = entityInfo.Name;
                     isUpdate = true;
                 }
+
                 if (item.PropertyJson != entityInfo.PropertyJson)
                 {
                     item.PropertyJson = entityInfo.PropertyJson;
                     isUpdate = true;
                 }
+
                 if (isUpdate)
                 {
                     repository.Update(item);
                     updateCount++;
                 }
             }
+
             repository.UnitOfWork.Commit();
             if (removeCount + addCount + updateCount > 0)
             {
@@ -189,16 +196,19 @@ namespace Hybrid.Authorization.EntityInfos
                     msg += $"，添加实体信息 {addCount} 个";
                     _logger.LogInformation($"新增{addItems.Length}个数据实体：{addItems.Select(m => m.TypeName).ExpandAndToString()}");
                 }
+
                 if (removeCount > 0)
                 {
                     msg += $"，删除实体信息 {removeCount} 个";
                     _logger.LogInformation($"删除{removeItems.Length}个数据实体：{removeItems.Select(m => m.TypeName).ExpandAndToString()}");
                 }
+
                 if (updateCount > 0)
                 {
                     msg += $"，更新实体信息 {updateCount} 个";
                     _logger.LogInformation($"更新{updateCount}个数据实体");
                 }
+
                 _logger.LogInformation(msg);
             }
         }
@@ -209,11 +219,12 @@ namespace Hybrid.Authorization.EntityInfos
         /// <returns></returns>
         protected virtual TEntityInfo[] GetFromDatabase(IServiceProvider scopedProvider)
         {
-            IRepository<TEntityInfo, Guid> repository = scopedProvider.GetRequiredService<IRepository<TEntityInfo, Guid>>();
+            IRepository<TEntityInfo, Guid> repository = scopedProvider.GetService<IRepository<TEntityInfo, Guid>>();
             if (repository == null)
             {
                 return new TEntityInfo[0];
             }
+
             return repository.QueryAsNoTracking(null, false).ToArray();
         }
     }

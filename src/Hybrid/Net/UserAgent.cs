@@ -1,17 +1,18 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="UserAgent.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="UserAgent.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2018 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Extensions;
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
+
+using Hybrid.Extensions;
+
 
 namespace Hybrid.Net
 {
@@ -36,7 +37,6 @@ namespace Hybrid.Net
             { "Linux", "Linux" },
             { "SunOS", "SunOS" }
         };
-
         private static readonly IDictionary<string, string> BrowserDict = new Dictionary<string, string>()
         {
             { "MicroMessenger", "微信内置浏览器" },
@@ -59,7 +59,6 @@ namespace Hybrid.Net
             { "Chrome", "谷歌Chrome浏览器" },
             { "Safari", "Safari内核浏览器" }
         };
-
         private readonly string _userAgent;
 
         /// <summary>

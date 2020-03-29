@@ -1,24 +1,32 @@
-﻿using System;
+﻿// -----------------------------------------------------------------------
+//  <copyright file="HostHttpCrypto.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2019 Hybrid. All rights reserved.
+//  </copyright>
+//  <site>https://www.lxking.cn</site>
+//  <last-editor>ArcherTrister</last-editor>
+//  <last-date>2019-10-31 2:56</last-date>
+// -----------------------------------------------------------------------
+
+using System;
 using System.Net.Http;
 using System.Security.Cryptography;
 using System.Threading.Tasks;
-using Hybrid.Core.Options;
-using Hybrid.Dependency;
-using Hybrid.Exceptions;
-using Hybrid.Extensions;
-using Hybrid.Http;
-using Hybrid.Http.Configuration;
-using Hybrid.Security;
+
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+
+using Hybrid.Core.Options;
+using Hybrid.Exceptions;
+using Hybrid.Extensions;
+using Hybrid.Http;
+
 
 namespace Hybrid.AspNetCore.Http
 {
     /// <summary>
     /// Http服务端加密解密功能
     /// </summary>
-    [Dependency(ServiceLifetime.Singleton, TryAdd = true)]
     public class HostHttpCrypto : IHostHttpCrypto
     {
         private readonly ILogger _logger;
@@ -30,11 +38,11 @@ namespace Hybrid.AspNetCore.Http
         /// </summary>
         public HostHttpCrypto(IServiceProvider provider)
         {
-            _logger = provider.GetLogger(typeof(HostHttpCrypto));
+            _logger = provider.GetLogger(typeof(ClientHttpCrypto));
             HybridOptions options = provider.GetHybridOptions();
-            if (options?.HttpEncrypt?.IsEnabled == true)
+            if (options?.HttpEncrypt?.Enabled == true)
             {
-                HttpEncryptConfiguration httpEncrypt = options.HttpEncrypt;
+                HttpEncryptOptions httpEncrypt = options.HttpEncrypt;
                 _privateKey = httpEncrypt.HostPrivateKey;
                 if (string.IsNullOrEmpty(_privateKey))
                 {
@@ -58,7 +66,7 @@ namespace Hybrid.AspNetCore.Http
             string publicKey = request.Headers.GetOrDefault(HttpHeaderNames.ClientPublicKey);
             if (publicKey != null)
             {
-                //throw new OsharpException("在请求头中客户端公钥信息无法找到");
+                //throw new HybridException("在请求头中客户端公钥信息无法找到");
                 _encryptor = new TransmissionEncryptor(_privateKey, publicKey);
             }
 
@@ -83,6 +91,7 @@ namespace Hybrid.AspNetCore.Http
 
                 await request.WriteBodyAsync(data);
                 return request;
+
             }
             catch (Exception ex)
             {

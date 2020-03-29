@@ -1,24 +1,25 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="FilterService.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="FilterService.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2018 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-12-20 0:15</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Data;
-using Hybrid.Dependency;
-using Hybrid.Extensions;
-using Hybrid.Linq;
-using Hybrid.Authorization;
-using Hybrid.Security.Claims;
-
-using Microsoft.Extensions.DependencyInjection;
-
 using System;
 using System.Linq.Expressions;
 using System.Security.Claims;
+
+using Microsoft.Extensions.DependencyInjection;
+
+using Hybrid.Authorization;
+using Hybrid.Data;
+using Hybrid.Dependency;
+using Hybrid.Identity;
+using Hybrid.Linq;
+using Hybrid.Reflection;
+
 
 namespace Hybrid.Filter
 {
@@ -48,6 +49,7 @@ namespace Hybrid.Filter
         public virtual Expression<Func<T, bool>> GetExpression<T>(FilterGroup group)
         {
             return FilterHelper.GetExpression<T>(group);
+
         }
 
         /// <summary>
@@ -130,6 +132,6 @@ namespace Hybrid.Filter
             return FilterHelper.CheckFilterGroup(group, type);
         }
 
-        #endregion Implementation of IFilterService
+        #endregion
     }
 }

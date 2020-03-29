@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="AsyncManualResetEvent.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="AsyncManualResetEvent.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2016 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
@@ -9,6 +9,7 @@
 
 using System.Threading;
 using System.Threading.Tasks;
+
 
 namespace Hybrid.Threading.Asyncs
 {

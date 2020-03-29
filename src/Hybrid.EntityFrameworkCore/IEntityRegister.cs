@@ -1,17 +1,18 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="IEntityMapper.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="IEntityMapper.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2017-08-17 0:32</last-date>
 // -----------------------------------------------------------------------
 
-using Microsoft.EntityFrameworkCore;
-
 using System;
 
-namespace Hybrid.EntityFrameworkCore
+using Microsoft.EntityFrameworkCore;
+
+
+namespace Hybrid.Entity
 {
     /// <summary>
     /// 定义将实体配置类注册到上下文中

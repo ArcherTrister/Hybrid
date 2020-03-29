@@ -1,17 +1,18 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="AnyRadixConvert.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="AnyRadixConvert.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2017-08-15 14:17</last-date>
 // -----------------------------------------------------------------------
 
+using System;
+using System.Globalization;
+
 using Hybrid.Extensions;
 using Hybrid.Properties;
 
-using System;
-using System.Globalization;
 
 namespace Hybrid.Maths
 {

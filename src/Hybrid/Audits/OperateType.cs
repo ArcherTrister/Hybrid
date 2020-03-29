@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="OperateType.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="OperateType.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2018 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
@@ -18,17 +18,14 @@ namespace Hybrid.Audits
         /// 查询
         /// </summary>
         Query = 0,
-
         /// <summary>
         /// 新增
         /// </summary>
         Insert = 1,
-
         /// <summary>
         /// 更新
         /// </summary>
         Update = 2,
-
         /// <summary>
         /// 删除
         /// </summary>

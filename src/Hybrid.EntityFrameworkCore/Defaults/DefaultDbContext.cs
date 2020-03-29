@@ -1,17 +1,18 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="DefaultDbContext.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="DefaultDbContext.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2019 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2019-03-08 4:44</last-date>
 // -----------------------------------------------------------------------
 
-using Microsoft.EntityFrameworkCore;
-
 using System;
 
-namespace Hybrid.EntityFrameworkCore.Defaults
+using Microsoft.EntityFrameworkCore;
+
+
+namespace Hybrid.Entity
 {
     /// <summary>
     /// 默认EntityFramework数据上下文

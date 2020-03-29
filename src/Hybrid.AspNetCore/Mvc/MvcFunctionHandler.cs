@@ -1,26 +1,26 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="MvcFunctionHandler.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="MvcFunctionHandler.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
-//  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2018-08-02 17:56</last-date>
+//  <last-editor></last-editor>
+//  <last-date>2017-09-15 3:08</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.AspNetCore.Mvc.Filters;
-using Hybrid.Authorization;
-using Hybrid.Authorization.Functions;
-using Hybrid.Exceptions;
-using Hybrid.Extensions;
-using Hybrid.Reflection;
+using System;
+using System.Collections.Generic;
+using System.Reflection;
 
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 
-using System;
-using System.Collections.Generic;
-using System.Reflection;
+using Hybrid.AspNetCore.Mvc.Filters;
+using Hybrid.Authorization;
+using Hybrid.Authorization.Functions;
+using Hybrid.Exceptions;
+using Hybrid.Reflection;
+
 
 namespace Hybrid.AspNetCore.Mvc
 {
@@ -60,25 +60,17 @@ namespace Hybrid.AspNetCore.Mvc
             {
                 throw new HybridException($"类型“{controllerType.FullName}”不是MVC控制器类型");
             }
-            FunctionAccessType accessType = controllerType.HasAttribute<LoggedInAttribute>() || controllerType.HasAttribute<AuthorizeAttribute>()
+            FunctionAccessType accessType = controllerType.HasAttribute<LoggedInAttribute>()
                 ? FunctionAccessType.LoggedIn
                 : controllerType.HasAttribute<RoleLimitAttribute>()
                     ? FunctionAccessType.RoleLimit
                     : FunctionAccessType.Anonymous;
-
-            // Console.WriteLine(controllerType.Name + ": " + controllerType.BaseType.HasAttribute<ApiControllerAttribute>());
-
             Function function = new Function()
             {
                 Name = controllerType.GetDescription(),
                 Area = GetArea(controllerType),
-                Controller = controllerType.Name
-                                .Replace("ControllerBase", string.Empty)
-                                .Replace("Controller", string.Empty)
-                                .Replace("`1", string.Empty)
-                                .Replace("`2", string.Empty),
+                Controller = controllerType.Name.Replace("ControllerBase", string.Empty).Replace("Controller", string.Empty),
                 IsController = true,
-                IsWebApi = controllerType.BaseType.HasAttribute<ApiControllerAttribute>(),
                 AccessType = accessType
             };
             return function;
@@ -92,7 +84,7 @@ namespace Hybrid.AspNetCore.Mvc
         /// <returns></returns>
         protected override Function GetFunction(Function typeFunction, MethodInfo method)
         {
-            FunctionAccessType accessType = method.HasAttribute<LoggedInAttribute>() || method.HasAttribute<AuthorizeAttribute>()
+            FunctionAccessType accessType = method.HasAttribute<LoggedInAttribute>()
                 ? FunctionAccessType.LoggedIn
                 : method.HasAttribute<AllowAnonymousAttribute>()
                     ? FunctionAccessType.Anonymous
@@ -107,7 +99,6 @@ namespace Hybrid.AspNetCore.Mvc
                 Action = method.Name,
                 AccessType = accessType,
                 IsController = false,
-                IsWebApi = typeFunction.IsWebApi,
                 IsAjax = method.HasAttribute<AjaxOnlyAttribute>()
             };
             return function;
@@ -122,14 +113,19 @@ namespace Hybrid.AspNetCore.Mvc
         /// <returns></returns>
         protected override bool IsIgnoreMethod(Function action, MethodInfo method, IEnumerable<Function> functions)
         {
-            bool flag = base.IsIgnoreMethod(action, method, functions);
-            return flag && method.HasAttribute<HttpPostAttribute>() || method.HasAttribute<NonActionAttribute>();
+            if (method.HasAttribute<NonActionAttribute>() || method.HasAttribute<NonFunctionAttribute>())
+            {
+                return true;
+            }
+
+            Function existing = GetFunction(functions, action.Area, action.Controller, action.Action, action.Name);
+            return existing != null && method.HasAttribute<HttpPostAttribute>();
         }
 
         /// <summary>
         /// 从类型中获取功能的区域信息
         /// </summary>
-        private static string GetArea(Type type)
+        private static string GetArea(MemberInfo type)
         {
             AreaAttribute attribute = type.GetAttribute<AreaAttribute>();
             return attribute?.RouteValue;

@@ -1,4 +1,5 @@
-﻿using Hybrid.Extensions;
+﻿using Hybrid.Collections;
+using Hybrid.Extensions;
 
 using System;
 using System.Collections.Generic;

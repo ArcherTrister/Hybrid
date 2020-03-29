@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="EventHandlerDisposeWrapper.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="EventHandlerDisposeWrapper.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2018 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
@@ -9,12 +9,13 @@
 
 using System;
 
+
 namespace Hybrid.EventBuses.Internal
 {
     /// <summary>
     /// <see cref="IEventHandler"/>事件处理器的可释放包装
     /// </summary>
-    public class EventHandlerDisposeWrapper : IDisposable
+    public class EventHandlerDisposeWrapper : Disposable
     {
         private readonly Action _disposeAction;
 
@@ -32,10 +33,13 @@ namespace Hybrid.EventBuses.Internal
         /// </summary>
         public IEventHandler EventHandler { get; set; }
 
-        /// <summary>释放资源.</summary>
-        public void Dispose()
+        protected override void Dispose(bool disposing)
         {
-            _disposeAction?.Invoke();
+            if (!Disposed)
+            {
+                _disposeAction?.Invoke();
+            }
+            base.Dispose(disposing);
         }
     }
 }

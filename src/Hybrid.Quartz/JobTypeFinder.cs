@@ -1,7 +1,5 @@
-﻿using Hybrid.Extensions;
-using Hybrid.Finders;
+﻿using Hybrid.Finders;
 using Hybrid.Reflection;
-
 using Quartz;
 
 using System;

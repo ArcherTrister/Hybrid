@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="SortCondition.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="SortCondition.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2015 Hybrid. All rights reserved.
 //  </copyright>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2015-02-06 15:31</last-date>
@@ -10,6 +10,7 @@ using System;
 using System.ComponentModel;
 using System.Linq;
 using System.Linq.Expressions;
+
 
 namespace Hybrid.Filter
 {
@@ -53,6 +54,7 @@ namespace Hybrid.Filter
         /// </summary>
         public ListSortDirection ListSortDirection { get; set; }
     }
+
 
     /// <summary>
     /// 支持泛型的列表字段排序条件

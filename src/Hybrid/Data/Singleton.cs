@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="Singleton.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="Singleton.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014 Hybrid. All rights reserved.
 //  </copyright>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2014-07-18 17:55</last-date>
@@ -8,6 +8,7 @@
 
 using System;
 using System.Collections.Generic;
+
 
 namespace Hybrid.Data
 {
@@ -32,6 +33,7 @@ namespace Hybrid.Data
             }
         }
     }
+
 
     /// <summary>
     /// 提供一个字典容器，按类型装载所有<see cref="Singleton{T}"/>的单例实例

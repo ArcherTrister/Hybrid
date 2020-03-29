@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="DictionaryExtensions.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="DictionaryExtensions.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
@@ -9,6 +9,7 @@
 
 using System;
 using System.Collections.Generic;
+
 
 namespace Hybrid.Extensions
 {
@@ -25,7 +26,7 @@ namespace Hybrid.Extensions
         /// <param name="dictionary">要操作的字典</param>
         /// <param name="key">指定键名</param>
         /// <returns>获取到的值</returns>
-        public static TValue GetOrDefault<TKey, TValue>(this IDictionary<TKey, TValue> dictionary, TKey key)
+        public static TValue GetOrDefault<TKey, TValue>(this IDictionary<TKey, TValue>dictionary, TKey key)
         {
             return dictionary.TryGetValue(key, out TValue value) ? value : default(TValue);
         }
@@ -39,7 +40,7 @@ namespace Hybrid.Extensions
         /// <param name="key">指定键名</param>
         /// <param name="addFunc">添加值的委托</param>
         /// <returns>获取到的值</returns>
-        public static TValue GetOrAdd<TKey, TValue>(this IDictionary<TKey, TValue> dictionary, TKey key, Func<TValue> addFunc)
+        public static TValue GetOrAdd<TKey, TValue>(this IDictionary<TKey, TValue>dictionary, TKey key, Func<TValue> addFunc)
         {
             if (dictionary.TryGetValue(key, out TValue value))
             {

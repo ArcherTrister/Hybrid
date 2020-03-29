@@ -1,39 +1,36 @@
 // -----------------------------------------------------------------------
-//  <copyright file="EntityManager.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="EntityManager.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2019 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor></last-editor>
 //  <last-date>2019-06-27 9:04</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Authorization.EntityInfos;
-using Hybrid.Authorization.Functions;
-using Hybrid.Dependency;
-using Hybrid.EntityFrameworkCore.Defaults;
-using Hybrid.Exceptions;
-using Hybrid.Extensions;
-
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Microsoft.Extensions.DependencyInjection;
-
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Hybrid.EntityFrameworkCore
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
+using Hybrid.Authorization.EntityInfos;
+using Hybrid.Authorization.Functions;
+using Hybrid.Collections;
+using Hybrid.Exceptions;
+using Hybrid.Reflection;
+
+
+namespace Hybrid.Entity
 {
     /// <summary>
     /// 实体管理器
     /// </summary>
-    [Dependency(ServiceLifetime.Singleton, TryAdd = true)]
     public class EntityManager : IEntityManager
     {
         private readonly ConcurrentDictionary<Type, IEntityRegister[]> _entityRegistersDict
             = new ConcurrentDictionary<Type, IEntityRegister[]>();
-
         private readonly IEntityConfigurationTypeFinder _typeFinder;
         private bool _initialized;
 
@@ -116,6 +113,7 @@ namespace Hybrid.EntityFrameworkCore
             throw new HybridException($"无法获取实体类“{entityType}”的所属上下文类型，请通过继承基类“EntityTypeConfigurationBase<TEntity, TKey>”配置实体加载到上下文中");
         }
 
+
         private class EntityInfoConfiguration : EntityTypeConfigurationBase<EntityInfo, Guid>
         {
             /// <summary>
@@ -127,6 +125,7 @@ namespace Hybrid.EntityFrameworkCore
                 builder.HasIndex(m => m.TypeName).HasName("ClassFullNameIndex").IsUnique();
             }
         }
+
 
         private class FunctionConfiguration : EntityTypeConfigurationBase<Function, Guid>
         {

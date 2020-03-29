@@ -1,15 +1,16 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="MapToAttribute.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="MapToAttribute.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2017-09-14 0:24</last-date>
 // -----------------------------------------------------------------------
 
+using System;
+
 using Hybrid.Data;
 
-using System;
 
 namespace Hybrid.Mapping
 {

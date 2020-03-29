@@ -1,27 +1,15 @@
-﻿// -----------------------------------------------------------------------
-//  <copyright file="BaseRazorPage.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
-//  </copyright>
-//  <site>https://www.lxking.cn</site>
-//  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2018-08-02 17:56</last-date>
-// -----------------------------------------------------------------------
-
+﻿using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
 using Hybrid.Data;
-using Hybrid.Extensions;
 using Hybrid.Localization;
 using Hybrid.Localization.Sources;
 using Hybrid.Security;
-
-using Microsoft.AspNetCore.Localization;
-using Microsoft.AspNetCore.Mvc.Razor;
-using Microsoft.AspNetCore.Mvc.Razor.Internal;
-
 using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
+using Hybrid.Extensions;
 
-// ReSharper disable once CheckNamespace
 namespace Hybrid.AspNetCore.Mvc.Views
 {
     /// <summary>
@@ -53,7 +41,7 @@ namespace Hybrid.AspNetCore.Mvc.Views
         {
             get
             {
-                string value = Context.Request.Cookies[HybridConsts.CultureCookieName];
+                string value = Context.Request.Cookies[HybridConstants.CultureCookieName];
                 if (value.IsNullOrWhiteSpace())
                 {
                     return CultureInfo.CurrentUICulture;
@@ -67,7 +55,7 @@ namespace Hybrid.AspNetCore.Mvc.Views
         {
             get
             {
-                string value = Context.Request.Cookies[HybridConsts.SchedulerCookieName];
+                string value = Context.Request.Cookies[HybridConstants.SchedulerCookieName];
                 if (value.IsNullOrWhiteSpace())
                 {
                     return null;

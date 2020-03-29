@@ -1,15 +1,16 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="DependencyAttribute.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="DependencyAttribute.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2018 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-12-31 18:48</last-date>
 // -----------------------------------------------------------------------
 
+using System;
+
 using Microsoft.Extensions.DependencyInjection;
 
-using System;
 
 namespace Hybrid.Dependency
 {

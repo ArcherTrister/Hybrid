@@ -1,16 +1,8 @@
-﻿// -----------------------------------------------------------------------
-//  <copyright file="ExpressionCacheKeyGenerator.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
-//  </copyright>
-//  <site>https://www.lxking.cn</site>
-//  <last-editor></last-editor>
-//  <last-date>2017-09-17 11:44</last-date>
-// -----------------------------------------------------------------------
-
-using Hybrid.Extensions;
-
-using System.Linq;
+﻿using System.Linq;
 using System.Linq.Expressions;
+
+using Hybrid.Collections;
+
 
 namespace Hybrid.Caching
 {
@@ -45,7 +37,7 @@ namespace Hybrid.Caching
             return key + args.ExpandAndToString();
         }
 
-        #endregion Implementation of ICacheKeyGenerator
+        #endregion
 
         private static bool CanBeEvaluatedLocally(Expression expression)
         {

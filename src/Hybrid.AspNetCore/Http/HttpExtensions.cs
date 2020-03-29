@@ -1,10 +1,19 @@
-﻿using Hybrid.Extensions;
-
-using Microsoft.AspNetCore.Http;
+﻿// -----------------------------------------------------------------------
+//  <copyright file="HttpExtensions.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2019 Hybrid. All rights reserved.
+//  </copyright>
+//  <site>https://www.lxking.cn</site>
+//  <last-editor>ArcherTrister</last-editor>
+//  <last-date>2019-10-31 11:12</last-date>
+// -----------------------------------------------------------------------
 
 using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
+
+using Microsoft.AspNetCore.Http;
+using Hybrid.Extensions;
+
 
 namespace Hybrid.AspNetCore.Http
 {
@@ -18,9 +27,7 @@ namespace Hybrid.AspNetCore.Http
         /// </summary>
         public static Task<string> ReadAsStringAsync(this HttpRequest request)
         {
-#if NETSTANDARD
-            request.EnableRewind();
-#endif
+            Stream original = request.Body;
             using (StreamReader reader = new StreamReader(request.Body))
             {
                 reader.BaseStream.Seek(0, SeekOrigin.Begin);
@@ -83,5 +90,6 @@ namespace Hybrid.AspNetCore.Http
 
             return false;
         }
+
     }
 }

@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="ExceptionExtensions.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="ExceptionExtensions.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014 Hybrid. All rights reserved.
 //  </copyright>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2014-07-18 17:28</last-date>
@@ -9,6 +9,7 @@
 using System;
 using System.Runtime.ExceptionServices;
 using System.Text;
+
 
 namespace Hybrid.Exceptions
 {

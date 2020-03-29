@@ -1,19 +1,21 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="ValidateCoder.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="ValidateCoder.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2018 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-06-28 22:31</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Extensions;
-
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Text;
+
+using Hybrid.Collections;
+using Hybrid.Extensions;
+
 
 namespace Hybrid.Drawing
 {
@@ -99,7 +101,7 @@ namespace Hybrid.Drawing
         /// </summary>
         public int RandomLineCount { get; set; }
 
-        #endregion 属性
+        #endregion
 
         #region 公共方法
 
@@ -114,10 +116,8 @@ namespace Hybrid.Drawing
             {
                 case ValidateCodeType.Number:
                     return GetRandomNums(length);
-
                 case ValidateCodeType.Hanzi:
                     return GetRandomHanzis(length);
-
                 default:
                     return GetRandomNumsAndLetters(length);
             }
@@ -244,11 +244,9 @@ namespace Hybrid.Drawing
                 case ValidateCodeType.Number:
                     code = GetRandomNums(length);
                     break;
-
                 case ValidateCodeType.Hanzi:
                     code = GetRandomHanzis(length);
                     break;
-
                 default:
                     code = GetRandomNumsAndLetters(length);
                     break;
@@ -260,7 +258,7 @@ namespace Hybrid.Drawing
             return CreateImage(code, codeType);
         }
 
-        #endregion 公共方法
+        #endregion
 
         #region 私有方法
 
@@ -329,6 +327,7 @@ namespace Hybrid.Drawing
             return result;
         }
 
-        #endregion 私有方法
+        #endregion
+
     }
 }

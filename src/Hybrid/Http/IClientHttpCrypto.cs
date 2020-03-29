@@ -1,5 +1,15 @@
-﻿using System.Net.Http;
+﻿// -----------------------------------------------------------------------
+//  <copyright file="IClientHttpCrypto.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2019 Hybrid. All rights reserved.
+//  </copyright>
+//  <site>https://www.lxking.cn</site>
+//  <last-editor>ArcherTrister</last-editor>
+//  <last-date>2019-10-30 21:42</last-date>
+// -----------------------------------------------------------------------
+
+using System.Net.Http;
 using System.Threading.Tasks;
+
 
 namespace Hybrid.Http
 {

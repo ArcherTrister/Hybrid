@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="DirectoryAssemblyFinder.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="DirectoryAssemblyFinder.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
@@ -13,6 +13,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 
+
 namespace Hybrid.Reflection
 {
     /// <summary>
@@ -22,7 +23,7 @@ namespace Hybrid.Reflection
     {
         private static readonly ConcurrentDictionary<string, Assembly[]> CacheDict = new ConcurrentDictionary<string, Assembly[]>();
         private readonly string _path;
-
+        
         /// <summary>
         /// 初始化一个<see cref="DirectoryAssemblyFinder"/>类型的新实例
         /// </summary>
@@ -59,5 +60,6 @@ namespace Hybrid.Reflection
             CacheDict[_path] = assemblies;
             return assemblies;
         }
+
     }
 }

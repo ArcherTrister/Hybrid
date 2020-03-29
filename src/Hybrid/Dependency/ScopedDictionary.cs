@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="ScopedDictionary.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="ScopedDictionary.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2018 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
@@ -8,21 +8,20 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.Audits;
-using Hybrid.Authorization.Functions;
-
-using Microsoft.Extensions.DependencyInjection;
 
 using System;
 using System.Collections.Concurrent;
 using System.Security.Claims;
+
+using Hybrid.Authorization.Functions;
+
 
 namespace Hybrid.Dependency
 {
     /// <summary>
     /// 基于Scoped生命周期的数据字典，可用于在Scoped环境中传递数据
     /// </summary>
-    [Dependency(ServiceLifetime.Scoped, AddSelf = true)]
-    public class ScopedDictionary : ConcurrentDictionary<string, object>, IDisposable
+    public sealed class ScopedDictionary : ConcurrentDictionary<string, object>, IDisposable
     {
         /// <summary>
         /// 获取或设置 当前执行的功能

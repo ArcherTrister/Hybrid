@@ -1,19 +1,19 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="ConnectionUserCache.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="ConnectionUserCache.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2019 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2019-01-04 20:30</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Caching;
-using Hybrid.Extensions;
+using System.Linq;
+using System.Threading.Tasks;
 
 using Microsoft.Extensions.Caching.Distributed;
 
-using System.Linq;
-using System.Threading.Tasks;
+using Hybrid.Caching;
+using Hybrid.Collections;
 
 
 namespace Hybrid.AspNetCore.SignalR
@@ -115,7 +115,7 @@ namespace Hybrid.AspNetCore.SignalR
 
         private static string GetKey(string userName)
         {
-            return $"SignalR_Connection_User_{userName}";
+            return $"SignalR:Connection_User:{userName}";
         }
     }
 }

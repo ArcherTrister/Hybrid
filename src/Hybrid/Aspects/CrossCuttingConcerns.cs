@@ -1,18 +1,8 @@
-﻿// -----------------------------------------------------------------------
-//  <copyright file="CrossCuttingConcerns.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
-//  </copyright>
-//  <site>https://www.lxking.cn</site>
-//  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2018-08-02 15:10</last-date>
-// -----------------------------------------------------------------------
-
+﻿using JetBrains.Annotations;
 using Hybrid.Application.Services;
-using Hybrid.Extensions;
-
-using JetBrains.Annotations;
-
+using Hybrid.Collections;
 using System;
+using System.Threading;
 
 namespace Hybrid.Aspects
 {

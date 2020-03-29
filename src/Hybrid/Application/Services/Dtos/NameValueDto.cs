@@ -1,13 +1,6 @@
-﻿// -----------------------------------------------------------------------
-//  <copyright file="NameValueDto.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
-//  </copyright>
-//  <site>https://www.lxking.cn</site>
-//  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2018-08-02 15:10</last-date>
-// -----------------------------------------------------------------------
-
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace Hybrid.Application.Services.Dtos
 {

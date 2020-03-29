@@ -1,13 +1,14 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="IFunctionHandler.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="IFunctionHandler.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
-//  <last-editor></last-editor>
-//  <last-date>2017-09-14 20:10</last-date>
+//  <last-editor>ArcherTrister</last-editor>
+//  <last-date>2020-02-10 20:14</last-date>
 // -----------------------------------------------------------------------
 
 using Hybrid.Reflection;
+
 
 namespace Hybrid.Authorization.Functions
 {

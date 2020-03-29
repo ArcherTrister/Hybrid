@@ -1,13 +1,15 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="AjaxResponseBase.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="AjaxResult.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2018-08-02 17:56</last-date>
+//  <last-date>2017-09-01 20:38</last-date>
 // -----------------------------------------------------------------------
 
-namespace Hybrid.AspNetCore.Mvc.Models
+using Hybrid.AspNetCore.Mvc.Models;
+
+namespace Hybrid.AspNetCore.UI
 {
     public abstract class AjaxResponseBase
     {

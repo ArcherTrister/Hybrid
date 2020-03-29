@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="LockExtensions.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="LockExtensions.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
@@ -8,6 +8,7 @@
 // -----------------------------------------------------------------------
 
 using System;
+
 
 namespace Hybrid.Reflection
 {
@@ -30,7 +31,7 @@ namespace Hybrid.Reflection
         /// <summary>
         /// 锁定给定源数据，执行委托
         /// </summary>
-        public static void Locking<T>(this T source, Action<T> action)
+        public static void Locking<T>(this T source, Action<T>action)
         {
             lock (source)
             {
@@ -41,7 +42,7 @@ namespace Hybrid.Reflection
         /// <summary>
         /// 锁定给定object标识，执行委托
         /// </summary>
-        public static TResult Locking<TResult>(this object source, Func<TResult> func)
+        public static TResult Locking<TResult>(this object source, Func<TResult>func)
         {
             lock (source)
             {
@@ -52,7 +53,7 @@ namespace Hybrid.Reflection
         /// <summary>
         /// 锁定给定源数据，执行委托
         /// </summary>
-        public static TResult Locking<TSource, TResult>(this TSource source, Func<TSource, TResult> func)
+        public static TResult Locking<TSource, TResult>(this TSource source, Func<TSource, TResult>func)
         {
             lock (source)
             {

@@ -1,16 +1,19 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="ScopedDictionaryExtensions.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="ScopedDictionaryExtensions.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2019 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2019-03-27 14:54</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Domain.Uow;
-
 using System;
 using System.Linq;
+
+using Microsoft.Extensions.DependencyInjection;
+
+using Hybrid.Entity;
+
 
 namespace Hybrid.Dependency
 {

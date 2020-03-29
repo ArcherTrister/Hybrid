@@ -1,18 +1,19 @@
 // -----------------------------------------------------------------------
-//  <copyright file="PropertyMetadata.cs" company="cn.lxking">
-//      Copyright ? 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="PropertyMetadata.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2018 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-08-06 12:31</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Extensions;
-
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Reflection;
+
+using Hybrid.Reflection;
+
 
 namespace Hybrid.CodeGenerator
 {
@@ -80,7 +81,7 @@ namespace Hybrid.CodeGenerator
                 }
             }
         }
-
+        
         /// <summary>
         /// 获取或设置 属性名称
         /// </summary>
@@ -137,7 +138,7 @@ namespace Hybrid.CodeGenerator
         public EnumMetadata[] EnumMetadatas { get; set; }
 
         /// <summary>
-        /// 是否有验证属性
+        /// 是否有验证属性 
         /// </summary>
         public bool HasValidateAttribute()
         {

@@ -1,16 +1,17 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="FilterGroup.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="FilterGroup.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2015 Hybrid. All rights reserved.
 //  </copyright>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2015-07-26 15:20</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Properties;
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
+
+using Hybrid.Properties;
+
 
 namespace Hybrid.Filter
 {
@@ -49,7 +50,7 @@ namespace Hybrid.Filter
             Groups = new List<FilterGroup>();
         }
 
-        #endregion 构造函数
+        #endregion
 
         /// <summary>
         /// 获取或设置 条件集合

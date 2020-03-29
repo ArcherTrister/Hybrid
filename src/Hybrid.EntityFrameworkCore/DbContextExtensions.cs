@@ -1,30 +1,30 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="DbContextExtensions.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="DbContextExtensions.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2017-09-20 1:06</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Data;
-using Hybrid.Domain.Entities;
-using Hybrid.Domain.EntityFramework;
-using Hybrid.Exceptions;
-using Hybrid.Extensions;
+using System;
+using System.Linq;
+using System.Threading.Tasks;
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 
-using System;
-using System.Linq;
-using System.Threading.Tasks;
+using Hybrid.Collections;
+using Hybrid.Core.Options;
+using Hybrid.Data;
+using Hybrid.Exceptions;
 
-namespace Hybrid.EntityFrameworkCore
+
+namespace Hybrid.Entity
 {
     /// <summary>
     /// 数据上下文扩展方法
@@ -66,6 +66,7 @@ namespace Hybrid.EntityFrameworkCore
         /// <summary>
         /// 执行指定的Sql语句
         /// </summary>
+        [Obsolete("使用 ExecuteSqlRaw 代替")]
         public static int ExecuteSqlCommand(this IDbContext dbContext, string sql, params object[] parameters)
         {
             if (!(dbContext is DbContext context))
@@ -78,6 +79,7 @@ namespace Hybrid.EntityFrameworkCore
         /// <summary>
         /// 异步执行指定的Sql语句
         /// </summary>
+        [Obsolete("使用 ExecuteSqlRawAsync 代替")]
         public static Task<int> ExecuteSqlCommandAsync(this IDbContext dbContext, string sql, params object[] parameters)
         {
             if (!(dbContext is DbContext context))
@@ -85,6 +87,73 @@ namespace Hybrid.EntityFrameworkCore
                 throw new HybridException($"参数dbContext类型为“{dbContext.GetType()}”，不能转换为 DbContext");
             }
             return context.Database.ExecuteSqlCommandAsync(new RawSqlString(sql), parameters);
+        }
+
+        /// <summary>
+        /// 执行指定的Sql语句
+        /// </summary>
+        public static int ExecuteSqlRaw(this IDbContext dbContext, string sql, params object[] parameters)
+        {
+            if (!(dbContext is DbContext context))
+            {
+                throw new HybridException($"参数dbContext类型为“{dbContext.GetType()}”，不能转换为 DbContext");
+            }
+            return context.Database.ExecuteSqlRaw(sql, parameters);
+        }
+
+        /// <summary>
+        /// 异步执行指定的Sql语句
+        /// </summary>
+        public static Task<int> ExecuteSqlRawAsync(this IDbContext dbContext, string sql, params object[] parameters)
+        {
+            if (!(dbContext is DbContext context))
+            {
+                throw new HybridException($"参数dbContext类型为“{dbContext.GetType()}”，不能转换为 DbContext");
+            }
+            return context.Database.ExecuteSqlRawAsync(sql, parameters);
+        }
+
+        /// <summary>
+        /// 执行指定的格式化Sql语句
+        /// </summary>
+        public static int ExecuteSqlInterpolated(this IDbContext dbContext, FormattableString sql)
+        {
+            if (!(dbContext is DbContext context))
+            {
+                throw new HybridException($"参数dbContext类型为“{dbContext.GetType()}”，不能转换为 DbContext");
+            }
+            return context.Database.ExecuteSqlInterpolated(sql);
+        }
+
+        /// <summary>
+        /// 异步执行指定的格式化Sql语句
+        /// </summary>
+        public static Task<int> ExecuteSqlInterpolatedAsync(this IDbContext dbContext, FormattableString sql)
+        {
+            if (!(dbContext is DbContext context))
+            {
+                throw new HybridException($"参数dbContext类型为“{dbContext.GetType()}”，不能转换为 DbContext");
+            }
+            return context.Database.ExecuteSqlInterpolatedAsync(sql);
+        }
+
+        /// <summary>
+        /// 获取实体上下文所属的数据库类型
+        /// </summary>
+        public static DatabaseType GetDatabaseType(this IDbContext dbContext)
+        {
+            if (!(dbContext is DbContext context))
+            {
+                throw new HybridException($"参数dbContext类型为“{dbContext.GetType()}”，不能转换为 DbContext");
+            }
+
+            HybridOptions options = context.GetService<IOptions<HybridOptions>>()?.Value;
+            if (options != null)
+            {
+                return options.DbContexts.First(m => m.Value.DbContextType == context.GetType()).Value.DatabaseType;
+            }
+
+            return DatabaseType.SqlServer;
         }
 
         /// <summary>

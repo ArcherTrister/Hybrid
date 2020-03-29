@@ -1,10 +1,10 @@
-﻿using Hybrid.Exceptions;
-using Hybrid.Net.Mail;
-using Hybrid.Net.Mail.Configuration;
-using MailKit.Security;
+﻿using MailKit.Security;
 
 using MimeKit;
 
+using Hybrid.Exceptions;
+using Hybrid.Net.Mail;
+using Hybrid.Net.Mail.Configuration;
 using System;
 using System.Net.Mail;
 using System.Threading.Tasks;

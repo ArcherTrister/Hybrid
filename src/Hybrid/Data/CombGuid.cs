@@ -1,12 +1,13 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="CombHelper.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="CombHelper.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014 Hybrid. All rights reserved.
 //  </copyright>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2014-07-18 16:17</last-date>
 // -----------------------------------------------------------------------
 
 using System;
+
 
 namespace Hybrid.Data
 {
@@ -52,15 +53,15 @@ namespace Hybrid.Data
             byte[] msecsArray = new byte[4];
             byte[] guidArray = id.ToByteArray();
 
-            // 将GUID的日期部分复制到相应的字节数组。
+            // 将GUID的日期部分复制到相应的字节数组。 
             Array.Copy(guidArray, guidArray.Length - 6, daysArray, 2, 2);
             Array.Copy(guidArray, guidArray.Length - 4, msecsArray, 0, 4);
 
-            // 将数组反转，以将它们排列成适当的顺序。
+            // 将数组反转，以将它们排列成适当的顺序。 
             Array.Reverse(daysArray);
             Array.Reverse(msecsArray);
 
-            // 将字节转换为int
+            // 将字节转换为int 
             int days = BitConverter.ToInt32(daysArray, 0);
             int msecs = BitConverter.ToInt32(msecsArray, 0);
 

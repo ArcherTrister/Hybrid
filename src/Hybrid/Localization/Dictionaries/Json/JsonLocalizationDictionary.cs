@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
+using Hybrid.Collections;
 
 namespace Hybrid.Localization.Dictionaries.Json
 {

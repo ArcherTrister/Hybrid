@@ -1,27 +1,25 @@
 // -----------------------------------------------------------------------
-//  <copyright file="DbContextModelCache.cs" company="cn.lxking">
-//      Copyright ? 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="DbContextModelCache.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2018 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-08-12 14:14</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Dependency;
-using Hybrid.Extensions;
-
-using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.Extensions.DependencyInjection;
-
 using System;
 using System.Collections.Concurrent;
 
-namespace Hybrid.EntityFrameworkCore
+using Microsoft.EntityFrameworkCore.Metadata;
+
+using Hybrid.Extensions;
+
+
+namespace Hybrid.Entity
 {
     /// <summary>
     /// 上下文数据模型缓存
     /// </summary>
-    [Dependency(ServiceLifetime.Singleton, AddSelf = true)]
     public class DbContextModelCache
     {
         private readonly ConcurrentDictionary<Type, IModel> _dict = new ConcurrentDictionary<Type, IModel>();

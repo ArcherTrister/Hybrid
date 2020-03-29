@@ -1,20 +1,11 @@
-﻿// -----------------------------------------------------------------------
-//  <copyright file="DefaultServiceScopeFactory.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
-//  </copyright>
-//  <site>https://www.lxking.cn</site>
-//  <last-editor></last-editor>
-//  <last-date>2017-09-17 11:44</last-date>
-// -----------------------------------------------------------------------
+﻿using Microsoft.Extensions.DependencyInjection;
 
-using Microsoft.Extensions.DependencyInjection;
 
 namespace Hybrid.Dependency
 {
     /// <summary>
     /// 默认<see cref="IServiceScope"/>工厂，行为和<see cref="IServiceScopeFactory"/>一样
     /// </summary>
-    [Dependency(ServiceLifetime.Singleton, TryAdd = true)]
     public class DefaultServiceScopeFactory : IHybridServiceScopeFactory
     {
         /// <summary>
@@ -24,7 +15,7 @@ namespace Hybrid.Dependency
         {
             ServiceScopeFactory = serviceScopeFactory;
         }
-
+        
         /// <summary>
         /// 获取 <see cref="IServiceScope"/>工厂
         /// </summary>
@@ -48,6 +39,6 @@ namespace Hybrid.Dependency
             return ServiceScopeFactory.CreateScope();
         }
 
-        #endregion Implementation of IServiceScopeFactory
+        #endregion
     }
 }

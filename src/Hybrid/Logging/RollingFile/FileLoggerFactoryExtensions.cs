@@ -1,17 +1,18 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="FileLoggerFactoryExtensions.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="FileLoggerFactoryExtensions.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor></last-editor>
 //  <last-date>2017-09-17 21:17</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Logging.RollingFile;
+using System;
 
 using Microsoft.Extensions.Logging;
 
-using System;
+using Hybrid.Logging.RollingFile;
+
 
 //power by https://github.com/andrewlock/NetEscapades.Extensions.Logging
 namespace Microsoft.Extensions.DependencyInjection

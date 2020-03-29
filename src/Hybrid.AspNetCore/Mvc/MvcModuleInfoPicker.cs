@@ -1,23 +1,25 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="MvcModuleInfoPicker.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="MvcModuleInfoPicker.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2018 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2018-08-02 17:56</last-date>
+//  <last-date>2018-06-23 17:23</last-date>
 // -----------------------------------------------------------------------
-
-using Hybrid.Authorization.Functions;
-using Hybrid.Authorization.ModuleInfos;
-using Hybrid.Exceptions;
-using Hybrid.Extensions;
-
-using Microsoft.AspNetCore.Mvc;
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
+
+using Microsoft.AspNetCore.Mvc;
+
+using Hybrid.Authorization.Functions;
+using Hybrid.Authorization.Modules;
+using Hybrid.Exceptions;
+using Hybrid.Reflection;
+
 
 namespace Hybrid.AspNetCore.Mvc
 {
@@ -81,7 +83,8 @@ namespace Hybrid.AspNetCore.Mvc
             {
                 AreaAttribute areaAttr = type.GetAttribute<AreaAttribute>();
                 area = areaAttr?.RouteValue ?? "Site";
-                name = area == "Site" ? "站点" : area;
+                DisplayNameAttribute display = type.GetAttribute<DisplayNameAttribute>();
+                name = display?.DisplayName ?? area;
             }
             info = new ModuleInfo()
             {

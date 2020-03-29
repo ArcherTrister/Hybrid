@@ -1,30 +1,27 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="UnitOfWorkManager.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="UnitOfWorkManager.cs" company="柳柳软件">
+//      Copyright (c) 2016-2018 66SOFT. All rights reserved.
 //  </copyright>
-//  <site>https://www.lxking.cn</site>
+//  <site>http://www.66soft.net</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-08-31 21:33</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Core.Options;
-using Hybrid.Dependency;
-using Hybrid.Domain.Entities;
-using Hybrid.Domain.Uow;
-using Hybrid.Exceptions;
-
-using Microsoft.Extensions.DependencyInjection;
-
 using System;
 using System.Linq;
 
-namespace Hybrid.EntityFrameworkCore
+using Microsoft.Extensions.DependencyInjection;
+using Hybrid.Core.Options;
+using Hybrid.Dependency;
+using Hybrid.Exceptions;
+
+
+namespace Hybrid.Entity
 {
     /// <summary>
     /// 工作单元管理器
     /// </summary>
-    [Dependency(ServiceLifetime.Scoped, TryAdd = true)]
-    public class UnitOfWorkManager : IUnitOfWorkManager
+    public class UnitOfWorkManager : Disposable, IUnitOfWorkManager
     {
         private readonly ScopedDictionary _scopedDictionary;
 
@@ -139,21 +136,16 @@ namespace Hybrid.EntityFrameworkCore
             }
         }
 
-        /// <summary>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</summary>
-        public void Dispose()
+        protected override void Dispose(bool disposing)
         {
-            foreach (IUnitOfWork unitOfWork in _scopedDictionary.GetConnUnitOfWorks())
+            if (!Disposed)
             {
-                unitOfWork.Dispose();
+                foreach (IUnitOfWork unitOfWork in _scopedDictionary.GetConnUnitOfWorks())
+                {
+                    unitOfWork.Dispose();
+                }
             }
-        }
-
-        public void Rollback()
-        {
-            foreach (IUnitOfWork unitOfWork in _scopedDictionary.GetConnUnitOfWorks())
-            {
-                unitOfWork.Rollback();
-            }
+            base.Dispose(disposing);
         }
     }
 }

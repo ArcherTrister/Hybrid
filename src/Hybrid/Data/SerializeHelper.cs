@@ -1,12 +1,10 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="SerializeHelper.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="SerializeHelper.cs" company="Hybrid开源团队">
+//      Copyright (c) 2015 Hybrid. All rights reserved.
 //  </copyright>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2015-01-02 15:54</last-date>
 // -----------------------------------------------------------------------
-
-using Hybrid.Extensions;
 
 using System;
 using System.IO;
@@ -14,6 +12,9 @@ using System.Runtime.InteropServices;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Xml.Serialization;
+
+using Hybrid.Extensions;
+
 
 namespace Hybrid.Data
 {
@@ -106,7 +107,7 @@ namespace Hybrid.Data
             }
         }
 
-        #endregion 二进制序列化
+        #endregion
 
         #region XML序列化
 
@@ -144,7 +145,7 @@ namespace Hybrid.Data
         /// </summary>
         public static void ToXmlFile(string fileName, object data)
         {
-            fileName.CheckNotNull("fileName");
+            fileName.CheckNotNull("fileName" );
             data.CheckNotNull("data");
             using (FileStream fs = new FileStream(fileName, FileMode.Create))
             {
@@ -166,6 +167,6 @@ namespace Hybrid.Data
             }
         }
 
-        #endregion XML序列化
+        #endregion
     }
 }

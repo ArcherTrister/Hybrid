@@ -1,6 +1,11 @@
-﻿using Hybrid.Extensions;
-
-using Newtonsoft.Json;
+﻿// -----------------------------------------------------------------------
+//  <copyright file="HttpClientExtensions.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
+//  </copyright>
+//  <site>https://www.lxking.cn</site>
+//  <last-editor>ArcherTrister</last-editor>
+//  <last-date>2017-08-15 23:39</last-date>
+// -----------------------------------------------------------------------
 
 using System;
 using System.Collections.Generic;
@@ -9,6 +14,11 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+
+using Newtonsoft.Json;
+
+using Hybrid.Extensions;
+
 
 namespace Hybrid.Http
 {

@@ -1,22 +1,23 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="RollingFileLoggerProvider.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="RollingFileLoggerProvider.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor></last-editor>
 //  <last-date>2017-09-17 21:19</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Logging.RollingFile.Internal;
-
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
+
+using Hybrid.Logging.RollingFile.Internal;
+
 
 namespace Hybrid.Logging.RollingFile
 {
@@ -33,7 +34,7 @@ namespace Hybrid.Logging.RollingFile
         private readonly string _path;
 
         /// <summary>
-        /// Creates an instance of the <see cref="FileLoggerProvider" />
+        /// Creates an instance of the <see cref="FileLoggerProvider" /> 
         /// </summary>
         /// <param name="options">The options object controlling the logger</param>
         public FileLoggerProvider(IOptions<FileLoggerOptions> options)

@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="AsyncLock.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="AsyncLock.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2016 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
@@ -10,6 +10,7 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
+
 
 namespace Hybrid.Threading.Asyncs
 {
@@ -44,6 +45,7 @@ namespace Hybrid.Threading.Asyncs
                     TaskContinuationOptions.ExecuteSynchronously,
                     TaskScheduler.Default);
         }
+
 
         /// <summary>
         /// 释放资源的包装

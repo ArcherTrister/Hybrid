@@ -1,16 +1,17 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="IEventHandler.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="IEventHandler.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2018 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-01-12 12:10</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Dependency;
-
 using System.Threading;
 using System.Threading.Tasks;
+
+using Hybrid.Dependency;
+
 
 namespace Hybrid.EventBuses
 {
@@ -42,6 +43,7 @@ namespace Hybrid.EventBuses
         /// <returns></returns>
         Task HandleAsync(IEventData eventData, CancellationToken cancelToken = default(CancellationToken));
     }
+
 
     /// <summary>
     /// 定义泛型事件处理器

@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="AsyncBarrier.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="AsyncBarrier.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2016 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
@@ -11,6 +11,7 @@ using System;
 using System.Collections.Concurrent;
 using System.Threading;
 using System.Threading.Tasks;
+
 
 namespace Hybrid.Threading.Asyncs
 {
@@ -40,6 +41,7 @@ namespace Hybrid.Threading.Asyncs
             }
             return tcs.Task;
         }
+
 
         public class AsyncBarrier1
         {

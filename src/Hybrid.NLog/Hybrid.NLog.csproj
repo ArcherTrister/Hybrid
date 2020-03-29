@@ -1,14 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <Import Project="..\..\build\packages.props" />
+	<Import Project="..\..\build\packages.props" />
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <PackageId>Hybrid.NLog</PackageId>
-    <Summary>Hybrid.NLog组件</Summary>
-    <Description>Hybrid.NLog组件，封装使用nlog组件来实现框架的日志输出功能</Description>
-    <RootNamespace>Hybrid.NLog</RootNamespace>
-    <AssemblyName>Hybrid.NLog</AssemblyName>
+    <Description>Hybrid NLog组件，封装使用nlog组件来实现框架的日志输出功能</Description>
+    <Summary>Hybrid NLog组件</Summary>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -17,17 +16,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="NLog" Version="4.6.8" />
+    <PackageReference Include="NLog" Version="4.7.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Hybrid\Hybrid.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="nlog.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
 
 </Project>

@@ -1,8 +1,8 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="NetHelper.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="NetHelper.cs" company="柳柳软件">
+//      Copyright (c) 2016 66SOFT. All rights reserved.
 //  </copyright>
-//  <site>https://www.lxking.cn</site>
+//  <site>http://www.66soft.net</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2016-03-16 13:07</last-date>
 // -----------------------------------------------------------------------
@@ -10,6 +10,7 @@
 using System.Net.NetworkInformation;
 using System.Runtime.InteropServices;
 using System.Text;
+
 
 namespace Hybrid.Net
 {
@@ -51,5 +52,6 @@ namespace Hybrid.Net
 
         [DllImport("wininet.dll")]
         private static extern bool InternetGetConnectedState(out int connectionDescription, int reservedValue);
+
     }
 }

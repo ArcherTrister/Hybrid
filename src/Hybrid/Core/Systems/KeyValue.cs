@@ -1,22 +1,24 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="KeyValue.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="KeyValue.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2018 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-08-12 16:00</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Core.Data;
-using Hybrid.Domain.Entities;
-using Hybrid.Exceptions;
-using Hybrid.Extensions;
-using Hybrid.Json;
-
 using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+
+using Hybrid.Core.Data;
+using Hybrid.Entity;
+using Hybrid.Exceptions;
+using Hybrid.Extensions;
+using Hybrid.Json;
+using Hybrid.Reflection;
+
 
 namespace Hybrid.Core.Systems
 {
@@ -24,6 +26,7 @@ namespace Hybrid.Core.Systems
     /// 实体类：数据键值对
     /// </summary>
     [Description("键值对信息")]
+    [TableNamePrefix("Systems")]
     public class KeyValue : EntityBase<Guid>, ILockable, IKeyValue
     {
         /// <summary>

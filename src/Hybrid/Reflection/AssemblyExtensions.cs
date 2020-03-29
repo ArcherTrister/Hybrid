@@ -1,19 +1,20 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="AssemblyExtensions.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="AssemblyExtensions.cs" company="柳柳软件">
+//      Copyright (c) 2014 66SOFT. All rights reserved.
 //  </copyright>
-//  <site>https://www.lxking.cn</site>
+//  <site>http://www.66soft.net</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2014-09-08 7:46</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Extensions;
-
-using Microsoft.Extensions.DependencyModel;
-
 using System.Diagnostics;
 using System.Linq;
 using System.Reflection;
+
+using Microsoft.Extensions.DependencyModel;
+
+using Hybrid.Extensions;
+
 
 namespace Hybrid.Reflection
 {

@@ -1,16 +1,25 @@
-﻿using Hybrid.Dependency;
+﻿// -----------------------------------------------------------------------
+//  <copyright file="HttpContextServiceScopeFactory.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2018 Hybrid. All rights reserved.
+//  </copyright>
+//  <site>https://www.lxking.cn</site>
+//  <last-editor>ArcherTrister</last-editor>
+//  <last-date>2018-12-20 23:29</last-date>
+// -----------------------------------------------------------------------
+
+using System;
 
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 
-using System;
+using Hybrid.Dependency;
+
 
 namespace Hybrid.AspNetCore
 {
     /// <summary>
     /// 基于当前HttpContext的<see cref="IServiceScope"/>工厂，如果当前操作处于HttpRequest作用域中，直接使用HttpRequest的作用域，否则创建新的作用域
     /// </summary>
-    [Dependency(ServiceLifetime.Singleton, ReplaceExisting = true)]
     public class HttpContextServiceScopeFactory : IHybridServiceScopeFactory
     {
         /// <summary>
@@ -68,7 +77,7 @@ namespace Hybrid.AspNetCore
             /// <summary>
             /// 获取 当前HttpRequest的<see cref="IServiceProvider"/>
             /// </summary>
-            public IServiceProvider ServiceProvider { get; }
+            public IServiceProvider ServiceProvider { get;  }
 
             /// <summary>因为是HttpContext的，啥也不做，避免在using使用时被释放</summary>
             public void Dispose()

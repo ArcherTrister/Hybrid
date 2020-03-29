@@ -1,17 +1,18 @@
 // -----------------------------------------------------------------------
-//  <copyright file="EntityMetadata.cs" company="cn.lxking">
-//      Copyright ? 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="EntityMetadata.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2018 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-08-06 12:25</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Extensions;
-
 using System;
 using System.Collections.Generic;
 using System.Reflection;
+
+using Hybrid.Reflection;
+
 
 namespace Hybrid.CodeGenerator
 {

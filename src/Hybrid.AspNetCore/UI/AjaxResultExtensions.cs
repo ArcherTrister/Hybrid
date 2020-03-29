@@ -1,15 +1,17 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="AjaxResultExtensions.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="AjaxResultExtensions.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
+//  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2017-09-01 20:39:00</last-date>
+//  <last-date>2017-09-01 20:39</last-date>
 // -----------------------------------------------------------------------
+
+using System;
 
 using Hybrid.Data;
 using Hybrid.Extensions;
 
-using System;
 
 namespace Hybrid.AspNetCore.UI
 {
@@ -26,7 +28,7 @@ namespace Hybrid.AspNetCore.UI
             string content = result.Message ?? result.ResultType.ToDescription();
             AjaxResultType type = result.ResultType.ToAjaxResultType();
             object data = dataFunc == null ? result.Data : dataFunc(result.Data);
-            return new AjaxResult(content, data, type);
+            return new AjaxResult(content, type, data);
         }
 
         /// <summary>
@@ -39,7 +41,7 @@ namespace Hybrid.AspNetCore.UI
         {
             string content = result.Message ?? result.ResultType.ToDescription();
             AjaxResultType type = result.ResultType.ToAjaxResultType();
-            return containsData ? new AjaxResult(content, result.Data, type) : new AjaxResult(content, type);
+            return containsData ? new AjaxResult(content, type, result.Data) : new AjaxResult(content, type);
         }
 
         /// <summary>
@@ -57,7 +59,7 @@ namespace Hybrid.AspNetCore.UI
                     data = dataFunc(resultData);
                 }
             }
-            return new AjaxResult(content, data, type);
+            return new AjaxResult(content, type, data);
         }
 
         /// <summary>
@@ -69,10 +71,8 @@ namespace Hybrid.AspNetCore.UI
             {
                 case OperationResultType.Success:
                     return AjaxResultType.Success;
-
                 case OperationResultType.NoChanged:
                     return AjaxResultType.Info;
-
                 default:
                     return AjaxResultType.Error;
             }

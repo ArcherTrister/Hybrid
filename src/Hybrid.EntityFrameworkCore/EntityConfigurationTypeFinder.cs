@@ -1,23 +1,20 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="EntityConfigurationTypeFinder.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="EntityConfigurationTypeFinder.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2019 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2019-03-08 3:05</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Dependency;
 using Hybrid.Reflection;
 
-using Microsoft.Extensions.DependencyInjection;
 
-namespace Hybrid.EntityFrameworkCore
+namespace Hybrid.Entity
 {
     /// <summary>
     /// 实体类配置类型查找器
     /// </summary>
-    [Dependency(ServiceLifetime.Singleton, TryAdd = true)]
     public class EntityConfigurationTypeFinder : BaseTypeFinderBase<IEntityRegister>, IEntityConfigurationTypeFinder
     {
         /// <summary>

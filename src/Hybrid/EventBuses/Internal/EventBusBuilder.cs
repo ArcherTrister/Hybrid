@@ -1,24 +1,20 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="EventBusBuilder.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="EventBusBuilder.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2017-09-18 18:29</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Dependency;
-
-using Microsoft.Extensions.DependencyInjection;
-
 using System;
+
 
 namespace Hybrid.EventBuses.Internal
 {
     /// <summary>
     /// EventBus初始化
     /// </summary>
-    [Dependency(ServiceLifetime.Singleton, TryAdd = true)]
     internal class EventBusBuilder : IEventBusBuilder
     {
         private readonly IEventHandlerTypeFinder _typeFinder;

@@ -1,17 +1,18 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="AbstractBuilder.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="AbstractBuilder.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014 Hybrid. All rights reserved.
 //  </copyright>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2014:07:04 17:42</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Properties;
-
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+
+using Hybrid.Properties;
+
 
 namespace Hybrid.Extensions
 {

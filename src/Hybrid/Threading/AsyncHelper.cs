@@ -1,17 +1,18 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="AsyncHelper.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="AsyncHelper.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2019 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2019-01-02 14:49</last-date>
 // -----------------------------------------------------------------------
 
-using JetBrains.Annotations;
-
 using System;
 using System.Reflection;
 using System.Threading.Tasks;
+
+using JetBrains.Annotations;
+
 
 namespace Hybrid.Threading
 {

@@ -1,15 +1,16 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="IEntityInfoHandler.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="IEntityInfoHandler.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2017-09-14 12:44</last-date>
+//  <last-date>2020-02-10 20:14</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Domain.Entities;
-
 using System;
+
+using Hybrid.Entity;
+
 
 namespace Hybrid.Authorization.EntityInfos
 {

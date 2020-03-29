@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="AsyncAutoResetEvent.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="AsyncAutoResetEvent.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2016 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
@@ -9,6 +9,7 @@
 
 using System.Collections.Generic;
 using System.Threading.Tasks;
+
 
 namespace Hybrid.Threading.Asyncs
 {
@@ -22,7 +23,7 @@ namespace Hybrid.Threading.Asyncs
         private bool _signaled;
 
         /// <summary>
-        ///
+        /// 
         /// </summary>
         /// <returns></returns>
         public Task WaitAsync()
@@ -42,7 +43,7 @@ namespace Hybrid.Threading.Asyncs
         }
 
         /// <summary>
-        ///
+        /// 
         /// </summary>
         public void Set()
         {

@@ -1,16 +1,11 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="EntityInfoBase.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="EntityInfoBase.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
-//  <last-editor></last-editor>
-//  <last-date>2017-09-14 15:28</last-date>
+//  <last-editor>ArcherTrister</last-editor>
+//  <last-date>2020-02-10 20:14</last-date>
 // -----------------------------------------------------------------------
-
-using Hybrid.Data;
-using Hybrid.Domain.Entities;
-using Hybrid.Extensions;
-using Hybrid.Json;
 
 using System;
 using System.ComponentModel;
@@ -18,6 +13,13 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Reflection;
+
+using Hybrid.Data;
+using Hybrid.Entity;
+using Hybrid.Extensions;
+using Hybrid.Json;
+using Hybrid.Reflection;
+
 
 namespace Hybrid.Authorization.EntityInfos
 {
@@ -62,6 +64,7 @@ namespace Hybrid.Authorization.EntityInfos
                 {
                     return new EntityProperty[0];
                 }
+
                 return PropertyJson.FromJsonString<EntityProperty[]>();
             }
         }
@@ -80,38 +83,36 @@ namespace Hybrid.Authorization.EntityInfos
 
             PropertyInfo[] propertyInfos = entityType.GetProperties(BindingFlags.Instance | BindingFlags.Public);
             string[] exceptNames = { "DeletedTime" };
-            PropertyJson = propertyInfos.Where(m => !exceptNames.Contains(m.Name)
-                    && (m.GetMethod != null && !m.GetMethod.IsVirtual || m.SetMethod != null && !m.SetMethod.IsVirtual))
-                .Select(property =>
+            PropertyJson = propertyInfos.Where(m => !exceptNames.Contains(m.Name) && !m.IsVirtual()).Select(property =>
+            {
+                EntityProperty ep = new EntityProperty()
                 {
-                    EntityProperty ep = new EntityProperty()
+                    Name = property.Name,
+                    Display = property.GetDescription(),
+                    TypeName = property.PropertyType.FullName
+                };
+                //枚举类型，获取枚举项作为取值范围
+                if (property.PropertyType.IsEnum)
+                {
+                    ep.TypeName = typeof(int).FullName;
+                    Type enumType = property.PropertyType;
+                    Array values = enumType.GetEnumValues();
+                    int[] intValues = values.Cast<int>().ToArray();
+                    string[] names = values.Cast<Enum>().Select(m => m.ToDescription()).ToArray();
+                    for (int i = 0; i < intValues.Length; i++)
                     {
-                        Name = property.Name,
-                        Display = property.GetDescription(),
-                        TypeName = property.PropertyType.FullName
-                    };
-                    //枚举类型，获取枚举项作为取值范围
-                    if (property.PropertyType.IsEnum)
-                    {
-                        ep.TypeName = typeof(int).FullName;
-                        Type enumType = property.PropertyType;
-                        Array values = enumType.GetEnumValues();
-                        int[] intValues = values.Cast<int>().ToArray();
-                        string[] names = values.Cast<Enum>().Select(m => m.ToDescription()).ToArray();
-                        for (int i = 0; i < intValues.Length; i++)
-                        {
-                            string value = intValues[i].ToString();
-                            ep.ValueRange.Add(new { id = value, text = names[i] });
-                        }
+                        string value = intValues[i].ToString();
+                        ep.ValueRange.Add(new { id = value, text = names[i] });
                     }
+                }
 
-                    if (property.HasAttribute<UserFlagAttribute>())
-                    {
-                        ep.IsUserFlag = true;
-                    }
+                if (property.HasAttribute<UserFlagAttribute>())
+                {
+                    ep.IsUserFlag = true;
+                }
 
-                    return ep;
-                }).ToArray().ToJsonString();
+                return ep;
+            }).ToArray().ToJsonString();
         }
     }
 }

@@ -1,33 +1,32 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="AuditEntityProvider.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="AuditEntityProvider.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2019 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2019-03-08 4:32</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Audits;
-using Hybrid.Authorization.EntityInfos;
-using Hybrid.Authorization.Functions;
-using Hybrid.Dependency;
-using Hybrid.Extensions;
+using System.Collections.Generic;
+using System.Linq;
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.Extensions.DependencyInjection;
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using Hybrid.Audits;
+using Hybrid.Authorization.EntityInfos;
+using Hybrid.Authorization.Functions;
+using Hybrid.Collections;
+using Hybrid.Dependency;
+using Hybrid.Reflection;
 
-namespace Hybrid.EntityFrameworkCore
+
+namespace Hybrid.Entity
 {
     /// <summary>
     /// 数据审计信息提供者
     /// </summary>
-    [Dependency(ServiceLifetime.Scoped, TryAdd = true)]
     public class AuditEntityProvider : IAuditEntityProvider
     {
         private readonly ScopedDictionary _scopedDict;
@@ -79,6 +78,7 @@ namespace Hybrid.EntityFrameworkCore
             return result;
         }
 
+
         private static AuditEntityEntry GetAuditEntity(EntityEntry entry, IEntityInfo entityInfo)
         {
             AuditEntityEntry audit = new AuditEntityEntry
@@ -101,6 +101,12 @@ namespace Hybrid.EntityFrameworkCore
                 {
                     continue;
                 }
+
+                if (property.PropertyInfo == null || property.PropertyInfo.HasAttribute<AuditIgnoreAttribute>())
+                {
+                    continue;
+                }
+
                 string name = property.Name;
                 if (property.IsPrimaryKey())
                 {
@@ -111,7 +117,7 @@ namespace Hybrid.EntityFrameworkCore
                 AuditPropertyEntry auditProperty = new AuditPropertyEntry()
                 {
                     FieldName = name,
-                    DisplayName = entityProperties.First(m => m.Name == name).Display,
+                    DisplayName = entityProperties.FirstOrDefault(m => m.Name == name)?.Display ?? name,
                     DataType = property.ClrType.ToString()
                 };
                 if (entry.State == EntityState.Added)

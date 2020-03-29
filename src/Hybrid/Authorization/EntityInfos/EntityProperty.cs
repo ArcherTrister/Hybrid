@@ -1,13 +1,14 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="EntityProperty.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="EntityProperty.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2018-07-04 4:34</last-date>
+//  <last-date>2020-02-10 20:14</last-date>
 // -----------------------------------------------------------------------
 
 using System.Collections.Generic;
+
 
 namespace Hybrid.Authorization.EntityInfos
 {

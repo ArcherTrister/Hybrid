@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="IpLocator.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="IpLocator.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014 Hybrid. All rights reserved.
 //  </copyright>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2014-10-14 1:28</last-date>
@@ -11,6 +11,7 @@ using System.Globalization;
 using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
+
 
 namespace Hybrid.Net
 {
@@ -247,7 +248,6 @@ namespace Hybrid.Net
                     offset = endIpOff + 8L;
                     local = (1 == countryFlag) ? "" : GetFlagStr(ref offset, ref countryFlag, ref endIpOff);
                     break;
-
                 default:
                     country = GetFlagStr(ref offset, ref countryFlag, ref endIpOff);
                     local = GetFlagStr(ref offset, ref countryFlag, ref endIpOff);

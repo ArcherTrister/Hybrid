@@ -1,28 +1,26 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="FunctionHandlerBase.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="FunctionHandlerBase.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
-//  <last-editor></last-editor>
-//  <last-date>2017-09-14 20:11</last-date>
+//  <last-editor>ArcherTrister</last-editor>
+//  <last-date>2020-02-10 20:13</last-date>
 // -----------------------------------------------------------------------
-
-using Hybrid.Data;
-using Hybrid.Dependency;
-using Hybrid.Domain.Entities;
-using Hybrid.Domain.Repositories;
-using Hybrid.Exceptions;
-using Hybrid.Extensions;
-using Hybrid.Helpers;
-using Hybrid.Reflection;
-
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+
+using Hybrid.Collections;
+using Hybrid.Data;
+using Hybrid.Entity;
+using Hybrid.Exceptions;
+using Hybrid.Reflection;
+
 
 namespace Hybrid.Authorization.Functions
 {
@@ -32,8 +30,8 @@ namespace Hybrid.Authorization.Functions
     public abstract class FunctionHandlerBase<TFunction> : IFunctionHandler
         where TFunction : class, IEntity<Guid>, IFunction, new()
     {
-        private readonly IServiceProvider _serviceProvider;
         private readonly List<TFunction> _functions = new List<TFunction>();
+        private readonly IServiceProvider _serviceProvider;
 
         /// <summary>
         /// 初始化一个<see cref="FunctionHandlerBase{TFunction}"/>类型的新实例
@@ -91,6 +89,7 @@ namespace Hybrid.Authorization.Functions
             {
                 RefreshCache();
             }
+
             return _functions.FirstOrDefault(m =>
                 string.Equals(m.Area, area, StringComparison.OrdinalIgnoreCase)
                 && string.Equals(m.Controller, controller, StringComparison.OrdinalIgnoreCase)
@@ -132,13 +131,12 @@ namespace Hybrid.Authorization.Functions
                 {
                     continue;
                 }
+
                 if (!HasPickup(functions, controller))
                 {
                     functions.Add(controller);
                 }
-                if (controller.Controller.Equals("Account"))
-                {
-                }
+
                 List<MethodInfo> methods = MethodInfoFinder.FindAll(type).ToList();
                 // 移除已被重写的方法
                 MethodInfo[] overriddenMethodInfos = methods.Where(m => m.IsOverridden()).ToArray();
@@ -146,6 +144,7 @@ namespace Hybrid.Authorization.Functions
                 {
                     methods.RemoveAll(m => m.Name == overriddenMethodInfo.Name && m != overriddenMethodInfo);
                 }
+
                 foreach (MethodInfo method in methods)
                 {
                     TFunction action = GetFunction(controller, method);
@@ -153,17 +152,21 @@ namespace Hybrid.Authorization.Functions
                     {
                         continue;
                     }
+
                     if (IsIgnoreMethod(action, method, functions))
                     {
                         continue;
                     }
+
                     if (HasPickup(functions, action))
                     {
                         continue;
                     }
+
                     functions.Add(action);
                 }
             }
+
             return functions.ToArray();
         }
 
@@ -224,8 +227,12 @@ namespace Hybrid.Authorization.Functions
         /// <returns></returns>
         protected virtual bool IsIgnoreMethod(TFunction action, MethodInfo method, IEnumerable<TFunction> functions)
         {
-            TFunction exist = GetFunction(functions, action.Area, action.Controller, action.Action, action.Name);
-            return exist != null && method.HasAttribute<NonFunctionAttribute>();
+            if (method.HasAttribute<NonFunctionAttribute>())
+            {
+                return true;
+            }
+            TFunction existing = GetFunction(functions, action.Area, action.Controller, action.Action, action.Name);
+            return existing != null;
         }
 
         /// <summary>
@@ -241,7 +248,7 @@ namespace Hybrid.Authorization.Functions
                 return;
             }
 
-            IRepository<TFunction, Guid> repository = scopedProvider.GetRequiredService<IRepository<TFunction, Guid>>();
+            IRepository<TFunction, Guid> repository = scopedProvider.GetService<IRepository<TFunction, Guid>>();
             if (repository == null)
             {
                 Logger.LogWarning("初始化功能数据时，IRepository<,>的服务未找到，请初始化 EntityFrameworkCoreModule 模块");
@@ -286,25 +293,30 @@ namespace Hybrid.Authorization.Functions
                 {
                     throw new HybridException($"发现多个“{item.Area}-{item.Controller}-{item.Action}”的功能信息，不允许重名");
                 }
+
                 if (function == null)
                 {
                     continue;
                 }
+
                 if (!string.Equals(item.Name, function.Name, StringComparison.OrdinalIgnoreCase))
                 {
                     item.Name = function.Name;
                     isUpdate = true;
                 }
+
                 if (item.IsAjax != function.IsAjax)
                 {
                     item.IsAjax = function.IsAjax;
                     isUpdate = true;
                 }
+
                 if (!item.IsAccessTypeChanged && item.AccessType != function.AccessType)
                 {
                     item.AccessType = function.AccessType;
                     isUpdate = true;
                 }
+
                 if (isUpdate)
                 {
                     repository.Update(item);
@@ -312,6 +324,7 @@ namespace Hybrid.Authorization.Functions
                     Logger.LogDebug($"更新功能“{function.Name}({function.Area}/{function.Controller}/{function.Action})”");
                 }
             }
+
             repository.UnitOfWork.Commit();
             if (removeCount + addCount + updateCount > 0)
             {
@@ -322,20 +335,25 @@ namespace Hybrid.Authorization.Functions
                     {
                         Logger.LogDebug($"新增功能“{function.Name}({function.Area}/{function.Controller}/{function.Action})”");
                     }
+
                     msg += "，添加功能信息 " + addCount + " 个";
                 }
+
                 if (updateCount > 0)
                 {
                     msg += "，更新功能信息 " + updateCount + " 个";
                 }
+
                 if (removeCount > 0)
                 {
                     foreach (TFunction function in removeItems)
                     {
                         Logger.LogDebug($"更新功能“{function.Name}({function.Area}/{function.Controller}/{function.Action})”");
                     }
+
                     msg += "，移除功能信息 " + removeCount + " 个";
                 }
+
                 Logger.LogInformation(msg);
             }
         }
@@ -346,11 +364,12 @@ namespace Hybrid.Authorization.Functions
         /// <returns></returns>
         protected virtual TFunction[] GetFromDatabase(IServiceProvider scopedProvider)
         {
-            IRepository<TFunction, Guid> repository = scopedProvider.GetRequiredService<IRepository<TFunction, Guid>>();
+            IRepository<TFunction, Guid> repository = scopedProvider.GetService<IRepository<TFunction, Guid>>();
             if (repository == null)
             {
                 return new TFunction[0];
             }
+
             return repository.QueryAsNoTracking(null, false).ToArray();
         }
     }

@@ -1,23 +1,20 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="MapFromAttributeTypeFinder.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="MapFromAttributeTypeFinder.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2018 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-07-03 23:58</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Dependency;
 using Hybrid.Reflection;
 
-using Microsoft.Extensions.DependencyInjection;
 
 namespace Hybrid.Mapping
 {
     /// <summary>
     /// 标注了<see cref="MapFromAttribute"/>标签的类型查找器
     /// </summary>
-    [Dependency(ServiceLifetime.Singleton, TryAdd = true)]
     public class MapFromAttributeTypeFinder : AttributeTypeFinderBase<MapFromAttribute>, IMapFromAttributeTypeFinder
     {
         /// <summary>

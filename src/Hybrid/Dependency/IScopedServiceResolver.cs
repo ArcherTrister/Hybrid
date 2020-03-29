@@ -1,16 +1,17 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="IScopedServiceResolver.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="IScopedServiceResolver.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2018 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-03-07 21:00</last-date>
 // -----------------------------------------------------------------------
 
-using Microsoft.Extensions.DependencyInjection;
-
 using System;
 using System.Collections.Generic;
+
+using Microsoft.Extensions.DependencyInjection;
+
 
 namespace Hybrid.Dependency
 {

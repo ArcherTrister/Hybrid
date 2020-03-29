@@ -1,19 +1,20 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="LocalCollectionExpressionVisitor.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="LocalCollectionExpressionVisitor.cs" company="柳柳软件">
+//      Copyright (c) 2014-2016 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2016-11-16 23:34</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Extensions;
-
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+
+using Hybrid.Reflection;
+
 
 namespace Hybrid.Caching
 {
@@ -67,6 +68,6 @@ namespace Hybrid.Caching
             return base.VisitMethodCall(node);
         }
 
-        #endregion Overrides of ExpressionVisitor
+        #endregion
     }
 }

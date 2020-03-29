@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="SwaggerOptions.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="SwaggerOptions.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2018 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
@@ -28,10 +28,5 @@ namespace Hybrid.Core.Options
         /// 获取或设置 Url
         /// </summary>
         public string Url { get; set; }
-
-        /// <summary>
-        /// 获取或设置 是否启用
-        /// </summary>
-        public bool Enabled { get; set; }
     }
 }

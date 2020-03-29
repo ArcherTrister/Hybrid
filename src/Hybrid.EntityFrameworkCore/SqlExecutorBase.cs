@@ -1,25 +1,21 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="SqlExecutorBase.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="SqlExecutorBase.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2018 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-12-15 19:10</last-date>
 // -----------------------------------------------------------------------
 
-using Dapper;
-
-using Hybrid.Domain.Entities;
-using Hybrid.Domain.EntityFramework;
-using Hybrid.Domain.Repositories;
-using Hybrid.Domain.Uow;
-
-using Microsoft.EntityFrameworkCore;
-
 using System.Collections.Generic;
 using System.Data;
 
-namespace Hybrid.EntityFrameworkCore
+using Dapper;
+
+using Microsoft.EntityFrameworkCore;
+
+
+namespace Hybrid.Entity
 {
     /// <summary>
     /// Sql功能执行基类
@@ -36,7 +32,7 @@ namespace Hybrid.EntityFrameworkCore
             DbContext dbContext = (DbContext)unitOfWorkManager.GetDbContext<TEntity, TKey>();
             _connectionString = dbContext.Database.GetDbConnection().ConnectionString;
         }
-
+        
         /// <summary>
         /// 获取 数据库类型
         /// </summary>

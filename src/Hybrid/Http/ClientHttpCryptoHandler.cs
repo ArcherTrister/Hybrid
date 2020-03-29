@@ -1,17 +1,22 @@
-﻿using Hybrid.Dependency;
-
-using Microsoft.Extensions.DependencyInjection;
+﻿// -----------------------------------------------------------------------
+//  <copyright file="ClientHttpCryptoHandler.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2019 Hybrid. All rights reserved.
+//  </copyright>
+//  <site>https://www.lxking.cn</site>
+//  <last-editor>ArcherTrister</last-editor>
+//  <last-date>2019-10-30 23:30</last-date>
+// -----------------------------------------------------------------------
 
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
+
 
 namespace Hybrid.Http
 {
     /// <summary>
     /// HttpClient客户端加密通信处理器
     /// </summary>
-    [Dependency(ServiceLifetime.Transient, AddSelf = true)]
     public class ClientHttpCryptoHandler : DelegatingHandler
     {
         private readonly IClientHttpCrypto _clientHttpCrypto;

@@ -1,15 +1,16 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="DirectoryHelper.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="DirectoryHelper.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014 Hybrid. All rights reserved.
 //  </copyright>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2014-07-18 18:25</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Extensions;
-
 using System;
 using System.IO;
+
+using Hybrid.Extensions;
+
 
 namespace Hybrid.IO
 {

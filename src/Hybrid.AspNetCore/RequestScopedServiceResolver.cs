@@ -1,10 +1,19 @@
-﻿using Hybrid.Dependency;
+﻿// -----------------------------------------------------------------------
+//  <copyright file="RequestScopedServiceResolver.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2018 Hybrid. All rights reserved.
+//  </copyright>
+//  <site>https://www.lxking.cn</site>
+//  <last-editor>ArcherTrister</last-editor>
+//  <last-date>2018-03-07 20:59</last-date>
+// -----------------------------------------------------------------------
+
+using System;
+using System.Collections.Generic;
 
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 
-using System;
-using System.Collections.Generic;
+using Hybrid.Dependency;
 
 
 namespace Hybrid.AspNetCore
@@ -12,7 +21,6 @@ namespace Hybrid.AspNetCore
     /// <summary>
     /// Request的<see cref="ServiceLifetime.Scoped"/>服务解析器
     /// </summary>
-    [Dependency(ServiceLifetime.Singleton, TryAdd = true)]
     public class RequestScopedServiceResolver : IScopedServiceResolver
     {
         private readonly IHttpContextAccessor _httpContextAccessor;

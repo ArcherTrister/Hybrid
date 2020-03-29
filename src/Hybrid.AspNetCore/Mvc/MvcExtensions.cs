@@ -1,26 +1,27 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="MvcExtensions.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="MvcExtensions.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
-//  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2018-08-02 17:56</last-date>
+//  <last-editor></last-editor>
+//  <last-date>2017-09-15 1:41</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Authorization.Functions;
-using Hybrid.Dependency;
-using Hybrid.Exceptions;
-using Hybrid.Extensions;
-using Hybrid.Authorization;
+using System;
+using System.Linq;
+using System.Reflection;
 
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 
-using System;
-using System.Linq;
-using System.Reflection;
+using Hybrid.Authorization;
+using Hybrid.Authorization.Functions;
+using Hybrid.Dependency;
+using Hybrid.Exceptions;
+using Hybrid.Extensions;
+
 
 namespace Hybrid.AspNetCore.Mvc
 {
@@ -42,13 +43,9 @@ namespace Hybrid.AspNetCore.Mvc
         /// </summary>
         public static bool IsController(this TypeInfo typeInfo)
         {
-            return (typeInfo.IsClass && !typeInfo.IsAbstract && typeInfo.IsPublic
-                && !typeInfo.ContainsGenericParameters
-                && !typeInfo.IsDefined(typeof(NonControllerAttribute))
-                && (typeInfo.Name.EndsWith("Controller", StringComparison.OrdinalIgnoreCase)
-                    || typeInfo.IsDefined(typeof(ControllerAttribute))))
-                || (typeInfo.HasAttribute<HybridDefaultUIAttribute>()
-                    && typeInfo.ContainsGenericParameters);
+            return typeInfo.IsClass && !typeInfo.IsAbstract && typeInfo.IsPublic && !typeInfo.ContainsGenericParameters
+                && !typeInfo.IsDefined(typeof(NonControllerAttribute)) && (typeInfo.Name.EndsWith("Controller", StringComparison.OrdinalIgnoreCase)
+                    || typeInfo.IsDefined(typeof(ControllerAttribute)));
         }
 
         /// <summary>
@@ -98,66 +95,7 @@ namespace Hybrid.AspNetCore.Mvc
             string area = context.GetAreaName();
             string controller = context.GetControllerName();
             string action = context.GetActionName();
-            IFunctionHandler functionHandler = provider.GetService<IFunctionHandler>();
-            if (functionHandler == null)
-            {
-                throw new HybridException("获取正在执行的功能时 IFunctionHandler 无法解析");
-            }
-            IFunction function = functionHandler.GetFunction(area, controller, action);
-            if (function != null)
-            {
-                dict.Function = function;
-            }
-            return function;
-        }
-
-        /// <summary>
-        /// 获取Area名
-        /// </summary>
-        public static string GetAreaName(this HttpContext context)
-        {
-            string area = null;
-            if (context.Request.RouteValues.TryGetValue("area", out object value))
-            {
-                area = (string)value;
-                if (area.IsNullOrWhiteSpace())
-                {
-                    area = null;
-                }
-            }
-            return area;
-        }
-
-        /// <summary>
-        /// 获取Controller名
-        /// </summary>
-        public static string GetControllerName(this HttpContext context)
-        {
-            return context.Request.RouteValues["controller"].ToString();
-        }
-
-        /// <summary>
-        /// 获取Action名
-        /// </summary>
-        public static string GetActionName(this HttpContext context)
-        {
-            return context.Request.RouteValues["action"].ToString();
-        }
-
-        /// <summary>
-        /// 获取正在执行的Action的相关功能信息
-        /// </summary>
-        public static IFunction GetExecuteFunction(this HttpContext context)
-        {
-            IServiceProvider provider = context.RequestServices;
-            ScopedDictionary dict = provider.GetService<ScopedDictionary>();
-            if (dict.Function != null)
-            {
-                return dict.Function;
-            }
-            string area = context.GetAreaName();
-            string controller = context.GetControllerName();
-            string action = context.GetActionName();
+            // todo: 当权限模块没启用时，应取消权限验证，如何判断权限模块已启用？
             IFunctionHandler functionHandler = provider.GetService<IFunctionHandler>();
             if (functionHandler == null)
             {
@@ -213,7 +151,7 @@ namespace Hybrid.AspNetCore.Mvc
         /// <summary>
         /// 检测当前用户是否拥有指定URL的功能权限
         /// </summary>
-        public static bool CheckFunctionAuth(this Controller controller, string url)
+        public static bool CheckFunctionAuth(this ControllerBase controller, string url)
         {
             IFunction function = controller.GetFunction(url);
             if (function == null)
@@ -225,23 +163,9 @@ namespace Hybrid.AspNetCore.Mvc
         }
 
         /// <summary>
-        /// 检测当前用户是否拥有指定URL的功能权限
-        /// </summary>
-        public static bool CheckFunctionAuth(this ControllerBase controllerBase, string url)
-        {
-            IFunction function = controllerBase.GetFunction(url);
-            if (function == null)
-            {
-                return false;
-            }
-            IFunctionAuthorization authorization = controllerBase.HttpContext.RequestServices.GetService<IFunctionAuthorization>();
-            return authorization.Authorize(function, controllerBase.User).IsOk;
-        }
-
-        /// <summary>
         /// 检测当前用户是否有指定功能的功能权限
         /// </summary>
-        public static bool CheckFunctionAuth(this Controller controller, string actionName, string controllerName, string areaName = null)
+        public static bool CheckFunctionAuth(this ControllerBase controller, string actionName, string controllerName, string areaName = null)
         {
             IServiceProvider provider = controller.HttpContext.RequestServices;
             IFunctionHandler functionHandler = provider.GetService<IFunctionHandler>();
@@ -252,22 +176,6 @@ namespace Hybrid.AspNetCore.Mvc
             }
             IFunctionAuthorization authorization = provider.GetService<IFunctionAuthorization>();
             return authorization.Authorize(function, controller.User).IsOk;
-        }
-
-        /// <summary>
-        /// 检测当前用户是否有指定功能的功能权限
-        /// </summary>
-        public static bool CheckFunctionAuth(this ControllerBase controllerBase, string actionName, string controllerName, string areaName = null)
-        {
-            IServiceProvider provider = controllerBase.HttpContext.RequestServices;
-            IFunctionHandler functionHandler = provider.GetService<IFunctionHandler>();
-            IFunction function = functionHandler?.GetFunction(areaName, controllerName, actionName);
-            if (function == null)
-            {
-                return false;
-            }
-            IFunctionAuthorization authorization = provider.GetService<IFunctionAuthorization>();
-            return authorization.Authorize(function, controllerBase.User).IsOk;
         }
     }
 }

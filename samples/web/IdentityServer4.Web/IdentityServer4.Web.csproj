@@ -54,18 +54,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\src\Hybrid.AspNetCore.Diagnostics\Hybrid.AspNetCore.Diagnostics.csproj" />
-    <ProjectReference Include="..\..\..\src\Hybrid.AspNetCore\Hybrid.AspNetCore.csproj" />
-    <ProjectReference Include="..\..\..\src\Hybrid.AutoMapper\Hybrid.AutoMapper.csproj" />
-    <ProjectReference Include="..\..\..\src\Hybrid.EntityFrameworkCore.MySql\Hybrid.EntityFrameworkCore.MySql.csproj" />
-    <ProjectReference Include="..\..\..\src\Hybrid.EntityFrameworkCore.SqlServer\Hybrid.EntityFrameworkCore.SqlServer.csproj" />
-    <ProjectReference Include="..\..\..\src\Hybrid.EntityFrameworkCore\Hybrid.EntityFrameworkCore.csproj" />
     <ProjectReference Include="..\..\..\src\Hybrid.MailKit\Hybrid.MailKit.csproj" />
-    <ProjectReference Include="..\..\..\src\Hybrid.NLog\Hybrid.NLog.csproj" />
     <ProjectReference Include="..\..\..\src\Hybrid.Quartz\Hybrid.Quartz.csproj" />
     <ProjectReference Include="..\..\..\src\Hybrid.Zero.IdentityServer4\Hybrid.Zero.IdentityServer4.csproj" />
     <ProjectReference Include="..\..\..\src\Hybrid.Zero\Hybrid.Zero.csproj" />
-    <ProjectReference Include="..\..\..\src\Hybrid\Hybrid.csproj" />
   </ItemGroup>
 
   <ItemGroup>

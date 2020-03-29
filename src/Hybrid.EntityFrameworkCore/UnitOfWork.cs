@@ -1,22 +1,11 @@
 // -----------------------------------------------------------------------
-//  <copyright file="UnitOfWork.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="UnitOfWork.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2017-08-21 22:20</last-date>
 // -----------------------------------------------------------------------
-
-using Hybrid.Core.Options;
-using Hybrid.Dependency;
-using Hybrid.Domain.Entities;
-using Hybrid.Domain.EntityFramework;
-using Hybrid.Domain.Uow;
-using Hybrid.Exceptions;
-
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Storage;
-using Microsoft.Extensions.DependencyInjection;
 
 using System;
 using System.Collections.Generic;
@@ -26,19 +15,27 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Hybrid.EntityFrameworkCore
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage;
+using Microsoft.Extensions.DependencyInjection;
+
+using Hybrid.Core.Options;
+using Hybrid.Dependency;
+using Hybrid.Exceptions;
+
+
+namespace Hybrid.Entity
 {
     /// <summary>
     /// 业务单元操作
     /// </summary>
-    public class UnitOfWork : IUnitOfWork
+    public class UnitOfWork : Disposable, IUnitOfWork
     {
         private readonly IServiceProvider _serviceProvider;
         private readonly List<DbContextBase> _dbContexts = new List<DbContextBase>();
         private DbTransaction _transaction;
         private DbConnection _connection;
         private HybridDbContextOptions _dbContextOptions;
-        private bool _disposed;
 
         /// <summary>
         /// 初始化一个<see cref="UnitOfWork"/>类型的新实例
@@ -243,20 +240,18 @@ namespace Hybrid.EntityFrameworkCore
             }
         }
 
-        /// <summary>释放对象.</summary>
-        public void Dispose()
+        protected override void Dispose(bool disposing)
         {
-            if (_disposed)
+            if (!Disposed)
             {
-                return;
-            }
-            _transaction?.Dispose();
-            foreach (DbContextBase context in _dbContexts)
-            {
-                context.Dispose();
+                _transaction?.Dispose();
+                foreach (DbContextBase context in _dbContexts)
+                {
+                    context.Dispose();
+                }
             }
 
-            _disposed = true;
+            base.Dispose(disposing);
         }
     }
 }

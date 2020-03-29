@@ -1,17 +1,18 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="IFilterService.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="IFilterService.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2018 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-12-20 0:15</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Data;
-using Hybrid.Authorization;
-
 using System;
 using System.Linq.Expressions;
+
+using Hybrid.Authorization;
+using Hybrid.Data;
+
 
 namespace Hybrid.Filter
 {

@@ -1,7 +1,8 @@
-﻿using Hybrid.Core.Modules;
-using Hybrid.Net.Mail;
-
+﻿
 using Microsoft.Extensions.DependencyInjection;
+
+using Hybrid.Core.Packs;
+using Hybrid.Net;
 
 using System.ComponentModel;
 
@@ -11,12 +12,12 @@ namespace Hybrid.MailKit
     /// MailKit模块
     /// </summary>
     [Description("MailKit模块")]
-    public class MailKitModule : HybridModule
+    public class MailKitModule : HybridPack
     {
         /// <summary>
         /// 获取 模块级别，级别越小越先启动
         /// </summary>
-        public override ModuleLevel Level => ModuleLevel.Framework;
+        public override PackLevel Level => PackLevel.Framework;
 
         /// <summary>
         /// 获取 模块启动顺序，模块启动的顺序先按级别启动，级别内部再按此顺序启动，

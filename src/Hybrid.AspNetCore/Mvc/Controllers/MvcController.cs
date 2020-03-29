@@ -1,25 +1,14 @@
-﻿// -----------------------------------------------------------------------
-//  <copyright file="MvcController.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
-//  </copyright>
-//  <site>https://www.lxking.cn</site>
-//  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2018-08-02 17:56</last-date>
-// -----------------------------------------------------------------------
-
+﻿using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Mvc;
 using Hybrid.Data;
 using Hybrid.Exceptions;
-using Hybrid.Extensions;
 using Hybrid.Localization;
 using Hybrid.Localization.Sources;
 using Hybrid.Security;
-
-using Microsoft.AspNetCore.Localization;
-using Microsoft.AspNetCore.Mvc;
-
 using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
+using Hybrid.Extensions;
 
 namespace Hybrid.AspNetCore.Mvc.Controllers
 {
@@ -68,7 +57,7 @@ namespace Hybrid.AspNetCore.Mvc.Controllers
         {
             get
             {
-                string value = HttpContext.Request.Cookies[HybridConsts.CultureCookieName];
+                string value = HttpContext.Request.Cookies[HybridConstants.CultureCookieName];
                 if (value.IsNullOrWhiteSpace())
                 {
                     return CultureInfo.CurrentUICulture;
@@ -82,7 +71,7 @@ namespace Hybrid.AspNetCore.Mvc.Controllers
         {
             get
             {
-                string value = HttpContext.Request.Cookies[HybridConsts.SchedulerCookieName];
+                string value = HttpContext.Request.Cookies[HybridConstants.SchedulerCookieName];
                 if (value.IsNullOrWhiteSpace())
                 {
                     return null;

@@ -1,26 +1,22 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="DbContextOptionsBuilderDriveHandler.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="MySqlDbContextOptionsBuilderCreator.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>hejiyong</last-editor>
 //  <last-date>2017-09-19 5:09</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Dependency;
-using Hybrid.Domain.EntityFramework;
-
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-
 using System.Data.Common;
 
-namespace Hybrid.EntityFrameworkCore.MySql
+using Microsoft.EntityFrameworkCore;
+
+
+namespace Hybrid.Entity.MySql
 {
     /// <summary>
     /// MySql<see cref="DbContextOptionsBuilder"/>数据库驱动差异处理器
     /// </summary>
-    [Dependency(ServiceLifetime.Singleton)]
     public class DbContextOptionsBuilderDriveHandler : IDbContextOptionsBuilderDriveHandler
     {
         /// <summary>

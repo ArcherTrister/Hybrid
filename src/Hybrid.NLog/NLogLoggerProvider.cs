@@ -1,24 +1,23 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="NLogLoggerProvider.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="NLogLoggerProvider.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2019 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
-//  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2018-08-02 17:56</last-date>
+//  <last-editor>冰河之刃</last-editor>
+//  <last-date>2019-08-27 16:08</last-date>
 // -----------------------------------------------------------------------
-
-using Microsoft.Extensions.Logging;
-
-using NLog;
-using NLog.Config;
-using NLog.Targets;
 
 using System;
 using System.Collections.Concurrent;
 using System.IO;
 using System.Reflection;
+
+using NLog;
+using Microsoft.Extensions.Logging;
 using System.Text;
 
+using NLog.Config;
+using NLog.Targets;
 using LogLevel = NLog.LogLevel;
 
 namespace Hybrid.NLog
@@ -26,7 +25,7 @@ namespace Hybrid.NLog
     /// <summary>
     /// NLog 日志对象提供者
     /// </summary>
-    public class NLogLoggerProvider : ILoggerProvider
+    public class NLogLoggerProvider : Disposable, ILoggerProvider
     {
         private readonly ConcurrentDictionary<string, NLogLogger> _loggers = new ConcurrentDictionary<string, NLogLogger>();
         private const string DefaultNLogFileName = "nlog.config";
@@ -101,20 +100,14 @@ namespace Hybrid.NLog
             return null;
         }
 
-        protected virtual void Dispose(bool disposing)
+        protected override void Dispose(bool disposing)
         {
-            if (!disposing)
+            if (!Disposed)
             {
-                return;
+                _loggers.Clear();
             }
-            _loggers.Clear();
-        }
 
-        /// <summary>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</summary>
-        public void Dispose()
-        {
-            Dispose(true);
-            GC.SuppressFinalize(this);
+            base.Dispose(disposing);
         }
     }
 }

@@ -2,7 +2,7 @@
 
 namespace Hybrid.Net.Mail.Configuration
 {
-    public interface IEmailSenderConfiguration: IEnabled
+    public interface IEmailSenderConfiguration : IEnabled
     {
         /// <summary>
         /// 获取或设置 邮件发送服务器

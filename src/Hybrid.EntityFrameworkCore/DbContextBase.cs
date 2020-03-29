@@ -1,21 +1,11 @@
 // -----------------------------------------------------------------------
-//  <copyright file="DbContextBase.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="DbContextBase.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2019 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2019-03-08 4:39</last-date>
 // -----------------------------------------------------------------------
-
-using Hybrid.Audits;
-using Hybrid.Core.Options;
-using Hybrid.Domain.EntityFramework;
-using Hybrid.Domain.Uow;
-using Hybrid.EventBuses;
-
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 
 using System;
 using System.Collections.Generic;
@@ -23,7 +13,19 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Hybrid.EntityFrameworkCore
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+
+using Hybrid.Audits;
+using Hybrid.Core.Options;
+using Hybrid.EventBuses;
+using Hybrid.Extensions;
+using Hybrid.Reflection;
+
+
+namespace Hybrid.Entity
 {
     /// <summary>
     /// EntityFramework上下文基类
@@ -32,7 +34,7 @@ namespace Hybrid.EntityFrameworkCore
     {
         private readonly IEntityManager _entityManager;
         private readonly ILogger _logger;
-        private readonly HybridDbContextOptions _hybridDbOptions;
+        private readonly HybridDbContextOptions _osharpDbOptions;
         private readonly IServiceProvider _serviceProvider;
 
         /// <summary>
@@ -43,7 +45,7 @@ namespace Hybrid.EntityFrameworkCore
         {
             _entityManager = entityManager;
             _serviceProvider = serviceProvider;
-            _hybridDbOptions = serviceProvider?.GetHybridOptions()?.DbContexts?.Values.FirstOrDefault(m => m.DbContextType == GetType());
+            _osharpDbOptions = serviceProvider?.GetHybridOptions()?.DbContexts?.Values.FirstOrDefault(m => m.DbContextType == GetType());
             _logger = serviceProvider?.GetLogger(GetType());
         }
 
@@ -56,7 +58,7 @@ namespace Hybrid.EntityFrameworkCore
         ///     将在此上下文中所做的所有更改保存到数据库中，同时自动开启事务或使用现有同连接事务
         /// </summary>
         /// <remarks>
-        ///     此方法将自动调用 <see cref="M:Microsoft.EntityFrameworkCore.ChangeTracking.ChangeTracker.DetectChanges" />
+        ///     此方法将自动调用 <see cref="M:Microsoft.EntityFrameworkCore.ChangeTracking.ChangeTracker.DetectChanges" /> 
         ///     若要在保存到基础数据库之前发现对实体实例的任何更改，请执行以下操作。这可以通过以下类型禁用
         ///     <see cref="P:Microsoft.EntityFrameworkCore.ChangeTracking.ChangeTracker.AutoDetectChangesEnabled" />.
         /// </remarks>
@@ -74,7 +76,7 @@ namespace Hybrid.EntityFrameworkCore
         public override int SaveChanges()
         {
             IList<AuditEntityEntry> auditEntities = new List<AuditEntityEntry>();
-            if (_hybridDbOptions?.AuditEntityEnabled == true)
+            if (_osharpDbOptions?.AuditEntityEnabled == true)
             {
                 IAuditEntityProvider auditEntityProvider = _serviceProvider.GetService<IAuditEntityProvider>();
                 auditEntities = auditEntityProvider?.GetAuditEntities(this)?.ToList();
@@ -99,7 +101,7 @@ namespace Hybrid.EntityFrameworkCore
         /// </summary>
         /// <remarks>
         ///     <para>
-        ///         此方法将自动调用 <see cref="M:Microsoft.EntityFrameworkCore.ChangeTracking.ChangeTracker.DetectChanges" />
+        ///         此方法将自动调用 <see cref="M:Microsoft.EntityFrameworkCore.ChangeTracking.ChangeTracker.DetectChanges" /> 
         ///         若要在保存到基础数据库之前发现对实体实例的任何更改，请执行以下操作。这可以通过以下类型禁用
         ///         <see cref="P:Microsoft.EntityFrameworkCore.ChangeTracking.ChangeTracker.AutoDetectChangesEnabled" />.
         ///     </para>
@@ -122,7 +124,7 @@ namespace Hybrid.EntityFrameworkCore
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
         {
             IList<AuditEntityEntry> auditEntities = new List<AuditEntityEntry>();
-            if (_hybridDbOptions?.AuditEntityEnabled == true)
+            if (_osharpDbOptions?.AuditEntityEnabled == true)
             {
                 IAuditEntityProvider auditEntityProvider = _serviceProvider.GetService<IAuditEntityProvider>();
                 auditEntities = auditEntityProvider?.GetAuditEntities(this)?.ToList();
@@ -185,8 +187,31 @@ namespace Hybrid.EntityFrameworkCore
                 register.RegisterTo(modelBuilder);
                 _logger?.LogDebug($"将实体类“{register.EntityType}”注册到上下文“{contextType}”中");
             }
-
             _logger?.LogInformation($"上下文“{contextType}”注册了{registers.Length}个实体类");
+
+            //按预定前缀更改表名
+            var entityTypes = modelBuilder.Model.GetEntityTypes().ToList();
+            foreach (IMutableEntityType entityType in entityTypes)
+            {
+                string prefix = GetTableNamePrefix(entityType.ClrType);
+                if (prefix.IsNullOrEmpty())
+                {
+                    continue;
+                }
+
+                modelBuilder.Entity(entityType.ClrType).ToTable($"{prefix}_{entityType.GetTableName()}");
+            }
+        }
+
+        /// <summary>
+        /// 从实体类型获取表名前缀
+        /// </summary>
+        /// <param name="entityType">实体类型</param>
+        /// <returns></returns>
+        protected virtual string GetTableNamePrefix(Type entityType)
+        {
+            TableNamePrefixAttribute attribute = entityType.GetAttribute<TableNamePrefixAttribute>();
+            return attribute?.Prefix;
         }
 
         ///// <summary>
@@ -195,13 +220,11 @@ namespace Hybrid.EntityFrameworkCore
         ///// <param name="optionsBuilder"></param>
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{
-        //    if (_hybridDbOptions != null && _hybridDbOptions.LazyLoadingProxiesEnabled)
+        //    if (_osharpDbOptions != null && _osharpDbOptions.LazyLoadingProxiesEnabled)
         //    {
         //        optionsBuilder.UseLazyLoadingProxies();
         //    }
         //}
-
-        #region Overrides of DbContext
 
         /// <summary>
         ///     Releases the allocated resources for this context.
@@ -211,7 +234,5 @@ namespace Hybrid.EntityFrameworkCore
             base.Dispose();
             UnitOfWork = null;
         }
-
-        #endregion Overrides of DbContext
     }
 }

@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="BatchingLoggerOptions.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="BatchingLoggerOptions.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor></last-editor>
@@ -8,6 +8,7 @@
 // -----------------------------------------------------------------------
 
 using System;
+
 
 namespace Hybrid.Logging.RollingFile.Internal
 {

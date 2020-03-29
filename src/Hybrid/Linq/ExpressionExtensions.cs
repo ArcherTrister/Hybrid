@@ -1,17 +1,18 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="AbstractBuilder.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="AbstractBuilder.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014 Hybrid. All rights reserved.
 //  </copyright>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2014:07:04 17:42</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Extensions;
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+
+using Hybrid.Data;
+
 
 namespace Hybrid.Linq
 {
@@ -30,9 +31,10 @@ namespace Hybrid.Linq
         /// <returns>组合后的表达式</returns>
         public static Expression<T> Compose<T>(this Expression<T> first, Expression<T> second, Func<Expression, Expression, Expression> merge)
         {
-            first.CheckNotNull("first");
-            second.CheckNotNull("second");
-            merge.CheckNotNull("merge");
+            Check.NotNull(first, nameof(first));
+            Check.NotNull(second, nameof(second));
+            Check.NotNull(merge, nameof(merge));
+            
             Dictionary<ParameterExpression, ParameterExpression> map =
                 first.Parameters.Select((f, i) => new { f, s = second.Parameters[i] }).ToDictionary(p => p.s, p => p.f);
             Expression secondBody = ParameterRebinder.ReplaceParameters(map, second.Body);
@@ -49,6 +51,8 @@ namespace Hybrid.Linq
         /// <returns>组合后的表达式</returns>
         public static Expression<Func<T, bool>> And<T>(this Expression<Func<T, bool>> first, Expression<Func<T, bool>> second, bool ifExp = true)
         {
+            Check.NotNull(first, nameof(first));
+            Check.NotNull(second, nameof(second));
             return ifExp ? first.Compose(second, Expression.AndAlso) : first;
         }
 
@@ -62,8 +66,11 @@ namespace Hybrid.Linq
         /// <returns>组合后的表达式</returns>
         public static Expression<Func<T, bool>> Or<T>(this Expression<Func<T, bool>> first, Expression<Func<T, bool>> second, bool ifExp = true)
         {
+            Check.NotNull(first, nameof(first));
+            Check.NotNull(second, nameof(second));
             return ifExp ? first.Compose(second, Expression.OrElse) : first;
         }
+        
 
         private class ParameterRebinder : ExpressionVisitor
         {

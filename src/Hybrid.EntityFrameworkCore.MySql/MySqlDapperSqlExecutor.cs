@@ -1,21 +1,18 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="MySqlDapperSqlExecutor.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="DapperSqlExecutor.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2018 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-12-15 19:18</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Domain.Entities;
-using Hybrid.Domain.EntityFramework;
-using Hybrid.Domain.Uow;
+using System.Data;
 
 using MySql.Data.MySqlClient;
 
-using System.Data;
 
-namespace Hybrid.EntityFrameworkCore.MySql
+namespace Hybrid.Entity.MySql
 {
     /// <summary>
     /// MySql的Dapper-Sql功能执行

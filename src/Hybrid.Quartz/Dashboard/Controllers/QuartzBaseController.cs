@@ -1,6 +1,7 @@
-﻿using Hybrid.AspNetCore.Mvc.Controllers;
+﻿using Microsoft.AspNetCore.Mvc;
+
+using Hybrid.AspNetCore.Mvc.Controllers;
 using Hybrid.Localization;
-using Microsoft.AspNetCore.Mvc;
 
 using Quartz;
 using Quartz.Impl;

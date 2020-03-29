@@ -1,25 +1,16 @@
-﻿// -----------------------------------------------------------------------
-//  <copyright file="BatchingLoggerProvider.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
-//  </copyright>
-//  <site>https://www.lxking.cn</site>
-//  <last-editor></last-editor>
-//  <last-date>2017-09-17 11:44</last-date>
-// -----------------------------------------------------------------------
-
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-
-using System;
+﻿using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
+
 
 namespace Hybrid.Logging.RollingFile.Internal
 {
     //power by https://github.com/andrewlock/NetEscapades.Extensions.Logging
-    public abstract class BatchingLoggerProvider : ILoggerProvider
+    public abstract class BatchingLoggerProvider : Disposable, ILoggerProvider
     {
         private readonly List<LogMessageEntry> _currentBatch = new List<LogMessageEntry>();
         private readonly TimeSpan _interval;
@@ -133,9 +124,13 @@ namespace Hybrid.Logging.RollingFile.Internal
             }
         }
 
-        public void Dispose()
+        protected override void Dispose(bool disposing)
         {
-            Stop();
+            if (!Disposed)
+            {
+                Stop();
+            }
+            base.Dispose(disposing);
         }
 
         public ILogger CreateLogger(string categoryName)

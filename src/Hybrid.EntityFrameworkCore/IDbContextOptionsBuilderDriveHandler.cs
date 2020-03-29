@@ -1,19 +1,18 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="IDbContextOptionsBuilderDriveHandler.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="IDbContextOptionsBuilderDriveHandler.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2019 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2019-03-27 3:06</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Domain.EntityFramework;
+using System.Data.Common;
 
 using Microsoft.EntityFrameworkCore;
 
-using System.Data.Common;
 
-namespace Hybrid.EntityFrameworkCore
+namespace Hybrid.Entity
 {
     /// <summary>
     /// 定义<see cref="DbContextOptionsBuilder"/> 数据库驱动差异处理器

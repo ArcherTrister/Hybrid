@@ -1,16 +1,26 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ApplicationModels;
+﻿// -----------------------------------------------------------------------
+//  <copyright file="DashedRoutingConvention.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2018 Hybrid. All rights reserved.
+//  </copyright>
+//  <site>https://www.lxking.cn</site>
+//  <last-editor>ArcherTrister</last-editor>
+//  <last-date>2018-03-18 12:59</last-date>
+// -----------------------------------------------------------------------
 
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
+
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ApplicationModels;
+
 
 namespace Hybrid.AspNetCore.Mvc.Conventions
 {
     /// <summary>
     /// 单词减号分隔符(AddUser -> add-user) URL转换器
     /// </summary>
-    public sealed class DashedRoutingConvention : IControllerModelConvention
+    public class DashedRoutingConvention : IControllerModelConvention
     {
         /// <summary>
         /// Called to apply the convention to the <see cref="T:Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerModel" />.
@@ -25,7 +35,7 @@ namespace Hybrid.AspNetCore.Mvc.Conventions
             }
             foreach (ActionModel action in controller.Actions)
             {
-                foreach (SelectorModel model in action.Selectors.Where(m => m.AttributeRouteModel == null))
+                foreach (SelectorModel model in action.Selectors.Where(m=>m.AttributeRouteModel == null))
                 {
                     List<string> parts = new List<string>();
                     foreach (var attribute in controller.Attributes)
@@ -47,7 +57,7 @@ namespace Hybrid.AspNetCore.Mvc.Conventions
                     {
                         parts.Add(PascalToKebabCase(action.ActionName));
                     }
-
+                    
                     string template = string.Join("/", parts);
                     model.AttributeRouteModel = new AttributeRouteModel() { Template = template };
                 }

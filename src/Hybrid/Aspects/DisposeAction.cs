@@ -1,13 +1,4 @@
-﻿// -----------------------------------------------------------------------
-//  <copyright file="DisposeAction.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
-//  </copyright>
-//  <site>https://www.lxking.cn</site>
-//  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2018-08-02 15:10</last-date>
-// -----------------------------------------------------------------------
-
-using JetBrains.Annotations;
+﻿using JetBrains.Annotations;
 
 using System;
 using System.Threading;

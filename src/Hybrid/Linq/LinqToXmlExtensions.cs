@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="LinqToXmlExtensions.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="LinqToXmlExtensions.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2015 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
@@ -9,6 +9,7 @@
 
 using System.Xml;
 using System.Xml.Linq;
+
 
 namespace Hybrid.Linq
 {

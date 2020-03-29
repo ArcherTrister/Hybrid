@@ -1,18 +1,19 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="T4ModelInfo.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="T4ModelInfo.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2015 Hybrid. All rights reserved.
 //  </copyright>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2015-03-07 18:17</last-date>
 // -----------------------------------------------------------------------
-
-using Hybrid.Extensions;
 
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Reflection;
+
+using Hybrid.Extensions;
+using Hybrid.Reflection;
 
 namespace Hybrid.Develop.T4
 {
@@ -55,7 +56,7 @@ namespace Hybrid.Develop.T4
         /// 获取或设置 主键类型
         /// </summary>
         public Type KeyType { get; private set; }
-
+        
         /// <summary>
         /// 获取 模型所在模块名称
         /// </summary>

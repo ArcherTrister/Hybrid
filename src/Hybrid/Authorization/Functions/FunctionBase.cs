@@ -1,17 +1,18 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="FunctionBase.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="FunctionBase.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
-//  <last-editor></last-editor>
-//  <last-date>2017-09-14 20:06</last-date>
+//  <last-editor>ArcherTrister</last-editor>
+//  <last-date>2020-02-10 20:13</last-date>
 // -----------------------------------------------------------------------
-
-using Hybrid.Domain.Entities;
 
 using System;
 using System.ComponentModel;
 using System.Diagnostics;
+
+using Hybrid.Entity;
+
 
 namespace Hybrid.Authorization.Functions
 {
@@ -73,7 +74,7 @@ namespace Hybrid.Authorization.Functions
         /// 获取或设置 是否启用操作审计
         /// </summary>
         [DisplayName("是否操作审计")]
-        public bool AuditOperationEnabled { get; set; } = true;
+        public bool AuditOperationEnabled { get; set; }
 
         /// <summary>
         /// 获取或设置 是否启用数据审计
@@ -98,11 +99,5 @@ namespace Hybrid.Authorization.Functions
         /// </summary>
         [DisplayName("是否锁定")]
         public bool IsLocked { get; set; }
-
-        /// <summary>
-        /// 获取或设置 是否WebApi
-        /// </summary>
-        [DisplayName("是否WebApi")]
-        public bool IsWebApi { get; set; }
     }
 }

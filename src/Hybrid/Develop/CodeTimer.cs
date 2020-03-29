@@ -1,16 +1,8 @@
-﻿// -----------------------------------------------------------------------
-//  <copyright file="CodeTimer.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
-//  </copyright>
-//  <site>https://www.lxking.cn</site>
-//  <last-editor></last-editor>
-//  <last-date>2017-09-17 11:44</last-date>
-// -----------------------------------------------------------------------
-
-using System;
+﻿using System;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Threading;
+
 
 namespace Hybrid.Develop
 {
@@ -32,7 +24,7 @@ namespace Hybrid.Develop
             return cycleCount;
         }
 
-        #endregion 私有方法
+        #endregion
 
         #region 公共方法
 
@@ -93,8 +85,9 @@ namespace Hybrid.Develop
             Console.WriteLine();
         }
 
-        #endregion 公共方法
+        #endregion
     }
+
 
     internal static class NativeMethods
     {
@@ -104,5 +97,7 @@ namespace Hybrid.Develop
 
         [DllImport("kernel32.dll")]
         internal static extern IntPtr GetCurrentThread();
+
     }
+
 }

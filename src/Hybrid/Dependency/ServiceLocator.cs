@@ -1,23 +1,24 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="ServiceLocator.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="ServiceLocator.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2018 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-03-09 21:57</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Data;
-
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-
 using System;
 using System.Collections.Generic;
 using System.Security.Claims;
 using System.Security.Principal;
 using System.Threading.Tasks;
+
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+
+using Hybrid.Data;
+
 
 namespace Hybrid.Dependency
 {
@@ -26,7 +27,7 @@ namespace Hybrid.Dependency
     /// 如果当前处于HttpContext有效的范围内，可正常解析<see cref="ServiceLifetime.Scoped"/>的服务
     /// 注：服务定位器尚不能正常解析 RootServiceProvider.CreateScope() 生命周期内的 Scoped 的服务
     /// </summary>
-    public sealed class ServiceLocator : IDisposable
+    public class ServiceLocator : Disposable
     {
         private static readonly Lazy<ServiceLocator> InstanceLazy = new Lazy<ServiceLocator>(() => new ServiceLocator());
         private IServiceProvider _provider;
@@ -285,11 +286,11 @@ namespace Hybrid.Dependency
             }
         }
 
-        /// <summary>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</summary>
-        public void Dispose()
+        protected override void Dispose(bool disposing)
         {
             _services = null;
             _provider = null;
+            base.Dispose(disposing);
         }
     }
 }

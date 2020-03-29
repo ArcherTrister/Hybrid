@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="PageData.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="PageData.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
@@ -8,6 +8,7 @@
 // -----------------------------------------------------------------------
 
 using System.Collections.Generic;
+
 
 namespace Hybrid.Filter
 {
@@ -27,7 +28,7 @@ namespace Hybrid.Filter
         /// <summary>
         /// 初始化一个<see cref="PageData{T}"/>类型的新实例
         /// </summary>
-        public PageData(IEnumerable<T> rows, int total)
+        public PageData(IEnumerable<T>rows, int total)
         {
             Rows = rows;
             Total = total;

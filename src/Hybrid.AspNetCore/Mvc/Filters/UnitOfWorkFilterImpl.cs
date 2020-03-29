@@ -1,25 +1,24 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="UnitOfWorkFilterImpl.cs" company="OSharp开源团队">
-//      Copyright (c) 2014-2019 OSharp. All rights reserved.
+//  <copyright file="UnitOfWorkFilterImpl.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2019 Hybrid. All rights reserved.
 //  </copyright>
-//  <site>http://www.osharp.org</site>
-//  <last-editor>郭明锋</last-editor>
+//  <site>https://www.lxking.cn</site>
+//  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2019-05-14 17:29</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.AspNetCore.Extensions;
-using Hybrid.AspNetCore.Mvc.Models;
-using Hybrid.AspNetCore.UI;
-using Hybrid.Data;
-using Hybrid.Dependency;
-using Hybrid.Domain.Uow;
+using System;
 
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-using System;
+using Hybrid.AspNetCore.UI;
+using Hybrid.Data;
+using Hybrid.Dependency;
+using Hybrid.Entity;
+
 
 namespace Hybrid.AspNetCore.Mvc.Filters
 {
@@ -67,25 +66,25 @@ namespace Hybrid.AspNetCore.Mvc.Filters
                     context.ExceptionHandled = true;
                 }
             }
-            if (context.Result is JsonResult jsonResult)
+            if (context.Result is JsonResult result1)
             {
-                if (jsonResult.Value is AjaxResult ajax)
+                if (result1.Value is AjaxResult ajax)
                 {
-                    type = ajax.ResultType;
+                    type = ajax.Type;
                     message = ajax.Content;
-                    if (ajax.Success)
+                    if (ajax.Succeeded())
                     {
                         _unitOfWorkManager?.Commit();
                     }
                 }
             }
-            else if (context.Result is ObjectResult objectResult)
+            else if (context.Result is ObjectResult result2)
             {
-                if (objectResult.Value is AjaxResult ajax)
+                if (result2.Value is AjaxResult ajax)
                 {
-                    type = ajax.ResultType;
+                    type = ajax.Type;
                     message = ajax.Content;
-                    if (ajax.Success)
+                    if (ajax.Succeeded())
                     {
                         _unitOfWorkManager?.Commit();
                     }
@@ -100,34 +99,18 @@ namespace Hybrid.AspNetCore.Mvc.Filters
             {
                 switch (context.HttpContext.Response.StatusCode)
                 {
-                    case 400:
-                        type = AjaxResultType.RequestError;
-                        break;
-
                     case 401:
                         type = AjaxResultType.UnAuth;
                         break;
-
                     case 403:
-                        type = AjaxResultType.Forbidden;
+                        type = AjaxResultType.UnAuth;
                         break;
-
                     case 404:
-                        type = AjaxResultType.NoFound;
+                        type = AjaxResultType.UnAuth;
                         break;
-
-                    case 405:
-                        type = AjaxResultType.MethodDisabled;
-                        break;
-
-                    case 406:
-                        type = AjaxResultType.NoSupport;
-                        break;
-
                     case 423:
-                        type = AjaxResultType.Locked;
+                        type = AjaxResultType.UnAuth;
                         break;
-
                     default:
                         type = AjaxResultType.Error;
                         break;

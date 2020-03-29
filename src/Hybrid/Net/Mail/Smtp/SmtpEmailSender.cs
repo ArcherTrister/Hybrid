@@ -1,8 +1,7 @@
-using Hybrid.Dependency;
+﻿using Hybrid.Dependency;
 using Hybrid.Extensions;
 using Hybrid.Net.Mail.Configuration;
 
-using System;
 using System.Net;
 using System.Net.Mail;
 using System.Threading.Tasks;

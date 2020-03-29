@@ -1,31 +1,24 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <Import Project="..\..\build\packages.props" />
-  
+	<Import Project="..\..\build\packages.props" />
+
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <PackageId>Hybrid.EntityFrameworkCore.SqlServer</PackageId>
     <Description>Hybrid 数据访问组件，封装EntityFrameworkCore的SqlServer数据访问功能的实现</Description>
     <Summary>Hybrid 数据访问组件SqlServer</Summary>
-    <RootNamespace>Hybrid.EntityFrameworkCore.SqlServer</RootNamespace>
-    <AssemblyName>Hybrid.EntityFrameworkCore.SqlServer</AssemblyName>
+    <RootNamespace>Hybrid.Entity.SqlServer</RootNamespace>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|netstandard2.1|AnyCPU'">
     <DocumentationFile>bin\Release\Hybrid.EntityFrameworkCore.SqlServer.xml</DocumentationFile>
     <OutputPath>bin\Release</OutputPath>
   </PropertyGroup>
-  
+
   <ItemGroup>
-    <PackageReference Include="microsoft.entityframeworkCore.SqlServer" Version="3.1.2" />
-    <PackageReference Include="System.Data.SqlClient" Version="4.8.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.3" />
   </ItemGroup>
-  
+
   <ItemGroup>
     <ProjectReference Include="..\Hybrid.EntityFrameworkCore\Hybrid.EntityFrameworkCore.csproj" />
   </ItemGroup>

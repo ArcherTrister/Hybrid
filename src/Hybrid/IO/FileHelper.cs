@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="FileHelper.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="FileHelper.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014 Hybrid. All rights reserved.
 //  </copyright>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2014-07-18 18:25</last-date>
@@ -11,6 +11,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Security.Cryptography;
 using System.Text;
+
 
 namespace Hybrid.IO
 {
@@ -134,17 +135,17 @@ namespace Hybrid.IO
                 }
             }
         }
-
+        
         /// <summary>
         /// 获取文本文件的编码方式
         /// </summary>
         /// <param name="fileName"> 文件名 例如：path = @"D:\test.txt"</param>
         /// <returns>返回编码方式</returns>
-        public static Encoding GetEncoding(string fileName)
+        public static Encoding GetEncoding(string fileName )
         {
             return GetEncoding(fileName, Encoding.Default);
         }
-
+        
         /// <summary>
         /// 获取文本流的编码方式
         /// </summary>
@@ -155,7 +156,7 @@ namespace Hybrid.IO
             //Encoding.Default 系统默认的编码方式
             return GetEncoding(fs, Encoding.Default);
         }
-
+        
         /// <summary>
         /// 获取一个文本流的编码方式
         /// </summary>

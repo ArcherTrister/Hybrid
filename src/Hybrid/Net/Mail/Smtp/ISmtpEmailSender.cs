@@ -1,4 +1,4 @@
-using System.Net.Mail;
+﻿using System.Net.Mail;
 
 namespace Hybrid.Net.Mail.Smtp
 {

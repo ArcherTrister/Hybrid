@@ -1,16 +1,17 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="AuditOperationEntry.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="AuditOperationEntry.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor></last-editor>
 //  <last-date>2017-09-17 11:44</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Data;
-
 using System;
 using System.Collections.Generic;
+
+using Hybrid.Data;
+
 
 namespace Hybrid.Audits
 {
@@ -50,22 +51,12 @@ namespace Hybrid.Audits
         /// <summary>
         /// 获取或设置 当前访问IP
         /// </summary>
-        public string ClientIpAddress { get; set; }
-
-        /// <summary>
-        /// Name (generally computer name) of the client.
-        /// </summary>
-        public string ClientName { get; set; }
+        public string Ip { get; set; }
 
         /// <summary>
         /// 获取或设置 当前访问UserAgent
         /// </summary>
         public string UserAgent { get; set; }
-
-        /// <summary>
-        /// Optional custom data that can be filled and used.
-        /// </summary>
-        public string CustomData { get; set; }
 
         /// <summary>
         /// 获取或设置 操作结果类型
@@ -88,46 +79,9 @@ namespace Hybrid.Audits
         public DateTime EndedTime { get; set; }
 
         /// <summary>
-        /// Calling parameters.
-        /// </summary>
-        public string Parameters { get; set; }
-
-        /// <summary>
-        /// Return values.
-        /// </summary>
-        public string ReturnValue { get; set; }
-
-        /// <summary>
-        /// Service (class/interface) name.
-        /// </summary>
-        public string ServiceName { get; set; }
-
-        /// <summary>
-        /// 获取或设置 执行耗时，单位毫秒
-        /// </summary>
-        public int Elapsed { get; set; }
-
-        /// <summary>
-        /// Exception object, if an exception occurred during execution of the method.
-        /// </summary>
-        public Exception Exception { get; set; }
-
-        //public override string ToString()
-        //{
-        //    var loggedUserId = string.IsNullOrEmpty(UserId)
-        //                           ? "an anonymous user"
-        //                           : "user " + UserId;
-
-        //    var exceptionOrSuccessMessage = Exception != null
-        //        ? "exception: " + Exception.Message
-        //        : "succeed";
-
-        //    return $"AUDIT LOG: {ServiceName}.{MethodName} is executed by {loggedUserId} in {ExecutionDuration} ms from {ClientIpAddress} IP address with {exceptionOrSuccessMessage}.";
-        //}
-
-        /// <summary>
         /// 获取或设置 审计数据信息集合
         /// </summary>
         public ICollection<AuditEntityEntry> EntityEntries { get; set; }
+
     }
 }

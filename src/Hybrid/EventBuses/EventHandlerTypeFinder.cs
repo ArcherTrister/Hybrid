@@ -1,18 +1,17 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="EventHandlerTypeFinder.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="EventHandlerTypeFinder.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2018 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-07-28 23:23</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Extensions;
+using System;
+using System.Linq;
 using Hybrid.Finders;
 using Hybrid.Reflection;
 
-using System;
-using System.Linq;
 
 namespace Hybrid.EventBuses
 {

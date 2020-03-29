@@ -1,20 +1,19 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="EntityTypeConfigurationBase.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="EntityTypeConfigurationBase.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2017-08-17 0:40</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Domain.Entities;
+using System;
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-using System;
 
-namespace Hybrid.EntityFrameworkCore
+namespace Hybrid.Entity
 {
     /// <summary>
     /// 数据实体映射配置基类
@@ -43,9 +42,9 @@ namespace Hybrid.EntityFrameworkCore
         {
             modelBuilder.ApplyConfiguration(this);
             // 给软删除的实体添加全局过滤器
-            if (typeof(ISoftDelete).IsAssignableFrom(typeof(TEntity)))
+            if (typeof(ISoftDeletable).IsAssignableFrom(typeof(TEntity)))
             {
-                modelBuilder.Entity<TEntity>().HasQueryFilter(m => ((ISoftDelete)m).IsDeleted == false);
+                modelBuilder.Entity<TEntity>().HasQueryFilter(m => ((ISoftDeletable)m).DeletedTime == null);
             }
         }
 

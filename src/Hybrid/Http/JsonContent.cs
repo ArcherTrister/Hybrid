@@ -1,7 +1,17 @@
-﻿using Newtonsoft.Json;
+﻿// -----------------------------------------------------------------------
+//  <copyright file="JsonContent.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2019 Hybrid. All rights reserved.
+//  </copyright>
+//  <site>https://www.lxking.cn</site>
+//  <last-editor>ArcherTrister</last-editor>
+//  <last-date>2019-11-08 16:45</last-date>
+// -----------------------------------------------------------------------
 
 using System.Net.Http;
 using System.Text;
+
+using Newtonsoft.Json;
+
 
 namespace Hybrid.Http
 {

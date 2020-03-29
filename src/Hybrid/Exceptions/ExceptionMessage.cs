@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="ExceptionMessage.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="ExceptionMessage.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014 Hybrid. All rights reserved.
 //  </copyright>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2014-10-15 5:28</last-date>
@@ -9,6 +9,7 @@
 using System;
 using System.Text;
 
+
 namespace Hybrid.Exceptions
 {
     /// <summary>
@@ -16,6 +17,10 @@ namespace Hybrid.Exceptions
     /// </summary>
     public class ExceptionMessage
     {
+        #region 字段
+
+        #endregion
+
         #region 构造函数
 
         /// <summary>
@@ -75,7 +80,7 @@ namespace Hybrid.Exceptions
         /// </summary>
         public string ErrorDetails { get; private set; }
 
-        #endregion 属性
+        #endregion
 
         #region 方法
 
@@ -91,8 +96,8 @@ namespace Hybrid.Exceptions
             return ErrorDetails;
         }
 
-        #endregion 方法
+        #endregion
 
-        #endregion 构造函数
+        #endregion
     }
 }

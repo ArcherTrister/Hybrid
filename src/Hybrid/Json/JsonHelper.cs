@@ -1,18 +1,19 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="JsonHelper.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="JsonHelper.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014 Hybrid. All rights reserved.
 //  </copyright>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2014-08-04 15:24</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Extensions;
+using System;
+using System.Text.RegularExpressions;
 
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
-using System;
-using System.Text.RegularExpressions;
+using Hybrid.Extensions;
+
 
 namespace Hybrid.Json
 {

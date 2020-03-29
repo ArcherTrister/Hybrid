@@ -1,17 +1,18 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="IocEventHandlerFactory.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="IocEventHandlerFactory.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2017-09-19 3:56</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Dependency;
+using System;
 
 using Microsoft.Extensions.DependencyInjection;
 
-using System;
+using Hybrid.Dependency;
+
 
 namespace Hybrid.EventBuses.Internal
 {
@@ -41,7 +42,7 @@ namespace Hybrid.EventBuses.Internal
         public EventHandlerDisposeWrapper GetHandler()
         {
             IServiceScope scope = _serviceScopeFactory.CreateScope();
-            return new EventHandlerDisposeWrapper((IEventHandler)scope.ServiceProvider.GetRequiredService(_handlerType), () => scope.Dispose());
+            return new EventHandlerDisposeWrapper((IEventHandler)scope.ServiceProvider.GetService(_handlerType), () => scope.Dispose());
         }
     }
 }

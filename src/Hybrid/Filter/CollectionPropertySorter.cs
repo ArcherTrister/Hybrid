@@ -1,14 +1,10 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="CollectionPropertySorter.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="CollectionPropertySorter.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2015 Hybrid. All rights reserved.
 //  </copyright>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2015-03-20 12:10</last-date>
 // -----------------------------------------------------------------------
-
-using Hybrid.Exceptions;
-using Hybrid.Extensions;
-using Hybrid.Properties;
 
 using System;
 using System.Collections.Concurrent;
@@ -17,6 +13,11 @@ using System.ComponentModel;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
+
+using Hybrid.Exceptions;
+using Hybrid.Extensions;
+using Hybrid.Properties;
+
 
 namespace Hybrid.Filter
 {
@@ -37,7 +38,7 @@ namespace Hybrid.Filter
         /// <param name="sortDirection">排序方向</param>
         public static IOrderedEnumerable<T> OrderBy(IEnumerable<T> source, string propertyName, ListSortDirection sortDirection)
         {
-            propertyName.CheckNotNullOrEmpty("propertyName");
+            propertyName.CheckNotNullOrEmpty("propertyName" );
             dynamic expression = GetKeySelector(propertyName);
             dynamic keySelector = expression.Compile();
             return sortDirection == ListSortDirection.Ascending
@@ -53,7 +54,7 @@ namespace Hybrid.Filter
         /// <param name="sortDirection">排序方向</param>
         public static IOrderedEnumerable<T> ThenBy(IOrderedEnumerable<T> source, string propertyName, ListSortDirection sortDirection)
         {
-            propertyName.CheckNotNullOrEmpty("propertyName");
+            propertyName.CheckNotNullOrEmpty("propertyName" );
             dynamic expression = GetKeySelector(propertyName);
             dynamic keySelector = expression.Compile();
             return sortDirection == ListSortDirection.Ascending
@@ -70,7 +71,7 @@ namespace Hybrid.Filter
         /// <returns></returns>
         public static IOrderedQueryable<T> OrderBy(IQueryable<T> source, string propertyName, ListSortDirection sortDirection)
         {
-            propertyName.CheckNotNullOrEmpty("propertyName");
+            propertyName.CheckNotNullOrEmpty("propertyName" );
             dynamic keySelector = GetKeySelector(propertyName);
             return sortDirection == ListSortDirection.Ascending
                 ? Queryable.OrderBy(source, keySelector)
@@ -86,7 +87,7 @@ namespace Hybrid.Filter
         /// <returns></returns>
         public static IOrderedQueryable<T> ThenBy(IOrderedQueryable<T> source, string propertyName, ListSortDirection sortDirection)
         {
-            propertyName.CheckNotNullOrEmpty("propertyName");
+            propertyName.CheckNotNullOrEmpty("propertyName" );
             dynamic keySelector = GetKeySelector(propertyName);
             return sortDirection == ListSortDirection.Ascending
                 ? Queryable.ThenBy(source, keySelector)

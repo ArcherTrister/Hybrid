@@ -1,26 +1,22 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="DbContextOptionsBuilderDriveHandler.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="SqlServerDbContextOptionsBuilderCreator.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2018-08-02 17:56</last-date>
+//  <last-date>2017-08-21 1:07</last-date>
 // -----------------------------------------------------------------------
-
-using Hybrid.Dependency;
-using Hybrid.Domain.EntityFramework;
-
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 
 using System.Data.Common;
 
-namespace Hybrid.EntityFrameworkCore.SqlServer
+using Microsoft.EntityFrameworkCore;
+
+
+namespace Hybrid.Entity.SqlServer
 {
     /// <summary>
     /// SqlServer的<see cref="DbContextOptionsBuilder"/>数据库驱动差异处理器
     /// </summary>
-    [Dependency(ServiceLifetime.Singleton)]
     public class DbContextOptionsBuilderDriveHandler : IDbContextOptionsBuilderDriveHandler
     {
         /// <summary>

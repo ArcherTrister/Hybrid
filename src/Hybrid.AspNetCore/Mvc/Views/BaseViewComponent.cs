@@ -1,28 +1,16 @@
-﻿// -----------------------------------------------------------------------
-//  <copyright file="BaseViewComponent.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
-//  </copyright>
-//  <site>https://www.lxking.cn</site>
-//  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2018-08-02 17:56</last-date>
-// -----------------------------------------------------------------------
-
-using Hybrid.Data;
-using Hybrid.Extensions;
-using Hybrid.Localization;
-using Hybrid.Localization.Sources;
-using Hybrid.Security;
-
-using Microsoft.AspNetCore.Localization;
+﻿using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;
-
+using Hybrid.Data;
+using Hybrid.Localization;
+using Hybrid.Localization.Sources;
 using System;
 using System.Globalization;
 using System.Linq;
+using Hybrid.Extensions;
+using Hybrid.Security;
 
-// ReSharper disable once CheckNamespace
 namespace Hybrid.AspNetCore.Mvc.Views
 {
     public abstract class BaseViewComponent : ViewComponent
@@ -66,7 +54,7 @@ namespace Hybrid.AspNetCore.Mvc.Views
         {
             get
             {
-                string value = HttpContext.Request.Cookies[HybridConsts.CultureCookieName];
+                string value = HttpContext.Request.Cookies[HybridConstants.CultureCookieName];
                 if (value.IsNullOrWhiteSpace())
                 {
                     return CultureInfo.CurrentUICulture;
@@ -80,7 +68,7 @@ namespace Hybrid.AspNetCore.Mvc.Views
         {
             get
             {
-                string value = HttpContext.Request.Cookies[HybridConsts.SchedulerCookieName];
+                string value = HttpContext.Request.Cookies[HybridConstants.SchedulerCookieName];
                 if (value.IsNullOrWhiteSpace())
                 {
                     return null;

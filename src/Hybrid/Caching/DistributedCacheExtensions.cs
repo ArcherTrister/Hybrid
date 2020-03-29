@@ -1,22 +1,11 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="DistributedCacheExtensions.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="DistributedCacheExtensions.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor></last-editor>
 //  <last-date>2017-09-17 16:45</last-date>
 // -----------------------------------------------------------------------
-
-using Hybrid.Authorization.Functions;
-using Hybrid.Data;
-using Hybrid.Dependency;
-using Hybrid.Domain.Entities;
-using Hybrid.Exceptions;
-using Hybrid.Extensions;
-using Hybrid.Filter;
-using Hybrid.Json;
-
-using Microsoft.Extensions.Caching.Distributed;
 
 using System;
 using System.Collections.Generic;
@@ -24,6 +13,20 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 using System.Threading.Tasks;
+
+using Microsoft.Extensions.Caching.Distributed;
+
+using Hybrid.Authorization.Functions;
+using Hybrid.Collections;
+using Hybrid.Data;
+using Hybrid.Dependency;
+using Hybrid.Entity;
+using Hybrid.Exceptions;
+using Hybrid.Extensions;
+using Hybrid.Filter;
+using Hybrid.Json;
+using Hybrid.Reflection;
+
 
 namespace Hybrid.Caching
 {
@@ -694,7 +697,7 @@ namespace Hybrid.Caching
             return cache.Get(key, () => source.ToOutput<TSource, TOutputDto>().ToArray(), function);
         }
 
-        #endregion OutputDto
+        #endregion
 
         /// <summary>
         /// 将<see cref="IFunction"/>的缓存配置转换为<see cref="DistributedCacheEntryOptions"/>

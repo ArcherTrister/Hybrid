@@ -1,4 +1,5 @@
 ﻿using Hybrid.Domain.Entities;
+
 using System.Collections.Generic;
 
 namespace Hybrid.Localization.Configuration

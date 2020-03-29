@@ -1,15 +1,4 @@
-﻿using Hybrid.AspNetCore;
-using Hybrid.Configuration;
-using Hybrid.Core.Modules;
-using Hybrid.Core.Options;
-using Hybrid.Data;
-using Hybrid.EventBuses;
-using Hybrid.Exceptions;
-using Hybrid.Extensions;
-using Hybrid.Localization;
-using Hybrid.Localization.Dictionaries;
-using Hybrid.Localization.Dictionaries.Json;
-using Hybrid.Quartz.Dashboard;
+﻿using Hybrid.Quartz.Dashboard;
 using Hybrid.Quartz.MySql;
 using Hybrid.Quartz.Plugins.LiveLog;
 using Hybrid.Quartz.SqlServer;
@@ -19,6 +8,17 @@ using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
+
+using Hybrid.AspNetCore;
+using Hybrid.Core.Configuration;
+using Hybrid.Core.Packs;
+using Hybrid.Data;
+using Hybrid.EventBuses;
+using Hybrid.Exceptions;
+using Hybrid.Localization;
+using Hybrid.Localization.Dictionaries;
+using Hybrid.Localization.Dictionaries.Json;
+using Hybrid.Reflection;
 
 using Quartz;
 using Quartz.Impl;
@@ -32,20 +32,20 @@ namespace Hybrid.Quartz
     /// <summary>
     /// Quartz模块基类
     /// </summary>
-    [DependsOnModules(typeof(EventBusModule), typeof(AspNetCoreModule))]
-    public abstract class QuartzModuleBase : AspHybridModule
+    [DependsOnPacks(typeof(EventBusPack), typeof(AspNetCorePack))]
+    public abstract class QuartzModuleBase : AspHybridPack
     {
         private bool _enabled = true;
 
         /// <summary>
         /// 获取 模块级别，级别越小越先启动
         /// </summary>
-        public override ModuleLevel Level => ModuleLevel.Framework;
+        public override PackLevel Level => PackLevel.Framework;
 
         public override IServiceCollection AddServices(IServiceCollection services)
         {
             IConfiguration configuration = services.GetConfiguration();
-            QuartzOptions quartzOptions = configuration.GetSection("Hybrid:Quartz").Get<QuartzOptions>();
+            QuartzConfiguration quartzOptions = configuration.GetSection("Hybrid:Quartz").Get<QuartzConfiguration>();
             _enabled = quartzOptions.IsEnabled;
             // _useDashboard = quartzOptions.UseDashboard;
             if (!_enabled)
@@ -58,7 +58,7 @@ namespace Hybrid.Quartz
             }
             if (string.IsNullOrWhiteSpace(quartzOptions.SchedulerName))
             {
-                quartzOptions.SchedulerName = HybridConsts.DefaultSchedulerName;
+                quartzOptions.SchedulerName = HybridConstants.DefaultSchedulerName;
             }
             services.AddSingleton(quartzOptions);
             if (quartzOptions.StorageType.Equals(QuartzStorageType.InMemory))
@@ -94,7 +94,7 @@ namespace Hybrid.Quartz
             return base.AddServices(services);
         }
 
-        public override void UseModule(IApplicationBuilder app)
+        public override void UsePack(IApplicationBuilder app)
         {
             if (!_enabled)
             {
@@ -103,7 +103,7 @@ namespace Hybrid.Quartz
 
             IServiceProvider provider = app.ApplicationServices;
 
-            var quartzOptions = provider.GetRequiredService<QuartzOptions>();
+            var quartzOptions = provider.GetRequiredService<QuartzConfiguration>();
             if (quartzOptions.StorageType.Equals(QuartzStorageType.InMemory))
             {
                 // 初始化数据库
@@ -165,7 +165,7 @@ namespace Hybrid.Quartz
                 routes.MapHub<LiveLogHub>("/api/liveLogHub");
             });
 
-            base.UseModule(app);
+            base.UsePack(app);
         }
 
         /// <summary>

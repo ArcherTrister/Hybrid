@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="AsyncReaderWriterLock.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="AsyncReaderWriterLock.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2016 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
@@ -10,6 +10,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+
 
 namespace Hybrid.Threading.Asyncs
 {
@@ -23,7 +24,6 @@ namespace Hybrid.Threading.Asyncs
         private readonly Task<Releaser> _writerReleaser;
         private int _readersWaiting;
         private int _status;
-
         private TaskCompletionSource<Releaser> _waitingReader =
             new TaskCompletionSource<Releaser>();
 
@@ -116,6 +116,7 @@ namespace Hybrid.Threading.Asyncs
                 toWake.SetResult(new Releaser(this, toWakeIsWriter));
             }
         }
+
 
         public struct Releaser : IDisposable
         {

@@ -1,15 +1,16 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="IFunctionAuthorization.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="IFunctionAuthorization.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2018 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-05-10 19:56</last-date>
 // -----------------------------------------------------------------------
 
+using System.Security.Principal;
+
 using Hybrid.Authorization.Functions;
 
-using System.Security.Principal;
 
 namespace Hybrid.Authorization
 {

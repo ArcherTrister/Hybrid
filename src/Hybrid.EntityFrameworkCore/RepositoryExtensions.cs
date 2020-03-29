@@ -1,29 +1,26 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="RepositoryExtensions.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="RepositoryExtensions.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2017-09-12 20:25</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Domain.Entities;
-using Hybrid.Domain.EntityFramework;
-using Hybrid.Domain.Repositories;
-using Hybrid.Domain.Uow;
-using Hybrid.Exceptions;
-
-using Microsoft.EntityFrameworkCore;
-
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
+using Microsoft.EntityFrameworkCore;
+
+using Hybrid.Exceptions;
+
 using Z.EntityFramework.Extensions;
 using Z.EntityFramework.Plus;
 
-namespace Hybrid.EntityFrameworkCore
+
+namespace Hybrid.Entity
 {
     /// <summary>
     /// <see cref="Repository{TEntity,TKey}"/>扩展辅助操作
@@ -119,7 +116,7 @@ namespace Hybrid.EntityFrameworkCore
             {
                 throw new HybridException($"参数dbContext类型为“{dbContext.GetType()}”，不能转换为 DbContext");
             }
-            //return context.Set<TEntity>().FromSql(new RawSqlString(sql), parameters);
+
             return context.Set<TEntity>().FromSqlRaw(sql, parameters);
         }
     }

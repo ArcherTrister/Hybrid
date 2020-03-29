@@ -1,14 +1,11 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="Check.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="Check.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2017-08-16 23:06</last-date>
 // -----------------------------------------------------------------------
-
-using Hybrid.Domain.Entities;
-using Hybrid.Properties;
 
 using System;
 using System.Collections.Generic;
@@ -16,6 +13,10 @@ using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+
+using Hybrid.Entity;
+using Hybrid.Properties;
+
 
 namespace Hybrid.Data
 {

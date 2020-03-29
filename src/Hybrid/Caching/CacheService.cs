@@ -1,25 +1,28 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="CacheService.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="CacheService.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2018 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-12-19 19:10</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Authorization.Functions;
-using Hybrid.Domain.Entities;
-using Hybrid.Exceptions;
-using Hybrid.Extensions;
-using Hybrid.Filter;
-
-using Microsoft.Extensions.Caching.Distributed;
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
+
+using Microsoft.Extensions.Caching.Distributed;
+
+using Hybrid.Authorization.Functions;
+using Hybrid.Collections;
+using Hybrid.Entity;
+using Hybrid.Exceptions;
+using Hybrid.Extensions;
+using Hybrid.Filter;
+using Hybrid.Reflection;
+
 
 namespace Hybrid.Caching
 {
@@ -482,7 +485,7 @@ namespace Hybrid.Caching
             return _cache.Get(key, () => source.ToOutput<TSource, TOutputDto>().ToArray(), function);
         }
 
-        #endregion Implementation of ICacheService
+        #endregion
 
         #region 私有方法
 
@@ -605,9 +608,9 @@ namespace Hybrid.Caching
                 key = new StringCacheKeyGenerator().GetKey(keyParams);
             }
 
-            return key.ToMd5Hash();
+            return $"Query:{key.ToMd5Hash()}";
         }
 
-        #endregion 私有方法
+        #endregion
     }
 }

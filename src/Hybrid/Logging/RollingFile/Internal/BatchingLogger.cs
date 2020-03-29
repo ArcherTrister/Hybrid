@@ -1,20 +1,21 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="BatchingLogger.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="BatchingLogger.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor></last-editor>
 //  <last-date>2017-09-17 21:10</last-date>
 // -----------------------------------------------------------------------
 
-using Microsoft.Extensions.Logging;
-
 using System;
 using System.Text;
 
+using Microsoft.Extensions.Logging;
+
+
 namespace Hybrid.Logging.RollingFile.Internal
 {
-    //power by https://github.com/andrewlock/NetEscapades.Extensions.Logging
+//power by https://github.com/andrewlock/NetEscapades.Extensions.Logging
     internal class BatchingLogger : ILogger
     {
         private readonly string _category;

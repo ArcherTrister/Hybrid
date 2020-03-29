@@ -1,19 +1,20 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="AesHelper.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="AesHelper.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2017-12-30 15:41</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Exceptions;
-using Hybrid.Extensions;
-
 using System;
 using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
+
+using Hybrid.Exceptions;
+using Hybrid.Extensions;
+
 
 namespace Hybrid.Security
 {
@@ -97,7 +98,7 @@ namespace Hybrid.Security
             DecryptFile(sourceFile, targetFile, Key, _needIV);
         }
 
-        #endregion 实例方法
+        #endregion
 
         #region 静态方法
 
@@ -271,6 +272,6 @@ namespace Hybrid.Security
             return keyBytes;
         }
 
-        #endregion 静态方法
+        #endregion
     }
 }

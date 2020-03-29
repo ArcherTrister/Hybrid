@@ -1,21 +1,21 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="BinAssemblyFinder.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="BinAssemblyFinder.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2017-08-15 23:33</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Extensions;
-using Hybrid.Finders;
-
-using Microsoft.Extensions.DependencyModel;
-
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+
+using Microsoft.Extensions.DependencyModel;
+
+using Hybrid.Collections;
+using Hybrid.Finders;
 
 namespace Hybrid.Reflection
 {
@@ -74,17 +74,17 @@ namespace Hybrid.Reflection
                         {
                             continue;
                         }
-                        if (name == "Hybrid")
+                        if (name == "HybridNS")
                         {
                             continue;
                         }
-                        if (name == "Hybrid.Core")
+                        if (name == "HybridNS.Core")
                         {
                             name = "Hybrid";
                         }
-                        else if (name.StartsWith("Hybrid."))
+                        else if (name.StartsWith("HybridNS."))
                         {
-                            name = name.Replace("Hybrid.", "Hybrid.");
+                            name = name.Replace("HybridNS.", "Hybrid.");
                         }
                         if (!names.Contains(name))
                         {

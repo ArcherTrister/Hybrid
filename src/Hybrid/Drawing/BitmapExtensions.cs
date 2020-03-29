@@ -1,13 +1,11 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="BitmapExtensions.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="BitmapExtensions.cs" company="柳柳软件">
+//      Copyright (c) 2016-2018 66SOFT. All rights reserved.
 //  </copyright>
-//  <site>https://www.lxking.cn</site>
+//  <site>http://www.66soft.net</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-10-02 2:42</last-date>
 // -----------------------------------------------------------------------
-
-using Hybrid.Extensions;
 
 using System;
 using System.Collections.Generic;
@@ -18,6 +16,10 @@ using System.Drawing.Text;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
+
+using Hybrid.Collections;
+using Hybrid.Extensions;
+
 
 namespace Hybrid.Drawing
 {
@@ -572,7 +574,7 @@ namespace Hybrid.Drawing
             return code;
         }
 
-        #endregion Byte[,]图像处理扩展
+        #endregion
 
         #region Image
 
@@ -1499,6 +1501,6 @@ namespace Hybrid.Drawing
             return value == 255;
         }
 
-        #endregion Image
+        #endregion
     }
 }

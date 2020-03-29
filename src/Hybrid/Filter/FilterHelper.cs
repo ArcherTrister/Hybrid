@@ -1,21 +1,11 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="FilterHelper.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="FilterHelper.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2018 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-07-15 10:22</last-date>
 // -----------------------------------------------------------------------
-
-using Hybrid.Data;
-using Hybrid.Dependency;
-using Hybrid.Domain.Entities;
-using Hybrid.Exceptions;
-using Hybrid.Extensions;
-using Hybrid.Linq;
-using Hybrid.Properties;
-using Hybrid.Authorization;
-using Hybrid.Security.Claims;
 
 using System;
 using System.Collections.Generic;
@@ -23,6 +13,18 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 using System.Security.Claims;
+
+using Hybrid.Authorization;
+using Hybrid.Data;
+using Hybrid.Dependency;
+using Hybrid.Entity;
+using Hybrid.Exceptions;
+using Hybrid.Extensions;
+using Hybrid.Identity;
+using Hybrid.Linq;
+using Hybrid.Properties;
+using Hybrid.Reflection;
+
 
 namespace Hybrid.Filter
 {
@@ -125,7 +127,7 @@ namespace Hybrid.Filter
                 //}
             };
 
-        #endregion 字段
+        #endregion
 
         /// <summary>
         /// 获取指定查询条件组的查询表达式
@@ -347,7 +349,7 @@ namespace Hybrid.Filter
         }
 
         /// <summary>
-        /// 验证最后一个属性与属性值是否匹配
+        /// 验证最后一个属性与属性值是否匹配 
         /// </summary>
         /// <param name="type">最后一个属性</param>
         /// <param name="rule">条件信息</param>
@@ -386,6 +388,7 @@ namespace Hybrid.Filter
             //}
             if (rule.Value?.ToString() == UserFlagAttribute.Token)
             {
+                // todo: 将UserFlag之类的功能提升为接口进行服务注册，好方便实现自定义XXXFlag
                 if (rule.Operate != FilterOperate.Equal)
                 {
                     throw new HybridException($"当前用户“{rule.Value}”只能用在“{FilterOperate.Equal.ToDescription()}”操作中");
@@ -395,7 +398,7 @@ namespace Hybrid.Filter
                 {
                     throw new HybridException("需要获取当前用户编号，但当前用户为空，可能未登录或已过期");
                 }
-                object value = user.Identity.GetClaimValueFirstOrDefault(HybridClaimTypes.UserId);
+                object value = user.Identity.GetClaimValueFirstOrDefault(ClaimTypes.NameIdentifier);
                 value = value.CastTo(conversionType);
                 return Expression.Constant(value, conversionType);
             }
@@ -406,6 +409,6 @@ namespace Hybrid.Filter
             }
         }
 
-        #endregion 私有方法
+        #endregion
     }
 }

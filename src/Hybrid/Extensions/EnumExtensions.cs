@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="AbstractBuilder.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="AbstractBuilder.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014 Hybrid. All rights reserved.
 //  </copyright>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2014:07:08 13:09</last-date>
@@ -10,6 +10,9 @@ using System;
 using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
+
+using Hybrid.Reflection;
+
 
 namespace Hybrid.Extensions
 {

@@ -1,10 +1,13 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="FilterRule.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="FilterRule.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2015 Hybrid. All rights reserved.
 //  </copyright>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2015-07-26 15:26</last-date>
 // -----------------------------------------------------------------------
+
+using System;
+
 
 namespace Hybrid.Filter
 {
@@ -54,7 +57,7 @@ namespace Hybrid.Filter
             Operate = operate;
         }
 
-        #endregion 构造函数
+        #endregion
 
         #region 属性
 
@@ -73,7 +76,7 @@ namespace Hybrid.Filter
         /// </summary>
         public FilterOperate Operate { get; set; }
 
-        #endregion 属性
+        #endregion
 
         #region Overrides of Object
 
@@ -89,11 +92,13 @@ namespace Hybrid.Filter
             return rule.Field == Field && rule.Value == Value && rule.Operate == Operate;
         }
 
+        /// <summary>Serves as the default hash function.</summary>
+        /// <returns>A hash code for the current object.</returns>
         public override int GetHashCode()
         {
-            return base.GetHashCode();
+            return HashCode.Combine(Field, Value, Operate);
         }
 
-        #endregion Overrides of Object
+        #endregion
     }
 }

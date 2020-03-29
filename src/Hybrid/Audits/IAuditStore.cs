@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="IAuditStore.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="IAuditStore.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
@@ -10,6 +10,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
+
 namespace Hybrid.Audits
 {
     /// <summary>
@@ -18,32 +19,6 @@ namespace Hybrid.Audits
     /// </summary>
     public interface IAuditStore
     {
-        ///// <summary>
-        ///// 是否审计
-        ///// </summary>
-        ///// <param name="methodInfo"></param>
-        ///// <param name="defaultValue"></param>
-        ///// <returns></returns>
-        //bool ShouldSaveAudit(MethodInfo methodInfo, bool defaultValue = false);
-
-        ///// <summary>
-        /////
-        ///// </summary>
-        ///// <param name="type"></param>
-        ///// <param name="method"></param>
-        ///// <param name="arguments"></param>
-        ///// <returns></returns>
-        //AuditOperationEntry CreateAuditInfo(ClaimsPrincipal principal, Type type, MethodInfo method, object[] arguments);
-
-        ///// <summary>
-        /////
-        ///// </summary>
-        ///// <param name="type"></param>
-        ///// <param name="method"></param>
-        ///// <param name="arguments"></param>
-        ///// <returns></returns>
-        //AuditOperationEntry CreateAuditInfo(Type type, MethodInfo method, IDictionary<string, object> arguments);
-
         /// <summary>
         /// 设置保存审计数据
         /// </summary>

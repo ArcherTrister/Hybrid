@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="ComLibraryLoader.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="ComLibraryLoader.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
@@ -12,17 +12,17 @@ using System.ComponentModel;
 using System.IO;
 using System.Runtime.InteropServices;
 
+
 namespace Hybrid.Reflection
 {
     /// <summary>
     /// 不注册Com组件的方式加载Com组件
     /// </summary>
-    public class ComLibraryLoader : IDisposable
+    public class ComLibraryLoader : Disposable
     {
         private delegate int DllGetClassObjectInvoker([MarshalAs(UnmanagedType.LPStruct)] Guid clsid,
             [MarshalAs(UnmanagedType.LPStruct)] Guid iid,
             [MarshalAs(UnmanagedType.IUnknown)] out object ppv);
-
         private static readonly Guid UnknownId = new Guid("00000000-0000-0000-C000-000000000046");
         private IntPtr _lib = IntPtr.Zero;
         private bool _preferURObjects = true;
@@ -94,13 +94,13 @@ namespace Hybrid.Reflection
             return Activator.CreateInstance(type);
         }
 
-        /// <summary>
-        /// Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
-        /// </summary>
-        public void Dispose()
+        protected override void Dispose(bool disposing)
         {
-            NativeMethods.FreeLibrary(_lib);
-            GC.SuppressFinalize(this);
+            if (!Disposed)
+            {
+                NativeMethods.FreeLibrary(_lib);
+            }
+            base.Dispose(disposing);
         }
     }
 }

@@ -1,28 +1,11 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="Repository.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="Repository.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2017-11-15 19:20</last-date>
 // -----------------------------------------------------------------------
-
-using Hybrid.Authorization;
-using Hybrid.Data;
-using Hybrid.Domain.Entities;
-using Hybrid.Domain.EntityFramework;
-using Hybrid.Domain.Repositories;
-using Hybrid.Domain.Uow;
-using Hybrid.Exceptions;
-using Hybrid.Extensions;
-using Hybrid.Filter;
-using Hybrid.Mapping;
-using Hybrid.Security.Claims;
-using Hybrid.Threading;
-
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 
 using System;
 using System.Collections.Generic;
@@ -31,9 +14,24 @@ using System.Linq.Expressions;
 using System.Security.Principal;
 using System.Threading.Tasks;
 
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+
+using Hybrid.Authorization;
+using Hybrid.Collections;
+using Hybrid.Data;
+using Hybrid.Exceptions;
+using Hybrid.Extensions;
+using Hybrid.Filter;
+using Hybrid.Identity;
+using Hybrid.Mapping;
+using Hybrid.Threading;
+
 using Z.EntityFramework.Plus;
 
-namespace Hybrid.EntityFrameworkCore
+
+namespace Hybrid.Entity
 {
     /// <summary>
     /// 实体数据存储操作类
@@ -104,6 +102,35 @@ namespace Hybrid.EntityFrameworkCore
             Check.NotNull(entities, nameof(entities));
             entities = CheckInsert(entities);
             _dbSet.AddRange(entities);
+            return _dbContext.SaveChanges();
+        }
+
+        /// <summary>
+        /// 插入或更新实体
+        /// </summary>
+        /// <param name="entities">要处理的实体</param>
+        /// <param name="existingFunc">实体是否存在的判断委托</param>
+        /// <returns>操作影响的行数</returns>
+        public virtual int InsertOrUpdate(TEntity[] entities, Func<TEntity, Expression<Func<TEntity, bool>>> existingFunc = null)
+        {
+            Check.NotNull(entities, nameof(entities));
+            foreach (TEntity entity in entities)
+            {
+                Expression<Func<TEntity, bool>> exp = existingFunc == null
+                    ? m => m.Id.Equals(entity.Id)
+                    : existingFunc(entity);
+                if (!_dbSet.Any(exp))
+                {
+                    CheckInsert(entity);
+                    _dbSet.Add(entity);
+                }
+                else
+                {
+                    CheckUpdate(entity);
+                    ((DbContext)_dbContext).Update<TEntity, TKey>(entity);
+                }
+            }
+
             return _dbContext.SaveChanges();
         }
 
@@ -203,7 +230,10 @@ namespace Hybrid.EntityFrameworkCore
                 }
                 try
                 {
-                    checkAction?.Invoke(entity);
+                    if (checkAction != null)
+                    {
+                        checkAction(entity);
+                    }
                     if (deleteFunc != null)
                     {
                         entity = deleteFunc(entity);
@@ -238,40 +268,15 @@ namespace Hybrid.EntityFrameworkCore
         public virtual int DeleteBatch(Expression<Func<TEntity, bool>> predicate)
         {
             Check.NotNull(predicate, nameof(predicate));
+            // todo: 检测删除的数据权限
+
             ((DbContextBase)_dbContext).BeginOrUseTransaction();
-            // TODO: 檢查性能 逻辑删除
-            TEntity[] entities = _dbSet.Where(predicate).ToArray();
-            // TODO: 检测删除的数据权限
-            CheckDataAuth(DataAuthOperation.Delete, entities);
-            //TEntity[] entities = _dbSet.Where(predicate).AsTracking().ToArray();
-            //// 检测删除的数据权限
-            //CheckDataAuth(DataAuthOperation.Delete, entities);
-            if (typeof(ISoftDelete).IsAssignableFrom(typeof(TEntity)))
+            if (typeof(ISoftDeletable).IsAssignableFrom(typeof(TEntity)))
             {
-                foreach (TEntity entity in entities)
-                {
-                    ISoftDelete softDeletableEntity = (ISoftDelete)entity;
-                    softDeletableEntity.IsDeleted = true;
-                }
+                // 逻辑删除
+                TEntity[] entities = _dbSet.Where(predicate).ToArray();
+                DeleteInternal(entities);
                 return _dbContext.SaveChanges();
-
-                ////TODO: nameof(ISoftDelete)
-                //// Create a MemberBinding object for each member
-                //// that you want to initialize.
-                //MemberBinding speciesMemberBinding =
-                //    Expression.Bind(
-                //        typeof(TEntity).GetMember("IsDeleted")[0],
-                //        Expression.Constant(true));
-
-                //// Create a MemberInitExpression that represents initializing
-                //MemberInitExpression memberInitExpression =
-                //    Expression.MemberInit(
-                //        Expression.New(typeof(TEntity)),
-                //        speciesMemberBinding);
-
-                //ParameterExpression input = Expression.Parameter(typeof(TEntity), "p");
-                //Expression<Func<TEntity, TEntity>> updateExpression = Expression.Lambda<Func<TEntity, TEntity>>(memberInitExpression, input);
-                //return await _dbSet.Where(predicate).Update(updateExpression);
             }
 
             //物理删除
@@ -367,11 +372,11 @@ namespace Hybrid.EntityFrameworkCore
         /// <param name="predicate">查询条件谓语表达式</param>
         /// <param name="id">编辑的实体标识</param>
         /// <returns>是否存在</returns>
-        public virtual bool CheckExists(Expression<Func<TEntity, bool>> predicate, TKey id = default(TKey))
+        public virtual bool CheckExists(Expression<Func<TEntity, bool>> predicate, TKey id = default)
         {
             Check.NotNull(predicate, nameof(predicate));
 
-            TKey defaultId = default(TKey);
+            TKey defaultId = default;
             var entity = _dbSet.Where(predicate).Select(m => new { m.Id }).FirstOrDefault();
             bool exists = !typeof(TKey).IsValueType && ReferenceEquals(id, null) || id.Equals(defaultId)
                 ? entity != null
@@ -514,7 +519,7 @@ namespace Hybrid.EntityFrameworkCore
             return query;
         }
 
-        #endregion 同步方法
+        #endregion
 
         #region 异步方法
 
@@ -530,6 +535,35 @@ namespace Hybrid.EntityFrameworkCore
             entities = CheckInsert(entities);
             await _dbSet.AddRangeAsync(entities, _cancellationTokenProvider.Token);
             return await _dbContext.SaveChangesAsync(_cancellationTokenProvider.Token);
+        }
+
+        /// <summary>
+        /// 插入或更新实体
+        /// </summary>
+        /// <param name="entities">要处理的实体</param>
+        /// <param name="existingFunc">实体是否存在的判断委托</param>
+        /// <returns>操作影响的行数</returns>
+        public virtual async Task<int> InsertOrUpdateAsync(TEntity[] entities, Func<TEntity, Expression<Func<TEntity, bool>>> existingFunc = null)
+        {
+            Check.NotNull(entities, nameof(entities));
+            foreach (TEntity entity in entities)
+            {
+                Expression<Func<TEntity, bool>> exp = existingFunc == null
+                    ? m => m.Id.Equals(entity.Id)
+                    : existingFunc(entity);
+                if (!await _dbSet.AnyAsync(exp))
+                {
+                    CheckInsert(entity);
+                    await _dbSet.AddAsync(entity);
+                }
+                else
+                {
+                    CheckUpdate(entity);
+                    ((DbContext)_dbContext).Update<TEntity, TKey>(entity);
+                }
+            }
+
+            return await _dbContext.SaveChangesAsync();
         }
 
         /// <summary>
@@ -668,40 +702,15 @@ namespace Hybrid.EntityFrameworkCore
         public virtual async Task<int> DeleteBatchAsync(Expression<Func<TEntity, bool>> predicate)
         {
             Check.NotNull(predicate, nameof(predicate));
+            // todo: 检测删除的数据权限
+
             await ((DbContextBase)_dbContext).BeginOrUseTransactionAsync(_cancellationTokenProvider.Token);
-            // TODO: 檢查性能 逻辑删除
-            TEntity[] entities = _dbSet.Where(predicate).ToArray();
-            // TODO: 检测删除的数据权限
-            CheckDataAuth(DataAuthOperation.Delete, entities);
-            //TEntity[] entities = _dbSet.Where(predicate).AsTracking().ToArray();
-            //// 检测删除的数据权限
-            //CheckDataAuth(DataAuthOperation.Delete, entities);
-            if (typeof(ISoftDelete).IsAssignableFrom(typeof(TEntity)))
+            if (typeof(ISoftDeletable).IsAssignableFrom(typeof(TEntity)))
             {
-                foreach (TEntity entity in entities)
-                {
-                    ISoftDelete softDeletableEntity = (ISoftDelete)entity;
-                    softDeletableEntity.IsDeleted = true;
-                }
+                // 逻辑删除
+                TEntity[] entities = _dbSet.Where(predicate).ToArray();
+                DeleteInternal(entities);
                 return await _dbContext.SaveChangesAsync(_cancellationTokenProvider.Token);
-
-                //// TODO: nameof(ISoftDelete)
-                //// Create a MemberBinding object for each member
-                //// that you want to initialize.
-                //MemberBinding speciesMemberBinding =
-                //    Expression.Bind(
-                //        typeof(TEntity).GetMember("IsDeleted")[0],
-                //        Expression.Constant(true));
-
-                //// Create a MemberInitExpression that represents initializing
-                //MemberInitExpression memberInitExpression =
-                //    Expression.MemberInit(
-                //        Expression.New(typeof(TEntity)),
-                //        speciesMemberBinding);
-
-                //ParameterExpression input = Expression.Parameter(typeof(TEntity), "p");
-                //Expression<Func<TEntity, TEntity>> updateExpression = Expression.Lambda<Func<TEntity, TEntity>>(memberInitExpression, input);
-                //return await _dbSet.Where(predicate).UpdateAsync(updateExpression);
             }
 
             // 物理删除
@@ -797,11 +806,11 @@ namespace Hybrid.EntityFrameworkCore
         /// <param name="predicate">查询条件谓语表达式</param>
         /// <param name="id">编辑的实体标识</param>
         /// <returns>是否存在</returns>
-        public virtual async Task<bool> CheckExistsAsync(Expression<Func<TEntity, bool>> predicate, TKey id = default(TKey))
+        public virtual async Task<bool> CheckExistsAsync(Expression<Func<TEntity, bool>> predicate, TKey id = default)
         {
             predicate.CheckNotNull(nameof(predicate));
 
-            TKey defaultId = default(TKey);
+            TKey defaultId = default;
             var entity = await _dbSet.Where(predicate).Select(m => new { m.Id }).FirstOrDefaultAsync(_cancellationTokenProvider.Token);
             bool exists = !typeof(TKey).IsValueType && ReferenceEquals(id, null) || id.Equals(defaultId)
                 ? entity != null
@@ -821,7 +830,7 @@ namespace Hybrid.EntityFrameworkCore
             return await _dbSet.FindAsync(key);
         }
 
-        #endregion 异步方法
+        #endregion
 
         #region 私有方法
 
@@ -843,6 +852,22 @@ namespace Hybrid.EntityFrameworkCore
             {
                 ((Guid)key).CheckNotEmpty(keyName);
             }
+        }
+
+        private void SetEmptyGuidKey(TEntity entity)
+        {
+            if (typeof(TKey) != typeof(Guid))
+            {
+                return;
+            }
+
+            if (!entity.Id.Equals(Guid.Empty))
+            {
+                return;
+            }
+
+            DatabaseType databaseType = _dbContext.GetDatabaseType();
+            entity.Id = SequentialGuid.Create(databaseType).CastTo<TKey>();
         }
 
         private static string GetNameValue(object value)
@@ -888,9 +913,10 @@ namespace Hybrid.EntityFrameworkCore
             for (int i = 0; i < entities.Length; i++)
             {
                 TEntity entity = entities[i];
+                SetEmptyGuidKey(entity);
                 entities[i] = entity.CheckICreatedTime<TEntity, TKey>();
 
-                string userIdTypeName = _principal?.Identity.GetClaimValueFirstOrDefault("userIdTypeName");
+                string userIdTypeName = _principal?.Identity.GetClaimValueFirstOrDefault(HybridConstants.UserIdTypeName);
                 if (userIdTypeName == null)
                 {
                     continue;
@@ -917,7 +943,7 @@ namespace Hybrid.EntityFrameworkCore
         {
             CheckDataAuth(DataAuthOperation.Update, entities);
 
-            string userIdTypeName = _principal?.Identity.GetClaimValueFirstOrDefault("userIdTypeName");
+            string userIdTypeName = _principal?.Identity.GetClaimValueFirstOrDefault(HybridConstants.UserIdTypeName);
             if (userIdTypeName == null)
             {
                 return entities;
@@ -945,13 +971,13 @@ namespace Hybrid.EntityFrameworkCore
         private void DeleteInternal(params TEntity[] entities)
         {
             CheckDataAuth(DataAuthOperation.Delete, entities);
-            if (typeof(ISoftDelete).IsAssignableFrom(typeof(TEntity)))
+            if (typeof(ISoftDeletable).IsAssignableFrom(typeof(TEntity)))
             {
                 // 逻辑删除
                 foreach (TEntity entity in entities)
                 {
-                    ISoftDelete softDeletableEntity = (ISoftDelete)entity;
-                    softDeletableEntity.IsDeleted = true;
+                    ISoftDeletable softDeletableEntity = (ISoftDeletable)entity;
+                    softDeletableEntity.DeletedTime = DateTime.Now;
                 }
             }
             else
@@ -961,6 +987,6 @@ namespace Hybrid.EntityFrameworkCore
             }
         }
 
-        #endregion 私有方法
+        #endregion
     }
 }

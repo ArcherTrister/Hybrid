@@ -1,23 +1,24 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="EventBusBase.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="EventBusBase.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2018 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-07-01 17:55</last-date>
 // -----------------------------------------------------------------------
 
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+
 using Hybrid.Data;
 using Hybrid.Dependency;
 using Hybrid.EventBuses.Internal;
 using Hybrid.Threading;
 
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace Hybrid.EventBuses
 {
@@ -35,10 +36,10 @@ namespace Hybrid.EventBuses
         {
             _serviceProvider = serviceProvider;
             ServiceScopeFactory = serviceScopeFactory;
-            EventStore = serviceProvider.GetRequiredService<IEventStore>();
+            EventStore = serviceProvider.GetService<IEventStore>();
             Logger = serviceProvider.GetLogger(GetType());
         }
-
+        
         /// <summary>
         /// 获取 服务作用域工厂
         /// </summary>
@@ -124,7 +125,7 @@ namespace Hybrid.EventBuses
                 EventStore.Add(eventDataType, factory);
                 Logger.LogDebug($"创建事件“{eventDataType}”到处理器“{eventHandlerType}”的订阅配对");
             }
-            Logger.LogInformation($"共从程序集创建了{eventHandlerTypes.Length}个事件处理器的事件订阅");
+            Logger.LogInformation($"共从程序集创建了 {eventHandlerTypes.Length} 个事件处理器的事件订阅");
         }
 
         /// <summary>
@@ -179,7 +180,7 @@ namespace Hybrid.EventBuses
             EventStore.RemoveAll(eventType);
         }
 
-        #endregion Implementation of IEventSubscriber
+        #endregion
 
         #region Implementation of IEventPublisher
 
@@ -389,7 +390,7 @@ namespace Hybrid.EventBuses
         {
             try
             {
-                ICancellationTokenProvider cancellationTokenProvider = _serviceProvider.GetRequiredService<ICancellationTokenProvider>();
+                ICancellationTokenProvider cancellationTokenProvider = _serviceProvider.GetService<ICancellationTokenProvider>();
                 return handler.HandleAsync(eventData, cancellationTokenProvider.Token);
             }
             catch (Exception ex)
@@ -400,6 +401,6 @@ namespace Hybrid.EventBuses
             return Task.FromResult(0);
         }
 
-        #endregion Implementation of IEventPublisher
+        #endregion
     }
 }

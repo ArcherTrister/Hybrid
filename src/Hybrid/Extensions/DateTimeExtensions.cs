@@ -1,14 +1,4 @@
-﻿// -----------------------------------------------------------------------
-//  <copyright file="DateTimeExtensions.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
-//  </copyright>
-//  <site>https://www.lxking.cn</site>
-//  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2018-12-30 22:24</last-date>
-// -----------------------------------------------------------------------
-
-using Hybrid.Data;
-
+﻿using Hybrid.Data;
 using System;
 using System.Globalization;
 

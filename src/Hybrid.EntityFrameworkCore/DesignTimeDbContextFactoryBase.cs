@@ -1,18 +1,19 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="DesignTimeDbContextFactoryBase.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="DesignTimeDbContextFactoryBase.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2018 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2018-03-20 17:10</last-date>
 // -----------------------------------------------------------------------
 
+using System;
+
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 
-using System;
 
-namespace Hybrid.EntityFrameworkCore
+namespace Hybrid.Entity
 {
     /// <summary>
     /// 设计时数据上下文实例工厂基类，用于执行数据迁移

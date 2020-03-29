@@ -1,11 +1,12 @@
-﻿using Hybrid.AspNetCore.Extensions;
-using Hybrid.AspNetCore.UI;
-using Hybrid.Data;
-using Hybrid.Quartz.Dashboard.Models.Dtos;
-using Hybrid.Security;
+﻿using Hybrid.Quartz.Dashboard.Models.Dtos;
 
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Hybrid.AspNetCore;
+using Hybrid.AspNetCore.Extensions;
+using Hybrid.AspNetCore.UI;
+using Hybrid.Data;
+using Hybrid.Security;
 
 using Quartz;
 
@@ -44,7 +45,7 @@ namespace Hybrid.Quartz.Dashboard.Controllers
             string cookieValue = Crypto.DesEncrypt(schedulerName);
 
             Response.Cookies.Append(
-                HybridConsts.SchedulerCookieName,
+                HybridConstants.SchedulerCookieName,
                 cookieValue,
                 new CookieOptions
                 {

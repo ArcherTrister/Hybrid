@@ -1,6 +1,5 @@
-﻿using Hybrid.Core.Options;
-using Hybrid.Data;
-using Hybrid.Extensions;
+﻿using Hybrid.Core.Configuration;
+
 using Quartz;
 using Quartz.Impl;
 
@@ -13,17 +12,13 @@ namespace Microsoft.Extensions.DependencyInjection
     /// </summary>
     internal static class InMemoryStorageOptionsExtensions
     {
-        public static void UseInMemoryStorage(this IServiceCollection services, QuartzOptions inMemoryQuartzOptions)
+        public static void UseInMemoryStorage(this IServiceCollection services, QuartzConfiguration inMemoryQuartzOptions)
         {
-            if (inMemoryQuartzOptions.SchedulerName.IsMissing())
-            {
-                inMemoryQuartzOptions.SchedulerName = HybridConsts.DefaultSchedulerName;
-            }
             IScheduler scheduler = new StdSchedulerFactory(SetProperties(inMemoryQuartzOptions)).GetScheduler().Result;
             services.AddSingleton(scheduler);
         }
 
-        private static NameValueCollection SetProperties(QuartzOptions inMemoryQuartzOptions)
+        private static NameValueCollection SetProperties(QuartzConfiguration inMemoryQuartzOptions)
         {
             var properties = new NameValueCollection();
             // properties.Set(StdSchedulerFactory.PropertySchedulerName, inMemoryQuartzOptions.SchedulerName);

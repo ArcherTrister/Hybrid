@@ -1,15 +1,16 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="OperationResult.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="OperationResult.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2015 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2015-08-03 18:31</last-date>
 // -----------------------------------------------------------------------
 
+using System.Linq;
+
 using Hybrid.Extensions;
 
-using System.Linq;
 
 namespace Hybrid.Data
 {
@@ -77,6 +78,7 @@ namespace Hybrid.Data
         }
     }
 
+
     /// <summary>
     /// 泛型版本的业务操作结果信息类，对操作结果进行封装
     /// </summary>
@@ -133,7 +135,7 @@ namespace Hybrid.Data
         /// <summary>
         /// 获取 是否成功
         /// </summary>
-        public bool Successed => ResultType == OperationResultType.Success;
+        public bool Succeeded => ResultType == OperationResultType.Success;
 
         /// <summary>
         /// 获取 是否失败

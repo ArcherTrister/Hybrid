@@ -1,4 +1,4 @@
-﻿using Hybrid.Core.Options;
+﻿using Hybrid.Core.Configuration;
 
 using Quartz;
 using Quartz.Impl;
@@ -17,13 +17,13 @@ namespace Microsoft.Extensions.DependencyInjection
     /// </summary>
     internal static class MySqlQuartzOptionsExtensions
     {
-        public static void UseMySql(this IServiceCollection services, QuartzOptions mySqlQuartzOptions)
+        public static void UseMySql(this IServiceCollection services, QuartzConfiguration mySqlQuartzOptions)
         {
             IScheduler scheduler = new StdSchedulerFactory(SetProperties(mySqlQuartzOptions)).GetScheduler().Result;
             services.AddSingleton(scheduler);
         }
 
-        private static NameValueCollection SetProperties(QuartzOptions mySqlQuartzOptions)
+        private static NameValueCollection SetProperties(QuartzConfiguration mySqlQuartzOptions)
         {
             var properties = new NameValueCollection();
 

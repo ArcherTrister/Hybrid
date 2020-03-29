@@ -1,4 +1,4 @@
-namespace Hybrid.AspNetCore.Mvc.Models
+﻿namespace Hybrid.AspNetCore.Mvc.Models
 {
     public class HybridErrorViewModel
     {

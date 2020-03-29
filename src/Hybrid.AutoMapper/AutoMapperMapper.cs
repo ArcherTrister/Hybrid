@@ -1,20 +1,21 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="AutoMapperMapper.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="AutoMapperMapper.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2017-09-01 12:44</last-date>
 // -----------------------------------------------------------------------
 
-using AutoMapper;
-using AutoMapper.QueryableExtensions;
-
 using System;
 using System.Linq;
 using System.Linq.Expressions;
 
+using AutoMapper;
+using AutoMapper.QueryableExtensions;
+
 using IMapper = Hybrid.Mapping.IMapper;
+
 
 namespace Hybrid.AutoMapper
 {

@@ -1,19 +1,22 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="MvcMethodInfoFinder.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="MvcMethodInfoFinder.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2019 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2018-08-02 17:56</last-date>
+//  <last-date>2019-02-23 19:59</last-date>
 // -----------------------------------------------------------------------
-
-using Hybrid.Extensions;
-using Hybrid.Reflection;
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+
+using Microsoft.AspNetCore.Mvc;
+
+using Hybrid.Collections;
+using Hybrid.Reflection;
+
 
 namespace Hybrid.AspNetCore.Mvc
 {
@@ -41,8 +44,7 @@ namespace Hybrid.AspNetCore.Mvc
         public MethodInfo[] FindAll(Type type)
         {
             List<Type> types = new List<Type>();
-            //while (IsController(type))
-            while (type.IsController())
+            while (IsController(type))
             {
                 types.AddIfNotExist(type);
                 type = type?.BaseType;
@@ -53,6 +55,13 @@ namespace Hybrid.AspNetCore.Mvc
             }
 
             return types.SelectMany(m => m.GetMethods(BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly)).ToArray();
+        }
+
+        private static bool IsController(Type type)
+        {
+            return type != null && type.IsClass && type.IsPublic && !type.ContainsGenericParameters
+                && !type.IsDefined(typeof(NonControllerAttribute)) && (type.Name.EndsWith("Controller") || type.Name.EndsWith("ControllerBase")
+                    || type.IsDefined(typeof(ControllerAttribute)));
         }
     }
 }

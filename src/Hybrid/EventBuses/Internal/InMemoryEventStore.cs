@@ -1,30 +1,27 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="InMemoryEventStore.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="InMemoryEventStore.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
 //  <last-date>2017-09-22 1:25</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Data;
-using Hybrid.Dependency;
-using Hybrid.Extensions;
-using Hybrid.Reflection;
-
-using Microsoft.Extensions.DependencyInjection;
-
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
+
+using Hybrid.Collections;
+using Hybrid.Data;
+using Hybrid.Reflection;
+
 
 namespace Hybrid.EventBuses.Internal
 {
     /// <summary>
     /// 内存事件存储
     /// </summary>
-    [Dependency(ServiceLifetime.Singleton, TryAdd = true)]
     internal class InMemoryEventStore : IEventStore
     {
         private readonly ConcurrentDictionary<Type, List<IEventHandlerFactory>> _handlerFactories;
