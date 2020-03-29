@@ -1,19 +1,20 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="IdentityErrorDescriberZhHans.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="IdentityErrorDescriberZhHans.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2018 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2018-08-02 17:56</last-date>
+//  <last-date>2018-08-26 16:28</last-date>
 // -----------------------------------------------------------------------
-
-using Hybrid.Extensions;
-
-using Microsoft.AspNetCore.Identity;
 
 using System.Collections.Generic;
 
-namespace Hybrid.Zero.Identity
+using Microsoft.AspNetCore.Identity;
+
+using Hybrid.Extensions;
+
+
+namespace Hybrid.Identity
 {
     /// <summary>
     /// Identity错误信息描述的zh-Hans本地化

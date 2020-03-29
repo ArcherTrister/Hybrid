@@ -28,6 +28,21 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Authentication\Cookies\**" />
+    <Compile Remove="Authentication\JwtBearer\**" />
+    <Content Remove="Authentication\Cookies\**" />
+    <Content Remove="Authentication\JwtBearer\**" />
+    <EmbeddedResource Remove="Authentication\Cookies\**" />
+    <EmbeddedResource Remove="Authentication\JwtBearer\**" />
+    <None Remove="Authentication\Cookies\**" />
+    <None Remove="Authentication\JwtBearer\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Authentication\AuthenticationPackBase.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="Quickstart\Localization\Sources\JsonSource\HybridIdentityServer-en-US.json" />
     <Content Remove="Quickstart\Localization\Sources\JsonSource\HybridIdentityServer-zh-CN.json" />
   </ItemGroup>
@@ -50,7 +65,11 @@
 
   <ItemGroup>
     <!--<PackageReference Include="IdentityModel.AspNetCore" Version="1.0.0-rc.2" />-->
-    <PackageReference Include="IdentityServer4" Version="3.1.2" />
+	  <PackageReference Include="AspNet.Security.OAuth.QQ" Version="3.0.0" />
+	  <PackageReference Include="AspNet.Security.OAuth.GitHub" Version="3.0.0" />
+	  <PackageReference Include="IdentityServer4" Version="3.1.2" />
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.3" />
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.MicrosoftAccount" Version="3.1.3" />
     <PackageReference Include="Microsoft.Extensions.FileProviders.Composite" Version="3.1.2" />
     <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="3.1.2" />
   </ItemGroup>

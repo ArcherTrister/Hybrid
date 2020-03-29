@@ -17,7 +17,10 @@ using Hybrid.AspNetCore.Mvc.Filters;
 using Hybrid.Core.Packs;
 using Hybrid.Dependency;
 using Hybrid.Threading;
-
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Hybrid.AspNetCore.UI;
+using Hybrid.AspNetCore.Extensions;
 
 namespace Hybrid.AspNetCore.Mvc
 {
@@ -39,12 +42,41 @@ namespace Hybrid.AspNetCore.Mvc
         /// <returns></returns>
         public override IServiceCollection AddServices(IServiceCollection services)
         {
+            services.Configure<CookiePolicyOptions>(options =>
+            {
+                // This lambda determines whether user consent for non-essential
+                // cookies is needed for a given request.
+                options.CheckConsentNeeded = context => true;
+                // requires using Microsoft.AspNetCore.Http;
+                options.MinimumSameSitePolicy = SameSiteMode.None;
+            });
+
             services = AddCors(services);
-            services.AddControllersWithViews()
+            var builder = services.AddControllersWithViews()
                 .AddNewtonsoftJson(options =>
                 {
                     options.SerializerSettings.ContractResolver = new DefaultContractResolver();
+                    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
                 });
+#if DEBUG
+            builder.AddRazorRuntimeCompilation();
+#endif
+
+            //参数验证
+            ////①禁用默认行为
+            //services.Configure<ApiBehaviorOptions>(options =>
+            //{
+            //    options.SuppressModelStateInvalidFilter = true;
+            //});
+            //②覆盖默认行为
+            services.Configure<ApiBehaviorOptions>(options =>
+            {
+                options.InvalidModelStateResponseFactory = (context) =>
+                {
+                    var error = context.ModelState.GetValidationSummary();
+                    return new JsonResult(new AjaxResult(error, Data.AjaxResultType.RequestError));
+                };
+            });
 
             services.AddScoped<UnitOfWorkFilterImpl>();
             services.AddHttpsRedirection(opts => opts.HttpsPort = 443);

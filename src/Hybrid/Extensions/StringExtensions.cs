@@ -6,22 +6,20 @@
 //  <last-date>2014-10-06 13:46</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Collections;
+using Hybrid.Security;
+
+using Newtonsoft.Json;
+
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Web;
-
-using Newtonsoft.Json;
-
-using Hybrid.Collections;
-using Hybrid.Data;
-using Hybrid.Security;
 
 
 namespace Hybrid.Extensions
@@ -323,6 +321,12 @@ namespace Hybrid.Extensions
         #endregion
 
         #region 其他操作
+
+        [DebuggerStepThrough]
+        public static bool IsPresent(this string value)
+        {
+            return !string.IsNullOrWhiteSpace(value);
+        }
 
         /// <summary>
         /// 指示指定的字符串是 null 或者 System.String.Empty 字符串

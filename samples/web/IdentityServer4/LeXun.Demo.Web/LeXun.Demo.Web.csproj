@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Hangfire\**" />
+    <Content Remove="Hangfire\**" />
+    <EmbeddedResource Remove="Hangfire\**" />
+    <None Remove="Hangfire\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Startups\CodeGeneratorPack.cs" />
+    <Compile Remove="Startups\MySqlDefaultDbContextMigrationPack.cs" />
+    <Compile Remove="Startups\MySqlDesignTimeDefaultDbContextFactory.cs" />
+    <Compile Remove="Startups\OracleDefaultDbContextMigrationPack.cs" />
+    <Compile Remove="Startups\OracleDesignTimeDefaultDbContextFactory.cs" />
+    <Compile Remove="Startups\PostgreSqlDefaultDbContextMigrationPack.cs" />
+    <Compile Remove="Startups\PostgreSqlDesignTimeDefaultDbContextFactory.cs" />
+    <Compile Remove="Startups\SqliteDefaultDbContextMigrationPack.cs" />
+    <Compile Remove="Startups\SqliteDesignTimeDefaultDbContextFactory.cs" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<Content Update="log4net.config">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.3" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.3">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
+	</ItemGroup>
+	
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\src\Hybrid.AspNetCore\Hybrid.AspNetCore.csproj" />
+    <ProjectReference Include="..\..\..\..\src\Hybrid.EntityFrameworkCore.MySql\Hybrid.EntityFrameworkCore.MySql.csproj" />
+    <ProjectReference Include="..\..\..\..\src\Hybrid.EntityFrameworkCore.SqlServer\Hybrid.EntityFrameworkCore.SqlServer.csproj" />
+    <ProjectReference Include="..\..\..\..\src\Hybrid.NLog\Hybrid.NLog.csproj" />
+    <ProjectReference Include="..\..\..\..\src\Hybrid.Redis\Hybrid.Redis.csproj" />
+    <ProjectReference Include="..\..\..\..\src\Hybrid.Swagger\Hybrid.Swagger.csproj" />
+    <ProjectReference Include="..\LeXun.Demo.Core\LeXun.Demo.Core.csproj" />
+    <ProjectReference Include="..\LeXun.Demo.EntityConfiguration\LeXun.Demo.EntityConfiguration.csproj" />
+  </ItemGroup>
+
+</Project>

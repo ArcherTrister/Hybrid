@@ -1,24 +1,26 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="UserTokenBase.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="UserTokenBase.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2018-08-02 17:56</last-date>
+//  <last-date>2020-01-31 19:16</last-date>
 // -----------------------------------------------------------------------
-
-using Hybrid.Domain.Entities;
 
 using System;
 using System.ComponentModel;
 
-namespace Hybrid.Zero.Identity.Entities
+using Hybrid.Entity;
+
+
+namespace Hybrid.Identity.Entities
 {
     /// <summary>
     /// 表示用户的身份验证令牌的基类
     /// </summary>
     /// <typeparam name="TKey">用户令牌编号类型</typeparam>
     /// <typeparam name="TUserKey">用户编号类型</typeparam>
+    [TableNamePrefix("Identity")]
     public abstract class UserTokenBase<TKey, TUserKey> : EntityBase<TKey>
         where TKey : IEquatable<TKey>
         where TUserKey : IEquatable<TUserKey>

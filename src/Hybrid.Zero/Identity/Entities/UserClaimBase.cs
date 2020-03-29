@@ -1,26 +1,28 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="UserClaimBase.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="UserClaimBase.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2018-08-02 17:56</last-date>
+//  <last-date>2020-01-31 19:16</last-date>
 // -----------------------------------------------------------------------
-
-using Hybrid.Domain.Entities;
 
 using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Security.Claims;
 
-namespace Hybrid.Zero.Identity.Entities
+using Hybrid.Entity;
+
+
+namespace Hybrid.Identity.Entities
 {
     /// <summary>
     /// 用户声明基类
     /// </summary>
     /// <typeparam name="TKey">用户声明编号类型</typeparam>
     /// <typeparam name="TUserKey">用户编号类型</typeparam>
+    [TableNamePrefix("Identity")]
     public abstract class UserClaimBase<TKey, TUserKey> : EntityBase<TKey>
         where TUserKey : IEquatable<TUserKey>
         where TKey : IEquatable<TKey>

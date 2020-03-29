@@ -66,25 +66,25 @@ namespace Hybrid.AspNetCore.Mvc.Filters
                     context.ExceptionHandled = true;
                 }
             }
-            if (context.Result is JsonResult result1)
+            if (context.Result is JsonResult jsonResult)
             {
-                if (result1.Value is AjaxResult ajax)
+                if (jsonResult.Value is AjaxResult ajax)
                 {
-                    type = ajax.Type;
+                    type = ajax.ResultType;
                     message = ajax.Content;
-                    if (ajax.Succeeded())
+                    if (ajax.Success)
                     {
                         _unitOfWorkManager?.Commit();
                     }
                 }
             }
-            else if (context.Result is ObjectResult result2)
+            else if (context.Result is ObjectResult objectResult)
             {
-                if (result2.Value is AjaxResult ajax)
+                if (objectResult.Value is AjaxResult ajax)
                 {
-                    type = ajax.Type;
+                    type = ajax.ResultType;
                     message = ajax.Content;
-                    if (ajax.Succeeded())
+                    if (ajax.Success)
                     {
                         _unitOfWorkManager?.Commit();
                     }

@@ -12,6 +12,7 @@
     <ProjectReference Include="..\..\..\..\src\Hybrid.Authorization.Datas\Hybrid.Authorization.Datas.csproj" />
     <ProjectReference Include="..\..\..\..\src\Hybrid.Authorization.Functions\Hybrid.Authorization.Functions.csproj" />
     <ProjectReference Include="..\..\..\..\src\Hybrid.AutoMapper\Hybrid.AutoMapper.csproj" />
+    <ProjectReference Include="..\..\..\..\src\Hybrid.Zero.Identity\Hybrid.Zero.Identity.csproj" />
   </ItemGroup>
 
   <ItemGroup>

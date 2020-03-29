@@ -1,21 +1,10 @@
-﻿// -----------------------------------------------------------------------
-//  <copyright file="OnlineUser.cs" company="Hybrid开源团队">
-//      Copyright (c) 2014-2019 Hybrid. All rights reserved.
-//  </copyright>
-//  <site>https://www.lxking.cn</site>
-//  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2019-06-02 0:01</last-date>
-// -----------------------------------------------------------------------
-
+﻿using Hybrid.Identity.JwtBearer;
 using System.Collections.Generic;
-
-using Hybrid.Identity.JwtBearer;
-
 
 namespace Hybrid.Identity
 {
     /// <summary>
-    /// 在线用户信息
+    /// 在线用户信息基类
     /// </summary>
     public class OnlineUser
     {
@@ -42,7 +31,7 @@ namespace Hybrid.Identity
         /// <summary>
         /// 获取或设置 用户头像
         /// </summary>
-        public string HeadImg { get; set; }
+        public string Avatar { get; set; }
 
         /// <summary>
         /// 获取或设置 是否管理
@@ -60,13 +49,13 @@ namespace Hybrid.Identity
         public string[] Roles { get; set; } = new string[0];
 
         /// <summary>
-        /// 获取或设置 客户端刷新Token
-        /// </summary>
-        public IDictionary<string, RefreshToken> RefreshTokens { get; set; }
-        
-        /// <summary>
         /// 获取 扩展数据字典
         /// </summary>
         public IDictionary<string, string> ExtendData { get; } = new Dictionary<string, string>();
+
+        /// <summary>
+        /// 获取或设置 客户端刷新Token
+        /// </summary>
+        public IDictionary<string, RefreshToken> RefreshTokens { get; set; }
     }
 }

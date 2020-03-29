@@ -1,18 +1,19 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="UserRoleBase.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="UserRoleBase.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2018-08-02 17:56</last-date>
+//  <last-date>2020-01-31 19:21</last-date>
 // -----------------------------------------------------------------------
-
-using Hybrid.Domain.Entities;
 
 using System;
 using System.ComponentModel;
 
-namespace Hybrid.Zero.Identity.Entities
+using Hybrid.Entity;
+
+
+namespace Hybrid.Identity.Entities
 {
     /// <summary>
     /// 用户角色映射基类
@@ -20,7 +21,8 @@ namespace Hybrid.Zero.Identity.Entities
     /// <typeparam name="TKey">用户角色映射编号类型</typeparam>
     /// <typeparam name="TUserKey">用户编号类型</typeparam>
     /// <typeparam name="TRoleKey">角色编号类型</typeparam>
-    public abstract class UserRoleBase<TKey, TUserKey, TRoleKey> : EntityBase<TKey>, ICreatedTime, ILockable, ISoftDelete
+    [TableNamePrefix("Identity")]
+    public abstract class UserRoleBase<TKey, TUserKey, TRoleKey> : EntityBase<TKey>, ICreatedTime, ILockable, ISoftDeletable
         where TKey : IEquatable<TKey>
         where TUserKey : IEquatable<TUserKey>
         where TRoleKey : IEquatable<TRoleKey>
@@ -58,8 +60,8 @@ namespace Hybrid.Zero.Identity.Entities
         public bool IsLocked { get; set; }
 
         /// <summary>
-        /// 获取或设置 数据逻辑删除
+        /// 获取或设置 数据逻辑删除时间，为null表示正常数据，有值表示已逻辑删除，同时删除时间每次不同也能保证索引唯一性
         /// </summary>
-        public bool IsDeleted { get; set; }
+        public DateTime? DeletedTime { get; set; }
     }
 }

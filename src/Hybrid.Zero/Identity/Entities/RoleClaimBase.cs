@@ -1,25 +1,27 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="RoleClaimBase.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="RoleClaimBase.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2018-08-02 17:56</last-date>
+//  <last-date>2020-01-31 19:12</last-date>
 // -----------------------------------------------------------------------
-
-using Hybrid.Domain.Entities;
 
 using System;
 using System.ComponentModel;
 using System.Security.Claims;
 
-namespace Hybrid.Zero.Identity.Entities
+using Hybrid.Entity;
+
+
+namespace Hybrid.Identity.Entities
 {
     /// <summary>
     /// 角色声明信息基类
     /// </summary>
     /// <typeparam name="TKey">角色声明主键类型</typeparam>
     /// <typeparam name="TRoleKey">角色主键类型</typeparam>
+    [TableNamePrefix("Identity")]
     public abstract class RoleClaimBase<TKey, TRoleKey> : EntityBase<TKey>
         where TRoleKey : IEquatable<TRoleKey>
         where TKey : IEquatable<TKey>

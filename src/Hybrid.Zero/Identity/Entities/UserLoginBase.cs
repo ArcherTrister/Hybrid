@@ -1,24 +1,26 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="UserLoginBase.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="UserLoginBase.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2018-08-02 17:56</last-date>
+//  <last-date>2020-01-31 19:16</last-date>
 // -----------------------------------------------------------------------
-
-using Hybrid.Domain.Entities;
 
 using System;
 using System.ComponentModel;
 
-namespace Hybrid.Zero.Identity.Entities
+using Hybrid.Entity;
+
+
+namespace Hybrid.Identity.Entities
 {
     /// <summary>
     /// 表示用户的登录及其关联提供程序信息基类
     /// </summary>
     /// <typeparam name="TUserKey">用户编号类型</typeparam>
     /// <typeparam name="TKey">用户登录编号类型</typeparam>
+    [TableNamePrefix("Identity")]
     public abstract class UserLoginBase<TKey, TUserKey> : EntityBase<TKey>, ICreatedTime
         where TKey : IEquatable<TKey>
         where TUserKey : IEquatable<TUserKey>

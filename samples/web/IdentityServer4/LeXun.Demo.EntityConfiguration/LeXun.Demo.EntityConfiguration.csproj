@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\..\build\packages.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\src\Hybrid.EntityFrameworkCore\Hybrid.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\LeXun.Demo.Core\LeXun.Demo.Core.csproj" />
+  </ItemGroup>
+
+</Project>

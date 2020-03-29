@@ -7,10 +7,10 @@
 //  <last-date>2020-01-12 17:17:13</last-date>
 // -----------------------------------------------------------------------
 
-using Hybrid.Data;
+using Hybrid.Identity.Entities;
 using Hybrid.Security.Claims;
-using Hybrid.Zero.Identity;
-using Hybrid.Zero.Identity.Entities;
+using Hybrid.Extensions;
+
 using Microsoft.AspNetCore.Identity;
 
 using System;
@@ -18,6 +18,7 @@ using System.Linq;
 using System.Reflection;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using Hybrid.Data;
 
 namespace Hybrid.Zero.IdentityServer4.Identity
 {
@@ -85,10 +86,10 @@ namespace Hybrid.Zero.IdentityServer4.Identity
             //}
             identity.AddClaim(new Claim(HybridClaimTypes.NickName, findUser.NickName ?? ""));
             identity.AddClaim(new Claim(HybridClaimTypes.TrueName, findUser.TrueName ?? ""));
-            identity.AddClaim(new Claim(HybridClaimTypes.AvatarUrl, findUser.AvatarUrl ?? ""));
-            identity.AddClaim(new Claim(HybridClaimTypes.Gender, findUser.Gender.ToString() ?? GenderType.Security.ToString()));
-            identity.AddClaim(new Claim(HybridClaimTypes.IdCard, findUser.IdCard ?? ""));
-            identity.AddClaim(new Claim(HybridClaimTypes.IdCardVerified, findUser.IdCardConfirmed ? "true" : "false", ClaimValueTypes.Boolean));
+            identity.AddClaim(new Claim(HybridClaimTypes.Avatar, findUser.Avatar ?? ""));
+            identity.AddClaim(new Claim(HybridClaimTypes.Gender, findUser.Gender.ToDescription() ?? GenderType.Security.ToDescription()));
+            //identity.AddClaim(new Claim(HybridClaimTypes.IdCard, findUser.IdCard ?? ""));
+            //identity.AddClaim(new Claim(HybridClaimTypes.IdCardVerified, findUser.IdCardConfirmed ? "true" : "false", ClaimValueTypes.Boolean));
 
             //if (_userManager.SupportsUserEmail)
             //{

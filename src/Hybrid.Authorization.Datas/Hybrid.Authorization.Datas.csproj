@@ -16,7 +16,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Hybrid.Identity\Hybrid.Identity.csproj" />
+    <ProjectReference Include="..\Hybrid.Zero\Hybrid.Zero.csproj" />
   </ItemGroup>
 
 </Project>

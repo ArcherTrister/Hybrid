@@ -65,11 +65,16 @@ namespace Hybrid.AspNetCore.Mvc
                 : controllerType.HasAttribute<RoleLimitAttribute>()
                     ? FunctionAccessType.RoleLimit
                     : FunctionAccessType.Anonymous;
+            // TODO:AddFunction
             Function function = new Function()
             {
                 Name = controllerType.GetDescription(),
                 Area = GetArea(controllerType),
-                Controller = controllerType.Name.Replace("ControllerBase", string.Empty).Replace("Controller", string.Empty),
+                Controller = controllerType.Name
+                                .Replace("ControllerBase", string.Empty)
+                                .Replace("Controller", string.Empty)
+                                .Replace("`1", string.Empty)
+                                .Replace("`2", string.Empty),
                 IsController = true,
                 AccessType = accessType
             };

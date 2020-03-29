@@ -1,26 +1,29 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="UserBase.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="UserBase.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2018-08-02 17:56</last-date>
+//  <last-date>2017-09-04 21:29</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Audits;
 using Hybrid.Data;
-using Hybrid.Domain.Entities;
+using Hybrid.Entity;
 
 using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace Hybrid.Zero.Identity.Entities
+
+namespace Hybrid.Identity.Entities
 {
     /// <summary>
     /// 用户信息基类
     /// </summary>
     /// <typeparam name="TKey">用户编号类型</typeparam>
-    public abstract class UserBase<TKey> : EntityBase<TKey>, ICreatedTime, ILockable, ISoftDelete
+    [TableNamePrefix("Identity")]
+    public abstract class UserBase<TKey> : EntityBase<TKey>, ICreatedTime, ILockable, ISoftDeletable
         where TKey : IEquatable<TKey>
     {
         /// <summary>
@@ -40,7 +43,7 @@ namespace Hybrid.Zero.Identity.Entities
         /// <summary>
         /// 获取或设置 标准化的用户名
         /// </summary>
-        [Required, DisplayName("标准化的用户名")]
+        [Required, DisplayName("标准化的用户名"), AuditIgnore]
         public string NormalizedUserName { get; set; }
 
         /// <summary>
@@ -48,6 +51,12 @@ namespace Hybrid.Zero.Identity.Entities
         /// </summary>
         [DisplayName("用户昵称")]
         public string NickName { get; set; }
+
+        /// <summary>
+        /// 获取或设置 用户真实姓名
+        /// </summary>
+        [DisplayName("用户真实姓名")]
+        public string TrueName { get; set; }
 
         /// <summary>
         /// 获取或设置 用户性别
@@ -64,8 +73,8 @@ namespace Hybrid.Zero.Identity.Entities
         /// <summary>
         /// 获取或设置 标准化的电子邮箱
         /// </summary>
-        [DisplayName("标准化的电子邮箱"), DataType(DataType.EmailAddress)]
-        public string NormalizedEmail { get; set; }
+        [DisplayName("标准化的电子邮箱"), DataType(DataType.EmailAddress), AuditIgnore]
+        public string NormalizeEmail { get; set; }
 
         /// <summary>
         /// 获取或设置 表示用户是否已确认其电子邮件地址的标志
@@ -76,43 +85,25 @@ namespace Hybrid.Zero.Identity.Entities
         /// <summary>
         /// 获取或设置 密码哈希值
         /// </summary>
-        [DisplayName("密码哈希值")]
+        [DisplayName("密码哈希值"), AuditIgnore]
         public string PasswordHash { get; set; }
 
         /// <summary>
         /// 获取或设置 用户头像
         /// </summary>
         [DisplayName("用户头像")]
-        public string AvatarUrl { get; set; }
-
-        /// <summary>
-        /// 获取或设置 用户真实姓名
-        /// </summary>
-        [DisplayName("用户真实姓名")]
-        public string TrueName { get; set; }
-
-        /// <summary>
-        /// 获取或设置 身份证
-        /// </summary>
-        [DisplayName("身份证")]
-        public string IdCard { get; set; }
-
-        /// <summary>
-        /// 获取或设置 身份证验证
-        /// </summary>
-        [DisplayName("身份证验证")]
-        public bool IdCardConfirmed { get; set; }
+        public string Avatar { get; set; }
 
         /// <summary>
         /// 获取或设置 每当用户凭据发生变化（密码更改、登录删除）时必须更改的随机值。
         /// </summary>
-        [DisplayName("安全标识")]
+        [DisplayName("安全标识"), AuditIgnore]
         public string SecurityStamp { get; set; }
 
         /// <summary>
         /// 获取或设置 一个随机值，必须在用户持续存储时更改。
         /// </summary>
-        [DisplayName("版本标识")]
+        [DisplayName("版本标识"), AuditIgnore]
         public string ConcurrencyStamp { get; set; } = Guid.NewGuid().ToString();
 
         /// <summary>
@@ -170,9 +161,9 @@ namespace Hybrid.Zero.Identity.Entities
         public DateTime CreatedTime { get; set; }
 
         /// <summary>
-        /// 获取或设置 数据逻辑删除
+        /// 获取或设置 数据逻辑删除时间，为null表示正常数据，有值表示已逻辑删除，同时删除时间每次不同也能保证索引唯一性
         /// </summary>
-        public bool IsDeleted { get; set; }
+        public DateTime? DeletedTime { get; set; }
 
         /// <inheritdoc />
         public override string ToString()

@@ -32,7 +32,7 @@ namespace Hybrid.Zero.IdentityServer4.Extensions
                     HybridClaimTypes.IdCardVerified,
                     HybridClaimTypes.Gender,
                     HybridClaimTypes.NickName,
-                    HybridClaimTypes.AvatarUrl,
+                    HybridClaimTypes.Avatar,
                     HybridClaimTypes.Email,
                     HybridClaimTypes.PhoneNumber
                     //HybridClaimTypes.TenantId

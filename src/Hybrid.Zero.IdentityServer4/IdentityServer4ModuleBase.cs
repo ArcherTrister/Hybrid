@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="IdentityServer4ModuleBase.cs" company="cn.lxking">
+//  <copyright file="IdentityServer4PackBase.cs" company="cn.lxking">
 //      Copyright © 2019-2020 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -8,18 +8,16 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.AspNetCore;
-using Hybrid.Configuration;
-using Hybrid.Core.Modules;
-using Hybrid.Core.Options;
+using Hybrid.Core.Configuration;
+using Hybrid.Core.Packs;
 using Hybrid.EventBuses;
-using Hybrid.Extensions;
+using Hybrid.Identity;
+using Hybrid.Identity.Entities;
 using Hybrid.Localization;
 using Hybrid.Localization.Dictionaries;
 using Hybrid.Localization.Dictionaries.Json;
-using Hybrid.RealTime;
-using Hybrid.Zero.Identity;
-using Hybrid.Zero.Identity.Entities;
-using Hybrid.Zero.IdentityServer4.RealTime;
+using Hybrid.Reflection;
+
 using IdentityServer4.Configuration;
 
 using Microsoft.AspNetCore.Builder;
@@ -35,8 +33,8 @@ namespace Hybrid.Zero.IdentityServer4
     /// <summary>
     /// 身份论证模块基类
     /// </summary>
-    [DependsOnModules(typeof(EventBusModule), typeof(AspNetCoreModule))]
-    public abstract class IdentityServer4ModuleBase<TUserStore, TRoleStore, TUser, TRole, TUserKey, TRoleKey> : AspHybridModule
+    [DependsOnPacks(typeof(EventBusPack), typeof(AspNetCorePack))]
+    public abstract class IdentityServer4PackBase<TUserStore, TRoleStore, TUser, TUserKey, TUserClaim, TUserClaimKey, TRole, TRoleKey> : AspHybridPack
         where TUserStore : class, IUserStore<TUser>
         where TRoleStore : class, IRoleStore<TRole>
         where TUser : UserBase<TUserKey>
@@ -47,7 +45,7 @@ namespace Hybrid.Zero.IdentityServer4
         /// <summary>
         /// 获取 模块级别
         /// </summary>
-        public override ModuleLevel Level => ModuleLevel.Application;
+        public override PackLevel Level => PackLevel.Application;
 
         /// <summary>
         /// 将模块服务添加到依赖注入服务容器中
@@ -57,7 +55,7 @@ namespace Hybrid.Zero.IdentityServer4
         public override IServiceCollection AddServices(IServiceCollection services)
         {
             //在线用户缓存
-            services.TryAddScoped<IOnlineUserProvider, OnlineUserProvider<TUser, TUserKey, TRole, TRoleKey>>();
+            services.TryAddScoped<IOnlineUserProvider, OnlineUserProvider<TUser, TUserKey, TUserClaim, TUserClaimKey, TRole, TRoleKey>>();
 
             Action<IdentityOptions> identityOptionsAction = IdentityOptionsAction();
             IdentityBuilder builder = services.AddIdentity<TUser, TRole>(identityOptionsAction)
@@ -74,7 +72,7 @@ namespace Hybrid.Zero.IdentityServer4
             var identityBuilder = services.AddIdentityServer(identityServerOptionsAction).AddHybridIdentity<TUser, TUserKey>();
 
             IConfiguration configuration = services.GetConfiguration();
-            IdsOptions idsOptions = configuration.GetSection("Hybrid:Ids").Get<IdsOptions>();
+            IdentityServerConfiguration idsOptions = configuration.GetSection("Hybrid:Ids").Get<IdentityServerConfiguration>();
 
             if (idsOptions.IsLocalApi)
             {
@@ -177,7 +175,7 @@ namespace Hybrid.Zero.IdentityServer4
         /// 添加Authentication服务
         /// </summary>
         /// <param name="services">服务集合</param>
-        protected virtual void AddAuthentication(IServiceCollection services, IdsOptions idsOptions, IConfiguration configuration)
+        protected virtual void AddAuthentication(IServiceCollection services, IdentityServerConfiguration idsOptions, IConfiguration configuration)
         { }
 
         /// <summary>
@@ -198,7 +196,7 @@ namespace Hybrid.Zero.IdentityServer4
         /// 应用模块服务
         /// </summary>
         /// <param name="app">应用程序构建器</param>
-        public override void UseModule(IApplicationBuilder app)
+        public override void UsePack(IApplicationBuilder app)
         {
             app.UseIdentityServer();
 

@@ -1,25 +1,28 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="RoleBase.cs" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="RoleBase.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2018-08-02 17:56</last-date>
+//  <last-date>2017-09-04 19:33</last-date>
 // -----------------------------------------------------------------------
-
-using Hybrid.Domain.Entities;
 
 using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace Hybrid.Zero.Identity.Entities
+using Hybrid.Audits;
+using Hybrid.Entity;
+
+
+namespace Hybrid.Identity.Entities
 {
     /// <summary>
     /// 角色信息基类
     /// </summary>
     /// <typeparam name="TKey">角色编号类型</typeparam>
-    public abstract class RoleBase<TKey> : EntityBase<TKey>, ICreatedTime, ILockable, ISoftDelete
+    [TableNamePrefix("Identity")]
+    public abstract class RoleBase<TKey> : EntityBase<TKey>, ICreatedTime, ILockable, ISoftDeletable
         where TKey : IEquatable<TKey>
     {
         /// <summary>
@@ -39,13 +42,13 @@ namespace Hybrid.Zero.Identity.Entities
         /// <summary>
         /// 获取或设置 标准化角色名称
         /// </summary>
-        [Required, DisplayName("标准化角色名称")]
+        [Required, DisplayName("标准化角色名称"), AuditIgnore]
         public string NormalizedName { get; set; }
 
         /// <summary>
         /// 获取或设置 一个随机值，每当某个角色被保存到存储区时，该值将发生变化。
         /// </summary>
-        [DisplayName("版本标识")]
+        [DisplayName("版本标识"), AuditIgnore]
         public string ConcurrencyStamp { get; set; } = Guid.NewGuid().ToString();
 
         /// <summary>
@@ -86,9 +89,9 @@ namespace Hybrid.Zero.Identity.Entities
         public DateTime CreatedTime { get; set; }
 
         /// <summary>
-        /// 获取或设置 数据逻辑删除
+        /// 获取或设置 数据逻辑删除时间，为null表示正常数据，有值表示已逻辑删除，同时删除时间每次不同也能保证索引唯一性
         /// </summary>
-        public bool IsDeleted { get; set; }
+        public DateTime? DeletedTime { get; set; }
 
         /// <summary>Returns a string that represents the current object.</summary>
         /// <returns>A string that represents the current object.</returns>
@@ -96,5 +99,6 @@ namespace Hybrid.Zero.Identity.Entities
         {
             return Name;
         }
+
     }
 }

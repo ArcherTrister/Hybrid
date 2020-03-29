@@ -51,7 +51,7 @@ namespace Hybrid.Web.Startups
                         HybridClaimTypes.Gender,
                         HybridClaimTypes.NickName,
                         HybridClaimTypes.PhoneNumber,
-                        HybridClaimTypes.AvatarUrl,
+                        HybridClaimTypes.Avatar,
                         HybridClaimTypes.Email,
                         //HybridClaimTypes.TenantId
                     }

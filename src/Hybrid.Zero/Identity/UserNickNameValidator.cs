@@ -1,22 +1,22 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="UserNickNameValidator" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="UserNickNameValidator.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2018 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2020-01-12 14:20:33</last-date>
+//  <last-date>2018-05-01 20:11</last-date>
 // -----------------------------------------------------------------------
-
-using Hybrid.Zero.Identity.Entities;
-using Hybrid.Zero.Identity.Extensions;
-
-using Microsoft.AspNetCore.Identity;
 
 using System;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Hybrid.Zero.Identity
+using Microsoft.AspNetCore.Identity;
+
+using Hybrid.Identity.Entities;
+
+
+namespace Hybrid.Identity
 {
     /// <summary>
     /// 用户昵称验证器

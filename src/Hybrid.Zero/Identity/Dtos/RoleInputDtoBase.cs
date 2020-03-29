@@ -1,18 +1,19 @@
 ﻿// -----------------------------------------------------------------------
-//  <copyright file="RoleInputDtoBase" company="cn.lxking">
-//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  <copyright file="RoleInputDtoBase.cs" company="Hybrid开源团队">
+//      Copyright (c) 2014-2017 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
 //  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2020-01-12 14:54:56</last-date>
+//  <last-date>2017-11-16 13:30</last-date>
 // -----------------------------------------------------------------------
-
-using Hybrid.Domain.Entities;
 
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace Hybrid.Zero.Identity.Dtos
+using Hybrid.Entity;
+
+
+namespace Hybrid.Identity.Dtos
 {
     /// <summary>
     /// 角色信息输入DTO基类

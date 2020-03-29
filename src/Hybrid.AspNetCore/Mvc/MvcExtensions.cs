@@ -7,20 +7,21 @@
 //  <last-date>2017-09-15 1:41</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Linq;
-using System.Reflection;
+using Hybrid.Authorization;
+using Hybrid.Authorization.Functions;
+using Hybrid.Dependency;
+using Hybrid.Exceptions;
+using Hybrid.Extensions;
+using Hybrid.Reflection;
 
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 
-using Hybrid.Authorization;
-using Hybrid.Authorization.Functions;
-using Hybrid.Dependency;
-using Hybrid.Exceptions;
-using Hybrid.Extensions;
+using System;
+using System.Linq;
+using System.Reflection;
 
 
 namespace Hybrid.AspNetCore.Mvc
@@ -43,9 +44,18 @@ namespace Hybrid.AspNetCore.Mvc
         /// </summary>
         public static bool IsController(this TypeInfo typeInfo)
         {
-            return typeInfo.IsClass && !typeInfo.IsAbstract && typeInfo.IsPublic && !typeInfo.ContainsGenericParameters
-                && !typeInfo.IsDefined(typeof(NonControllerAttribute)) && (typeInfo.Name.EndsWith("Controller", StringComparison.OrdinalIgnoreCase)
-                    || typeInfo.IsDefined(typeof(ControllerAttribute)));
+            // TODO:IsController
+            //return typeInfo.IsClass && !typeInfo.IsAbstract && typeInfo.IsPublic && !typeInfo.ContainsGenericParameters
+            //    && !typeInfo.IsDefined(typeof(NonControllerAttribute)) && (typeInfo.Name.EndsWith("Controller", StringComparison.OrdinalIgnoreCase)
+            //        || typeInfo.IsDefined(typeof(ControllerAttribute)));
+
+            return (typeInfo.IsClass && !typeInfo.IsAbstract && typeInfo.IsPublic
+                && !typeInfo.ContainsGenericParameters
+                && !typeInfo.IsDefined(typeof(NonControllerAttribute))
+                && (typeInfo.Name.EndsWith("Controller", StringComparison.OrdinalIgnoreCase)
+                    || typeInfo.IsDefined(typeof(ControllerAttribute))))
+                || (typeInfo.HasAttribute<HybridDefaultUIAttribute>()
+                    && typeInfo.ContainsGenericParameters);
         }
 
         /// <summary>
