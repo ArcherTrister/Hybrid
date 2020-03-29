@@ -8,6 +8,7 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.Data;
+using Hybrid.Extensions;
 using Hybrid.Security.Claims;
 using Hybrid.Zero.Identity.Entities;
 
@@ -86,7 +87,7 @@ namespace Hybrid.Zero.IdentityServer4.Identity
             identity.AddClaim(new Claim(HybridClaimTypes.NickName, findUser.NickName ?? ""));
             identity.AddClaim(new Claim(HybridClaimTypes.TrueName, findUser.TrueName ?? ""));
             identity.AddClaim(new Claim(HybridClaimTypes.AvatarUrl, findUser.AvatarUrl ?? ""));
-            identity.AddClaim(new Claim(HybridClaimTypes.Gender, findUser.Gender.ToString() ?? GenderType.Security.ToString()));
+            identity.AddClaim(new Claim(HybridClaimTypes.Gender, findUser.Gender.ToDescription() ?? GenderType.Security.ToDescription()));
             identity.AddClaim(new Claim(HybridClaimTypes.IdCard, findUser.IdCard ?? ""));
             identity.AddClaim(new Claim(HybridClaimTypes.IdCardVerified, findUser.IdCardConfirmed ? "true" : "false", ClaimValueTypes.Boolean));
 
