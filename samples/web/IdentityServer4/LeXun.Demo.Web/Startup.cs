@@ -23,7 +23,8 @@ using Hybrid.AutoMapper;
 //using Hybrid.Log4Net;
 using Hybrid.NLog;
 using Hybrid.Swagger;
-
+using Hybrid.Quartz;
+using Hybrid.AspNetCore.SignalR;
 
 namespace LeXun.Demo.Web
 {
@@ -37,8 +38,10 @@ namespace LeXun.Demo.Web
                 .AddPack<NLogPack>()
                 .AddPack<AutoMapperPack>()
                 .AddPack<EndpointsPack>()
+                .AddPack<SignalRPack>()
                 .AddPack<SwaggerPack>()
                 //.AddPack<RedisPack>()
+                .AddPack<QuartzModule>()
                 .AddPack<IdentityPack>()
                 .AddPack<FunctionAuthorizationPack>()
                 .AddPack<DataAuthorizationPack>()

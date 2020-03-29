@@ -28,7 +28,7 @@ using Hybrid.Dependency;
 using Hybrid.Entity;
 using Hybrid.EventBuses;
 using Hybrid.Reflection;
-
+using Hybrid.Core.Configuration;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
@@ -85,6 +85,8 @@ namespace Microsoft.Extensions.DependencyInjection
             services.TryAddSingleton<IHybridBuilder>(builder);
 
             builder.AddCorePack();
+
+            services.TryAddSingleton<IHybridStartupConfiguration, HybridStartupConfiguration>();
 
             return builder;
         }
