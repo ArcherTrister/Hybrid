@@ -7,15 +7,13 @@
 //  <last-date>2018-08-02 4:17</last-date>
 // -----------------------------------------------------------------------
 
-using System;
+using Hybrid.Entity;
 
 using LeXun.Demo.Systems.Entities;
 
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-using Hybrid.Entity;
-
-
+using System;
 
 namespace LeXun.Demo.EntityConfiguration.Systems
 {

@@ -7,6 +7,8 @@
 //  <last-date>2018-05-19 9:38</last-date>
 // -----------------------------------------------------------------------
 
+using System.ComponentModel.DataAnnotations;
+
 namespace Hybrid.Core.Options
 {
     /// <summary>
@@ -17,17 +19,20 @@ namespace Hybrid.Core.Options
         /// <summary>
         /// 获取或设置 密钥
         /// </summary>
+        [Required(ErrorMessage = "密钥不能为空")]
         public string Secret { get; set; }
 
         /// <summary>
         /// 获取或设置 发行方
         /// </summary>
+        [Required(ErrorMessage = "发行方不能为空")]
         public string Issuer { get; set; }
 
         /// <summary>
         /// 获取或设置 订阅方
         /// </summary>
-        public string Audience{ get; set; }
+        [Required(ErrorMessage = "订阅方不能为空")]
+        public string Audience { get; set; }
 
         /// <summary>
         /// 获取或设置 AccessToken有效期分钟数
@@ -43,5 +48,10 @@ namespace Hybrid.Core.Options
         /// 获取或设置 RefreshToken是否绝对过期
         /// </summary>
         public bool IsRefreshAbsoluteExpired { get; set; } = true;
+
+        /// <summary>
+        /// 获取或设置 是否启用
+        /// </summary>
+        public bool IsEnabled { get; set; }
     }
 }

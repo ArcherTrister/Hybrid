@@ -7,14 +7,14 @@
 //  <last-date>2018-08-31 21:33</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Linq;
-
-using Microsoft.Extensions.DependencyInjection;
 using Hybrid.Core.Options;
 using Hybrid.Dependency;
 using Hybrid.Exceptions;
 
+using Microsoft.Extensions.DependencyInjection;
+
+using System;
+using System.Linq;
 
 namespace Hybrid.Entity
 {

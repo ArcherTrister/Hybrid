@@ -7,20 +7,19 @@
 //  <last-date>2019-10-31 2:56</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Net.Http;
-using System.Security.Cryptography;
-using System.Threading.Tasks;
-
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-
 using Hybrid.Core.Options;
 using Hybrid.Exceptions;
 using Hybrid.Extensions;
 using Hybrid.Http;
 
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+
+using System;
+using System.Net.Http;
+using System.Security.Cryptography;
+using System.Threading.Tasks;
 
 namespace Hybrid.AspNetCore.Http
 {
@@ -91,7 +90,6 @@ namespace Hybrid.AspNetCore.Http
 
                 await request.WriteBodyAsync(data);
                 return request;
-
             }
             catch (Exception ex)
             {

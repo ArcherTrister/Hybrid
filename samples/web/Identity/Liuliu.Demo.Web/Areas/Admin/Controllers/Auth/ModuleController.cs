@@ -7,11 +7,11 @@
 //  <last-date>2018-06-27 4:49</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Linq.Expressions;
+using Hybrid.Authorization.Functions;
+using Hybrid.Authorization.Modules;
+using Hybrid.Data;
+using Hybrid.Entity;
+using Hybrid.Filter;
 
 using Liuliu.Demo.Authorization;
 using Liuliu.Demo.Authorization.Dtos;
@@ -19,12 +19,11 @@ using Liuliu.Demo.Authorization.Entities;
 
 using Microsoft.AspNetCore.Mvc;
 
-using Hybrid.Authorization.Functions;
-using Hybrid.Authorization.Modules;
-using Hybrid.Data;
-using Hybrid.Entity;
-using Hybrid.Filter;
-
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Linq.Expressions;
 
 namespace Liuliu.Demo.Web.Areas.Admin.Controllers
 {
@@ -88,7 +87,7 @@ namespace Liuliu.Demo.Web.Areas.Admin.Controllers
             var result = GetModulesWithChecked(rootIds, checkedModuleIds);
             return result;
         }
-        
+
         private List<object> GetModulesWithChecked(int[] rootIds, int[] checkedModuleIds)
         {
             var modules = _functionAuthManager.Modules.Where(m => rootIds.Contains(m.Id)).OrderBy(m => m.OrderCode).Select(m => new

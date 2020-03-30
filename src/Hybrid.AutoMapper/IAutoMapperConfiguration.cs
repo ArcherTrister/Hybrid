@@ -11,7 +11,6 @@ using AutoMapper.Configuration;
 
 using Hybrid.Dependency;
 
-
 namespace Hybrid.AutoMapper
 {
     /// <summary>

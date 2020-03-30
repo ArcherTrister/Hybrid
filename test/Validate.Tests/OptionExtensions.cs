@@ -35,7 +35,8 @@ namespace Validate.Tests
             string sectionName)
             where TOptions : class, IEnabled
         {
-            return builder.PostConfigure(x => {
+            return builder.PostConfigure(x =>
+            {
                 if (x.Enabled)
                 {
                     ValidateByDataAnnotation(x, sectionName);

@@ -9,7 +9,6 @@
 
 using System;
 
-
 namespace LeXun.Demo.Authorization.Dtos
 {
     /// <summary>

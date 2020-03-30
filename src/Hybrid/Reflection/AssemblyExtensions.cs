@@ -7,14 +7,13 @@
 //  <last-date>2014-09-08 7:46</last-date>
 // -----------------------------------------------------------------------
 
-using System.Diagnostics;
-using System.Linq;
-using System.Reflection;
+using Hybrid.Extensions;
 
 using Microsoft.Extensions.DependencyModel;
 
-using Hybrid.Extensions;
-
+using System.Diagnostics;
+using System.Linq;
+using System.Reflection;
 
 namespace Hybrid.Reflection
 {

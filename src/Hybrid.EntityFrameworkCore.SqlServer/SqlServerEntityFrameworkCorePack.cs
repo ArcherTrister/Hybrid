@@ -7,14 +7,13 @@
 //  <last-date>2018-06-23 15:24</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.ComponentModel;
-using System.Linq;
+using Hybrid.Core.Packs;
 
 using Microsoft.Extensions.DependencyInjection;
 
-using Hybrid.Core.Packs;
-
+using System;
+using System.ComponentModel;
+using System.Linq;
 
 namespace Hybrid.Entity.SqlServer
 {
@@ -47,7 +46,7 @@ namespace Hybrid.Entity.SqlServer
 
             return services;
         }
-        
+
         /// <summary>
         /// 应用模块服务
         /// </summary>

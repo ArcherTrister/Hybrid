@@ -10,7 +10,6 @@
 using System.Net.Http;
 using System.Threading.Tasks;
 
-
 namespace Hybrid.Http
 {
     /// <summary>

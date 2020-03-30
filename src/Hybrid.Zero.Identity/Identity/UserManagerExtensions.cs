@@ -7,14 +7,14 @@
 //  <last-date>2019-06-02 5:37</last-date>
 // -----------------------------------------------------------------------
 
-using System.Threading.Tasks;
-
-using Microsoft.AspNetCore.Identity;
 using Hybrid.Exceptions;
 using Hybrid.Extensions;
 using Hybrid.Identity.JwtBearer;
 using Hybrid.Json;
 
+using Microsoft.AspNetCore.Identity;
+
+using System.Threading.Tasks;
 
 namespace Hybrid.Identity
 {

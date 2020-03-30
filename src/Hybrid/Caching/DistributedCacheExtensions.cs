@@ -7,15 +7,6 @@
 //  <last-date>2017-09-17 16:45</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Reflection;
-using System.Threading.Tasks;
-
-using Microsoft.Extensions.Caching.Distributed;
-
 using Hybrid.Authorization.Functions;
 using Hybrid.Collections;
 using Hybrid.Data;
@@ -27,6 +18,14 @@ using Hybrid.Filter;
 using Hybrid.Json;
 using Hybrid.Reflection;
 
+using Microsoft.Extensions.Caching.Distributed;
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Reflection;
+using System.Threading.Tasks;
 
 namespace Hybrid.Caching
 {
@@ -697,7 +696,7 @@ namespace Hybrid.Caching
             return cache.Get(key, () => source.ToOutput<TSource, TOutputDto>().ToArray(), function);
         }
 
-        #endregion
+        #endregion OutputDto
 
         /// <summary>
         /// 将<see cref="IFunction"/>的缓存配置转换为<see cref="DistributedCacheEntryOptions"/>

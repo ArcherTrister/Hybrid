@@ -7,11 +7,10 @@
 //  <last-date>2017-08-17 0:40</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
+using System;
 
 namespace Hybrid.Entity
 {

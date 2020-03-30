@@ -7,10 +7,9 @@
 //  <last-date>2019-06-02 2:40</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-
 using Microsoft.Extensions.Logging;
 
+using System;
 
 namespace Hybrid.Logging
 {

@@ -7,16 +7,15 @@
 //  <last-date>2020-02-27 0:26</last-date>
 // -----------------------------------------------------------------------
 
-using System;
+using Hybrid.Authorization;
+using Hybrid.Authorization.Dtos;
+using Hybrid.Authorization.Functions;
 
 using Liuliu.Demo.Authorization.Dtos;
 using Liuliu.Demo.Authorization.Entities;
 using Liuliu.Demo.Identity.Entities;
 
-using Hybrid.Authorization;
-using Hybrid.Authorization.Dtos;
-using Hybrid.Authorization.Functions;
-
+using System;
 
 namespace Liuliu.Demo.Authorization
 {

@@ -9,11 +9,10 @@
 
 using AutoMapper.Configuration;
 
-using Liuliu.Demo.Authorization.Entities;
-
 using Hybrid.AutoMapper;
 using Hybrid.Json;
 
+using Liuliu.Demo.Authorization.Entities;
 
 namespace Liuliu.Demo.Authorization.Dtos
 {

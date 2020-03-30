@@ -7,14 +7,13 @@
 //  <last-date>2018-07-03 22:52</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Data;
+using Hybrid.Filter;
+
 using System;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-
-using Hybrid.Data;
-using Hybrid.Filter;
-
 
 namespace Hybrid.Authorization
 {
@@ -68,7 +67,6 @@ namespace Hybrid.Authorization
         /// <returns>业务操作结果</returns>
         Task<OperationResult> DeleteEntityRoles(params Guid[] ids);
 
-        #endregion
-
+        #endregion 实体角色信息业务
     }
 }

@@ -7,21 +7,19 @@
 //  <last-date>2019-04-15 16:26</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.IO;
-using System.Linq;
-
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-
-using Microsoft.OpenApi.Models;
-
 using Hybrid.AspNetCore;
 using Hybrid.Core.Packs;
 using Hybrid.Exceptions;
 using Hybrid.Extensions;
 
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.OpenApi.Models;
+
+using System;
+using System.IO;
+using System.Linq;
 
 namespace Hybrid.Swagger
 {

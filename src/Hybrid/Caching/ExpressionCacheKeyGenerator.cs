@@ -1,8 +1,7 @@
-﻿using System.Linq;
+﻿using Hybrid.Collections;
+
+using System.Linq;
 using System.Linq.Expressions;
-
-using Hybrid.Collections;
-
 
 namespace Hybrid.Caching
 {
@@ -37,7 +36,7 @@ namespace Hybrid.Caching
             return key + args.ExpandAndToString();
         }
 
-        #endregion
+        #endregion Implementation of ICacheKeyGenerator
 
         private static bool CanBeEvaluatedLocally(Expression expression)
         {

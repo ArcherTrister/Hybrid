@@ -7,11 +7,10 @@
 //  <last-date>2018-06-27 4:44</last-date>
 // -----------------------------------------------------------------------
 
-using LeXun.Demo.Authorization.Entities;
-
 using Hybrid.Authorization.Dtos;
 using Hybrid.Mapping;
 
+using LeXun.Demo.Authorization.Entities;
 
 namespace LeXun.Demo.Authorization.Dtos
 {

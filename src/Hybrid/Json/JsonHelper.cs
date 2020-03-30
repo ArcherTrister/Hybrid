@@ -6,14 +6,13 @@
 //  <last-date>2014-08-04 15:24</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Text.RegularExpressions;
+using Hybrid.Extensions;
 
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
-using Hybrid.Extensions;
-
+using System;
+using System.Text.RegularExpressions;
 
 namespace Hybrid.Json
 {

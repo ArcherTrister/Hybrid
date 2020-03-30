@@ -7,13 +7,6 @@
 //  <last-date>2018-07-15 10:22</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Reflection;
-using System.Security.Claims;
-
 using Hybrid.Authorization;
 using Hybrid.Data;
 using Hybrid.Dependency;
@@ -25,6 +18,12 @@ using Hybrid.Linq;
 using Hybrid.Properties;
 using Hybrid.Reflection;
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Reflection;
+using System.Security.Claims;
 
 namespace Hybrid.Filter
 {
@@ -127,7 +126,7 @@ namespace Hybrid.Filter
                 //}
             };
 
-        #endregion
+        #endregion 字段
 
         /// <summary>
         /// 获取指定查询条件组的查询表达式
@@ -349,7 +348,7 @@ namespace Hybrid.Filter
         }
 
         /// <summary>
-        /// 验证最后一个属性与属性值是否匹配 
+        /// 验证最后一个属性与属性值是否匹配
         /// </summary>
         /// <param name="type">最后一个属性</param>
         /// <param name="rule">条件信息</param>
@@ -409,6 +408,6 @@ namespace Hybrid.Filter
             }
         }
 
-        #endregion
+        #endregion 私有方法
     }
 }

@@ -9,7 +9,6 @@
 
 using System;
 
-
 namespace Hybrid.Entity
 {
     /// <summary>

@@ -7,27 +7,27 @@
 //  <last-date>2018-06-23 15:19</last-date>
 // -----------------------------------------------------------------------
 
-using System.ComponentModel;
+using Hybrid.Caching;
+using Hybrid.Core.Configuration;
+using Hybrid.Core.Options;
+using Hybrid.Entity;
+using Hybrid.Filter;
+using Hybrid.Http;
+using Hybrid.Localization;
+using Hybrid.Localization.Configuration;
+using Hybrid.Localization.Dictionaries;
+using Hybrid.Localization.Dictionaries.Xml;
+using Hybrid.Net;
+using Hybrid.Net.Mail.Configuration;
+using Hybrid.Reflection;
+using Hybrid.Threading;
 
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Options;
 
-using Hybrid.Caching;
-using Hybrid.Core.Options;
-using Hybrid.Entity;
-using Hybrid.Filter;
-using Hybrid.Http;
-using Hybrid.Net;
-using Hybrid.Threading;
 using System;
-using Hybrid.Core.Configuration;
-using Hybrid.Localization.Dictionaries;
-using Hybrid.Localization.Configuration;
-using Hybrid.Net.Mail.Configuration;
-using Hybrid.Localization;
-using Hybrid.Localization.Dictionaries.Xml;
-using Hybrid.Reflection;
+using System.ComponentModel;
 
 namespace Hybrid.Core.Packs
 {

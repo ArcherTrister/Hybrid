@@ -7,13 +7,11 @@
 //  <last-date>2018-07-03 23:02</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.ComponentModel;
-
-using Hybrid.Data;
 using Hybrid.Entity;
 using Hybrid.Filter;
 
+using System;
+using System.ComponentModel;
 
 namespace Hybrid.Authorization.Dtos
 {

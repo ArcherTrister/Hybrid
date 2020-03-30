@@ -7,14 +7,6 @@
 //  <last-date>2018-06-27 4:50</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Reflection;
-
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-
-using Hybrid.Core;
 using Hybrid.Core.Options;
 using Hybrid.Data;
 using Hybrid.Entity;
@@ -22,6 +14,12 @@ using Hybrid.Exceptions;
 using Hybrid.Extensions;
 using Hybrid.Reflection;
 
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+
+using System;
+using System.Reflection;
 
 namespace LeXun.Demo.Web.Startups
 {

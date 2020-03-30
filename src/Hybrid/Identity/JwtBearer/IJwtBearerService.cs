@@ -9,7 +9,6 @@
 
 using System.Threading.Tasks;
 
-
 namespace Hybrid.Identity.JwtBearer
 {
     /// <summary>

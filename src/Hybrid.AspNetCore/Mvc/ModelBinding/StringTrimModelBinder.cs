@@ -7,14 +7,13 @@
 //  <last-date>2017-09-01 17:20</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Runtime.ExceptionServices;
-using System.Threading.Tasks;
+using Hybrid.Data;
 
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
-using Hybrid.Data;
-
+using System;
+using System.Runtime.ExceptionServices;
+using System.Threading.Tasks;
 
 namespace Hybrid.AspNetCore.Mvc.ModelBinding
 {

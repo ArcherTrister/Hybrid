@@ -8,7 +8,6 @@
 
 using System;
 
-
 namespace Hybrid.Filter
 {
     /// <summary>
@@ -57,7 +56,7 @@ namespace Hybrid.Filter
             Operate = operate;
         }
 
-        #endregion
+        #endregion 构造函数
 
         #region 属性
 
@@ -76,7 +75,7 @@ namespace Hybrid.Filter
         /// </summary>
         public FilterOperate Operate { get; set; }
 
-        #endregion
+        #endregion 属性
 
         #region Overrides of Object
 
@@ -99,6 +98,6 @@ namespace Hybrid.Filter
             return HashCode.Combine(Field, Value, Operate);
         }
 
-        #endregion
+        #endregion Overrides of Object
     }
 }

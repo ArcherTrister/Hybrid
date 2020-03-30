@@ -7,15 +7,14 @@
 //  <last-date>2020-02-11 14:12</last-date>
 // -----------------------------------------------------------------------
 
-using System.Security.Claims;
-using System.Threading.Tasks;
+using Hybrid.Authorization.Functions;
 
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
 
-using Hybrid.Authorization.Functions;
-
+using System.Security.Claims;
+using System.Threading.Tasks;
 
 namespace Hybrid.Authorization
 {

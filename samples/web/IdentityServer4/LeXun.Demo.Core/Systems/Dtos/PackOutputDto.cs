@@ -7,11 +7,10 @@
 //  <last-date>2018-08-13 14:59</last-date>
 // -----------------------------------------------------------------------
 
-using System.ComponentModel;
-
 using Hybrid.Core.Packs;
 using Hybrid.Entity;
 
+using System.ComponentModel;
 
 namespace LeXun.Demo.Systems.Dtos
 {

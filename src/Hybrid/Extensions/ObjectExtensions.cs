@@ -6,6 +6,8 @@
 //  <last-date>2014:07:05 2:52</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Reflection;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,9 +15,6 @@ using System.Dynamic;
 using System.IO;
 using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
-
-using Hybrid.Reflection;
-
 
 namespace Hybrid.Extensions
 {
@@ -177,6 +176,6 @@ namespace Hybrid.Extensions
             }
         }
 
-        #endregion
+        #endregion 公共方法
     }
 }

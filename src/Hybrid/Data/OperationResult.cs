@@ -7,10 +7,9 @@
 //  <last-date>2015-08-03 18:31</last-date>
 // -----------------------------------------------------------------------
 
-using System.Linq;
-
 using Hybrid.Extensions;
 
+using System.Linq;
 
 namespace Hybrid.Data
 {
@@ -77,7 +76,6 @@ namespace Hybrid.Data
             return new OperationResult<T>(ResultType, Message, data);
         }
     }
-
 
     /// <summary>
     /// 泛型版本的业务操作结果信息类，对操作结果进行封装

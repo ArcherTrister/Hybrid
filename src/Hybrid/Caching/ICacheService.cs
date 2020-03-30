@@ -7,15 +7,14 @@
 //  <last-date>2018-12-19 18:07</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-
 using Hybrid.Authorization.Functions;
 using Hybrid.Entity;
 using Hybrid.Filter;
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
 
 namespace Hybrid.Caching
 {
@@ -380,6 +379,6 @@ namespace Hybrid.Caching
             IFunction function,
             params object[] keyParams);
 
-        #endregion
+        #endregion OutputDto
     }
 }

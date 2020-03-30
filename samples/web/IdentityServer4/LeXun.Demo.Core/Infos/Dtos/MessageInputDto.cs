@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 
-
 namespace LeXun.Demo.Infos.Dtos
 {
     public partial class MessageInputDto

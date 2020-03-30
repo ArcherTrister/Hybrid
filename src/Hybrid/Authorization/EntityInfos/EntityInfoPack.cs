@@ -7,15 +7,14 @@
 //  <last-date>2020-02-10 20:14</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.ComponentModel;
+using Hybrid.Core.Packs;
+using Hybrid.Systems;
 
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
-using Hybrid.Core.Packs;
-using Hybrid.Systems;
-
+using System;
+using System.ComponentModel;
 
 namespace Hybrid.Authorization.EntityInfos
 {

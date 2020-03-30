@@ -7,10 +7,9 @@
 //  <last-date>2017-08-15 23:23</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-
 using Hybrid.Dependency;
 
+using System;
 
 namespace Hybrid.Finders
 {

@@ -7,15 +7,14 @@
 //  <last-date>2020-02-27 23:41</last-date>
 // -----------------------------------------------------------------------
 
-using System;
+using Hybrid.Authorization.Functions;
+using Hybrid.Authorization.Modules;
 
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
-using Hybrid.Authorization.Functions;
-using Hybrid.Authorization.Modules;
-
+using System;
 
 namespace Hybrid.Authorization
 {

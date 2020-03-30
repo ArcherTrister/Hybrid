@@ -1,11 +1,11 @@
-﻿using System;
+﻿using Hybrid.Extensions;
+using Hybrid.Filter;
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
-
-using Hybrid.Extensions;
-using Hybrid.Filter;
 
 namespace Hybrid.Collections
 {
@@ -229,6 +229,5 @@ namespace Hybrid.Collections
 
             return source.ThenBy(sortCondition.SortField, sortCondition.ListSortDirection);
         }
-
     }
 }

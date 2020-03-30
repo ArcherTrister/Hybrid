@@ -9,7 +9,6 @@
 
 using System.Drawing;
 
-
 namespace Hybrid.AspNetCore
 {
     /// <summary>
@@ -25,7 +24,7 @@ namespace Hybrid.AspNetCore
         /// <param name="removeIfSuccess">验证成功时是否移除</param>
         /// <returns></returns>
         bool CheckCode(string code, string id, bool removeIfSuccess = true);
-        
+
         /// <summary>
         /// 设置验证码到Session中
         /// </summary>

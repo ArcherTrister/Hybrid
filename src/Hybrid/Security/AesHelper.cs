@@ -7,14 +7,13 @@
 //  <last-date>2017-12-30 15:41</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Exceptions;
+using Hybrid.Extensions;
+
 using System;
 using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
-
-using Hybrid.Exceptions;
-using Hybrid.Extensions;
-
 
 namespace Hybrid.Security
 {
@@ -98,7 +97,7 @@ namespace Hybrid.Security
             DecryptFile(sourceFile, targetFile, Key, _needIV);
         }
 
-        #endregion
+        #endregion 实例方法
 
         #region 静态方法
 
@@ -272,6 +271,6 @@ namespace Hybrid.Security
             return keyBytes;
         }
 
-        #endregion
+        #endregion 静态方法
     }
 }

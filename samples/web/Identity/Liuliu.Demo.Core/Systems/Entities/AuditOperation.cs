@@ -7,15 +7,14 @@
 //  <last-date>2018-08-02 4:07</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-
 using Hybrid.Audits;
 using Hybrid.Data;
 using Hybrid.Entity;
 using Hybrid.Mapping;
 
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace Liuliu.Demo.Systems.Entities
 {

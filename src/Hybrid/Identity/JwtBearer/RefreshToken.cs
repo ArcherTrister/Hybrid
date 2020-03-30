@@ -9,7 +9,6 @@
 
 using System;
 
-
 namespace Hybrid.Identity.JwtBearer
 {
     /// <summary>

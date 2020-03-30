@@ -9,7 +9,6 @@
 
 using Microsoft.Extensions.Configuration;
 
-
 namespace Hybrid.Core.Options
 {
     /// <summary>

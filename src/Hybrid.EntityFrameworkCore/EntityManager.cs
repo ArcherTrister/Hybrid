@@ -7,20 +7,19 @@
 //  <last-date>2019-06-27 9:04</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Concurrent;
-using System.Collections.Generic;
-using System.Linq;
-
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
-
 using Hybrid.Authorization.EntityInfos;
 using Hybrid.Authorization.Functions;
 using Hybrid.Collections;
 using Hybrid.Exceptions;
 using Hybrid.Reflection;
 
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
+using System;
+using System.Collections.Concurrent;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Hybrid.Entity
 {
@@ -31,6 +30,7 @@ namespace Hybrid.Entity
     {
         private readonly ConcurrentDictionary<Type, IEntityRegister[]> _entityRegistersDict
             = new ConcurrentDictionary<Type, IEntityRegister[]>();
+
         private readonly IEntityConfigurationTypeFinder _typeFinder;
         private bool _initialized;
 
@@ -113,7 +113,6 @@ namespace Hybrid.Entity
             throw new HybridException($"无法获取实体类“{entityType}”的所属上下文类型，请通过继承基类“EntityTypeConfigurationBase<TEntity, TKey>”配置实体加载到上下文中");
         }
 
-
         private class EntityInfoConfiguration : EntityTypeConfigurationBase<EntityInfo, Guid>
         {
             /// <summary>
@@ -125,7 +124,6 @@ namespace Hybrid.Entity
                 builder.HasIndex(m => m.TypeName).HasName("ClassFullNameIndex").IsUnique();
             }
         }
-
 
         private class FunctionConfiguration : EntityTypeConfigurationBase<Function, Guid>
         {

@@ -7,14 +7,13 @@
 //  <last-date>2018-03-07 20:59</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
+using Hybrid.Dependency;
 
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 
-using Hybrid.Dependency;
-
+using System;
+using System.Collections.Generic;
 
 namespace Hybrid.AspNetCore
 {

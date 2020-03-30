@@ -7,14 +7,13 @@
 //  <last-date>2018-08-02 15:10</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Linq;
-using System.Threading.Tasks;
+using Hybrid.Data;
 
 using LeXun.Demo.Systems.Entities;
 
-using Hybrid.Data;
-
+using System;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace LeXun.Demo.Systems
 {
@@ -37,7 +36,7 @@ namespace LeXun.Demo.Systems
         /// <returns>业务操作结果</returns>
         Task<OperationResult> DeleteAuditOperations(params Guid[] ids);
 
-        #endregion
+        #endregion 操作审计信息业务
 
         #region 数据审计信息业务
 
@@ -45,12 +44,12 @@ namespace LeXun.Demo.Systems
         /// 获取 数据审计信息查询数据集
         /// </summary>
         IQueryable<AuditEntity> AuditEntities { get; }
-        
+
         /// <summary>
         /// 获取 数据属性审计信息查询数据集
         /// </summary>
         IQueryable<AuditProperty> AuditProperties { get; }
-        
+
         /// <summary>
         /// 删除数据审计信息信息
         /// </summary>
@@ -58,6 +57,6 @@ namespace LeXun.Demo.Systems
         /// <returns>业务操作结果</returns>
         Task<OperationResult> DeleteAuditEntities(params Guid[] ids);
 
-        #endregion
+        #endregion 数据审计信息业务
     }
 }

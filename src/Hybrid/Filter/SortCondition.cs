@@ -11,7 +11,6 @@ using System.ComponentModel;
 using System.Linq;
 using System.Linq.Expressions;
 
-
 namespace Hybrid.Filter
 {
     /// <summary>
@@ -54,7 +53,6 @@ namespace Hybrid.Filter
         /// </summary>
         public ListSortDirection ListSortDirection { get; set; }
     }
-
 
     /// <summary>
     /// 支持泛型的列表字段排序条件

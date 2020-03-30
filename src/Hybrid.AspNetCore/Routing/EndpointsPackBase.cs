@@ -7,12 +7,10 @@
 //  <last-date>2019-09-29 12:43</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Core.Packs;
 
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Routing;
-
-using Hybrid.Core.Packs;
-
 
 namespace Hybrid.AspNetCore.Routing
 {
@@ -77,6 +75,5 @@ namespace Hybrid.AspNetCore.Routing
         {
             return endpoints;
         }
-
     }
 }

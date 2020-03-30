@@ -7,10 +7,9 @@
 //  <last-date>2018-06-27 4:50</last-date>
 // -----------------------------------------------------------------------
 
-using System.ComponentModel;
-
 using Microsoft.AspNetCore.Mvc;
 
+using System.ComponentModel;
 
 namespace Liuliu.Demo.Web.Areas.Admin.Controllers
 {
@@ -27,7 +26,5 @@ namespace Liuliu.Demo.Web.Areas.Admin.Controllers
         {
             return Content("MainMenu");
         }
-
-
     }
 }

@@ -7,11 +7,10 @@
 //  <last-date>2019-11-08 16:45</last-date>
 // -----------------------------------------------------------------------
 
-using System.Net.Http;
-using System.Text;
-
 using Newtonsoft.Json;
 
+using System.Net.Http;
+using System.Text;
 
 namespace Hybrid.Http
 {

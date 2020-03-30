@@ -27,7 +27,6 @@ using System;
 using System.Dynamic;
 using System.Linq.Expressions;
 
-
 namespace Hybrid.Dynamic
 {
     /// <summary>
@@ -43,7 +42,7 @@ namespace Hybrid.Dynamic
         private readonly object value;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Exposed"/> class. 
+        /// Initializes a new instance of the <see cref="Exposed"/> class.
         /// Creates a new wrapper for accessing members of subject.
         /// </summary>
         /// <param name="subject">
@@ -59,7 +58,7 @@ namespace Hybrid.Dynamic
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Exposed"/> class. 
+        /// Initializes a new instance of the <see cref="Exposed"/> class.
         /// Creates a new wrapper for accessing hidden static members of a <see cref="Type"/>.
         /// </summary>
         /// <param name="type">

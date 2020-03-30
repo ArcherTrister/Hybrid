@@ -7,6 +7,9 @@
 //  <last-date>2018-10-02 2:42</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Collections;
+using Hybrid.Extensions;
+
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -16,10 +19,6 @@ using System.Drawing.Text;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
-
-using Hybrid.Collections;
-using Hybrid.Extensions;
-
 
 namespace Hybrid.Drawing
 {
@@ -574,7 +573,7 @@ namespace Hybrid.Drawing
             return code;
         }
 
-        #endregion
+        #endregion Byte[,]图像处理扩展
 
         #region Image
 
@@ -1501,6 +1500,6 @@ namespace Hybrid.Drawing
             return value == 255;
         }
 
-        #endregion
+        #endregion Image
     }
 }

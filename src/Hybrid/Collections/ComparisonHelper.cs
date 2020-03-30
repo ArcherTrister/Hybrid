@@ -9,7 +9,6 @@
 using System;
 using System.Collections.Generic;
 
-
 namespace Hybrid.Collections
 {
     /// <summary>
@@ -36,7 +35,7 @@ namespace Hybrid.Collections
         {
             return new CommonComparer<TV>(keySelector, comparer);
         }
-        
+
         private class CommonComparer<TV> : IComparer<T>
         {
             private readonly IComparer<TV> _comparer;
@@ -51,13 +50,11 @@ namespace Hybrid.Collections
             public CommonComparer(Func<T, TV> keySelector)
                 : this(keySelector, Comparer<TV>.Default)
             { }
-            
+
             public int Compare(T x, T y)
             {
                 return _comparer.Compare(_keySelector(x), _keySelector(y));
             }
-            
         }
-        
     }
 }

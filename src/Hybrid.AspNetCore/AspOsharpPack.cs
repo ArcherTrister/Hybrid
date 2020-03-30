@@ -7,10 +7,9 @@
 //  <last-date>2018-08-09 22:20</last-date>
 // -----------------------------------------------------------------------
 
-using Microsoft.AspNetCore.Builder;
-
 using Hybrid.Core.Packs;
 
+using Microsoft.AspNetCore.Builder;
 
 namespace Hybrid.AspNetCore
 {

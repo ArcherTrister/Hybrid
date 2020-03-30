@@ -9,7 +9,6 @@
 
 using Microsoft.Extensions.DependencyInjection;
 
-
 namespace Hybrid.Dependency
 {
     /// <summary>

@@ -7,10 +7,9 @@
 //  <last-date>2017-09-01 17:22</last-date>
 // -----------------------------------------------------------------------
 
-using Microsoft.AspNetCore.Mvc.ModelBinding;
-
 using Hybrid.Data;
 
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace Hybrid.AspNetCore.Mvc.ModelBinding
 {

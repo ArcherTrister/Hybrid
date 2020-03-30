@@ -7,6 +7,14 @@
 //  <last-date>2017-08-21 22:20</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Core.Options;
+using Hybrid.Dependency;
+using Hybrid.Exceptions;
+
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage;
+using Microsoft.Extensions.DependencyInjection;
+
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -14,15 +22,6 @@ using System.Data.Common;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Storage;
-using Microsoft.Extensions.DependencyInjection;
-
-using Hybrid.Core.Options;
-using Hybrid.Dependency;
-using Hybrid.Exceptions;
-
 
 namespace Hybrid.Entity
 {

@@ -7,17 +7,18 @@
 //  <last-date>2017-09-19 1:56</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Diagnostics;
+using Hybrid.AspNetCore;
+using Hybrid.Core.Packs;
+using Hybrid.Exceptions;
+using Hybrid.Localization;
+using Hybrid.Reflection;
 
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-using Hybrid.AspNetCore;
-using Hybrid.Core.Packs;
-using Hybrid.Reflection;
-using Hybrid.Localization;
+using System;
+using System.Diagnostics;
 
 namespace Microsoft.AspNetCore.Builder
 {
@@ -26,6 +27,21 @@ namespace Microsoft.AspNetCore.Builder
     /// </summary>
     public static class ApplicationBuilderExtensions
     {
+        /// <summary>
+        /// Hybrid框架自动初始化，适用于AspNetCore环境
+        /// </summary>
+        public static IApplicationBuilder UseAutoHybrid(this IApplicationBuilder app)
+        {
+            IServiceProvider provider = app.ApplicationServices;
+            if (!(provider.GetService<IHybridModuleManager>() is IAspUseModule aspModuleManager))
+            {
+                throw new HybridException("接口 IHybridModuleManager 的注入类型不正确，该类型应同时实现接口 IAspUseModule");
+            }
+            aspModuleManager.UseModule(app);
+
+            return app;
+        }
+
         /// <summary>
         /// Hybrid框架初始化，适用于AspNetCore环境
         /// </summary>
@@ -51,7 +67,7 @@ namespace Microsoft.AspNetCore.Builder
                 logger.LogInformation($"模块 “{packName}” 初始化完成");
             }
 
-            // 初始化国际化
+            // TODO:初始化国际化
             ILocalizationManager localizationManager = provider.GetRequiredService<ILocalizationManager>();
             localizationManager.Initialize();
 

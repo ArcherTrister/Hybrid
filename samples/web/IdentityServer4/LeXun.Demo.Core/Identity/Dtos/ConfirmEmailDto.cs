@@ -9,7 +9,6 @@
 
 using System.ComponentModel.DataAnnotations;
 
-
 namespace LeXun.Demo.Identity.Dtos
 {
     /// <summary>

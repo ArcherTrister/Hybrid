@@ -7,11 +7,10 @@
 //  <last-date>2017-09-01 18:11</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
+using System;
 
 namespace Hybrid.AspNetCore.Mvc.Filters
 {

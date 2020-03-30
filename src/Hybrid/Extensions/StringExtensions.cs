@@ -21,7 +21,6 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Web;
 
-
 namespace Hybrid.Extensions
 {
     /// <summary>
@@ -318,7 +317,7 @@ namespace Hybrid.Extensions
             return value.IsMatch(pattern);
         }
 
-        #endregion
+        #endregion 正则表达式
 
         #region 其他操作
 
@@ -464,6 +463,7 @@ namespace Hybrid.Extensions
                 case 0x4947: //gif
                 case 0x5089: //png
                     return true;
+
                 default:
                     return false;
             }
@@ -947,7 +947,7 @@ namespace Hybrid.Extensions
             return kq * q / (kq * q + kr * r + ks * s);
         }
 
-        #endregion
+        #endregion 其他操作
 
         /// <summary>
         /// Gets a substring of a string from beginning of the string.

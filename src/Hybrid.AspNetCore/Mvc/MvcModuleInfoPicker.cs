@@ -7,19 +7,18 @@
 //  <last-date>2018-06-23 17:23</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Reflection;
-
-using Microsoft.AspNetCore.Mvc;
-
 using Hybrid.Authorization.Functions;
 using Hybrid.Authorization.Modules;
 using Hybrid.Exceptions;
 using Hybrid.Reflection;
 
+using Microsoft.AspNetCore.Mvc;
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Reflection;
 
 namespace Hybrid.AspNetCore.Mvc
 {

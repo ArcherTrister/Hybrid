@@ -7,12 +7,11 @@
 //  <last-date>2017-08-15 14:17</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Globalization;
-
 using Hybrid.Extensions;
 using Hybrid.Properties;
 
+using System;
+using System.Globalization;
 
 namespace Hybrid.Maths
 {

@@ -7,6 +7,14 @@
 //  <last-date>2020-01-31 19:21</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Data;
+using Hybrid.Entity;
+using Hybrid.EventBuses;
+using Hybrid.Identity.Entities;
+using Hybrid.Identity.Events;
+
+using Microsoft.AspNetCore.Identity;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,15 +22,6 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading;
 using System.Threading.Tasks;
-
-using Microsoft.AspNetCore.Identity;
-
-using Hybrid.Data;
-using Hybrid.Entity;
-using Hybrid.EventBuses;
-using Hybrid.Identity.Entities;
-using Hybrid.Identity.Events;
-
 
 namespace Hybrid.Identity
 {
@@ -113,7 +112,7 @@ namespace Hybrid.Identity
         /// <value>An <see cref="T:System.Linq.IQueryable`1" /> collection of users.</value>
         public IQueryable<TUser> Users => _userRepository.Query();
 
-        #endregion
+        #endregion Implementation of IQueryableUserStore<TUser>
 
         #region Implementation of IUserStore<TUser>
 
@@ -318,7 +317,7 @@ namespace Hybrid.Identity
             return Task.FromResult(_userRepository.Query().FirstOrDefault(m => m.NormalizedUserName == normalizedUserName));
         }
 
-        #endregion
+        #endregion Implementation of IUserStore<TUser>
 
         #region Implementation of IUserLoginStore<TUser>
 
@@ -411,7 +410,7 @@ namespace Hybrid.Identity
             return Task.FromResult(user);
         }
 
-        #endregion
+        #endregion Implementation of IUserLoginStore<TUser>
 
         #region Implementation of IUserClaimStore<TUser>
 
@@ -510,7 +509,7 @@ namespace Hybrid.Identity
             return Task.FromResult(users);
         }
 
-        #endregion
+        #endregion Implementation of IUserClaimStore<TUser>
 
         #region Implementation of IUserPasswordStore<TUser>
 
@@ -564,7 +563,7 @@ namespace Hybrid.Identity
             return Task.FromResult(!string.IsNullOrEmpty(user.PasswordHash));
         }
 
-        #endregion
+        #endregion Implementation of IUserPasswordStore<TUser>
 
         #region Implementation of IUserSecurityStampStore<TUser>
 
@@ -601,7 +600,7 @@ namespace Hybrid.Identity
             return Task.FromResult(user.SecurityStamp);
         }
 
-        #endregion
+        #endregion Implementation of IUserSecurityStampStore<TUser>
 
         #region Implementation of IUserEmailStore<TUser>
 
@@ -725,7 +724,7 @@ namespace Hybrid.Identity
             return Task.CompletedTask;
         }
 
-        #endregion
+        #endregion Implementation of IUserEmailStore<TUser>
 
         #region Implementation of IUserLockoutStore<TUser>
 
@@ -845,7 +844,7 @@ namespace Hybrid.Identity
             return Task.CompletedTask;
         }
 
-        #endregion
+        #endregion Implementation of IUserLockoutStore<TUser>
 
         #region Implementation of IUserPhoneNumberStore<TUser>
 
@@ -916,7 +915,7 @@ namespace Hybrid.Identity
             return Task.CompletedTask;
         }
 
-        #endregion
+        #endregion Implementation of IUserPhoneNumberStore<TUser>
 
         #region Implementation of IUserTwoFactorStore<TUser>
 
@@ -957,7 +956,7 @@ namespace Hybrid.Identity
             return Task.FromResult(user.TwoFactorEnabled);
         }
 
-        #endregion
+        #endregion Implementation of IUserTwoFactorStore<TUser>
 
         #region Implementation of IUserAuthenticationTokenStore<TUser>
 
@@ -1036,7 +1035,7 @@ namespace Hybrid.Identity
             return Task.FromResult(values);
         }
 
-        #endregion
+        #endregion Implementation of IUserAuthenticationTokenStore<TUser>
 
         #region Implementation of IUserAuthenticatorKeyStore<TUser>
 
@@ -1067,7 +1066,7 @@ namespace Hybrid.Identity
             return GetTokenAsync(user, InternalLoginProvider, AuthenticatorKeyTokenName, cancellationToken);
         }
 
-        #endregion
+        #endregion Implementation of IUserAuthenticatorKeyStore<TUser>
 
         #region Implementation of IUserTwoFactorRecoveryCodeStore<TUser>
 
@@ -1130,7 +1129,7 @@ namespace Hybrid.Identity
             return 0;
         }
 
-        #endregion
+        #endregion Implementation of IUserTwoFactorRecoveryCodeStore<TUser>
 
         #region Implementation of IUserRoleStore<TUser>
 
@@ -1254,7 +1253,7 @@ namespace Hybrid.Identity
             return Task.FromResult(users);
         }
 
-        #endregion
+        #endregion Implementation of IUserRoleStore<TUser>
 
         #region Other
 
@@ -1297,6 +1296,6 @@ namespace Hybrid.Identity
             }
         }
 
-        #endregion
+        #endregion Other
     }
 }

@@ -7,9 +7,10 @@
 //  <last-date>2020-01-12 17:17:13</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Data;
+using Hybrid.Extensions;
 using Hybrid.Identity.Entities;
 using Hybrid.Security.Claims;
-using Hybrid.Extensions;
 
 using Microsoft.AspNetCore.Identity;
 
@@ -18,7 +19,6 @@ using System.Linq;
 using System.Reflection;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using Hybrid.Data;
 
 namespace Hybrid.Zero.IdentityServer4.Identity
 {

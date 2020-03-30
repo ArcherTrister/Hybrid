@@ -7,14 +7,13 @@
 //  <last-date>2018-08-02 15:43</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-
-using LeXun.Demo.Systems.Entities;
-
 using Hybrid.Data;
 using Hybrid.Entity;
 using Hybrid.Mapping;
 
+using LeXun.Demo.Systems.Entities;
+
+using System;
 
 namespace LeXun.Demo.Systems.Dtos
 {

@@ -7,14 +7,13 @@
 //  <last-date>2017-08-16 22:49</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Data;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-
-using Hybrid.Data;
-
 
 namespace Hybrid.Entity
 {
@@ -205,7 +204,7 @@ namespace Hybrid.Entity
         /// <returns>符合条件的数据集</returns>
         IQueryable<TEntity> Query(params Expression<Func<TEntity, object>>[] includePropertySelectors);
 
-        #endregion
+        #endregion 同步方法
 
         #region 异步方法
 
@@ -310,6 +309,6 @@ namespace Hybrid.Entity
         /// <returns>符合主键的实体，不存在时返回null</returns>
         Task<TEntity> GetAsync(TKey key);
 
-        #endregion
+        #endregion 异步方法
     }
 }

@@ -7,10 +7,9 @@
 //  <last-date>2018-08-06 12:44</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-
 using Hybrid.Extensions;
 
+using System;
 
 namespace Hybrid.CodeGenerator
 {

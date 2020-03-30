@@ -9,7 +9,6 @@
 using System;
 using System.Collections.Generic;
 
-
 namespace Hybrid.Collections
 {
     /// <summary>
@@ -38,7 +37,6 @@ namespace Hybrid.Collections
         {
             return new CommonEqualityComparer<TV>(keySelector, comparer);
         }
-
 
         private class CommonEqualityComparer<TV> : IEqualityComparer<T>
         {

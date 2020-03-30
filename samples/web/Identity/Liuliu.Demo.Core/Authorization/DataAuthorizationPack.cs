@@ -7,16 +7,15 @@
 //  <last-date>2020-02-27 0:35</last-date>
 // -----------------------------------------------------------------------
 
-using Liuliu.Demo.Authorization.Dtos;
-using Liuliu.Demo.Authorization.Entities;
-
-using Microsoft.Extensions.DependencyInjection;
-
 using Hybrid.Authorization;
 using Hybrid.Authorization.Dtos;
 using Hybrid.Authorization.EntityInfos;
 using Hybrid.AutoMapper;
 
+using Liuliu.Demo.Authorization.Dtos;
+using Liuliu.Demo.Authorization.Entities;
+
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Liuliu.Demo.Authorization
 {

@@ -7,16 +7,6 @@
 //  <last-date>2018-06-27 4:50</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.ComponentModel;
-using System.Threading.Tasks;
-
-using Liuliu.Demo.Systems.Dtos;
-
-using Microsoft.AspNetCore.Mvc;
-
-using Newtonsoft.Json;
-
 using Hybrid.AspNetCore.Mvc.Filters;
 using Hybrid.AspNetCore.UI;
 using Hybrid.Authorization.Modules;
@@ -24,6 +14,15 @@ using Hybrid.Core.Systems;
 using Hybrid.Data;
 using Hybrid.Exceptions;
 
+using Liuliu.Demo.Systems.Dtos;
+
+using Microsoft.AspNetCore.Mvc;
+
+using Newtonsoft.Json;
+
+using System;
+using System.ComponentModel;
+using System.Threading.Tasks;
 
 namespace Liuliu.Demo.Web.Areas.Admin.Controllers
 {
@@ -57,6 +56,7 @@ namespace Liuliu.Demo.Web.Areas.Admin.Controllers
                 case "System":
                     setting = _keyValueStore.GetSetting<SystemSetting>();
                     break;
+
                 default:
                     throw new HybridException($"未知的设置根节点: {root}");
             }

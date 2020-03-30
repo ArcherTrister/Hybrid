@@ -5,7 +5,7 @@ namespace Hybrid.Core.Configuration
     /// <summary>
     /// IdentityServer4身份认证选项
     /// </summary>
-    public sealed class IdentityServerConfiguration: IIdentityServerConfiguration
+    public sealed class IdentityServerConfiguration : IIdentityServerConfiguration
     {
         /// <summary>
         /// 获取或设置 授权服务器地址

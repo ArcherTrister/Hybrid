@@ -7,19 +7,18 @@
 //  <last-date>2020-02-10 20:14</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Reflection;
-
 using Hybrid.Data;
 using Hybrid.Entity;
 using Hybrid.Extensions;
 using Hybrid.Json;
 using Hybrid.Reflection;
 
+using System;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Reflection;
 
 namespace Hybrid.Authorization.EntityInfos
 {

@@ -9,10 +9,9 @@
 
 using AutoMapper.Configuration;
 
-using Liuliu.Demo.Identity.Entities;
-
 using Hybrid.AutoMapper;
 
+using Liuliu.Demo.Identity.Entities;
 
 namespace Liuliu.Demo.Identity.Dtos
 {

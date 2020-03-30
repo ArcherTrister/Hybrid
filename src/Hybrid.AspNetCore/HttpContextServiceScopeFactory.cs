@@ -7,13 +7,12 @@
 //  <last-date>2018-12-20 23:29</last-date>
 // -----------------------------------------------------------------------
 
-using System;
+using Hybrid.Dependency;
 
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 
-using Hybrid.Dependency;
-
+using System;
 
 namespace Hybrid.AspNetCore
 {
@@ -59,7 +58,7 @@ namespace Hybrid.AspNetCore
             return new NonDisposedHttpContextServiceScope(httpContext.RequestServices);
         }
 
-        #endregion
+        #endregion Implementation of IServiceScopeFactory
 
         /// <summary>
         /// 当前HttpRequest的<see cref="IServiceScope"/>的包装，保持HttpContext.RequestServices的可传递性，并且不释放
@@ -77,7 +76,7 @@ namespace Hybrid.AspNetCore
             /// <summary>
             /// 获取 当前HttpRequest的<see cref="IServiceProvider"/>
             /// </summary>
-            public IServiceProvider ServiceProvider { get;  }
+            public IServiceProvider ServiceProvider { get; }
 
             /// <summary>因为是HttpContext的，啥也不做，避免在using使用时被释放</summary>
             public void Dispose()

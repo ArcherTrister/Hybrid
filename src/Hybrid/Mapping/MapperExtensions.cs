@@ -7,13 +7,12 @@
 //  <last-date>2017-09-01 12:49</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Linq;
-using System.Linq.Expressions;
-
 using Hybrid.Extensions;
 using Hybrid.Properties;
 
+using System;
+using System.Linq;
+using System.Linq.Expressions;
 
 namespace Hybrid.Mapping
 {

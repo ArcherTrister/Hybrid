@@ -6,14 +6,14 @@
 //  <last-date>2015-03-07 18:17</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Extensions;
+using Hybrid.Reflection;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Reflection;
-
-using Hybrid.Extensions;
-using Hybrid.Reflection;
 
 namespace Hybrid.Develop.T4
 {
@@ -56,7 +56,7 @@ namespace Hybrid.Develop.T4
         /// 获取或设置 主键类型
         /// </summary>
         public Type KeyType { get; private set; }
-        
+
         /// <summary>
         /// 获取 模型所在模块名称
         /// </summary>

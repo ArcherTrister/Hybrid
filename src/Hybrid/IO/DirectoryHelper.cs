@@ -6,11 +6,10 @@
 //  <last-date>2014-07-18 18:25</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.IO;
-
 using Hybrid.Extensions;
 
+using System;
+using System.IO;
 
 namespace Hybrid.IO
 {

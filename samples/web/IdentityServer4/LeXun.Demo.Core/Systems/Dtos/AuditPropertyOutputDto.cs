@@ -9,7 +9,6 @@
 
 using Hybrid.Entity;
 
-
 namespace LeXun.Demo.Systems.Dtos
 {
     /// <summary>

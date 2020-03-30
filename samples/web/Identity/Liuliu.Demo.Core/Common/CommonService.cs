@@ -7,15 +7,14 @@
 //  <last-date>2018-07-03 12:59</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.Security.Claims;
-
-using Microsoft.Extensions.DependencyInjection;
-
 using Hybrid.Collections;
 using Hybrid.Dependency;
 
+using Microsoft.Extensions.DependencyInjection;
+
+using System;
+using System.Collections.Generic;
+using System.Security.Claims;
 
 namespace Liuliu.Demo.Common
 {

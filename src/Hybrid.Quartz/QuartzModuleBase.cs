@@ -1,15 +1,4 @@
-﻿using Hybrid.Quartz.Dashboard;
-using Hybrid.Quartz.MySql;
-using Hybrid.Quartz.Plugins.LiveLog;
-using Hybrid.Quartz.SqlServer;
-
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Mvc.Razor;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection.Extensions;
-
-using Hybrid.AspNetCore;
+﻿using Hybrid.AspNetCore;
 using Hybrid.Core.Configuration;
 using Hybrid.Core.Packs;
 using Hybrid.Data;
@@ -18,7 +7,17 @@ using Hybrid.Exceptions;
 using Hybrid.Localization;
 using Hybrid.Localization.Dictionaries;
 using Hybrid.Localization.Dictionaries.Json;
+using Hybrid.Quartz.Dashboard;
+using Hybrid.Quartz.MySql;
+using Hybrid.Quartz.Plugins.LiveLog;
+using Hybrid.Quartz.SqlServer;
 using Hybrid.Reflection;
+
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 
 using Quartz;
 using Quartz.Impl;

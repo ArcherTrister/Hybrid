@@ -7,20 +7,19 @@
 //  <last-date>2018-08-12 10:09</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-
 using Hybrid.Collections;
 using Hybrid.Core.Data;
 using Hybrid.Core.Systems;
 using Hybrid.Extensions;
 
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
+using System.Text;
 
 namespace Hybrid.Entity
 {

@@ -7,15 +7,14 @@
 //  <last-date>2018-08-02 15:25</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Linq;
-using System.Threading.Tasks;
-
-using Liuliu.Demo.Systems.Entities;
-
 using Hybrid.Data;
 using Hybrid.Entity;
 
+using Liuliu.Demo.Systems.Entities;
+
+using System;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Liuliu.Demo.Systems
 {
@@ -77,6 +76,6 @@ namespace Liuliu.Demo.Systems
             return _entityRepository.DeleteAsync(ids);
         }
 
-        #endregion
+        #endregion Implementation of IAuditContract
     }
 }

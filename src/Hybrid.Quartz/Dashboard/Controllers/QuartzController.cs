@@ -1,12 +1,13 @@
-﻿using Hybrid.Quartz.Dashboard.Models;
+﻿using Hybrid.Application.Services.Dtos;
+using Hybrid.AspNetCore.UI;
+using Hybrid.Quartz.Dashboard.Models;
 using Hybrid.Quartz.Dashboard.Models.Dtos;
 using Hybrid.Quartz.Dashboard.Repositorys;
 using Hybrid.Quartz.Plugins.History;
 
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Hybrid.Application.Services.Dtos;
-using Hybrid.AspNetCore.UI;
+
 using Quartz;
 using Quartz.Impl;
 using Quartz.Impl.Matchers;

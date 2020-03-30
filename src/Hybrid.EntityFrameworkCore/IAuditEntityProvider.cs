@@ -7,12 +7,11 @@
 //  <last-date>2019-03-08 4:29</last-date>
 // -----------------------------------------------------------------------
 
-using System.Collections.Generic;
+using Hybrid.Audits;
 
 using Microsoft.EntityFrameworkCore;
 
-using Hybrid.Audits;
-
+using System.Collections.Generic;
 
 namespace Hybrid.Entity
 {

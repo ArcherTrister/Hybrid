@@ -11,7 +11,6 @@ using System.Net.NetworkInformation;
 using System.Runtime.InteropServices;
 using System.Text;
 
-
 namespace Hybrid.Net
 {
     /// <summary>
@@ -52,6 +51,5 @@ namespace Hybrid.Net
 
         [DllImport("wininet.dll")]
         private static extern bool InternetGetConnectedState(out int connectionDescription, int reservedValue);
-
     }
 }

@@ -9,7 +9,6 @@
 
 using System;
 
-
 namespace Hybrid.Authorization.Functions
 {
     /// <summary>

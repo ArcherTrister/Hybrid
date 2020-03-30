@@ -7,11 +7,10 @@
 //  <last-date>2016-03-31 20:36</last-date>
 // -----------------------------------------------------------------------
 
-using System.Collections.Generic;
-using System.Threading.Tasks;
-
 using Hybrid.Extensions;
 
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Hybrid.Threading.Asyncs
 {

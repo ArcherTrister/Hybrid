@@ -7,13 +7,12 @@
 //  <last-date>2017-08-19 22:15</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Security.Principal;
-
 using Hybrid.Data;
 using Hybrid.Identity;
 using Hybrid.Reflection;
 
+using System;
+using System.Security.Principal;
 
 namespace Hybrid.Entity
 {
@@ -61,7 +60,7 @@ namespace Hybrid.Entity
             {
                 entity1.CreatedTime = DateTime.Now;
             }
-            
+
             return (TEntity)entity1;
         }
 

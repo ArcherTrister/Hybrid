@@ -7,10 +7,9 @@
 //  <last-date>2017-09-14 0:24</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-
 using Hybrid.Data;
 
+using System;
 
 namespace Hybrid.Mapping
 {

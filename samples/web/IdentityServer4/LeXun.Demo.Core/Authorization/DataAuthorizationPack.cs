@@ -7,16 +7,15 @@
 //  <last-date>2020-02-27 0:35</last-date>
 // -----------------------------------------------------------------------
 
-using LeXun.Demo.Authorization.Dtos;
-using LeXun.Demo.Authorization.Entities;
-
-using Microsoft.Extensions.DependencyInjection;
-
 using Hybrid.Authorization;
 using Hybrid.Authorization.Dtos;
 using Hybrid.Authorization.EntityInfos;
 using Hybrid.AutoMapper;
 
+using LeXun.Demo.Authorization.Dtos;
+using LeXun.Demo.Authorization.Entities;
+
+using Microsoft.Extensions.DependencyInjection;
 
 namespace LeXun.Demo.Authorization
 {

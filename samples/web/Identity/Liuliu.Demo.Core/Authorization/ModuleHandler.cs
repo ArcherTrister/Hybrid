@@ -7,13 +7,12 @@
 //  <last-date>2018-06-27 4:44</last-date>
 // -----------------------------------------------------------------------
 
-using System;
+using Hybrid.Authorization;
 
 using Liuliu.Demo.Authorization.Dtos;
 using Liuliu.Demo.Authorization.Entities;
 
-using Hybrid.Authorization;
-
+using System;
 
 namespace Liuliu.Demo.Authorization
 {

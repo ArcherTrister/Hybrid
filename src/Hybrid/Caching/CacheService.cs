@@ -7,14 +7,6 @@
 //  <last-date>2018-12-19 19:10</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Reflection;
-
-using Microsoft.Extensions.Caching.Distributed;
-
 using Hybrid.Authorization.Functions;
 using Hybrid.Collections;
 using Hybrid.Entity;
@@ -23,6 +15,13 @@ using Hybrid.Extensions;
 using Hybrid.Filter;
 using Hybrid.Reflection;
 
+using Microsoft.Extensions.Caching.Distributed;
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Reflection;
 
 namespace Hybrid.Caching
 {
@@ -485,7 +484,7 @@ namespace Hybrid.Caching
             return _cache.Get(key, () => source.ToOutput<TSource, TOutputDto>().ToArray(), function);
         }
 
-        #endregion
+        #endregion Implementation of ICacheService
 
         #region 私有方法
 
@@ -611,6 +610,6 @@ namespace Hybrid.Caching
             return $"Query:{key.ToMd5Hash()}";
         }
 
-        #endregion
+        #endregion 私有方法
     }
 }

@@ -7,10 +7,9 @@
 //  <last-date>2019-03-27 3:06</last-date>
 // -----------------------------------------------------------------------
 
-using System.Data.Common;
-
 using Microsoft.EntityFrameworkCore;
 
+using System.Data.Common;
 
 namespace Hybrid.Entity
 {

@@ -7,10 +7,9 @@
 //  <last-date>2015-08-03 18:29</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-
 using Hybrid.Extensions;
 
+using System;
 
 namespace Hybrid.Data
 {
@@ -48,7 +47,6 @@ namespace Hybrid.Data
             : base(type, message, data)
         { }
     }
-
 
     /// <summary>
     /// Hybrid结果基类

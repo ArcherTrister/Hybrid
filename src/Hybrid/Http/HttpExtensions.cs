@@ -7,6 +7,10 @@
 //  <last-date>2017-08-15 23:39</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Extensions;
+
+using Newtonsoft.Json;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,11 +18,6 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
-
-using Newtonsoft.Json;
-
-using Hybrid.Extensions;
-
 
 namespace Hybrid.Http
 {

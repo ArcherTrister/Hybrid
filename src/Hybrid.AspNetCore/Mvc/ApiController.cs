@@ -7,12 +7,11 @@
 //  <last-date>2018-05-04 20:30</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.AspNetCore.Mvc.Filters;
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-
-using Hybrid.AspNetCore.Mvc.Filters;
-
 
 namespace Hybrid.AspNetCore.Mvc
 {

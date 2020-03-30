@@ -7,11 +7,10 @@
 //  <last-date>2018-01-12 12:10</last-date>
 // -----------------------------------------------------------------------
 
-using System.Threading;
-using System.Threading.Tasks;
-
 using Hybrid.Dependency;
 
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Hybrid.EventBuses
 {
@@ -43,7 +42,6 @@ namespace Hybrid.EventBuses
         /// <returns></returns>
         Task HandleAsync(IEventData eventData, CancellationToken cancelToken = default(CancellationToken));
     }
-
 
     /// <summary>
     /// 定义泛型事件处理器

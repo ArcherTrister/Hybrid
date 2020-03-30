@@ -9,7 +9,6 @@
 
 using System;
 
-
 namespace Liuliu.Demo.Authorization.Dtos
 {
     /// <summary>

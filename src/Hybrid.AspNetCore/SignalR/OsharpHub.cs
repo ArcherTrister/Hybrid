@@ -7,6 +7,8 @@
 //  <last-date>2019-10-28 20:51</last-date>
 // -----------------------------------------------------------------------
 
+using Microsoft.AspNetCore.SignalR;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,9 +16,6 @@ using System.Reflection;
 using System.Reflection.Emit;
 using System.Threading;
 using System.Threading.Tasks;
-
-using Microsoft.AspNetCore.SignalR;
-
 
 namespace Hybrid.AspNetCore.SignalR
 {
@@ -92,7 +91,6 @@ namespace Hybrid.AspNetCore.SignalR
         }
     }
 
-
     /// <summary>
     /// 支持强类型的HybridHub基类
     /// </summary>
@@ -124,9 +122,7 @@ namespace Hybrid.AspNetCore.SignalR
                 this._clients = value;
             }
         }
-
     }
-
 
     internal class TypedHubClients<T> : IHubCallerClients<T>, IHubClients<T>
     {

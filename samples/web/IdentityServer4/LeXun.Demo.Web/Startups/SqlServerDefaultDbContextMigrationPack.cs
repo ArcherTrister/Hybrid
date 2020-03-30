@@ -7,13 +7,12 @@
 //  <last-date>2018-06-27 4:50</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.ComponentModel;
-
 using Hybrid.Core.Packs;
 using Hybrid.Entity;
 using Hybrid.Entity.SqlServer;
 
+using System;
+using System.ComponentModel;
 
 namespace LeXun.Demo.Web.Startups
 {

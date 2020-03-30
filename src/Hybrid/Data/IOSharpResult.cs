@@ -16,7 +16,6 @@ namespace Hybrid.Data
     public interface IHybridResult<TResultType> : IHybridResult<TResultType, object>
     { }
 
-
     /// <summary>
     /// Hybrid操作结果
     /// </summary>

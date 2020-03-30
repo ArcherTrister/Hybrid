@@ -7,13 +7,12 @@
 //  <last-date>2018-06-12 22:23</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-
-using Microsoft.Extensions.DependencyInjection;
-
 using Hybrid.Authorization.Functions;
 using Hybrid.EventBuses;
 
+using Microsoft.Extensions.DependencyInjection;
+
+using System;
 
 namespace Hybrid.Authorization.Events
 {
@@ -22,7 +21,6 @@ namespace Hybrid.Authorization.Events
     /// </summary>
     public class FunctionCacheRefreshEventData : EventDataBase
     { }
-
 
     /// <summary>
     /// 功能信息缓存刷新事件处理器

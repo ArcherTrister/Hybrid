@@ -11,7 +11,6 @@ using Hybrid.Core.Packs;
 using Hybrid.Dependency;
 using Hybrid.EventBuses;
 
-
 namespace Hybrid.Core.Builders
 {
     /// <summary>
@@ -29,6 +28,14 @@ namespace Hybrid.Core.Builders
                 .AddPack<EventBusPack>();
 
             return builder;
+        }
+
+        /// <summary>
+        /// 添加CoreModule
+        /// </summary>
+        public static IHybridBuilder AddCoreModule(this IHybridBuilder builder)
+        {
+            return builder.AddModule<HybridCorePack>();
         }
     }
 }

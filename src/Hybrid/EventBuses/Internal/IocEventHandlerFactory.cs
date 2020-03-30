@@ -7,12 +7,11 @@
 //  <last-date>2017-09-19 3:56</last-date>
 // -----------------------------------------------------------------------
 
-using System;
+using Hybrid.Dependency;
 
 using Microsoft.Extensions.DependencyInjection;
 
-using Hybrid.Dependency;
-
+using System;
 
 namespace Hybrid.EventBuses.Internal
 {

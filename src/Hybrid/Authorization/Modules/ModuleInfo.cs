@@ -7,12 +7,11 @@
 //  <last-date>2020-02-10 20:13</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Diagnostics;
-
 using Hybrid.Authorization.Functions;
 using Hybrid.Entity;
 
+using System;
+using System.Diagnostics;
 
 namespace Hybrid.Authorization.Modules
 {
@@ -79,6 +78,6 @@ namespace Hybrid.Authorization.Modules
             return HashCode.Combine(Position, Code);
         }
 
-        #endregion
+        #endregion Overrides of Object
     }
 }

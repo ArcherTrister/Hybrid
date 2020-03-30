@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Hybrid.Application.Services.Dtos
+﻿namespace Hybrid.Application.Services.Dtos
 {
     /// <summary>
     /// This interface is defined to standardize to return a page of items to clients.

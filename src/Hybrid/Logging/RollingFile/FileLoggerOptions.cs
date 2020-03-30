@@ -1,7 +1,6 @@
-﻿using System;
+﻿using Hybrid.Logging.RollingFile.Internal;
 
-using Hybrid.Logging.RollingFile.Internal;
-
+using System;
 
 namespace Hybrid.Logging.RollingFile
 {
@@ -14,7 +13,6 @@ namespace Hybrid.Logging.RollingFile
         private int? _fileSizeLimit = 10 * 1024 * 1024;
         private int? _retainedFileCountLimit = 2;
         private string _fileName = "log-";
-
 
         /// <summary>
         /// Gets or sets a strictly positive value representing the maximum log size in bytes or null for no limit.

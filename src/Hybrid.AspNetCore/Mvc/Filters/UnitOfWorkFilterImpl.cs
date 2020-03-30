@@ -7,18 +7,17 @@
 //  <last-date>2019-05-14 17:29</last-date>
 // -----------------------------------------------------------------------
 
-using System;
+using Hybrid.AspNetCore.UI;
+using Hybrid.Data;
+using Hybrid.Dependency;
+using Hybrid.Entity;
 
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-using Hybrid.AspNetCore.UI;
-using Hybrid.Data;
-using Hybrid.Dependency;
-using Hybrid.Entity;
-
+using System;
 
 namespace Hybrid.AspNetCore.Mvc.Filters
 {
@@ -102,15 +101,19 @@ namespace Hybrid.AspNetCore.Mvc.Filters
                     case 401:
                         type = AjaxResultType.UnAuth;
                         break;
+
                     case 403:
                         type = AjaxResultType.UnAuth;
                         break;
+
                     case 404:
                         type = AjaxResultType.UnAuth;
                         break;
+
                     case 423:
                         type = AjaxResultType.UnAuth;
                         break;
+
                     default:
                         type = AjaxResultType.Error;
                         break;

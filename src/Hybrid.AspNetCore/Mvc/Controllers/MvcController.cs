@@ -1,14 +1,16 @@
-﻿using Microsoft.AspNetCore.Localization;
-using Microsoft.AspNetCore.Mvc;
-using Hybrid.Data;
+﻿using Hybrid.Data;
 using Hybrid.Exceptions;
+using Hybrid.Extensions;
 using Hybrid.Localization;
 using Hybrid.Localization.Sources;
 using Hybrid.Security;
+
+using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Mvc;
+
 using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
-using Hybrid.Extensions;
 
 namespace Hybrid.AspNetCore.Mvc.Controllers
 {

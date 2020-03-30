@@ -11,7 +11,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-
 namespace Hybrid.Finders
 {
     /// <summary>

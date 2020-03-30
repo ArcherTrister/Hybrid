@@ -7,13 +7,12 @@
 //  <last-date>2019-04-09 22:52</last-date>
 // -----------------------------------------------------------------------
 
-using System.Threading;
+using Hybrid.Threading;
 
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 
-using Hybrid.Threading;
-
+using System.Threading;
 
 namespace Hybrid.AspNetCore
 {

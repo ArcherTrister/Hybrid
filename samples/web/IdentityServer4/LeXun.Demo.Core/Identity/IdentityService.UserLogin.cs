@@ -7,16 +7,15 @@
 //  <last-date>2019-03-24 17:11</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Linq;
-using System.Threading.Tasks;
-
-using LeXun.Demo.Identity.Entities;
-
 using Hybrid.Data;
 using Hybrid.Exceptions;
 using Hybrid.Identity;
 
+using LeXun.Demo.Identity.Entities;
+
+using System;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace LeXun.Demo.Identity
 {
@@ -55,6 +54,5 @@ namespace LeXun.Demo.Identity
                     return Task.FromResult(0);
                 });
         }
-
     }
 }

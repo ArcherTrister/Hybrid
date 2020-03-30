@@ -7,7 +7,7 @@
 //  <last-date>2018-06-27 4:48</last-date>
 // -----------------------------------------------------------------------
 
-using System;
+using Hybrid.Entity;
 
 using Liuliu.Demo.Authorization.Entities;
 using Liuliu.Demo.Identity.Entities;
@@ -15,8 +15,7 @@ using Liuliu.Demo.Identity.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-using Hybrid.Entity;
-
+using System;
 
 namespace Liuliu.Demo.EntityConfiguration.Authorization
 {

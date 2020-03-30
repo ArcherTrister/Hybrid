@@ -7,22 +7,6 @@
 //  <last-date>2019-10-19 17:36</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.ComponentModel;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Threading.Tasks;
-
-using Liuliu.Demo.Identity;
-using Liuliu.Demo.Identity.Dtos;
-using Liuliu.Demo.Identity.Entities;
-
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-
 using Hybrid.AspNetCore;
 using Hybrid.AspNetCore.Mvc.Filters;
 using Hybrid.AspNetCore.UI;
@@ -39,6 +23,21 @@ using Hybrid.Json;
 using Hybrid.Mapping;
 using Hybrid.Net;
 
+using Liuliu.Demo.Identity;
+using Liuliu.Demo.Identity.Dtos;
+using Liuliu.Demo.Identity.Entities;
+
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+
+using System;
+using System.ComponentModel;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace Liuliu.Demo.Web.Controllers
 {

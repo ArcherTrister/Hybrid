@@ -7,13 +7,12 @@
 //  <last-date>2020-03-07 1:12</last-date>
 // -----------------------------------------------------------------------
 
-using System.ComponentModel;
-
-using Microsoft.AspNetCore.Authorization;
-
 using Hybrid.AspNetCore.Mvc;
 using Hybrid.Authorization;
 
+using Microsoft.AspNetCore.Authorization;
+
+using System.ComponentModel;
 
 namespace Liuliu.Demo.Web.Controllers
 {

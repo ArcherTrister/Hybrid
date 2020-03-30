@@ -8,7 +8,6 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.AspNetCore.Mvc;
-using Hybrid.Extensions;
 using Hybrid.Finders;
 using Hybrid.Reflection;
 

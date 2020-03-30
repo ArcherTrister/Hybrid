@@ -10,7 +10,6 @@
 using Hybrid.Authorization.Functions;
 using Hybrid.Mapping;
 
-
 namespace Hybrid.Authorization.Dtos
 {
     /// <summary>

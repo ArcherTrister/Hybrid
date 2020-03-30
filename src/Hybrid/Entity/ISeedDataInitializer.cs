@@ -9,7 +9,6 @@
 
 using Hybrid.Dependency;
 
-
 namespace Hybrid.Entity
 {
     /// <summary>

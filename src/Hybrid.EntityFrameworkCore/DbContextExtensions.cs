@@ -7,9 +7,10 @@
 //  <last-date>2017-09-20 1:06</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Linq;
-using System.Threading.Tasks;
+using Hybrid.Collections;
+using Hybrid.Core.Options;
+using Hybrid.Data;
+using Hybrid.Exceptions;
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
@@ -18,11 +19,9 @@ using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-using Hybrid.Collections;
-using Hybrid.Core.Options;
-using Hybrid.Data;
-using Hybrid.Exceptions;
-
+using System;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Hybrid.Entity
 {

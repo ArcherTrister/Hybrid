@@ -9,7 +9,6 @@
 
 using Hybrid.Authorization.Dtos;
 
-
 namespace LeXun.Demo.Authorization.Dtos
 {
     /// <summary>

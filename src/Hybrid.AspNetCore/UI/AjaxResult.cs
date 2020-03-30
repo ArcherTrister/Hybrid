@@ -8,12 +8,13 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.Data;
+
 using System;
 
 namespace Hybrid.AspNetCore.UI
 {
     ///// <summary>
-    ///// 表示Ajax操作结果 
+    ///// 表示Ajax操作结果
     ///// </summary>
     //public class AjaxResult
     //{

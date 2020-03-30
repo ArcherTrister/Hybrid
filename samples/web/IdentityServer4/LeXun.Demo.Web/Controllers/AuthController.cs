@@ -7,10 +7,11 @@
 //  <last-date>2018-06-27 4:50</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
+using Hybrid.AspNetCore.Mvc;
+using Hybrid.Authorization;
+using Hybrid.Authorization.Functions;
+using Hybrid.Authorization.Modules;
+using Hybrid.Collections;
 
 using LeXun.Demo.Authorization;
 using LeXun.Demo.Authorization.Entities;
@@ -18,12 +19,10 @@ using LeXun.Demo.Authorization.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 
-using Hybrid.AspNetCore.Mvc;
-using Hybrid.Authorization;
-using Hybrid.Authorization.Functions;
-using Hybrid.Authorization.Modules;
-using Hybrid.Collections;
-
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
 
 namespace LeXun.Demo.Web.Controllers
 {
@@ -95,7 +94,7 @@ namespace LeXun.Demo.Web.Controllers
         {
             IServiceProvider services = HttpContext.RequestServices;
             IFunctionAuthorization authorization = services.GetService<IFunctionAuthorization>();
-          
+
             Function[] functions = _functionAuthManager.ModuleFunctions.Where(m => m.ModuleId == module.Id).Select(m => m.Function).ToArray();
             empty = functions.Length == 0;
             if (empty)
@@ -122,7 +121,6 @@ namespace LeXun.Demo.Web.Controllers
             string[] names = pathIds.Select(m => source.First(n => n.Id == m)).Select(m => m.Code).ToArray();
             return names.ExpandAndToString(".");
         }
-
 
         private class AuthItem
         {

@@ -1,21 +1,17 @@
-﻿using System;
-using System.ComponentModel;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Hybrid.Authorization.Modules;
+using Hybrid.Collections;
+using Hybrid.Core.Options;
+using Hybrid.Entity;
+using Hybrid.Redis;
 
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyModel;
-using Hybrid.AspNetCore.Mvc.Filters;
-using Hybrid.Authorization.Modules;
-using Hybrid.Collections;
-using Hybrid.Core.Options;
-using Hybrid.Core.Systems;
-using Hybrid.Entity;
-using Hybrid.Extensions;
-using Hybrid.Redis;
+
+using System;
+using System.ComponentModel;
+using System.Linq;
 
 //using StackExchange.Profiling.Internal;
-
 
 namespace LeXun.Demo.Web.Controllers
 {

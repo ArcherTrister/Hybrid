@@ -9,7 +9,6 @@
 using System;
 using System.Collections.Generic;
 
-
 namespace Hybrid.Data
 {
     /// <summary>
@@ -33,7 +32,6 @@ namespace Hybrid.Data
             }
         }
     }
-
 
     /// <summary>
     /// 提供一个字典容器，按类型装载所有<see cref="Singleton{T}"/>的单例实例

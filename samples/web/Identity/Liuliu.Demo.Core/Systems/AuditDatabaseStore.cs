@@ -7,18 +7,17 @@
 //  <last-date>2018-08-02 4:31</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Threading;
-using System.Threading.Tasks;
-
-using Liuliu.Demo.Systems.Entities;
-
 using Hybrid.Audits;
 using Hybrid.Data;
 using Hybrid.Entity;
 using Hybrid.Mapping;
 using Hybrid.Net;
 
+using Liuliu.Demo.Systems.Entities;
+
+using System;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Liuliu.Demo.Systems
 {

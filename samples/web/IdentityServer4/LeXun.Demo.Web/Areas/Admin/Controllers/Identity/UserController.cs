@@ -7,23 +7,6 @@
 //  <last-date>2018-06-27 4:49</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Threading.Tasks;
-
-using LeXun.Demo.Authorization;
-using LeXun.Demo.Authorization.Dtos;
-using LeXun.Demo.Common.Dtos;
-using LeXun.Demo.Identity;
-using LeXun.Demo.Identity.Dtos;
-using LeXun.Demo.Identity.Entities;
-
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-
 using Hybrid.AspNetCore.Mvc;
 using Hybrid.AspNetCore.Mvc.Filters;
 using Hybrid.AspNetCore.UI;
@@ -39,6 +22,22 @@ using Hybrid.Filter;
 using Hybrid.Identity;
 using Hybrid.Mapping;
 
+using LeXun.Demo.Authorization;
+using LeXun.Demo.Authorization.Dtos;
+using LeXun.Demo.Common.Dtos;
+using LeXun.Demo.Identity;
+using LeXun.Demo.Identity.Dtos;
+using LeXun.Demo.Identity.Entities;
+
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace LeXun.Demo.Web.Areas.Admin.Controllers
 {
@@ -100,20 +99,7 @@ namespace LeXun.Demo.Web.Areas.Admin.Controllers
                 Deletable = deleteFunc(m.D)
             }).ToArray());
 
-
             return page.ToPageData();
-
-
-
-
-
-
-
-
-
-
-
-
         }
 
         /// <summary>

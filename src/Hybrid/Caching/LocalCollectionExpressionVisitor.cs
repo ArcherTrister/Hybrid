@@ -7,14 +7,13 @@
 //  <last-date>2016-11-16 23:34</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Reflection;
+
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-
-using Hybrid.Reflection;
-
 
 namespace Hybrid.Caching
 {
@@ -68,6 +67,6 @@ namespace Hybrid.Caching
             return base.VisitMethodCall(node);
         }
 
-        #endregion
+        #endregion Overrides of ExpressionVisitor
     }
 }

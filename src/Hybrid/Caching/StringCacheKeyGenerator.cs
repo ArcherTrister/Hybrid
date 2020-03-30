@@ -10,7 +10,6 @@
 using Hybrid.Collections;
 using Hybrid.Extensions;
 
-
 namespace Hybrid.Caching
 {
     /// <summary>

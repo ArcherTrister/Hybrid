@@ -7,19 +7,14 @@
 //  <last-date>2018-12-14 16:25</last-date>
 // -----------------------------------------------------------------------
 
-using System;
+using Hybrid.Core.Packs;
+using Hybrid.Exceptions;
+using Hybrid.Extensions;
 
 using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
-
-using Hybrid.Core.Packs;
-using Hybrid.Exceptions;
-using Hybrid.Extensions;
-
-using StackExchange.Redis;
-
 
 namespace Hybrid.Redis
 {

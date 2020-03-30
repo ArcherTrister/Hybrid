@@ -7,10 +7,9 @@
 //  <last-date>2018-07-05 4:28</last-date>
 // -----------------------------------------------------------------------
 
-using System.Collections.Generic;
-
 using Hybrid.EventBuses;
 
+using System.Collections.Generic;
 
 namespace Hybrid.Authorization.Events
 {
@@ -37,7 +36,6 @@ namespace Hybrid.Authorization.Events
             return SetItems.Count > 0 || RemoveItems.Count > 0;
         }
     }
-
 
     /// <summary>
     /// 数据权限缓存刷新事件处理器

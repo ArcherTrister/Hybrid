@@ -7,11 +7,10 @@
 //  <last-date>2018-12-31 0:45</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 
+using System;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
@@ -30,7 +29,7 @@ namespace Microsoft.Extensions.DependencyInjection
             return services.GetSingletonInstance<IWebHostEnvironment>();
         }
 
-        #endregion
+        #endregion IServiceCollection
 
         #region IServiceProvider
 
@@ -52,6 +51,6 @@ namespace Microsoft.Extensions.DependencyInjection
             return context != null;
         }
 
-        #endregion
+        #endregion IServiceProvider
     }
 }

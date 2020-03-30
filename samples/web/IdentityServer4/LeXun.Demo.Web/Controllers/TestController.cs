@@ -7,10 +7,10 @@
 //  <last-date>2018-06-27 4:50</last-date>
 // -----------------------------------------------------------------------
 
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Threading.Tasks;
+using Hybrid.AspNetCore;
+using Hybrid.AspNetCore.Mvc.Filters;
+using Hybrid.Collections;
+using Hybrid.Data;
 
 using LeXun.Demo.Identity;
 using LeXun.Demo.Identity.Dtos;
@@ -22,11 +22,10 @@ using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-using Hybrid.AspNetCore;
-using Hybrid.AspNetCore.Mvc.Filters;
-using Hybrid.Collections;
-using Hybrid.Data;
-
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace LeXun.Demo.Web.Controllers
 {
@@ -74,7 +73,7 @@ namespace LeXun.Demo.Web.Controllers
 
                 dto = new RegisterDto()
                 {
-                    UserName ="osharp",
+                    UserName = "osharp",
                     Password = "osharp123456",
                     Email = "mf.guo@qq.com",
                     NickName = "测试号",
@@ -92,9 +91,7 @@ namespace LeXun.Demo.Web.Controllers
 
             return list.ExpandAndToString("\r\n");
         }
-
     }
-
 
     public class ClassFilter : ActionFilterAttribute, IExceptionFilter
     {
@@ -164,6 +161,5 @@ namespace LeXun.Demo.Web.Controllers
         {
             _logger.LogInformation("MethodFilter - OnResultExecuted");
         }
-
     }
 }

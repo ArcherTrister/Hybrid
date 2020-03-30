@@ -7,10 +7,11 @@
 //  <last-date>2018-06-27 4:49</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.ComponentModel;
-using System.Linq;
-using System.Linq.Expressions;
+using Hybrid.Authorization.Functions;
+using Hybrid.Authorization.Modules;
+using Hybrid.Entity;
+using Hybrid.Filter;
+using Hybrid.Linq;
 
 using LeXun.Demo.Authorization;
 using LeXun.Demo.Authorization.Dtos;
@@ -20,12 +21,10 @@ using LeXun.Demo.Identity.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
-using Hybrid.Authorization.Functions;
-using Hybrid.Authorization.Modules;
-using Hybrid.Entity;
-using Hybrid.Filter;
-using Hybrid.Linq;
-
+using System;
+using System.ComponentModel;
+using System.Linq;
+using System.Linq.Expressions;
 
 namespace LeXun.Demo.Web.Areas.Admin.Controllers
 {
@@ -37,7 +36,7 @@ namespace LeXun.Demo.Web.Areas.Admin.Controllers
         private readonly RoleManager<Role> _roleManager;
         private readonly IFilterService _filterService;
 
-        public RoleFunctionController(FunctionAuthManager functionAuthManager, 
+        public RoleFunctionController(FunctionAuthManager functionAuthManager,
             RoleManager<Role> roleManager,
             IFilterService filterService)
         {

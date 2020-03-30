@@ -9,7 +9,6 @@
 
 using Microsoft.AspNetCore.Identity;
 
-
 namespace Hybrid.Identity.OAuth2
 {
     /// <summary>

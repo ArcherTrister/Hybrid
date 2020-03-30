@@ -12,7 +12,6 @@ using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
 
-
 namespace Hybrid.Net
 {
     /// <summary>
@@ -248,6 +247,7 @@ namespace Hybrid.Net
                     offset = endIpOff + 8L;
                     local = (1 == countryFlag) ? "" : GetFlagStr(ref offset, ref countryFlag, ref endIpOff);
                     break;
+
                 default:
                     country = GetFlagStr(ref offset, ref countryFlag, ref endIpOff);
                     local = GetFlagStr(ref offset, ref countryFlag, ref endIpOff);

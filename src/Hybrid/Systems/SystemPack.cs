@@ -7,14 +7,13 @@
 //  <last-date>2018-06-25 21:12</last-date>
 // -----------------------------------------------------------------------
 
-using System.ComponentModel;
+using Hybrid.Core.Packs;
+using Hybrid.Core.Systems;
 
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
-using Hybrid.Core.Packs;
-using Hybrid.Core.Systems;
-
+using System.ComponentModel;
 
 namespace Hybrid.Systems
 {

@@ -99,18 +99,18 @@
                                 </div>
                             }
                             @*@if (Model.TriggerType.IndexOf("DailyTimeIntervalTrigger", StringComparison.OrdinalIgnoreCase) > -1)
-                            {
+                                {
 
-                            }
-                            <div class="row">
-                                <div class="col-xs-4">@L("Calendar")</div>
-                                <div class="col-xs-8">
-                                    @if (Model.Calendar)
-                                    {
-                                        <a asp-area="Quartz" asp-controller="Calendars" asp-action="Details" asp-all-route-data="null" route-href="params.bind: { schedulerName: scheduler.name, name: details.calendar }">@L(Model.Calendar)</a>
-                                    }
-                                </div>
-                            </div>*@
+                                }
+                                <div class="row">
+                                    <div class="col-xs-4">@L("Calendar")</div>
+                                    <div class="col-xs-8">
+                                        @if (Model.Calendar)
+                                        {
+                                            <a asp-area="Quartz" asp-controller="Calendars" asp-action="Details" asp-all-route-data="null" route-href="params.bind: { schedulerName: scheduler.name, name: details.calendar }">@L(Model.Calendar)</a>
+                                        }
+                                    </div>
+                                </div>*@
                         </div>
                     </div>
                 </li>
@@ -124,9 +124,10 @@
                                 <pre>
                                     @foreach(DateTimeOffset fireTime in Model.NextFireTimes)
                                     {
-                                        <code>
+                                <code>
                                             @fireTime.ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss")
-                                            <br />
+                                <br />
+
                                         </code>
                                     }
                                 </pre>

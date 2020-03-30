@@ -1,7 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
-
-using Hybrid.Application.Services.Dtos;
+﻿using Hybrid.Application.Services.Dtos;
 using Hybrid.Collections;
+
+using Microsoft.EntityFrameworkCore;
+
 using Quartz;
 
 using System;

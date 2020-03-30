@@ -7,18 +7,6 @@
 //  <last-date>2018-06-27 4:49</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.ComponentModel;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Threading.Tasks;
-
-using Liuliu.Demo.Authorization;
-using Liuliu.Demo.Authorization.Dtos;
-using Liuliu.Demo.Common.Dtos;
-
-using Microsoft.AspNetCore.Mvc;
-
 using Hybrid.AspNetCore.Mvc;
 using Hybrid.AspNetCore.Mvc.Filters;
 using Hybrid.AspNetCore.UI;
@@ -30,6 +18,17 @@ using Hybrid.Data;
 using Hybrid.Entity;
 using Hybrid.Filter;
 
+using Liuliu.Demo.Authorization;
+using Liuliu.Demo.Authorization.Dtos;
+using Liuliu.Demo.Common.Dtos;
+
+using Microsoft.AspNetCore.Mvc;
+
+using System;
+using System.ComponentModel;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace Liuliu.Demo.Web.Areas.Admin.Controllers
 {

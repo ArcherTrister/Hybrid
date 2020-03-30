@@ -7,16 +7,15 @@
 //  <last-date>2018-08-01 21:39</last-date>
 // -----------------------------------------------------------------------
 
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
-
 using Hybrid.Data;
 using Hybrid.Dependency;
 using Hybrid.EventBuses;
 using Hybrid.Extensions;
 
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Hybrid.Audits
 {
@@ -40,7 +39,6 @@ namespace Hybrid.Audits
         /// </summary>
         public IEnumerable<AuditEntityEntry> AuditEntities { get; }
     }
-
 
     /// <summary>
     /// 数据审计信息处理器

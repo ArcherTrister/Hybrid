@@ -7,12 +7,6 @@
 //  <last-date>2018-12-20 0:15</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Linq.Expressions;
-using System.Security.Claims;
-
-using Microsoft.Extensions.DependencyInjection;
-
 using Hybrid.Authorization;
 using Hybrid.Data;
 using Hybrid.Dependency;
@@ -20,6 +14,11 @@ using Hybrid.Identity;
 using Hybrid.Linq;
 using Hybrid.Reflection;
 
+using Microsoft.Extensions.DependencyInjection;
+
+using System;
+using System.Linq.Expressions;
+using System.Security.Claims;
 
 namespace Hybrid.Filter
 {
@@ -49,7 +48,6 @@ namespace Hybrid.Filter
         public virtual Expression<Func<T, bool>> GetExpression<T>(FilterGroup group)
         {
             return FilterHelper.GetExpression<T>(group);
-
         }
 
         /// <summary>
@@ -132,6 +130,6 @@ namespace Hybrid.Filter
             return FilterHelper.CheckFilterGroup(group, type);
         }
 
-        #endregion
+        #endregion Implementation of IFilterService
     }
 }

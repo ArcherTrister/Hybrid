@@ -7,19 +7,18 @@
 //  <last-date>2020-03-06 21:56</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Linq;
-using System.Linq.Expressions;
+using Hybrid.Entity;
+using Hybrid.Exceptions;
+using Hybrid.Identity;
 
 using Liuliu.Demo.Identity.Entities;
 
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 
-using Hybrid.Entity;
-using Hybrid.Exceptions;
-using Hybrid.Identity;
-
+using System;
+using System.Linq;
+using System.Linq.Expressions;
 
 namespace Liuliu.Demo.Identity
 {
@@ -87,5 +86,3 @@ namespace Liuliu.Demo.Identity
         }
     }
 }
-
-

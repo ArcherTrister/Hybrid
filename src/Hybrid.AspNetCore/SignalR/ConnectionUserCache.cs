@@ -7,14 +7,13 @@
 //  <last-date>2019-01-04 20:30</last-date>
 // -----------------------------------------------------------------------
 
-using System.Linq;
-using System.Threading.Tasks;
-
-using Microsoft.Extensions.Caching.Distributed;
-
 using Hybrid.Caching;
 using Hybrid.Collections;
 
+using Microsoft.Extensions.Caching.Distributed;
+
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Hybrid.AspNetCore.SignalR
 {

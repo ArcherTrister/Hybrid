@@ -14,6 +14,5 @@ namespace LeXun.Demo.Systems
     /// </summary>
     public interface ISystemsContract
     {
-
     }
 }

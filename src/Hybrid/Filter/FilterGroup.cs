@@ -6,12 +6,11 @@
 //  <last-date>2015-07-26 15:20</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Properties;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
-
-using Hybrid.Properties;
-
 
 namespace Hybrid.Filter
 {
@@ -50,7 +49,7 @@ namespace Hybrid.Filter
             Groups = new List<FilterGroup>();
         }
 
-        #endregion
+        #endregion 构造函数
 
         /// <summary>
         /// 获取或设置 条件集合

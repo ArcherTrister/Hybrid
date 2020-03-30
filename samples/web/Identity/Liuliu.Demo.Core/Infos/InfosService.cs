@@ -11,14 +11,13 @@
 //  <last-editor>ArcherTrister</last-editor>
 // -----------------------------------------------------------------------
 
-using System;
+using Hybrid.Entity;
 
 using Liuliu.Demo.Identity.Entities;
 
 using Microsoft.Extensions.DependencyInjection;
 
-using Hybrid.Entity;
-
+using System;
 
 namespace Liuliu.Demo.Infos
 {

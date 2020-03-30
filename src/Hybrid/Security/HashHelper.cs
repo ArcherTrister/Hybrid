@@ -6,11 +6,10 @@
 //  <last-date>2014:07:05 15:18</last-date>
 // -----------------------------------------------------------------------
 
-using System.Security.Cryptography;
-using System.Text;
-
 using Hybrid.Extensions;
 
+using System.Security.Cryptography;
+using System.Text;
 
 namespace Hybrid.Security
 {

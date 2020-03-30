@@ -6,13 +6,12 @@
 //  <last-date>2014:07:04 17:42</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Data;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-
-using Hybrid.Data;
-
 
 namespace Hybrid.Linq
 {
@@ -34,7 +33,7 @@ namespace Hybrid.Linq
             Check.NotNull(first, nameof(first));
             Check.NotNull(second, nameof(second));
             Check.NotNull(merge, nameof(merge));
-            
+
             Dictionary<ParameterExpression, ParameterExpression> map =
                 first.Parameters.Select((f, i) => new { f, s = second.Parameters[i] }).ToDictionary(p => p.s, p => p.f);
             Expression secondBody = ParameterRebinder.ReplaceParameters(map, second.Body);
@@ -70,7 +69,6 @@ namespace Hybrid.Linq
             Check.NotNull(second, nameof(second));
             return ifExp ? first.Compose(second, Expression.OrElse) : first;
         }
-        
 
         private class ParameterRebinder : ExpressionVisitor
         {

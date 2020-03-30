@@ -1,12 +1,12 @@
-﻿using Hybrid.Quartz.Dashboard.Models.Dtos;
-
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Hybrid.AspNetCore;
+﻿using Hybrid.AspNetCore;
 using Hybrid.AspNetCore.Extensions;
 using Hybrid.AspNetCore.UI;
 using Hybrid.Data;
+using Hybrid.Quartz.Dashboard.Models.Dtos;
 using Hybrid.Security;
+
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 
 using Quartz;
 

@@ -9,7 +9,6 @@
 
 using System.ComponentModel;
 
-
 namespace Hybrid.AspNetCore.Mvc
 {
     /// <summary>

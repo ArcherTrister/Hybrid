@@ -1,4 +1,5 @@
 ﻿using Hybrid.Identity.JwtBearer;
+
 using System.Collections.Generic;
 
 namespace Hybrid.Identity

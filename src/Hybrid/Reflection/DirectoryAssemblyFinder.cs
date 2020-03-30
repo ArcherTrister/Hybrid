@@ -13,7 +13,6 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 
-
 namespace Hybrid.Reflection
 {
     /// <summary>
@@ -23,7 +22,7 @@ namespace Hybrid.Reflection
     {
         private static readonly ConcurrentDictionary<string, Assembly[]> CacheDict = new ConcurrentDictionary<string, Assembly[]>();
         private readonly string _path;
-        
+
         /// <summary>
         /// 初始化一个<see cref="DirectoryAssemblyFinder"/>类型的新实例
         /// </summary>
@@ -60,6 +59,5 @@ namespace Hybrid.Reflection
             CacheDict[_path] = assemblies;
             return assemblies;
         }
-
     }
 }

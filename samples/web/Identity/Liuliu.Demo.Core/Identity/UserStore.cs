@@ -7,14 +7,13 @@
 //  <last-date>2020-01-31 19:34</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-
-using Liuliu.Demo.Identity.Entities;
-
 using Hybrid.Entity;
 using Hybrid.EventBuses;
 using Hybrid.Identity;
 
+using Liuliu.Demo.Identity.Entities;
+
+using System;
 
 namespace Liuliu.Demo.Identity
 {

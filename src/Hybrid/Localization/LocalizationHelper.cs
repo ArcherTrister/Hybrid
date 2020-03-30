@@ -1,5 +1,4 @@
 using Hybrid.Dependency;
-using Hybrid.Extensions;
 using Hybrid.Localization.Sources;
 
 using Microsoft.Extensions.DependencyInjection;

@@ -7,15 +7,14 @@
 //  <last-date>2018-12-14 15:57</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection.Extensions;
-
 using Hybrid.Authorization.EntityInfos;
 using Hybrid.Core.Packs;
 using Hybrid.EventBuses;
 
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
+
+using System;
 
 namespace Hybrid.Entity
 {

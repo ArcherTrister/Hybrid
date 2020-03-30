@@ -10,7 +10,6 @@
 using System;
 using System.ComponentModel;
 
-
 namespace Hybrid.Entity
 {
     /// <summary>

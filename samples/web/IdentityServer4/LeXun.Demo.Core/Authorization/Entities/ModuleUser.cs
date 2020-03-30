@@ -7,12 +7,11 @@
 //  <last-date>2019-01-06 15:25</last-date>
 // -----------------------------------------------------------------------
 
-using System.ComponentModel;
+using Hybrid.Authorization.Entities;
 
 using LeXun.Demo.Identity.Entities;
 
-using Hybrid.Authorization.Entities;
-
+using System.ComponentModel;
 
 namespace LeXun.Demo.Authorization.Entities
 {

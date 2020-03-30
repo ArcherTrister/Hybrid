@@ -9,7 +9,6 @@
 
 using Hybrid.EventBuses;
 
-
 namespace Liuliu.Demo.Identity.Events
 {
     /// <summary>

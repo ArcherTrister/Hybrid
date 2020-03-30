@@ -7,13 +7,12 @@
 //  <last-date>2018-08-02 4:33</last-date>
 // -----------------------------------------------------------------------
 
-using System.ComponentModel;
-
-using Microsoft.Extensions.DependencyInjection;
-
 using Hybrid.Audits;
 using Hybrid.Core.Packs;
 
+using Microsoft.Extensions.DependencyInjection;
+
+using System.ComponentModel;
 
 namespace Liuliu.Demo.Systems
 {

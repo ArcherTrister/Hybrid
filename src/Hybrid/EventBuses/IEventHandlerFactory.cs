@@ -9,7 +9,6 @@
 
 using Hybrid.EventBuses.Internal;
 
-
 namespace Hybrid.EventBuses
 {
     /// <summary>

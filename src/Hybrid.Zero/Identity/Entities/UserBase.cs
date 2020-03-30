@@ -15,7 +15,6 @@ using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-
 namespace Hybrid.Identity.Entities
 {
     /// <summary>

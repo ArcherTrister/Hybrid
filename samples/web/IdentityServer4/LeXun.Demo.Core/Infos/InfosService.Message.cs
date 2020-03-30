@@ -7,20 +7,19 @@
 //  <last-date>2019-10-12 0:11</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Hybrid.Collections;
+using Hybrid.Data;
+using Hybrid.Exceptions;
 
 using LeXun.Demo.Identity.Entities;
 using LeXun.Demo.Infos.Dtos;
 using LeXun.Demo.Infos.Entities;
 using LeXun.Demo.Infos.Events;
 
-using Hybrid.Collections;
-using Hybrid.Data;
-using Hybrid.Exceptions;
-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace LeXun.Demo.Infos
 {

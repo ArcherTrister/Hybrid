@@ -27,7 +27,6 @@
     <link href="~/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="~/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="~/js/ie-emulation-modes-warning.js"></script>
@@ -43,7 +42,6 @@
     <script src="~/js/jquery.min.js"></script>
     <script src="~/js/bootstrap.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
-
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="~/js/ie10-viewport-bug-workaround.js"></script>
 </head>
@@ -93,7 +91,7 @@
     @section Scripts {
         @await Html.PartialAsync("_ValidationScriptsPartial")
     }
-<script>
+    <script>
     jQuery.extend(jQuery.validator.messages, {
         required: "这是必填字段",
         remote: "请修正该字段",
@@ -113,6 +111,6 @@
         max: jQuery.validator.format("请输入一个最大为{0} 的值"),
         min: jQuery.validator.format("请输入一个最小为{0} 的值")
     });
-</script>
+    </script>
 </body>
 </html>

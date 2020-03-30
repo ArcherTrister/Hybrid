@@ -9,7 +9,6 @@
 
 using Hybrid.EventBuses;
 
-
 namespace LeXun.Demo.Identity.Events
 {
     /// <summary>

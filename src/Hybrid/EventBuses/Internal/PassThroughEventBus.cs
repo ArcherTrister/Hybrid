@@ -7,10 +7,9 @@
 //  <last-date>2018-01-12 15:31</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-
 using Hybrid.Dependency;
 
+using System;
 
 namespace Hybrid.EventBuses.Internal
 {

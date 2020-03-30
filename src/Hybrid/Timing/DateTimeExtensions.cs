@@ -7,11 +7,10 @@
 //  <last-date>2017-08-15 14:24</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Linq;
-
 using Hybrid.Data;
 
+using System;
+using System.Linq;
 
 namespace Hybrid.Timing
 {

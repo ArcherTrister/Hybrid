@@ -7,10 +7,9 @@
 //  <last-date>2018-08-04 23:57</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-
 using Microsoft.Extensions.DependencyInjection;
 
+using System;
 
 namespace Hybrid.Dependency
 {

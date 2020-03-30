@@ -7,16 +7,15 @@
 //  <last-date>2019-03-24 17:11</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Linq;
-using System.Threading.Tasks;
-
-using Liuliu.Demo.Identity.Entities;
-
 using Hybrid.Data;
 using Hybrid.Exceptions;
 using Hybrid.Identity;
 
+using Liuliu.Demo.Identity.Entities;
+
+using System;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Liuliu.Demo.Identity
 {
@@ -55,6 +54,5 @@ namespace Liuliu.Demo.Identity
                     return Task.FromResult(0);
                 });
         }
-
     }
 }

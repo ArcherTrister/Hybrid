@@ -7,17 +7,6 @@
 //  <last-date>2018-08-17 22:36</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Claims;
-using System.Threading;
-using System.Threading.Tasks;
-
-using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Caching.Distributed;
-using Microsoft.Extensions.DependencyInjection;
-
 using Hybrid.Caching;
 using Hybrid.Data;
 using Hybrid.Entity;
@@ -26,6 +15,16 @@ using Hybrid.Identity.Entities;
 using Hybrid.Identity.JwtBearer;
 using Hybrid.Threading.Asyncs;
 
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Caching.Distributed;
+using Microsoft.Extensions.DependencyInjection;
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Claims;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Hybrid.Identity
 {
@@ -161,7 +160,7 @@ namespace Hybrid.Identity
 
             return tokens.Except(expiredTokens).ToArray();
         }
-        
+
         private static string GetKey(string userName)
         {
             return $"Identity:OnlineUser:{userName}";

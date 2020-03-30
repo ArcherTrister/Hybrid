@@ -7,11 +7,10 @@
 //  <last-date>2017-11-15 17:21</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.ComponentModel;
-
 using Hybrid.Entity;
 
+using System;
+using System.ComponentModel;
 
 namespace Hybrid.Authorization.Dtos
 {
@@ -31,6 +30,5 @@ namespace Hybrid.Authorization.Dtos
         /// </summary>
         [DisplayName("是否数据审计")]
         public bool AuditEnabled { get; set; }
-
     }
 }

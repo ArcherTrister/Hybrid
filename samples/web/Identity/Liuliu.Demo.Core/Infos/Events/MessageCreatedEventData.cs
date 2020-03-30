@@ -7,10 +7,9 @@
 //  <last-date>2019-10-15 9:27</last-date>
 // -----------------------------------------------------------------------
 
-using Liuliu.Demo.Infos.Entities;
-
 using Hybrid.EventBuses;
 
+using Liuliu.Demo.Infos.Entities;
 
 namespace Liuliu.Demo.Infos.Events
 {

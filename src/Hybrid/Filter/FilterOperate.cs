@@ -8,7 +8,6 @@
 
 using System.ComponentModel;
 
-
 namespace Hybrid.Filter
 {
     /// <summary>

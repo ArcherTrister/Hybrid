@@ -7,16 +7,15 @@
 //  <last-date>2020-02-27 0:26</last-date>
 // -----------------------------------------------------------------------
 
-using System;
+using Hybrid.Authorization;
+using Hybrid.Authorization.Dtos;
+using Hybrid.Authorization.Functions;
 
 using LeXun.Demo.Authorization.Dtos;
 using LeXun.Demo.Authorization.Entities;
 using LeXun.Demo.Identity.Entities;
 
-using Hybrid.Authorization;
-using Hybrid.Authorization.Dtos;
-using Hybrid.Authorization.Functions;
-
+using System;
 
 namespace LeXun.Demo.Authorization
 {

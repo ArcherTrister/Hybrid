@@ -7,10 +7,9 @@
 //  <last-date>2019-10-15 9:27</last-date>
 // -----------------------------------------------------------------------
 
-using LeXun.Demo.Infos.Entities;
-
 using Hybrid.EventBuses;
 
+using LeXun.Demo.Infos.Entities;
 
 namespace LeXun.Demo.Infos.Events
 {

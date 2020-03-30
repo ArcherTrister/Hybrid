@@ -7,11 +7,6 @@
 //  <last-date>2018-08-12 16:00</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-
 using Hybrid.Core.Data;
 using Hybrid.Entity;
 using Hybrid.Exceptions;
@@ -19,6 +14,10 @@ using Hybrid.Extensions;
 using Hybrid.Json;
 using Hybrid.Reflection;
 
+using System;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Hybrid.Core.Systems
 {

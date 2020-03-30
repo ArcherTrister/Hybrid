@@ -7,16 +7,15 @@
 //  <last-date>2017-11-15 18:59</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Threading.Tasks;
-
 using Hybrid.Authorization.Dtos;
 using Hybrid.Authorization.Functions;
 using Hybrid.Data;
 using Hybrid.Dependency;
 
+using System;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace Hybrid.Authorization
 {
@@ -49,6 +48,5 @@ namespace Hybrid.Authorization
         /// <param name="dtos">包含更新信息的功能信息DTO信息</param>
         /// <returns>业务操作结果</returns>
         Task<OperationResult> UpdateFunctions(params TFunctionInputDto[] dtos);
-
     }
 }

@@ -1,4 +1,5 @@
-﻿using Hybrid.Extensions;
+﻿using Hybrid.Collections;
+using Hybrid.Extensions;
 
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
@@ -7,7 +8,6 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
-using Hybrid.Collections;
 
 namespace Hybrid.Localization.Dictionaries.Json
 {

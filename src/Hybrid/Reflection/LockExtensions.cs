@@ -9,7 +9,6 @@
 
 using System;
 
-
 namespace Hybrid.Reflection
 {
     /// <summary>
@@ -31,7 +30,7 @@ namespace Hybrid.Reflection
         /// <summary>
         /// 锁定给定源数据，执行委托
         /// </summary>
-        public static void Locking<T>(this T source, Action<T>action)
+        public static void Locking<T>(this T source, Action<T> action)
         {
             lock (source)
             {
@@ -42,7 +41,7 @@ namespace Hybrid.Reflection
         /// <summary>
         /// 锁定给定object标识，执行委托
         /// </summary>
-        public static TResult Locking<TResult>(this object source, Func<TResult>func)
+        public static TResult Locking<TResult>(this object source, Func<TResult> func)
         {
             lock (source)
             {
@@ -53,7 +52,7 @@ namespace Hybrid.Reflection
         /// <summary>
         /// 锁定给定源数据，执行委托
         /// </summary>
-        public static TResult Locking<TSource, TResult>(this TSource source, Func<TSource, TResult>func)
+        public static TResult Locking<TSource, TResult>(this TSource source, Func<TSource, TResult> func)
         {
             lock (source)
             {

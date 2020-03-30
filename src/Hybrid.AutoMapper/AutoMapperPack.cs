@@ -7,21 +7,20 @@
 //  <last-date>2018-06-23 15:23</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.ComponentModel;
-using System.Linq;
-
 using AutoMapper;
 using AutoMapper.Configuration;
-
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection.Extensions;
 
 using Hybrid.Core.Packs;
 using Hybrid.Mapping;
 
-using IMapper = Hybrid.Mapping.IMapper;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 
+using System;
+using System.ComponentModel;
+using System.Linq;
+
+using IMapper = Hybrid.Mapping.IMapper;
 
 namespace Hybrid.AutoMapper
 {
@@ -50,7 +49,7 @@ namespace Hybrid.AutoMapper
 
             return services;
         }
-        
+
         /// <summary>
         /// 应用模块服务
         /// </summary>

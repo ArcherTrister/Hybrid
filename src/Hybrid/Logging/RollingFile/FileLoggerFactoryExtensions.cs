@@ -7,12 +7,11 @@
 //  <last-date>2017-09-17 21:17</last-date>
 // -----------------------------------------------------------------------
 
-using System;
+using Hybrid.Logging.RollingFile;
 
 using Microsoft.Extensions.Logging;
 
-using Hybrid.Logging.RollingFile;
-
+using System;
 
 //power by https://github.com/andrewlock/NetEscapades.Extensions.Logging
 namespace Microsoft.Extensions.DependencyInjection

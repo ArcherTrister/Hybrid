@@ -7,14 +7,13 @@
 //  <last-date>2020-02-16 19:00</last-date>
 // -----------------------------------------------------------------------
 
-using System.Security.Claims;
-using System.Threading.Tasks;
+using Hybrid.Authentication.JwtBearer;
 
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.Extensions.DependencyInjection;
 
-using Hybrid.Authentication.JwtBearer;
-
+using System.Security.Claims;
+using System.Threading.Tasks;
 
 namespace Hybrid.Authentication.Cookies
 {

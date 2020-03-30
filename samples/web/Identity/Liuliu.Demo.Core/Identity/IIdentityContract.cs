@@ -7,17 +7,16 @@
 //  <last-date>2018-06-27 4:44</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Threading.Tasks;
+using Hybrid.Data;
+using Hybrid.Identity.OAuth2;
 
 using Liuliu.Demo.Identity.Dtos;
 using Liuliu.Demo.Identity.Entities;
 
-using Hybrid.Data;
-using Hybrid.Identity.OAuth2;
-
+using System;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace Liuliu.Demo.Identity
 {
@@ -33,7 +32,7 @@ namespace Liuliu.Demo.Identity
         /// </summary>
         IQueryable<User> Users { get; }
 
-        #endregion
+        #endregion 用户信息业务
 
         #region 角色信息业务
 
@@ -42,7 +41,7 @@ namespace Liuliu.Demo.Identity
         /// </summary>
         IQueryable<Role> Roles { get; }
 
-        #endregion
+        #endregion 角色信息业务
 
         #region 用户角色信息业务
 
@@ -81,7 +80,7 @@ namespace Liuliu.Demo.Identity
         /// <returns>业务操作结果</returns>
         Task<OperationResult> SetUserRoles(int userId, int[] roleIds);
 
-        #endregion
+        #endregion 用户角色信息业务
 
         #region 用户登录信息业务
 
@@ -97,7 +96,7 @@ namespace Liuliu.Demo.Identity
         /// <returns>业务操作结果</returns>
         Task<OperationResult> DeleteUserLogins(params Guid[] ids);
 
-        #endregion
+        #endregion 用户登录信息业务
 
         #region 身份认证
 
@@ -143,7 +142,6 @@ namespace Liuliu.Demo.Identity
         /// <returns>业务操作结果</returns>
         Task<OperationResult> Logout(int userId);
 
-        #endregion
-
+        #endregion 身份认证
     }
 }

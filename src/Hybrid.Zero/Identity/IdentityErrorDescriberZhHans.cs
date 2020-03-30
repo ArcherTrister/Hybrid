@@ -7,12 +7,11 @@
 //  <last-date>2018-08-26 16:28</last-date>
 // -----------------------------------------------------------------------
 
-using System.Collections.Generic;
+using Hybrid.Extensions;
 
 using Microsoft.AspNetCore.Identity;
 
-using Hybrid.Extensions;
-
+using System.Collections.Generic;
 
 namespace Hybrid.Identity
 {

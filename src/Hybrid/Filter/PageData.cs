@@ -9,7 +9,6 @@
 
 using System.Collections.Generic;
 
-
 namespace Hybrid.Filter
 {
     /// <summary>
@@ -28,7 +27,7 @@ namespace Hybrid.Filter
         /// <summary>
         /// 初始化一个<see cref="PageData{T}"/>类型的新实例
         /// </summary>
-        public PageData(IEnumerable<T>rows, int total)
+        public PageData(IEnumerable<T> rows, int total)
         {
             Rows = rows;
             Total = total;

@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Text;
 
 namespace Validate.Tests.Options
 {
@@ -15,6 +13,7 @@ namespace Validate.Tests.Options
 
         [Range(-5, 5, ErrorMessage = "Out of range.")]
         public int IntRange { get; set; }
+
         public string Custom { get; internal set; }
     }
 }

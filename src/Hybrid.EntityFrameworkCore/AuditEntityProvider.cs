@@ -7,13 +7,6 @@
 //  <last-date>2019-03-08 4:32</last-date>
 // -----------------------------------------------------------------------
 
-using System.Collections.Generic;
-using System.Linq;
-
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.ChangeTracking;
-using Microsoft.EntityFrameworkCore.Metadata;
-
 using Hybrid.Audits;
 using Hybrid.Authorization.EntityInfos;
 using Hybrid.Authorization.Functions;
@@ -21,6 +14,12 @@ using Hybrid.Collections;
 using Hybrid.Dependency;
 using Hybrid.Reflection;
 
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Microsoft.EntityFrameworkCore.Metadata;
+
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Hybrid.Entity
 {
@@ -77,7 +76,6 @@ namespace Hybrid.Entity
             }
             return result;
         }
-
 
         private static AuditEntityEntry GetAuditEntity(EntityEntry entry, IEntityInfo entityInfo)
         {

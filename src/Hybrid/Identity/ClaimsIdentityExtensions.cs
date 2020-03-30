@@ -7,14 +7,13 @@
 //  <last-date>2017-08-15 23:40</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Data;
+using Hybrid.Extensions;
+
 using System;
 using System.Linq;
 using System.Security.Claims;
 using System.Security.Principal;
-
-using Hybrid.Data;
-using Hybrid.Extensions;
-
 
 namespace Hybrid.Identity
 {

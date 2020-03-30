@@ -7,19 +7,18 @@
 //  <last-date>2018-05-11 0:59</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Linq;
-
-using Microsoft.Extensions.Caching.Distributed;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-
 using Hybrid.Authorization.Entities;
 using Hybrid.Authorization.Functions;
 using Hybrid.Caching;
 using Hybrid.Entity;
 using Hybrid.Identity.Entities;
 
+using Microsoft.Extensions.Caching.Distributed;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+
+using System;
+using System.Linq;
 
 namespace Hybrid.Authorization
 {

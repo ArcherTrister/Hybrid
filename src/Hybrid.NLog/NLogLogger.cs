@@ -1,11 +1,10 @@
-﻿using System;
-
-using NLog;
+﻿using Hybrid.Data;
 
 using Microsoft.Extensions.Logging;
 
-using Hybrid.Data;
+using NLog;
 
+using System;
 
 namespace Hybrid.NLog
 {
@@ -15,7 +14,7 @@ namespace Hybrid.NLog
     public class NLogLogger : Microsoft.Extensions.Logging.ILogger
     {
         private readonly Logger _log;
-        
+
         /// <summary>
         /// 初始化一个<see cref="NLogLogger"/>类型的新实例
         /// </summary>
@@ -50,23 +49,30 @@ namespace Hybrid.NLog
                     case Microsoft.Extensions.Logging.LogLevel.Trace:
                         _log.Trace(message);
                         break;
+
                     case Microsoft.Extensions.Logging.LogLevel.Debug:
                         _log.Debug(message);
                         break;
+
                     case Microsoft.Extensions.Logging.LogLevel.Information:
                         _log.Info(message);
                         break;
+
                     case Microsoft.Extensions.Logging.LogLevel.Warning:
                         _log.Warn(message);
                         break;
+
                     case Microsoft.Extensions.Logging.LogLevel.Error:
                         _log.Error(message, exception);
                         break;
+
                     case Microsoft.Extensions.Logging.LogLevel.Critical:
                         _log.Fatal(message, exception);
                         break;
+
                     case Microsoft.Extensions.Logging.LogLevel.None:
                         break;
+
                     default:
                         _log.Warn($"遇到未知的日志级别 {logLevel}, 使用Info级别写入日志。");
                         _log.Info(message, exception);
@@ -86,19 +92,25 @@ namespace Hybrid.NLog
             {
                 case Microsoft.Extensions.Logging.LogLevel.Trace:
                     return _log.IsTraceEnabled;
+
                 case Microsoft.Extensions.Logging.LogLevel.Debug:
                     return _log.IsDebugEnabled;
+
                 case Microsoft.Extensions.Logging.LogLevel.Information:
                     return _log.IsInfoEnabled;
+
                 case Microsoft.Extensions.Logging.LogLevel.Warning:
                     return _log.IsWarnEnabled;
+
                 case Microsoft.Extensions.Logging.LogLevel.Error:
                     return _log.IsErrorEnabled;
+
                 case Microsoft.Extensions.Logging.LogLevel.Critical:
                     return _log.IsFatalEnabled;
 
                 case Microsoft.Extensions.Logging.LogLevel.None:
                     return false;
+
                 default:
                     throw new ArgumentOutOfRangeException(nameof(logLevel), logLevel, null);
             }

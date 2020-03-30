@@ -7,11 +7,10 @@
 //  <last-date>2018-03-07 21:00</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-
 using Microsoft.Extensions.DependencyInjection;
 
+using System;
+using System.Collections.Generic;
 
 namespace Hybrid.Dependency
 {

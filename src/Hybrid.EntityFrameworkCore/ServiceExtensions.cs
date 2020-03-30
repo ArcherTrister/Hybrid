@@ -7,19 +7,18 @@
 //  <last-date>2019-03-27 13:23</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Data.Common;
-using System.Linq;
-
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
-
 using Hybrid.Core.Options;
 using Hybrid.Dependency;
 using Hybrid.Entity;
 using Hybrid.Exceptions;
 using Hybrid.Reflection;
 
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata;
+
+using System;
+using System.Data.Common;
+using System.Linq;
 
 namespace Microsoft.Extensions.DependencyInjection
 {

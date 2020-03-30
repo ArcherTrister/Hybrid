@@ -7,10 +7,9 @@
 //  <last-date>2019-03-24 15:11</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-
 using Hybrid.Entity;
 
+using System;
 
 namespace LeXun.Demo.Identity.Dtos
 {

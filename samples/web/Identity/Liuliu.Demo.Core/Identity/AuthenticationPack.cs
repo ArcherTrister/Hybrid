@@ -7,14 +7,13 @@
 //  <last-date>2020-03-02 21:21</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Authentication;
+using Hybrid.Core.Packs;
+
 using Liuliu.Demo.Identity.Entities;
 using Liuliu.Demo.Identity.Events;
 
 using Microsoft.Extensions.DependencyInjection;
-
-using Hybrid.Authentication;
-using Hybrid.Core.Packs;
-
 
 namespace Liuliu.Demo.Identity
 {
@@ -32,7 +31,7 @@ namespace Liuliu.Demo.Identity
         public override IServiceCollection AddServices(IServiceCollection services)
         {
             services.AddEventHandler<Logout_RemoveRefreshTokenEventHandler>();
-            
+
             return base.AddServices(services);
         }
     }

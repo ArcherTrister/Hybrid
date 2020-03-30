@@ -7,14 +7,13 @@
 //  <last-date>2018-07-25 12:03</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using Hybrid.Reflection;
 
 using Microsoft.Extensions.DependencyInjection;
 
-using Hybrid.Reflection;
-
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Hybrid.Core.Packs
 {

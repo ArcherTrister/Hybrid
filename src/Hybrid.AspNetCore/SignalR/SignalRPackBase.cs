@@ -7,18 +7,17 @@
 //  <last-date>2019-01-04 20:42</last-date>
 // -----------------------------------------------------------------------
 
-using System;
+using Hybrid.Core.Packs;
 
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
 using Newtonsoft.Json.Serialization;
 
-using Hybrid.Core.Packs;
-
+using System;
 
 namespace Hybrid.AspNetCore.SignalR
 {

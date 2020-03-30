@@ -7,16 +7,15 @@
 //  <last-date>2020-02-27 0:55</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Threading.Tasks;
-
 using Hybrid.Authorization.Dtos;
 using Hybrid.Authorization.EntityInfos;
 using Hybrid.Data;
 using Hybrid.Dependency;
 
+using System;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace Hybrid.Authorization
 {
@@ -50,6 +49,6 @@ namespace Hybrid.Authorization
         /// <returns>业务操作结果</returns>
         Task<OperationResult> UpdateEntityInfos(params TEntityInfoInputDto[] dtos);
 
-        #endregion
+        #endregion 实体信息业务
     }
 }

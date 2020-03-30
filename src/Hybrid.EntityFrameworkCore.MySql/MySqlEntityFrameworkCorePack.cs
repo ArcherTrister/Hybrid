@@ -7,13 +7,13 @@
 //  <last-date>2018-06-23 15:24</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Core.Packs;
+
+using Microsoft.Extensions.DependencyInjection;
+
 using System;
 using System.ComponentModel;
 using System.Linq;
-
-using Microsoft.Extensions.DependencyInjection;
-using Hybrid.Core.Packs;
-
 
 namespace Hybrid.Entity.MySql
 {

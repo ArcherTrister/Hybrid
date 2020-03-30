@@ -7,12 +7,11 @@
 //  <last-date>2018-07-03 23:45</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Finders;
+
 using System;
 using System.Linq;
 using System.Reflection;
-
-using Hybrid.Finders;
-
 
 namespace Hybrid.Reflection
 {

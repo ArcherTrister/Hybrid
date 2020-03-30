@@ -7,9 +7,10 @@
 //  <last-date>2019-10-05 19:21</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Linq;
-using System.Net.Mime;
+using Hybrid.Core.Options;
+using Hybrid.Core.Packs;
+using Hybrid.Entity;
+using Hybrid.Extensions;
 
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
@@ -20,11 +21,8 @@ using Microsoft.Extensions.Diagnostics.HealthChecks;
 
 using Newtonsoft.Json;
 
-using Hybrid.Core.Options;
-using Hybrid.Core.Packs;
-using Hybrid.Entity;
-using Hybrid.Extensions;
-
+using System;
+using System.Linq;
 
 namespace Hybrid.AspNetCore.Diagnostics
 {
@@ -118,18 +116,23 @@ namespace Hybrid.AspNetCore.Diagnostics
                     case DatabaseType.SqlServer:
                         builder.AddSqlServer(connectionString, null, pair.Key);
                         break;
+
                     case DatabaseType.Sqlite:
                         builder.AddSqlite(connectionString, name: pair.Key);
                         break;
+
                     case DatabaseType.MySql:
                         builder.AddMySql(connectionString, pair.Key);
                         break;
+
                     case DatabaseType.PostgreSql:
                         builder.AddNpgSql(connectionString, name: pair.Key);
                         break;
+
                     case DatabaseType.Oracle:
                         builder.AddOracle(connectionString, name: pair.Key);
                         break;
+
                     default:
                         throw new ArgumentOutOfRangeException($"HybridOptions中 {pair.Value.DatabaseType} 不受支持");
                 }

@@ -7,11 +7,10 @@
 //  <last-date>2018-06-27 4:44</last-date>
 // -----------------------------------------------------------------------
 
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
-
 using Hybrid.Entity;
 
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace Liuliu.Demo.Identity.Entities
 {

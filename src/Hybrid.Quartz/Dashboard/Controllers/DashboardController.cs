@@ -1,11 +1,11 @@
-﻿using Hybrid.Quartz.Dashboard.Models.Dtos;
+﻿using Hybrid.AspNetCore.Mvc.Models;
+using Hybrid.Data;
+using Hybrid.Quartz.Dashboard.Models.Dtos;
+using Hybrid.Security;
 
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Hybrid.AspNetCore.Mvc.Models;
-using Hybrid.Data;
-using Hybrid.Security;
 
 using System;
 using System.Diagnostics;

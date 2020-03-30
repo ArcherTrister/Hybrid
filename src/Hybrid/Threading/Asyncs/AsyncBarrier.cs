@@ -12,7 +12,6 @@ using System.Collections.Concurrent;
 using System.Threading;
 using System.Threading.Tasks;
 
-
 namespace Hybrid.Threading.Asyncs
 {
     public class AsyncBarrier
@@ -41,7 +40,6 @@ namespace Hybrid.Threading.Asyncs
             }
             return tcs.Task;
         }
-
 
         public class AsyncBarrier1
         {

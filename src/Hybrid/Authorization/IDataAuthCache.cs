@@ -9,7 +9,6 @@
 
 using Hybrid.Filter;
 
-
 namespace Hybrid.Authorization
 {
     /// <summary>

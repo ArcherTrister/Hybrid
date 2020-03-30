@@ -10,7 +10,6 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-
 namespace Hybrid.Threading.Asyncs
 {
     /// <summary>
@@ -23,7 +22,7 @@ namespace Hybrid.Threading.Asyncs
         private bool _signaled;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <returns></returns>
         public Task WaitAsync()
@@ -43,7 +42,7 @@ namespace Hybrid.Threading.Asyncs
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Set()
         {

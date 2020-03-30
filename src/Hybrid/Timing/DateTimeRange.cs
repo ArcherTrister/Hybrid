@@ -9,7 +9,6 @@
 
 using System;
 
-
 namespace Hybrid.Timing
 {
     /// <summary>

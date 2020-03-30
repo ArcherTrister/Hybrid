@@ -9,11 +9,10 @@
 
 using AutoMapper.Configuration;
 
-using LeXun.Demo.Authorization.Entities;
-
 using Hybrid.AutoMapper;
 using Hybrid.Json;
 
+using LeXun.Demo.Authorization.Entities;
 
 namespace LeXun.Demo.Authorization.Dtos
 {

@@ -7,26 +7,26 @@
 //  <last-date>2018-06-27 4:44</last-date>
 // -----------------------------------------------------------------------
 
-using Liuliu.Demo.Identity.Dtos;
-using Liuliu.Demo.Identity.Entities;
-using Liuliu.Demo.Identity.Events;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Logging;
+using Hybrid.Caching;
 using Hybrid.Data;
 using Hybrid.Entity;
 using Hybrid.EventBuses;
 using Hybrid.Extensions;
 using Hybrid.Identity;
 using Hybrid.Identity.OAuth2;
+
+using Liuliu.Demo.Identity.Dtos;
+using Liuliu.Demo.Identity.Entities;
+using Liuliu.Demo.Identity.Events;
+
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Caching.Distributed;
+using Microsoft.Extensions.Logging;
+
 using System;
 using System.Linq;
 using System.Security.Principal;
 using System.Threading.Tasks;
-
-using Microsoft.Extensions.Caching.Distributed;
-
-using Hybrid.Caching;
-
 
 namespace Liuliu.Demo.Identity
 {
@@ -115,7 +115,7 @@ namespace Liuliu.Demo.Identity
             }
             return new OperationResult<User>(OperationResultType.NoChanged);
         }
-        
+
         /// <summary>
         /// 使用账号登录
         /// </summary>
@@ -251,8 +251,11 @@ namespace Liuliu.Demo.Identity
             {
                 userLogin = new UserLogin()
                 {
-                    LoginProvider = loginInfoEx.LoginProvider, ProviderKey = loginInfoEx.ProviderKey,
-                    ProviderDisplayName = loginInfoEx.ProviderDisplayName, Avatar = loginInfoEx.AvatarUrl, UserId = user.Id
+                    LoginProvider = loginInfoEx.LoginProvider,
+                    ProviderKey = loginInfoEx.ProviderKey,
+                    ProviderDisplayName = loginInfoEx.ProviderDisplayName,
+                    Avatar = loginInfoEx.AvatarUrl,
+                    UserId = user.Id
                 };
                 await _userLoginRepository.InsertAsync(userLogin);
             }

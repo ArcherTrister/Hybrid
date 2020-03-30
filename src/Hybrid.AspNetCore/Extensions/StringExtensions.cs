@@ -1,10 +1,9 @@
-﻿using JetBrains.Annotations;
-using Microsoft.AspNetCore.Http;
-using Hybrid.Data;
+﻿using Hybrid.Data;
 using Hybrid.Extensions;
-using System;
-using System.Collections.Generic;
-using System.Text;
+
+using JetBrains.Annotations;
+
+using Microsoft.AspNetCore.Http;
 
 namespace Hybrid.AspNetCore.Extensions
 {

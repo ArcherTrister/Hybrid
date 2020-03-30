@@ -7,11 +7,11 @@
 //  <last-date>2018-07-28 23:23</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Linq;
 using Hybrid.Finders;
 using Hybrid.Reflection;
 
+using System;
+using System.Linq;
 
 namespace Hybrid.EventBuses
 {

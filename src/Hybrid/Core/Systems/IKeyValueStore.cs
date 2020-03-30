@@ -7,14 +7,13 @@
 //  <last-date>2018-06-25 21:00</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Core.Data;
+using Hybrid.Data;
+
 using System;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-
-using Hybrid.Core.Data;
-using Hybrid.Data;
-
 
 namespace Hybrid.Core.Systems
 {
@@ -27,7 +26,7 @@ namespace Hybrid.Core.Systems
         /// 获取 键值对数据查询数据集
         /// </summary>
         IQueryable<KeyValue> KeyValues { get; }
-        
+
         /// <summary>
         /// 获取或创建设置信息
         /// </summary>

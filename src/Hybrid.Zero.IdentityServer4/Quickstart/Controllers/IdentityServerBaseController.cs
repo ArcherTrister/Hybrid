@@ -1,6 +1,5 @@
 ﻿using Hybrid.AspNetCore.Mvc.Controllers;
 using Hybrid.Localization;
-using Microsoft.AspNetCore.Mvc;
 
 namespace Hybrid.Zero.IdentityServer4.Quickstart
 {

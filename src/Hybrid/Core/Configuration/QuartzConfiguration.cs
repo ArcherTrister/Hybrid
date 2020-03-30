@@ -6,7 +6,7 @@ namespace Hybrid.Core.Configuration
     /// <summary>
     /// Quartz配置选项
     /// </summary>
-    public sealed class QuartzConfiguration: IQuartzConfiguration
+    public sealed class QuartzConfiguration : IQuartzConfiguration
     {
         /// <summary>
         /// 调度名称/实例名称

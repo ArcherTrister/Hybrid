@@ -7,18 +7,17 @@
 //  <last-date>2017-09-12 20:25</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Exceptions;
+
+using Microsoft.EntityFrameworkCore;
+
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-using Microsoft.EntityFrameworkCore;
-
-using Hybrid.Exceptions;
-
 using Z.EntityFramework.Extensions;
 using Z.EntityFramework.Plus;
-
 
 namespace Hybrid.Entity
 {

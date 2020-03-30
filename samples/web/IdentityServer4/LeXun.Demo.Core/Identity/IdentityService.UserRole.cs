@@ -7,22 +7,21 @@
 //  <last-date>2018-06-27 4:44</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Threading.Tasks;
+using Hybrid.Collections;
+using Hybrid.Data;
+using Hybrid.Identity;
+using Hybrid.Identity.Events;
 
 using LeXun.Demo.Identity.Dtos;
 using LeXun.Demo.Identity.Entities;
 
 using Microsoft.AspNetCore.Identity;
 
-using Hybrid.Collections;
-using Hybrid.Data;
-using Hybrid.Identity;
-using Hybrid.Identity.Events;
-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace LeXun.Demo.Identity
 {
@@ -54,7 +53,7 @@ namespace LeXun.Demo.Identity
         /// <returns>业务操作结果</returns>
         public async Task<OperationResult> UpdateUserRoles(params UserRoleInputDto[] dtos)
         {
-            Check.Validate<UserRoleInputDto,Guid>(dtos, nameof(dtos));
+            Check.Validate<UserRoleInputDto, Guid>(dtos, nameof(dtos));
 
             List<string> userNames = new List<string>();
             OperationResult result = await _userRoleRepository.UpdateAsync(dtos,
@@ -79,7 +78,7 @@ namespace LeXun.Demo.Identity
         /// <returns>业务操作结果</returns>
         public async Task<OperationResult> DeleteUserRoles(Guid[] ids)
         {
-            List<string>userNames = new List<string>();
+            List<string> userNames = new List<string>();
             OperationResult result = await _userRoleRepository.DeleteAsync(ids,
                 (entity) =>
                 {
@@ -89,7 +88,7 @@ namespace LeXun.Demo.Identity
                 });
             if (result.Succeeded && userNames.Count > 0)
             {
-                OnlineUserCacheRemoveEventData eventData = new OnlineUserCacheRemoveEventData(){UserNames = userNames.ToArray()};
+                OnlineUserCacheRemoveEventData eventData = new OnlineUserCacheRemoveEventData() { UserNames = userNames.ToArray() };
                 _eventBus.Publish(eventData);
             }
 

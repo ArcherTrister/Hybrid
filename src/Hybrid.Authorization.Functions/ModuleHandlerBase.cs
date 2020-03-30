@@ -7,13 +7,6 @@
 //  <last-date>2018-06-23 18:21</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-
 using Hybrid.Authorization.Dtos;
 using Hybrid.Authorization.Entities;
 using Hybrid.Authorization.Modules;
@@ -22,6 +15,12 @@ using Hybrid.Data;
 using Hybrid.Entity;
 using Hybrid.Exceptions;
 
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Hybrid.Authorization
 {
@@ -182,6 +181,7 @@ namespace Hybrid.Authorization
         }
 
         private readonly IDictionary<string, TModule> _positionDictionary = new Dictionary<string, TModule>();
+
         private TModule GetModule(IModuleStore<TModule, TModuleInputDto, TModuleKey> moduleStore, string position)
         {
             if (_positionDictionary.ContainsKey(position))

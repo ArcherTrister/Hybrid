@@ -7,22 +7,6 @@
 //  <last-date>2018-06-27 4:49</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Threading.Tasks;
-
-using Liuliu.Demo.Authorization;
-using Liuliu.Demo.Authorization.Dtos;
-using Liuliu.Demo.Identity;
-using Liuliu.Demo.Identity.Dtos;
-using Liuliu.Demo.Identity.Entities;
-
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-
 using Hybrid.AspNetCore.Mvc;
 using Hybrid.AspNetCore.Mvc.Filters;
 using Hybrid.AspNetCore.UI;
@@ -36,6 +20,21 @@ using Hybrid.Filter;
 using Hybrid.Identity;
 using Hybrid.Mapping;
 
+using Liuliu.Demo.Authorization;
+using Liuliu.Demo.Authorization.Dtos;
+using Liuliu.Demo.Identity;
+using Liuliu.Demo.Identity.Dtos;
+using Liuliu.Demo.Identity.Entities;
+
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace Liuliu.Demo.Web.Areas.Admin.Controllers
 {

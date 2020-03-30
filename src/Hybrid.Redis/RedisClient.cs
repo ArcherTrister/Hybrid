@@ -7,19 +7,18 @@
 //  <last-date>2020-03-26 1:35</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Core.Options;
+using Hybrid.Extensions;
+
+using Newtonsoft.Json;
+
+using StackExchange.Redis;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-
-using Newtonsoft.Json;
-
-using Hybrid.Core.Options;
-using Hybrid.Extensions;
-
-using StackExchange.Redis;
-
 
 namespace Hybrid.Redis
 {
@@ -565,7 +564,7 @@ namespace Hybrid.Redis
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <typeparam name="T">数据项类型</typeparam>
         /// <param name="key">数据集键</param>
@@ -1101,7 +1100,6 @@ namespace Hybrid.Redis
 
         #endregion 其他
 
-
         #region 私有方法
 
         private RedisOptions GetOptions()
@@ -1184,7 +1182,6 @@ namespace Hybrid.Redis
             return redisKeys.Select(redisKey => (RedisKey)redisKey).ToArray();
         }
 
-
-        #endregion
+        #endregion 私有方法
     }
 }

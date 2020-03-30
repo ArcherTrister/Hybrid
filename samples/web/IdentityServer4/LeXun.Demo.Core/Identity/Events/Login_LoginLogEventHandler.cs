@@ -7,15 +7,14 @@
 //  <last-date>2018-06-27 4:44</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Threading;
-using System.Threading.Tasks;
-
-using LeXun.Demo.Identity.Entities;
-
 using Hybrid.Entity;
 using Hybrid.EventBuses;
 
+using LeXun.Demo.Identity.Entities;
+
+using System;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace LeXun.Demo.Identity.Events
 {

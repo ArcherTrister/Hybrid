@@ -7,12 +7,11 @@
 //  <last-date>2018-08-06 13:44</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Linq;
-
 using Hybrid.Entity;
 using Hybrid.Reflection;
 
+using System;
+using System.Linq;
 
 namespace Hybrid.CodeGenerator
 {

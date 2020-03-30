@@ -7,20 +7,19 @@
 //  <last-date>2020-02-10 20:13</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-
 using Hybrid.Authorization.Functions;
 using Hybrid.Collections;
 using Hybrid.Data;
 using Hybrid.Entity;
 using Hybrid.Reflection;
 
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
 
 namespace Hybrid.Authorization.Modules
 {

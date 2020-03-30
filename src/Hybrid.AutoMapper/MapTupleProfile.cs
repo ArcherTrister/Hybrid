@@ -7,17 +7,16 @@
 //  <last-date>2018-03-07 21:20</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-
 using AutoMapper;
-
-using Microsoft.Extensions.Logging;
 
 using Hybrid.Collections;
 using Hybrid.Mapping;
 using Hybrid.Reflection;
 
+using Microsoft.Extensions.Logging;
+
+using System;
+using System.Collections.Generic;
 
 namespace Hybrid.AutoMapper
 {

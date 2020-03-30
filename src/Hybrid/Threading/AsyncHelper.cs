@@ -7,12 +7,11 @@
 //  <last-date>2019-01-02 14:49</last-date>
 // -----------------------------------------------------------------------
 
+using JetBrains.Annotations;
+
 using System;
 using System.Reflection;
 using System.Threading.Tasks;
-
-using JetBrains.Annotations;
-
 
 namespace Hybrid.Threading
 {

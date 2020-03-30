@@ -7,15 +7,14 @@
 //  <last-date>2019-01-06 14:57</last-date>
 // -----------------------------------------------------------------------
 
-using System;
+using Hybrid.Entity;
 
 using Liuliu.Demo.Identity.Entities;
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-using Hybrid.Entity;
-
+using System;
 
 namespace Liuliu.Demo.EntityConfiguration.Identity
 {

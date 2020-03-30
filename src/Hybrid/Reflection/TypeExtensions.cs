@@ -7,6 +7,11 @@
 //  <last-date>2015-10-20 13:37</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Data;
+using Hybrid.Extensions;
+
+using JetBrains.Annotations;
+
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -16,12 +21,6 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-
-using JetBrains.Annotations;
-
-using Hybrid.Data;
-using Hybrid.Extensions;
-
 
 namespace Hybrid.Reflection
 {
@@ -412,6 +411,6 @@ namespace Hybrid.Reflection
             builder.Append('>');
         }
 
-        #endregion
+        #endregion 私有方法
     }
 }

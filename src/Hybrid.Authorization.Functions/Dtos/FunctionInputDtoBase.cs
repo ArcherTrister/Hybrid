@@ -7,12 +7,11 @@
 //  <last-date>2017-11-15 17:21</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.ComponentModel;
-
 using Hybrid.Authorization.Functions;
 using Hybrid.Entity;
 
+using System;
+using System.ComponentModel;
 
 namespace Hybrid.Authorization.Dtos
 {
@@ -62,6 +61,5 @@ namespace Hybrid.Authorization.Dtos
         /// </summary>
         [DisplayName("是否锁定")]
         public bool IsLocked { get; set; }
-
     }
 }

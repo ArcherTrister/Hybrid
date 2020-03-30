@@ -7,6 +7,16 @@
 //  <last-date>2020-03-26 21:47</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.AspNetCore;
+using Hybrid.AspNetCore.Routing;
+using Hybrid.AspNetCore.SignalR;
+using Hybrid.AutoMapper;
+
+//using Hybrid.Log4Net;
+using Hybrid.NLog;
+using Hybrid.Quartz;
+using Hybrid.Swagger;
+
 using LeXun.Demo.Authorization;
 using LeXun.Demo.Identity;
 using LeXun.Demo.Systems;
@@ -17,15 +27,6 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-using Hybrid.AspNetCore;
-using Hybrid.AspNetCore.Routing;
-using Hybrid.AutoMapper;
-//using Hybrid.Log4Net;
-using Hybrid.NLog;
-using Hybrid.Swagger;
-using Hybrid.Quartz;
-using Hybrid.AspNetCore.SignalR;
-
 namespace LeXun.Demo.Web
 {
     public class Startup
@@ -33,20 +34,23 @@ namespace LeXun.Demo.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddHybrid()
-                //.AddPack<Log4NetPack>()
-                .AddPack<NLogPack>()
-                .AddPack<AutoMapperPack>()
-                .AddPack<EndpointsPack>()
-                .AddPack<SignalRPack>()
-                .AddPack<SwaggerPack>()
-                //.AddPack<RedisPack>()
-                .AddPack<QuartzModule>()
-                .AddPack<IdentityPack>()
-                .AddPack<FunctionAuthorizationPack>()
-                .AddPack<DataAuthorizationPack>()
-                .AddPack<SqlServerDefaultDbContextMigrationPack>()
-                .AddPack<AuditPack>();
+            //services.AddHybrid()
+            //    //.AddPack<Log4NetPack>()
+            //    .AddPack<NLogPack>()
+            //    .AddPack<AutoMapperPack>()
+            //    .AddPack<EndpointsPack>()
+            //    .AddPack<SignalRPack>()
+            //    .AddPack<SwaggerPack>()
+            //    //.AddPack<RedisPack>()
+            //    .AddPack<QuartzModule>()
+            //    .AddPack<IdentityPack>()
+            //    .AddPack<FunctionAuthorizationPack>()
+            //    .AddPack<DataAuthorizationPack>()
+            //    .AddPack<SqlServerDefaultDbContextMigrationPack>()
+            //    .AddPack<AuditPack>();
+
+            //Add-Migration Init -Verbose -o Data/Migrations/Application
+            services.AddHybrid<AspHybridModuleManager>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -69,7 +73,8 @@ namespace LeXun.Demo.Web
             app.UseMiddleware<JsonExceptionHandlerMiddleware>();
             app.UseDefaultFiles();
             app.UseStaticFiles();
-            app.UseHybrid();
+            //app.UseHybrid();
+            app.UseAutoHybrid();
         }
     }
 }

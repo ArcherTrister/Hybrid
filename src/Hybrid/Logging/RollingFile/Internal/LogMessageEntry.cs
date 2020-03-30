@@ -9,7 +9,6 @@
 
 using System;
 
-
 //power by https://github.com/andrewlock/NetEscapades.Extensions.Logging
 namespace Hybrid.Logging.RollingFile.Internal
 {

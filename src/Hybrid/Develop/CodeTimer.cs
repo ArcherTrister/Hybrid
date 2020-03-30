@@ -3,7 +3,6 @@ using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Threading;
 
-
 namespace Hybrid.Develop
 {
     /// <summary>
@@ -24,7 +23,7 @@ namespace Hybrid.Develop
             return cycleCount;
         }
 
-        #endregion
+        #endregion 私有方法
 
         #region 公共方法
 
@@ -85,9 +84,8 @@ namespace Hybrid.Develop
             Console.WriteLine();
         }
 
-        #endregion
+        #endregion 公共方法
     }
-
 
     internal static class NativeMethods
     {
@@ -97,7 +95,5 @@ namespace Hybrid.Develop
 
         [DllImport("kernel32.dll")]
         internal static extern IntPtr GetCurrentThread();
-
     }
-
 }

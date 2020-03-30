@@ -7,12 +7,11 @@
 //  <last-date>2018-06-12 22:29</last-date>
 // -----------------------------------------------------------------------
 
-using System;
+using Hybrid.EventBuses;
 
 using Microsoft.Extensions.DependencyInjection;
 
-using Hybrid.EventBuses;
-
+using System;
 
 namespace Hybrid.Authorization.Events
 {
@@ -40,7 +39,6 @@ namespace Hybrid.Authorization.Events
         /// </summary>
         public string[] UserNames { get; set; }
     }
-
 
     /// <summary>
     /// 功能权限缓存刷新事件处理器

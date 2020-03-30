@@ -7,15 +7,14 @@
 //  <last-date>2018-08-02 15:25</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Linq;
-using System.Threading.Tasks;
-
-using LeXun.Demo.Systems.Entities;
-
 using Hybrid.Data;
 using Hybrid.Entity;
 
+using LeXun.Demo.Systems.Entities;
+
+using System;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace LeXun.Demo.Systems
 {
@@ -77,6 +76,6 @@ namespace LeXun.Demo.Systems
             return _entityRepository.DeleteAsync(ids);
         }
 
-        #endregion
+        #endregion Implementation of IAuditContract
     }
 }

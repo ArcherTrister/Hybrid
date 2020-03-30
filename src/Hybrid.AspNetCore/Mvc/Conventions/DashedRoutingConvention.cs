@@ -7,13 +7,12 @@
 //  <last-date>2018-03-18 12:59</last-date>
 // -----------------------------------------------------------------------
 
-using System.Collections.Generic;
-using System.Linq;
-using System.Text.RegularExpressions;
-
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
 
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace Hybrid.AspNetCore.Mvc.Conventions
 {
@@ -35,7 +34,7 @@ namespace Hybrid.AspNetCore.Mvc.Conventions
             }
             foreach (ActionModel action in controller.Actions)
             {
-                foreach (SelectorModel model in action.Selectors.Where(m=>m.AttributeRouteModel == null))
+                foreach (SelectorModel model in action.Selectors.Where(m => m.AttributeRouteModel == null))
                 {
                     List<string> parts = new List<string>();
                     foreach (var attribute in controller.Attributes)
@@ -57,7 +56,7 @@ namespace Hybrid.AspNetCore.Mvc.Conventions
                     {
                         parts.Add(PascalToKebabCase(action.ActionName));
                     }
-                    
+
                     string template = string.Join("/", parts);
                     model.AttributeRouteModel = new AttributeRouteModel() { Template = template };
                 }

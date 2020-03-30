@@ -11,7 +11,6 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-
 namespace Hybrid.Threading.Asyncs
 {
     /// <summary>
@@ -45,7 +44,6 @@ namespace Hybrid.Threading.Asyncs
                     TaskContinuationOptions.ExecuteSynchronously,
                     TaskScheduler.Default);
         }
-
 
         /// <summary>
         /// 释放资源的包装

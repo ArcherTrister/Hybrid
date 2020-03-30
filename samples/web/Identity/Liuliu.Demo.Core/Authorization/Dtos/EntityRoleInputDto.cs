@@ -9,7 +9,6 @@
 
 using Hybrid.Authorization.Dtos;
 
-
 namespace Liuliu.Demo.Authorization.Dtos
 {
     /// <summary>

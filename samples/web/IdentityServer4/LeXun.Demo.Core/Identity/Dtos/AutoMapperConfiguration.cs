@@ -9,10 +9,9 @@
 
 using AutoMapper.Configuration;
 
-using LeXun.Demo.Identity.Entities;
-
 using Hybrid.AutoMapper;
 
+using LeXun.Demo.Identity.Entities;
 
 namespace LeXun.Demo.Identity.Dtos
 {

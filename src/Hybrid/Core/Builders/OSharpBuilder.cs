@@ -7,18 +7,17 @@
 //  <last-date>2018-06-23 15:40</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using Microsoft.Extensions.DependencyInjection;
-
 using Hybrid.Collections;
 using Hybrid.Core.Options;
 using Hybrid.Core.Packs;
 using Hybrid.Data;
 using Hybrid.Exceptions;
 
+using Microsoft.Extensions.DependencyInjection;
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Hybrid.Core.Builders
 {
@@ -29,6 +28,15 @@ namespace Hybrid.Core.Builders
     {
         private readonly List<HybridPack> _source;
         private List<HybridPack> _packs;
+
+        /// <summary>
+        /// 初始化一个<see cref="HybridBuilder"/>类型的新实例
+        /// </summary>
+        public HybridBuilder()
+        {
+            AddModules = new List<Type>();
+            ExceptModules = new List<Type>();
+        }
 
         /// <summary>
         /// 初始化一个<see cref="HybridBuilder"/>类型的新实例
@@ -54,6 +62,41 @@ namespace Hybrid.Core.Builders
         /// 获取 Hybrid选项配置委托
         /// </summary>
         public Action<HybridOptions> OptionsAction { get; private set; }
+
+        /// <summary>
+        /// 获取 加载的模块集合
+        /// </summary>
+        public IEnumerable<Type> AddModules { get; private set; }
+
+        /// <summary>
+        /// 获取 排除的模块集合
+        /// </summary>
+        public IEnumerable<Type> ExceptModules { get; private set; }
+
+        /// <summary>
+        /// 添加指定模块，执行此功能后将仅加载指定的模块
+        /// </summary>
+        /// <typeparam name="TModule">要添加的模块类型</typeparam>
+        public IHybridBuilder AddModule<TModule>() where TModule : HybridPack
+        {
+            List<Type> list = AddModules.ToList();
+            list.AddIfNotExist(typeof(TModule));
+            AddModules = list;
+            return this;
+        }
+
+        /// <summary>
+        /// 移除指定模块，执行此功能以从自动加载的模块中排除指定模块
+        /// </summary>
+        /// <typeparam name="TModule"></typeparam>
+        /// <returns></returns>
+        public IHybridBuilder ExceptModule<TModule>() where TModule : HybridPack
+        {
+            List<Type> list = ExceptModules.ToList();
+            list.AddIfNotExist(typeof(TModule));
+            ExceptModules = list;
+            return this;
+        }
 
         /// <summary>
         /// 添加指定模块

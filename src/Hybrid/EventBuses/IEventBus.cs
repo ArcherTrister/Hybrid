@@ -14,6 +14,5 @@ namespace Hybrid.EventBuses
     /// </summary>
     public interface IEventBus : IEventSubscriber, IEventPublisher
     {
-        
     }
 }

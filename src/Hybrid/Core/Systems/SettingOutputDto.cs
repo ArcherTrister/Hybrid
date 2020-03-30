@@ -9,7 +9,6 @@
 
 using Hybrid.Reflection;
 
-
 namespace Hybrid.Core.Systems
 {
     /// <summary>

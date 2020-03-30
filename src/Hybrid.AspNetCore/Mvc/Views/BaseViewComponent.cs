@@ -1,15 +1,17 @@
-﻿using Microsoft.AspNetCore.Localization;
+﻿using Hybrid.Data;
+using Hybrid.Extensions;
+using Hybrid.Localization;
+using Hybrid.Localization.Sources;
+using Hybrid.Security;
+
+using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;
-using Hybrid.Data;
-using Hybrid.Localization;
-using Hybrid.Localization.Sources;
+
 using System;
 using System.Globalization;
 using System.Linq;
-using Hybrid.Extensions;
-using Hybrid.Security;
 
 namespace Hybrid.AspNetCore.Mvc.Views
 {

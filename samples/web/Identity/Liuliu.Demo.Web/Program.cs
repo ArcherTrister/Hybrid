@@ -10,7 +10,6 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-
 namespace Liuliu.Demo.Web
 {
     public class Program

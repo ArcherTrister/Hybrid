@@ -7,11 +7,10 @@
 //  <last-date>2017-09-15 2:37</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Reflection;
-
 using Hybrid.Dependency;
 
+using System;
+using System.Reflection;
 
 namespace Hybrid.Reflection
 {

@@ -7,19 +7,6 @@
 //  <last-date>2020-03-02 22:23</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Text;
-
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection.Extensions;
-using Microsoft.IdentityModel.Tokens;
-
 using Hybrid.AspNetCore;
 using Hybrid.Authentication.JwtBearer;
 using Hybrid.Core.Options;
@@ -29,6 +16,18 @@ using Hybrid.Extensions;
 using Hybrid.Identity.Entities;
 using Hybrid.Identity.JwtBearer;
 
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
+using Microsoft.IdentityModel.Tokens;
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Text;
 
 namespace Hybrid.Authentication
 {
@@ -163,6 +162,7 @@ namespace Hybrid.Authentication
                             opts.ClientSecret = options.ClientSecret;
                         });
                         break;
+
                     case "Microsoft":
                         builder.AddMicrosoftAccount(opts =>
                         {
@@ -170,6 +170,7 @@ namespace Hybrid.Authentication
                             opts.ClientSecret = options.ClientSecret;
                         });
                         break;
+
                     case "GitHub":
                         builder.AddGitHub(opts =>
                         {

@@ -7,11 +7,6 @@
 //  <last-date>2020-02-26 23:23</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.ComponentModel;
-
-using Microsoft.Extensions.DependencyInjection;
-
 using Hybrid.Authorization.Dtos;
 using Hybrid.Authorization.Entities;
 using Hybrid.Authorization.EntityInfos;
@@ -19,6 +14,10 @@ using Hybrid.Authorization.Events;
 using Hybrid.Core.Packs;
 using Hybrid.EventBuses;
 
+using Microsoft.Extensions.DependencyInjection;
+
+using System;
+using System.ComponentModel;
 
 namespace Hybrid.Authorization
 {
@@ -91,6 +90,5 @@ namespace Hybrid.Authorization
 
             IsEnabled = true;
         }
-
     }
 }

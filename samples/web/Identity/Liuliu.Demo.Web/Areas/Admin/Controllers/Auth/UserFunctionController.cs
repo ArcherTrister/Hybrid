@@ -7,10 +7,11 @@
 //  <last-date>2018-06-27 4:49</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.ComponentModel;
-using System.Linq;
-using System.Linq.Expressions;
+using Hybrid.Authorization.Functions;
+using Hybrid.Authorization.Modules;
+using Hybrid.Entity;
+using Hybrid.Filter;
+using Hybrid.Linq;
 
 using Liuliu.Demo.Authorization;
 using Liuliu.Demo.Authorization.Dtos;
@@ -20,12 +21,10 @@ using Liuliu.Demo.Identity.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
-using Hybrid.Authorization.Functions;
-using Hybrid.Authorization.Modules;
-using Hybrid.Entity;
-using Hybrid.Filter;
-using Hybrid.Linq;
-
+using System;
+using System.ComponentModel;
+using System.Linq;
+using System.Linq.Expressions;
 
 namespace Liuliu.Demo.Web.Areas.Admin.Controllers
 {
@@ -38,7 +37,7 @@ namespace Liuliu.Demo.Web.Areas.Admin.Controllers
         private readonly UserManager<User> _userManager;
 
         public UserFunctionController(FunctionAuthManager functionAuthManager,
-            UserManager<User> userManager, 
+            UserManager<User> userManager,
             RoleManager<Role> roleManager,
             IFilterService filterService)
         {

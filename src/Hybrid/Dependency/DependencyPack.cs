@@ -7,21 +7,20 @@
 //  <last-date>2018-07-29 1:24</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
+using Hybrid.Collections;
+using Hybrid.Core.Packs;
+using Hybrid.Extensions;
+using Hybrid.Reflection;
 
 using JetBrains.Annotations;
 
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
-using Hybrid.Collections;
-using Hybrid.Core.Packs;
-using Hybrid.Extensions;
-using Hybrid.Reflection;
-
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
 
 namespace Hybrid.Dependency
 {

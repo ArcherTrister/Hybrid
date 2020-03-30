@@ -14,6 +14,5 @@ namespace Liuliu.Demo.Systems
     /// </summary>
     public interface ISystemsContract
     {
-
     }
 }

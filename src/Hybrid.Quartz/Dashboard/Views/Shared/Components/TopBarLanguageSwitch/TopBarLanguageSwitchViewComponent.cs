@@ -1,8 +1,7 @@
-﻿
-using Microsoft.AspNetCore.Mvc;
-
-using Hybrid.AspNetCore.Mvc.Models;
+﻿using Hybrid.AspNetCore.Mvc.Models;
 using Hybrid.Localization;
+
+using Microsoft.AspNetCore.Mvc;
 
 using System.Linq;
 

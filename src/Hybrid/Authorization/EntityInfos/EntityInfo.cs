@@ -7,10 +7,9 @@
 //  <last-date>2020-02-10 20:14</last-date>
 // -----------------------------------------------------------------------
 
-using System.ComponentModel;
-
 using Hybrid.Entity;
 
+using System.ComponentModel;
 
 namespace Hybrid.Authorization.EntityInfos
 {

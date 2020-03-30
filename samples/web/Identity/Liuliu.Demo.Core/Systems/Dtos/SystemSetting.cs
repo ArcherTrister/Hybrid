@@ -1,6 +1,4 @@
-﻿
-using Hybrid.Core.Systems;
-
+﻿using Hybrid.Core.Systems;
 
 namespace Liuliu.Demo.Systems.Dtos
 {

@@ -7,10 +7,9 @@
 //  <last-date>2017-09-19 5:09</last-date>
 // -----------------------------------------------------------------------
 
-using System.Data.Common;
-
 using Microsoft.EntityFrameworkCore;
 
+using System.Data.Common;
 
 namespace Hybrid.Entity.MySql
 {

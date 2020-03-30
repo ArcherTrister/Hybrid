@@ -10,7 +10,6 @@
 using System.Xml;
 using System.Xml.Linq;
 
-
 namespace Hybrid.Linq
 {
     /// <summary>

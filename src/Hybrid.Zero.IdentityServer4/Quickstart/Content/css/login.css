@@ -77,7 +77,6 @@ body {
     color: transparent;
 }
 
-
 @supports (-ms-ime-align: auto) {
     .form-group > label {
         display: none;
@@ -87,7 +86,6 @@ body {
         color: #777;
     }
 }
-
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .form-group > label {

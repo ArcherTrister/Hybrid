@@ -9,7 +9,6 @@
 
 using Hybrid.Entity;
 
-
 namespace Hybrid.Identity.Dtos
 {
     /// <summary>

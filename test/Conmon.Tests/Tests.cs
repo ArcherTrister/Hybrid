@@ -1,5 +1,4 @@
-using Hybrid.Domain.Entities;
-
+using Hybrid.Entity;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 using System;
@@ -21,9 +20,9 @@ namespace Conmon.Tests
         [TestMethod]
         public void TestMethod2()
         {
-            var A = typeof(ISoftDelete);
+            var A = typeof(ISoftDeletable);
             var B = A.GetProperties()[0];
-            Console.WriteLine(nameof(ISoftDelete));
+            Console.WriteLine(nameof(ISoftDeletable));
         }
 
         [TestMethod]
@@ -46,7 +45,7 @@ namespace Conmon.Tests
         {
             decimal? test = null;
             test = 0.000m;
-            Assert.IsTrue((test??0)==0);
+            Assert.IsTrue((test ?? 0) == 0);
         }
     }
 }

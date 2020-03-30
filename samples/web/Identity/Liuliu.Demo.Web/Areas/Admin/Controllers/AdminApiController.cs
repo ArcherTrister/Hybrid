@@ -7,11 +7,10 @@
 //  <last-date>2018-06-27 4:50</last-date>
 // -----------------------------------------------------------------------
 
-using Microsoft.AspNetCore.Authorization;
-
 using Hybrid.AspNetCore.Mvc;
 using Hybrid.Authorization;
 
+using Microsoft.AspNetCore.Authorization;
 
 namespace Liuliu.Demo.Web.Areas.Admin.Controllers
 {

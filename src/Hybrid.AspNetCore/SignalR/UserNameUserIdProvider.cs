@@ -7,10 +7,9 @@
 //  <last-date>2019-01-04 20:34</last-date>
 // -----------------------------------------------------------------------
 
-using System.Security.Claims;
-
 using Microsoft.AspNetCore.SignalR;
 
+using System.Security.Claims;
 
 namespace Hybrid.AspNetCore.SignalR
 {

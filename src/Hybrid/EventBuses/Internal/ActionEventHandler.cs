@@ -7,12 +7,11 @@
 //  <last-date>2017-09-18 10:38</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Data;
+
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-
-using Hybrid.Data;
-
 
 namespace Hybrid.EventBuses.Internal
 {
@@ -33,7 +32,7 @@ namespace Hybrid.EventBuses.Internal
         /// 获取 事件执行的委托
         /// </summary>
         public Action<TEventData> Action { get; }
-        
+
         /// <summary>
         /// 事件处理
         /// </summary>

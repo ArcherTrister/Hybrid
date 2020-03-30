@@ -7,11 +7,10 @@
 //  <last-date>2018-05-10 19:45</last-date>
 // -----------------------------------------------------------------------
 
-using System.Diagnostics;
-
 using Hybrid.Data;
 using Hybrid.Extensions;
 
+using System.Diagnostics;
 
 namespace Hybrid.Authorization
 {

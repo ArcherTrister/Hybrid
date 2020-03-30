@@ -1,6 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-
 namespace Hybrid.Dependency
 {
     /// <summary>
@@ -15,7 +14,7 @@ namespace Hybrid.Dependency
         {
             ServiceScopeFactory = serviceScopeFactory;
         }
-        
+
         /// <summary>
         /// 获取 <see cref="IServiceScope"/>工厂
         /// </summary>
@@ -39,6 +38,6 @@ namespace Hybrid.Dependency
             return ServiceScopeFactory.CreateScope();
         }
 
-        #endregion
+        #endregion Implementation of IServiceScopeFactory
     }
 }

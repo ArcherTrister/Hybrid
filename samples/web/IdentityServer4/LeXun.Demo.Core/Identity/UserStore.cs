@@ -7,14 +7,13 @@
 //  <last-date>2020-01-31 19:34</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-
-using LeXun.Demo.Identity.Entities;
-
 using Hybrid.Entity;
 using Hybrid.EventBuses;
 using Hybrid.Identity;
 
+using LeXun.Demo.Identity.Entities;
+
+using System;
 
 namespace LeXun.Demo.Identity
 {

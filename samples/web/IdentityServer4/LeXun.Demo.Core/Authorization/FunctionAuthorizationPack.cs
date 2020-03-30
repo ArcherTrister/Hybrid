@@ -7,12 +7,6 @@
 //  <last-date>2020-02-27 0:29</last-date>
 // -----------------------------------------------------------------------
 
-using LeXun.Demo.Authorization.Dtos;
-using LeXun.Demo.Authorization.Entities;
-using LeXun.Demo.Identity;
-
-using Microsoft.Extensions.DependencyInjection;
-
 using Hybrid.AspNetCore.Mvc;
 using Hybrid.Authorization;
 using Hybrid.Authorization.Dtos;
@@ -20,6 +14,11 @@ using Hybrid.Authorization.Functions;
 using Hybrid.Core.Packs;
 using Hybrid.Entity;
 
+using LeXun.Demo.Authorization.Dtos;
+using LeXun.Demo.Authorization.Entities;
+using LeXun.Demo.Identity;
+
+using Microsoft.Extensions.DependencyInjection;
 
 namespace LeXun.Demo.Authorization
 {

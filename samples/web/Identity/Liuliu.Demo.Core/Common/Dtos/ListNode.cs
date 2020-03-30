@@ -7,7 +7,6 @@
 //  <last-date>2018-08-10 12:38</last-date>
 // -----------------------------------------------------------------------
 
-
 namespace Liuliu.Demo.Common.Dtos
 {
     /// <summary>

@@ -7,13 +7,12 @@
 //  <last-date>2018-12-15 19:10</last-date>
 // -----------------------------------------------------------------------
 
-using System.Collections.Generic;
-using System.Data;
-
 using Dapper;
 
 using Microsoft.EntityFrameworkCore;
 
+using System.Collections.Generic;
+using System.Data;
 
 namespace Hybrid.Entity
 {
@@ -32,7 +31,7 @@ namespace Hybrid.Entity
             DbContext dbContext = (DbContext)unitOfWorkManager.GetDbContext<TEntity, TKey>();
             _connectionString = dbContext.Database.GetDbConnection().ConnectionString;
         }
-        
+
         /// <summary>
         /// 获取 数据库类型
         /// </summary>

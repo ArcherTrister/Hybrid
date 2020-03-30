@@ -7,15 +7,14 @@
 //  <last-date>2018-06-12 0:19</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Entity;
+using Hybrid.Extensions;
+
 using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
-
-using Hybrid.Entity;
-using Hybrid.Extensions;
-
 
 namespace Hybrid.Authorization.Entities
 {

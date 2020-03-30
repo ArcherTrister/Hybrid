@@ -7,17 +7,16 @@
 //  <last-date>2019-11-07 23:46</last-date>
 // -----------------------------------------------------------------------
 
-using System.Security.Claims;
-
 using Microsoft.AspNetCore.SignalR;
 
+using System.Security.Claims;
 
 namespace Hybrid.AspNetCore.SignalR
 {
     /// <summary>
     /// 基于Email的用户标识提供者
     /// </summary>
-    public class EmailBaseUserIdProvider:IUserIdProvider
+    public class EmailBaseUserIdProvider : IUserIdProvider
     {
         /// <summary>Gets the user ID for the specified connection.</summary>
         /// <param name="connection">The connection to get the user ID for.</param>

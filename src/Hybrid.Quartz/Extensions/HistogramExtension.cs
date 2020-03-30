@@ -1,10 +1,10 @@
-﻿using Hybrid.Quartz.Dashboard.Models;
+﻿using Hybrid.Extensions;
+using Hybrid.Quartz.Dashboard.Models;
 using Hybrid.Quartz.Plugins.History;
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Hybrid.Extensions;
 
 namespace Hybrid.Quartz.Extensions
 {

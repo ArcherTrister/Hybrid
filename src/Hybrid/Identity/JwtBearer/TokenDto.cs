@@ -9,7 +9,6 @@
 
 using System.ComponentModel.DataAnnotations;
 
-
 namespace Hybrid.Identity.JwtBearer
 {
     /// <summary>

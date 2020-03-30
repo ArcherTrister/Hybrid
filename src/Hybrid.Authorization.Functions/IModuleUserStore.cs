@@ -7,14 +7,13 @@
 //  <last-date>2017-11-18 15:51</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Data;
+using Hybrid.Dependency;
+
 using System;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-
-using Hybrid.Data;
-using Hybrid.Dependency;
-
 
 namespace Hybrid.Authorization
 {
@@ -61,6 +60,6 @@ namespace Hybrid.Authorization
         /// <returns>模块编号集合</returns>
         TModuleKey[] GetUserWithRoleModuleIds(TUserKey userId);
 
-        #endregion
+        #endregion 模块用户信息业务
     }
 }

@@ -7,11 +7,10 @@
 //  <last-date>2020-03-06 21:53</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Linq.Expressions;
-
 using Microsoft.Extensions.DependencyInjection;
 
+using System;
+using System.Linq.Expressions;
 
 namespace Hybrid.Entity
 {

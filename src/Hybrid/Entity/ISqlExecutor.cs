@@ -7,10 +7,9 @@
 //  <last-date>2018-12-15 18:22</last-date>
 // -----------------------------------------------------------------------
 
-using System.Collections.Generic;
-
 using Hybrid.Dependency;
 
+using System.Collections.Generic;
 
 namespace Hybrid.Entity
 {

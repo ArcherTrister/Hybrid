@@ -7,13 +7,12 @@
 //  <last-date>2017-09-01 18:11</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Linq;
+using Hybrid.Data;
 
 using Microsoft.AspNetCore.Http;
 
-using Hybrid.Data;
-
+using System;
+using System.Linq;
 
 namespace Hybrid.AspNetCore
 {
@@ -45,7 +44,7 @@ namespace Hybrid.AspNetCore
         public static bool IsJsonContextType(this HttpRequest request)
         {
             Check.NotNull(request, nameof(request));
-            bool flag = request.Headers?["Content-Type"].ToString().IndexOf("application/json", StringComparison.OrdinalIgnoreCase) > -1 
+            bool flag = request.Headers?["Content-Type"].ToString().IndexOf("application/json", StringComparison.OrdinalIgnoreCase) > -1
                 || request.Headers?["Content-Type"].ToString().IndexOf("text/json", StringComparison.OrdinalIgnoreCase) > -1;
             if (flag)
             {

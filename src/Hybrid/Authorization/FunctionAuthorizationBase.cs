@@ -7,15 +7,14 @@
 //  <last-date>2018-05-10 20:50</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Linq;
-using System.Security.Claims;
-using System.Security.Principal;
-
 using Hybrid.Authorization.Functions;
 using Hybrid.Data;
 using Hybrid.Identity;
 
+using System;
+using System.Linq;
+using System.Security.Claims;
+using System.Security.Principal;
 
 namespace Hybrid.Authorization
 {

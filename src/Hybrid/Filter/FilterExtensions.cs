@@ -10,7 +10,6 @@
 using System;
 using System.Linq.Expressions;
 
-
 namespace Hybrid.Filter
 {
     /// <summary>

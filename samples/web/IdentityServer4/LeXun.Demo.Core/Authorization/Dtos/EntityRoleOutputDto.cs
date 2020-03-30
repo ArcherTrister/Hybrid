@@ -7,16 +7,15 @@
 //  <last-date>2018-07-04 15:12</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-
-using LeXun.Demo.Authorization.Entities;
-
 using Hybrid.Authorization;
 using Hybrid.Entity;
 using Hybrid.Extensions;
 using Hybrid.Filter;
 using Hybrid.Mapping;
 
+using LeXun.Demo.Authorization.Entities;
+
+using System;
 
 namespace LeXun.Demo.Authorization.Dtos
 {
@@ -108,6 +107,6 @@ namespace LeXun.Demo.Authorization.Dtos
         /// </summary>
         public bool Deletable { get; set; }
 
-        #endregion
+        #endregion Implementation of IDataAuthEnabled
     }
 }

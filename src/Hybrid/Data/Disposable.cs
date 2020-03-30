@@ -18,12 +18,12 @@ namespace System
         /// 这个实例被处理了吗？
         /// </summary>
         protected bool Disposed { get; private set; }
-        
+
         protected virtual void Dispose(bool disposing)
         {
             if (disposing)
             {
-                Disposed = true; 
+                Disposed = true;
             }
         }
 
@@ -33,7 +33,7 @@ namespace System
             Dispose(true);
             GC.SuppressFinalize(this);
         }
-        
+
         ~Disposable()
         {
             Dispose(false);

@@ -10,7 +10,6 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
-
 namespace Hybrid.Json
 {
     /// <summary>
@@ -20,7 +19,7 @@ namespace Hybrid.Json
     {
         /// <summary>
         /// 将对象转换为JSON字符串
-        /// </summary> 
+        /// </summary>
         /// <param name="obj">要转换的对象</param>
         /// <param name="camelCase">是否小写名称</param>
         /// <param name="indented"></param>

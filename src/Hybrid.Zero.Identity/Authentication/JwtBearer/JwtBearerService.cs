@@ -7,18 +7,6 @@
 //  <last-date>2019-06-15 13:26</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
-using System.Security.Claims;
-using System.Text;
-using System.Threading.Tasks;
-
-using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.IdentityModel.Tokens;
-
 using Hybrid.Core.Options;
 using Hybrid.Data;
 using Hybrid.Entity;
@@ -31,6 +19,17 @@ using Hybrid.Identity.Events;
 using Hybrid.Identity.JwtBearer;
 using Hybrid.Timing;
 
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
+
+using System;
+using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
+using System.Security.Claims;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Hybrid.Authentication.JwtBearer
 {

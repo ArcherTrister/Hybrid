@@ -7,11 +7,11 @@
 //  <last-date>2018-06-23 15:27</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.ComponentModel;
-using System.Reflection;
-using System.Security.Claims;
-using System.Security.Principal;
+using Hybrid.Core.Packs;
+using Hybrid.Data;
+using Hybrid.EventBuses;
+using Hybrid.Identity.Entities;
+using Hybrid.Identity.Events;
 
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
@@ -19,12 +19,11 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
-using Hybrid.Core.Packs;
-using Hybrid.Data;
-using Hybrid.EventBuses;
-using Hybrid.Identity.Entities;
-using Hybrid.Identity.Events;
-
+using System;
+using System.ComponentModel;
+using System.Reflection;
+using System.Security.Claims;
+using System.Security.Principal;
 
 namespace Hybrid.Identity
 {

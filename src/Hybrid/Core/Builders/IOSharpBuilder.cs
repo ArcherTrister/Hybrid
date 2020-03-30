@@ -7,14 +7,13 @@
 //  <last-date>2018-03-09 12:22</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-
-using Microsoft.Extensions.DependencyInjection;
-
 using Hybrid.Core.Options;
 using Hybrid.Core.Packs;
 
+using Microsoft.Extensions.DependencyInjection;
+
+using System;
+using System.Collections.Generic;
 
 namespace Hybrid.Core.Builders
 {
@@ -39,6 +38,29 @@ namespace Hybrid.Core.Builders
         Action<HybridOptions> OptionsAction { get; }
 
         /// <summary>
+        /// 获取 加载的模块集合
+        /// </summary>
+        IEnumerable<Type> AddModules { get; }
+
+        /// <summary>
+        /// 获取 排除的模块集合
+        /// </summary>
+        IEnumerable<Type> ExceptModules { get; }
+
+        /// <summary>
+        /// 添加指定模块
+        /// </summary>
+        /// <typeparam name="TModule">要添加的模块类型</typeparam>
+        IHybridBuilder AddModule<TModule>() where TModule : HybridPack;
+
+        /// <summary>
+        /// 排除指定模块
+        /// </summary>
+        /// <typeparam name="TModule"></typeparam>
+        /// <returns></returns>
+        IHybridBuilder ExceptModule<TModule>() where TModule : HybridPack;
+
+        /// <summary>
         /// 添加指定模块
         /// </summary>
         /// <typeparam name="TPack">要添加的模块类型</typeparam>
@@ -49,6 +71,6 @@ namespace Hybrid.Core.Builders
         /// </summary>
         /// <param name="optionsAction">Hybrid操作选项</param>
         /// <returns>Hybrid构建器</returns>
-        IHybridBuilder AddOptions(Action<HybridOptions>optionsAction);
+        IHybridBuilder AddOptions(Action<HybridOptions> optionsAction);
     }
 }

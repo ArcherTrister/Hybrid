@@ -7,11 +7,10 @@
 //  <last-date>2019-06-12 15:31</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-
 using Hybrid.Extensions;
 using Hybrid.Timing;
 
+using System;
 
 namespace Hybrid.Identity.JwtBearer
 {

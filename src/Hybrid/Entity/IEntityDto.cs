@@ -21,13 +21,11 @@ namespace Hybrid.Entity
         TKey Id { get; set; }
     }
 
-
     /// <summary>
     /// 定义输出DTO
     /// </summary>
     public interface IOutputDto
     { }
-
 
     /// <summary>
     /// 定义数据权限的更新，删除状态

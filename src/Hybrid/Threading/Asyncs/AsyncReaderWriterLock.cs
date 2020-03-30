@@ -11,7 +11,6 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-
 namespace Hybrid.Threading.Asyncs
 {
     /// <summary>
@@ -24,6 +23,7 @@ namespace Hybrid.Threading.Asyncs
         private readonly Task<Releaser> _writerReleaser;
         private int _readersWaiting;
         private int _status;
+
         private TaskCompletionSource<Releaser> _waitingReader =
             new TaskCompletionSource<Releaser>();
 
@@ -116,7 +116,6 @@ namespace Hybrid.Threading.Asyncs
                 toWake.SetResult(new Releaser(this, toWakeIsWriter));
             }
         }
-
 
         public struct Releaser : IDisposable
         {

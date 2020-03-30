@@ -8,13 +8,11 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.Audits;
+using Hybrid.Authorization.Functions;
 
 using System;
 using System.Collections.Concurrent;
 using System.Security.Claims;
-
-using Hybrid.Authorization.Functions;
-
 
 namespace Hybrid.Dependency
 {

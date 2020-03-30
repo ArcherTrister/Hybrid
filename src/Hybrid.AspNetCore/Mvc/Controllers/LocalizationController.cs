@@ -1,13 +1,12 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Localization;
-using Microsoft.AspNetCore.Mvc;
+﻿using Hybrid.AspNetCore.Extensions;
 using Hybrid.AspNetCore.UI;
 using Hybrid.Data;
+
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Mvc;
+
 using System;
-using System.Collections.Generic;
-using System.Text;
-using Hybrid.Extensions;
-using Hybrid.AspNetCore.Extensions;
 
 namespace Hybrid.AspNetCore.Mvc.Controllers
 {

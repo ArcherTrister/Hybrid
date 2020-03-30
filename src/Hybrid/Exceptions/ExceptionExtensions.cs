@@ -10,7 +10,6 @@ using System;
 using System.Runtime.ExceptionServices;
 using System.Text;
 
-
 namespace Hybrid.Exceptions
 {
     /// <summary>

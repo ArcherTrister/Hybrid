@@ -6,11 +6,6 @@
 //  <last-date>2014-08-04 0:06</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-
 using Hybrid.Authorization;
 using Hybrid.Collections;
 using Hybrid.Exceptions;
@@ -19,6 +14,10 @@ using Hybrid.Filter;
 using Hybrid.Mapping;
 using Hybrid.Reflection;
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
 
 namespace Hybrid.Entity
 {
@@ -280,6 +279,7 @@ namespace Hybrid.Entity
             bool Func(TEntity m) => m.EndTime != null && m.EndTime.Value < now;
             return source.Where(Func);
         }
+
         /*
         /// <summary>
         /// 从指定<see cref="IQueryable{T}"/>数据集中查询未逻辑删除的子数据集，用于筛选实现了<see cref="IRecyclable"/>接口的数据集
@@ -317,6 +317,7 @@ namespace Hybrid.Entity
             return source.Where(m => m.IsDeleted);
         }
         */
+
         /// <summary>
         /// 从指定<see cref="IQueryable{T}"/>数据集中查询未锁定的子数据集，用于筛选实现了<see cref="ILockable"/>接口的数据集
         /// </summary>

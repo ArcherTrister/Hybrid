@@ -7,7 +7,9 @@
 //  <last-date>2020-02-15 17:31</last-date>
 // -----------------------------------------------------------------------
 
-using System.ComponentModel;
+using Hybrid.AutoMapper;
+using Hybrid.Entity;
+using Hybrid.Identity;
 
 using Liuliu.Demo.Identity.Dtos;
 using Liuliu.Demo.Identity.Entities;
@@ -15,10 +17,7 @@ using Liuliu.Demo.Identity.Events;
 
 using Microsoft.Extensions.DependencyInjection;
 
-using Hybrid.AutoMapper;
-using Hybrid.Entity;
-using Hybrid.Identity;
-
+using System.ComponentModel;
 
 namespace Liuliu.Demo.Identity
 {

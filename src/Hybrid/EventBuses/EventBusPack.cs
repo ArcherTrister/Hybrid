@@ -7,15 +7,14 @@
 //  <last-date>2018-06-23 15:25</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.ComponentModel;
+using Hybrid.Core.Packs;
+using Hybrid.EventBuses.Internal;
 
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
-using Hybrid.Core.Packs;
-using Hybrid.EventBuses.Internal;
-
+using System;
+using System.ComponentModel;
 
 namespace Hybrid.EventBuses
 {
@@ -48,7 +47,7 @@ namespace Hybrid.EventBuses
 
             IEventHandlerTypeFinder handlerTypeFinder =
                 services.GetOrAddTypeFinder<IEventHandlerTypeFinder>(assemblyFinder => new EventHandlerTypeFinder(assemblyFinder));
-            
+
             //向服务容器注册所有事件处理器类型
             //Type[] eventHandlerTypes = handlerTypeFinder.FindAll();
             //foreach (Type handlerType in eventHandlerTypes)

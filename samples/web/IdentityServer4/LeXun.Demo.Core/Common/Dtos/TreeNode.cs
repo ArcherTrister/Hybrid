@@ -9,7 +9,6 @@
 
 using System.Collections.Generic;
 
-
 namespace LeXun.Demo.Common.Dtos
 {
     /// <summary>

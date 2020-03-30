@@ -7,11 +7,10 @@
 //  <last-date>2020-01-31 19:21</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.ComponentModel;
-
 using Hybrid.Entity;
 
+using System;
+using System.ComponentModel;
 
 namespace Hybrid.Identity.Entities
 {

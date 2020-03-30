@@ -7,13 +7,12 @@
 //  <last-date>2017-08-15 14:18</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Extensions;
+
 using System;
 using System.Security.Cryptography;
 using System.Text;
 using System.Xml;
-
-using Hybrid.Extensions;
-
 
 namespace Hybrid.Security
 {
@@ -41,7 +40,7 @@ namespace Hybrid.Security
         /// 获取 私钥
         /// </summary>
         public string PrivateKey { get; }
-        
+
         #region 实例方法
 
         /// <summary>
@@ -132,7 +131,7 @@ namespace Hybrid.Security
             return VerifyData(source, signData, PublicKey);
         }
 
-        #endregion
+        #endregion 实例方法
 
         #region 静态方法
 
@@ -253,9 +252,8 @@ namespace Hybrid.Security
             return VerifyData(sourceBytes, signBytes, publicKey);
         }
 
-        #endregion
+        #endregion 静态方法
     }
-
 
     internal static class RSAKeyExtensions
     {
@@ -354,6 +352,6 @@ namespace Hybrid.Security
                   parameters.D != null ? Convert.ToBase64String(parameters.D) : null);
         }
 
-        #endregion
+        #endregion XML
     }
 }

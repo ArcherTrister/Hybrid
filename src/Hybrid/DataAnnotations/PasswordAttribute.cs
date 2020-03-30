@@ -6,11 +6,10 @@
 //  <last-date>2014-08-29 15:21</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.ComponentModel.DataAnnotations;
-
 using Hybrid.Extensions;
 
+using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Hybrid.DataAnnotations
 {
@@ -109,7 +108,7 @@ namespace Hybrid.DataAnnotations
         /// <param name="name">要包括在带有格式的消息中的名称。</param>
         public override string FormatErrorMessage(string name)
         {
-            name.CheckNotNullOrEmpty("name" );
+            name.CheckNotNullOrEmpty("name");
             if (_value.Length < RequiredLength)
             {
                 return "{0} 长度必须大于{1}位".FormatWith(name, RequiredLength);
@@ -133,6 +132,6 @@ namespace Hybrid.DataAnnotations
             return base.FormatErrorMessage(name);
         }
 
-        #endregion
+        #endregion Overrides of DataTypeAttribute
     }
 }

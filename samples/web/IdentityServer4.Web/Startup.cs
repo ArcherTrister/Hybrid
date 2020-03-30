@@ -182,7 +182,7 @@ namespace Hybrid.Web
 
             app
                 //.UseMiddleware<NoFoundHandlerMiddleware>()
-                .UseMiddleware<ExceptionHandlerMiddleware>()
+                .UseMiddleware<JsonExceptionHandlerMiddleware>()
                 .UseDefaultFiles()
                 .UseStaticFiles()
                 .UseHybrid();

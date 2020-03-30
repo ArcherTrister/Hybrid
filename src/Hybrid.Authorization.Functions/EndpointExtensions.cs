@@ -7,18 +7,17 @@
 //  <last-date>2020-02-12 13:14</last-date>
 // -----------------------------------------------------------------------
 
-using System;
+using Hybrid.Authorization.Functions;
+using Hybrid.Dependency;
+using Hybrid.Exceptions;
+using Hybrid.Extensions;
 
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 
-using Hybrid.Authorization.Functions;
-using Hybrid.Dependency;
-using Hybrid.Exceptions;
-using Hybrid.Extensions;
-
+using System;
 
 namespace Hybrid.Authorization
 {
@@ -39,8 +38,8 @@ namespace Hybrid.Authorization
                 return dict.Function;
             }
 
-            string area = endpoint.GetAreaName(), 
-                controller = endpoint.GetControllerName(), 
+            string area = endpoint.GetAreaName(),
+                controller = endpoint.GetControllerName(),
                 action = endpoint.GetActionName();
             IFunctionHandler functionHandler = provider.GetService<IFunctionHandler>();
             if (functionHandler == null)

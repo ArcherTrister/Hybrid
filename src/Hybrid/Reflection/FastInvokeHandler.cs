@@ -11,11 +11,9 @@ using System;
 using System.Reflection;
 using System.Reflection.Emit;
 
-
 namespace Hybrid.Reflection
 {
     using InvokeHandler = Func<object, object[], object>;
-
 
     /// <summary>
     /// 快速执行处理器
@@ -123,35 +121,43 @@ namespace Hybrid.Reflection
                 case -1:
                     il.Emit(OpCodes.Ldc_I4_M1);
                     return;
+
                 case 0:
                     il.Emit(OpCodes.Ldc_I4_0);
                     return;
+
                 case 1:
                     il.Emit(OpCodes.Ldc_I4_1);
                     return;
+
                 case 2:
                     il.Emit(OpCodes.Ldc_I4_2);
                     return;
+
                 case 3:
                     il.Emit(OpCodes.Ldc_I4_3);
                     return;
+
                 case 4:
                     il.Emit(OpCodes.Ldc_I4_4);
                     return;
+
                 case 5:
                     il.Emit(OpCodes.Ldc_I4_5);
                     return;
+
                 case 6:
                     il.Emit(OpCodes.Ldc_I4_6);
                     return;
+
                 case 7:
                     il.Emit(OpCodes.Ldc_I4_7);
                     return;
+
                 case 8:
                     il.Emit(OpCodes.Ldc_I4_8);
                     return;
             }
-
 
             if (value > -129 && value < 128)
             {

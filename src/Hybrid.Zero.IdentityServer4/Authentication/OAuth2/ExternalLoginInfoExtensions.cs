@@ -7,10 +7,9 @@
 //  <last-date>2019-03-21 23:26</last-date>
 // -----------------------------------------------------------------------
 
-using System.Security.Claims;
-
 using Microsoft.AspNetCore.Identity;
 
+using System.Security.Claims;
 
 namespace Hybrid.Identity.OAuth2
 {

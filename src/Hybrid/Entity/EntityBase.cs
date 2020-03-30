@@ -7,11 +7,10 @@
 //  <last-date>2017-08-18 11:27</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.ComponentModel;
-
 using Hybrid.Reflection;
 
+using System;
+using System.ComponentModel;
 
 namespace Hybrid.Entity
 {

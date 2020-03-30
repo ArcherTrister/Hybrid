@@ -7,11 +7,10 @@
 //  <last-date>2018-08-02 15:16</last-date>
 // -----------------------------------------------------------------------
 
-using Microsoft.Extensions.DependencyInjection;
-
 using Hybrid.Core.Packs;
 using Hybrid.EventBuses;
 
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Hybrid.Audits
 {

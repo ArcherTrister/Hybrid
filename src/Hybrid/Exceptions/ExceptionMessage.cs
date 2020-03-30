@@ -9,7 +9,6 @@
 using System;
 using System.Text;
 
-
 namespace Hybrid.Exceptions
 {
     /// <summary>
@@ -17,10 +16,6 @@ namespace Hybrid.Exceptions
     /// </summary>
     public class ExceptionMessage
     {
-        #region 字段
-
-        #endregion
-
         #region 构造函数
 
         /// <summary>
@@ -80,7 +75,7 @@ namespace Hybrid.Exceptions
         /// </summary>
         public string ErrorDetails { get; private set; }
 
-        #endregion
+        #endregion 属性
 
         #region 方法
 
@@ -96,8 +91,8 @@ namespace Hybrid.Exceptions
             return ErrorDetails;
         }
 
-        #endregion
+        #endregion 方法
 
-        #endregion
+        #endregion 构造函数
     }
 }

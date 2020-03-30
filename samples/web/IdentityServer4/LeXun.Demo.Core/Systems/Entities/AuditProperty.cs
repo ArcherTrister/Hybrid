@@ -7,13 +7,12 @@
 //  <last-date>2018-08-02 4:26</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.ComponentModel;
-
 using Hybrid.Audits;
 using Hybrid.Entity;
 using Hybrid.Mapping;
 
+using System;
+using System.ComponentModel;
 
 namespace LeXun.Demo.Systems.Entities
 {

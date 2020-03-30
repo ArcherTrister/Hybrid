@@ -7,13 +7,12 @@
 //  <last-date>2020-02-15 0:15</last-date>
 // -----------------------------------------------------------------------
 
-using System.Security.Claims;
-using System.Threading.Tasks;
-
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 
+using System.Security.Claims;
+using System.Threading.Tasks;
 
 namespace Hybrid.Authentication.JwtBearer
 {
@@ -31,7 +30,7 @@ namespace Hybrid.Authentication.JwtBearer
         {
             ClaimsPrincipal user = context.Principal;
             ClaimsIdentity identity = user.Identity as ClaimsIdentity;
-            
+
             IAccessClaimsProvider accessClaimsProvider = context.HttpContext.RequestServices.GetService<IAccessClaimsProvider>();
             return accessClaimsProvider.RefreshIdentity(identity);
         }

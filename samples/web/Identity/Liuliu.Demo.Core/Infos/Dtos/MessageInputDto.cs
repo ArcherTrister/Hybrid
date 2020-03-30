@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 
-
 namespace Liuliu.Demo.Infos.Dtos
 {
     public partial class MessageInputDto

@@ -6,15 +6,14 @@
 //  <last-date>2015-01-02 15:54</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Extensions;
+
 using System;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Xml.Serialization;
-
-using Hybrid.Extensions;
-
 
 namespace Hybrid.Data
 {
@@ -107,7 +106,7 @@ namespace Hybrid.Data
             }
         }
 
-        #endregion
+        #endregion 二进制序列化
 
         #region XML序列化
 
@@ -145,7 +144,7 @@ namespace Hybrid.Data
         /// </summary>
         public static void ToXmlFile(string fileName, object data)
         {
-            fileName.CheckNotNull("fileName" );
+            fileName.CheckNotNull("fileName");
             data.CheckNotNull("data");
             using (FileStream fs = new FileStream(fileName, FileMode.Create))
             {
@@ -167,6 +166,6 @@ namespace Hybrid.Data
             }
         }
 
-        #endregion
+        #endregion XML序列化
     }
 }

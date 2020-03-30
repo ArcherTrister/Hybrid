@@ -1,7 +1,7 @@
 ﻿using Hybrid.Domain.Entities;
+
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Hybrid.Core.Configuration
 {

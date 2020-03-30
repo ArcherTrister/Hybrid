@@ -7,15 +7,15 @@
 //  <last-date>2017-08-15 23:33</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Collections;
+using Hybrid.Finders;
+
+using Microsoft.Extensions.DependencyModel;
+
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-
-using Microsoft.Extensions.DependencyModel;
-
-using Hybrid.Collections;
-using Hybrid.Finders;
 
 namespace Hybrid.Reflection
 {

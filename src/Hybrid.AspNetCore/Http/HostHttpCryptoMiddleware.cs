@@ -7,10 +7,9 @@
 //  <last-date>2019-10-30 22:06</last-date>
 // -----------------------------------------------------------------------
 
-using System.Threading.Tasks;
-
 using Microsoft.AspNetCore.Http;
 
+using System.Threading.Tasks;
 
 namespace Hybrid.AspNetCore.Http
 {

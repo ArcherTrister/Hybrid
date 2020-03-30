@@ -7,13 +7,10 @@
 //  <last-date>2020-03-26 2:24</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Concurrent;
-using System.Collections.Generic;
-using System.Threading;
-
 using StackExchange.Redis;
 
+using System.Collections.Generic;
+using System.Threading;
 
 namespace Hybrid.Redis
 {

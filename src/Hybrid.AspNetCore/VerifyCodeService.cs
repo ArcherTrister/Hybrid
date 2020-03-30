@@ -7,16 +7,15 @@
 //  <last-date>2018-12-19 17:22</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Data;
+using Hybrid.Extensions;
+
+using Microsoft.Extensions.Caching.Distributed;
+
 using System;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
-
-using Microsoft.Extensions.Caching.Distributed;
-
-using Hybrid.Data;
-using Hybrid.Extensions;
-
 
 namespace Hybrid.AspNetCore
 {

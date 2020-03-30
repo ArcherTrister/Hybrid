@@ -7,19 +7,18 @@
 //  <last-date>2019-10-30 23:38</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Net;
-using System.Net.Http;
-using System.Threading.Tasks;
-
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-
 using Hybrid.Core.Options;
 using Hybrid.Exceptions;
 using Hybrid.Properties;
 using Hybrid.Security;
 
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+
+using System;
+using System.Net;
+using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace Hybrid.Http
 {

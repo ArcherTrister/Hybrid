@@ -9,11 +9,11 @@
 
 using Hybrid.Core.Configuration;
 using Hybrid.Net.Mail.Configuration;
+
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
-
 
 namespace Hybrid.Core.Options
 {

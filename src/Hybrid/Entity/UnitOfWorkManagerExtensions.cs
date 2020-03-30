@@ -7,15 +7,14 @@
 //  <last-date>2018-12-15 20:53</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using Microsoft.Extensions.DependencyInjection;
-
 using Hybrid.Core.Options;
 using Hybrid.Exceptions;
 
+using Microsoft.Extensions.DependencyInjection;
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Hybrid.Entity
 {
@@ -49,12 +48,12 @@ namespace Hybrid.Entity
         /// <summary>
         /// 获取指定实体类型的数据上下文选项
         /// </summary>
-        public static HybridDbContextOptions GetDbContextResolveOptions<TEntity,TKey>(this IUnitOfWorkManager unitOfWorkManager) where TEntity : IEntity<TKey>
+        public static HybridDbContextOptions GetDbContextResolveOptions<TEntity, TKey>(this IUnitOfWorkManager unitOfWorkManager) where TEntity : IEntity<TKey>
         {
             Type entityType = typeof(TEntity);
             return unitOfWorkManager.GetDbContextResolveOptions(entityType);
         }
-        
+
         /// <summary>
         /// 获取指定实体类型的数据上下文选项
         /// </summary>
@@ -72,7 +71,7 @@ namespace Hybrid.Entity
         /// <summary>
         /// 获取指定实体类型的Sql执行器
         /// </summary>
-        public static ISqlExecutor<TEntity,TKey> GetSqlExecutor<TEntity,TKey>(this IUnitOfWorkManager unitOfWorkManager) where TEntity : IEntity<TKey>
+        public static ISqlExecutor<TEntity, TKey> GetSqlExecutor<TEntity, TKey>(this IUnitOfWorkManager unitOfWorkManager) where TEntity : IEntity<TKey>
         {
             HybridDbContextOptions options = unitOfWorkManager.GetDbContextResolveOptions(typeof(TEntity));
             DatabaseType databaseType = options.DatabaseType;

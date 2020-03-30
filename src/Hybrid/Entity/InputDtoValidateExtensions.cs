@@ -7,6 +7,9 @@
 //  <last-date>2019-04-30 14:31</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Data;
+using Hybrid.Reflection;
+
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -14,14 +17,10 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Reflection;
 
-using Hybrid.Data;
-using Hybrid.Reflection;
-
-
 namespace Hybrid.Entity
 {
     /// <summary>
-    /// <see cref="IInputDto{TKey}"/>验证扩展 
+    /// <see cref="IInputDto{TKey}"/>验证扩展
     /// </summary>
     public static class InputDtoValidateExtensions
     {

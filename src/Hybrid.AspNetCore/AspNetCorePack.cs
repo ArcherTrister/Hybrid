@@ -7,16 +7,15 @@
 //  <last-date>2018-06-23 15:22</last-date>
 // -----------------------------------------------------------------------
 
-using System.ComponentModel;
-using System.Security.Principal;
+using Hybrid.AspNetCore.Http;
+using Hybrid.Core.Packs;
 
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
-using Hybrid.AspNetCore.Http;
-using Hybrid.Core.Packs;
-
+using System.ComponentModel;
+using System.Security.Principal;
 
 namespace Hybrid.AspNetCore
 {

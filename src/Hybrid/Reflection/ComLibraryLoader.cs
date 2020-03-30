@@ -12,7 +12,6 @@ using System.ComponentModel;
 using System.IO;
 using System.Runtime.InteropServices;
 
-
 namespace Hybrid.Reflection
 {
     /// <summary>
@@ -23,6 +22,7 @@ namespace Hybrid.Reflection
         private delegate int DllGetClassObjectInvoker([MarshalAs(UnmanagedType.LPStruct)] Guid clsid,
             [MarshalAs(UnmanagedType.LPStruct)] Guid iid,
             [MarshalAs(UnmanagedType.IUnknown)] out object ppv);
+
         private static readonly Guid UnknownId = new Guid("00000000-0000-0000-C000-000000000046");
         private IntPtr _lib = IntPtr.Zero;
         private bool _preferURObjects = true;

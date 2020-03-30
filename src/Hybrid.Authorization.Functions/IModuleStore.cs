@@ -7,17 +7,16 @@
 //  <last-date>2017-11-18 12:48</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Threading.Tasks;
-
 using Hybrid.Authorization.Dtos;
 using Hybrid.Authorization.Entities;
 using Hybrid.Data;
 using Hybrid.Dependency;
 using Hybrid.Entity;
 
+using System;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace Hybrid.Authorization
 {
@@ -73,6 +72,6 @@ namespace Hybrid.Authorization
         /// <returns>模块编号集合</returns>
         TModuleKey[] GetModuleTreeIds(params TModuleKey[] rootIds);
 
-        #endregion
+        #endregion 模块信息业务
     }
 }

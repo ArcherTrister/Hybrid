@@ -7,16 +7,15 @@
 //  <last-date>2018-06-27 4:44</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Entity;
+using Hybrid.EventBuses;
+
+using Liuliu.Demo.Identity.Entities;
+
 using System;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-
-using Liuliu.Demo.Identity.Entities;
-
-using Hybrid.Entity;
-using Hybrid.EventBuses;
-
 
 namespace Liuliu.Demo.Identity.Events
 {

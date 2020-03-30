@@ -7,11 +7,13 @@
 //  <last-date>2018-07-05 14:45</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.ComponentModel;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Threading.Tasks;
+using Hybrid.AspNetCore.Mvc.Filters;
+using Hybrid.AspNetCore.UI;
+using Hybrid.Authorization;
+using Hybrid.Authorization.Modules;
+using Hybrid.Data;
+using Hybrid.Entity;
+using Hybrid.Filter;
 
 using LeXun.Demo.Authorization;
 using LeXun.Demo.Authorization.Dtos;
@@ -22,14 +24,11 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 
-using Hybrid.AspNetCore.Mvc.Filters;
-using Hybrid.AspNetCore.UI;
-using Hybrid.Authorization;
-using Hybrid.Authorization.Modules;
-using Hybrid.Data;
-using Hybrid.Entity;
-using Hybrid.Filter;
-
+using System;
+using System.ComponentModel;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace LeXun.Demo.Web.Areas.Admin.Controllers
 {
@@ -105,7 +104,7 @@ namespace LeXun.Demo.Web.Areas.Admin.Controllers
         public async Task<AjaxResult> Create(params EntityRoleInputDto[] dtos)
         {
             Check.NotNull(dtos, nameof(dtos));
-            
+
             OperationResult result = await _dataAuthManager.CreateEntityRoles(dtos);
             return result.ToAjaxResult();
         }
@@ -142,7 +141,7 @@ namespace LeXun.Demo.Web.Areas.Admin.Controllers
         public async Task<AjaxResult> Delete(params Guid[] ids)
         {
             Check.NotNull(ids, nameof(ids));
-            
+
             OperationResult result = await _dataAuthManager.DeleteEntityRoles(ids);
             return result.ToAjaxResult();
         }

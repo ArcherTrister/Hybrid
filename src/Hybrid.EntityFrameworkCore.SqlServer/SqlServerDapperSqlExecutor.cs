@@ -7,9 +7,9 @@
 //  <last-date>2018-12-15 19:40</last-date>
 // -----------------------------------------------------------------------
 
-using System.Data;
 using Microsoft.Data.SqlClient;
 
+using System.Data;
 
 namespace Hybrid.Entity.SqlServer
 {

@@ -7,18 +7,17 @@
 //  <last-date>2017-11-16 11:53</last-date>
 // -----------------------------------------------------------------------
 
-using System.Linq;
-
-using Microsoft.AspNetCore.Identity;
-
 using Hybrid.Collections;
 using Hybrid.Data;
 
+using Microsoft.AspNetCore.Identity;
+
+using System.Linq;
 
 namespace Hybrid.Identity
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public static class IdentityExtensions
     {

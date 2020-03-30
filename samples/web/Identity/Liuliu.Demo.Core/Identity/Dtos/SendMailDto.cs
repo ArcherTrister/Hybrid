@@ -9,7 +9,6 @@
 
 using System.ComponentModel.DataAnnotations;
 
-
 namespace Liuliu.Demo.Identity.Dtos
 {
     /// <summary>

@@ -7,12 +7,6 @@
 //  <last-date>2020-02-26 23:15</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Threading.Tasks;
-
 using Hybrid.Authorization.Dtos;
 using Hybrid.Authorization.Entities;
 using Hybrid.Authorization.EntityInfos;
@@ -26,6 +20,11 @@ using Hybrid.Extensions;
 using Hybrid.Filter;
 using Hybrid.Identity.Entities;
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace Hybrid.Authorization.DataAuthorization
 {
@@ -332,6 +331,6 @@ namespace Hybrid.Authorization.DataAuthorization
             return OperationResult.Success;
         }
 
-        #endregion
+        #endregion Implementation of IEntityRoleStore<TEntityRole,in TEntityRoleInputDto,in TRoleKey>
     }
 }

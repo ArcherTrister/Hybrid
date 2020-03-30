@@ -7,18 +7,17 @@
 //  <last-date>2018-06-23 15:26</last-date>
 // -----------------------------------------------------------------------
 
-using System.ComponentModel;
-using System.Linq;
-
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection.Extensions;
-
 using Hybrid.Authorization.Functions;
 using Hybrid.Authorization.Modules;
 using Hybrid.Core.Packs;
 using Hybrid.Systems;
 
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
+
+using System.ComponentModel;
+using System.Linq;
 
 namespace Hybrid.AspNetCore.Mvc
 {

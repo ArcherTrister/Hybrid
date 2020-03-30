@@ -7,14 +7,13 @@
 //  <last-date>2018-06-27 4:44</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.ComponentModel;
-
-using Liuliu.Demo.Identity.Entities;
-
 using Hybrid.Entity;
 using Hybrid.Mapping;
 
+using Liuliu.Demo.Identity.Entities;
+
+using System;
+using System.ComponentModel;
 
 namespace Liuliu.Demo.Identity.Dtos
 {
@@ -78,6 +77,6 @@ namespace Liuliu.Demo.Identity.Dtos
         /// </summary>
         public bool Deletable { get; set; }
 
-        #endregion
+        #endregion Implementation of IDataAuthEnabled
     }
 }

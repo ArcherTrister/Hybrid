@@ -7,12 +7,11 @@
 //  <last-date>2018-03-19 22:49</last-date>
 // -----------------------------------------------------------------------
 
-using System.IO;
+using Hybrid.Extensions;
 
 using Microsoft.Extensions.Configuration;
 
-using Hybrid.Extensions;
-
+using System.IO;
 
 namespace Hybrid.Core.Options
 {

@@ -7,13 +7,12 @@
 //  <last-date>2019-03-27 14:54</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Linq;
+using Hybrid.Entity;
 
 using Microsoft.Extensions.DependencyInjection;
 
-using Hybrid.Entity;
-
+using System;
+using System.Linq;
 
 namespace Hybrid.Dependency
 {

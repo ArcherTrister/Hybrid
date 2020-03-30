@@ -7,14 +7,6 @@
 //  <last-date>2020-02-26 23:05</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Threading.Tasks;
-
-using Microsoft.Extensions.DependencyInjection;
-
 using Hybrid.Authorization.Dtos;
 using Hybrid.Authorization.Entities;
 using Hybrid.Authorization.Events;
@@ -28,6 +20,13 @@ using Hybrid.Extensions;
 using Hybrid.Identity.Entities;
 using Hybrid.Mapping;
 
+using Microsoft.Extensions.DependencyInjection;
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace Hybrid.Authorization
 {
@@ -128,7 +127,7 @@ namespace Hybrid.Authorization
         /// </summary>
         protected IRepository<TUser, TUserKey> UserRepository => _provider.GetService<IRepository<TUser, TUserKey>>();
 
-        #endregion
+        #endregion 属性
 
         #region Implementation of IFunctionStore<TFunction,in TFunctionInputDto>
 
@@ -685,5 +684,4 @@ namespace Hybrid.Authorization
 
         #endregion Implementation of IModuleUserStore<TModuleUser>
     }
-
 }

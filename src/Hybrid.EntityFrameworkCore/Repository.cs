@@ -7,17 +7,6 @@
 //  <last-date>2017-11-15 19:20</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Security.Principal;
-using System.Threading.Tasks;
-
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-
 using Hybrid.Authorization;
 using Hybrid.Collections;
 using Hybrid.Data;
@@ -28,8 +17,18 @@ using Hybrid.Identity;
 using Hybrid.Mapping;
 using Hybrid.Threading;
 
-using Z.EntityFramework.Plus;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Security.Principal;
+using System.Threading.Tasks;
+
+using Z.EntityFramework.Plus;
 
 namespace Hybrid.Entity
 {
@@ -519,7 +518,7 @@ namespace Hybrid.Entity
             return query;
         }
 
-        #endregion
+        #endregion 同步方法
 
         #region 异步方法
 
@@ -830,7 +829,7 @@ namespace Hybrid.Entity
             return await _dbSet.FindAsync(key);
         }
 
-        #endregion
+        #endregion 异步方法
 
         #region 私有方法
 
@@ -987,6 +986,6 @@ namespace Hybrid.Entity
             }
         }
 
-        #endregion
+        #endregion 私有方法
     }
 }

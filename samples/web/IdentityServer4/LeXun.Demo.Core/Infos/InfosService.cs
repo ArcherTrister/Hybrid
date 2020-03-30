@@ -11,14 +11,13 @@
 //  <last-editor>ArcherTrister</last-editor>
 // -----------------------------------------------------------------------
 
-using System;
+using Hybrid.Entity;
 
 using LeXun.Demo.Identity.Entities;
 
 using Microsoft.Extensions.DependencyInjection;
 
-using Hybrid.Entity;
-
+using System;
 
 namespace LeXun.Demo.Infos
 {

@@ -7,13 +7,12 @@
 //  <last-date>2017-09-04 19:33</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
-
 using Hybrid.Audits;
 using Hybrid.Entity;
 
+using System;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace Hybrid.Identity.Entities
 {
@@ -99,6 +98,5 @@ namespace Hybrid.Identity.Entities
         {
             return Name;
         }
-
     }
 }

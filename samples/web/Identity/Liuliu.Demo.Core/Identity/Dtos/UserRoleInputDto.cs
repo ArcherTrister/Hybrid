@@ -7,13 +7,12 @@
 //  <last-date>2018-06-27 4:44</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-
-using Liuliu.Demo.Identity.Entities;
-
 using Hybrid.Identity.Dtos;
 using Hybrid.Mapping;
 
+using Liuliu.Demo.Identity.Entities;
+
+using System;
 
 namespace Liuliu.Demo.Identity.Dtos
 {

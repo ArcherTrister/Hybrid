@@ -7,6 +7,14 @@
 //  <last-date>2020-03-26 21:47</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.AspNetCore;
+using Hybrid.AspNetCore.Routing;
+using Hybrid.AutoMapper;
+
+//using Hybrid.Log4Net;
+using Hybrid.NLog;
+using Hybrid.Swagger;
+
 using Liuliu.Demo.Authorization;
 using Liuliu.Demo.Identity;
 using Liuliu.Demo.Systems;
@@ -16,14 +24,6 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-
-using Hybrid.AspNetCore;
-using Hybrid.AspNetCore.Routing;
-using Hybrid.AutoMapper;
-//using Hybrid.Log4Net;
-using Hybrid.NLog;
-using Hybrid.Swagger;
-
 
 namespace Liuliu.Demo.Web
 {

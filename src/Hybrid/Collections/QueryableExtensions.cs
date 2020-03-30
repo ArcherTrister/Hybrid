@@ -1,10 +1,10 @@
-﻿using System;
+﻿using Hybrid.Extensions;
+using Hybrid.Filter;
+
+using System;
 using System.ComponentModel;
 using System.Linq;
 using System.Linq.Expressions;
-
-using Hybrid.Extensions;
-using Hybrid.Filter;
 
 namespace Hybrid.Collections
 {
@@ -187,6 +187,5 @@ namespace Hybrid.Collections
 
             return source.ThenBy(sortCondition.SortField, sortCondition.ListSortDirection);
         }
-
     }
 }

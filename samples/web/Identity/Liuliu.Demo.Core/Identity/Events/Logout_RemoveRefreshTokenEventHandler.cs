@@ -1,15 +1,14 @@
-﻿using System.Security.Claims;
-using System.Security.Principal;
-using System.Threading;
-using System.Threading.Tasks;
+﻿using Hybrid.EventBuses;
+using Hybrid.Identity;
 
 using Liuliu.Demo.Identity.Entities;
 
 using Microsoft.AspNetCore.Identity;
 
-using Hybrid.EventBuses;
-using Hybrid.Identity;
-
+using System.Security.Claims;
+using System.Security.Principal;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Liuliu.Demo.Identity.Events
 {
@@ -21,7 +20,7 @@ namespace Liuliu.Demo.Identity.Events
         /// <summary>
         /// 初始化一个<see cref="Logout_RemoveRefreshTokenEventHandler"/>类型的新实例
         /// </summary>
-        public Logout_RemoveRefreshTokenEventHandler(UserManager<User>userManager, IPrincipal principal)
+        public Logout_RemoveRefreshTokenEventHandler(UserManager<User> userManager, IPrincipal principal)
         {
             _userManager = userManager;
             _principal = principal;

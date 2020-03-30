@@ -7,18 +7,6 @@
 //  <last-date>2018-06-27 4:49</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.ComponentModel;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Threading.Tasks;
-
-using Liuliu.Demo.Identity;
-using Liuliu.Demo.Identity.Dtos;
-using Liuliu.Demo.Identity.Entities;
-
-using Microsoft.AspNetCore.Mvc;
-
 using Hybrid.AspNetCore.Mvc.Filters;
 using Hybrid.AspNetCore.UI;
 using Hybrid.Authorization;
@@ -27,6 +15,17 @@ using Hybrid.Data;
 using Hybrid.Entity;
 using Hybrid.Filter;
 
+using Liuliu.Demo.Identity;
+using Liuliu.Demo.Identity.Dtos;
+using Liuliu.Demo.Identity.Entities;
+
+using Microsoft.AspNetCore.Mvc;
+
+using System;
+using System.ComponentModel;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace Liuliu.Demo.Web.Areas.Admin.Controllers
 {
@@ -85,7 +84,7 @@ namespace Liuliu.Demo.Web.Areas.Admin.Controllers
         public async Task<AjaxResult> Update(UserRoleInputDto[] dtos)
         {
             Check.NotNull(dtos, nameof(dtos));
-            
+
             OperationResult result = await _identityContract.UpdateUserRoles(dtos);
             return result.ToAjaxResult();
         }
@@ -103,10 +102,9 @@ namespace Liuliu.Demo.Web.Areas.Admin.Controllers
         public async Task<AjaxResult> Delete(Guid[] ids)
         {
             Check.NotNull(ids, nameof(ids));
-            
+
             OperationResult result = await _identityContract.DeleteUserRoles(ids);
             return result.ToAjaxResult();
         }
-
     }
 }

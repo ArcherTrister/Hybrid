@@ -7,11 +7,9 @@
 //  <last-date>2019-09-29 13:10</last-date>
 // -----------------------------------------------------------------------
 
-
-using System.ComponentModel;
-
 using Microsoft.AspNetCore.Routing;
 
+using System.ComponentModel;
 
 namespace Hybrid.AspNetCore.Routing
 {

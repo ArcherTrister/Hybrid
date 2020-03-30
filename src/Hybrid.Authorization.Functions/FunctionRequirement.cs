@@ -9,7 +9,6 @@
 
 using Microsoft.AspNetCore.Authorization;
 
-
 namespace Hybrid.Authorization
 {
     /// <summary>

@@ -7,9 +7,7 @@
 //  <last-date>2018-08-06 10:16</last-date>
 // -----------------------------------------------------------------------
 
-
 using Hybrid.Reflection;
-
 
 namespace Hybrid.Entity
 {

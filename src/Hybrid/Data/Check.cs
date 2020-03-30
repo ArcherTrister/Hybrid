@@ -7,16 +7,15 @@
 //  <last-date>2017-08-16 23:06</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Entity;
+using Hybrid.Properties;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-
-using Hybrid.Entity;
-using Hybrid.Properties;
-
 
 namespace Hybrid.Data
 {

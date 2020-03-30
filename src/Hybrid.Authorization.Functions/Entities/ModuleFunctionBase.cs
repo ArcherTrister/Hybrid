@@ -7,11 +7,10 @@
 //  <last-date>2017-11-17 20:01</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.ComponentModel;
-
 using Hybrid.Entity;
 
+using System;
+using System.ComponentModel;
 
 namespace Hybrid.Authorization.Entities
 {

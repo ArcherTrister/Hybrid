@@ -7,12 +7,11 @@
 //  <last-date>2018-08-02 18:40</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-
 using Hybrid.Audits;
 using Hybrid.Entity;
 
+using System;
+using System.Collections.Generic;
 
 namespace Liuliu.Demo.Systems.Dtos
 {

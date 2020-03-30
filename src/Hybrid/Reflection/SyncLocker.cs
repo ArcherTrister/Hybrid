@@ -7,11 +7,10 @@
 //  <last-date>2017-12-20 18:16</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Threading;
-
 using Hybrid.Extensions;
 
+using System;
+using System.Threading;
 
 namespace Hybrid.Utility.Reflection
 {
@@ -55,9 +54,9 @@ namespace Hybrid.Utility.Reflection
 
         /// <summary>
         /// 操作系统级的同步键
-        /// (如果将 name 指定为 null 或空字符串，则创建一个局部互斥体。 
-        /// 如果名称以前缀“Global\”开头，则 mutex 在所有终端服务器会话中均为可见。 
-        /// 如果名称以前缀“Local\”开头，则 mutex 仅在创建它的终端服务器会话中可见。 
+        /// (如果将 name 指定为 null 或空字符串，则创建一个局部互斥体。
+        /// 如果名称以前缀“Global\”开头，则 mutex 在所有终端服务器会话中均为可见。
+        /// 如果名称以前缀“Local\”开头，则 mutex 仅在创建它的终端服务器会话中可见。
         /// 如果创建已命名 mutex 时不指定前缀，则它将采用前缀“Local\”。)
         /// </summary>
         /// <param name="key">同步键的字符串，null时表示局部互斥体</param>

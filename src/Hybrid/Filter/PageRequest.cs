@@ -9,7 +9,6 @@
 
 using Hybrid.Data;
 
-
 namespace Hybrid.Filter
 {
     /// <summary>

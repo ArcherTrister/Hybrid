@@ -7,13 +7,13 @@
 //  <last-date>2019-10-31 11:12</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Extensions;
+
+using Microsoft.AspNetCore.Http;
+
 using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
-
-using Microsoft.AspNetCore.Http;
-using Hybrid.Extensions;
-
 
 namespace Hybrid.AspNetCore.Http
 {
@@ -90,6 +90,5 @@ namespace Hybrid.AspNetCore.Http
 
             return false;
         }
-
     }
 }

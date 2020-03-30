@@ -4,7 +4,6 @@
     {
         public HybridErrorViewModel()
         {
-
         }
 
         public HybridErrorViewModel(string error)

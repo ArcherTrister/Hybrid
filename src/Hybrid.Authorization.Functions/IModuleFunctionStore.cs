@@ -7,14 +7,13 @@
 //  <last-date>2017-11-18 15:44</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Data;
+using Hybrid.Dependency;
+
 using System;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-
-using Hybrid.Data;
-using Hybrid.Dependency;
-
 
 namespace Hybrid.Authorization
 {
@@ -47,6 +46,6 @@ namespace Hybrid.Authorization
         /// <returns>业务操作结果</returns>
         Task<OperationResult> SetModuleFunctions(TModuleKey moduleId, Guid[] functionIds);
 
-        #endregion
+        #endregion 模块功能信息业务
     }
 }

@@ -7,11 +7,10 @@
 //  <last-date>2017-09-17 11:44</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-
 using Hybrid.Data;
 
+using System;
+using System.Collections.Generic;
 
 namespace Hybrid.Audits
 {
@@ -82,6 +81,5 @@ namespace Hybrid.Audits
         /// 获取或设置 审计数据信息集合
         /// </summary>
         public ICollection<AuditEntityEntry> EntityEntries { get; set; }
-
     }
 }

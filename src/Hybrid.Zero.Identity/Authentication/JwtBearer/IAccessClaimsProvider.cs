@@ -10,7 +10,6 @@
 using System.Security.Claims;
 using System.Threading.Tasks;
 
-
 namespace Hybrid.Authentication.JwtBearer
 {
     /// <summary>

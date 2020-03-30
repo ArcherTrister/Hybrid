@@ -7,12 +7,11 @@
 //  <last-date>2020-02-10 20:13</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Entity;
+
 using System;
 using System.ComponentModel;
 using System.Diagnostics;
-
-using Hybrid.Entity;
-
 
 namespace Hybrid.Authorization.Functions
 {

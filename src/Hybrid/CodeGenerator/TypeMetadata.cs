@@ -7,12 +7,11 @@
 //  <last-date>2018-08-06 12:25</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Reflection;
+
 using System;
 using System.Collections.Generic;
 using System.Reflection;
-
-using Hybrid.Reflection;
-
 
 namespace Hybrid.CodeGenerator
 {

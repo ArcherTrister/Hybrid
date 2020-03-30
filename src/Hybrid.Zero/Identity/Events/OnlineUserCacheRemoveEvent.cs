@@ -7,12 +7,11 @@
 //  <last-date>2018-07-09 16:07</last-date>
 // -----------------------------------------------------------------------
 
-using System;
+using Hybrid.EventBuses;
 
 using Microsoft.Extensions.DependencyInjection;
 
-using Hybrid.EventBuses;
-
+using System;
 
 namespace Hybrid.Identity.Events
 {
@@ -26,7 +25,6 @@ namespace Hybrid.Identity.Events
         /// </summary>
         public string[] UserNames { get; set; } = new string[0];
     }
-
 
     /// <summary>
     /// 在线用户信息缓存移除事件处理器

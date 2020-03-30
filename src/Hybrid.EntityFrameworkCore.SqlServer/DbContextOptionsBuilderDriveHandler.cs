@@ -7,10 +7,9 @@
 //  <last-date>2017-08-21 1:07</last-date>
 // -----------------------------------------------------------------------
 
-using System.Data.Common;
-
 using Microsoft.EntityFrameworkCore;
 
+using System.Data.Common;
 
 namespace Hybrid.Entity.SqlServer
 {

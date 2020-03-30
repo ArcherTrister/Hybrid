@@ -7,15 +7,14 @@
 //  <last-date>2020-03-07 0:24</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Linq.Expressions;
-
-using Microsoft.Extensions.DependencyInjection;
-
 using Hybrid.Core.Systems;
 using Hybrid.Dependency;
 using Hybrid.Entity;
 
+using Microsoft.Extensions.DependencyInjection;
+
+using System;
+using System.Linq.Expressions;
 
 namespace LeXun.Demo.Systems
 {

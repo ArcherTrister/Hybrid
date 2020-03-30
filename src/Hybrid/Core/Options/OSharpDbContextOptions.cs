@@ -7,10 +7,9 @@
 //  <last-date>2017-09-03 0:54</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-
 using Hybrid.Entity;
 
+using System;
 
 namespace Hybrid.Core.Options
 {

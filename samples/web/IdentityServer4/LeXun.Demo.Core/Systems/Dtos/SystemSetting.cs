@@ -1,6 +1,4 @@
-﻿
-using Hybrid.Core.Systems;
-
+﻿using Hybrid.Core.Systems;
 
 namespace LeXun.Demo.Systems.Dtos
 {

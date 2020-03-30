@@ -7,14 +7,13 @@
 //  <last-date>2017-09-15 1:22</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Linq;
-using System.Reflection;
-
 using Hybrid.Authorization.Functions;
 using Hybrid.Finders;
 using Hybrid.Reflection;
 
+using System;
+using System.Linq;
+using System.Reflection;
 
 namespace Hybrid.AspNetCore.Mvc
 {

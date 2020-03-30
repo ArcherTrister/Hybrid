@@ -7,11 +7,10 @@
 //  <last-date>2019-06-03 11:44</last-date>
 // -----------------------------------------------------------------------
 
-using System.Threading;
-using System.Threading.Tasks;
-
 using Microsoft.AspNetCore.Identity;
 
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Hybrid.Identity
 {

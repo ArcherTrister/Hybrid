@@ -7,12 +7,11 @@
 //  <last-date>2018-12-20 0:15</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Linq.Expressions;
-
 using Hybrid.Authorization;
 using Hybrid.Data;
 
+using System;
+using System.Linq.Expressions;
 
 namespace Hybrid.Filter
 {

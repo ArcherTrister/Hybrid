@@ -7,11 +7,10 @@
 //  <last-date>2017-09-01 20:39</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-
 using Hybrid.Data;
 using Hybrid.Extensions;
 
+using System;
 
 namespace Hybrid.AspNetCore.UI
 {
@@ -71,8 +70,10 @@ namespace Hybrid.AspNetCore.UI
             {
                 case OperationResultType.Success:
                     return AjaxResultType.Success;
+
                 case OperationResultType.NoChanged:
                     return AjaxResultType.Info;
+
                 default:
                     return AjaxResultType.Error;
             }

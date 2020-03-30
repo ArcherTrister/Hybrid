@@ -1,11 +1,11 @@
 ﻿using Hybrid.Data;
 using Hybrid.Security.Claims;
 using Hybrid.Zero.IdentityServer4.Extensions;
+
 using IdentityServer4;
 using IdentityServer4.Models;
-using System;
+
 using System.Collections.Generic;
-using System.Text;
 
 namespace LeXun.Demo.Identity
 {

@@ -7,6 +7,12 @@
 //  <last-date>2020-01-31 19:14</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Data;
+using Hybrid.Entity;
+using Hybrid.Identity.Entities;
+
+using Microsoft.AspNetCore.Identity;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,13 +20,6 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading;
 using System.Threading.Tasks;
-
-using Microsoft.AspNetCore.Identity;
-
-using Hybrid.Data;
-using Hybrid.Entity;
-using Hybrid.Identity.Entities;
-
 
 namespace Hybrid.Identity
 {
@@ -63,7 +62,7 @@ namespace Hybrid.Identity
         /// <value>An <see cref="T:System.Linq.IQueryable`1" /> collection of roles.</value>
         public IQueryable<TRole> Roles => _roleRepository.QueryAsNoTracking();
 
-        #endregion
+        #endregion Implementation of IQueryableRoleStore<TRole>
 
         /// <summary>
         /// Converts the provided <paramref name="id"/> to a strongly typed key object.
@@ -291,7 +290,7 @@ namespace Hybrid.Identity
             return Task.FromResult(_roleRepository.Query().FirstOrDefault(m => m.NormalizedName == normalizedRoleName));
         }
 
-        #endregion
+        #endregion Implementation of IRoleStore<TRole>
 
         #region Implementation of IRoleClaimStore<TRole>
 
@@ -349,6 +348,6 @@ namespace Hybrid.Identity
             return _roleClaimRepository.DeleteBatchAsync(m => m.RoleId.Equals(role.Id) && m.ClaimValue == claim.Type && m.ClaimValue == claim.Value);
         }
 
-        #endregion
+        #endregion Implementation of IRoleClaimStore<TRole>
     }
 }

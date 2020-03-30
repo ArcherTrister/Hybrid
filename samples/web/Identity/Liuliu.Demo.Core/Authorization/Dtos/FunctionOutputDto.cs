@@ -7,12 +7,11 @@
 //  <last-date>2018-06-27 4:44</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-
 using Hybrid.Authorization.Functions;
 using Hybrid.Entity;
 using Hybrid.Mapping;
 
+using System;
 
 namespace Liuliu.Demo.Authorization.Dtos
 {
@@ -104,6 +103,6 @@ namespace Liuliu.Demo.Authorization.Dtos
         /// </summary>
         public bool Deletable { get; set; }
 
-        #endregion
+        #endregion Implementation of IDataAuthEnabled
     }
 }

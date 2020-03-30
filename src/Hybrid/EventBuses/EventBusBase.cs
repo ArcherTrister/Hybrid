@@ -7,18 +7,17 @@
 //  <last-date>2018-07-01 17:55</last-date>
 // -----------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-
 using Hybrid.Data;
 using Hybrid.Dependency;
 using Hybrid.EventBuses.Internal;
 using Hybrid.Threading;
 
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Hybrid.EventBuses
 {
@@ -39,7 +38,7 @@ namespace Hybrid.EventBuses
             EventStore = serviceProvider.GetService<IEventStore>();
             Logger = serviceProvider.GetLogger(GetType());
         }
-        
+
         /// <summary>
         /// 获取 服务作用域工厂
         /// </summary>
@@ -180,7 +179,7 @@ namespace Hybrid.EventBuses
             EventStore.RemoveAll(eventType);
         }
 
-        #endregion
+        #endregion Implementation of IEventSubscriber
 
         #region Implementation of IEventPublisher
 
@@ -401,6 +400,6 @@ namespace Hybrid.EventBuses
             return Task.FromResult(0);
         }
 
-        #endregion
+        #endregion Implementation of IEventPublisher
     }
 }

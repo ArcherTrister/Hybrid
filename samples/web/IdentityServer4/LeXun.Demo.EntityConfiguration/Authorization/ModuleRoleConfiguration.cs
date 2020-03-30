@@ -7,7 +7,7 @@
 //  <last-date>2018-06-27 4:48</last-date>
 // -----------------------------------------------------------------------
 
-using System;
+using Hybrid.Entity;
 
 using LeXun.Demo.Authorization.Entities;
 using LeXun.Demo.Identity.Entities;
@@ -15,8 +15,7 @@ using LeXun.Demo.Identity.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-using Hybrid.Entity;
-
+using System;
 
 namespace LeXun.Demo.EntityConfiguration.Authorization
 {
