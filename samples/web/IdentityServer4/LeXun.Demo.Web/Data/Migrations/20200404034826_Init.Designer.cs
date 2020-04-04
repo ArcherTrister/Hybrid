@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LeXun.Demo.Web.Data.Migrations
 {
     [DbContext(typeof(DefaultDbContext))]
-    [Migration("20200404021735_Init")]
+    [Migration("20200404034826_Init")]
     partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

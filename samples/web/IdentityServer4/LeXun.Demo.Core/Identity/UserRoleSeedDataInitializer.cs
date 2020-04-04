@@ -13,7 +13,7 @@ using System.Linq.Expressions;
 
 namespace LeXun.Demo.Identity
 {
-    public class UserRoleSeedDataInitializer : SeedDataInitializerBase<UserRole, int>
+    public class UserRoleSeedDataInitializer : SeedDataInitializerBase<UserRole, Guid>
     {
         private readonly IServiceProvider _rootProvider;
 
@@ -26,16 +26,15 @@ namespace LeXun.Demo.Identity
             _rootProvider = rootProvider;
         }
 
+        public override int Order => 10;
+
         /// <summary>
         /// 重写以提供要初始化的种子数据
         /// </summary>
         /// <returns></returns>
-        protected override UserRole[] SyncSeedData()
+        protected override UserRole[] SeedData()
         {
-            return new[]
-            {
-                new UserRole() { RoleId = 1, UserId = 1 }
-            };
+            return null;
         }
 
         /// <summary>
@@ -54,26 +53,22 @@ namespace LeXun.Demo.Identity
         /// <param name="entities"></param>
         protected override void SyncToDatabase(UserRole[] entities)
         {
-            if (entities?.Length > 0)
+            _rootProvider.BeginUnitOfWorkTransaction(provider =>
             {
-                _rootProvider.BeginUnitOfWorkTransaction(provider =>
+                UserManager<User> userManager = provider.GetService<UserManager<User>>();
+                RoleManager<Role> roleManager = provider.GetService<RoleManager<Role>>();
+
+                User user = userManager.Users.GroupBy(p => p.CreatedTime).Select(p => p.OrderBy(e => e.CreatedTime).FirstOrDefault()).FirstOrDefault();
+                string[] roles = roleManager.Roles.Select(p=>p.Name).ToArray();
+
+                IdentityResult result = userManager.AddToRolesAsync(user, roles).Result;
+
+                if (!result.Succeeded)
                 {
-                    UserRoleManager<User> userManager = provider.GetService<UserManager<User>>();
-                    foreach (User user in entities)
-                    {
-                        if (userManager.Users.Any(ExistingExpression(user)))
-                        {
-                            continue;
-                        }
-                        IdentityResult result = userManager.CreateAsync(user).Result;
-                        if (!result.Succeeded)
-                        {
-                            throw new HybridException($"进行用户角色种子数据“{user.UserName}”同步时出错：{result.ErrorMessage()}");
-                        }
-                    }
-                },
-                    true);
-            }
+                    throw new HybridException($"进行用户角色种子数据“{user.UserName}”同步时出错：{result.ErrorMessage()}");
+                }
+            },
+                true);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Hybrid.Entity;
+﻿using Hybrid.Data;
+using Hybrid.Entity;
 using Hybrid.Exceptions;
 using Hybrid.Identity;
 
@@ -34,7 +35,29 @@ namespace LeXun.Demo.Identity
         {
             return new[]
             {
-                new User() { UserName = "admin" }
+                new User()
+                {
+                    UserName = "Admin",
+                    NormalizedUserName = "ADMIN",
+                    NickName = "SuperAdmin",
+                    Gender = GenderType.Male,
+                    Email = "Admin@example.com",
+                    NormalizeEmail = "ADMIN@EXAMPLE.COM",
+                    EmailConfirmed = true,
+                    PasswordHash = "AQAAAAEAACcQAAAAEB6lgMDV9JoidhR4cfIK+bKOQfo9eE6M02N68wV0KxCbx+c5gxkBrZWOp0FwI5Id8g==",
+                    Avatar = null,
+                    SecurityStamp = "RRYXXETXCDKPXE6QPNDGLMCYNBA2ZF4P",
+                    ConcurrencyStamp = "e50ea89e-c966-4ade-8fe4-6fe94de83777",
+                    PhoneNumber = "18100000000",
+                    PhoneNumberConfirmed = false,
+                    TwoFactorEnabled = false,
+                    LockoutEnd = null,
+                    LockoutEnabled = true,
+                    AccessFailedCount = 0,
+                    IsSystem = true,
+                    IsLocked = false,
+                    Remark = null
+                }
             };
         }
 
@@ -59,7 +82,6 @@ namespace LeXun.Demo.Identity
                 _rootProvider.BeginUnitOfWorkTransaction(provider =>
                 {
                     UserManager<User> userManager = provider.GetService<UserManager<User>>();
-                    RoleManager<Role> roleManager = provider.GetService<RoleManager<Role>>();
                     foreach (User user in entities)
                     {
                         if (userManager.Users.Any(ExistingExpression(user)))
@@ -67,8 +89,6 @@ namespace LeXun.Demo.Identity
                             continue;
                         }
                         IdentityResult result = userManager.CreateAsync(user).Result;
-                        Role role = roleManager.Roles.GroupBy(p=>p.CreatedTime).Select(p=>p.OrderBy(e=>e.CreatedTime).FirstOrDefault()).FirstOrDefault();
-                        IdentityResult result = userManager.AddToRoleAsync(user, role.Name).Result;
                         if (!result.Succeeded)
                         {
                             throw new HybridException($"进行用户种子数据“{user.UserName}”同步时出错：{result.ErrorMessage()}");

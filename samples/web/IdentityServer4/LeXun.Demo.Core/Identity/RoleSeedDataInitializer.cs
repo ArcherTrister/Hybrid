@@ -35,8 +35,6 @@ namespace LeXun.Demo.Identity
             _rootProvider = rootProvider;
         }
 
-        public override int Order => 1;
-
         /// <summary>
         /// 重写以提供要初始化的种子数据
         /// </summary>

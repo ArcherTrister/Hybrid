@@ -49,7 +49,7 @@ namespace LeXun.Demo.Web
             //    .AddPack<SqlServerDefaultDbContextMigrationPack>()
             //    .AddPack<AuditPack>();
 
-            //Add-Migration Init -Verbose -o Data/Migrations/Application
+            //Add-Migration Init -Verbose -o Data/Migrations
             services.AddHybrid<AspHybridModuleManager>();
         }
 

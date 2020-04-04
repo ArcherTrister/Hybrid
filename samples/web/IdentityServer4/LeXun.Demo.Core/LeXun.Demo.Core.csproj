@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <Compile Remove="Identity\AuthenticationPack.cs" />
-    <Compile Remove="Identity\UserRoleSeedDataInitializer.cs" />
   </ItemGroup>
 
   <ItemGroup>
