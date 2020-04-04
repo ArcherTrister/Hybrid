@@ -127,13 +127,13 @@ namespace Liuliu.Demo.Web.Controllers
             }).ToList();
 
             string cliVersion = AssemblyExtensions.GetCliVersion();
-            string osharpVersion = Assembly.GetExecutingAssembly().GetProductVersion();
+            string hybridVersion = Assembly.GetExecutingAssembly().GetProductVersion();
 
             info.Object = new
             {
                 Message = "WebApi 数据服务已启动",
                 CliVersion = cliVersion,
-                HybridVersion = osharpVersion
+                HybridVersion = hybridVersion
             };
 
             return info;

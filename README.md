@@ -23,13 +23,9 @@
 ![IdentityServer-Admin-Preview](docs/Images/IdentityServer-Admin-Preview2.png)
 ![IdentityServer-Admin-Preview](docs/Images/IdentityServer-Admin-Preview3.png)
 
-## Plan
-
-- 设计一个Logo
-
 # 说明
-### ①参考<a href="https://github.com/aspnetboilerplate/aspnetboilerplate" target="_blank">ABP</a>
-### ②参考<a href="https://github.com/i66soft/osharp" target="_blank">Osharp</a>
+### ①此版本直接使用OSharp源码修改，主要替换了命名空间，原项目地址<a href="https://github.com/i66soft/osharp" target="_blank">Osharp</a>
+### ②参考<a href="https://github.com/aspnetboilerplate/aspnetboilerplate" target="_blank">ABP</a>
 ### ③参考<a href="https://github.com/tanmingchao/esoftor-master" target="_blank">Esoftor</a>
 ### 二零二零年一月十九号正式开源
 
@@ -39,6 +35,11 @@
 ### IdentityServer管理后台
 ### Identity管理后台(待集成)
 ### 阶梯算法
+### 除新版本的手动加载模块，还保留了自动加载模块
+
+## Plan
+
+- 设计一个Logo
 
 > ClaimTypes【Hybrid】
 

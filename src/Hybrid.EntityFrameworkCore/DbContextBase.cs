@@ -33,7 +33,7 @@ namespace Hybrid.Entity
     {
         private readonly IEntityManager _entityManager;
         private readonly ILogger _logger;
-        private readonly HybridDbContextOptions _osharpDbOptions;
+        private readonly HybridDbContextOptions _hybridDbOptions;
         private readonly IServiceProvider _serviceProvider;
 
         /// <summary>
@@ -44,7 +44,7 @@ namespace Hybrid.Entity
         {
             _entityManager = entityManager;
             _serviceProvider = serviceProvider;
-            _osharpDbOptions = serviceProvider?.GetHybridOptions()?.DbContexts?.Values.FirstOrDefault(m => m.DbContextType == GetType());
+            _hybridDbOptions = serviceProvider?.GetHybridOptions()?.DbContexts?.Values.FirstOrDefault(m => m.DbContextType == GetType());
             _logger = serviceProvider?.GetLogger(GetType());
         }
 
@@ -75,7 +75,7 @@ namespace Hybrid.Entity
         public override int SaveChanges()
         {
             IList<AuditEntityEntry> auditEntities = new List<AuditEntityEntry>();
-            if (_osharpDbOptions?.AuditEntityEnabled == true)
+            if (_hybridDbOptions?.AuditEntityEnabled == true)
             {
                 IAuditEntityProvider auditEntityProvider = _serviceProvider.GetService<IAuditEntityProvider>();
                 auditEntities = auditEntityProvider?.GetAuditEntities(this)?.ToList();
@@ -123,7 +123,7 @@ namespace Hybrid.Entity
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
         {
             IList<AuditEntityEntry> auditEntities = new List<AuditEntityEntry>();
-            if (_osharpDbOptions?.AuditEntityEnabled == true)
+            if (_hybridDbOptions?.AuditEntityEnabled == true)
             {
                 IAuditEntityProvider auditEntityProvider = _serviceProvider.GetService<IAuditEntityProvider>();
                 auditEntities = auditEntityProvider?.GetAuditEntities(this)?.ToList();
@@ -219,7 +219,7 @@ namespace Hybrid.Entity
         ///// <param name="optionsBuilder"></param>
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{
-        //    if (_osharpDbOptions != null && _osharpDbOptions.LazyLoadingProxiesEnabled)
+        //    if (_hybridDbOptions != null && _hybridDbOptions.LazyLoadingProxiesEnabled)
         //    {
         //        optionsBuilder.UseLazyLoadingProxies();
         //    }

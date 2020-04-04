@@ -81,5 +81,10 @@ namespace Hybrid.Entity
             }
             return Id.ToString().GetHashCode();
         }
+
+        public override string ToString()
+        {
+            return $"[{GetType().Name} {Id}]";
+        }
     }
 }

@@ -2,6 +2,8 @@ using Hybrid.Entity;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Conmon.Tests
 {
@@ -46,6 +48,19 @@ namespace Conmon.Tests
             decimal? test = null;
             test = 0.000m;
             Assert.IsTrue((test ?? 0) == 0);
+        }
+
+        [TestMethod]
+        public void TestAny()
+        {
+            List<User> list = new List<User>();
+            list.Add(new User { Id = 1 });
+            Console.WriteLine(list.Any());
+            Assert.IsTrue(list.Any());
+        }
+
+        public class User {
+            public int Id { get; set; }
         }
     }
 }

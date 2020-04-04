@@ -11,7 +11,7 @@ namespace Hybrid.Quartz.Dashboard.Controllers
     /// <summary>
     /// 日历
     /// </summary>
-    public class CalendarsController : QuartzBaseController
+    public sealed class CalendarsController : QuartzBaseController
     {
         public IActionResult Index(string sortOrder, string searchString, int page = 1, int pageSize = 5)
         {

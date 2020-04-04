@@ -55,8 +55,8 @@ namespace Liuliu.Demo.Web.Controllers
                 RegisterDto dto = new RegisterDto
                 {
                     UserName = "admin",
-                    Password = "osharp123456",
-                    ConfirmPassword = "osharp123456",
+                    Password = "hybrid123456",
+                    ConfirmPassword = "hybrid123456",
                     Email = "i66soft@qq.com",
                     NickName = "大站长",
                     RegisterIp = HttpContext.GetClientIp()
@@ -73,8 +73,8 @@ namespace Liuliu.Demo.Web.Controllers
 
                 dto = new RegisterDto()
                 {
-                    UserName = "osharp",
-                    Password = "osharp123456",
+                    UserName = "hybrid",
+                    Password = "hybrid123456",
                     Email = "mf.guo@qq.com",
                     NickName = "测试号",
                     RegisterIp = HttpContext.GetClientIp()

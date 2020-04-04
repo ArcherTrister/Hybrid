@@ -11,7 +11,7 @@ namespace Hybrid.MailKit
     /// MailKit模块
     /// </summary>
     [Description("MailKit模块")]
-    public class MailKitModule : HybridPack
+    public class MailKitPack : HybridPack
     {
         /// <summary>
         /// 获取 模块级别，级别越小越先启动

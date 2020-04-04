@@ -10,13 +10,14 @@
 
   <ItemGroup>
     <Compile Remove="Identity\AuthenticationPack.cs" />
+    <Compile Remove="Identity\UserRoleSeedDataInitializer.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\src\Hybrid.Authorization.Datas\Hybrid.Authorization.Datas.csproj" />
     <ProjectReference Include="..\..\..\..\src\Hybrid.Authorization.Functions\Hybrid.Authorization.Functions.csproj" />
     <ProjectReference Include="..\..\..\..\src\Hybrid.AutoMapper\Hybrid.AutoMapper.csproj" />
-    <ProjectReference Include="..\..\..\..\src\Hybrid.Zero.IdentityServer4\Hybrid.Zero.IdentityServer4.csproj" />
+    <ProjectReference Include="..\..\..\..\src\Hybrid.Zero\Hybrid.Zero.csproj" />
   </ItemGroup>
 
   <ItemGroup>

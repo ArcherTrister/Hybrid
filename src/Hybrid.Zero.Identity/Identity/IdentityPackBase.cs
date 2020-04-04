@@ -131,7 +131,7 @@ namespace Hybrid.Identity
             return options =>
             {
                 options.Cookie.HttpOnly = true;
-                options.Cookie.Name = "osharp.identity";
+                options.Cookie.Name = "hybrid.identity";
                 options.ExpireTimeSpan = TimeSpan.FromMinutes(20);
                 options.SlidingExpiration = true;
                 options.LoginPath = "/#/identity/login";

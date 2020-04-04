@@ -30,6 +30,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="AspNet.Security.OAuth.QQ" Version="3.0.0" />
+		<PackageReference Include="AspNet.Security.OAuth.QQ" Version="3.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.MicrosoftAccount" Version="3.1.3" />
 		<PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.3" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.3">
 			<PrivateAssets>all</PrivateAssets>
@@ -46,6 +49,7 @@
     <ProjectReference Include="..\..\..\..\src\Hybrid.Quartz\Hybrid.Quartz.csproj" />
     <ProjectReference Include="..\..\..\..\src\Hybrid.Redis\Hybrid.Redis.csproj" />
     <ProjectReference Include="..\..\..\..\src\Hybrid.Swagger\Hybrid.Swagger.csproj" />
+    <ProjectReference Include="..\..\..\..\src\Hybrid.Zero.IdentityServer4\Hybrid.Zero.IdentityServer4.csproj" />
     <ProjectReference Include="..\LeXun.Demo.Core\LeXun.Demo.Core.csproj" />
     <ProjectReference Include="..\LeXun.Demo.EntityConfiguration\LeXun.Demo.EntityConfiguration.csproj" />
   </ItemGroup>

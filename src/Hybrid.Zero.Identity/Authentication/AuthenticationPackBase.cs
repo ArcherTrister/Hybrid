@@ -9,7 +9,6 @@
 
 using Hybrid.AspNetCore;
 using Hybrid.Authentication.JwtBearer;
-using Hybrid.Core.Options;
 using Hybrid.Core.Packs;
 using Hybrid.Exceptions;
 using Hybrid.Extensions;
@@ -25,7 +24,6 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.IdentityModel.Tokens;
 
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
 
@@ -101,8 +99,8 @@ namespace Hybrid.Authentication
 
                     jwt.TokenValidationParameters = new TokenValidationParameters()
                     {
-                        ValidIssuer = configuration["Hybrid:Jwt:Issuer"] ?? "osharp identity",
-                        ValidAudience = configuration["Hybrid:Jwt:Audience"] ?? "osharp client",
+                        ValidIssuer = configuration["Hybrid:Jwt:Issuer"] ?? "hybrid identity",
+                        ValidAudience = configuration["Hybrid:Jwt:Audience"] ?? "hybrid client",
                         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secret)),
                         LifetimeValidator = (nbf, exp, token, param) => exp > DateTime.UtcNow
                     };
@@ -128,59 +126,6 @@ namespace Hybrid.Authentication
         /// </summary>
         protected virtual AuthenticationBuilder AddOAuth2(IServiceCollection services, AuthenticationBuilder builder)
         {
-            IConfiguration configuration = services.GetConfiguration();
-            IConfigurationSection section = configuration.GetSection("Hybrid:OAuth2");
-            IDictionary<string, OAuth2Options> dict = section.Get<Dictionary<string, OAuth2Options>>();
-            if (dict == null)
-            {
-                return builder;
-            }
-
-            foreach (var (name, options) in dict)
-            {
-                if (!options.Enabled)
-                {
-                    continue;
-                }
-
-                if (string.IsNullOrEmpty(options.ClientId))
-                {
-                    throw new HybridException($"配置文件中Hybrid:OAuth2配置的{name}节点的ClientId不能为空");
-                }
-
-                if (string.IsNullOrEmpty(options.ClientSecret))
-                {
-                    throw new HybridException($"配置文件中Hybrid:OAuth2配置的{name}节点的ClientSecret不能为空");
-                }
-
-                switch (name)
-                {
-                    case "QQ":
-                        builder.AddQQ(opts =>
-                        {
-                            opts.ClientId = options.ClientId;
-                            opts.ClientSecret = options.ClientSecret;
-                        });
-                        break;
-
-                    case "Microsoft":
-                        builder.AddMicrosoftAccount(opts =>
-                        {
-                            opts.ClientId = options.ClientId;
-                            opts.ClientSecret = options.ClientSecret;
-                        });
-                        break;
-
-                    case "GitHub":
-                        builder.AddGitHub(opts =>
-                        {
-                            opts.ClientId = options.ClientId;
-                            opts.ClientSecret = options.ClientSecret;
-                        });
-                        break;
-                }
-            }
-
             return builder;
         }
     }

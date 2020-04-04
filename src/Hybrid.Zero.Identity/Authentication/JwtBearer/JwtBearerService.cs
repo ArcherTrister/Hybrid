@@ -75,8 +75,8 @@ namespace Hybrid.Authentication.JwtBearer
             Check.NotNull(refreshToken, nameof(refreshToken));
             TokenValidationParameters parameters = new TokenValidationParameters()
             {
-                ValidIssuer = _jwtOptions.Issuer ?? "osharp identity",
-                ValidAudience = _jwtOptions.Audience ?? "osharp client",
+                ValidIssuer = _jwtOptions.Issuer ?? "hybrid identity",
+                ValidAudience = _jwtOptions.Audience ?? "hybrid client",
                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtOptions.Secret))
             };
             JwtSecurityToken jwtSecurityToken = _tokenHandler.ReadJwtToken(refreshToken);

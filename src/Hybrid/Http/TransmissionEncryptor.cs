@@ -22,7 +22,7 @@ namespace Hybrid.Http
     /// </summary>
     public class TransmissionEncryptor
     {
-        private readonly string _separator = "#@|osharp|@#";
+        private readonly string _separator = "#@|hybrid|@#";
         private readonly string _facePublicKey;
         private readonly string _ownPrivateKey;
 

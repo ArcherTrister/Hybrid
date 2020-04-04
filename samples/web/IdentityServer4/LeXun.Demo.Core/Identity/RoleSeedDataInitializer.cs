@@ -35,6 +35,8 @@ namespace LeXun.Demo.Identity
             _rootProvider = rootProvider;
         }
 
+        public override int Order => 1;
+
         /// <summary>
         /// 重写以提供要初始化的种子数据
         /// </summary>
@@ -63,7 +65,7 @@ namespace LeXun.Demo.Identity
         /// <param name="entities"></param>
         protected override void SyncToDatabase(Role[] entities)
         {
-            if (entities?.Length > 0)
+            if (entities.Any())
             {
                 _rootProvider.BeginUnitOfWorkTransaction(provider =>
                     {

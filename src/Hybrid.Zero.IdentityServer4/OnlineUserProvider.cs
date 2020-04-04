@@ -9,8 +9,11 @@
 
 using Hybrid.Caching;
 using Hybrid.Data;
+using Hybrid.Entity;
+using Hybrid.Extensions;
 using Hybrid.Identity;
 using Hybrid.Identity.Entities;
+using Hybrid.Identity.JwtBearer;
 using Hybrid.Threading.Asyncs;
 
 using Microsoft.AspNetCore.Identity;
@@ -20,6 +23,8 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Hybrid.Zero.IdentityServer4
@@ -53,7 +58,7 @@ namespace Hybrid.Zero.IdentityServer4
         /// <returns>在线用户信息</returns>
         public virtual async Task<OnlineUser> GetOrCreate(string userName)
         {
-            string key = $"Identity_OnlineUser_{userName}";
+            string key = GetKey(userName);
             DistributedCacheEntryOptions options = new DistributedCacheEntryOptions();
             options.SetSlidingExpiration(TimeSpan.FromMinutes(30));
             using (await _asyncLock.LockAsync())
@@ -71,8 +76,8 @@ namespace Hybrid.Zero.IdentityServer4
                         IList<string> roles = await userManager.GetRolesAsync(user);
                         RoleManager<TRole> roleManager = _serviceProvider.GetService<RoleManager<TRole>>();
                         bool isAdmin = roleManager.Roles.ToList().Any(m => roles.Contains(m.Name) && m.IsAdmin);
-                        //RefreshToken[] refreshTokens = await GetRefreshTokens(user);
-                        return new OnlineUser()
+                        RefreshToken[] refreshTokens = await GetRefreshTokens(user);
+                        OnlineUser onlineUser = new OnlineUser()
                         {
                             Id = user.Id.ToString(),
                             UserName = user.UserName,
@@ -81,8 +86,17 @@ namespace Hybrid.Zero.IdentityServer4
                             Avatar = user.Avatar,
                             IsAdmin = isAdmin,
                             Roles = roles.ToArray(),
-                            //RefreshTokens = refreshTokens.ToDictionary(m => m.ClientId, m => m)
+                            RefreshTokens = refreshTokens.ToDictionary(m => m.ClientId, m => m)
                         };
+
+                        // UserClaim都添加到扩展数据
+                        IList<Claim> claims = await userManager.GetClaimsAsync(user);
+                        foreach (Claim claim in claims)
+                        {
+                            onlineUser.ExtendData.Add(claim.Type, claim.Value);
+                        }
+
+                        return onlineUser;
                     },
                     options);
             }
@@ -97,53 +111,58 @@ namespace Hybrid.Zero.IdentityServer4
             Check.NotNull(userNames, nameof(userNames));
             foreach (string userName in userNames)
             {
-                string key = $"Identity_OnlineUser_{userName}";
+                string key = GetKey(userName);
                 _cache.Remove(key);
             }
         }
 
-        ///// <summary>
-        ///// 获取指定用户所有刷新Token，并清除过期Token
-        ///// </summary>
-        ///// <param name="user"></param>
-        ///// <returns></returns>
-        //private async Task<RefreshToken[]> GetRefreshTokens(TUser user)
-        //{
-        //    IHybridUserAuthenticationTokenStore<TUser, TUserKey> store =
-        //        _serviceProvider.GetService<IUserStore<TUser>>() as IHybridUserAuthenticationTokenStore<TUser, TUserKey>;
-        //    if (store == null)
-        //    {
-        //        return new RefreshToken[0];
-        //    }
-        //    const string loginProvider = "JwtBearer";
-        //    string[] jsons = await store.GetTokensAsync(user, loginProvider, CancellationToken.None);
-        //    if (jsons.Length == 0)
-        //    {
-        //        return new RefreshToken[0];
-        //    }
+        /// <summary>
+        /// 获取指定用户所有刷新Token，并清除过期Token
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
+        private async Task<RefreshToken[]> GetRefreshTokens(TUser user)
+        {
+            IHybridUserAuthenticationTokenStore<TUser> store =
+                _serviceProvider.GetService<IUserStore<TUser>>() as IHybridUserAuthenticationTokenStore<TUser>;
+            if (store == null)
+            {
+                return new RefreshToken[0];
+            }
+            const string loginProvider = "JwtBearer";
+            string[] jsons = await store.GetTokensAsync(user, loginProvider, CancellationToken.None);
+            if (jsons.Length == 0)
+            {
+                return new RefreshToken[0];
+            }
 
-        //    RefreshToken[] tokens = jsons.Select(m => m.FromJsonString<RefreshToken>()).ToArray();
-        //    RefreshToken[] expiredTokens = tokens.Where(m => m.EndUtcTime < DateTime.UtcNow).ToArray();
-        //    if (expiredTokens.Length <= 0)
-        //    {
-        //        return tokens;
-        //    }
+            RefreshToken[] tokens = jsons.Select(m => m.FromJsonString<RefreshToken>()).ToArray();
+            RefreshToken[] expiredTokens = tokens.Where(m => m.EndUtcTime < DateTime.UtcNow).ToArray();
+            if (expiredTokens.Length <= 0)
+            {
+                return tokens;
+            }
 
-        //    //删除过期的Token
-        //    using (var scope = _serviceProvider.CreateScope())
-        //    {
-        //        IServiceProvider scopedProvider = scope.ServiceProvider;
-        //        UserManager<TUser> userManager = scopedProvider.GetService<UserManager<TUser>>();
-        //        foreach (RefreshToken expiredToken in expiredTokens)
-        //        {
-        //            await userManager.RemoveRefreshToken<TUser, TUserKey>(user, expiredToken.ClientId);
-        //        }
+            //删除过期的Token
+            using (var scope = _serviceProvider.CreateScope())
+            {
+                IServiceProvider scopedProvider = scope.ServiceProvider;
+                UserManager<TUser> userManager = scopedProvider.GetService<UserManager<TUser>>();
+                foreach (RefreshToken expiredToken in expiredTokens)
+                {
+                    await userManager.RemoveRefreshToken(user, expiredToken.ClientId);
+                }
 
-        //        IUnitOfWork unitOfWork = scopedProvider.GetUnitOfWork<TUser, TUserKey>();
-        //        unitOfWork.Commit();
-        //    }
+                IUnitOfWork unitOfWork = scopedProvider.GetUnitOfWork<TUser, TUserKey>();
+                unitOfWork.Commit();
+            }
 
-        //    return tokens.Except(expiredTokens).ToArray();
-        //}
+            return tokens.Except(expiredTokens).ToArray();
+        }
+
+        private static string GetKey(string userName)
+        {
+            return $"Identity:OnlineUser:{userName}";
+        }
     }
 }

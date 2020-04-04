@@ -1,19 +1,11 @@
-﻿// -----------------------------------------------------------------------
-//  <copyright file="IdentityPack.cs" company="Hybrid开源团队">
-//      Copyright (c) 2014-2020 Hybrid. All rights reserved.
-//  </copyright>
-//  <site>https://www.lxking.cn</site>
-//  <last-editor>ArcherTrister</last-editor>
-//  <last-date>2020-02-15 17:31</last-date>
-// -----------------------------------------------------------------------
-
-using Hybrid.AutoMapper;
+﻿using Hybrid.AutoMapper;
 using Hybrid.Core.Configuration;
 using Hybrid.Core.Options;
 using Hybrid.Data;
 using Hybrid.Entity;
 using Hybrid.Zero.IdentityServer4;
 
+using LeXun.Demo.Identity;
 using LeXun.Demo.Identity.Dtos;
 using LeXun.Demo.Identity.Entities;
 using LeXun.Demo.Identity.Events;
@@ -28,13 +20,13 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.IdentityModel.Tokens.Jwt;
 
-namespace LeXun.Demo.Identity
+namespace LeXun.Demo.Web.Startups
 {
     /// <summary>
     /// 身份认证模块，此模块必须在MVC模块之前启动
     /// </summary>
     [Description("身份认证模块")]
-    public class IdentityPack : IdentityServer4PackBase<UserStore, RoleStore, User, int, UserClaim, int, Role, int>
+    public class IdentityServer4Pack : IdentityServer4PackBase<UserStore, RoleStore, User, int, UserClaim, int, Role, int>
     {
         /// <summary>
         /// 将模块服务添加到依赖注入服务容器中
@@ -267,17 +259,25 @@ namespace LeXun.Demo.Identity
         /// <returns></returns>
         protected override IIdentityServerBuilder AddIdentityServerBuild(IIdentityServerBuilder builder, IServiceCollection services)
         {
-            return builder.AddDeveloperSigningCredential()
+            builder.AddDeveloperSigningCredential()
                 //.AddSigningCredential()
                 //.AddCustomAuthorizeRequestValidator<>()
                 //.AddCustomTokenRequestValidator<>()
                 //.AddValidators()
                 .AddHybridDefaultUI<User, int>()
                 .AddHybridTokenCreationService<CustomTokenCreationService>()
-                .AddHybridCustomTokenValidator<CustomTokenValidator>()
-                .AddInMemoryIdentityResources(IdentityServer4Config.GetIdentityResources())
-                .AddInMemoryApiResources(IdentityServer4Config.GetApis())
-                .AddInMemoryClients(IdentityServer4Config.GetClients());
+                .AddHybridCustomTokenValidator<CustomTokenValidator>();
+
+
+
+
+            //builder.AddConfigurationStoreCache();
+
+            builder.AddInMemoryIdentityResources(IdentityServer4Config.GetIdentityResources());
+            builder.AddInMemoryApiResources(IdentityServer4Config.GetApis());
+            builder.AddInMemoryClients(IdentityServer4Config.GetClients());
+
+            return builder;
 
             ////持久化
             ////IConfiguration configuration = services.GetConfiguration();

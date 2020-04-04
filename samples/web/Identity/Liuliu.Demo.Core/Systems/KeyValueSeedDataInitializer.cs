@@ -36,7 +36,7 @@ namespace Liuliu.Demo.Systems
         {
             return new[]
             {
-                new KeyValue(SystemSettingKeys.SiteName, "OSHARP"),
+                new KeyValue(SystemSettingKeys.SiteName, "HYBRID"),
                 new KeyValue(SystemSettingKeys.SiteDescription, "Hybrid with AspNetCore & Angular"),
             };
         }

@@ -39,19 +39,19 @@ namespace Microsoft.Extensions.DependencyInjection
             services.AddDbContext<TDbContext>((provider, builder) =>
             {
                 Type dbContextType = typeof(TDbContext);
-                HybridOptions osharpOptions = provider.GetHybridOptions();
-                HybridDbContextOptions osharpDbContextOptions = osharpOptions?.GetDbContextOptions(dbContextType);
-                if (osharpDbContextOptions == null)
+                HybridOptions hybridOptions = provider.GetHybridOptions();
+                HybridDbContextOptions hybridDbContextOptions = hybridOptions?.GetDbContextOptions(dbContextType);
+                if (hybridDbContextOptions == null)
                 {
                     throw new HybridException($"无法找到数据上下文“{dbContextType.DisplayName()}”的配置信息");
                 }
 
                 //启用延迟加载
-                if (osharpDbContextOptions.LazyLoadingProxiesEnabled)
+                if (hybridDbContextOptions.LazyLoadingProxiesEnabled)
                 {
                     builder = builder.UseLazyLoadingProxies();
                 }
-                DatabaseType databaseType = osharpDbContextOptions.DatabaseType;
+                DatabaseType databaseType = hybridDbContextOptions.DatabaseType;
 
                 //处理数据库驱动差异处理
                 IDbContextOptionsBuilderDriveHandler driveHandler = provider.GetServices<IDbContextOptionsBuilderDriveHandler>()
@@ -62,9 +62,9 @@ namespace Microsoft.Extensions.DependencyInjection
                 }
 
                 ScopedDictionary scopedDictionary = provider.GetService<ScopedDictionary>();
-                string key = $"DnConnection_{osharpDbContextOptions.ConnectionString}";
+                string key = $"DnConnection_{hybridDbContextOptions.ConnectionString}";
                 DbConnection existingDbConnection = scopedDictionary.GetValue<DbConnection>(key);
-                builder = driveHandler.Handle(builder, osharpDbContextOptions.ConnectionString, existingDbConnection);
+                builder = driveHandler.Handle(builder, hybridDbContextOptions.ConnectionString, existingDbConnection);
 
                 //使用模型缓存
                 DbContextModelCache modelCache = provider.GetService<DbContextModelCache>();

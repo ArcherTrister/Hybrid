@@ -16,7 +16,7 @@ namespace Hybrid.Quartz.Dashboard.Controllers
     /// <summary>
     /// 仪表盘
     /// </summary>
-    public class DashboardController : QuartzBaseController
+    public sealed class DashboardController : QuartzBaseController
     {
         private readonly ISchedulerManager _schedulerManager;
 

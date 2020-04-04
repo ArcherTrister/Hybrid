@@ -5,7 +5,7 @@ namespace Hybrid.Quartz.Dashboard.Controllers
     /// <summary>
     /// Cron触发器
     /// </summary>
-    public class CronTriggerController : QuartzBaseController
+    public sealed class CronTriggerController : QuartzBaseController
     {
         public IActionResult Index()
         {

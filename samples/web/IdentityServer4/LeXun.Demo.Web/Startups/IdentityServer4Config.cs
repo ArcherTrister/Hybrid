@@ -7,7 +7,7 @@ using IdentityServer4.Models;
 
 using System.Collections.Generic;
 
-namespace LeXun.Demo.Identity
+namespace LeXun.Demo.Web.Startups
 {
     public static class IdentityServer4Config
     {

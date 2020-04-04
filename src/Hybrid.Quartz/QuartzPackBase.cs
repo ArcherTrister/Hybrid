@@ -32,7 +32,7 @@ namespace Hybrid.Quartz
     /// Quartz模块基类
     /// </summary>
     [DependsOnPacks(typeof(EventBusPack), typeof(AspNetCorePack))]
-    public abstract class QuartzModuleBase : AspHybridPack
+    public abstract class QuartzPackBase : AspHybridPack
     {
         private bool _enabled = true;
 
@@ -154,7 +154,7 @@ namespace Hybrid.Quartz
                 new DictionaryBasedLocalizationSource(
                     LocalizationConsts.QuartzSourceName,
                     new JsonEmbeddedFileLocalizationDictionaryProvider(
-                        typeof(QuartzModuleBase).GetAssembly(), "Hybrid.Quartz.Dashboard.Localization.Sources.JsonSource"
+                        typeof(QuartzPackBase).GetAssembly(), "Hybrid.Quartz.Dashboard.Localization.Sources.JsonSource"
             )));
 
             app.UseSignalR(routes =>

@@ -1,5 +1,7 @@
 ﻿using Hybrid.Application.Services.Dtos;
+using Hybrid.AspNetCore.Mvc;
 using Hybrid.AspNetCore.UI;
+using Hybrid.Authorization;
 using Hybrid.Quartz.Dashboard.Models;
 using Hybrid.Quartz.Dashboard.Models.Dtos;
 using Hybrid.Quartz.Dashboard.Repositorys;
@@ -19,18 +21,13 @@ using System.Threading.Tasks;
 
 namespace Hybrid.Quartz.Dashboard.Controllers
 {
-    [Route("api/[controller]/[action]"), ApiController]
-    public class QuartzController : ControllerBase
+    public class QuartzController : ApiController
     {
         private readonly IScheduler _scheduler;
-        private readonly ILogger<QuartzController> _logger;
 
-        public QuartzController(
-            IScheduler scheduler,
-            ILogger<QuartzController> logger)
+        public QuartzController(IScheduler scheduler)
         {
             _scheduler = scheduler;
-            _logger = logger;
         }
 
         #region Calendars
@@ -75,6 +72,8 @@ namespace Hybrid.Quartz.Dashboard.Controllers
         /// <param name="updateTriggers">是否更新触发器</param>
         /// <returns></returns>
         [HttpPost]
+        [LoggedIn]
+        [RoleLimit]
         public async Task AddCalendar(string schedulerName, string calendarName, bool replace, bool updateTriggers)
         {
             IScheduler scheduler = await GetScheduler(schedulerName).ConfigureAwait(false);
@@ -88,6 +87,8 @@ namespace Hybrid.Quartz.Dashboard.Controllers
         /// <param name="calendarName">日历名称</param>
         /// <returns></returns>
         [HttpDelete]
+        [LoggedIn]
+        [RoleLimit]
         public async Task DeleteCalendar(string schedulerName, string calendarName)
         {
             IScheduler scheduler = await GetScheduler(schedulerName).ConfigureAwait(false);
@@ -162,6 +163,8 @@ namespace Hybrid.Quartz.Dashboard.Controllers
         /// <param name="jobName">任务名称</param>
         /// <returns></returns>
         [HttpPost]
+        [LoggedIn]
+        [RoleLimit]
         public async Task PauseJob(string schedulerName, string jobGroup, string jobName)
         {
             IScheduler scheduler = await GetScheduler(schedulerName).ConfigureAwait(false);
@@ -175,6 +178,8 @@ namespace Hybrid.Quartz.Dashboard.Controllers
         /// <param name="groupMatcher">分组匹配</param>
         /// <returns></returns>
         [HttpPost]
+        [LoggedIn]
+        [RoleLimit]
         public async Task PauseJobs(string schedulerName, GroupMatcherDto groupMatcher)
         {
             IScheduler scheduler = await GetScheduler(schedulerName).ConfigureAwait(false);
@@ -190,6 +195,8 @@ namespace Hybrid.Quartz.Dashboard.Controllers
         /// <param name="jobName">任务名称</param>
         /// <returns></returns>
         [HttpPost]
+        [LoggedIn]
+        [RoleLimit]
         public async Task ResumeJob(string schedulerName, string jobGroup, string jobName)
         {
             IScheduler scheduler = await GetScheduler(schedulerName).ConfigureAwait(false);
@@ -203,6 +210,8 @@ namespace Hybrid.Quartz.Dashboard.Controllers
         /// <param name="groupMatcher">分组匹配</param>
         /// <returns></returns>
         [HttpPost]
+        [LoggedIn]
+        [RoleLimit]
         public async Task ResumeJobs(string schedulerName, GroupMatcherDto groupMatcher)
         {
             IScheduler scheduler = await GetScheduler(schedulerName).ConfigureAwait(false);
@@ -218,6 +227,8 @@ namespace Hybrid.Quartz.Dashboard.Controllers
         /// <param name="jobName">任务名称</param>
         /// <returns></returns>
         [HttpPost]
+        [LoggedIn]
+        [RoleLimit]
         public async Task TriggerJob(string schedulerName, string jobGroup, string jobName)
         {
             IScheduler scheduler = await GetScheduler(schedulerName).ConfigureAwait(false);
@@ -232,6 +243,8 @@ namespace Hybrid.Quartz.Dashboard.Controllers
         /// <param name="jobName">任务名称</param>
         /// <returns></returns>
         [HttpDelete]
+        [LoggedIn]
+        [RoleLimit]
         public async Task DeleteJob(string schedulerName, string jobGroup, string jobName)
         {
             IScheduler scheduler = await GetScheduler(schedulerName).ConfigureAwait(false);
@@ -246,6 +259,8 @@ namespace Hybrid.Quartz.Dashboard.Controllers
         /// <param name="jobName">任务名称</param>
         /// <returns></returns>
         [HttpPost]
+        [LoggedIn]
+        [RoleLimit]
         public async Task InterruptJob(string schedulerName, string jobGroup, string jobName)
         {
             IScheduler scheduler = await GetScheduler(schedulerName).ConfigureAwait(false);
@@ -264,6 +279,8 @@ namespace Hybrid.Quartz.Dashboard.Controllers
         /// <param name="replace">是否替换</param>
         /// <returns></returns>
         [HttpPost]
+        [LoggedIn]
+        [RoleLimit]
         public async Task AddJob(string schedulerName, string jobGroup, string jobName, string jobType, bool durable, bool requestsRecovery, bool replace = false)
         {
             IScheduler scheduler = await GetScheduler(schedulerName).ConfigureAwait(false);
@@ -306,6 +323,8 @@ namespace Hybrid.Quartz.Dashboard.Controllers
         /// <param name="delayMilliseconds">延时毫秒</param>
         /// <returns></returns>
         [HttpPost]
+        [LoggedIn]
+        [RoleLimit]
         public async Task Start(string schedulerName, int? delayMilliseconds = null)
         {
             IScheduler scheduler = await GetScheduler(schedulerName).ConfigureAwait(false);
@@ -325,6 +344,8 @@ namespace Hybrid.Quartz.Dashboard.Controllers
         /// <param name="schedulerName">调度名称</param>
         /// <returns></returns>
         [HttpPost]
+        [LoggedIn]
+        [RoleLimit]
         public async Task Standby(string schedulerName)
         {
             IScheduler scheduler = await GetScheduler(schedulerName).ConfigureAwait(false);
@@ -338,6 +359,8 @@ namespace Hybrid.Quartz.Dashboard.Controllers
         /// <param name="waitForJobsToComplete">等待任务完成</param>
         /// <returns></returns>
         [HttpPost]
+        [LoggedIn]
+        [RoleLimit]
         public async Task Shutdown(string schedulerName, bool waitForJobsToComplete = false)
         {
             IScheduler scheduler = await GetScheduler(schedulerName).ConfigureAwait(false);
@@ -350,6 +373,8 @@ namespace Hybrid.Quartz.Dashboard.Controllers
         /// <param name="schedulerName">调度名称</param>
         /// <returns></returns>
         [HttpPost]
+        [LoggedIn]
+        [RoleLimit]
         public async Task Clear(string schedulerName)
         {
             IScheduler scheduler = await GetScheduler(schedulerName).ConfigureAwait(false);
@@ -430,6 +455,8 @@ namespace Hybrid.Quartz.Dashboard.Controllers
         /// <param name="triggerName">触发器名称</param>
         /// <returns></returns>
         [HttpPost]
+        [LoggedIn]
+        [RoleLimit]
         public async Task PauseTrigger(string schedulerName, string triggerGroup, string triggerName)
         {
             IScheduler scheduler = await GetScheduler(schedulerName).ConfigureAwait(false);
@@ -443,6 +470,8 @@ namespace Hybrid.Quartz.Dashboard.Controllers
         /// <param name="groupMatcher">分组匹配</param>
         /// <returns></returns>
         [HttpPost]
+        [LoggedIn]
+        [RoleLimit]
         public async Task PauseTriggers(string schedulerName, GroupMatcherDto groupMatcher)
         {
             IScheduler scheduler = await GetScheduler(schedulerName).ConfigureAwait(false);
@@ -458,6 +487,8 @@ namespace Hybrid.Quartz.Dashboard.Controllers
         /// <param name="triggerName">触发器名称</param>
         /// <returns></returns>
         [HttpPost]
+        [LoggedIn]
+        [RoleLimit]
         public async Task ResumeTrigger(string schedulerName, string triggerGroup, string triggerName)
         {
             IScheduler scheduler = await GetScheduler(schedulerName).ConfigureAwait(false);
@@ -471,6 +502,8 @@ namespace Hybrid.Quartz.Dashboard.Controllers
         /// <param name="groupMatcher">分组匹配</param>
         /// <returns></returns>
         [HttpPost]
+        [LoggedIn]
+        [RoleLimit]
         public async Task ResumeTriggers(string schedulerName, GroupMatcherDto groupMatcher)
         {
             IScheduler scheduler = await GetScheduler(schedulerName).ConfigureAwait(false);
@@ -497,7 +530,7 @@ namespace Hybrid.Quartz.Dashboard.Controllers
             IExecutionHistoryStore _store = _scheduler.Context.GetExecutionHistoryStore();
             if (_store == null)
             {
-                _logger.LogError("Error while retrieving history entries");
+                Logger.LogError("Error while retrieving history entries");
                 result.Success = false;
                 result.Content = "历史记录插件尚未启用";
             }
