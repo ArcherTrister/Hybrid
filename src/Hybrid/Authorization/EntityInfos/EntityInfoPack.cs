@@ -50,7 +50,29 @@ namespace Hybrid.Authorization.EntityInfos
         {
             IEntityInfoHandler handler = provider.GetService<IEntityInfoHandler>();
             handler.Initialize();
-            IsEnabled = true;
         }
+
+        ///// <summary>
+        ///// 将模块服务添加到依赖注入服务容器中【自动模式】
+        ///// </summary>
+        ///// <param name="services">依赖注入服务容器</param>
+        ///// <returns></returns>
+        //public override IServiceCollection AddAutoServices(IServiceCollection services)
+        //{
+        //    services.TryAddSingleton<IEntityInfoHandler, EntityInfoHandler>();
+
+        //    return base.AddAutoServices(services);
+        //}
+
+        ///// <summary>
+        ///// 应用模块服务【自动模式】
+        ///// </summary>
+        ///// <param name="provider">服务提供者</param>
+        //public override void UseAutoPack(IServiceProvider provider)
+        //{
+        //    IEntityInfoHandler handler = provider.GetService<IEntityInfoHandler>();
+        //    handler.Initialize();
+        //    IsEnabled = true;
+        //}
     }
 }

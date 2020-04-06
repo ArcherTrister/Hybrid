@@ -14,7 +14,7 @@ namespace Hybrid.Swagger
     /// <summary>
     /// SwaggerApi模块
     /// </summary>
-    [Description("SwaggerApi模块 ")]
+    [Description("SwaggerApi模块")]
     public class SwaggerPack : SwaggerPackBase
     { }
 }

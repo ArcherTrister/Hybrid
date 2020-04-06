@@ -1,6 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
-
-using System;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Liuliu.Demo.Web.Migrations
 {
@@ -453,11 +452,13 @@ namespace Liuliu.Demo.Web.Migrations
                     UserName = table.Column<string>(nullable: false),
                     NormalizedUserName = table.Column<string>(nullable: false),
                     NickName = table.Column<string>(nullable: true),
+                    TrueName = table.Column<string>(nullable: true),
+                    Gender = table.Column<int>(nullable: false),
                     Email = table.Column<string>(nullable: true),
                     NormalizeEmail = table.Column<string>(nullable: true),
                     EmailConfirmed = table.Column<bool>(nullable: false),
                     PasswordHash = table.Column<string>(nullable: true),
-                    HeadImg = table.Column<string>(nullable: true),
+                    Avatar = table.Column<string>(nullable: true),
                     SecurityStamp = table.Column<string>(nullable: true),
                     ConcurrencyStamp = table.Column<string>(nullable: true),
                     PhoneNumber = table.Column<string>(nullable: true),

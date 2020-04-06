@@ -74,8 +74,43 @@ namespace Hybrid.Dependency
         public override void UsePack(IServiceProvider provider)
         {
             ServiceLocator.Instance.SetApplicationServiceProvider(provider);
-            IsEnabled = true;
         }
+
+        ///// <summary>
+        ///// 将模块服务添加到依赖注入服务容器中【自动模式】
+        ///// </summary>
+        ///// <param name="services">依赖注入服务容器</param>
+        ///// <returns></returns>
+        //public override IServiceCollection AddAutoServices(IServiceCollection services)
+        //{
+        //    ServiceLocator.Instance.SetServiceCollection(services);
+
+        //    services.AddTransient(typeof(Lazy<>), typeof(Lazier<>));
+        //    services.TryAddSingleton<IHybridServiceScopeFactory, DefaultServiceScopeFactory>();
+        //    services.AddScoped<ScopedDictionary>();
+
+        //    //查找所有自动注册的服务实现类型
+        //    IDependencyTypeFinder dependencyTypeFinder =
+        //        services.GetOrAddTypeFinder<IDependencyTypeFinder>(assemblyFinder => new DependencyTypeFinder(assemblyFinder));
+
+        //    Type[] dependencyTypes = dependencyTypeFinder.FindAll();
+        //    foreach (Type dependencyType in dependencyTypes)
+        //    {
+        //        AddToServices(services, dependencyType);
+        //    }
+
+        //    return services;
+        //}
+
+        ///// <summary>
+        ///// 应用模块服务【自动模式】
+        ///// </summary>
+        ///// <param name="provider">服务提供者</param>
+        //public override void UseAutoPack(IServiceProvider provider)
+        //{
+        //    ServiceLocator.Instance.SetApplicationServiceProvider(provider);
+        //    IsEnabled = true;
+        //}
 
         /// <summary>
         /// 将服务实现类型注册到服务集合中

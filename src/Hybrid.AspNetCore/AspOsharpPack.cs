@@ -26,5 +26,14 @@ namespace Hybrid.AspNetCore
         {
             base.UsePack(app.ApplicationServices);
         }
+
+        ///// <summary>
+        ///// 应用AspNetCore的服务业务【自动模式】
+        ///// </summary>
+        ///// <param name="app">Asp应用程序构建器</param>
+        //public virtual void UseAutoPack(IApplicationBuilder app)
+        //{
+        //    base.UseAutoPack(app.ApplicationServices);
+        //}
     }
 }

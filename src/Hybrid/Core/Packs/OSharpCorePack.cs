@@ -81,6 +81,10 @@ namespace Hybrid.Core.Packs
             return services;
         }
 
+        /// <summary>
+        /// 应用模块服务
+        /// </summary>
+        /// <param name="provider"></param>
         public override void UsePack(IServiceProvider provider)
         {
             IHybridStartupConfiguration Configuration = provider.GetRequiredService<IHybridStartupConfiguration>();
@@ -95,6 +99,64 @@ namespace Hybrid.Core.Packs
 
             InitConfiguration(Configuration, Options);
         }
+
+        ///// <summary>
+        ///// 将模块服务添加到依赖注入服务容器中【自动模式】
+        ///// </summary>
+        ///// <param name="services">依赖注入服务容器</param>
+        ///// <returns></returns>
+        //public override IServiceCollection AddAutoServices(IServiceCollection services)
+        //{
+        //    services.TryAddSingleton<IConfigureOptions<HybridOptions>, HybridOptionsSetup>();
+        //    services.TryAddSingleton<IEntityTypeFinder, EntityTypeFinder>();
+        //    services.TryAddSingleton<IInputDtoTypeFinder, InputDtoTypeFinder>();
+        //    services.TryAddSingleton<IOutputDtoTypeFinder, OutputDtoTypeFinder>();
+        //    services.TryAddSingleton<ICancellationTokenProvider, NoneCancellationTokenProvider>();
+        //    services.TryAddSingleton<IEmailSender, DefaultEmailSender>();
+
+        //    services.TryAddSingleton<ICacheService, CacheService>();
+        //    services.TryAddScoped<IFilterService, FilterService>();
+
+        //    services.TryAddTransient<IClientHttpCrypto, ClientHttpCrypto>();
+        //    services.AddTransient<ClientHttpCryptoHandler>();
+
+        //    services.AddDistributedMemoryCache();
+
+        //    //Add Localization Service
+        //    services.AddTransient<ILanguageManager, LanguageManager>();
+        //    services.AddTransient<ILanguageProvider, DefaultLanguageProvider>();
+        //    services.AddSingleton<ILocalizationContext, LocalizationContext>();
+        //    services.AddSingleton<ILocalizationManager, LocalizationManager>();
+
+        //    // TODO: Add Configuration Service
+        //    services.AddSingleton<ILocalizationConfiguration, LocalizationConfiguration>();
+        //    services.AddSingleton<IEmailSenderConfiguration, EmailSenderConfiguration>();
+        //    services.AddSingleton<IIdentityServerConfiguration, IdentityServerConfiguration>();
+        //    services.AddSingleton<IQuartzConfiguration, QuartzConfiguration>();
+        //    //services.AddSingleton<IAuditingConfiguration, AuditingConfiguration>();
+        //    //services.AddSingleton<IHttpEncryptConfiguration, HttpEncryptConfiguration>();
+
+        //    return services;
+        //}
+
+        ///// <summary>
+        ///// 应用模块服务【自动模式】
+        ///// </summary>
+        ///// <param name="provider"></param>
+        //public override void UseAutoPack(IServiceProvider provider)
+        //{
+        //    IHybridStartupConfiguration Configuration = provider.GetRequiredService<IHybridStartupConfiguration>();
+        //    HybridOptions Options = provider.GetRequiredService<IOptions<HybridOptions>>().Value;
+
+        //    Configuration.Localization.Sources.Add(
+        //        new DictionaryBasedLocalizationSource(
+        //            LocalizationConsts.HybridSourceName,
+        //            new XmlEmbeddedFileLocalizationDictionaryProvider(
+        //                typeof(IQuartzConfiguration).GetAssembly(), "Hybrid.Localization.Sources.XmlSource"
+        //    )));
+
+        //    InitConfiguration(Configuration, Options);
+        //}
 
         /// <summary>
         /// 初始化配置
@@ -139,7 +201,24 @@ namespace Hybrid.Core.Packs
             configuration.EmailSender.UserName = options.EmailSender.UserName;
 
             // IdentityServer4
+            configuration.IdentityServer.Audience = options.Ids.Audience;
+            configuration.IdentityServer.Authority = options.Ids.Authority;
+            configuration.IdentityServer.IsEnabled = options.Ids.IsEnabled;
+            configuration.IdentityServer.IsLocalApi = options.Ids.IsLocalApi;
+            configuration.IdentityServer.UseHttps = options.Ids.UseHttps;
+
             // Quartz
+            configuration.Quartz.ConnectionStringOrCacheName = options.Quartz.ConnectionStringOrCacheName;
+            configuration.Quartz.IsClustered = options.Quartz.IsClustered;
+            configuration.Quartz.IsEnabled = options.Quartz.IsEnabled;
+            configuration.Quartz.IsUseHistoryPlugin = options.Quartz.IsUseHistoryPlugin;
+            configuration.Quartz.IsUseSelectWithLockSQL = options.Quartz.IsUseSelectWithLockSQL;
+            configuration.Quartz.SchedulerName = options.Quartz.SchedulerName;
+            configuration.Quartz.SerializerType = options.Quartz.SerializerType;
+            configuration.Quartz.StorageType = options.Quartz.StorageType;
+            configuration.Quartz.TablePrefix = options.Quartz.TablePrefix;
+            configuration.Quartz.ThreadCount = options.Quartz.ThreadCount;
+            configuration.Quartz.ThreadPriority = options.Quartz.ThreadPriority;
 
             ////HttpEncrypt
             //configuration.HttpEncrypt.ClientPublicKey = options.HttpEncrypt.ClientPublicKey;

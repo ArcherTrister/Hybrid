@@ -86,7 +86,8 @@ namespace Hybrid.Core.Packs
             LoadedModules = modules;
             foreach (HybridPack module in LoadedModules)
             {
-                services = module.AddServices(services);
+                //TODO:自动加载
+                //services = module.AddAutoServices(services);
             }
 
             return services;

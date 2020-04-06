@@ -1,5 +1,5 @@
 ﻿using Hybrid.Application.Services.Dtos;
-using Hybrid.AspNetCore.Mvc;
+using Hybrid.AspNetCore.Mvc.Controllers;
 using Hybrid.AspNetCore.UI;
 using Hybrid.Authorization;
 using Hybrid.Quartz.Dashboard.Models;
@@ -21,7 +21,7 @@ using System.Threading.Tasks;
 
 namespace Hybrid.Quartz.Dashboard.Controllers
 {
-    public class QuartzController : ApiController
+    public class QuartzController : LocalApiController
     {
         private readonly IScheduler _scheduler;
 

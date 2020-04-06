@@ -66,7 +66,41 @@ namespace Hybrid.EventBuses
         {
             IEventBusBuilder builder = provider.GetService<IEventBusBuilder>();
             builder.Build();
-            IsEnabled = true;
         }
+
+        ///// <summary>
+        ///// 将模块服务添加到依赖注入服务容器中【自动模式】
+        ///// </summary>
+        ///// <param name="services">依赖注入服务容器</param>
+        ///// <returns></returns>
+        //public override IServiceCollection AddAutoServices(IServiceCollection services)
+        //{
+        //    services.TryAddSingleton<IEventBusBuilder, EventBusBuilder>();
+        //    services.TryAddSingleton<IEventStore, InMemoryEventStore>();
+        //    services.TryAddSingleton<IEventBus, PassThroughEventBus>();
+
+        //    //IEventHandlerTypeFinder handlerTypeFinder =
+        //    //    services.GetOrAddTypeFinder<IEventHandlerTypeFinder>(assemblyFinder => new EventHandlerTypeFinder(assemblyFinder));
+
+        //    //向服务容器注册所有事件处理器类型
+        //    //Type[] eventHandlerTypes = handlerTypeFinder.FindAll();
+        //    //foreach (Type handlerType in eventHandlerTypes)
+        //    //{
+        //    //    services.TryAddTransient(handlerType);
+        //    //}
+
+        //    return services;
+        //}
+
+        ///// <summary>
+        ///// 应用模块服务【自动模式】
+        ///// </summary>
+        ///// <param name="provider">服务提供者</param>
+        //public override void UseAutoPack(IServiceProvider provider)
+        //{
+        //    IEventBusBuilder builder = provider.GetService<IEventBusBuilder>();
+        //    builder.Build();
+        //    IsEnabled = true;
+        //}
     }
 }

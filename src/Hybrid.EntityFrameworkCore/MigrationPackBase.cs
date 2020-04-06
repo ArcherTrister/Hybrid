@@ -65,8 +65,6 @@ namespace Hybrid.Entity
             {
                 initializer.Initialize();
             }
-
-            IsEnabled = true;
         }
 
         /// <summary>

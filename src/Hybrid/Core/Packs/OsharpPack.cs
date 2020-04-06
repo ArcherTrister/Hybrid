@@ -54,8 +54,27 @@ namespace Hybrid.Core.Packs
         /// <param name="provider">服务提供者</param>
         public virtual void UsePack(IServiceProvider provider)
         {
-            IsEnabled = true;
+
         }
+
+        ///// <summary>
+        ///// 将模块服务添加到依赖注入服务容器中【自动模式】
+        ///// </summary>
+        ///// <param name="services">依赖注入服务容器</param>
+        ///// <returns></returns>
+        //public virtual IServiceCollection AddAutoServices(IServiceCollection services)
+        //{
+        //    return services;
+        //}
+
+        ///// <summary>
+        ///// 应用模块服务【自动模式】
+        ///// </summary>
+        ///// <param name="provider">服务提供者</param>
+        //public virtual void UseAutoPack(IServiceProvider provider)
+        //{
+        //    IsEnabled = true;
+        //}
 
         /// <summary>
         /// 获取当前模块的依赖模块类型

@@ -87,8 +87,6 @@ namespace Hybrid.Authorization
 
             IDataAuthCache dataAuthCache = provider.GetService<IDataAuthCache>();
             dataAuthCache.BuildCaches();
-
-            IsEnabled = true;
         }
     }
 }

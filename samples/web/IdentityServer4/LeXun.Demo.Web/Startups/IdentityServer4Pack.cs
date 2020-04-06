@@ -4,7 +4,8 @@ using Hybrid.Core.Options;
 using Hybrid.Data;
 using Hybrid.Entity;
 using Hybrid.Zero.IdentityServer4;
-
+using Hybrid.Zero.IdentityServer4.Stores;
+using IdentityServer4.Stores;
 using LeXun.Demo.Identity;
 using LeXun.Demo.Identity.Dtos;
 using LeXun.Demo.Identity.Entities;
@@ -259,6 +260,8 @@ namespace LeXun.Demo.Web.Startups
         /// <returns></returns>
         protected override IIdentityServerBuilder AddIdentityServerBuild(IIdentityServerBuilder builder, IServiceCollection services)
         {
+            services.AddSingleton<IPersistedGrantStore, MemoryPersistedGrantStore>();
+
             builder.AddDeveloperSigningCredential()
                 //.AddSigningCredential()
                 //.AddCustomAuthorizeRequestValidator<>()
@@ -272,7 +275,7 @@ namespace LeXun.Demo.Web.Startups
 
 
             //builder.AddConfigurationStoreCache();
-
+            //AddInMemoryStores
             builder.AddInMemoryIdentityResources(IdentityServer4Config.GetIdentityResources());
             builder.AddInMemoryApiResources(IdentityServer4Config.GetApis());
             builder.AddInMemoryClients(IdentityServer4Config.GetClients());

@@ -34,23 +34,23 @@ namespace LeXun.Demo.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddHybrid()
-            //    //.AddPack<Log4NetPack>()
-            //    .AddPack<NLogPack>()
-            //    .AddPack<AutoMapperPack>()
-            //    .AddPack<EndpointsPack>()
-            //    .AddPack<SignalRPack>()
-            //    .AddPack<SwaggerPack>()
-            //    //.AddPack<RedisPack>()
-            //    .AddPack<QuartzModule>()
-            //    .AddPack<IdentityPack>()
-            //    .AddPack<FunctionAuthorizationPack>()
-            //    .AddPack<DataAuthorizationPack>()
-            //    .AddPack<SqlServerDefaultDbContextMigrationPack>()
-            //    .AddPack<AuditPack>();
+            services.AddHybrid()
+                //.AddPack<Log4NetPack>()
+                .AddPack<NLogPack>()
+                .AddPack<AutoMapperPack>()
+                .AddPack<EndpointsPack>()
+                .AddPack<SignalRPack>()
+                .AddPack<SwaggerPack>()
+                //.AddPack<RedisPack>()
+                .AddPack<QuartzPack>()
+                .AddPack<IdentityServer4Pack>()
+                .AddPack<FunctionAuthorizationPack>()
+                .AddPack<DataAuthorizationPack>()
+                .AddPack<SqlServerDefaultDbContextMigrationPack>()
+                .AddPack<AuditPack>();
 
-            //Add-Migration Init -Verbose -o Data/Migrations
-            services.AddHybrid<AspHybridModuleManager>();
+            ////Add-Migration Init -Verbose -o Data/Migrations
+            //services.AddHybrid<AspHybridModuleManager>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -73,8 +73,8 @@ namespace LeXun.Demo.Web
             app.UseMiddleware<JsonExceptionHandlerMiddleware>();
             app.UseDefaultFiles();
             app.UseStaticFiles();
-            //app.UseHybrid();
-            app.UseAutoHybrid();
+            app.UseHybrid();
+            //app.UseAutoHybrid();
         }
     }
 }

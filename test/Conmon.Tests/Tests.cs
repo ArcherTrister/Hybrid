@@ -13,10 +13,14 @@ namespace Conmon.Tests
         [TestMethod]
         public void TestMethod1()
         {
+            List<string> a = new List<string> { "1", "2", "3", "4" };
+            List<string> b = new List<string> { "1", "2", "3" };
+            var c = a.Except(b).ToList();
+
             var isTrue = (false && false);
             Console.WriteLine(isTrue);
             isTrue = (true && true);
-            Console.WriteLine(isTrue);
+            Console.WriteLine(isTrue);         
         }
 
         [TestMethod]

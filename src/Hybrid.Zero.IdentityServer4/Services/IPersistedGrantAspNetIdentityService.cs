@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace Hybrid.Zero.IdentityServer4.Services
 {
-    public interface IPersistedGrantService
+    public interface IPersistedGrantAspNetIdentityService
     {
         Task<PersistedGrantsDto> GetPersistedGrantsByUsersAsync(string search, int page = 1, int pageSize = 10);
 

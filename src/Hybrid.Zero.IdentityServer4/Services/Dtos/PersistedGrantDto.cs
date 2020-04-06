@@ -1,7 +1,12 @@
-﻿using System;
+﻿using Hybrid.Mapping;
+
+using IdentityServer4.Models;
+
+using System;
 
 namespace Hybrid.Zero.IdentityServer4.Services.Dtos
 {
+    [MapFrom(typeof(PersistedGrant))]
     public class PersistedGrantDto
     {
         public string Key { get; set; }

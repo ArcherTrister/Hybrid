@@ -77,8 +77,6 @@ namespace Hybrid.AutoMapper
 
             IMapper mapper = new AutoMapperMapper(configuration);
             MapperExtensions.SetMapper(mapper);
-
-            IsEnabled = true;
         }
     }
 }

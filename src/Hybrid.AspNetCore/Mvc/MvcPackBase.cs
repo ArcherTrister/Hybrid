@@ -52,8 +52,9 @@ namespace Hybrid.AspNetCore.Mvc
             });
 
             services = AddCors(services);
-            var builder = services.AddControllersWithViews()
-                .AddNewtonsoftJson(options =>
+            var builder = services.AddControllersWithViews(opt=> { 
+                    //opt.Filters.Add(new CustomResultFilter()); 
+                }).AddNewtonsoftJson(options =>
                 {
                     options.SerializerSettings.ContractResolver = new DefaultContractResolver();
                     options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
@@ -79,7 +80,7 @@ namespace Hybrid.AspNetCore.Mvc
             });
 
             services.AddScoped<UnitOfWorkFilterImpl>();
-            services.AddHttpsRedirection(opts => opts.HttpsPort = 443);
+            //services.AddHttpsRedirection(opts => opts.HttpsPort = 443);
 
             services.AddScoped<UnitOfWorkAttribute>();
             services.TryAddSingleton<IVerifyCodeService, VerifyCodeService>();
@@ -98,8 +99,6 @@ namespace Hybrid.AspNetCore.Mvc
         {
             app.UseRouting();
             UseCors(app);
-
-            IsEnabled = true;
         }
 
         /// <summary>

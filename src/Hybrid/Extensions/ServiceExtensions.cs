@@ -15,7 +15,6 @@ using Hybrid.Data;
 using Hybrid.Dependency;
 using Hybrid.Entity;
 using Hybrid.EventBuses;
-using Hybrid.Extensions;
 using Hybrid.Localization;
 using Hybrid.Reflection;
 
@@ -38,36 +37,38 @@ namespace Microsoft.Extensions.DependencyInjection
     {
         #region IServiceCollection
 
-        /// <summary>
-        /// 将Hybrid服务，各个<see cref="HybridPack"/>模块的服务自动添加到服务容器中
-        /// </summary>
-        public static IServiceCollection AddHybrid<THybridModuleManager>(this IServiceCollection services, Action<IHybridBuilder> builderAction = null)
-            where THybridModuleManager : IHybridModuleManager, new()
-        {
-            Check.NotNull(services, nameof(services));
+        //TODO:自动加载
+        ///// <summary>
+        ///// 将Hybrid服务，各个<see cref="HybridPack"/>模块的服务自动添加到服务容器中
+        ///// </summary>
+        //public static IServiceCollection AddHybrid<THybridModuleManager>(this IServiceCollection services, Action<IHybridBuilder> builderAction = null)
+        //    where THybridModuleManager : IHybridModuleManager, new()
+        //{
+        //    Check.NotNull(services, nameof(services));
 
-            IConfiguration configuration = services.GetConfiguration();
-            Singleton<IConfiguration>.Instance = configuration;
+        //    IConfiguration configuration = services.GetConfiguration();
+        //    Singleton<IConfiguration>.Instance = configuration;
 
-            services.AddOptions();
-            //services.ConfigureAndValidate<HybridOptions>("Hybrid", Configuration);
-            services.ConfigureAndValidateHybridOption<HybridOptions>(configuration);
+        //    services.AddOptions();
 
-            //初始化所有程序集查找器
-            services.TryAddSingleton<IAllAssemblyFinder>(new AppDomainAllAssemblyFinder());
+        //    //配置参数验证
+        //    //services.ConfigureAndValidateHybridOption<HybridOptions>(configuration);
 
-            IHybridBuilder builder = services.GetSingletonInstanceOrNull<IHybridBuilder>() ?? new HybridBuilder();
-            builderAction?.Invoke(builder);
-            services.TryAddSingleton<IHybridBuilder>(builder);
+        //    //初始化所有程序集查找器
+        //    services.TryAddSingleton<IAllAssemblyFinder>(new AppDomainAllAssemblyFinder());
 
-            THybridModuleManager manager = new THybridModuleManager();
-            services.AddSingleton<IHybridModuleManager>(manager);
-            manager.LoadModules(services);
+        //    IHybridBuilder builder = services.GetSingletonInstanceOrNull<IHybridBuilder>() ?? new HybridBuilder();
+        //    builderAction?.Invoke(builder);
+        //    services.TryAddSingleton<IHybridBuilder>(builder);
 
-            services.TryAddSingleton<IHybridStartupConfiguration, HybridStartupConfiguration>();
+        //    THybridModuleManager manager = new THybridModuleManager();
+        //    services.AddSingleton<IHybridModuleManager>(manager);
+        //    manager.LoadModules(services);
 
-            return services;
-        }
+        //    services.TryAddSingleton<IHybridStartupConfiguration, HybridStartupConfiguration>();
+
+        //    return services;
+        //}
 
         /// <summary>
         /// 创建Hybrid构建器，开始构建Hybrid服务

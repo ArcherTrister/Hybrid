@@ -6,7 +6,7 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)Hybrid.snk</AssemblyOriginatorKeyFile>
     <SignAssembly>true</SignAssembly>
-    <PublicSign Condition=" '$(OS)' != 'Windows_NT' ">true</PublicSign>
+    <PublicSign Condition="'$(OS)' != 'Windows_NT'">true</PublicSign>
     <IncludeSource>true</IncludeSource>
     <IncludeSymbols>true</IncludeSymbols>
   </PropertyGroup>

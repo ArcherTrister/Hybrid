@@ -209,20 +209,20 @@ namespace Hybrid.Identity
 
             await _userRepository.InsertAsync(user);
 
-            //系统的第一个用户，自动成为超级管理员
-            int count = _userRepository.QueryAsNoTracking().Count();
-            if (count == 1)
-            {
-                TRole adminRole = _roleRepository.QueryAsNoTracking().FirstOrDefault();
-                if (adminRole != null)
-                {
-                    TUserRole userRole = new TUserRole() { UserId = user.Id, RoleId = adminRole.Id };
-                    await _userRoleRepository.InsertAsync(userRole);
+            ////系统的第一个用户，自动成为超级管理员
+            //int count = _userRepository.QueryAsNoTracking().Count();
+            //if (count == 1)
+            //{
+            //    TRole adminRole = _roleRepository.QueryAsNoTracking().FirstOrDefault();
+            //    if (adminRole != null)
+            //    {
+            //        TUserRole userRole = new TUserRole() { UserId = user.Id, RoleId = adminRole.Id };
+            //        await _userRoleRepository.InsertAsync(userRole);
 
-                    user.IsSystem = true;
-                    await _userRepository.UpdateAsync(user);
-                }
-            }
+            //        user.IsSystem = true;
+            //        await _userRepository.UpdateAsync(user);
+            //    }
+            //}
 
             //默认角色
             TRole defaultRole = _roleRepository.QueryAsNoTracking().FirstOrDefault(m => m.IsDefault);

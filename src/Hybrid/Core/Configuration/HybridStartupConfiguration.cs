@@ -15,6 +15,8 @@ namespace Hybrid.Core.Configuration
             Localization = serviceProvider.GetRequiredService<ILocalizationConfiguration>();
             EmailSender = serviceProvider.GetRequiredService<IEmailSenderConfiguration>();
             IdentityServer = serviceProvider.GetRequiredService<IIdentityServerConfiguration>();
+            Quartz = serviceProvider.GetRequiredService<IQuartzConfiguration>();
+            
             //Auditing = serviceProvider.GetRequiredService<IAuditingConfiguration>();
             //HttpEncrypt = serviceProvider.GetRequiredService<IHttpEncryptConfiguration>();
         }
@@ -33,6 +35,11 @@ namespace Hybrid.Core.Configuration
         /// 用于设置IdentityServer4配置
         /// </summary>
         public IIdentityServerConfiguration IdentityServer { get; private set; }
+
+        /// <summary>
+        /// 用于设置Quartz配置
+        /// </summary>
+        public IQuartzConfiguration Quartz { get; private set; }
 
         ///// <summary>
         ///// 用于设置审计配置

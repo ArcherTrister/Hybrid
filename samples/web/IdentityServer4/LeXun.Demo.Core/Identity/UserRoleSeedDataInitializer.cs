@@ -1,4 +1,5 @@
-﻿using Hybrid.Entity;
+﻿using Hybrid.Dependency;
+using Hybrid.Entity;
 using Hybrid.Exceptions;
 using Hybrid.Identity;
 
@@ -8,11 +9,13 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 
 namespace LeXun.Demo.Identity
 {
+    [Dependency(ServiceLifetime.Singleton)]
     public class UserRoleSeedDataInitializer : SeedDataInitializerBase<UserRole, Guid>
     {
         private readonly IServiceProvider _rootProvider;
@@ -58,14 +61,23 @@ namespace LeXun.Demo.Identity
                 UserManager<User> userManager = provider.GetService<UserManager<User>>();
                 RoleManager<Role> roleManager = provider.GetService<RoleManager<Role>>();
 
-                User user = userManager.Users.GroupBy(p => p.CreatedTime).Select(p => p.OrderBy(e => e.CreatedTime).FirstOrDefault()).FirstOrDefault();
-                string[] roles = roleManager.Roles.Select(p=>p.Name).ToArray();
+                User user = userManager.Users.OrderBy(p => p.CreatedTime).FirstOrDefault();
 
-                IdentityResult result = userManager.AddToRolesAsync(user, roles).Result;
+                List<string> roles = roleManager.Roles.Select(p => p.Name).ToList();
 
-                if (!result.Succeeded)
+                if (user != null && roles.Any())
                 {
-                    throw new HybridException($"进行用户角色种子数据“{user.UserName}”同步时出错：{result.ErrorMessage()}");
+                    var userRoles = userManager.GetRolesAsync(user).Result;
+                    var newRoles = roles.Except(userRoles).ToList();
+                    if (newRoles.Any())
+                    {
+                        IdentityResult result = userManager.AddToRolesAsync(user, newRoles).Result;
+
+                        if (!result.Succeeded)
+                        {
+                            throw new HybridException($"进行用户角色种子数据“{user.UserName}”同步时出错：{result.ErrorMessage()}");
+                        }
+                    }
                 }
             },
                 true);

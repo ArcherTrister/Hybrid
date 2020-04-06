@@ -47,10 +47,8 @@
     <ProjectReference Include="..\..\..\..\src\Hybrid.EntityFrameworkCore.SqlServer\Hybrid.EntityFrameworkCore.SqlServer.csproj" />
     <ProjectReference Include="..\..\..\..\src\Hybrid.NLog\Hybrid.NLog.csproj" />
     <ProjectReference Include="..\..\..\..\src\Hybrid.Quartz\Hybrid.Quartz.csproj" />
-    <ProjectReference Include="..\..\..\..\src\Hybrid.Redis\Hybrid.Redis.csproj" />
     <ProjectReference Include="..\..\..\..\src\Hybrid.Swagger\Hybrid.Swagger.csproj" />
     <ProjectReference Include="..\..\..\..\src\Hybrid.Zero.IdentityServer4\Hybrid.Zero.IdentityServer4.csproj" />
-    <ProjectReference Include="..\LeXun.Demo.Core\LeXun.Demo.Core.csproj" />
     <ProjectReference Include="..\LeXun.Demo.EntityConfiguration\LeXun.Demo.EntityConfiguration.csproj" />
   </ItemGroup>
 

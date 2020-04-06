@@ -59,8 +59,35 @@ namespace Hybrid.AspNetCore.Mvc
                 return;
             }
             functionHandler.Initialize();
-
-            IsEnabled = true;
         }
+
+        ///// <summary>
+        ///// 将模块服务添加到依赖注入服务容器中【自动模式】
+        ///// </summary>
+        ///// <param name="services">依赖注入服务容器</param>
+        ///// <returns></returns>
+        //public override IServiceCollection AddAutoServices(IServiceCollection services)
+        //{
+        //    services.GetOrAddTypeFinder<IFunctionTypeFinder>(assemblyFinder => new MvcControllerTypeFinder(assemblyFinder));
+        //    services.AddSingleton<IFunctionHandler, MvcFunctionHandler>();
+        //    services.TryAddSingleton<IModuleInfoPicker, MvcModuleInfoPicker>();
+
+        //    return services;
+        //}
+
+        ///// <summary>
+        ///// 应用模块服务【自动模式】
+        ///// </summary>
+        ///// <param name="app">应用程序构建器</param>
+        //public override void UseAutoPack(IApplicationBuilder app)
+        //{
+        //    IFunctionHandler functionHandler = app.ApplicationServices.GetServices<IFunctionHandler>().FirstOrDefault(m => m.GetType() == typeof(MvcFunctionHandler));
+        //    if (functionHandler == null)
+        //    {
+        //        return;
+        //    }
+        //    functionHandler.Initialize();
+        //    IsEnabled = true;
+        //}
     }
 }

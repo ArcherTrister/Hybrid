@@ -34,7 +34,7 @@ namespace Hybrid.Quartz
     [DependsOnPacks(typeof(EventBusPack), typeof(AspNetCorePack))]
     public abstract class QuartzPackBase : AspHybridPack
     {
-        private bool _enabled = true;
+        //private bool _enabled = true;
 
         /// <summary>
         /// 获取 模块级别，级别越小越先启动
@@ -45,12 +45,12 @@ namespace Hybrid.Quartz
         {
             IConfiguration configuration = services.GetConfiguration();
             QuartzConfiguration quartzOptions = configuration.GetSection("Hybrid:Quartz").Get<QuartzConfiguration>();
-            _enabled = quartzOptions.IsEnabled;
-            // _useDashboard = quartzOptions.UseDashboard;
-            if (!_enabled)
-            {
-                return services;
-            }
+            //_enabled = quartzOptions.IsEnabled;
+            //// _useDashboard = quartzOptions.UseDashboard;
+            //if (!_enabled)
+            //{
+            //    return services;
+            //}
             if (string.IsNullOrWhiteSpace(quartzOptions.TablePrefix))
             {
                 quartzOptions.TablePrefix = AdoConstants.DefaultTablePrefix;
@@ -95,10 +95,10 @@ namespace Hybrid.Quartz
 
         public override void UsePack(IApplicationBuilder app)
         {
-            if (!_enabled)
-            {
-                return;
-            }
+            //if (!_enabled)
+            //{
+            //    return;
+            //}
 
             IServiceProvider provider = app.ApplicationServices;
 

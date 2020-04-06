@@ -86,8 +86,6 @@ namespace Hybrid.AspNetCore.Diagnostics
             {
                 app.UseHealthChecks(url);
             }
-
-            IsEnabled = true;
         }
 
         /// <summary>

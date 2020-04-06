@@ -55,7 +55,6 @@ namespace Hybrid.Entity
         {
             IEntityManager manager = provider.GetService<IEntityManager>();
             manager?.Initialize();
-            IsEnabled = true;
         }
     }
 }

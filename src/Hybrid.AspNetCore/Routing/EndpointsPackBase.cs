@@ -43,7 +43,6 @@ namespace Hybrid.AspNetCore.Routing
                 SignalREndpoints(endpoints);
                 OtherEndpoints(endpoints);
             });
-            IsEnabled = true;
         }
 
         /// <summary>

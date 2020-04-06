@@ -20,6 +20,11 @@ namespace Hybrid.Core.Configuration
         /// </summary>
         IIdentityServerConfiguration IdentityServer { get; }
 
+        /// <summary>
+        /// 用于设置Quartz配置
+        /// </summary>
+        IQuartzConfiguration Quartz { get; }
+
         ///// <summary>
         ///// 用于设置审计配置
         ///// </summary>

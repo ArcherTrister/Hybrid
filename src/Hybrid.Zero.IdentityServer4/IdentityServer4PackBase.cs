@@ -17,8 +17,12 @@ using Hybrid.Localization;
 using Hybrid.Localization.Dictionaries;
 using Hybrid.Localization.Dictionaries.Json;
 using Hybrid.Reflection;
+using Hybrid.Zero.IdentityServer4.Services;
+using Hybrid.Zero.IdentityServer4.Services.Impl;
+using Hybrid.Zero.IdentityServer4.Stores;
 
 using IdentityServer4.Configuration;
+using IdentityServer4.Stores;
 
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
@@ -86,6 +90,9 @@ namespace Hybrid.Zero.IdentityServer4
             //}
 
             AddAuthentication(services, idsOptions, configuration);
+
+            //webapi
+            services.AddTransient<IPersistedGrantAspNetIdentityService, PersistedGrantAspNetIdentityService<TUser, TUserKey>>();
 
             return services;
         }
@@ -211,8 +218,6 @@ namespace Hybrid.Zero.IdentityServer4
                     new JsonEmbeddedFileLocalizationDictionaryProvider(
                         typeof(CustomUserInfoResponse).GetAssembly(), "Hybrid.Zero.IdentityServer4.Quickstart.Localization.Sources.JsonSource"
             )));
-
-            IsEnabled = true;
         }
     }
 }

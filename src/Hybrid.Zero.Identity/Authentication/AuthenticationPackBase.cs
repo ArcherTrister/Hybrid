@@ -75,8 +75,6 @@ namespace Hybrid.Authentication
         public override void UsePack(IApplicationBuilder app)
         {
             app.UseAuthentication();
-
-            IsEnabled = true;
         }
 
         /// <summary>

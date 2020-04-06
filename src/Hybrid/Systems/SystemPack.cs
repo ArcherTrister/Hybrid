@@ -45,5 +45,17 @@ namespace Hybrid.Systems
 
             return services;
         }
+
+        ///// <summary>
+        ///// 将模块服务添加到依赖注入服务容器中【自动模式】
+        ///// </summary>
+        ///// <param name="services">依赖注入服务容器</param>
+        ///// <returns></returns>
+        //public override IServiceCollection AddAutoServices(IServiceCollection services)
+        //{
+        //    services.TryAddScoped<IKeyValueStore, KeyValueStore>();
+
+        //    return services;
+        //}
     }
 }

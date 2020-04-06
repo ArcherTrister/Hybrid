@@ -35,6 +35,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Stores\ICustomPersistedGrantStore.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="Quickstart\Localization\Sources\JsonSource\HybridIdentityServer-en-US.json" />
     <Content Remove="Quickstart\Localization\Sources\JsonSource\HybridIdentityServer-zh-CN.json" />
   </ItemGroup>

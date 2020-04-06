@@ -27,20 +27,21 @@ namespace Microsoft.AspNetCore.Builder
     /// </summary>
     public static class ApplicationBuilderExtensions
     {
-        /// <summary>
-        /// Hybrid框架自动初始化，适用于AspNetCore环境
-        /// </summary>
-        public static IApplicationBuilder UseAutoHybrid(this IApplicationBuilder app)
-        {
-            IServiceProvider provider = app.ApplicationServices;
-            if (!(provider.GetService<IHybridModuleManager>() is IAspUseModule aspModuleManager))
-            {
-                throw new HybridException("接口 IHybridModuleManager 的注入类型不正确，该类型应同时实现接口 IAspUseModule");
-            }
-            aspModuleManager.UseModule(app);
+        //TODO:自动加载
+        ///// <summary>
+        ///// Hybrid框架自动初始化，适用于AspNetCore环境
+        ///// </summary>
+        //public static IApplicationBuilder UseAutoHybrid(this IApplicationBuilder app)
+        //{
+        //    IServiceProvider provider = app.ApplicationServices;
+        //    if (!(provider.GetService<IHybridModuleManager>() is IAspUseModule aspModuleManager))
+        //    {
+        //        throw new HybridException("接口 IHybridModuleManager 的注入类型不正确，该类型应同时实现接口 IAspUseModule");
+        //    }
+        //    aspModuleManager.UseModule(app);
 
-            return app;
-        }
+        //    return app;
+        //}
 
         /// <summary>
         /// Hybrid框架初始化，适用于AspNetCore环境

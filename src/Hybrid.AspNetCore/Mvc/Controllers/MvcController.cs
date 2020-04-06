@@ -7,6 +7,8 @@ using Hybrid.Security;
 
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 
 using System.Diagnostics;
 using System.Globalization;
@@ -20,6 +22,11 @@ namespace Hybrid.AspNetCore.Mvc.Controllers
     [ApiExplorerSettings(IgnoreApi = true)]
     public abstract class MvcController : Controller
     {
+        /// <summary>
+        /// 获取或设置 日志对象
+        /// </summary>
+        protected ILogger Logger => HttpContext.RequestServices.GetLogger(GetType());
+
         public Stopwatch GenerationTime { get; }
 
         /// <summary>

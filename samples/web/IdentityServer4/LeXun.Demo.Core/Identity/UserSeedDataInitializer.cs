@@ -1,4 +1,5 @@
 ﻿using Hybrid.Data;
+using Hybrid.Dependency;
 using Hybrid.Entity;
 using Hybrid.Exceptions;
 using Hybrid.Identity;
@@ -14,6 +15,7 @@ using System.Linq.Expressions;
 
 namespace LeXun.Demo.Identity
 {
+    [Dependency(ServiceLifetime.Singleton)]
     public class UserSeedDataInitializer : SeedDataInitializerBase<User, int>
     {
         private readonly IServiceProvider _rootProvider;

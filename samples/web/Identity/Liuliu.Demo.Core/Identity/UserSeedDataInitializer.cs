@@ -1,4 +1,6 @@
-﻿using Hybrid.Entity;
+﻿using Hybrid.Data;
+using Hybrid.Dependency;
+using Hybrid.Entity;
 using Hybrid.Exceptions;
 using Hybrid.Identity;
 
@@ -13,6 +15,7 @@ using System.Linq.Expressions;
 
 namespace Liuliu.Demo.Identity
 {
+    [Dependency(ServiceLifetime.Singleton)]
     public class UserSeedDataInitializer : SeedDataInitializerBase<User, int>
     {
         private readonly IServiceProvider _rootProvider;
@@ -34,7 +37,29 @@ namespace Liuliu.Demo.Identity
         {
             return new[]
             {
-                new User() { }
+                new User()
+                {
+                    UserName = "Admin",
+                    NormalizedUserName = "ADMIN",
+                    NickName = "SuperAdmin",
+                    Gender = GenderType.Male,
+                    Email = "Admin@example.com",
+                    NormalizeEmail = "ADMIN@EXAMPLE.COM",
+                    EmailConfirmed = true,
+                    PasswordHash = "AQAAAAEAACcQAAAAEB6lgMDV9JoidhR4cfIK+bKOQfo9eE6M02N68wV0KxCbx+c5gxkBrZWOp0FwI5Id8g==",
+                    Avatar = null,
+                    SecurityStamp = "RRYXXETXCDKPXE6QPNDGLMCYNBA2ZF4P",
+                    ConcurrencyStamp = "e50ea89e-c966-4ade-8fe4-6fe94de83777",
+                    PhoneNumber = "18100000000",
+                    PhoneNumberConfirmed = false,
+                    TwoFactorEnabled = false,
+                    LockoutEnd = null,
+                    LockoutEnabled = true,
+                    AccessFailedCount = 0,
+                    IsSystem = true,
+                    IsLocked = false,
+                    Remark = null
+                }
             };
         }
 
@@ -54,7 +79,7 @@ namespace Liuliu.Demo.Identity
         /// <param name="entities"></param>
         protected override void SyncToDatabase(User[] entities)
         {
-            if (entities?.Length > 0)
+            if (entities.Any())
             {
                 _rootProvider.BeginUnitOfWorkTransaction(provider =>
                 {

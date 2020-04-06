@@ -112,7 +112,6 @@ namespace Hybrid.Authorization
         {
             app.UseCookiePolicy();
             app.UseFunctionAuthorization();
-            IsEnabled = true;
         }
     }
 }

@@ -54,5 +54,25 @@ namespace Hybrid.AspNetCore
 
             return services;
         }
+
+        ///// <summary>
+        ///// 将模块服务添加到依赖注入服务容器中【自动模式】
+        ///// </summary>
+        ///// <param name="services">依赖注入服务容器</param>
+        ///// <returns></returns>
+        //public override IServiceCollection AddAutoServices(IServiceCollection services)
+        //{
+        //    services.AddHttpContextAccessor();
+        //    services.TryAddSingleton<IHostHttpCrypto, HostHttpCrypto>();
+
+        //    //注入当前用户，替换Thread.CurrentPrincipal的作用
+        //    services.AddTransient<IPrincipal>(provider =>
+        //    {
+        //        IHttpContextAccessor accessor = provider.GetService<IHttpContextAccessor>();
+        //        return accessor?.HttpContext?.User;
+        //    });
+
+        //    return services;
+        //}
     }
 }
