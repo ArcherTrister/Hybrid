@@ -29,9 +29,13 @@
 
   <ItemGroup>
     <Compile Remove="Authentication\**" />
+    <Compile Remove="Quickstart\Areas\**" />
     <Content Remove="Authentication\**" />
+    <Content Remove="Quickstart\Areas\**" />
     <EmbeddedResource Remove="Authentication\**" />
+    <EmbeddedResource Remove="Quickstart\Areas\**" />
     <None Remove="Authentication\**" />
+    <None Remove="Quickstart\Areas\**" />
   </ItemGroup>
 
   <ItemGroup>

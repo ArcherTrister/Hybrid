@@ -1,0 +1,77 @@
+﻿
+@model Hybrid.Zero.IdentityServer4.Quickstart.TwoFactorAuthenticationViewModel
+@{
+    ViewData["Title"] = L("Title");
+}
+
+<div class="row">
+
+    <div class="col-12">
+        <h3>@ViewData["Title"]</h3>
+    </div>
+
+    @if (Model.Is2faEnabled)
+    {
+        if (Model.RecoveryCodesLeft == 0)
+        {
+            <div class="col-12">
+                <div class="alert alert-danger">
+                    <strong>@L("NoCodes")</strong>
+                    <p>@L("YouMust") <a asp-action="GenerateRecoveryCodes">@L("GenerateNewCodes")</a> @L("BeforeLogin")</p>
+                </div>
+            </div>
+        }
+        else if (Model.RecoveryCodesLeft == 1)
+        {
+            <div class="col-12">
+                <div class="alert alert-danger">
+                    <strong>@L("OneCode")</strong>
+                    <p>@L("YouCanGenerateCodes") <a asp-action="GenerateRecoveryCodes">@L("GenerateNewCodes")</a></p>
+                </div>
+            </div>
+        }
+        else if (Model.RecoveryCodesLeft <= 3)
+        {
+            <div class="col-12">
+                <div class="alert alert-warning">
+                    <strong>@L("YouHave") @Model.RecoveryCodesLeft.ToString() @L("RecoveryCodeLeft")</strong>
+                    <p>@L("YouShould") <a asp-action="GenerateRecoveryCodes">@L("GenerateNewCodes")</a></p>
+                </div>
+            </div>
+        }
+
+        if (Model.IsMachineRemembered)
+        {
+            <div class="col-12 mb-3">
+                <form method="post" asp-controller="Manage" asp-action="ForgetTwoFactorClient">
+                    <button type="submit" class="btn btn-info">@L("ForgetBrowser")</button>
+                </form>
+            </div>
+        }
+
+        <div class="col-12">
+            <a asp-action="Disable2faWarning" class="btn btn-dark">@L("Disable2FA")</a>
+            <a asp-action="GenerateRecoveryCodesWarning" class="btn btn-danger">@L("ResetCodes")</a>
+        </div>
+    }
+
+</div>
+
+<div class="row">
+
+    <div class="col-12 mt-3">
+        <h4>@L("AuthenticatorApp")</h4>
+    </div>
+
+    <div class="col-12">
+        @if (!Model.HasAuthenticator)
+        {
+            <a id="enable-authenticator" asp-action="EnableAuthenticator" class="btn btn-primary">@L("AddAuthenticator")</a>
+        }
+        else
+        {
+            <a id="enable-authenticator" asp-action="EnableAuthenticator" class="btn btn-primary">@L("SetupAuthenticator")</a>
+            <a id="reset-authenticator" asp-action="ResetAuthenticatorWarning" class="btn btn-danger">@L("ResetAuthenticator")</a>
+        }
+    </div>
+</div>

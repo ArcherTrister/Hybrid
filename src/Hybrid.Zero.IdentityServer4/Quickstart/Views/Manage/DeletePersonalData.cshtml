@@ -1,0 +1,26 @@
+﻿@model Hybrid.Zero.IdentityServer4.Quickstart.DeletePersonalDataViewModel
+@{
+    ViewData["Title"] = L("Title");
+}
+
+<h4>@ViewData["Title"]</h4>
+
+<div class="alert alert-danger" role="alert">
+    <span class="fa fa-exclamation-triangle"></span>
+    <strong>@L("Alert")</strong>
+</div>
+
+<div>
+    <form id="delete-user" method="post" class="form-group">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        @if (Model.RequirePassword)
+        {
+            <div class="form-group">
+                <label asp-for="Password">@L("Password")</label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+        }
+        <button class="btn btn-danger" type="submit">@L("Delete")</button>
+    </form>
+</div>

@@ -20,7 +20,7 @@
                         </svg>
                     </span>
                 </h1>
-                <button type="button" class="btn btn-lg btn-block btn-primary">持久授权</button>
+                <a asp-controller="Grants" asp-action="Index" class="btn btn-lg btn-block btn-primary">持久授权</a>
             </div>
         </div>
         <div class="card mb-4 shadow-sm">
@@ -35,7 +35,7 @@
                         </svg>
                     </span>
                 </h1>
-                <button type="button" class="btn btn-lg btn-block btn-outline-primary">发现文档</button>
+                <a href="~/.well-known/openid-configuration" class="btn btn-lg btn-block btn-outline-primary">发现文档</a>
             </div>
         </div>
         <div class="card mb-4 shadow-sm">
@@ -50,7 +50,7 @@
                         </svg>
                     </span>
                 </h1>
-                <button type="button" class="btn btn-lg btn-block btn-primary">我的个人资料</button>
+                <a asp-area="IdentityServer" asp-controller="Manage" asp-action="Index" class="btn btn-lg btn-block btn-primary">我的个人资料</a>
             </div>
         </div>
     </div>
@@ -67,7 +67,7 @@
                         </svg>
                     </span>
                 </h1>
-                <button type="button" class="btn btn-lg btn-block btn-outline-primary">我的个人数据</button>
+                <a asp-area="IdentityServer" asp-controller="Manage" asp-action="PersonalData" class="btn btn-lg btn-block btn-outline-primary">我的个人数据</a>
             </div>
         </div>
         <div class="card mb-4 shadow-sm">
@@ -82,7 +82,7 @@
                         </svg>
                     </span>
                 </h1>
-                <button type="button" class="btn btn-lg btn-block btn-primary">双因素身份验证</button>
+                <a asp-area="IdentityServer" asp-controller="Manage" asp-action="TwoFactorAuthentication" class="btn btn-lg btn-block btn-primary">双因素身份验证</a>
             </div>
         </div>
         <div class="card mb-4 shadow-sm">
@@ -97,12 +97,12 @@
                         </svg>
                     </span>
                 </h1>
-                <button type="button" class="btn btn-lg btn-block btn-outline-primary">更改密码</button>
+                <a asp-area="IdentityServer" asp-controller="Manage" asp-action="ChangePassword" class="btn btn-lg btn-block btn-outline-primary">更改密码</a>
             </div>
         </div>
     </div>
     <!-- Admin -->
-    <div class="card-deck mb-3 text-center">
+    @*<div class="card-deck mb-3 text-center">
         <div class="card mb-4 shadow-sm">
             <div class="card-header">
                 <h4 class="my-0 font-weight-normal">Clients</h4>
@@ -180,7 +180,7 @@
                 <a href="/.well-known/openid-configuration" class="btn btn-lg btn-block btn-outline-primary">角色</a>
             </div>
         </div>
-    </div>
+    </div>*@
 }
 else
 {

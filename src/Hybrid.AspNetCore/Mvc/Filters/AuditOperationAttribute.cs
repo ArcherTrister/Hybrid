@@ -27,7 +27,7 @@ namespace Hybrid.AspNetCore.Mvc.Filters
     /// 操作审计拦截器，负责发起并记录功能的操作日志
     /// </summary>
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
-    public sealed class AuditOperationAttribute : ActionFilterAttribute
+    public class AuditOperationAttribute : ActionFilterAttribute
     {
         /// <inheritdoc />
         public override void OnActionExecuting(ActionExecutingContext context)

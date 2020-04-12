@@ -260,7 +260,7 @@ namespace LeXun.Demo.Web.Startups
         /// <returns></returns>
         protected override IIdentityServerBuilder AddIdentityServerBuild(IIdentityServerBuilder builder, IServiceCollection services)
         {
-            services.AddSingleton<IPersistedGrantStore, MemoryPersistedGrantStore>();
+
 
             builder.AddDeveloperSigningCredential()
                 //.AddSigningCredential()

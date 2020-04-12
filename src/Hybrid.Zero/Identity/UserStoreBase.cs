@@ -1122,7 +1122,7 @@ namespace Hybrid.Identity
             Check.NotNull(user, nameof(user));
 
             string mergedCodes = await GetTokenAsync(user, InternalLoginProvider, RecoveryCodeTokenName, cancellationToken);
-            if (mergedCodes.Length > 0)
+            if (mergedCodes?.Length > 0)
             {
                 return mergedCodes.Split(';').Length;
             }

@@ -59,7 +59,7 @@ namespace Hybrid.Swagger
             string title = configuration["Hybrid:Swagger:Title"];
             int version = configuration["Hybrid:Swagger:Version"].CastTo(1);
             //bool identityServerIsEnable = configuration["Hybrid:Ids:Authority"].CastTo(false);
-            //string identityServerUrl = configuration["Hybrid:Ids:Authority"].CastTo("");
+            string identityServerUrl = configuration["Hybrid:Ids:Authority"].CastTo("");
 
             services.AddMvcCore().AddApiExplorer();
             services.AddSwaggerGen(options =>
@@ -78,23 +78,23 @@ namespace Hybrid.Swagger
                     In = ParameterLocation.Header,
                     Type = SecuritySchemeType.ApiKey
                 });
-                //options.AddSecurityDefinition("IdentityServer", new OpenApiSecurityScheme
-                //{
-                //    Type = SecuritySchemeType.OAuth2,
-                //    Flows = new OpenApiOAuthFlows
-                //    {
-                //        Implicit = new OpenApiOAuthFlow
-                //        {
-                //            //授权地址
-                //            AuthorizationUrl = new Uri($"{identityServerUrl}/connect/authorize"),
-                //            TokenUrl = new Uri($"{identityServerUrl}/connect/token"),
-                //            Scopes = new Dictionary<string, string>
-                //            {
-                //                { "IdentityServerApi", "IdentityServerApi授权" },
-                //            }
-                //        }
-                //    }
-                //});
+                options.AddSecurityDefinition("IdentityServer", new OpenApiSecurityScheme
+                {
+                    Type = SecuritySchemeType.OAuth2,
+                    Flows = new OpenApiOAuthFlows
+                    {
+                        Implicit = new OpenApiOAuthFlow
+                        {
+                            //授权地址
+                            AuthorizationUrl = new Uri($"{identityServerUrl}/connect/authorize"),
+                            TokenUrl = new Uri($"{identityServerUrl}/connect/token"),
+                            Scopes = new Dictionary<string, string>
+                            {
+                                { "IdentityServerApi", "IdentityServerApi授权" },
+                            }
+                        }
+                    }
+                });
 
                 options.AddSecurityRequirement(new OpenApiSecurityRequirement
                 {
@@ -105,16 +105,16 @@ namespace Hybrid.Swagger
                         },
                         new[] { "readAccess", "writeAccess" }
                     },
-                      //{
-                      //    new OpenApiSecurityScheme
-                      //    {
-                      //        Reference = new OpenApiReference { Type = ReferenceType.SecurityScheme, Id = "IdentityServer" }
-                      //    },
-                      //    new[] { "readAccess", "writeAccess" }
-                      //}
+                      {
+                          new OpenApiSecurityScheme
+                          {
+                              Reference = new OpenApiReference { Type = ReferenceType.SecurityScheme, Id = "IdentityServer" }
+                          },
+                          new[] { "readAccess", "writeAccess" }
+                      }
                 });
 
-                //options.OperationFilter<AuthorizeCheckOperationFilter>(); // 添加IdentityServer4认证过滤
+                options.OperationFilter<AuthorizeCheckOperationFilter>(); // 添加IdentityServer4认证过滤
             });
 
             return services;
@@ -139,7 +139,7 @@ namespace Hybrid.Swagger
                 {
                     options.IndexStream = () => GetType().Assembly.GetManifestResourceStream("Hybrid.Swagger.index.html");
                 }
-                //options.OAuthClientId("swaggerClient");//客服端名称
+                options.OAuthClientId("swaggerClient");//客服端名称
             });
         }
     }

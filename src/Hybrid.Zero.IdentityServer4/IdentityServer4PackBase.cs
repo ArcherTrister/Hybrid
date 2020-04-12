@@ -23,7 +23,7 @@ using Hybrid.Zero.IdentityServer4.Stores;
 
 using IdentityServer4.Configuration;
 using IdentityServer4.Stores;
-
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
@@ -75,6 +75,8 @@ namespace Hybrid.Zero.IdentityServer4
 
             var identityBuilder = services.AddIdentityServer(identityServerOptionsAction).AddHybridIdentity<TUser, TUserKey>();
 
+            services.AddSingleton<IPersistedGrantStore, CustomInMemoryPersistedGrantStore>();
+
             IConfiguration configuration = services.GetConfiguration();
             IdentityServerConfiguration idsOptions = configuration.GetSection("Hybrid:Ids").Get<IdentityServerConfiguration>();
 
@@ -83,18 +85,34 @@ namespace Hybrid.Zero.IdentityServer4
                 AddIdentityServerBuild(identityBuilder, services);
             }
 
-            //Action<CookieAuthenticationOptions> cookieOptionsAction = CookieOptionsAction();
-            //if (cookieOptionsAction != null)
-            //{
-            //    services.ConfigureApplicationCookie(cookieOptionsAction);
-            //}
-
             AddAuthentication(services, idsOptions, configuration);
 
             //webapi
             services.AddTransient<IPersistedGrantAspNetIdentityService, PersistedGrantAspNetIdentityService<TUser, TUserKey>>();
 
+            Action<CookieAuthenticationOptions> cookieOptionsAction = CookieOptionsAction();
+            if (cookieOptionsAction != null)
+            {
+                services.ConfigureApplicationCookie(cookieOptionsAction);
+            }
+
             return services;
+        }
+
+        /// <summary>
+        /// 重写以实现<see cref="CookieAuthenticationOptions"/>的配置
+        /// </summary>
+        /// <returns></returns>
+        protected virtual Action<CookieAuthenticationOptions> CookieOptionsAction()
+        {
+            return options =>
+            {
+                options.Cookie.HttpOnly = true;
+                options.Cookie.Name = "hybrid.identity";
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(20);
+                options.SlidingExpiration = true;
+                options.LoginPath = "/Account/Login";
+            };
         }
 
         /// <summary>

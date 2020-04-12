@@ -99,6 +99,7 @@ namespace Hybrid.AspNetCore.Mvc
         {
             app.UseRouting();
             UseCors(app);
+            app.UseCookiePolicy(new CookiePolicyOptions { MinimumSameSitePolicy = SameSiteMode.None });
         }
 
         /// <summary>

@@ -117,6 +117,11 @@
         /// </summary>
         public const string IdCardVerified = "IdCardVerified";
 
+        public static readonly string StreetAddress = "street_address";
+        public static readonly string Locality = "locality";
+        public static readonly string Region = "region";
+        public static readonly string Country = "country";
+
         //        //
         //        // 摘要:
         //        //     The URI for a claim that specifies the primary group SID of an entity, http://schemas.microsoft.com/ws/2008/06/identity/claims/primarygroupsid.

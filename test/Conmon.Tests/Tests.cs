@@ -4,12 +4,62 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 
 namespace Conmon.Tests
 {
     [TestClass]
     public class Tests
     {
+        //
+        [TestMethod]
+        public void TestReflex()
+        {
+            Reflex reflex = new Reflex();
+            reflex.BZ = "haha";
+            reflex.Students.Add(new Student { Id = 1, Name = "s1" });
+            reflex.Students.Add(new Student { Id = 2, Name = "s2" });
+            reflex.Students.Add(new Student { Id = 3, Name = "s3" });
+
+            //获取所有属性名称和属性类型         
+            PropertyInfo[] infos = reflex.GetType().GetProperties();// typeof(T).GetProperties();
+            foreach (PropertyInfo item in infos)
+            {
+                Console.WriteLine(string.Format("PropertyName:{0},type:{1}", item.Name, item.PropertyType.Name));
+                object obj = item.GetValue(item.Name, null);
+            }
+
+            //for (int i = 0; i < list.Count; i++)
+            //{
+            //    Console.WriteLine(list[i].GetType().GetProperty("Username").GetValue(list[i], null));
+            //    Console.WriteLine(list[i].GetType().GetProperty("Password").GetValue(list[i], null));
+            //    object obj = list[i].GetType().GetProperty("student").GetValue(list[i], null);
+            //    IList ll = obj as IList;
+
+            //    foreach (var item in ll)
+            //    {
+            //        Console.WriteLine(string.Format("Name:{0},Age:{1}", item.GetType().GetProperty("Name").GetValue(item, null), item.GetType().GetProperty("Age").GetValue(item, null)));
+            //    }
+            //}
+
+
+            Console.WriteLine();
+        }
+
+        public class Reflex
+        {
+            public string BZ { get; set; }
+
+            public List<Student> Students { get; set; } = new List<Student>();
+        }
+
+        public class Student
+        {
+            public int Id { get; set; }
+
+            public string Name { get; set; }
+        }
+
         [TestMethod]
         public void TestMethod1()
         {

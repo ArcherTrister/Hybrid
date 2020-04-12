@@ -1,0 +1,24 @@
+﻿
+
+@{
+    ViewData["Title"] = L("Title");
+}
+
+<h4>@ViewData["Title"]</h4>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="alert alert-info" role="alert">
+            @L("Info")
+        </div>
+        <form asp-action="DownloadPersonalData" method="post" class="form-group">
+            <button class="btn btn-primary" type="submit">@L("Download")</button>
+        </form>
+        <div class="alert alert-danger" role="alert">
+            @L("Warning")
+        </div>
+        <div>
+            <a asp-action="DeletePersonalData" class="btn btn-primary">@L("Delete")</a>
+        </div>
+    </div>
+</div>
