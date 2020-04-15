@@ -8,7 +8,6 @@
     <Summary>Hybrid AspNetCore性能诊断组件</Summary>
     <Description>Hybrid AspNetCore性能诊断组件，提供AspNetCore性能诊断功能的封装</Description>
     <RootNamespace>Hybrid.AspNetCore.Diagnostics</RootNamespace>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">

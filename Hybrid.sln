@@ -144,6 +144,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Skoruba.IdentityServer4.Adm
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Skoruba.IdentityServer4.Admin.EntityFramework.SqlServer", "sources\IdentityServer4.Admin\src\Skoruba.IdentityServer4.Admin.EntityFramework.SqlServer\Skoruba.IdentityServer4.Admin.EntityFramework.SqlServer.csproj", "{E056CD8F-3449-41A4-9375-77CBFC7167E3}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hybrid.EntityFrameworkCore.Sqlite", "src\Hybrid.EntityFrameworkCore.Sqlite\Hybrid.EntityFrameworkCore.Sqlite.csproj", "{2E941D30-8752-4067-87D4-2BE49CCCA0CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -354,6 +356,10 @@ Global
 		{E056CD8F-3449-41A4-9375-77CBFC7167E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E056CD8F-3449-41A4-9375-77CBFC7167E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E056CD8F-3449-41A4-9375-77CBFC7167E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E941D30-8752-4067-87D4-2BE49CCCA0CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E941D30-8752-4067-87D4-2BE49CCCA0CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E941D30-8752-4067-87D4-2BE49CCCA0CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E941D30-8752-4067-87D4-2BE49CCCA0CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -414,6 +420,7 @@ Global
 		{9FBD832C-0DB1-40EC-AAE6-7CAC565672B6} = {C6A30A12-1E1E-46EC-9557-B7672571BBF3}
 		{363F21F0-094B-4717-9FFB-6D56A29EBFB8} = {C6A30A12-1E1E-46EC-9557-B7672571BBF3}
 		{E056CD8F-3449-41A4-9375-77CBFC7167E3} = {C6A30A12-1E1E-46EC-9557-B7672571BBF3}
+		{2E941D30-8752-4067-87D4-2BE49CCCA0CA} = {62BF61E9-EA6F-4034-AD89-85C86B0968EB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EB048828-DF83-45AB-943F-330B891075BB}
