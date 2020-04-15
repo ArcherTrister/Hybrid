@@ -91,6 +91,17 @@ namespace LeXun.Demo.Web.Controllers
 
             return list.ExpandAndToString("\r\n");
         }
+
+        [HttpGet]
+        public void Test02(TY ty)
+        {
+            int A = (int)ty;
+        }
+
+        public enum TY
+        { 
+        H,L,C
+        }
     }
 
     public class ClassFilter : ActionFilterAttribute, IExceptionFilter

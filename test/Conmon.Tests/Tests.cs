@@ -11,6 +11,36 @@ namespace Conmon.Tests
     [TestClass]
     public class Tests
     {
+        [TestMethod]
+        public void TestMethod4()
+        {
+            int? a = 1;
+            int? b = null;
+            int aa = 1;
+            int bb = 2;
+            var result1 = a + b;
+            var result2 = a + bb;
+            var result3 = aa + b;
+            var result4 = aa + bb;
+
+
+            var allLayer = a ?? 0 + b ?? 0;
+
+
+            Console.WriteLine(a + b);
+            Console.WriteLine(aa + bb);
+            Console.WriteLine(aa + b);
+            Console.WriteLine(a + bb);
+        }
+
+        [TestMethod]
+        public void TestMethod3()
+        {
+            string value = null;
+            string temp = value.Equals("true", StringComparison.OrdinalIgnoreCase) ? "¡Ì" : value.Equals("true", StringComparison.OrdinalIgnoreCase) ? "¡Á" : value;
+            Console.WriteLine(temp);
+        }
+
         //
         [TestMethod]
         public void TestReflex()
