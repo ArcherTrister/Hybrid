@@ -46,7 +46,8 @@ namespace LeXun.Demo.Identity
                     Email = "Admin@example.com",
                     NormalizeEmail = "ADMIN@EXAMPLE.COM",
                     EmailConfirmed = true,
-                    PasswordHash = "AQAAAAEAACcQAAAAEB6lgMDV9JoidhR4cfIK+bKOQfo9eE6M02N68wV0KxCbx+c5gxkBrZWOp0FwI5Id8g==",
+                    //Hybrid123
+                    PasswordHash = "AQAAAAEAACcQAAAAEBbgICc9joXdXMXQlYvlzPCEz67YTa9hINuuqmrP6BJ6LyO+Z7enJT4IudfIRmbIJQ==",
                     Avatar = null,
                     SecurityStamp = "RRYXXETXCDKPXE6QPNDGLMCYNBA2ZF4P",
                     ConcurrencyStamp = "e50ea89e-c966-4ade-8fe4-6fe94de83777",

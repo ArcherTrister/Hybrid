@@ -1,5 +1,5 @@
-// -----------------------------------------------------------------------
-//  <copyright file="EntityHashExtensions.cs" company="Hybrid¿ªÔ´ÍÅ¶Ó">
+ï»¿// -----------------------------------------------------------------------
+//  <copyright file="EntityHashExtensions.cs" company="Hybridå¼€æºå›¢é˜Ÿ">
 //      Copyright (c) 2014-2018 Hybrid. All rights reserved.
 //  </copyright>
 //  <site>https://www.lxking.cn</site>
@@ -24,12 +24,12 @@ using System.Text;
 namespace Hybrid.Entity
 {
     /// <summary>
-    /// ÊµÌåHashÀ©Õ¹·½·¨
+    /// å®ä½“Hashæ‰©å±•æ–¹æ³•
     /// </summary>
     public static class EntityHashExtensions
     {
         /// <summary>
-        /// ¼ì²éÖ¸¶¨ÊµÌåµÄHashÖµ£¬¾ö¶¨ÊÇ·ñĞèÒª½øĞĞÊı¾İ¿âÍ¬²½
+        /// æ£€æŸ¥æŒ‡å®šå®ä½“çš„Hashå€¼ï¼Œå†³å®šæ˜¯å¦éœ€è¦è¿›è¡Œæ•°æ®åº“åŒæ­¥
         /// </summary>
         public static bool CheckSyncByHash(this IEnumerable<IEntityHash> entityHashes, IServiceProvider provider, ILogger logger)
         {
@@ -45,19 +45,19 @@ namespace Hybrid.Entity
             IKeyValue keyValue = store.GetKeyValue(key);
             if (keyValue != null && keyValue.Value?.ToString() == hash)
             {
-                logger.LogInformation($"{hashes.Length}Ìõ»ù´¡Êı¾İ¡°{entityType}¡±µÄÄÚÈİÇ©Ãû {hash} ÓëÉÏ´ÎÏàÍ¬£¬È¡ÏûÊı¾İ¿âÍ¬²½");
+                logger.LogInformation($"{hashes.Length}æ¡åŸºç¡€æ•°æ®â€œ{entityType}â€çš„å†…å®¹ç­¾å {hash} ä¸ä¸Šæ¬¡ç›¸åŒï¼Œå–æ¶ˆæ•°æ®åº“åŒæ­¥");
                 return false;
             }
 
             store.CreateOrUpdateKeyValue(key, hash).GetAwaiter().GetResult();
-            logger.LogInformation($"{hashes.Length}Ìõ»ù´¡Êı¾İ¡°{entityType}¡±µÄÄÚÈİÇ©Ãû {hash} ÓëÉÏ´Î {keyValue?.Value} ²»Í¬£¬½«½øĞĞÊı¾İ¿âÍ¬²½");
+            logger.LogInformation($"{hashes.Length}æ¡åŸºç¡€æ•°æ®â€œ{entityType}â€çš„å†…å®¹ç­¾å {hash} ä¸ä¸Šæ¬¡ {keyValue?.Value} ä¸åŒï¼Œå°†è¿›è¡Œæ•°æ®åº“åŒæ­¥");
             return true;
         }
 
         /// <summary>
-        /// »ñÈ¡Ö¸¶¨ÊµÌåµÄHashÖµ
+        /// è·å–æŒ‡å®šå®ä½“çš„Hashå€¼
         /// </summary>
-        /// <param name="entity">ÊµÌå¶ÔÏó</param>
+        /// <param name="entity">å®ä½“å¯¹è±¡</param>
         public static string GetHash(this IEntityHash entity)
         {
             Type type = entity.GetType();

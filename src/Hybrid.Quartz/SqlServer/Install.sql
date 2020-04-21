@@ -9,6 +9,19 @@
 PRINT 'Installing Quartz SQL objects...';
 
 BEGIN TRANSACTION;
+--TODO:create database
+-- Acquire exclusive lock to prevent deadlocks caused by schema creation / version update
+DECLARE @SchemaLockResult INT;
+EXEC @SchemaLockResult = sp_getapplock @Resource = '$(QuartzSchema):SchemaLock', @LockMode = 'Exclusive'
+
+-- Create the database schema if it doesn't exists
+IF NOT EXISTS (SELECT [schema_id] FROM [sys].[schemas] WHERE [name] = '$(QuartzSchema)')
+BEGIN
+    EXEC (N'CREATE SCHEMA [$(QuartzSchema)]');
+    PRINT 'Created database schema [$(QuartzSchema)]';
+END
+ELSE
+    PRINT 'Database schema [$(QuartzSchema)] already exists';
 
 IF NOT EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[dbo].[$(TablePrefix)CALENDARS]') AND OBJECTPROPERTY(id, N'ISUSERTABLE') = 1)
 BEGIN

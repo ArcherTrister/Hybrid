@@ -38,6 +38,7 @@
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
+		<PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.1.0" />
 		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
 	</ItemGroup>
 	
@@ -50,6 +51,12 @@
     <ProjectReference Include="..\..\..\..\src\Hybrid.Swagger\Hybrid.Swagger.csproj" />
     <ProjectReference Include="..\..\..\..\src\Hybrid.Zero.IdentityServer4\Hybrid.Zero.IdentityServer4.csproj" />
     <ProjectReference Include="..\LeXun.Demo.EntityConfiguration\LeXun.Demo.EntityConfiguration.csproj" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <None Update="idsrv4.pfx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

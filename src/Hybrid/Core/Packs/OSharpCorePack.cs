@@ -205,6 +205,8 @@ namespace Hybrid.Core.Packs
             configuration.IdentityServer.Authority = options.Ids.Authority;
             configuration.IdentityServer.IsEnabled = options.Ids.IsEnabled;
             configuration.IdentityServer.IsLocalApi = options.Ids.IsLocalApi;
+            configuration.IdentityServer.CerPath = options.Ids.CerPath;
+            configuration.IdentityServer.CerPwd = options.Ids.CerPwd;
             configuration.IdentityServer.UseHttps = options.Ids.UseHttps;
 
             // Quartz

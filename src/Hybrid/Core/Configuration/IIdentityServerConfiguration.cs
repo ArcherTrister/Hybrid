@@ -25,6 +25,16 @@ namespace Hybrid.Core.Configuration
         bool IsLocalApi { get; set; }
 
         /// <summary>
+        /// 获取或设置 证书路径
+        /// </summary>
+        string CerPath { get; set; }
+
+        /// <summary>
+        /// 获取或设置 证书密码
+        /// </summary>
+        string CerPwd { get; set; }
+
+        /// <summary>
         /// 获取或设置 是否启用
         /// </summary>
         bool IsEnabled { get; set; }

@@ -53,6 +53,9 @@ namespace Hybrid.Quartz.SqlServer
 
                         string sql = script.Replace("$(TablePrefix)", tablePrefix);
 
+                        //TODO:create database
+                        //sql = script.Replace("$(QuartzSchema)", tablePrefix);
+
                         using (var cmd = new SqlCommand(sql, connection))
                         {
                             cmd.ExecuteNonQuery();//对连接执行sql语句，并返回受影响的行数

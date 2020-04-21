@@ -15,11 +15,13 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-
+using Microsoft.Extensions.PlatformAbstractions;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.IdentityModel.Tokens.Jwt;
+using System.IO;
+using System.Security.Cryptography.X509Certificates;
 
 namespace LeXun.Demo.Web.Startups
 {
@@ -260,19 +262,19 @@ namespace LeXun.Demo.Web.Startups
         /// <returns></returns>
         protected override IIdentityServerBuilder AddIdentityServerBuild(IIdentityServerBuilder builder, IServiceCollection services)
         {
-
-
-            builder.AddDeveloperSigningCredential()
-                //.AddSigningCredential()
+            IConfiguration configuration = services.GetConfiguration();
+            string basePath = PlatformServices.Default.Application.ApplicationBasePath;
+            //makecert -r -pe -n "C=CN,CN=domain,O=LX,OU=IT,ST=KM,L=YN,E=ARCHERTRISTER@OUTLOOK.COM" -b 04/01/2020 -e 04/01/2100 -sv idsrv4.pvk idsrv4.cer
+            //cert2spc idsrv4.cer idsrv4.spc
+            //pvk2pfx -spc idsrv4.spc -pvk idsrv4.pvk -pi MooYu -pfx idsrv4.pfx -f
+            builder.AddSigningCredential(new X509Certificate2(fileName: Path.Combine(basePath,
+                    configuration["Hybrid:Ids:CerPath"]), password: configuration["Hybrid:Ids:CerPwd"]))
                 //.AddCustomAuthorizeRequestValidator<>()
                 //.AddCustomTokenRequestValidator<>()
                 //.AddValidators()
                 .AddHybridDefaultUI<User, int>()
                 .AddHybridTokenCreationService<CustomTokenCreationService>()
                 .AddHybridCustomTokenValidator<CustomTokenValidator>();
-
-
-
 
             //builder.AddConfigurationStoreCache();
             //AddInMemoryStores
