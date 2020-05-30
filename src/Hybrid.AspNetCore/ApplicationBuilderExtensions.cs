@@ -9,7 +9,6 @@
 
 using Hybrid.AspNetCore;
 using Hybrid.Core.Packs;
-using Hybrid.Exceptions;
 using Hybrid.Localization;
 using Hybrid.Reflection;
 

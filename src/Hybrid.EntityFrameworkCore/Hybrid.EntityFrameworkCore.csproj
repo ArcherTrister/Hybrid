@@ -2,33 +2,33 @@
 
 	<Import Project="..\..\build\packages.props" />
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-    <PackageId>Hybrid.EntityFrameworkCore</PackageId>
-    <Description>Hybrid数据访问组件，封装EntityFrameworkCore数据访问功能的实现</Description>
-    <Summary>Hybrid数据访问组件</Summary>
-    <RootNamespace>Hybrid.Entity</RootNamespace>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<PackageId>Hybrid.EntityFrameworkCore</PackageId>
+		<Description>Hybrid数据访问组件，封装EntityFrameworkCore数据访问功能的实现</Description>
+		<Summary>Hybrid数据访问组件</Summary>
+		<RootNamespace>Hybrid.Entity</RootNamespace>
+	</PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\Hybrid.EntityFrameworkCore.xml</DocumentationFile>
-    <OutputPath>bin\Release</OutputPath>
-  </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<DocumentationFile>bin\Release\Hybrid.EntityFrameworkCore.xml</DocumentationFile>
+		<OutputPath>bin\Release</OutputPath>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="EntityConfigurations\**" />
-    <EmbeddedResource Remove="EntityConfigurations\**" />
-    <None Remove="EntityConfigurations\**" />
-  </ItemGroup>
+	<ItemGroup>
+		<Compile Remove="EntityConfigurations\**" />
+		<EmbeddedResource Remove="EntityConfigurations\**" />
+		<None Remove="EntityConfigurations\**" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Dapper" Version="2.0.30" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="3.1.3" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.3" />
-    <PackageReference Include="Z.EntityFramework.Plus.EFCore" Version="3.0.45" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Dapper" Version="2.0.35" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="3.1.4" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.4" />
+		<PackageReference Include="Z.EntityFramework.Plus.EFCore" Version="3.0.50" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Hybrid\Hybrid.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Hybrid\Hybrid.csproj" />
+	</ItemGroup>
 </Project>

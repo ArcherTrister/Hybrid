@@ -46,6 +46,7 @@ namespace LeXun.Demo.Web
                 .AddPack<IdentityServer4Pack>()
                 .AddPack<FunctionAuthorizationPack>()
                 .AddPack<DataAuthorizationPack>()
+                //.AddPack<DynamicWebApiPack>()
                 .AddPack<SqlServerDefaultDbContextMigrationPack>()
                 .AddPack<AuditPack>();
 

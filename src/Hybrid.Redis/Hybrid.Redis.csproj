@@ -2,24 +2,23 @@
 
 	<Import Project="..\..\build\packages.props" />
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-    <PackageId>Hybrid.Redis</PackageId>
-    <Summary>Hybrid Redis 缓存组件</Summary>
-    <Description>Hybrid Redis 缓存组件，封装基于Redis客户端的缓存实现</Description>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<PackageId>Hybrid.Redis</PackageId>
+		<Summary>Hybrid Redis 缓存组件</Summary>
+		<Description>Hybrid Redis 缓存组件，封装基于Redis客户端的缓存实现</Description>
+	</PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\Hybrid.Redis.xml</DocumentationFile>
-    <OutputPath>bin\Release</OutputPath>
-  </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<DocumentationFile>bin\Release\Hybrid.Redis.xml</DocumentationFile>
+		<OutputPath>bin\Release</OutputPath>
+	</PropertyGroup>
 
-  <ItemGroup Condition="'$(TargetFramework)'=='netstandard2.1'">
-    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="3.1.3" />
-  </ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)'=='netstandard2.1'">
+		<PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="3.1.4" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Hybrid\Hybrid.csproj" />
-  </ItemGroup>
-
+	<ItemGroup>
+		<ProjectReference Include="..\Hybrid\Hybrid.csproj" />
+	</ItemGroup>
 </Project>

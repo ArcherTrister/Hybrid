@@ -53,8 +53,14 @@ namespace Hybrid.AspNetCore.Mvc
                 && !typeInfo.IsDefined(typeof(NonControllerAttribute))
                 && (typeInfo.Name.EndsWith("Controller", StringComparison.OrdinalIgnoreCase)
                     || typeInfo.IsDefined(typeof(ControllerAttribute))))
+                //TODO:IDynamicWebApi
+                //|| (//typeof(IDynamicWebApi).IsAssignableFrom(typeInfo.AsType())
+                //    typeInfo.HasAttribute<DynamicWebApiAttribute>()
+                //    && typeInfo.IsPublic && !typeInfo.IsAbstract 
+                //    && !typeInfo.IsGenericType
+                //    && !typeInfo.IsDefined(typeof(NoneDynamicWebApiAttribute)))
                 || (typeInfo.HasAttribute<HybridDefaultUIAttribute>()
-                    && typeInfo.ContainsGenericParameters);
+                    && typeInfo.ContainsGenericParameters && !typeInfo.IsAbstract);
         }
 
         /// <summary>

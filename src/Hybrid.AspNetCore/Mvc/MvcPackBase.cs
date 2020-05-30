@@ -52,13 +52,14 @@ namespace Hybrid.AspNetCore.Mvc
             });
 
             services = AddCors(services);
-            var builder = services.AddControllersWithViews(opt=> { 
-                    //opt.Filters.Add(new CustomResultFilter()); 
-                }).AddNewtonsoftJson(options =>
-                {
-                    options.SerializerSettings.ContractResolver = new DefaultContractResolver();
-                    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
-                });
+            var builder = services.AddControllersWithViews(opt =>
+            {
+                //opt.Filters.Add(new CustomResultFilter());
+            }).AddNewtonsoftJson(options =>
+            {
+                options.SerializerSettings.ContractResolver = new DefaultContractResolver();
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+            });
 #if DEBUG
             builder.AddRazorRuntimeCompilation();
 #endif

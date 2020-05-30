@@ -7,16 +7,16 @@
 //  <last-date>2020-02-27 23:41</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.Authorization;
 using Hybrid.Authorization.Functions;
 using Hybrid.Authorization.Modules;
 
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
 
 using System;
 
-namespace Hybrid.Authorization
+namespace Microsoft.Extensions.DependencyInjection
 {
     public static class ServiceCollectionExtensions
     {

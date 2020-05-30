@@ -179,7 +179,7 @@ namespace Hybrid.EventBuses
             EventStore.RemoveAll(eventType);
         }
 
-        #endregion Implementation of IEventSubscriber
+        #endregion
 
         #region Implementation of IEventPublisher
 
@@ -382,6 +382,7 @@ namespace Hybrid.EventBuses
             {
                 string msg = $"执行事件“{eventType.Name}”的处理器“{handler.GetType()}”时引发异常：{ex.Message}";
                 Logger.LogError(ex, msg);
+                throw;
             }
         }
 
@@ -396,10 +397,10 @@ namespace Hybrid.EventBuses
             {
                 string msg = $"执行事件“{eventType.Name}”的处理器“{handler.GetType()}”时引发异常：{ex.Message}";
                 Logger.LogError(ex, msg);
+                throw;
             }
-            return Task.FromResult(0);
         }
 
-        #endregion Implementation of IEventPublisher
+        #endregion
     }
 }

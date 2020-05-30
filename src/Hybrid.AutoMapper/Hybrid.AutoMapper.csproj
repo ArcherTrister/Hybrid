@@ -2,26 +2,25 @@
 
 	<Import Project="..\..\build\packages.props" />
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-    <PackageId>Hybrid.AutoMapper</PackageId>
-    <Summary>Hybrid AutoMapper 对象映射组件</Summary>
-    <Description>Hybrid AutoMapper 对象映射组件，封装基于AutoMapper的对象映射实现</Description>
-    <RootNamespace>Hybrid.AutoMapper</RootNamespace>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<PackageId>Hybrid.AutoMapper</PackageId>
+		<Summary>Hybrid AutoMapper 对象映射组件</Summary>
+		<Description>Hybrid AutoMapper 对象映射组件，封装基于AutoMapper的对象映射实现</Description>
+		<RootNamespace>Hybrid.AutoMapper</RootNamespace>
+	</PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\Hybrid.AutoMapper.xml</DocumentationFile>
-    <OutputPath>bin\Release</OutputPath>
-  </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<DocumentationFile>bin\Release\Hybrid.AutoMapper.xml</DocumentationFile>
+		<OutputPath>bin\Release</OutputPath>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="9.0.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.3" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="9.0.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.4" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Hybrid\Hybrid.csproj" />
-  </ItemGroup>
-
+	<ItemGroup>
+		<ProjectReference Include="..\Hybrid\Hybrid.csproj" />
+	</ItemGroup>
 </Project>

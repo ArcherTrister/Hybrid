@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\build\packages.props" />
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<PackageId>Hybrid.Exceptionless</PackageId>
+		<Summary>Hybrid Exceptionless 分布式日志组件</Summary>
+		<Description>Hybrid Exceptionless 分布式日志组件，封装基于Exceptionless 分布式日志记录实现</Description>
+		<RootNamespace>Hybrid.Exceptionless</RootNamespace>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|AnyCPU'">
+		<OutputPath>bin\Release\</OutputPath>
+		<DocumentationFile>bin\Release\Hybrid.Exceptionless.xml</DocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Exceptionless.AspNetCore" Version="4.4.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Hybrid.AspNetCore\Hybrid.AspNetCore.csproj" />
+	</ItemGroup>
+</Project>

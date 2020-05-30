@@ -47,7 +47,7 @@ namespace Hybrid.AspNetCore.Mvc
             {
                 types.AddIfNotExist(type);
                 type = type?.BaseType;
-                if (type?.Name == "Controller" || type?.Name == "ControllerBase")
+                if ("Controller".Equals(type?.Name) || "ControllerBase".Equals(type?.Name))
                 {
                     break;
                 }
@@ -58,8 +58,13 @@ namespace Hybrid.AspNetCore.Mvc
 
         private static bool IsController(Type type)
         {
-            return type != null && type.IsClass && type.IsPublic && !type.ContainsGenericParameters
-                && !type.IsDefined(typeof(NonControllerAttribute)) && (type.Name.EndsWith("Controller") || type.Name.EndsWith("ControllerBase")
+            return type != null && type.IsClass && type.IsPublic && !type.ContainsGenericParameters && !type.IsAbstract
+                && !type.IsDefined(typeof(NonControllerAttribute)) 
+                && (type.Name.EndsWith("Controller", StringComparison.OrdinalIgnoreCase) 
+                || type.Name.EndsWith("ControllerBase", StringComparison.OrdinalIgnoreCase) 
+                || type.Name.EndsWith("AppService", StringComparison.OrdinalIgnoreCase) 
+                || type.Name.EndsWith("ApplicationService", StringComparison.OrdinalIgnoreCase) 
+                || type.Name.EndsWith("Service", StringComparison.OrdinalIgnoreCase)
                     || type.IsDefined(typeof(ControllerAttribute)));
         }
     }

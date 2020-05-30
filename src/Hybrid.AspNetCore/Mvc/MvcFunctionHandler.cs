@@ -70,10 +70,13 @@ namespace Hybrid.AspNetCore.Mvc
                 Name = controllerType.GetDescription(),
                 Area = GetArea(controllerType),
                 Controller = controllerType.Name
-                                .Replace("ControllerBase", string.Empty)
-                                .Replace("Controller", string.Empty)
-                                .Replace("`1", string.Empty)
-                                .Replace("`2", string.Empty),
+                                .Replace("ControllerBase", string.Empty, StringComparison.OrdinalIgnoreCase)
+                                .Replace("Controller", string.Empty, StringComparison.OrdinalIgnoreCase)
+                                .Replace("AppService", string.Empty, StringComparison.OrdinalIgnoreCase)
+                                .Replace("ApplicationService", string.Empty, StringComparison.OrdinalIgnoreCase)
+                                .Replace("Service", string.Empty, StringComparison.OrdinalIgnoreCase)
+                                .Replace("`1", string.Empty, StringComparison.OrdinalIgnoreCase)
+                                .Replace("`2", string.Empty, StringComparison.OrdinalIgnoreCase),
                 IsController = true,
                 AccessType = accessType
             };
@@ -100,7 +103,7 @@ namespace Hybrid.AspNetCore.Mvc
                 Name = $"{typeFunction.Name}-{method.GetDescription()}",
                 Area = typeFunction.Area,
                 Controller = typeFunction.Controller,
-                Action = method.Name,
+                Action = method.Name.Replace("Async", string.Empty, StringComparison.OrdinalIgnoreCase),
                 AccessType = accessType,
                 IsController = false,
                 IsAjax = method.HasAttribute<AjaxOnlyAttribute>()
@@ -133,6 +136,8 @@ namespace Hybrid.AspNetCore.Mvc
         {
             AreaAttribute attribute = type.GetAttribute<AreaAttribute>();
             return attribute?.RouteValue;
+            //TODO:IDynamicWebApi
+            //return attribute == null ? type.GetAttribute<DynamicWebApiAttribute>()?.Area : attribute.RouteValue;
         }
     }
 }

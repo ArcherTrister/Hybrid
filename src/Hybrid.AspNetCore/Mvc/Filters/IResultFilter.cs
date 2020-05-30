@@ -1,8 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Hybrid.AspNetCore.Mvc.Filters
 {
@@ -23,7 +20,6 @@ namespace Hybrid.AspNetCore.Mvc.Filters
 
         public void OnResultExecuting(ResultExecutingContext context)
         {
-
         }
     }
 }

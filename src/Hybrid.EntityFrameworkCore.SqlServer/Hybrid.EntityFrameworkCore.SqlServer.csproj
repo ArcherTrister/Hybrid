@@ -2,25 +2,24 @@
 
 	<Import Project="..\..\build\packages.props" />
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-    <PackageId>Hybrid.EntityFrameworkCore.SqlServer</PackageId>
-    <Description>Hybrid 数据访问组件，封装EntityFrameworkCore的SqlServer数据访问功能的实现</Description>
-    <Summary>Hybrid 数据访问组件SqlServer</Summary>
-    <RootNamespace>Hybrid.Entity.SqlServer</RootNamespace>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<PackageId>Hybrid.EntityFrameworkCore.SqlServer</PackageId>
+		<Description>Hybrid 数据访问组件，封装EntityFrameworkCore的SqlServer数据访问功能的实现</Description>
+		<Summary>Hybrid 数据访问组件SqlServer</Summary>
+		<RootNamespace>Hybrid.Entity.SqlServer</RootNamespace>
+	</PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|netstandard2.1|AnyCPU'">
-    <DocumentationFile>bin\Release\Hybrid.EntityFrameworkCore.SqlServer.xml</DocumentationFile>
-    <OutputPath>bin\Release</OutputPath>
-  </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|netstandard2.1|AnyCPU'">
+		<DocumentationFile>bin\Release\Hybrid.EntityFrameworkCore.SqlServer.xml</DocumentationFile>
+		<OutputPath>bin\Release</OutputPath>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.3" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.4" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Hybrid.EntityFrameworkCore\Hybrid.EntityFrameworkCore.csproj" />
-  </ItemGroup>
-
+	<ItemGroup>
+		<ProjectReference Include="..\Hybrid.EntityFrameworkCore\Hybrid.EntityFrameworkCore.csproj" />
+	</ItemGroup>
 </Project>

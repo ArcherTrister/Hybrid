@@ -22,5 +22,4 @@
   <ItemGroup>
     <ProjectReference Include="..\Hybrid.EntityFrameworkCore\Hybrid.EntityFrameworkCore.csproj" />
   </ItemGroup>
-
 </Project>

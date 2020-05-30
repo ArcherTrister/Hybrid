@@ -65,7 +65,8 @@ namespace Hybrid.Swagger
             services.AddSwaggerGen(options =>
             {
                 options.SwaggerDoc($"v{version}", new OpenApiInfo() { Title = title, Version = $"{version}" });
-
+                // TODO:一定要返回true！
+                options.DocInclusionPredicate((docName, description) => true);
                 Directory.GetFiles(AppDomain.CurrentDomain.BaseDirectory, "*.xml").ToList().ForEach(file =>
                 {
                     options.IncludeXmlComments(file);

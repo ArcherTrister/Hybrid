@@ -1,78 +1,78 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
-  <Import Project="..\..\build\packages.props" />
-  <!--https://docs.microsoft.com/zh-cn/aspnet/core/razor-pages/sdk?view=aspnetcore-3.1-->
-  <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-    <PackageId>Hybrid.Quartz</PackageId>
-    <Summary>Hybrid.Quartz组件</Summary>
-    <Description>Hybrid.Quartz组件，封装基于Quartz后台任务的服务端实现</Description>
-    <RootNamespace>Hybrid.Quartz</RootNamespace>
-    <AssemblyName>Hybrid.Quartz</AssemblyName>
-    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
-    <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
-  </PropertyGroup>
+	<Import Project="..\..\build\packages.props" />
+	<!--https://docs.microsoft.com/zh-cn/aspnet/core/razor-pages/sdk?view=aspnetcore-3.1-->
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<PackageId>Hybrid.Quartz</PackageId>
+		<Summary>Hybrid.Quartz组件</Summary>
+		<Description>Hybrid.Quartz组件，封装基于Quartz后台任务的服务端实现</Description>
+		<RootNamespace>Hybrid.Quartz</RootNamespace>
+		<AssemblyName>Hybrid.Quartz</AssemblyName>
+		<AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+		<GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
+	</PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-  </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+	</PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <DocumentationFile>bin\Release\Hybrid.Quartz.xml</DocumentationFile>
-    <OutputPath>bin\Release</OutputPath>
-  </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<DocumentationFile>bin\Release\Hybrid.Quartz.xml</DocumentationFile>
+		<OutputPath>bin\Release</OutputPath>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <EmbeddedResource Include="Dashboard\Content\**\*" />
-  </ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="Dashboard\Content\**\*" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <FrameworkReference Include="Microsoft.AspNetCore.App" />
-  </ItemGroup>
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <Compile Remove="Dashboard\AuthTypes.cs" />
-    <Compile Remove="Dashboard\Controllers\AccountController.cs" />
-    <Compile Remove="Dashboard\DashboardMiddeware.cs" />
-    <Compile Remove="Dashboard\DashboardQuartzBuilderExtensions.cs" />
-    <Compile Remove="Dashboard\DashboardQuartzOptions.cs" />
-    <Compile Remove="Dashboard\DashboardQuartzOptionsExtension.cs" />
-    <Compile Remove="Dashboard\DefaultAuthorizationFilter.cs" />
-    <Compile Remove="Dashboard\IDashboardAuthorizationFilter.cs" />
-    <Compile Remove="Dashboard\LoginAuthorizationFilter.cs" />
-    <Compile Remove="Dashboard\QuartzAuthUser.cs" />
-    <Compile Remove="Dashboard\RoleAuthorizeAttribute.cs" />
-    <Compile Remove="QuartzBuilderExtensions.cs" />
-    <Compile Remove="QuartzHybridOptionsExtension.cs" />
-    <Compile Remove="QuartzServiceCollectionExtensions.cs" />
-  </ItemGroup>
+	<ItemGroup>
+		<Compile Remove="Dashboard\AuthTypes.cs" />
+		<Compile Remove="Dashboard\Controllers\AccountController.cs" />
+		<Compile Remove="Dashboard\DashboardMiddeware.cs" />
+		<Compile Remove="Dashboard\DashboardQuartzBuilderExtensions.cs" />
+		<Compile Remove="Dashboard\DashboardQuartzOptions.cs" />
+		<Compile Remove="Dashboard\DashboardQuartzOptionsExtension.cs" />
+		<Compile Remove="Dashboard\DefaultAuthorizationFilter.cs" />
+		<Compile Remove="Dashboard\IDashboardAuthorizationFilter.cs" />
+		<Compile Remove="Dashboard\LoginAuthorizationFilter.cs" />
+		<Compile Remove="Dashboard\QuartzAuthUser.cs" />
+		<Compile Remove="Dashboard\RoleAuthorizeAttribute.cs" />
+		<Compile Remove="QuartzBuilderExtensions.cs" />
+		<Compile Remove="QuartzHybridOptionsExtension.cs" />
+		<Compile Remove="QuartzServiceCollectionExtensions.cs" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <Content Remove="Dashboard\Localization\Sources\JsonSource\HybridQuartz-en-US.json" />
-    <Content Remove="Dashboard\Localization\Sources\JsonSource\HybridQuartz-zh-CN.json" />
-  </ItemGroup>
+	<ItemGroup>
+		<Content Remove="Dashboard\Localization\Sources\JsonSource\HybridQuartz-en-US.json" />
+		<Content Remove="Dashboard\Localization\Sources\JsonSource\HybridQuartz-zh-CN.json" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <EmbeddedResource Include="Dashboard\Localization\Sources\JsonSource\HybridQuartz-en-US.json" />
-    <EmbeddedResource Include="Dashboard\Localization\Sources\JsonSource\HybridQuartz-zh-CN.json" />
-    <EmbeddedResource Include="Dashboard\Localization\Sources\XmlSource\HybridQuartz-en-US.xml" />
-    <EmbeddedResource Include="Dashboard\Localization\Sources\XmlSource\HybridQuartz-zh-CN.xml" />
-    <EmbeddedResource Include="MySql\Install.sql" />
-    <EmbeddedResource Include="SqlServer\Install.sql" />
-  </ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="Dashboard\Localization\Sources\JsonSource\HybridQuartz-en-US.json" />
+		<EmbeddedResource Include="Dashboard\Localization\Sources\JsonSource\HybridQuartz-zh-CN.json" />
+		<EmbeddedResource Include="Dashboard\Localization\Sources\XmlSource\HybridQuartz-en-US.xml" />
+		<EmbeddedResource Include="Dashboard\Localization\Sources\XmlSource\HybridQuartz-zh-CN.xml" />
+		<EmbeddedResource Include="MySql\Install.sql" />
+		<EmbeddedResource Include="SqlServer\Install.sql" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.3" />
-    <PackageReference Include="Microsoft.Extensions.FileProviders.Composite" Version="3.1.3" />
-    <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="3.1.3" />
-    <PackageReference Include="MySql.Data" Version="8.0.19" />
-    <PackageReference Include="Quartz" Version="3.0.7" />
-    <PackageReference Include="Quartz.Plugins" Version="3.0.7" />
-    <PackageReference Include="Quartz.Serialization.Json" Version="3.0.7" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.4" />
+		<PackageReference Include="Microsoft.Extensions.FileProviders.Composite" Version="3.1.4" />
+		<PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="3.1.4" />
+		<PackageReference Include="MySql.Data" Version="8.0.20" />
+		<PackageReference Include="Quartz" Version="3.0.7" />
+		<PackageReference Include="Quartz.Plugins" Version="3.0.7" />
+		<PackageReference Include="Quartz.Serialization.Json" Version="3.0.7" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Hybrid.AspNetCore\Hybrid.AspNetCore.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Hybrid.AspNetCore\Hybrid.AspNetCore.csproj" />
+	</ItemGroup>
 </Project>

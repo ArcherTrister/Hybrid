@@ -2,30 +2,29 @@
 
 	<Import Project="..\..\build\packages.props" />
 
-  <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-    <PackageId>Hybrid.AspNetCore</PackageId>
-    <Summary>Hybrid AspNetCore组件</Summary>
-    <Description>Hybrid AspNetCore组件，提供AspNetCore的服务端功能的封装</Description>
-    <RootNamespace>Hybrid.AspNetCore</RootNamespace>
-    <AssemblyName>Hybrid.AspNetCore</AssemblyName>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<PackageId>Hybrid.AspNetCore</PackageId>
+		<Summary>Hybrid AspNetCore组件</Summary>
+		<Description>Hybrid AspNetCore组件，提供AspNetCore的服务端功能的封装</Description>
+		<RootNamespace>Hybrid.AspNetCore</RootNamespace>
+		<AssemblyName>Hybrid.AspNetCore</AssemblyName>
+	</PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>bin\Release\Hybrid.AspNetCore.xml</DocumentationFile>
-  </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<OutputPath>bin\Release\</OutputPath>
+		<DocumentationFile>bin\Release\Hybrid.AspNetCore.xml</DocumentationFile>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="3.1.3" />
-	<PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.3" Condition="'$(Configuration)' == 'Debug'" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.3" />
-    <PackageReference Include="Microsoft.AspNetCore.SignalR.Protocols.NewtonsoftJson" Version="3.1.3" />
-    <FrameworkReference Include="Microsoft.AspNetCore.App" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Authorization" Version="3.1.4" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.4" Condition="'$(Configuration)' == 'Debug'" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.4" />
+		<PackageReference Include="Microsoft.AspNetCore.SignalR.Protocols.NewtonsoftJson" Version="3.1.4" />
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Hybrid\Hybrid.csproj" />
-  </ItemGroup>
-
+	<ItemGroup>
+		<ProjectReference Include="..\Hybrid\Hybrid.csproj" />
+	</ItemGroup>
 </Project>

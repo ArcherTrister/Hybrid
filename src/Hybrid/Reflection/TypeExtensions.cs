@@ -95,6 +95,41 @@ namespace Hybrid.Reflection
             return desc == null ? type.FullName : desc.Description;
         }
 
+        public static bool IsPrimitiveExtendedIncludingNullable(this Type type, bool includeEnums = false)
+        {
+            if (IsPrimitiveExtended(type, includeEnums))
+            {
+                return true;
+            }
+
+            if (type.GetTypeInfo().IsGenericType && type.GetGenericTypeDefinition() == typeof(Nullable<>))
+            {
+                return IsPrimitiveExtended(type.GenericTypeArguments[0], includeEnums);
+            }
+
+            return false;
+        }
+
+        private static bool IsPrimitiveExtended(Type type, bool includeEnums)
+        {
+            if (type.GetTypeInfo().IsPrimitive)
+            {
+                return true;
+            }
+
+            if (includeEnums && type.GetTypeInfo().IsEnum)
+            {
+                return true;
+            }
+
+            return type == typeof(string) ||
+                   type == typeof(decimal) ||
+                   type == typeof(DateTime) ||
+                   type == typeof(DateTimeOffset) ||
+                   type == typeof(TimeSpan) ||
+                   type == typeof(Guid);
+        }
+
         /// <summary>
         /// 获取成员元数据的Description特性描述信息
         /// </summary>
@@ -156,6 +191,85 @@ namespace Hybrid.Reflection
         public static T[] GetAttributes<T>(this MemberInfo memberInfo, bool inherit = true) where T : Attribute
         {
             return memberInfo.GetCustomAttributes(typeof(T), inherit).Cast<T>().ToArray();
+        }
+
+        public static TAttribute GetSingleAttributeOrDefaultByFullSearch<TAttribute>(this TypeInfo info)
+    where TAttribute : Attribute
+        {
+            var attributeType = typeof(TAttribute);
+            if (info.IsDefined(attributeType, true))
+            {
+                return info.GetCustomAttributes(attributeType, true).Cast<TAttribute>().First();
+            }
+            else
+            {
+                foreach (var implInter in info.ImplementedInterfaces)
+                {
+                    var res = implInter.GetTypeInfo().GetSingleAttributeOrDefaultByFullSearch<TAttribute>();
+
+                    if (res != null)
+                    {
+                        return res;
+                    }
+                }
+            }
+
+            return null;
+        }
+
+        public static TAttribute GetSingleAttributeOrDefault<TAttribute>(this MemberInfo memberInfo, TAttribute defaultValue = default(TAttribute), bool inherit = true)
+       where TAttribute : Attribute
+        {
+            var attributeType = typeof(TAttribute);
+            if (memberInfo.IsDefined(typeof(TAttribute), inherit))
+            {
+                return memberInfo.GetCustomAttributes(attributeType, inherit).Cast<TAttribute>().First();
+            }
+
+            return defaultValue;
+        }
+
+
+        /// <summary>
+        /// Gets a single attribute for a member.
+        /// </summary>
+        /// <typeparam name="TAttribute">Type of the attribute</typeparam>
+        /// <param name="memberInfo">The member that will be checked for the attribute</param>
+        /// <param name="inherit">Include inherited attributes</param>
+        /// <returns>Returns the attribute object if found. Returns null if not found.</returns>
+        public static TAttribute GetSingleAttributeOrNull<TAttribute>(this MemberInfo memberInfo, bool inherit = true)
+            where TAttribute : Attribute
+        {
+            if (memberInfo == null)
+            {
+                throw new ArgumentNullException(nameof(memberInfo));
+            }
+
+            var attrs = memberInfo.GetCustomAttributes(typeof(TAttribute), inherit).ToArray();
+            if (attrs.Length > 0)
+            {
+                return (TAttribute)attrs[0];
+            }
+
+            return default(TAttribute);
+        }
+
+
+        public static TAttribute GetSingleAttributeOfTypeOrBaseTypesOrNull<TAttribute>(this Type type, bool inherit = true)
+            where TAttribute : Attribute
+        {
+            var attr = type.GetTypeInfo().GetSingleAttributeOrNull<TAttribute>();
+            if (attr != null)
+            {
+                return attr;
+            }
+
+            if (type.GetTypeInfo().BaseType == null)
+            {
+                return null;
+            }
+
+            return type.GetTypeInfo().BaseType.GetSingleAttributeOfTypeOrBaseTypesOrNull<TAttribute>(inherit);
         }
 
         /// <summary>

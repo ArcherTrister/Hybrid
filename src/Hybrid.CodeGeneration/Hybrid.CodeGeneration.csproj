@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\build\packages.props" />
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<PackageId>Hybrid.CodeGeneration</PackageId>
+		<Summary>Hybrid(.NetStandard2.0) 代码生成组件</Summary>
+		<Description>Hybrid(.NetStandard2.0) 代码生成组件，基于Razor和cshtml模板生成各个模块的分层实体类、服务类、控制器、前端代码等</Description>
+		<RootNamespace>Hybrid.CodeGeneration</RootNamespace>
+		<AssemblyName>Hybrid.CodeGeneration</AssemblyName>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<OutputPath>bin\Release\</OutputPath>
+		<DocumentationFile>bin\Release\Hybrid.CodeGeneration.xml</DocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="Templates\AdminController.cshtml" />
+		<None Remove="Templates\Entity.cshtml" />
+		<None Remove="Templates\EntityConfiguration.cshtml" />
+		<None Remove="Templates\InputDto.cshtml" />
+		<None Remove="Templates\OutputDto.cshtml" />
+		<None Remove="Templates\ServiceContract.cshtml" />
+		<None Remove="Templates\ServiceEntityImpl.cshtml" />
+		<None Remove="Templates\ServiceMainImpl.cshtml" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="Templates\AdminController.cshtml" />
+		<EmbeddedResource Include="Templates\Entity.cshtml" />
+		<EmbeddedResource Include="Templates\EntityConfiguration.cshtml" />
+		<EmbeddedResource Include="Templates\InputDto.cshtml" />
+		<EmbeddedResource Include="Templates\OutputDto.cshtml" />
+		<EmbeddedResource Include="Templates\ServiceContract.cshtml" />
+		<EmbeddedResource Include="Templates\ServiceEntityImpl.cshtml" />
+		<EmbeddedResource Include="Templates\ServiceMainImpl.cshtml" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="RazorEngine.NetCore" Version="2.2.6" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Hybrid\Hybrid.csproj" />
+		<ProjectReference Include="..\Hybrid\Hybrid.csproj" />
+	</ItemGroup>
+</Project>
