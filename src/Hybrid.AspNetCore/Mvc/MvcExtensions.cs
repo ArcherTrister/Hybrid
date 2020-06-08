@@ -7,6 +7,7 @@
 //  <last-date>2017-09-15 1:41</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.AspNetCore.DynamicWebApi.Attributes;
 using Hybrid.Authorization;
 using Hybrid.Authorization.Functions;
 using Hybrid.Dependency;
@@ -48,19 +49,18 @@ namespace Hybrid.AspNetCore.Mvc
             //    && !typeInfo.IsDefined(typeof(NonControllerAttribute)) && (typeInfo.Name.EndsWith("Controller", StringComparison.OrdinalIgnoreCase)
             //        || typeInfo.IsDefined(typeof(ControllerAttribute)));
 
-            return (typeInfo.IsClass && !typeInfo.IsAbstract && typeInfo.IsPublic
-                && !typeInfo.ContainsGenericParameters
-                && !typeInfo.IsDefined(typeof(NonControllerAttribute))
-                && (typeInfo.Name.EndsWith("Controller", StringComparison.OrdinalIgnoreCase)
-                    || typeInfo.IsDefined(typeof(ControllerAttribute))))
-                //TODO:IDynamicWebApi
-                //|| (//typeof(IDynamicWebApi).IsAssignableFrom(typeInfo.AsType())
-                //    typeInfo.HasAttribute<DynamicWebApiAttribute>()
-                //    && typeInfo.IsPublic && !typeInfo.IsAbstract 
-                //    && !typeInfo.IsGenericType
-                //    && !typeInfo.IsDefined(typeof(NoneDynamicWebApiAttribute)))
+            return typeInfo.IsClass && !typeInfo.IsAbstract && typeInfo.IsPublic
+                && (
+                (!typeInfo.ContainsGenericParameters
+                    && !typeInfo.IsDefined(typeof(NonControllerAttribute))
+                    && typeInfo.Name.EndsWith("Controller", StringComparison.OrdinalIgnoreCase)
+                    || typeInfo.IsDefined(typeof(ControllerAttribute))
+                )
+                || (typeInfo.HasAttribute<DynamicWebApiAttribute>()
+                    && !typeInfo.IsGenericType
+                    && !typeInfo.IsDefined(typeof(NonDynamicWebApiAttribute)))
                 || (typeInfo.HasAttribute<HybridDefaultUIAttribute>()
-                    && typeInfo.ContainsGenericParameters && !typeInfo.IsAbstract);
+                    && typeInfo.ContainsGenericParameters));
         }
 
         /// <summary>

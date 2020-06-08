@@ -7,6 +7,7 @@
 //  <last-date>2017-09-15 3:08</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.AspNetCore.DynamicWebApi.Attributes;
 using Hybrid.AspNetCore.Mvc.Filters;
 using Hybrid.Authorization;
 using Hybrid.Authorization.Functions;
@@ -135,9 +136,7 @@ namespace Hybrid.AspNetCore.Mvc
         private static string GetArea(MemberInfo type)
         {
             AreaAttribute attribute = type.GetAttribute<AreaAttribute>();
-            return attribute?.RouteValue;
-            //TODO:IDynamicWebApi
-            //return attribute == null ? type.GetAttribute<DynamicWebApiAttribute>()?.Area : attribute.RouteValue;
+            return attribute == null ? type.GetAttribute<DynamicWebApiAttribute>()?.Area : attribute.RouteValue;
         }
     }
 }

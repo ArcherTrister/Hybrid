@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace Hybrid.AspNetCore.WebApi.Dynamic.Attributes
+namespace Hybrid.AspNetCore.DynamicWebApi.Attributes
 {
     [Serializable]
     [AttributeUsage(AttributeTargets.Interface | AttributeTargets.Class | AttributeTargets.Method)]
-    public class NoneDynamicWebApiAttribute : Attribute
+    public class NonDynamicWebApiAttribute : Attribute
     {
     }
 }

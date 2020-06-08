@@ -13,7 +13,7 @@ using Hybrid.Reflection;
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace Hybrid.Zero.IdentityServer4.Quickstart
+namespace Hybrid.AspNetCore.Mvc
 {
     /// <summary>
     /// 标注了<see cref="HybridDefaultUIAttribute"/>标签的类型查找器

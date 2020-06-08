@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace Hybrid.AspNetCore.WebApi.Dynamic
+namespace Hybrid.AspNetCore.DynamicWebApi
 {
     public class DynamicWebApiOptions
     {

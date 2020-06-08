@@ -1,4 +1,6 @@
-﻿using LeXun.Demo.Dynamic.Dtos;
+﻿using Hybrid.AspNetCore.DynamicWebApi.Attributes;
+
+using LeXun.Demo.Dynamic.Dtos;
 
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -8,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace LeXun.Demo.Dynamic
 {
-    //[DynamicWebApi]
+    [DynamicWebApi(Area ="product")]
     // [Authorize]
-    public class AppleAppService//: IAppleAppService
+    public class AppleAppService
     {
         private static readonly Dictionary<int, string> Apples = new Dictionary<int, string>()
         {

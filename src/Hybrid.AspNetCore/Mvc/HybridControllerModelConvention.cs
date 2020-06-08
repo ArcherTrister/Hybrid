@@ -14,7 +14,7 @@ using Microsoft.AspNetCore.Mvc.ApplicationModels;
 using System;
 using System.Linq;
 
-namespace Hybrid.Zero.IdentityServer4.Quickstart
+namespace Hybrid.AspNetCore.Mvc
 {
     internal class HybridControllerModelConvention : IControllerModelConvention
     {

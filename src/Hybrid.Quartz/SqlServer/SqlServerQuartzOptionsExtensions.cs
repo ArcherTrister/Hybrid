@@ -64,7 +64,9 @@ namespace Microsoft.Extensions.DependencyInjection
                 //
                 if (sqlServerQuartzOptions.IsUseSelectWithLockSQL)
                 {
-                    properties.Set("quartz.jobStore.selectWithLockSQL", $"SELECT * FROM {sqlServerQuartzOptions.TablePrefix}LOCKS WITH(UPDLOCK) WHERE SCHED_NAME = @schedulerName AND LOCK_NAME = @lockName");
+                    string selectWithLockSQL = $"select * from {sqlServerQuartzOptions.TablePrefix}LOCKS UPDLOCK WHERE LOCK_NAME = @lockName";
+                    //$"SELECT * FROM {sqlServerQuartzOptions.TablePrefix}LOCKS WITH(UPDLOCK) WHERE {AdoConstants.ColumnSchedulerName} = @schedulerName AND LOCK_NAME = @lockName"
+                    properties.Set("quartz.jobStore.selectWithLockSQL", selectWithLockSQL);
                 }
             }
 

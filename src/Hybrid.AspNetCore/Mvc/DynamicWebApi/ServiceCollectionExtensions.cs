@@ -1,8 +1,6 @@
-﻿using Hybrid.AspNetCore.WebApi.Dynamic;
+﻿using Hybrid.AspNetCore.DynamicWebApi;
 
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ApplicationParts;
 
 using System;
 using System.Collections.Generic;
@@ -40,22 +38,6 @@ namespace Microsoft.Extensions.DependencyInjection
             DynamicWebApiConsts.GetRestFulActionName = options.GetRestFulActionName;
             //Specifies the dynamic webapi options for the assembly.
             DynamicWebApiConsts.AssemblyDynamicWebApiOptions = options.AssemblyDynamicWebApiOptions;
-
-            var partManager = services.GetSingletonInstanceOrNull<ApplicationPartManager>();
-
-            if (partManager == null)
-            {
-                throw new InvalidOperationException("\"AddDynamicWebApi\" must be after \"AddMvc\".");
-            }
-
-            // Add a custom controller checker
-            partManager.FeatureProviders.Add(new DynamicWebApiControllerFeatureProvider());
-
-            services.Configure<MvcOptions>(o =>
-            {
-                // Register Controller Routing Information Converter
-                o.Conventions.Add(new DynamicWebApiConvention());
-            });
 
             return services;
         }

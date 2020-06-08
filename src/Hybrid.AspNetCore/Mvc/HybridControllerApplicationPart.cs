@@ -16,7 +16,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace Hybrid.Zero.IdentityServer4.Quickstart
+namespace Hybrid.AspNetCore.Mvc
 {
     internal class HybridControllerApplicationPart : ApplicationPart, IApplicationPartTypeProvider
     {

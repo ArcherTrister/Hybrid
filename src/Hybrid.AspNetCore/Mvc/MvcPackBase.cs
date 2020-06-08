@@ -12,11 +12,13 @@ using Hybrid.AspNetCore.Mvc.Filters;
 using Hybrid.AspNetCore.UI;
 using Hybrid.Core.Packs;
 using Hybrid.Dependency;
+using Hybrid.Exceptions;
 using Hybrid.Threading;
 
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ApplicationParts;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
@@ -55,6 +57,9 @@ namespace Hybrid.AspNetCore.Mvc
             var builder = services.AddControllersWithViews(opt =>
             {
                 //opt.Filters.Add(new CustomResultFilter());
+                opt.Conventions.Add(new HybridApplicationModelConvention());
+                opt.Conventions.Add(new HybridControllerModelConvention());
+
             }).AddNewtonsoftJson(options =>
             {
                 options.SerializerSettings.ContractResolver = new DefaultContractResolver();
@@ -63,6 +68,9 @@ namespace Hybrid.AspNetCore.Mvc
 #if DEBUG
             builder.AddRazorRuntimeCompilation();
 #endif
+
+            var partManager = builder.Services.GetSingletonInstanceOrNull<ApplicationPartManager>();
+            partManager.FeatureProviders.Add(new HybridControllerFeatureProvider());
 
             //参数验证
             ////①禁用默认行为

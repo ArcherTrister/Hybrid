@@ -51,6 +51,8 @@ namespace Hybrid.Zero.IdentityServer4
         /// </summary>
         public override PackLevel Level => PackLevel.Application;
 
+        public override int Order => 10;
+
         /// <summary>
         /// 将模块服务添加到依赖注入服务容器中
         /// </summary>

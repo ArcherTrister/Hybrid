@@ -8,6 +8,7 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.AspNetCore.Http;
+using Hybrid.AspNetCore.Mvc;
 using Hybrid.Core.Packs;
 
 using Microsoft.AspNetCore.Http;
@@ -42,6 +43,7 @@ namespace Hybrid.AspNetCore
         /// <returns></returns>
         public override IServiceCollection AddServices(IServiceCollection services)
         {
+            //services.TryAddSingleton<IHybridDefaultUIAttributeTypeFinder, HybridDefaultUIAttributeTypeFinder>();
             services.AddHttpContextAccessor();
             services.TryAddSingleton<IHostHttpCrypto, HostHttpCrypto>();
 

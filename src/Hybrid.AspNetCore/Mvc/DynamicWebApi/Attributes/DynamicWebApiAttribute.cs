@@ -1,18 +1,24 @@
 ﻿using Hybrid.Reflection;
-
+using Microsoft.AspNetCore.Mvc.Filters;
 using System;
 using System.Reflection;
 
-namespace Hybrid.AspNetCore.WebApi.Dynamic.Attributes
+namespace Hybrid.AspNetCore.DynamicWebApi.Attributes
 {
     [Serializable]
     [AttributeUsage(AttributeTargets.Interface | AttributeTargets.Class)]
-    public class DynamicWebApiAttribute : Attribute
+    public class DynamicWebApiAttribute : ActionFilterAttribute
     {
         /// <summary>
         /// Equivalent to AreaName
         /// </summary>
         public string Area { get; set; }
+
+        public override void OnActionExecuting(ActionExecutingContext context)
+        {
+            //TODO:权限检查
+            base.OnActionExecuting(context);
+        }
 
         internal static bool IsExplicitlyEnabledFor(Type type)
         {

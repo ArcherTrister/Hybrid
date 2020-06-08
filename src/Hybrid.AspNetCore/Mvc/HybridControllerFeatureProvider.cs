@@ -7,15 +7,16 @@
 //  <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
+using Hybrid.AspNetCore.DynamicWebApi.Attributes;
 using Hybrid.Data;
-
+using Hybrid.Reflection;
 using Microsoft.AspNetCore.Mvc.Controllers;
 
 using System;
 using System.Linq;
 using System.Reflection;
 
-namespace Hybrid.Zero.IdentityServer4.Quickstart
+namespace Hybrid.AspNetCore.Mvc
 {
     internal class HybridControllerFeatureProvider : ControllerFeatureProvider
     {
@@ -29,6 +30,12 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
                     typeInfo.Name.EndsWith(x, StringComparison.OrdinalIgnoreCase))
                     && typeInfo.GenericTypeArguments.Any();
             }
+
+            if (!isController)
+            {
+                isController = typeInfo.HasAttribute<DynamicWebApiAttribute>();
+            }
+
 #if DEBUG
             if (isController)
             {

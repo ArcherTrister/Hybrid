@@ -12,6 +12,7 @@ using SignInfo;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
@@ -27,6 +28,67 @@ namespace Conmon.Tests
     [TestClass]
     public class Tests
     {
+        [TestMethod]
+        public void PrintTest() {
+            var dir = Directory.GetCurrentDirectory();
+
+            string filePath = dir+ "\\files\\202006041054422.pdf";
+            //string printer = "打印机";
+            //ProcessStartInfo info = new ProcessStartInfo();
+            //info.Arguments = "\"" + printer + "\"";
+            //info.Verb = "PrintTo";
+            //info.FileName = filePath;
+            //info.CreateNoWindow = true;
+            //info.WindowStyle = ProcessWindowStyle.Hidden;
+
+            //Process p = new Process();
+            //p.StartInfo = info;
+            //p.Start();
+            //p.WaitForInputIdle();
+
+            Process process = new Process();
+            ProcessStartInfo processStartInfo = new ProcessStartInfo(filePath);
+            process.StartInfo = processStartInfo;
+            #region 下面这段被注释掉代码（可以用来全屏打开代码）
+            ////建立新的系统进程    
+            //System.Diagnostics.Process process = new System.Diagnostics.Process();
+            ////设置文件名，此处为图片的真实路径+文件名（需要有后缀）    
+            //process.StartInfo.FileName = NewFileName;
+            ////此为关键部分。设置进程运行参数，此时为最大化窗口显示图片。    
+            //process.StartInfo.Arguments = "rundll32.exe C://WINDOWS//system32//shimgvw.dll,ImageView_Fullscreen";
+            //// 此项为是否使用Shell执行程序，因系统默认为true，此项也可不设，但若设置必须为true    
+            //process.StartInfo.UseShellExecute = true;
+            #endregion
+            try
+            {
+                process.Start();
+                try
+                {
+                    // process.WaitForExit();
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                try
+                {
+                    if (process != null)
+                    {
+                        process.Close();
+                        process = null;
+                    }
+                }
+                catch { }
+            }
+        }
+
         [TestMethod]
         public async Task ImageTest()
         {

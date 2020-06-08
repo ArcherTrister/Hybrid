@@ -1,5 +1,16 @@
-﻿using Hybrid.AspNetCore.WebApi.Dynamic.Attributes;
+﻿// -----------------------------------------------------------------------
+//  <copyright file="HybridApplicationModelConvention.cs" company="cn.lxking">
+//      Copyright © 2019-2020 Hybrid. All rights reserved.
+//  </copyright>
+//  <site>https://www.lxking.cn</site>
+//  <last-editor>ArcherTrister</last-editor>
+//  <last-date>2018-08-02 17:56</last-date>
+// -----------------------------------------------------------------------
+
+using Hybrid.AspNetCore.DynamicWebApi;
+using Hybrid.AspNetCore.DynamicWebApi.Attributes;
 using Hybrid.Collections;
+using Hybrid.Data;
 using Hybrid.Extensions;
 using Hybrid.Reflection;
 
@@ -12,30 +23,30 @@ using System;
 using System.Linq;
 using System.Reflection;
 
-namespace Hybrid.AspNetCore.WebApi.Dynamic
+namespace Hybrid.AspNetCore.Mvc
 {
-    public class DynamicWebApiConvention : IApplicationModelConvention
+    internal class HybridApplicationModelConvention : IApplicationModelConvention
     {
         public void Apply(ApplicationModel application)
         {
+            var removeList = application.Controllers.Where(p =>
+                HybridConstants.CustomController.ValidEndings.Any(x =>
+                    p.ControllerName.EndsWith(x, StringComparison.OrdinalIgnoreCase))
+                && !p.ControllerType.GenericTypeArguments.Any()).ToList();
+            foreach (var item in removeList)
+            {
+                application.Controllers.Remove(item);
+            }
             foreach (var controller in application.Controllers)
             {
                 var type = controller.ControllerType.AsType();
                 var dynamicWebApiAttr = type.GetTypeInfo().GetSingleAttributeOrDefaultByFullSearch<DynamicWebApiAttribute>();
-                if(dynamicWebApiAttr != null)// (typeof(IDynamicWebApi).GetTypeInfo().IsAssignableFrom(type))
+                if (dynamicWebApiAttr != null)
                 {
                     controller.ControllerName = controller.ControllerName.RemovePostFix(DynamicWebApiConsts.ControllerPostfixes.ToArray());
                     ConfigureArea(controller, dynamicWebApiAttr);
                     ConfigureDynamicWebApi(controller, dynamicWebApiAttr);
                 }
-                //else
-                //{
-                //    if (dynamicWebApiAttr != null)
-                //    {
-                //        ConfigureArea(controller, dynamicWebApiAttr);
-                //        ConfigureDynamicWebApi(controller, dynamicWebApiAttr);
-                //    }
-                //}
             }
         }
 
@@ -167,7 +178,7 @@ namespace Hybrid.AspNetCore.WebApi.Dynamic
 
         private void ConfigureSelector(string areaName, string controllerName, ActionModel action)
         {
-            var nonAttr = action.ActionMethod.GetSingleAttributeOrDefault<NoneDynamicWebApiAttribute>();
+            var nonAttr = action.ActionMethod.GetSingleAttributeOrDefault<NonDynamicWebApiAttribute>();
 
             if (nonAttr != null)
             {
@@ -310,5 +321,6 @@ namespace Hybrid.AspNetCore.WebApi.Dynamic
             var routeStr = $"{apiPreFix}/{areaName}/{controllerName}/{action.ActionName}".Replace("//", "/");
             return new AttributeRouteModel(new RouteAttribute(routeStr));
         }
+
     }
 }

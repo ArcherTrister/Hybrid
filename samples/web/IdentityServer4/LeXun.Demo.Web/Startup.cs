@@ -8,6 +8,7 @@
 // -----------------------------------------------------------------------
 
 using Hybrid.AspNetCore;
+using Hybrid.AspNetCore.DynamicWebApi;
 using Hybrid.AspNetCore.Routing;
 using Hybrid.AspNetCore.SignalR;
 using Hybrid.AutoMapper;
@@ -46,7 +47,7 @@ namespace LeXun.Demo.Web
                 .AddPack<IdentityServer4Pack>()
                 .AddPack<FunctionAuthorizationPack>()
                 .AddPack<DataAuthorizationPack>()
-                //.AddPack<DynamicWebApiPack>()
+                .AddPack<DynamicWebApiPack>()
                 .AddPack<SqlServerDefaultDbContextMigrationPack>()
                 .AddPack<AuditPack>();
 
