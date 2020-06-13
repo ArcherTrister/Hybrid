@@ -10,18 +10,18 @@
 
 - Quartz UI
 
-![Quartz-Admin-Preview](docs/Images/Quartz-Admin-Preview1.png)
-![Quartz-Admin-Preview](docs/Images/Quartz-Admin-Preview2.png)
-![Quartz-Admin-Preview](docs/Images/Quartz-Admin-Preview3.png)
-![Quartz-Admin-Preview](docs/Images/Quartz-Admin-Preview4.png)
-![Quartz-Admin-Preview](docs/Images/Quartz-Admin-Preview5.png)
+![Quartz-Admin-Preview](images/readme/Quartz-Admin-Preview1.png)
+![Quartz-Admin-Preview](images/readme/Quartz-Admin-Preview2.png)
+![Quartz-Admin-Preview](images/readme/Quartz-Admin-Preview3.png)
+![Quartz-Admin-Preview](images/readme/Quartz-Admin-Preview4.png)
+![Quartz-Admin-Preview](images/readme/Quartz-Admin-Preview5.png)
 
 - IdentityServer UI
 
-![IdentityServer-Admin-Preview](docs/Images/IdentityServer-Admin-Preview1.png)
-![IdentityServer-Admin-Preview](docs/Images/IdentityServer-Admin-Preview4.png)
-![IdentityServer-Admin-Preview](docs/Images/IdentityServer-Admin-Preview2.png)
-![IdentityServer-Admin-Preview](docs/Images/IdentityServer-Admin-Preview3.png)
+![IdentityServer-Admin-Preview](images/readme/IdentityServer-Admin-Preview1.png)
+![IdentityServer-Admin-Preview](images/readme/IdentityServer-Admin-Preview4.png)
+![IdentityServer-Admin-Preview](images/readme/IdentityServer-Admin-Preview2.png)
+![IdentityServer-Admin-Preview](images/readme/IdentityServer-Admin-Preview3.png)
 
 # 说明
 ### ①此版本直接使用OSharp源码修改，主要替换了命名空间，原项目地址<a href="https://github.com/i66soft/osharp" target="_blank">Osharp</a>

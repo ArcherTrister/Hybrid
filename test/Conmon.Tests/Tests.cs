@@ -28,7 +28,62 @@ namespace Conmon.Tests
     [TestClass]
     public class Tests
     {
+
         [TestMethod]
+        public void CtorTest()
+        {
+           var nums = (DateTime.Now.AddHours(1) - DateTime.Now).TotalSeconds;
+            List<Td> tds = new List<Td> { new Td { BeginTime=DateTime.Now.AddHours(1) }, new Td { BeginTime = DateTime.Now.AddHours(2) } };
+           var list = tds.Select(p => new Td(p.BeginTime) {
+                BeginTime=  p.BeginTime,
+               //Seconds=  p.Seconds,
+               //ServerTime=  p.ServerTime
+            }).ToList();
+
+            foreach (var p in list)
+            {
+                Console.WriteLine(p.ServerTime);
+                Console.WriteLine(p.BeginTime);
+                Console.WriteLine(p.Seconds);
+                Console.WriteLine("-------------------");
+            }
+
+
+            Console.ReadKey();
+
+
+        }
+
+        public class Td
+        {
+            public Td()
+            {
+
+            }
+            public Td(DateTime beginTime)
+            {
+                ServerTime = DateTime.Now;
+                //Console.WriteLine(ServerTime);
+                Seconds = (beginTime - ServerTime).TotalSeconds;
+            }
+
+            /// <summary>
+            /// 当前时间
+            /// </summary>
+            public DateTime ServerTime { get; set; }
+
+            /// <summary>
+            /// 开始时间
+            /// </summary>
+            public DateTime BeginTime { get; set; }
+
+            /// <summary>
+            /// 剩余秒数
+            /// </summary>
+            public double Seconds { get; set; }
+        }
+
+            [TestMethod]
         public void PrintTest() {
             var dir = Directory.GetCurrentDirectory();
 
