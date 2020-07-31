@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\build\packages.props" />
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<PackageId>Hybrid.WeChat</PackageId>
+		<Summary>Hybrid WeChat 组件</Summary>
+		<Description>Hybrid WeChat 组件，封装基于盛派微信SDK的实现</Description>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<OutputPath>bin\Release\</OutputPath>
+		<DocumentationFile>bin\Release\Hybrid.WeChat.xml</DocumentationFile>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hybrid\Hybrid.csproj" />
+  </ItemGroup>
+
+</Project>

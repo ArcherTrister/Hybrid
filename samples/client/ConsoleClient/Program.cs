@@ -11,6 +11,9 @@ using IdentityModel.Client;
 
 using IdentityServer4;
 
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+
 using Newtonsoft.Json.Linq;
 
 using System;
@@ -24,11 +27,51 @@ namespace ConsoleClient
     {
         private static async Task Main(string[] args)
         {
+            DbTest.Test();
+
             Docfx();
 
             Accuracy();
             await IdentityServer();
 
+        }
+
+        public class DbTest
+        {
+            public static void Test()
+            {
+                var serviceCollection = new ServiceCollection();
+                serviceCollection
+                    //.AddEntityFrameworkInMemoryDatabase()
+                    //.AddInMemoryDatabase()
+                    .AddDbContext<SampleContext>(c => c.UseInMemoryDatabase("test"));
+
+
+                using (var db = serviceCollection.BuildServiceProvider().GetService<SampleContext>())
+                {
+                    db.Blogs.Add(new Blog { Url = "Test" });
+                    db.SaveChanges();
+                    Console.WriteLine(db.Blogs.Count());
+                }
+
+                using (var db = serviceCollection.BuildServiceProvider().GetService<SampleContext>())
+                {
+                    db.Blogs.Add(new Blog { Url = "Test" });
+                    db.SaveChanges();
+                    Console.WriteLine(db.Blogs.Count());
+                }
+            }
+        }
+
+        public class SampleContext : DbContext
+        {
+            public DbSet<Blog> Blogs { get; set; }
+        }
+
+        public class Blog
+        {
+            public int BlogId { get; set; }
+            public string Url { get; set; }
         }
 
         private static void Docfx()

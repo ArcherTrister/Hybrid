@@ -27,23 +27,23 @@ steps:
     packageType: 'sdk'
     version: '3.x'
 
-- task: DotNetCoreCLI@2
-  displayName: 'Build the project'
-  inputs:
-    command: 'build'
-    configuration: $(buildConfiguration)
-    projects: '$(buildProjectPath)'
-    arguments: '--output $(Build.ArtifactStagingDirectory)'
+#- task: DotNetCoreCLI@2
+#  displayName: 'Build the project'
+#  inputs:
+#    command: 'build'
+#    configuration: $(buildConfiguration)
+#    projects: '$(buildProjectPath)'
+#    arguments: '--output $(Build.ArtifactStagingDirectory)'
 
-# - task: DotNetCoreCLI@2
-#   displayName: 'Pack the package'
-#   inputs:
-#     command: 'pack'
-#     configuration: $(buildConfiguration)
-#     packagesToPack: '$(buildProjectPath)'
-#     nobuild: true
-#     versioningScheme: 'off'
-#     arguments: '--output $(Build.ArtifactStagingDirectory)'
+- task: DotNetCoreCLI@2
+  displayName: 'Pack the package'
+  inputs:
+    command: 'pack'
+    configuration: $(buildConfiguration)
+    packagesToPack: '$(buildProjectPath)'
+    nobuild: true
+    versioningScheme: 'off'
+    arguments: '--output $(Build.ArtifactStagingDirectory)'
 
 # - task: PublishBuildArtifacts@1
 #   displayName: 'Publish the package'

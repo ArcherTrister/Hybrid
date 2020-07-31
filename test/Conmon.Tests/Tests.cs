@@ -28,6 +28,47 @@ namespace Conmon.Tests
     [TestClass]
     public class Tests
     {
+        [TestMethod]
+        public void ListTest()
+        {
+            List<Htest> htests = new List<Htest> { 
+                new Htest { Id = 1, ProjectId = 1, BuildArea = 110, RealArea = null, IsFor = true }, 
+                new Htest { Id = 2, ProjectId = 2, BuildArea = 220, RealArea = null, IsFor = true },
+                new Htest { Id = 3, ProjectId = 1, BuildArea = 330, RealArea = null, IsFor = false },
+                new Htest { Id = 4, ProjectId = 2, BuildArea = 440, RealArea = null, IsFor = false },
+                //new Htest { Id = 5, ProjectId = 1, BuildArea = 550, RealArea = null },
+                //new Htest { Id = 6, ProjectId = 2, BuildArea = 660, RealArea = null },
+            };
+            //var totalArea = htests.Select(p => new { area = p.RealArea ?? p.BuildArea }).Select(p => p.area).Sum();
+
+            var list = htests.GroupBy(p => p.ProjectId).Select(g => (
+            new { 
+                projectId = g.Key, 
+                fArea = g.Where(c=>c.IsFor).Sum(c =>  c.RealArea ?? c.BuildArea),
+                unFArea = g.Where(c => !c.IsFor).Sum(c => c.RealArea ?? c.BuildArea) 
+            }));
+            foreach (var item in list)
+            {
+
+            }
+
+            Console.WriteLine();
+        }
+
+        public class Htest
+        {
+            public int Id { get; set; }
+
+            public int ProjectId { get; set; }
+
+            public decimal BuildArea { get; set; }
+
+            public decimal? RealArea { get; set; }
+
+            public bool IsMain { get; set; }
+
+            public bool IsFor { get; set; }
+        }
 
         [TestMethod]
         public void CtorTest()
