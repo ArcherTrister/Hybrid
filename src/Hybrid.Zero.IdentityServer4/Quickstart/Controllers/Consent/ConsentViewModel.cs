@@ -19,6 +19,6 @@ namespace Hybrid.Zero.IdentityServer4.Quickstart
         public bool AllowRememberConsent { get; set; }
 
         public IEnumerable<ScopeViewModel> IdentityScopes { get; set; }
-        public IEnumerable<ScopeViewModel> ResourceScopes { get; set; }
+        public IEnumerable<ScopeViewModel> ApiScopes { get; set; }
     }
 }

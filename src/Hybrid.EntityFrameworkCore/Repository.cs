@@ -707,9 +707,24 @@ namespace Hybrid.Entity
             if (typeof(ISoftDeletable).IsAssignableFrom(typeof(TEntity)))
             {
                 // 逻辑删除
-                TEntity[] entities = _dbSet.Where(predicate).ToArray();
-                DeleteInternal(entities);
-                return await _dbContext.SaveChangesAsync(_cancellationTokenProvider.Token);
+                //TEntity[] entities = _dbSet.Where(predicate).ToArray();
+                //DeleteInternal(entities);
+                //return await _dbContext.SaveChangesAsync(_cancellationTokenProvider.Token);
+
+                MemberBinding speciesMemberBinding =
+                    Expression.Bind(
+                        typeof(TEntity).GetMember("IsDeleted")[0],
+                        Expression.Constant(true));
+
+                // Create a MemberInitExpression that represents initializing
+                MemberInitExpression memberInitExpression =
+                    Expression.MemberInit(
+                        Expression.New(typeof(TEntity)),
+                        speciesMemberBinding);
+
+                ParameterExpression input = Expression.Parameter(typeof(TEntity), "p");
+                Expression<Func<TEntity, TEntity>> updateExpression = Expression.Lambda<Func<TEntity, TEntity>>(memberInitExpression, input);
+                return await _dbSet.Where(predicate).UpdateAsync(updateExpression);
             }
 
             // 物理删除

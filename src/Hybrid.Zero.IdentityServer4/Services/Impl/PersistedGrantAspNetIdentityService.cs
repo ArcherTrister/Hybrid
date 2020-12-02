@@ -53,11 +53,11 @@ namespace Hybrid.Zero.IdentityServer4.Services.Impl
 
         public async Task DeletePersistedGrantsAsync(string userId)
         {
-            var list = await _store.GetAllAsync(userId);
+            var list = await _store.GetAllAsync(new PersistedGrantFilter { SessionId = userId });
             var clientIds = list.Select(p=>p.ClientId);
-            foreach (var cilentId in clientIds)
+            foreach (var clientId in clientIds)
             {
-                await _store.RemoveAllAsync(userId, cilentId);
+                await _store.RemoveAllAsync(new PersistedGrantFilter { ClientId = clientId, SessionId = userId });
             }
         }
 
@@ -76,7 +76,7 @@ namespace Hybrid.Zero.IdentityServer4.Services.Impl
         public async Task<PersistedGrantsDto> GetPersistedGrantsByUserAsync(string subjectId, int page = 1, int pageSize = 10)
         {
             PersistedGrantsDto persistedGrantsDto = new PersistedGrantsDto() { SubjectId=subjectId, PageSize = pageSize };
-            var list = await _store.GetAllAsync(subjectId);
+            var list = await _store.GetAllAsync(new PersistedGrantFilter { SubjectId = subjectId});
             persistedGrantsDto.TotalCount = list.Count();
             persistedGrantsDto.PersistedGrants = list.Select(p => p.MapTo<PersistedGrantDto>()).ToList();
             return await Task.FromResult(persistedGrantsDto);
@@ -85,7 +85,7 @@ namespace Hybrid.Zero.IdentityServer4.Services.Impl
         public async Task<PersistedGrantsDto> GetPersistedGrantsByUsersAsync(string search, int page = 1, int pageSize = 10)
         {
             PersistedGrantsDto persistedGrantsDto = new PersistedGrantsDto() { SubjectId = search, PageSize = pageSize };
-            var list = await _store.GetAllAsync(search);
+            var list = await _store.GetAllAsync(new PersistedGrantFilter { SubjectId = search});
 
             var persistedGrantByUsers = (from pe in list
                                          join us in _userRepository.QueryAsNoTracking() on pe.SubjectId equals us.Id.ToString() into per

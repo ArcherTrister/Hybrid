@@ -39,7 +39,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="RazorEngine.NetCore" Version="2.2.6" />
+		<PackageReference Include="RazorEngine.NetCore" Version="3.1.0" />
 	</ItemGroup>
 
 	<ItemGroup>

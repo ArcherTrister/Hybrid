@@ -32,6 +32,22 @@ namespace Hybrid.Zero.IdentityServer4.Stores
             return await Task.FromResult(items);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="filter"></param>
+        /// <returns></returns>
+        public async Task<IEnumerable<PersistedGrant>> GetAllAsync(PersistedGrantFilter filter)
+        {
+            var items = persistedGrantDbContext.PersistedGrants
+                .WhereIf(p => p.SubjectId.Equals(filter.SubjectId), !filter.SubjectId.IsNullOrWhiteSpace())
+                .WhereIf(p => p.Type.Equals(filter.Type), !filter.Type.IsNullOrWhiteSpace())
+                .WhereIf(p => p.SessionId.Equals(filter.SessionId), !filter.SessionId.IsNullOrWhiteSpace())
+                .WhereIf(p => p.ClientId.Equals(filter.ClientId), !filter.ClientId.IsNullOrWhiteSpace())
+                .Select(p => p.MapTo<PersistedGrant>());
+            return await Task.FromResult(items);
+        }
+
         public async Task<PersistedGrant> GetAsync(string key)
         {
             return await persistedGrantDbContext.PersistedGrants.Where(p => p.Key.Equals(key)).Select(p => p.MapTo<PersistedGrant>()).FirstOrDefaultAsync();
@@ -65,6 +81,11 @@ namespace Hybrid.Zero.IdentityServer4.Stores
             var items = persistedGrantDbContext.PersistedGrants.Where(p => p.SubjectId.Equals(subjectId) && p.ClientId.Equals(clientId) && p.Type.Equals(type)).AsEnumerable();
             persistedGrantDbContext.PersistedGrants.RemoveRange(items);
             await persistedGrantDbContext.SaveChangesAsync();
+        }
+
+        public Task RemoveAllAsync(PersistedGrantFilter filter)
+        {
+            throw new NotImplementedException();
         }
 
         public async Task RemoveAsync(string key)

@@ -34,6 +34,22 @@ namespace Hybrid.Zero.IdentityServer4.Stores
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="filter"></param>
+        /// <returns></returns>
+        public async Task<IEnumerable<PersistedGrant>> GetAllAsync(PersistedGrantFilter filter)
+        {
+            var items = _repository
+                .WhereIf(p => p.Value.SubjectId.Equals(filter.SubjectId), !filter.SubjectId.IsNullOrWhiteSpace())
+                .WhereIf(p => p.Value.Type.Equals(filter.Type), !filter.Type.IsNullOrWhiteSpace())
+                .WhereIf(p => p.Value.SessionId.Equals(filter.SessionId), !filter.SessionId.IsNullOrWhiteSpace())
+                .WhereIf(p => p.Value.ClientId.Equals(filter.ClientId), !filter.ClientId.IsNullOrWhiteSpace())
+                .Select(p => p.Value);
+            return await Task.FromResult(items);
+        }
+
+        /// <summary>
         /// Gets the grant.
         /// </summary>
         /// <param name="key">The key.</param>
@@ -116,6 +132,11 @@ namespace Hybrid.Zero.IdentityServer4.Stores
             }
 
             await Task.CompletedTask;
+        }
+
+        public Task RemoveAllAsync(PersistedGrantFilter filter)
+        {
+            throw new System.NotImplementedException();
         }
 
         /// <summary>

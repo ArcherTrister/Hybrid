@@ -26,6 +26,7 @@ using static IdentityModel.OidcConstants;
 
 namespace Hybrid.Zero.IdentityServer4
 {
+
     /// <summary>
     /// Custom token creation service
     /// </summary>
@@ -146,7 +147,7 @@ namespace Hybrid.Zero.IdentityServer4
         /// <returns>The JWT payload</returns>
         protected virtual Task<JwtPayload> CreatePayloadAsync(Token token)
         {
-            var payload = token.CreateJwtPayload(Clock, Logger);
+            var payload = token.CreateJwtPayload(Clock, Options, Logger);
             return Task.FromResult(payload);
         }
 

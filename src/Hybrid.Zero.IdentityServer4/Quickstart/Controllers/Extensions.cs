@@ -7,16 +7,28 @@
 //  <last-date>2018-08-02 17:56</last-date>
 // -----------------------------------------------------------------------
 
+using IdentityServer4.Models;
 using IdentityServer4.Stores;
 
 using Microsoft.AspNetCore.Mvc;
 
+using System;
 using System.Threading.Tasks;
 
 namespace Hybrid.Zero.IdentityServer4.Quickstart
 {
     public static class Extensions
     {
+        /// <summary>
+        /// Checks if the redirect URI is for a native client.
+        /// </summary>
+        /// <returns></returns>
+        public static bool IsNativeClient(this AuthorizationRequest context)
+        {
+            return !context.RedirectUri.StartsWith("https", StringComparison.Ordinal)
+               && !context.RedirectUri.StartsWith("http", StringComparison.Ordinal);
+        }
+
         /// <summary>
         /// Determines whether the client is configured to use PKCE.
         /// </summary>

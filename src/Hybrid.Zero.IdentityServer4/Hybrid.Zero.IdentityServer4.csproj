@@ -65,11 +65,11 @@
 
 	<ItemGroup>
 		<!--<PackageReference Include="IdentityModel.AspNetCore" Version="1.0.0-rc.2" />-->
-		<PackageReference Include="IdentityServer4" Version="3.1.3" />
-		<PackageReference Include="IdentityServer4.EntityFramework" Version="3.1.3" />
-		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.4" />
-		<PackageReference Include="Microsoft.Extensions.FileProviders.Composite" Version="3.1.4" />
-		<PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="3.1.4" />
+		<PackageReference Include="IdentityServer4" Version="4.1.1" />
+		<PackageReference Include="IdentityServer4.EntityFramework" Version="4.1.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.9" />
+		<PackageReference Include="Microsoft.Extensions.FileProviders.Composite" Version="3.1.9" />
+		<PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="3.1.9" />
 	</ItemGroup>
 
 	<ItemGroup>
